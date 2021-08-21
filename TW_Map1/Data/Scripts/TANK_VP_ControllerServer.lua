@@ -173,6 +173,7 @@ function AssignDriver(newDriver, playerStart, _isAI)
 	chassis = World.SpawnAsset(chassisTemplate)
 	chassis:SetWorldPosition(script:GetWorldPosition())
 	chassis:SetWorldRotation(script:GetWorldRotation())
+	_G.lookup.tanks[driver].chassis = chassis
 	
 	Task.Wait()
 
@@ -420,9 +421,7 @@ end
 
 
 function HandleAITankAim(aiDriver, pos)
-	--print("aiming precheck", aiDriver)
 	if aiDriver ~= driver then return end
-	--print("aiming", aiDriver)
 	target:SetWorldPosition(pos)
 end
 
@@ -535,7 +534,7 @@ function OnArmorHit(trigger, other)
 			print(enemyPlayer)
 			print(enemyPlayer.serverUserData)
 			print(enemyPlayer.serverUserData.currentTankData)
-			print(enemyPlayer.team)
+			print(enemyPlayer.team, driver.team)
 			return
 		end
 		
