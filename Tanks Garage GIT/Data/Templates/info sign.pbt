@@ -36,6 +36,7 @@ Assets {
         }
         Folder {
           Model {
+            AggressiveMerge: true
           }
         }
       }
@@ -755,17 +756,17 @@ Assets {
         Name: "World Text"
         Transform {
           Location {
-            X: 5.59225035
-            Y: 0.453581959
+            X: 12.2076941
+            Y: 0.453426063
             Z: 24.4085388
           }
           Rotation {
             Yaw: 89.9999771
           }
           Scale {
-            X: 1.04667175
-            Y: 1.04667175
-            Z: 1.04667175
+            X: 1.37253726
+            Y: 1.37253726
+            Z: 1.56179965
           }
         }
         ParentId: 11430944436159754445
@@ -781,7 +782,7 @@ Assets {
         Text {
           Text: "US T57"
           FontAsset {
-            Id: 8088145951334388726
+            Id: 9270962475891780029
           }
           Color {
             R: 1
@@ -805,17 +806,17 @@ Assets {
         Name: "World Text"
         Transform {
           Location {
-            X: 7.73795795
-            Y: 0.453730673
-            Z: -5.53857899
+            X: 5.77543688
+            Y: 0.453845292
+            Z: -5.90423
           }
           Rotation {
             Yaw: 89.9999619
           }
           Scale {
-            X: 0.782378316
-            Y: 0.782378316
-            Z: 0.782378316
+            X: 0.900577903
+            Y: 0.900577903
+            Z: 0.900577903
           }
         }
         ParentId: 11430944436159754445
@@ -831,7 +832,7 @@ Assets {
         Text {
           Text: "Designed in 1951"
           FontAsset {
-            Id: 8088145951334388726
+            Id: 9270962475891780029
           }
           Color {
             R: 1
@@ -855,17 +856,17 @@ Assets {
         Name: "World Text"
         Transform {
           Location {
-            X: 7.73795795
-            Y: 0.453730673
-            Z: -26.8344746
+            X: 5.77543688
+            Y: 0.453845292
+            Z: -27.2001266
           }
           Rotation {
             Yaw: 89.9999313
           }
           Scale {
-            X: 0.782378316
-            Y: 0.782378316
-            Z: 0.782378316
+            X: 0.900577903
+            Y: 0.900577903
+            Z: 0.900577903
           }
         }
         ParentId: 11430944436159754445
@@ -881,7 +882,7 @@ Assets {
         Text {
           Text: "-Heavy tank-"
           FontAsset {
-            Id: 8088145951334388726
+            Id: 9270962475891780029
           }
           Color {
             R: 1
@@ -905,17 +906,17 @@ Assets {
         Name: "World Text"
         Transform {
           Location {
-            X: 7.73795795
-            Y: 0.453730673
-            Z: -47.3933601
+            X: 5.77543688
+            Y: 0.453845292
+            Z: -47.7590141
           }
           Rotation {
             Yaw: 89.9999084
           }
           Scale {
-            X: 0.782378316
-            Y: 0.782378316
-            Z: 0.782378316
+            X: 0.900577903
+            Y: 0.900577903
+            Z: 0.900577903
           }
         }
         ParentId: 11430944436159754445
@@ -931,7 +932,7 @@ Assets {
         Text {
           Text: "-54.3 tonnes-"
           FontAsset {
-            Id: 8088145951334388726
+            Id: 9270962475891780029
           }
           Color {
             R: 1
@@ -955,17 +956,17 @@ Assets {
         Name: "World Text"
         Transform {
           Location {
-            X: 7.73795795
-            Y: 0.453730673
-            Z: -67.6423798
+            X: 5.77543688
+            Y: 0.453845292
+            Z: -68.008
           }
           Rotation {
             Yaw: 89.9998779
           }
           Scale {
-            X: 0.782378316
-            Y: 0.782378316
-            Z: 0.782378316
+            X: 0.900577903
+            Y: 0.900577903
+            Z: 0.900577903
           }
         }
         ParentId: 11430944436159754445
@@ -981,7 +982,7 @@ Assets {
         Text {
           Text: "-9.3m x 3.63m x 3.08m-"
           FontAsset {
-            Id: 8088145951334388726
+            Id: 9270962475891780029
           }
           Color {
             R: 1
@@ -1005,17 +1006,17 @@ Assets {
         Name: "World Text"
         Transform {
           Location {
-            X: 7.73795795
-            Y: 0.453730673
-            Z: -88.4989395
+            X: 5.77543688
+            Y: 0.453845292
+            Z: -88.8645782
           }
           Rotation {
             Yaw: 89.9998703
           }
           Scale {
-            X: 0.782378316
-            Y: 0.782378316
-            Z: 0.782378316
+            X: 0.900577903
+            Y: 0.900577903
+            Z: 0.900577903
           }
         }
         ParentId: 11430944436159754445
@@ -1031,7 +1032,7 @@ Assets {
         Text {
           Text: "-Crew of 4-"
           FontAsset {
-            Id: 8088145951334388726
+            Id: 9270962475891780029
           }
           Color {
             R: 1
@@ -1115,12 +1116,12 @@ Assets {
       }
     }
     Assets {
-      Id: 8088145951334388726
-      Name: "Play"
+      Id: 9270962475891780029
+      Name: "Play Bold"
       PlatformAssetType: 28
       PrimaryAsset {
         AssetType: "FontAssetRef"
-        AssetId: "PlayRegular_ref"
+        AssetId: "PlayBold_ref"
       }
     }
     PrimaryAssetId {

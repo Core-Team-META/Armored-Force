@@ -34563,14 +34563,6 @@ Objects {
             Roll: 5.70338964
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.87582481
-            Y: 1.87582481
-            Z: 1.87582481
-          }
-        }
       }
     }
     TemplateAsset {

@@ -1064,9 +1064,9 @@ Assets {
         Name: "Military Tank Historic Tread 01 Mid"
         Transform {
           Location {
-            X: -24.4377441
-            Y: -14.190918
-            Z: -7.03273773
+            X: -24.4376545
+            Y: -16.6562691
+            Z: -7.0327282
           }
           Rotation {
           }
@@ -1106,9 +1106,9 @@ Assets {
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: 258.437408
-            Y: -14.190918
-            Z: 3.32676697
+            X: 258.4375
+            Y: -16.6562138
+            Z: 3.32676125
           }
           Rotation {
           }
@@ -1148,9 +1148,9 @@ Assets {
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: -272.683868
-            Y: -14.190918
-            Z: -3.81613159
+            X: -272.683105
+            Y: -16.6560059
+            Z: -3.81611633
           }
           Rotation {
           }
@@ -1191,7 +1191,7 @@ Assets {
         Transform {
           Location {
             X: 269.156738
-            Y: -24.3698654
+            Y: -26.1159134
             Z: 169.747131
           }
           Rotation {
@@ -1201,7 +1201,7 @@ Assets {
           }
           Scale {
             X: 0.406189978
-            Y: 0.406188667
+            Y: 0.406188637
             Z: 1.2702055
           }
         }
@@ -1283,9 +1283,9 @@ Assets {
         Name: "Urban Pipe Coupling 02"
         Transform {
           Location {
-            X: 188.746033
-            Y: -24.3698654
-            Z: 156.020828
+            X: 188.746078
+            Y: -26.1159592
+            Z: 156.020813
           }
           Rotation {
             Pitch: 31.0808964
@@ -1294,7 +1294,7 @@ Assets {
           }
           Scale {
             X: 0.406189978
-            Y: 0.406188667
+            Y: 0.406188637
             Z: 1.2702055
           }
         }
@@ -1376,8 +1376,8 @@ Assets {
         Name: "Urban Pipe Coupling 02"
         Transform {
           Location {
-            X: -189.8685
-            Y: -24.3698654
+            X: -189.868393
+            Y: -26.1159821
             Z: 155.752853
           }
           Rotation {
@@ -1388,7 +1388,7 @@ Assets {
           Scale {
             X: 0.406189889
             Y: 0.406188637
-            Z: 1.34368277
+            Z: 1.34368265
           }
         }
         ParentId: 14000005184975964374
@@ -4717,9 +4717,9 @@ Assets {
         Name: "Military Tank Historic Tread 01 Mid"
         Transform {
           Location {
-            X: -24.4377441
-            Y: -14.190918
-            Z: -7.03273773
+            X: -24.4355469
+            Y: -18.5297852
+            Z: -7.03271484
           }
           Rotation {
           }
@@ -4759,9 +4759,9 @@ Assets {
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: 258.437408
-            Y: -14.190918
-            Z: 3.32676697
+            X: 258.438965
+            Y: -18.5314941
+            Z: 3.32678223
           }
           Rotation {
           }
@@ -4801,8 +4801,8 @@ Assets {
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: -272.683868
-            Y: -14.190918
+            X: -272.681641
+            Y: -18.5302734
             Z: -3.81613159
           }
           Rotation {
@@ -4843,9 +4843,9 @@ Assets {
         Name: "Urban Pipe Coupling 02"
         Transform {
           Location {
-            X: 269.156708
-            Y: -24.3698578
-            Z: 169.747131
+            X: 269.159912
+            Y: -25.8293457
+            Z: 169.747162
           }
           Rotation {
             Pitch: 16.0303707
@@ -4854,7 +4854,7 @@ Assets {
           }
           Scale {
             X: 0.406189978
-            Y: 0.406188667
+            Y: 0.406188637
             Z: 1.2702055
           }
         }
@@ -4936,9 +4936,9 @@ Assets {
         Name: "Urban Pipe Coupling 02"
         Transform {
           Location {
-            X: 188.746033
-            Y: -24.3698578
-            Z: 156.020874
+            X: 188.748291
+            Y: -25.828125
+            Z: 156.020844
           }
           Rotation {
             Pitch: 31.080904
@@ -4947,7 +4947,7 @@ Assets {
           }
           Scale {
             X: 0.406189978
-            Y: 0.406188667
+            Y: 0.406188637
             Z: 1.2702055
           }
         }
@@ -5029,9 +5029,9 @@ Assets {
         Name: "Urban Pipe Coupling 02"
         Transform {
           Location {
-            X: -189.8685
-            Y: -24.3698578
-            Z: 155.752838
+            X: -189.867432
+            Y: -25.8295898
+            Z: 155.752869
           }
           Rotation {
             Pitch: 37.7788773
@@ -5041,7 +5041,7 @@ Assets {
           Scale {
             X: 0.406189889
             Y: 0.406188637
-            Z: 1.34368277
+            Z: 1.34368265
           }
         }
         ParentId: 6778602639697728717

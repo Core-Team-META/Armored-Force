@@ -20,9 +20,7 @@ local removeGroup = script:GetCustomProperty("RemoveGroup"):WaitForObject()
 local debrisGroup = script:GetCustomProperty("DebrisGroup"):WaitForObject()
 
 --Group holds objects that with no lifespan
-if script:GetCustomProperty("LeftBehindGroup") then
-	local LeftBehindGroup = script:GetCustomProperty("LeftBehindGroup"):WaitForObject()
-end
+local LeftBehindGroup = script:GetCustomProperty("LeftBehindGroup"):WaitForObject()
 
 local destructionTrigger = script.parent
 

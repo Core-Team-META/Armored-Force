@@ -6907,15 +6907,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1117.41406
-            Y: 4189.83789
-            Z: -3587.54785
+            X: 1280.29297
+            Y: 4052.96875
+            Z: -3338.57031
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -109.95433
+            Yaw: 56.2025681
           }
         }
       }
@@ -6930,7 +6930,7 @@ Objects {
   Name: "flag"
   Transform {
     Location {
-      Z: -2342.13184
+      Z: -2263.91064
     }
     Rotation {
       Yaw: -41.0780334
@@ -7495,14 +7495,14 @@ Objects {
   Name: "destructible sandbags"
   Transform {
     Location {
-      X: -1662.09766
-      Y: -2652.01758
-      Z: -2293.08911
+      X: -2083.74023
+      Y: -1863.79492
+      Z: -2316.75513
     }
     Rotation {
-      Pitch: -1.39251709
-      Yaw: 36.0895233
-      Roll: 0.998733699
+      Pitch: 0.507339597
+      Yaw: -35.4723511
+      Roll: 1.63677633
     }
     Scale {
       X: 1
@@ -8108,11 +8108,12 @@ Objects {
     Location {
       X: 2483.24219
       Y: -1146.54883
-      Z: -2277.57715
+      Z: -2179.24902
     }
     Rotation {
-      Yaw: 96.0315094
-      Roll: 2.14327884
+      Pitch: -2.73077393
+      Yaw: 96.0788345
+      Roll: 0.955843508
     }
     Scale {
       X: 1
@@ -8390,7 +8391,7 @@ Objects {
           Vector {
             X: -1972.10938
             Y: 1104.60547
-            Z: -2161.1582
+            Z: -2060.14087
           }
         }
         Overrides {
@@ -8902,7 +8903,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 70.0456467
+            Yaw: -64.9544067
           }
         }
         Overrides {
@@ -8918,7 +8919,7 @@ Objects {
           Vector {
             X: 58.3359375
             Y: -4522.03516
-            Z: -3523.28149
+            Z: -3525.00269
           }
         }
       }
@@ -8987,7 +8988,7 @@ Objects {
           Vector {
             X: 2499.30469
             Y: 135.03125
-            Z: -2130.50464
+            Z: -1997.76318
           }
         }
       }
@@ -9004,7 +9005,7 @@ Objects {
     Location {
       X: 774.080078
       Y: 2380.63672
-      Z: -2306.38037
+      Z: -2152.22
     }
     Rotation {
       Yaw: -125.95697
@@ -9177,7 +9178,7 @@ Objects {
     Location {
       X: -3083.76562
       Y: -277.003906
-      Z: -2293.08594
+      Z: -2131.26416
     }
     Rotation {
       Yaw: -69.9522095
@@ -9784,7 +9785,7 @@ Objects {
   Name: "flag"
   Transform {
     Location {
-      Z: -2294.5542
+      Z: -2079.66187
     }
     Rotation {
       Yaw: 120

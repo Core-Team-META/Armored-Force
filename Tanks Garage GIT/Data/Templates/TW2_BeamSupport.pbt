@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 5274114996052781512
         ChildIds: 15588365113497071265
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52,6 +52,7 @@ Assets {
         ChildIds: 13310933255053229382
         ChildIds: 9998860576569710738
         ChildIds: 6648065645779549868
+        ChildIds: 1632326382116271985
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -434,6 +435,12 @@ Assets {
               SubObjectId: 13310933255053229382
             }
           }
+          Overrides {
+            Name: "cs:LeftBehindGroup"
+            ObjectReference {
+              SubObjectId: 1632326382116271985
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -527,7 +534,6 @@ Assets {
           }
         }
         ParentId: 15588365113497071265
-        ChildIds: 1697328598083040509
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -542,13 +548,45 @@ Assets {
         }
       }
       Objects {
+        Id: 1632326382116271985
+        Name: "LeftBehindGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15588365113497071265
+        ChildIds: 1697328598083040509
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
         Id: 1697328598083040509
         Name: "Urban Damaged Concrete Chunk 03"
         Transform {
           Location {
             X: 3.8671875
-            Y: 388.481079
-            Z: 33.9354858
+            Y: 388.480469
+            Z: 33.9354248
           }
           Rotation {
             Pitch: -17.0748577
@@ -561,7 +599,7 @@ Assets {
             Z: 1.00563312
           }
         }
-        ParentId: 6648065645779549868
+        ParentId: 1632326382116271985
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
