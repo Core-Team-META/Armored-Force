@@ -414,9 +414,9 @@ function FireProjectile(player)
 end
 
 function ProjectileImpacted(expiredProjectile, other)
+    
+    ProjectileExpired(expiredProjectile)
 
-	ProjectileExpired(expiredProjectile)
-	
 	if not other:IsA("Vehicle") or expiredProjectile.serverUserData.hitOnce or other.driver == driver then
 		return
 	end
@@ -456,7 +456,7 @@ end
 
 function OnArmorHit(trigger, other)	
 	if other.type == "Projectile" and other.owner ~= driver then
-		local enemyPlayer = other.owner
+        local enemyPlayer = other.owner
 		
 		if other.serverUserData.hitOnce then
 			return
@@ -494,6 +494,19 @@ function OnArmorHit(trigger, other)
 			COMBAT.ApplyDamage(attackData)
 		end
 		
+        local dmgPercent = totalDamage / potentialDamage
+
+        -- #FIXME => Need to add template refs
+        if dmgPercent >= 0.8 then
+            --World.SpawnAsset(TEMPLATE, {position = other:GetWorldPosition()})
+        elseif dmgPercent < 0.8 and dmgPercent >= 0.5 then
+            --World.SpawnAsset(TEMPLATE, {position = other:GetWorldPosition()})
+        elseif dmgPercent < 0.5 and dmgPercent >= 0.3 then
+            --World.SpawnAsset(TEMPLATE, {position = other:GetWorldPosition()})
+        else
+            --World.SpawnAsset(TEMPLATE, {position = other:GetWorldPosition()})
+        end
+
 		local armorName = trigger.name
 		
 		if armorName == "LEFTTRACK" or armorName == "RIGHTTRACK" then
