@@ -92,11 +92,26 @@ end
 function AIPlayer:UpdateAttackTarget()
   local tank = World.FindObjectById(self.tankId)
   if tank ~= nil then
-    local targetPlayer = Game.FindNearestPlayer(tank:GetWorldPosition())
-    local targetTank = _G.lookup.tanks[targetPlayer]
-    self.currentAttackTarget = targetTank.chassis
+
+    local newTarget = nil
+    local myPos = tank:GetWorldPosition()
+    local dist = -1
+    for k,t in pairs(_G.lookup.tanks) do
+      if t.team ~= self.team then
+        local tDist = (t.chassis:GetWorldPosition() - myPos).size
+        if (dist == -1 or tDist < dist) then
+          newTarget = t.chassis
+          dist = tDist
+        end
+      end
+    end
+
+
+    --local targetPlayer = Game.FindNearestPlayer(tank:GetWorldPosition())
+    --local targetTank = _G.lookup.tanks[targetPlayer]
+    self.currentAttackTarget = newTarget
     --print("setting aim!", self.currentAttackTarget:GetWorldPosition())
-    CoreDebug.DrawLine(self.currentAttackTarget:GetWorldPosition(), self.currentAttackTarget:GetWorldPosition() + Vector3.UP *500, {thickness = 15})
+    --CoreDebug.DrawLine(self.currentAttackTarget:GetWorldPosition(), self.currentAttackTarget:GetWorldPosition() + Vector3.UP *500, {thickness = 15})
   end
 end
 
@@ -172,7 +187,7 @@ function AIPlayer:PickMovementTarget()
     self.currentMovementTarget = player:GetWorldPosition()
       
       if (self.currentMovementTarget - tank:GetWorldPosition()).size < 2000 then
-        print("Reversing!------------")
+        --print("Reversing!------------")
         local tankDirection = tank:GetWorldRotation() * Vector3.FORWARD
 
         self.currentMovementTarget = Rotation.New(0, 0, math.random(240, 320)) * tankDirection * 2000
