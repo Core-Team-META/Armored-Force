@@ -398,6 +398,11 @@ function API.GetHighestElevation()
 	return 30
 end
 
+function API.GetHighestTurningSpeed()
+    -- TODO
+	return 30
+end
+
 function API.GetTankXPValueFromId(tankId)
 	for i, tank in ipairs(World.FindObjectByName("TechTree_Contents"):GetChildren()) do
 		if(tank:GetCustomProperty("ID") == tankId) then

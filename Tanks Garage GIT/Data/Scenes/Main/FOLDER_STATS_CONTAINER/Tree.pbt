@@ -3044,7 +3044,7 @@ Objects {
 }
 Objects {
   Id: 10173209835117637852
-  Name: "EXPERIENCE_EQUIPPED_TANK"
+  Name: "EQUIPPED_EXPERIENCE_EQUIPPED_TANK_PARTS"
   Transform {
     Location {
     }
@@ -3123,7 +3123,7 @@ Objects {
 }
 Objects {
   Id: 8820957397431302908
-  Name: "EXPERIENCE_EQUIPPED_TANK_TITLE"
+  Name: "TANK_PARTS_LABEL"
   Transform {
     Location {
     }
@@ -7670,7 +7670,7 @@ Objects {
         G: 0.00847999286
         B: 0.02
       }
-      Percent: 0.85
+      Percent: 0.20350574
       FillBrush {
       }
       BackgroundBrush {
