@@ -144,7 +144,7 @@ function SetAim(driver)
   -- This is a hack.  Need to change to nearest tank.
   local tank = World.FindObjectById(driver.tankId)
   if tank ~= nil then
-    print("setting aim!")
+    --print("setting aim!")
     local player = Game.FindNearestPlayer(tank:GetWorldPosition())
     Events.Broadcast("AI_TankAim", driver, player:GetWorldPosition())
   end
