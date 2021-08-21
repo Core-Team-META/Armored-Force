@@ -827,6 +827,18 @@ Objects {
         SelfId: 16823211638657041217
       }
     }
+    Overrides {
+      Name: "cs:STATS_TANK_CONTAINER"
+      ObjectReference {
+        SelfId: 17297087670383591423
+      }
+    }
+    Overrides {
+      Name: "cs:UPGRADE_TANK_CONTAINER"
+      ObjectReference {
+        SelfId: 18050183842741533059
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

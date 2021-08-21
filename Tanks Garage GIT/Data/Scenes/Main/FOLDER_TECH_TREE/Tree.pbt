@@ -2279,7 +2279,7 @@ Objects {
 }
 Objects {
   Id: 9673326691079752517
-  Name: "UPGRADE_TANK_BUTTON"
+  Name: "PURCHASE_TANK_BUTTON"
   Transform {
     Location {
     }
@@ -2316,27 +2316,30 @@ Objects {
     UseParentHeight: true
     Button {
       FontColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 0.9
+        R: 0.0813302
+        G: 0.168269426
+        A: 1
       }
       FontSize: 20
       ButtonColor {
-        R: 0.0813301876
+        R: 0.0813301653
         G: 0.168269426
+        A: 1
       }
       HoveredColor {
-        R: 0.0459166355
-        G: 0.0950000063
+        R: 0.0357666314
+        G: 0.074
+        A: 1
       }
       PressedColor {
-        R: 0.0813301876
+        R: 0.0813301653
         G: 0.168269426
+        A: 1
       }
       DisabledColor {
-        R: 0.0813301876
-        G: 0.168269426
+        R: 0.004833329
+        G: 0.0100000007
+        A: 1
       }
       Brush {
         Id: 7515015531196152948
@@ -2358,6 +2361,8 @@ Objects {
         A: 1
       }
       ShadowOffset {
+        X: 1
+        Y: 1
       }
     }
     AnchorLayout {
@@ -3723,7 +3728,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
