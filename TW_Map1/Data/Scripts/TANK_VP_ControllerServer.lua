@@ -414,15 +414,15 @@ end
 
 function HandleAITankShot(aiDriver)
 	if aiDriver ~= driver then return end
-	print("Firing tank", aiDriver)
+	--print("Firing tank", aiDriver)
 	FireProjectile(aiDriver)
 end
 
 
 function HandleAITankAim(aiDriver, pos)
-	print("aiming precheck", aiDriver)
+	--print("aiming precheck", aiDriver)
 	if aiDriver ~= driver then return end
-	print("aiming", aiDriver)
+	--print("aiming", aiDriver)
 	target:SetWorldPosition(pos)
 end
 

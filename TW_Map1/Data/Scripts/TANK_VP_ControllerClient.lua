@@ -221,11 +221,12 @@ function FiringAnimation(tankRef, reloadTime)
 		shotSFX:Play()
 	end
 		
+	if turretClient == nil then return end
 	local xRotation = 0
 	local yRotation = 0
 	
 	local currentZ = turretClient:GetRotation().z
-	
+
 	if currentZ < 0 then
 		currentZ = 360 + currentZ
 	end	
