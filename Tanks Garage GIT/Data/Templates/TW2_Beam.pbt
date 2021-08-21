@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 5274114996052781512
         ChildIds: 1209157933715114426
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52,6 +52,7 @@ Assets {
         ChildIds: 10984990188708024299
         ChildIds: 6196581167767187181
         ChildIds: 3272660150009279114
+        ChildIds: 10007407622456071900
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -491,6 +492,12 @@ Assets {
               SubObjectId: 10984990188708024299
             }
           }
+          Overrides {
+            Name: "cs:LeftBehindGroup"
+            ObjectReference {
+              SubObjectId: 10007407622456071900
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -584,9 +591,6 @@ Assets {
           }
         }
         ParentId: 1209157933715114426
-        ChildIds: 3215699598448567643
-        ChildIds: 15494457914820406244
-        ChildIds: 13351959598010115521
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -601,18 +605,12 @@ Assets {
         }
       }
       Objects {
-        Id: 3215699598448567643
-        Name: "PhysicsParent"
+        Id: 10007407622456071900
+        Name: "LeftBehindGroup"
         Transform {
           Location {
-            X: 16.2634583
-            Y: 753.842407
-            Z: 448.963318
           }
           Rotation {
-            Pitch: -21.1934814
-            Yaw: 90.2622528
-            Roll: -89.677887
           }
           Scale {
             X: 1
@@ -620,7 +618,47 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 3272660150009279114
+        ParentId: 1209157933715114426
+        ChildIds: 3215699598448567643
+        ChildIds: 15494457914820406244
+        ChildIds: 13351959598010115521
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 3215699598448567643
+        Name: "PhysicsParent"
+        Transform {
+          Location {
+            X: 16.2636719
+            Y: 753.842102
+            Z: 448.963318
+          }
+          Rotation {
+            Pitch: -21.1934757
+            Yaw: 90.2622528
+            Roll: -89.6778793
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10007407622456071900
         ChildIds: 18363381991889447719
         ChildIds: 14218035861550587662
         ChildIds: 15589955531265932712
@@ -863,14 +901,14 @@ Assets {
         Name: "PhysicsParent"
         Transform {
           Location {
-            X: -11.637085
-            Y: 753.648621
+            X: -11.6368408
+            Y: 753.648193
             Z: 446.870789
           }
           Rotation {
-            Pitch: -21.971405
-            Yaw: 89.8238525
-            Roll: -89.4257812
+            Pitch: -21.9713917
+            Yaw: 89.8238297
+            Roll: -89.4257736
           }
           Scale {
             X: 1
@@ -878,7 +916,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 3272660150009279114
+        ParentId: 10007407622456071900
         ChildIds: 3178869288592509782
         ChildIds: 12184306656560565937
         ChildIds: 517099509599590869
@@ -1121,13 +1159,13 @@ Assets {
         Name: "Cube - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: 2.33737183
-            Y: 709.361633
+            X: 2.33761597
+            Y: 709.361328
             Z: 386.104919
           }
           Rotation {
-            Pitch: 41.5508347
-            Yaw: 89.9999924
+            Pitch: 41.5508156
+            Yaw: 89.9999695
           }
           Scale {
             X: 11.8755445
@@ -1135,7 +1173,7 @@ Assets {
             Z: 0.373716444
           }
         }
-        ParentId: 3272660150009279114
+        ParentId: 10007407622456071900
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"

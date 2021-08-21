@@ -7,7 +7,7 @@ Assets {
       RootId: 14649782237327858037
       Objects {
         Id: 14649782237327858037
-        Name: "Tank US M48 Patton Burned Prop"
+        Name: "Tank US M48 Patton Burned Prop_merged"
         Transform {
           Scale {
             X: 1
@@ -324,6 +324,7 @@ Assets {
         }
         Folder {
           Model {
+            AggressiveMerge: true
           }
         }
       }

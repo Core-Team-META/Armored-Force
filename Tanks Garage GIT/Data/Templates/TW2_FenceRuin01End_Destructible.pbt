@@ -49,6 +49,7 @@ Assets {
         ChildIds: 10281463196326911925
         ChildIds: 11142257764517577714
         ChildIds: 2968769668428030562
+        ChildIds: 17342470269014809879
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -151,6 +152,12 @@ Assets {
             Name: "cs:RemoveGroup"
             ObjectReference {
               SubObjectId: 2968769668428030562
+            }
+          }
+          Overrides {
+            Name: "cs:LeftBehindGroup"
+            ObjectReference {
+              SubObjectId: 17342470269014809879
             }
           }
         }
@@ -420,7 +427,6 @@ Assets {
           }
         }
         ParentId: 14580949777974914027
-        ChildIds: 14832303190857667949
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -432,61 +438,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 14832303190857667949
-        Name: "Urban Damaged Concrete Chunk 03"
-        Transform {
-          Location {
-            X: -38.3070526
-            Y: -27.8448658
-            Z: 75
-          }
-          Rotation {
-            Pitch: -54.8522644
-            Roll: -90
-          }
-          Scale {
-            X: 0.6
-            Y: 0.6
-            Z: 0.966376603
-          }
-        }
-        ParentId: 11142257764517577714
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 11471689524597693722
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5483772166785938526
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
         }
       }
       Objects {
@@ -504,7 +455,7 @@ Assets {
           }
         }
         ParentId: 14580949777974914027
-        ChildIds: 1333495817291716762
+        ChildIds: 4860667287432636660
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -519,47 +470,15 @@ Assets {
         }
       }
       Objects {
-        Id: 1333495817291716762
-        Name: "MergedModel"
-        Transform {
-          Location {
-            X: -99.7988281
-            Y: -17.2026367
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 2968769668428030562
-        ChildIds: 4860667287432636660
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          Model {
-          }
-        }
-      }
-      Objects {
         Id: 4860667287432636660
         Name: "Urban Damaged Concrete Chunk 03"
         Transform {
           Location {
-            X: 95.9414062
-            Y: -7.796875
+            X: -3.85738945
+            Y: -24.9990387
           }
           Rotation {
-            Yaw: 89.9999924
+            Yaw: 89.9999847
           }
           Scale {
             X: 1
@@ -567,7 +486,7 @@ Assets {
             Z: 0.586467266
           }
         }
-        ParentId: 1333495817291716762
+        ParentId: 2968769668428030562
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -588,6 +507,94 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 5531833663473274763
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 17342470269014809879
+        Name: "LeftBehindGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14580949777974914027
+        ChildIds: 14832303190857667949
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 14832303190857667949
+        Name: "Urban Damaged Concrete Chunk 03"
+        Transform {
+          Location {
+            X: -38.30793
+            Y: -27.8445282
+            Z: 75
+          }
+          Rotation {
+            Pitch: -54.8522568
+            Yaw: -2.96610483e-06
+            Roll: -89.9999847
+          }
+          Scale {
+            X: 0.6
+            Y: 0.6
+            Z: 0.966376603
+          }
+        }
+        ParentId: 17342470269014809879
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5483772166785938526
           }
           Teams {
             IsTeamCollisionEnabled: true
