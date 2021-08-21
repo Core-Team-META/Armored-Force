@@ -1,4 +1,5 @@
 local AIPlayer = require(script:GetCustomProperty("_AIPlayer"))
+if _G.lookup == nil then _G.lookup = {tanks = {}} end
 
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local mainManagerServer = script:GetCustomProperty("MainManagerServer"):WaitForObject()
@@ -7,6 +8,7 @@ local tankCount = script:GetCustomProperty("TankCount")
 
 local tankTemplates = script.parent
 local equippedTank = {}
+
 local resetOverride = false
 
 function GetEquippedTankTemplate(player, id)
@@ -95,14 +97,14 @@ function GivePlayerEquipment(player, playerStart)
 	local playerRotation = player:GetWorldRotation()
 	equippedTank[player] = World.SpawnAsset(GetEquippedTankTemplate(player, id), {parent = tankGarage, position = playerPosition, rotation = playerRotation})
 	Task.Wait(0.1)
+	_G.lookup.tanks[player] = {team = player.team, tank = equippedTank[player]}
 	equippedTank[player].context.AssignDriver(player, playerStart)
-	
 end
 
 
 
 
-function SpawnAITank(position)
+function SpawnAITank(position, team)
 	print("Spawning an AI tank...")
 	--player.isVisible = false
 	
@@ -131,10 +133,9 @@ function SpawnAITank(position)
 	equippedTank[newAI] = World.SpawnAsset(GetEquippedTankTemplate(nil, -1), {parent = tankGarage, position = playerPosition, rotation = playerRotation})
 	print("spawned", equippedTank[newAI])
 	Task.Wait(0.1)
-	newAI.team = 2
+	newAI.team = team
+	_G.lookup.tanks[newAI] = {team = newAI.team, tank = equippedTank[newAI]}
 	equippedTank[newAI].context.AssignDriver(newAI, position, true)
-	
-
 end
 
 
@@ -154,12 +155,15 @@ end
 function OnPlayerJoined(player)
 
 	player.spawnedEvent:Connect(OnPlayerRespawned)
-	--SpawnAITank(player:GetWorldPosition() + Vector3.New(1000, 1000, 1000))
+	local team = 1
+	if player.team == 1 then team = 2 end
+	SpawnAITank(player:GetWorldPosition() + Vector3.New(1000, 1000, 1000), team)
+	--[[
 	for i = 1, 4 do
 		local offset = Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 30000 + Vector3.UP * 1000
 		SpawnAITank(offset)
 	end
-
+]]
 	
 end
 

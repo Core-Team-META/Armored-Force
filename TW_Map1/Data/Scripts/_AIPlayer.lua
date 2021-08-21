@@ -29,6 +29,7 @@ function AIPlayer.New(team)
     tankId = nil,
     team = 1,
     currentMovementTarget = nil,
+    currentAttackTarget = nil,
     lastShotTime = -1,
   }
 
@@ -77,10 +78,25 @@ end
 function TankTick(self)
   --print(">>>FIRE!<<<", self, self.tankId)
   --Task.Wait(math.random(0, 2))
-  SetAim(self)
+  self:SetAim()
+  self:UpdateAttackTarget()
   self:PickMovementTarget()
-  if time() > self.lastShotTime + 3 and math.random(1, 100) < 5 then
+  if time() > self.lastShotTime + 3
+    and math.random(1, 100) < 5 then
     Events.Broadcast("AI_Tankshot", self)
+  end
+end
+
+
+
+function AIPlayer:UpdateAttackTarget()
+  local tank = World.FindObjectById(self.tankId)
+  if tank ~= nil then
+    local targetPlayer = Game.FindNearestPlayer(tank:GetWorldPosition())
+    local targetTank = _G.lookup.tanks[targetPlayer]
+    self.currentAttackTarget = targetTank.chassis
+    --print("setting aim!", self.currentAttackTarget:GetWorldPosition())
+    CoreDebug.DrawLine(self.currentAttackTarget:GetWorldPosition(), self.currentAttackTarget:GetWorldPosition() + Vector3.UP *500, {thickness = 15})
   end
 end
 
@@ -140,13 +156,11 @@ function AIPlayer:HandleDriving(vehicle, params)
 end
 
 
-function SetAim(driver)
+function AIPlayer:SetAim()
   -- This is a hack.  Need to change to nearest tank.
-  local tank = World.FindObjectById(driver.tankId)
-  if tank ~= nil then
-    --print("setting aim!")
-    local player = Game.FindNearestPlayer(tank:GetWorldPosition())
-    Events.Broadcast("AI_TankAim", driver, player:GetWorldPosition())
+  if Object.IsValid(self.currentAttackTarget) then
+    --print("sending aim data!", self.currentAttackTarget)
+    Events.Broadcast("AI_TankAim", self, self.currentAttackTarget:GetWorldPosition())
   end
 end
 
@@ -244,5 +258,7 @@ end
 
 function AIPlayer:AddResource(resourceName, amount)
 end
+
+
 
 return AIPlayer
