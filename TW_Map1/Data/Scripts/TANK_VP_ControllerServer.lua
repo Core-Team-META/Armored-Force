@@ -597,7 +597,9 @@ function OnArmorHit(trigger, other)
 			end
 
 			trackTask = Task.Spawn(OnTracked, 0)
-			Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "TRACK")
+			if enemyPlayer:IsA("Player") then
+				Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "TRACK")
+			end
 		elseif armorName == "HULLREAR" and not burnTask then
 			playerWhoBurned = enemyPlayer
 
