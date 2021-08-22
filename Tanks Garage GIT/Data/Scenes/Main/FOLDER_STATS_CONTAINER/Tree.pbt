@@ -241,27 +241,27 @@ Objects {
       }
       FontSize: 20
       ButtonColor {
-        R: 0.0127019985
-        G: 0.0163717363
-        B: 0.029
+        R: 0.0813302
+        G: 0.168269426
+        A: 1
       }
       HoveredColor {
-        R: 0.00613199873
-        G: 0.00790359452
-        B: 0.014
+        R: 0.051233314
+        G: 0.106000006
+        A: 1
       }
       PressedColor {
-        R: 0.0127019985
-        G: 0.0163717363
-        B: 0.029
+        R: 0.0813302
+        G: 0.168269426
+        A: 1
       }
       DisabledColor {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.025616657
+        G: 0.0530000031
+        A: 1
       }
       Brush {
-        Id: 841534158063459245
+        Id: 7515015531196152948
       }
       IsButtonEnabled: true
       ClickMode {
@@ -1639,7 +1639,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"

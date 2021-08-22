@@ -1545,10 +1545,75 @@ end
 
 
 function OpenTankUpgradeWindow(button)
+	SFX_CLICK:Play()
 	button:FindAncestorByName("MAIN_UI"):FindDescendantByName("UPGRADE_TANK_CONTAINER").visibility = Visibility.FORCE_ON
+	local entry = {}
+	local progress = {}
+	for i, tank in ipairs(TANK_LIST) do
+		local id = tank:GetCustomProperty("ID")
+		if tonumber(id) == LOCAL_PLAYER:GetResource("EquippedTank") then
+			entry = tank
+		end
+	end
+
+	for i, tankProgress in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+		if tonumber(tankProgress.id) == LOCAL_PLAYER:GetResource("EquippedTank") then
+			progress = tankProgress
+		end
+	end
+
+	if tostring(progress.weaponProgress) ~= tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_CONTAINER_WEAPON").visibility = Visibility.FORCE_ON
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("BUTTON_UPGRADE_TURRET").isInteractable = true
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_WEAPON"):FindDescendantByName("BUTTONTEXT_LIGHT").text = "UPGRADE"
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_WEAPON"):FindDescendantByName("UPGRADE_ITEM_NEXTLV").visibility = Visibility.FORCE_ON
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_WEAPON"):FindDescendantByName("UPGRADE_ICON").visibility = Visibility.FORCE_ON
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_SILVER_WEAPON").text = "Silver: " .. tostring(entry:GetCustomProperty("WeaponPurchaseCost"))
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_TP_WEAPON").text = "Tank Parts: " .. tostring(entry:GetCustomProperty("WeaponResearchCost"))		
+	else
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_CONTAINER_WEAPON").visibility = Visibility.FORCE_OFF
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("BUTTON_UPGRADE_TURRET").isInteractable = false
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_WEAPON"):FindDescendantByName("BUTTONTEXT_LIGHT").text = "UPGRADES MAXED"
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_WEAPON"):FindDescendantByName("UPGRADE_ITEM_NEXTLV").visibility = Visibility.FORCE_OFF
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_WEAPON"):FindDescendantByName("UPGRADE_ICON").visibility = Visibility.FORCE_OFF
+	end
+
+	if tostring(progress.armorProgress) ~= tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_CONTAINER_ARMOR").visibility = Visibility.FORCE_ON
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("BUTTON_UPGRADE_SHELL").isInteractable = true
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_ARMOR"):FindDescendantByName("BUTTONTEXT_LIGHT").text = "UPGRADE"
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_ARMOR"):FindDescendantByName("UPGRADE_ITEM_NEXTLV").visibility = Visibility.FORCE_ON
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_ARMOR"):FindDescendantByName("UPGRADE_ICON").visibility = Visibility.FORCE_ON
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_SILVER_ARMOR").text = "Silver: " .. tostring(entry:GetCustomProperty("ArmorPurchaseCost"))
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_TP_ARMOR").text = "Tank Parts: " .. tostring(entry:GetCustomProperty("ArmorResearchCost"))	
+	else
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_CONTAINER_ARMOR").visibility = Visibility.FORCE_OFF
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("BUTTON_UPGRADE_SHELL").isInteractable = false
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_ARMOR"):FindDescendantByName("BUTTONTEXT_LIGHT").text = "UPGRADES MAXED"
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_ARMOR"):FindDescendantByName("UPGRADE_ITEM_NEXTLV").visibility = Visibility.FORCE_OFF
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_ARMOR"):FindDescendantByName("UPGRADE_ICON").visibility = Visibility.FORCE_OFF
+	end
+
+	if tostring(progress.engineProgress) ~= tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_CONTAINER_ENGINE").visibility = Visibility.FORCE_ON
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("BUTTON_UPGRADE_ENGINE").isInteractable = true
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_ENGINE"):FindDescendantByName("BUTTONTEXT_LIGHT").text = "UPGRADE"
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_ENGINE"):FindDescendantByName("UPGRADE_ITEM_NEXTLV").visibility = Visibility.FORCE_ON
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_ENGINE"):FindDescendantByName("UPGRADE_ICON").visibility = Visibility.FORCE_ON
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_SILVER_ENGINE").text = "Silver: " .. tostring(entry:GetCustomProperty("MobilityPurchaseCost"))
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_TP_ENGINE").text = "Tank Parts: " .. tostring(entry:GetCustomProperty("MobilityResearchCost"))	
+	else
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_CONTAINER_ENGINE").visibility = Visibility.FORCE_OFF
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("BUTTON_UPGRADE_ENGINE").isInteractable = false
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_ENGINE"):FindDescendantByName("BUTTONTEXT_LIGHT").text = "UPGRADES MAXED"
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_ENGINE"):FindDescendantByName("UPGRADE_ITEM_NEXTLV").visibility = Visibility.FORCE_OFF
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_ENGINE"):FindDescendantByName("UPGRADE_ICON").visibility = Visibility.FORCE_OFF
+	end
+
 end
 
 function HoverTankUpgradeWindow(button)
+	ButtonHover()
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_1_LVLUP").visibility = Visibility.FORCE_ON
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_4_LVLUP").visibility = Visibility.FORCE_ON
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_5_LVLUP").visibility = Visibility.FORCE_ON
@@ -1569,6 +1634,7 @@ function UnhoverTankUpgradeWindow(button)
 end
 
 function CloseTankUpgradeWindow(button)
+	SFX_CLICK:Play()
 	button:FindAncestorByName("UPGRADE_TANK_CONTAINER").visibility = Visibility.FORCE_OFF
 end
 
@@ -1628,6 +1694,15 @@ function PopulateEquippedTankStats(entry)
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_10_LVLUP").progress = turningSpeed / UTIL_API.GetHighestTurningSpeed()
 end
 
+function EquipTank()
+	SFX_EQUIP_TANK:Play()
+	-- This button is within the upgrade window for the equipped tank, why do we need an equip button here?
+	-- Can the upgrade window be accessed for tanks the player doesn't own?
+
+	--Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", id)
+    --Events.Broadcast("CHANGE_EQUIPPED_TANK", id)
+end
+
 Task.Wait(2)
 Init()
 PopulateSelectedTankPanel()
@@ -1672,6 +1747,16 @@ BUTTON_UPGRADE_TANK.clickedEvent:Connect(OpenTankUpgradeWindow)
 BUTTON_UPGRADE_TANK.hoveredEvent:Connect(HoverTankUpgradeWindow)
 BUTTON_UPGRADE_TANK.unhoveredEvent:Connect(UnhoverTankUpgradeWindow)
 UPGRADE_TANK_CONTAINER:FindDescendantByName("CONFIRM_WINDOW_CLOSE_BUTTON").clickedEvent:Connect(CloseTankUpgradeWindow)
+UPGRADE_TANK_CONTAINER:FindDescendantByName("CONFIRM_WINDOW_CLOSE_BUTTON").hoveredEvent:Connect(ButtonHover)
+UPGRADE_TANK_CONTAINER:FindDescendantByName("BUTTON_EQUIP_TANK").clickedEvent:Connect(EquipTank)
+UPGRADE_TANK_CONTAINER:FindDescendantByName("BUTTON_EQUIP_TANK").hoveredEvent:Connect(ButtonHover)
+UPGRADE_TANK_CONTAINER:FindDescendantByName("BUTTON_UPGRADE_TURRET").clickedEvent:Connect(UpgradeWeapon)
+UPGRADE_TANK_CONTAINER:FindDescendantByName("BUTTON_UPGRADE_TURRET").hoveredEvent:Connect(ButtonHover)
+UPGRADE_TANK_CONTAINER:FindDescendantByName("BUTTON_UPGRADE_SHELL").clickedEvent:Connect(UpgradeArmor)
+UPGRADE_TANK_CONTAINER:FindDescendantByName("BUTTON_UPGRADE_SHELL").hoveredEvent:Connect(ButtonHover)
+UPGRADE_TANK_CONTAINER:FindDescendantByName("BUTTON_UPGRADE_ENGINE").clickedEvent:Connect(UpgradeEngine)
+UPGRADE_TANK_CONTAINER:FindDescendantByName("BUTTON_UPGRADE_ENGINE").hoveredEvent:Connect(ButtonHover)
+
 BUY_TANK_CONTAINER:FindDescendantByName("PURCHASE_TANK_BUTTON").clickedEvent:Connect(PurchaseTank)
 BUY_TANK_CONTAINER:FindDescendantByName("ClosePurchaseTank").clickedEvent:Connect(ClosePurchaseTank)
 BUY_TANK_CONTAINER:FindDescendantByName("ClosePurchaseTank").hoveredEvent:Connect(ButtonHover)
