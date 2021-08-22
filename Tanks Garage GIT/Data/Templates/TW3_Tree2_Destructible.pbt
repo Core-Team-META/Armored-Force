@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 9644438302980116240
         ChildIds: 1925142067496713526
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48,6 +48,7 @@ Assets {
         ChildIds: 18360068530880496783
         ChildIds: 5079568975980226871
         ChildIds: 10352253543463441301
+        ChildIds: 14213423182465492599
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -150,6 +151,12 @@ Assets {
               SubObjectId: 10352253543463441301
             }
           }
+          Overrides {
+            Name: "cs:LeftBehindGroup"
+            ObjectReference {
+              SubObjectId: 14213423182465492599
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -239,7 +246,6 @@ Assets {
           }
         }
         ParentId: 1925142067496713526
-        ChildIds: 7973819089976179777
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -254,12 +260,72 @@ Assets {
         }
       }
       Objects {
+        Id: 10352253543463441301
+        Name: "RemoveGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1925142067496713526
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 14213423182465492599
+        Name: "LeftBehindGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1925142067496713526
+        ChildIds: 7973819089976179777
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
         Id: 7973819089976179777
         Name: "Tree Redwood Big"
         Transform {
           Location {
             X: -3.38476562
-            Y: -4.68847656
+            Y: -4.6875
           }
           Rotation {
           }
@@ -269,7 +335,7 @@ Assets {
             Z: 0.3
           }
         }
-        ParentId: 5079568975980226871
+        ParentId: 14213423182465492599
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Branch:id"
@@ -309,34 +375,6 @@ Assets {
             }
             BoundsScale: 1
           }
-        }
-      }
-      Objects {
-        Id: 10352253543463441301
-        Name: "RemoveGroup"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1925142067496713526
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
         }
       }
     }

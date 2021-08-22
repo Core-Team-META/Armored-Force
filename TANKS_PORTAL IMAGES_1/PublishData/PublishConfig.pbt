@@ -1,7 +1,7 @@
 GameId: "80e9b43850514820a40d83c56746548e"
 ClientVersion: "1.55163.1159-dev-d"
 Name: "TANKS_PORTAL IMAGES_1"
-Description: "Armored Force: Portal Images\r\n\r\nloading, grid_allies, grid_axis, skins_unique, skins_global"
+Description: "Armored Force: Portal Images\r\n\r\nloading, grid_allies1, grid_allies2, grid_axis1, grid_axis2"
 MaxPlayers: 8
 Tags: "Experimental"
 ScreenshotPaths: "C:\\ProgramData\\Manticore Games\\Core_Dev\\Platform\\Saved\\Maps\\Tank-Wars\\TANKS_PORTAL IMAGES_1\\Screenshots\\1loading.jpg"

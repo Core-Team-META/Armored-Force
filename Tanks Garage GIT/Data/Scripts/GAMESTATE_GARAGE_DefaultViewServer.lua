@@ -3,6 +3,7 @@ local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionCo
 local map = {"Map1", "Map2", "Map3"}
 local consumableCost = {}
 local mapInRotation = "Map1"
+local forcedSelection = false
 
 consumableCost["TreadsRepair"] = 100
 consumableCost["Extinguisher"] = 100
@@ -12,6 +13,19 @@ function SendToMap(player, selectedMap)
 	print("Transferring " .. player.name .. " to " .. mapInRotation)
 	player:TransferToScene(tostring(mapInRotation))
 	Events.Broadcast("PLAYER_DEPLOYED", player)
+end
+
+function ForceSelectedMap(newSelectedMap)
+
+	if (newSelectedMap == 0) or (newSelectedMap > 3) then
+		forcedSelection = false
+		return
+	end
+
+	forcedSelection = true	
+	mapInRotation = map[newSelectedMap]
+	print("Forced Map: " .. mapInRotation)
+
 end
 
 function PurchaseConsumable(player, consumable)
@@ -51,7 +65,7 @@ function PurchaseConsumable(player, consumable)
 	if cost <= currentPlayerSilver and currentCount < maxCount then
 		player:AddResource(resourceOfConsumable, 1)
 		player:RemoveResource(CONSTANTS_API.SILVER, cost)
-	end	
+	end
 end
 
 function SetAutoPurchase(player, consumable)
@@ -107,11 +121,13 @@ end
 
 function Tick()
 	
-	mapInRotation = tostring(map[math.random(3)])
-	
-	print("Map in rotation: " .. mapInRotation)
-	
-	Task.Wait(60)
+	if not forcedSelection then
+		mapInRotation = tostring(map[math.random(3)])
+		
+		print("Map in rotation: " .. mapInRotation)
+		
+		Task.Wait(60)
+	end
 	
 end
 	
@@ -121,3 +137,4 @@ Events.ConnectForPlayer("SEND_TO_MAP", SendToMap)
 Events.ConnectForPlayer("SET_AUTO_CONSUME", SetAutoPurchase)
 Events.ConnectForPlayer("PURCHASE_CONSUME", PurchaseConsumable)
 Events.Connect("SET_DAILY_CHALLENGES", AutoPurchaseConsumables)
+Events.Connect("FORCE_SELECTED_MAP", ForceSelectedMap)

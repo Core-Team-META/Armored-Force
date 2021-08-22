@@ -10,9 +10,9 @@ Assets {
         Name: "TW2_Tree_Destructible"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.814804614
+            Y: 0.814804614
+            Z: 0.814804614
           }
         }
         ParentId: 15016328222128833720
@@ -48,6 +48,7 @@ Assets {
         ChildIds: 17624579909058680973
         ChildIds: 1105185900021691814
         ChildIds: 4890009571224272415
+        ChildIds: 8588453120412136328
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -152,6 +153,12 @@ Assets {
               SubObjectId: 4890009571224272415
             }
           }
+          Overrides {
+            Name: "cs:LeftBehindGroup"
+            ObjectReference {
+              SubObjectId: 8588453120412136328
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -244,7 +251,6 @@ Assets {
           }
         }
         ParentId: 6862021172189687237
-        ChildIds: 17646975980077246468
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -259,14 +265,73 @@ Assets {
         }
       }
       Objects {
+        Id: 4890009571224272415
+        Name: "RemoveGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6862021172189687237
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 8588453120412136328
+        Name: "LeftBehindGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6862021172189687237
+        ChildIds: 17646975980077246468
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
         Id: 17646975980077246468
         Name: "CollisionMesh"
         Transform {
           Location {
-            X: 1.1920929e-06
           }
           Rotation {
-            Pitch: -3.34628296
+            Pitch: -3.34627342
           }
           Scale {
             X: 1.03931296
@@ -274,8 +339,13 @@ Assets {
             Z: 1.03931296
           }
         }
-        ParentId: 1105185900021691814
-        ChildIds: 5967939386554069011
+        ParentId: 8588453120412136328
+        ChildIds: 698385854901578795
+        ChildIds: 15135339832297366521
+        ChildIds: 1801850722443066921
+        ChildIds: 16569358857545351998
+        ChildIds: 15637054833868280746
+        ChildIds: 1243868219246420992
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -302,64 +372,26 @@ Assets {
         }
       }
       Objects {
-        Id: 5967939386554069011
-        Name: "MergedModel"
-        Transform {
-          Location {
-            X: -12.0965424
-            Y: 1.51392782
-            Z: 5.27816868
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 17646975980077246468
-        ChildIds: 698385854901578795
-        ChildIds: 15135339832297366521
-        ChildIds: 1801850722443066921
-        ChildIds: 16569358857545351998
-        ChildIds: 15637054833868280746
-        ChildIds: 1243868219246420992
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          Model {
-          }
-        }
-      }
-      Objects {
         Id: 698385854901578795
         Name: "Bush 02"
         Transform {
           Location {
-            X: 5.47658443
-            Y: -57.9822617
-            Z: 416.789612
+            X: -6.6196928
+            Y: -56.4681892
+            Z: 422.06781
           }
           Rotation {
-            Pitch: -20.8476486
-            Yaw: 2.95153761
-            Roll: -32.1221466
+            Pitch: -20.8476562
+            Yaw: 2.95153117
+            Roll: -32.1221695
           }
           Scale {
-            X: 0.964972854
-            Y: 0.964972854
-            Z: 0.964972854
+            X: 0.964972794
+            Y: 0.964972794
+            Z: 0.964972794
           }
         }
-        ParentId: 5967939386554069011
+        ParentId: 17646975980077246468
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -406,22 +438,22 @@ Assets {
         Name: "Bush 02"
         Transform {
           Location {
-            X: 5.47658443
-            Y: -12.5439682
-            Z: 416.789612
+            X: -6.62141371
+            Y: -11.0304012
+            Z: 422.067444
           }
           Rotation {
-            Pitch: 28.8264561
-            Yaw: -56.0354462
-            Roll: -32.7819061
+            Pitch: 28.8264637
+            Yaw: -56.0354424
+            Roll: -32.7819366
           }
           Scale {
-            X: 0.964972854
-            Y: 0.964972854
-            Z: 0.964972854
+            X: 0.964972794
+            Y: 0.964972794
+            Z: 0.964972794
           }
         }
-        ParentId: 5967939386554069011
+        ParentId: 17646975980077246468
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -468,14 +500,14 @@ Assets {
         Name: "Bush 02"
         Transform {
           Location {
-            X: -38.0524101
-            Y: 19.2566357
-            Z: 577.959045
+            X: -50.1491585
+            Y: 20.7706089
+            Z: 583.237244
           }
           Rotation {
             Pitch: 0.520105243
-            Yaw: -110.925941
-            Roll: 2.27086759
+            Yaw: -110.925919
+            Roll: 2.27086711
           }
           Scale {
             X: 0.964972615
@@ -483,7 +515,7 @@ Assets {
             Z: 0.964972258
           }
         }
-        ParentId: 5967939386554069011
+        ParentId: 17646975980077246468
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -530,22 +562,22 @@ Assets {
         Name: "Bush 02"
         Transform {
           Location {
-            X: -13.49716
-            Y: 45.1357346
-            Z: 449.733398
+            X: -25.5944462
+            Y: 46.6495399
+            Z: 455.011414
           }
           Rotation {
             Pitch: 45.984375
-            Yaw: -43.0076942
-            Roll: 31.2850075
+            Yaw: -43.0077095
+            Roll: 31.2850208
           }
           Scale {
-            X: 0.964972854
-            Y: 0.964972854
-            Z: 0.964972854
+            X: 0.964972794
+            Y: 0.964972794
+            Z: 0.964972794
           }
         }
-        ParentId: 5967939386554069011
+        ParentId: 17646975980077246468
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -592,12 +624,14 @@ Assets {
         Name: "Tree Birch Bare 01"
         Transform {
           Location {
-            X: 20.2985191
-            Y: 5.50619125
-            Z: 2.78788411e-05
+            X: 8.20216
+            Y: 7.02021933
+            Z: 5.27824116
           }
           Rotation {
             Pitch: 3.34627342
+            Yaw: 3.42180965e-06
+            Roll: 1.80026674e-07
           }
           Scale {
             X: 0.692219
@@ -605,7 +639,7 @@ Assets {
             Z: 0.692219
           }
         }
-        ParentId: 5967939386554069011
+        ParentId: 17646975980077246468
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Trunk:id"
@@ -661,22 +695,22 @@ Assets {
         Name: "Tree Birch Bare 01"
         Transform {
           Location {
-            X: 20.2985191
-            Y: 0.622030497
-            Z: 2.78788411e-05
+            X: 8.20023
+            Y: 2.13549471
+            Z: 5.27786
           }
           Rotation {
             Pitch: 0.252710164
-            Yaw: -85.6716537
-            Roll: -3.33679247
+            Yaw: -85.671669
+            Roll: -3.33679295
           }
           Scale {
-            X: 0.490383416
+            X: 0.490383387
             Y: 0.490382791
-            Z: 0.485167533
+            Z: 0.485167503
           }
         }
-        ParentId: 5967939386554069011
+        ParentId: 17646975980077246468
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Trunk:id"
@@ -725,34 +759,6 @@ Assets {
             }
             BoundsScale: 1
           }
-        }
-      }
-      Objects {
-        Id: 4890009571224272415
-        Name: "RemoveGroup"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 6862021172189687237
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
         }
       }
     }

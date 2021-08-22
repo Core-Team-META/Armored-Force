@@ -176,6 +176,7 @@ Assets {
         }
         Folder {
           Model {
+            AggressiveMerge: true
           }
         }
       }
@@ -2885,16 +2886,16 @@ Assets {
         Name: "Hill 02"
         Transform {
           Location {
-            X: 6.5507679
-            Y: 1.50389278
+            X: 14.0468616
+            Y: 1.12498653
             Z: 112.635231
           }
           Rotation {
             Yaw: 0.39700079
           }
           Scale {
-            X: 2.28658652
-            Y: 1.16207385
+            X: 2.40041733
+            Y: 1.1621052
             Z: 0.5
           }
         }
