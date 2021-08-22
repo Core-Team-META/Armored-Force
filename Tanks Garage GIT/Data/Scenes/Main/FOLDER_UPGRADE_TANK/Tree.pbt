@@ -15150,7 +15150,7 @@ Objects {
 }
 Objects {
   Id: 9291307046184589980
-  Name: "UPGRADE_BUTTON_CONTAINER"
+  Name: "UPGRADE_BUTTON_CONTAINER_ENGINE"
   Transform {
     Location {
       X: -0.000122070312
@@ -15438,7 +15438,7 @@ Objects {
 }
 Objects {
   Id: 8818470423473118277
-  Name: "BUTTON_UPGRADE_TANK"
+  Name: "BUTTON_UPGRADE_ENGINE"
   Transform {
     Location {
     }
@@ -15482,27 +15482,27 @@ Objects {
       }
       FontSize: 20
       ButtonColor {
-        R: 0.0127019985
-        G: 0.0163717363
-        B: 0.029
+        R: 0.0813302
+        G: 0.168269426
+        A: 1
       }
       HoveredColor {
-        R: 0.00613199873
-        G: 0.00790359452
-        B: 0.014
+        R: 0.0381833166
+        G: 0.079
+        A: 1
       }
       PressedColor {
-        R: 0.0127019985
-        G: 0.0163717363
-        B: 0.029
+        R: 0.0813302
+        G: 0.168269426
+        A: 1
       }
       DisabledColor {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0183666591
+        G: 0.0380000025
+        A: 1
       }
       Brush {
-        Id: 841534158063459245
+        Id: 7515015531196152948
       }
       IsButtonEnabled: true
       ClickMode {
@@ -15521,6 +15521,8 @@ Objects {
         A: 1
       }
       ShadowOffset {
+        X: 1
+        Y: 2
       }
     }
     AnchorLayout {
@@ -16880,7 +16882,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17389,7 +17391,7 @@ Objects {
 }
 Objects {
   Id: 10468661732019422550
-  Name: "COSTS_CONTAINER"
+  Name: "COSTS_CONTAINER_ENGINE"
   Transform {
     Location {
     }
@@ -17487,7 +17489,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "This upgrade does something and has an effect on something."
+      Label: "Increase your tank\'s speed, acceleration and turning speed."
       Color {
         R: 0.426000029
         G: 0.426000029
@@ -17566,7 +17568,7 @@ Objects {
       }
     }
     Text {
-      Label: "1450 Universal Parts are used"
+      Label: "0 Universal Parts are used"
       Color {
         R: 0.54572469
         G: 0.775822461
@@ -17677,7 +17679,7 @@ Objects {
 }
 Objects {
   Id: 10727096306289588779
-  Name: "COSTS_TP"
+  Name: "COSTS_TP_ENGINE"
   Transform {
     Location {
     }
@@ -17825,7 +17827,7 @@ Objects {
 }
 Objects {
   Id: 7948564927175794437
-  Name: "COSTS_SILVER"
+  Name: "COSTS_SILVER_ENGINE"
   Transform {
     Location {
     }
@@ -19731,7 +19733,7 @@ Objects {
 }
 Objects {
   Id: 5860478155822323615
-  Name: "UPGRADE_BUTTON_CONTAINER"
+  Name: "UPGRADE_BUTTON_CONTAINER_ARMOR"
   Transform {
     Location {
       X: -0.000122070312
@@ -20019,7 +20021,7 @@ Objects {
 }
 Objects {
   Id: 10559570535098266573
-  Name: "BUTTON_UPGRADE_TANK"
+  Name: "BUTTON_UPGRADE_SHELL"
   Transform {
     Location {
     }
@@ -20063,27 +20065,27 @@ Objects {
       }
       FontSize: 20
       ButtonColor {
-        R: 0.0127019985
-        G: 0.0163717363
-        B: 0.029
+        R: 0.0813302
+        G: 0.168269426
+        A: 1
       }
       HoveredColor {
-        R: 0.00613199873
-        G: 0.00790359452
-        B: 0.014
+        R: 0.0381833166
+        G: 0.079
+        A: 1
       }
       PressedColor {
-        R: 0.0127019985
-        G: 0.0163717363
-        B: 0.029
+        R: 0.0813302
+        G: 0.168269426
+        A: 1
       }
       DisabledColor {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0183666591
+        G: 0.0380000025
+        A: 1
       }
       Brush {
-        Id: 841534158063459245
+        Id: 7515015531196152948
       }
       IsButtonEnabled: true
       ClickMode {
@@ -20102,6 +20104,8 @@ Objects {
         A: 1
       }
       ShadowOffset {
+        X: 1
+        Y: 2
       }
     }
     AnchorLayout {
@@ -21461,7 +21465,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21970,7 +21974,7 @@ Objects {
 }
 Objects {
   Id: 6860605894176663598
-  Name: "COSTS_CONTAINER"
+  Name: "COSTS_CONTAINER_ARMOR"
   Transform {
     Location {
     }
@@ -22068,7 +22072,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "This upgrade does something and has an effect on something."
+      Label: "Increase your tank\'s hit points."
       Color {
         R: 0.426000029
         G: 0.426000029
@@ -22147,7 +22151,7 @@ Objects {
       }
     }
     Text {
-      Label: "1450 Universal Parts are used"
+      Label: "0 Universal Parts are used"
       Color {
         R: 0.54572469
         G: 0.775822461
@@ -22258,7 +22262,7 @@ Objects {
 }
 Objects {
   Id: 2314309366683174382
-  Name: "COSTS_TP"
+  Name: "COSTS_TP_ARMOR"
   Transform {
     Location {
     }
@@ -22406,7 +22410,7 @@ Objects {
 }
 Objects {
   Id: 1855087198178587237
-  Name: "COSTS_SILVER"
+  Name: "COSTS_SILVER_ARMOR"
   Transform {
     Location {
     }
@@ -24389,7 +24393,7 @@ Objects {
 }
 Objects {
   Id: 6075205794974114879
-  Name: "UPGRADE_BUTTON_CONTAINER"
+  Name: "UPGRADE_BUTTON_CONTAINER_WEAPON"
   Transform {
     Location {
       X: -0.000122070312
@@ -24701,7 +24705,7 @@ Objects {
 }
 Objects {
   Id: 17632352894085187608
-  Name: "BUTTON_UPGRADE_TANK"
+  Name: "BUTTON_UPGRADE_TURRET"
   Transform {
     Location {
     }
@@ -24745,27 +24749,27 @@ Objects {
       }
       FontSize: 20
       ButtonColor {
-        R: 0.0127019985
-        G: 0.0163717363
-        B: 0.029
+        R: 0.0813302
+        G: 0.168269426
+        A: 1
       }
       HoveredColor {
-        R: 0.00613199873
-        G: 0.00790359452
-        B: 0.014
+        R: 0.0381833166
+        G: 0.079
+        A: 1
       }
       PressedColor {
-        R: 0.0127019985
-        G: 0.0163717363
-        B: 0.029
+        R: 0.0813302
+        G: 0.168269426
+        A: 1
       }
       DisabledColor {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0183666591
+        G: 0.0380000025
+        A: 1
       }
       Brush {
-        Id: 841534158063459245
+        Id: 7515015531196152948
       }
       IsButtonEnabled: true
       ClickMode {
@@ -24784,6 +24788,8 @@ Objects {
         A: 1
       }
       ShadowOffset {
+        X: 1
+        Y: 2
       }
     }
     AnchorLayout {
@@ -26281,7 +26287,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26844,7 +26850,7 @@ Objects {
 }
 Objects {
   Id: 2209299568067694328
-  Name: "COSTS_CONTAINER"
+  Name: "COSTS_CONTAINER_WEAPON"
   Transform {
     Location {
     }
@@ -26948,7 +26954,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "This upgrade does something and has an effect on something."
+      Label: "Increase your tank\'s damage, reload speed, and turret speed."
       Color {
         R: 0.426000029
         G: 0.426000029
@@ -27033,7 +27039,7 @@ Objects {
       }
     }
     Text {
-      Label: "1450 Universal Parts are used"
+      Label: "0 Universal Parts are used"
       Color {
         R: 0.54572469
         G: 0.775822461
@@ -27156,7 +27162,7 @@ Objects {
 }
 Objects {
   Id: 9156785470982055767
-  Name: "COSTS_TP"
+  Name: "COSTS_TP_WEAPON"
   Transform {
     Location {
     }
@@ -27316,7 +27322,7 @@ Objects {
 }
 Objects {
   Id: 10030191171881096605
-  Name: "COSTS_SILVER"
+  Name: "COSTS_SILVER_WEAPON"
   Transform {
     Location {
     }
@@ -28642,27 +28648,27 @@ Objects {
       }
       FontSize: 20
       ButtonColor {
-        R: 0.0127019985
-        G: 0.0163717363
-        B: 0.029
+        R: 0.0813302
+        G: 0.168269426
+        A: 1
       }
       HoveredColor {
-        R: 0.00613199873
-        G: 0.00790359452
-        B: 0.014
+        R: 0.03576665
+        G: 0.074
+        A: 1
       }
       PressedColor {
-        R: 0.0127019985
-        G: 0.0163717363
-        B: 0.029
+        R: 0.0813302
+        G: 0.168269426
+        A: 1
       }
       DisabledColor {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0057999976
+        G: 0.012
+        A: 1
       }
       Brush {
-        Id: 841534158063459245
+        Id: 7515015531196152948
       }
       IsButtonEnabled: true
       ClickMode {
@@ -28681,6 +28687,8 @@ Objects {
         A: 1
       }
       ShadowOffset {
+        X: 1
+        Y: 2
       }
     }
     AnchorLayout {
@@ -30040,7 +30048,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
