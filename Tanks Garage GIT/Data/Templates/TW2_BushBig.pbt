@@ -10,9 +10,9 @@ Assets {
         Name: "TW2_BushBig"
         Transform {
           Scale {
-            X: 1.49999988
-            Y: 1.49999988
-            Z: 1.49999988
+            X: 1.87582481
+            Y: 1.87582481
+            Z: 1.87582481
           }
         }
         ParentId: 4742637420062156135
@@ -61,6 +61,7 @@ Assets {
         }
         Folder {
           Model {
+            AggressiveMerge: true
           }
         }
       }

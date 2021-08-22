@@ -16580,13 +16580,6 @@ Objects {
   Id: 12438250631354704386
   Name: "TW3_Tree2_Destructible"
   Transform {
-    Location {
-      X: 23473.2148
-      Y: -23999.8281
-      Z: 12.7228088
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -16594,8 +16587,11 @@ Objects {
     }
   }
   ParentId: 9644438302980116240
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
@@ -16616,14 +16612,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }

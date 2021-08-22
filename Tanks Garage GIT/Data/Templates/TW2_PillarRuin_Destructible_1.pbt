@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 5274114996052781512
         ChildIds: 17131506630168657942
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48,6 +48,7 @@ Assets {
         ChildIds: 5803896215911649030
         ChildIds: 1019898012727887901
         ChildIds: 3347555933462192950
+        ChildIds: 17007155637518125460
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -152,6 +153,12 @@ Assets {
               SubObjectId: 3347555933462192950
             }
           }
+          Overrides {
+            Name: "cs:LeftBehindGroup"
+            ObjectReference {
+              SubObjectId: 17007155637518125460
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -245,7 +252,6 @@ Assets {
           }
         }
         ParentId: 17131506630168657942
-        ChildIds: 767901316928969003
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -257,61 +263,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 767901316928969003
-        Name: "Urban Damaged Concrete Chunk 03"
-        Transform {
-          Location {
-            X: -48.3371544
-            Y: -23.4882965
-            Z: 113.580719
-          }
-          Rotation {
-            Pitch: -65.7315674
-            Roll: -90
-          }
-          Scale {
-            X: 0.6
-            Y: 0.6
-            Z: 0.966376603
-          }
-        }
-        ParentId: 1019898012727887901
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 11471689524597693722
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5483772166785938526
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
         }
       }
       Objects {
@@ -362,7 +313,7 @@ Assets {
         ParentId: 3347555933462192950
         ChildIds: 12448749586522822157
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -372,6 +323,7 @@ Assets {
         }
         Folder {
           Model {
+            AggressiveMerge: true
           }
         }
       }
@@ -428,14 +380,93 @@ Assets {
           }
         }
       }
-    }
-    Assets {
-      Id: 5483772166785938526
-      Name: "Urban Damaged Concrete Chunk 03"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_ts_urb_dest_concrete_chunk_003_ref"
+      Objects {
+        Id: 17007155637518125460
+        Name: "LeftBehindGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17131506630168657942
+        ChildIds: 767901316928969003
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 767901316928969003
+        Name: "Urban Damaged Concrete Chunk 03"
+        Transform {
+          Location {
+            X: -48.3371391
+            Y: -23.4883232
+            Z: 113.580719
+          }
+          Rotation {
+            Pitch: -65.7315369
+            Yaw: -4.15449176e-06
+            Roll: -89.9999695
+          }
+          Scale {
+            X: 0.6
+            Y: 0.6
+            Z: 0.966376603
+          }
+        }
+        ParentId: 17007155637518125460
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5483772166785938526
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
       }
     }
     Assets {
@@ -445,6 +476,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_ts_urb_dest_concrete_pillar_bottom_002_ref"
+      }
+    }
+    Assets {
+      Id: 5483772166785938526
+      Name: "Urban Damaged Concrete Chunk 03"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_ts_urb_dest_concrete_chunk_003_ref"
       }
     }
     PrimaryAssetId {

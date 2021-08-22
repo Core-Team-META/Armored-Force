@@ -359,6 +359,38 @@ Assets {
           }
         }
         ParentId: 2700043845878209264
+        ChildIds: 1061085467781120335
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 1061085467781120335
+        Name: "MergedModel"
+        Transform {
+          Location {
+            X: -24.3011169
+            Y: 0.415058583
+            Z: 53.0101318
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3439175302792502438
         ChildIds: 1470946209723821953
         ChildIds: 11986820769423317189
         ChildIds: 16801250848903476356
@@ -385,7 +417,7 @@ Assets {
         ChildIds: 4895313006938304951
         ChildIds: 4719809528253079337
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -393,8 +425,13 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         Folder {
-          IsGroup: true
+          Model {
+            AggressiveMerge: true
+          }
         }
       }
       Objects {
@@ -402,9 +439,9 @@ Assets {
         Name: "Decal Hay Patch 02"
         Transform {
           Location {
-            X: -46.421875
-            Y: 10.3554688
-            Z: 60.8261108
+            X: -22.1208496
+            Y: 9.93945312
+            Z: 7.815979
           }
           Rotation {
           }
@@ -414,7 +451,7 @@ Assets {
             Z: 1.19661844
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "bp:color"
@@ -453,9 +490,9 @@ Assets {
         Name: "Cylinder - 2-Toned"
         Transform {
           Location {
-            X: -28.4621582
-            Y: 4.8972168
-            Z: 84.8528442
+            X: -4.16113281
+            Y: 4.48144531
+            Z: 31.8427124
           }
           Rotation {
             Roll: -89.9999542
@@ -466,7 +503,7 @@ Assets {
             Z: 2.42634892
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -514,14 +551,14 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: 23.2247314
-            Y: -106.712891
-            Z: 143.541199
+            X: 47.5257568
+            Y: -107.128906
+            Z: 90.5310669
           }
           Rotation {
             Pitch: 31.0121441
-            Yaw: 34.743557
-            Roll: -54.7409744
+            Yaw: 34.7435684
+            Roll: -54.7409706
           }
           Scale {
             X: 0.407585621
@@ -529,7 +566,7 @@ Assets {
             Z: 0.914968491
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -567,14 +604,14 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: -79.0018311
-            Y: -100.656494
-            Z: 139.424255
+            X: -54.7006836
+            Y: -101.072266
+            Z: 86.4141235
           }
           Rotation {
             Pitch: -28.0883522
-            Yaw: -24.2742977
-            Roll: -64.3717117
+            Yaw: -24.2742767
+            Roll: -64.3717194
           }
           Scale {
             X: 0.407585621
@@ -582,7 +619,7 @@ Assets {
             Z: 0.914968491
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -620,12 +657,11 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: -27.5616455
-            Y: -96.4956055
-            Z: 53.0101318
+            X: -3.26062
+            Y: -96.9116211
           }
           Rotation {
-            Pitch: -37.7091675
+            Pitch: -37.7091599
             Roll: -89.999939
           }
           Scale {
@@ -634,7 +670,7 @@ Assets {
             Z: 1.26948762
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -672,14 +708,14 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: -110.388916
-            Y: -92.3071289
-            Z: 133.546692
+            X: -86.0878906
+            Y: -92.7231445
+            Z: 80.5365601
           }
           Rotation {
             Pitch: -28.0883522
-            Yaw: -79.5624084
-            Roll: -64.3723145
+            Yaw: -79.5623779
+            Roll: -64.3723297
           }
           Scale {
             X: 0.407585621
@@ -687,7 +723,7 @@ Assets {
             Z: 0.914968491
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -726,14 +762,14 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: 36.12854
-            Y: -97.7631836
-            Z: 152.981384
+            X: 60.4295654
+            Y: -98.1792
+            Z: 99.9712524
           }
           Rotation {
-            Pitch: 22.2896309
-            Yaw: 80.7711411
-            Roll: -49.1431046
+            Pitch: 22.2896252
+            Yaw: 80.7711182
+            Roll: -49.1431
           }
           Scale {
             X: 0.407585621
@@ -741,7 +777,7 @@ Assets {
             Z: 0.914968491
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -780,9 +816,9 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -28.4621582
-            Y: -117.315186
-            Z: 84.8528442
+            X: -4.16113281
+            Y: -117.731445
+            Z: 31.8427124
           }
           Rotation {
             Roll: -89.9999542
@@ -793,7 +829,7 @@ Assets {
             Z: 2.01146078
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -844,9 +880,9 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -28.4621582
-            Y: -117.315186
-            Z: 84.8528442
+            X: -4.16113281
+            Y: -117.731445
+            Z: 31.8427124
           }
           Rotation {
             Roll: -89.9999542
@@ -857,7 +893,7 @@ Assets {
             Z: 1.54372871
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -908,9 +944,9 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -28.4621582
-            Y: -117.315186
-            Z: 84.8528442
+            X: -4.16113281
+            Y: -117.731445
+            Z: 31.8427124
           }
           Rotation {
             Roll: -89.9999542
@@ -921,7 +957,7 @@ Assets {
             Z: 1.12491071
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -972,9 +1008,9 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -28.4621582
-            Y: -117.315186
-            Z: 84.8528442
+            X: -4.16113281
+            Y: -117.731445
+            Z: 31.8427124
           }
           Rotation {
             Roll: -89.9999542
@@ -985,7 +1021,7 @@ Assets {
             Z: 0.60165894
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1036,9 +1072,9 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -28.4621582
-            Y: -117.315186
-            Z: 84.8528442
+            X: -4.16113281
+            Y: -117.731445
+            Z: 31.8427124
           }
           Rotation {
             Roll: -89.9999542
@@ -1049,7 +1085,7 @@ Assets {
             Z: 0.342786312
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1100,9 +1136,9 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -28.4621582
-            Y: -117.315186
-            Z: 84.8528442
+            X: -4.16113281
+            Y: -117.731445
+            Z: 31.8427124
           }
           Rotation {
             Roll: -89.9999542
@@ -1113,7 +1149,7 @@ Assets {
             Z: 2.38567758
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1164,12 +1200,12 @@ Assets {
         Name: "Ring"
         Transform {
           Location {
-            X: -28.4621582
-            Y: -111.009033
-            Z: 84.8528442
+            X: -4.16113281
+            Y: -111.424805
+            Z: 31.8427124
           }
           Rotation {
-            Roll: -89.9999619
+            Roll: -89.9999542
           }
           Scale {
             X: 2.4581728
@@ -1177,7 +1213,7 @@ Assets {
             Z: 2.54019332
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1219,14 +1255,14 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: 49.6046143
-            Y: 116.347412
-            Z: 80.2231445
+            X: 73.9056396
+            Y: 115.931641
+            Z: 27.2130127
           }
           Rotation {
             Pitch: -13.7746058
-            Yaw: -30.1923542
-            Roll: 82.2918396
+            Yaw: -30.1923618
+            Roll: 82.2918243
           }
           Scale {
             X: 0.407585621
@@ -1234,7 +1270,7 @@ Assets {
             Z: 0.914968491
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -1273,14 +1309,14 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: -16.5444336
-            Y: 110.291016
-            Z: 158.27124
+            X: 7.7565918
+            Y: 109.875
+            Z: 105.261108
           }
           Rotation {
             Pitch: -67.4671936
-            Yaw: 71.163147
-            Roll: 6.63083458
+            Yaw: 71.1631622
+            Roll: 6.63082695
           }
           Scale {
             X: 0.407585621
@@ -1288,7 +1324,7 @@ Assets {
             Z: 0.914968491
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -1327,14 +1363,14 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: -62.5919189
-            Y: 106.283203
-            Z: 55.96875
+            X: -38.2908936
+            Y: 105.867188
+            Z: 2.95861816
           }
           Rotation {
-            Pitch: -89.7287598
-            Yaw: 0.0061641112
-            Roll: 89.9905701
+            Pitch: -89.7280273
+            Yaw: 0.00613190234
+            Roll: 89.9906235
           }
           Scale {
             X: 0.672119737
@@ -1342,7 +1378,7 @@ Assets {
             Z: 1.26948762
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -1380,9 +1416,9 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: -40.4912109
-            Y: 101.94165
-            Z: 179.395874
+            X: -16.1901855
+            Y: 101.525391
+            Z: 126.385742
           }
           Rotation {
             Pitch: -24.563839
@@ -1395,7 +1431,7 @@ Assets {
             Z: 0.914968491
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -1434,13 +1470,13 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: 64.9862061
-            Y: 107.397705
-            Z: 75.8604736
+            X: 89.2872314
+            Y: 106.981445
+            Z: 22.8503418
           }
           Rotation {
-            Pitch: 6.68535471
-            Yaw: -66.8609772
+            Pitch: 6.68534088
+            Yaw: -66.861
             Roll: 100.714821
           }
           Scale {
@@ -1449,7 +1485,7 @@ Assets {
             Z: 0.914968491
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -1488,14 +1524,14 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -28.4621582
-            Y: 126.949707
-            Z: 84.8528442
+            X: -4.16113281
+            Y: 126.533691
+            Z: 31.8427124
           }
           Rotation {
-            Pitch: -52.0234489
-            Yaw: 4.43995341e-05
-            Roll: 89.9998779
+            Pitch: -52.0234375
+            Yaw: 3.88495828e-05
+            Roll: 89.9998703
           }
           Scale {
             X: 2.01146078
@@ -1503,7 +1539,7 @@ Assets {
             Z: 2.01146078
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1554,14 +1590,14 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -28.4621582
-            Y: 126.949707
-            Z: 84.8528442
+            X: -4.16113281
+            Y: 126.533691
+            Z: 31.8427124
           }
           Rotation {
-            Pitch: -52.0234451
-            Yaw: 1.38748519e-05
-            Roll: 89.9999619
+            Pitch: -52.0234375
+            Yaw: 2.49747281e-05
+            Roll: 89.9999466
           }
           Scale {
             X: 1.54372871
@@ -1569,7 +1605,7 @@ Assets {
             Z: 1.54372871
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1620,14 +1656,14 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -28.4621582
-            Y: 126.949707
-            Z: 84.8528442
+            X: -4.16113281
+            Y: 126.533691
+            Z: 31.8427124
           }
           Rotation {
-            Pitch: -52.0234261
-            Yaw: 6.10493298e-05
-            Roll: 89.9998398
+            Pitch: -52.0234184
+            Yaw: 5.82743414e-05
+            Roll: 89.9998322
           }
           Scale {
             X: 1.12491071
@@ -1635,7 +1671,7 @@ Assets {
             Z: 1.12491071
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1686,14 +1722,14 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -28.4621582
-            Y: 126.949707
-            Z: 84.8528442
+            X: -4.16113281
+            Y: 126.533691
+            Z: 31.8427124
           }
           Rotation {
-            Pitch: -52.0234489
-            Yaw: 1.9424795e-05
-            Roll: 89.9998932
+            Pitch: -52.0234375
+            Yaw: 2.21997598e-05
+            Roll: 89.9998856
           }
           Scale {
             X: 0.60165894
@@ -1701,7 +1737,7 @@ Assets {
             Z: 0.60165894
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1752,13 +1788,13 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -28.4621582
-            Y: 126.949707
-            Z: 84.8528442
+            X: -4.16113281
+            Y: 126.533691
+            Z: 31.8427124
           }
           Rotation {
-            Pitch: -52.0234604
-            Yaw: 3.60746271e-05
+            Pitch: -52.0234528
+            Yaw: 2.21997707e-05
             Roll: 89.9998627
           }
           Scale {
@@ -1767,7 +1803,7 @@ Assets {
             Z: 0.342786312
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1818,9 +1854,9 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -28.4621582
-            Y: 126.949707
-            Z: 84.8528442
+            X: -4.16113281
+            Y: 126.533691
+            Z: 31.8427124
           }
           Rotation {
             Pitch: -52.0234375
@@ -1833,7 +1869,7 @@ Assets {
             Z: 2.38567758
           }
         }
-        ParentId: 3439175302792502438
+        ParentId: 1061085467781120335
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"

@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18019640114680262056
+  Name: "Plane Triangle - One Sided Isosceles"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_triangle_001"
+  }
+}
+Assets {
   Id: 17952688118125628785
   Name: "Teardrop - Truncated"
   PlatformAssetType: 1
@@ -557,6 +566,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14272986521887390608
+  Name: "Decal Road Sign Symbols"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_roadsigns_001"
+  }
+}
+Assets {
   Id: 14237220486008111868
   Name: "Knife - Blade"
   PlatformAssetType: 1
@@ -608,6 +626,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_urb_pipes_acc_coupling_003_ref"
+  }
+}
+Assets {
+  Id: 14132070054306684653
+  Name: "Plastic Shiny"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_shiny_001"
   }
 }
 Assets {
@@ -1355,6 +1382,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_curve90_002"
+  }
+}
+Assets {
+  Id: 8088145951334388726
+  Name: "Play"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "PlayRegular_ref"
   }
 }
 Assets {

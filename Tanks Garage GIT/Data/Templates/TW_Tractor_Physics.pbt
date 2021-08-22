@@ -7,7 +7,7 @@ Assets {
       RootId: 14677615086597668861
       Objects {
         Id: 14677615086597668861
-        Name: "TW_Tractor_Physics"
+        Name: "TW_Tractor"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 12519407438649583853
         ChildIds: 11668310442206713913
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -77,6 +77,9 @@ Assets {
           }
         }
         ParentId: 11668310442206713913
+        ChildIds: 6215933636884503449
+        ChildIds: 16932885136237794602
+        ChildIds: 13964582090625545091
         ChildIds: 18221731298447889504
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
@@ -102,6 +105,285 @@ Assets {
               OverrideMass: true
               Mass: 5000
               LinearDamping: 1
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 6215933636884503449
+        Name: "Scifi Ship Engine 02"
+        Transform {
+          Location {
+            X: -11.1643209
+            Y: 25.2824726
+            Z: 471.783508
+          }
+          Rotation {
+            Pitch: 88.7391586
+            Yaw: 7.76012239e-05
+            Roll: 90
+          }
+          Scale {
+            X: 0.70770812
+            Y: 1.06313312
+            Z: 0.558414638
+          }
+        }
+        ParentId: 2439203002483815857
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.646
+              G: 0.240162209
+              B: 0.0510339625
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              R: 0.646
+              G: 0.240162209
+              B: 0.0510339625
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:vtile"
+            Float: 3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceon"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 10873936651371038590
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 16932885136237794602
+        Name: "Scifi Ship Engine 02"
+        Transform {
+          Location {
+            X: -11.1644287
+            Y: 0.53730154
+            Z: 471.782684
+          }
+          Rotation {
+            Pitch: 88.7386932
+            Yaw: 4.02104379e-05
+            Roll: 3.86633546e-05
+          }
+          Scale {
+            X: 0.70770812
+            Y: 1.063133
+            Z: 0.728313804
+          }
+        }
+        ParentId: 2439203002483815857
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.646
+              G: 0.240162209
+              B: 0.0510339625
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              R: 0.646
+              G: 0.240162209
+              B: 0.0510339625
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:vtile"
+            Float: 3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceon"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 10873936651371038590
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 13964582090625545091
+        Name: "Scifi Ship Engine 02"
+        Transform {
+          Location {
+            X: -11.164464
+            Y: -23.9494762
+            Z: 471.783081
+          }
+          Rotation {
+            Pitch: 88.7388535
+            Yaw: -0.000155202448
+            Roll: -89.9996872
+          }
+          Scale {
+            X: 0.70770812
+            Y: 1.06313312
+            Z: 0.558414638
+          }
+        }
+        ParentId: 2439203002483815857
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.646
+              G: 0.240162209
+              B: 0.0510339625
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              R: 0.646
+              G: 0.240162209
+              B: 0.0510339625
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:vtile"
+            Float: 3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceon"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 10873936651371038590
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
             }
             BoundsScale: 1
           }
@@ -174,10 +456,7 @@ Assets {
         ChildIds: 7798919276470078910
         ChildIds: 11017932090010984530
         ChildIds: 4859584025454946627
-        ChildIds: 6215933636884503449
-        ChildIds: 13964582090625545091
         ChildIds: 14696166895350263008
-        ChildIds: 16932885136237794602
         ChildIds: 3643801646481326841
         ChildIds: 7443221756139031387
         ChildIds: 4360514739225676005
@@ -203,6 +482,7 @@ Assets {
         }
         Folder {
           Model {
+            AggressiveMerge: true
           }
         }
       }
@@ -3711,188 +3991,6 @@ Assets {
         }
       }
       Objects {
-        Id: 6215933636884503449
-        Name: "Scifi Ship Engine 02"
-        Transform {
-          Location {
-            X: 196.003677
-            Y: 38.8925972
-            Z: 181.147705
-          }
-          Rotation {
-            Roll: 89.9999542
-          }
-          Scale {
-            X: 0.806264222
-            Y: 1.21118605
-            Z: 0.63618
-          }
-        }
-        ParentId: 18221731298447889504
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.646
-              G: 0.240162209
-              B: 0.0510339625
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:color"
-            Color {
-              R: 0.646
-              G: 0.240162209
-              B: 0.0510339625
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:vtile"
-            Float: 3
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 10873936651371038590
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 13964582090625545091
-        Name: "Scifi Ship Engine 02"
-        Transform {
-          Location {
-            X: 196.003677
-            Y: -17.1963081
-            Z: 181.147751
-          }
-          Rotation {
-            Roll: -89.999939
-          }
-          Scale {
-            X: 0.806264222
-            Y: 1.21118605
-            Z: 0.63618
-          }
-        }
-        ParentId: 18221731298447889504
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.646
-              G: 0.240162209
-              B: 0.0510339625
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:color"
-            Color {
-              R: 0.646
-              G: 0.240162209
-              B: 0.0510339625
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:vtile"
-            Float: 3
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 10873936651371038590
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 14696166895350263008
         Name: "Cube - Polished"
         Transform {
@@ -3951,96 +4049,6 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 16965777294932964901
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 16932885136237794602
-        Name: "Scifi Ship Engine 02"
-        Transform {
-          Location {
-            X: 196.003677
-            Y: 10.7020168
-            Z: 181.147751
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.806264222
-            Y: 1.21118593
-            Z: 0.829739511
-          }
-        }
-        ParentId: 18221731298447889504
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.646
-              G: 0.240162209
-              B: 0.0510339625
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:color"
-            Color {
-              R: 0.646
-              G: 0.240162209
-              B: 0.0510339625
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:vtile"
-            Float: 3
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 10873936651371038590
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -4955,6 +4963,24 @@ Assets {
       }
     }
     Assets {
+      Id: 10873936651371038590
+      Name: "Sci-fi Ship Engine 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_scf_ship_engine_002_ref"
+      }
+    }
+    Assets {
+      Id: 818783603953564962
+      Name: "Metal Painted Old 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_painted_old_001_uv"
+      }
+    }
+    Assets {
       Id: 9605197959426201295
       Name: "Tire Worn - Small"
       PlatformAssetType: 1
@@ -4970,15 +4996,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cube_hq_test_001"
-      }
-    }
-    Assets {
-      Id: 818783603953564962
-      Name: "Metal Painted Old 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_metal_painted_old_001_uv"
       }
     }
     Assets {
@@ -5249,15 +5266,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_urb_st_post_lights_utility_box_002"
-      }
-    }
-    Assets {
-      Id: 10873936651371038590
-      Name: "Sci-fi Ship Engine 02"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_scf_ship_engine_002_ref"
       }
     }
     Assets {

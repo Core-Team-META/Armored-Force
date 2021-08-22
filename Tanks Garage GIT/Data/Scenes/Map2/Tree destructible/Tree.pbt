@@ -1036,8 +1036,11 @@ Objects {
     }
   }
   ParentId: 15016328222128833720
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
@@ -1058,14 +1061,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -1740,20 +1735,10 @@ Objects {
   Id: 11380528772728014825
   Name: "TW2_Tree_Destructible"
   Transform {
-    Location {
-      X: 8547.51465
-      Y: -21208.918
-      Z: 1375.73645
-    }
-    Rotation {
-      Pitch: -5.18802
-      Yaw: -45.3679085
-      Roll: 6.35324287
-    }
     Scale {
-      X: 0.814804614
-      Y: 0.814804614
-      Z: 0.814804614
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 15016328222128833720
@@ -1762,9 +1747,6 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
@@ -1788,14 +1770,6 @@ Objects {
             Pitch: -5.18802
             Yaw: 71.7462463
             Roll: 6.35348606
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.814804614
-            Y: 0.814804614
-            Z: 0.814804614
           }
         }
       }
@@ -2272,14 +2246,6 @@ Objects {
   Id: 7846330430892560634
   Name: "TW2_Tree_Destructible"
   Transform {
-    Location {
-      X: 2081.07251
-      Y: 5827.46582
-      Z: 15.8527069
-    }
-    Rotation {
-      Pitch: 11.4498549
-    }
     Scale {
       X: 1
       Y: 1
@@ -2292,9 +2258,6 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
@@ -2318,14 +2281,6 @@ Objects {
             Pitch: 2.89663529
             Yaw: -176.148453
             Roll: 6.67864e-09
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
