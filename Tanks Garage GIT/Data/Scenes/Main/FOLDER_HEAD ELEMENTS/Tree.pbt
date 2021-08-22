@@ -15548,6 +15548,10 @@ Objects {
       }
       TeamSettings {
       }
+      ShadowColor {
+      }
+      ShadowOffset {
+      }
     }
     AnchorLayout {
       SelfAnchor {

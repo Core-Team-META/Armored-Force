@@ -1,6 +1,43 @@
 Name: "SFX"
 RootId: 14057574193528684638
 Objects {
+  Id: 3794481685187691214
+  Name: "SFX_DENIED"
+  Transform {
+    Location {
+      X: 1240.33435
+      Y: 10337.248
+      Z: -1.88497925
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14057574193528684638
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 17195515431147114418
+    }
+    Pitch: 234.380127
+    Volume: 3.41453958
+    Falloff: -1
+    Radius: -1
+  }
+}
+Objects {
   Id: 8695905277821879038
   Name: "SFX_UNHOVERED"
   Transform {

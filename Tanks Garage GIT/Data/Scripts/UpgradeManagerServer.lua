@@ -11,49 +11,48 @@ local TANK_LIST = techTreeContents:GetChildren()
 function PurchaseTank(player, id, prereqs)
 	local tank = {}
 	for k,v in ipairs(TANK_LIST) do
-		if(v:GetCustomProperty("ID") == id) then
+		local tankId = v:GetCustomProperty("ID")
+		if(tonumber(tankId) == id) then
 			print("DEBUG: Found match")
 			local purchaseCost = v:GetCustomProperty("PurchaseCost")
-			local researchCost = v:GetCustomProperty("ResearchCost")
-			local tankRPString = UTIL_API.GetTankRPString(tonumber(id))
+			--local researchCost = v:GetCustomProperty("ResearchCost")
+			--local tankRPString = UTIL_API.GetTankRPString(tonumber(id))
 			
 			local purchaseCurrencyName = v:GetCustomProperty("PurchaseCurrencyName")
 			
 			local currencyAmount = player:GetResource(purchaseCurrencyName)
-			local rpAmount1 = 0
-			local rpTank1 = 0
-			local rpAmount2 = 0
-			local rpTank2 = 0
-			local totalRPToUse = 0
+			--local rpAmount1 = 0
+			--local rpTank1 = 0
+			--local rpAmount2 = 0
+			--local rpTank2 = 0
+			--local totalRPToUse = 0
 		
-			print("Prereqs ", prereqs[1], prereqs[2], prereqs[1] and prereqs[1].id)
-			if(prereqs[1]) and prereqs[1].id then
-				warn("Has Pre Reqs 1")
+			--print("Prereqs ", prereqs[1], prereqs[2], prereqs[1] and prereqs[1].id)
+			if(prereqs[1]) and prereqs[1].id then				
 				rpAmount1 = player:GetResource(UTIL_API.GetTankRPString(tonumber(prereqs[1].id)))
 				rpTank1 = prereqs[1].id
 				--local preReqTank = UTIL_API.RetrieveTankDataById(prereqs[1].id, player.serverUserData.techTreeProgress)
 				--warn("Is Purchased " .. tostring(preReqTank.purchased))
 				if not prereqs[1].usable then
-					return
+					return BroadcastEventResultCode.FAILURE
 				end
 			end
-			if(prereqs[2]) and prereqs[2].id then
-				warn("Has Pre Reqs 2")
+			if(prereqs[2]) and prereqs[2].id then				
 				rpAmount2 = player:GetResource(UTIL_API.GetTankRPString(tonumber(prereqs[2].id)))
 				rpTank2 = prereqs[2].id
 				--local preReqTank = UTIL_API.RetrieveTankDataById(prereqs[2].id, player.serverUserData.techTreeProgress)
 				--warn("Is Purchased " .. tostring(preReqTank.purchased))
 				if not prereqs[2].usable then
-					return
+					return BroadcastEventResultCode.FAILURE
 				end
 			end
 			
-			local freeRP = player:GetResource(Constants_API.FREERP)
+			--local freeRP = player:GetResource(Constants_API.FREERP)
 			
-			totalRPToUse = freeRP + rpAmount1 + rpAmount2
+			--totalRPToUse = freeRP + rpAmount1 + rpAmount2
 			
 			if(currencyAmount < purchaseCost) then warn("Not enough currency.") return end
-			if(totalRPToUse < researchCost) then warn("Not enough RP") return end					
+			--if(totalRPToUse < researchCost) then warn("Not enough RP") return end					
 			
 			for i, tank in ipairs(player.serverUserData.techTreeProgress) do			
 				if(tonumber(tank.id) == tonumber(id)) then
@@ -63,12 +62,14 @@ function PurchaseTank(player, id, prereqs)
 					
 					player:RemoveResource(purchaseCurrencyName, purchaseCost)
 					
+					--[[
 					if(rpAmount1 < researchCost) then
 						researchCost = researchCost - rpAmount1
 						player:RemoveResource(UTIL_API.GetTankRPString(tonumber(rpTank1)), rpAmount1)
 					else
 						player:RemoveResource(UTIL_API.GetTankRPString(tonumber(rpTank1)), researchCost)
 					end
+					
 					
 					if (rpAmount2 < researchCost) then
 						researchCost = researchCost - rpAmount2
@@ -80,7 +81,8 @@ function PurchaseTank(player, id, prereqs)
 					if(researchCost > 0) then
 						player:RemoveResource(Constants_API.FREERP, researchCost)
 					end					
-					
+					--]]
+
 					-- If the tank is a premium tank, set all upgrades to owned
 					if(purchaseCurrencyName == "Gold") then
 						print("Premium tank. All upgrades purchased.")

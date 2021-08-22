@@ -1,4 +1,13 @@
 Assets {
+  Id: 17195515431147114418
+  Name: "UI Buzzer Error Denied 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_ui_buzzer_error_denied_01_Cue_ref"
+  }
+}
+Assets {
   Id: 16481514129079315330
   Name: "Sci-fi Button Charge 01 SFX"
   PlatformAssetType: 7
