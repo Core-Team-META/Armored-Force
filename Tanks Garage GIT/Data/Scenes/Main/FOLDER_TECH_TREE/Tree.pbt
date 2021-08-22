@@ -897,7 +897,7 @@ Objects {
 }
 Objects {
   Id: 14975883195047417607
-  Name: "TITLE"
+  Name: "TITLE_TEXT"
   Transform {
     Location {
     }
@@ -1962,7 +1962,6 @@ Objects {
       Justification {
         Value: "mc:etextjustify:right"
       }
-      AutoWrapText: true
       Font {
         Id: 17251969847265876676
       }

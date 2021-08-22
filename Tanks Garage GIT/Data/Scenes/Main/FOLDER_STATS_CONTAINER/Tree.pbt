@@ -3025,6 +3025,8 @@ Objects {
         A: 1
       }
       ShadowOffset {
+        X: 1
+        Y: 1
       }
       ScreenshotIndex: 1
     }

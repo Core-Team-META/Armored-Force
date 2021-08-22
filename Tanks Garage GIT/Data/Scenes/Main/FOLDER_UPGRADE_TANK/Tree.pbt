@@ -298,7 +298,7 @@ Objects {
 }
 Objects {
   Id: 262086959359594294
-  Name: "CloseUpgradeTankPanel"
+  Name: "CLOSE_UPGRADE_CONFIRM_WINDOW"
   Transform {
     Location {
     }
@@ -741,7 +741,7 @@ Objects {
 }
 Objects {
   Id: 13540924346490611994
-  Name: "TITLE"
+  Name: "TITLE_TEXT"
   Transform {
     Location {
     }
@@ -3254,7 +3254,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3750,7 +3750,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3800,7 +3800,7 @@ Objects {
 }
 Objects {
   Id: 11497641350141253759
-  Name: "PRICE_TANKPARTS_INVALID"
+  Name: "PRICE_SILVER_INVALID"
   Transform {
     Location {
     }
@@ -3817,7 +3817,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6263,20 +6263,24 @@ Objects {
       }
       FontSize: 20
       ButtonColor {
-        R: 0.0813301876
-        G: 0.168269426
+        R: 0.078783296
+        G: 0.163
+        A: 1
       }
       HoveredColor {
-        R: 0.0459166355
-        G: 0.0950000063
+        R: 0.0407818295
+        G: 0.0843762159
+        A: 1
       }
       PressedColor {
-        R: 0.0813301876
-        G: 0.168269426
+        R: 0.078783296
+        G: 0.163
+        A: 1
       }
       DisabledColor {
-        R: 0.0813301876
-        G: 0.168269426
+        R: 0.0183666553
+        G: 0.0380000025
+        A: 1
       }
       Brush {
         Id: 7515015531196152948
@@ -6298,6 +6302,8 @@ Objects {
         A: 1
       }
       ShadowOffset {
+        X: 1
+        Y: 2
       }
     }
     AnchorLayout {
@@ -7663,7 +7669,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14456,6 +14462,8 @@ Objects {
         A: 1
       }
       ShadowOffset {
+        X: 1
+        Y: 1
       }
       ScreenshotIndex: 1
     }
@@ -14475,7 +14483,7 @@ Objects {
 }
 Objects {
   Id: 14938675378283909767
-  Name: "UPGRADE_ITEM_LEVEL"
+  Name: "ENGINE_LEVEL"
   Transform {
     Location {
     }
@@ -15314,7 +15322,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "Lv -> Lv2"
+      Label: "Lv1 -> Lv2"
       Color {
         R: 0.921582162
         G: 0.533276618
@@ -19039,6 +19047,8 @@ Objects {
         A: 1
       }
       ShadowOffset {
+        X: 1
+        Y: 1
       }
       ScreenshotIndex: 1
     }
@@ -19058,7 +19068,7 @@ Objects {
 }
 Objects {
   Id: 11781898498249807579
-  Name: "UPGRADE_ITEM_LEVEL"
+  Name: "SHELL_LEVEL"
   Transform {
     Location {
     }
@@ -19897,7 +19907,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "Lv -> Lv2"
+      Label: "Lv1 -> Lv2"
       Color {
         R: 0.921582162
         G: 0.533276618
@@ -23633,6 +23643,8 @@ Objects {
         A: 1
       }
       ShadowOffset {
+        X: 1
+        Y: 1
       }
       ScreenshotIndex: 1
     }
@@ -23652,7 +23664,7 @@ Objects {
 }
 Objects {
   Id: 5045557657087071565
-  Name: "UPGRADE_ITEM_LEVEL"
+  Name: "TURRET_LEVEL"
   Transform {
     Location {
     }
@@ -24569,7 +24581,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "Lv -> Lv2"
+      Label: "Lv1 -> Lv2"
       Color {
         R: 0.921582162
         G: 0.533276618
