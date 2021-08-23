@@ -50,6 +50,7 @@ function Init()
     if Environment.IsSinglePlayerPreview() then
         Task.Wait(3)
     end
+    print(isLoaded)
     if isLoaded then
         return
     end
@@ -116,11 +117,13 @@ function Init()
 end
 
 function PopulateQuickSelectPanel()
+    print("Populate Called isLoaded:" .. tostring(isLoaded))
     if not isLoaded then
         Init()
     end
     table.sort(tankDataTbl, SortByTier)
     local dailyTbl = LOCAL_PLAYER:GetPrivateNetworkedData("WinOfTheDay")
+    print("Populate Called dailyTbl:" .. tostring(next(dailyTbl)))
     while not next(dailyTbl) do
         Task.Wait()
         dailyTbl = LOCAL_PLAYER:GetPrivateNetworkedData("WinOfTheDay")
