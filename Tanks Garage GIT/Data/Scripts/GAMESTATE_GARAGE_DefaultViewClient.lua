@@ -163,18 +163,18 @@ function OnResourceChanged(player, resource, amount)
 	
 	--print("resource recieved " .. resource)
 	if resource == CONSTANTS_API.SILVER and amount < 100 then
-		consumableSlots.treads.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.RED)
-		consumableSlots.extinguisher.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.RED)
-		consumableSlots.repairKit.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.RED)
+		treadsSlot:FindDescendantByName("BUTTONTEXT"):SetColor(Color.RED)
+		extinguisherSlot:FindDescendantByName("BUTTONTEXT"):SetColor(Color.RED)
+		repairKitSlot:FindDescendantByName("BUTTONTEXT"):SetColor(Color.RED)
 
 		--consumableSlots.treads.purchaseButton.isInteractable = false
 		--consumableSlots.extinguisher.purchaseButton.isInteractable = false
 		--consumableSlots.repairKit.purchaseButton.isInteractable = false
 
 	elseif resource == CONSTANTS_API.SILVER and amount >= 100 then
-		consumableSlots.treads.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.WHITE)
-		consumableSlots.extinguisher.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.WHITE)
-		consumableSlots.repairKit.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.WHITE)
+		treadsSlot:FindDescendantByName("BUTTONTEXT"):SetColor(Color.WHITE)
+		extinguisherSlot:FindDescendantByName("BUTTONTEXT"):SetColor(Color.WHITE)
+		repairKitSlot:FindDescendantByName("BUTTONTEXT"):SetColor(Color.WHITE)
 
 		consumableSlots.treads.purchaseButton.isInteractable = true
 		consumableSlots.extinguisher.purchaseButton.isInteractable = true
