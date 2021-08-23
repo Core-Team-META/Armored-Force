@@ -64,8 +64,8 @@ Objects {
         key: "decal"
         value {
           LowDistance: 4500
-          MediumDistance: 7000
-          HighDistance: 9000
+          MediumDistance: 15000
+          HighDistance: 40000
         }
       }
       RelevanceSettings {
