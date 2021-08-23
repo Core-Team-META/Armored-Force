@@ -28,6 +28,7 @@ local AlertDialogBox = script:GetCustomProperty("POP_UP_MESSAGE"):WaitForObject(
 local SFX_PURCHASE_UI = script:GetCustomProperty("SFX_PURCHASE_UI")
 local SFX_ERROR_UI = script:GetCustomProperty("SFX_ERROR_UI")
 
+local tankStatsContainer = script:GetCustomProperty("STATS_CONTAINER"):WaitForObject()
 
 
 -- Equip tank panel
@@ -85,6 +86,8 @@ function ToggleThisComponent(requestedPlayerState)
 		if(localPlayer:GetResource(API_Tutorial.GetTutorialResource()) < API_Tutorial.TutorialPhase.Completed) then
 			Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_ON
 		end
+
+		tankStatsContainer.visibility = Visibility.FORCE_ON		
 		TANK_TABLE_SLIDER.visibility = Visibility.FORCE_ON
 		SHOP_CONSUMABLES.visibility = Visibility.FORCE_ON
 	else
@@ -99,12 +102,12 @@ end
 function DisableThisComponent()
 
 	if localPlayer:GetOverrideCamera() == overrideCamera then
-	
-		localPlayer:ClearOverrideCamera()		
-		
+		localPlayer:ClearOverrideCamera()
 	end
 	
 	defaultViewUI.isEnabled = false
+	
+	tankStatsContainer.visibility = Visibility.FORCE_OFF
 	
 	Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_OFF
 	TANK_TABLE_SLIDER.visibility = Visibility.FORCE_OFF

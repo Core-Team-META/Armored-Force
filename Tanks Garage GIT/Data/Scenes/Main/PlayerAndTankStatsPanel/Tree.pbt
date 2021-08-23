@@ -16,6 +16,7 @@ Objects {
   }
   ParentId: 10332277931616513108
   ChildIds: 13575425743070841255
+  ChildIds: 811612019477186186
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -29,6 +30,53 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 811612019477186186
+  Name: "GAMEHELPER_GARAGE_PortalImageInitializer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8970108165951062489
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ALLIES_TANKS"
+      ObjectReference {
+        SelfId: 9832205131937038988
+      }
+    }
+    Overrides {
+      Name: "cs:AXIS_TANKS"
+      ObjectReference {
+        SelfId: 6074792761113610429
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 16549699420428726086
+    }
   }
 }
 Objects {
