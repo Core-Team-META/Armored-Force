@@ -900,7 +900,7 @@ Objects {
     Overrides {
       Name: "cs:DefaultViewUI"
       ObjectReference {
-        SelfId: 15177659444916868221
+        SelfId: 16475119061964287367
       }
     }
     Overrides {
@@ -1003,6 +1003,12 @@ Objects {
       Name: "cs:POP_UP_MESSAGE"
       ObjectReference {
         SelfId: 3107273142777202591
+      }
+    }
+    Overrides {
+      Name: "cs:STATS_CONTAINER"
+      ObjectReference {
+        SelfId: 16475119061964287367
       }
     }
     Overrides {

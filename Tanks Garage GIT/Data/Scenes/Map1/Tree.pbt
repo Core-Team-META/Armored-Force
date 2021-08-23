@@ -29,7 +29,6 @@ Objects {
   ChildIds: 4689494391382931675
   ChildIds: 14246791555251678451
   ChildIds: 621544670553070009
-  ChildIds: 8408556777837187222
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -42,39 +41,6 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 8408556777837187222
-  Name: "GAMESTATE_MapSelector (ONLY FOR MAP1)"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 1320562394188664725
-    }
   }
 }
 Objects {
