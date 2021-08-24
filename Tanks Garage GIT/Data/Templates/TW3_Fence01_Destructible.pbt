@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 3999658448834882929
         ChildIds: 16483613554761285357
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48,7 +48,7 @@ Assets {
         ChildIds: 4130062110601974197
         ChildIds: 11506551998065440469
         ChildIds: 2047358006444255945
-        ChildIds: 827125924113996163
+        ChildIds: 9370217715138109217
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -153,6 +153,12 @@ Assets {
               SubObjectId: 2047358006444255945
             }
           }
+          Overrides {
+            Name: "cs:LeftBehindGroup"
+            ObjectReference {
+              SubObjectId: 9370217715138109217
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -247,8 +253,6 @@ Assets {
         }
         ParentId: 16483613554761285357
         ChildIds: 1872629607329735464
-        ChildIds: 4969081167657683122
-        ChildIds: 14438253732068470217
         ChildIds: 149120222334781813
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
@@ -307,148 +311,6 @@ Assets {
           Overrides {
             Name: "ma:Building_LowerTrimInner:utile"
             Float: 0.383650392
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 37912767570433942
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 4969081167657683122
-        Name: "Urban Damaged Interior Trim Board 01 Top 02"
-        Transform {
-          Location {
-            X: -55.3852539
-            Y: -20.5532227
-            Z: -20
-          }
-          Rotation {
-            Pitch: 86.7808151
-            Yaw: 179.520782
-            Roll: -0.111236572
-          }
-          Scale {
-            X: 0.408976316
-            Y: 1.20240879
-            Z: 0.899869621
-          }
-        }
-        ParentId: 11506551998065440469
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Building_LowerTrimInner:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
-            Name: "ma:Building_LowerTrimInner:color"
-            Color {
-              R: 0.43754971
-              G: 0.43
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Building_LowerTrimInner:vtile"
-            Float: 3.63836217
-          }
-          Overrides {
-            Name: "ma:Building_LowerTrimInner:utile"
-            Float: 0.383650392
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 8215981026940294866
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 14438253732068470217
-        Name: "Urban Damaged Interior Trim Board 01 Top 02"
-        Transform {
-          Location {
-            X: 318.582031
-            Y: 11.46875
-            Z: 90.2304382
-          }
-          Rotation {
-            Pitch: 8.59566307
-            Yaw: -179.825394
-            Roll: -178.801682
-          }
-          Scale {
-            X: 1.75658715
-            Y: 1.0000205
-            Z: 0.423575222
-          }
-        }
-        ParentId: 11506551998065440469
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Building_LowerTrimInner:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
-            Name: "ma:Building_LowerTrimInner:color"
-            Color {
-              R: 0.43754971
-              G: 0.43
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Building_LowerTrimInner:vtile"
-            Float: 4.02393484
-          }
-          Overrides {
-            Name: "ma:Building_LowerTrimInner:utile"
-            Float: 0.982249379
           }
         }
         Collidable_v2 {
@@ -568,6 +430,7 @@ Assets {
         ChildIds: 7530498348520091391
         ChildIds: 2518377699204280713
         ChildIds: 15707734054130439972
+        ChildIds: 827125924113996163
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -907,13 +770,13 @@ Assets {
         Name: "Decal Stains Round 01"
         Transform {
           Location {
-            X: 185.802734
-            Y: 8.86816406
+            X: 185.802322
+            Y: 8.86746597
             Z: 101.025085
           }
           Rotation {
-            Yaw: 1.70575881
-            Roll: 89.9999695
+            Yaw: 1.70576203
+            Roll: 89.9999542
           }
           Scale {
             X: 0.480125368
@@ -921,7 +784,7 @@ Assets {
             Z: 0.026641313
           }
         }
-        ParentId: 16483613554761285357
+        ParentId: 2047358006444255945
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -955,6 +818,181 @@ Assets {
           Value: "mc:eproxyrelevance:critical"
         }
       }
+      Objects {
+        Id: 9370217715138109217
+        Name: "LeftBehindGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16483613554761285357
+        ChildIds: 14438253732068470217
+        ChildIds: 4969081167657683122
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 14438253732068470217
+        Name: "Urban Damaged Interior Trim Board 01 Top 02"
+        Transform {
+          Location {
+            X: 318.581665
+            Y: 11.4686852
+            Z: 90.2304382
+          }
+          Rotation {
+            Pitch: 8.59566307
+            Yaw: -179.825394
+            Roll: -178.801682
+          }
+          Scale {
+            X: 1.75658715
+            Y: 1.0000205
+            Z: 0.423575222
+          }
+        }
+        ParentId: 9370217715138109217
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:id"
+            AssetReference {
+              Id: 5028462544160077647
+            }
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:color"
+            Color {
+              R: 0.43754971
+              G: 0.43
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:vtile"
+            Float: 4.02393484
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:utile"
+            Float: 0.982249379
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 37912767570433942
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 4969081167657683122
+        Name: "Urban Damaged Interior Trim Board 01 Top 02"
+        Transform {
+          Location {
+            X: -55.3856583
+            Y: -20.5537357
+            Z: -20
+          }
+          Rotation {
+            Pitch: 86.7807617
+            Yaw: 179.520782
+            Roll: -0.111235641
+          }
+          Scale {
+            X: 0.408976316
+            Y: 1.20240879
+            Z: 0.899869621
+          }
+        }
+        ParentId: 9370217715138109217
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:id"
+            AssetReference {
+              Id: 5028462544160077647
+            }
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:color"
+            Color {
+              R: 0.43754971
+              G: 0.43
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:vtile"
+            Float: 3.63836217
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:utile"
+            Float: 0.383650392
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 8215981026940294866
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
     }
     Assets {
       Id: 37912767570433942
@@ -963,15 +1001,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_tx_urb_dmg_int_trim_board_001_top_02_ref"
-      }
-    }
-    Assets {
-      Id: 8215981026940294866
-      Name: "Urban Damaged Interior Trim Board 01 - Top 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_tx_urb_dmg_int_trim_board_001_top_01_ref"
       }
     }
     Assets {
@@ -990,6 +1019,15 @@ Assets {
       PrimaryAsset {
         AssetType: "DecalBlueprintAssetRef"
         AssetId: "bp_decal_stain_round_001"
+      }
+    }
+    Assets {
+      Id: 8215981026940294866
+      Name: "Urban Damaged Interior Trim Board 01 - Top 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_tx_urb_dmg_int_trim_board_001_top_01_ref"
       }
     }
     PrimaryAssetId {

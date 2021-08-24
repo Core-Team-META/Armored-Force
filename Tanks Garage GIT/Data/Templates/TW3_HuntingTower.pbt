@@ -2615,9 +2615,9 @@ Assets {
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: -23.4880829
-            Y: 43.0341072
-            Z: 34.9163933
+            X: -23.488987
+            Y: 43.0097771
+            Z: 34.7264099
           }
           Rotation {
             Roll: 7.81019211
@@ -2685,9 +2685,9 @@ Assets {
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: -148.362427
-            Y: 43.0341072
-            Z: 34.9163933
+            X: -148.362793
+            Y: 43.0097771
+            Z: 34.7263908
           }
           Rotation {
             Roll: 7.81020927
@@ -2755,9 +2755,9 @@ Assets {
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: 99.9177322
-            Y: 43.0341072
-            Z: 34.9163933
+            X: 99.9170685
+            Y: 43.0097771
+            Z: 34.7264
           }
           Rotation {
             Roll: 7.81022549
