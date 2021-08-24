@@ -28694,6 +28694,9 @@ Assets {
         }
         ParentId: 14738293839162672054
         ChildIds: 18287794692624984074
+        ChildIds: 3703109326754395265
+        ChildIds: 5512010778551447619
+        ChildIds: 10030220119554938731
         ChildIds: 8158102130615289689
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28808,6 +28811,186 @@ Assets {
         }
       }
       Objects {
+        Id: 3703109326754395265
+        Name: "Military Tank Historic Tread 01 Front"
+        Transform {
+          Location {
+            X: 223.748535
+            Y: 21.1315918
+            Z: 20.4636307
+          }
+          Rotation {
+            Yaw: 5.49695505e-06
+          }
+          Scale {
+            X: 0.890575051
+            Y: 0.603217721
+            Z: 1.0684402
+          }
+        }
+        ParentId: 12107383336581568743
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.50254643
+              G: 0.607000053
+              B: 0.322924
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5201493243558163533
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 5512010778551447619
+        Name: "Military Tank Historic Tread 01 Front"
+        Transform {
+          Location {
+            X: -202.348267
+            Y: 21.126709
+            Z: 21.1426239
+          }
+          Rotation {
+            Yaw: 5.55494807e-06
+          }
+          Scale {
+            X: -0.839775324
+            Y: 0.603217721
+            Z: 1.06127965
+          }
+        }
+        ParentId: 12107383336581568743
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.50254643
+              G: 0.607000053
+              B: 0.322924
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5201493243558163533
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 10030220119554938731
+        Name: "Military Tank Historic Tread 01 Mid"
+        Transform {
+          Location {
+            X: 9.47509766
+            Y: 21.1311035
+            Z: 16.1051788
+          }
+          Rotation {
+            Yaw: 6.13116799e-06
+          }
+          Scale {
+            X: 1.07198024
+            Y: 0.603217721
+            Z: 1.10290098
+          }
+        }
+        ParentId: 12107383336581568743
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.50254643
+              G: 0.607000053
+              B: 0.322924
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 286982728900310227
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
         Id: 8158102130615289689
         Name: "MergedModel"
         Transform {
@@ -28826,9 +29009,6 @@ Assets {
           }
         }
         ParentId: 12107383336581568743
-        ChildIds: 3703109326754395265
-        ChildIds: 5512010778551447619
-        ChildIds: 10030220119554938731
         ChildIds: 6667324356994826832
         ChildIds: 6948247638611736570
         ChildIds: 16878243469016679244
@@ -28900,186 +29080,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 3703109326754395265
-        Name: "Military Tank Historic Tread 01 Front"
-        Transform {
-          Location {
-            X: 179.15625
-            Y: 35.0068359
-            Z: 4.3584671
-          }
-          Rotation {
-            Yaw: 3.78940808e-06
-          }
-          Scale {
-            X: 0.890575051
-            Y: 0.603217721
-            Z: 1.0684402
-          }
-        }
-        ParentId: 8158102130615289689
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.50254643
-              G: 0.607000053
-              B: 0.322924
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5201493243558163533
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 5512010778551447619
-        Name: "Military Tank Historic Tread 01 Front"
-        Transform {
-          Location {
-            X: -246.94043
-            Y: 35.0019531
-            Z: 5.03746033
-          }
-          Rotation {
-            Yaw: 3.84740088e-06
-          }
-          Scale {
-            X: -0.839775324
-            Y: 0.603217721
-            Z: 1.06127965
-          }
-        }
-        ParentId: 8158102130615289689
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.50254643
-              G: 0.607000053
-              B: 0.322924
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5201493243558163533
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 10030220119554938731
-        Name: "Military Tank Historic Tread 01 Mid"
-        Transform {
-          Location {
-            X: -35.1169434
-            Y: 35.0063477
-            Z: 1.52587891e-05
-          }
-          Rotation {
-            Yaw: 4.4236217e-06
-          }
-          Scale {
-            X: 1.07198024
-            Y: 0.603217721
-            Z: 1.10290098
-          }
-        }
-        ParentId: 8158102130615289689
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.50254643
-              G: 0.607000053
-              B: 0.322924
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 286982728900310227
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
         }
       }
       Objects {
@@ -40273,7 +40273,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Folder {
           IsGroup: true
