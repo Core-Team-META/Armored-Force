@@ -1,9 +1,13 @@
 Name: "Morticai (Brent)"
 RootId: 8043684082903823001
 Objects {
-  Id: 13740696626568706123
+  Id: 16967583001895444638
   Name: "TankData"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -17,19 +21,15 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 15115124985779129211
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TankData"
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1208650978191586118
-    }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "TankData"
   }
 }
 Objects {
