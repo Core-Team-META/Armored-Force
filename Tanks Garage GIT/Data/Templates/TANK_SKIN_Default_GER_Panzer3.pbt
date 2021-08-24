@@ -24164,6 +24164,8 @@ Assets {
         }
         ParentId: 11740345466004773322
         ChildIds: 9344799809273583213
+        ChildIds: 9820611370852676195
+        ChildIds: 5042599056812103673
         ChildIds: 16522538647138919017
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24284,71 +24286,23 @@ Assets {
         }
       }
       Objects {
-        Id: 16522538647138919017
-        Name: "MergedModel"
-        Transform {
-          Location {
-            X: -129.00322
-            Y: -28.0219727
-            Z: 15
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.99999994
-            Y: 0.999999881
-            Z: 0.99999994
-          }
-        }
-        ParentId: 14921502741431802964
-        ChildIds: 9820611370852676195
-        ChildIds: 5042599056812103673
-        ChildIds: 13270516809299537225
-        ChildIds: 15979513123591091629
-        ChildIds: 7546437458655990032
-        ChildIds: 1230426569415039345
-        ChildIds: 5910894118472950543
-        ChildIds: 14291871250662179693
-        ChildIds: 6293303769652920362
-        ChildIds: 18223926825250828647
-        ChildIds: 12657333913027485012
-        ChildIds: 17700451454598242183
-        ChildIds: 14353684320496625298
-        ChildIds: 16774675485152650346
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 9820611370852676195
         Name: "Military Tank Historic Tread 01 Mid"
         Transform {
           Location {
-            X: 11.2882462
-            Y: 38.0390625
-            Z: 3.81469727e-05
+            X: -117.715088
+            Y: 10.0170898
+            Z: 15.0000381
           }
           Rotation {
           }
           Scale {
-            X: 1.49687696
-            Y: 0.999999702
-            Z: 1.34719527
+            X: 1.49687684
+            Y: 0.999999523
+            Z: 1.34719515
           }
         }
-        ParentId: 16522538647138919017
+        ParentId: 14921502741431802964
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -24395,19 +24349,19 @@ Assets {
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: -293.71875
-            Y: 38.0214844
-            Z: 7.62939453e-06
+            X: -422.721924
+            Y: 9.99951172
+            Z: 15
           }
           Rotation {
           }
           Scale {
-            X: -0.999999821
-            Y: 0.999999702
-            Z: 1.34719527
+            X: -0.999999702
+            Y: 0.999999523
+            Z: 1.34719515
           }
         }
-        ParentId: 16522538647138919017
+        ParentId: 14921502741431802964
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -24447,6 +24401,52 @@ Assets {
             }
             BoundsScale: 1
           }
+        }
+      }
+      Objects {
+        Id: 16522538647138919017
+        Name: "MergedModel"
+        Transform {
+          Location {
+            X: -129.00322
+            Y: -28.0219727
+            Z: 15
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.99999994
+            Y: 0.999999881
+            Z: 0.99999994
+          }
+        }
+        ParentId: 14921502741431802964
+        ChildIds: 13270516809299537225
+        ChildIds: 15979513123591091629
+        ChildIds: 7546437458655990032
+        ChildIds: 1230426569415039345
+        ChildIds: 5910894118472950543
+        ChildIds: 14291871250662179693
+        ChildIds: 6293303769652920362
+        ChildIds: 18223926825250828647
+        ChildIds: 12657333913027485012
+        ChildIds: 17700451454598242183
+        ChildIds: 14353684320496625298
+        ChildIds: 16774675485152650346
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
         }
       }
       Objects {
@@ -25835,7 +25835,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Folder {
           IsGroup: true
