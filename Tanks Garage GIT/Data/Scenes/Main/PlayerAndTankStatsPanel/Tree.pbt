@@ -60,6 +60,12 @@ Objects {
         SelfId: 6074792761113610429
       }
     }
+    Overrides {
+      Name: "cs:PREMIUM_SHOP"
+      ObjectReference {
+        SelfId: 1961680718095297532
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
