@@ -130,6 +130,7 @@ local researchingName = ""
 -- Used to store the tank's part upgrade progress (weapon, armor, engine)
 local researchingProgress = nil
 local selectedTankUpgrade = ""
+local selectedTankId = 0
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 local BASE_Y = 50
@@ -194,6 +195,7 @@ function ToggleThisComponent(requestedPlayerState)
 		LOCAL_PLAYER:SetOverrideCamera(overrideCamera)
 
 		displayTanks.visibility = Visibility.FORCE_ON
+		selectedTankId = 0
 		PopulateOwnedTanks()
 		OpenUI()
 	else
@@ -419,7 +421,7 @@ end
 
 function PopulateSelectedTankPanel(id)
 	--print(doNotShowModal)
-	local selectedTankId = id or -1
+	selectedTankId = id or -1
 	local tankData = {}
 	local isSelection = tonumber(selectedTankId) > 0
 	if (selectedTankId == -1) then -- Assume selection is currently equipped tank
@@ -450,18 +452,13 @@ function PopulateSelectedTankPanel(id)
 	end
 
 	if tankData.purchasedTank then
-		Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", tankData.id)
-		Events.Broadcast("CHANGE_EQUIPPED_TANK", tankData.id)
-		SFX_EQUIP_TANK:Play()
+		OpenTankUpgradeWindow(nil, selectedTankId)
+		--Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", tankData.id)
+		--Events.Broadcast("CHANGE_EQUIPPED_TANK", tankData.id)
+		--SFX_EQUIP_TANK:Play()
 		doNotShowModal = true
 	else
 		doNotShowModal = false
-	end
-
-	if (not tankDetails.purchasedTank) then
-
-	else
-		
 	end
 
 	PopulateOwnedTanks()
@@ -472,12 +469,13 @@ function PopulateSelectedTankPanel(id)
 			TECH_TREE_CONTENT.parent:FindDescendantByName("PREREQUISITE_INVALID_CONTAINER").visibility = Visibility.FORCE_OFF
 			local selectedTank = {}
 			BUY_TANK_CONTAINER:FindDescendantByName("TITLE_TEXT").text = "BUY " .. string.upper(tankDetails.name)
-			print(tankDetails.purchaseCost)
 			BUY_TANK_CONTAINER:FindDescendantByName("PRICE_SILVER").text = tostring(tankDetails.purchaseCost)
 		else
 			TECH_TREE_CONTENT.parent:FindDescendantByName("PREREQUISITE_INVALID_CONTAINER").visibility = Visibility.FORCE_ON
 			BUY_TANK_CONTAINER.visibility = Visibility.FORCE_OFF
 		end
+	else
+
 	end
 end
 
@@ -1075,7 +1073,7 @@ end
 function CloseUpgradeConfirmWindow()
 	SFX_CLICK:Play()
 	UPGRADE_TANK_CONFIRM_CONTAINER.visibility = Visibility.FORCE_OFF
-	OpenTankUpgradeWindow(BUTTON_UPGRADE_TANK)
+	OpenTankUpgradeWindow(BUTTON_UPGRADE_TANK, selectedTankId)
 end
 
 function IssueTankUpgrade()
@@ -1658,20 +1656,26 @@ function CloseCannotPurchaseTank(button)
 end
 
 
-function OpenTankUpgradeWindow(button)
+function OpenTankUpgradeWindow(button, id)	
+	if not id then
+		selectedTankId = LOCAL_PLAYER:GetResource("EquippedTank")
+	else
+		selectedTankId = tonumber(id)
+	end
+
 	SFX_CLICK:Play()
-	button:FindAncestorByName("MAIN_UI"):FindDescendantByName("UPGRADE_TANK_CONTAINER").visibility = Visibility.FORCE_ON
+	UPGRADE_TANK_CONTAINER.visibility = Visibility.FORCE_ON
 	local entry = {}
 	local progress = {}
 	for i, tank in ipairs(TANK_LIST) do
 		local id = tank:GetCustomProperty("ID")
-		if tonumber(id) == LOCAL_PLAYER:GetResource("EquippedTank") then
+		if tonumber(id) == selectedTankId then
 			entry = tank
 		end
 	end
 
 	for i, tankProgress in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-		if tonumber(tankProgress.id) == LOCAL_PLAYER:GetResource("EquippedTank") then
+		if tonumber(tankProgress.id) == selectedTankId then
 			progress = tankProgress
 		end
 	end
@@ -1755,7 +1759,7 @@ end
 
 function CloseTankUpgradeWindow(button)
 	SFX_CLICK:Play()
-	button:FindAncestorByName("UPGRADE_TANK_CONTAINER").visibility = Visibility.FORCE_OFF
+	UPGRADE_TANK_CONTAINER.visibility = Visibility.FORCE_OFF
 end
 
 function ClosePurchaseTank(button)
@@ -1816,11 +1820,8 @@ end
 
 function EquipTank()
 	SFX_EQUIP_TANK:Play()
-	-- This button is within the upgrade window for the equipped tank, why do we need an equip button here?
-	-- Can the upgrade window be accessed for tanks the player doesn't own?
-
-	--Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", id)
-    --Events.Broadcast("CHANGE_EQUIPPED_TANK", id)
+	Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", selectedTankId)
+    Events.Broadcast("CHANGE_EQUIPPED_TANK", selectedTankId)
 end
 
 Task.Wait(2)
@@ -2032,6 +2033,7 @@ function OnResourceChanged(player, resource, value)
 				equippedTank = entry
 			end
 		end
+		PopulateOwnedTanks()
 	end
 end
 
