@@ -26,6 +26,24 @@ Assets {
   }
 }
 Assets {
+  Id: 16060214784296519809
+  Name: "Plane 1m - One Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_001"
+  }
+}
+Assets {
+  Id: 15420880124102881155
+  Name: "Clover Patch 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_clover_patch_001"
+  }
+}
+Assets {
   Id: 15228480960985870921
   Name: "Rock Flat 01"
   PlatformAssetType: 1
@@ -41,6 +59,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_gen_branches_medium_001"
+  }
+}
+Assets {
+  Id: 13650699884663610996
+  Name: "Decal Stains Round 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stain_round_001"
   }
 }
 Assets {
@@ -80,6 +107,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10905138335060518079
+  Name: "Rock Block 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_006"
+  }
+}
+Assets {
   Id: 9072168321675368518
   Name: "Rock 01"
   PlatformAssetType: 1
@@ -98,6 +134,24 @@ Assets {
   }
 }
 Assets {
+  Id: 6674876388081502680
+  Name: "Rocky Ground 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "rocky_001"
+  }
+}
+Assets {
+  Id: 6551093352602210295
+  Name: "Rock Pile 001"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_001"
+  }
+}
+Assets {
   Id: 5195393181888633317
   Name: "Rock Pile 002"
   PlatformAssetType: 1
@@ -107,12 +161,39 @@ Assets {
   }
 }
 Assets {
+  Id: 4841957848731423236
+  Name: "Rock Flat 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_004"
+  }
+}
+Assets {
+  Id: 3891896443848095185
+  Name: "Frosted Glass"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_frosted_glass"
+  }
+}
+Assets {
   Id: 3698777166228503512
   Name: "Rock Flat 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_005"
+  }
+}
+Assets {
+  Id: 3658165904025862718
+  Name: "Rock 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_001"
   }
 }
 Assets {
@@ -149,5 +230,14 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_stucco_tint_001_uv"
+  }
+}
+Assets {
+  Id: 380106840186150370
+  Name: "Rock Block 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_007"
   }
 }

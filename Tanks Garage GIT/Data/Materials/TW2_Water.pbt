@@ -31,10 +31,6 @@ Assets {
         Float: 0.7687
       }
       Overrides {
-        Name: "opacity distance"
-        Float: 704.434082
-      }
-      Overrides {
         Name: "foam shape"
         Float: 1.5066669
       }
@@ -99,6 +95,14 @@ Assets {
       Overrides {
         Name: "foam tightness"
         Float: 13.2318192
+      }
+      Overrides {
+        Name: "emissive"
+        Float: 0
+      }
+      Overrides {
+        Name: "opacity distance"
+        Float: 100
       }
     }
     Assets {

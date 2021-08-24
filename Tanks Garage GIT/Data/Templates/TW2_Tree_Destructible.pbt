@@ -7,12 +7,12 @@ Assets {
       RootId: 12561400358109127262
       Objects {
         Id: 12561400358109127262
-        Name: "TW2_Tree_Destructible"
+        Name: "TW3_Tree_Destructible"
         Transform {
           Scale {
-            X: 0.814804614
-            Y: 0.814804614
-            Z: 0.814804614
+            X: 0.618246496
+            Y: 0.618246496
+            Z: 0.618246496
           }
         }
         ParentId: 15016328222128833720

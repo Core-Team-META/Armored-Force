@@ -12,6 +12,24 @@ Assets {
   }
 }
 Assets {
+  Id: 16374150260036817633
+  Name: "Cube - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_001"
+  }
+}
+Assets {
+  Id: 15377096960086681777
+  Name: "Marble Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_marble_tiles_001_uv"
+  }
+}
+Assets {
   Id: 14345407072251931141
   Name: "SilverPack2"
   PlatformAssetType: 24
@@ -151,6 +169,24 @@ Assets {
   }
 }
 Assets {
+  Id: 5351428073291024820
+  Name: "Emissive Glow Opaque"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_opaque_emissive"
+  }
+}
+Assets {
+  Id: 4064249699380950692
+  Name: "Frosted Glass No Distortion"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_frosted_glass_nodistortion"
+  }
+}
+Assets {
   Id: 3985805927326060140
   Name: "SilverPack1"
   PlatformAssetType: 24
@@ -226,5 +262,14 @@ Assets {
         Value: "mc:enetreferencetype:creatorperk"
       }
     }
+  }
+}
+Assets {
+  Id: 663082363223318009
+  Name: "Stucco Tintable"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_stucco_tint_001_uv"
   }
 }

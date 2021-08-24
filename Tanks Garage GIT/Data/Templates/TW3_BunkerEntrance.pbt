@@ -1,13 +1,13 @@
 Assets {
   Id: 10747753322495731083
-  Name: "TW3_BunkerEmtramce"
+  Name: "TW3_BunkerEntrance"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14926581832675578485
       Objects {
         Id: 14926581832675578485
-        Name: "TW3_BunkerEmtramce"
+        Name: "TW3_BunkerEntrance"
         Transform {
           Scale {
             X: 1
