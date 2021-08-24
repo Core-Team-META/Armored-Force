@@ -3,6 +3,7 @@ local settings = script:GetCustomProperty("Settings"):WaitForObject()
 local lobbyCountdown = settings:GetCustomProperty("LobbyCountdown")
 
 local timerTask = nil
+local lockSet = false
 
 local timer = lobbyCountdown
 
@@ -33,19 +34,18 @@ function CountdownTask()
 	script:SetNetworkedCustomProperty("Timer", timer)
 	
 	if timer <= 0 then
-	
 		StateEND()
-		
 	end
 		
-	if #Game.GetPlayers() < 2 then
-	
+	if #Game.GetPlayers() < 2 and timer > 15 then
 		timer = lobbyCountdown
-		
 	else 
-	
 		timer = timer - 1
-		
+	end
+	
+	if not lockSet and (timer <= 15) then
+		Game.StopAcceptingPlayers()
+		lockSet = true
 	end
 		
 end

@@ -48,8 +48,6 @@ function OnChangeState(previousState)
 		
 	elseif previousState == "LOBBY_STATE" then
 	
-		Game.StopAcceptingPlayers()
-	
 		for _, player in ipairs(Game.GetPlayers()) do
 		
 			player.lookControlMode = LookControlMode.RELATIVE

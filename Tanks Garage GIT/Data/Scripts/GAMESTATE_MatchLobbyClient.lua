@@ -103,8 +103,7 @@ function CountdownTask()
 	
 	local count = Game.GetPlayers()
 			
-	if #count < 2 then
-	
+	if #count < 2 and currentTime > 15 then
 		timerText.text = " ... "
 	else 
 
