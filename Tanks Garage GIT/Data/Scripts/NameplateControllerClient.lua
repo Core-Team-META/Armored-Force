@@ -51,6 +51,7 @@ local spottingServer = script:GetCustomProperty("GAMEHELPER_SpottingServer"):Wai
 
 local GameState = nil
 local currentGameState = nil
+local previousGameState = nil
 
 if script:GetCustomProperty("GameState") then
 	GameState = script:GetCustomProperty("GameState"):WaitForObject()
@@ -356,6 +357,12 @@ function Tick(deltaTime)
 					end
 				end
 			end
+			
+			if (currentGameState == "VICTORY_STATE") and previousGameState and (previousGameState ~= currentGameState) then
+				nameplate.dirty = true
+			end
+			
+			previousGameState = currentGameState
 
 			if nameplate.dirty then
 				nameplate.dirty = false
@@ -415,7 +422,7 @@ function Tick(deltaTime)
 						local nameColor = nil
 						local healthColor = nil
 						local scaling = nil
-
+						
 						if player == LOCAL_PLAYER or Teams.AreTeamsFriendly(player.team, LOCAL_PLAYER.team) then
 							nameColor = FRIENDLY_NAME_COLOR
 							healthColor = FRIENDLY_HEALTH_COLOR
@@ -425,7 +432,11 @@ function Tick(deltaTime)
 							healthColor = ENEMY_HEALTH_COLOR
 							scaling = SCALE * 2
 						end
-
+						
+						if (currentGameState == "VICTORY_STATE") then
+							scaling = SCALE * 0.7
+						end
+					
 						nameplate.nameText:SetColor(nameColor)
 						nameplate.tankText:SetColor(nameColor)
 						nameplate.healthPiece:SetColor(healthColor)
