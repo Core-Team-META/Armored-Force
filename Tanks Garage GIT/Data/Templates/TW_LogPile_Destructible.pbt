@@ -15,9 +15,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13424779709025296981
+        ParentId: 7678320575912919394
         ChildIds: 14685137530266172510
-        ChildIds: 7314357451449572549
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -48,6 +47,8 @@ Assets {
         ParentId: 14095616626805498714
         ChildIds: 12761848524552833654
         ChildIds: 2763672934151491479
+        ChildIds: 7314357451449572549
+        ChildIds: 10307567219301239480
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -152,6 +153,12 @@ Assets {
               SubObjectId: 7314357451449572549
             }
           }
+          Overrides {
+            Name: "cs:LeftBehindGroup"
+            ObjectReference {
+              SubObjectId: 10307567219301239480
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -243,12 +250,9 @@ Assets {
           }
         }
         ParentId: 14685137530266172510
-        ChildIds: 16682576114886351335
+        ChildIds: 7601195540963286944
         ChildIds: 14400927269539473066
         ChildIds: 2391237619579318379
-        ChildIds: 6124411276764743745
-        ChildIds: 7601195540963286944
-        ChildIds: 1797953995678708179
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -263,18 +267,18 @@ Assets {
         }
       }
       Objects {
-        Id: 16682576114886351335
+        Id: 7601195540963286944
         Name: "Log"
         Transform {
           Location {
-            X: -5.20371962
-            Y: 20.3119793
-            Z: 134.194214
+            X: -35.0975113
+            Y: -8.48337936
+            Z: 69.512558
           }
           Rotation {
-            Pitch: 67.4998093
-            Yaw: -179.999954
-            Roll: -89.9999466
+            Pitch: -0.133823887
+            Yaw: 0.0484829396
+            Roll: 88.8315735
           }
           Scale {
             X: 0.503228366
@@ -283,8 +287,8 @@ Assets {
           }
         }
         ParentId: 2763672934151491479
-        ChildIds: 16651124829081897707
-        ChildIds: 1125011005603160384
+        ChildIds: 11790046387329181781
+        ChildIds: 17314015445000974939
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -334,7 +338,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16651124829081897707
+        Id: 11790046387329181781
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
@@ -351,7 +355,7 @@ Assets {
             Z: 0.00713298842
           }
         }
-        ParentId: 16682576114886351335
+        ParentId: 7601195540963286944
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -375,7 +379,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1125011005603160384
+        Id: 17314015445000974939
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
@@ -394,7 +398,7 @@ Assets {
             Z: 0.0151851755
           }
         }
-        ParentId: 16682576114886351335
+        ParentId: 7601195540963286944
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -422,13 +426,14 @@ Assets {
         Name: "Log"
         Transform {
           Location {
-            X: 46.1292267
-            Y: -12.5807228
-            Z: 46.1292725
+            X: 46.0715103
+            Y: -11.9156876
+            Z: 23.1126328
           }
           Rotation {
-            Pitch: 67.4999619
-            Roll: 89.9999771
+            Pitch: 67.3375244
+            Yaw: -2.75396538
+            Roll: 86.966423
           }
           Scale {
             X: 0.503228366
@@ -576,14 +581,14 @@ Assets {
         Name: "Log"
         Transform {
           Location {
-            X: -8.38689709
-            Y: -4.19326
-            Z: 46.1292725
+            X: -8.45129299
+            Y: -3.57602739
+            Z: 23.4109249
           }
           Rotation {
-            Pitch: 67.4999542
-            Yaw: 179.999969
-            Roll: -89.9999771
+            Pitch: 67.6047897
+            Yaw: -177.117401
+            Roll: -86.9320831
           }
           Scale {
             X: 0.503228366
@@ -727,18 +732,80 @@ Assets {
         }
       }
       Objects {
-        Id: 6124411276764743745
+        Id: 7314357451449572549
+        Name: "RemoveGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14685137530266172510
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 10307567219301239480
+        Name: "LeftBehindGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14685137530266172510
+        ChildIds: 16682576114886351335
+        ChildIds: 6124411276764743745
+        ChildIds: 1797953995678708179
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 16682576114886351335
         Name: "Log"
         Transform {
           Location {
-            X: -68.4090805
-            Y: 10.179347
-            Z: 46.1292725
+            X: -5.08068466
+            Y: 19.1311684
+            Z: 111.949593
           }
           Rotation {
-            Pitch: 67.4998093
-            Yaw: -179.999954
-            Roll: -89.9999466
+            Pitch: 67.6045914
+            Yaw: -177.11731
+            Roll: -86.9320679
           }
           Scale {
             X: 0.503228366
@@ -746,7 +813,162 @@ Assets {
             Z: 7.38068247
           }
         }
-        ParentId: 2763672934151491479
+        ParentId: 10307567219301239480
+        ChildIds: 16651124829081897707
+        ChildIds: 1125011005603160384
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12302653924554145284
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.217272505
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1.52125645
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1137112816547272582
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              OverrideMass: true
+              Mass: 500
+              LinearDamping: 1
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 16651124829081897707
+        Name: "Decal Wood Ends Variations"
+        Transform {
+          Location {
+            X: 0.104980469
+            Y: 0.000152587891
+            Z: 49.9692535
+          }
+          Rotation {
+            Roll: 1.70754702e-05
+          }
+          Scale {
+            X: 1.20914185
+            Y: 1.20914185
+            Z: 0.00713298842
+          }
+        }
+        ParentId: 16682576114886351335
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 9561757784240598956
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 1125011005603160384
+        Name: "Decal Wood Ends Variations"
+        Transform {
+          Location {
+            X: 0.104980469
+            Y: -0.000101725258
+            Z: -50.2081299
+          }
+          Rotation {
+            Pitch: -2.04905664e-05
+            Yaw: -180
+            Roll: 179.999969
+          }
+          Scale {
+            X: 1.20914161
+            Y: 1.20914137
+            Z: 0.0151851755
+          }
+        }
+        ParentId: 16682576114886351335
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 9561757784240598956
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 6124411276764743745
+        Name: "Log"
+        Transform {
+          Location {
+            X: -68.4849091
+            Y: 10.7427673
+            Z: 23.8441944
+          }
+          Rotation {
+            Pitch: 67.6045914
+            Yaw: -177.11731
+            Roll: -86.9320679
+          }
+          Scale {
+            X: 0.503228366
+            Y: 0.503228366
+            Z: 7.38068247
+          }
+        }
+        ParentId: 10307567219301239480
         ChildIds: 3566086811231299027
         ChildIds: 7435432774444495705
         UnregisteredParameters {
@@ -882,173 +1104,18 @@ Assets {
         }
       }
       Objects {
-        Id: 7601195540963286944
-        Name: "Log"
-        Transform {
-          Location {
-            X: -35.1446381
-            Y: -8.13821697
-            Z: 92.2585449
-          }
-          Rotation {
-            Pitch: -6.83018879e-06
-            Yaw: 3.25688781e-12
-            Roll: 89.9999542
-          }
-          Scale {
-            X: 0.503228366
-            Y: 0.503228366
-            Z: 7.38068247
-          }
-        }
-        ParentId: 2763672934151491479
-        ChildIds: 11790046387329181781
-        ChildIds: 17314015445000974939
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12302653924554145284
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.217272505
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1.52125645
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1137112816547272582
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-              OverrideMass: true
-              Mass: 500
-              LinearDamping: 1
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 11790046387329181781
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: 0.104980469
-            Y: 0.000152587891
-            Z: 49.9692535
-          }
-          Rotation {
-            Roll: 1.70754702e-05
-          }
-          Scale {
-            X: 1.20914185
-            Y: 1.20914185
-            Z: 0.00713298842
-          }
-        }
-        ParentId: 7601195540963286944
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 17314015445000974939
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: 0.104980469
-            Y: -0.000101725258
-            Z: -50.2081299
-          }
-          Rotation {
-            Pitch: -2.04905664e-05
-            Yaw: -180
-            Roll: 179.999969
-          }
-          Scale {
-            X: 1.20914161
-            Y: 1.20914137
-            Z: 0.0151851755
-          }
-        }
-        ParentId: 7601195540963286944
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 1797953995678708179
         Name: "Log"
         Transform {
           Location {
-            X: 24.149828
-            Y: 7.73188829
-            Z: 92.2585449
+            X: 24.184269
+            Y: 7.43367195
+            Z: 69.6976852
           }
           Rotation {
-            Pitch: -6.83018879e-06
-            Yaw: 3.25688781e-12
-            Roll: 89.9999542
+            Pitch: -0.13381958
+            Yaw: 0.0484843962
+            Roll: 88.8315659
           }
           Scale {
             X: 0.503228366
@@ -1056,7 +1123,7 @@ Assets {
             Z: 7.38068247
           }
         }
-        ParentId: 2763672934151491479
+        ParentId: 10307567219301239480
         ChildIds: 9231648387959201667
         ChildIds: 1710100312407122785
         UnregisteredParameters {
@@ -1189,34 +1256,6 @@ Assets {
         }
         Relevance {
           Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 7314357451449572549
-        Name: "RemoveGroup"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 14095616626805498714
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
         }
       }
     }
