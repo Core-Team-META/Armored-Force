@@ -452,10 +452,9 @@ function PopulateSelectedTankPanel(id)
 	end
 
 	if tankData.purchasedTank then
-		OpenTankUpgradeWindow(nil, selectedTankId)
-		--Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", tankData.id)
-		--Events.Broadcast("CHANGE_EQUIPPED_TANK", tankData.id)
-		--SFX_EQUIP_TANK:Play()
+		if savedState == thisComponent then
+			OpenTankUpgradeWindow(nil, selectedTankId)
+		end
 		doNotShowModal = true
 	else
 		doNotShowModal = false
@@ -464,7 +463,9 @@ function PopulateSelectedTankPanel(id)
 	PopulateOwnedTanks()
 	if (isSelection and not doNotShowModal) then
 		local prereqs = GetPrerequisiteRPValues(selectedTankId)
-		if prereqs[1].usable then
+		if UTIL_API.UsingPremiumTank(tonumber(selectedTankId)) then
+			Events.Broadcast("ENABLE_GARAGE_COMPONENT", "SHOP_MENU", 4)
+		elseif prereqs[1].usable then
 			BUY_TANK_CONTAINER.visibility = Visibility.FORCE_ON
 			TECH_TREE_CONTENT.parent:FindDescendantByName("PREREQUISITE_INVALID_CONTAINER").visibility = Visibility.FORCE_OFF
 			local selectedTank = {}
