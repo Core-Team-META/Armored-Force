@@ -4,30 +4,38 @@ local closeButton = script:GetCustomProperty("CloseButton"):WaitForObject()
 
 local bodyText = script:GetCustomProperty("BodyText"):WaitForObject()
 local titleText = script:GetCustomProperty("TitleText"):WaitForObject()
+local buttonText = script:GetCustomProperty("ButtonText"):WaitForObject()
 
-local childText = titleText:FindChildByType("UIText")
 local localPlayer = Game.GetLocalPlayer()
 
 function CloseWindow()
 	messageUIWindow.visibility = Visibility.FORCE_OFF
 end
 
-function PopUpWindow(player, titleMessage, bodyMessage)
-
-	print(player)
-	print(titleMessage)
-	print(bodyMessage)
+function PopUpWindow(player, titleMessage, bodyMessage, buttonMessage)
 	
 	messageUIWindow.visibility = Visibility.INHERIT
 	
 	if player ~= localPlayer then
 		return
 	end
+	if titleMessage then
+		titleText.text = titleMessage
+	else 
+		titleText.text = ""
+	end
 	
-	titleText.text = titleMessage
-	childText.text = titleMessage
+	if bodyMessage then
+		bodyText.text = bodyMessage
+	else 
+		bodyText.text = ""
+	end
 	
-	bodyText.text = bodyMessage
+	if buttonMessage then
+		buttonText.text = buttonMessage
+	else 
+		buttonText.text = "Close"
+	end
 
 end
 

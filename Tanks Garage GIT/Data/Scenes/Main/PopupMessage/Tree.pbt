@@ -109,6 +109,12 @@ Objects {
         SelfId: 16857632454991607954
       }
     }
+    Overrides {
+      Name: "cs:ButtonText"
+      ObjectReference {
+        SelfId: 12427928784523822931
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
