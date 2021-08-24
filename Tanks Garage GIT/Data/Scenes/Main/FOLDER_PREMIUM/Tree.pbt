@@ -53565,7 +53565,7 @@ Objects {
     }
   }
   ParentId: 13256554077844899425
-  ChildIds: 241041003799373851
+  ChildIds: 5706731991163536784
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -53607,6 +53607,62 @@ Objects {
   }
 }
 Objects {
+  Id: 5706731991163536784
+  Name: "PortalImageOffset"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7113944454808156752
+  ChildIds: 241041003799373851
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 1000
+    Height: 500
+    UIX: -40
+    UIY: -60
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 241041003799373851
   Name: "PortalImage"
   Transform {
@@ -53620,7 +53676,17 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7113944454808156752
+  ParentId: 5706731991163536784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:HolderIndex"
+      String: "premium"
+    }
+    Overrides {
+      Name: "cs:BundleIndex"
+      String: "premiumTank2"
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -53636,8 +53702,6 @@ Objects {
   Control {
     Width: 1155
     Height: 629
-    UIX: 47.672
-    UIY: -56.1088943
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -53659,8 +53723,7 @@ Objects {
       }
       ShadowOffset {
       }
-      GameId: "39cdb8/tanksportal-images2"
-      ScreenshotIndex: 3
+      ScreenshotIndex: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -53691,7 +53754,7 @@ Objects {
     }
   }
   ParentId: 13256554077844899425
-  ChildIds: 17676361722678647658
+  ChildIds: 17297246573841443398
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -53733,6 +53796,62 @@ Objects {
   }
 }
 Objects {
+  Id: 17297246573841443398
+  Name: "PortalImageOffset"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9754093109843420495
+  ChildIds: 17676361722678647658
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 1000
+    Height: 500
+    UIX: -40
+    UIY: -60
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 17676361722678647658
   Name: "PortalImage"
   Transform {
@@ -53746,7 +53865,17 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9754093109843420495
+  ParentId: 17297246573841443398
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:HolderIndex"
+      String: "premium"
+    }
+    Overrides {
+      Name: "cs:BundleIndex"
+      String: "premiumTank1"
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -53762,8 +53891,6 @@ Objects {
   Control {
     Width: 1155
     Height: 629
-    UIX: -13.0112915
-    UIY: -56.1088943
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -53785,8 +53912,7 @@ Objects {
       }
       ShadowOffset {
       }
-      GameId: "39cdb8/tanksportal-images2"
-      ScreenshotIndex: 3
+      ScreenshotIndex: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -73735,6 +73861,16 @@ Objects {
     }
   }
   ParentId: 17561265569738196010
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:HolderIndex"
+      String: "conversion"
+    }
+    Overrides {
+      Name: "cs:BundleIndex"
+      String: "convert"
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -73773,8 +73909,7 @@ Objects {
       }
       ShadowOffset {
       }
-      GameId: "39cdb8/tanksportal-images2"
-      ScreenshotIndex: 2
+      ScreenshotIndex: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -75289,7 +75424,7 @@ Objects {
     }
   }
   ParentId: 4913250420568808913
-  ChildIds: 17163203269248120671
+  ChildIds: 17067572008597360108
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -75333,6 +75468,61 @@ Objects {
   }
 }
 Objects {
+  Id: 17067572008597360108
+  Name: "PortalImageOffset"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8500949162697143144
+  ChildIds: 17163203269248120671
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 1000
+    Height: 200
+    UIY: -42
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 17163203269248120671
   Name: "PortalImage"
   Transform {
@@ -75346,7 +75536,17 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8500949162697143144
+  ParentId: 17067572008597360108
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:HolderIndex"
+      String: "bundles"
+    }
+    Overrides {
+      Name: "cs:BundleIndex"
+      String: "gold3"
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -75363,7 +75563,7 @@ Objects {
     Width: 1130
     Height: 650
     UIX: -756.042603
-    UIY: -251.132553
+    UIY: -209.132568
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -75385,7 +75585,6 @@ Objects {
       }
       ShadowOffset {
       }
-      GameId: "39cdb8/tanksportal-images2"
       ScreenshotIndex: 1
     }
     AnchorLayout {
@@ -76776,7 +76975,7 @@ Objects {
     }
   }
   ParentId: 14205146206548191098
-  ChildIds: 9274209527241329447
+  ChildIds: 3990591182607117801
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -76820,6 +77019,61 @@ Objects {
   }
 }
 Objects {
+  Id: 3990591182607117801
+  Name: "PortalImageOffset"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8255585646658250313
+  ChildIds: 9274209527241329447
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 1000
+    Height: 200
+    UIY: -42
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 9274209527241329447
   Name: "PortalImage"
   Transform {
@@ -76833,7 +77087,17 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8255585646658250313
+  ParentId: 3990591182607117801
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:HolderIndex"
+      String: "bundles"
+    }
+    Overrides {
+      Name: "cs:BundleIndex"
+      String: "gold2"
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -76849,7 +77113,7 @@ Objects {
   Control {
     Width: 1130
     Height: 650
-    UIY: -251.132553
+    UIY: -209.132568
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -76871,7 +77135,6 @@ Objects {
       }
       ShadowOffset {
       }
-      GameId: "39cdb8/tanksportal-images2"
       ScreenshotIndex: 1
     }
     AnchorLayout {
@@ -78262,7 +78525,7 @@ Objects {
     }
   }
   ParentId: 3552188107208883697
-  ChildIds: 11862193792311767297
+  ChildIds: 16844545061353910984
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -78306,6 +78569,61 @@ Objects {
   }
 }
 Objects {
+  Id: 16844545061353910984
+  Name: "PortalImageOffset"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12731497751684154405
+  ChildIds: 11862193792311767297
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 1000
+    Height: 200
+    UIY: -42
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 11862193792311767297
   Name: "PortalImage"
   Transform {
@@ -78319,7 +78637,17 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12731497751684154405
+  ParentId: 16844545061353910984
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:HolderIndex"
+      String: "bundles"
+    }
+    Overrides {
+      Name: "cs:BundleIndex"
+      String: "gold1"
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -78336,7 +78664,7 @@ Objects {
     Width: 1130
     Height: 650
     UIX: -378.193207
-    UIY: -43.7529144
+    UIY: -1.75292969
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -78358,7 +78686,6 @@ Objects {
       }
       ShadowOffset {
       }
-      GameId: "39cdb8/tanksportal-images2"
       ScreenshotIndex: 1
     }
     AnchorLayout {
@@ -79749,7 +80076,7 @@ Objects {
     }
   }
   ParentId: 13421667482506044002
-  ChildIds: 6461996230532955826
+  ChildIds: 4257887462624522614
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -79793,6 +80120,61 @@ Objects {
   }
 }
 Objects {
+  Id: 4257887462624522614
+  Name: "PortalImageOffset"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11183556180569470235
+  ChildIds: 6461996230532955826
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 1000
+    Height: 200
+    UIY: -42
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 6461996230532955826
   Name: "PortalImage"
   Transform {
@@ -79806,7 +80188,17 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11183556180569470235
+  ParentId: 4257887462624522614
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:HolderIndex"
+      String: "bundles"
+    }
+    Overrides {
+      Name: "cs:BundleIndex"
+      String: "silver3"
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -79822,8 +80214,6 @@ Objects {
   Control {
     Width: 1130
     Height: 650
-    UIX: -376.074371
-    UIY: -244.645416
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -79845,7 +80235,6 @@ Objects {
       }
       ShadowOffset {
       }
-      GameId: "39cdb8/tanksportal-images2"
       ScreenshotIndex: 1
     }
     AnchorLayout {
@@ -81236,7 +81625,7 @@ Objects {
     }
   }
   ParentId: 6464611476803030387
-  ChildIds: 1798781294321495800
+  ChildIds: 2080020398475793
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -81280,6 +81669,61 @@ Objects {
   }
 }
 Objects {
+  Id: 2080020398475793
+  Name: "PortalImageOffset"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9317839833830564007
+  ChildIds: 1798781294321495800
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 1000
+    Height: 200
+    UIY: -42
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 1798781294321495800
   Name: "PortalImage"
   Transform {
@@ -81293,7 +81737,17 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9317839833830564007
+  ParentId: 2080020398475793
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:HolderIndex"
+      String: "bundles"
+    }
+    Overrides {
+      Name: "cs:BundleIndex"
+      String: "silver2"
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -81309,8 +81763,6 @@ Objects {
   Control {
     Width: 1130
     Height: 650
-    UIX: -755.947754
-    UIY: -27.4357777
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -81332,7 +81784,6 @@ Objects {
       }
       ShadowOffset {
       }
-      GameId: "39cdb8/tanksportal-images2"
       ScreenshotIndex: 1
     }
     AnchorLayout {
@@ -82723,7 +83174,7 @@ Objects {
     }
   }
   ParentId: 17636277567501476522
-  ChildIds: 4469444172308473062
+  ChildIds: 9277956431039273972
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -82767,8 +83218,8 @@ Objects {
   }
 }
 Objects {
-  Id: 4469444172308473062
-  Name: "PortalImage"
+  Id: 9277956431039273972
+  Name: "PortalImageOffset"
   Transform {
     Location {
     }
@@ -82781,6 +83232,71 @@ Objects {
     }
   }
   ParentId: 11577805180904566121
+  ChildIds: 5425961991058062223
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 1000
+    Height: 200
+    UIY: -42
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5425961991058062223
+  Name: "PortalImage"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9277956431039273972
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:HolderIndex"
+      String: "bundles"
+    }
+    Overrides {
+      Name: "cs:BundleIndex"
+      String: "silver1"
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -82796,7 +83312,6 @@ Objects {
   Control {
     Width: 1130
     Height: 650
-    UIY: -41.5762405
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -82818,7 +83333,6 @@ Objects {
       }
       ShadowOffset {
       }
-      GameId: "39cdb8/tanksportal-images2"
       ScreenshotIndex: 1
     }
     AnchorLayout {
@@ -85907,6 +86421,16 @@ Objects {
     }
   }
   ParentId: 13639888651003587304
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:HolderIndex"
+      String: "bundles"
+    }
+    Overrides {
+      Name: "cs:BundleIndex"
+      String: "deal3"
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -85945,7 +86469,6 @@ Objects {
       }
       ShadowOffset {
       }
-      GameId: "39cdb8/tanksportal-images2"
       ScreenshotIndex: 1
     }
     AnchorLayout {
@@ -87217,6 +87740,16 @@ Objects {
     }
   }
   ParentId: 11411591944692007143
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:HolderIndex"
+      String: "bundles"
+    }
+    Overrides {
+      Name: "cs:BundleIndex"
+      String: "deal2"
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -87255,7 +87788,6 @@ Objects {
       }
       ShadowOffset {
       }
-      GameId: "39cdb8/tanksportal-images2"
       ScreenshotIndex: 1
     }
     AnchorLayout {
@@ -92053,6 +92585,16 @@ Objects {
     }
   }
   ParentId: 8447526270581743252
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:HolderIndex"
+      String: "bundles"
+    }
+    Overrides {
+      Name: "cs:BundleIndex"
+      String: "deal1"
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -92090,7 +92632,6 @@ Objects {
       }
       ShadowOffset {
       }
-      GameId: "39cdb8/tanksportal-images2"
       ScreenshotIndex: 1
     }
     AnchorLayout {
