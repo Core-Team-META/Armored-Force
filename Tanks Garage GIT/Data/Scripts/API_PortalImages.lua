@@ -61,7 +61,26 @@ local axisIndex = {
 	[33] = {index = "axis2", coordinates = Vector2.New(1, 3)}
 }
 
+local premiumBundlesSize = Vector2.New(3, 3)
+local premiumTanksSize = Vector2.New(2, 2)
+
+local premiumBundlesIndex = {
+	["silver1"] = Vector2.New(1, 1),
+	["silver2"] = Vector2.New(3, 1),
+	["silver3"] = Vector2.New(2, 2),
+	["gold1"] = Vector2.New(2, 1),
+	["gold2"] = Vector2.New(1, 2),
+	["gold3"] = Vector2.New(3, 2),
+	["deal1"] = Vector2.New(1, 3),
+	["deal2"] = Vector2.New(2, 3),
+	["deal3"] = Vector2.New(3, 3),
+	["convert"] = Vector2.New(1, 1),
+	["premiumTank1"] = Vector2.New(1, 1),
+	["premiumTank2"] = Vector2.New(2, 1)
+}
+
 local skinsGridSize = Vector2.New(5, 5)
+
 
 local API = {}
 
@@ -99,6 +118,22 @@ function API.SetTankImage(image, tankID)
 	API.PositionImage(image, imageCoordinates, tankGridSize)
 	image:SetColor(Color.WHITE)
 
+end
+
+function API.SetPremiumShopImage(image, holderIndex, bundleIndex)
+
+	image:SetGameScreenshot(imageHolder2, holder2Index[holderIndex])
+	
+	if bundleIndex ~= "convert" then
+		local size = premiumBundlesSize
+		
+		if string.find("Tank", bundleIndex) then
+			size = premiumTanksSize
+		end
+		
+		API.PositionImage(image, premiumBundlesIndex[bundleIndex], size)
+	end
+	
 end
 
 function API.GetSkinsImageInfo(skinType)

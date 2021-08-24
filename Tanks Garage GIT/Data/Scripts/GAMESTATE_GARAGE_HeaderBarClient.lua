@@ -41,9 +41,17 @@ local selectedGameMode = "Frontline"
 local RAISED_MODE_SELECT = -255
 local LOWERED_MODE_SELECT = 55
 
-function OnMenuButtonClicked(button)
 
-	if spamPrevent then
+function OnMenuButtonClicked(button,ignoreSpamPrevent)
+
+	if not ignoreSpamPrevent then
+		ignoreSpamPrevent = false
+	end
+
+	--print("Spam prevent is: " .. tostring(spamPrevent))
+	--print("ISP is: " .. tostring(ignoreSpamPrevent))
+
+	if spamPrevent and not ignoreSpamPrevent then
 		return
 	end
 	
@@ -79,10 +87,14 @@ function OnMenuButtonClicked(button)
 	
 	previousActive = activeMenu
 	
-	Task.Wait(3)
+	Task.Wait(2.6)
 	
 	spamPrevent = false
 
+end
+
+function OnReturnToMenu()
+	OnMenuButtonClicked(homeButton,true)
 end
 
 function OnChooseModeClicked(button)
@@ -239,3 +251,4 @@ end
 
 Initialize()
 
+Events.Connect("RTM",OnReturnToMenu)

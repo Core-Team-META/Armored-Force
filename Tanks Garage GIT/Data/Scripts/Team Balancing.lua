@@ -3,7 +3,6 @@ local CONST = require(script:GetCustomProperty("MetaAbilityProgressionConstants_
 local GAME_STATE = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local GAME_STATE_LOBBY = script:GetCustomProperty("GAMESTATE_MatchLobbyServer"):WaitForObject()
 
-
 local DEBUG_SAME_TEAM = script:GetCustomProperty("DebugSameTeam")
 
 while not _G.TANK_DATA do
@@ -13,8 +12,6 @@ end
 local tankData = _G.TANK_DATA
 
 local BASE_VALUE_PER_PLAYER = 1
-local TOTAL_CLASS_VALUE_EXPONENT = 0.45 -- Higher value means that ability leveling is ever-more powerful
-local TOTAL_CLASS_VALUE_COEFFICIENT = 6 -- Higher value means players with progression are considered much more powerful
 local WIN_RATE_MIN = 0.2
 local WIN_RATE_MAX = 0.8
 local WIN_RATE_EXPONENT = 1
@@ -23,6 +20,21 @@ local LOBBY_REBALANCE_TIME = 8
 
 local function IsLobby()
 	return GAME_STATE:GetCustomProperty("GameState") == "LOBBYSTATE"
+end
+
+local function GetTankTypeMultiplier(tankId)
+	local tankType = tankData[tankId].type
+
+	if tankType == "Light" then
+		return 0.50
+	elseif tankType == "Medium" then
+		return 0.75
+	elseif tankType == "Heavy" then
+		return 0.90
+	elseif tankType == "Tank Destroyer" then
+		return 1
+	end
+	return 0.75
 end
 
 function ComputePlayerValue(player)
@@ -35,9 +47,8 @@ function ComputePlayerValue(player)
 	local value = BASE_VALUE_PER_PLAYER
 
 	local tankId = player:GetResource(CONST.GetEquippedTankResource())
-	local tankStrength = tankData[tankId].tier
-	tankStrength = tankStrength ^ TOTAL_CLASS_VALUE_EXPONENT
-	tankStrength = tankStrength * TOTAL_CLASS_VALUE_COEFFICIENT
+	local tankMultiplier = GetTankTypeMultiplier(tankId)
+	local tankStrength = (tankData[tankId].tier * tankMultiplier)
 	value = value + tankStrength
 
 	player.serverUserData.balanceValue = value
@@ -228,7 +239,6 @@ function OnPlayerLeft(playerToIgnore)
 end
 
 function OnLobbyTimerChanged(objecct, string)
-
 	if GAME_STATE_LOBBY:GetCustomProperty(string) == 2 then
 		DoRebalance()
 	end
