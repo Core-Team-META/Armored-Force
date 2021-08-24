@@ -1,6 +1,38 @@
 Name: "Morticai (Brent)"
 RootId: 17846127275428705935
 Objects {
+  Id: 18066522018053983547
+  Name: "Tournament"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17846127275428705935
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Tournament"
+  }
+}
+Objects {
   Id: 802231017974530256
   Name: "TankData"
   Transform {
