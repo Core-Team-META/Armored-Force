@@ -181,6 +181,12 @@ Assets {
         Bool: false
       }
       Overrides {
+        Name: "cs:_AIPlayer"
+        AssetReference {
+          Id: 916383919702722695
+        }
+      }
+      Overrides {
         Name: "cs:ChassisReference:isrep"
         Bool: true
       }

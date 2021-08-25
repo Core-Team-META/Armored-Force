@@ -1,3 +1,6 @@
+local AIPlayer = require(script:GetCustomProperty("_AIPlayer"))
+if _G.lookup == nil then _G.lookup = {tanks = {}} end
+
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local mainManagerServer = script:GetCustomProperty("MainManagerServer"):WaitForObject()
 local tankGarage = script:GetCustomProperty("TANK_VP_TankGarage"):WaitForObject()
@@ -5,6 +8,7 @@ local tankCount = script:GetCustomProperty("TankCount")
 
 local tankTemplates = script.parent
 local equippedTank = {}
+
 local resetOverride = false
 
 function GetEquippedTankTemplate(player, id)
@@ -93,9 +97,47 @@ function GivePlayerEquipment(player, playerStart)
 	local playerRotation = player:GetWorldRotation()
 	equippedTank[player] = World.SpawnAsset(GetEquippedTankTemplate(player, id), {parent = tankGarage, position = playerPosition, rotation = playerRotation})
 	Task.Wait(0.1)
+	_G.lookup.tanks[player] = {team = player.team, tank = equippedTank[player]}
 	equippedTank[player].context.AssignDriver(player, playerStart)
-	
 end
+
+
+
+
+function SpawnAITank(position, team)
+	print("Spawning an AI tank...")
+	--player.isVisible = false
+	
+	local currentState = mainManagerServer:GetCustomProperty("GameState")
+	--GivePlayerEquipment(player)
+
+	--local resourceID =  player:GetResource(CONSTANTS_API.GetEquippedTankResource())
+	local resourceID = 0
+	local id = tostring(resourceID)
+	
+	if resourceID < 10 then
+		id = "0" .. tostring(resourceID)
+	end
+	
+	--[[
+	local newAI = {
+		GetHealth = function() return 100 end,
+		GetWorldPosition = function() return position end,
+		GetWorldRotation = function() return Rotation.New() end,
+		serverUserData = {},
+	}]]
+	local newAI = AIPlayer.New()
+	newAI:SetWorldPosition(position)
+	local playerPosition = position
+	local playerRotation = Rotation.New()
+	equippedTank[newAI] = World.SpawnAsset(GetEquippedTankTemplate(nil, -1), {parent = tankGarage, position = playerPosition, rotation = playerRotation})
+	print("spawned", equippedTank[newAI])
+	Task.Wait(0.1)
+	newAI.team = team
+	_G.lookup.tanks[newAI] = {team = newAI.team, tank = equippedTank[newAI]}
+	equippedTank[newAI].context.AssignDriver(newAI, position, true)
+end
+
 
 -- nil RemovePlayerEquipment(Player)
 -- Removes the referenced requipment if that player has it
@@ -113,7 +155,27 @@ end
 function OnPlayerJoined(player)
 
 	player.spawnedEvent:Connect(OnPlayerRespawned)
-	
+	local team = 1
+	if player.team == 1 then team = 2 end
+	SpawnAITank(player:GetWorldPosition() + Vector3.New(1000, 1000, 1000), team)
+
+
+	--teams
+	--[[
+	for i = 1, 8 do
+		local offset = Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 3000 + Vector3.UP * 1000
+		SpawnAITank(offset + player:GetWorldPosition(), i % 2 + 1 )
+	end
+]]
+--[[
+	-- pairs
+	for i = 1, 2 do
+		local offset = Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 30000 + Vector3.UP * 1000
+		SpawnAITank(offset, i % 2 + 1 )
+	end
+
+]]
+
 end
 
 -- nil OnPlayerLeft(Player)

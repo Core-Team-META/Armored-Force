@@ -36,6 +36,7 @@ local fireState = nil
 
 -- Player Reference
 local driver = nil
+local isAI = false
 
 -- Additional Local Variables
 local tankSet = false
@@ -62,9 +63,15 @@ function CheckTankReady()
 	
 	Task.Wait(1)
 	
-	for _, p in ipairs(Game.GetPlayers()) do
-		if p.id == tankControllerServer:GetCustomProperty("DriverID") then
-			driver = p
+	local pID = tankControllerServer:GetCustomProperty("DriverID")
+	if pID == "AI_DRIVER" then
+		driver = {}
+		isAI = true
+	else
+		for _, p in ipairs(Game.GetPlayers()) do
+			if p.id == tankControllerServer:GetCustomProperty("DriverID") then
+				driver = p
+			end
 		end
 	end
 	
@@ -113,7 +120,6 @@ function CheckTankReady()
 end
 
 function GetSkin(player)
-
 	return templateReferences:GetCustomProperty("Default" .. "Skin")
 	
 end
@@ -124,7 +130,10 @@ function SetClientData()
 		return
 	end
 
-	if not driver.clientUserData.currentTankData then
+	if driver.clientUserData == nil then
+		driver.clientUserData = {}
+	end
+	if driver.clientUserData.currentTankData == nil then
 		driver.clientUserData.currentTankData = {}
 	end
 	
@@ -196,23 +205,27 @@ function OnTankStateChanged(controllerServer, property)
 
 end
 
-function FiringAnimation(player, reloadTime)
+function FiringAnimation(tankRef, reloadTime)
+	if not Object.IsValid(tankBodyServer) then return end
 
 	if not saluteOverride then
-		if player ~= driver or not Object.IsValid(tankBodyClient) then
+		if tankBodyServer:GetReference() ~= tankRef or not Object.IsValid(tankBodyClient) then
 			return
 		end
 	end
 	
 	reloadSpeed = reloadTime
 	
-	shotSFX:Play()
+	if shotSFX then
+		shotSFX:Play()
+	end
 		
+	if turretClient == nil then return end
 	local xRotation = 0
 	local yRotation = 0
 	
 	local currentZ = turretClient:GetRotation().z
-	
+
 	if currentZ < 0 then
 		currentZ = 360 + currentZ
 	end	
