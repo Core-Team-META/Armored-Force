@@ -113,7 +113,6 @@ function AIPlayer:ShouldShoot()
   local targetVector = (self.currentAttackTarget:GetWorldPosition() - chassis:GetWorldPosition()):GetNormalized()
   local aimVector = muzzle:GetWorldRotation() * Vector3.FORWARD
 
-  print("---", (targetVector .. aimVector),(targetVector ^ aimVector).z, aimTolerance)
 
   if (targetVector .. aimVector) < 0 then return false end
   if math.abs((targetVector ^ aimVector).z) > aimTolerance then return false end
