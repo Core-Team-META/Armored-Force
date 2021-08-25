@@ -1512,7 +1512,7 @@ Assets {
       }
       Objects {
         Id: 17941628758434363456
-        Name: "TROPHY_NAME"
+        Name: "name"
         Transform {
           Location {
           }
@@ -1544,7 +1544,7 @@ Assets {
             }
           }
           Text {
-            Label: "Gold"
+            Label: "Trophy"
             Color {
               R: 0.65
               G: 0.348675489
@@ -1610,7 +1610,7 @@ Assets {
           }
           Image {
             Brush {
-              Id: 18193887026357148080
+              Id: 14097001835618858858
             }
             Color {
               R: 1
@@ -1936,11 +1936,11 @@ Assets {
           }
           Overrides {
             Name: "cs:MinScore"
-            Int: 5000
+            Int: 200
           }
           Overrides {
             Name: "cs:MaxScore"
-            Int: 19999
+            Int: 999999999
           }
           Overrides {
             Name: "cs:Icon"
@@ -1987,12 +1987,12 @@ Assets {
       }
     }
     Assets {
-      Id: 18193887026357148080
-      Name: "Fantasy Trophy 001"
+      Id: 14097001835618858858
+      Name: "Fantasy Trophy 006"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Equip_Trophy_001"
+        AssetId: "UI_Fantasy_Equip_Trophy_006"
       }
     }
     Assets {
@@ -2002,15 +2002,6 @@ Assets {
       PrimaryAsset {
         AssetType: "FontAssetRef"
         AssetId: "OswaldRegular_ref"
-      }
-    }
-    Assets {
-      Id: 14097001835618858858
-      Name: "Fantasy Trophy 006"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Equip_Trophy_006"
       }
     }
     Assets {
