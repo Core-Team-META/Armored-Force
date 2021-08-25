@@ -81,11 +81,69 @@ function TankTick(self)
   self:SetAim()
   self:UpdateAttackTarget()
   self:PickMovementTarget()
+
+
+  if time() > self.lastShotTime + 3 and self:ShouldShoot() then
+    Events.Broadcast("AI_Tankshot", self)
+  end
+
+--[[
   if time() > self.lastShotTime + 3
     and math.random(1, 100) < 5 then
     Events.Broadcast("AI_Tankshot", self)
-  end
+  end]]
+
 end
+
+
+function AIPlayer:ShouldShoot()
+  if self.currentAttackTarget == nil then return false end
+  local chassis = _G.lookup.tanks[self].chassis
+  local muzzle = _G.lookup.tanks[self].muzzle
+  print(chassis, muzzle)
+  if chassis == nil or muzzle == nil then return false end
+
+  local myPos = chassis:GetWorldPosition()
+  local targetPos = self.currentAttackTarget:GetWorldPosition()
+
+
+  local aimTolerance = math.sin(5 * math.pi/180)
+
+  --local tankVector = vehicle:GetWorldRotation() * Vector3.FORWARD
+  local targetVector = (self.currentAttackTarget:GetWorldPosition() - chassis:GetWorldPosition()):GetNormalized()
+  local aimVector = muzzle:GetWorldRotation() * Vector3.FORWARD
+
+  print("---", (targetVector .. aimVector),(targetVector ^ aimVector).z, aimTolerance)
+
+  if (targetVector .. aimVector) < 0 then return false end
+  if math.abs((targetVector ^ aimVector).z) > aimTolerance then return false end
+  return true
+
+
+end
+
+
+function AttackEnemies()
+
+end
+
+
+
+function GoToBattle()
+
+end
+
+
+function CapturePoint()
+
+end
+
+
+function DefendPoint()
+
+
+end
+
 
 
 
@@ -97,7 +155,7 @@ function AIPlayer:UpdateAttackTarget()
     local myPos = tank:GetWorldPosition()
     local dist = -1
     for k,t in pairs(_G.lookup.tanks) do
-      if t.team ~= self.team then
+      if t.team ~= self.team and Object.IsValid(t.chassis) then
         local tDist = (t.chassis:GetWorldPosition() - myPos).size
         if (dist == -1 or tDist < dist) then
           newTarget = t.chassis
