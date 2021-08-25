@@ -193,7 +193,7 @@ function ClaimReward(player, challengeNumber)
 			
 			RepackChallengeInfo(player)
 			AddInfoToSlot(player.id, player.serverUserData.CHALLENGES, player.serverUserData.LOGIN)
-			Events.BroadcastToPlayer(player, "SEND_POPUP", player, "CHALLENGE " .. tostring(challengeNumber) .. " COMPLETE", "You earned 2000 silver and 1000 Free XP!")
+			Events.BroadcastToPlayer(player, "SEND_POPUP", player, "CHALLENGE " .. tostring(challengeNumber) .. " COMPLETE", "You earned 2000 Silver and 1000 Universal Parts!")
 		end
 	end	
 
