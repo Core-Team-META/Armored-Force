@@ -7,7 +7,9 @@ API.TutorialPhase = {
 	PrecisionShots = 3,
 	BaseCapture = 4,
 	JoinBattle = 5,
-	Completed = 99
+	Upgrade = 6,
+	Completed = 99,
+
 }
 
 function API.GetTutorialResource()
