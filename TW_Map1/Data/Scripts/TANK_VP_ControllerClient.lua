@@ -266,7 +266,9 @@ function FiringAnimation(tankRef, reloadTime)
 	
 	Task.Wait(0.07)
 	
-	adjustmentPoint:RotateTo(Rotation.ZERO, 0.2, true)
+	if Object.IsValid(adjustmentPoint) then
+		adjustmentPoint:RotateTo(Rotation.ZERO, 0.2, true)
+	end
 
 end
 
