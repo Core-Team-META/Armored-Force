@@ -35,20 +35,6 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "cs:Keys"
-          ObjectReference {
-            SelfId: 1947523069746062464
-          }
-        }
       }
     }
     TemplateAsset {

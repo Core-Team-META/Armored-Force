@@ -9,10 +9,10 @@ local isEnabled = ROOT:GetCustomProperty("Enabled")
 if not isEnabled then
     return
 end
+
 local shouldSaveProgress = ROOT:GetCustomProperty("SaveProgress")
 local useSharedKey = ROOT:GetCustomProperty("UseSharedKey")
-local keys = ROOT:GetCustomProperty("Keys"):WaitForObject()
-local sharedKeyNetRef = keys:GetCustomProperty("Achievements")
+local sharedKeyNetRef = World.FindObjectByName("Keys"):GetCustomProperty("Achievements")
 
 ------------------------------------------------------------------------------------------------------------------------
 -- REQUIRES
