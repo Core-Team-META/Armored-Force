@@ -1,6 +1,38 @@
 Name: "Morticai (Brent)"
 RootId: 9217238362449521800
 Objects {
+  Id: 7996886903971617257
+  Name: "Achievements"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9217238362449521800
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Achievements"
+  }
+}
+Objects {
   Id: 14345805352467479663
   Name: "Tournament"
   Transform {
@@ -2182,55 +2214,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "FirstVictory"
-  }
-}
-Objects {
-  Id: 8441346333361771277
-  Name: "Achievement System"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9217238362449521800
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Enabled"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:SaveProgress"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseSharedKey"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:Keys"
-      ObjectReference {
-        SelfId: 1947523069746062464
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Achivment System"
   }
 }
 Objects {

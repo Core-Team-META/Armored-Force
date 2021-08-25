@@ -347,9 +347,13 @@ Objects {
   }
 }
 Objects {
-  Id: 1809387925543207695
-  Name: "Achievement System"
+  Id: 8082583568088031768
+  Name: "Achievements"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -357,26 +361,6 @@ Objects {
     }
   }
   ParentId: 8043684082903823001
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Enabled"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:SaveProgress"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseSharedKey"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:Keys"
-      ObjectReference {
-        SelfId: 1126690814057033551
-      }
-    }
-  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -386,8 +370,11 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Achivment System"
+    FilePartitionName: "Achievements"
   }
 }
