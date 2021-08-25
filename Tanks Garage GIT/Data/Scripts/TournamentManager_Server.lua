@@ -75,8 +75,9 @@ local function CalculateScore(player, winningTeam, playerBonus)
     newScore = matchScore + killScore + captureScore + damageScore
     newScore = newScore + (newScore * playerBonus)
 
-    playerScore[player] = CoreMath.Round(playerScore[player] + newScore)
-    player:SetPrivateNetworkedData("TSCORE", playerScore[player])
+    newScore = CoreMath.Round(playerScore[player] + newScore)
+    player:SetPrivateNetworkedData("TSCORE", newScore)
+    playerScore[player] = newScore
 end
 
 local function GetWinningTeam()

@@ -25,6 +25,16 @@ Objects {
           Name: "Name"
           String: "TournamentSettings"
         }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
       }
     }
     TemplateAsset {
