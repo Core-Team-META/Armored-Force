@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 8043684082903823001
+        ParentId: 8082583568088031768
         ChildIds: 5507159331486064859
         ChildIds: 16921727977614181318
         ChildIds: 4985701431424760958
@@ -32,12 +32,6 @@ Assets {
           Overrides {
             Name: "cs:UseSharedKey"
             Bool: true
-          }
-          Overrides {
-            Name: "cs:Keys"
-            ObjectReference {
-              SelfId: 1126690814057033551
-            }
           }
         }
         Collidable_v2 {
