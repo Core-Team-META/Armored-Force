@@ -11,6 +11,7 @@ function GetNewId()
 end
 
 local AIList = {}
+local WRIGGLE_DURATION = 3
 
 
 function AIPlayer.New(team)
@@ -31,6 +32,14 @@ function AIPlayer.New(team)
     currentMovementTarget = nil,
     currentAttackTarget = nil,
     lastShotTime = -1,
+
+    lastPathUpdateTime = -1,
+
+    wriggleStartTime = -1,
+    wriggleAngle = 0,
+    lastPos = Vector3.ZERO,
+    stuckTime = 0,
+    --behaviorTimer = -1
   }
 
   setmetatable(newAIPlayer, {
@@ -78,13 +87,24 @@ end
 function TankTick(self)
   --print(">>>FIRE!<<<", self, self.tankId)
   --Task.Wait(math.random(0, 2))
+  local SHOT_FREQUENCY = 1
+  local PATH_UPDATE_FREQUENCY = 2
+
+
   self:SetAim()
   self:UpdateAttackTarget()
-  self:PickMovementTarget()
 
+  local currentTime = time()
 
-  if time() > self.lastShotTime + 3 and self:ShouldShoot() then
+  if currentTime > self.lastShotTime + SHOT_FREQUENCY and self:ShouldShoot() then
+    self.lastShotTime = currentTime
     Events.Broadcast("AI_Tankshot", self)
+  end
+
+  if currentTime > self.lastPathUpdateTime + PATH_UPDATE_FREQUENCY then
+    self.lastPathUpdateTime = currentTime
+    self:CheckIfStuck()
+    self:UpdatePath()
   end
 
 --[[
@@ -96,11 +116,27 @@ function TankTick(self)
 end
 
 
+function AIPlayer:CheckIfStuck()
+  if time() < self.wriggleStartTime + WRIGGLE_DURATION then return end
+
+  local pos = self:GetWorldPosition()
+  if self.currentMovementTarget == nil then return end
+  print(self.currentMovementTarget, pos)
+  if (self.currentMovementTarget - pos).size > 100
+      and (self.lastPos - pos).size < 100 then
+    print("WRIGGLE TIME")
+    self.wriggleStartTime = time()
+    self.wriggleAngle = math.random() * 2.0 - 1.0
+  end
+  self.lastPos = pos
+end
+
+
 function AIPlayer:ShouldShoot()
+  --if true then return false end
   if self.currentAttackTarget == nil then return false end
   local chassis = _G.lookup.tanks[self].chassis
   local muzzle = _G.lookup.tanks[self].muzzle
-  print(chassis, muzzle)
   if chassis == nil or muzzle == nil then return false end
 
   local myPos = chassis:GetWorldPosition()
@@ -145,31 +181,29 @@ end
 
 
 
-
-function AIPlayer:UpdateAttackTarget()
-  local tank = World.FindObjectById(self.tankId)
-  if tank ~= nil then
-
-    local newTarget = nil
-    local myPos = tank:GetWorldPosition()
+function AIPlayer:FindNearestEnemyTank()
+  local myTank = _G.lookup.tanks[self].chassis
+  local nearest = nil
+  if myTank ~= nil then
+    local myPos = myTank:GetWorldPosition()
     local dist = -1
     for k,t in pairs(_G.lookup.tanks) do
       if t.team ~= self.team and Object.IsValid(t.chassis) then
         local tDist = (t.chassis:GetWorldPosition() - myPos).size
         if (dist == -1 or tDist < dist) then
-          newTarget = t.chassis
+          nearest = t.chassis
           dist = tDist
         end
       end
     end
-
-
-    --local targetPlayer = Game.FindNearestPlayer(tank:GetWorldPosition())
-    --local targetTank = _G.lookup.tanks[targetPlayer]
-    self.currentAttackTarget = newTarget
-    --print("setting aim!", self.currentAttackTarget:GetWorldPosition())
-    --CoreDebug.DrawLine(self.currentAttackTarget:GetWorldPosition(), self.currentAttackTarget:GetWorldPosition() + Vector3.UP *500, {thickness = 15})
   end
+  return nearest
+end
+
+
+function AIPlayer:UpdateAttackTarget()
+  -- Basic version for now - shoot at whoever is closest and enemy!
+  self.currentAttackTarget = self:FindNearestEnemyTank()
 end
 
 
@@ -183,6 +217,7 @@ end
 
 
 function AIPlayer:HandleDriving(vehicle, params)
+  if not Object.IsValid(vehicle) then return end
   --[[
   params.isHandbrakeEngaged = false
   params.throttleInput = 1.0
@@ -190,10 +225,13 @@ function AIPlayer:HandleDriving(vehicle, params)
 ]]
 
   if self.currentMovementTarget == nil then return end
+  local currentTarget = self.currentMovementTarget
+
+  if currentTarget == nil then return end
 
   local tankVector = vehicle:GetWorldRotation() * Vector3.FORWARD
-  local targetVector = (self.currentMovementTarget - vehicle:GetWorldPosition())
-  
+  local targetVector = (currentTarget - vehicle:GetWorldPosition())
+
   tankVector.z = 0
   targetVector.z = 0
   
@@ -214,15 +252,26 @@ function AIPlayer:HandleDriving(vehicle, params)
 
   local steering = (targetVector:GetNormalized() ^ tankVector:GetNormalized() ).z
   local isFacing = (targetVector:GetNormalized() .. tankVector:GetNormalized() ) > 0
+  local dist = (currentTarget - vehicle:GetWorldPosition()).size
 
   params.isHandbrakeEngaged = false
   params.throttleInput = 1.0
   
-  if isFacing then
+  if time() < self.wriggleStartTime + WRIGGLE_DURATION then
+    params.steeringInput = self.wriggleAngle
+    params.throttleInput = -1.0
+    params.isHandbrakeEngaged = false
+  elseif dist < 100 then
+    params.steeringInput = 0
+    params.throttleInput = 0
+    params.isHandbrakeEngaged = true
+  elseif isFacing then
     params.steeringInput = -steering
     params.throttleInput = 1.0
   else
-    params.steeringInput = -steering * 10000
+    --print("reversing!")
+    --if steering < 0 then steering = 1 else steering = -1 end
+    params.steeringInput = 1 ---steering
     params.throttleInput = -1.0
   end
 end
@@ -237,35 +286,95 @@ function AIPlayer:SetAim()
 end
 
 
-function AIPlayer:PickMovementTarget()
-  local tank = World.FindObjectById(self.tankId)
-  local player = Game.FindNearestPlayer(tank:GetWorldPosition())
-  if player then
-    self.currentMovementTarget = player:GetWorldPosition()
-      
-      if (self.currentMovementTarget - tank:GetWorldPosition()).size < 2000 then
-        --print("Reversing!------------")
-        local tankDirection = tank:GetWorldRotation() * Vector3.FORWARD
+function AIPlayer:PlotCourse(targetPos)
+  if targetPos == nil then return end
+  -- Todo - make this better!
+  local SCAN_RANGE = 10000
+  local SCAN_STEP = 750
 
-        self.currentMovementTarget = Rotation.New(0, 0, math.random(240, 320)) * tankDirection * 2000
-        CoreDebug.DrawLine(self.currentMovementTarget, self.currentMovementTarget + Vector3.UP * 1000, {duration = 3, thickness = 15, color=Color.RED})
-        --[[
-        local tankToTarget = (self.currentMovementTarget - tank:GetWorldPosition()):GetNormalized()
+  --local frontPath = self:PathRay(targetPos, SCAN_RANGE, SCAN_STEP)
 
-        local turnDirection = -1
-        if (tankDirection ^ tankToTarget).z > 0 then
-          turnDirection = 1
-        end
-        self.currentMovementTarget = tank:GetWorldPosition() + tankToTarget * Rotation.New(0, 0, 90 * turnDirection) * 2000
-        --self.currentMovementTarget = self.currentMovementTarget + tank:GetWorldRotation() * Vector3.RIGHT * 2000
-        ]]
-      else
-        self.currentMovementTarget = self.currentMovementTarget + Vector3.New(math.random(-1000, 1000), math.random(-1000, 1000), 0)
+  -- It's in this order, so that it prioritizes smaller deviations.
+  local angleList = {0, -20, 20, -40, 40, -60, 60}
+
+  local bestAngle = 0
+
+  local pos = self:GetWorldPosition()
+  local vec = targetPos - pos
+  local bestDist = -1
+  local bestTarget = nil
+  for _, angle in ipairs(angleList) do
+    local newPoint = pos + Rotation.New(0, 0, angle) * vec
+    local newDist = self:PathRay(newPoint, SCAN_RANGE, SCAN_STEP)
+    if newDist >= SCAN_RANGE then
+      bestTarget = newPoint
+      break
+    elseif newDist > bestDist then
+      bestTarget = newPoint
+      bestDist = newDist
+    end
+    if bestTarget ~= nil then targetPos = bestTarget end
+  end
+
+  self.currentMovementTarget = targetPos or self:GetWorldPosition()
+end
+
+
+
+function AIPlayer:UpdatePath()
+  local CLOSING_DIST = 5000
+  local target = self:FindNearestEnemyTank()
+  if Object.IsValid(target) then
+    local enemyPos = target:GetWorldPosition()
+    local myPos = self:GetWorldPosition()
+    -- We want to stop a little ways away.
+    local targetPos = (myPos - enemyPos):GetNormalized() * CLOSING_DIST + enemyPos
+    self:PlotCourse(targetPos)
+  else
+    self:PlotCourse(nil)
+  end
+end
+
+
+function AIPlayer:PathRay(targetPos, targetDist, step)
+  local currentPos = self:GetWorldPosition()
+  local vec = (targetPos - currentPos):GetNormalized()
+
+  vec.z = 0
+
+  local totalDist = 0
+  while totalDist < targetDist do
+    currentPos = currentPos + vec * step
+    local hr = World.Raycast(currentPos + Vector3.UP * 1000, currentPos + Vector3.UP * -1000)
+    local debugLineColor = Color.GREEN
+    if hr ~= nil then
+
+
+      local other_name = nil
+      if not pcall(function()
+        other_name = hr.other.name
+      end) then
+        print("blocked an error!")
       end
 
+      if other_name == "Terrain_Main" then
+        -- continue
+        totalDist = totalDist + step
+      else
+        debugLineColor = Color.RED
+      end
+      --[[
+      CoreDebug.DrawLine(currentPos + Vector3.UP * 1000,
+          currentPos + Vector3.UP * -1000,
+          {thickness = 15, duration = 1, color = debugLineColor})
+          ]]
 
+      if other_name ~= "Terrain_Main" then
+        break
+      end
+    end
   end
-  
+  return totalDist
 end
 
 
@@ -316,9 +425,12 @@ function AIPlayer:SetWorldPosition(pos)
   self.position = pos
 end
 
+--[[
+-- I made a better version, below.
 function AIPlayer:GetWorldPosition()
   return self.position
 end
+]]
 
 function AIPlayer:SetWorldRotation(rot)
   self.rotation = rot
@@ -332,5 +444,18 @@ function AIPlayer:AddResource(resourceName, amount)
 end
 
 
+function AIPlayer:GetWorldPosition()
+  local myTank = _G.lookup.tanks[self].chassis
+  if Object.IsValid(myTank) then
+    return myTank:GetWorldPosition()
+  else
+    myTank = _G.lookup.tanks[self].tank
+  end
+  if Object.IsValid(myTank) then return myTank:GetWorldPosition() end
+
+  warn("Tried to get the position of a destroyed player!")
+  print(CoreDebug.GetStackTrace())
+  return Vector3.ZERO
+end
 
 return AIPlayer

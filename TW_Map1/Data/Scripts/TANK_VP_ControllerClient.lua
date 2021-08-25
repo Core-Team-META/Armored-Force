@@ -84,6 +84,8 @@ function CheckTankReady()
 	tankBodyClient:SetRotation(Rotation.ZERO)
 	
 	Task.Wait(1)
+	-- in case it dies during this mysterious wait.  (Why is that there?)
+	if not Object.IsValid(tankBodyClient) then return end
 	
 	treadsLeft = tankBodyClient:FindDescendantByName("TreadsLeft")
 	treadsRight = tankBodyClient:FindDescendantByName("TreadsRight")

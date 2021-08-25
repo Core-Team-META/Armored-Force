@@ -140,11 +140,11 @@ function AssignDriver(newDriver, playerStart, _isAI)
 		--print("Using player start position")
 		--baseForPosition = playerStart
 	end
-	print(baseForPosition)
-	print(CoreDebug.GetStackTrace())
+	--print(baseForPosition)
+	--print(CoreDebug.GetStackTrace())
 	local newScriptPosition = baseForPosition:GetWorldPosition()
 	local newScriptRotation = baseForPosition:GetWorldRotation()
-	
+	print("newscript stuff", newScriptPosition, newScriptRotation)
 	local moreIdealPositionRaycast = World.Raycast(newScriptPosition + Vector3.UP * 1000, newScriptPosition - Vector3.UP * 1000, {ignorePlayers = true})
 	
 	if moreIdealPositionRaycast then
@@ -491,7 +491,9 @@ function ProjectileImpacted(expiredProjectile, other)
 	local totalDamage = math.floor(potentialDamage - potentialDamage * 0.2)
 	local damageDealt = Damage.New(totalDamage)
 	
-	damageDealt.sourcePlayer = driver
+	if driver:IsA("Player") then
+		damageDealt.sourcePlayer = driver
+	end
 	damageDealt.reason = DamageReason.COMBAT
 	--other.driver:ApplyDamage(damageDealt)
 
