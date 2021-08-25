@@ -131,7 +131,7 @@ function SpawnAITank(position, team)
 	local playerPosition = position
 	local playerRotation = Rotation.New()
 	equippedTank[newAI] = World.SpawnAsset(GetEquippedTankTemplate(nil, -1), {parent = tankGarage, position = playerPosition, rotation = playerRotation})
-	print("spawned", equippedTank[newAI])
+	--print("spawned", equippedTank[newAI])
 	Task.Wait(0.1)
 	newAI.team = team
 	_G.lookup.tanks[newAI] = {team = newAI.team, tank = equippedTank[newAI]}
@@ -155,7 +155,7 @@ end
 function OnPlayerJoined(player)
 
 	player.spawnedEvent:Connect(OnPlayerRespawned)
-
+	player:SetWorldPosition(Vector3.UP * 1000)
 
 	--[[
 	local team = 1

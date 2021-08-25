@@ -507,7 +507,9 @@ function ProjectileImpacted(expiredProjectile, other)
 	}
 	COMBAT.ApplyDamage(attackData)
 	
-	Events.BroadcastToPlayer(driver, "ShowDamageFeedback", totalDamage, "TRACK", chassis:GetWorldPosition(), other.driver.id)
+	if driver:IsA("Player") then
+		Events.BroadcastToPlayer(driver, "ShowDamageFeedback", totalDamage, "TRACK", chassis:GetWorldPosition(), other.driver.id)
+	end
 
 end
 
@@ -583,7 +585,7 @@ function OnArmorHit(trigger, other)
 		else
 
 		end
-		if not isAI then
+		if driver:IsA("Player") then
 			Events.BroadcastToPlayer(driver, "ShowHitFeedback", totalDamage, armorName, trigger:GetWorldPosition())
 		end
 		
@@ -628,7 +630,9 @@ function OnArmorHit(trigger, other)
 				end
 
 				turretDamagedTask = Task.Spawn(OnDamagedTurret, 0)
-				Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "TURRET")
+				if enemyPlayer:IsA("Player") then
+					Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "TURRET")
+				end
 			else 
 
 				if Object.IsValid(driver) then
@@ -636,7 +640,9 @@ function OnArmorHit(trigger, other)
 				end
 
 				turretDamagedTask = Task.Spawn(OnDamagedBarrel, 0)
-				Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "BARREL")
+				if enemyPlayer:IsA("Player") then
+					Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "BARREL")
+				end
 			end
 		end
 	elseif other.type == "TreadedVehicle" or other.type == "Vehicle" then
@@ -736,7 +742,9 @@ function OnArmorHit(trigger, other)
 		if armorName == "HULLREAR" and not burnTask then
 			playerWhoBurned = enemyPlayer
 			burnTask = Task.Spawn(OnBurning, 0)
-			Events.BroadcastToPlayer(driver, "INFLICTED_STATE", "FIRE")
+			if enemyPlayer:IsA("Player") then
+				Events.BroadcastToPlayer(driver, "INFLICTED_STATE", "FIRE")
+			end
 		end
 	end
 	
@@ -827,7 +835,9 @@ function OnBurning()
 
 		local damageDealt = Damage.New(10)
 	
-		damageDealt.sourcePlayer = playerWhoBurned
+		if playerWhoBurned:IsA("Player") then
+			damageDealt.sourcePlayer = playerWhoBurned
+		end
 		damageDealt.reason = DamageReason.COMBAT
 		--driver:ApplyDamage(damageDealt)
 
