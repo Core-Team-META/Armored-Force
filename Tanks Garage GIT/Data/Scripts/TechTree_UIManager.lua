@@ -102,6 +102,7 @@ local BUY_TANK_CONTAINER = script:GetCustomProperty("BUY_TANK_CONTAINER"):WaitFo
 local STATS_TANK_CONTAINER = script:GetCustomProperty("STATS_TANK_CONTAINER"):WaitForObject()
 local UPGRADE_TANK_CONTAINER = script:GetCustomProperty("UPGRADE_TANK_CONTAINER"):WaitForObject()
 local UPGRADE_TANK_CONFIRM_CONTAINER = script:GetCustomProperty("UPGRADE_TANK_CONFIRM_CONTAINER"):WaitForObject()
+local Tutorial_UpgradeTank = script:GetCustomProperty("Tutorial_UpgradeTank"):WaitForObject()
 
 local VIEWED_TANK_STATS = script:GetCustomProperty("VIEWED_TANK_STATS"):WaitForObject()
 
@@ -1656,6 +1657,10 @@ function CloseCannotPurchaseTank(button)
 	button:FindAncestorByName("PREREQUISITE_INVALID_CONTAINER").visibility = Visibility.FORCE_OFF
 end
 
+function TutorialOpenTankUpgradeWindow()
+	if LOCAL_PLAYER.clientUserData.tutorial6 == 0 then LOCAL_PLAYER.clientUserData.tutorial6 = 1 end
+	OpenTankUpgradeWindow()
+end
 
 function OpenTankUpgradeWindow(button, id)	
 	if not id then
@@ -1870,6 +1875,8 @@ CLOSE_CANNOT_PURCHASE_TANK.clickedEvent:Connect(CloseCannotPurchaseTank)
 BUTTON_UPGRADE_TANK.clickedEvent:Connect(OpenTankUpgradeWindow)
 BUTTON_UPGRADE_TANK.hoveredEvent:Connect(HoverTankUpgradeWindow)
 BUTTON_UPGRADE_TANK.unhoveredEvent:Connect(UnhoverTankUpgradeWindow)
+Tutorial_UpgradeTank.clickedEvent:Connect(TutorialOpenTankUpgradeWindow)
+BUTTON_UPGRADE_TANK.hoveredEvent:Connect(ButtonHover)
 UPGRADE_TANK_CONTAINER:FindDescendantByName("CONFIRM_WINDOW_CLOSE_BUTTON").clickedEvent:Connect(CloseTankUpgradeWindow)
 UPGRADE_TANK_CONTAINER:FindDescendantByName("CONFIRM_WINDOW_CLOSE_BUTTON").hoveredEvent:Connect(ButtonHover)
 UPGRADE_TANK_CONTAINER:FindDescendantByName("BUTTON_EQUIP_TANK").clickedEvent:Connect(EquipTank)
