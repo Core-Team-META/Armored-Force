@@ -2333,27 +2333,27 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 8.5
+            Float: 5.7
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 7.5
+            Float: 4.7
           }
           Overrides {
             Name: "cs:Turret"
-            Int: 20
+            Int: 40
           }
           Overrides {
             Name: "cs:TurretUpgraded"
-            Int: 24
+            Int: 48
           }
           Overrides {
             Name: "cs:Elevation"
-            Int: 10
+            Int: 20
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 15
+            Int: 25
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -2361,19 +2361,19 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDepth"
-            Int: -9
+            Int: -11
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 8000
+            Int: 24000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 210
+            Int: 310
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 220
+            Int: 325
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -2529,27 +2529,27 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 10.2
+            Float: 6.7
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 9.2
+            Float: 5.7
           }
           Overrides {
             Name: "cs:Turret"
-            Int: 11
+            Int: 22
           }
           Overrides {
             Name: "cs:TurretUpgraded"
-            Int: 16
+            Int: 32
           }
           Overrides {
             Name: "cs:Elevation"
-            Int: 20
+            Int: 25
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 25
+            Int: 30
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -2557,19 +2557,19 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDepth"
-            Int: -6
+            Int: -11
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 8000
+            Int: 24000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 280
+            Int: 420
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 290
+            Int: 500
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -2725,27 +2725,27 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 8
+            Float: 5.3
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 8
+            Float: 4.5
           }
           Overrides {
             Name: "cs:Turret"
-            Int: 20
+            Int: 40
           }
           Overrides {
             Name: "cs:TurretUpgraded"
-            Int: 30
+            Int: 60
           }
           Overrides {
             Name: "cs:Elevation"
-            Int: 5
+            Int: 10
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 10
+            Int: 15
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -2753,19 +2753,19 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDepth"
-            Int: -8
+            Int: -11
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 7500
+            Int: 22500
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 215
+            Int: 415
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 225
+            Int: 445
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -2773,11 +2773,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HitPoints"
-            Int: 1700
+            Int: 1500
           }
           Overrides {
             Name: "cs:HitPointsUpgraded"
-            Int: 1800
+            Int: 1600
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -2921,27 +2921,27 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 10
+            Float: 6.7
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 10
+            Float: 6.2
           }
           Overrides {
             Name: "cs:Turret"
-            Int: 12
+            Int: 24
           }
           Overrides {
             Name: "cs:TurretUpgraded"
-            Int: 20
+            Int: 40
           }
           Overrides {
             Name: "cs:Elevation"
-            Int: 10
+            Int: 12
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 15
+            Int: 17
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -2949,19 +2949,19 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDepth"
-            Int: -3
+            Int: -13
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 8000
+            Int: 24000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 270
+            Int: 490
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 280
+            Int: 560
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -3117,27 +3117,27 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 6
+            Float: 4
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 6
+            Float: 4
           }
           Overrides {
             Name: "cs:Turret"
-            Int: 25
+            Int: 50
           }
           Overrides {
             Name: "cs:TurretUpgraded"
-            Int: 30
+            Int: 60
           }
           Overrides {
             Name: "cs:Elevation"
-            Int: 5
+            Int: 10
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 10
+            Int: 15
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -3145,19 +3145,19 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDepth"
-            Int: -8
+            Int: -12
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 7500
+            Int: 22500
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 160
+            Int: 270
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 170
+            Int: 310
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -3313,11 +3313,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 16
+            Float: 8
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 15
+            Float: 7
           }
           Overrides {
             Name: "cs:Turret"
@@ -3341,19 +3341,19 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDepth"
-            Int: -8
+            Int: -11
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 8000
+            Int: 24000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 540
+            Int: 850
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 550
+            Int: 880
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -3361,11 +3361,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HitPoints"
-            Int: 1200
+            Int: 1400
           }
           Overrides {
             Name: "cs:HitPointsUpgraded"
-            Int: 1300
+            Int: 1500
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -3509,27 +3509,27 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 4.5
+            Float: 3
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 3.5
+            Float: 2
           }
           Overrides {
             Name: "cs:Turret"
-            Int: 14
+            Int: 28
           }
           Overrides {
             Name: "cs:TurretUpgraded"
-            Int: 18
+            Int: 36
           }
           Overrides {
             Name: "cs:Elevation"
-            Int: 8
+            Int: 15
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 12
+            Int: 21
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -3541,15 +3541,15 @@ Assets {
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 7000
+            Int: 21000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 60
+            Int: 65
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 70
+            Int: 80
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -3557,11 +3557,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HitPoints"
-            Int: 550
+            Int: 850
           }
           Overrides {
             Name: "cs:HitPointsUpgraded"
-            Int: 650
+            Int: 925
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -3701,27 +3701,27 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 3
-          }
-          Overrides {
-            Name: "cs:ReloadUpgraded"
             Float: 2
           }
           Overrides {
+            Name: "cs:ReloadUpgraded"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:Turret"
-            Int: 18
+            Int: 36
           }
           Overrides {
             Name: "cs:TurretUpgraded"
-            Int: 22
+            Int: 44
           }
           Overrides {
             Name: "cs:Elevation"
-            Int: 15
+            Int: 18
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 20
+            Int: 27
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -3729,19 +3729,19 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDepth"
-            Int: -10
+            Int: -12
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 7000
+            Int: 21000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 30
+            Int: 55
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 40
+            Int: 62
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -3749,11 +3749,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HitPoints"
-            Int: 550
+            Int: 750
           }
           Overrides {
             Name: "cs:HitPointsUpgraded"
-            Int: 650
+            Int: 850
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -3897,27 +3897,27 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 7
+            Float: 4.7
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 6
+            Float: 3.7
           }
           Overrides {
             Name: "cs:Turret"
-            Int: 12
+            Int: 24
           }
           Overrides {
             Name: "cs:TurretUpgraded"
-            Int: 15
+            Int: 30
           }
           Overrides {
             Name: "cs:Elevation"
-            Int: 10
+            Int: 15
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 15
+            Int: 22
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -3929,15 +3929,15 @@ Assets {
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 7000
+            Int: 21000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 140
+            Int: 180
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 150
+            Int: 205
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -3945,11 +3945,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HitPoints"
-            Int: 700
+            Int: 900
           }
           Overrides {
             Name: "cs:HitPointsUpgraded"
-            Int: 800
+            Int: 1000
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -4093,27 +4093,27 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 6.9
+            Float: 4.7
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 5.9
+            Float: 3.7
           }
           Overrides {
             Name: "cs:Turret"
-            Int: 10
-          }
-          Overrides {
-            Name: "cs:TurretUpgraded"
             Int: 20
           }
           Overrides {
+            Name: "cs:TurretUpgraded"
+            Int: 40
+          }
+          Overrides {
             Name: "cs:Elevation"
-            Int: 10
+            Int: 18
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 15
+            Int: 22
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -4121,19 +4121,19 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDepth"
-            Int: -10
+            Int: -12
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 7000
+            Int: 21000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 120
+            Int: 160
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 130
+            Int: 175
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -4141,11 +4141,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HitPoints"
-            Int: 750
+            Int: 1150
           }
           Overrides {
             Name: "cs:HitPointsUpgraded"
-            Int: 850
+            Int: 1250
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -4289,11 +4289,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 6.9
+            Float: 4.7
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 5.9
+            Float: 3.7
           }
           Overrides {
             Name: "cs:Turret"
@@ -4305,11 +4305,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Elevation"
-            Int: 10
+            Int: 15
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 15
+            Int: 25
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -4317,19 +4317,19 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDepth"
-            Int: -6
+            Int: -9
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 7000
+            Int: 21000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 200
+            Int: 330
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 210
+            Int: 360
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -4337,11 +4337,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HitPoints"
-            Int: 650
+            Int: 750
           }
           Overrides {
             Name: "cs:HitPointsUpgraded"
-            Int: 750
+            Int: 850
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -4485,27 +4485,27 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 8.4
+            Float: 5.7
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 7.4
+            Float: 4.7
           }
           Overrides {
             Name: "cs:Turret"
-            Int: 8
+            Int: 16
           }
           Overrides {
             Name: "cs:TurretUpgraded"
-            Int: 12
+            Int: 24
           }
           Overrides {
             Name: "cs:Elevation"
-            Int: 10
+            Int: 15
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 15
+            Int: 25
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -4513,19 +4513,19 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDepth"
-            Int: -8
+            Int: -11
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 7500
+            Int: 22500
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 190
+            Int: 280
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 200
+            Int: 300
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -4533,11 +4533,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HitPoints"
-            Int: 750
+            Int: 950
           }
           Overrides {
             Name: "cs:HitPointsUpgraded"
-            Int: 850
+            Int: 1000
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -4685,27 +4685,27 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 8.5
+            Float: 5.7
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 7.5
+            Float: 4.7
           }
           Overrides {
             Name: "cs:Turret"
-            Int: 13
+            Int: 26
           }
           Overrides {
             Name: "cs:TurretUpgraded"
-            Int: 18
+            Int: 36
           }
           Overrides {
             Name: "cs:Elevation"
-            Int: 5
+            Int: 12
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 10
+            Int: 16
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -4713,19 +4713,19 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDepth"
-            Int: -8
+            Int: -10
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 8000
+            Int: 24000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 175
+            Int: 315
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 185
+            Int: 350
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -4885,27 +4885,27 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 11
+            Float: 6
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 10
+            Float: 5
           }
           Overrides {
             Name: "cs:Turret"
-            Int: 17
+            Int: 34
           }
           Overrides {
             Name: "cs:TurretUpgraded"
-            Int: 23
+            Int: 46
           }
           Overrides {
             Name: "cs:Elevation"
-            Int: 5
+            Int: 16
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 10
+            Int: 20
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -4913,19 +4913,19 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDepth"
-            Int: -10
+            Int: -13
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 7000
+            Int: 21000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 260
+            Int: 425
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 270
+            Int: 475
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -4933,11 +4933,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HitPoints"
-            Int: 1700
+            Int: 1500
           }
           Overrides {
             Name: "cs:HitPointsUpgraded"
-            Int: 1800
+            Int: 1600
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -5081,15 +5081,15 @@ Assets {
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 0.7
+            Float: 0.5
           }
           Overrides {
             Name: "cs:Turret"
-            Int: 15
+            Int: 30
           }
           Overrides {
             Name: "cs:TurretUpgraded"
-            Int: 20
+            Int: 40
           }
           Overrides {
             Name: "cs:Elevation"
@@ -5109,15 +5109,15 @@ Assets {
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 10000
+            Int: 21000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 10
+            Int: 55
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 20
+            Int: 66
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -5125,11 +5125,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HitPoints"
-            Int: 600
+            Int: 650
           }
           Overrides {
             Name: "cs:HitPointsUpgraded"
-            Int: 700
+            Int: 750
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -5273,27 +5273,27 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 7.7
+            Float: 5
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 6.7
+            Float: 4
           }
           Overrides {
             Name: "cs:Turret"
-            Int: 15
+            Int: 30
           }
           Overrides {
             Name: "cs:TurretUpgraded"
-            Int: 20
+            Int: 40
           }
           Overrides {
             Name: "cs:Elevation"
-            Int: 10
+            Int: 15
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 15
+            Int: 22
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -5305,15 +5305,15 @@ Assets {
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 9000
+            Int: 27000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 180
+            Int: 280
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 190
+            Int: 320
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -5321,11 +5321,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HitPoints"
-            Int: 900
+            Int: 950
           }
           Overrides {
             Name: "cs:HitPointsUpgraded"
-            Int: 1000
+            Int: 1100
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -5469,27 +5469,27 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 6
+            Float: 4
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 5
+            Float: 3
           }
           Overrides {
             Name: "cs:Turret"
-            Int: 25
+            Int: 50
           }
           Overrides {
             Name: "cs:TurretUpgraded"
-            Int: 30
+            Int: 60
           }
           Overrides {
             Name: "cs:Elevation"
-            Int: 8
+            Int: 15
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 12
+            Int: 20
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -5497,19 +5497,19 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDepth"
-            Int: -8
+            Int: -11
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 7000
+            Int: 21000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 140
+            Int: 225
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 150
+            Int: 250
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -5517,11 +5517,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HitPoints"
-            Int: 900
+            Int: 950
           }
           Overrides {
             Name: "cs:HitPointsUpgraded"
-            Int: 1000
+            Int: 1100
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -5665,27 +5665,27 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 7.7
+            Float: 5
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 6.7
+            Float: 4
           }
           Overrides {
             Name: "cs:Turret"
-            Int: 20
+            Int: 40
           }
           Overrides {
             Name: "cs:TurretUpgraded"
-            Int: 25
+            Int: 50
           }
           Overrides {
             Name: "cs:Elevation"
-            Int: 20
+            Int: 24
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 25
+            Int: 29
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -5693,19 +5693,19 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDepth"
-            Int: -6
+            Int: -10
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 9000
+            Int: 27000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 200
+            Int: 310
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 210
+            Int: 330
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -5713,11 +5713,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HitPoints"
-            Int: 800
+            Int: 900
           }
           Overrides {
             Name: "cs:HitPointsUpgraded"
-            Int: 900
+            Int: 1050
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -5861,27 +5861,27 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 16
+            Float: 8
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 15
+            Float: 7
           }
           Overrides {
             Name: "cs:Turret"
-            Int: 7
+            Int: 14
           }
           Overrides {
             Name: "cs:TurretUpgraded"
-            Int: 10
+            Int: 20
           }
           Overrides {
             Name: "cs:Elevation"
-            Int: 5
+            Int: 10
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 10
+            Int: 17
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -5889,19 +5889,19 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDepth"
-            Int: -7
+            Int: -9
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 7000
+            Int: 21000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 410
+            Int: 710
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 420
+            Int: 780
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -6057,27 +6057,27 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 16
+            Float: 8
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 15
+            Float: 7
           }
           Overrides {
             Name: "cs:Turret"
-            Int: 10
+            Int: 20
           }
           Overrides {
             Name: "cs:TurretUpgraded"
-            Int: 15
+            Int: 30
           }
           Overrides {
             Name: "cs:Elevation"
-            Int: 5
+            Int: 12
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 10
+            Int: 18
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -6085,19 +6085,19 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDepth"
-            Int: -7
+            Int: -11
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 7000
+            Int: 21000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 390
+            Int: 640
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 400
+            Int: 710
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -6253,27 +6253,27 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 16
+            Float: 8
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 15
+            Float: 7
           }
           Overrides {
             Name: "cs:Turret"
-            Int: 13
+            Int: 26
           }
           Overrides {
             Name: "cs:TurretUpgraded"
-            Int: 18
+            Int: 36
           }
           Overrides {
             Name: "cs:Elevation"
-            Int: 5
+            Int: 12
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 10
+            Int: 16
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -6281,19 +6281,19 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDepth"
-            Int: -7
+            Int: -10
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 7000
+            Int: 21000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 400
+            Int: 600
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 410
+            Int: 650
           }
           Overrides {
             Name: "cs:LeftRight"
@@ -6449,11 +6449,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 16
+            Float: 10
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 15
+            Float: 9
           }
           Overrides {
             Name: "cs:Turret"
@@ -6465,11 +6465,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Elevation"
-            Int: 8
+            Int: 25
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 12
+            Int: 35
           }
           Overrides {
             Name: "cs:MaxElevation"
@@ -6477,19 +6477,19 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDepth"
-            Int: -10
+            Int: -11
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 8000
+            Int: 24000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 540
+            Int: 950
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 550
+            Int: 1000
           }
           Overrides {
             Name: "cs:LeftRight"
