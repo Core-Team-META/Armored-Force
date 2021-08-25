@@ -19,6 +19,7 @@ local JoinBattle = script:GetCustomProperty("JoinBattle"):WaitForObject()
 local Tutorial_JoinBattlePanel = script:GetCustomProperty("Tutorial_JoinBattlePanel"):WaitForObject()
 local Tutorial_OptOutPanel = script:GetCustomProperty("Tutorial_OptOutPanel"):WaitForObject()
 local Close = script:GetCustomProperty("Close"):WaitForObject()
+local Tutorial_UpgradeTankPanel = script:GetCustomProperty("Tutorial_UpgradeTankPanel"):WaitForObject()
 
 local EnemyTargetPracticeAI = script:GetCustomProperty("EnemyTargetPracticeAI"):WaitForObject()
 
@@ -32,6 +33,7 @@ LOCAL_PLAYER.clientUserData.tutorial3_1 = 0
 LOCAL_PLAYER.clientUserData.tutorial3_2 = 0
 LOCAL_PLAYER.clientUserData.tutorial3_3 = 0
 LOCAL_PLAYER.clientUserData.tutorial4 = 1
+LOCAL_PLAYER.clientUserData.tutorial6 = 0
 
 Task.Wait(2)
 
@@ -44,8 +46,10 @@ function Tick()
 end
 
 function Init()
-	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) < API_Tutorial.TutorialPhase.Completed) then
+	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) < API_Tutorial.TutorialPhase.Upgrade) then
 		Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_ON
+	else
+		Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_OFF
 	end
 end
 
@@ -110,13 +114,12 @@ function ToggleTutorialState()
 	Tutorial_OptOutPanel.visibility = Visibility.FORCE_OFF
 	
 	if(tutorialProgress == API_Tutorial.TutorialPhase.Completed) then return end	
-	if not inShootingRange then return end
 	
 	--warn("tutorial1")
 	--warn(tostring(LOCAL_PLAYER.clientUserData.tutorial1))	
 
 	 --Show Tutorial Phase 1 (MovedToShootingRange)
-	if(tutorialProgress == API_Tutorial.TutorialPhase.MovedToShootingRange) then
+	if(tutorialProgress == API_Tutorial.TutorialPhase.MovedToShootingRange and inShootingRange) then
 		Tutorial_WaypointsPanel.visibility = Visibility.FORCE_ON
 		Tutorial_WaypointsPanel:FindDescendantByName("Objective").text = "Enter the highlighted areas ("..tostring(LOCAL_PLAYER.clientUserData.tutorial1).."/2)"
 		
@@ -134,7 +137,7 @@ function ToggleTutorialState()
 	end
 	
 	--Show Tutorial Phase 2 (TargetPractice)
-	if(tutorialProgress == API_Tutorial.TutorialPhase.TargetPractice) then
+	if(tutorialProgress == API_Tutorial.TutorialPhase.TargetPractice and inShootingRange) then
 		Tutorial_DestroyTanksPanel.visibility = Visibility.FORCE_ON
 		Tutorial_DestroyTanksPanel:FindDescendantByName("Objective").text = "Shoot training tanks and deal 50 damage ("..tostring(LOCAL_PLAYER.clientUserData.tutorial2).."/50)"
 		--local waypoints = EnemyTargetPracticeAI:FindChildrenByName("Waypoint_2")
@@ -145,7 +148,7 @@ function ToggleTutorialState()
 	end
 	
 	--Show Tutorial Phase 3 (PrecisionShots)
-	if(tutorialProgress == API_Tutorial.TutorialPhase.PrecisionShots) then
+	if(tutorialProgress == API_Tutorial.TutorialPhase.PrecisionShots and inShootingRange) then
 		Tutorial_PrecisionTanksPanel.visibility = Visibility.FORCE_ON
 		Tutorial_PrecisionTanksPanel:FindDescendantByName("Objective_1").text = "Shoot a training tank from the front ("..tostring(LOCAL_PLAYER.clientUserData.tutorial3_1).."/1)"
 		Tutorial_PrecisionTanksPanel:FindDescendantByName("Objective_2").text = "Shoot a training tank from the side ("..tostring(LOCAL_PLAYER.clientUserData.tutorial3_2).."/1)"
@@ -153,25 +156,31 @@ function ToggleTutorialState()
 	end
 	
 	--Show Tutorial Phase 4 (BaseCapture)
-	if(tutorialProgress == API_Tutorial.TutorialPhase.BaseCapture) then
+	if(tutorialProgress == API_Tutorial.TutorialPhase.BaseCapture and inShootingRange) then
 		Tutorial_BaseCapturePanel.visibility = Visibility.FORCE_ON
 		WaypointBase.visibility = Visibility.FORCE_ON
 	end
 	
 	-- Show Tutorial Phase 5 (JoinBattle)
-	if(tutorialProgress == API_Tutorial.TutorialPhase.JoinBattle) then
+	if(tutorialProgress == API_Tutorial.TutorialPhase.JoinBattle and inShootingRange) then
 		Tutorial_JoinBattlePanel.visibility = Visibility.FORCE_ON		
 	end
 	
 	-- Show panel to join battle
-	if(tutorialProgress >= API_Tutorial.TutorialPhase.JoinBattle) then
+	if(tutorialProgress >= API_Tutorial.TutorialPhase.JoinBattle and inShootingRange) then
 		JoinBattle.visibility = Visibility.FORCE_ON
+	end
+
+	-- Show panel to upgrade tank
+	if(tutorialProgress == API_Tutorial.TutorialPhase.Upgrade and not inShootingRange) then
+		Tutorial_UpgradeTankPanel.visibility = Visibility.FORCE_ON
 	end
 	
 	-- Show opt out panel
-	if(tutorialProgress < API_Tutorial.TutorialPhase.Completed) then
+	if(tutorialProgress < API_Tutorial.TutorialPhase.Completed and inShootingRange) then
 		Tutorial_OptOutPanel.visibility = Visibility.FORCE_ON
 	end
+	print("TUTORIAL PHASE: " .. tostring(tutorialProgress))
 end
 
 function BindingPressed(player, binding)

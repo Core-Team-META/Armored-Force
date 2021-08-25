@@ -299,7 +299,7 @@ function ToggleGarage(player, binding)
 	
 	if binding == "ability_extra_34" and localPlayer:GetResource(API_Tutorial.GetTutorialResource()) >= API_Tutorial.TutorialPhase.JoinBattle then
 		if localPlayer:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.JoinBattle then
-			Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.Completed, true)
+			Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.Upgrade, true)
 			local panel = World.SpawnAsset(TutorialFinishedPopup, {parent = World.FindObjectByName("Tutorial UI")})
 			panel.lifeSpan = 3			
 		end
