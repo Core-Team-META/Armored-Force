@@ -17,7 +17,10 @@ local sharedKeyNetRef = World.FindObjectByName("Keys"):GetCustomProperty("Achiev
 ------------------------------------------------------------------------------------------------------------------------
 -- REQUIRES
 ------------------------------------------------------------------------------------------------------------------------
-local ACH_API = require(script:GetCustomProperty("ACH_API"))
+while not _G.META_ACHIEVEMENTS do
+    Task.Wait()
+end
+local ACH_API = _G.META_ACHIEVEMENTS
 local CONST = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 ------------------------------------------------------------------------------------------------------------------------
 -- OBJECTS

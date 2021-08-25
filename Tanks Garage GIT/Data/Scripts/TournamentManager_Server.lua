@@ -7,17 +7,21 @@
 ------------------------------------------------------------------------------------------------------------------------
 -- REQUIRES
 ------------------------------------------------------------------------------------------------------------------------
+while not _G.META_ACHIEVEMENTS do
+    Task.Wait()
+end
 ------------------------------------------------------------------------------------------------------------------------
 -- OBJECTS
 ------------------------------------------------------------------------------------------------------------------------
 local ROOT = script:GetCustomProperty("ROOT"):WaitForObject()
+local TROPHY_LIST = script:GetCustomProperty("TrophyList"):WaitForObject()
 local TID = ROOT:GetCustomProperty("ID")
 ------------------------------------------------------------------------------------------------------------------------
 -- CONSTANTS
 ------------------------------------------------------------------------------------------------------------------------
 local POINTS_WINNING_TEAM = 100
 local POINTS_LOSTING_TEAM = 25
-local POINTS_PER_DAMAGE = 0.005
+local POINTS_PER_DAMAGE = 0.05
 local POINTS_PER_KILL = 20
 local POINTS_PER_CAPTURE = 50
 local MULTIPLIER_PER_PLAYER = 0.10 -- + 10% per player in game
@@ -26,13 +30,34 @@ local listeners = {}
 local playerScore = {}
 local playerData = {}
 
+local trophyData = {}
+
 local totalPlayers = 0
 ------------------------------------------------------------------------------------------------------------------------
 -- LOCAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
 
+for i, child in ipairs(TROPHY_LIST:GetChildren()) do
+    local trophy = {}
+    trophy.id = child:GetCustomProperty("ID")
+    trophy.name = child:GetCustomProperty("Name")
+    trophy.min = child:GetCustomProperty("MinScore")
+    trophy.max = child:GetCustomProperty("MaxScore")
+    trophy.icon = child:GetCustomProperty("Icon")
+    trophy.url = child:GetCustomProperty("GameURL")
+    trophyData[i] = trophy
+end
+
 local function IsValidPlayer(object)
     return Object.IsValid(object) and object:IsA("Player")
+end
+
+local function SetCurrentTrophy(player, score)
+    for _, trophy in ipairs(trophyData) do
+        if score >= trophy.min and score <= trophy.max then
+            _G.META_ACHIEVEMENTS.AddProgress(player, trophy.id, 2)
+        end
+    end
 end
 
 local function SetPlayerFlags(player)
@@ -78,6 +103,7 @@ local function CalculateScore(player, winningTeam, playerBonus)
     newScore = CoreMath.Round(playerScore[player] + newScore)
     player:SetPrivateNetworkedData("TSCORE", newScore)
     playerScore[player] = newScore
+    SetCurrentTrophy(player, newScore)
 end
 
 local function GetWinningTeam()
