@@ -36,8 +36,12 @@ end
 local function SetCurrentTrophy(score)
 	for _, trophy in ipairs(trophyData) do
 		if score > trophy.min and score < trophy.max then
+			NEW_1.text = tostring(score)
 			CURRENT_TROPHY_IMAGE:SetImage(trophy.icon)
 			TROPHY_NAME_TEXT.text = tostring(trophy.name)
+			local scoreProgress = score - trophy.min
+			local scoreMax = trophy.max - trophy.min
+			PROGRESS.progress = scoreProgress / scoreMax
 		end
 	end
 end
@@ -100,11 +104,6 @@ function Show()
 	SetState(STATE_IN_DELAY)
 end
 
-function OnScore(newScore, bestScore)
-	NEW_1.text = tostring(newScore)
-
-	Show()
-end
 
 function OnBindingPressed(player, action)
 	if currentState == STATE_WAITING and action == "ability_extra_37" then -- K
@@ -116,14 +115,14 @@ end
 
 -- handler params: Player_player, string_key
 function OnPrivateData(player, string)
-	if string == "TSCORE" then
+	if string == "TSCORE" and player == LocalPlayer then
 		local currentScore = player:GetPrivateNetworkedData(string) or 0
-		NEW_1.text = tostring(currentScore)
 		SetCurrentTrophy(currentScore)
+		Show()
 	end
 end
 
 LocalPlayer.bindingPressedEvent:Connect(OnBindingPressed)
-LocalPlayer.privateNetworkedDataChangedEvent:Connect(OnPrivateData)
-
 Init()
+Task.Wait(2)
+LocalPlayer.privateNetworkedDataChangedEvent:Connect(OnPrivateData)

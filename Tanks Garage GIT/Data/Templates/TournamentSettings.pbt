@@ -1722,6 +1722,7 @@ Assets {
         ChildIds: 10697047167988531915
         ChildIds: 8624471254727915934
         ChildIds: 11089212819158728981
+        ChildIds: 2866840817863507156
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1740,7 +1741,7 @@ Assets {
       }
       Objects {
         Id: 10697047167988531915
-        Name: "Bronze"
+        Name: "Bronze Trophy"
         Transform {
           Location {
           }
@@ -1797,7 +1798,7 @@ Assets {
       }
       Objects {
         Id: 8624471254727915934
-        Name: "Silver"
+        Name: "Silver Trophy"
         Transform {
           Location {
           }
@@ -1854,7 +1855,7 @@ Assets {
       }
       Objects {
         Id: 11089212819158728981
-        Name: "Gold"
+        Name: "Gold Trophy"
         Transform {
           Location {
           }
@@ -1882,12 +1883,69 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxScore"
-            Int: 14999
+            Int: 19999
           }
           Overrides {
             Name: "cs:Icon"
             AssetReference {
               Id: 7538656955959889408
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 3755674482901369468
+          }
+        }
+      }
+      Objects {
+        Id: 2866840817863507156
+        Name: "Platinum Trophy"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16121846468092082404
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ID"
+            String: "P"
+          }
+          Overrides {
+            Name: "cs:Name"
+            String: "Platinum"
+          }
+          Overrides {
+            Name: "cs:MinScore"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:MaxScore"
+            Int: 19999
+          }
+          Overrides {
+            Name: "cs:Icon"
+            AssetReference {
+              Id: 8860575466244947536
             }
           }
         }
@@ -1962,6 +2020,15 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_Equip_Trophy_004"
+      }
+    }
+    Assets {
+      Id: 8860575466244947536
+      Name: "Fantasy Trophy 003"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Equip_Trophy_003"
       }
     }
     PrimaryAssetId {
