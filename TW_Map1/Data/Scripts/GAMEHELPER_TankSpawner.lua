@@ -157,18 +157,23 @@ function OnPlayerJoined(player)
 	player.spawnedEvent:Connect(OnPlayerRespawned)
 	player:SetWorldPosition(Vector3.UP * 1000)
 
+	local nonPlayerTeam = 1
+	if player.team == 1 then nonPlayerTeam = 2 end
 	--[[
-	local team = 1
-	if player.team == 1 then team = 2 end
 	SpawnAITank(player:GetWorldPosition() + Vector3.New(1000, 1000, 1000), team)
 ]]
 
 	--teams
 	-- + player:GetWorldPosition()
-	for i = 1, 8 do
+	for i = 1, 4 do
 		local offset = Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 30000 + Vector3.UP * 1000
-		SpawnAITank(offset, i % 2 + 1 )
+		SpawnAITank(offset, nonPlayerTeam)
 	end
+	for i = 1, 2 do
+		local offset = Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 30000 + Vector3.UP * 1000
+		SpawnAITank(offset, player.team)
+	end
+
 --[[
 	-- pairs
 	for i = 1, 2 do

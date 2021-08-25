@@ -479,8 +479,8 @@ function ProjectileImpacted(expiredProjectile, other)
 	ProjectileExpired(expiredProjectile)
 	
 	if not other:IsA("Vehicle") or expiredProjectile.serverUserData.hitOnce or other.driver == driver then
-		print(not other:IsA("Vehicle"), expiredProjectile.serverUserData.hitOnce, other.driver == driver)
-		print("Returning")
+		--print(not other:IsA("Vehicle"), expiredProjectile.serverUserData.hitOnce, other.driver == driver)
+		--print("Returning")
 		return
 	end
 	print("damage stuff")
