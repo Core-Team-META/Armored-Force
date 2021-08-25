@@ -121,7 +121,7 @@ function AIPlayer:CheckIfStuck()
 
   local pos = self:GetWorldPosition()
   if self.currentMovementTarget == nil then return end
-  print(self.currentMovementTarget, pos)
+  --print(self.currentMovementTarget, pos)
   if (self.currentMovementTarget - pos).size > 100
       and (self.lastPos - pos).size < 100 then
     print("WRIGGLE TIME")
