@@ -173,7 +173,7 @@ function AssignDriver(newDriver, playerStart, _isAI)
 	chassis = World.SpawnAsset(chassisTemplate)
 	chassis:SetWorldPosition(script:GetWorldPosition())
 	chassis:SetWorldRotation(script:GetWorldRotation())
-	_G.lookup.tanks[driver].chassis = chassis
+
 	
 	Task.Wait()
 
@@ -198,6 +198,11 @@ function AssignDriver(newDriver, playerStart, _isAI)
 	cannon = hitbox:FindDescendantByName("Cannon")
 	cannonGuide = hitbox:FindDescendantByName("CannonGuide")
 	muzzle = hitbox:FindDescendantByName("Muzzle")
+
+	_G.lookup.tanks[driver].chassis = chassis
+	_G.lookup.tanks[driver].target = target
+	_G.lookup.tanks[driver].muzzle = muzzle
+	_G.lookup.tanks[driver].turret = turret
 	
 	Task.Wait()
 	
@@ -531,10 +536,11 @@ function OnArmorHit(trigger, other)
 				
 		if not enemyPlayer or not enemyPlayer.serverUserData.currentTankData or enemyPlayer.team == driver.team then
 			print("Returning from armor hit")
+			--[[
 			print(enemyPlayer)
 			print(enemyPlayer.serverUserData)
 			print(enemyPlayer.serverUserData.currentTankData)
-			print(enemyPlayer.team, driver.team)
+			print(enemyPlayer.team, driver.team)]]
 			return
 		end
 		
@@ -608,7 +614,9 @@ function OnArmorHit(trigger, other)
 			end
 
 			burnTask = Task.Spawn(OnBurning, 0)
-			Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "FIRE")
+			if enemyPlayer:IsA("Player") then
+				Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "FIRE")
+			end
 		elseif string.find(armorName, "TURRET") and not turretDamagedTask then
 			local pickTurretDamage = math.random(100)
 			if pickTurretDamage <= 50 then
@@ -638,7 +646,7 @@ function OnArmorHit(trigger, other)
 		end
 		local armorName = trigger.name
 		
-		if armorName == "LEFTTRACK" or armorName == "RIGHTTRACK" or enemyPlayer.team == driver.team then
+		if armorName == "LEFTTRACK" or armorName == "RIGHTTRACK" or enemyPlayer == nil or enemyPlayer.team == driver.team then
 			return
 		end
 	
