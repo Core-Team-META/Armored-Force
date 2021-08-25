@@ -5,10 +5,12 @@
 -- Version 0.1.4-AF
 ------------------------------------------------------------------------------------------------------------------------
 local API = {}
+_G.META_ACHIEVEMENTS = API
 ------------------------------------------------------------------------------------------------------------------------
 -- CONSTANTS
 ------------------------------------------------------------------------------------------------------------------------
 local achievements = {}
+
 ------------------------------------------------------------------------------------------------------------------------
 -- LOCAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
@@ -356,7 +358,7 @@ function API.AddProgress(player, id, value)
         if not achievements[id] then
             return
         end
-
+        warn("Adding Progress", id, tostring(value))
         local required = API.GetAchievementRequired(id)
         if currentProgress == 0 then
             player:SetResource(id, value + 1)
@@ -441,4 +443,4 @@ function API.FormatInt(number)
     return minus .. int:reverse():gsub("^,", "") .. fraction
 end
 
-return API
+

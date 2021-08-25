@@ -12,7 +12,10 @@ local isEnabled = ROOT:GetCustomProperty("Enabled")
 ------------------------------------------------------------------------------------------------------------------------
 -- REQUIRES
 ------------------------------------------------------------------------------------------------------------------------
-local ACH_API = require(script:GetCustomProperty("ACH_API"))
+while not _G.META_ACHIEVEMENTS do
+    Task.Wait()
+end
+local ACH_API = _G.META_ACHIEVEMENTS
 local EaseUI = require(script:GetCustomProperty("EaseUI"))
 --local ABGS = require(script:GetCustomProperty("APIBasicGameState"))
 ------------------------------------------------------------------------------------------------------------------------
@@ -37,7 +40,6 @@ local AchievementPanelTemplate = script:GetCustomProperty("Achievement_EndScreen
 local ScrollPanelTemplate = script:GetCustomProperty("UIAchievementScrollPanel")
 local REWARD_SFX = script:GetCustomProperty("REWARD_SFX")
 
-
 local achievementScrollPanel = script:GetCustomProperty("ACHIEVEMENT_SCROLL"):WaitForObject()
 ------------------------------------------------------------------------------------------------------------------------
 -- Variables
@@ -52,9 +54,20 @@ local scriptListeners = {}
 local activeAchievements = {}
 --NOTIFICATION.visibility = Visibility.FORCE_OFF
 
+local tournamentTable = {"TMAB", "TMAS", "TMAG", "TMAP"}
+
 ------------------------------------------------------------------------------------------------------------------------
 -- LOCAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
+local function IsTournamentId(id)
+    for _, tournId in ipairs(tournamentTable) do
+        if tournId == id then
+            return true
+        end
+    end
+    return false
+end
+
 local function BuildIdTable()
     for _, achievement in pairs(ACH_API.GetAchievements()) do
         achievementIds[achievement.sort] = achievement.id
@@ -71,12 +84,15 @@ local function IsAchievement(id)
 end
 
 local function CompareAchievement(a, b)
+    local isAUnlocked = ACH_API.IsUnlocked(LOCAL_PLAYER, a.id)
     local aProgress =
-        ACH_API.IsUnlocked(LOCAL_PLAYER, a.id) and 100000 or
+        isAUnlocked and IsTournamentId(a.id) and 100001 or isAUnlocked and 100000 or
         not ACH_API.HasPreRequsistCompleted(LOCAL_PLAYER, a.id) and -1 or
         ACH_API.GetProgressPercentage(LOCAL_PLAYER, a.id) + 2
+
+    local isBUnlocked = ACH_API.IsUnlocked(LOCAL_PLAYER, b.id)
     local bProgress =
-        ACH_API.IsUnlocked(LOCAL_PLAYER, b.id) and 100000 or
+        isBUnlocked and IsTournamentId(b.id) and 100001 or isBUnlocked and 100000 or
         not ACH_API.HasPreRequsistCompleted(LOCAL_PLAYER, b.id) and -1 or
         ACH_API.GetProgressPercentage(LOCAL_PLAYER, b.id) + 2
     return aProgress > bProgress
@@ -244,7 +260,7 @@ function OnClaimButtonPressed(button)
 
         local str = "You earned "
         local achievement = ACH_API.GetAchievementInfo(id)
-        
+
         for i, reward in ipairs(achievement.rewards) do
             local rewardAmount = reward:GetCustomProperty("Amount")
             if str ~= "You earned " then

@@ -99,6 +99,12 @@ Assets {
               SubObjectId: 6812292773263030844
             }
           }
+          Overrides {
+            Name: "cs:TrophyList"
+            ObjectReference {
+              SubObjectId: 16121846468092082404
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1757,7 +1763,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:ID"
-            String: "B"
+            String: "TMAB"
           }
           Overrides {
             Name: "cs:Name"
@@ -1814,7 +1820,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:ID"
-            String: "S"
+            String: "TMAS"
           }
           Overrides {
             Name: "cs:Name"
@@ -1871,7 +1877,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:ID"
-            String: "G"
+            String: "TMAG"
           }
           Overrides {
             Name: "cs:Name"
@@ -1928,7 +1934,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:ID"
-            String: "P"
+            String: "TMAP"
           }
           Overrides {
             Name: "cs:Name"
