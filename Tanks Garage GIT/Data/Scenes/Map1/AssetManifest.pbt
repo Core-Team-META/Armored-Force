@@ -74,19 +74,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13012879233772380298
-  Name: "StorageGarage"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "cfea81b09e25439fb0ab189c92bf9010"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 12815338606393549629
   Name: "Achievements"
   PlatformAssetType: 23
