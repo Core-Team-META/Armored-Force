@@ -24,7 +24,10 @@ end
 
 local function GetTankTypeMultiplier(tankId)
 	local tankType = tankData[tankId].type
-
+	--#TODO Turned off type multiplier
+	if true then
+		return 1
+	end
 	if tankType == "Light" then
 		return 0.50
 	elseif tankType == "Medium" then
