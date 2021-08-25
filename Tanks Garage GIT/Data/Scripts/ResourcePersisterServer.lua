@@ -93,7 +93,7 @@ function CheckAndSetSharedStorageDefault(player)
 		
 	end
 	
-	--print("SELECTED TANK ID: " .. tostring(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]))
+	print("SELECTED TANK ID: " .. tostring(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]))
 	
 	if(player:GetResource(CONSTANTS_API.GetEquippedTankResource()) <= 0) then
 		playerSharedStorage[CONSTANTS_API.GetEquippedTankResource()] = CONSTANTS_API.GetDefaultTankData()

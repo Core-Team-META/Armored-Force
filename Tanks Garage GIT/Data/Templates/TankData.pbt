@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 8043684082903823001
+        ParentId: 16967583001895444638
         ChildIds: 9808117217429995358
         ChildIds: 1678564158755557796
         ChildIds: 8520762318832136190
@@ -252,6 +252,14 @@ Assets {
             Int: 800
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:AccelerationUpgraded"
             Int: 1000
           }
@@ -272,8 +280,80 @@ Assets {
             String: "1"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -448,6 +528,14 @@ Assets {
             Int: 1000
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 30
           }
@@ -468,8 +556,80 @@ Assets {
             String: "2"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -644,6 +804,14 @@ Assets {
             Int: 700
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 30
           }
@@ -664,8 +832,80 @@ Assets {
             String: "3"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -840,6 +1080,14 @@ Assets {
             Int: 800
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 25
           }
@@ -860,8 +1108,80 @@ Assets {
             String: "4"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -1040,6 +1360,14 @@ Assets {
             Int: 35
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:TraverseUpgraded"
             Int: 45
           }
@@ -1060,8 +1388,80 @@ Assets {
             String: "1"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -1240,6 +1640,14 @@ Assets {
             Int: 20
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:TraverseUpgraded"
             Int: 30
           }
@@ -1260,8 +1668,80 @@ Assets {
             String: "2"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -1436,6 +1916,14 @@ Assets {
             Int: 900
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 25
           }
@@ -1456,8 +1944,80 @@ Assets {
             String: "5"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -1628,6 +2188,14 @@ Assets {
             Int: 300
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:AccelerationUpgraded"
             Int: 500
           }
@@ -1648,8 +2216,80 @@ Assets {
             String: ""
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -1820,6 +2460,14 @@ Assets {
             Int: 400
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:AccelerationUpgraded"
             Int: 600
           }
@@ -1840,8 +2488,80 @@ Assets {
             String: "3"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -2016,6 +2736,14 @@ Assets {
             Int: 1200
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 40
           }
@@ -2036,8 +2764,80 @@ Assets {
             String: "4"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -2212,6 +3012,14 @@ Assets {
             Int: 1000
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 30
           }
@@ -2232,8 +3040,80 @@ Assets {
             String: "5"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -2408,6 +3288,14 @@ Assets {
             Int: 800
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 25
           }
@@ -2428,8 +3316,80 @@ Assets {
             String: "1"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -2604,6 +3564,14 @@ Assets {
             Int: 800
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 30
           }
@@ -2624,8 +3592,80 @@ Assets {
             String: "2"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -2800,6 +3840,14 @@ Assets {
             Int: 700
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 20
           }
@@ -2820,8 +3868,80 @@ Assets {
             String: "5"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -2996,6 +4116,14 @@ Assets {
             Int: 1000
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 20
           }
@@ -3016,8 +4144,80 @@ Assets {
             String: "3"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -3192,6 +4392,14 @@ Assets {
             Int: 1000
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 30
           }
@@ -3212,8 +4420,80 @@ Assets {
             String: "4"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -3388,6 +4668,14 @@ Assets {
             Int: 500
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 20
           }
@@ -3408,8 +4696,80 @@ Assets {
             String: "1"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -3580,6 +4940,14 @@ Assets {
             Int: 500
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:AccelerationUpgraded"
             Int: 700
           }
@@ -3600,8 +4968,80 @@ Assets {
             String: "2"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -3776,6 +5216,14 @@ Assets {
             Int: 1000
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 30
           }
@@ -3796,8 +5244,80 @@ Assets {
             String: "3"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -3972,6 +5492,14 @@ Assets {
             Int: 700
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 25
           }
@@ -3992,8 +5520,80 @@ Assets {
             String: "4"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -4168,6 +5768,14 @@ Assets {
             Int: 700
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 30
           }
@@ -4188,8 +5796,80 @@ Assets {
             String: "5"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -4364,6 +6044,14 @@ Assets {
             Int: 700
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 30
           }
@@ -4384,8 +6072,80 @@ Assets {
             String: "1"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -4564,6 +6324,14 @@ Assets {
             Int: 20
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:TraverseUpgraded"
             Int: 30
           }
@@ -4584,8 +6352,80 @@ Assets {
             String: "2"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -4764,6 +6604,14 @@ Assets {
             Int: 25
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:TraverseUpgraded"
             Int: 30
           }
@@ -4784,8 +6632,80 @@ Assets {
             String: "3"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -4956,6 +6876,14 @@ Assets {
             Int: 400
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:AccelerationUpgraded"
             Int: 600
           }
@@ -4976,8 +6904,80 @@ Assets {
             String: "4"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -5152,6 +7152,14 @@ Assets {
             Int: 1200
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 25
           }
@@ -5172,8 +7180,80 @@ Assets {
             String: "5"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -5348,6 +7428,14 @@ Assets {
             Int: 1000
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 30
           }
@@ -5368,8 +7456,80 @@ Assets {
             String: "1"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -5544,6 +7704,14 @@ Assets {
             Int: 1000
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 20
           }
@@ -5564,8 +7732,80 @@ Assets {
             String: "2"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -5740,6 +7980,14 @@ Assets {
             Int: 1000
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 30
           }
@@ -5760,8 +8008,80 @@ Assets {
             String: "3"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -5936,6 +8256,14 @@ Assets {
             Int: 500
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 20
           }
@@ -5956,8 +8284,80 @@ Assets {
             String: "4"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -6132,6 +8532,14 @@ Assets {
             Int: 600
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 30
           }
@@ -6152,8 +8560,80 @@ Assets {
             String: "5"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -6328,6 +8808,14 @@ Assets {
             Int: 600
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 20
           }
@@ -6348,8 +8836,80 @@ Assets {
             String: "1"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
@@ -6524,6 +9084,14 @@ Assets {
             Int: 600
           }
           Overrides {
+            Name: "cs:TurningSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded"
+            Int: 20
+          }
+          Overrides {
             Name: "cs:Traverse"
             Int: 20
           }
@@ -6544,8 +9112,80 @@ Assets {
             String: "2"
           }
           Overrides {
-            Name: "cs:TurningSpeed"
-            Int: 20
+            Name: "cs:ProjectileLength"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ArmorValues"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:TurningSpeedUpgraded:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileLength:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:RecoilAmount:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ViewRange:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:ArmorValues:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:HorizontalCannonAngles:category"
+            String: "Custom"
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier:category"
+            String: "Custom"
           }
         }
         Collidable_v2 {
