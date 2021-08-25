@@ -176,6 +176,7 @@ API.XP_GAIN_TEXT = {
 }
 
 API.RANK_NAME = "Rank"
+API.TUTORIAL_PROGRESS = "TutorialProgress"
 
 function API.GetNumberOfTanks()
     return NUMBER_OF_TANKS

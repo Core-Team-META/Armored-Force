@@ -143,6 +143,7 @@ function CheckAndSetSharedStorageDefault(player)
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_SHOTS_HIT] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_SHOTS_HIT] = 0 end
 	if(playerSharedStorage[CONSTANTS_API.RANK_NAME] == nil) then playerSharedStorage[CONSTANTS_API.RANK_NAME] = 1 end
 	if(playerSharedStorage[CONSTANTS_API.XP] == nil) then playerSharedStorage[CONSTANTS_API.XP] = 0 end
+	if(playerSharedStorage[CONSTANTS_API.TUTORIAL_PROGRESS] == nil) then playerSharedStorage[CONSTANTS_API.TUTORIAL_PROGRESS] = 0 end
 	Storage.SetSharedPlayerData(PLAYER_SHARED_STORAGE, player, playerSharedStorage)
 end
 function LoadAndSetDataFromSharedStorage(player)
@@ -194,6 +195,7 @@ function LoadAndSetDataFromSharedStorage(player)
 	player:SetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_SHOTS_HIT, playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_SHOTS_HIT])
 	player:SetResource(CONSTANTS_API.RANK_NAME, playerSharedStorage[CONSTANTS_API.RANK_NAME])
 	player:SetResource(CONSTANTS_API.XP, playerSharedStorage[CONSTANTS_API.XP])
+	player:SetResource(CONSTANTS_API.TUTORIAL_PROGRESS, playerSharedStorage[CONSTANTS_API.TUTORIAL_PROGRESS])
 end
 
 function SavePlayerDataIntoSharedStorage(player)
@@ -244,6 +246,7 @@ function SavePlayerDataIntoSharedStorage(player)
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_SHOTS_HIT] = player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_SHOTS_HIT)
 	playerSharedStorage[CONSTANTS_API.RANK_NAME] = player:GetResource(CONSTANTS_API.RANK_NAME)
 	playerSharedStorage[CONSTANTS_API.XP] = player:GetResource(CONSTANTS_API.XP)
+	playerSharedStorage[CONSTANTS_API.TUTORIAL_PROGRESS] = player:GetResource(CONSTANTS_API.TUTORIAL_PROGRESS)
 
 	Storage.SetSharedPlayerData(PLAYER_SHARED_STORAGE, player, playerSharedStorage)
 end

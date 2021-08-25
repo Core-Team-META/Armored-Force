@@ -851,6 +851,12 @@ Objects {
         SelfId: 3794481685187691214
       }
     }
+    Overrides {
+      Name: "cs:Tutorial_UpgradeTank"
+      ObjectReference {
+        SelfId: 11374196516866748429
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
