@@ -373,19 +373,19 @@ Assets {
           }
           Overrides {
             Name: "cs:Reload"
-            Float: 7.5
+            Float: 5
           }
           Overrides {
             Name: "cs:ReloadUpgraded"
-            Float: 6.5
+            Float: 4
           }
           Overrides {
             Name: "cs:Turret"
-            Int: 18
+            Int: 36
           }
           Overrides {
             Name: "cs:TurretUpgraded"
-            Int: 25
+            Int: 50
           }
           Overrides {
             Name: "cs:Elevation"
@@ -393,27 +393,27 @@ Assets {
           }
           Overrides {
             Name: "cs:ElevationUpgraded"
-            Int: 20
+            Int: 22
           }
           Overrides {
             Name: "cs:MaxElevation"
-            Int: 25
+            Int: 15
           }
           Overrides {
             Name: "cs:MaxDepth"
-            Int: -10
+            Int: -12
           }
           Overrides {
             Name: "cs:ShellSpeed"
-            Int: 7000
+            Int: 21000
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 120
+            Int: 230
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 130
+            Int: 270
           }
           Overrides {
             Name: "cs:LeftRight"
