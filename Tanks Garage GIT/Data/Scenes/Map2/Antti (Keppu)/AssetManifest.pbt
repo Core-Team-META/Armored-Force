@@ -215,6 +215,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6551093352602210295
+  Name: "Rock Pile 001"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_001"
+  }
+}
+Assets {
   Id: 5483772166785938526
   Name: "Urban Damaged Concrete Chunk 03"
   PlatformAssetType: 1
