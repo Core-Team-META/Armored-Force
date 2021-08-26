@@ -237,7 +237,7 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 1000
+            Int: 1160
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
@@ -249,19 +249,19 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 800
+            Int: 500
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 60
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 70
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 1000
+            Int: 500
           }
           Overrides {
             Name: "cs:Traverse"
@@ -281,19 +281,19 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -301,7 +301,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 50000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -313,7 +313,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -557,11 +557,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -833,11 +833,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -1109,11 +1109,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -1389,11 +1389,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -1669,11 +1669,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -1945,11 +1945,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -2217,11 +2217,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -2489,11 +2489,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -2765,11 +2765,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -3041,11 +3041,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -3317,11 +3317,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -3593,11 +3593,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -3869,11 +3869,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -4145,11 +4145,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -4421,11 +4421,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -4697,11 +4697,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -4969,11 +4969,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -5245,11 +5245,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -5521,11 +5521,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -5797,11 +5797,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -6073,11 +6073,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -6353,11 +6353,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -6633,11 +6633,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -6905,11 +6905,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -7181,11 +7181,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -7457,11 +7457,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -7733,11 +7733,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -8009,11 +8009,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -8285,11 +8285,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -8561,11 +8561,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -8837,11 +8837,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
@@ -9113,11 +9113,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileLength"
-            Float: 0
+            Float: 20
           }
           Overrides {
             Name: "cs:ProjectileRadius"
-            Float: 0
+            Float: 5
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
