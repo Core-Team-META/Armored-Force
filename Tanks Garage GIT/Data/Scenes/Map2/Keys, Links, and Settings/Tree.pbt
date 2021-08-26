@@ -121,7 +121,7 @@ Objects {
     Overrides {
       Name: "cs:MatchDestroyed"
       NetReference {
-        Key: "5CDFF97022581421"
+        Key: "331B27488436C074"
         Type {
           Value: "mc:enetreferencetype:leaderboard"
         }
@@ -130,7 +130,7 @@ Objects {
     Overrides {
       Name: "cs:MatchDamage"
       NetReference {
-        Key: "ADCF41D254037A1E"
+        Key: "A511CA004F8DECD8"
         Type {
           Value: "mc:enetreferencetype:leaderboard"
         }
@@ -139,7 +139,7 @@ Objects {
     Overrides {
       Name: "cs:TotalDestroyed"
       NetReference {
-        Key: "6B38621A1DA4AE04"
+        Key: "15C55D363F75E31C"
         Type {
           Value: "mc:enetreferencetype:leaderboard"
         }
@@ -148,7 +148,7 @@ Objects {
     Overrides {
       Name: "cs:TotalDamage"
       NetReference {
-        Key: "04F58AB9B00A1E52"
+        Key: "4B50C1325ADE93EA"
         Type {
           Value: "mc:enetreferencetype:leaderboard"
         }
@@ -157,7 +157,7 @@ Objects {
     Overrides {
       Name: "cs:TotalWinRate"
       NetReference {
-        Key: "18059DC9ED32BEC7"
+        Key: "AE45025A16B39ECE"
         Type {
           Value: "mc:enetreferencetype:leaderboard"
         }
