@@ -8536,12 +8536,12 @@ Objects {
   Name: "collision"
   Transform {
     Location {
-      X: -1824.80469
-      Y: -711.003906
-      Z: -1.80554199
+      X: -2080.11719
+      Y: -2801.41016
+      Z: -142.25415
     }
     Rotation {
-      Yaw: -86.7444382
+      Yaw: -87.6054
     }
     Scale {
       X: 10.1145544
@@ -8588,12 +8588,12 @@ Objects {
   Name: "collision"
   Transform {
     Location {
-      X: 1467.4375
-      Y: 2513.57812
-      Z: 123.428223
+      X: 2929.41797
+      Y: -4385.49414
+      Z: 180.893066
     }
     Rotation {
-      Yaw: -89.6990891
+      Yaw: -151.199692
     }
     Scale {
       X: 10.8265285
@@ -8642,7 +8642,7 @@ Objects {
     Location {
       X: 351.5625
       Y: -1808.87891
-      Z: 522.76709
+      Z: 429.39502
     }
     Rotation {
       Yaw: -86.7444382
@@ -10475,12 +10475,12 @@ Objects {
   Name: "collision"
   Transform {
     Location {
-      X: -861.664062
-      Y: -3072.03516
-      Z: 185.090698
+      X: -2970.5957
+      Y: 3307.68164
+      Z: -166.495728
     }
     Rotation {
-      Yaw: -89.6991
+      Yaw: -179.788757
     }
     Scale {
       X: 10.8265285
@@ -10499,7 +10499,7 @@ Objects {
     Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:forceon"
@@ -10527,12 +10527,12 @@ Objects {
   Name: "collision"
   Transform {
     Location {
-      X: 1773.08203
-      Y: 1614.38672
-      Z: -0.929016113
+      X: 1761.45508
+      Y: 1534.66016
+      Z: -298.093628
     }
     Rotation {
-      Yaw: -79.4927826
+      Yaw: -102.786453
     }
     Scale {
       X: 10.1145544
@@ -10551,7 +10551,7 @@ Objects {
     Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:forceon"
@@ -10581,7 +10581,7 @@ Objects {
     Location {
       X: -918.652344
       Y: 1451.62891
-      Z: 568.377319
+      Z: 165.67627
     }
     Rotation {
       Yaw: -86.7444382
@@ -10603,7 +10603,7 @@ Objects {
     Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:forceon"

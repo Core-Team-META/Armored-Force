@@ -1004,9 +1004,9 @@ Assets {
         Name: "Military Tank Historic Tread 01 Mid"
         Transform {
           Location {
-            X: -4.96899557
-            Y: 16.285593
-            Z: -1.56559381e-05
+            X: -4.96982098
+            Y: 16.2853584
+            Z: -1.4735e-05
           }
           Rotation {
           }
@@ -1047,8 +1047,8 @@ Assets {
         Transform {
           Location {
             X: 289.899933
-            Y: 16.285593
-            Z: 4.35844612
+            Y: 16.2853584
+            Z: 4.35844564
           }
           Rotation {
           }
@@ -1088,8 +1088,8 @@ Assets {
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: -300.574097
-            Y: 16.2814941
+            X: -300.570312
+            Y: 16.28125
             Z: 5.0374527
           }
           Rotation {
@@ -1130,7 +1130,7 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 99.4339066
+            X: 99.4341354
             Y: -23.9447289
             Z: 56.1681404
           }
@@ -1204,12 +1204,12 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: 99.4339066
+            X: 99.4341354
             Y: -8.19879
             Z: 56.1681404
           }
           Rotation {
-            Roll: -89.9999771
+            Roll: -89.9999542
           }
           Scale {
             X: 0.145290479
@@ -1278,13 +1278,14 @@ Assets {
         Name: "Sci-fi Console Leg 01"
         Transform {
           Location {
-            X: 156.023972
+            X: 156.024078
             Y: 2.87532902
             Z: 76.5368576
           }
           Rotation {
-            Pitch: -46.8097305
+            Pitch: -46.8096962
             Yaw: -179.999954
+            Roll: -2.37929251e-12
           }
           Scale {
             X: 0.293172
@@ -1364,14 +1365,13 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: 126.789017
-            Y: 4.84109592
+            X: 126.789841
+            Y: 4.84062433
             Z: 99.8647461
           }
           Rotation {
             Pitch: 90
-            Yaw: -2.73207552e-05
-            Roll: -179.999985
+            Roll: -179.999939
           }
           Scale {
             X: 0.205788687
@@ -1437,7 +1437,7 @@ Assets {
         Name: "Sci-fi Console Leg 01"
         Transform {
           Location {
-            X: -140.264938
+            X: -140.263992
             Y: 2.87532902
             Z: 76.5368576
           }
@@ -1601,7 +1601,7 @@ Assets {
             Z: 56.1681404
           }
           Rotation {
-            Roll: -89.9999771
+            Roll: -89.9999542
           }
           Scale {
             X: 0.145290479
@@ -1670,8 +1670,8 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: -112.773201
-            Y: 4.84109592
+            X: -112.772499
+            Y: 4.84062433
             Z: 99.8647461
           }
           Rotation {
@@ -4341,9 +4341,9 @@ Assets {
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: 265.406342
+            X: 265.405396
             Y: 47.5858
-            Z: 4.90744305
+            Z: 4.90744209
           }
           Rotation {
           }
@@ -4400,9 +4400,9 @@ Assets {
         Name: "Military Tank Historic Tread 01 Mid"
         Transform {
           Location {
-            X: -8.61360931
+            X: -8.61372757
             Y: 47.5858
-            Z: 0.548980951
+            Z: 0.548980057
           }
           Rotation {
           }
@@ -4459,14 +4459,14 @@ Assets {
         Name: "Military Tank Historic Gear 03"
         Transform {
           Location {
-            X: -379.02359
+            X: -379.022858
             Y: -41.9539642
-            Z: 1.38140626e-06
+            Z: 1.84187502e-06
           }
           Rotation {
             Pitch: 4.09811328e-05
-            Yaw: -179.999985
-            Roll: -89.9999771
+            Yaw: -179.999954
+            Roll: -89.9999542
           }
           Scale {
             X: 1.06224036
@@ -4531,14 +4531,14 @@ Assets {
         Name: "Lens - Half"
         Transform {
           Location {
-            X: -379.02359
+            X: -379.022858
             Y: -41.9539642
-            Z: 14.349061
+            Z: 14.3490591
           }
           Rotation {
             Pitch: 2.04905664e-05
-            Yaw: -179.999985
-            Roll: -2.04905573e-05
+            Yaw: -179.999954
+            Roll: -2.04905518e-05
           }
           Scale {
             X: 0.292374909
@@ -4607,8 +4607,8 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 325.510284
-            Y: -3.4878335
+            X: 325.511017
+            Y: -3.48736191
             Z: 85.9982071
           }
           Rotation {
@@ -4681,8 +4681,8 @@ Assets {
         Name: "Gear - generic small hollow"
         Transform {
           Location {
-            X: 325.510284
-            Y: 35.0322876
+            X: 325.511017
+            Y: 35.0320511
             Z: 85.9982071
           }
           Rotation {
@@ -4752,7 +4752,7 @@ Assets {
         Name: "Gear - generic small hollow"
         Transform {
           Location {
-            X: 325.510284
+            X: 325.511017
             Y: -2.56035352
             Z: 85.9982071
           }
@@ -4823,7 +4823,7 @@ Assets {
         Name: "Military Tank Historic Gear 03"
         Transform {
           Location {
-            X: 325.510284
+            X: 325.511017
             Y: 20.0905247
             Z: 85.9982071
           }
@@ -4890,13 +4890,13 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: 222.221252
+            X: 222.221725
             Y: 18.0780773
             Z: 39.8057709
           }
           Rotation {
-            Yaw: 22.505724
-            Roll: 17.6105957
+            Yaw: 22.5056896
+            Roll: 17.6106148
           }
           Scale {
             X: 1.38746369
@@ -4965,12 +4965,12 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 228.732697
+            X: 228.732468
             Y: 2.36231518
             Z: 45.2054558
           }
           Rotation {
-            Yaw: 22.5057259
+            Yaw: 22.5056896
             Roll: 107.610535
           }
           Scale {
@@ -5040,14 +5040,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: -107.581062
-            Y: -72.5200119
+            X: -107.582
+            Y: -72.5197754
             Z: 24.0378304
           }
           Rotation {
             Pitch: -8.62442493
             Yaw: -44.98843
-            Roll: 158.152618
+            Roll: 158.152634
           }
           Scale {
             X: 0.176143482
@@ -5116,14 +5116,14 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: -104.642548
-            Y: -66.0663147
-            Z: 7.65947866
+            X: -104.643494
+            Y: -66.0665512
+            Z: 7.65947962
           }
           Rotation {
             Pitch: -8.62441826
-            Yaw: -44.9884224
-            Roll: 68.1526337
+            Yaw: -44.98843
+            Roll: 68.1526489
           }
           Scale {
             X: 1.38746369
@@ -5192,14 +5192,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: -181.026779
+            X: -181.025955
             Y: 0.891172826
             Z: 39.790947
           }
           Rotation {
             Pitch: -8.62442493
             Yaw: -44.98843
-            Roll: 158.152618
+            Roll: 158.152634
           }
           Scale {
             X: 0.176143482
@@ -5268,14 +5268,14 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: -178.088272
-            Y: 7.34486723
+            X: -178.087448
+            Y: 7.34439564
             Z: 23.4125938
           }
           Rotation {
             Pitch: -8.62441826
-            Yaw: -44.9884224
-            Roll: 68.1526337
+            Yaw: -44.98843
+            Roll: 68.1526489
           }
           Scale {
             X: 1.38746369
@@ -5344,14 +5344,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: -283.82309
-            Y: -47.375267
+            X: -283.822968
+            Y: -47.3755
             Z: 28.1602554
           }
           Rotation {
-            Pitch: -34.0912361
-            Yaw: 5.15472834e-07
-            Roll: 167.757111
+            Pitch: -34.0912285
+            Yaw: 1.28868203e-06
+            Roll: 167.757065
           }
           Scale {
             X: 0.176143482
@@ -5420,14 +5420,14 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: -293.599365
-            Y: -43.590847
-            Z: 13.7160578
+            X: -293.598541
+            Y: -43.5910797
+            Z: 13.7160587
           }
           Rotation {
-            Pitch: -34.0912361
+            Pitch: -34.0912323
             Yaw: -2.06189134e-06
-            Roll: 77.7571564
+            Roll: 77.7571106
           }
           Scale {
             X: 1.38746369
@@ -5496,12 +5496,12 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: 181.74173
-            Y: 11.1050034
-            Z: 122.043625
+            X: 181.742676
+            Y: 11.1052389
+            Z: 122.043633
           }
           Rotation {
-            Yaw: -11.2421
+            Yaw: -11.2421331
           }
           Scale {
             X: 0.719464183
@@ -5570,13 +5570,13 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: -244.851151
-            Y: 15.349391
+            X: -244.850906
+            Y: 15.3489189
             Z: 32.6447449
           }
           Rotation {
             Yaw: 35.8415337
-            Roll: 20.1847916
+            Roll: 20.1847897
           }
           Scale {
             X: 0.719464242
@@ -5645,8 +5645,8 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: -18.6413078
-            Y: 33.213398
+            X: -18.6420155
+            Y: 33.213871
             Z: 123.981911
           }
           Rotation {
@@ -5718,12 +5718,12 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: 181.74173
-            Y: 26.171011
-            Z: 122.043625
+            X: 181.742676
+            Y: 26.1712456
+            Z: 122.043633
           }
           Rotation {
-            Roll: -89.9999847
+            Roll: -89.9999619
           }
           Scale {
             X: 0.283078641
@@ -5792,8 +5792,8 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: -254.598648
-            Y: 28.8421707
+            X: -254.598175
+            Y: 28.8419361
             Z: 26.524601
           }
           Rotation {
@@ -5868,13 +5868,13 @@ Assets {
         Transform {
           Location {
             X: -16.9539738
-            Y: 36.1413
+            Y: 36.1410637
             Z: 89.5494
           }
           Rotation {
-            Pitch: 84.793457
-            Yaw: -179.999985
-            Roll: -179.999985
+            Pitch: 84.79319
+            Yaw: -179.999954
+            Roll: -179.999954
           }
           Scale {
             X: 0.274016261
@@ -5939,14 +5939,14 @@ Assets {
         Name: "Sci-fi Console Leg 01"
         Transform {
           Location {
-            X: 131.530502
-            Y: 34.1755333
+            X: 131.531448
+            Y: 34.1757698
             Z: 77.0858231
           }
           Rotation {
-            Pitch: -46.8097458
+            Pitch: -46.8097191
             Yaw: -179.999954
-            Roll: 2.37929468e-12
+            Roll: -2.37929338e-12
           }
           Scale {
             X: 0.293172
@@ -6034,12 +6034,12 @@ Assets {
         Name: "Sci-fi Console Leg 01"
         Transform {
           Location {
-            X: -161.540283
-            Y: 34.1755333
+            X: -161.540863
+            Y: 34.1757698
             Z: 52.9522476
           }
           Rotation {
-            Pitch: -41.6040764
+            Pitch: -41.6040649
           }
           Scale {
             X: 0.293172
@@ -6127,14 +6127,14 @@ Assets {
         Name: "Cube - Arched"
         Transform {
           Location {
-            X: -143.835526
-            Y: -30.5936317
+            X: -143.836227
+            Y: -30.5941048
             Z: 13.3502216
           }
           Rotation {
             Pitch: -8.62441826
-            Yaw: -44.9884224
-            Roll: 68.1526337
+            Yaw: -44.98843
+            Roll: 68.1526489
           }
           Scale {
             X: 0.473038077
@@ -6203,14 +6203,14 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: -130.992737
-            Y: -18.325861
+            X: -130.992035
+            Y: -18.3260956
             Z: 16.048811
           }
           Rotation {
             Pitch: -8.62445164
             Yaw: -44.9884
-            Roll: -21.8466492
+            Roll: -21.8466263
           }
           Scale {
             X: 0.145290479
@@ -6279,8 +6279,8 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: -133.585632
-            Y: -24.0194645
+            X: -133.585388
+            Y: -24.0192299
             Z: 30.4987659
           }
           Rotation {
@@ -6355,13 +6355,13 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: 22.307848
-            Y: 14.7706
+            X: 22.3085537
+            Y: 14.7708359
             Z: 38.3705139
           }
           Rotation {
-            Yaw: -12.2476559
-            Roll: 14.6563454
+            Yaw: -12.2476931
+            Roll: 14.6563797
           }
           Scale {
             X: 1.38746369
@@ -6430,13 +6430,13 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 18.6448441
-            Y: -2.10321498
+            X: 18.6457863
+            Y: -2.10297918
             Z: 42.8863
           }
           Rotation {
-            Yaw: -12.2476578
-            Roll: 104.656303
+            Yaw: -12.247694
+            Roll: 104.656342
           }
           Scale {
             X: 0.176143482
@@ -6505,13 +6505,13 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: 124.950325
+            X: 124.950912
             Y: -7.50942755
             Z: 38.370266
           }
           Rotation {
-            Yaw: -12.2476559
-            Roll: 14.6563454
+            Yaw: -12.2476931
+            Roll: 14.6563797
           }
           Scale {
             X: 1.38746369
@@ -6580,13 +6580,13 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 121.287323
+            X: 121.288147
             Y: -24.3832417
             Z: 42.886055
           }
           Rotation {
-            Yaw: -12.2476578
-            Roll: 104.656303
+            Yaw: -12.247694
+            Roll: 104.656342
           }
           Scale {
             X: 0.176143482
@@ -6655,13 +6655,13 @@ Assets {
         Name: "Cube - Arched"
         Transform {
           Location {
-            X: 73.1657562
+            X: 73.1648178
             Y: 4.02206564
             Z: 34.9007187
           }
           Rotation {
-            Yaw: -12.2476559
-            Roll: 14.6563454
+            Yaw: -12.2476931
+            Roll: 14.6563797
           }
           Scale {
             X: 0.473038077
@@ -6730,13 +6730,13 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: 74.9405594
-            Y: 12.1989298
+            X: 74.9415054
+            Y: 12.1991653
             Z: 50.7971954
           }
           Rotation {
-            Yaw: -12.2476568
-            Roll: -75.3436432
+            Yaw: -12.2476959
+            Roll: -75.3436127
           }
           Scale {
             X: 0.145290479
@@ -6805,13 +6805,13 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 71.7091141
-            Y: -2.68837142
+            X: 71.7087631
+            Y: -2.68860698
             Z: 54.781414
           }
           Rotation {
-            Yaw: -12.2476568
-            Roll: 104.656303
+            Yaw: -12.2476921
+            Roll: 104.656342
           }
           Scale {
             X: 0.125303179
@@ -7206,14 +7206,13 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: 124.833618
-            Y: 10.947998
-            Z: 43.6966057
+            X: 124.833984
+            Y: 10.9462891
+            Z: 43.6965942
           }
           Rotation {
             Pitch: 90
-            Yaw: -179.999954
-            Roll: 9.15527344e-05
+            Yaw: 179.999908
           }
           Scale {
             X: 0.205788687
@@ -7279,9 +7278,9 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: -114.72876
-            Y: 10.947998
-            Z: 43.6966057
+            X: -114.728516
+            Y: 10.9462891
+            Z: 43.6965942
           }
           Rotation {
             Pitch: 90
@@ -7350,14 +7349,14 @@ Assets {
         Name: "Sci-fi Console Leg 01"
         Transform {
           Location {
-            X: 154.068604
-            Y: 8.98217773
-            Z: 20.3687172
+            X: 154.068359
+            Y: 8.98242188
+            Z: 20.368721
           }
           Rotation {
-            Pitch: -46.8097305
+            Pitch: -46.8097191
             Yaw: -179.999954
-            Roll: -4.75858675e-12
+            Roll: -2.141364e-11
           }
           Scale {
             X: 0.293172
@@ -7437,9 +7436,9 @@ Assets {
         Name: "Sci-fi Console Leg 01"
         Transform {
           Location {
-            X: -142.220337
-            Y: 8.98217773
-            Z: 20.3687172
+            X: -142.220703
+            Y: 8.98242188
+            Z: 20.368721
           }
           Rotation {
             Pitch: -46.8097534
@@ -7522,8 +7521,8 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: -108.454956
-            Y: -2.09228516
+            X: -108.455078
+            Y: -2.09277344
           }
           Rotation {
             Roll: -89.9999847
@@ -7595,7 +7594,7 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: -108.454956
+            X: -108.455078
             Y: -17.8378906
           }
           Rotation {
@@ -7668,8 +7667,8 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: 97.4785156
-            Y: -2.09228516
+            X: 97.4765625
+            Y: -2.09277344
           }
           Rotation {
             Roll: -89.9999847
@@ -7741,7 +7740,7 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 97.4785156
+            X: 97.4765625
             Y: -17.8378906
           }
           Rotation {
@@ -10591,12 +10590,12 @@ Assets {
         Name: "Military Tank Historic Gear 03"
         Transform {
           Location {
-            X: 326.388306
-            Y: 9.7229
+            X: 326.384766
+            Y: 9.72265625
             Z: 52.7048492
           }
           Rotation {
-            Yaw: -14.6183577
+            Yaw: -14.6183882
           }
           Scale {
             X: 0.704042
@@ -10659,12 +10658,12 @@ Assets {
         Name: "Gear - generic small hollow"
         Transform {
           Location {
-            X: 320.671631
-            Y: -12.1945801
+            X: 320.667969
+            Y: -12.1943359
             Z: 52.7048492
           }
           Rotation {
-            Yaw: -14.6183491
+            Yaw: -14.6183748
           }
           Scale {
             X: 2.31065059
@@ -10731,12 +10730,12 @@ Assets {
         Name: "Gear - generic small hollow"
         Transform {
           Location {
-            X: 330.159302
-            Y: 24.1813965
+            X: 330.160156
+            Y: 24.1806641
             Z: 52.7048492
           }
           Rotation {
-            Yaw: -14.6183491
+            Yaw: -14.6183748
           }
           Scale {
             X: 2.31065059
@@ -10804,12 +10803,13 @@ Assets {
         Transform {
           Location {
             X: 320.4375
-            Y: -13.0917969
+            Y: -13.09375
             Z: 52.7048492
           }
           Rotation {
-            Yaw: -14.6183491
-            Roll: 89.999939
+            Pitch: -1.36603776e-05
+            Yaw: -14.6183834
+            Roll: 89.9999
           }
           Scale {
             X: 0.252237707
@@ -10878,14 +10878,14 @@ Assets {
         Name: "Lens - Half"
         Transform {
           Location {
-            X: -396.688721
-            Y: -2.97900391
+            X: -396.6875
+            Y: -2.97949219
             Z: 49.324913
           }
           Rotation {
             Pitch: 6.83018879e-06
-            Yaw: -166.748871
-            Roll: 82.6962204
+            Yaw: -166.748795
+            Roll: 82.6962
           }
           Scale {
             X: 0.292374909
@@ -10954,14 +10954,14 @@ Assets {
         Name: "Military Tank Historic Gear 03"
         Transform {
           Location {
-            X: -399.95105
-            Y: 10.8747559
+            X: -399.951172
+            Y: 10.875
             Z: 47.5007248
           }
           Rotation {
             Pitch: 6.83018879e-06
-            Yaw: -166.748825
-            Roll: -7.30376911
+            Yaw: -166.748764
+            Roll: -7.30378723
           }
           Scale {
             X: 1.06224036
@@ -11026,13 +11026,13 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: 230.730591
-            Y: 3.21655273
-            Z: 5.67586136
+            X: 230.726562
+            Y: 3.21679688
+            Z: 5.67586517
           }
           Rotation {
-            Yaw: 12.0402079
-            Roll: 20.0872173
+            Yaw: 12.0402431
+            Roll: 20.0872154
           }
           Scale {
             X: 1.38746369
@@ -11101,14 +11101,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 234.227173
-            Y: -13.1767578
-            Z: 11.8055916
+            X: 234.226562
+            Y: -13.1787109
+            Z: 11.8055954
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 12.0402079
-            Roll: 110.087135
+            Pitch: 1.36603776e-05
+            Yaw: 12.0402384
+            Roll: 110.087105
           }
           Scale {
             X: 0.176143482
@@ -11177,9 +11177,9 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: -70.9389648
+            X: -70.9394531
             Y: 3.94335938
-            Z: 8.74072647
+            Z: 8.74073
           }
           Rotation {
           }
@@ -11250,9 +11250,9 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: -70.9389648
-            Y: -13.904541
-            Z: 8.74072647
+            X: -70.9394531
+            Y: -13.9042969
+            Z: 8.74073
           }
           Rotation {
             Roll: 89.9999542
@@ -11324,9 +11324,9 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: -175.971802
-            Y: -13.904541
-            Z: 8.74072647
+            X: -175.974609
+            Y: -13.9042969
+            Z: 8.74073
           }
           Rotation {
             Roll: 89.9999542
@@ -11398,9 +11398,9 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: -175.971802
+            X: -175.974609
             Y: 3.94335938
-            Z: 8.74072647
+            Z: 8.74073
           }
           Rotation {
           }
@@ -11471,13 +11471,13 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: -272.610229
+            X: -272.613281
             Y: 3.72949219
             Z: 7.02434921
           }
           Rotation {
-            Yaw: -5.96609879
-            Roll: 11.0893011
+            Yaw: -5.96610546
+            Roll: 11.0893345
           }
           Scale {
             X: 1.38746369
@@ -11546,13 +11546,13 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: -274.430786
-            Y: -13.6901855
-            Z: 10.4571037
+            X: -274.433594
+            Y: -13.6904297
+            Z: 10.4571075
           }
           Rotation {
-            Yaw: -5.96609926
-            Roll: 101.089256
+            Yaw: -5.96610785
+            Roll: 101.08931
           }
           Scale {
             X: 0.176143482
@@ -11621,8 +11621,8 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: 188.743408
-            Y: -2.82641602
+            X: 188.744141
+            Y: -2.82617188
             Z: 89.7440491
           }
           Rotation {
@@ -11686,8 +11686,8 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: -234.343384
-            Y: -2.82641602
+            X: -234.34375
+            Y: -2.82617188
             Z: 89.7440491
           }
           Rotation {
@@ -11751,9 +11751,9 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: -11.6397705
-            Y: 19.2817383
-            Z: 94.1443253
+            X: -11.6386719
+            Y: 19.28125
+            Z: 94.1443329
           }
           Rotation {
           }
@@ -11816,12 +11816,12 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: 188.743408
-            Y: 12.239502
+            X: 188.744141
+            Y: 12.2392578
             Z: 89.7440491
           }
           Rotation {
-            Roll: -89.9999771
+            Roll: -89.9999542
           }
           Scale {
             X: 0.283078641
@@ -11890,12 +11890,12 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: -234.343384
-            Y: 14.9106445
+            X: -234.34375
+            Y: 14.9101562
             Z: 89.7440491
           }
           Rotation {
-            Roll: -89.9999771
+            Roll: -89.9999542
           }
           Scale {
             X: 0.283078671
@@ -11964,14 +11964,14 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: -10.4464111
-            Y: 22.2097168
+            X: -10.4472656
+            Y: 22.2080078
             Z: 66.6488266
           }
           Rotation {
             Pitch: 90
-            Yaw: -0.843984902
-            Roll: -0.843994141
+            Yaw: -0.105508082
+            Roll: -0.105529785
           }
           Scale {
             X: 0.274016261
@@ -12036,14 +12036,13 @@ Assets {
         Name: "Sci-fi Console Leg 01"
         Transform {
           Location {
-            X: 138.531982
-            Y: 20.2436523
+            X: 138.529297
+            Y: 20.2431641
             Z: 43.3209305
           }
           Rotation {
-            Pitch: -46.8097382
-            Yaw: -179.999969
-            Roll: 3.56894093e-12
+            Pitch: -46.8097229
+            Yaw: -179.999954
           }
           Scale {
             X: 0.293172
@@ -12131,8 +12130,8 @@ Assets {
         Name: "Sci-fi Console Leg 01"
         Transform {
           Location {
-            X: -157.756714
-            Y: 20.2436523
+            X: -157.757812
+            Y: 20.2431641
             Z: 43.3209305
           }
           Rotation {
@@ -12224,8 +12223,8 @@ Assets {
         Name: "Cube - Arched"
         Transform {
           Location {
-            X: -123.991211
-            Y: 5.09619141
+            X: -123.994141
+            Y: 5.09472656
             Z: 5.45589828
           }
           Rotation {
@@ -12297,12 +12296,12 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: -123.991211
+            X: -123.994141
             Y: 9.16992188
-            Z: 22.9522362
+            Z: 22.95224
           }
           Rotation {
-            Roll: -89.9999542
+            Roll: -89.999939
           }
           Scale {
             X: 0.145290479
@@ -12371,9 +12370,9 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: -123.991211
+            X: -123.994141
             Y: -6.57617188
-            Z: 22.9522362
+            Z: 22.95224
           }
           Rotation {
             Roll: 89.9999542
@@ -12445,13 +12444,13 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: 32.1085205
-            Y: 1.33569336
+            X: 32.1054688
+            Y: 1.33496094
             Z: 3.42922592
           }
           Rotation {
-            Yaw: -9.83385086
-            Roll: 9.40486145
+            Yaw: -9.83387661
+            Roll: 9.40488243
           }
           Scale {
             X: 1.38746369
@@ -12520,14 +12519,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 29.1014404
-            Y: -16.0131836
+            X: 29.1015625
+            Y: -16.0126953
             Z: 6.34567261
           }
           Rotation {
             Pitch: -6.83018879e-06
-            Yaw: -9.83385277
-            Roll: 99.4047852
+            Yaw: -9.83387947
+            Roll: 99.4047928
           }
           Scale {
             X: 0.176143482
@@ -12596,13 +12595,13 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: 135.598633
+            X: 135.597656
             Y: -16.6025391
             Z: 3.4289093
           }
           Rotation {
-            Yaw: -9.83385086
-            Roll: 9.40486145
+            Yaw: -9.83387661
+            Roll: 9.40488243
           }
           Scale {
             X: 1.38746369
@@ -12671,14 +12670,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 132.591553
-            Y: -33.9516602
+            X: 132.591797
+            Y: -33.9511719
             Z: 6.34535599
           }
           Rotation {
             Pitch: -6.83018879e-06
-            Yaw: -9.83385277
-            Roll: 99.4047852
+            Yaw: -9.83387947
+            Roll: 99.4047928
           }
           Scale {
             X: 0.176143482
@@ -12747,12 +12746,12 @@ Assets {
         Name: "Cube - Arched"
         Transform {
           Location {
-            X: 83.4272461
-            Y: -6.9519043
+            X: 83.4238281
+            Y: -6.95214844
           }
           Rotation {
-            Yaw: -9.83385658
-            Roll: 9.40486336
+            Yaw: -9.83388138
+            Roll: 9.4048872
           }
           Scale {
             X: 0.473038077
@@ -12821,14 +12820,14 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: 84.6031494
-            Y: -0.176513672
+            X: 84.6035156
+            Y: -0.176757812
             Z: 16.5958252
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: -9.83388424
-            Roll: -80.5950241
+            Pitch: 1.36603776e-05
+            Yaw: -9.83391
+            Roll: -80.5949936
           }
           Scale {
             X: 0.145290479
@@ -12897,14 +12896,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 81.944458
-            Y: -15.484375
-            Z: 19.1688652
+            X: 81.9414062
+            Y: -15.4863281
+            Z: 19.1688766
           }
           Rotation {
             Pitch: -6.83018879e-06
-            Yaw: -9.83389
-            Roll: 99.4048462
+            Yaw: -9.83391666
+            Roll: 99.4048538
           }
           Scale {
             X: 0.125303179
@@ -13607,14 +13606,14 @@ Assets {
         Name: "Pipe"
         Transform {
           Location {
-            X: 367.897034
+            X: 367.897705
             Y: -55.7368584
             Z: 116.96685
           }
           Rotation {
             Pitch: -89.4311
-            Yaw: -3.28210764e-10
-            Roll: 8.5157888e-05
+            Yaw: -9.84632265e-10
+            Roll: 8.51585501e-05
           }
           Scale {
             X: 0.0509336367
@@ -13681,14 +13680,13 @@ Assets {
         Name: "Cylinder - Chamfered Polished"
         Transform {
           Location {
-            X: 473.874634
-            Y: -157.319824
-            Z: 127.128395
+            X: 473.875
+            Y: -157.321289
+            Z: 127.12838
           }
           Rotation {
             Pitch: 90
-            Yaw: 2.27672967e-06
-            Roll: 1.51558388e-05
+            Roll: 1.28791007e-05
           }
           Scale {
             X: 0.206970841
@@ -13755,14 +13753,13 @@ Assets {
         Name: "Cylinder - Chamfered Polished"
         Transform {
           Location {
-            X: 473.960083
-            Y: 155.936768
-            Z: 127.128395
+            X: 473.962891
+            Y: 155.935547
+            Z: 127.12838
           }
           Rotation {
             Pitch: 90
-            Yaw: 2.27672967e-06
-            Roll: 1.51558388e-05
+            Roll: 1.28791007e-05
           }
           Scale {
             X: 0.206970841
@@ -13829,9 +13826,9 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: 374.784485
-            Y: 38.2060089
-            Z: 108.555923
+            X: 374.785156
+            Y: 38.2057877
+            Z: 108.555916
           }
           Rotation {
             Pitch: -90
@@ -13903,8 +13900,8 @@ Assets {
         Name: "Baseball Bat"
         Transform {
           Location {
-            X: -92.4646
-            Y: -133.512451
+            X: -92.4609375
+            Y: -133.513672
             Z: 153.504242
           }
           Rotation {
@@ -13977,14 +13974,14 @@ Assets {
         Name: "Hatchet - Blade"
         Transform {
           Location {
-            X: -26.8260498
+            X: -26.8222656
             Y: -133.90918
             Z: 151.095062
           }
           Rotation {
-            Pitch: 72.1687775
-            Yaw: 82.5131912
-            Roll: -94.7733231
+            Pitch: 72.1687622
+            Yaw: 82.5131683
+            Roll: -94.7733383
           }
           Scale {
             X: 0.976038158
@@ -14053,9 +14050,9 @@ Assets {
         Name: "Cube - Rounded"
         Transform {
           Location {
-            X: -179.846634
-            Y: -144.769608
-            Z: 114.028625
+            X: -179.84729
+            Y: -144.769165
+            Z: 114.02861
           }
           Rotation {
           }
@@ -14126,9 +14123,9 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: -230.354767
-            Y: -144.769608
-            Z: 115.228569
+            X: -230.355103
+            Y: -144.769165
+            Z: 115.228561
           }
           Rotation {
             Pitch: 90
@@ -14200,9 +14197,9 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: -117.031578
+            X: -117.031242
             Y: -129.803802
-            Z: 115.780991
+            Z: 115.780983
           }
           Rotation {
             Pitch: 90
@@ -14270,14 +14267,14 @@ Assets {
         Name: "Pipe - 90-Degree Long Thin"
         Transform {
           Location {
-            X: -232.199142
-            Y: -144.769608
+            X: -232.199921
+            Y: -144.769165
             Z: 115.229332
           }
           Rotation {
             Pitch: 6.83018879e-06
-            Yaw: -89.9999619
-            Roll: -89.9999619
+            Yaw: -89.9999542
+            Roll: -89.9999542
           }
           Scale {
             X: 0.0649578869
@@ -14346,7 +14343,7 @@ Assets {
         Name: "Cube - Rounded"
         Transform {
           Location {
-            X: -179.84668
+            X: -179.84375
             Y: 142.18457
             Z: 114.028633
           }
@@ -14419,9 +14416,9 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: -230.354858
+            X: -230.351562
             Y: 142.18457
-            Z: 115.228569
+            Z: 115.228554
           }
           Rotation {
             Pitch: 90
@@ -14493,8 +14490,8 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: -117.031616
-            Y: 127.21875
+            X: -117.027344
+            Y: 127.216797
             Z: 115.780968
           }
           Rotation {
@@ -14569,8 +14566,8 @@ Assets {
           }
           Rotation {
             Pitch: 6.83018879e-06
-            Yaw: 89.9999619
-            Roll: 89.9999542
+            Yaw: 89.9999466
+            Roll: 89.999939
           }
           Scale {
             X: 0.0649578869
@@ -14639,9 +14636,9 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: -244.448685
-            Y: 53.7557678
-            Z: 60.5267372
+            X: -244.44957
+            Y: 53.7562141
+            Z: 60.5267448
           }
           Rotation {
             Pitch: 90
@@ -14711,8 +14708,8 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: 469.539429
-            Y: -157.319824
+            X: 469.542969
+            Y: -157.321289
             Z: 108.37925
           }
           Rotation {
@@ -14784,8 +14781,8 @@ Assets {
         Name: "Street Light Pole Top 01"
         Transform {
           Location {
-            X: 469.53894
-            Y: -157.317627
+            X: 469.539062
+            Y: -157.318359
             Z: 116.21685
           }
           Rotation {
@@ -14853,14 +14850,14 @@ Assets {
         Name: "Street Light Pole Clamp 01"
         Transform {
           Location {
-            X: 470.32373
-            Y: -157.319824
-            Z: 127.12841
+            X: 470.326172
+            Y: -157.321289
+            Z: 127.12838
           }
           Rotation {
             Pitch: 90
-            Yaw: 0.562695324
-            Roll: 0.562661529
+            Yaw: -8.19622655e-05
+            Roll: -0.000122070312
           }
           Scale {
             X: 0.744504571
@@ -14923,14 +14920,14 @@ Assets {
         Name: "Lens - Half"
         Transform {
           Location {
-            X: 467.457764
-            Y: -157.319824
-            Z: 127.12841
+            X: 467.460938
+            Y: -157.321289
+            Z: 127.12838
           }
           Rotation {
             Pitch: 90
-            Yaw: -0.843986392
-            Roll: -0.844024658
+            Yaw: -0.105467096
+            Roll: -0.105499268
           }
           Scale {
             X: 0.212762639
@@ -14997,8 +14994,8 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: 469.539429
-            Y: 155.936523
+            X: 469.542969
+            Y: 155.935547
             Z: 108.37925
           }
           Rotation {
@@ -15070,8 +15067,8 @@ Assets {
         Name: "Street Light Pole Top 01"
         Transform {
           Location {
-            X: 469.53894
-            Y: 155.938721
+            X: 469.539062
+            Y: 155.936523
             Z: 116.21685
           }
           Rotation {
@@ -15139,14 +15136,14 @@ Assets {
         Name: "Street Light Pole Clamp 01"
         Transform {
           Location {
-            X: 470.32373
-            Y: 155.936523
-            Z: 127.12841
+            X: 470.326172
+            Y: 155.935547
+            Z: 127.12838
           }
           Rotation {
             Pitch: 90
-            Yaw: 0.562695324
-            Roll: 0.562661529
+            Yaw: -8.19622655e-05
+            Roll: -0.000122070312
           }
           Scale {
             X: 0.744504571
@@ -15209,14 +15206,14 @@ Assets {
         Name: "Lens - Half"
         Transform {
           Location {
-            X: 467.457764
-            Y: 155.936523
-            Z: 127.12841
+            X: 467.460938
+            Y: 155.935547
+            Z: 127.12838
           }
           Rotation {
             Pitch: 90
-            Yaw: -0.843986392
-            Roll: -0.844024658
+            Yaw: -0.105467096
+            Roll: -0.105499268
           }
           Scale {
             X: 0.212762639
@@ -15283,14 +15280,14 @@ Assets {
         Name: "Pipe - 90-Degree Long"
         Transform {
           Location {
-            X: 549.949158
-            Y: 10.3031778
+            X: 549.948486
+            Y: 10.3027344
             Z: 0.118533045
           }
           Rotation {
             Pitch: -0.298615843
-            Yaw: -89.4481049
-            Roll: 167.204437
+            Yaw: -89.4481125
+            Roll: 167.204407
           }
           Scale {
             X: 0.0607443117
@@ -15357,14 +15354,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: 544.526123
-            Y: 10.1267309
+            X: 544.525879
+            Y: 10.1269531
             Z: 24.0010757
           }
           Rotation {
             Pitch: -0.298615843
-            Yaw: -89.4481201
-            Roll: 167.204422
+            Yaw: -89.4481
+            Roll: 167.204391
           }
           Scale {
             X: 0.0607441887
@@ -15431,14 +15428,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: 545.511719
+            X: 545.513672
             Y: -13.1386719
             Z: 20.5212173
           }
           Rotation {
             Pitch: -0.298670501
-            Yaw: -89.4480743
-            Roll: 167.204437
+            Yaw: -89.4480591
+            Roll: 167.204407
           }
           Scale {
             X: -0.0607450642
@@ -15505,13 +15502,13 @@ Assets {
         Name: "Pipe - 90-Degree Long"
         Transform {
           Location {
-            X: 550.178101
-            Y: -12.9755859
+            X: 550.181641
+            Y: -12.9775391
           }
           Rotation {
             Pitch: -0.298677325
-            Yaw: -89.4480896
-            Roll: 167.204437
+            Yaw: -89.4480667
+            Roll: 167.204407
           }
           Scale {
             X: -0.0607443117
@@ -15578,8 +15575,8 @@ Assets {
         Name: "Urban Pipe Valve 01"
         Transform {
           Location {
-            X: 527.463379
-            Y: -1.62664235
+            X: 527.462708
+            Y: -1.62642038
             Z: 28.7095013
           }
           Rotation {
@@ -15672,8 +15669,8 @@ Assets {
         Transform {
           Location {
             X: 505.030151
-            Y: -7.99027824
-            Z: 49.7866745
+            Y: -7.99005651
+            Z: 49.7866669
           }
           Rotation {
             Pitch: 14.2954826
@@ -15748,8 +15745,8 @@ Assets {
         Transform {
           Location {
             X: 505.030151
-            Y: 4.1155448
-            Z: 49.7866745
+            Y: 4.115767
+            Z: 49.7866669
           }
           Rotation {
             Pitch: 14.2954826
@@ -15823,8 +15820,8 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 519.805786
-            Y: 4.1155448
+            X: 519.806458
+            Y: 4.115767
             Z: 46.0216446
           }
           Rotation {
@@ -15899,8 +15896,8 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 519.805786
-            Y: -7.99027824
+            X: 519.806458
+            Y: -7.99005651
             Z: 46.0216446
           }
           Rotation {
@@ -15976,13 +15973,13 @@ Assets {
         Transform {
           Location {
             X: 489.616455
-            Y: -110.608795
-            Z: 50.8298073
+            Y: -110.609016
+            Z: 50.8298111
           }
           Rotation {
             Pitch: -14.2313538
             Yaw: -0.11221312
-            Roll: -2.94830513
+            Roll: -2.94830608
           }
           Scale {
             X: 1.42486382
@@ -16047,14 +16044,14 @@ Assets {
         Name: "Military Crate Hinge 01"
         Transform {
           Location {
-            X: 443.407745
-            Y: -110.518021
-            Z: 62.5493469
+            X: 443.407288
+            Y: -110.51757
+            Z: 62.5493393
           }
           Rotation {
             Pitch: -14.2313538
             Yaw: -0.11221312
-            Roll: -2.94830513
+            Roll: -2.94830608
           }
           Scale {
             X: 1.42486382
@@ -16119,13 +16116,13 @@ Assets {
         Name: "Sci-fi Chair Leg 01"
         Transform {
           Location {
-            X: 465.44986
-            Y: -29.9780254
-            Z: 54.1846161
+            X: 465.449188
+            Y: -29.9778042
+            Z: 54.1846085
           }
           Rotation {
-            Yaw: 89.9999695
-            Roll: -15.0514631
+            Yaw: 89.9999542
+            Roll: -15.0514994
           }
           Scale {
             X: 0.315958202
@@ -16197,13 +16194,13 @@ Assets {
         Name: "Sci-fi Chair Leg 01"
         Transform {
           Location {
-            X: 465.450073
-            Y: 28.5395508
-            Z: 54.1846161
+            X: 465.453125
+            Y: 28.5380859
+            Z: 54.1846085
           }
           Rotation {
-            Yaw: -89.9999619
-            Roll: 15.0514612
+            Yaw: -89.9999313
+            Roll: 15.0514994
           }
           Scale {
             X: 0.315958202
@@ -16275,14 +16272,14 @@ Assets {
         Name: "Military Crate Hinge 01"
         Transform {
           Location {
-            X: 443.407959
+            X: 443.410156
             Y: 109.080078
-            Z: 62.5493469
+            Z: 62.5493393
           }
           Rotation {
-            Pitch: -14.2313337
-            Yaw: 0.112213038
-            Roll: 2.94830441
+            Pitch: -14.2313271
+            Yaw: 0.112212949
+            Roll: 2.94830489
           }
           Scale {
             X: 1.42486382
@@ -16347,14 +16344,14 @@ Assets {
         Name: "Military Crate Hinge 01"
         Transform {
           Location {
-            X: 489.616577
-            Y: 109.170898
-            Z: 50.8297882
+            X: 489.617188
+            Y: 109.168945
+            Z: 50.8297806
           }
           Rotation {
-            Pitch: -14.2313337
-            Yaw: 0.112213038
-            Roll: 2.94830441
+            Pitch: -14.2313271
+            Yaw: 0.112212949
+            Roll: 2.94830489
           }
           Scale {
             X: 1.42486382
@@ -16419,14 +16416,14 @@ Assets {
         Name: "Pipe"
         Transform {
           Location {
-            X: 429.336823
-            Y: -55.7364159
+            X: 429.335907
+            Y: -55.7359695
             Z: 117.519943
           }
           Rotation {
             Pitch: -89.4314423
-            Yaw: -6.56035337e-10
-            Roll: 7.87645913e-05
+            Yaw: -9.84053061e-10
+            Roll: 7.87649114e-05
           }
           Scale {
             X: 0.0629216507
@@ -16493,14 +16490,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 369.754852
-            Y: -75.2514648
+            X: 369.754944
+            Y: -75.2512436
             Z: 126.36097
           }
           Rotation {
             Pitch: 90
-            Yaw: -0.316517979
-            Roll: -0.31652832
+            Yaw: -0.105503529
+            Roll: -0.105529785
           }
           Scale {
             X: 0.0824271217
@@ -16569,14 +16566,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 369.754852
+            X: 369.754944
             Y: -83.907135
-            Z: 116.041473
+            Z: 116.041466
           }
           Rotation {
             Pitch: 90
-            Yaw: 0.0263781883
-            Roll: 0.0263912734
+            Yaw: 0.00659340899
+            Roll: 0.00660707476
           }
           Scale {
             X: 0.0824271217
@@ -16645,14 +16642,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 369.754852
-            Y: -75.2514648
-            Z: 107.598007
+            X: 369.754944
+            Y: -75.2512436
+            Z: 107.598
           }
           Rotation {
             Pitch: 90
-            Yaw: 0.0263781883
-            Roll: 0.0263912734
+            Yaw: 0.00659340899
+            Roll: 0.00660707476
           }
           Scale {
             X: 0.0824271217
@@ -16721,14 +16718,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 369.754852
-            Y: -27.0527782
-            Z: 116.041473
+            X: 369.754944
+            Y: -27.0525551
+            Z: 116.041466
           }
           Rotation {
             Pitch: 90
-            Yaw: -0.0148385847
-            Roll: -0.014831543
+            Yaw: -0.0395604484
+            Roll: -0.0395507812
           }
           Scale {
             X: 0.0824271217
@@ -16797,14 +16794,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 369.754852
-            Y: -37.4793587
+            X: 369.754944
+            Y: -37.4795799
             Z: 126.36097
           }
           Rotation {
             Pitch: 90
-            Yaw: 0.0263781883
-            Roll: 0.0263912734
+            Yaw: 0.00659340899
+            Roll: 0.00660707476
           }
           Scale {
             X: 0.0824271217
@@ -16873,14 +16870,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 369.754852
-            Y: -37.4793587
-            Z: 107.598007
+            X: 369.754944
+            Y: -37.4795799
+            Z: 107.598
           }
           Rotation {
             Pitch: 90
-            Yaw: -0.0148385847
-            Roll: -0.014831543
+            Yaw: -0.0395604484
+            Roll: -0.0395507812
           }
           Scale {
             X: 0.0824271217
@@ -16949,14 +16946,14 @@ Assets {
         Name: "Urban Pipe Flange 01"
         Transform {
           Location {
-            X: 368.408752
-            Y: -55.954586
+            X: 368.409088
+            Y: -55.9543648
             Z: 116.710144
           }
           Rotation {
             Pitch: -89.4314423
-            Yaw: 1.31207067e-09
-            Roll: 9.56201038e-05
+            Yaw: 6.56035337e-10
+            Roll: 9.56207514e-05
           }
           Scale {
             X: 0.379089266
@@ -17047,7 +17044,7 @@ Assets {
         Transform {
           Location {
             X: 372.906586
-            Y: 50.8129883
+            Y: 50.8132095
             Z: 131.120026
           }
           Rotation {
@@ -17122,8 +17119,8 @@ Assets {
         Name: "Military Crate Hinge 01"
         Transform {
           Location {
-            X: 373.73877
-            Y: 25.2373047
+            X: 373.740234
+            Y: 25.2353516
             Z: 130.842041
           }
           Rotation {
@@ -17193,8 +17190,8 @@ Assets {
         Name: "Military Crate Hinge 01"
         Transform {
           Location {
-            X: 373.73877
-            Y: 76.3691406
+            X: 373.740234
+            Y: 76.3671875
             Z: 130.842041
           }
           Rotation {
@@ -17265,9 +17262,9 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 373.515503
-            Y: 76.1119461
-            Z: 138.16333
+            X: 373.515625
+            Y: 76.1123886
+            Z: 138.163315
           }
           Rotation {
             Pitch: 80.2228317
@@ -17341,9 +17338,9 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 373.515503
+            X: 373.515625
             Y: 41.4319954
-            Z: 138.16333
+            Z: 138.163315
           }
           Rotation {
             Pitch: 80.228363
@@ -17417,9 +17414,9 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 373.515503
-            Y: 25.3389111
-            Z: 138.16333
+            X: 373.515625
+            Y: 25.3391323
+            Z: 138.163315
           }
           Rotation {
             Pitch: 80.2395935
@@ -17493,9 +17490,9 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 373.515503
+            X: 373.515625
             Y: 59.6333427
-            Z: 138.16333
+            Z: 138.163315
           }
           Rotation {
             Pitch: 80.2287674
@@ -17569,9 +17566,9 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: 374.778259
-            Y: 38.2060089
-            Z: 108.556412
+            X: 374.778046
+            Y: 38.2057877
+            Z: 108.556419
           }
           Rotation {
             Pitch: -90
@@ -17643,9 +17640,9 @@ Assets {
         Name: "Military Tank Historic Antenna 01"
         Transform {
           Location {
-            X: -15.5915966
-            Y: -160.696243
-            Z: 105.635612
+            X: -15.5912638
+            Y: -160.696014
+            Z: 105.635605
           }
           Rotation {
           }
@@ -17733,8 +17730,8 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: -33.583252
-            Y: -130.905273
+            X: -33.5800781
+            Y: -130.907227
             Z: 153.564545
           }
           Rotation {
@@ -17826,8 +17823,8 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: -76.0040283
-            Y: -131.141846
+            X: -76
+            Y: -131.143555
             Z: 153.936
           }
           Rotation {
@@ -17919,8 +17916,8 @@ Assets {
         Name: "Modern Weapon - Body 04"
         Transform {
           Location {
-            X: -250.818726
-            Y: -85.6459961
+            X: -250.814453
+            Y: -85.6464844
             Z: 122.493935
           }
           Rotation {
@@ -18014,13 +18011,13 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -250.818726
-            Y: -82.2983398
+            X: -250.814453
+            Y: -82.2988281
             Z: 122.493935
           }
           Rotation {
             Pitch: 7.30949068
-            Yaw: 8.60768807e-07
+            Yaw: 4.30384404e-07
             Roll: -89.9999695
           }
           Scale {
@@ -18113,8 +18110,8 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -250.818756
-            Y: 80.8862305
+            X: -250.818527
+            Y: 80.8860092
             Z: 122.49395
           }
           Rotation {
@@ -18211,7 +18208,7 @@ Assets {
         Name: "Modern Weapon - Body 04"
         Transform {
           Location {
-            X: -250.818756
+            X: -250.818527
             Y: 84.2338409
             Z: 122.49395
           }
@@ -18305,8 +18302,8 @@ Assets {
         Name: "Military Tank Historic Antenna 01"
         Transform {
           Location {
-            X: -15.5915527
-            Y: 157.823242
+            X: -15.5878906
+            Y: 157.821289
             Z: 105.635612
           }
           Rotation {
@@ -18395,8 +18392,8 @@ Assets {
         Name: "Sci-fi Console Leg 01"
         Transform {
           Location {
-            X: -87.1350098
-            Y: 186.417114
+            X: -87.1342316
+            Y: 186.416901
             Z: 137.585144
           }
           Rotation {
@@ -18490,8 +18487,8 @@ Assets {
         Name: "Sci-fi Console Leg 01"
         Transform {
           Location {
-            X: -49.6125908
-            Y: 186.417114
+            X: -49.6129227
+            Y: 186.416901
             Z: 137.585144
           }
           Rotation {
@@ -18585,7 +18582,7 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -68.6999512
+            X: -68.6972656
             Y: 159.371094
             Z: 124.96096
           }
@@ -18679,8 +18676,8 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -68.407959
-            Y: 159.790771
+            X: -68.4043
+            Y: 159.789062
             Z: 145.701416
           }
           Rotation {
@@ -18773,14 +18770,14 @@ Assets {
         Name: "Ring - Quarter Thin"
         Transform {
           Location {
-            X: -129.144287
-            Y: 151.29216
-            Z: 110.997246
+            X: -129.144165
+            Y: 151.291718
+            Z: 110.997238
           }
           Rotation {
             Pitch: 7.78454399
-            Yaw: 90.0000076
-            Roll: 89.999939
+            Yaw: 89.9999924
+            Roll: 89.9999237
           }
           Scale {
             X: 0.653224647
@@ -18839,14 +18836,14 @@ Assets {
         Name: "Pipe - 90-Degree Long"
         Transform {
           Location {
-            X: -129.112885
+            X: -129.112213
             Y: 111.325455
             Z: 135.822113
           }
           Rotation {
             Pitch: -3.4150944e-05
             Yaw: 90.0000153
-            Roll: -1.16598685e-05
+            Roll: -1.16598649e-05
           }
           Scale {
             X: 0.0301344488
@@ -18913,14 +18910,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -129.11554
+            X: -129.115768
             Y: 111.325455
-            Z: 84.5033569
+            Z: 84.5033493
           }
           Rotation {
             Pitch: -3.4150944e-05
-            Yaw: 90.0000229
-            Roll: -1.16598694e-05
+            Yaw: 90.0000153
+            Roll: -1.16598667e-05
           }
           Scale {
             X: 0.0301337205
@@ -18987,14 +18984,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -129.259689
-            Y: 181.886307
-            Z: 90.9861374
+            X: -129.259583
+            Y: 181.886536
+            Z: 90.986145
           }
           Rotation {
             Pitch: -4.09811328e-05
-            Yaw: 90.0000229
-            Roll: 7.91036437e-05
+            Yaw: 90.0000153
+            Roll: 7.91036291e-05
           }
           Scale {
             X: 0.0301352702
@@ -19061,14 +19058,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -129.168365
+            X: -129.169037
             Y: 147.270065
             Z: 141.87619
           }
           Rotation {
             Pitch: -90
-            Yaw: 3.57633519
-            Roll: -93.5763245
+            Yaw: 26.565033
+            Roll: -116.565018
           }
           Scale {
             X: 0.030134337
@@ -19135,14 +19132,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -233.521164
-            Y: 181.485474
-            Z: 90.985817
+            X: -233.52095
+            Y: 181.48526
+            Z: 90.9858093
           }
           Rotation {
             Pitch: -6.14717e-05
             Yaw: 90.0000076
-            Roll: 7.8517689e-05
+            Roll: 7.85176744e-05
           }
           Scale {
             X: 0.0301352702
@@ -19209,14 +19206,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -233.417297
-            Y: 111.325233
-            Z: 84.5033
+            X: -233.417953
+            Y: 111.325455
+            Z: 84.5032959
           }
           Rotation {
             Pitch: -4.09811328e-05
-            Yaw: 89.9999847
-            Roll: 1.82888903e-06
+            Yaw: 89.9999619
+            Roll: 1.82888743e-06
           }
           Scale {
             X: 0.0301337205
@@ -19283,14 +19280,14 @@ Assets {
         Name: "Pipe - 90-Degree Long"
         Transform {
           Location {
-            X: -233.417297
-            Y: 111.325233
+            X: -233.417953
+            Y: 111.325455
             Z: 135.821609
           }
           Rotation {
             Pitch: -4.09811328e-05
-            Yaw: 89.9999847
-            Roll: 1.82888903e-06
+            Yaw: 89.9999619
+            Roll: 1.82888743e-06
           }
           Scale {
             X: 0.0301344488
@@ -19357,14 +19354,14 @@ Assets {
         Name: "Ring - Quarter Thin"
         Transform {
           Location {
-            X: -233.407089
+            X: -233.407303
             Y: 150.70845
-            Z: 110.996735
+            Z: 110.996742
           }
           Rotation {
-            Pitch: 7.78456402
-            Yaw: 90.0000076
-            Roll: 89.9999466
+            Pitch: 7.78457785
+            Yaw: 89.9999924
+            Roll: 89.999939
           }
           Scale {
             X: 0.653224647
@@ -19423,14 +19420,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -233.470444
-            Y: 147.270279
+            X: -233.471222
+            Y: 147.270065
             Z: 141.87558
           }
           Rotation {
             Pitch: -90
-            Yaw: 14.0362635
-            Roll: -104.036255
+            Yaw: 26.565033
+            Roll: -116.565
           }
           Scale {
             X: 0.030134337
@@ -19497,14 +19494,14 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -182.056549
-            Y: 181.407578
-            Z: 110.672607
+            X: -182.056107
+            Y: 181.407135
+            Z: 110.672592
           }
           Rotation {
             Pitch: -90
-            Yaw: 6.72138262
-            Roll: -6.72134399
+            Yaw: 1.68760669
+            Roll: -1.68756104
           }
           Scale {
             X: 0.0727317557
@@ -19567,8 +19564,8 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -181.485474
-            Y: 176.591125
+            X: -181.486145
+            Y: 176.590897
             Z: 128.029953
           }
           Rotation {
@@ -19637,9 +19634,9 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -182.052
+            X: -182.052551
             Y: 163.515625
-            Z: 139.055359
+            Z: 139.055344
           }
           Rotation {
             Pitch: -24.8605957
@@ -19707,14 +19704,14 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -182.049774
+            X: -182.049
             Y: 147.457382
             Z: 141.219147
           }
           Rotation {
             Pitch: -6.14717e-05
             Yaw: 90.0000076
-            Roll: -89.9999619
+            Roll: -89.9999466
           }
           Scale {
             X: 0.0727317557
@@ -19777,14 +19774,14 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -182.048218
-            Y: 112.844231
+            X: -182.049
+            Y: 112.84446
             Z: 139.268127
           }
           Rotation {
-            Pitch: 47.3296
-            Yaw: 89.9999695
-            Roll: -90.0000076
+            Pitch: 47.3295631
+            Yaw: 89.9999466
+            Roll: -90
           }
           Scale {
             X: 0.0727317557
@@ -19847,14 +19844,14 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -182.048782
-            Y: 128.375122
+            X: -182.049
+            Y: 128.375351
             Z: 141.21904
           }
           Rotation {
             Pitch: -6.14717e-05
-            Yaw: 90.0000229
-            Roll: -89.9999771
+            Yaw: 90.0000076
+            Roll: -89.9999466
           }
           Scale {
             X: 0.0727317557
@@ -19917,14 +19914,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -202.80928
-            Y: 181.485031
-            Z: 90.9857483
+            X: -202.808945
+            Y: 181.48526
+            Z: 90.9857559
           }
           Rotation {
             Pitch: -6.83018879e-05
-            Yaw: 89.9999847
-            Roll: 7.8517689e-05
+            Yaw: 89.9999619
+            Roll: 7.85176744e-05
           }
           Scale {
             X: 0.0301352702
@@ -19991,14 +19988,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -202.705399
-            Y: 111.324791
-            Z: 84.5032501
+            X: -202.705963
+            Y: 111.32457
+            Z: 84.5032425
           }
           Rotation {
             Pitch: -4.09811328e-05
-            Yaw: 89.9999771
-            Roll: 1.82889232e-06
+            Yaw: 89.9999542
+            Roll: 1.82889562e-06
           }
           Scale {
             X: 0.0301337205
@@ -20065,14 +20062,14 @@ Assets {
         Name: "Pipe - 90-Degree Long"
         Transform {
           Location {
-            X: -202.705399
-            Y: 111.324791
+            X: -202.705963
+            Y: 111.32457
             Z: 135.821548
           }
           Rotation {
             Pitch: -4.09811328e-05
-            Yaw: 89.9999771
-            Roll: 1.82889232e-06
+            Yaw: 89.9999542
+            Roll: 1.82889562e-06
           }
           Scale {
             X: 0.0301344451
@@ -20139,14 +20136,14 @@ Assets {
         Name: "Ring - Quarter Thin"
         Transform {
           Location {
-            X: -202.69519
-            Y: 150.708008
-            Z: 110.996666
+            X: -202.695312
+            Y: 150.707565
+            Z: 110.996658
           }
           Rotation {
-            Pitch: 7.78456402
-            Yaw: 90.0000076
-            Roll: 89.9999466
+            Pitch: 7.78457785
+            Yaw: 89.9999924
+            Roll: 89.999939
           }
           Scale {
             X: 0.653224647
@@ -20205,14 +20202,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -202.75856
-            Y: 147.269836
-            Z: 141.875488
+            X: -202.759232
+            Y: 147.270065
+            Z: 141.875473
           }
           Rotation {
             Pitch: -90
-            Yaw: 20.5560398
-            Roll: -110.55603
+            Yaw: 90
+            Roll: -179.999939
           }
           Scale {
             X: 0.0301343333
@@ -20279,14 +20276,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -163.961395
+            X: -163.961288
             Y: 147.270065
-            Z: 141.875183
+            Z: 141.875168
           }
           Rotation {
             Pitch: -90
-            Yaw: 20.5560398
-            Roll: -110.55603
+            Yaw: 90
+            Roll: -179.999939
           }
           Scale {
             X: 0.0301343333
@@ -20353,14 +20350,14 @@ Assets {
         Name: "Ring - Quarter Thin"
         Transform {
           Location {
-            X: -163.898026
-            Y: 150.708221
-            Z: 110.996346
+            X: -163.897369
+            Y: 150.70845
+            Z: 110.996353
           }
           Rotation {
-            Pitch: 7.78456402
-            Yaw: 90.0000076
-            Roll: 89.9999466
+            Pitch: 7.78457785
+            Yaw: 89.9999924
+            Roll: 89.999939
           }
           Scale {
             X: 0.653224647
@@ -20419,14 +20416,14 @@ Assets {
         Name: "Pipe - 90-Degree Long"
         Transform {
           Location {
-            X: -163.908249
-            Y: 111.325012
+            X: -163.90802
+            Y: 111.325455
             Z: 135.821228
           }
           Rotation {
             Pitch: -4.09811328e-05
-            Yaw: 89.9999771
-            Roll: 1.82889232e-06
+            Yaw: 89.9999542
+            Roll: 1.82889562e-06
           }
           Scale {
             X: 0.0301344451
@@ -20493,14 +20490,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -163.908249
-            Y: 111.325012
-            Z: 84.5029297
+            X: -163.90802
+            Y: 111.325455
+            Z: 84.5029373
           }
           Rotation {
             Pitch: -4.09811328e-05
-            Yaw: 89.9999771
-            Roll: 1.82889232e-06
+            Yaw: 89.9999542
+            Roll: 1.82889562e-06
           }
           Scale {
             X: 0.0301337205
@@ -20567,14 +20564,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -164.012115
+            X: -164.012772
             Y: 181.48526
-            Z: 90.9854279
+            Z: 90.9854202
           }
           Rotation {
             Pitch: -6.83018879e-05
-            Yaw: 89.9999847
-            Roll: 7.8517689e-05
+            Yaw: 89.9999619
+            Roll: 7.85176744e-05
           }
           Scale {
             X: 0.0301352702
@@ -20641,14 +20638,14 @@ Assets {
         Name: "Ring - Quarter Thin"
         Transform {
           Location {
-            X: -129.144287
-            Y: -153.876953
+            X: -129.140625
+            Y: -153.878906
             Z: 110.997185
           }
           Rotation {
-            Pitch: 7.78452349
-            Yaw: -90.0000458
-            Roll: -89.9999619
+            Pitch: 7.78450298
+            Yaw: -90.0000229
+            Roll: -89.9999466
           }
           Scale {
             X: 0.653224647
@@ -20707,14 +20704,14 @@ Assets {
         Name: "Pipe - 90-Degree Long"
         Transform {
           Location {
-            X: -129.112671
+            X: -129.111328
             Y: -113.910156
             Z: 135.822083
           }
           Rotation {
             Pitch: -4.09811328e-05
-            Yaw: -90.0000458
-            Roll: 2.3905699e-05
+            Yaw: -90.0000153
+            Roll: 2.39056935e-05
           }
           Scale {
             X: 0.0301344488
@@ -20781,14 +20778,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -129.115356
+            X: -129.115234
             Y: -113.910156
-            Z: 84.503334
+            Z: 84.5033188
           }
           Rotation {
             Pitch: -4.09811328e-05
             Yaw: -90.0000534
-            Roll: 2.39057135e-05
+            Roll: 2.39057281e-05
           }
           Scale {
             X: 0.0301337205
@@ -20855,14 +20852,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -129.259521
-            Y: -184.470947
+            X: -129.255859
+            Y: -184.472656
             Z: 90.9860916
           }
           Rotation {
             Pitch: -4.78113216e-05
             Yaw: -90.0000534
-            Roll: -6.65942789e-05
+            Roll: -6.65942716e-05
           }
           Scale {
             X: 0.0301352702
@@ -20929,14 +20926,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -129.168213
-            Y: -149.85498
+            X: -129.166016
+            Y: -149.855469
             Z: 141.87616
           }
           Rotation {
             Pitch: -90
-            Yaw: 26.565033
-            Roll: 63.434906
+            Yaw: -123.690071
+            Roll: -146.309982
           }
           Scale {
             X: 0.030134337
@@ -21003,14 +21000,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -233.470459
-            Y: -149.85498
+            X: -233.470703
+            Y: -149.855469
             Z: 141.87558
           }
           Rotation {
             Pitch: -90
-            Yaw: 16.6992588
-            Roll: 73.3006516
+            Yaw: 39.8055534
+            Roll: 50.1943
           }
           Scale {
             X: 0.030134337
@@ -21077,14 +21074,14 @@ Assets {
         Name: "Ring - Quarter Thin"
         Transform {
           Location {
-            X: -233.406982
-            Y: -153.293213
+            X: -233.404297
+            Y: -153.292969
             Z: 110.996727
           }
           Rotation {
-            Pitch: 7.78457117
-            Yaw: -90.0000076
-            Roll: -89.9999161
+            Pitch: 7.78458452
+            Yaw: -89.9999466
+            Roll: -89.9998474
           }
           Scale {
             X: 0.653224647
@@ -21143,14 +21140,14 @@ Assets {
         Name: "Pipe - 90-Degree Long"
         Transform {
           Location {
-            X: -233.417236
-            Y: -113.909912
+            X: -233.414062
+            Y: -113.910156
             Z: 135.821594
           }
           Rotation {
             Pitch: -4.09811328e-05
-            Yaw: -89.9999924
-            Roll: 1.1952834e-05
+            Yaw: -89.9999542
+            Roll: 1.19528258e-05
           }
           Scale {
             X: 0.0301344488
@@ -21217,14 +21214,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -233.417236
-            Y: -113.909912
+            X: -233.414062
+            Y: -113.910156
             Z: 84.5033188
           }
           Rotation {
             Pitch: -4.09811328e-05
             Yaw: -90.0000076
-            Roll: 1.19528368e-05
+            Roll: 1.19528431e-05
           }
           Scale {
             X: 0.0301337205
@@ -21291,14 +21288,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -233.521118
-            Y: -184.070312
+            X: -233.517578
+            Y: -184.072266
             Z: 90.9857864
           }
           Rotation {
             Pitch: -7.51320767e-05
             Yaw: -90.0000153
-            Roll: -6.65943153e-05
+            Roll: -6.65943e-05
           }
           Scale {
             X: 0.0301352702
@@ -21365,14 +21362,14 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -182.056396
-            Y: -183.992188
-            Z: 110.6726
+            X: -182.052734
+            Y: -183.994141
+            Z: 110.672585
           }
           Rotation {
             Pitch: -90
-            Yaw: -4.49234152
-            Roll: 4.49226189
+            Yaw: -7.55228043
+            Roll: 7.55219221
           }
           Scale {
             X: 0.0727317557
@@ -21435,14 +21432,14 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -181.485352
-            Y: -179.175781
+            X: -181.482422
+            Y: -179.177734
             Z: 128.029907
           }
           Rotation {
-            Pitch: -55.0530243
-            Yaw: -90.0000916
-            Roll: 90.000061
+            Pitch: -55.0530167
+            Yaw: -90.0000687
+            Roll: 90.0000305
           }
           Scale {
             X: 0.0727317557
@@ -21505,14 +21502,14 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -182.052
-            Y: -166.100586
+            X: -182.048828
+            Y: -166.102539
             Z: 139.055359
           }
           Rotation {
-            Pitch: -24.8606091
-            Yaw: -90.0000687
-            Roll: 90.0000458
+            Pitch: -24.8605957
+            Yaw: -90.000061
+            Roll: 90.0000381
           }
           Scale {
             X: 0.0727317557
@@ -21575,14 +21572,14 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -182.049561
+            X: -182.044922
             Y: -150.041992
             Z: 141.219147
           }
           Rotation {
             Pitch: -6.83018879e-05
-            Yaw: -90.0000381
-            Roll: 89.9999924
+            Yaw: -90.0000229
+            Roll: 89.9999771
           }
           Scale {
             X: 0.0727317557
@@ -21645,14 +21642,14 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -182.048218
-            Y: -115.428955
+            X: -182.044922
+            Y: -115.430664
             Z: 139.268097
           }
           Rotation {
-            Pitch: 47.3296
-            Yaw: -90.0000153
-            Roll: 90.0000229
+            Pitch: 47.3295898
+            Yaw: -90.0000076
+            Roll: 90.0000076
           }
           Scale {
             X: 0.0727317557
@@ -21715,14 +21712,14 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -182.048584
+            X: -182.044922
             Y: -130.959961
             Z: 141.219025
           }
           Rotation {
             Pitch: -6.83018879e-05
-            Yaw: -90.0000381
-            Roll: 89.9999924
+            Yaw: -90.0000229
+            Roll: 89.9999771
           }
           Scale {
             X: 0.0727317557
@@ -21785,14 +21782,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -202.809326
-            Y: -184.070312
+            X: -202.806641
+            Y: -184.072266
             Z: 90.9857254
           }
           Rotation {
             Pitch: -9.56226431e-05
-            Yaw: -90.0000687
-            Roll: -4.61036834e-05
+            Yaw: -90.0000763
+            Roll: -4.6103658e-05
           }
           Scale {
             X: 0.0301352702
@@ -21859,13 +21856,13 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -202.705322
-            Y: -113.909668
+            X: -202.705078
+            Y: -113.910156
             Z: 84.5032425
           }
           Rotation {
             Pitch: -6.83018879e-05
-            Yaw: -90.0000229
+            Yaw: -90.0000153
             Roll: 3.24434441e-05
           }
           Scale {
@@ -21933,13 +21930,13 @@ Assets {
         Name: "Pipe - 90-Degree Long"
         Transform {
           Location {
-            X: -202.7052
-            Y: -113.909668
+            X: -202.705078
+            Y: -113.910156
             Z: 135.821564
           }
           Rotation {
             Pitch: -6.83018879e-05
-            Yaw: -90.0000229
+            Yaw: -90.0000153
             Roll: 3.24434477e-05
           }
           Scale {
@@ -22007,14 +22004,14 @@ Assets {
         Name: "Ring - Quarter Thin"
         Transform {
           Location {
-            X: -202.69519
+            X: -202.691406
             Y: -153.292969
-            Z: 110.996666
+            Z: 110.996651
           }
           Rotation {
-            Pitch: 7.78455067
-            Yaw: -90.0000381
-            Roll: -89.9998856
+            Pitch: 7.78460503
+            Yaw: -89.9999847
+            Roll: -89.9998169
           }
           Scale {
             X: 0.653224647
@@ -22073,14 +22070,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -202.758667
-            Y: -149.854736
+            X: -202.755859
+            Y: -149.855469
             Z: 141.875488
           }
           Rotation {
             Pitch: -90
-            Yaw: 14.0362635
-            Roll: 75.9636154
+            Yaw: 90
+            Roll: -0.000183105469
           }
           Scale {
             X: 0.0301343333
@@ -22147,14 +22144,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -164.012207
-            Y: -184.070312
-            Z: 90.985405
+            X: -164.009766
+            Y: -184.072266
+            Z: 90.9853897
           }
           Rotation {
             Pitch: -9.56226431e-05
-            Yaw: -90.0000687
-            Roll: -4.61036834e-05
+            Yaw: -90.0000763
+            Roll: -4.6103658e-05
           }
           Scale {
             X: 0.0301352702
@@ -22221,13 +22218,13 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -163.908203
-            Y: -113.909668
+            X: -163.904297
+            Y: -113.910156
             Z: 84.5029221
           }
           Rotation {
             Pitch: -6.83018879e-05
-            Yaw: -90.0000229
+            Yaw: -90.0000153
             Roll: 3.24434441e-05
           }
           Scale {
@@ -22295,13 +22292,13 @@ Assets {
         Name: "Pipe - 90-Degree Long"
         Transform {
           Location {
-            X: -163.908081
-            Y: -113.909668
+            X: -163.904297
+            Y: -113.910156
             Z: 135.821259
           }
           Rotation {
             Pitch: -6.83018879e-05
-            Yaw: -90.0000229
+            Yaw: -90.0000153
             Roll: 3.24434477e-05
           }
           Scale {
@@ -22369,14 +22366,14 @@ Assets {
         Name: "Ring - Quarter Thin"
         Transform {
           Location {
-            X: -163.897949
+            X: -163.894531
             Y: -153.292969
             Z: 110.996346
           }
           Rotation {
-            Pitch: 7.78455067
-            Yaw: -90.0000381
-            Roll: -89.9998856
+            Pitch: 7.78460503
+            Yaw: -89.9999847
+            Roll: -89.9998169
           }
           Scale {
             X: 0.653224647
@@ -22435,14 +22432,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -163.961304
-            Y: -149.854736
+            X: -163.958984
+            Y: -149.855469
             Z: 141.875183
           }
           Rotation {
             Pitch: -90
-            Yaw: 14.0362635
-            Roll: 75.9636154
+            Yaw: 90
+            Roll: -0.000183105469
           }
           Scale {
             X: 0.0301343333
@@ -22509,8 +22506,8 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: -237.636047
-            Y: -72.8260345
+            X: -237.636703
+            Y: -72.8258133
             Z: 150.189423
           }
           Rotation {
@@ -22604,9 +22601,9 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: -237.636047
-            Y: 72.1184692
-            Z: 150.189392
+            X: -237.636703
+            Y: 72.118248
+            Z: 150.189377
           }
           Rotation {
             Pitch: 7.51437569
@@ -22699,13 +22696,13 @@ Assets {
         Name: "Military Crate Hinge 02"
         Transform {
           Location {
-            X: -132.436523
-            Y: 72.5579224
-            Z: 165.997055
+            X: -132.436081
+            Y: 72.5577
+            Z: 165.99707
           }
           Rotation {
-            Yaw: -89.9999771
-            Roll: 6.37872267
+            Yaw: -89.9999542
+            Roll: 6.37873268
           }
           Scale {
             X: 0.808190525
@@ -22770,13 +22767,13 @@ Assets {
         Name: "Military Crate Hinge 02"
         Transform {
           Location {
-            X: -132.436523
+            X: -132.436081
             Y: -72.9270248
-            Z: 165.997055
+            Z: 165.99707
           }
           Rotation {
-            Yaw: -89.9999771
-            Roll: 6.37871313
+            Yaw: -89.9999542
+            Roll: 6.37872267
           }
           Scale {
             X: 0.808190525
@@ -22841,13 +22838,13 @@ Assets {
         Name: "Military Crate Hinge 02"
         Transform {
           Location {
-            X: -74.0451889
+            X: -74.0447388
             Y: -76.109726
-            Z: 172.569656
+            Z: 172.569672
           }
           Rotation {
             Yaw: -179.999954
-            Roll: 6.3786931
+            Roll: 6.37870073
           }
           Scale {
             X: 0.808190525
@@ -22912,13 +22909,13 @@ Assets {
         Name: "Military Crate Hinge 02"
         Transform {
           Location {
-            X: -74.045166
-            Y: 74.0583496
+            X: -74.0410156
+            Y: 74.0576172
             Z: 172.569641
           }
           Rotation {
             Yaw: 179.999954
-            Roll: -6.37871742
+            Roll: -6.37872648
           }
           Scale {
             X: 0.808190525
@@ -22983,8 +22980,8 @@ Assets {
         Name: "Urban Pipe Valve 01"
         Transform {
           Location {
-            X: -228.471558
-            Y: 90.998085
+            X: -228.471222
+            Y: 90.9978638
             Z: 28.7095356
           }
           Rotation {
@@ -23076,14 +23073,14 @@ Assets {
         Name: "Pipe - 90-Degree Long"
         Transform {
           Location {
-            X: -251.186523
-            Y: 102.347168
-            Z: 9.91821289e-05
+            X: -251.185547
+            Y: 102.345703
+            Z: 9.15527344e-05
           }
           Rotation {
-            Pitch: -0.298677325
-            Yaw: 90.5518188
-            Roll: 167.204285
+            Pitch: -0.298663676
+            Yaw: 90.551857
+            Roll: 167.204254
           }
           Scale {
             X: -0.0607443117
@@ -23150,14 +23147,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -246.520264
-            Y: 102.510254
+            X: -246.517578
+            Y: 102.508789
             Z: 20.5213013
           }
           Rotation {
             Pitch: -0.298670501
-            Yaw: 90.5518
-            Roll: 167.204285
+            Yaw: 90.5517883
+            Roll: 167.204254
           }
           Scale {
             X: -0.0607450642
@@ -23224,14 +23221,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -245.534546
-            Y: 79.2447128
+            X: -245.534439
+            Y: 79.2444916
             Z: 24.0011654
           }
           Rotation {
             Pitch: -0.298615843
-            Yaw: 90.5518494
-            Roll: 167.204269
+            Yaw: 90.5518188
+            Roll: 167.204224
           }
           Scale {
             X: 0.0607441887
@@ -23298,14 +23295,14 @@ Assets {
         Name: "Pipe - 90-Degree Long"
         Transform {
           Location {
-            X: -250.957581
-            Y: 79.0682678
+            X: -250.957016
+            Y: 79.0687103
             Z: 0.118630148
           }
           Rotation {
             Pitch: -0.298615843
             Yaw: 90.5518265
-            Roll: 167.204285
+            Roll: 167.204254
           }
           Scale {
             X: 0.0607443117
@@ -23372,14 +23369,14 @@ Assets {
         Name: "Pipe - 90-Degree Long"
         Transform {
           Location {
-            X: -251.186768
-            Y: -82.079834
+            X: -251.185547
+            Y: -82.0820312
             Z: 0.000137329102
           }
           Rotation {
             Pitch: -0.298677325
-            Yaw: 90.5518188
-            Roll: 167.204254
+            Yaw: 90.5518112
+            Roll: 167.204193
           }
           Scale {
             X: -0.0607443117
@@ -23446,14 +23443,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -246.520386
+            X: -246.517578
             Y: -81.9169922
-            Z: 20.5213394
+            Z: 20.5213242
           }
           Rotation {
             Pitch: -0.298670501
             Yaw: 90.5518112
-            Roll: 167.204254
+            Roll: 167.204208
           }
           Scale {
             X: -0.0607450642
@@ -23520,14 +23517,14 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -245.534653
-            Y: -105.182213
+            X: -245.534439
+            Y: -105.181992
             Z: 24.001194
           }
           Rotation {
             Pitch: -0.298622698
-            Yaw: 90.5518341
-            Roll: 167.204224
+            Yaw: 90.5518188
+            Roll: 167.204163
           }
           Scale {
             X: 0.0607441887
@@ -23594,14 +23591,14 @@ Assets {
         Name: "Pipe - 90-Degree Long"
         Transform {
           Location {
-            X: -250.957687
+            X: -250.957016
             Y: -105.358658
             Z: 0.118664823
           }
           Rotation {
             Pitch: -0.298615843
-            Yaw: 90.5518265
-            Roll: 167.204254
+            Yaw: 90.5518
+            Roll: 167.204193
           }
           Scale {
             X: 0.0607443117
@@ -23668,8 +23665,8 @@ Assets {
         Name: "Urban Pipe Valve 01"
         Transform {
           Location {
-            X: -228.471558
-            Y: -93.4290619
+            X: -228.471222
+            Y: -93.4295044
             Z: 28.7095432
           }
           Rotation {
@@ -23761,14 +23758,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: -233.26915
-            Y: -85.2803116
-            Z: 48.455246
+            X: -233.268814
+            Y: -85.2805405
+            Z: 48.4552383
           }
           Rotation {
-            Pitch: 74.3815231
+            Pitch: 74.3814392
             Yaw: 179.998459
-            Roll: -0.00130028522
+            Roll: -0.00130028394
           }
           Scale {
             X: 0.0994351804
@@ -23837,14 +23834,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: -233.269257
-            Y: -101.829056
+            X: -233.268814
+            Y: -101.828835
             Z: 48.4552383
           }
           Rotation {
-            Pitch: 74.3815231
-            Yaw: 179.998596
-            Roll: -0.000956743781
+            Pitch: 74.3814392
+            Yaw: 179.998581
+            Roll: -0.000956742733
           }
           Scale {
             X: 0.0994351804
@@ -23913,14 +23910,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: -237.374374
-            Y: -101.829056
-            Z: 63.1398621
+            X: -237.373932
+            Y: -101.828835
+            Z: 63.1398544
           }
           Rotation {
-            Pitch: 74.3815231
-            Yaw: 179.998596
-            Roll: -0.000956743781
+            Pitch: 74.3814392
+            Yaw: 179.998581
+            Roll: -0.000956742733
           }
           Scale {
             X: 0.0994351804
@@ -23989,14 +23986,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: -237.374374
-            Y: -85.2803116
-            Z: 63.1398621
+            X: -237.373932
+            Y: -85.2805405
+            Z: 63.1398544
           }
           Rotation {
-            Pitch: 74.3815231
-            Yaw: 179.998596
-            Roll: -0.000956743781
+            Pitch: 74.3814392
+            Yaw: 179.998581
+            Roll: -0.000956742733
           }
           Scale {
             X: 0.0994351804
@@ -24065,14 +24062,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: -237.374374
+            X: -237.373932
             Y: 99.1468353
-            Z: 63.1398468
+            Z: 63.1398544
           }
           Rotation {
-            Pitch: 74.3815231
+            Pitch: 74.3814392
             Yaw: 179.998581
-            Roll: -0.000979388
+            Roll: -0.000979386852
           }
           Scale {
             X: 0.0994351804
@@ -24141,14 +24138,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: -237.374374
-            Y: 82.5981
-            Z: 63.1398468
+            X: -237.373932
+            Y: 82.5985413
+            Z: 63.1398544
           }
           Rotation {
-            Pitch: 74.3815231
+            Pitch: 74.3814392
             Yaw: 179.998581
-            Roll: -0.000979388
+            Roll: -0.000979386852
           }
           Scale {
             X: 0.0994351804
@@ -24217,14 +24214,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: -233.269257
-            Y: 82.5981
-            Z: 48.4552345
+            X: -233.268814
+            Y: 82.5985413
+            Z: 48.4552383
           }
           Rotation {
-            Pitch: 74.3815231
+            Pitch: 74.3814392
             Yaw: 179.998581
-            Roll: -0.000979388
+            Roll: -0.000979386852
           }
           Scale {
             X: 0.0994351804
@@ -24293,14 +24290,14 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: -233.26915
+            X: -233.268814
             Y: 99.1468353
-            Z: 48.4552345
+            Z: 48.4552383
           }
           Rotation {
-            Pitch: 74.3814774
+            Pitch: 74.3814
             Yaw: 179.998459
-            Roll: -0.00129505165
+            Roll: -0.00129505037
           }
           Scale {
             X: 0.0994351804
@@ -24369,9 +24366,9 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -250.818756
+            X: -250.818527
             Y: -25.6445312
-            Z: 106.179565
+            Z: 106.179573
           }
           Rotation {
             Roll: 89.9999542
@@ -24466,12 +24463,12 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: -259.713135
+            X: -259.712341
             Y: -25.6445312
             Z: 124.911743
           }
           Rotation {
-            Yaw: -7.30953
+            Yaw: -7.30954361
           }
           Scale {
             X: 0.034
@@ -24563,12 +24560,12 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -250.818756
+            X: -250.818527
             Y: 22.3552895
-            Z: 106.179565
+            Z: 106.179573
           }
           Rotation {
-            Roll: 89.9999771
+            Roll: 89.9999542
           }
           Scale {
             X: 0.235681251
@@ -24660,12 +24657,12 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: -259.713135
+            X: -259.712341
             Y: 22.3552895
             Z: 124.911743
           }
           Rotation {
-            Yaw: -7.30953
+            Yaw: -7.30954361
           }
           Scale {
             X: 0.034
@@ -30882,7 +30879,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -30896,19 +30893,19 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 104.555305
-            Y: -19.3868237
-            Z: 17.0594578
+            X: 104.555634
+            Y: -19.3870373
+            Z: 17.0594597
           }
           Rotation {
-            Pitch: 75.6126251
+            Pitch: 75.6124725
             Yaw: -179.999954
             Roll: -179.999954
           }
           Scale {
-            X: 0.105176479
-            Y: 0.105176479
-            Z: 0.0757898614
+            X: 0.105176471
+            Y: 0.105176471
+            Z: 0.0757898465
           }
         }
         ParentId: 13716574198229872332
@@ -30972,19 +30969,19 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 97.1199417
-            Y: -19.3868237
-            Z: 46.0451775
+            X: 97.1193237
+            Y: -19.3870373
+            Z: 46.0451851
           }
           Rotation {
-            Pitch: 75.6130753
+            Pitch: 75.6129227
             Yaw: -179.999954
             Roll: -179.999954
           }
           Scale {
-            X: 0.105176479
-            Y: 0.105176479
-            Z: 0.0757898614
+            X: 0.105176471
+            Y: 0.105176471
+            Z: 0.0757898465
           }
         }
         ParentId: 13716574198229872332
@@ -31048,19 +31045,19 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 100.791748
-            Y: -19.3868237
-            Z: 31.7312183
+            X: 100.792076
+            Y: -19.3870373
+            Z: 31.7312222
           }
           Rotation {
-            Pitch: 75.6129227
+            Pitch: 75.6127701
             Yaw: -179.999954
             Roll: -179.999954
           }
           Scale {
-            X: 0.105176479
-            Y: 0.105176479
-            Z: 0.0757898614
+            X: 0.105176471
+            Y: 0.105176471
+            Z: 0.0757898465
           }
         }
         ParentId: 13716574198229872332
@@ -31124,19 +31121,19 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 93.244873
-            Y: -19.3868237
-            Z: 61.1523056
+            X: 93.2447815
+            Y: -19.3870373
+            Z: 61.1523132
           }
           Rotation {
-            Pitch: 75.6132507
+            Pitch: 75.6130829
             Yaw: -179.999954
             Roll: -179.999954
           }
           Scale {
-            X: 0.105176479
-            Y: 0.105176479
-            Z: 0.0757898614
+            X: 0.105176471
+            Y: 0.105176471
+            Z: 0.0757898465
           }
         }
         ParentId: 13716574198229872332
@@ -31200,19 +31197,19 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 108.20314
-            Y: -19.3868237
-            Z: 2.83940649
+            X: 108.203156
+            Y: -19.3870373
+            Z: 2.83940697
           }
           Rotation {
-            Pitch: 75.6124725
+            Pitch: 75.6123
             Yaw: -179.999954
             Roll: -179.999954
           }
           Scale {
-            X: 0.105176479
-            Y: 0.105176479
-            Z: 0.0757898614
+            X: 0.105176471
+            Y: 0.105176471
+            Z: 0.0757898465
           }
         }
         ParentId: 13716574198229872332
@@ -31276,19 +31273,19 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 93.244873
-            Y: 47.3782883
-            Z: 61.1523323
+            X: 93.2447815
+            Y: 47.3782959
+            Z: 61.1523132
           }
           Rotation {
-            Pitch: 75.6130829
+            Pitch: 75.6129227
             Yaw: -179.999954
             Roll: -179.999954
           }
           Scale {
-            X: 0.105176479
-            Y: 0.105176479
-            Z: 0.0757898614
+            X: 0.105176471
+            Y: 0.105176471
+            Z: 0.0757898465
           }
         }
         ParentId: 13716574198229872332
@@ -31352,19 +31349,19 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 100.791748
-            Y: 47.3782883
-            Z: 31.7312431
+            X: 100.792076
+            Y: 47.3782959
+            Z: 31.7312489
           }
           Rotation {
-            Pitch: 75.6127701
+            Pitch: 75.6126251
             Yaw: -179.999954
             Roll: -179.999954
           }
           Scale {
-            X: 0.105176479
-            Y: 0.105176479
-            Z: 0.0757898614
+            X: 0.105176471
+            Y: 0.105176471
+            Z: 0.0757898465
           }
         }
         ParentId: 13716574198229872332
@@ -31428,19 +31425,19 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 97.1199417
-            Y: 47.3782883
-            Z: 46.0452042
+            X: 97.1193237
+            Y: 47.3782959
+            Z: 46.0452118
           }
           Rotation {
-            Pitch: 75.6129227
+            Pitch: 75.6127701
             Yaw: -179.999954
             Roll: -179.999954
           }
           Scale {
-            X: 0.105176479
-            Y: 0.105176479
-            Z: 0.0757898614
+            X: 0.105176471
+            Y: 0.105176471
+            Z: 0.0757898465
           }
         }
         ParentId: 13716574198229872332
@@ -31504,19 +31501,19 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 104.555305
-            Y: 47.3782883
-            Z: 17.0595093
+            X: 104.555634
+            Y: 47.3782959
+            Z: 17.0595112
           }
           Rotation {
-            Pitch: 75.6124725
+            Pitch: 75.6123
             Yaw: -179.999954
             Roll: -179.999954
           }
           Scale {
-            X: 0.105176479
-            Y: 0.105176479
-            Z: 0.0757898614
+            X: 0.105176471
+            Y: 0.105176471
+            Z: 0.0757898465
           }
         }
         ParentId: 13716574198229872332
@@ -31580,19 +31577,19 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 108.20314
-            Y: 47.3782883
-            Z: 2.83943272
+            X: 108.203156
+            Y: 47.3782959
+            Z: 2.83943319
           }
           Rotation {
-            Pitch: 75.6123
+            Pitch: 75.6121368
             Yaw: -179.999954
             Roll: -179.999954
           }
           Scale {
-            X: 0.105176479
-            Y: 0.105176479
-            Z: 0.0757898614
+            X: 0.105176471
+            Y: 0.105176471
+            Z: 0.0757898465
           }
         }
         ParentId: 13716574198229872332
@@ -31656,19 +31653,19 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 93.244873
-            Y: 1.07941639
-            Z: 61.1523056
+            X: 93.2447815
+            Y: 1.0796268
+            Z: 61.1523132
           }
           Rotation {
-            Pitch: 75.6130829
+            Pitch: 75.6129227
             Yaw: -179.999954
             Roll: -179.999954
           }
           Scale {
-            X: 0.105176479
-            Y: 0.105176479
-            Z: 0.0757898614
+            X: 0.105176471
+            Y: 0.105176471
+            Z: 0.0757898465
           }
         }
         ParentId: 13716574198229872332
@@ -31732,19 +31729,19 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 93.244873
-            Y: 24.2474556
-            Z: 61.1523056
+            X: 93.2447815
+            Y: 24.2470398
+            Z: 61.1523132
           }
           Rotation {
-            Pitch: 75.6129227
+            Pitch: 75.6127701
             Yaw: -179.999954
             Roll: -179.999954
           }
           Scale {
-            X: 0.105176479
-            Y: 0.105176479
-            Z: 0.0757898614
+            X: 0.105176471
+            Y: 0.105176471
+            Z: 0.0757898465
           }
         }
         ParentId: 13716574198229872332
@@ -31808,19 +31805,19 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 108.251915
-            Y: 1.07941639
-            Z: 2.64866924
+            X: 108.25193
+            Y: 1.0796268
+            Z: 2.64866972
           }
           Rotation {
-            Pitch: 75.6129227
+            Pitch: 75.6127701
             Yaw: -179.999954
             Roll: -179.999954
           }
           Scale {
-            X: 0.105176479
-            Y: 0.105176479
-            Z: 0.0757898614
+            X: 0.105176471
+            Y: 0.105176471
+            Z: 0.0757898465
           }
         }
         ParentId: 13716574198229872332
@@ -31884,19 +31881,19 @@ Assets {
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
-            X: 108.251915
-            Y: 24.2474556
-            Z: 2.64866924
+            X: 108.25193
+            Y: 24.2470398
+            Z: 2.64866972
           }
           Rotation {
-            Pitch: 75.6127701
+            Pitch: 75.6126251
             Yaw: -179.999954
             Roll: -179.999954
           }
           Scale {
-            X: 0.105176479
-            Y: 0.105176479
-            Z: 0.0757898614
+            X: 0.105176471
+            Y: 0.105176471
+            Z: 0.0757898465
           }
         }
         ParentId: 13716574198229872332
@@ -31960,19 +31957,19 @@ Assets {
         Name: "Military Crate Hinge 02"
         Transform {
           Location {
-            X: -36.1532
+            X: -36.1503906
             Y: 159.326172
             Z: 11.844574
           }
           Rotation {
-            Pitch: 70.0579453
-            Yaw: -89.9999695
-            Roll: -158.11142
+            Pitch: 70.05793
+            Yaw: -90.0000153
+            Roll: -158.111511
           }
           Scale {
-            X: 0.847950399
-            Y: -0.847950399
-            Z: 0.847950399
+            X: 0.84795028
+            Y: -0.84795028
+            Z: 0.84795028
           }
         }
         ParentId: 13716574198229872332
@@ -32030,18 +32027,18 @@ Assets {
         Name: "Military Crate Hinge 02"
         Transform {
           Location {
-            X: -48.8898926
-            Y: 59.4732208
-            Z: 116.640778
+            X: -48.8892708
+            Y: 59.472805
+            Z: 116.640793
           }
           Rotation {
             Yaw: 90.0002136
             Roll: -3.41509258e-05
           }
           Scale {
-            X: 0.602845073
-            Y: 0.602845073
-            Z: 0.602845073
+            X: 0.602844954
+            Y: 0.602844954
+            Z: 0.602844954
           }
         }
         ParentId: 13716574198229872332
@@ -32099,9 +32096,9 @@ Assets {
         Name: "Military Crate Hinge 02"
         Transform {
           Location {
-            X: -122.783356
-            Y: 59.901413
-            Z: 116.640854
+            X: -122.783165
+            Y: 59.9016304
+            Z: 116.640846
           }
           Rotation {
             Pitch: 2.04905664e-05
@@ -32109,9 +32106,9 @@ Assets {
             Roll: 3.41509476e-05
           }
           Scale {
-            X: 0.602845073
-            Y: 0.602845073
-            Z: 0.602845073
+            X: 0.602844954
+            Y: 0.602844954
+            Z: 0.602844954
           }
         }
         ParentId: 13716574198229872332
@@ -32169,18 +32166,18 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: -89.5589828
-            Y: 59.6878395
-            Z: 116.891342
+            X: -89.5585785
+            Y: 59.6880608
+            Z: 116.891335
           }
           Rotation {
-            Yaw: -5.07115292e-05
+            Yaw: -5.07115219e-05
             Roll: -89.9999084
           }
           Scale {
-            X: 0.333260715
-            Y: 0.571727097
-            Z: 0.571727097
+            X: 0.333260655
+            Y: 0.571727
+            Z: 0.571727
           }
         }
         ParentId: 13716574198229872332
@@ -32263,16 +32260,16 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: -86.3652954
-            Y: 59.6874199
-            Z: 91.6110535
+            X: -86.3651
+            Y: 59.6872177
+            Z: 91.6110458
           }
           Rotation {
           }
           Scale {
-            X: 0.816710889
-            Y: 0.816710889
-            Z: 0.0388501026
+            X: 0.81671077
+            Y: 0.81671077
+            Z: 0.0388500951
           }
         }
         ParentId: 13716574198229872332
@@ -32327,19 +32324,19 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: -85.5480118
-            Y: -8.97061253
-            Z: 88.7861252
+            X: -85.5478134
+            Y: -8.97082424
+            Z: 88.7861176
           }
           Rotation {
             Pitch: 1.36603776e-05
-            Yaw: 89.9999771
+            Yaw: 89.9999695
             Roll: -89.9999542
           }
           Scale {
             X: 0.468343496
-            Y: 0.59525758
-            Z: 0.59525758
+            Y: 0.595257461
+            Z: 0.595257461
           }
         }
         ParentId: 13716574198229872332
@@ -32422,17 +32419,17 @@ Assets {
         Name: "Military Crate Hinge 01"
         Transform {
           Location {
-            X: -56.5353546
-            Y: -74.8627319
-            Z: 89.8006134
+            X: -56.5357857
+            Y: -74.8625336
+            Z: 89.8006058
           }
           Rotation {
             Yaw: -1.02452796e-05
           }
           Scale {
-            X: 0.999999702
-            Y: 0.999999702
-            Z: 0.999999702
+            X: 0.999999642
+            Y: 0.999999642
+            Z: 0.999999642
           }
         }
         ParentId: 13716574198229872332
@@ -32492,17 +32489,17 @@ Assets {
         Name: "Military Crate Hinge 01"
         Transform {
           Location {
-            X: -113.846802
-            Y: -74.8627319
-            Z: 89.8006134
+            X: -113.846817
+            Y: -74.8625336
+            Z: 89.8006058
           }
           Rotation {
-            Yaw: -3.41509331e-05
+            Yaw: -3.41509294e-05
           }
           Scale {
-            X: 0.999999702
-            Y: 0.999999702
-            Z: 0.999999702
+            X: 0.999999642
+            Y: 0.999999642
+            Z: 0.999999642
           }
         }
         ParentId: 13716574198229872332
@@ -32562,18 +32559,18 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: 11.8887157
-            Y: -46.5935822
-            Z: 80.8551788
+            X: 11.889348
+            Y: -46.5938
+            Z: 80.8551865
           }
           Rotation {
-            Pitch: 80.2746506
-            Yaw: -7.27065026e-06
+            Pitch: 80.2745056
+            Yaw: -7.27063798e-06
             Roll: -179.999954
           }
           Scale {
-            X: 0.0217265636
-            Y: 0.215402156
+            X: 0.0217265617
+            Y: 0.215402141
             Z: 0.193344742
           }
         }
@@ -32659,18 +32656,18 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: 12.0682335
-            Y: -46.5935822
-            Z: 85.6966248
+            X: 12.0676041
+            Y: -46.5938
+            Z: 85.6966095
           }
           Rotation {
-            Yaw: -5.12263978e-05
+            Yaw: -5.12263759e-05
             Roll: -179.999954
           }
           Scale {
             X: 0.0683179498
             Y: 0.0678317249
-            Z: 0.153084189
+            Z: 0.153084159
           }
         }
         ParentId: 13716574198229872332
@@ -32755,18 +32752,18 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: 12.0682335
-            Y: -46.5935822
-            Z: 96.3532104
+            X: 12.0676041
+            Y: -46.5938
+            Z: 96.3531952
           }
           Rotation {
-            Yaw: -5.12263941e-05
+            Yaw: -5.12263723e-05
             Roll: -179.999954
           }
           Scale {
-            X: 0.0861231461
-            Y: 0.0855103508
-            Z: 0.0915177315
+            X: 0.0861231387
+            Y: 0.0855103359
+            Z: 0.0915177166
           }
         }
         ParentId: 13716574198229872332
@@ -32851,16 +32848,16 @@ Assets {
         Name: "Wedge - Polished"
         Transform {
           Location {
-            X: 12.0682335
-            Y: -53.5262337
-            Z: 81.3382339
+            X: 12.0676041
+            Y: -53.5264511
+            Z: 81.3382416
           }
           Rotation {
           }
           Scale {
             X: 0.0163051337
             Y: 0.0739483312
-            Z: 0.159721166
+            Z: 0.159721136
           }
         }
         ParentId: 13716574198229872332
@@ -32945,18 +32942,18 @@ Assets {
         Name: "Wedge - Polished"
         Transform {
           Location {
-            X: 17.3698807
-            Y: -46.37854
-            Z: 79.1273193
+            X: 17.3698845
+            Y: -46.3785477
+            Z: 79.1273041
           }
           Rotation {
             Yaw: 89.9999695
-            Roll: -8.42138481
+            Roll: -8.42140579
           }
           Scale {
             X: 0.0163051337
             Y: 0.0739483312
-            Z: 0.159721166
+            Z: 0.159721136
           }
         }
         ParentId: 13716574198229872332
@@ -33041,9 +33038,9 @@ Assets {
         Name: "Wedge - Polished"
         Transform {
           Location {
-            X: 12.0682335
-            Y: -39.7221069
-            Z: 81.3382339
+            X: 12.0676041
+            Y: -39.7216911
+            Z: 81.3382416
           }
           Rotation {
             Yaw: 179.999954
@@ -33051,7 +33048,7 @@ Assets {
           Scale {
             X: 0.0163051337
             Y: 0.0739483312
-            Z: 0.159721166
+            Z: 0.159721136
           }
         }
         ParentId: 13716574198229872332
@@ -33136,18 +33133,18 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: -270.037933
-            Y: 47.9273529
-            Z: 14.4338322
+            X: -270.037872
+            Y: 47.9273567
+            Z: 14.4338341
           }
           Rotation {
-            Yaw: 89.9999695
-            Roll: -14.5300875
+            Yaw: 89.9999466
+            Roll: -14.5301256
           }
           Scale {
             X: 0.468343496
-            Y: 0.59525758
-            Z: 0.59525758
+            Y: 0.595257461
+            Z: 0.595257461
           }
         }
         ParentId: 13716574198229872332
@@ -33230,19 +33227,19 @@ Assets {
         Name: "Military Crate Hinge 01"
         Transform {
           Location {
-            X: -268.20578
-            Y: -33.98806
-            Z: 24.6151619
+            X: -268.206543
+            Y: -33.9880638
+            Z: 24.6151657
           }
           Rotation {
             Pitch: 75.9618454
-            Yaw: -0.483041048
-            Roll: -2.58543301
+            Yaw: -0.483041883
+            Roll: -2.58543515
           }
           Scale {
-            X: 0.999999702
-            Y: 0.999999702
-            Z: 0.999999702
+            X: 0.999999642
+            Y: 0.999999642
+            Z: 0.999999642
           }
         }
         ParentId: 13716574198229872332
@@ -33302,19 +33299,19 @@ Assets {
         Name: "Military Crate Hinge 01"
         Transform {
           Location {
-            X: -274.360229
-            Y: -33.936348
-            Z: -2.62759604e-05
+            X: -274.359741
+            Y: -33.9359322
+            Z: -2.6275964e-05
           }
           Rotation {
             Pitch: 75.9617767
-            Yaw: -0.483042151
-            Roll: -2.5854311
+            Yaw: -0.483042628
+            Roll: -2.58543205
           }
           Scale {
-            X: 0.999999702
-            Y: 0.999999702
-            Z: 0.999999702
+            X: 0.999999642
+            Y: 0.999999642
+            Z: 0.999999642
           }
         }
         ParentId: 13716574198229872332
@@ -33374,19 +33371,19 @@ Assets {
         Name: "Military Crate Hinge 02"
         Transform {
           Location {
-            X: -36.0739517
-            Y: -130.585
-            Z: 11.6061964
+            X: -36.0733261
+            Y: -130.585236
+            Z: 11.6061983
           }
           Rotation {
-            Pitch: 70.0579605
-            Yaw: 89.9999924
-            Roll: 158.11145
+            Pitch: 70.0579453
+            Yaw: 90.0000153
+            Roll: 158.111465
           }
           Scale {
-            X: 0.847950399
-            Y: 0.847950399
-            Z: 0.847950399
+            X: 0.84795028
+            Y: 0.84795028
+            Z: 0.84795028
           }
         }
         ParentId: 13716574198229872332
