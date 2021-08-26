@@ -180,7 +180,7 @@ function ToggleTutorialState()
 	if(tutorialProgress < API_Tutorial.TutorialPhase.Completed and inShootingRange) then
 		Tutorial_OptOutPanel.visibility = Visibility.FORCE_ON
 	end
-	print("TUTORIAL PHASE: " .. tostring(tutorialProgress))
+	--print("TUTORIAL PHASE: " .. tostring(tutorialProgress))
 end
 
 function BindingPressed(player, binding)
