@@ -26,11 +26,11 @@ end
 
 function OnPlayerJoined(player)
     local storageData = Storage.GetSharedPlayerData(LEADERBOARD_NETREF, player)
-    if storageData and next(storageData) and storageData.time then
+    --[[if storageData and next(storageData) and storageData.time then
         if not lastTimestamp or lastTimestamp and storageData.time > lastTimestamp then
             SetNetworkData(storageData)
         end
-    end
+    end]]--
     player:SetResource("MatchTanksDestroyed", storageData and storageData.playerResources and storageData.playerResources.MTD or 0)
     player:SetResource("MatchDamageDealt", storageData and storageData.playerResources and storageData.playerResources.MDD or 0)
     player:SetResource("LifetimeTanksDestroyed", storageData and storageData.playerResources and storageData.playerResources.LTTD or 0)
@@ -42,19 +42,6 @@ function OnPlayerDeployed(player)
     playersLeft[player.id] = time() + 120
 end
 
--- Search for players with more recent storage every 120 seconds
-function Tick()
-    if next(playersLeft) then
-        for playerId, timeLeft in pairs(playersLeft) do
-            while time() < timeLeft do
-                Task.Wait()
-            end
-            local data = Storage.GetSharedOfflinePlayerData(LEADERBOARD_NETREF, playerId)
-            SetNetworkData(data)
-        end
-        playersLeft = {}
-    end
-end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Events.Connect("PLAYER_DEPLOYED", OnPlayerDeployed)
