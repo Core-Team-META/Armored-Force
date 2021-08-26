@@ -43,6 +43,13 @@ function OnRecovery(abilityUsed)
 end
 
 function ToggleAbility(player, abilityToToggle, toggle)
+	if player:IsA("AIPlayer") then
+		print("-------------------")
+		print("Somehow an AI tried to toggle?")
+		print(CoreDebug.GetStackTrace())
+		print("-------------------")
+		return
+	end
 	if abilityToToggle == "TRACK" then
 		local count = player:GetResource(CONSTANTS_API.CONSUMABLES.TREADS)
 		if count > 0 then
