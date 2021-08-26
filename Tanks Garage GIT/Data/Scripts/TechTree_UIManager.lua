@@ -4,6 +4,7 @@
 -- API
 local Constants_API = require(script:GetCustomProperty("Constants_API"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
+local API_Tutorial = require(script:GetCustomProperty("API_Tutorial"))
 
 -- Definitions
 local TEAM_DEFINITIONS = script:GetCustomProperty("TechTree_TeamDefinitions"):WaitForObject()
@@ -103,6 +104,8 @@ local STATS_TANK_CONTAINER = script:GetCustomProperty("STATS_TANK_CONTAINER"):Wa
 local UPGRADE_TANK_CONTAINER = script:GetCustomProperty("UPGRADE_TANK_CONTAINER"):WaitForObject()
 local UPGRADE_TANK_CONFIRM_CONTAINER = script:GetCustomProperty("UPGRADE_TANK_CONFIRM_CONTAINER"):WaitForObject()
 local Tutorial_UpgradeTank = script:GetCustomProperty("Tutorial_UpgradeTank"):WaitForObject()
+local UPGRADE_TUTORIAL = script:GetCustomProperty("UPGRADE_TUTORIAL"):WaitForObject()
+local TutorialStepComplete = script:GetCustomProperty("TutorialCompletePopup")
 
 local VIEWED_TANK_STATS = script:GetCustomProperty("VIEWED_TANK_STATS"):WaitForObject()
 
@@ -1116,6 +1119,7 @@ function UpgradeWeapon()
 	for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 		if (tank.id == tankDetails.id) then
 			tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+			CheckForTutorialCompletion()
 		end
 	end
 	--PopulateSelectedTankPanel(tankDetails.id)
@@ -1161,6 +1165,7 @@ function UpgradeArmor()
 	for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 		if (tank.id == tankDetails.id) then
 			tank.armorProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+			CheckForTutorialCompletion()
 		end
 	end
 	--PopulateSelectedTankPanel(tankDetails.id)
@@ -1202,6 +1207,11 @@ function UpgradeEngine()
 	for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 		if (tank.id == tankDetails.id) then
 			tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+			
+			if LOCAL_PLAYER.clientUserData.tutorial6 == 1 then
+				LOCAL_PLAYER.clientUserData.tutorial6 = 2
+				local panel = World.SpawnAsset(TutorialStepComplete, {parent = UPGRADE_TANK_CONTAINER:FindAncestorByName("MAIN_UI")})
+			end
 		end
 	end
 	--PopulateSelectedTankPanel(tankDetails.id)
@@ -1662,7 +1672,13 @@ function TutorialOpenTankUpgradeWindow()
 	OpenTankUpgradeWindow()
 end
 
-function OpenTankUpgradeWindow(button, id)	
+function OpenTankUpgradeWindow(button, id)
+	if LOCAL_PLAYER.clientUserData.tutorial6 == 1 then
+		UPGRADE_TUTORIAL.visibility = Visibility.FORCE_ON
+	else
+		UPGRADE_TUTORIAL.visibility = Visibility.FORCE_OFF
+	end
+		
 	if not id then
 		selectedTankId = LOCAL_PLAYER:GetResource("EquippedTank")
 	else
@@ -1828,6 +1844,14 @@ function EquipTank()
 	SFX_EQUIP_TANK:Play()
 	Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", selectedTankId)
     Events.Broadcast("CHANGE_EQUIPPED_TANK", selectedTankId)
+end
+
+function CheckForTutorialCompletion()
+	if LOCAL_PLAYER.clientUserData.tutorial6 == 1 then
+		LOCAL_PLAYER.clientUserData.tutorial6 = 2
+		local panel = World.SpawnAsset(TutorialStepComplete, {parent = UPGRADE_TANK_CONTAINER:FindAncestorByName("MAIN_UI")})
+		Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.RepairTank, true)
+	end
 end
 
 Task.Wait(2)
