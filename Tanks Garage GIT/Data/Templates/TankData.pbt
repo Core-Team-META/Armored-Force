@@ -577,7 +577,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 50000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -853,7 +853,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 40000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -1129,7 +1129,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 40000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -1409,7 +1409,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 40000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -1689,7 +1689,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 25000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -1965,7 +1965,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 35000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -2237,7 +2237,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 25000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -2509,7 +2509,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 25000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -2785,7 +2785,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 50000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -3061,7 +3061,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 40000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -3337,7 +3337,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 40000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -3613,7 +3613,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 40000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -3889,7 +3889,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 25000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -4165,7 +4165,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 25000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -4441,7 +4441,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 25000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -4717,7 +4717,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 35000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -4989,7 +4989,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 50000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -5265,7 +5265,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 50000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -5541,7 +5541,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 40000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -5817,7 +5817,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 40000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -6093,7 +6093,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 35000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -6373,7 +6373,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 40000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -6653,7 +6653,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 25000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -6925,7 +6925,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 25000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -7201,7 +7201,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 50000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -7477,7 +7477,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 40000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -7753,7 +7753,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 40000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -8029,7 +8029,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 40000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -8305,7 +8305,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 25000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -8581,7 +8581,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 25000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -8857,7 +8857,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 25000
           }
           Overrides {
             Name: "cs:ArmorValues"
@@ -9133,7 +9133,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ViewRange"
-            Int: 0
+            Int: 35000
           }
           Overrides {
             Name: "cs:ArmorValues"
