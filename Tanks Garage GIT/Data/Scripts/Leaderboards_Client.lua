@@ -22,7 +22,11 @@ local LEADERBOARDS_ENTRY = script:GetCustomProperty("LEADERBOARDS_ENTRY")
 
 local NETWORKED = script:GetCustomProperty("Leaderboards_Networked"):WaitForObject()
 
-local propertyTbl = {MTD = {}, MDD = {}, LTTD = {}, LTDD = {}, LTWR = {}}
+local MTD_LEADERBOARD = script:GetCustomProperty("MatchDestroyed")
+local MDD_LEADERBOARD = script:GetCustomProperty("MatchDamage")
+local LTTD_LEADERBOARD = script:GetCustomProperty("TotalDestroyed")
+local LTDD_LEADERBOARD = script:GetCustomProperty("TotalDamage")
+local LTWR_LEADERBOARD = script:GetCustomProperty("TotalWinRate")
 
 --#TODO not able to scale, should have this all on custom properties.
 local leaderBoards = {
@@ -80,23 +84,21 @@ local function PopulateEntry(newEntry, data, rank)
     local Score = newEntry:GetCustomProperty("SCORE"):WaitForObject()
     PlayerPosition.text = tostring(rank) .. "."
     PlayerName.text = data.name
-    Score.text = tostring(data.score)
+    Score.text = tostring(CoreMath.Round(data.score))
 end
 
-local function CreateEntries(leaderboards, parent)
-    local sortedTbl = {}
-    if leaderboards then
-        for name, score in pairs(leaderboards) do
-            sortedTbl[#sortedTbl + 1] = {name = name, score = score}
-        end
-        table.sort(sortedTbl, CompareScore)
-        for i, data in pairs(sortedTbl) do
-            if i <= totalEntries then
-                local newEntry = World.SpawnAsset(LEADERBOARDS_ENTRY, {parent = parent})
-                newEntry.y = (i - 1) * 50
-                PopulateEntry(newEntry, data, i)
-            else
-                break
+function CreateEntries(netRef, parent)
+    if netRef then
+        local leaderboard = Leaderboards.GetLeaderboard(netRef, LeaderboardType.GLOBAL)
+        if leaderboard then
+            for i, data in ipairs(leaderboard) do
+                if i <= totalEntries then
+                    local newEntry = World.SpawnAsset(LEADERBOARDS_ENTRY, {parent = parent})
+                    newEntry.y = (i - 1) * 50
+                    PopulateEntry(newEntry, data, i)
+                else
+                    break
+                end
             end
         end
     end
@@ -106,8 +108,8 @@ local function BuildMatchLeaderBoards()
     for _, panel in pairs(leaderBoards.match.parentPanels) do
         DestroyChildren(panel)
     end
-    CreateEntries(propertyTbl.MTD, leaderBoards.match.parentPanels.tanksDestroyed)
-    CreateEntries(propertyTbl.MDD, leaderBoards.match.parentPanels.damageDealt)
+    CreateEntries(MTD_LEADERBOARD, leaderBoards.match.parentPanels.tanksDestroyed)
+    CreateEntries(MDD_LEADERBOARD, leaderBoards.match.parentPanels.damageDealt)
 end
 
 local function BuildTotalLeaderBoards()
@@ -115,9 +117,9 @@ local function BuildTotalLeaderBoards()
         DestroyChildren(panel)
     end
 
-    CreateEntries(propertyTbl.LTTD, leaderBoards.total.parentPanels.tanksDestroyed)
-    CreateEntries(propertyTbl.LTDD, leaderBoards.total.parentPanels.damageDealt)
-    CreateEntries(propertyTbl.LTWR, leaderBoards.total.parentPanels.winRate)
+    CreateEntries(LTTD_LEADERBOARD, leaderBoards.total.parentPanels.tanksDestroyed)
+    CreateEntries(LTDD_LEADERBOARD, leaderBoards.total.parentPanels.damageDealt)
+    --CreateEntries(LTWR_LEADERBOARD, leaderBoards.total.parentPanels.winRate)
 end
 
 function ToggleLeaderboards(button)
@@ -142,21 +144,13 @@ function Init()
     for _, panel in pairs(leaderBoards.match.parentPanels) do
         DestroyChildren(panel)
     end
-
-    for key, value in pairs(NETWORKED:GetCustomProperties()) do
-        if key ~= "Keys" and value ~= "" then
-            propertyTbl[key] = UTIL.ConvertStringToTable(value)
-        end
+    while not Leaderboards.HasLeaderboards() do
+        Task.Wait()
     end
+    Task.Wait(5)
+    BuildMatchLeaderBoards()
+    BuildTotalLeaderBoards()
     UpdatePlayerScore()
-end
-
-function OnNetworkChanged(object, string)
-    for key, value in pairs(NETWORKED:GetCustomProperties()) do
-        if key ~= "Keys" and value ~= "" then
-            propertyTbl[key] = UTIL.ConvertStringToTable(value)
-        end
-    end
 end
 
 function Hover()
@@ -173,13 +167,4 @@ TOTAL_BUTTON.hoveredEvent:Connect(Hover)
 MATCH_BUTTON.hoveredEvent:Connect(Hover)
 TOTAL_BUTTON.unhoveredEvent:Connect(Unhover)
 MATCH_BUTTON.unhoveredEvent:Connect(Unhover)
-NETWORKED.networkedPropertyChangedEvent:Connect(OnNetworkChanged)
 Init()
-Task.Wait(3)
-for key, value in pairs(NETWORKED:GetCustomProperties()) do
-    if key ~= "Keys" and value ~= "" then
-        propertyTbl[key] = UTIL.ConvertStringToTable(value)
-    end
-end
-BuildMatchLeaderBoards()
-UpdatePlayerScore()

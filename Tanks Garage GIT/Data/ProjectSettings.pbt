@@ -1,63 +1,58 @@
 LeaderboardConfigs {
   Config {
-    HasWeekly: true
     SortType {
       Value: "mc:ecoresdkleaderboardsorting:higherisbetter"
     }
     FormatType {
       Value: "mc:ecoresdkleaderboardformat:numeric"
     }
-    Name: "MDestroyed"
-    Id: "5CDFF97022581421"
-    EntryLimit: 20
+    Name: "WinRateTotal"
+    Id: "AE45025A16B39ECE"
+    EntryLimit: 10
   }
   Config {
-    HasWeekly: true
     SortType {
       Value: "mc:ecoresdkleaderboardsorting:higherisbetter"
     }
     FormatType {
       Value: "mc:ecoresdkleaderboardformat:numeric"
     }
-    Name: "MDamage"
-    Id: "ADCF41D254037A1E"
-    EntryLimit: 20
+    Name: "DamageTotal"
+    Id: "4B50C1325ADE93EA"
+    EntryLimit: 10
   }
   Config {
-    HasWeekly: true
     SortType {
       Value: "mc:ecoresdkleaderboardsorting:higherisbetter"
     }
     FormatType {
       Value: "mc:ecoresdkleaderboardformat:numeric"
     }
-    Name: "TDestroyed"
-    Id: "6B38621A1DA4AE04"
-    EntryLimit: 20
+    Name: "DestroyedTotal"
+    Id: "15C55D363F75E31C"
+    EntryLimit: 10
   }
   Config {
-    HasWeekly: true
     SortType {
       Value: "mc:ecoresdkleaderboardsorting:higherisbetter"
     }
     FormatType {
       Value: "mc:ecoresdkleaderboardformat:numeric"
     }
-    Name: "TDamage"
-    Id: "04F58AB9B00A1E52"
-    EntryLimit: 20
+    Name: "MatchDamage"
+    Id: "A511CA004F8DECD8"
+    EntryLimit: 10
   }
   Config {
-    HasWeekly: true
     SortType {
       Value: "mc:ecoresdkleaderboardsorting:higherisbetter"
     }
     FormatType {
       Value: "mc:ecoresdkleaderboardformat:numeric"
     }
-    Name: "TWinRate"
-    Id: "18059DC9ED32BEC7"
-    EntryLimit: 20
+    Name: "MatchDestroyed"
+    Id: "331B27488436C074"
+    EntryLimit: 10
   }
 }
 MaxPlayers: 10

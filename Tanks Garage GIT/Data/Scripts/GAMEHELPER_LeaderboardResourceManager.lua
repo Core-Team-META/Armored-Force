@@ -69,12 +69,12 @@ function OnPlayerJoined(player)
     player:SetResource("LifetimeDamageDealt", storageData.playerResources.LTDD)
     player:SetResource("LifetimeWinrate", storageData.playerResources.LTWR)
 
-    storageData.MTD = BuildLeaderboardTable(MTD_LEADERBOARD)
+    --[[storageData.MTD = BuildLeaderboardTable(MTD_LEADERBOARD)
     storageData.MDD = BuildLeaderboardTable(MDD_LEADERBOARD)
     storageData.LTTD = BuildLeaderboardTable(LTTD_LEADERBOARD)
     storageData.LTDD = BuildLeaderboardTable(LTDD_LEADERBOARD)
     storageData.LTWR = BuildLeaderboardTable(LTWR_LEADERBOARD)
-    storageData.time = os.time(os.date("!*t"))
+    storageData.time = os.time(os.date("!*t"))]]--
 
     Storage.SetSharedPlayerData(STORAGE_LEADERBOARD, player, storageData)
 end
@@ -82,37 +82,42 @@ end
 function OnPlayerLeft(player)
     local storageData = Storage.GetSharedPlayerData(STORAGE_LEADERBOARD, player)
 
-    storageData.MTD = BuildLeaderboardTable(MTD_LEADERBOARD, true)
+   --[[ storageData.MTD = BuildLeaderboardTable(MTD_LEADERBOARD, true)
     storageData.MDD = BuildLeaderboardTable(MDD_LEADERBOARD, true)
     storageData.LTTD = BuildLeaderboardTable(LTTD_LEADERBOARD, true)
     storageData.LTDD = BuildLeaderboardTable(LTDD_LEADERBOARD, true)
     storageData.LTWR = BuildLeaderboardTable(LTWR_LEADERBOARD, true)
-    storageData.time = os.time(os.date("!*t"))
+    storageData.time = os.time(os.date("!*t")) ]]--
 
 
     local matchTanksDestroyed = player.kills
     if storageData.playerResources.MTD < matchTanksDestroyed then
         storageData.playerResources.MTD = matchTanksDestroyed
+        Leaderboards.SubmitPlayerScore(MTD_LEADERBOARD, player, matchTanksDestroyed)
     end
   
     local matchDamageDealt = player:GetResource("MatchDamageDealt")
     if storageData.playerResources.MDD < matchDamageDealt then
         storageData.playerResources.MDD = matchDamageDealt
+        Leaderboards.SubmitPlayerScore(MDD_LEADERBOARD, player, matchDamageDealt)
     end
    
     local lifeTimeTanksDestroyed = player:GetResource("LifetimeTanksDestroyed")
     if storageData.playerResources.LTTD < lifeTimeTanksDestroyed then
         storageData.playerResources.LTTD = lifeTimeTanksDestroyed
+        Leaderboards.SubmitPlayerScore(LTTD_LEADERBOARD, player, lifeTimeTanksDestroyed)
     end
     
     local lifeTimeDamageDealt = player:GetResource("LifetimeDamageDealt")
     if storageData.playerResources.LTDD < lifeTimeDamageDealt then
         storageData.playerResources.LTDD = lifeTimeDamageDealt
+        Leaderboards.SubmitPlayerScore(LTDD_LEADERBOARD, player, lifeTimeDamageDealt)
     end
     
     local lifeTimeWinRate = player:GetResource("LifetimeWinrate")
     if storageData.playerResources.LTWR < lifeTimeWinRate then
         storageData.playerResources.LTWR = lifeTimeWinRate
+        Leaderboards.SubmitPlayerScore(LTWR_LEADERBOARD, player, lifeTimeWinRate)
     end
    
     Storage.SetSharedPlayerData(STORAGE_LEADERBOARD, player, storageData)
