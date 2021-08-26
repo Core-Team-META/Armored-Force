@@ -167,6 +167,51 @@ Objects {
         SelfId: 3243702946864327333
       }
     }
+    Overrides {
+      Name: "cs:TotalWinRate"
+      NetReference {
+        Key: "AE45025A16B39ECE"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:TotalDamage"
+      NetReference {
+        Key: "4B50C1325ADE93EA"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:TotalDestroyed"
+      NetReference {
+        Key: "15C55D363F75E31C"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:MatchDamage"
+      NetReference {
+        Key: "A511CA004F8DECD8"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:MatchDestroyed"
+      NetReference {
+        Key: "331B27488436C074"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
