@@ -179,45 +179,7 @@ function PurchaseWeapon(player, id)
 					
 					Events.BroadcastToPlayer(player, "WeaponUpgradeSuccessful")
 					Events.Broadcast("UpgradeAcquired", player, id, Constants_API.UPGRADE_SLOT.WEAPON)
-					return BroadcastEventResultCode.SUCCESS
-				end
-			end
-			return BroadcastEventResultCode.FAILURE
-		end
-	end	
-	
-	return BroadcastEventResultCode.FAILURE
-end
 
---[[
-function ResearchWeapon(player, id, useFreeRP)
-local tank = {}
-	for k,v in ipairs(TANK_LIST) do
-		if(v:GetCustomProperty("ID") == id) then
-			print("DEBUG: Found match")
-			local cost = v:GetCustomProperty("WeaponResearchCost")
-			local rp = 0
-			if(useFreeRP) then
-				rp = player:GetResource(Constants_API.FREERP)
-			else
-				rp = player:GetResource(UTIL_API.GetTankRPString(tonumber(id)))
-			end
-			
-			if(rp < cost) then
-				print("DEBUG: Not enough RP")
-				return BroadcastEventResultCode.FAILURE			
-			end
-			
-			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
-				if(tank.id == id) then
-					print("DEBUG: Owned tank found")
-					tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.RESEARCHED
-					if(useFreeRP) then
-						player:RemoveResource(Constants_API.FREERP, cost)
-					else
-						player:RemoveResource(UTIL_API.GetTankRPString(tonumber(id)), cost)
-					end
-					
 					return BroadcastEventResultCode.SUCCESS
 				end
 			end
@@ -227,7 +189,6 @@ local tank = {}
 	
 	return BroadcastEventResultCode.FAILURE
 end
---]]
 
 function PurchaseArmor(player, id)
 	local tank = {}
@@ -276,45 +237,6 @@ function PurchaseArmor(player, id)
 	
 	return BroadcastEventResultCode.FAILURE
 end
---[[
-function ResearchArmor(player, id, useFreeRP)
-local tank = {}
-	for k,v in ipairs(TANK_LIST) do
-		if(v:GetCustomProperty("ID") == id) then
-			print("DEBUG: Found match")
-			local cost = v:GetCustomProperty("ArmorResearchCost")
-			local rp = 0
-			if(useFreeRP) then
-				rp = player:GetResource(Constants_API.FREERP)
-			else
-				rp = player:GetResource(UTIL_API.GetTankRPString(tonumber(id)))
-			end
-			
-			if(rp < cost) then
-				print("DEBUG: Not enough RP")
-				return BroadcastEventResultCode.FAILURE			
-			end
-			
-			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
-				if(tank.id == id) then
-					print("DEBUG: Owned tank found")
-					tank.armorProgress = Constants_API.UPGRADE_PROGRESS.RESEARCHED
-					if(useFreeRP) then
-						player:RemoveResource(Constants_API.FREERP, cost)
-					else
-						player:RemoveResource(UTIL_API.GetTankRPString(tonumber(id)), cost)
-					end
-					
-					return BroadcastEventResultCode.SUCCESS
-				end
-			end
-			return BroadcastEventResultCode.FAILURE
-		end
-	end	
-	
-	return BroadcastEventResultCode.FAILURE
-end
---]]
 
 function PurchaseEngine(player, id)
 	local tank = {}
@@ -363,54 +285,8 @@ function PurchaseEngine(player, id)
 	
 	return BroadcastEventResultCode.FAILURE
 end
---[[
-function ResearchEngine(player, id, useFreeRP)
-local tank = {}
-	for k,v in ipairs(TANK_LIST) do
-		if(v:GetCustomProperty("ID") == id) then
-			print("DEBUG: Found match")
-			local cost = v:GetCustomProperty("MobilityResearchCost")
-			local rp = 0
-			if(useFreeRP) then
-				rp = player:GetResource(Constants_API.FREERP)
-			else
-				rp = player:GetResource(UTIL_API.GetTankRPString(tonumber(id)))
-			end
-			
-			if(rp < cost) then
-				print("DEBUG: Not enough RP")
-				return BroadcastEventResultCode.FAILURE			
-			end
-			
-			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
-				if(tank.id == id) then
-					print("DEBUG: Owned tank found")
-					tank.engineProgress = Constants_API.UPGRADE_PROGRESS.RESEARCHED
-					if(useFreeRP) then
-						player:RemoveResource(Constants_API.FREERP, cost)
-					else
-						player:RemoveResource(UTIL_API.GetTankRPString(tonumber(id)), cost)
-					end
-					
-					return BroadcastEventResultCode.SUCCESS
-				end
-			end
-			return BroadcastEventResultCode.FAILURE
-		end
-	end	
-	
-	return BroadcastEventResultCode.FAILURE
-end
---]]
 
 Events.ConnectForPlayer("PurchaseTank", PurchaseTank)
---Events.ConnectForPlayer("ResearchTank", ResearchTank)
-
 Events.ConnectForPlayer("PurchaseWeapon", PurchaseWeapon)
---Events.ConnectForPlayer("ResearchWeapon", ResearchWeapon)
-
 Events.ConnectForPlayer("PurchaseArmor", PurchaseArmor)
---Events.ConnectForPlayer("ResearchArmor", ResearchArmor)
-
 Events.ConnectForPlayer("PurchaseEngine", PurchaseEngine)
---Events.ConnectForPlayer("ResearchEngine", ResearchEngine)

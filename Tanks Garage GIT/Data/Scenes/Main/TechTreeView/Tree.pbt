@@ -857,6 +857,24 @@ Objects {
         SelfId: 11374196516866748429
       }
     }
+    Overrides {
+      Name: "cs:UPGRADE_TUTORIAL"
+      ObjectReference {
+        SelfId: 9480738783662723115
+      }
+    }
+    Overrides {
+      Name: "cs:API_Tutorial"
+      AssetReference {
+        Id: 3002171482500064982
+      }
+    }
+    Overrides {
+      Name: "cs:TutorialCompletePopup"
+      AssetReference {
+        Id: 5513507585235710589
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
