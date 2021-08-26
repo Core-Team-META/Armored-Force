@@ -509,11 +509,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 1000
+            Int: 1150
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 1250
+            Int: 1330
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -521,19 +521,19 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 800
+            Int: 400
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 1000
+            Int: 400
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 60
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 70
           }
           Overrides {
             Name: "cs:Traverse"
@@ -565,11 +565,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -589,7 +589,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -785,11 +785,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 750
+            Int: 945
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 900
+            Int: 1040
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -797,7 +797,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 500
+            Int: 600
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
@@ -805,11 +805,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 50
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 60
           }
           Overrides {
             Name: "cs:Traverse"
@@ -841,11 +841,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -865,7 +865,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -1061,11 +1061,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 800
+            Int: 1045
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 1000
+            Int: 1110
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -1073,19 +1073,19 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 600
+            Int: 500
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 800
+            Int: 600
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 55
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 65
           }
           Overrides {
             Name: "cs:Traverse"
@@ -1117,11 +1117,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -1141,7 +1141,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -1337,11 +1337,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 800
+            Int: 1035
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 1000
+            Int: 1215
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -1349,11 +1349,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 800
+            Int: 600
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 1000
+            Int: 700
           }
           Overrides {
             Name: "cs:Traverse"
@@ -1361,11 +1361,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 55
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 65
           }
           Overrides {
             Name: "cs:TraverseUpgraded"
@@ -1397,11 +1397,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -1421,7 +1421,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -1617,11 +1617,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 700
+            Int: 780
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 800
+            Int: 920
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -1629,11 +1629,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 500
+            Int: 1700
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 800
+            Int: 1900
           }
           Overrides {
             Name: "cs:Traverse"
@@ -1641,11 +1641,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 50
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 60
           }
           Overrides {
             Name: "cs:TraverseUpgraded"
@@ -1677,11 +1677,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -1701,7 +1701,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -1897,11 +1897,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 700
+            Int: 936
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 900
+            Int: 1012
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -1909,19 +1909,19 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 700
-          }
-          Overrides {
-            Name: "cs:AccelerationUpgraded"
             Int: 900
           }
           Overrides {
+            Name: "cs:AccelerationUpgraded"
+            Int: 950
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 60
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 65
           }
           Overrides {
             Name: "cs:Traverse"
@@ -1953,11 +1953,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -1977,7 +1977,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -2173,11 +2173,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 450
+            Int: 775
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 650
+            Int: 975
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -2185,19 +2185,19 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 300
+            Int: 2200
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 50
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 60
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 500
+            Int: 2400
           }
           Overrides {
             Name: "cs:Traverse"
@@ -2225,11 +2225,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -2249,7 +2249,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -2445,11 +2445,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 500
+            Int: 860
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 700
+            Int: 975
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -2457,19 +2457,19 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 400
+            Int: 1100
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 60
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 70
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 600
+            Int: 1200
           }
           Overrides {
             Name: "cs:Traverse"
@@ -2497,11 +2497,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -2521,7 +2521,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -2717,11 +2717,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 1200
+            Int: 1262
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 1400
+            Int: 1375
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -2729,19 +2729,19 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 1000
+            Int: 500
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 1200
+            Int: 500
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 60
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 70
           }
           Overrides {
             Name: "cs:Traverse"
@@ -2773,11 +2773,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -2797,7 +2797,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -2993,11 +2993,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 1000
+            Int: 1200
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 1200
+            Int: 1500
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -3005,19 +3005,19 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 800
+            Int: 1900
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 1000
+            Int: 2100
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 50
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 60
           }
           Overrides {
             Name: "cs:Traverse"
@@ -3049,11 +3049,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -3073,7 +3073,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -3269,11 +3269,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 700
+            Int: 877
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 900
+            Int: 1102
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -3281,19 +3281,19 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 600
+            Int: 1100
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 800
+            Int: 1600
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 55
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 65
           }
           Overrides {
             Name: "cs:Traverse"
@@ -3325,11 +3325,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -3349,7 +3349,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -3545,11 +3545,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 800
+            Int: 1012
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 1000
+            Int: 1237
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -3557,19 +3557,19 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 600
+            Int: 1100
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 800
+            Int: 1200
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 60
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 70
           }
           Overrides {
             Name: "cs:Traverse"
@@ -3601,11 +3601,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -3625,7 +3625,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -3821,11 +3821,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 600
+            Int: 725
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 700
+            Int: 975
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -3833,19 +3833,19 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 500
+            Int: 2100
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 700
+            Int: 2200
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 60
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 70
           }
           Overrides {
             Name: "cs:Traverse"
@@ -3877,11 +3877,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -3901,7 +3901,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -4097,11 +4097,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 900
+            Int: 1025
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 1100
+            Int: 1175
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -4109,19 +4109,19 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 800
+            Int: 2100
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 1000
+            Int: 2200
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 60
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 70
           }
           Overrides {
             Name: "cs:Traverse"
@@ -4153,11 +4153,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -4177,7 +4177,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -4373,11 +4373,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 800
+            Int: 1175
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 1000
+            Int: 1225
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -4385,19 +4385,19 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 800
+            Int: 1900
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 1000
+            Int: 2200
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 50
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 60
           }
           Overrides {
             Name: "cs:Traverse"
@@ -4429,11 +4429,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -4453,7 +4453,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -4649,11 +4649,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 400
+            Int: 750
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 500
+            Int: 900
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -4661,19 +4661,19 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 300
+            Int: 1500
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 500
+            Int: 2500
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 65
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 75
           }
           Overrides {
             Name: "cs:Traverse"
@@ -4705,11 +4705,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -4725,11 +4725,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HorizontalCannonAngles"
-            Int: 0
+            Int: 16
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -4925,11 +4925,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 800
+            Int: 1160
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 1000
+            Int: 1360
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -4941,15 +4941,15 @@ Assets {
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 55
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 65
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 700
+            Int: 500
           }
           Overrides {
             Name: "cs:Traverse"
@@ -4977,11 +4977,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -5001,7 +5001,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -5197,11 +5197,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 900
+            Int: 1127
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 1200
+            Int: 1260
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -5209,19 +5209,19 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 800
+            Int: 500
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 1000
+            Int: 500
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 55
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 65
           }
           Overrides {
             Name: "cs:Traverse"
@@ -5253,11 +5253,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -5277,7 +5277,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -5473,11 +5473,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 600
+            Int: 720
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 800
+            Int: 990
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -5489,15 +5489,15 @@ Assets {
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 700
+            Int: 600
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 60
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 70
           }
           Overrides {
             Name: "cs:Traverse"
@@ -5529,11 +5529,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -5553,7 +5553,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -5749,11 +5749,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 750
+            Int: 778
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 950
+            Int: 865
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -5761,19 +5761,19 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 500
+            Int: 900
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 700
+            Int: 1300
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 55
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 65
           }
           Overrides {
             Name: "cs:Traverse"
@@ -5805,11 +5805,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -5829,7 +5829,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -6025,11 +6025,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 600
+            Int: 940
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 800
+            Int: 1070
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -6037,19 +6037,19 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 500
+            Int: 800
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 700
+            Int: 900
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 60
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 70
           }
           Overrides {
             Name: "cs:Traverse"
@@ -6081,11 +6081,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -6101,11 +6101,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HorizontalCannonAngles"
-            Int: 0
+            Int: 9
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -6301,11 +6301,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 900
+            Int: 1102
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 1100
+            Int: 1327
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -6313,11 +6313,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 700
+            Int: 2100
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 900
+            Int: 2300
           }
           Overrides {
             Name: "cs:Traverse"
@@ -6325,11 +6325,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 55
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 65
           }
           Overrides {
             Name: "cs:TraverseUpgraded"
@@ -6361,11 +6361,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -6385,7 +6385,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -6581,11 +6581,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 1000
+            Int: 720
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 1200
+            Int: 1050
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -6593,11 +6593,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 500
+            Int: 1300
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 700
+            Int: 1400
           }
           Overrides {
             Name: "cs:Traverse"
@@ -6605,11 +6605,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 30
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 60
           }
           Overrides {
             Name: "cs:TraverseUpgraded"
@@ -6641,11 +6641,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -6665,7 +6665,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -6861,11 +6861,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 500
+            Int: 900
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 700
+            Int: 1000
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -6873,19 +6873,19 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 400
+            Int: 1200
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 50
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
+            Int: 60
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 600
+            Int: 1700
           }
           Overrides {
             Name: "cs:Traverse"
@@ -6913,11 +6913,11 @@ Assets {
           }
           Overrides {
             Name: "cs:RecoilRockingMultiplier"
-            Float: 0
+            Float: 2
           }
           Overrides {
             Name: "cs:RecoilAmount"
-            Float: 0
+            Float: 10
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -6937,7 +6937,7 @@ Assets {
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
