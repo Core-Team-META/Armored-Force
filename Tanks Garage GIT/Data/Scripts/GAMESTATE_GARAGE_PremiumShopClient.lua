@@ -100,7 +100,7 @@ end
 
 function AttemptPremiumPurchase(button)
 
-	print("attempting to purchase")
+	--print("attempting to purchase")
 
 	if localPlayer:GetResource(CONSTANTS_API.GOLD) >= premiumTanksInfo[button.id].cost then
 		Events.BroadcastToServer("PurchasePremTank", premiumTanksInfo[button.id].id)
@@ -137,7 +137,7 @@ function AcknowledgePurchase(tankId, confirmed)
 			t.armorProgress = CONSTANTS_API.UPGRADE_PROGRESS.PURCHASED
 			t.engineProgress = CONSTANTS_API.UPGRADE_PROGRESS.PURCHASED
 
-			print("Purchase successful")
+			--print("Purchase successful")
 		end
 	end
 	
@@ -246,7 +246,7 @@ function PopulatePremiumTanks()
 	local cost = ""
 	local id = ""
 	
-	print("populating premium tanks")
+	--print("populating premium tanks")
 	
 	for x, t in ipairs(techTreeContents:GetChildren()) do
 		if t:GetCustomProperty("PurchaseCurrencyName") == "Gold" then
@@ -254,10 +254,10 @@ function PopulatePremiumTanks()
 			
 			if team == "Allies" then
 				button = alliesPremiumButton
-				print("Allies button set")
+				--print("Allies button set")
 			elseif team == "Axis" then
 				button = axisPremiumButton
-				print("Axis button set")
+				--print("Axis button set")
 			end
 			
 			--premiumEntry = World.SpawnAsset(premiumTankEntry, {parent = premiumTanks:GetCustomProperty("ScrollPanel"):WaitForObject()})
@@ -289,7 +289,7 @@ function PopulatePremiumTanks()
 		end
 	end
 	
-	print("finished setting up premium tanks")
+	--print("finished setting up premium tanks")
 
 end
 

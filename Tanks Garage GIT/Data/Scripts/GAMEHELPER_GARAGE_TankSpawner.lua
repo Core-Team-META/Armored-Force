@@ -64,14 +64,13 @@ function ChangeEquippedTank(player, id)
 		--print("Player does not have override")
 		local selectedEntry = nil
 		for _, x in pairs(player.serverUserData.techTreeProgress) do
-			if x.id == id then
+			if tonumber(x.id) == tonumber(id) then
 				selectedEntry = x
-				--print("entry found")
+				print("entry found")
 				break
 			end
 		end
 		
-		--print(selectedEntry.purchased)
 		if (not selectedEntry) or (not selectedEntry.purchased) then
 			print("equip failed")
 			return
@@ -89,6 +88,7 @@ function ChangeEquippedTank(player, id)
 	end
 	
 	player:SetPrivateNetworkedData("SelectedTank", tonumber(id))
+	Events.Broadcast("INITIALIZE_SKIN", player)
 end
 
 function OnPlayerRespawned(player)

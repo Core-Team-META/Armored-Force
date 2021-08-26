@@ -90,6 +90,19 @@ function ToggleThisComponent(requestedPlayerState)
 		
 		camoViewUI.isEnabled = true
 		statsContainer.visibility = Visibility.FORCE_OFF
+		
+		while not selectedTank do
+			Task.Wait()
+		end
+		
+		if axisTankNames[selectedTank] then
+			 OnMainButtonClicked(axisButtonComponents.button)
+		else 
+			OnMainButtonClicked(alliesButtonComponents.button)
+		end
+		
+		lockedTank = false
+		
 		RepopulateCamoEntries()
 		enteredMenuBefore = true
 	else
@@ -148,11 +161,19 @@ function AssignPreviewText()
 	end
 	
 	local selectedTankResource = localPlayer:GetResource(CONSTANTS_API.GetEquippedTankResource())
+	
+	while not localPlayer:GetResource(CONSTANTS_API.GetEquippedTankResource()) do
+		selectedTankResource = localPlayer:GetResource(CONSTANTS_API.GetEquippedTankResource())
+		Task.Wait()
+	end
+	
 	selectedTank = tostring(selectedTankResource)
 	
 	if selectedTankResource < 10 then
 		selectedTank = "0" .. selectedTank
 	end
+	
+	print("tank preview shows " .. selectedTank)
 	
 	if not tankEntries[selectedTank] then
 		return
@@ -292,7 +313,6 @@ function InitializeTankButtonInfo()
 		end
 	end
 	
-	PopulateTankEntries("Allies")
 end
 
 function PopulateTankEntries(team)
@@ -622,6 +642,6 @@ end
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
 Events.Connect("DISABLE_ALL_GARAGE_COMPONENTS", DisableThisComponent)
-Events.Connect("RENEW_SKIN_DATA", OnRenewEntries)
+Events.Connect("RENEW_SKIN_DATA", RepopulateCamoEntries)
 
 InitializeComponent()

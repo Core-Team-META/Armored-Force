@@ -314,7 +314,6 @@ Game.playerJoinedEvent:Connect(RetrieveData)
 Game.playerLeftEvent:Connect(DisconnectListener)
 Events.Connect("PREVIEW_SKIN", ApplySkin)
 Events.Connect("INITIALIZE_SKIN", InitializeTankSkin)
-
 Task.Wait(1)
 
 InitializeTankSkin(localPlayer)
