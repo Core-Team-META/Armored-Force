@@ -266,7 +266,10 @@ function Tick(deltaTime)
 		if nameplate and Object.IsValid(player) then
 			-- We calculate visibility every frame to handle when teams change
 			local visible = IsNameplateVisible(player)
-
+			if player.team ~= nameplate.lastTeam then
+				nameplate.lastTeam = player.team
+				nameplate.dirty = true
+			end
 			if not visible then
 				if nameplate.isVisible == true then
 					nameplate.dirty = true
@@ -282,11 +285,6 @@ function Tick(deltaTime)
 				-- due to player:setVisibility, enforce this each tick
 				if nameplate.templateRoot.visibility ~= Visibility.FORCE_ON then
 					nameplate.templateRoot.visibility = Visibility.FORCE_ON
-				end
-
-				if player.team ~= nameplate.lastTeam then
-					nameplate.lastTeam = player.team
-					nameplate.dirty = true
 				end
 
 				RotateNameplate(nameplate)
