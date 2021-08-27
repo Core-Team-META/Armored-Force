@@ -148,7 +148,9 @@ function AIPlayer:ShouldShoot()
   local aimTolerance = math.sin(5 * math.pi/180)
 
   --local tankVector = vehicle:GetWorldRotation() * Vector3.FORWARD
-  local targetVector = (self.currentAttackTarget:GetWorldPosition() - chassis:GetWorldPosition()):GetNormalized()
+  local fullTargetVector = (self.currentAttackTarget:GetWorldPosition() - chassis:GetWorldPosition())
+  if fullTargetVector.size > 30000 then return false end
+  local targetVector = fullTargetVector:GetNormalized()
   local aimVector = muzzle:GetWorldRotation() * Vector3.FORWARD
 
 
