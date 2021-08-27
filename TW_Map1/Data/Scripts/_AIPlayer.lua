@@ -29,10 +29,10 @@ function AIPlayer.New(team)
     listeners = {},
     tickTask = nil,
     tankId = nil,
-    team = 1,
     currentMovementTarget = nil,
     currentAttackTarget = nil,
     lastShotTime = -1,
+    name = "ROBOTANK" .. tostring(nextId - 1),
 
     lastPathUpdateTime = -1,
 
@@ -380,7 +380,29 @@ function AIPlayer:PathRay(targetPos, targetDist, step)
 end
 
 
-
+function AIPlayer:GetReplicatedData()
+  return {
+    health = self.health,
+    maxHealth = self.maxHealth,
+    isDead = false,
+    position = self.position,
+    id = self.id,
+    tankId = self.tankId,
+    team = self.team,
+    name = self.name,
+  }
+end
+ 
+function AIPlayer.ReplicateTankAIData()
+  print("Replicating...")
+  local dataTable = {}
+  for k,v in pairs(AIList) do
+    dataTable[v.id] = v:GetReplicatedData()
+  end
+  for k,p in pairs(Game.GetPlayers()) do
+    p:SetPrivateNetworkedData("AIData", dataTable)
+  end
+end
 
 
 function AIPlayer:AssignToTank(tank)
@@ -483,6 +505,11 @@ function _G.utils.GetTankDrivers(options)
   return results
 end
 
+
+
+local replicateTask = Task.Spawn(AIPlayer.ReplicateTankAIData)
+replicateTask.repeatCount = -1
+replicateTask.repeatInterval = 2
 
 
 
