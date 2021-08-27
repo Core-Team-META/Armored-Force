@@ -117,75 +117,83 @@ end
 function OnPlayerJoined(player)
 	local nameplateRoot = World.SpawnAsset(NAMEPLATE_TEMPLATE)
 
-	nameplates[player] = {}
-	nameplates[player].templateRoot = nameplateRoot
-	nameplates[player].borderPiece = nameplateRoot:GetCustomProperty("BorderPiece"):WaitForObject()
-	nameplates[player].backgroundPiece = nameplateRoot:GetCustomProperty("BackgroundPiece"):WaitForObject()
-	nameplates[player].healthPiece = nameplateRoot:GetCustomProperty("HealthPiece"):WaitForObject()
-	nameplates[player].changePiece = nameplateRoot:GetCustomProperty("ChangePiece"):WaitForObject()
-	nameplates[player].healthText = nameplateRoot:GetCustomProperty("HealthText"):WaitForObject()
-	nameplates[player].nameText = nameplateRoot:GetCustomProperty("NameText"):WaitForObject()
-	nameplates[player].tankText = nameplateRoot:GetCustomProperty("TankText"):WaitForObject()
+	nameplates[player.id] = {}
+	nameplates[player.id].templateRoot = nameplateRoot
+	nameplates[player.id].borderPiece = nameplateRoot:GetCustomProperty("BorderPiece"):WaitForObject()
+	nameplates[player.id].backgroundPiece = nameplateRoot:GetCustomProperty("BackgroundPiece"):WaitForObject()
+	nameplates[player.id].healthPiece = nameplateRoot:GetCustomProperty("HealthPiece"):WaitForObject()
+	nameplates[player.id].changePiece = nameplateRoot:GetCustomProperty("ChangePiece"):WaitForObject()
+	nameplates[player.id].healthText = nameplateRoot:GetCustomProperty("HealthText"):WaitForObject()
+	nameplates[player.id].nameText = nameplateRoot:GetCustomProperty("NameText"):WaitForObject()
+	nameplates[player.id].tankText = nameplateRoot:GetCustomProperty("TankText"):WaitForObject()
 
 	-- For animating changes. Each change clobbers the previous state.
-	nameplates[player].lastHealthFraction = 1.0
-	nameplates[player].lastHealthTime = 0.0
-	nameplates[player].lastFrameHealthFraction = 1.0
+	nameplates[player.id].lastHealthFraction = 1.0
+	nameplates[player.id].lastHealthTime = 0.0
+	nameplates[player.id].lastFrameHealthFraction = 1.0
 
 	-- Setup static properties
-	nameplateRoot:AttachToPlayer(player, "nameplate")
+	if player:IsA("Player") then
+		nameplateRoot:AttachToPlayer(player, "nameplate")
+		nameplateRoot:SetPosition(Vector3.New(0, 0, 400))		
+	else
+		nameplateRoot.parent = player.tank
+		nameplateRoot:SetPosition(Vector3.UP * 800)
+	end
 	nameplateRoot:SetScale(Vector3.New(SCALE, SCALE, SCALE))
-	nameplateRoot:SetPosition(Vector3.New(0, 0, 400))
+
 
 	-- Static properties on pieces
-	nameplates[player].borderPiece:SetScale(
+	nameplates[player.id].borderPiece:SetScale(
 		Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH + 2.0 * BORDER_WIDTH, HEALTHBAR_HEIGHT + 2.0 * BORDER_WIDTH)
 	)
-	nameplates[player].borderPiece:SetPosition(Vector3.New(-4.0 * NAMEPLATE_LAYER_THICKNESS, 0.0, 0.0))
-	nameplates[player].borderPiece:SetColor(BORDER_COLOR)
-	nameplates[player].backgroundPiece:SetScale(Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH, HEALTHBAR_HEIGHT))
-	nameplates[player].backgroundPiece:SetPosition(Vector3.New(-3.0 * NAMEPLATE_LAYER_THICKNESS, 0.0, 0.0))
-	nameplates[player].backgroundPiece:SetColor(BACKGROUND_COLOR)
-	nameplates[player].healthText:SetPosition(Vector3.New(50.0 * NAMEPLATE_LAYER_THICKNESS, 0.0, 0.0)) -- Text must be 50 units ahead as it doesn't have thickness
-	nameplates[player].healthText:SetColor(HEALTH_NUMBER_COLOR)
-	nameplates[player].nameText.text = player.name
+	nameplates[player.id].borderPiece:SetPosition(Vector3.New(-4.0 * NAMEPLATE_LAYER_THICKNESS, 0.0, 0.0))
+	nameplates[player.id].borderPiece:SetColor(BORDER_COLOR)
+	nameplates[player.id].backgroundPiece:SetScale(Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH, HEALTHBAR_HEIGHT))
+	nameplates[player.id].backgroundPiece:SetPosition(Vector3.New(-3.0 * NAMEPLATE_LAYER_THICKNESS, 0.0, 0.0))
+	nameplates[player.id].backgroundPiece:SetColor(BACKGROUND_COLOR)
+	nameplates[player.id].healthText:SetPosition(Vector3.New(50.0 * NAMEPLATE_LAYER_THICKNESS, 0.0, 0.0)) -- Text must be 50 units ahead as it doesn't have thickness
+	nameplates[player.id].healthText:SetColor(HEALTH_NUMBER_COLOR)
+	nameplates[player.id].nameText.text = player.name
 	
 	if player.clientUserData.currentTankData and player.clientUserData.currentTankData.name and player.clientUserData.currentTankData.teir then
-		nameplates[player].tankText.text = player.clientUserData.currentTankData.name .. " [" .. tostring(player.clientUserData.currentTankData.teir) .. "]"
+		nameplates[player.id].tankText.text = player.clientUserData.currentTankData.name .. " [" .. tostring(player.clientUserData.currentTankData.teir) .. "]"
+	else
+		nameplates[player.id].tankText.isEnabled = false
 	end
 
-	nameplates[player].borderPiece.visibility = Visibility.FORCE_OFF
-	nameplates[player].backgroundPiece.visibility = Visibility.FORCE_OFF
-	nameplates[player].healthPiece.visibility = Visibility.FORCE_OFF
-	nameplates[player].changePiece.visibility = Visibility.FORCE_OFF
-	nameplates[player].healthText.visibility = Visibility.FORCE_OFF
-	nameplates[player].nameText.visibility = Visibility.FORCE_OFF
+	nameplates[player.id].borderPiece.visibility = Visibility.FORCE_OFF
+	nameplates[player.id].backgroundPiece.visibility = Visibility.FORCE_OFF
+	nameplates[player.id].healthPiece.visibility = Visibility.FORCE_OFF
+	nameplates[player.id].changePiece.visibility = Visibility.FORCE_OFF
+	nameplates[player.id].healthText.visibility = Visibility.FORCE_OFF
+	nameplates[player.id].nameText.visibility = Visibility.FORCE_OFF
 
-	nameplates[player].isVisible = false
-	nameplates[player].changeFraction = 0
-	nameplates[player].dirty = true
-	nameplates[player].lastTeam = player.team
+	nameplates[player.id].isVisible = false
+	nameplates[player.id].changeFraction = 0
+	nameplates[player.id].dirty = true
+	nameplates[player.id].lastTeam = player.team
 
 	if SHOW_HEALTHBARS then
-		nameplates[player].borderPiece.visibility = Visibility.INHERIT
-		nameplates[player].backgroundPiece.visibility = Visibility.INHERIT
-		nameplates[player].healthPiece.visibility = Visibility.INHERIT
+		nameplates[player.id].borderPiece.visibility = Visibility.INHERIT
+		nameplates[player.id].backgroundPiece.visibility = Visibility.INHERIT
+		nameplates[player.id].healthPiece.visibility = Visibility.INHERIT
 
 		if ANIMATE_CHANGES then
-			nameplates[player].changePiece.visibility = Visibility.INHERIT
+			nameplates[player.id].changePiece.visibility = Visibility.INHERIT
 		end
 
 		if SHOW_NUMBERS then
-			nameplates[player].healthText.visibility = Visibility.INHERIT
+			nameplates[player.id].healthText.visibility = Visibility.INHERIT
 		end
 	end
 
 	if SHOW_NAMES then
-		nameplates[player].nameText.visibility = Visibility.INHERIT
+		nameplates[player.id].nameText.visibility = Visibility.INHERIT
 	end
 
 	if SHOW_SEGMENTS then
-		nameplates[player].segmentSeparators = {}
+		nameplates[player.id].segmentSeparators = {}
 	end
 end
 
@@ -193,13 +201,13 @@ end
 -- Destroy their nameplate
 function OnPlayerLeft(player)
 	if SHOW_SEGMENTS then
-		for _, segmentSeparator in pairs(nameplates[player].segmentSeparators) do
+		for _, segmentSeparator in pairs(nameplates[player.id].segmentSeparators) do
 			segmentSeparator:Destroy()
 		end
 	end
 
-	nameplates[player].templateRoot:Destroy()
-	nameplates[player] = nil
+	nameplates[player.id].templateRoot:Destroy()
+	nameplates[player.id] = nil
 end
 
 -- bool IsNameplateVisible(Player)
@@ -217,16 +225,23 @@ function IsNameplateVisible(player)
 	end
 
 	-- 0 distance is special, and means we always display them
+	local playerPos = nil
+	if player:IsA("Player") then
+		playerPos = player:GetWorldPosition()
+	elseif Object.IsValid(player.tank) then
+		playerPos = player.tank:GetWorldPosition()
+	end
+
 	if player == GetViewedPlayer() or Teams.AreTeamsFriendly(player.team, GetViewedPlayer().team) then
 		if SHOW_ON_TEAMMATES then
-			local distance = (player:GetWorldPosition() - GetViewedPlayer():GetWorldPosition()).size
+			local distance = (playerPos - GetViewedPlayer():GetWorldPosition()).size
 			if MAX_DISTANCE_ON_TEAMMATES == 0.0 or distance <= MAX_DISTANCE_ON_TEAMMATES then
 				return true
 			end
 		end
 	else
 		if CheckSpotting(GetViewedPlayer()) then
-			local distance = (player:GetWorldPosition() - GetViewedPlayer():GetWorldPosition()).size
+			local distance = (playerPos - GetViewedPlayer():GetWorldPosition()).size
 			if MAX_DISTANCE_ON_ENEMIES == 0.0 or distance <= MAX_DISTANCE_ON_ENEMIES then
 				return true
 			end
@@ -254,10 +269,27 @@ end
 -- nil Tick(float)
 -- Update dynamic properties (ex. team, health, and health animation) of every nameplate
 function Tick(deltaTime)
-	for _, player in ipairs(Game.GetPlayers()) do
-		local nameplate = nameplates[player]
+	local tankList = Game.GetPlayers()
+	if _G.lookup and _G.lookup.tanks then
+		for k,v in pairs(_G.lookup.tanks) do
+			--print(".....", v.name)
+			table.insert(tankList, v)
+		end
 
-		if nameplate and Object.IsValid(player) then
+	else
+		--print("No AI drivers...", _G.lookup)
+	end
+
+	--for _, player in ipairs(Game.GetPlayers()) do
+	for _, player in pairs(tankList) do
+		local nameplate = nameplates[player.id]
+		if nameplate == nil and not player:IsA("Player") then
+			print("Creating a nameplate for an AI player!")
+			OnPlayerJoined(player)
+			nameplate = nameplates[player.id]
+		end
+
+		if nameplate and (player:IsA("AIPlayer") or Object.IsValid(player)) then
 			-- We calculate visibility every frame to handle when teams change
 			local visible = IsNameplateVisible(player)
 
@@ -287,6 +319,8 @@ function Tick(deltaTime)
 							
 				if player.clientUserData.currentTankData and player.clientUserData.currentTankData.name and player.clientUserData.currentTankData.teir then
 					nameplate.tankText.text = player.clientUserData.currentTankData.name .. " [T" .. tostring(player.clientUserData.currentTankData.teir) .. "]"
+				else
+					nameplates[player.id].tankText.isEnabled = false
 				end
 
 				if SHOW_HEALTHBARS then

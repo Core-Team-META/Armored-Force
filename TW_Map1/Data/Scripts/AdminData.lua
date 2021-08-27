@@ -20,6 +20,7 @@ Rank = {
     estlogic        = AdminRanks.HigherAdmin,
     Datonare        = AdminRanks.HigherAdmin,
     Jarsa           = AdminRanks.HigherAdmin, 
+    Chris           = AdminRanks.HigherAdmin,
 
     standardcombo   = AdminRanks.Admin ,
     blaking707      = AdminRanks.Admin ,
