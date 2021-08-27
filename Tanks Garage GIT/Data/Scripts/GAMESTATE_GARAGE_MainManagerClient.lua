@@ -39,6 +39,8 @@ function OnServerStateChange(serverManager, property)
 		isInGarage = false
 		mainHUD.visibility = Visibility.FORCE_OFF
 	end	
+	
+	localPlayer.clientUserData.isInGarage = isInGarage
 
 end
 
