@@ -1775,7 +1775,7 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxScore"
-            Int: 49
+            Int: 599
           }
           Overrides {
             Name: "cs:Icon"
@@ -1828,11 +1828,11 @@ Assets {
           }
           Overrides {
             Name: "cs:MinScore"
-            Int: 50
+            Int: 600
           }
           Overrides {
             Name: "cs:MaxScore"
-            Int: 99
+            Int: 3999
           }
           Overrides {
             Name: "cs:Icon"
@@ -1885,11 +1885,11 @@ Assets {
           }
           Overrides {
             Name: "cs:MinScore"
-            Int: 100
+            Int: 4000
           }
           Overrides {
             Name: "cs:MaxScore"
-            Int: 199
+            Int: 9999
           }
           Overrides {
             Name: "cs:Icon"
@@ -1942,7 +1942,7 @@ Assets {
           }
           Overrides {
             Name: "cs:MinScore"
-            Int: 200
+            Int: 10000
           }
           Overrides {
             Name: "cs:MaxScore"
