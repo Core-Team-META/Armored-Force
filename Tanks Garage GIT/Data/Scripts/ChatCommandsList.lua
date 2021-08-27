@@ -48,7 +48,7 @@ commands = {
         adminRank = AdminData.AdminRanks.Admin
     },
 
-    ["/xp"] = {
+    ["/parts"] = {
         OnCommandCalledClient = function (player, message)
         
             local resourceFound = nil
@@ -66,7 +66,7 @@ commands = {
         				
         			elseif resourceFound then
         				
-        				Chat.LocalMessage("Setting T_" .. resourceFound .. "XP resource to " .. tostring(number))
+        				Chat.LocalMessage("Setting T_" .. resourceFound .. "tank parts resource to " .. tostring(number))
         				
         				return
         			end
@@ -77,7 +77,7 @@ commands = {
         	
         	
         	
-        	Chat.LocalMessage("ERROR: command does not contain a tankID or valid resource amount. Format: /xp <tankID> <RPvalue>")
+        	Chat.LocalMessage("ERROR: command does not contain a tankID or valid resource amount. Format: /parts <tankID> <tankPartsValue>")
         end,
         OnCommandCalledServer = function (player, message)
         
@@ -106,7 +106,47 @@ commands = {
         end,
         OnCommandReceivedClient = function (player, message)
         end,
-        description = "Set the XP resource of a tank. Format: /xp <tankID> <RPvalue>",
+        description = "Set the XP resource of a tank. Format: /tp <tankID> <tankPartsValue>",
+        requireMessage = false,
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.HigherAdmin
+    },
+    
+    ["/uparts"] = {
+        OnCommandCalledClient = function (player, message)
+        	
+        	for section in (message.." "):gmatch("(.-) ") do
+
+        		if tonumber(section) then
+        		
+        			Chat.LocalMessage("Setting Universal Parts resource to " .. section)
+        			
+        			return
+        			
+        		end
+        	
+        	end
+
+        	Chat.LocalMessage("ERROR: command does not contain a valid resource amount. Format: /uparts <universalPartsValue>")
+        end,
+        OnCommandCalledServer = function (player, message)
+        	
+        	for section in (message.." "):gmatch("(.-) ") do
+
+        		if tonumber(section) then
+        		
+        			player:SetResource("Free XP", tonumber(section))
+        			
+        			return
+        			
+        		end
+        	
+        	end
+        	
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "Set the Silver resource of the player. Format: /uparts <universalPartsValue>",
         requireMessage = false,
         adminOnly = true,
         adminRank = AdminData.AdminRanks.HigherAdmin
@@ -127,7 +167,7 @@ commands = {
         	
         	end
 
-        	Chat.LocalMessage("ERROR: command does not contain a valid resource amount. Format: /sl <SilverValue>")
+        	Chat.LocalMessage("ERROR: command does not contain a valid resource amount. Format: /sl <silverValue>")
         end,
         OnCommandCalledServer = function (player, message)
         	
@@ -146,7 +186,47 @@ commands = {
         end,
         OnCommandReceivedClient = function (player, message)
         end,
-        description = "Set the Silver resource of the player. Format: /sl <SilverValue>",
+        description = "Set the Silver resource of the player. Format: /sl <silverValue>",
+        requireMessage = false,
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.HigherAdmin
+    },
+    
+    ["/gold"] = {
+        OnCommandCalledClient = function (player, message)
+        	
+        	for section in (message.." "):gmatch("(.-) ") do
+
+        		if tonumber(section) then
+        		
+        			Chat.LocalMessage("Setting Gold resource to " .. section)
+        			
+        			return
+        			
+        		end
+        	
+        	end
+
+        	Chat.LocalMessage("ERROR: command does not contain a valid resource amount. Format: /gold <GoldValue>")
+        end,
+        OnCommandCalledServer = function (player, message)
+        	
+        	for section in (message.." "):gmatch("(.-) ") do
+
+        		if tonumber(section) then
+        		
+        			player:SetResource("Gold", tonumber(section))
+        			
+        			return
+        			
+        		end
+        	
+        	end
+        	
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "Set the Silver resource of the player. Format: /gold <GoldValue>",
         requireMessage = false,
         adminOnly = true,
         adminRank = AdminData.AdminRanks.HigherAdmin
