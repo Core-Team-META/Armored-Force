@@ -161,6 +161,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4893467904009059928
+  Name: "Plane 1m - One Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_001"
+  }
+}
+Assets {
   Id: 4841957848731423236
   Name: "Rock Flat 01"
   PlatformAssetType: 1
