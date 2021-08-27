@@ -6,20 +6,27 @@
 --]]
 local buttons = {}
 local thisPlayer = Game.GetLocalPlayer()
+local curMenu = "DEFAULT_MENU"
+
+
 
 for k,v in pairs(script:GetCustomProperties()) do
     buttons[k] = v:WaitForObject()
 end
 
 local function onEscape(player,params)
-    print(thisPlayer.clientUserData.isInGarage )
-    if thisPlayer.clientUserData.isInGarage then
+    if curMenu == "DEFAULT_MENU" then
+        return 
+    elseif thisPlayer.clientUserData.isInGarage then
         params.openPauseMenu = false
         Events.Broadcast("RTM",true)
         return
     end
 end
 
+local function OnEnableGarageComponent(menu)
+    curMenu = menu
+end
 function OnButtonPressed(button)
     --Events.Broadcast("ENABLE_GARAGE_COMPONENT", "DEFAULT_MENU")
     Events.Broadcast("RTM",false)
@@ -32,3 +39,4 @@ for k,v in pairs(buttons) do
 end
 
 Input.escapeHook:Connect(onEscape)
+Events.Connect("ENABLE_GARAGE_COMPONENT",OnEnableGarageComponent)
