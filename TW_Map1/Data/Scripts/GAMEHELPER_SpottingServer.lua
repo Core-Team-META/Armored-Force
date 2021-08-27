@@ -67,9 +67,11 @@ function AddToList(player)
 				end
 				player:AddResource(Constants_API.XP, modifiedXP)
 				-- Add RP to tank
-				player:AddResource(UTIL_API.GetTankRPString(player:GetResource(Constants_API.GetEquippedTankResource())), modifiedXP)
-				Events.BroadcastToPlayer(player, "GainXP", {reason = Constants_API.XP_GAIN_REASON.SPOTTED_ENEMY, amount = modifiedXP, premium = UTIL_API.UsingPremiumTank(tonumber(tankId))})
-				Events.Broadcast("PlayerSpotted", player, modifiedXP)
+				if player:IsA("Player") then
+					player:AddResource(UTIL_API.GetTankRPString(player:GetResource(Constants_API.GetEquippedTankResource())), modifiedXP)
+					Events.BroadcastToPlayer(player, "GainXP", {reason = Constants_API.XP_GAIN_REASON.SPOTTED_ENEMY, amount = modifiedXP, premium = UTIL_API.UsingPremiumTank(tonumber(tankId))})
+					Events.Broadcast("PlayerSpotted", player, modifiedXP)
+				end
 				table.insert(spottedPlayerList, player.id)
 			end
 			
@@ -114,37 +116,45 @@ end
 function SetViewPoint(player)
 
 	if Object.IsValid(viewPointList[player.id]) then
+		--print("return 1", player.id)
 		return
 	end
 	
 	if not player.serverUserData.currentTankData or not Object.IsValid(player.serverUserData.currentTankData.hitbox) then
+		--print("return 2", player.id)
 		return
 	end
 	
 	viewPointList[player.id] = player.serverUserData.currentTankData.hitbox:FindDescendantByName("ViewPoint")
 	viewRangeList[player.id] = tonumber(player.serverUserData.currentTankData.viewRange) or viewRange
 	
-	--print(player.name .. " viewpoint set")
+	print(player.name .. " viewpoint set")
+	print(viewRangeList[player.id])
 	
 end
 
 function CheckForSpotting()
 
-	local playerList = Game.GetPlayers()
-	
 	if gameStateManager:GetCustomProperty("GameState") ~= "MATCH_STATE" then
 		return
 	end
 	
+	--local playerList = Game.GetPlayers()
+	local playerList = _G.utils.GetTankDrivers()
+
 	for x, p in pairs(playerList) do
+		--print("Checking ", p.id)
 		SetViewPoint(p)
-	
-		local otherPlayerList = Game.GetPlayers({ignoreDead = true, ignorePlayers = p, ignoreTeams = p.team})
-		
+
+		--local otherPlayerList = Game.GetPlayers({ignoreDead = true, ignorePlayers = p, ignoreTeams = p.team})
+		local otherPlayerList = _G.utils.GetTankDrivers({ignoreDead = true, ignorePlayers = p, ignoreTeams = p.team})
+
 		for x2, p2 in pairs(otherPlayerList) do
 			SetViewPoint(p2)
+			--print("--Checking", p.id, p2.id)
+			print(Object.IsValid(viewPointList[p.id]), Object.IsValid(viewPointList[p2.id]))
 			if Object.IsValid(viewPointList[p.id]) and Object.IsValid(viewPointList[p2.id]) then	
-				if (viewPointList[p.id]:GetWorldPosition() - viewPointList[p2.id]:GetWorldPosition()).size <= viewRangeList[p2.id] then					
+				if (viewPointList[p.id]:GetWorldPosition() - viewPointList[p2.id]:GetWorldPosition()).size <= viewRangeList[p2.id] then
 					local raycastResult = World.Raycast(viewPointList[p2.id]:GetWorldPosition(), viewPointList[p.id]:GetWorldPosition(), {ignoreTeams = p.team})
 					if raycastResult then
 						if raycastResult.other:FindAncestorByType("Vehicle") then

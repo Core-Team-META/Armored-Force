@@ -166,8 +166,6 @@ function CheckPlayerCountTask()
 	local count1 = _G.utils.GetTankDrivers({includeTeams = 1, ignoreDead = true})
 	local count2 = _G.utils.GetTankDrivers({includeTeams = 2, ignoreDead = true})
 
-	print("team counts:", #count, #count1, #count2)
-	
 	if #count1 > #count2 then
 		leadTeam = 1
 	elseif #count2 > #count1 then
