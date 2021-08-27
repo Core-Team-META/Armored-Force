@@ -47,7 +47,7 @@ function Tick()
 end
 
 function Init()
-	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) < API_Tutorial.TutorialPhase.Upgrade) then
+	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) < API_Tutorial.TutorialPhase.Upgrade and not inShootingRange) then
 		Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_ON
 	else
 		Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_OFF
