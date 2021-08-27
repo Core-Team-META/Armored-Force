@@ -34,27 +34,33 @@ function InitializeTankSkin(player)
 	if not player.clientUserData.camoData then
 		RetrieveData(player)
 	end
-	
+			
 	local camoTable = player.clientUserData.camoData
 	local vehicle = nil
 	local selectedTank = nil
 	local selectedSkin = "00"
-
+	
 	if player.clientUserData.currentTankData then
-		selectedTank = player.clientUserData.currentTankData.id 
+		selectedTank = player.clientUserData.currentTankData.id
 		--print("initializing with current tank id")
-	elseif player.clientUserData.garageModel then
+	end
+	
+	if Game.GetCurrentSceneName() == "Main" then
+		while not player.clientUserData.garageModel do
+			Task.Wait()
+		end
+	end
+	
+	if player.clientUserData.garageModel then
 		selectedTank = player.clientUserData.garageModel.id
 		--print("initializing with garage tank id")
 	end
-	
-	if camoTable and camoTable[selectedTank] then
-		--print("searching for skin")
-		for sid, s in pairs(camoTable[selectedTank]) do
-			if s.equipped then
-				selectedSkin = sid
-				break
-			end
+		
+	print("searching for skin")
+	for sid, s in pairs(camoTable[selectedTank]) do
+		if s.equipped then
+			selectedSkin = sid
+			break
 		end
 	end	
 			
@@ -144,7 +150,9 @@ function OnSkinDataChange(object, property)
 	
 	InitializeTankSkin(player)
 	
-	Events.Broadcast("RENEW_SKIN_DATA")
+	if player == localPlayer then
+		Events.Broadcast("RENEW_SKIN_DATA")
+	end
 
 end
 
