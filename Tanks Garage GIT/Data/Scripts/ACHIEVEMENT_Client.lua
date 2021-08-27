@@ -263,10 +263,14 @@ function OnClaimButtonPressed(button)
 
         for i, reward in ipairs(achievement.rewards) do
             local rewardAmount = reward:GetCustomProperty("Amount")
+            local rewardName = reward.name
+            if rewardName == "Xp" then
+                rewardName = "Universal Parts"
+            end
             if str ~= "You earned " then
-                str = str .. " " .. tostring(rewardAmount) .. " " .. reward.name
+                str = str .. " " .. tostring(rewardAmount) .. " " .. rewardName
             else
-                str = str .. tostring(rewardAmount) .. " " .. reward.name
+                str = str .. tostring(rewardAmount) .. " " .. rewardName
             end
             if i < #achievement.rewards then
                 str = str .. " and "

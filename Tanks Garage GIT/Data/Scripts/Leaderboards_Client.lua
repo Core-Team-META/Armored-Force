@@ -22,11 +22,13 @@ local LEADERBOARDS_ENTRY = script:GetCustomProperty("LEADERBOARDS_ENTRY")
 
 local NETWORKED = script:GetCustomProperty("Leaderboards_Networked"):WaitForObject()
 
-local MTD_LEADERBOARD = script:GetCustomProperty("MatchDestroyed")
-local MDD_LEADERBOARD = script:GetCustomProperty("MatchDamage")
-local LTTD_LEADERBOARD = script:GetCustomProperty("TotalDestroyed")
-local LTDD_LEADERBOARD = script:GetCustomProperty("TotalDamage")
-local LTWR_LEADERBOARD = script:GetCustomProperty("TotalWinRate")
+
+local LEADBOARDS = script:GetCustomProperty("Leaderboards"):WaitForObject()
+local MTD_LEADERBOARD = LEADBOARDS:GetCustomProperty("MatchDestroyed")
+local MDD_LEADERBOARD = LEADBOARDS:GetCustomProperty("MatchDamage")
+local LTTD_LEADERBOARD = LEADBOARDS:GetCustomProperty("TotalDestroyed")
+local LTDD_LEADERBOARD = LEADBOARDS:GetCustomProperty("TotalDamage")
+local LTWR_LEADERBOARD = LEADBOARDS:GetCustomProperty("TotalWinRate")
 
 --#TODO not able to scale, should have this all on custom properties.
 local leaderBoards = {
