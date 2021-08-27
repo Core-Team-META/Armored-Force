@@ -41,7 +41,6 @@ function OnServerStateChange(serverManager, property)
 	end	
 	
 	localPlayer.clientUserData.isInGarage = isInGarage
-
 end
 
 function Tick()
@@ -68,3 +67,11 @@ UI.SetCursorVisible(true)
 UI.SetCanCursorInteractWithUI(true)
 
 mainManagerServer.networkedPropertyChangedEvent:Connect(OnServerStateChange)
+
+while not Object.IsValid(mainManagerServer) do
+	Task.Wait()
+end
+
+for k , v in pairs(mainManagerServer:GetCustomProperties()) do
+	OnServerStateChange(mainManagerServer,k)
+end

@@ -5,15 +5,24 @@
     the button SHOULD function as a close button
 --]]
 local buttons = {}
+local thisPlayer = Game.GetLocalPlayer()
 
 for k,v in pairs(script:GetCustomProperties()) do
     buttons[k] = v:WaitForObject()
 end
 
+local function onEscape(player,params)
+    print(thisPlayer.clientUserData.isInGarage )
+    if thisPlayer.clientUserData.isInGarage then
+        params.openPauseMenu = false
+        Events.Broadcast("RTM",true)
+        return
+    end
+end
 
 function OnButtonPressed(button)
     --Events.Broadcast("ENABLE_GARAGE_COMPONENT", "DEFAULT_MENU")
-    Events.Broadcast("RTM")
+    Events.Broadcast("RTM",false)
 end
 
 for k,v in pairs(buttons) do
@@ -21,3 +30,5 @@ for k,v in pairs(buttons) do
         v.pressedEvent:Connect(OnButtonPressed)
     end
 end
+
+Input.escapeHook:Connect(onEscape)
