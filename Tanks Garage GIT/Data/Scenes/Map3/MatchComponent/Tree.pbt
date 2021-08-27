@@ -8451,6 +8451,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -10387,6 +10388,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     StaticMesh {
       Physics {
         Mass: 100
