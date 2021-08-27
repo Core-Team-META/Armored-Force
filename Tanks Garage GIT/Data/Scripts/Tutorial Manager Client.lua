@@ -20,6 +20,7 @@ local Tutorial_JoinBattlePanel = script:GetCustomProperty("Tutorial_JoinBattlePa
 local Tutorial_OptOutPanel = script:GetCustomProperty("Tutorial_OptOutPanel"):WaitForObject()
 local Close = script:GetCustomProperty("Close"):WaitForObject()
 local Tutorial_UpgradeTankPanel = script:GetCustomProperty("Tutorial_UpgradeTankPanel"):WaitForObject()
+local CloseUpgradeTutorial = script:GetCustomProperty("CloseUpgradeTutorial"):WaitForObject()
 
 local EnemyTargetPracticeAI = script:GetCustomProperty("EnemyTargetPracticeAI"):WaitForObject()
 
@@ -50,6 +51,12 @@ function Init()
 		Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_ON
 	else
 		Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_OFF
+	end
+	-- Show panel to upgrade tank
+	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.Upgrade and not inShootingRange) then
+		Tutorial_UpgradeTankPanel.visibility = Visibility.FORCE_ON
+	else
+		Tutorial_UpgradeTankPanel.visibility = Visibility.FORCE_OFF
 	end
 end
 
@@ -170,11 +177,6 @@ function ToggleTutorialState()
 	if(tutorialProgress >= API_Tutorial.TutorialPhase.JoinBattle and inShootingRange) then
 		JoinBattle.visibility = Visibility.FORCE_ON
 	end
-
-	-- Show panel to upgrade tank
-	if(tutorialProgress == API_Tutorial.TutorialPhase.Upgrade and not inShootingRange) then
-		Tutorial_UpgradeTankPanel.visibility = Visibility.FORCE_ON
-	end
 	
 	-- Show opt out panel
 	if(tutorialProgress < API_Tutorial.TutorialPhase.Completed and inShootingRange) then
@@ -194,12 +196,27 @@ function CloseTutorialPopup()
 	Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_OFF
 end
 
+function CloseUpgradeTutorialPopup()
+	SFX_CLICK:Play()
+	Tutorial_UpgradeTankPanel.visibility = Visibility.FORCE_OFF
+end
+
+function OnResourceChanged(player, resource, value)
+	if resource == API_Tutorial.GetTutorialResource() then
+		Init()
+	end
+end
+
 Events.Connect("ENABLE_GARAGE_COMPONENT", EnableComponent)
 
+LOCAL_PLAYER.resourceChangedEvent:Connect(OnResourceChanged)
 LOCAL_PLAYER.bindingPressedEvent:Connect(BindingPressed)
 Close.clickedEvent:Connect(CloseTutorialPopup)
 Close.hoveredEvent:Connect(HoverSound)
 Close.hoveredEvent:Connect(UnhoverSound)
+CloseUpgradeTutorial.clickedEvent:Connect(CloseUpgradeTutorialPopup)
+CloseUpgradeTutorial.hoveredEvent:Connect(HoverSound)
+CloseUpgradeTutorial.hoveredEvent:Connect(UnhoverSound)
 
 Tutorial_ShootingRangeButton.clickedEvent:Connect(GotoShootingRange)
 Tutorial_ShootingRangeButton.releasedEvent:Connect(ButtonRelease)
