@@ -1064,6 +1064,7 @@ function PopulateTankUpgradeModal(type)
 		UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName("PRICE_SILVER_INVALID").visibility = Visibility.FORCE_OFF
 		UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName("PRICE_SILVER_VALID").visibility = Visibility.FORCE_ON
 	end
+	UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName("PRICE_SILVER").text = tostring(purchaseCost)
 
 	local tankParts = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(id)))
 	if (tankParts < researchCost) then
@@ -1073,6 +1074,7 @@ function PopulateTankUpgradeModal(type)
 		UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName("PRICE_TANKPARTS_INVALID").visibility = Visibility.FORCE_OFF
 		UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName("PRICE_TANKPARTS_VALID").visibility = Visibility.FORCE_ON
 	end
+	UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName("PRICE_TANKPARTS").text = tostring(researchCost)
 end
 
 function CloseUpgradeConfirmWindow()
@@ -1128,6 +1130,7 @@ function UpgradeWeapon()
 end
 
 function HoverWeapon()
+	ButtonHover()
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_4_LVLUP").visibility = Visibility.FORCE_ON
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_5_LVLUP").visibility = Visibility.FORCE_ON
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_6_LVLUP").visibility = Visibility.FORCE_ON
@@ -1174,6 +1177,7 @@ function UpgradeArmor()
 end
 
 function HoverArmor()
+	ButtonHover()
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_1_LVLUP").visibility = Visibility.FORCE_ON
 end
 
@@ -1220,6 +1224,7 @@ function UpgradeEngine()
 end
 
 function HoverEngine()
+	ButtonHover()
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_8_LVLUP").visibility = Visibility.FORCE_ON
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_9_LVLUP").visibility = Visibility.FORCE_ON
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_10_LVLUP").visibility = Visibility.FORCE_ON
@@ -1847,9 +1852,10 @@ function EquipTank()
 end
 
 function CheckForTutorialCompletion()
-	if LOCAL_PLAYER.clientUserData.tutorial6 == 1 then
+	if LOCAL_PLAYER.clientUserData.tutorial6 <= 1 then
 		LOCAL_PLAYER.clientUserData.tutorial6 = 2
 		local panel = World.SpawnAsset(TutorialStepComplete, {parent = UPGRADE_TANK_CONTAINER:FindAncestorByName("MAIN_UI")})
+		panel.lifeSpan = 4
 		Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.RepairTank, true)
 	end
 end

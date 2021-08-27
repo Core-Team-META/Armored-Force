@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14672083327800524015
+        ParentId: 15186286892296639228
         ChildIds: 16644123923983727863
         ChildIds: 10867358550393814161
         ChildIds: 17706704176169265065
@@ -626,6 +626,7 @@ Assets {
           }
         }
         ParentId: 13900603611236620789
+        ChildIds: 10051016480427742679
         ChildIds: 3476777233784066855
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -650,7 +651,7 @@ Assets {
           }
           UseParentWidth: true
           Text {
-            Label: "Obtained 5,000         "
+            Label: "Obtained         5,000         "
             Color {
               R: 0.423267752
               G: 0.423267752
@@ -673,6 +674,73 @@ Assets {
             }
             ShadowOffset {
               Y: 1
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 10051016480427742679
+        Name: "ICON_MONEY_GLOW"
+        Transform {
+          Location {
+            X: 0.00364249013
+            Y: -0.00203391677
+          }
+          Rotation {
+            Yaw: -2.39056571e-05
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8381836577386706256
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 46
+          Height: 46
+          UIX: -2
+          UIY: 3
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 13257658630242510450
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.363
+            }
+            TeamSettings {
             }
           }
           AnchorLayout {
@@ -722,8 +790,7 @@ Assets {
         Control {
           Width: 30
           Height: 200
-          UIX: 63
-          UIY: 3
+          UIX: -2
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -732,7 +799,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 11646227894815174831
+              Id: 6262982467505051120
             }
             Color {
               R: 1
@@ -844,7 +911,7 @@ Assets {
           }
           UseParentWidth: true
           Text {
-            Label: "Obtained 5,000         "
+            Label: "Obtained         5,000         "
             Color {
               R: 0.423267752
               G: 0.423267752
@@ -902,7 +969,7 @@ Assets {
           }
         }
         ParentId: 14076899099665142713
-        ChildIds: 4576980572267196980
+        ChildIds: 13952864829952001517
         ChildIds: 17259484914141262446
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -919,7 +986,7 @@ Assets {
         Control {
           Width: 30
           Height: 30
-          UIX: 63
+          UIX: -2
           UIY: 3
           RenderTransformPivot {
             Anchor {
@@ -951,12 +1018,16 @@ Assets {
         }
       }
       Objects {
-        Id: 4576980572267196980
-        Name: "ICON_RP"
+        Id: 13952864829952001517
+        Name: "ICON_MONEY_GLOW"
         Transform {
           Location {
+            X: 1849.99963
+            Y: 8750
+            Z: 850
           }
           Rotation {
+            Yaw: -45.0000038
           }
           Scale {
             X: 1
@@ -978,9 +1049,9 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 30
-          Height: 30
-          UIY: -3.22558594
+          Width: 46
+          Height: 46
+          UIY: -4
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -988,13 +1059,13 @@ Assets {
           }
           Image {
             Brush {
-              Id: 8581935008439073870
+              Id: 13257658630242510450
             }
             Color {
-              R: 0.0998987257
-              G: 0.323143244
-              B: 0.533276618
-              A: 1
+              R: 1
+              G: 1
+              B: 1
+              A: 0.363
             }
             TeamSettings {
             }
@@ -1002,12 +1073,12 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topright"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topright"
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }
@@ -1051,13 +1122,13 @@ Assets {
           }
           Image {
             Brush {
-              Id: 8581935008439073870
+              Id: 15087097116682079611
             }
             Color {
               R: 1
               G: 1
               B: 1
-              A: 0.295000017
+              A: 1
             }
             TeamSettings {
             }
@@ -1094,6 +1165,7 @@ Assets {
           }
         }
         ParentId: 13900603611236620789
+        ChildIds: 195638818981137879
         ChildIds: 4833391985102794605
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1110,6 +1182,7 @@ Assets {
         Control {
           Width: 200
           Height: 30
+          UIX: -10
           UIY: 50.0376587
           RenderTransformPivot {
             Anchor {
@@ -1118,7 +1191,7 @@ Assets {
           }
           UseParentWidth: true
           Text {
-            Label: "Obtained 100    "
+            Label: "Obtained         100    "
             Color {
               R: 0.423267752
               G: 0.423267752
@@ -1141,6 +1214,73 @@ Assets {
             }
             ShadowOffset {
               Y: 1
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 195638818981137879
+        Name: "ICON_MONEY_GLOW"
+        Transform {
+          Location {
+            X: 0.0035389855
+            Y: -0.00198528706
+          }
+          Rotation {
+            Yaw: -3.39326689e-05
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17363240402673751362
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 46
+          Height: 46
+          UIX: 15
+          UIY: 3
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 13257658630242510450
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.363
+            }
+            TeamSettings {
             }
           }
           AnchorLayout {
@@ -1189,7 +1329,7 @@ Assets {
         Control {
           Width: 30
           Height: 200
-          UIX: 63
+          UIX: 15
           UIY: 3
           RenderTransformPivot {
             Anchor {
@@ -1891,12 +2031,21 @@ Assets {
       }
     }
     Assets {
-      Id: 11646227894815174831
-      Name: "Fantasy Coins 003"
+      Id: 13257658630242510450
+      Name: "UI Gradient Circular 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Equip_Coins_003"
+        AssetId: "UI_Basic_Shape_001"
+      }
+    }
+    Assets {
+      Id: 6262982467505051120
+      Name: "Fantasy Craft Bar 002"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Crafting_Bar_002"
       }
     }
     Assets {
@@ -1915,6 +2064,15 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "Icon_DNA"
+      }
+    }
+    Assets {
+      Id: 15087097116682079611
+      Name: "Sci-fi Container 002"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_SciFi_Equip_Container_002"
       }
     }
     Assets {
@@ -1942,15 +2100,6 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "BackgroundHighlighted_020"
-      }
-    }
-    Assets {
-      Id: 13257658630242510450
-      Name: "UI Gradient Circular 001"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Basic_Shape_001"
       }
     }
     Assets {

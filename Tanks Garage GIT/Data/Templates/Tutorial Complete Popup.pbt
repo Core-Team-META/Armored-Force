@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14672083327800524015
+        ParentId: 15186286892296639228
         ChildIds: 18197007625080607849
         ChildIds: 13705031129175395400
         ChildIds: 2780322315766057072
@@ -623,6 +623,7 @@ Assets {
           }
         }
         ParentId: 13900603611236620789
+        ChildIds: 757710499997091334
         ChildIds: 3476777233784066855
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -647,7 +648,7 @@ Assets {
           }
           UseParentWidth: true
           Text {
-            Label: "Obtained 1,000         "
+            Label: "Obtained           1,000         "
             Color {
               R: 0.423267752
               G: 0.423267752
@@ -670,6 +671,73 @@ Assets {
             }
             ShadowOffset {
               Y: 1
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 757710499997091334
+        Name: "ICON_MONEY_GLOW"
+        Transform {
+          Location {
+            X: 0.00364249013
+            Y: -0.00203391677
+          }
+          Rotation {
+            Yaw: -2.39056571e-05
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8381836577386706256
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 46
+          Height: 46
+          UIX: 2
+          UIY: 3
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 13257658630242510450
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.363
+            }
+            TeamSettings {
             }
           }
           AnchorLayout {
@@ -719,8 +787,8 @@ Assets {
         Control {
           Width: 30
           Height: 200
-          UIX: 60
-          UIY: 3
+          UIX: 2
+          UIY: 1
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -729,7 +797,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 11646227894815174831
+              Id: 6262982467505051120
             }
             Color {
               R: 1
@@ -743,6 +811,8 @@ Assets {
               A: 1
             }
             ShadowOffset {
+              X: 1
+              Y: 1
             }
           }
           AnchorLayout {
@@ -1424,12 +1494,21 @@ Assets {
       }
     }
     Assets {
-      Id: 11646227894815174831
-      Name: "Fantasy Coins 003"
+      Id: 13257658630242510450
+      Name: "UI Gradient Circular 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Equip_Coins_003"
+        AssetId: "UI_Basic_Shape_001"
+      }
+    }
+    Assets {
+      Id: 6262982467505051120
+      Name: "Fantasy Craft Bar 002"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Crafting_Bar_002"
       }
     }
     Assets {
@@ -1448,15 +1527,6 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "BackgroundHighlighted_020"
-      }
-    }
-    Assets {
-      Id: 13257658630242510450
-      Name: "UI Gradient Circular 001"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Basic_Shape_001"
       }
     }
     Assets {

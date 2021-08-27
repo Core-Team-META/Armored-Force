@@ -5021,6 +5021,12 @@ Objects {
         SelfId: 1373870366351045164
       }
     }
+    Overrides {
+      Name: "cs:CloseUpgradeTutorial"
+      ObjectReference {
+        SelfId: 5546591712630926349
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5147,7 +5153,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"

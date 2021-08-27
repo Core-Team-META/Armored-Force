@@ -8,6 +8,7 @@ API.TutorialPhase = {
 	BaseCapture = 4,
 	JoinBattle = 5,
 	Upgrade = 6,
+	RepairTank = 7,
 	Completed = 99,
 
 }
