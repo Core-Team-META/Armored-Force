@@ -19,6 +19,7 @@ function AIPlayer.New(team)
   local newAIPlayer = {
     health = 100,
     maxHealth = 100,
+    isDead = false,
     position = Vector3.ZERO,
     rotation = Rotation.ZERO,
     serverUserData = {},
@@ -75,6 +76,7 @@ function AIPlayer:ApplyDamage(damageTable)
     if wasAlive then
       Task.Spawn(function()
           Task.Wait()  -- This is important.  Death happens on the following frame.
+          self.isDead = true
           self.diedEvent:Trigger(self)
         end)
     end
@@ -457,5 +459,31 @@ function AIPlayer:GetWorldPosition()
   print(CoreDebug.GetStackTrace())
   return Vector3.ZERO
 end
+
+
+
+
+if _G.utils == nil then _G.utils = {} end
+function _G.utils.GetTankDrivers(options)
+  if options == nil then options = {} end
+  local results = {}
+  for driver,tankData in pairs(_G.lookup.tanks) do
+
+    --{ignoreDead = true, ignorePlayers = p, ignoreTeams = p.team}
+
+    if (options.ignoreDead and driver.isDead)
+        or (options.ignorePlayers == driver)
+        or (options.ignoreTeams == driver.team) 
+        or (options.includeTeams ~= nil and options.includeTeams ~= driver.team) then
+      -- do nothing
+    else
+      table.insert(results, driver)
+    end
+  end
+  return results
+end
+
+
+
 
 return AIPlayer
