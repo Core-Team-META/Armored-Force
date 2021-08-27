@@ -134,20 +134,10 @@ end
 
 function OnPurchaseButtonPressed(button)
 	if localPlayer:GetResource(CONSTANTS_API.SILVER) < 100 then
-		local body = AlertDialogBox:GetCustomProperty("BODY_TEXT"):WaitForObject()
-		local title = AlertDialogBox:GetCustomProperty("TITLE_SECONDARY"):WaitForObject()
-		title.text = "Insufficient Silver"
-		title:GetChildren()[1].text = "Insufficient Silver"
-		body.text = "Not enough Silver to purchase this item."
-		AlertDialogBox.visibility = Visibility.FORCE_ON
 		World.SpawnAsset(SFX_ERROR_UI)
+		Events.Broadcast("SEND_POPUP", localPlayer, "Insufficient Silver", "Not enough Silver to purchase this item.")
 	else
-		local body = AlertDialogBox:GetCustomProperty("BODY_TEXT"):WaitForObject()
-		local title = AlertDialogBox:GetCustomProperty("TITLE_SECONDARY"):WaitForObject()
-		title.text = "Item Purchased"
-		title:GetChildren()[1].text = "Item Purchased"
-		body.text = "You have successfully purchased a new item."
-		AlertDialogBox.visibility = Visibility.FORCE_ON
+		Events.Broadcast("SEND_POPUP", localPlayer, "Item Purchased", "You have successfully purchased a new item.")
 		ReliableEvents.BroadcastToServer("PURCHASE_CONSUME", button.clientUserData.type)
 		World.SpawnAsset(SFX_PURCHASE_UI)
 	end
@@ -159,7 +149,7 @@ function OnResupplyButtonPressed(button)
 end
 
 function OnResourceChanged(player, resource, amount)
-
+	
 	
 	--print("resource recieved " .. resource)
 	if resource == CONSTANTS_API.SILVER and amount < 100 then
@@ -187,6 +177,11 @@ function OnResourceChanged(player, resource, amount)
 			consumableSlots.treads.purchased.visibility = Visibility.INHERIT
 			consumableSlots.treads.idle.visibility = Visibility.FORCE_OFF
 			consumableSlots.treads.countText.text = "2 / 2"
+			local button = consumableSlots.treads.purchaseButton
+			local silverIcon = button:GetCustomProperty("ICON_SILVER"):WaitForObject()
+			local buttonText = button:GetCustomProperty("BUTTONTEXT_LIGHT"):WaitForObject()
+			silverIcon.visibility = Visibility.FORCE_OFF
+			buttonText.visibility = Visibility.FORCE_OFF
 		end
 	elseif resource == CONSTANTS_API.CONSUMABLES.EXTINGUISHER or resource == CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER then
 		if amount > 0 then
@@ -194,6 +189,11 @@ function OnResourceChanged(player, resource, amount)
 			consumableSlots.extinguisher.purchased.visibility = Visibility.INHERIT
 			consumableSlots.extinguisher.idle.visibility = Visibility.FORCE_OFF
 			consumableSlots.extinguisher.countText.text = "1 / 1"
+			local button = consumableSlots.extinguisher.purchaseButton
+			local silverIcon = button:GetCustomProperty("ICON_SILVER"):WaitForObject()
+			local buttonText = button:GetCustomProperty("BUTTONTEXT_LIGHT"):WaitForObject()
+			silverIcon.visibility = Visibility.FORCE_OFF
+			buttonText.visibility = Visibility.FORCE_OFF
 			
 		end
 	elseif resource == CONSTANTS_API.CONSUMABLES.REPAIR or resource == CONSTANTS_API.CONSUMABLES.AUTO_REPAIR then
@@ -202,6 +202,11 @@ function OnResourceChanged(player, resource, amount)
 			consumableSlots.repairKit.purchased.visibility = Visibility.INHERIT
 			consumableSlots.repairKit.idle.visibility = Visibility.FORCE_OFF
 			consumableSlots.repairKit.countText.text = "1 / 1"
+			local button = consumableSlots.repairKit.purchaseButton
+			local silverIcon = button:GetCustomProperty("ICON_SILVER"):WaitForObject()
+			local buttonText = button:GetCustomProperty("BUTTONTEXT_LIGHT"):WaitForObject()
+			silverIcon.visibility = Visibility.FORCE_OFF
+			buttonText.visibility = Visibility.FORCE_OFF
 		end
 	end
 	
