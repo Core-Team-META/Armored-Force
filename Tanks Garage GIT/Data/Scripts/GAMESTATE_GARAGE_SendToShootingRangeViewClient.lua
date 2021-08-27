@@ -134,7 +134,7 @@ end
 function ToggleThisComponent(requestedPlayerState)
 
 	if requestedPlayerState == thisComponent then
-	
+		localPlayer.clientUserData.isInGarage = false
 		local secondarySFX = localPlayer.clientUserData.garageModel.reference:FindDescendantByName("TankEngineLoopSFX")
 		secondarySFX:Play()
 	
