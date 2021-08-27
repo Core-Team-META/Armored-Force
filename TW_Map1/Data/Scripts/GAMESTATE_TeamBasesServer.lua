@@ -157,9 +157,16 @@ end
 
 function CheckPlayerCountTask()
 	
+	--[[
 	local count = Game.GetPlayers()
 	local count1 = Game.GetPlayers({includeTeams = 1, ignoreDead = true})
 	local count2 = Game.GetPlayers({includeTeams = 2, ignoreDead = true})
+	]]
+	local count = _G.utils.GetTankDrivers()
+	local count1 = _G.utils.GetTankDrivers({includeTeams = 1, ignoreDead = true})
+	local count2 = _G.utils.GetTankDrivers({includeTeams = 2, ignoreDead = true})
+
+	print("team counts:", #count, #count1, #count2)
 	
 	if #count1 > #count2 then
 		leadTeam = 1

@@ -11,6 +11,13 @@ local equippedTank = {}
 
 local resetOverride = false
 
+
+local spawnPoints = {
+	[1] = World.FindObjectsByName("Spawn Point Team 1"),
+	[2] = World.FindObjectsByName("Spawn Point Team 2"),
+}
+
+
 function GetEquippedTankTemplate(player, id)
 	--print("Checking for tank with id: " .. id)
 	if tonumber(id) <= tankCount and tonumber(id) > 0 then
@@ -155,7 +162,7 @@ end
 function OnPlayerJoined(player)
 
 	player.spawnedEvent:Connect(OnPlayerRespawned)
-	player:SetWorldPosition(Vector3.UP * 1000)
+	--player:SetWorldPosition(Vector3.UP * 1000)
 
 	local nonPlayerTeam = 1
 	if player.team == 1 then nonPlayerTeam = 2 end
@@ -163,6 +170,7 @@ function OnPlayerJoined(player)
 	SpawnAITank(player:GetWorldPosition() + Vector3.New(1000, 1000, 1000), team)
 ]]
 
+	--[[
 	--teams
 	-- + player:GetWorldPosition()
 	for i = 1, 4 do
@@ -173,6 +181,7 @@ function OnPlayerJoined(player)
 		local offset = Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 30000 + Vector3.UP * 1000
 		SpawnAITank(offset, player.team)
 	end
+	]]
 
 --[[
 	-- pairs
@@ -192,6 +201,38 @@ function OnPlayerLeft(player)
 	RemovePlayerEquipment(player)
 	
 end
+
+
+function FillTeamsWithAI(teamSize)
+  if teamSize == nil then teamSize = 1 end
+  local teamSizes = {}
+  for k,v in pairs(Game.GetPlayers()) do
+    if teamSizes[v.team] == nil then
+      teamSizes[v.team] = 1
+    else
+      teamSizes[v.team] = teamSizes[v.team] + 1
+    end
+  end
+
+  for team = 1,2 do
+    for i = teamSizes[team] or 0, teamSize - 1 do
+    	local position = spawnPoints[team][math.random(#spawnPoints[team])]:GetWorldPosition()
+    	SpawnAITank(position, team)
+    end
+  end
+end
+
+
+function RemoveAllAI()
+
+end
+
+
+
+Events.Connect("FILL_TEAMS_WITH_AI", FillTeamsWithAI)
+Events.Connect("REMOVE_ALL_AI", RemoveAllAI)
+
+
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)

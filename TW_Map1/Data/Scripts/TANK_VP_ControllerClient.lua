@@ -36,7 +36,6 @@ local fireState = nil
 
 -- Player Reference
 local driver = nil
-local isAI = false
 
 -- Additional Local Variables
 local tankSet = false
@@ -64,14 +63,10 @@ function CheckTankReady()
 	Task.Wait(1)
 	
 	local pID = tankControllerServer:GetCustomProperty("DriverID")
-	if pID == "AI_DRIVER" then
-		driver = {}
-		isAI = true
-	else
-		for _, p in ipairs(Game.GetPlayers()) do
-			if p.id == tankControllerServer:GetCustomProperty("DriverID") then
-				driver = p
-			end
+
+	for _, p in ipairs(Game.GetPlayers()) do
+		if p.id == tankControllerServer:GetCustomProperty("DriverID") then
+			driver = p
 		end
 	end
 	
