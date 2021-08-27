@@ -103,6 +103,9 @@ local BUY_TANK_CONTAINER = script:GetCustomProperty("BUY_TANK_CONTAINER"):WaitFo
 local STATS_TANK_CONTAINER = script:GetCustomProperty("STATS_TANK_CONTAINER"):WaitForObject()
 local UPGRADE_TANK_CONTAINER = script:GetCustomProperty("UPGRADE_TANK_CONTAINER"):WaitForObject()
 local UPGRADE_TANK_CONFIRM_CONTAINER = script:GetCustomProperty("UPGRADE_TANK_CONFIRM_CONTAINER"):WaitForObject()
+local tankPreviewImage = script:GetCustomProperty("TankPreviewImage"):WaitForObject()
+local tankConfirmImage = script:GetCustomProperty("TankConfirmImage"):WaitForObject()
+
 local Tutorial_UpgradeTank = script:GetCustomProperty("Tutorial_UpgradeTank"):WaitForObject()
 local UPGRADE_TUTORIAL = script:GetCustomProperty("UPGRADE_TUTORIAL"):WaitForObject()
 local TutorialStepComplete = script:GetCustomProperty("TutorialCompletePopup")
@@ -113,6 +116,12 @@ local BUTTON_ALLIES_T1L = script:GetCustomProperty("BUTTON_ALLIES_T1L"):WaitForO
 local BUTTON_ALLIES_T2L = script:GetCustomProperty("BUTTON_ALLIES_T2L"):WaitForObject()
 local BUTTON_ALLIES_T4L = script:GetCustomProperty("BUTTON_ALLIES_T4L"):WaitForObject()
 ------------------------------------------------------------------------------------------------------
+
+while not _G.PORTAL_IMAGES do
+	Task.Wait()
+end
+
+local IMAGE_API = _G.PORTAL_IMAGES
 
 local ALLIES_TEAM = script:GetCustomProperty("AlliesTeam")
 local AXIS_TEAM = script:GetCustomProperty("AxisTeam")
@@ -1044,6 +1053,9 @@ function PopulateTankUpgradeModal(type)
 	local id = equippedTank:GetCustomProperty("ID")
 	local purchaseCost = 0
 	local researchCost = 0
+	
+	IMAGE_API.SetTankImage(tankConfirmImage, id)
+	
 	if type == "WEAPON" then
 		purchaseCost = equippedTank:GetCustomProperty("WeaponPurchaseCost")
 		researchCost = equippedTank:GetCustomProperty("WeaponResearchCost")
@@ -1678,17 +1690,20 @@ function TutorialOpenTankUpgradeWindow()
 end
 
 function OpenTankUpgradeWindow(button, id)
+	
 	if LOCAL_PLAYER.clientUserData.tutorial6 == 1 then
 		UPGRADE_TUTORIAL.visibility = Visibility.FORCE_ON
 	else
 		UPGRADE_TUTORIAL.visibility = Visibility.FORCE_OFF
 	end
 		
-	if not id then
-		selectedTankId = LOCAL_PLAYER:GetResource("EquippedTank")
+	if not id or id == nil then
+		selectedTankId = LOCAL_PLAYER:GetPrivateNetworkedData("SelectedTank")
 	else
 		selectedTankId = tonumber(id)
 	end
+	
+	IMAGE_API.SetTankImage(tankPreviewImage, selectedTankId)
 
 	SFX_CLICK:Play()
 	UPGRADE_TANK_CONTAINER.visibility = Visibility.FORCE_ON
