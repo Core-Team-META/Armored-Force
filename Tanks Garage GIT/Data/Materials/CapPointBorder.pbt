@@ -16,7 +16,7 @@ Assets {
       }
       Overrides {
         Name: "fresnel"
-        Float: 1.66419685
+        Float: 1
       }
     }
     Assets {
