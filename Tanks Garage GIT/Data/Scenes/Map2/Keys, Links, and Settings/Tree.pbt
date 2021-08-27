@@ -121,7 +121,7 @@ Objects {
     Overrides {
       Name: "cs:MatchDestroyed"
       NetReference {
-        Key: "331B27488436C074"
+        Key: "0308B347B7382831"
         Type {
           Value: "mc:enetreferencetype:leaderboard"
         }
@@ -130,7 +130,7 @@ Objects {
     Overrides {
       Name: "cs:MatchDamage"
       NetReference {
-        Key: "A511CA004F8DECD8"
+        Key: "A225E4E8B069DF06"
         Type {
           Value: "mc:enetreferencetype:leaderboard"
         }
@@ -139,7 +139,7 @@ Objects {
     Overrides {
       Name: "cs:TotalDestroyed"
       NetReference {
-        Key: "15C55D363F75E31C"
+        Key: "C4F81C2022FF674F"
         Type {
           Value: "mc:enetreferencetype:leaderboard"
         }
@@ -148,7 +148,7 @@ Objects {
     Overrides {
       Name: "cs:TotalDamage"
       NetReference {
-        Key: "4B50C1325ADE93EA"
+        Key: "51B170A174D269BF"
         Type {
           Value: "mc:enetreferencetype:leaderboard"
         }
@@ -157,7 +157,7 @@ Objects {
     Overrides {
       Name: "cs:TotalWinRate"
       NetReference {
-        Key: "AE45025A16B39ECE"
+        Key: "9FB1C58183084EF6"
         Type {
           Value: "mc:enetreferencetype:leaderboard"
         }
@@ -201,7 +201,7 @@ Objects {
     Overrides {
       Name: "cs:Tanks"
       NetReference {
-        Key: "b70b722563b946ccaa2bd95c1385ab74"
+        Key: "c43fcd2160184df0a6269654c7ceb712"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }
@@ -210,7 +210,7 @@ Objects {
     Overrides {
       Name: "cs:Achievements"
       NetReference {
-        Key: "2fd46d04db664f6b85721c3769840dd6"
+        Key: "3da404ca739944b89c7482c636a4205e"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }
@@ -219,7 +219,7 @@ Objects {
     Overrides {
       Name: "cs:Leaderboards"
       NetReference {
-        Key: "f8e410dcfa8d425f9ab5f5a170ed7766"
+        Key: "279d6cb10c5944d3ad583f41b2f139d3"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }
@@ -228,7 +228,7 @@ Objects {
     Overrides {
       Name: "cs:Skins"
       NetReference {
-        Key: "fe905fe344da45fbbc78301c55f98aea"
+        Key: "dcf79b56c55f4d75a9efc3afebd4b018"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }

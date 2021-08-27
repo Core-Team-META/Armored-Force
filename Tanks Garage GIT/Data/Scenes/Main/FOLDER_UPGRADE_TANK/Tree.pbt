@@ -90,7 +90,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 685
+    Width: 768
     Height: 385
     RenderTransformPivot {
       Anchor {
@@ -1296,7 +1296,7 @@ Objects {
     }
   }
   ParentId: 16360041220523835551
-  ChildIds: 18167686680351113452
+  ChildIds: 4914126661647282959
   ChildIds: 12148871746542957783
   ChildIds: 13542947740597183782
   Collidable_v2 {
@@ -8177,8 +8177,8 @@ Objects {
   }
 }
 Objects {
-  Id: 18167686680351113452
-  Name: "TANKIMAGE"
+  Id: 4914126661647282959
+  Name: "TANKIMAGE_HOLDER"
   Transform {
     Location {
     }
@@ -8191,6 +8191,7 @@ Objects {
     }
   }
   ParentId: 18426968373076915136
+  ChildIds: 17599532467975880135
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8204,10 +8205,120 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 200
+    Width: 280
     Height: 200
     UIX: 40
     UIY: 40
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 17599532467975880135
+  Name: "TANKIMAGE_HOLDER_OFFSET"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4914126661647282959
+  ChildIds: 2110562584757203531
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 100
+    Height: 100
+    UIX: -69
+    UIY: -9
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Panel {
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 2110562584757203531
+  Name: "TANKIMAGE"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17599532467975880135
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 1280
+    Height: 720
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -9563,6 +9674,7 @@ Objects {
   }
   Control {
     Width: -400
+    UIX: -64
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -30086,7 +30198,7 @@ Objects {
   ChildIds: 938093318049905254
   ChildIds: 16294141876046136476
   ChildIds: 15332964074385138907
-  ChildIds: 10644898466606261490
+  ChildIds: 1180006412800853237
   ChildIds: 18333057588607444445
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30101,8 +30213,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 400
-    Height: 400
+    Width: 328
+    Height: 225
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -32216,8 +32328,8 @@ Objects {
   }
 }
 Objects {
-  Id: 10644898466606261490
-  Name: "TANKIMAGE"
+  Id: 1180006412800853237
+  Name: "TANKIMAGE_HOLDER"
   Transform {
     Location {
     }
@@ -32230,6 +32342,7 @@ Objects {
     }
   }
   ParentId: 8692540305544375127
+  ChildIds: 13208349073270315090
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -32254,6 +32367,116 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13208349073270315090
+  Name: "TANKIMAGE_HOLDER_OFFSET"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1180006412800853237
+  ChildIds: 3417079214562261574
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 100
+    Height: 100
+    UIX: -44
+    UIY: -36
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Panel {
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 3417079214562261574
+  Name: "TANKIMAGE"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13208349073270315090
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 1280
+    Height: 720
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
     Image {
       Brush {
       }
@@ -32261,7 +32484,7 @@ Objects {
         R: 1
         G: 1
         B: 1
-        A: 0.115
+        A: 1
       }
       TeamSettings {
       }
@@ -32275,12 +32498,12 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topcenter"
+          Value: "mc:euianchor:topleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topcenter"
+          Value: "mc:euianchor:topleft"
         }
       }
     }

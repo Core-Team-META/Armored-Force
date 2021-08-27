@@ -846,6 +846,18 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:TankPreviewImage"
+      ObjectReference {
+        SelfId: 3417079214562261574
+      }
+    }
+    Overrides {
+      Name: "cs:TankConfirmImage"
+      ObjectReference {
+        SelfId: 2110562584757203531
+      }
+    }
+    Overrides {
       Name: "cs:SFX_DENIED"
       ObjectReference {
         SelfId: 3794481685187691214

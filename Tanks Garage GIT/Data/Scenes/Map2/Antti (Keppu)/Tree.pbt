@@ -92391,6 +92391,10 @@ Objects {
       Name: "bp:Depth Blur Radius"
       Float: 4
     }
+    Overrides {
+      Name: "bp:Blend Weight"
+      Float: 0
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

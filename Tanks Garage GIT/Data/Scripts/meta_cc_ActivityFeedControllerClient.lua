@@ -614,7 +614,7 @@ for i = 1, NUM_LINES do
 end
 
 Events.Connect("PlayerKilled", OnKill)
-Events.Connect("PlayerDamaged", OnDamaged)
+--Events.Connect("PlayerDamaged", OnDamaged)
 
 function ResetFeed()
 	for i = 1, NUM_LINES do
