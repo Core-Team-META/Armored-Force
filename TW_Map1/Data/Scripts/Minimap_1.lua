@@ -220,8 +220,12 @@ for _,text in ipairs(worldTexts) do
 end
 
 
+function MyIsA(self, t)
+	return t == "AIPlayer"
+end
+
+if _G.lookup == nil then _G.lookup = {} end
 local AIData = {}
-local AIClientUserData = {}
 local replicateTask = Task.Spawn(function()
 	local oldData = AIData
 	AIData = Game.GetLocalPlayer():GetPrivateNetworkedData("AIData") or {}
@@ -236,8 +240,9 @@ local replicateTask = Task.Spawn(function()
 		else
 			v.clientUserData = {}
 		end
-		v.IsA = function(self) return self == "AIPlayer" end
+		v.IsA = MyIsA
 	end
+	_G.lookup.tanks = AIData
 end)
 replicateTask.repeatCount = -1
 replicateTask.repeatInterval = 2

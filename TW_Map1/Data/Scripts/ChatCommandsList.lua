@@ -245,7 +245,14 @@ commands = {
         OnCommandCalledClient = function (player, message)
         end,
         OnCommandCalledServer = function (player, message)
-            Events.Broadcast("FILL_TEAMS_WITH_AI")
+            local teamSize = 2
+            for section in (message.." "):gmatch("(.-) ") do
+                if tonumber(section) then
+                    teamSize = tonumber(section)
+                end
+            end
+
+            Events.Broadcast("FILL_TEAMS_WITH_AI", teamSize)
         end,
         OnCommandReceivedClient = function (player, message)
         end,

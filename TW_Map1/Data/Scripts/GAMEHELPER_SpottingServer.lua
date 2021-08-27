@@ -152,7 +152,6 @@ function CheckForSpotting()
 		for x2, p2 in pairs(otherPlayerList) do
 			SetViewPoint(p2)
 			--print("--Checking", p.id, p2.id)
-			print(Object.IsValid(viewPointList[p.id]), Object.IsValid(viewPointList[p2.id]))
 			if Object.IsValid(viewPointList[p.id]) and Object.IsValid(viewPointList[p2.id]) then	
 				if (viewPointList[p.id]:GetWorldPosition() - viewPointList[p2.id]:GetWorldPosition()).size <= viewRangeList[p2.id] then
 					local raycastResult = World.Raycast(viewPointList[p2.id]:GetWorldPosition(), viewPointList[p.id]:GetWorldPosition(), {ignoreTeams = p.team})

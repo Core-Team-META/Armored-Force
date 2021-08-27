@@ -442,8 +442,9 @@ function FireProjectile(driver)
 
 	local aimVector = muzzle:GetWorldRotation() * Vector3.FORWARD
 	if driver:IsA("AIPlayer") then
-		local targetAimVector = (target:GetWorldPosition() - muzzle:GetWorldPosition()):GetNormalized()
-		aimVector.z = targetAimVector.z
+		local targetPos = target:GetWorldPosition() + Vector3.UP * math.random(75, 150)
+		local targetAimVector = (targetPos - muzzle:GetWorldPosition()):GetNormalized()
+		aimVector.z = targetAimVector.z 
 	end
 
 	local firedProjectile = Projectile.Spawn(projectile, muzzle:GetWorldPosition(), aimVector)

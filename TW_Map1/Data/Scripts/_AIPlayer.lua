@@ -17,8 +17,8 @@ local WRIGGLE_DURATION = 3
 function AIPlayer.New(team)
   team = team or 3
   local newAIPlayer = {
-    health = 100,
-    maxHealth = 100,
+    hitPoints = 100,
+    maxHitPoints = 100,
     isDead = false,
     position = Vector3.ZERO,
     rotation = Rotation.ZERO,
@@ -32,7 +32,7 @@ function AIPlayer.New(team)
     currentMovementTarget = nil,
     currentAttackTarget = nil,
     lastShotTime = -1,
-    name = "ROBOTANK" .. tostring(nextId - 1),
+    name = "ROBO" .. tostring(nextId - 1),
 
     lastPathUpdateTime = -1,
 
@@ -69,10 +69,10 @@ end
     }
 ]]
 function AIPlayer:ApplyDamage(damageTable)
-  local wasAlive = self.health > 0
-  self.health = self.health - damageTable.damage.amount
-  if self.health < 0 then
-    self.health = 0
+  local wasAlive = self.hitPoints > 0
+  self.hitPoints = self.hitPoints - damageTable.damage.amount
+  if self.hitPoints < 0 then
+    self.hitPoints = 0
     if wasAlive then
       Task.Spawn(function()
           Task.Wait()  -- This is important.  Death happens on the following frame.
@@ -81,7 +81,7 @@ function AIPlayer:ApplyDamage(damageTable)
         end)
     end
   end
-  print("Took damage!  New health:", self.health)
+  print("Took damage!  New hitPoints:", self.hitPoints)
 end
 
 
@@ -352,8 +352,6 @@ function AIPlayer:PathRay(targetPos, targetDist, step)
     local hr = World.Raycast(currentPos + Vector3.UP * 1000, currentPos + Vector3.UP * -1000)
     local debugLineColor = Color.GREEN
     if hr ~= nil then
-
-
       local other_name = nil
       if not pcall(function()
         other_name = hr.other.name
@@ -377,6 +375,7 @@ function AIPlayer:PathRay(targetPos, targetDist, step)
         break
       end
     end
+    Task.Wait()
   end
   return totalDist
 end
@@ -384,8 +383,8 @@ end
 
 function AIPlayer:GetReplicatedData()
   return {
-    health = self.health,
-    maxHealth = self.maxHealth,
+    hitPoints = self.hitPoints,
+    maxHitPoints = self.maxHitPoints,
     isDead = false,
     position = self.position,
     id = self.id,
@@ -396,7 +395,6 @@ function AIPlayer:GetReplicatedData()
 end
  
 function AIPlayer.ReplicateTankAIData()
-  print("Replicating...")
   local dataTable = {}
   for k,v in pairs(AIList) do
     dataTable[v.id] = v:GetReplicatedData()
@@ -441,11 +439,6 @@ function AIPlayer.FindAIDriver(tank)
 end
 
 
-
-
-function AIPlayer:GetHelth()
-  return self.health
-end
 
 function AIPlayer:SetWorldPosition(pos)
   self.position = pos
