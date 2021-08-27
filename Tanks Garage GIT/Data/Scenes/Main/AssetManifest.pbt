@@ -1,17 +1,4 @@
 Assets {
-  Id: 18144819074818993713
-  Name: "PlayerSharedStorage"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "8cd7b4910d07447a8fac4ca5a361a105"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 18000572852129032995
   Name: "PremiumSubscription"
   PlatformAssetType: 24
