@@ -264,6 +264,20 @@ Objects {
     }
   }
   ParentId: 2747122266079938648
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ICON_SILVER"
+      ObjectReference {
+        SelfId: 6863360970429328639
+      }
+    }
+    Overrides {
+      Name: "cs:BUTTONTEXT_LIGHT"
+      ObjectReference {
+        SelfId: 16500838975495371572
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -339,6 +353,20 @@ Objects {
     }
   }
   ParentId: 2747122266079938648
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ICON_SILVER"
+      ObjectReference {
+        SelfId: 6863360970429328639
+      }
+    }
+    Overrides {
+      Name: "cs:BUTTONTEXT_LIGHT"
+      ObjectReference {
+        SelfId: 16500838975495371572
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5238,6 +5266,20 @@ Objects {
     }
   }
   ParentId: 5227055570999933664
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ICON_SILVER"
+      ObjectReference {
+        SelfId: 10242599162670685381
+      }
+    }
+    Overrides {
+      Name: "cs:BUTTONTEXT_LIGHT"
+      ObjectReference {
+        SelfId: 14410228567904756995
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10140,6 +10182,20 @@ Objects {
     }
   }
   ParentId: 13455601916028640664
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ICON_SILVER"
+      ObjectReference {
+        SelfId: 790011931691762597
+      }
+    }
+    Overrides {
+      Name: "cs:BUTTONTEXT_LIGHT"
+      ObjectReference {
+        SelfId: 14636004694072027361
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

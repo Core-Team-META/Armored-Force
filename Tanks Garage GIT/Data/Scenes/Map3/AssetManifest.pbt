@@ -1,4 +1,17 @@
 Assets {
+  Id: 18343622613119757208
+  Name: "achievements"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "3da404ca739944b89c7482c636a4205e"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 18000572852129032995
   Name: "PremiumSubscription"
   PlatformAssetType: 24
@@ -51,19 +64,6 @@ Assets {
       Key: "9b2b70e29b3c4e169bdbbb392256e9d5"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
-  Id: 12815338606393549629
-  Name: "Achievements"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "2fd46d04db664f6b85721c3769840dd6"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
   }
@@ -130,51 +130,12 @@ Assets {
   }
 }
 Assets {
-  Id: 7418818682096785272
-  Name: "PlayerSharedStorage"
+  Id: 7150303638435450024
+  Name: "skins"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "8cd7b4910d07447a8fac4ca5a361a105"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
-  Id: 6445891433040706212
-  Name: "Tanks"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "b70b722563b946ccaa2bd95c1385ab74"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
-  Id: 6059846629728132881
-  Name: "Skins"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "fe905fe344da45fbbc78301c55f98aea"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
-  Id: 5542400898688887448
-  Name: "Leaderboards"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "f8e410dcfa8d425f9ab5f5a170ed7766"
+      Key: "dcf79b56c55f4d75a9efc3afebd4b018"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
@@ -247,6 +208,32 @@ Assets {
       Key: "1876b0cd2220432ba9aaadddd077f041"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
+  Id: 3019015013360940982
+  Name: "tank"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "c43fcd2160184df0a6269654c7ceb712"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
+  Id: 2471593252014101833
+  Name: "leaderboards"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "279d6cb10c5944d3ad583f41b2f139d3"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
   }
