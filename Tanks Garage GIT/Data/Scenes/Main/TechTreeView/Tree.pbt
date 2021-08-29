@@ -822,6 +822,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:TankPurchaseImage"
+      ObjectReference {
+        SelfId: 5722022461260306202
+      }
+    }
+    Overrides {
       Name: "cs:VIEWED_TANK_STATS"
       ObjectReference {
         SelfId: 16823211638657041217
