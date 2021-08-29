@@ -208,32 +208,56 @@ Assets {
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:MaxDepression"
             Int: -14
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:ProjectileSpeed"
             Int: 21000
           }
           Overrides {
-            Name: "cs:Damage"
-            Int: 70
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 50000
           }
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 90
           }
           Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
+            Name: "cs:HitPointsUpgraded"
+            Int: 800
+          }
+          Overrides {
+            Name: "cs:Damage"
+            Int: 70
           }
           Overrides {
             Name: "cs:HitPoints"
             Int: 750
-          }
-          Overrides {
-            Name: "cs:HitPointsUpgraded"
-            Int: 800
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -250,6 +274,10 @@ Assets {
           Overrides {
             Name: "cs:Acceleration"
             Int: 500
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeed"
@@ -270,50 +298,6 @@ Assets {
           Overrides {
             Name: "cs:TraverseUpgraded"
             Int: 40
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "8817ac/tanksportal-images1"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "1"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 50000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -344,11 +328,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -480,12 +460,40 @@ Assets {
             Int: 15
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -12
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 21000
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 50000
           }
           Overrides {
             Name: "cs:Damage"
@@ -494,10 +502,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 270
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -528,6 +532,10 @@ Assets {
             Int: 400
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 60
           }
@@ -546,50 +554,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "01"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "8817ac/tanksportal-images1"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "2"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 50000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -620,11 +584,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -756,12 +716,40 @@ Assets {
             Int: 25
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -12
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 21000
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
           }
           Overrides {
             Name: "cs:Damage"
@@ -770,10 +758,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 200
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -804,6 +788,10 @@ Assets {
             Int: 700
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 50
           }
@@ -822,50 +810,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "01"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "8817ac/tanksportal-images1"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "3"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 40000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -896,11 +840,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -1032,12 +972,40 @@ Assets {
             Int: 30
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -10
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 21000
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
           }
           Overrides {
             Name: "cs:Damage"
@@ -1046,10 +1014,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 290
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -1080,6 +1044,10 @@ Assets {
             Int: 600
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 55
           }
@@ -1098,50 +1066,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "01"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "8817ac/tanksportal-images1"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "4"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 40000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -1172,11 +1096,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -1308,32 +1228,56 @@ Assets {
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -12
           }
           Overrides {
-            Name: "cs:ShellSpeed"
-            Int: 24000
+            Name: "cs:HorizontalAngles"
+            Int: 0
           }
           Overrides {
-            Name: "cs:Damage"
-            Int: 260
+            Name: "cs:ProjectileSpeed"
+            Int: 24000
           }
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 280
           }
           Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
+            Name: "cs:ProjectileLength"
+            Float: 20
           }
           Overrides {
-            Name: "cs:HitPoints"
-            Int: 850
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Damage"
+            Int: 260
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
           }
           Overrides {
             Name: "cs:HitPointsUpgraded"
             Int: 925
+          }
+          Overrides {
+            Name: "cs:HitPoints"
+            Int: 850
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -1360,6 +1304,10 @@ Assets {
             Int: 35
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 55
           }
@@ -1378,50 +1326,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite2"
             String: "04"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "fd2682/tanksportal-images2"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "1"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 40000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -1452,11 +1356,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -1588,32 +1488,56 @@ Assets {
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -11
           }
           Overrides {
-            Name: "cs:ShellSpeed"
-            Int: 22500
+            Name: "cs:HorizontalAngles"
+            Int: 0
           }
           Overrides {
-            Name: "cs:Damage"
-            Int: 515
+            Name: "cs:ProjectileSpeed"
+            Int: 22500
           }
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 535
           }
           Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
+            Name: "cs:ProjectileLength"
+            Float: 20
           }
           Overrides {
-            Name: "cs:HitPoints"
-            Int: 1400
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Damage"
+            Int: 515
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 25000
           }
           Overrides {
             Name: "cs:HitPointsUpgraded"
             Int: 1500
+          }
+          Overrides {
+            Name: "cs:HitPoints"
+            Int: 1400
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -1640,6 +1564,10 @@ Assets {
             Int: 20
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 50
           }
@@ -1658,50 +1586,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite2"
             String: "04"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "fd2682/tanksportal-images2"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "2"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 25000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -1732,11 +1616,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -1868,12 +1748,40 @@ Assets {
             Int: 30
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -14
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 22500
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 35000
           }
           Overrides {
             Name: "cs:Damage"
@@ -1882,10 +1790,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 380
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -1916,6 +1820,10 @@ Assets {
             Int: 950
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 60
           }
@@ -1934,50 +1842,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "01"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "8817ac/tanksportal-images1"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "5"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 35000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -2008,11 +1872,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -2144,32 +2004,56 @@ Assets {
             Int: 30
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:MaxDepression"
             Int: -12
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:ProjectileSpeed"
             Int: 22500
           }
           Overrides {
-            Name: "cs:Damage"
-            Int: 270
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 25000
           }
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 290
           }
           Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
+            Name: "cs:HitPointsUpgraded"
+            Int: 1400
+          }
+          Overrides {
+            Name: "cs:Damage"
+            Int: 270
           }
           Overrides {
             Name: "cs:HitPoints"
             Int: 1300
-          }
-          Overrides {
-            Name: "cs:HitPointsUpgraded"
-            Int: 1400
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -2186,6 +2070,10 @@ Assets {
           Overrides {
             Name: "cs:Acceleration"
             Int: 2200
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeed"
@@ -2206,50 +2094,6 @@ Assets {
           Overrides {
             Name: "cs:TraverseUpgraded"
             Int: 30
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 25000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -2280,11 +2124,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -2416,32 +2256,56 @@ Assets {
             Int: 15
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:MaxDepression"
             Int: -13
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:ProjectileSpeed"
             Int: 25500
           }
           Overrides {
-            Name: "cs:Damage"
-            Int: 605
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 25000
           }
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 635
           }
           Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
+            Name: "cs:HitPointsUpgraded"
+            Int: 1800
+          }
+          Overrides {
+            Name: "cs:Damage"
+            Int: 605
           }
           Overrides {
             Name: "cs:HitPoints"
             Int: 1700
-          }
-          Overrides {
-            Name: "cs:HitPointsUpgraded"
-            Int: 1800
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -2458,6 +2322,10 @@ Assets {
           Overrides {
             Name: "cs:Acceleration"
             Int: 1100
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeed"
@@ -2478,50 +2346,6 @@ Assets {
           Overrides {
             Name: "cs:TraverseUpgraded"
             Int: 35
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "fd2682/tanksportal-images2"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "3"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 25000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -2552,11 +2376,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -2688,12 +2508,40 @@ Assets {
             Int: 8
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -9
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 25500
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 50000
           }
           Overrides {
             Name: "cs:Damage"
@@ -2702,10 +2550,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 580
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -2736,6 +2580,10 @@ Assets {
             Int: 500
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 60
           }
@@ -2754,50 +2602,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "02"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "fd2682/tanksportal-images2"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "4"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 50000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -2828,11 +2632,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -2964,12 +2764,40 @@ Assets {
             Int: 11
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -10
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 22500
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
           }
           Overrides {
             Name: "cs:Damage"
@@ -2978,10 +2806,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 465
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -3012,6 +2836,10 @@ Assets {
             Int: 2100
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 50
           }
@@ -3030,50 +2858,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "05"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "fd2682/tanksportal-images2"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "5"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 40000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -3104,11 +2888,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -3240,12 +3020,40 @@ Assets {
             Int: 19
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -11
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 24000
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
           }
           Overrides {
             Name: "cs:Damage"
@@ -3254,10 +3062,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 325
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -3288,6 +3092,10 @@ Assets {
             Int: 1600
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 55
           }
@@ -3306,50 +3114,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "05"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "2d9b0b/tanksportal-images3"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "1"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 40000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -3380,11 +3144,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -3516,12 +3276,40 @@ Assets {
             Int: 16
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -11
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 24000
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
           }
           Overrides {
             Name: "cs:Damage"
@@ -3530,10 +3318,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 500
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -3564,6 +3348,10 @@ Assets {
             Int: 1200
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 60
           }
@@ -3582,50 +3370,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "05"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "2d9b0b/tanksportal-images3"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "2"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 40000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -3656,11 +3400,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -3792,12 +3532,40 @@ Assets {
             Int: 12
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -11
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 22500
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 25000
           }
           Overrides {
             Name: "cs:Damage"
@@ -3806,10 +3574,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 445
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -3840,6 +3604,10 @@ Assets {
             Int: 2200
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 60
           }
@@ -3858,50 +3626,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "06"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "2d9b0b/tanksportal-images3"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "5"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 25000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -3932,11 +3656,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -4068,12 +3788,40 @@ Assets {
             Int: 15
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -13
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 24000
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 25000
           }
           Overrides {
             Name: "cs:Damage"
@@ -4082,10 +3830,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 560
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -4116,6 +3860,10 @@ Assets {
             Int: 2200
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 60
           }
@@ -4134,50 +3882,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "06"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "2d9b0b/tanksportal-images3"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "3"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 25000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -4208,11 +3912,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -4344,12 +4044,40 @@ Assets {
             Int: 14
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -12
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 22500
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 25000
           }
           Overrides {
             Name: "cs:Damage"
@@ -4358,10 +4086,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 310
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -4392,6 +4116,10 @@ Assets {
             Int: 2200
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 50
           }
@@ -4410,50 +4138,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "06"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "2d9b0b/tanksportal-images3"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "4"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 25000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -4484,11 +4168,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -4620,12 +4300,40 @@ Assets {
             Int: 16
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -11
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 16
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 24000
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 35000
           }
           Overrides {
             Name: "cs:Damage"
@@ -4634,10 +4342,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 880
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 16
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -4668,6 +4372,10 @@ Assets {
             Int: 2500
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 65
           }
@@ -4686,50 +4394,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "07"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "b73a63/tanksportal-images4"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "1"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 35000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 16
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -4760,11 +4424,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -4896,32 +4556,56 @@ Assets {
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:MaxDepression"
             Int: -10
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:ProjectileSpeed"
             Int: 21000
           }
           Overrides {
-            Name: "cs:Damage"
-            Int: 65
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 50000
           }
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 80
           }
           Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
+            Name: "cs:HitPointsUpgraded"
+            Int: 925
+          }
+          Overrides {
+            Name: "cs:Damage"
+            Int: 65
           }
           Overrides {
             Name: "cs:HitPoints"
             Int: 850
-          }
-          Overrides {
-            Name: "cs:HitPointsUpgraded"
-            Int: 925
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -4938,6 +4622,10 @@ Assets {
           Overrides {
             Name: "cs:Acceleration"
             Int: 500
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeed"
@@ -4958,50 +4646,6 @@ Assets {
           Overrides {
             Name: "cs:TraverseUpgraded"
             Int: 35
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "b73a63/tanksportal-images4"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "2"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 50000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -5032,11 +4676,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -5168,12 +4808,40 @@ Assets {
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -12
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 21000
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 50000
           }
           Overrides {
             Name: "cs:Damage"
@@ -5182,10 +4850,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 62
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -5216,6 +4880,10 @@ Assets {
             Int: 500
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 55
           }
@@ -5234,50 +4902,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "18"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "b73a63/tanksportal-images4"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "3"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 50000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -5308,11 +4932,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -5444,12 +5064,40 @@ Assets {
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -10
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 21000
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
           }
           Overrides {
             Name: "cs:Damage"
@@ -5458,10 +5106,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 205
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -5492,6 +5136,10 @@ Assets {
             Int: 600
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 60
           }
@@ -5510,50 +5158,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "18"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "b73a63/tanksportal-images4"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "4"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 40000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -5584,11 +5188,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -5720,12 +5320,40 @@ Assets {
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -12
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 21000
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
           }
           Overrides {
             Name: "cs:Damage"
@@ -5734,10 +5362,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 175
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -5768,6 +5392,10 @@ Assets {
             Int: 1300
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 55
           }
@@ -5786,50 +5414,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "18"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "b73a63/tanksportal-images4"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "5"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 40000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -5860,11 +5444,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -5996,12 +5576,40 @@ Assets {
             Int: 17
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -9
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 9
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 21000
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 35000
           }
           Overrides {
             Name: "cs:Damage"
@@ -6010,10 +5618,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 360
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -6044,6 +5648,10 @@ Assets {
             Int: 900
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 60
           }
@@ -6062,50 +5670,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "18"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "458bb4/tanksportal-images5"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "1"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 35000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 9
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -6136,11 +5700,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -6272,32 +5832,56 @@ Assets {
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -11
           }
           Overrides {
-            Name: "cs:ShellSpeed"
-            Int: 22500
+            Name: "cs:HorizontalAngles"
+            Int: 0
           }
           Overrides {
-            Name: "cs:Damage"
-            Int: 280
+            Name: "cs:ProjectileSpeed"
+            Int: 22500
           }
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 300
           }
           Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
+            Name: "cs:ProjectileLength"
+            Float: 20
           }
           Overrides {
-            Name: "cs:HitPoints"
-            Int: 950
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Damage"
+            Int: 280
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
           }
           Overrides {
             Name: "cs:HitPointsUpgraded"
             Int: 1000
+          }
+          Overrides {
+            Name: "cs:HitPoints"
+            Int: 950
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -6324,6 +5908,10 @@ Assets {
             Int: 20
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 55
           }
@@ -6342,50 +5930,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite2"
             String: "21"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "458bb4/tanksportal-images5"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "2"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 40000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -6416,11 +5960,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -6552,32 +6092,56 @@ Assets {
             Int: 15
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -10
           }
           Overrides {
-            Name: "cs:ShellSpeed"
-            Int: 24000
+            Name: "cs:HorizontalAngles"
+            Int: 0
           }
           Overrides {
-            Name: "cs:Damage"
-            Int: 315
+            Name: "cs:ProjectileSpeed"
+            Int: 24000
           }
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 350
           }
           Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
+            Name: "cs:ProjectileLength"
+            Float: 20
           }
           Overrides {
-            Name: "cs:HitPoints"
-            Int: 1350
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Damage"
+            Int: 315
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 25000
           }
           Overrides {
             Name: "cs:HitPointsUpgraded"
             Int: 1450
+          }
+          Overrides {
+            Name: "cs:HitPoints"
+            Int: 1350
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -6604,6 +6168,10 @@ Assets {
             Int: 25
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 30
           }
@@ -6622,50 +6190,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite2"
             String: "21"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "458bb4/tanksportal-images5"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "3"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 25000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -6696,11 +6220,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -6832,32 +6352,56 @@ Assets {
             Int: 40
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:MaxDepression"
             Int: -13
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:ProjectileSpeed"
             Int: 21000
           }
           Overrides {
-            Name: "cs:Damage"
-            Int: 425
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 25000
           }
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 475
           }
           Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
+            Name: "cs:HitPointsUpgraded"
+            Int: 1600
+          }
+          Overrides {
+            Name: "cs:Damage"
+            Int: 425
           }
           Overrides {
             Name: "cs:HitPoints"
             Int: 1500
-          }
-          Overrides {
-            Name: "cs:HitPointsUpgraded"
-            Int: 1600
           }
           Overrides {
             Name: "cs:TopSpeed"
@@ -6874,6 +6418,10 @@ Assets {
           Overrides {
             Name: "cs:Acceleration"
             Int: 1200
+          }
+          Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeed"
@@ -6894,50 +6442,6 @@ Assets {
           Overrides {
             Name: "cs:TraverseUpgraded"
             Int: 40
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "458bb4/tanksportal-images5"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "4"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 25000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -6968,11 +6472,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -7104,12 +6604,40 @@ Assets {
             Int: 15
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -10
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 21000
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 50000
           }
           Overrides {
             Name: "cs:Damage"
@@ -7118,10 +6646,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 66
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -7152,6 +6676,10 @@ Assets {
             Int: 4400
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 20
           }
@@ -7170,50 +6698,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "23"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "458bb4/tanksportal-images5"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "5"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 50000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -7244,11 +6728,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -7380,12 +6860,40 @@ Assets {
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -9
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 27000
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
           }
           Overrides {
             Name: "cs:Damage"
@@ -7394,10 +6902,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 320
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -7428,6 +6932,10 @@ Assets {
             Int: 4500
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 60
           }
@@ -7446,50 +6954,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "23"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "8442eb/tanksportal-images6"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "1"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 40000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -7520,11 +6984,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -7656,12 +7116,40 @@ Assets {
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -11
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 21000
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
           }
           Overrides {
             Name: "cs:Damage"
@@ -7670,10 +7158,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 250
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -7704,6 +7188,10 @@ Assets {
             Int: 2500
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 55
           }
@@ -7722,50 +7210,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "23"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "8442eb/tanksportal-images6"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "2"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 40000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -7796,11 +7240,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -7932,12 +7372,40 @@ Assets {
             Int: 9
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -10
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 27000
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
           }
           Overrides {
             Name: "cs:Damage"
@@ -7946,10 +7414,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 330
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -7980,6 +7444,10 @@ Assets {
             Int: 700
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 60
           }
@@ -7998,50 +7466,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "23"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "8442eb/tanksportal-images6"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "3"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 40000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -8072,11 +7496,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -8208,12 +7628,40 @@ Assets {
             Int: 23
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -9
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 21000
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 25000
           }
           Overrides {
             Name: "cs:Damage"
@@ -8222,10 +7670,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 780
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -8256,6 +7700,10 @@ Assets {
             Int: 1800
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 40
           }
@@ -8274,50 +7722,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "24"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "8442eb/tanksportal-images6"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "4"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 25000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -8348,11 +7752,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -8484,12 +7884,40 @@ Assets {
             Int: 23
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -11
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 21000
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 25000
           }
           Overrides {
             Name: "cs:Damage"
@@ -8498,10 +7926,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 710
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -8532,6 +7956,10 @@ Assets {
             Int: 3800
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 50
           }
@@ -8550,50 +7978,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "24"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "8442eb/tanksportal-images6"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "5"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 25000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -8624,11 +8008,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -8760,12 +8140,40 @@ Assets {
             Int: 17
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -10
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 21000
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 25000
           }
           Overrides {
             Name: "cs:Damage"
@@ -8774,10 +8182,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 650
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 0
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -8808,6 +8212,10 @@ Assets {
             Int: 2500
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 50
           }
@@ -8826,50 +8234,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "24"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "7bfb91/tanksportal-images7"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "1"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 25000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 0
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -8900,11 +8264,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
@@ -9036,12 +8396,40 @@ Assets {
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepth"
+            Name: "cs:MaxDepression"
             Int: -11
           }
           Overrides {
-            Name: "cs:ShellSpeed"
+            Name: "cs:HorizontalAngles"
+            Int: 11
+          }
+          Overrides {
+            Name: "cs:ProjectileSpeed"
             Int: 24000
+          }
+          Overrides {
+            Name: "cs:ProjectileLength"
+            Float: 20
+          }
+          Overrides {
+            Name: "cs:ProjectileRadius"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:AllowHoldDownFiring"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:RecoilAmount"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:RecoilRockingMultiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 35000
           }
           Overrides {
             Name: "cs:Damage"
@@ -9050,10 +8438,6 @@ Assets {
           Overrides {
             Name: "cs:DamageUpgraded"
             Int: 1000
-          }
-          Overrides {
-            Name: "cs:LeftRight"
-            Int: 10
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -9084,6 +8468,10 @@ Assets {
             Int: 2700
           }
           Overrides {
+            Name: "cs:WheelSpeedModifier"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:TurningSpeed"
             Int: 50
           }
@@ -9102,50 +8490,6 @@ Assets {
           Overrides {
             Name: "cs:Prerequisite1"
             String: "22"
-          }
-          Overrides {
-            Name: "cs:PortalImageURL"
-            String: "7bfb91/tanksportal-images7"
-          }
-          Overrides {
-            Name: "cs:ScreenShotIndex"
-            String: "2"
-          }
-          Overrides {
-            Name: "cs:ProjectileLength"
-            Float: 20
-          }
-          Overrides {
-            Name: "cs:ProjectileRadius"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RecoilRockingMultiplier"
-            Float: 2
-          }
-          Overrides {
-            Name: "cs:RecoilAmount"
-            Float: 10
-          }
-          Overrides {
-            Name: "cs:AllowHoldDownFiring"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:ViewRange"
-            Int: 35000
-          }
-          Overrides {
-            Name: "cs:ArmorValues"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles"
-            Int: 11
-          }
-          Overrides {
-            Name: "cs:WheelSpeedModifier"
-            Float: 1
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
@@ -9176,11 +8520,7 @@ Assets {
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ArmorValues:category"
-            String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HorizontalCannonAngles:category"
+            Name: "cs:HorizontalAngles:category"
             String: "Custom"
           }
           Overrides {
