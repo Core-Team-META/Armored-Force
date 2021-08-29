@@ -100,6 +100,8 @@ local TECH_TREE_CONTENT = script:GetCustomProperty("TECH_TREE_CONTENT"):WaitForO
 local CLOSE_CANNOT_PURCHASE_TANK = script:GetCustomProperty("CLOSE_CANNOT_PURCHASE_TANK"):WaitForObject()
 local BUTTON_UPGRADE_TANK = script:GetCustomProperty("BUTTON_UPGRADE_TANK"):WaitForObject()
 local BUY_TANK_CONTAINER = script:GetCustomProperty("BUY_TANK_CONTAINER"):WaitForObject()
+local tankPurchaseImage = script:GetCustomProperty("TankPurchaseImage"):WaitForObject()
+
 local STATS_TANK_CONTAINER = script:GetCustomProperty("STATS_TANK_CONTAINER"):WaitForObject()
 local UPGRADE_TANK_CONTAINER = script:GetCustomProperty("UPGRADE_TANK_CONTAINER"):WaitForObject()
 local UPGRADE_TANK_CONFIRM_CONTAINER = script:GetCustomProperty("UPGRADE_TANK_CONFIRM_CONTAINER"):WaitForObject()
@@ -479,6 +481,7 @@ function PopulateSelectedTankPanel(id)
 		if UTIL_API.UsingPremiumTank(tonumber(selectedTankId)) then
 			Events.Broadcast("ENABLE_GARAGE_COMPONENT", "SHOP_MENU", 4)
 		elseif prereqs[1].usable then
+			IMAGE_API.SetTankImage(tankPurchaseImage, id)
 			BUY_TANK_CONTAINER.visibility = Visibility.FORCE_ON
 			TECH_TREE_CONTENT.parent:FindDescendantByName("PREREQUISITE_INVALID_CONTAINER").visibility = Visibility.FORCE_OFF
 			local selectedTank = {}
