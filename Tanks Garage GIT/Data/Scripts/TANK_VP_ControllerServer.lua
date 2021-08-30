@@ -1,3 +1,6 @@
+local AIPlayer = require(script:GetCustomProperty("_AIPlayer"))
+
+
 -- Tank Custom Properties:
 -- INFO
 local identifier = script:GetCustomProperty("Identifier")
@@ -73,6 +76,7 @@ local destroyedTank = nil
 
 -- Player Reference
 local driver = nil
+local isAI = false
 
 -- Additional Local Variables
 local originalSpeed = 0
@@ -95,6 +99,7 @@ local diedEventListener = nil
 local destroyedListener = nil
 local consumableListener = nil
 local armorImpactListeners = {}
+
 
 local function RaycastResultFromPointRotationDistance(point, rotation, distance)
 	
@@ -131,9 +136,13 @@ function GetDriver()
 
 end
 
-function AssignDriver(newDriver, playerStart)
+function AssignDriver(newDriver, playerStart, _isAI)
 
-	if Object.IsValid(driver) or not Object.IsValid(newDriver) or not newDriver:IsA("Player") then
+	isAI = _isAI or false
+	print("assigning a driver.  AI?", isAI)
+
+	if (not isAI) and (Object.IsValid(driver) or not Object.IsValid(newDriver) or not newDriver:IsA("Player")) then
+		print("returning")
 		return
 	end
 	
@@ -143,12 +152,13 @@ function AssignDriver(newDriver, playerStart)
 	
 	if playerStart then
 		--print("Using player start position")
-		baseForPosition = playerStart
+		--baseForPosition = playerStart
 	end
-	
+	--print(baseForPosition)
+	--print(CoreDebug.GetStackTrace())
 	local newScriptPosition = baseForPosition:GetWorldPosition()
 	local newScriptRotation = baseForPosition:GetWorldRotation()
-	
+	print("newscript stuff", newScriptPosition, newScriptRotation)
 	local moreIdealPositionRaycast = World.Raycast(newScriptPosition + Vector3.UP * 1000, newScriptPosition - Vector3.UP * 1000, {ignorePlayers = true})
 	
 	if moreIdealPositionRaycast then
@@ -159,6 +169,7 @@ function AssignDriver(newDriver, playerStart)
 	
 	script:SetWorldPosition(newScriptPosition)
 	script:SetWorldRotation(newScriptRotation)
+
 	driver = newDriver
 	
 	SetTankModifications()
@@ -176,19 +187,27 @@ function AssignDriver(newDriver, playerStart)
 	chassis = World.SpawnAsset(chassisTemplate)
 	chassis:SetWorldPosition(script:GetWorldPosition())
 	chassis:SetWorldRotation(script:GetWorldRotation())
+
 	
 	Task.Wait()
-	
 	chassis:SetDriver(driver)
-	
-	chassis.maxSpeed = originalSpeed
-	chassis.accelerationRate = originalAcceleration
-	if chassis.type == "TreadedVehicle" then
-		chassis.turnSpeed = originalTurnSpeed
-	else 
-		chassis.turnRadius = originalTurnSpeed
+
+	if not isAI then
+		chassis:SetDriver(driver)
+	else
+		driver:AssignToTank(chassis)
 	end
-	
+
+	originalSpeed = chassis.maxSpeed
+	chassis.maxSpeed = originalSpeed
+	originalFriction = chassis.tireFriction
+	chassis.tireFriction = chassis.tireFriction
+	chassis.brakeStrength = 100
+	chassis.coastBrakeStrength = 70
+	originalAcceleration = chassis.accelerationRate
+	chassis.accelerationRate = originalAcceleration
+
+
 	originalFriction = chassis.tireFriction
 	chassis.brakeStrength = 100
 	chassis.coastBrakeStrength = 70
@@ -198,6 +217,11 @@ function AssignDriver(newDriver, playerStart)
 	cannon = hitbox:FindDescendantByName("Cannon")
 	cannonGuide = hitbox:FindDescendantByName("CannonGuide")
 	muzzle = hitbox:FindDescendantByName("Muzzle")
+
+	_G.lookup.tanks[driver].chassis = chassis
+	_G.lookup.tanks[driver].target = target
+	_G.lookup.tanks[driver].muzzle = muzzle
+	_G.lookup.tanks[driver].turret = turret
 	
 	Task.Wait()
 	
@@ -206,7 +230,9 @@ function AssignDriver(newDriver, playerStart)
 	
 	Task.Wait()
 	
-	driver:AttachToCoreObject(turret)
+	if not isAI then
+		driver:AttachToCoreObject(turret)
+	end
 	
 	hitbox:SetPosition(Vector3.ZERO)
 	
@@ -215,7 +241,7 @@ function AssignDriver(newDriver, playerStart)
 	end
 	
 	cannonGuide:LookAtContinuous(target, false)
-	
+
 	script:SetNetworkedCustomProperty("ChassisReference", chassis)
 	script:SetNetworkedCustomProperty("HitboxReference", hitbox)
 	script:SetNetworkedCustomProperty("DriverID", driver.id)
@@ -224,12 +250,14 @@ function AssignDriver(newDriver, playerStart)
 	 	armorImpactListeners[t] = t.beginOverlapEvent:Connect(OnArmorHit)
 	end
 	
-	bindingPressedListener = newDriver.bindingPressedEvent:Connect(OnBindingPressed)
+	if not isAI then
+		bindingPressedListener = newDriver.bindingPressedEvent:Connect(OnBindingPressed)
+		consumableListener = Events.Connect(driver.id .. "RepairTank", OnConsumableUsed)
+	end
 	diedEventListener = driver.diedEvent:Connect(OnDeath)
 	consumableListener = Events.Connect(driver.id .. "RepairTank", OnConsumableUsed)
-	
+
 	Task.Wait()
-	
 	script:SetNetworkedCustomProperty("TankReady", true)
 	
 	SetServerData()
@@ -262,22 +290,26 @@ function SetTankModifications()
 	
 	local modifications = nil
 
-	if driver.serverUserData.techTreeProgress then
-		for x, entry in ipairs(driver.serverUserData.techTreeProgress) do
-			if entry.id == identifier then
-				modifications = {tonumber(entry.weaponProgress), tonumber(entry.armorProgress), tonumber(entry.engineProgress)}
+	if isAI then
+		modifications = {0, 0, 0} -- 2, 2, 2 \ 0, 0, 0
+	else
+		if driver.serverUserData.techTreeProgress then
+			for x, entry in ipairs(driver.serverUserData.techTreeProgress) do
+				if entry.id == identifier then
+					modifications = {tonumber(entry.weaponProgress), tonumber(entry.armorProgress), tonumber(entry.engineProgress)}
+				end
 			end
 		end
-	end
 
-	if not modifications then
-		warn("COULD NOT FIND TANK ID " .. identifier)
-		modifications = {0, 0, 0} -- 2, 2, 2 \ 0, 0, 0
-	end
+		if not modifications then
+			warn("COULD NOT FIND TANK ID " .. identifier)
+			modifications = {0, 0, 0} -- 2, 2, 2 \ 0, 0, 0
+		end
 	
-	if driver.serverUserData.TankUpgradeOverride and #driver.serverUserData.TankUpgradeOverride > 0 then
-		--print("Overriding tank upgrades")
-		modifications = driver.serverUserData.TankUpgradeOverride 
+		if driver.serverUserData.TankUpgradeOverride and #driver.serverUserData.TankUpgradeOverride > 0 then
+			--print("Overriding tank upgrades")
+			modifications = driver.serverUserData.TankUpgradeOverride 
+		end
 	end
 	
 	if modifications[1] == 2 then
@@ -332,13 +364,22 @@ function OnDeath(player, damage)
 	local tankPosition = hitbox:GetWorldPosition()
 	local tankRotation = hitbox:GetWorldRotation()
 	
-	driver:Detach()
+	if driver:IsA("Player") then
+		driver:Detach()
+	elseif driver:IsA("AIPlayer") then
+		driver:Destroy(chassis)
+	end
 	hitbox:Destroy()
 	chassis:Destroy()
 	driver.isCollidable = true
 	script:SetNetworkedCustomProperty("TankReady", false)
 	
 	local destroyedTank = World.SpawnAsset(destroyedTankTempate, {parent = tankGarage, position = tankPosition, rotation = tankRotation})
+
+	if driver:IsA("Player") then
+		driver:AttachToCoreObject(destroyedTank)
+	end
+
 	destroyedTank.lifeSpan = 15
 
 	Task.Wait()
@@ -401,7 +442,22 @@ function OnBindingPressed(player, binding)
 
 end
 
-function FireProjectile(player)
+
+function HandleAITankShot(aiDriver)
+	if aiDriver ~= driver then return end
+	--print("Firing tank", aiDriver)
+	FireProjectile(aiDriver)
+end
+
+
+function HandleAITankAim(aiDriver, pos)
+	if aiDriver ~= driver then return end
+	target:SetWorldPosition(pos)
+end
+
+
+
+function FireProjectile(driver)
 
 	if reloading or barrelDown then
 		return
@@ -409,9 +465,20 @@ function FireProjectile(player)
 	
 	reloading = true
 
-	local firedProjectile = Projectile.Spawn(projectile, muzzle:GetWorldPosition(), muzzle:GetWorldRotation() * Vector3.FORWARD)
+	local aimVector = muzzle:GetWorldRotation() * Vector3.FORWARD
+	if driver:IsA("AIPlayer") then
+		local targetPos = target:GetWorldPosition() + Vector3.UP * math.random(75, 150)
+		local targetAimVector = (targetPos - muzzle:GetWorldPosition()):GetNormalized()
+		aimVector.z = targetAimVector.z 
+	end
+
+	local firedProjectile = Projectile.Spawn(projectile, muzzle:GetWorldPosition(), aimVector)
 	
-	firedProjectile.owner = driver
+	if driver:IsA("Player") then
+		firedProjectile.owner = driver
+	else
+		firedProjectile.serverUserData.owner = driver
+	end
 	firedProjectile.gravityScale = 0
 	firedProjectile.lifeSpan = 5
 	firedProjectile.capsuleRadius = projectileRadius 
@@ -423,7 +490,7 @@ function FireProjectile(player)
 	
 	firedProjectile.shouldDieOnImpact = true
 	
-	Events.BroadcastToAllPlayers("ANIMATE_FIRING", driver, reloadTime)
+	Events.BroadcastToAllPlayers("ANIMATE_FIRING", chassis:GetReference(), reloadTime)
 
 	--#TODO This should be tied into the constants file
 	driver:AddResource("TOTALSHOTSFIRED", 1)
@@ -440,6 +507,7 @@ function ProjectileImpacted(expiredProjectile, other)
 	if not other:IsA("Vehicle") or expiredProjectile.serverUserData.hitOnce or other.driver == driver then
 		return
 	end
+	print("damage stuff")
 	
 	expiredProjectile.serverUserData.hitOnce = true
 	
@@ -447,9 +515,10 @@ function ProjectileImpacted(expiredProjectile, other)
 	local totalDamage = math.floor(potentialDamage - potentialDamage * 0.2)
 	local damageDealt = Damage.New(totalDamage)
 	
-	damageDealt.sourcePlayer = driver
+	if driver:IsA("Player") then
+		damageDealt.sourcePlayer = driver
+	end
 	damageDealt.reason = DamageReason.COMBAT
-	
 	if not COMBAT then
 		other.driver:ApplyDamage(damageDealt)
 	else
@@ -463,8 +532,11 @@ function ProjectileImpacted(expiredProjectile, other)
 		}
 		COMBAT.ApplyDamage(attackData)
 	end
+
 	
-	Events.BroadcastToPlayer(driver, "ShowDamageFeedback", totalDamage, "TRACK", vehicle:GetWorldPosition(), other.driver)
+	if driver:IsA("Player") then
+		Events.BroadcastToPlayer(driver, "ShowDamageFeedback", totalDamage, "TRACK", chassis:GetWorldPosition(), other.driver.id)
+	end
 
 end
 
@@ -477,11 +549,16 @@ end
 function OnArmorHit(trigger, other)	
 	if other.type == "Projectile" and other.owner ~= driver then
         local enemyPlayer = other.owner
-		
+		if enemyPlayer == nil then
+			--enemyPlayer = AIPlayer.FindAIDriver(other)
+			enemyPlayer = other.serverUserData.owner
+		end
+
 		if other.serverUserData.hitOnce then
 			return
 		end
 		
+		print("Armor hit")
 		other.serverUserData.hitOnce = true
 		other.speed = 0
 		other.capsuleRadius = 0
@@ -489,6 +566,12 @@ function OnArmorHit(trigger, other)
 		other.lifeSpan = 0.1
 				
 		if not enemyPlayer or not enemyPlayer.serverUserData.currentTankData or enemyPlayer.team == driver.team then
+			print("Returning from armor hit")
+			--[[
+			print(enemyPlayer)
+			print(enemyPlayer.serverUserData)
+			print(enemyPlayer.serverUserData.currentTankData)
+			print(enemyPlayer.team, driver.team)]]
 			return
 		end
 		
@@ -496,8 +579,10 @@ function OnArmorHit(trigger, other)
 		local potentialDamage = enemyPlayer.serverUserData.currentTankData.fullDamage
 		local totalDamage = math.floor(potentialDamage - potentialDamage * armorValue)
 		local damageDealt = Damage.New(totalDamage)
-		
-		damageDealt.sourcePlayer = enemyPlayer
+
+		if enemyPlayer:IsA("Player") then
+			damageDealt.sourcePlayer = enemyPlayer
+		end
 		damageDealt.reason = DamageReason.COMBAT
 		
 		if not COMBAT then
@@ -511,7 +596,12 @@ function OnArmorHit(trigger, other)
 				rotation = nil,
 				tags = {id = "Projectile"}
 			}
-			COMBAT.ApplyDamage(attackData)
+			-- This is kind of ugly. :( -CJC
+			if driver:IsA("AIPlayer") then
+				driver:ApplyDamage(attackData)
+			else
+				COMBAT.ApplyDamage(attackData)
+			end
 		end
 		
         local dmgPercent = totalDamage / potentialDamage
@@ -532,9 +622,15 @@ function OnArmorHit(trigger, other)
 		if armorName == "LEFTTRACK" or armorName == "RIGHTTRACK" then
 			armorName = "TRACK"
 		end
-		
-		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage, armorName, trigger:GetWorldPosition(), driver)
-		Events.BroadcastToPlayer(driver, "ShowHitFeedback", totalDamage, armorName, trigger:GetWorldPosition())
+
+		if enemyPlayer:IsA("Player") then
+			Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage, armorName, trigger:GetWorldPosition(), driver.id)
+		else
+
+		end
+		if driver:IsA("Player") then
+			Events.BroadcastToPlayer(driver, "ShowHitFeedback", totalDamage, armorName, trigger:GetWorldPosition())
+		end
 		
 		local possibleDamageState = math.random(100)
 		
@@ -554,7 +650,9 @@ function OnArmorHit(trigger, other)
 			end
 
 			trackTask = Task.Spawn(OnTracked, 0)
-			Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "TRACK")
+			if enemyPlayer:IsA("Player") then
+				Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "TRACK")
+			end
 		elseif armorName == "HULLREAR" and not burnTask then
 			playerWhoBurned = enemyPlayer
 
@@ -563,7 +661,9 @@ function OnArmorHit(trigger, other)
 			end
 
 			burnTask = Task.Spawn(OnBurning, 0)
-			Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "FIRE")
+			if enemyPlayer:IsA("Player") then
+				Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "FIRE")
+			end
 		elseif string.find(armorName, "TURRET") and not turretDamagedTask then
 			local pickTurretDamage = math.random(100)
 			if pickTurretDamage <= 50 then
@@ -573,7 +673,9 @@ function OnArmorHit(trigger, other)
 				end
 
 				turretDamagedTask = Task.Spawn(OnDamagedTurret, 0)
-				Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "TURRET")
+				if enemyPlayer:IsA("Player") then
+					Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "TURRET")
+				end
 			else 
 
 				if Object.IsValid(driver) then
@@ -581,15 +683,21 @@ function OnArmorHit(trigger, other)
 				end
 
 				turretDamagedTask = Task.Spawn(OnDamagedBarrel, 0)
-				Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "BARREL")
+				if enemyPlayer:IsA("Player") then
+					Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "BARREL")
+				end
 			end
 		end
 	elseif other.type == "TreadedVehicle" or other.type == "Vehicle" then
-		
+		local otherIsAI = false
 		local enemyPlayer = other.driver
+		if enemyPlayer == nil then
+			enemyPlayer = AIPlayer.FindAIDriver(other)
+			otherIsAI = true
+		end
 		local armorName = trigger.name
 		
-		if armorName == "LEFTTRACK" or armorName == "RIGHTTRACK" or enemyPlayer.team == driver.team then
+		if armorName == "LEFTTRACK" or armorName == "RIGHTTRACK" or enemyPlayer == nil or enemyPlayer.team == driver.team then
 			return
 		end
 	
@@ -635,6 +743,13 @@ function OnArmorHit(trigger, other)
 		
 		local damageDealt = Damage.New(ramDamage)
 		
+		if not otherIsAI then
+			damageDealt.sourcePlayer = enemyPlayer
+		end
+		damageDealt.reason = DamageReason.COMBAT
+		--driver:ApplyDamage(damageDealt)
+
+
 		if Object.IsValid(driver) then
 			Events.Broadcast("PlayerRammedTank", playerWhoBurned)
 		end
@@ -656,8 +771,13 @@ function OnArmorHit(trigger, other)
 	   		COMBAT.ApplyDamage(attackData)
 	   	end
     
-    	Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", ramDamage, armorName, trigger:GetWorldPosition(), driver)
+	if enemyPlayer:IsA("Player") then
+		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", ramDamage, armorName, trigger:GetWorldPosition(), driver.id)
+  	end
+  	if driver:IsA("Player") then
 		Events.BroadcastToPlayer(driver, "ShowHitFeedback", ramDamage, armorName, trigger:GetWorldPosition())
+	end
+
 		
 		if otherVehicleSpeed > thisVehicleSpeed then
 			return
@@ -672,7 +792,9 @@ function OnArmorHit(trigger, other)
 		if armorName == "HULLREAR" and not burnTask then
 			playerWhoBurned = enemyPlayer
 			burnTask = Task.Spawn(OnBurning, 0)
-			Events.BroadcastToPlayer(driver, "INFLICTED_STATE", "FIRE")
+			if enemyPlayer:IsA("Player") then
+				Events.BroadcastToPlayer(driver, "INFLICTED_STATE", "FIRE")
+			end
 		end
 	end
 	
@@ -763,30 +885,31 @@ function OnBurning()
 
 		local damageDealt = Damage.New(10)
 	
-		damageDealt.sourcePlayer = playerWhoBurned
-		damageDealt.reason = DamageReason.COMBAT
-		
-		if not COMBAT then
-			driver:ApplyDamage(damageDealt)
-		else
-			local attackData = {
-				object = driver,
-				damage = damageDealt,
-				source = playerWhoBurned,
-				position = nil,
-				rotation = nil,
-				tags = {id = "Burning"}
-			}
-			
-			COMBAT.ApplyDamage(attackData)
+		if playerWhoBurned:IsA("Player") then
+			damageDealt.sourcePlayer = playerWhoBurned
 		end
+		damageDealt.reason = DamageReason.COMBAT
+		--driver:ApplyDamage(damageDealt)
+
+		local attackData = {
+			object = driver,
+			damage = damageDealt,
+			source = playerWhoBurned,
+			position = nil,
+			rotation = nil,
+			tags = {id = "Burning"}
+		}
+		
+		COMBAT.ApplyDamage(attackData)
 		
 		Task.Wait(1)
 	end
 	
 	script:SetNetworkedCustomProperty("Burning", false)
 	Events.Broadcast("ToggleConsumable", driver, "EXTINGUISH", false)
-	chassis.maxSpeed = originalSpeed
+	if Object.IsValid(chassis) then
+		chassis.maxSpeed = originalSpeed
+	end
 	
 	Task.Wait(2)
 	
@@ -984,4 +1107,10 @@ function Tick()
 	
 end
 
+
+
+
 destroyedListener = script.destroyEvent:Connect(OnDestroy)
+Events.Connect("AI_Tankshot", HandleAITankShot)
+Events.Connect("AI_TankAim", HandleAITankAim)
+

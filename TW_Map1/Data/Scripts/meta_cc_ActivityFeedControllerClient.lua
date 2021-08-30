@@ -162,6 +162,7 @@ end
 
 
 function GetTeamColor(player)
+	if not Object.IsValid(player) then return FRIENDLY_COLOR end
 	if (player.team == LOCAL_PLAYER.team) then
 		return FRIENDLY_COLOR
 	else

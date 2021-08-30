@@ -32,6 +32,7 @@ local tankEquipToggle = {}
 _G["GameWinner"] = -1
 	
 function OnChangeState(previousState)
+	print("Changed game state!  N ow", previousState)
 
 	if timerTask then
 	

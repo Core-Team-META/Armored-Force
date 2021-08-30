@@ -62,6 +62,8 @@ function CheckTankReady()
 	
 	Task.Wait(1)
 	
+	local pID = tankControllerServer:GetCustomProperty("DriverID")
+
 	for _, p in ipairs(Game.GetPlayers()) do
 		if p.id == tankControllerServer:GetCustomProperty("DriverID") then
 			driver = p
@@ -77,6 +79,8 @@ function CheckTankReady()
 	tankBodyClient:SetRotation(Rotation.ZERO)
 	
 	Task.Wait(1)
+	-- in case it dies during this mysterious wait.  (Why is that there?)
+	if not Object.IsValid(tankBodyClient) then return end
 	
 	treadsLeft = tankBodyClient:FindDescendantByName("TreadsLeft")
 	treadsRight = tankBodyClient:FindDescendantByName("TreadsRight")
@@ -113,7 +117,6 @@ function CheckTankReady()
 end
 
 function GetSkin(player)
-
 	return templateReferences:GetCustomProperty("Default" .. "Skin")
 	
 end
@@ -124,7 +127,10 @@ function SetClientData()
 		return
 	end
 
-	if not driver.clientUserData.currentTankData then
+	if driver.clientUserData == nil then
+		driver.clientUserData = {}
+	end
+	if driver.clientUserData.currentTankData == nil then
 		driver.clientUserData.currentTankData = {}
 	end
 	
@@ -196,23 +202,27 @@ function OnTankStateChanged(controllerServer, property)
 
 end
 
-function FiringAnimation(player, reloadTime)
+function FiringAnimation(tankRef, reloadTime)
+	if not Object.IsValid(tankBodyServer) then return end
 
 	if not saluteOverride then
-		if player ~= driver or not Object.IsValid(tankBodyClient) then
+		if tankBodyServer:GetReference() ~= tankRef or not Object.IsValid(tankBodyClient) then
 			return
 		end
 	end
 	
 	reloadSpeed = reloadTime
 	
-	shotSFX:Play()
+	if shotSFX then
+		shotSFX:Play()
+	end
 		
+	if turretClient == nil then return end
 	local xRotation = 0
 	local yRotation = 0
 	
 	local currentZ = turretClient:GetRotation().z
-	
+
 	if currentZ < 0 then
 		currentZ = 360 + currentZ
 	end	
@@ -251,7 +261,9 @@ function FiringAnimation(player, reloadTime)
 	
 	Task.Wait(0.07)
 	
-	adjustmentPoint:RotateTo(Rotation.ZERO, 0.2, true)
+	if Object.IsValid(adjustmentPoint) then
+		adjustmentPoint:RotateTo(Rotation.ZERO, 0.2, true)
+	end
 
 end
 
