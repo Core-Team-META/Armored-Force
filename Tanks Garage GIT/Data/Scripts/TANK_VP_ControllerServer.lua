@@ -1,32 +1,44 @@
 -- Tank Custom Properties:
--- FIREPOWER
-local reloadSpeed = script:GetCustomProperty("ReloadSpeed")
-local upgradedReload = script:GetCustomProperty("UpgradedReload")
-local projectileSpeed = script:GetCustomProperty("ProjectileSpeed")
-local projectileLength = script:GetCustomProperty("ProjectileLength")
-local projectileRadius = script:GetCustomProperty("ProjectileRadius")
-local damagePerShot = script:GetCustomProperty("DamagePerShot")
-local upgradedDamage = script:GetCustomProperty("UpgradedDamage")
-local allowHoldDownFiring = script:GetCustomProperty("AllowHoldDownFiring")
-
--- SURVIVABILITY
-local hitPoints = script:GetCustomProperty("HitPoints")
-local upgradedHitPoints = script:GetCustomProperty("UpgradedHitPoints")
-local viewRange = script:GetCustomProperty("ViewRange")
-
--- MOBILITY
-local turretTraverseSpeed = script:GetCustomProperty("TurretTraverseSpeed")
-local upgradedTraverse = script:GetCustomProperty("UpgradedTraverse")
-local turretElevationSpeed = script:GetCustomProperty("TurretElevationSpeed")
-local upgradedElevation = script:GetCustomProperty("UpgradedElevation")
-local maxElevationAngle = script:GetCustomProperty("MaxElevationAngle")
-local minDepressionAngle = script:GetCustomProperty("MinDepressionAngle")
-local horizontalCannonAngles = script:GetCustomProperty("HorizontalCannonAngles")
-
 -- INFO
 local identifier = script:GetCustomProperty("Identifier")
-local type = script:GetCustomProperty("Type")
-local tierValue = script:GetCustomProperty("TierValue")
+
+while not _G.TANK_DATA do
+	Task.Wait()
+end
+
+local tankData = _G.TANK_DATA[tonumber(identifier)]
+local type = tankData.type
+local tierValue = tankData.tier
+
+-- TURRET
+local reloadSpeed = tankData.reload
+local upgradedReload = tankData.reloadUpgraded
+local projectileSpeed = tankData.projectileSpeed
+local projectileLength = tankData.projectileLength
+local projectileRadius = tankData.projectileRadius
+local damagePerShot = tankData.damage
+local upgradedDamage = tankData.damageUpgraded
+local allowHoldDownFiring = tankData.allowHoldDownFiring
+local turretTraverseSpeed = tankData.turret
+local upgradedTraverse = tankData.turretUpgraded
+local turretElevationSpeed = tankData.elevation
+local upgradedElevation = tankData.elevationUpgraded
+local maxElevationAngle = tankData.maxElevation
+local minDepressionAngle = tankData.maxDepression
+local horizontalCannonAngles = tankData.horizontalAngles
+
+-- SHELL
+local hitPoints = tankData.hitPoints
+local upgradedHitPoints = tankData.hitPointsUpgraded
+local viewRange = tankData.viewRange
+
+-- ENGINE
+local topSpeed = tankData.topSpeed
+local upgradedTopSpeed = tankData.topSpeedUpgraded
+local acceleration = tankData.acceleration
+local upgradedAcceleration = tankData.accelerationUpgraded
+local turningSpeed = tankData.turningSpeed
+local upgradedTurningSpeed = tankData.turningSpeedUpgraded
 
 -- Main Component References
 local templateReferences = script:GetCustomProperty("TemplateReferences"):WaitForObject()
@@ -169,16 +181,18 @@ function AssignDriver(newDriver, playerStart)
 	
 	chassis:SetDriver(driver)
 	
-	originalSpeed = chassis.maxSpeed
-	originalFriction = chassis.tireFriction
-	chassis.tireFriction = chassis.tireFriction
-	chassis.brakeStrength = 100
-	chassis.coastBrakeStrength = 70
-	originalAcceleration = chassis.accelerationRate
+	chassis.maxSpeed = originalSpeed
+	chassis.accelerationRate = originalAcceleration
 	if chassis.type == "TreadedVehicle" then
-		originalTurnSpeed = chassis.turnSpeed
+		chassis.turnSpeed = originalTurnSpeed
+	else 
+		chassis.turnRadius = originalTurnSpeed
 	end
 	
+	originalFriction = chassis.tireFriction
+	chassis.brakeStrength = 100
+	chassis.coastBrakeStrength = 70
+		
 	hitbox = World.SpawnAsset(newHitbox, {parent = chassis, scale = Vector3.ONE * 1.1})
 	turret = hitbox:FindDescendantByName("Turret")
 	cannon = hitbox:FindDescendantByName("Cannon")
@@ -285,15 +299,21 @@ function SetTankModifications()
 	end
 
 	if modifications[3] == 2 then
-		traverseSpeed = upgradedTraverse	
+		traverseSpeed = upgradedTraverse
 		elevationSpeed = upgradedElevation
-		chassisTemplate = templateReferences:GetCustomProperty("UpgradedChassis")
+		chassisTemplate = templateReferences:GetCustomProperty("DefaultChassis")
+		originalSpeed = upgradedTopSpeed
+		originalAcceleration = upgradedAcceleration
+		originalTurnSpeed = upgradedTurningSpeed
 		--print("Upgraded mobility")
 		
 	else 
 		traverseSpeed = turretTraverseSpeed
 		elevationSpeed = turretElevationSpeed
 		chassisTemplate = templateReferences:GetCustomProperty("DefaultChassis")
+		originalSpeed = topSpeed
+		originalAcceleration = acceleration
+		originalTurnSpeed = turningSpeed
 		--print("Default mobility")
 	end
 	
