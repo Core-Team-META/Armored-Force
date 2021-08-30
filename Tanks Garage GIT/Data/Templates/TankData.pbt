@@ -292,14 +292,6 @@ Assets {
             Int: 500
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 30
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 40
-          }
-          Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -542,14 +534,6 @@ Assets {
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
             Int: 70
-          }
-          Overrides {
-            Name: "cs:Traverse"
-            Int: 30
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 40
           }
           Overrides {
             Name: "cs:Prerequisite1"
@@ -800,14 +784,6 @@ Assets {
             Int: 60
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 30
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 70
-          }
-          Overrides {
             Name: "cs:Prerequisite1"
             String: "01"
           }
@@ -1056,14 +1032,6 @@ Assets {
             Int: 65
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 25
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 35
-          }
-          Overrides {
             Name: "cs:Prerequisite1"
             String: "01"
           }
@@ -1300,10 +1268,6 @@ Assets {
             Int: 700
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 35
-          }
-          Overrides {
             Name: "cs:WheelSpeedModifier"
             Float: 1
           }
@@ -1314,10 +1278,6 @@ Assets {
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
             Int: 65
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 45
           }
           Overrides {
             Name: "cs:Prerequisite1"
@@ -1560,10 +1520,6 @@ Assets {
             Int: 1900
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 20
-          }
-          Overrides {
             Name: "cs:WheelSpeedModifier"
             Float: 1
           }
@@ -1574,10 +1530,6 @@ Assets {
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
             Int: 60
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 30
           }
           Overrides {
             Name: "cs:Prerequisite1"
@@ -1832,14 +1784,6 @@ Assets {
             Int: 65
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 25
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 35
-          }
-          Overrides {
             Name: "cs:Prerequisite1"
             String: "01"
           }
@@ -2088,14 +2032,6 @@ Assets {
             Int: 2400
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 20
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 30
-          }
-          Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -2340,14 +2276,6 @@ Assets {
             Int: 1200
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 25
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 35
-          }
-          Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -2590,14 +2518,6 @@ Assets {
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
             Int: 70
-          }
-          Overrides {
-            Name: "cs:Traverse"
-            Int: 40
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 50
           }
           Overrides {
             Name: "cs:Prerequisite1"
@@ -2848,14 +2768,6 @@ Assets {
             Int: 60
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 30
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 40
-          }
-          Overrides {
             Name: "cs:Prerequisite1"
             String: "05"
           }
@@ -3102,14 +3014,6 @@ Assets {
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
             Int: 65
-          }
-          Overrides {
-            Name: "cs:Traverse"
-            Int: 25
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 35
           }
           Overrides {
             Name: "cs:Prerequisite1"
@@ -3360,14 +3264,6 @@ Assets {
             Int: 70
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 30
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 40
-          }
-          Overrides {
             Name: "cs:Prerequisite1"
             String: "05"
           }
@@ -3614,14 +3510,6 @@ Assets {
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
             Int: 70
-          }
-          Overrides {
-            Name: "cs:Traverse"
-            Int: 20
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 30
           }
           Overrides {
             Name: "cs:Prerequisite1"
@@ -3872,14 +3760,6 @@ Assets {
             Int: 70
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 20
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 25
-          }
-          Overrides {
             Name: "cs:Prerequisite1"
             String: "06"
           }
@@ -4126,14 +4006,6 @@ Assets {
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
             Int: 60
-          }
-          Overrides {
-            Name: "cs:Traverse"
-            Int: 30
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 40
           }
           Overrides {
             Name: "cs:Prerequisite1"
@@ -4384,14 +4256,6 @@ Assets {
             Int: 75
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 20
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 30
-          }
-          Overrides {
             Name: "cs:Prerequisite1"
             String: "07"
           }
@@ -4640,14 +4504,6 @@ Assets {
             Int: 500
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 25
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 35
-          }
-          Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -4890,14 +4746,6 @@ Assets {
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
             Int: 65
-          }
-          Overrides {
-            Name: "cs:Traverse"
-            Int: 30
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 40
           }
           Overrides {
             Name: "cs:Prerequisite1"
@@ -5148,14 +4996,6 @@ Assets {
             Int: 70
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 25
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 35
-          }
-          Overrides {
             Name: "cs:Prerequisite1"
             String: "18"
           }
@@ -5402,14 +5242,6 @@ Assets {
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
             Int: 65
-          }
-          Overrides {
-            Name: "cs:Traverse"
-            Int: 30
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 40
           }
           Overrides {
             Name: "cs:Prerequisite1"
@@ -5660,14 +5492,6 @@ Assets {
             Int: 70
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 30
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 40
-          }
-          Overrides {
             Name: "cs:Prerequisite1"
             String: "18"
           }
@@ -5904,10 +5728,6 @@ Assets {
             Int: 2300
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 20
-          }
-          Overrides {
             Name: "cs:WheelSpeedModifier"
             Float: 1
           }
@@ -5918,10 +5738,6 @@ Assets {
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
             Int: 65
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 30
           }
           Overrides {
             Name: "cs:Prerequisite1"
@@ -6164,10 +5980,6 @@ Assets {
             Int: 1400
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 25
-          }
-          Overrides {
             Name: "cs:WheelSpeedModifier"
             Float: 1
           }
@@ -6178,10 +5990,6 @@ Assets {
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
             Int: 60
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 30
           }
           Overrides {
             Name: "cs:Prerequisite1"
@@ -6436,14 +6244,6 @@ Assets {
             Int: 1700
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 30
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 40
-          }
-          Overrides {
             Name: "cs:TurningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -6681,19 +6481,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TurningSpeed"
-            Int: 20
+            Int: 1500
           }
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
-            Int: 20
-          }
-          Overrides {
-            Name: "cs:Traverse"
-            Int: 25
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 35
+            Int: 1500
           }
           Overrides {
             Name: "cs:Prerequisite1"
@@ -6944,14 +6736,6 @@ Assets {
             Int: 70
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 30
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 40
-          }
-          Overrides {
             Name: "cs:Prerequisite1"
             String: "23"
           }
@@ -7198,14 +6982,6 @@ Assets {
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
             Int: 65
-          }
-          Overrides {
-            Name: "cs:Traverse"
-            Int: 20
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 30
           }
           Overrides {
             Name: "cs:Prerequisite1"
@@ -7456,14 +7232,6 @@ Assets {
             Int: 70
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 30
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 40
-          }
-          Overrides {
             Name: "cs:Prerequisite1"
             String: "23"
           }
@@ -7710,14 +7478,6 @@ Assets {
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
             Int: 50
-          }
-          Overrides {
-            Name: "cs:Traverse"
-            Int: 20
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 30
           }
           Overrides {
             Name: "cs:Prerequisite1"
@@ -7968,14 +7728,6 @@ Assets {
             Int: 60
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 30
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 40
-          }
-          Overrides {
             Name: "cs:Prerequisite1"
             String: "24"
           }
@@ -8224,14 +7976,6 @@ Assets {
             Int: 60
           }
           Overrides {
-            Name: "cs:Traverse"
-            Int: 20
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 25
-          }
-          Overrides {
             Name: "cs:Prerequisite1"
             String: "24"
           }
@@ -8478,14 +8222,6 @@ Assets {
           Overrides {
             Name: "cs:TurningSpeedUpgraded"
             Int: 60
-          }
-          Overrides {
-            Name: "cs:Traverse"
-            Int: 20
-          }
-          Overrides {
-            Name: "cs:TraverseUpgraded"
-            Int: 30
           }
           Overrides {
             Name: "cs:Prerequisite1"

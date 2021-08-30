@@ -23,8 +23,8 @@ for _, tankInfo in ipairs(TANK_CONTENT:GetChildren()) do
         armorPurchaseCost = tankInfo:GetCustomProperty("ArmorPurchaseCost"),
         mobilityResearchCost = tankInfo:GetCustomProperty("MobilityResearchCost"),
         mobilityPurchaseCost = tankInfo:GetCustomProperty("MobilityPurchaseCost"),
-		prerequisite1 = script:GetCustomProperty("Prerequisite1"),
-		prerequisite2 = script:GetCustomProperty("Prerequisite2"),
+		prerequisite1 = tankInfo:GetCustomProperty("Prerequisite1"),
+		prerequisite2 = tankInfo:GetCustomProperty("Prerequisite2"),
 		
 		-- ACTIVE TANK STATS
 		-- TURRET
@@ -36,14 +36,14 @@ for _, tankInfo in ipairs(TANK_CONTENT:GetChildren()) do
         elevationUpgraded = tankInfo:GetCustomProperty("ElevationUpgraded"),
         maxElevation = tankInfo:GetCustomProperty("MaxElevation"),
         maxDepression = tankInfo:GetCustomProperty("MaxDepression"),
-		horizontalAngles = script:GetCustomProperty("HorizontalAngles"),
+		horizontalAngles = tankInfo:GetCustomProperty("HorizontalAngles"),
         projectileSpeed = tankInfo:GetCustomProperty("ProjectileSpeed"),
-        projectileLength = script:GetCustomProperty("ProjectileLength"),
-		projectileRadius = script:GetCustomProperty("ProjectileRadius"),
-		allowHoldDownFiring = script:GetCustomProperty("AllowHoldDownFiring"),
-		recoilAmount = script:GetCustomProperty("RecoilAmount"),
-		recoilRockingMultiplier = script:GetCustomProperty("RecoilRockingMultiplier"),
-		viewRange = script:GetCustomProperty("ViewRange"),
+        projectileLength = tankInfo:GetCustomProperty("ProjectileLength"),
+		projectileRadius = tankInfo:GetCustomProperty("ProjectileRadius"),
+		allowHoldDownFiring = tankInfo:GetCustomProperty("AllowHoldDownFiring"),
+		recoilAmount = tankInfo:GetCustomProperty("RecoilAmount"),
+		recoilRockingMultiplier = tankInfo:GetCustomProperty("RecoilRockingMultiplier"),
+		viewRange = tankInfo:GetCustomProperty("ViewRange"),
         damage = tankInfo:GetCustomProperty("Damage"),
         damageUpgraded = tankInfo:GetCustomProperty("DamageUpgraded"),
         -- SHELL
@@ -55,10 +55,8 @@ for _, tankInfo in ipairs(TANK_CONTENT:GetChildren()) do
         reverseSpeed = tankInfo:GetCustomProperty("ReverseSpeed"),
         acceleration = tankInfo:GetCustomProperty("Acceleration"),
         accelerationUpgraded = tankInfo:GetCustomProperty("AccelerationUpgraded"),
-        traverse = tankInfo:GetCustomProperty("Traverse"),
-        traverseUpgraded = tankInfo:GetCustomProperty("TraverseUpgraded"),
         turningSpeed = tankInfo:GetCustomProperty("TurningSpeed"),
-        turningSpeedUpgraded = script:GetCustomProperty("TurningSpeedUpgraded")
+        turningSpeedUpgraded = tankInfo:GetCustomProperty("TurningSpeedUpgraded")
     }
     
     tankTbl[tonumber(id)] = tank
