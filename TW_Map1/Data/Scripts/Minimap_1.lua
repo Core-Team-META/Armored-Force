@@ -219,22 +219,71 @@ for _,text in ipairs(worldTexts) do
 	label:SetColor(text:GetColor())
 end
 
+
+function MyIsA(self, t)
+	return t == "AIPlayer"
+end
+
+if _G.lookup == nil then _G.lookup = {} end
+local AIData = {}
+local replicateTask = Task.Spawn(function()
+	local oldData = AIData
+	AIData = Game.GetLocalPlayer():GetPrivateNetworkedData("AIData") or {}
+	for k,v in pairs(AIData) do
+		if oldData[k] and oldData[k].tank ~= nil then
+			v.tank = oldData[k].tank
+		else
+			v.tank = World.FindObjectById(v.tankId)
+		end
+		if oldData[k] and oldData[k].clientUserData ~= nil then
+			v.clientUserData = oldData[k].clientUserData
+		else
+			v.clientUserData = {}
+		end
+		v.IsA = MyIsA
+	end
+	_G.lookup.tanks = AIData
+end)
+replicateTask.repeatCount = -1
+replicateTask.repeatInterval = 2
+
+
+
 function Tick()
 	local localPlayer = Game.GetLocalPlayer()
 	local allPlayers = Game.GetPlayers()
-	
+
+	for k,v in pairs(AIData) do
+		table.insert(allPlayers, v)
+	end
+
+
 	for _,player in ipairs(allPlayers) do
 		local indicator = GetIndicatorForPlayer(player)
+		--print("-----Indicator:", indicator)
 		if player.isDead or player.team == localPlayer.team or CheckSpotting(player) then
 			indicator.visibility = Visibility.INHERIT
 		
-			local pos = player:GetWorldPosition()
+			local pos = Vector3.ZERO
+			if player:IsA("Player") then
+				pos = player:GetWorldPosition()
+			else
+				if Object.IsValid(player.tank) then
+					pos = player.tank:GetWorldPosition()
+				end
+			end
 			indicator.x = (pos.x - boundsLeft) * scaleX
 			indicator.y = (pos.y - boundsTop) * scaleY
 		else
-			indicator.visibility = Visibility.FORCE_OFF
+			if Object.IsValid(indicator) then
+				indicator.visibility = Visibility.FORCE_OFF
+			else
+				print("Somehow indicator is invalid for", player.name)
+			end
 		end
 	end
+
+
 	
 	for _, objective in ipairs(TeamBasesObjectives) do
 		objective[1].visibility = objective[2].visibility
@@ -301,7 +350,9 @@ function GetIndicatorForPlayer(player)
 		return player.clientUserData.minimap
 	end
 	
+	print("Should destroy old?", Object.IsValid(player.clientUserData.minimap), player.clientUserData.minimap)
 	if Object.IsValid(player.clientUserData.minimap) then
+		print("Destroying indicator for", player.name)
 		player.clientUserData.minimap:Destroy()
 		player.clientUserData.minimapScript = nil
 	end
@@ -309,6 +360,7 @@ function GetIndicatorForPlayer(player)
 	-- Spawn new indicator for this player
 	local minimapPlayer = World.SpawnAsset(GetIndicatorType(player), {parent = MAP_PANEL})
 	player.clientUserData.minimap = minimapPlayer
+	print("Spawning new indicator for player ", player.id, minimapPlayer, player.clientUserData.minimap)
 	return minimapPlayer
 	
 end
