@@ -121,10 +121,11 @@ end
 
 function Tick()
 	if not initialized then return end
-	if not Object.IsValid(myPlayer) then
+	if (myPlayer:IsA("Player") and not Object.IsValid(myPlayer)) then
 		initialized = false
 		myPlayer = nil
 		ROOT:Destroy()
+		print("Destroying myself due to invalid player!", myPlayer)
 		return
 	end
 	
