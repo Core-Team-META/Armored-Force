@@ -204,7 +204,7 @@ end
 
 
 function FillTeamsWithAI(teamSize)
-  if teamSize == nil then teamSize = 4 end
+  if teamSize == nil then teamSize = 2 end
   local teamSizes = {}
   for k,v in pairs(Game.GetPlayers()) do
     if teamSizes[v.team] == nil then

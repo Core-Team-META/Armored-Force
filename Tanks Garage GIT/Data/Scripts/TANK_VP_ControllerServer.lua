@@ -190,7 +190,6 @@ function AssignDriver(newDriver, playerStart, _isAI)
 
 	
 	Task.Wait()
-	chassis:SetDriver(driver)
 
 	if not isAI then
 		chassis:SetDriver(driver)
