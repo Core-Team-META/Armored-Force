@@ -265,6 +265,43 @@ commands = {
         adminOnly = false,
         adminRank = AdminData.AdminRanks.None
     },
+
+    ["/fillteams"] = {
+        OnCommandCalledClient = function (player, message)
+        end,
+        OnCommandCalledServer = function (player, message)
+            local teamSize = 2
+            for section in (message.." "):gmatch("(.-) ") do
+                if tonumber(section) then
+                    teamSize = tonumber(section)
+                end
+            end
+
+            Events.Broadcast("FILL_TEAMS_WITH_AI", teamSize)
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "fills the teams with AI tanks",
+        requireMessage = false,
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
+    },
+
+    ["/clearai"] = {
+        OnCommandCalledClient = function (player, message)
+        end,
+        OnCommandCalledServer = function (player, message)
+            Events.Broadcast("REMOVE_ALL_AI")
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "removes all AI tanks",
+        requireMessage = false,
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
+    },
+
+
 --[[     ["/ragdoll"] = {
         OnCommandCalledClient = function (player, message)
             Chat.LocalMessage(messagePrefix.." toggle player ragdoll")
