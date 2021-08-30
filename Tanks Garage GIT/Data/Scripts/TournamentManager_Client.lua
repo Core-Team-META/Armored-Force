@@ -2,6 +2,7 @@ local LocalPlayer = Game.GetLocalPlayer()
 
 local POPUP_ROOT = script:GetCustomProperty("PopupRoot"):WaitForObject()
 local NEW_1 = script:GetCustomProperty("NewScore1"):WaitForObject()
+local TOTALSCORE = script:GetCustomProperty("TOTALSCORE"):WaitForObject()
 local PROGRESS = script:GetCustomProperty("PROGRESS"):WaitForObject()
 
 local TROPHY_LIST = script:GetCustomProperty("TrophyList"):WaitForObject()
@@ -33,6 +34,10 @@ local loadTime = time() + 2
 
 local function GetCurrentScore()
 	return LocalPlayer:GetPrivateNetworkedData("TSCORE") or 0
+end
+
+local function GetNewScore()
+	return LocalPlayer:GetPrivateNetworkedData("NEWSCORE") or 0
 end
 
 local function SetCurrentTrophy(score)
@@ -116,12 +121,13 @@ end
 
 -- handler params: Player_player, string_key
 function OnPrivateData(player, string)
-	if string == "TSCORE" and player == LocalPlayer then
-		local currentScore = player:GetPrivateNetworkedData(string) or 0
-		SetCurrentTrophy(currentScore)
+	if string == "NEWSCORE" then
+		SetCurrentTrophy(GetNewScore())
 		if time() > loadTime then
 			Show()
 		end
+	elseif string == "TSCORE" then
+		TOTALSCORE.text = tostring(GetCurrentScore())
 	end
 end
 
