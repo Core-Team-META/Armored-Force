@@ -219,20 +219,69 @@ for _,text in ipairs(worldTexts) do
 	label:SetColor(text:GetColor())
 end
 
+
+-- TODO - move this somewhere more sane. -CJC
+function MyIsA(self, t)
+	return t == "AIPlayer"
+end
+
+if _G.lookup == nil then _G.lookup = {} end
+local AIData = {}
+local replicateTask = Task.Spawn(function()
+	local oldData = AIData
+	AIData = Game.GetLocalPlayer():GetPrivateNetworkedData("AIData") or {}
+	for k,v in pairs(AIData) do
+		if oldData[k] and oldData[k].tank ~= nil then
+			v.tank = oldData[k].tank
+		else
+			v.tank = World.FindObjectById(v.tankId)
+		end
+		if oldData[k] and oldData[k].clientUserData ~= nil then
+			v.clientUserData = oldData[k].clientUserData
+		else
+			v.clientUserData = {}
+		end
+		v.IsA = MyIsA
+	end
+	_G.lookup.tanks = AIData
+end)
+replicateTask.repeatCount = -1
+replicateTask.repeatInterval = 2
+
+
+
 function Tick()
 	local localPlayer = Game.GetLocalPlayer()
 	local allPlayers = Game.GetPlayers()
+
+	for k,v in pairs(AIData) do
+		--print("Inserting data for", v.name)
+		table.insert(allPlayers, v)
+	end
 	
 	for _,player in ipairs(allPlayers) do
 		local indicator = GetIndicatorForPlayer(player)
-		if player.isDead or player.team == localPlayer.team or CheckSpotting(player) then
-			indicator.visibility = Visibility.INHERIT
-		
-			local pos = player:GetWorldPosition()
-			indicator.x = (pos.x - boundsLeft) * scaleX
-			indicator.y = (pos.y - boundsTop) * scaleY
+		if Object.IsValid(indicator) then
+			if player.isDead or player.team == localPlayer.team or CheckSpotting(player) then
+				indicator.visibility = Visibility.INHERIT
+
+				--local pos = player:GetWorldPosition()
+				local pos = Vector3.ZERO
+				if player:IsA("Player") then
+					pos = player:GetWorldPosition()
+				else
+					if Object.IsValid(player.tank) then
+						pos = player.tank:GetWorldPosition()
+					end
+				end
+
+				indicator.x = (pos.x - boundsLeft) * scaleX
+				indicator.y = (pos.y - boundsTop) * scaleY
+			else
+				indicator.visibility = Visibility.FORCE_OFF
+			end
 		else
-			indicator.visibility = Visibility.FORCE_OFF
+			--print("no indicator")
 		end
 	end
 	
@@ -307,6 +356,7 @@ function GetIndicatorForPlayer(player)
 	end
 	
 	-- Spawn new indicator for this player
+	print("Spawning an indicator for", player.name)
 	local minimapPlayer = World.SpawnAsset(GetIndicatorType(player), {parent = MAP_PANEL})
 	player.clientUserData.minimap = minimapPlayer
 	return minimapPlayer
