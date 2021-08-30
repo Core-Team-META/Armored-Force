@@ -252,3 +252,4 @@ end
 Initialize()
 
 Events.Connect("RTM",OnReturnToMenu)
+Events.Connect("OutsideActivation", OnMenuButtonClicked)
