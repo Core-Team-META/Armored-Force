@@ -1,13 +1,13 @@
 Assets {
-  Id: 10071334588020573321
-  Name: "GAMESTATE_MAP_TankSpawner"
+  Id: 17040030806744143301
+  Name: "_AIPlayer"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
       Overrides {
-        Name: "cs:_AIPlayer"
+        Name: "cs:_LuaEvents"
         AssetReference {
-          Id: 17040030806744143301
+          Id: 1994867540670616262
         }
       }
     }
