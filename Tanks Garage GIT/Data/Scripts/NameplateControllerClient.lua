@@ -147,7 +147,7 @@ function OnPlayerJoined(player)
 		nameplateRoot:SetPosition(Vector3.UP * 800)
 	end
 	nameplateRoot:SetScale(Vector3.New(SCALE, SCALE, SCALE))
-	nameplateRoot:SetPosition(Vector3.New(0, 0, 400))
+	--nameplateRoot:SetPosition(Vector3.New(0, 0, 400))
 
 	-- Static properties on pieces
 	nameplates[player.id].borderPiece:SetScale(
@@ -276,6 +276,7 @@ end
 -- Update dynamic properties (ex. team, health, and health animation) of every nameplate
 function Tick(deltaTime)
 	local tankList = Game.GetPlayers()
+	--print("lookups", _G.lookup, _G.lookup.tanks or "tanks not found")
 	if _G.lookup and _G.lookup.tanks then
 		for k,v in pairs(_G.lookup.tanks) do
 			--print(".....", v.name)
@@ -288,6 +289,7 @@ function Tick(deltaTime)
 
 	--for _, player in ipairs(Game.GetPlayers()) do
 	for _, player in pairs(tankList) do
+		--print("Handling nameplate for player", player.id)
 		local nameplate = nameplates[player.id]
 		if nameplate == nil and not player:IsA("Player") then
 			print("Creating a nameplate for an AI player!")
