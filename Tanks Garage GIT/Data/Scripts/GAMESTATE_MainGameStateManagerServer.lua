@@ -30,6 +30,20 @@ local currentState = nil
 local tankEquipToggle = {}
 
 _G["GameWinner"] = -1
+
+
+-- CONSTANTS
+local STATE_START = "STARTING_STATE"
+local STATE_LOBBY = "LOBBY_STATE"
+local STATE_BALANCE = "BALANCE_STATE"
+local STATE_MATCH = "MATCH_STATE"
+local STATE_CARD = "CARD_STATE"
+local STATE_VICTORY = "VICTORY_STATE"
+local STATE_STATS = "STATS_STATE"
+
+
+--#TODO Add to setting page as a custom property
+local balanceTimer = 3
 	
 function OnChangeState(previousState)
 
@@ -40,13 +54,18 @@ function OnChangeState(previousState)
 		
 	end
 
-	if previousState == "STARTING_STATE" then
+	if previousState == STATE_START then
 
-		script:SetNetworkedCustomProperty("GameState", "LOBBY_STATE")
+		script:SetNetworkedCustomProperty("GameState", STATE_LOBBY)
 		
-		currentState = "LOBBY_STATE"
-		
-	elseif previousState == "LOBBY_STATE" then
+		currentState = STATE_LOBBY
+
+	elseif previousState == STATE_LOBBY then
+		script:SetNetworkedCustomProperty("GameState", STATE_BALANCE)
+		currentState = STATE_BALANCE
+		SetTimer(balanceTimer)
+				
+	elseif previousState == STATE_BALANCE then
 	
 		for _, player in ipairs(Game.GetPlayers()) do
 		
@@ -56,23 +75,23 @@ function OnChangeState(previousState)
 			
 		end
 	
-		script:SetNetworkedCustomProperty("GameState", "MATCH_STATE")
+		script:SetNetworkedCustomProperty("GameState", STATE_MATCH)
 		
-		currentState = "MATCH_STATE"
+		currentState = STATE_MATCH
 
 		Events.Broadcast("RESET_TANKS")
 		
 		SetTimer(matchMaxDuration)
 		
-	elseif previousState == "MATCH_STATE" then
+	elseif previousState == STATE_MATCH then
 	
-		script:SetNetworkedCustomProperty("GameState", "CARD_STATE")
+		script:SetNetworkedCustomProperty("GameState", STATE_CARD)
 		
-		currentState = "CARD_STATE"	
+		currentState = STATE_CARD	
 		
 		SetTimer(cardMaxDuration)
 		
-	elseif previousState == "CARD_STATE" then
+	elseif previousState == STATE_CARD then
 	
 		for x, p in pairs(Game.GetPlayers()) do
 		
@@ -82,9 +101,9 @@ function OnChangeState(previousState)
 					
 		end
 
-		script:SetNetworkedCustomProperty("GameState", "VICTORY_STATE")
+		script:SetNetworkedCustomProperty("GameState", STATE_VICTORY)
 		
-		currentState = "VICTORY_STATE"			
+		currentState = STATE_VICTORY			
 		
 		if _G["GameWinner"] == 0 then
 			SetTimer(3)
@@ -92,7 +111,7 @@ function OnChangeState(previousState)
 			SetTimer(victoryMaxDuration)
 		end
 		
-	elseif previousState == "VICTORY_STATE" then
+	elseif previousState == STATE_VICTORY then
 	
 		script:SetNetworkedCustomProperty("GameState", "")
 		
@@ -108,7 +127,7 @@ function OnChangeState(previousState)
 		SetTimer(statsMaxDuration)		
 		]]
 		
-	elseif previousState == "STATS_STATE" then -- UNUSED, moved to garage.
+	elseif previousState == STATE_STATS then -- UNUSED, moved to garage.
 	
 		script:SetNetworkedCustomProperty("GameState", "")
 		
@@ -154,7 +173,7 @@ function Test(player, binding)
 	
 		player:Die()
 		
-	elseif binding == "ability_extra_38" and not tankEquipToggle[player.id] and currentState == "LOBBY_STATE" then
+	elseif binding == "ability_extra_38" and not tankEquipToggle[player.id] and currentState == STATE_LOBBY then
 	
 		player.lookControlMode = LookControlMode.NONE
 		
@@ -162,7 +181,7 @@ function Test(player, binding)
 		
 		--print("lookMode toggle on")
 		
-	elseif binding == "ability_extra_38" and tankEquipToggle[player.id] and currentState == "LOBBY_STATE" then
+	elseif binding == "ability_extra_38" and tankEquipToggle[player.id] and currentState == STATE_LOBBY then
 	
 		player.lookControlMode = LookControlMode.RELATIVE
 		
@@ -185,4 +204,4 @@ Events.Connect("CHANGE_STATE", OnChangeState)
 
 Game.playerJoinedEvent:Connect(OnJoined)
 
-OnChangeState("STARTING_STATE")
+OnChangeState(STATE_START)

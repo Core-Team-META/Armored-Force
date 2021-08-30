@@ -194,6 +194,9 @@ function DoRebalance(playerToIgnore)
 		end
 	end
 
+	--
+	
+
 	-- Apply any team switching
 	ApplyTeamChanges(team1, team2)
 end
@@ -241,14 +244,16 @@ function OnPlayerLeft(playerToIgnore)
 	end
 end
 
-function OnLobbyTimerChanged(objecct, string)
-	if GAME_STATE_LOBBY:GetCustomProperty(string) == 2 then
+function OnLobbyTimerChanged(object, string)
+	if string ~= "GameState" then return end
+	if GAME_STATE:GetCustomProperty(string) == "BALANCE_STATE" then
+		Events.BroadcastToAllPlayers("FadeScreen")
 		DoRebalance()
 	end
 end
 
 -- handler params: CoreObject_owner, string_propertyName
-GAME_STATE_LOBBY.networkedPropertyChangedEvent:Connect(OnLobbyTimerChanged)
+GAME_STATE.networkedPropertyChangedEvent:Connect(OnLobbyTimerChanged)
 
 Game.playerJoinedEvent:Connect(OnPlayerJoin)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
