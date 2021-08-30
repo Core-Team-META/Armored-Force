@@ -101,6 +101,9 @@ local CLOSE_CANNOT_PURCHASE_TANK = script:GetCustomProperty("CLOSE_CANNOT_PURCHA
 local BUTTON_UPGRADE_TANK = script:GetCustomProperty("BUTTON_UPGRADE_TANK"):WaitForObject()
 local BUY_TANK_CONTAINER = script:GetCustomProperty("BUY_TANK_CONTAINER"):WaitForObject()
 local tankPurchaseImage = script:GetCustomProperty("TankPurchaseImage"):WaitForObject()
+local BUTTON_GOTO_TECHTREE = script:GetCustomProperty("BUTTON_GOTO_TECHTREE"):WaitForObject()
+local BUTTON_TECHTREE_SHOP = script:GetCustomProperty("BUTTON_TECHTREE_SHOP"):WaitForObject()
+local BUTTON_PREMIUM_SHOP = script:GetCustomProperty("BUTTON_PREMIUM_SHOP"):WaitForObject()
 
 local STATS_TANK_CONTAINER = script:GetCustomProperty("STATS_TANK_CONTAINER"):WaitForObject()
 local UPGRADE_TANK_CONTAINER = script:GetCustomProperty("UPGRADE_TANK_CONTAINER"):WaitForObject()
@@ -479,6 +482,7 @@ function PopulateSelectedTankPanel(id)
 	if (isSelection and not doNotShowModal) then
 		local prereqs = GetPrerequisiteRPValues(selectedTankId)
 		if UTIL_API.UsingPremiumTank(tonumber(selectedTankId)) then
+			Events.Broadcast("OutsideActivation", BUTTON_PREMIUM_SHOP)
 			Events.Broadcast("ENABLE_GARAGE_COMPONENT", "SHOP_MENU", 4)
 		elseif prereqs[1].usable then
 			IMAGE_API.SetTankImage(tankPurchaseImage, id)
@@ -583,10 +587,8 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
 	end
 
 	if not tankData.purchasedTank and tankData.purchaseCurrencyName == "Gold" then
-		Events.Broadcast("ENABLE_GARAGE_COMPONENT", "SHOP_MENU", 4)
-		CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
-		Task.Wait(1.8)
-		Events.Broadcast("NavigateToPremiumShop")
+		Events.Broadcast("OutsideActivation", BUTTON_PREMIUM_SHOP)
+		Task.Wait(2)
 		return
 	end
 
@@ -1878,6 +1880,12 @@ function CheckForTutorialCompletion()
 	end
 end
 
+function GoToTechTree()
+	SFX_CLICK:Play()
+	Events.Broadcast("OutsideActivation", BUTTON_TECHTREE_SHOP)
+	Task.Wait(2)
+end
+
 Task.Wait(2)
 Init()
 PopulateSelectedTankPanel()
@@ -1925,6 +1933,8 @@ BUTTON_UPGRADE_TANK.hoveredEvent:Connect(HoverTankUpgradeWindow)
 BUTTON_UPGRADE_TANK.unhoveredEvent:Connect(UnhoverTankUpgradeWindow)
 Tutorial_UpgradeTank.clickedEvent:Connect(TutorialOpenTankUpgradeWindow)
 BUTTON_UPGRADE_TANK.hoveredEvent:Connect(ButtonHover)
+BUTTON_GOTO_TECHTREE.clickedEvent:Connect(GoToTechTree)
+BUTTON_GOTO_TECHTREE.hoveredEvent:Connect(ButtonHover)
 UPGRADE_TANK_CONTAINER:FindDescendantByName("CONFIRM_WINDOW_CLOSE_BUTTON").clickedEvent:Connect(CloseTankUpgradeWindow)
 UPGRADE_TANK_CONTAINER:FindDescendantByName("CONFIRM_WINDOW_CLOSE_BUTTON").hoveredEvent:Connect(ButtonHover)
 UPGRADE_TANK_CONTAINER:FindDescendantByName("BUTTON_EQUIP_TANK").clickedEvent:Connect(EquipTank)

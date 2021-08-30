@@ -3435,6 +3435,10 @@ function NavigateToPremiumShop()
 	ACTIVE_HEAD_MENU = 1
 end
 
+function NavigateToTechTree()
+	ACTIVE_HEAD_MENU = 4
+end
+
 function UpgradeFailedSlide(part)
 	if (part == "Weapon") then
 		print(TANKUPGRADE_DENY_timeRemaining)
@@ -3707,3 +3711,4 @@ Events.Connect("ArmorUpgradeSuccessful", ShowArmorUpgrade)
 Events.Connect("EngineUpgradeSuccessful", ShowEngineUpgrade)
 Events.Connect("NavigateToPremiumShop", NavigateToPremiumShop)
 Events.Connect("UpgradeFailedSlide", UpgradeFailedSlide)
+Events.Connect("NavigateToTechTree", NavigateToTechTree)
