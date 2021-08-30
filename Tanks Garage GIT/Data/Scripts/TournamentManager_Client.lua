@@ -9,6 +9,13 @@ local TROPHY_LIST = script:GetCustomProperty("TrophyList"):WaitForObject()
 local CURRENT_TROPHY_IMAGE = script:GetCustomProperty("CurrentTrophy"):WaitForObject()
 local TROPHY_NAME_TEXT = script:GetCustomProperty("TROPHY_NAME"):WaitForObject()
 
+local GARAGE_PANEL = script:GetCustomProperty("Garage_TournementPanel"):WaitForObject()
+local TROPHY_INFO_LIST = script:GetCustomProperty("TrophyInfoList"):WaitForObject()
+local GARAGE_HOVER_PANEL = script:GetCustomProperty("Garage_TournementHover_Panel"):WaitForObject()
+local GARAGE_HOVER_BUTTON = script:GetCustomProperty("HoverButton"):WaitForObject()
+
+local TROPHY_INFO_TEMP = script:GetCustomProperty("Tournament_TrophyInfoPanel")
+
 local EaseUI = require(script:GetCustomProperty("EaseUI"))
 
 local HIDDEN_X = 295
@@ -41,7 +48,7 @@ local function GetNewScore()
 end
 
 local function SetCurrentTrophy(score)
-	for _, trophy in ipairs(trophyData) do
+	for i, trophy in ipairs(trophyData) do
 		if score >= trophy.min and score <= trophy.max then
 			NEW_1.text = tostring(score)
 			CURRENT_TROPHY_IMAGE:SetImage(trophy.icon)
@@ -49,11 +56,58 @@ local function SetCurrentTrophy(score)
 			local scoreProgress = score - trophy.min
 			local scoreMax = trophy.max - trophy.min
 			PROGRESS.progress = scoreProgress / scoreMax
+			if Game.GetCurrentSceneName() == "Main" then
+				local nextProgressPanel = GARAGE_PANEL:GetCustomProperty("NextTrophyPanel"):WaitForObject()
+				GARAGE_PANEL:GetCustomProperty("TrophyImage"):WaitForObject():SetImage(trophy.icon)
+				GARAGE_PANEL:GetCustomProperty("CurrentSCore"):WaitForObject().text = tostring(score)
+				local nextTrophy = trophyData[i + 1]
+				if nextTrophy then
+					nextProgressPanel:GetCustomProperty("NextTrophy"):WaitForObject():SetImage(nextTrophy.icon)
+					nextProgressPanel:GetCustomProperty("PointsText"):WaitForObject().text =
+						"(" .. tostring(nextTrophy.min - score) .. " points to unlock)"
+					nextProgressPanel.visibility = Visibility.INHERIT
+				else
+					nextProgressPanel.visibility = Visibility.FORCE_OFF
+				end
+			end
 		end
 	end
 end
 
+local function SetupGarage()
+	for _, child in ipairs(TROPHY_INFO_LIST:GetChildren()) do
+		child:Destroy()
+	end
+	for i, trophy in ipairs(trophyData) do
+		local newTrophyPanel = World.SpawnAsset(TROPHY_INFO_TEMP, {parent = TROPHY_INFO_LIST})
+		newTrophyPanel:GetCustomProperty("TrophyIcon"):WaitForObject():SetImage(trophy.icon)
+		newTrophyPanel:GetCustomProperty("TrophyName"):WaitForObject().text = tostring(trophy.name)
+		newTrophyPanel:GetCustomProperty("TrophyPoints"):WaitForObject().text = tostring(trophy.min)
+		newTrophyPanel.y = (i - 1) * 75
+	end
+
+	GARAGE_HOVER_BUTTON.hoveredEvent:Connect(
+		function()
+			GARAGE_HOVER_PANEL.visibility = Visibility.FORCE_ON
+		end
+	)
+
+	GARAGE_HOVER_BUTTON.unhoveredEvent:Connect(
+		function()
+			GARAGE_HOVER_PANEL.visibility = Visibility.FORCE_OFF
+		end
+	)
+
+	Task.Spawn(
+		function()
+			GARAGE_PANEL.visibility = Visibility.INHERIT
+		end,
+		10.5
+	)
+end
+
 function Init()
+	Task.Wait(3)
 	local currentScore = GetCurrentScore()
 	NEW_1.text = tostring(currentScore)
 	PROGRESS.progress = currentScore / nextScore
@@ -68,6 +122,10 @@ function Init()
 	end
 
 	SetCurrentTrophy(currentScore)
+
+	if Game.GetCurrentSceneName() == "Main" then
+		SetupGarage()
+	end
 end
 
 function SetState(newState)
