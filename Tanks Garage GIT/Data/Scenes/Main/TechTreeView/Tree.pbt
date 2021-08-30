@@ -893,24 +893,6 @@ Objects {
         Id: 5513507585235710589
       }
     }
-    Overrides {
-      Name: "cs:BUTTON_GOTO_TECHTREE"
-      ObjectReference {
-        SelfId: 17519364876476427998
-      }
-    }
-    Overrides {
-      Name: "cs:BUTTON_TECHTREE_SHOP"
-      ObjectReference {
-        SelfId: 8661047983355353040
-      }
-    }
-    Overrides {
-      Name: "cs:BUTTON_PREMIUM_SHOP"
-      ObjectReference {
-        SelfId: 5337038309014770169
-      }
-    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

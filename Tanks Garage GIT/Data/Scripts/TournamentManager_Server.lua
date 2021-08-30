@@ -100,8 +100,11 @@ local function CalculateScore(player, winningTeam, playerBonus)
     newScore = matchScore + killScore + captureScore + damageScore
     newScore = newScore + (newScore * playerBonus)
 
+    player:SetPrivateNetworkedData("NEWSCORE", CoreMath.Round(newScore))
+
     newScore = CoreMath.Round(playerScore[player] + newScore)
     player:SetPrivateNetworkedData("TSCORE", newScore)
+    
     playerScore[player] = newScore
     SetCurrentTrophy(player, newScore)
 end
