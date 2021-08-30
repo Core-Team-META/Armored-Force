@@ -114,14 +114,14 @@ Assets {
         Transform {
           Location {
             X: -35
-            Z: -79.1667
+            Z: -64.1055374
           }
           Rotation {
           }
           Scale {
             X: 3.88499975
             Y: 5.23421144
-            Z: 1.2
+            Z: 0.88515985
           }
         }
         ParentId: 16715225012181031923
@@ -174,14 +174,14 @@ Assets {
         Transform {
           Location {
             X: 205
-            Z: -79.5454483
+            Z: -64.484314
           }
           Rotation {
           }
           Scale {
             X: 2.4
             Y: 5.1
-            Z: 1.2
+            Z: 0.88515985
           }
         }
         ParentId: 16715225012181031923
@@ -233,14 +233,14 @@ Assets {
         Transform {
           Location {
             X: -327.272644
-            Z: -79.1667
+            Z: -64.1055374
           }
           Rotation {
           }
           Scale {
             X: 2
             Y: 5.1
-            Z: 1.2
+            Z: 0.88515985
           }
         }
         ParentId: 16715225012181031923
@@ -293,14 +293,14 @@ Assets {
         Transform {
           Location {
             X: -35
-            Z: -79.1667
+            Z: -64.1055374
           }
           Rotation {
           }
           Scale {
             X: 3.88499975
             Y: 5.23421144
-            Z: 1.2
+            Z: 0.88515985
           }
         }
         ParentId: 14522498248367197329
@@ -338,14 +338,14 @@ Assets {
         Transform {
           Location {
             X: 205
-            Z: -79.5454483
+            Z: -64.484314
           }
           Rotation {
           }
           Scale {
             X: 2.4
             Y: 5.1
-            Z: 1.2
+            Z: 0.88515985
           }
         }
         ParentId: 14522498248367197329
@@ -383,14 +383,14 @@ Assets {
         Transform {
           Location {
             X: -327.272644
-            Z: -79.1667
+            Z: -64.1055374
           }
           Rotation {
           }
           Scale {
             X: 2
             Y: 5.1
-            Z: 1.2
+            Z: 0.88515985
           }
         }
         ParentId: 14522498248367197329
@@ -435,7 +435,7 @@ Assets {
           }
           Scale {
             X: 6.9
-            Y: 0.4
+            Y: 0.595134258
             Z: 0.900000036
           }
         }
@@ -481,7 +481,7 @@ Assets {
           }
           Scale {
             X: 6.9
-            Y: 0.4
+            Y: 0.595134258
             Z: 0.900000036
           }
         }
