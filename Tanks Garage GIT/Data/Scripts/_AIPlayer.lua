@@ -1,5 +1,5 @@
 local LuaEvents = require(script:GetCustomProperty("_LuaEvents"))
-
+local PathMap = require(script:GetCustomProperty("_PathMap"))
 local AIPlayer = {}
 
 
@@ -349,33 +349,23 @@ function AIPlayer:PathRay(targetPos, targetDist, step)
   local totalDist = 0
   while totalDist < targetDist do
     currentPos = currentPos + vec * step
-    local hr = World.Raycast(currentPos + Vector3.UP * 1000, currentPos + Vector3.UP * -1000)
+    --local hr = World.Raycast(currentPos + Vector3.UP * 1000, currentPos + Vector3.UP * -1000)
+
+    local isBlocked = PathMap.IsBlocked(currentPos)
     local debugLineColor = Color.GREEN
-    if hr ~= nil then
-      local other_name = nil
-      if not pcall(function()
-        other_name = hr.other.name
-      end) then
-        print("blocked an error!")
-      end
 
-      if other_name == "Terrain_Main" then
-        -- continue
-        totalDist = totalDist + step
-      else
-        debugLineColor = Color.RED
-      end
-      --[[
-      CoreDebug.DrawLine(currentPos + Vector3.UP * 1000,
-          currentPos + Vector3.UP * -1000,
-          {thickness = 15, duration = 1, color = debugLineColor})
-          ]]
-
-      if other_name ~= "Terrain_Main" then
-        break
-      end
+    if not isBlocked then
+      -- continue
+      totalDist = totalDist + step
+    else
+      debugLineColor = Color.RED
     end
-    Task.Wait()
+    --[[
+    CoreDebug.DrawLine(currentPos + Vector3.UP * 1000,
+        currentPos + Vector3.UP * -1000,
+        {thickness = 15, duration = 1, color = debugLineColor})
+        ]]
+    if isBlocked then break end
   end
   return totalDist
 end
