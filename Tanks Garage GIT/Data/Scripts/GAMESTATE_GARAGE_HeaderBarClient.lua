@@ -149,6 +149,7 @@ function OnDeployClicked(button)
 	
 	if selectedGameMode == "SHOOTING_RANGE" then
 		Events.Broadcast("ENABLE_GARAGE_COMPONENT", selectedGameMode)	
+		Events.Broadcast("AdvanceTutorialRequest", 1, true)
 	else 
 		Events.BroadcastToServer("SEND_TO_MAP", selectedGameMode)
 	end
