@@ -914,5 +914,5 @@ Assets {
       AssetId: "Military_Fence_-_8m_Doorway_Template"
     }
   }
-  SerializationVersion: 97
+  SerializationVersion: 98
 }

@@ -1550,7 +1550,7 @@ function HoverTank(button)
 	local rp = 0
 
 	for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-		if (t.id == tostring(button.name)) then
+		if (tonumber(t.id) == tostring(tonumber(button.name))) then
 			tankData.researchedTank = t.researched
 			tankData.purchasedTank = t.purchased
 			tankData.weaponProgress = t.weaponProgress
@@ -1629,13 +1629,16 @@ function PopulateHoverTankStats(tankData)
 		VIEWED_TANK_STATS:FindDescendantByName("BAR_10").progress = tonumber(turningSpeed) / UTIL_API.GetHighestTurningSpeed()
 	end
 
-	if tankDetails.purchasedTank then
-		VIEWED_TANK_STATS:FindDescendantByName("TITLE_SILVER").visibility = Visibility.FORCE_OFF
+	if tankData.purchasedTank then
+		print("OWN TANK")
+		VIEWED_TANK_STATS:FindDescendantByName("BUY_PRICE").visibility = Visibility.FORCE_OFF
 	else
+		print("DO NOT OWN TANK")
 		VIEWED_TANK_STATS:FindDescendantByName("TITLE_SILVER").text = tostring(tankData.purchaseCost)
-		VIEWED_TANK_STATS:FindDescendantByName("TITLE_SILVER").visibility = Visibility.FORCE_ON
-	end
-	
+		local purchaseCurrency = entry:GetCustomProperty("PurchaseCurrencyName")
+		VIEWED_TANK_STATS:FindDescendantByName("ICON_SILVER"):SetImage(UTIL_API.GetCurrencyIcon(purchaseCurrency))		
+		VIEWED_TANK_STATS:FindDescendantByName("BUY_PRICE").visibility = Visibility.FORCE_ON
+	end	
 end
 
 function UnhoverTank()
