@@ -180,7 +180,7 @@ function ToggleThisComponent(requestedPlayerState)
 			
 		end
 		
-		localPlayer:ClearOverrideCamera()
+		--localPlayer:ClearOverrideCamera()
 		
 		--[[
 		while (localPlayer:GetWorldPosition() - spawnLocation:GetWorldPosition()).size > 100 do -- wait for respawn.

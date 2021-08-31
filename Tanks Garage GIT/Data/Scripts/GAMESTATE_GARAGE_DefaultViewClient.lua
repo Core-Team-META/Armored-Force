@@ -102,7 +102,7 @@ end
 function DisableThisComponent()
 
 	if localPlayer:GetOverrideCamera() == overrideCamera then
-		localPlayer:ClearOverrideCamera()
+		--localPlayer:ClearOverrideCamera()
 	end
 	
 	defaultViewUI.isEnabled = false
