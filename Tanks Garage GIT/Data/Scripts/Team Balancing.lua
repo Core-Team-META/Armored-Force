@@ -248,6 +248,7 @@ function OnLobbyTimerChanged(object, string)
 	if string ~= "GameState" then return end
 	if GAME_STATE:GetCustomProperty(string) == "BALANCE_STATE" then
 		Events.BroadcastToAllPlayers("FadeScreen")
+		Task.Wait(1)
 		DoRebalance()
 	end
 end
