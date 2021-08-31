@@ -14,6 +14,11 @@ local damageOverride ={}
 
 local spottingTask = nil
 
+while(_G.utils == nil) do
+	Task.Wait()
+end
+
+
 -- other modified scripts to support spotting: NameplateControllerClient, Minimap
 
 --[[
@@ -163,7 +168,9 @@ function OnDamaged(player, damage)
 	
 	Task.Wait(5)
 	
-	damageOverride[player.id] = nil
+	if _G.utils.IsDriverValid(player) then
+		damageOverride[player.id] = nil
+	end
 	
 end	
 
