@@ -11,8 +11,7 @@ function LowerOpacity(object, duration, wait)
     FADE_PANEL.visibility = Visibility.FORCE_OFF
 end
 
-function FadeIn(object, duration, wait)
-    Task.Wait(wait)
+function FadeIn(object, duration)
     local endTime = time() + duration
     while time() < endTime do
         object.opacity = object.opacity + 0.05
@@ -24,7 +23,7 @@ end
 function OnTeamBalance()
     FADE_PANEL.visibility = Visibility.FORCE_ON
     FADE_PANEL.opacity = 0
-    FadeIn(FADE_PANEL, 2, 1)
+    FadeIn(FADE_PANEL, 2)
     LowerOpacity(FADE_PANEL, 3, 2)
 end
 
