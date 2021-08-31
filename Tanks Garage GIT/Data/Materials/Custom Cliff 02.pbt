@@ -2,7 +2,7 @@ Assets {
   Id: 14823769434463567155
   Name: "Custom Cliff 02_awk rock"
   PlatformAssetType: 13
-  SerializationVersion: 97
+  SerializationVersion: 98
   CustomMaterialAsset {
     BaseMaterialId: 11182969111770509228
     ParameterOverrides {

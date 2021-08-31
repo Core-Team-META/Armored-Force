@@ -2,7 +2,7 @@ Assets {
   Id: 7189562283078056496
   Name: "TW3_TerrainBG"
   PlatformAssetType: 13
-  SerializationVersion: 97
+  SerializationVersion: 98
   CustomMaterialAsset {
     BaseMaterialId: 1104511411894916854
     ParameterOverrides {

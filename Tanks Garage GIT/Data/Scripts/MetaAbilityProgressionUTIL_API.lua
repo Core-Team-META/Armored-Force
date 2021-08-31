@@ -726,5 +726,16 @@ function API.ShowPopup(title, message, buttonText)
     popUpPanel:FindDescendantByName("BUTTONTEXT_LIGHT").text = buttonText
 end
 
+function API.GetCurrencyIcon(currencyName)
+    if currencyName == CONST.SILVER then
+        return CONST.SILVER_ICON
+    elseif currencyName == CONST.GOLD then
+        return CONST.GOLD_ICON
+    else
+        -- Default to Silver
+        warn("No currency icon found with currency: " .. tostring(currencyName) .. ". Returning silver icon by default.")
+        return CONST.SILVER_ICON
+    end
+end
 ------------------------------------------------------------------------------------------------------------------------
 return API

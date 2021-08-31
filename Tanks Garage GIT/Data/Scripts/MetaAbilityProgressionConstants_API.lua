@@ -178,6 +178,9 @@ API.XP_GAIN_TEXT = {
 API.RANK_NAME = "Rank"
 API.TUTORIAL_PROGRESS = "TutorialProgress"
 
+API.SILVER_ICON = "56EA955F1A2355F0:Fantasy Craft Bar 002"
+API.GOLD_ICON = "11CFC7556A4E84B5:Fantasy Gold 001"
+
 function API.GetNumberOfTanks()
     return NUMBER_OF_TANKS
 end
