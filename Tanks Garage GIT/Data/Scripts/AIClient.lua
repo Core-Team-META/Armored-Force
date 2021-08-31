@@ -31,6 +31,12 @@ replicateTask.repeatInterval = 2
 
 
 if _G.utils == nil then _G.utils = {} end
+
+
+function _G.utils.IsDriverValid(driver)
+  return driver:IsA("AIPlayer") or Object.IsValid(driver)
+end
+
 function _G.utils.GetTankDrivers(options)
   if options == nil then options = {} end
   local results = {}
