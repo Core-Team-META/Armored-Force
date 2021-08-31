@@ -42,7 +42,7 @@ function InitializeTankSkin(player)
 	
 	if player.clientUserData.currentTankData then
 		selectedTank = player.clientUserData.currentTankData.id
-		--print("initializing with current tank id")
+		print("initializing with current tank id")
 	end
 	
 	if Game.GetCurrentSceneName() == "Main" then
@@ -53,10 +53,10 @@ function InitializeTankSkin(player)
 	
 	if player.clientUserData.garageModel then
 		selectedTank = player.clientUserData.garageModel.id
-		--print("initializing with garage tank id")
+		print("initializing with garage tank id")
 	end
 		
-	print("searching for skin")
+	print("searching for skin for tank " .. tostring(selectedTank))
 	for sid, s in pairs(camoTable[selectedTank]) do
 		if s.equipped then
 			selectedSkin = sid
@@ -170,7 +170,7 @@ function RetrieveData(player)
 	        	dataTransferSet[player] = child.networkedPropertyChangedEvent:Connect(OnSkinDataChange)
 	        	
 	        	-- DEBUG
-	        	-- print("Got data string: " .. dataString)
+	        	--print("Got data string: " .. dataString)
 	        	
 	        	SetTankSkinDataForClient(player, dataString)
 	        

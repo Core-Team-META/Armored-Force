@@ -1,6 +1,5 @@
 local AIPlayer = require(script:GetCustomProperty("_AIPlayer"))
 
-
 -- Tank Custom Properties:
 -- INFO
 local identifier = script:GetCustomProperty("Identifier")
@@ -147,6 +146,7 @@ function AssignDriver(newDriver, playerStart, _isAI)
 
 	isAI = _isAI or false
 	print("assigning a driver.  AI?", isAI)
+	print("new driver: " .. tostring(newDriver))
 
 	if (not isAI) and (Object.IsValid(driver) or not Object.IsValid(newDriver) or not newDriver:IsA("Player")) then
 		print("returning")
@@ -223,11 +223,13 @@ function AssignDriver(newDriver, playerStart, _isAI)
 	cannon = hitbox:FindDescendantByName("Cannon")
 	cannonGuide = hitbox:FindDescendantByName("CannonGuide")
 	muzzle = hitbox:FindDescendantByName("Muzzle")
-
-	_G.lookup.tanks[driver].chassis = chassis
-	_G.lookup.tanks[driver].target = target
-	_G.lookup.tanks[driver].muzzle = muzzle
-	_G.lookup.tanks[driver].turret = turret
+	
+	if not (Game.GetCurrentSceneName() == "Main") then
+		_G.lookup.tanks[driver].chassis = chassis
+		_G.lookup.tanks[driver].target = target
+		_G.lookup.tanks[driver].muzzle = muzzle
+		_G.lookup.tanks[driver].turret = turret
+	end
 	
 	Task.Wait()
 	
@@ -257,11 +259,10 @@ function AssignDriver(newDriver, playerStart, _isAI)
 	end
 	
 	if not isAI then
-		bindingPressedListener = newDriver.bindingPressedEvent:Connect(OnBindingPressed)
+		bindingPressedListener = driver.bindingPressedEvent:Connect(OnBindingPressed)
 		consumableListener = Events.Connect(driver.id .. "RepairTank", OnConsumableUsed)
 	end
 	diedEventListener = driver.diedEvent:Connect(OnDeath)
-	consumableListener = Events.Connect(driver.id .. "RepairTank", OnConsumableUsed)
 
 	Task.Wait()
 	script:SetNetworkedCustomProperty("TankReady", true)
@@ -471,16 +472,16 @@ end
 
 
 
-function FireProjectile(driver)
+function FireProjectile(player)
 
-	if reloading or barrelDown then
+	if reloading or barrelDown or (player ~= driver) then
 		return
 	end
 	
 	reloading = true
 
 	local aimVector = muzzle:GetWorldRotation() * Vector3.FORWARD
-	if driver:IsA("AIPlayer") then
+	if player:IsA("AIPlayer") then
 		local targetPos = target:GetWorldPosition() + Vector3.UP * math.random(75, 150)
 		local targetAimVector = (targetPos - muzzle:GetWorldPosition()):GetNormalized()
 		aimVector.z = targetAimVector.z 
@@ -488,10 +489,10 @@ function FireProjectile(driver)
 
 	local firedProjectile = Projectile.Spawn(projectile, muzzle:GetWorldPosition(), aimVector)
 	
-	if driver:IsA("Player") then
-		firedProjectile.owner = driver
+	if player:IsA("Player") then
+		firedProjectile.owner = player
 	else
-		firedProjectile.serverUserData.owner = driver
+		firedProjectile.serverUserData.owner = player
 	end
 	firedProjectile.gravityScale = 0
 	firedProjectile.lifeSpan = 5
@@ -504,10 +505,10 @@ function FireProjectile(driver)
 	
 	firedProjectile.shouldDieOnImpact = true
 	
-	Events.BroadcastToAllPlayers("ANIMATE_FIRING", chassis:GetReference(), reloadTime)
+	Events.BroadcastToAllPlayers("ANIMATE_FIRING", player, reloadTime)
 
 	--#TODO This should be tied into the constants file
-	driver:AddResource("TOTALSHOTSFIRED", 1)
+	player:AddResource("TOTALSHOTSFIRED", 1)
 	Task.Wait(reloadTime + 0.1)
 	
 	reloading = false
@@ -549,7 +550,7 @@ function ProjectileImpacted(expiredProjectile, other)
 
 	
 	if driver:IsA("Player") then
-		Events.BroadcastToPlayer(driver, "ShowDamageFeedback", totalDamage, "TRACK", chassis:GetWorldPosition(), other.driver.id)
+		--Events.BroadcastToPlayer(driver, "ShowDamageFeedback", totalDamage, "TRACK", chassis:GetWorldPosition(), other.driver.id)
 	end
 
 end
@@ -1054,14 +1055,15 @@ end
 
 function RotationDifference(rotation1, rotation2)
 
-	return math.acos(rotation1.x * rotation2.x + rotation1.y * rotation2.y + rotation1.z * rotation2.z)
+	return 2 * math.acos(rotation1.x * rotation2.x + rotation1.y * rotation2.y + rotation1.z * rotation2.z + rotation1.w * rotation2.w)
 	
 end
 
 function CheckStuckTank()
+
+	if not Object.IsValid(chassis) or not Object.IsValid(driver) then return end
 	
 	local checkInput = driver:IsA("AIPlayer") or driver:IsBindingPressed("ability_extra_21") or driver:IsBindingPressed("ability_extra_31")
-	if not Object.IsValid(chassis) then return end
 	
 	if chassis.type == "TreadedVehicle" then
 		checkInput = driver:IsA("AIPlayer") or driver:IsBindingPressed("ability_extra_30") or driver:IsBindingPressed("ability_extra_32")
@@ -1079,8 +1081,8 @@ function CheckStuckTank()
 		return	
 	end
 	
-	local currentRotation = chassis:GetWorldRotation()
-	local idealRotation = Rotation.New(0, 0, currentRotation.z)
+	local currentRotation = Quaternion.New(chassis:GetWorldRotation())
+	local idealRotation = Quaternion.New(0, 0, currentRotation.z, 1)
 	
 	print("rotation difference: " .. tostring(RotationDifference(currentRotation, idealRotation)))
 	
@@ -1128,7 +1130,7 @@ function Tick()
 		end
 		
 		if allowHoldDownFiring and driver:IsBindingPressed("ability_primary") then
-			FireProjectile()
+			FireProjectile(driver)
 		end
 
 		--[[
