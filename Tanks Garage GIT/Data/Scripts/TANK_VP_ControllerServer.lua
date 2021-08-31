@@ -80,6 +80,8 @@ local originalFriction = 0
 local originalAcceleration = 0
 local originalTurnSpeed = 0
 local ramCooldown = false
+local rollbackTable = {}
+local lastRollbackPosition = 0
 local aimTask = nil
 local reloading = false
 local flipping = false
@@ -90,11 +92,17 @@ local barrelDown = false
 local trackTask = nil
 local burnTask = nil
 local turretDamagedTask = nil
+local checkStuckTankTask = nil
 local bindingPressedListener = nil
 local diedEventListener = nil
 local destroyedListener = nil
 local consumableListener = nil
 local armorImpactListeners = {}
+
+--local MAX_ANGULAR_VELOCITY = 150
+local MIN_NOT_STUCK_VELOCITY = 100
+local MAX_NOT_STUCK_ANGLE = 50
+local MAX_ROLLBACK_COUNT = 10
 
 local function RaycastResultFromPointRotationDistance(point, rotation, distance)
 	
@@ -234,6 +242,10 @@ function AssignDriver(newDriver, playerStart)
 	
 	SetServerData()
 	
+	checkStuckTankTask = Task.Spawn(CheckStuckTank, 0)
+	checkStuckTankTask.repeatCount = -1
+	checkStuckTankTask.repeatInterval = 0.5
+	
 end
 
 function AssignOwner(newOwner)
@@ -327,6 +339,10 @@ function OnDeath(player, damage)
 	
 	if diedEventListener then
 		diedEventListener:Disconnect()
+	end
+	
+	if checkStuckTankTask then
+		checkStuckTankTask:Disconnect()
 	end
 	
 	local tankPosition = hitbox:GetWorldPosition()
@@ -891,25 +907,63 @@ function AdjustTurretAim()
 	
 end
 
-function FlipTank()
-
-	Task.Wait(2)
+function SaveRollbackPosition()
 	
-	if not Object.IsValid(chassis) then
+	lastRollbackPosition = lastRollbackPosition + 1
+	
+	if lastRollbackPosition > MAX_ROLLBACK_COUNT then
+		lastRollbackPosition = 1
+	end
+	
+	rollbackTable[lastRollbackPosition] = {chassis:GetWorldPosition(), chassis:GetWorldRotation()}
+
+end
+
+function GetRollbackPosition()
+	
+	lastRollbackPosition = lastRollbackPosition - 1
+	
+	if lastRollbackPosition < 1 then
+		lastRollbackPosition = MAX_ROLLBACK_COUNT
+	end
+	
+	return rollbackTable[lastRollbackPosition]
+
+end
+
+function RotationDifference(rotation1, rotation2)
+
+	return math.acos(rotation1.x * rotation2.x + rotation1.y * rotation2.y + rotation1.z * rotation2.z)
+	
+end
+
+function CheckStuckTank()
+	
+	local checkInput = driver:IsBindingPressed("ability_extra_21") or driver:IsBindingPressed("ability_extra_31")
+	
+	if chassis.type == "TreadedVehicle" then
+		checkInput = driver:IsBindingPressed("ability_extra_30") or driver:IsBindingPressed("ability_extra_32")
+	end
+	
+	if not checkInput or (chassis:GetVelocity().size > MIN_NOT_STUCK_VELOCITY) then
+		SaveRollbackPosition()
 		return
 	end
 	
-	if math.abs(chassis:GetWorldRotation().x) > 120 or math.abs(chassis:GetWorldRotation().y) > 120 then
-		chassis:AddImpulse(Vector3.New(0, 0, chassis.mass * 1000))
-		Task.Wait(1)
-		chassis:SetLocalAngularVelocity(Vector3.New(180, 0, 0))
-		Task.Wait(1)
-		chassis:SetLocalAngularVelocity(Vector3.ZERO)
-		Task.Wait(1)
+	Task.Wait(0.5)
+	
+	if (chassis:GetVelocity().size > MIN_NOT_STUCK_VELOCITY) then
+		SaveRollbackPosition()
+		return	
 	end
 	
-	flipping = false
-
+	local currentRotation = chassis:GetWorldRotation()
+	local idealRotation = Rotation.New(0, 0, currentRotation.z)
+	
+	print("rotation difference: " .. tostring(RotationDifference(currentRotation, idealRotation)))
+	
+	
+	
 end
 
 function Tick()
@@ -954,26 +1008,14 @@ function Tick()
 		if allowHoldDownFiring and driver:IsBindingPressed("ability_primary") then
 			FireProjectile()
 		end
-		
-		if math.abs(chassis:GetWorldRotation().x) > 120 or math.abs(chassis:GetWorldRotation().y) > 120 then
-			if not flipping then
-				flipping = true
-				Task.Spawn(FlipTank, 0)
-			end
-		end
-    
+
+		--[[
 	    local angularVelo = chassis:GetAngularVelocity()
-	    local MAX_ANGULAR_VELOCITY = 150
 	    if angularVelo.sizeSquared > MAX_ANGULAR_VELOCITY * MAX_ANGULAR_VELOCITY then
 	      chassis:SetAngularVelocity(angularVelo:GetNormalized() * MAX_ANGULAR_VELOCITY)
 	    end
-    
-		--[[
-		if Object.IsValid(chassis) and not flipping then
-			chassis:AddImpulse(-Vector3.UP * chassis.mass * 0.5)
-		end
-		--]]
-		
+	    ]]
+    		
 		if driver:IsBindingPressed("ability_extra_21") then -- W
 			script:SetNetworkedCustomProperty("WheelSpeedMultiplier", 1)
 		elseif driver:IsBindingPressed("ability_extra_31") then -- S
