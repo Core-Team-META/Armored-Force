@@ -220,41 +220,13 @@ for _,text in ipairs(worldTexts) do
 end
 
 
--- TODO - move this somewhere more sane. -CJC
-function MyIsA(self, t)
-	return t == "AIPlayer"
-end
-
-if _G.lookup == nil then _G.lookup = {} end
-local AIData = {}
-local replicateTask = Task.Spawn(function()
-	local oldData = AIData
-	AIData = Game.GetLocalPlayer():GetPrivateNetworkedData("AIData") or {}
-	for k,v in pairs(AIData) do
-		if oldData[k] and oldData[k].tank ~= nil then
-			v.tank = oldData[k].tank
-		else
-			v.tank = World.FindObjectById(v.tankId)
-		end
-		if oldData[k] and oldData[k].clientUserData ~= nil then
-			v.clientUserData = oldData[k].clientUserData
-		else
-			v.clientUserData = {}
-		end
-		v.IsA = MyIsA
-	end
-	_G.lookup.tanks = AIData
-end)
-replicateTask.repeatCount = -1
-replicateTask.repeatInterval = 2
-
-
-
 function Tick()
 	local localPlayer = Game.GetLocalPlayer()
 	local allPlayers = Game.GetPlayers()
 
-	for k,v in pairs(AIData) do
+	if not _G.lookup or not _G.lookup.tanks then return end
+
+	for k,v in pairs(_G.lookup.tanks) do
 		--print("Inserting data for", v.name)
 		table.insert(allPlayers, v)
 	end
