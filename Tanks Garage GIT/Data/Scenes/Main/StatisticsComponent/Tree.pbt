@@ -244,7 +244,7 @@ Objects {
   }
   Control {
     Width: 885
-    Height: 696
+    Height: 557
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -502,7 +502,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1311,7 +1311,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3982,7 +3982,7 @@ Objects {
       }
     }
     Text {
-      Label: "Double XP & Silver Enabled"
+      Label: "Double Parts & Silver Enabled"
       Color {
         G: 0.623960555
         B: 0.165132225
@@ -6461,14 +6461,14 @@ Objects {
   Control {
     Width: 150
     Height: 40
-    UIX: 18.0879517
+    UIX: 68.0879517
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
     Text {
-      Label: "XP"
+      Label: "TANK PARTS"
       Color {
         R: 1
         G: 1
@@ -6615,8 +6615,8 @@ Objects {
   Control {
     Width: 36
     Height: 36
-    UIX: 335.217773
-    UIY: 3.29615331
+    UIX: 334
+    UIY: 3
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
