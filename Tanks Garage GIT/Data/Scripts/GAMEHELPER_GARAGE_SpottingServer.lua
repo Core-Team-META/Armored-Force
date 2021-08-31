@@ -48,11 +48,13 @@ function AddToList(player)
 		
 	for i=1, 16 do
 		if script:GetCustomProperty("P" .. tostring(i)) == "" then
-			-- Add XP
-			player:AddResource(Constants_API.XP, spottingXP)
-			-- Add RP to tank
-			player:AddResource(UTIL_API.GetTankRPString(player:GetResource(Constants_API.GetEquippedTankResource())), spottingXP)
-			Events.BroadcastToPlayer(player, "GainXP", {reason = Constants_API.XP_GAIN_REASON.SPOTTED_ENEMY, amount = spottingXP})
+			if player:IsA("Player") then
+				-- Add XP
+				player:AddResource(Constants_API.XP, spottingXP)
+				-- Add RP to tank
+				player:AddResource(UTIL_API.GetTankRPString(player:GetResource(Constants_API.GetEquippedTankResource())), spottingXP)
+				Events.BroadcastToPlayer(player, "GainXP", {reason = Constants_API.XP_GAIN_REASON.SPOTTED_ENEMY, amount = spottingXP})
+			end
 			script:SetNetworkedCustomProperty("P" .. tostring(i), player.id)
 			return
 		end
@@ -111,17 +113,19 @@ end
 
 function Tick()
 
-	local playerList = Game.GetPlayers()
+	--local playerList = Game.GetPlayers()
+	local playerList = _G.utils.GetTankDrivers()
 		
 	for x, p in pairs(playerList) do
 		SetViewPoint(p)
 	
-		local otherPlayerList = Game.GetPlayers({ignoreDead = true, ignorePlayers = p, ignoreTeams = p.team})
+		--local otherPlayerList = Game.GetPlayers({ignoreDead = true, ignorePlayers = p, ignoreTeams = p.team})
+		local otherPlayerList = _G.utils.GetTankDrivers({ignoreDead = true, ignorePlayers = p, ignoreTeams = p.team})
 		
 		for x2, p2 in pairs(otherPlayerList) do
 			SetViewPoint(p2)
-			if Object.IsValid(viewPointList[p.id]) and Object.IsValid(viewPointList[p2.id]) then	
-				if (viewPointList[p.id]:GetWorldPosition() - viewPointList[p2.id]:GetWorldPosition()).size <= viewRangeList[p2.id] then					
+			if Object.IsValid(viewPointList[p.id]) and Object.IsValid(viewPointList[p2.id]) then
+				if (viewPointList[p.id]:GetWorldPosition() - viewPointList[p2.id]:GetWorldPosition()).size <= viewRangeList[p2.id] then
 					local raycastResult = World.Raycast(viewPointList[p2.id]:GetWorldPosition(), viewPointList[p.id]:GetWorldPosition(), {ignoreTeams = p.team})
 					if raycastResult then
 						if raycastResult.other:FindAncestorByType("Vehicle") then

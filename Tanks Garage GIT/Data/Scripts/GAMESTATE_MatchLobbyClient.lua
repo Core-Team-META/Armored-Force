@@ -103,7 +103,8 @@ function CountdownTask()
 	
 	local count = Game.GetPlayers()
 			
-	if #count < 2 and currentTime > 15 then
+	--if #count < 2 then
+	if currentTime > 30 then -- this is a hack - needs to pull from the settings.  CJC
 		timerText.text = " ... "
 	else 
 
