@@ -126,7 +126,7 @@ function AIPlayer:CheckIfStuck()
   --print(self.currentMovementTarget, pos)
   if (self.currentMovementTarget - pos).size > 100
       and (self.lastPos - pos).size < 100 then
-    print("WRIGGLE TIME")
+    --print("WRIGGLE TIME")
     self.wriggleStartTime = time()
     self.wriggleAngle = math.random() * 2.0 - 1.0
   end
@@ -292,6 +292,7 @@ end
 
 function AIPlayer:PlotCourse(targetPos)
   if targetPos == nil then return end
+  --CoreDebug.DrawLine(self:GetWorldPosition(), targetPos, {duration = 5, thickness = 15})
   -- Todo - make this better!
   local SCAN_RANGE = 10000
   local SCAN_STEP = 350
@@ -332,7 +333,10 @@ function AIPlayer:UpdatePath()
     local enemyPos = target:GetWorldPosition()
     local myPos = self:GetWorldPosition()
     -- We want to stop a little ways away.
-    local targetPos = (myPos - enemyPos):GetNormalized() * CLOSING_DIST + enemyPos
+    local pathVec = myPos - enemyPos
+    local targetPos = pathVec:GetNormalized() * CLOSING_DIST + enemyPos
+    targetPos = targetPos + Vector3.New(math.random() * 2 - 1, math.random() * 2 - 1, 0) * pathVec.size * 0.2
+    
     self:PlotCourse(targetPos)
   else
     self:PlotCourse(nil)

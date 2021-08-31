@@ -511,7 +511,7 @@ function FireProjectile(player)
 	
 	firedProjectile.shouldDieOnImpact = true
 	
-	Events.BroadcastToAllPlayers("ANIMATE_FIRING", player, reloadTime)
+	Events.BroadcastToAllPlayers("ANIMATE_FIRING", player.id, reloadTime)
 
 	--#TODO This should be tied into the constants file
 	player:AddResource("TOTALSHOTSFIRED", 1)

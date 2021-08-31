@@ -4,6 +4,7 @@ local lobbyCountdown = settings:GetCustomProperty("LobbyCountdown")
 
 local timerTask = nil
 local lockSet = false
+--lobbyCountdown = 5
 local timer = lobbyCountdown
 
 function StateSTART(manager, propertyName)
@@ -35,11 +36,14 @@ function CountdownTask()
 	if timer <= 0 then
 		StateEND()
 	end
+	--[[
 	if #(_G.utils.GetTankDrivers()) < 2 and timer > 15 then
 		timer = lobbyCountdown
 	else 
 		timer = timer - 1
 	end
+	]]
+	timer = timer - 1
 	
 	if not lockSet and (timer <= 15) then
 		Game.StopAcceptingPlayers()
