@@ -10,7 +10,6 @@ end
 
 
 function API.RegisterBlockedSpot(zone)
-  print("Got a blocked zone")
   local pos = zone:GetWorldPosition()
   pos.z = 0
   local radius = zone:GetWorldScale().x * 50
@@ -45,12 +44,5 @@ function API.IsBlocked(worldPos)
   return blockMap[GridKey(worldPos)] or false
 end
 
-
-
-
-
-
-if _G.utils == nil then _G.utils = {} end
---_G.lookup.map
 
 return API

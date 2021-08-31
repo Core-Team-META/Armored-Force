@@ -10,6 +10,12 @@ Assets {
           Id: 1994867540670616262
         }
       }
+      Overrides {
+        Name: "cs:_PathMap"
+        AssetReference {
+          Id: 3802787313179073777
+        }
+      }
     }
   }
   SerializationVersion: 97
