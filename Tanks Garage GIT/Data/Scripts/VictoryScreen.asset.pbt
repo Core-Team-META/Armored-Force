@@ -10,9 +10,18 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:Iks"
+        ObjectReference {
+        }
+      }
+      Overrides {
         Name: "cs:Root"
         ObjectReference {
         }
+      }
+      Overrides {
+        Name: "cs:Iks:category"
+        String: "Custom"
       }
     }
   }

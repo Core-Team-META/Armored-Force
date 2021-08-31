@@ -9642,6 +9642,12 @@ Objects {
         Id: 6959767735879787487
       }
     }
+    Overrides {
+      Name: "cs:Iks"
+      ObjectReference {
+        SelfId: 8633940625272241926
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9714,6 +9720,7 @@ Objects {
   ChildIds: 12848765623788989678
   ChildIds: 13455580378387411315
   ChildIds: 7271428892112807892
+  ChildIds: 8633940625272241926
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9725,6 +9732,39 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 8633940625272241926
+  Name: "IKPoints"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 2.5613208e-06
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1514888367268134130
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "IKPoints"
   }
 }
 Objects {

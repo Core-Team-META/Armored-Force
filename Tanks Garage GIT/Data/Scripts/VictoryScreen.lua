@@ -17,6 +17,7 @@ local VictoryScreenAPI = require(script:GetCustomProperty("API_VictoryScreen"))
 ------------------------------------------------------------------------------------------------------------------------
 local RootGroup = script:GetCustomProperty("Root"):WaitForObject()
 local GameStateManager = RootGroup:GetCustomProperty("GameStateManager"):WaitForObject()
+local Iks = script:GetCustomProperty("Iks"):WaitForObject()
 
 ------------------------------------------------------------------------------------------------------------------------
 --	CONSTANTS
@@ -65,13 +66,18 @@ end
 --	Forcefully activates the victory Screen
 function Activate()
 
-	VictoryScreenAPI.TeleportPlayers(RootGroup)
-		
+	VictoryScreenAPI.TeleportPlayers(RootGroup,nil,Iks)
+	
 end
 
 --	nil Activate()
 --	Forcefully deactivates the victory Screen
 function Deactivate()
+	for key, value in pairs(Iks:GetChildren()) do
+		if value:IsA("IKAnchor") then 
+			value:Deactivate()
+		end 
+	end
 	for _, player in pairs(Game.GetPlayers()) do
 		VictoryScreenAPI.OnPlayerRestored(RootGroup, player)
 		VictoryScreenAPI.playerRestoredEvent:_Fire(player, RootGroup)
