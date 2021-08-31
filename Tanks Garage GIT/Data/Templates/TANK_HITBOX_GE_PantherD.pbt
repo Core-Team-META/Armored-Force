@@ -115,14 +115,14 @@ Assets {
         Transform {
           Location {
             X: -7.04340124
-            Z: 13.8693924
+            Z: 35.605896
           }
           Rotation {
           }
           Scale {
             X: 6.1
             Y: 5.7
-            Z: 2
+            Z: 1.72744465
           }
         }
         ParentId: 18336071423543306148
@@ -175,14 +175,14 @@ Assets {
         Transform {
           Location {
             X: 397.501923
-            Z: 7.05119705
+            Z: 28.7877026
           }
           Rotation {
           }
           Scale {
             X: 2.10000014
-            Y: 5.59245348
-            Z: 2.19999981
+            Y: 5.68538332
+            Z: 1.90018904
           }
         }
         ParentId: 18336071423543306148
@@ -233,15 +233,15 @@ Assets {
         Name: "REAR_Profiler"
         Transform {
           Location {
-            X: -372.952454
-            Z: 12.9568605
+            X: -381.125092
+            Z: 34.693367
           }
           Rotation {
           }
           Scale {
             X: 1.30000007
             Y: 5.7
-            Z: 2.10000014
+            Z: 1.81381726
           }
         }
         ParentId: 18336071423543306148
@@ -294,14 +294,14 @@ Assets {
         Transform {
           Location {
             X: -7.04340124
-            Z: 13.8693924
+            Z: 35.605896
           }
           Rotation {
           }
           Scale {
             X: 6.1
             Y: 5.7
-            Z: 2
+            Z: 1.72744465
           }
         }
         ParentId: 17960702863571945571
@@ -339,14 +339,14 @@ Assets {
         Transform {
           Location {
             X: 397.501923
-            Z: 7.05119705
+            Z: 28.7877026
           }
           Rotation {
           }
           Scale {
             X: 2.10000014
-            Y: 5.59245348
-            Z: 2.19999981
+            Y: 5.68538332
+            Z: 1.90018904
           }
         }
         ParentId: 17960702863571945571
@@ -383,15 +383,15 @@ Assets {
         Name: "HULLREAR"
         Transform {
           Location {
-            X: -372.952454
-            Z: 12.9568605
+            X: -381.125092
+            Z: 34.693367
           }
           Rotation {
           }
           Scale {
             X: 1.30000007
             Y: 5.7
-            Z: 2.10000014
+            Z: 1.81381726
           }
         }
         ParentId: 17960702863571945571
