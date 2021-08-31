@@ -376,7 +376,7 @@ function AIPlayer:GetReplicatedData()
   return {
     hitPoints = self.hitPoints,
     maxHitPoints = self.maxHitPoints,
-    isDead = false,
+    isDead = self.isDead,
     position = self.position,
     id = self.id,
     tankId = self.tankId,
