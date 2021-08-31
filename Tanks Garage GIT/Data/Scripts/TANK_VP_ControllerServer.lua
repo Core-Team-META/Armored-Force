@@ -4,6 +4,12 @@ local AIPlayer = require(script:GetCustomProperty("_AIPlayer"))
 -- INFO
 local identifier = script:GetCustomProperty("Identifier")
 
+-- Impact vfx
+local TankImpact_1 = script:GetCustomProperty("TankImpact_1")
+local TankImpact_2 = script:GetCustomProperty("TankImpact_2")
+local TankImpact_3 = script:GetCustomProperty("TankImpact_3")
+local TankImpact_4 = script:GetCustomProperty("TankImpact_4")
+
 while not _G.TANK_DATA do
 	Task.Wait()
 end
@@ -517,7 +523,9 @@ end
 
 function ProjectileImpacted(expiredProjectile, other)
     
-    ProjectileExpired(expiredProjectile)
+    if not other:IsA("Vehicle") then
+        ProjectileExpired(expiredProjectile)
+    end
 
 	if not other:IsA("Vehicle") or expiredProjectile.serverUserData.hitOnce or other.driver == driver then
 		return
@@ -623,13 +631,13 @@ function OnArmorHit(trigger, other)
 
         -- #FIXME => Need to add template refs
         if dmgPercent >= 0.8 then
-            --World.SpawnAsset(TEMPLATE, {position = other:GetWorldPosition()})
+            World.SpawnAsset(TankImpact_1, {position = other:GetWorldPosition()})
         elseif dmgPercent < 0.8 and dmgPercent >= 0.5 then
-            --World.SpawnAsset(TEMPLATE, {position = other:GetWorldPosition()})
+            World.SpawnAsset(TankImpact_2, {position = other:GetWorldPosition()})
         elseif dmgPercent < 0.5 and dmgPercent >= 0.3 then
-            --World.SpawnAsset(TEMPLATE, {position = other:GetWorldPosition()})
+            World.SpawnAsset(TankImpact_3, {position = other:GetWorldPosition()})
         else
-            --World.SpawnAsset(TEMPLATE, {position = other:GetWorldPosition()})
+            World.SpawnAsset(TankImpact_4, {position = other:GetWorldPosition()})
         end
 
 		local armorName = trigger.name
