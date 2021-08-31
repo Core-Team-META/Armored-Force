@@ -63,13 +63,19 @@ end
 function GotoShootingRange(button)
 	SFX_CLICK:Play()
 	button.parent:FindDescendantByName("BUTTON_NORMAL_PRESSED").visibility = Visibility.FORCE_OFF
-	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.None) then
-		local panel = World.SpawnAsset(TutorialCompletePopup, {parent = script.parent:FindChildByName("Tutorial UI")})
-		panel.lifeSpan = 3
-		Events.BroadcastToServer("AdvanceTutorial",  API_Tutorial.TutorialPhase.MovedToShootingRange, true)
-	end
+	AdvanceTutorial(API_Tutorial.TutorialPhase.MovedToShootingRange, true)	
 	Events.Broadcast("ENABLE_GARAGE_COMPONENT", "SHOOTING_RANGE")
 	Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_OFF
+end
+
+function AdvanceTutorial(phase, giveRewards)
+	print("Advancing tutorial to phase: " .. tostring(phase))
+	print("Tutorial currently: " .. tostring(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource())))
+	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) < phase) then
+		local panel = World.SpawnAsset(TutorialCompletePopup, {parent = script.parent:FindChildByName("Tutorial UI")})
+		panel.lifeSpan = 3
+		Events.BroadcastToServer("AdvanceTutorial",  API_Tutorial.TutorialPhase.MovedToShootingRange, giveRewards or true)
+	end
 end
 
 function ButtonRelease(button)
@@ -222,3 +228,5 @@ Tutorial_ShootingRangeButton.clickedEvent:Connect(GotoShootingRange)
 Tutorial_ShootingRangeButton.releasedEvent:Connect(ButtonRelease)
 Tutorial_ShootingRangeButton.hoveredEvent:Connect(ButtonHover)
 Tutorial_ShootingRangeButton.unhoveredEvent:Connect(ButtonUnhover)
+
+Events.Connect("AdvanceTutorialRequest", AdvanceTutorial)
