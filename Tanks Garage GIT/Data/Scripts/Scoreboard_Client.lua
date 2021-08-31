@@ -18,8 +18,12 @@ local function SetPanelTeam(player, scoreCard)
         if not scoreCard.team or scoreCard.team ~= player.team then
             if player.team == LOCAL_PLAYER.team then
                 scoreCard.panel.parent = TeamTanksPanel
+               local teamCount = #TeamTanksPanel:GetChildren()
+                scoreCard.panel.y = (teamCount - 1) *  75
             else
                 scoreCard.panel.parent = EnemyTanksPanel
+                local enemyCount = #EnemyTanksPanel:GetChildren()
+                scoreCard.panel.y = (enemyCount - 1) *  75
             end
             scoreCards[player].team = player.team
         end
