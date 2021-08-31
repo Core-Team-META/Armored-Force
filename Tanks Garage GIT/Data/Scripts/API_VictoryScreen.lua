@@ -176,7 +176,7 @@ function API.CalculateWinners(winnerSortType, winnerSortResource)
 	return winners
 end
 
-function API.TeleportWinners( player, spawnObject, overrideCamera)
+function API.TeleportWinners( player, spawnObject, overrideCamera, IK)
 	local spawnPosition = spawnObject:GetWorldPosition()
 	local spawnRotation = spawnObject:GetWorldRotation()
 		player:Spawn({position = spawnPosition, rotation = spawnRotation})
@@ -186,6 +186,10 @@ function API.TeleportWinners( player, spawnObject, overrideCamera)
 		player:SetWorldPosition(spawnPosition)
 		player:SetWorldRotation(spawnRotation)	
 		
+		if IK and IK:IsA("IKAnchor") then 
+			IK:Activate(player)
+		end 
+
 		for _, equipment in pairs(player:GetEquipment()) do -- remove all equipment
 			equipment:Destroy()
 		end
@@ -265,7 +269,7 @@ end
 --	nil API.TeleportPlayers(CoreObject, table)
 --	playerList is in winning order, 1st place in index 1, etc.
 --	playerList can be nil; the script will just calculate the winners
-function API.TeleportPlayers(victoryScreen, playerList)
+function API.TeleportPlayers(victoryScreen, playerList,iks)
 	local numberOfWinners, duration, respawnOnDeactivate, winnerSortType, winnerSortResource, spawnsGroup =
 		victoryScreen:GetCustomProperty("NumberOfWinners"),
 		victoryScreen:GetCustomProperty("Duration"),
@@ -304,14 +308,19 @@ function API.TeleportPlayers(victoryScreen, playerList)
 	end
 
 
-
+	local IKS = {}
+	if iks then 
+		IKS = iks:GetChildren()
+	end
 	for place, spawnObject in pairs(spawnsGroup:GetChildren()) do
+		
 		if(place > numberOfWinners) then break end
+		
 
 		local player = playerList[place]
 		if(Object.IsValid(player)) then
 			FastSpawn(function()
-				API.TeleportWinners( player, spawnObject, OverrideCamera)
+				API.TeleportWinners( player, spawnObject, OverrideCamera, IKS[place])
 				
 			end)
 		end
