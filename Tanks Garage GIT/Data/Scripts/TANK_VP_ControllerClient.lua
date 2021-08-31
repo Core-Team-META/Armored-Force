@@ -206,7 +206,9 @@ function OnTankStateChanged(controllerServer, property)
 
 end
 
-function FiringAnimation(player, reloadTime)
+function FiringAnimation(playerId, reloadTime)
+	local player = Game.FindPlayer(playerId)
+	if player == nil then return end
 
 	if not saluteOverride then
 		if player ~= driver or not Object.IsValid(tankBodyClient) then

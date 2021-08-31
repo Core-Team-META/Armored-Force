@@ -18,6 +18,8 @@ local WIN_RATE_EXPONENT = 1
 local WIN_RATE_COEFFICIENT = 500
 local LOBBY_REBALANCE_TIME = 8
 
+local MINIMUM_TEAMSIZE = 2
+
 local function IsLobby()
 	return GAME_STATE:GetCustomProperty("GameState") == "LOBBYSTATE"
 end
@@ -250,6 +252,7 @@ function OnLobbyTimerChanged(object, string)
 		Events.BroadcastToAllPlayers("FadeScreen")
 		Task.Wait(1)
 		DoRebalance()
+		Events.Broadcast("FILL_TEAMS_WITH_AI", MINIMUM_TEAMSIZE)
 	end
 end
 
