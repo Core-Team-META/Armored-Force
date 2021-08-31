@@ -361,10 +361,11 @@ function AIPlayer:PathRay(targetPos, targetDist, step)
       debugLineColor = Color.RED
     end
 
+    --[[
     CoreDebug.DrawLine(currentPos + Vector3.UP * 1000,
         currentPos + Vector3.UP * -1000,
         {thickness = 15, duration = 1, color = debugLineColor})
-
+  ]]
     if isBlocked then break end
   end
   return totalDist
