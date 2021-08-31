@@ -85,7 +85,8 @@ local currentlySpectating
 local function GetPlayersList(ignorePlayer)
 	return Game.GetPlayers({
 		ignorePlayers = {LocalPlayer, ignorePlayer},
-		ignoreDead = IGNORE_DEAD_PLAYERS
+		ignoreDead = IGNORE_DEAD_PLAYERS,
+		includeTeams = LocalPlayer.team,
 	})
 end
 
@@ -158,14 +159,14 @@ end
 local function SpectateFirstPlayer(player)
 	if(spectateMode ~= SpectateMode.PLAYER) then return end
 
-	local nearestTeammate = Game.FindNearestPlayer(LocalPlayer:GetWorldPosition(), {ignoreDead = true, includeTeams = LocalPlayer.team})
-	if(not nearestTeammate) then return Unspectate() end
+	local players = GetPlayersList(player)
+	local newPlayer = players[1]
+	if(not newPlayer) then return Unspectate() end
 
-	Spectate(nearestTeammate)
+	Spectate(newPlayer)
 
 	return true
 end
-
 --	nil ChangeSpectateMode(SpectateMode)
 --	Changes spectate mode
 local function ChangeSpectateMode(newMode)
