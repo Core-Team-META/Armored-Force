@@ -4,7 +4,6 @@ local lobbyCountdown = settings:GetCustomProperty("LobbyCountdown")
 
 local timerTask = nil
 local lockSet = false
-lobbyCountdown = 5-- TOOD - remove this CJC
 local timer = lobbyCountdown
 
 function StateSTART(manager, propertyName)
@@ -20,7 +19,6 @@ function StateSTART(manager, propertyName)
 		return
 		
 	end
-	print("in the lobby!")
 	
 	timer = lobbyCountdown
 	
@@ -38,11 +36,7 @@ function CountdownTask()
 		StateEND()
 	end
 	if #(_G.utils.GetTankDrivers()) < 2 and timer > 15 then
-	--print("Tank drivers:", #_G.utils.GetTankDrivers())
-	--if #Game.GetPlayers() < 2 then
-	--if #(_G.utils.GetTankDrivers()) < 2 then
 		timer = lobbyCountdown
-		print("holding", _G.utils.GetTankDrivers())
 	else 
 		timer = timer - 1
 	end
