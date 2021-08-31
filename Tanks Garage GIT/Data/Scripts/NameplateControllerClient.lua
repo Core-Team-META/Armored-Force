@@ -141,7 +141,7 @@ function OnPlayerJoined(player)
 	-- Setup static properties
 	if player:IsA("Player") then
 		nameplateRoot:AttachToPlayer(player, "nameplate")
-		nameplateRoot:SetPosition(Vector3.New(0, 0, 400))		
+		nameplateRoot:SetPosition(Vector3.New(0, 0, 400))
 	else
 		nameplateRoot.parent = player.tank
 		nameplateRoot:SetPosition(Vector3.UP * 800)
@@ -155,15 +155,21 @@ function OnPlayerJoined(player)
 	)
 	nameplates[player.id].borderPiece:SetPosition(Vector3.New(-4.0 * NAMEPLATE_LAYER_THICKNESS, 0.0, 0.0))
 	nameplates[player.id].borderPiece:SetColor(BORDER_COLOR)
-	nameplates[player.id].backgroundPiece:SetScale(Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH, HEALTHBAR_HEIGHT))
+	nameplates[player.id].backgroundPiece:SetScale(
+		Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH, HEALTHBAR_HEIGHT)
+	)
 	nameplates[player.id].backgroundPiece:SetPosition(Vector3.New(-3.0 * NAMEPLATE_LAYER_THICKNESS, 0.0, 0.0))
 	nameplates[player.id].backgroundPiece:SetColor(BACKGROUND_COLOR)
 	nameplates[player.id].healthText:SetPosition(Vector3.New(50.0 * NAMEPLATE_LAYER_THICKNESS, 0.0, 0.0)) -- Text must be 50 units ahead as it doesn't have thickness
 	nameplates[player.id].healthText:SetColor(HEALTH_NUMBER_COLOR)
 	nameplates[player.id].nameText.text = player.name
-	
-	if player.clientUserData.currentTankData and player.clientUserData.currentTankData.name and player.clientUserData.currentTankData.teir then
-		nameplates[player.id].tankText.text = player.clientUserData.currentTankData.name .. " [" .. tostring(player.clientUserData.currentTankData.teir) .. "]"
+
+	if
+		player.clientUserData.currentTankData and player.clientUserData.currentTankData.name and
+			player.clientUserData.currentTankData.teir
+	 then
+		nameplates[player.id].tankText.text =
+			player.clientUserData.currentTankData.name .. " [" .. tostring(player.clientUserData.currentTankData.teir) .. "]"
 	else
 		nameplates[player.id].tankText.isEnabled = false
 	end
@@ -278,11 +284,10 @@ function Tick(deltaTime)
 	local tankList = Game.GetPlayers()
 	--print("lookups", _G.lookup, _G.lookup.tanks or "tanks not found")
 	if _G.lookup and _G.lookup.tanks then
-		for k,v in pairs(_G.lookup.tanks) do
+		for k, v in pairs(_G.lookup.tanks) do
 			--print(".....", v.name)
 			table.insert(tankList, v)
 		end
-
 	else
 		--print("No AI drivers...", _G.lookup)
 	end
@@ -291,6 +296,12 @@ function Tick(deltaTime)
 	for _, player in pairs(tankList) do
 		--print("Handling nameplate for player", player.id)
 		local nameplate = nameplates[player.id]
+
+		if nameplate and not nameplate.recheck or nameplate and nameplate.recheck < time() then
+			nameplate.dirty = true
+			nameplate.recheck = time() + 3
+		end
+
 		if nameplate == nil and not player:IsA("Player") then
 			print("Creating a nameplate for an AI player!")
 			OnPlayerJoined(player)
@@ -322,9 +333,13 @@ function Tick(deltaTime)
 				end
 
 				RotateNameplate(nameplate)
-							
-				if player.clientUserData.currentTankData and player.clientUserData.currentTankData.name and player.clientUserData.currentTankData.teir then
-					nameplate.tankText.text = player.clientUserData.currentTankData.name .. " [T" .. tostring(player.clientUserData.currentTankData.teir) .. "]"
+
+				if
+					player.clientUserData.currentTankData and player.clientUserData.currentTankData.name and
+						player.clientUserData.currentTankData.teir
+				 then
+					nameplate.tankText.text =
+						player.clientUserData.currentTankData.name .. " [T" .. tostring(player.clientUserData.currentTankData.teir) .. "]"
 				else
 					nameplates[player.id].tankText.isEnabled = false
 				end
@@ -391,11 +406,11 @@ function Tick(deltaTime)
 					end
 				end
 			end
-			
-			if (currentGameState == "VICTORY_STATE") and previousGameState and (previousGameState ~= currentGameState) then
+
+			if (currentGameState == "VICTORY_STATE") then
 				nameplate.dirty = true
 			end
-			
+
 			previousGameState = currentGameState
 
 			if nameplate.dirty then
@@ -456,7 +471,7 @@ function Tick(deltaTime)
 						local nameColor = nil
 						local healthColor = nil
 						local scaling = nil
-						
+
 						if player == LOCAL_PLAYER or Teams.AreTeamsFriendly(player.team, LOCAL_PLAYER.team) then
 							nameColor = FRIENDLY_NAME_COLOR
 							healthColor = FRIENDLY_HEALTH_COLOR
@@ -466,11 +481,11 @@ function Tick(deltaTime)
 							healthColor = ENEMY_HEALTH_COLOR
 							scaling = SCALE * 2
 						end
-						
+
 						if (currentGameState == "VICTORY_STATE") then
 							scaling = SCALE * 0.7
 						end
-					
+
 						nameplate.nameText:SetColor(nameColor)
 						nameplate.tankText:SetColor(nameColor)
 						nameplate.healthPiece:SetColor(healthColor)
