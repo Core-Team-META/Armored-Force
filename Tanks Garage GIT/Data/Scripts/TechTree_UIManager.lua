@@ -205,7 +205,7 @@ function ToggleThisComponent(requestedPlayerState)
 
 		if savedState ~= thisComponent then
 			--print("Clearing")
-			LOCAL_PLAYER:ClearOverrideCamera()
+			--LOCAL_PLAYER:ClearOverrideCamera()
 			return
 		end
 
