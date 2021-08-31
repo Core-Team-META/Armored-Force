@@ -294,7 +294,7 @@ function AIPlayer:PlotCourse(targetPos)
   if targetPos == nil then return end
   -- Todo - make this better!
   local SCAN_RANGE = 10000
-  local SCAN_STEP = 750
+  local SCAN_STEP = 350
 
   --local frontPath = self:PathRay(targetPos, SCAN_RANGE, SCAN_STEP)
 
@@ -360,11 +360,11 @@ function AIPlayer:PathRay(targetPos, targetDist, step)
     else
       debugLineColor = Color.RED
     end
-    --[[
+
     CoreDebug.DrawLine(currentPos + Vector3.UP * 1000,
         currentPos + Vector3.UP * -1000,
         {thickness = 15, duration = 1, color = debugLineColor})
-        ]]
+
     if isBlocked then break end
   end
   return totalDist

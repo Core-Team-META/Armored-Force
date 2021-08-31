@@ -372,7 +372,7 @@ function OnDeath(player, damage)
 	end
 	
 	if checkStuckTankTask then
-		checkStuckTankTask:Disconnect()
+		checkStuckTankTask:Cancel()
 	end
 	
 	local tankPosition = hitbox:GetWorldPosition()
@@ -1060,10 +1060,11 @@ end
 
 function CheckStuckTank()
 	
-	local checkInput = driver:IsBindingPressed("ability_extra_21") or driver:IsBindingPressed("ability_extra_31")
+	local checkInput = driver:IsA("AIPlayer") or driver:IsBindingPressed("ability_extra_21") or driver:IsBindingPressed("ability_extra_31")
+	if not Object.IsValid(chassis) then return end
 	
 	if chassis.type == "TreadedVehicle" then
-		checkInput = driver:IsBindingPressed("ability_extra_30") or driver:IsBindingPressed("ability_extra_32")
+		checkInput = driver:IsA("AIPlayer") or driver:IsBindingPressed("ability_extra_30") or driver:IsBindingPressed("ability_extra_32")
 	end
 	
 	if not checkInput or (chassis:GetVelocity().size > MIN_NOT_STUCK_VELOCITY) then
