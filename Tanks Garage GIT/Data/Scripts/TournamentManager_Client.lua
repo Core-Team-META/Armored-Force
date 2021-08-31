@@ -9,10 +9,17 @@ local TROPHY_LIST = script:GetCustomProperty("TrophyList"):WaitForObject()
 local CURRENT_TROPHY_IMAGE = script:GetCustomProperty("CurrentTrophy"):WaitForObject()
 local TROPHY_NAME_TEXT = script:GetCustomProperty("TROPHY_NAME"):WaitForObject()
 
-local GARAGE_PANEL = script:GetCustomProperty("Garage_TournementPanel"):WaitForObject()
-local TROPHY_INFO_LIST = script:GetCustomProperty("TrophyInfoList"):WaitForObject()
-local GARAGE_HOVER_PANEL = script:GetCustomProperty("Garage_TournementHover_Panel"):WaitForObject()
-local GARAGE_HOVER_BUTTON = script:GetCustomProperty("HoverButton"):WaitForObject()
+local GARAGE_PANEL = nil
+local TROPHY_INFO_LIST = nil
+local GARAGE_HOVER_PANEL = nil
+local GARAGE_HOVER_BUTTON = nil
+
+if Game.GetCurrentSceneName() == "Main" then
+	GARAGE_PANEL = script:GetCustomProperty("Garage_TournementPanel"):WaitForObject()
+	TROPHY_INFO_LIST = script:GetCustomProperty("TrophyInfoList"):WaitForObject()
+	GARAGE_HOVER_PANEL = script:GetCustomProperty("Garage_TournementHover_Panel"):WaitForObject()
+	GARAGE_HOVER_BUTTON = script:GetCustomProperty("HoverButton"):WaitForObject()
+end
 
 local TROPHY_INFO_TEMP = script:GetCustomProperty("Tournament_TrophyInfoPanel")
 
