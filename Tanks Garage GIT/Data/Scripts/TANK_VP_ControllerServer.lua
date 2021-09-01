@@ -110,7 +110,7 @@ local armorImpactListeners = {}
 
 --local MAX_ANGULAR_VELOCITY = 150
 local MIN_NOT_STUCK_VELOCITY = 100
-local MAX_NOT_STUCK_ANGLE = 50
+local MAX_NOT_FLIPPED_ANGLE = 10
 local MAX_ROLLBACK_COUNT = 10
 
 local function RaycastResultFromPointRotationDistance(point, rotation, distance)
@@ -1061,9 +1061,9 @@ function GetRollbackPosition()
 
 end
 
-function RotationDifference(rotation1, rotation2)
+function GetAngleDifference(vec1, vec2)
 
-	return 2 * math.acos(rotation1.x * rotation2.x + rotation1.y * rotation2.y + rotation1.z * rotation2.z + rotation1.w * rotation2.w)
+	return 57.3 * math.acos((vec1.x * vec2.x + vec1.y * vec2.y + vec1.z * vec2.z) / (vec1.size * vec2.size))
 	
 end
 
@@ -1074,10 +1074,12 @@ function CheckStuckTank()
 	local checkInput = driver:IsA("AIPlayer") or driver:IsBindingPressed("ability_extra_21") or driver:IsBindingPressed("ability_extra_31")
 	
 	if chassis.type == "TreadedVehicle" then
-		checkInput = driver:IsA("AIPlayer") or driver:IsBindingPressed("ability_extra_30") or driver:IsBindingPressed("ability_extra_32")
+		checkInput = checkInput or driver:IsBindingPressed("ability_extra_30") or driver:IsBindingPressed("ability_extra_32")
 	end
 	
-	if not checkInput or (chassis:GetVelocity().size > MIN_NOT_STUCK_VELOCITY) then
+	if not checkInput then
+		return
+	elseif (chassis:GetVelocity().size > MIN_NOT_STUCK_VELOCITY) then
 		SaveRollbackPosition()
 		return
 	end
@@ -1089,12 +1091,39 @@ function CheckStuckTank()
 		return	
 	end
 	
-	local currentRotation = Quaternion.New(chassis:GetWorldRotation())
-	local idealRotation = Quaternion.New(0, 0, currentRotation.z, 1)
+	local currentVector = chassis:GetWorldRotation() * Vector3.FORWARD
+	local idealVector = Rotation.New(0, 0, chassis:GetWorldRotation().z) * Vector3.FORWARD
 	
-	print("rotation difference: " .. tostring(RotationDifference(currentRotation, idealRotation)))
-	
-	
+	print("rotation difference: " .. tostring(GetAngleDifference(currentVector, idealVector)))
+		
+	if GetAngleDifference(currentVector, idealVector) < MAX_NOT_FLIPPED_ANGLE then -- rollback mode
+		local rollbackPosition = GetRollbackPosition()
+		
+		if not rollbackPosition then 
+			return
+		end
+		
+		local currentPosition = {chassis:GetWorldPosition(), chassis:GetWorldRotation()}
+		
+		--[[
+		for i = 1, 10 do
+			chassis:SetWorldPosition(Vector3.Lerp(currentPosition[1], (rollbackPosition[1] + Vector3.UP * 10), i / 10))
+			Task.Wait(0.1)
+		end
+		]]
+		
+		chassis:SetWorldPosition(rollbackPosition[1] + Vector3.UP * 10)
+		chassis:SetWorldRotation(rollbackPosition[2])
+		
+		return
+	else -- correct angle and add impulse mode
+		chassis:SetWorldPosition(chassis:GetWorldPosition() + Vector3.UP * 10)
+		
+		Task.Wait()
+		
+		chassis:AddImpulse(chassis:GetWorldRotation() * Vector3.UP * 1200 * chassis.mass)
+		chassis:SetWorldRotation(Rotation.New(0, 0, chassis:GetWorldRotation().z))
+	end
 	
 end
 

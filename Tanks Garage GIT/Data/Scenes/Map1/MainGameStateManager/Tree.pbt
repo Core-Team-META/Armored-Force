@@ -49,7 +49,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GameState"
-      String: "LOBBYSTATE"
+      String: "LOBBY_STATE"
     }
     Overrides {
       Name: "cs:Timer"
