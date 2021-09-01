@@ -7,9 +7,12 @@ local TEAMCOUNT_1_SHINE = script:GetCustomProperty("TEAMCOUNT_1_SHINE"):WaitForO
 local TEAMCOUNT_2 = script:GetCustomProperty("TEAMCOUNT_2"):WaitForObject()
 local TEAMCOUNT_2_SHINE = script:GetCustomProperty("TEAMCOUNT_2_SHINE"):WaitForObject()
 
-
 local friendlyCount = 0
 local enemyCount = 0
+
+while not _G.utils do
+    Task.Wait()
+end
 
 local function HideDead(count, panel)
     for i, child in ipairs(panel:GetChildren()) do
@@ -22,18 +25,23 @@ local function HideDead(count, panel)
 end
 
 function Tick()
-    local friendlyTeam = Game.GetPlayers({ignoreDead = true, ignoreTeams = 3 - LocalPlayer.team})
-    local enemyTeam = Game.GetPlayers({ignoreDead = true, ignoreTeams = LocalPlayer.team})
+    local friendlyTeam =
+        #_G.utils.GetTankDrivers({ignoreDead = true, ignoreTeams = 3 - LocalPlayer.team}) +
+        #Game.GetPlayers({ignoreDead = true, ignoreTeams = 3 - LocalPlayer.team})
 
-    if #friendlyTeam ~= friendlyCount then
-        friendlyCount = #friendlyTeam
+    local enemyTeam =
+        #_G.utils.GetTankDrivers({ignoreDead = true, ignoreTeams = LocalPlayer.team}) +
+        #Game.GetPlayers({ignoreDead = true, ignoreTeams = LocalPlayer.team})
+
+    if friendlyTeam ~= friendlyCount then
+        friendlyCount = friendlyTeam
         HideDead(friendlyCount, FriendlyTeamPanel)
-        
+
         TEAMCOUNT_1.text = tostring(friendlyCount)
         TEAMCOUNT_1_SHINE.text = tostring(friendlyCount)
     end
-    if #enemyTeam ~= enemyCount then
-        enemyCount = #enemyTeam
+    if enemyTeam ~= enemyCount then
+        enemyCount = enemyTeam
         HideDead(enemyCount, EnemyTeamPanel)
         TEAMCOUNT_2.text = tostring(enemyCount)
         TEAMCOUNT_2_SHINE.text = tostring(enemyCount)

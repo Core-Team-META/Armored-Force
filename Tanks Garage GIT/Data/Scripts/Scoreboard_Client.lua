@@ -13,16 +13,18 @@ local scoreCards = {}
 
 local isActive = false
 
-local function SetPanelTeam(player, scoreCard)
+local function SetPanelTeam(player, scoreCard, count)
     if scoreCard and Object.IsValid(scoreCard.panel) then
-        if not scoreCard.team or scoreCard.team ~= player.team then
-            if player.team == LOCAL_PLAYER.team then
-                scoreCard.panel.parent = TeamTanksPanel
-            else
-                scoreCard.panel.parent = EnemyTanksPanel
-            end
-            scoreCards[player].team = player.team
+        if player.team == LOCAL_PLAYER.team then
+            scoreCard.panel.parent = TeamTanksPanel
+            scoreCard.panel.y = count.team * 75
+            count.team = count.team + 1
+        else
+            scoreCard.panel.parent = EnemyTanksPanel
+            scoreCard.panel.y = count.enemy * 75
+            count.enemy = count.enemy + 1
         end
+        scoreCards[player].team = player.team
     end
 end
 
@@ -63,22 +65,23 @@ function Tick()
     if not isActive then
         return
     end
+    local count = {team = 0, enemy = 0}
     for _, player in ipairs(Game.GetPlayers()) do
         local scoreCard = scoreCards[player]
         if scoreCard then
-            SetPanelTeam(player, scoreCard)
+            SetPanelTeam(player, scoreCard, count)
 
             scoreCard.kills.text = tostring(player.kills)
             scoreCard.damage.text = tostring(player:GetResource("TankDamage"))
-            scoreCard.tankName.text = player.clientUserData.currentTankData and player.clientUserData.currentTankData.name or ""
+            scoreCard.tankName.text =
+                player.clientUserData.currentTankData and player.clientUserData.currentTankData.name or ""
         --[[
             scoreCard.spotted.text = tostring(player:GetResource("SpottingTracker"))
             ]]
-         --
+        --
         end
     end
 end
-
 
 LOCAL_PLAYER.bindingPressedEvent:Connect(
     function(player, string)
@@ -98,11 +101,7 @@ LOCAL_PLAYER.bindingReleasedEvent:Connect(
     end
 )
 
-
-
-
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
-
 
 Init()

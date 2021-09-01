@@ -75,6 +75,9 @@ end
 function Deactivate()
 	for key, value in pairs(Iks:GetChildren()) do
 		if value:IsA("IKAnchor") then 
+			for _, child in pairs(value:FindDescendantsByType("IKAnchor")) do
+				child:Deactivate()
+			end
 			value:Deactivate()
 		end 
 	end

@@ -55,7 +55,7 @@ Assets {
         }
         Control {
           Width: -20
-          Height: 75
+          Height: 50
           UIX: 10
           RenderTransformPivot {
             Anchor {
@@ -109,21 +109,25 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: -10
+          Width: 10
+          Height: 10
+          UIX: -6
+          UIY: -5
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          AddSizeToParentIfUsingParentSize: true
           UseParentWidth: true
           UseParentHeight: true
           Image {
             Brush {
             }
             Color {
-              R: 0.285000026
-              G: 0.285000026
-              B: 0.285000026
+              R: 0.00570396893
+              G: 0.00749903172
+              B: 0.00402471703
               A: 1
             }
             TeamSettings {
@@ -177,8 +181,8 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 75
-          Height: 75
+          Width: 50
+          Height: 50
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -242,8 +246,10 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 75
-          Height: 75
+          Width: 45
+          Height: 45
+          UIX: 2.5
+          UIY: 2.5
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -320,13 +326,14 @@ Assets {
           }
           UseParentHeight: true
           Text {
-            Label: "Platinum "
+            Label: "Platinum"
             Color {
-              R: 0.72
-              G: 0.486357629
+              R: 0.958000064
+              G: 0.684430599
+              B: 0.114959955
               A: 1
             }
-            Size: 30
+            Size: 18
             Justification {
               Value: "mc:etextjustify:left"
             }
@@ -341,6 +348,8 @@ Assets {
               A: 1
             }
             ShadowOffset {
+              X: 1
+              Y: 1
             }
             OutlineColor {
               A: 1
@@ -397,13 +406,14 @@ Assets {
           }
           UseParentHeight: true
           Text {
-            Label: "15000 "
+            Label: "15000"
             Color {
-              R: 0.72
-              G: 0.486357629
+              R: 0.958000064
+              G: 0.684430599
+              B: 0.114959955
               A: 1
             }
-            Size: 25
+            Size: 15
             Justification {
               Value: "mc:etextjustify:center"
             }
@@ -418,6 +428,8 @@ Assets {
               A: 1
             }
             ShadowOffset {
+              X: 1
+              Y: 1
             }
             OutlineColor {
               A: 1

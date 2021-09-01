@@ -66,6 +66,12 @@ end
 
 function OnPlayerLeft(player)
 	SavePlayerDataIntoSharedStorage(player)
+	for _, child in ipairs(DATA_TRANSFER:GetChildren()) do
+		local playerId = child:GetCustomProperty("OwnerId")
+		if playerId == player.id then
+			child:Destroy()
+		end
+	end
 end
 
 -- Update shared storage, or give it default values if the data doesn't exist
