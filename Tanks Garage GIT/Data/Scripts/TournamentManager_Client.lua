@@ -114,7 +114,6 @@ local function SetupGarage()
 end
 
 function Init()
-	Task.Wait(3)
 	local currentScore = GetCurrentScore()
 	NEW_1.text = tostring(currentScore)
 	PROGRESS.progress = currentScore / nextScore
@@ -193,6 +192,7 @@ function OnPrivateData(player, string)
 		end
 	elseif string == "TSCORE" then
 		TOTALSCORE.text = tostring(GetCurrentScore())
+		SetCurrentTrophy(GetCurrentScore())
 	end
 end
 
