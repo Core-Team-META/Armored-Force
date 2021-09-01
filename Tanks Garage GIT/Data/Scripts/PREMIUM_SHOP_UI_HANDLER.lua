@@ -402,6 +402,7 @@ function PurchaseAlliesPremiumTank()
 		end
 		ALLIES_BUY_BUTTON.isInteractable = false
 		local event = Events.BroadcastToServer("PurchaseTank", tankId, purchaseCosts.resource)
+		--[[
 		if (event == BroadcastEventResultCode.SUCCESS) then
 			for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 				if (tonumber(tank.id) == tonumber(tankId)) then
@@ -410,6 +411,7 @@ function PurchaseAlliesPremiumTank()
 				end
 			end			
 		end
+		]]--
 	end
 end
 
@@ -423,6 +425,7 @@ function PurchaseAxisPremiumTank()
 		end
 		AXIS_BUY_BUTTON.isInteractable = false
 		local event = Events.BroadcastToServer("PurchaseTank", tankId, purchaseCosts.resource)
+		--[[
 		if (event == BroadcastEventResultCode.SUCCESS) then
 			for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 				if (tonumber(tank.id) == tonumber(tankId)) then
@@ -431,7 +434,7 @@ function PurchaseAxisPremiumTank()
 				end
 			end			
 		end
-		
+		]]--		
 
 	end
 end

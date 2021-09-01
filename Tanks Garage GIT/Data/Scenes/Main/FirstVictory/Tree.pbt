@@ -61,12 +61,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:TechTree_Contents"
-      ObjectReference {
-        SelfId: 7647187385909291407
-      }
-    }
-    Overrides {
       Name: "cs:Keys"
       ObjectReference {
         SelfId: 1126690814057033551
