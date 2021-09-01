@@ -2,23 +2,26 @@
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 local Constants_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 --
+while not _G.TANK_DATA do
+	Task.Wait()
+end
 
--- Local properties
-local techTreeContents = script:GetCustomProperty("TechTree_Contents"):WaitForObject()
-local TANK_LIST = techTreeContents:GetChildren()
---
+local TANK_LIST = _G.TANK_DATA
+
+
 
 function PurchaseTank(player, id, prereqs)
+
 	local tank = {}
-	for k,v in ipairs(TANK_LIST) do
-		local tankId = v:GetCustomProperty("ID")
-		if(tonumber(tankId) == id) then
+	for k, tankData in ipairs(TANK_LIST) do
+		local tankId = tankData.id
+		if(tankId == id) then
 			print("DEBUG: Found match")
-			local purchaseCost = v:GetCustomProperty("PurchaseCost")
+			local purchaseCost = tankData.purchaseCost
 			--local researchCost = v:GetCustomProperty("ResearchCost")
 			--local tankRPString = UTIL_API.GetTankRPString(tonumber(id))
 			
-			local purchaseCurrencyName = v:GetCustomProperty("PurchaseCurrencyName")
+			local purchaseCurrencyName =  tankData.purchaseCurrencyName
 			
 			local currencyAmount = player:GetResource(purchaseCurrencyName)
 			--local rpAmount1 = 0
@@ -59,7 +62,7 @@ function PurchaseTank(player, id, prereqs)
 					print("DEBUG: Owned tank found")
 					tank.purchased = true
 					tank.researched = true
-					
+			
 					player:RemoveResource(purchaseCurrencyName, purchaseCost)
 					
 					--[[
@@ -91,7 +94,8 @@ function PurchaseTank(player, id, prereqs)
 						tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
 					end
 					Events.BroadcastToPlayer(player, "TankPurchaseSuccessful")
-					Events.Broadcast("TankAcquired", player, id, v:GetCustomProperty("Tier"))
+					Events.Broadcast("TankAcquired", player, id,  tankData.tier)
+					player:SetPrivateNetworkedData("PlayerTankData", player.serverUserData.techTreeProgress)
 					return BroadcastEventResultCode.SUCCESS															
 				end
 			end
@@ -143,11 +147,11 @@ end
 
 function PurchaseWeapon(player, id)
 	local tank = {}
-	for k,v in ipairs(TANK_LIST) do
-		if(v:GetCustomProperty("ID") == id) then
+	for k, tankData in ipairs(TANK_LIST) do
+		if(tankData.id == id) then
 			print("DEBUG: Found match")
-			local cost = v:GetCustomProperty("WeaponPurchaseCost")
-			local researchCost = v:GetCustomProperty("WeaponResearchCost")
+			local cost = tankData.weaponPurchaseCost
+			local researchCost = tankData.weaponResearchCost
 			local silver = player:GetResource(Constants_API.SILVER)
 			if(silver < cost) then return BroadcastEventResultCode.FAILURE end
 			
@@ -179,7 +183,7 @@ function PurchaseWeapon(player, id)
 					
 					Events.BroadcastToPlayer(player, "WeaponUpgradeSuccessful")
 					Events.Broadcast("UpgradeAcquired", player, id, Constants_API.UPGRADE_SLOT.WEAPON)
-
+					player:SetPrivateNetworkedData("PlayerTankData", player.serverUserData.techTreeProgress)
 					return BroadcastEventResultCode.SUCCESS
 				end
 			end
@@ -192,11 +196,11 @@ end
 
 function PurchaseArmor(player, id)
 	local tank = {}
-	for k,v in ipairs(TANK_LIST) do
-		if(v:GetCustomProperty("ID") == id) then
+	for k, tankData in ipairs(TANK_LIST) do
+		if(tankData.id == id) then
 			print("DEBUG: Found match")
-			local cost = v:GetCustomProperty("ArmorPurchaseCost")
-			local researchCost = v:GetCustomProperty("ArmorResearchCost")
+			local cost = tankData.armorPurchaseCost
+			local researchCost = tankData.armorResearchCost
 			local silver = player:GetResource(Constants_API.SILVER)
 			if(silver < cost) then return BroadcastEventResultCode.FAILURE end
 			
@@ -228,6 +232,7 @@ function PurchaseArmor(player, id)
 					
 					Events.BroadcastToPlayer(player, "ArmorUpgradeSuccessful")
 					Events.Broadcast("UpgradeAcquired", player, id, Constants_API.UPGRADE_SLOT.ARMOR)
+					player:SetPrivateNetworkedData("PlayerTankData", player.serverUserData.techTreeProgress)
 					return BroadcastEventResultCode.SUCCESS
 				end
 			end
@@ -240,11 +245,11 @@ end
 
 function PurchaseEngine(player, id)
 	local tank = {}
-	for k,v in ipairs(TANK_LIST) do
-		if(v:GetCustomProperty("ID") == id) then
+	for k, tankData in ipairs(TANK_LIST) do
+		if(tankData.id == id) then
 			print("DEBUG: Found match")
-			local cost = v:GetCustomProperty("MobilityPurchaseCost")
-			local researchCost = v:GetCustomProperty("MobilityResearchCost")
+			local cost = tankData.mobilityPurchaseCost
+			local researchCost = tankData.MobilityResearchCost
 			local silver = player:GetResource(Constants_API.SILVER)
 			if(silver < cost) then return BroadcastEventResultCode.FAILURE end
 			
@@ -276,6 +281,7 @@ function PurchaseEngine(player, id)
 					
 					Events.BroadcastToPlayer(player, "EngineUpgradeSuccessful")
 					Events.Broadcast("UpgradeAcquired", player, id, Constants_API.UPGRADE_SLOT.ENGINE)
+					player:SetPrivateNetworkedData("PlayerTankData", player.serverUserData.techTreeProgress)
 					return BroadcastEventResultCode.SUCCESS
 				end
 			end
