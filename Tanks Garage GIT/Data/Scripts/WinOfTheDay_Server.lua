@@ -2,18 +2,20 @@ local CONST = require(script:GetCustomProperty("MetaAbilityProgressionConstants_
 local UTIL = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 
 local KEYS = script:GetCustomProperty("Keys"):WaitForObject()
-local TANK_CONTENT = script:GetCustomProperty("TechTree_Contents"):WaitForObject()
-
 local STORAGE_NET_REF = KEYS:GetCustomProperty("Achievements")
+
+while not _G.TANK_DATA do
+    Task.Wait()
+end
+
+local TANK_CONTENT = _G.TANK_DATA
 
 local tankTbl = {}
 local playerDailyTbl = {}
 
 local function BuildTankTable()
-    for _, tank in ipairs(TANK_CONTENT:GetChildren()) do
-        local id = tank:GetCustomProperty("ID")
-        id = tonumber(id)
-        tankTbl[id] = tank:GetCustomProperty("Type")
+    for _, tank in ipairs(TANK_CONTENT) do
+        tankTbl[tonumber(tank.id)] = tank.type
     end
 end
 
@@ -28,10 +30,6 @@ local function SetDailyBonusStatus(player)
     end
 end
 
-function Init()
-    BuildTankTable()
-end
-
 function SetWinning(player)
     local tankId = player:GetResource(CONST.GetEquippedTankResource())
     if playerDailyTbl[player.id] and player:GetResource("DAILY_BONUS") == 1 then
@@ -40,16 +38,11 @@ function SetWinning(player)
 end
 
 function OnPlayerJoined(player)
-    Task.Wait()
-    if not Object.IsValid(player) then
-        return
-    end
     playerDailyTbl[player.id] = {}
 
     local data = Storage.GetSharedPlayerData(STORAGE_NET_REF, player)
 
     local dailyTbl = {}
-    local currentEquippedId = player:GetResource(CONST.GetEquippedTankResource())
 
     local shouldReset = false
     if data and data.DAILY and data.DAILY ~= "" then
@@ -66,9 +59,9 @@ function OnPlayerJoined(player)
     end
 
     playerDailyTbl[player.id] = dailyTbl
-    
+
     if Game.GetCurrentSceneName() == "Main" then
-    	player:SetPrivateNetworkedData("WinOfTheDay", dailyTbl)
+        player:SetPrivateNetworkedData("WinOfTheDay", dailyTbl)
     end
 
     SetDailyBonusStatus(player)
@@ -80,14 +73,20 @@ function OnPlayerLeft(player)
         data.DAILY = UTIL.ConvertTableToString(playerDailyTbl[player.id])
     end
     Storage.SetSharedPlayerData(STORAGE_NET_REF, player, data)
-    
+
     playerDailyTbl[player.id] = nil
 end
 
 ------------------------------------------------------------------------------------------------------------------------
 -- RESOURCE NAMES
 ------------------------------------------------------------------------------------------------------------------------
-Init()
+BuildTankTable()
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 Events.Connect("SetDailyWin", SetWinning)
+
+-- Local player preview fix due to global wait
+if Environment.IsSinglePlayerPreview() then
+    local player = Game.GetPlayers()[1]
+    OnPlayerJoined(player)
+end
