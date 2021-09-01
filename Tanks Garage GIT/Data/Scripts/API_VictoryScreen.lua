@@ -188,6 +188,9 @@ function API.TeleportWinners( player, spawnObject, overrideCamera, IK)
 		
 		if IK and IK:IsA("IKAnchor") then 
 			IK:Activate(player)
+			for key, child in pairs(IK:FindDescendantsByType("IKAnchor")) do
+				child:Activate(player)
+			end
 		end 
 
 		for _, equipment in pairs(player:GetEquipment()) do -- remove all equipment

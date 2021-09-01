@@ -145,6 +145,9 @@ function SaveStatistics()
 		--print(p.name .. " earned " .. tostring(CalculateTotalXP(p)) .. " XP for " .. UTIL_API.GetTankRPString(p:GetResource(CONSTANTS_API.GetEquippedTankResource())))
 		--print(p.name .. " earned " .. tostring(CalculateTotalCurrency(p)) .. " currency")
 
+
+		local tempTbl = {}
+
 		local tankRPString = UTIL_API.GetTankRPString(p:GetResource(CONSTANTS_API.GetEquippedTankResource()))
 		local totalXp = CalculateTotalXP(p)
 		local baseXP = drawXPValue
@@ -163,6 +166,7 @@ function SaveStatistics()
 			TrackDailyChallenge(p, "Wins", 1)
 			baseXP = victoryXPValue
 			baseCurrency = victoryCurrencyValue
+			tempTbl["Winner"] = true
 		elseif winner > 0 then
 			--print(p.name .. " lost, adding to Total Losses")
 			p:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_LOSSES, 1)
@@ -187,7 +191,7 @@ function SaveStatistics()
 			modifier = 2
 		end
 
-		local tempTbl = {}
+		
 		tempTbl["XP"] = totalXp
 		tempTbl["BaseXP"] = baseXP
 		tempTbl["TankString"] = tankRPString

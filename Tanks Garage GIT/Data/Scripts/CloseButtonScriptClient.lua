@@ -19,7 +19,7 @@ local function onEscape(player,params)
         return 
     elseif thisPlayer.clientUserData.isInGarage then
         params.openPauseMenu = false
-        Events.Broadcast("RTM",true)
+        Events.Broadcast("RTM",false)
         return
     end
 end
@@ -29,7 +29,7 @@ local function OnEnableGarageComponent(menu)
 end
 function OnButtonPressed(button)
     --Events.Broadcast("ENABLE_GARAGE_COMPONENT", "DEFAULT_MENU")
-    Events.Broadcast("RTM",false)
+    Events.Broadcast("RTM")
 end
 
 for k,v in pairs(buttons) do

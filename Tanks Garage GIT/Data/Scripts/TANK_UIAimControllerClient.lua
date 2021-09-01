@@ -118,8 +118,9 @@ local function RaycastResultFromPointRotationDistance(point, rotation, distance)
 
 end
 
-function ReloadAnimation(player, reloadTime)
+function ReloadAnimation(playerId, reloadTime)
 
+	local player = Game.FindPlayer(playerId)
 	if player ~= localPlayer then
 		return
 	end
