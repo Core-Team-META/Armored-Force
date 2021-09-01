@@ -369,7 +369,7 @@ function SetWheelSpeed()
 	local leftSpeedMultiplier = 1
 	local rightSpeedMultiplier = 1
 		
-	local movementSpeed = tankBodyServer:GetVelocity().size * speedMultiplier
+	local movementSpeed = tankBodyServer:GetVelocity().size -- * speedMultiplier
 	local rotationSpeed = tankBodyServer:GetAngularVelocity().z
 	
 	if rotationSpeed > 1 then 
@@ -380,6 +380,7 @@ function SetWheelSpeed()
 		rightSpeedMultiplier = 1		
 	end
 	
+	print("setting speed: " .. tostring(movementSpeed))
 	for _, w in ipairs(leftWheels) do
 		if Object.IsValid(w) then
 			w:RotateContinuous(Rotation.New(0, -1, 0), movementSpeed * leftSpeedMultiplier * wheelSpeedModifier, true)

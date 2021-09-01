@@ -113,6 +113,10 @@ local MIN_NOT_STUCK_VELOCITY = 100
 local MAX_NOT_FLIPPED_ANGLE = 10
 local MAX_ROLLBACK_COUNT = 10
 
+local REAR_END_FIRE_CHANCE = 25
+local FIAT_DAMAGE_STATE_CHANCE = 10
+local STANDARD_DAMAGE_STATE_CHANCE = 25
+
 local function RaycastResultFromPointRotationDistance(point, rotation, distance)
 	
 	local azimuth = rotation.z
@@ -657,8 +661,14 @@ function OnArmorHit(trigger, other)
 		
 		local possibleDamageState = math.random(100)
 		
-		if possibleDamageState > 50 then
-			return
+		if tonumber(enemyPlayer.serverUserData.currentTankData.id) == 26 then
+			if possibleDamageState < FIAT_DAMAGE_STATE_CHANCE then
+				return
+			end
+		else 
+			if possibleDamageState < STANDARD_DAMAGE_STATE_CHANCE then
+				return
+			end		
 		end
 		
 		if string.find(trigger.name, "TRACK") and not trackTask then
@@ -808,7 +818,7 @@ function OnArmorHit(trigger, other)
 		
 		local possibleDamageState = math.random(100)
 				
-		if possibleDamageState > 25 then
+		if possibleDamageState < REAR_END_FIRE_CHANCE then
 			return
 		end		
 		
