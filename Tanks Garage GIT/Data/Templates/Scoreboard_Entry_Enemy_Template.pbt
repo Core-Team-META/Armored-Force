@@ -1,13 +1,13 @@
 Assets {
-  Id: 1117640336930107204
-  Name: "Scoreboard_Entry_Template"
+  Id: 9457900789839373125
+  Name: "Scoreboard_Entry_Enemy_Template"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 524505804548544231
+      RootId: 600100305950607330
       Objects {
-        Id: 524505804548544231
-        Name: "Scoreboard_Entry_Template"
+        Id: 600100305950607330
+        Name: "Scoreboard_Entry_Enemy_Template"
         Transform {
           Scale {
             X: 1
@@ -15,37 +15,37 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9331770274925238709
-        ChildIds: 18325854908308647608
-        ChildIds: 8407464796989519669
-        ChildIds: 12637500256448251888
-        ChildIds: 9355336932267826663
-        ChildIds: 4056705876230470741
-        ChildIds: 16531738927868122076
-        ChildIds: 1088651304765863132
+        ParentId: 13840396361654819631
+        ChildIds: 4757028316348273274
+        ChildIds: 2295156619893727139
+        ChildIds: 2635656969578897867
+        ChildIds: 14928227650853971190
+        ChildIds: 2075665227415662746
+        ChildIds: 13865439477495415417
+        ChildIds: 9848407683415977864
         UnregisteredParameters {
           Overrides {
             Name: "cs:PlayerName"
             ObjectReference {
-              SubObjectId: 8407464796989519669
+              SubObjectId: 2295156619893727139
             }
           }
           Overrides {
             Name: "cs:TankName"
             ObjectReference {
-              SubObjectId: 12637500256448251888
+              SubObjectId: 2635656969578897867
             }
           }
           Overrides {
             Name: "cs:Damage"
             ObjectReference {
-              SubObjectId: 9355336932267826663
+              SubObjectId: 14928227650853971190
             }
           }
           Overrides {
             Name: "cs:Kills"
             ObjectReference {
-              SubObjectId: 4056705876230470741
+              SubObjectId: 2075665227415662746
             }
           }
         }
@@ -88,7 +88,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18325854908308647608
+        Id: 4757028316348273274
         Name: "EntryFrame"
         Transform {
           Location {
@@ -101,7 +101,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 524505804548544231
+        ParentId: 600100305950607330
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -160,7 +160,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8407464796989519669
+        Id: 2295156619893727139
         Name: "PlayerName"
         Transform {
           Location {
@@ -173,7 +173,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 524505804548544231
+        ParentId: 600100305950607330
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -189,7 +189,7 @@ Assets {
         Control {
           Width: 207
           Height: 40
-          UIX: 55
+          UIX: -55
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -227,19 +227,19 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:topright"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:topright"
               }
             }
           }
         }
       }
       Objects {
-        Id: 12637500256448251888
+        Id: 2635656969578897867
         Name: "TankName"
         Transform {
           Location {
@@ -252,7 +252,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 524505804548544231
+        ParentId: 600100305950607330
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -268,7 +268,7 @@ Assets {
         Control {
           Width: 94
           Height: 40
-          UIX: 360
+          UIX: -360
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -306,19 +306,19 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topright"
+                Value: "mc:euianchor:topleft"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:topright"
               }
             }
           }
         }
       }
       Objects {
-        Id: 9355336932267826663
+        Id: 14928227650853971190
         Name: "Damage"
         Transform {
           Location {
@@ -331,7 +331,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 524505804548544231
+        ParentId: 600100305950607330
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -347,7 +347,7 @@ Assets {
         Control {
           Width: 113
           Height: 40
-          UIX: 360
+          UIX: -360
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -385,19 +385,19 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:topright"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:topright"
               }
             }
           }
         }
       }
       Objects {
-        Id: 4056705876230470741
+        Id: 2075665227415662746
         Name: "Kills"
         Transform {
           Location {
@@ -410,7 +410,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 524505804548544231
+        ParentId: 600100305950607330
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -426,7 +426,7 @@ Assets {
         Control {
           Width: 74
           Height: 40
-          UIX: 470
+          UIX: -470
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -464,19 +464,19 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:topright"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:topright"
               }
             }
           }
         }
       }
       Objects {
-        Id: 16531738927868122076
+        Id: 13865439477495415417
         Name: "Health"
         Transform {
           Location {
@@ -493,7 +493,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 524505804548544231
+        ParentId: 600100305950607330
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -509,7 +509,7 @@ Assets {
         Control {
           Width: 30
           Height: 30
-          UIX: 570
+          UIX: -570
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -532,25 +532,24 @@ Assets {
             ShadowOffset {
               Y: 1
             }
-            FlipHorizontal: true
             ScreenshotIndex: 1
           }
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:middleleft"
+                Value: "mc:euianchor:middleright"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:middleleft"
+                Value: "mc:euianchor:middleright"
               }
             }
           }
         }
       }
       Objects {
-        Id: 1088651304765863132
+        Id: 9848407683415977864
         Name: "Rank"
         Transform {
           Location {
@@ -567,7 +566,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 524505804548544231
+        ParentId: 600100305950607330
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -583,7 +582,7 @@ Assets {
         Control {
           Width: 30
           Height: 30
-          UIX: 15
+          UIX: -15
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -612,12 +611,12 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:middleleft"
+                Value: "mc:euianchor:middleright"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:middleleft"
+                Value: "mc:euianchor:middleright"
               }
             }
           }
