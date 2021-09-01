@@ -2,7 +2,7 @@ Assets {
   Id: 6786449769749046373
   Name: "Custom Military Tank Historic Tread 01 - 4m_oil pump"
   PlatformAssetType: 13
-  SerializationVersion: 98
+  SerializationVersion: 99
   CustomMaterialAsset {
     BaseMaterialId: 1483662533610400236
     ParameterOverrides {
