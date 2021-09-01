@@ -187,6 +187,9 @@ function ToggleTutorialState()
 	-- Show opt out panel
 	if(tutorialProgress < API_Tutorial.TutorialPhase.Completed and inShootingRange) then
 		Tutorial_OptOutPanel.visibility = Visibility.FORCE_ON
+		Tutorial_OptOutPanel:FindDescendantByName("TOTAL_SILVER_TEXT").text = string.format("%i Silver", API_Tutorial.GetTotalSilverFromTutorials())
+		Tutorial_OptOutPanel:FindDescendantByName("TOTAL_TP_TEXT").text = string.format("%i Universal Tank Parts", API_Tutorial.GetTotalTankPartsFromTutorials())
+		Tutorial_OptOutPanel:FindDescendantByName("TOTAL_GOLD_TEXT").text = string.format("%i Gold", API_Tutorial.GetTotalGoldFromTutorials())
 	end
 	--print("TUTORIAL PHASE: " .. tostring(tutorialProgress))
 end

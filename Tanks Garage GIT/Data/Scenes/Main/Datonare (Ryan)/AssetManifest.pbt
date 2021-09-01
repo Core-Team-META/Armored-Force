@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15087097116682079611
+  Name: "Sci-fi Container 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_SciFi_Equip_Container_002"
+  }
+}
+Assets {
   Id: 14229011836246835513
   Name: "Game Portal"
   PlatformAssetType: 6
@@ -89,6 +98,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6262982467505051120
+  Name: "Fantasy Craft Bar 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Crafting_Bar_002"
+  }
+}
+Assets {
   Id: 5448259814457251395
   Name: "CB Radio Click Beep Squelch 01 SFX"
   PlatformAssetType: 7
@@ -140,6 +158,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
+  Id: 1283463588493558965
+  Name: "Fantasy Gold 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Gold_002"
   }
 }
 Assets {

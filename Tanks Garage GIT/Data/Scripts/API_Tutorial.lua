@@ -9,12 +9,28 @@ API.TutorialPhase = {
 	JoinBattle = 5,
 	Upgrade = 6,
 	RepairTank = 7,
+	UnlockCamo = 8,
 	Completed = 99,
-
 }
+
+local TOTAL_SILVER = 12000
+local TOTAL_TP = 5000
+local TOTAL_GOLD = 100
 
 function API.GetTutorialResource()
 	return "TutorialProgress"
+end
+
+function API.GetTotalSilverFromTutorials()
+	return TOTAL_SILVER
+end
+
+function API.GetTotalTankPartsFromTutorials()
+	return TOTAL_TP
+end
+
+function API.GetTotalGoldFromTutorials()
+	return TOTAL_GOLD
 end
 
 return API
