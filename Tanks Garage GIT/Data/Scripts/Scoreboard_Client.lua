@@ -1,4 +1,4 @@
-local KEYBIND = "ability_extra_19"
+local KEYBIND = "ability_extra_19" -- TAB
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
@@ -32,6 +32,7 @@ local function SetPanelTeam(player, count)
             scoreCards[player].tankName = panel:GetCustomProperty("TankName"):WaitForObject()
             scoreCards[player].damage = panel:GetCustomProperty("Damage"):WaitForObject()
             scoreCards[player].kills = panel:GetCustomProperty("Kills"):WaitForObject()
+            scoreCards[player].health = panel:GetCustomProperty("Health"):WaitForObject()
             scoreCards[player].name.text = player.name
             scoreCards[player].team = player.team
         end
@@ -71,17 +72,19 @@ function OnPlayerJoined(player)
     scoreCards[player].tankName = panel:GetCustomProperty("TankName"):WaitForObject()
     scoreCards[player].damage = panel:GetCustomProperty("Damage"):WaitForObject()
     scoreCards[player].kills = panel:GetCustomProperty("Kills"):WaitForObject()
+    scoreCards[player].health = panel:GetCustomProperty("Health"):WaitForObject()
     scoreCards[player].team = player.team
     scoreCards[player].name.text = player.name
 
-    scoreCards[player].damage.text = tostring(0)
-    scoreCards[player].kills.text = tostring(0)
+    scoreCards[player].damage.text = tostring(player:GetResource("TankDamage"))
+    scoreCards[player].kills.text = tostring(player.kills)
 end
 
 function OnPlayerLeft(player)
     if scoreCards[player] and Object.IsValid(scoreCards[player].panel) then
         scoreCards[player].panel:Destroy()
     end
+    scoreCards[player] = nil
 end
 
 function Tick()
@@ -90,13 +93,18 @@ function Tick()
     end
     local count = {team = 0, enemy = 0}
     for _, player in ipairs(Game.GetPlayers()) do
-        local scoreCard = scoreCards[player]
-        if scoreCard then
+        if scoreCards[player] and Object.IsValid(scoreCards[player].panel) then
             SetPanelTeam(player, count)
-            scoreCard.kills.text = tostring(player.kills)
-            scoreCard.damage.text = tostring(player:GetResource("TankDamage"))
-            scoreCard.tankName.text =
+            scoreCards[player].kills.text = tostring(player.kills)
+            scoreCards[player].damage.text = tostring(player:GetResource("TankDamage"))
+            scoreCards[player].tankName.text =
                 player.clientUserData.currentTankData and player.clientUserData.currentTankData.name or ""
+
+            if player.isDead then
+                scoreCards[player].health:SetColor(Color.RED)
+            else
+                scoreCards[player].health:SetColor(Color.GREEN)
+            end
         --[[
             scoreCard.spotted.text = tostring(player:GetResource("SpottingTracker"))
             ]]

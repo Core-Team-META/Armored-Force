@@ -48,6 +48,12 @@ Assets {
               SubObjectId: 4056705876230470741
             }
           }
+          Overrides {
+            Name: "cs:Health"
+            ObjectReference {
+              SubObjectId: 16531738927868122076
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
