@@ -2,6 +2,15 @@
 local tankControllerServer = script:GetCustomProperty("TankControllerServer"):WaitForObject()
 local templateReferences = script:GetCustomProperty("TemplateReferences"):WaitForObject()
 
+-- API
+local identifier = tankControllerServer:GetCustomProperty("Identifier")
+
+while not _G.TANK_DATA do
+	Task.Wait()
+end
+
+local tankData = _G.TANK_DATA[tonumber(identifier)]
+
 -- Visual Settings
 local recoilRockingMultiplier = tankControllerServer:GetCustomProperty("RecoilRockingMultiplier")
 local recoilAmount = tankControllerServer:GetCustomProperty("RecoilAmount")
@@ -65,6 +74,7 @@ function CheckTankReady()
 	for _, p in ipairs(Game.GetPlayers()) do
 		if p.id == tankControllerServer:GetCustomProperty("DriverID") then
 			driver = p
+			print("found driver on client: " .. driver.name)
 		end
 	end
 	
@@ -133,11 +143,11 @@ function SetClientData()
 	driver.clientUserData.currentTankData.enemyOutline = tankBodyClient:FindDescendantByName("EnemyOutline")
 	driver.clientUserData.currentTankData.allyOutline = tankBodyClient:FindDescendantByName("AllyOutline")
 	driver.clientUserData.currentTankData.reloadSFX = tankBodyClient:FindDescendantByName("ReloadSFX")
-	driver.clientUserData.currentTankData.type = tankControllerServer:GetCustomProperty("Type")
-	driver.clientUserData.currentTankData.id = tankControllerServer:GetCustomProperty("Identifier")
-	driver.clientUserData.currentTankData.name = tankControllerServer:GetCustomProperty("Name")
-	driver.clientUserData.currentTankData.teir = tankControllerServer:GetCustomProperty("TierValue")
-	driver.clientUserData.currentTankData.viewRange = tankControllerServer:GetCustomProperty("ViewRange")
+	driver.clientUserData.currentTankData.type = tankData.type
+	driver.clientUserData.currentTankData.id = identifier
+	driver.clientUserData.currentTankData.name = tankData.name
+	driver.clientUserData.currentTankData.teir = tankData.tier
+	driver.clientUserData.currentTankData.viewRange = tankData.viewRange
 	driver.clientUserData.currentTankData.controlScript = script
 	driver.clientUserData.currentTankData.serverControlScript = tankControllerServer
 
@@ -196,7 +206,9 @@ function OnTankStateChanged(controllerServer, property)
 
 end
 
-function FiringAnimation(player, reloadTime)
+function FiringAnimation(playerId, reloadTime)
+	local player = Game.FindPlayer(playerId)
+	if player == nil then return end
 
 	if not saluteOverride then
 		if player ~= driver or not Object.IsValid(tankBodyClient) then
