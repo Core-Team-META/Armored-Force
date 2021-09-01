@@ -1055,7 +1055,7 @@ end
 function PopulateTankUpgradeModal(type)
 	selectedTankUpgrade = type
 	local tankName = equippedTank:GetCustomProperty("Name")
-	local id = equippedTank:GetCustomProperty("ID")
+	local id = selectedTankId --or equippedTank:GetCustomProperty("ID")
 	local purchaseCost = 0
 	local researchCost = 0
 	
