@@ -319,7 +319,7 @@ RetrieveData(localPlayer)
 
 --localPlayer.bindingPressedEvent:Connect(OnBindingPressed)
 Game.playerJoinedEvent:Connect(RetrieveData)
-Game.playerLeftEvent:Connect(DisconnectListener)
+--Game.playerLeftEvent:Connect(DisconnectListener)
 Events.Connect("PREVIEW_SKIN", ApplySkin)
 Events.Connect("INITIALIZE_SKIN", InitializeTankSkin)
 Task.Wait(1)
