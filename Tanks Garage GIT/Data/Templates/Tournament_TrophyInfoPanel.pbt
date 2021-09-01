@@ -54,7 +54,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: -20
+          Width: 390
           Height: 50
           UIX: 10
           RenderTransformPivot {
@@ -63,7 +63,6 @@ Assets {
             }
           }
           AddSizeToParentIfUsingParentSize: true
-          UseParentWidth: true
           Panel {
             Opacity: 1
           }
@@ -246,10 +245,9 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 45
-          Height: 45
-          UIX: 2.5
-          UIY: 2.5
+          Width: 40
+          Height: 40
+          UIX: 5
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -277,12 +275,12 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middleleft"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middleleft"
               }
             }
           }
@@ -399,6 +397,7 @@ Assets {
         Control {
           Width: 217
           Height: 60
+          UIX: 35.9977074
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
