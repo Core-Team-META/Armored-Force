@@ -2,7 +2,13 @@ local CONST = require(script:GetCustomProperty("MetaAbilityProgressionConstants_
 local UTIL = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 
 local KEYS = script:GetCustomProperty("Keys"):WaitForObject()
-local TANK_CONTENT = script:GetCustomProperty("TechTree_Contents"):WaitForObject()
+
+while not _G.TANK_DATA do
+    Task.Wait()
+end
+
+
+local TANK_CONTENT = _G.TANK_DATA
 
 local STORAGE_NET_REF = KEYS:GetCustomProperty("Achievements")
 
@@ -11,9 +17,9 @@ local playerDailyTbl = {}
 
 local function BuildTankTable()
     for _, tank in ipairs(TANK_CONTENT:GetChildren()) do
-        local id = tank:GetCustomProperty("ID")
+        local id = tank.id
         id = tonumber(id)
-        tankTbl[id] = tank:GetCustomProperty("Type")
+        tankTbl[id] = tank.type
     end
 end
 
