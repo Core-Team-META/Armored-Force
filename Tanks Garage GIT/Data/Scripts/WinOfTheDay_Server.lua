@@ -86,7 +86,7 @@ Game.playerLeftEvent:Connect(OnPlayerLeft)
 Events.Connect("SetDailyWin", SetWinning)
 
 -- Local player preview fix due to global wait
-if Environment.IsPreview() then
+if Environment.IsSinglePlayerPreview() then
     local player = Game.GetPlayers()[1]
     OnPlayerJoined(player)
 end
