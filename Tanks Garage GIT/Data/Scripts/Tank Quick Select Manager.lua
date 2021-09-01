@@ -115,17 +115,19 @@ function Init()
 end
 
 function PopulateQuickSelectPanel()
-    print("Populate Called isLoaded:" .. tostring(isLoaded))
+
     if not isLoaded then
         Init()
     end
+
     table.sort(tankDataTbl, SortByTier)
+
     local dailyTbl = LOCAL_PLAYER:GetPrivateNetworkedData("WinOfTheDay")
-    print("Populate Called dailyTbl:" .. tostring(next(dailyTbl)))
-    while not next(dailyTbl) do
+    while not dailyTbl do
         Task.Wait()
         dailyTbl = LOCAL_PLAYER:GetPrivateNetworkedData("WinOfTheDay")
     end
+
     local tankCount = 0
     for i, tank in ipairs(tankDataTbl) do
         --if (tank.purchased) then
