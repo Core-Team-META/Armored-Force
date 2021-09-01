@@ -83,7 +83,7 @@ local function SetupGarage()
 		newTrophyPanel:GetCustomProperty("TrophyIcon"):WaitForObject():SetImage(trophy.icon)
 		newTrophyPanel:GetCustomProperty("TrophyName"):WaitForObject().text = tostring(trophy.name)
 		newTrophyPanel:GetCustomProperty("TrophyPoints"):WaitForObject().text = tostring(trophy.min)
-		newTrophyPanel.y = (i - 1) * 75
+		newTrophyPanel.y = (i - 1) * 50
 	end
 
 	GARAGE_HOVER_BUTTON.hoveredEvent:Connect(
