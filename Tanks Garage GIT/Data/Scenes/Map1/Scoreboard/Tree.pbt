@@ -72,6 +72,12 @@ Objects {
         Id: 1117640336930107204
       }
     }
+    Overrides {
+      Name: "cs:Scoreboard_Entry_Enemy_Template"
+      AssetReference {
+        Id: 9457900789839373125
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -945,6 +951,7 @@ Objects {
   }
   ParentId: 17906653252601666996
   ChildIds: 4707511383066605349
+  ChildIds: 13292864075279300200
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -981,6 +988,64 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 13292864075279300200
+  Name: "Scoreboard_Entry_Enemy_Template"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13840396361654819631
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 600100305950607330
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Scoreboard_Entry_Enemy_Template"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 45
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9457900789839373125
     }
   }
 }
@@ -1773,6 +1838,7 @@ Objects {
   }
   ParentId: 11170961533379733583
   ChildIds: 14861726477323245366
+  ChildIds: 14518212199820933227
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1809,6 +1875,64 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 14518212199820933227
+  Name: "Scoreboard_Entry_Template"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9331770274925238709
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 524505804548544231
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Scoreboard_Entry_Template"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 45
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1117640336930107204
     }
   }
 }
