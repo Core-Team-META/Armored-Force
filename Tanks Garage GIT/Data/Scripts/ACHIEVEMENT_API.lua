@@ -358,7 +358,7 @@ function API.AddProgress(player, id, value)
         if not achievements[id] then
             return
         end
-        warn("Adding Progress", id, tostring(value))
+     
         local required = API.GetAchievementRequired(id)
         if currentProgress == 0 then
             player:SetResource(id, value + 1)
