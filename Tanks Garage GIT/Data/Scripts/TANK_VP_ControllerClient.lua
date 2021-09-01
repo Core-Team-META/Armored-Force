@@ -117,7 +117,10 @@ function CheckTankReady()
 		--driver:SetOverrideCamera(defaultCamera)
 		Events.Broadcast("EquippedTankSet")
 	end
-
+	
+	Events.Broadcast("EquippedTankDataSet", nil)
+	Events.Broadcast("INITIALIZE_SKIN", driver)
+	
 	tankSet = true
 	
 end
@@ -151,8 +154,6 @@ function SetClientData()
 	driver.clientUserData.currentTankData.controlScript = script
 	driver.clientUserData.currentTankData.serverControlScript = tankControllerServer
 
-	Events.Broadcast("EquippedTankDataSet", nil)
-	Events.Broadcast("INITIALIZE_SKIN", driver)
 end
 
 function OnTankStateChanged(controllerServer, property)
