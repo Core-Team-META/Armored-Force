@@ -44,7 +44,7 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:MDamage"
+      Name: "cs:MatchDamage"
       NetReference {
         Key: "A225E4E8B069DF06"
         Type {
@@ -53,7 +53,7 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:MDestroyed"
+      Name: "cs:MatchDestroyed"
       NetReference {
         Key: "0308B347B7382831"
         Type {

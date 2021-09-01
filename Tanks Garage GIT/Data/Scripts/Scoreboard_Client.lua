@@ -17,11 +17,11 @@ local function SetPanelTeam(player, scoreCard, count)
     if scoreCard and Object.IsValid(scoreCard.panel) then
         if player.team == LOCAL_PLAYER.team then
             scoreCard.panel.parent = TeamTanksPanel
-            scoreCard.panel.y = count.team * 75
+            scoreCard.panel.y = count.team * 45
             count.team = count.team + 1
         else
             scoreCard.panel.parent = EnemyTanksPanel
-            scoreCard.panel.y = count.enemy * 75
+            scoreCard.panel.y = count.enemy * 45
             count.enemy = count.enemy + 1
         end
         scoreCards[player].team = player.team
