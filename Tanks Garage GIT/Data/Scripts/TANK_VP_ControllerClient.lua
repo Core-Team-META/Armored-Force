@@ -356,7 +356,7 @@ function PerformSalute()
 	Task.Wait(1.5)
 	
 	saluteOverride = true
-	FiringAnimation(owner, 0)
+	FiringAnimation(owner.id, 0)
 
 end
 
