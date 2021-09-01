@@ -182708,12 +182708,12 @@ Objects {
   Name: "Smoke Volume VFX"
   Transform {
     Location {
-      X: -81509.0391
+      X: -73552.0156
       Y: 60769.7969
-      Z: 552.033203
+      Z: 2610.92285
     }
     Rotation {
-      Yaw: -17.2571011
+      Yaw: -17.2571106
     }
     Scale {
       X: 50
@@ -182746,7 +182746,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Density"
-      Float: 1.29750252
+      Float: 1.1
     }
     Overrides {
       Name: "bp:Color"
@@ -182821,7 +182821,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Density"
-      Float: 1.29750252
+      Float: 1.1
     }
     Overrides {
       Name: "bp:Color"
@@ -182858,9 +182858,9 @@ Objects {
   Name: "Smoke Volume VFX"
   Transform {
     Location {
-      X: 157643.781
-      Y: -31243.3477
-      Z: 4229.1875
+      X: 115850.688
+      Y: -33416.0039
+      Z: 1608.4834
     }
     Rotation {
       Yaw: 78.7335205
@@ -182894,6 +182894,10 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "bp:Density"
+      Float: 1.107
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -182923,8 +182927,9 @@ Objects {
   Name: "Smoke Volume VFX"
   Transform {
     Location {
-      X: 158972.969
-      Y: -34600.2461
+      X: 120646.359
+      Y: -30767.4902
+      Z: -2620.7041
     }
     Rotation {
       Yaw: 78.7335205
@@ -182958,6 +182963,10 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "bp:Density"
+      Float: 1.107
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -182987,8 +182996,8 @@ Objects {
   Name: "Smoke Volume VFX"
   Transform {
     Location {
-      X: -81509.0391
-      Y: -26360.1914
+      X: -35844.6914
+      Y: -23928.6152
       Z: 552.033203
     }
     Rotation {
@@ -183025,7 +183034,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Density"
-      Float: 1.29750252
+      Float: 1
     }
     Overrides {
       Name: "bp:Color"
@@ -183062,9 +183071,9 @@ Objects {
   Name: "Smoke Volume VFX"
   Transform {
     Location {
-      X: -81966.2
-      Y: -28666.7
-      Z: 3536.99414
+      X: -39019.6758
+      Y: -21759.4941
+      Z: 1208.94141
     }
     Rotation {
       Yaw: 44.9999924
@@ -183100,7 +183109,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Density"
-      Float: 1.29750252
+      Float: 1
     }
     Overrides {
       Name: "bp:Color"
