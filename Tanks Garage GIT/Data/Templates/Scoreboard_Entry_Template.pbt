@@ -7,7 +7,7 @@ Assets {
       RootId: 524505804548544231
       Objects {
         Id: 524505804548544231
-        Name: "TankEntry"
+        Name: "Scoreboard_Entry_Template"
         Transform {
           Scale {
             X: 1
