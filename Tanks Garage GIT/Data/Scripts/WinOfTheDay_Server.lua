@@ -16,7 +16,7 @@ local tankTbl = {}
 local playerDailyTbl = {}
 
 local function BuildTankTable()
-    for _, tank in ipairs(TANK_CONTENT:GetChildren()) do
+    for _, tank in ipairs(TANK_CONTENT) do
         local id = tank.id
         id = tonumber(id)
         tankTbl[id] = tank.type
