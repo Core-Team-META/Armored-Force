@@ -3,7 +3,7 @@ local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionCo
 local map = {"Map1", "Map2", "Map3"}
 local consumableCost = {}
 local mapInRotation = "Map1"
-local forcedSelection = false
+local forcedSelection = true
 
 consumableCost["TreadsRepair"] = 100
 consumableCost["Extinguisher"] = 100
