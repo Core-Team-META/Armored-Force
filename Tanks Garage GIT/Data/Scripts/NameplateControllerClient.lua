@@ -246,12 +246,12 @@ function IsNameplateVisible(player)
 		playerPos = player.tank:GetWorldPosition()
 	end
 
-	local viewedPlayer = GetViewedPlayer()
-
+	local viewedPlayer = GetViewedPlayer() 
+	if not playerPos then return end 
 	if player == viewedPlayer or Teams.AreTeamsFriendly(player.team, viewedPlayer.team) then
 		if SHOW_ON_TEAMMATES then
 			local viewedPos = viewedPlayer:GetWorldPosition()
-			if not viewedPlayer or viewedPlayer and not Object.IsValid(viewedPlayer) or not viewedPlayer.GetWorldPosition or not viewedPos:IsA("Vector3") then
+			if not viewedPlayer or viewedPlayer and not Object.IsValid(viewedPlayer)  then
 				return false
 			end
 			local distance = (playerPos - viewedPos).size
@@ -262,9 +262,9 @@ function IsNameplateVisible(player)
 	else
 		if CheckSpotting(viewedPlayer) then
 			local viewedPos = viewedPlayer:GetWorldPosition()
-			if not viewedPlayer or viewedPlayer and not Object.IsValid(viewedPlayer) or not viewedPlayer.GetWorldPosition or not viewedPos:IsA("Vector3") then
+			if not viewedPlayer or viewedPlayer and not Object.IsValid(viewedPlayer)   then
 				return false
-			end
+			end 
 			local distance = (playerPos - viewedPos).size
 			if MAX_DISTANCE_ON_ENEMIES == 0.0 or distance <= MAX_DISTANCE_ON_ENEMIES then
 				return true
@@ -320,7 +320,7 @@ function Tick(deltaTime)
 			nameplate = nameplates[player.id]
 		end
 
-		if nameplate and (player:IsA("AIPlayer") or Object.IsValid(player)) then
+		if nameplate and (player:IsA("AIPlayer") or Object.IsValid(player)) and Object.IsValid(nameplate.templateRoot) then
 			-- We calculate visibility every frame to handle when teams change
 			local visible = IsNameplateVisible(player)
 			if player.team ~= nameplate.lastTeam then
