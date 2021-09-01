@@ -2473,11 +2473,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Damage"
-            Int: 550
+            Int: 530
           }
           Overrides {
             Name: "cs:DamageUpgraded"
-            Int: 580
+            Int: 550
           }
           Overrides {
             Name: "cs:HitPoints"
@@ -2505,7 +2505,7 @@ Assets {
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 500
+            Int: 550
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"
@@ -4225,11 +4225,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 750
+            Int: 830
           }
           Overrides {
             Name: "cs:TopSpeedUpgraded"
-            Int: 900
+            Int: 920
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -4237,11 +4237,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 1500
+            Int: 1400
           }
           Overrides {
             Name: "cs:AccelerationUpgraded"
-            Int: 2500
+            Int: 1500
           }
           Overrides {
             Name: "cs:WheelSpeedModifier"

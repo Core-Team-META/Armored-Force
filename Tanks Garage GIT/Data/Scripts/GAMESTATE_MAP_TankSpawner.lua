@@ -205,19 +205,15 @@ end
 
 function FillTeamsWithAI(teamSize)
   if teamSize == nil then teamSize = 2 end
-  local teamSizes = {}
-  for k,v in pairs(Game.GetPlayers()) do
-    if teamSizes[v.team] == nil then
-      teamSizes[v.team] = 1
-    else
-      teamSizes[v.team] = teamSizes[v.team] + 1
-    end
-  end
-
+  local rs = RandomStream.New()
   for team = 1,2 do
-    for i = teamSizes[team] or 0, teamSize - 1 do
+ 		local currentCount = #_G.utils.GetTankDrivers({includeTeams = team, ignoreDead = true})
+
+    for i = currentCount, teamSize - 1 do
     	local position = spawnPoints[team][math.random(#spawnPoints[team])]:GetWorldPosition()
-    	SpawnAITank(position, team)
+    	local offset = rs:GetVector3() * math.random(1000)
+    	offset.z = 0
+    	SpawnAITank(position + offset, team)
     end
   end
 end

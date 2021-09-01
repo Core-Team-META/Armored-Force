@@ -187,6 +187,30 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:TankImpact_1"
+        AssetReference {
+          Id: 13933872999011908983
+        }
+      }
+      Overrides {
+        Name: "cs:TankImpact_2"
+        AssetReference {
+          Id: 16562471839744174839
+        }
+      }
+      Overrides {
+        Name: "cs:TankImpact_3"
+        AssetReference {
+          Id: 16608890275577801288
+        }
+      }
+      Overrides {
+        Name: "cs:TankImpact_4"
+        AssetReference {
+          Id: 11648286022468797405
+        }
+      }
+      Overrides {
         Name: "cs:ChassisReference:isrep"
         Bool: true
       }
