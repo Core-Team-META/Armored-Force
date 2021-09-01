@@ -65,7 +65,7 @@ function EnterEntryData(p, playerName, tankName, healthBar, damagedBar, deathIco
 	
 	if p.clientUserData.currentTankData then
 		local teirValue = p.clientUserData.currentTankData.teir
-		tankName.text = p.clientUserData.currentTankData.name .. " [T" .. tostring(teirValue) .. "]"
+		tankName.text = p.clientUserData.currentTankData.name --.. " [T" .. tostring(teirValue) .. "]"
 	else 
 		tankName.text = ""
 	end

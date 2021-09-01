@@ -522,15 +522,23 @@ function RepopulateCamoEntries()
 	
 	if camoEntries then
 	
-		for _, entry in pairs(camoEntries) do	
-			entry.previewClickedListener:Disconnect()
-			entry.previewClickedListener = nil
+		for _, entry in pairs(camoEntries) do
+			if entry.previewClickedListener then
+				entry.previewClickedListener:Disconnect()
+				entry.previewClickedListener = nil
+			end
 			
 			if entry.equipBuyClickedListener then
 				entry.equipBuyClickedListener:Disconnect()
 				entry.equipBuyClickedListener = nil
+			end
+			
+			if entry.equipBuyHoverListener then
 				entry.equipBuyHoverListener:Disconnect()
 				entry.equipBuyHoverListener = nil
+			end
+			
+			if entry.equipBuyUnhoveredListener then
 				entry.equipBuyUnhoveredListener:Disconnect()
 				entry.equipBuyUnhoveredListener = nil
 			end
