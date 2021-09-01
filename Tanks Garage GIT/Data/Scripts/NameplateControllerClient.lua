@@ -59,9 +59,11 @@ if script:GetCustomProperty("GameState") then
 end
 
 function CheckSpotting(player)
-	for i = 1, 16 do
-		if spottingServer:GetCustomProperty("P" .. tostring(i)) == player.id then
-			return true
+	if Object.IsValid(player) then
+		for i = 1, 16 do
+			if spottingServer:GetCustomProperty("P" .. tostring(i)) == player.id then
+				return true
+			end
 		end
 	end
 
@@ -244,16 +246,26 @@ function IsNameplateVisible(player)
 		playerPos = player.tank:GetWorldPosition()
 	end
 
-	if player == GetViewedPlayer() or Teams.AreTeamsFriendly(player.team, GetViewedPlayer().team) then
+	local viewedPlayer = GetViewedPlayer()
+
+	if player == viewedPlayer or Teams.AreTeamsFriendly(player.team, viewedPlayer.team) then
 		if SHOW_ON_TEAMMATES then
-			local distance = (playerPos - GetViewedPlayer():GetWorldPosition()).size
+			local viewedPos = viewedPlayer:GetWorldPosition()
+			if not viewedPlayer or viewedPlayer and not Object.IsValid(viewedPlayer) or not viewedPlayer.GetWorldPosition or not viewedPos:IsA("Vector3") then
+				return false
+			end
+			local distance = (playerPos - viewedPos).size
 			if MAX_DISTANCE_ON_TEAMMATES == 0.0 or distance <= MAX_DISTANCE_ON_TEAMMATES then
 				return true
 			end
 		end
 	else
-		if CheckSpotting(GetViewedPlayer()) then
-			local distance = (playerPos - GetViewedPlayer():GetWorldPosition()).size
+		if CheckSpotting(viewedPlayer) then
+			local viewedPos = viewedPlayer:GetWorldPosition()
+			if not viewedPlayer or viewedPlayer and not Object.IsValid(viewedPlayer) or not viewedPlayer.GetWorldPosition or not viewedPos:IsA("Vector3") then
+				return false
+			end
+			local distance = (playerPos - viewedPos).size
 			if MAX_DISTANCE_ON_ENEMIES == 0.0 or distance <= MAX_DISTANCE_ON_ENEMIES then
 				return true
 			end
