@@ -15,7 +15,7 @@ function PurchaseTank(player, id, prereqs)
 	local tank = {}
 	for k, tankData in ipairs(TANK_LIST) do
 		local tankId = tankData.id
-		if(tankId == id) then
+		if (tonumber(tankId) == tonumber(id)) then
 			print("DEBUG: Found match")
 			local purchaseCost = tankData.purchaseCost
 			--local researchCost = v:GetCustomProperty("ResearchCost")
