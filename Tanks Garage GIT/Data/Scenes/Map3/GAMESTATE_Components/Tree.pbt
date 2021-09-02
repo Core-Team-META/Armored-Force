@@ -1,7 +1,7 @@
 Name: "GAMESTATE_Components"
-RootId: 12014568072471781422
+RootId: 10789842698676781526
 Objects {
-  Id: 9276728602807728048
+  Id: 11377142065897190609
   Name: "StatisticsComponent"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12014568072471781422
+  ParentId: 10789842698676781526
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -33,7 +33,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11362992823421170087
+  Id: 12220157093245482444
   Name: "VictoryScreenComponent"
   Transform {
     Location {
@@ -46,7 +46,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12014568072471781422
+  ParentId: 10789842698676781526
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -65,7 +65,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10942095634572853058
+  Id: 16927701782466038424
   Name: "MatchEndCard"
   Transform {
     Location {
@@ -78,7 +78,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12014568072471781422
+  ParentId: 10789842698676781526
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -97,7 +97,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4214894728372466542
+  Id: 16335410927478804831
   Name: "MatchComponent"
   Transform {
     Location {
@@ -110,7 +110,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12014568072471781422
+  ParentId: 10789842698676781526
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -129,7 +129,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15026444809767462425
+  Id: 10437967081965489183
   Name: "LobbyComponent"
   Transform {
     Location {
@@ -142,7 +142,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12014568072471781422
+  ParentId: 10789842698676781526
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -161,7 +161,7 @@ Objects {
   }
 }
 Objects {
-  Id: 216004259892785627
+  Id: 11699730299801296441
   Name: "MainGameStateManager"
   Transform {
     Location {
@@ -174,7 +174,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12014568072471781422
+  ParentId: 10789842698676781526
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -193,7 +193,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15323132375500474460
+  Id: 8988459041609649327
   Name: "SpecateComponent"
   Transform {
     Location {
@@ -206,7 +206,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12014568072471781422
+  ParentId: 10789842698676781526
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
