@@ -64,6 +64,7 @@ function API.ApplyDamage(attackData)
 		function()
 			GetWrapperFor(object).ApplyDamage(attackData)
 
+
 			Events.Broadcast("CombatWrapAPI.OnDamageTaken", attackData)
 
 			local currentHealth = API.GetHitPoints(object)
