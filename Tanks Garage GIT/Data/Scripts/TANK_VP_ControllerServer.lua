@@ -585,7 +585,7 @@ function OnArmorHit(trigger, other)
 			return
 		end
 		
-		print("Armor hit")
+		--print("Armor hit")
 		other.serverUserData.hitOnce = true
 		other.speed = 0
 		other.capsuleRadius = 0
@@ -593,7 +593,7 @@ function OnArmorHit(trigger, other)
 		other.lifeSpan = 0.1
 				
 		if not enemyPlayer or not enemyPlayer.serverUserData.currentTankData or enemyPlayer.team == driver.team then
-			print("Returning from armor hit")
+			--print("Returning from armor hit")
 			--[[
 			print(enemyPlayer)
 			print(enemyPlayer.serverUserData)
@@ -662,11 +662,11 @@ function OnArmorHit(trigger, other)
 		local possibleDamageState = math.random(100)
 		
 		if tonumber(enemyPlayer.serverUserData.currentTankData.id) == 26 then
-			if possibleDamageState < FIAT_DAMAGE_STATE_CHANCE then
+			if possibleDamageState > FIAT_DAMAGE_STATE_CHANCE then
 				return
 			end
 		else 
-			if possibleDamageState < STANDARD_DAMAGE_STATE_CHANCE then
+			if possibleDamageState > STANDARD_DAMAGE_STATE_CHANCE then
 				return
 			end		
 		end
@@ -818,7 +818,7 @@ function OnArmorHit(trigger, other)
 		
 		local possibleDamageState = math.random(100)
 				
-		if possibleDamageState < REAR_END_FIRE_CHANCE then
+		if possibleDamageState > REAR_END_FIRE_CHANCE then
 			return
 		end		
 		

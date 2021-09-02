@@ -1,7 +1,7 @@
 Name: "TankData"
-RootId: 16860757059323275055
+RootId: 9867811539178678486
 Objects {
-  Id: 7343423027863130013
+  Id: 12888620418601837830
   Name: "TankData"
   Transform {
     Scale {
@@ -10,7 +10,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16860757059323275055
+  ParentId: 9867811539178678486
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -33,14 +33,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
