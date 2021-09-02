@@ -1079,12 +1079,14 @@ end
 
 function CheckStuckTank()
 
-	if not Object.IsValid(chassis) or not Object.IsValid(driver) then return end
+	if not Object.IsValid(chassis) or not Object.IsValid(driver) or driver:IsA("AIPlayer") or (trackStatus > 0) then return end
 	
-	local checkInput = driver:IsA("AIPlayer") or driver:IsBindingPressed("ability_extra_21") or driver:IsBindingPressed("ability_extra_31")
+	local checkInput = driver:IsBindingPressed("ability_extra_21") and not driver:IsBindingPressed("ability_extra_31")
+	checkInput = checkInput or (not driver:IsBindingPressed("ability_extra_21") and driver:IsBindingPressed("ability_extra_31"))
 	
 	if chassis.type == "TreadedVehicle" then
-		checkInput = checkInput or driver:IsBindingPressed("ability_extra_30") or driver:IsBindingPressed("ability_extra_32")
+		checkInput = checkInput or (driver:IsBindingPressed("ability_extra_30") and not driver:IsBindingPressed("ability_extra_32"))
+		checkInput = checkInput or (not driver:IsBindingPressed("ability_extra_30") and driver:IsBindingPressed("ability_extra_32"))
 	end
 	
 	if not checkInput then
@@ -1109,9 +1111,7 @@ function CheckStuckTank()
 	if GetAngleDifference(currentVector, idealVector) < MAX_NOT_FLIPPED_ANGLE then -- rollback mode
 		local rollbackPosition = GetRollbackPosition()
 		
-		if not rollbackPosition then 
-			return
-		end
+		if not rollbackPosition then return end
 		
 		local currentPosition = {chassis:GetWorldPosition(), chassis:GetWorldRotation()}
 		
