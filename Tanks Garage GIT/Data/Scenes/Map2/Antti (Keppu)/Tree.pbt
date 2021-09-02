@@ -41986,12 +41986,14 @@ Objects {
   ParentId: 9479035303955472683
   ChildIds: 4065904118916193165
   ChildIds: 2683808031947549218
+  ChildIds: 6828931764924434663
   ChildIds: 15268974022759026673
   ChildIds: 921302885554344351
   ChildIds: 17726598669630518467
   ChildIds: 45597795831198710
   ChildIds: 15084148806359942443
   ChildIds: 4777275636082071578
+  ChildIds: 18413747572438850329
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -42006,6 +42008,511 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 18413747572438850329
+  Name: "Foliage_camera_collisionOFF"
+  Transform {
+    Location {
+      X: -27103.5215
+      Y: -31247.9258
+      Z: 1923.94958
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9160281066032245732
+  ChildIds: 13433487121141620759
+  ChildIds: 12612995968040141544
+  ChildIds: 11002446509708293016
+  ChildIds: 6430410522385370589
+  ChildIds: 5590743586184184830
+  ChildIds: 6618914724444457850
+  ChildIds: 17458429158306917882
+  ChildIds: 7109231638339759878
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 7109231638339759878
+  Name: "TW2_TreeDead_Cosmetic"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18413747572438850329
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12901474246456171094
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_TreeDead_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3295.32227
+            Y: 48672.1641
+            Z: -111.100464
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -141.83902
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.03931296
+            Y: 1.03931296
+            Z: 1.03931296
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12915612693623928532
+    }
+  }
+}
+Objects {
+  Id: 17458429158306917882
+  Name: "TW2_TreeDead_Cosmetic"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18413747572438850329
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12901474246456171094
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_TreeDead_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 60114.5547
+            Y: 30036.0449
+            Z: -8.06604
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -172.691605
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.03931296
+            Y: 1.03931296
+            Z: 1.03931296
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:forceoff"
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12915612693623928532
+    }
+  }
+}
+Objects {
+  Id: 6618914724444457850
+  Name: "TW2_Tree"
+  Transform {
+    Location {
+      X: -30409.4824
+      Y: -33509.4258
+      Z: 541.247437
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.931412
+      Y: 0.931412
+      Z: 0.931412
+    }
+  }
+  ParentId: 18413747572438850329
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1788321316963892302
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_Tree"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1670.83008
+            Y: -2217.25
+            Z: 150.344849
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.5806885
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.931412
+            Y: 0.931412
+            Z: 0.931412
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:forceoff"
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11423917909484857595
+    }
+  }
+}
+Objects {
+  Id: 5590743586184184830
+  Name: "TW2_Tree"
+  Transform {
+    Location {
+      X: -28117.1934
+      Y: -36128.0273
+      Z: 467.577026
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.20800436
+      Y: 1.20800436
+      Z: 1.20800436
+    }
+  }
+  ParentId: 18413747572438850329
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1788321316963892302
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_Tree"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3474.48438
+            Y: 696.992188
+            Z: 247.559692
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.931412
+            Y: 0.931412
+            Z: 0.931412
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:forceoff"
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11423917909484857595
+    }
+  }
+}
+Objects {
+  Id: 6430410522385370589
+  Name: "TW2_Tree"
+  Transform {
+    Location {
+      X: -20301
+      Y: -28970.4609
+      Z: 293.687805
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.20800436
+      Y: 1.20800436
+      Z: 1.20800436
+    }
+  }
+  ParentId: 18413747572438850329
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1788321316963892302
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_Tree"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1182.19531
+            Y: -1921.60938
+            Z: 173.889282
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.20800436
+            Y: 1.20800436
+            Z: 1.20800436
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:forceoff"
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11423917909484857595
+    }
+  }
+}
+Objects {
+  Id: 11002446509708293016
+  Name: "TW2_Tree"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18413747572438850329
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1788321316963892302
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_Tree"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 6633.99805
+            Y: 5235.95703
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11423917909484857595
+    }
+  }
+}
+Objects {
+  Id: 12612995968040141544
+  Name: "TW2_TreeDead_Cosmetic"
+  Transform {
+    Location {
+      X: -21078.9902
+      Y: -36191.6797
+      Z: 438.423279
+    }
+    Rotation {
+      Pitch: -3.34628034
+      Yaw: 121.344162
+      Roll: 1.06903968e-07
+    }
+    Scale {
+      X: 1.03931296
+      Y: 1.03931296
+      Z: 1.03931296
+    }
+  }
+  ParentId: 18413747572438850329
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12901474246456171094
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_TreeDead_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6162.49414
+            Y: 191.171875
+            Z: 462.856079
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 8.40007401
+            Yaw: 48.1408157
+            Roll: -10.4026546
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12915612693623928532
+    }
+  }
+}
+Objects {
+  Id: 13433487121141620759
+  Name: "TW2_TreeDead_Cosmetic"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18413747572438850329
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12901474246456171094
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_TreeDead_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 5856.00781
+            Y: -1985.26172
+            Z: 144.735474
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -3.34627342
+            Yaw: 121.344162
+            Roll: 3.20711905e-07
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12915612693623928532
+    }
   }
 }
 Objects {
@@ -42125,8 +42632,6 @@ Objects {
   ChildIds: 8878764358819607034
   ChildIds: 10353537555183627818
   ChildIds: 16594381120384116510
-  ChildIds: 13433487121141620759
-  ChildIds: 12612995968040141544
   ChildIds: 17853747898178996582
   ChildIds: 8745935722656501495
   ChildIds: 6899808516914471663
@@ -42212,10 +42717,6 @@ Objects {
   ChildIds: 8377771050295183153
   ChildIds: 16575518389429385396
   ChildIds: 16374686935556940654
-  ChildIds: 11002446509708293016
-  ChildIds: 6430410522385370589
-  ChildIds: 5590743586184184830
-  ChildIds: 6618914724444457850
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -42231,252 +42732,6 @@ Objects {
   Folder {
     Model {
       AggressiveMerge: true
-    }
-  }
-}
-Objects {
-  Id: 6618914724444457850
-  Name: "TW2_Tree"
-  Transform {
-    Location {
-      X: -30409.4824
-      Y: -33509.4258
-      Z: 541.247437
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.931412
-      Y: 0.931412
-      Z: 0.931412
-    }
-  }
-  ParentId: 4777275636082071578
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1788321316963892302
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -17152.4707
-            Y: -19156.7656
-            Z: 448.78772
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -89.5806885
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.931412
-            Y: 0.931412
-            Z: 0.931412
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 11423917909484857595
-    }
-  }
-}
-Objects {
-  Id: 5590743586184184830
-  Name: "TW2_Tree"
-  Transform {
-    Location {
-      X: -28117.1934
-      Y: -36128.0273
-      Z: 467.577026
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.20800436
-      Y: 1.20800436
-      Z: 1.20800436
-    }
-  }
-  ParentId: 4777275636082071578
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1788321316963892302
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -18956.125
-            Y: -16242.5234
-            Z: 546.002319
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.931412
-            Y: 0.931412
-            Z: 0.931412
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 11423917909484857595
-    }
-  }
-}
-Objects {
-  Id: 6430410522385370589
-  Name: "TW2_Tree"
-  Transform {
-    Location {
-      X: -20301
-      Y: -28970.4609
-      Z: 293.687805
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.20800436
-      Y: 1.20800436
-      Z: 1.20800436
-    }
-  }
-  ParentId: 4777275636082071578
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1788321316963892302
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -16663.8359
-            Y: -18861.125
-            Z: 472.331909
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.20800436
-            Y: 1.20800436
-            Z: 1.20800436
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 11423917909484857595
-    }
-  }
-}
-Objects {
-  Id: 11002446509708293016
-  Name: "TW2_Tree"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4777275636082071578
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1788321316963892302
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -8847.64258
-            Y: -11703.5586
-            Z: 298.442749
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.20800436
-            Y: 1.20800436
-            Z: 1.20800436
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 11423917909484857595
     }
   }
 }
@@ -42534,6 +42789,12 @@ Objects {
             X: 3.43250942
             Y: 3.43250942
             Z: 3.43250942
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -42599,6 +42860,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -42660,6 +42927,12 @@ Objects {
             X: 3.43250942
             Y: 3.43250942
             Z: 3.43250942
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -42725,6 +42998,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -42786,6 +43065,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -42851,6 +43136,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -42914,6 +43205,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -42975,6 +43272,12 @@ Objects {
             Z: 0.683699369
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -43031,6 +43334,12 @@ Objects {
             X: 0.683699369
             Y: 0.683699369
             Z: 0.683699369
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -43090,6 +43399,12 @@ Objects {
             Z: 0.683699369
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -43145,6 +43460,12 @@ Objects {
             X: 0.683699369
             Y: 0.683699369
             Z: 0.683699369
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -43203,6 +43524,12 @@ Objects {
             X: 1
             Y: 1
             Z: 1
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -43264,6 +43591,12 @@ Objects {
             Yaw: 82.0842209
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -43320,6 +43653,12 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 160.857346
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -43381,6 +43720,12 @@ Objects {
             Yaw: 157.500092
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -43438,6 +43783,12 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -44.1666183
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -43499,6 +43850,12 @@ Objects {
             Yaw: -78.9998322
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -43556,6 +43913,12 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 157.500092
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -43617,6 +43980,12 @@ Objects {
             Yaw: -22.2795696
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -43674,6 +44043,12 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -84.1802216
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -43735,6 +44110,12 @@ Objects {
             Yaw: 27.5422058
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -43794,6 +44175,12 @@ Objects {
             Yaw: 100.318504
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -43849,6 +44236,12 @@ Objects {
             X: 1
             Y: 1
             Z: 1
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -43914,6 +44307,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -43975,6 +44374,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -44040,6 +44445,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -44101,6 +44512,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -44166,6 +44583,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -44227,6 +44650,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -44292,6 +44721,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -44353,6 +44788,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -44418,6 +44859,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -44479,6 +44926,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -44544,6 +44997,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -44605,6 +45064,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -44670,6 +45135,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -44731,6 +45202,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -44796,6 +45273,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -44857,6 +45340,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -44922,6 +45411,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -44983,6 +45478,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -45048,6 +45549,12 @@ Objects {
             Z: 1.93692029
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -45109,6 +45616,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -45174,6 +45687,12 @@ Objects {
             Z: 2.22375798
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -45235,6 +45754,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -45300,6 +45825,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -45361,6 +45892,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -45426,6 +45963,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -45487,6 +46030,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -45552,6 +46101,12 @@ Objects {
             Z: 1.79353929
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -45613,6 +46168,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -45678,6 +46239,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -45739,6 +46306,12 @@ Objects {
             X: 1.7976892
             Y: 1.7976892
             Z: 1.7976892
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -45804,6 +46377,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -45865,6 +46444,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -45930,6 +46515,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -45991,6 +46582,12 @@ Objects {
             X: 1.94509661
             Y: 1.94509661
             Z: 1.94509661
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -46056,6 +46653,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -46117,6 +46720,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -46182,6 +46791,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -46243,6 +46858,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -46308,6 +46929,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -46369,6 +46996,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -46434,6 +47067,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -46495,6 +47134,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -46560,6 +47205,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -46621,6 +47272,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -46686,6 +47343,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -46747,6 +47410,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -46812,6 +47481,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -46874,6 +47549,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -46931,6 +47612,12 @@ Objects {
             X: 1.49999988
             Y: 1.49999988
             Z: 1.49999988
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -47009,6 +47696,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -47065,6 +47758,12 @@ Objects {
             X: 1.49999988
             Y: 1.49999988
             Z: 1.49999988
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -47128,6 +47827,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -47199,6 +47904,12 @@ Objects {
             Z: 1.7904675
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -47268,6 +47979,12 @@ Objects {
             Z: 1.7904675
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -47303,7 +48020,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -47351,7 +48068,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -47399,7 +48116,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -47447,7 +48164,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -47495,7 +48212,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -47543,7 +48260,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -47591,7 +48308,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -47639,7 +48356,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -47656,122 +48373,6 @@ Objects {
         LinearDamping: 0.01
       }
       BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 12612995968040141544
-  Name: "TW2_TreeDead_Cosmetic"
-  Transform {
-    Location {
-      X: -21078.9902
-      Y: -36191.6797
-      Z: 438.423279
-    }
-    Rotation {
-      Pitch: -3.34628034
-      Yaw: 121.344162
-      Roll: 1.06903968e-07
-    }
-    Scale {
-      X: 1.03931296
-      Y: 1.03931296
-      Z: 1.03931296
-    }
-  }
-  ParentId: 4777275636082071578
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12901474246456171094
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_TreeDead_Cosmetic"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -21644.1348
-            Y: -16748.3438
-            Z: 761.29895
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 8.40007401
-            Yaw: 48.1408463
-            Roll: -10.4026213
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.03931296
-            Y: 1.03931296
-            Z: 1.03931296
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 12915612693623928532
-    }
-  }
-}
-Objects {
-  Id: 13433487121141620759
-  Name: "TW2_TreeDead_Cosmetic"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4777275636082071578
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12901474246456171094
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_TreeDead_Cosmetic"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -9625.63281
-            Y: -18924.7773
-            Z: 443.178101
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -3.34627342
-            Yaw: 121.344162
-            Roll: 3.20711905e-07
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.03931296
-            Y: 1.03931296
-            Z: 1.03931296
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 12915612693623928532
     }
   }
 }
@@ -47829,6 +48430,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -47900,6 +48507,12 @@ Objects {
             Z: 1.55785966
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -47967,6 +48580,12 @@ Objects {
             X: 1.55785966
             Y: 1.55785966
             Z: 1.55785966
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -48038,6 +48657,12 @@ Objects {
             Z: 1.55785966
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -48105,6 +48730,12 @@ Objects {
             X: 1.55785966
             Y: 1.55785966
             Z: 1.55785966
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -48176,6 +48807,12 @@ Objects {
             Z: 1.55785966
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -48243,6 +48880,12 @@ Objects {
             X: 1.55785966
             Y: 1.55785966
             Z: 1.55785966
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -48314,6 +48957,12 @@ Objects {
             Z: 1.55785966
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -48381,6 +49030,12 @@ Objects {
             X: 1.266693
             Y: 1.266693
             Z: 1.266693
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -48452,6 +49107,12 @@ Objects {
             Z: 1.266693
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -48519,6 +49180,12 @@ Objects {
             X: 1.18668973
             Y: 1.18668973
             Z: 1.18668973
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -48590,6 +49257,12 @@ Objects {
             Z: 1.18668973
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -48657,6 +49330,12 @@ Objects {
             X: 1.51759779
             Y: 1.51759779
             Z: 1.51759779
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -48728,6 +49407,12 @@ Objects {
             Z: 1.18668973
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -48795,6 +49480,12 @@ Objects {
             X: 1.18668973
             Y: 1.18668973
             Z: 1.18668973
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -48866,6 +49557,12 @@ Objects {
             Z: 1.266693
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -48933,6 +49630,12 @@ Objects {
             X: 1.18668973
             Y: 1.18668973
             Z: 1.18668973
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -49004,6 +49707,12 @@ Objects {
             Z: 1.18668973
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -49071,6 +49780,12 @@ Objects {
             X: 1.18668973
             Y: 1.18668973
             Z: 1.18668973
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -49142,6 +49857,12 @@ Objects {
             Z: 1.18668973
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -49209,6 +49930,12 @@ Objects {
             X: 1.40677655
             Y: 1.40677655
             Z: 1.40677655
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -49280,6 +50007,12 @@ Objects {
             Z: 1.40677655
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -49349,6 +50082,12 @@ Objects {
             Z: 1.40677655
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -49400,6 +50139,12 @@ Objects {
             X: 1
             Y: 1
             Z: 1
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -49455,6 +50200,12 @@ Objects {
             Z: 1.41428137
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -49503,6 +50254,12 @@ Objects {
             X: 1
             Y: 1
             Z: 1
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -49556,6 +50313,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -49604,6 +50367,12 @@ Objects {
             X: 1
             Y: 1
             Z: 1
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -49655,6 +50424,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -49716,6 +50491,12 @@ Objects {
             Yaw: 157.500092
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -49767,6 +50548,12 @@ Objects {
             Yaw: -22.4998722
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -49802,7 +50589,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -49850,7 +50637,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -49920,6 +50707,12 @@ Objects {
             Z: 1
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -49969,6 +50762,12 @@ Objects {
             X: 1
             Y: 1
             Z: 1
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -50026,6 +50825,12 @@ Objects {
             X: 1.49999988
             Y: 1.49999988
             Z: 1.49999988
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -50086,6 +50891,12 @@ Objects {
             Z: 1
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -50134,6 +50945,12 @@ Objects {
             X: 1
             Y: 1
             Z: 1
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -50187,6 +51004,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -50236,6 +51059,12 @@ Objects {
             X: 1
             Y: 1
             Z: 1
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -50288,6 +51117,12 @@ Objects {
             Z: 1
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -50336,6 +51171,12 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -50388,6 +51229,12 @@ Objects {
             Z: 0.683699369
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -50438,6 +51285,12 @@ Objects {
             Z: 1
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -50486,6 +51339,12 @@ Objects {
             X: 0.683699369
             Y: 0.683699369
             Z: 0.683699369
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -50551,6 +51410,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -50612,6 +51477,12 @@ Objects {
             X: 1.67153561
             Y: 1.67153561
             Z: 1.67153561
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -50677,6 +51548,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -50738,6 +51615,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -50803,6 +51686,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -50864,6 +51753,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -50929,6 +51824,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -50990,6 +51891,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -51055,6 +51962,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -51118,6 +52031,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -51179,6 +52098,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -51257,6 +52182,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -51318,6 +52249,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -51383,6 +52320,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -51444,6 +52387,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -51509,6 +52458,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -51570,6 +52525,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -51635,6 +52596,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -51696,6 +52663,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -51761,6 +52734,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -51822,6 +52801,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -51887,6 +52872,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -51948,6 +52939,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -52013,6 +53010,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -52074,6 +53077,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -52139,6 +53148,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -52200,6 +53215,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -52265,6 +53286,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -52326,6 +53353,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -52391,6 +53424,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -52452,6 +53491,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -52517,6 +53562,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -52578,6 +53629,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -52642,6 +53699,12 @@ Objects {
             Z: 2.12948155
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -52700,6 +53763,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -52765,6 +53834,12 @@ Objects {
             Z: 2.51552272
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -52828,6 +53903,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -52879,6 +53960,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -52944,6 +54031,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -53005,7 +54098,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -53079,7 +54172,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -53153,7 +54246,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -53227,7 +54320,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -53301,7 +54394,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -53375,7 +54468,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -53449,7 +54542,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -53523,7 +54616,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -53597,7 +54690,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -53671,7 +54764,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -53745,7 +54838,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -53819,7 +54912,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -53891,7 +54984,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -53965,7 +55058,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -54037,7 +55130,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -54180,7 +55273,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -54228,7 +55321,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -54300,6 +55393,12 @@ Objects {
             Z: 1.08622086
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -54361,6 +55460,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -54418,6 +55523,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -54483,6 +55594,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -54545,6 +55662,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -54603,6 +55726,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -54667,6 +55796,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -54725,6 +55860,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -54786,6 +55927,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -54843,6 +55990,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -54904,6 +56057,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -54961,6 +56120,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -55022,6 +56187,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -55081,6 +56252,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -55116,7 +56293,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -55164,7 +56341,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -55240,6 +56417,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -55299,6 +56482,12 @@ Objects {
             X: 1.91231871
             Y: 1.91231871
             Z: 1.91231871
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -55362,6 +56551,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -55419,6 +56614,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -55482,6 +56683,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -55539,6 +56746,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -55600,6 +56813,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -55635,7 +56854,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -55683,7 +56902,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -55731,7 +56950,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -55777,7 +56996,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -55854,6 +57073,12 @@ Objects {
             Z: 0.683699369
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -55915,6 +57140,12 @@ Objects {
             X: 0.683699369
             Y: 0.683699369
             Z: 0.683699369
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -55980,6 +57211,12 @@ Objects {
             Z: 1.36431897
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -56041,6 +57278,12 @@ Objects {
             X: 1.0909313
             Y: 1.0909313
             Z: 1.0909313
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -56106,6 +57349,12 @@ Objects {
             Z: 0.683699369
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -56157,6 +57406,12 @@ Objects {
             X: 0.683699369
             Y: 0.683699369
             Z: 0.683699369
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -56224,6 +57479,12 @@ Objects {
             Z: 1
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -56287,6 +57548,12 @@ Objects {
             X: 1
             Y: 1
             Z: 1
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -56354,6 +57621,12 @@ Objects {
             Z: 1
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -56417,6 +57690,12 @@ Objects {
             X: 1
             Y: 1
             Z: 1
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -56484,6 +57763,12 @@ Objects {
             Z: 1
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -56547,6 +57832,12 @@ Objects {
             X: 1
             Y: 1
             Z: 1
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -56613,6 +57904,12 @@ Objects {
             Z: 1
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -56676,6 +57973,12 @@ Objects {
             Z: 1
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -56733,6 +58036,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -56794,6 +58103,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -56851,6 +58166,12 @@ Objects {
             X: 1.32099247
             Y: 1.32099247
             Z: 1.32099247
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -56912,6 +58233,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -56963,6 +58290,12 @@ Objects {
             Z: 1.91231871
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -57012,6 +58345,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -57077,6 +58416,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -57138,6 +58483,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -57195,6 +58546,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -57256,6 +58613,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -57315,6 +58678,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -57364,6 +58733,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -57427,6 +58802,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -57484,6 +58865,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -57545,6 +58932,12 @@ Objects {
             Z: 1.07361317
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -57593,6 +58986,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -57662,7 +59061,6 @@ Objects {
   ChildIds: 3331489756683411766
   ChildIds: 16722551961811698564
   ChildIds: 18101872911972423657
-  ChildIds: 17458429158306917882
   ChildIds: 8001644354821757367
   ChildIds: 3922309800663684021
   ChildIds: 6901713066289516680
@@ -57756,7 +59154,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -57830,7 +59228,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -57906,6 +59304,12 @@ Objects {
             Z: 1.87582481
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -57967,6 +59371,12 @@ Objects {
             X: 1.87582481
             Y: 1.87582481
             Z: 1.87582481
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -58032,6 +59442,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -58093,6 +59509,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -58158,6 +59580,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -58219,6 +59647,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -58284,6 +59718,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -58345,6 +59785,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -58410,6 +59856,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -58471,6 +59923,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -58536,6 +59994,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -58597,6 +60061,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -58662,6 +60132,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -58723,6 +60199,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -58788,6 +60270,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -58849,6 +60337,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -58914,6 +60408,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -58975,6 +60475,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -59040,61 +60546,16 @@ Objects {
             Z: 1.87582481
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
       Id: 14719356031079241106
-    }
-  }
-}
-Objects {
-  Id: 17458429158306917882
-  Name: "TW2_TreeDead_Cosmetic"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 45597795831198710
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12901474246456171094
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_TreeDead_Cosmetic"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 21283.0859
-            Y: 13807.5645
-            Z: 1486.78613
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -172.691605
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.03931296
-            Y: 1.03931296
-            Z: 1.03931296
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 12915612693623928532
     }
   }
 }
@@ -59152,6 +60613,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -59217,6 +60684,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -59278,6 +60751,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -59345,6 +60824,12 @@ Objects {
             Z: 0.683699369
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -59408,6 +60893,12 @@ Objects {
             Z: 0.683699369
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -59467,6 +60958,12 @@ Objects {
             Z: 0.683699369
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -59516,6 +61013,12 @@ Objects {
             X: 0.683699369
             Y: 0.683699369
             Z: 0.683699369
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -59574,6 +61077,12 @@ Objects {
             Z: 0.683699369
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -59622,6 +61131,12 @@ Objects {
             X: 0.683699369
             Y: 0.683699369
             Z: 0.683699369
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -59673,6 +61188,12 @@ Objects {
             X: 0.683699369
             Y: 0.683699369
             Z: 0.683699369
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -59738,6 +61259,12 @@ Objects {
             Z: 1.87582481
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -59799,6 +61326,12 @@ Objects {
             X: 1.87582481
             Y: 1.87582481
             Z: 1.87582481
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -59864,6 +61397,12 @@ Objects {
             Z: 1.87582481
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -59925,6 +61464,12 @@ Objects {
             X: 1.87582481
             Y: 1.87582481
             Z: 1.87582481
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -59990,6 +61535,12 @@ Objects {
             Z: 1.87582481
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -60051,6 +61602,12 @@ Objects {
             X: 1.87582481
             Y: 1.87582481
             Z: 1.87582481
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -60116,6 +61673,12 @@ Objects {
             Z: 1.87582481
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -60177,6 +61740,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -60242,6 +61811,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -60303,6 +61878,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -60368,6 +61949,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -60429,6 +62016,12 @@ Objects {
             X: 1.87582481
             Y: 1.87582481
             Z: 1.87582481
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -60494,6 +62087,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -60555,6 +62154,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -60620,6 +62225,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -60681,6 +62292,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -60746,6 +62363,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -60804,6 +62427,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -60869,6 +62498,12 @@ Objects {
             Z: 1.40414548
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -60928,6 +62563,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -60990,6 +62631,12 @@ Objects {
             Z: 2.17919087
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -61046,6 +62693,12 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -63.0000496
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -61119,6 +62772,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -61172,6 +62831,12 @@ Objects {
             Roll: 35.6354828
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -61221,6 +62886,12 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: -32.0360107
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -61280,6 +62951,12 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -61343,7 +63020,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -61417,7 +63094,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -61490,7 +63167,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -61564,7 +63241,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -61636,7 +63313,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -61710,7 +63387,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -61803,7 +63480,6 @@ Objects {
   ChildIds: 10110931882917181914
   ChildIds: 1749085428244990541
   ChildIds: 1314700558706693027
-  ChildIds: 7109231638339759878
   ChildIds: 9994007134217323867
   ChildIds: 4482573020387929801
   ChildIds: 2019876202885124228
@@ -61879,6 +63555,12 @@ Objects {
             Z: 1.49999988
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -61936,6 +63618,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -62001,6 +63689,12 @@ Objects {
             Z: 1.4493717
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -62059,6 +63753,12 @@ Objects {
             X: 0.683699369
             Y: 0.683699369
             Z: 0.683699369
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -62120,61 +63820,16 @@ Objects {
             Z: 0.683699369
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
       Id: 12158110288120917116
-    }
-  }
-}
-Objects {
-  Id: 7109231638339759878
-  Name: "TW2_TreeDead_Cosmetic"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17726598669630518467
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12901474246456171094
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_TreeDead_Cosmetic"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -21679.9961
-            Y: 3834.78125
-            Z: 557.587402
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -141.839
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.03931296
-            Y: 1.03931296
-            Z: 1.03931296
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 12915612693623928532
     }
   }
 }
@@ -62206,7 +63861,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -62254,7 +63909,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -62336,6 +63991,12 @@ Objects {
             Z: 1.7904675
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -62405,6 +64066,12 @@ Objects {
             Z: 1.7904675
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -62466,6 +64133,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -62531,6 +64204,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -62566,7 +64245,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -62614,7 +64293,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -62659,7 +64338,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -62741,6 +64420,12 @@ Objects {
             Z: 1.7904675
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -62808,6 +64493,12 @@ Objects {
             X: 1.7904675
             Y: 1.7904675
             Z: 1.7904675
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -62879,6 +64570,12 @@ Objects {
             Z: 1.55785966
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -62946,6 +64643,12 @@ Objects {
             X: 1.55785966
             Y: 1.55785966
             Z: 1.55785966
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -63017,6 +64720,12 @@ Objects {
             Z: 1.7904675
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -63084,6 +64793,12 @@ Objects {
             X: 1.7904675
             Y: 1.7904675
             Z: 1.7904675
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -63155,6 +64870,12 @@ Objects {
             Z: 1.7904675
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -63222,6 +64943,12 @@ Objects {
             X: 1.7904675
             Y: 1.7904675
             Z: 1.7904675
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -63293,6 +65020,12 @@ Objects {
             Z: 1.7904675
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -63360,6 +65093,12 @@ Objects {
             X: 1.7904675
             Y: 1.7904675
             Z: 1.7904675
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -63431,6 +65170,12 @@ Objects {
             Z: 1.7904675
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -63498,6 +65243,12 @@ Objects {
             X: 1.7904675
             Y: 1.7904675
             Z: 1.7904675
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -63569,6 +65320,12 @@ Objects {
             Z: 1.7904675
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -63636,6 +65393,12 @@ Objects {
             X: 1.7904675
             Y: 1.7904675
             Z: 1.7904675
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -63707,6 +65470,12 @@ Objects {
             Z: 1.7904675
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -63774,6 +65543,12 @@ Objects {
             X: 1.7904675
             Y: 1.7904675
             Z: 1.7904675
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -63845,6 +65620,12 @@ Objects {
             Z: 1.48862588
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -63912,6 +65693,12 @@ Objects {
             X: 1.18668973
             Y: 1.18668973
             Z: 1.18668973
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -63983,6 +65770,12 @@ Objects {
             Z: 1.18668973
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -64050,6 +65843,12 @@ Objects {
             X: 1.7904675
             Y: 1.7904675
             Z: 1.7904675
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -64121,6 +65920,12 @@ Objects {
             Z: 1.40677655
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -64187,6 +65992,12 @@ Objects {
             X: 1.40677655
             Y: 1.40677655
             Z: 1.40677655
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -64257,6 +66068,12 @@ Objects {
             Z: 1.40677655
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -64323,6 +66140,12 @@ Objects {
             Z: 1.40677655
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -64387,6 +66210,12 @@ Objects {
             Z: 1.40677655
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -64410,16 +66239,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 2015649741350995836
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 18435660001994587871
       value {
         Overrides {
@@ -64437,14 +66256,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -64497,6 +66308,12 @@ Objects {
             Z: 0.683699369
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -64545,6 +66362,12 @@ Objects {
             X: 0.683699369
             Y: 0.683699369
             Z: 0.683699369
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -64597,6 +66420,12 @@ Objects {
             Z: 0.683699369
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -64647,6 +66476,12 @@ Objects {
             Z: 0.683699369
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -64694,6 +66529,12 @@ Objects {
             X: 0.683699369
             Y: 0.683699369
             Z: 0.683699369
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -64748,6 +66589,12 @@ Objects {
             Z: 0.683699369
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -64789,14 +66636,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: -5.21728754
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.683699369
-            Y: 0.683699369
-            Z: 0.683699369
           }
         }
       }
@@ -64862,6 +66701,12 @@ Objects {
             Z: 1.45792186
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -64923,6 +66768,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -64979,6 +66830,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -65044,6 +66901,12 @@ Objects {
             Z: 1.87956154
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -65101,6 +66964,12 @@ Objects {
             X: 1.87582481
             Y: 1.87582481
             Z: 1.87582481
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -65162,6 +67031,12 @@ Objects {
             Z: 1.87582481
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -65219,6 +67094,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -65279,6 +67160,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -65327,6 +67214,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -65386,6 +67279,12 @@ Objects {
             X: 1.76644254
             Y: 1.76644254
             Z: 1.76644254
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
       }
@@ -65451,6 +67350,12 @@ Objects {
             Z: 1.76644254
           }
         }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -65501,14 +67406,6 @@ Objects {
             Pitch: 26.5808754
             Yaw: -159.333481
             Roll: -4.0850873
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.4493717
-            Y: 1.4493717
-            Z: 1.4493717
           }
         }
       }
@@ -65572,7 +67469,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -65610,37 +67507,6 @@ Objects {
     }
   }
   ParentId: 9160281066032245732
-  ChildIds: 13102845937134120119
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    Model {
-      AggressiveMerge: true
-    }
-  }
-}
-Objects {
-  Id: 13102845937134120119
-  Name: "Group"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 921302885554344351
   ChildIds: 15480848254918750354
   ChildIds: 6802088328454657705
   ChildIds: 17771225991366381948
@@ -65761,6 +67627,8 @@ Objects {
   ChildIds: 5771789528317645940
   ChildIds: 6037211300354429575
   ChildIds: 12919518097618639693
+  ChildIds: 8427170467524334922
+  ChildIds: 5403188197184847323
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -65771,7 +67639,143 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
-    IsGroup: true
+    Model {
+      AggressiveMerge: true
+    }
+  }
+}
+Objects {
+  Id: 5403188197184847323
+  Name: "Rock Pile 001"
+  Transform {
+    Location {
+      X: 421.270508
+      Y: -8667.76465
+      Z: 1101.75171
+    }
+    Rotation {
+      Yaw: -130.073425
+    }
+    Scale {
+      X: 5.27818441
+      Y: 3.24997234
+      Z: 5.73738194
+    }
+  }
+  ParentId: 921302885554344351
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1910430801874839834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6551093352602210295
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 8427170467524334922
+  Name: "Rock Pile 001"
+  Transform {
+    Location {
+      X: 766.457031
+      Y: -8274.5791
+      Z: 1046.67505
+    }
+    Rotation {
+      Pitch: -3.35632324
+      Yaw: 107.32753
+      Roll: 11.6328678
+    }
+    Scale {
+      X: 5.27818441
+      Y: 3.24997234
+      Z: 5.73738194
+    }
+  }
+  ParentId: 921302885554344351
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1910430801874839834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6551093352602210295
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -65786,7 +67790,7 @@ Objects {
     Rotation {
       Pitch: -4.76705503
       Yaw: -130.304764
-      Roll: -3.28479
+      Roll: -3.28479028
     }
     Scale {
       X: 15.1004505
@@ -65794,7 +67798,7 @@ Objects {
       Z: 51.9543266
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -65822,7 +67826,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -65832,7 +67836,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -65862,7 +67865,7 @@ Objects {
       Z: 5.88304901
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -65890,7 +67893,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -65900,7 +67903,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -65921,8 +67923,8 @@ Objects {
     }
     Rotation {
       Pitch: 1.59273171
-      Yaw: 78.939621
-      Roll: -5.25632095
+      Yaw: 78.9395905
+      Roll: -5.25632477
     }
     Scale {
       X: -11.952
@@ -65930,7 +67932,7 @@ Objects {
       Z: 24.7356281
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -65958,7 +67960,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -65968,7 +67970,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -65990,7 +67991,7 @@ Objects {
     Rotation {
       Pitch: 0.896434963
       Yaw: -174.170151
-      Roll: 11.7990131
+      Roll: 11.7990322
     }
     Scale {
       X: 15.1004505
@@ -65998,7 +67999,7 @@ Objects {
       Z: 51.9543266
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -66026,7 +68027,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -66036,7 +68037,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -66057,8 +68057,8 @@ Objects {
     }
     Rotation {
       Pitch: 3.13670945
-      Yaw: -23.6543446
-      Roll: -3.33667088
+      Yaw: -23.6543217
+      Roll: -3.33667135
     }
     Scale {
       X: 4.34801388
@@ -66066,7 +68066,7 @@ Objects {
       Z: 3.16005
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -66094,7 +68094,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -66104,7 +68104,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -66125,8 +68124,8 @@ Objects {
     }
     Rotation {
       Pitch: 3.13670945
-      Yaw: -169.061417
-      Roll: -3.33667088
+      Yaw: -169.061386
+      Roll: -3.33667183
     }
     Scale {
       X: 4.34801388
@@ -66134,7 +68133,7 @@ Objects {
       Z: 3.16005
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -66162,7 +68161,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -66172,7 +68171,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -66193,8 +68191,8 @@ Objects {
     }
     Rotation {
       Pitch: 3.13670945
-      Yaw: -52.560936
-      Roll: -3.33667111
+      Yaw: -52.5609474
+      Roll: -3.33667159
     }
     Scale {
       X: 4.34801388
@@ -66202,7 +68200,7 @@ Objects {
       Z: 3.16005
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -66230,7 +68228,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -66240,7 +68238,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -66261,7 +68258,7 @@ Objects {
     }
     Rotation {
       Pitch: 3.13670945
-      Yaw: 113.547081
+      Yaw: 113.54705
       Roll: -3.33667016
     }
     Scale {
@@ -66270,7 +68267,7 @@ Objects {
       Z: 3.16005
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -66298,7 +68295,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -66308,7 +68305,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -66330,7 +68326,7 @@ Objects {
     Rotation {
       Pitch: 3.13670945
       Yaw: 135.788742
-      Roll: -3.33667016
+      Roll: -3.33667064
     }
     Scale {
       X: 3.7790432
@@ -66338,7 +68334,7 @@ Objects {
       Z: 2.74653363
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -66366,7 +68362,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -66376,7 +68372,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -66397,8 +68392,8 @@ Objects {
     }
     Rotation {
       Pitch: 3.13670945
-      Yaw: -24.7269974
-      Roll: -3.33667064
+      Yaw: -24.7269764
+      Roll: -3.33667135
     }
     Scale {
       X: 3.7790432
@@ -66406,7 +68401,7 @@ Objects {
       Z: 2.74653363
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -66434,7 +68429,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -66444,7 +68439,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -66465,8 +68459,8 @@ Objects {
     }
     Rotation {
       Pitch: 3.13670945
-      Yaw: -43.399044
-      Roll: -3.33667064
+      Yaw: -43.3990402
+      Roll: -3.33667111
     }
     Scale {
       X: 3.7790432
@@ -66474,7 +68468,7 @@ Objects {
       Z: 2.74653363
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -66502,7 +68496,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -66512,7 +68506,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -66533,7 +68526,7 @@ Objects {
     }
     Rotation {
       Pitch: 13.2104664
-      Yaw: 5.29092216
+      Yaw: 5.29092503
       Roll: -1.82778943
     }
     Scale {
@@ -66542,7 +68535,7 @@ Objects {
       Z: 2.36765
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -66570,7 +68563,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -66580,7 +68573,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -66601,8 +68593,8 @@ Objects {
     }
     Rotation {
       Pitch: 13.2105551
-      Yaw: 104.795929
-      Roll: -1.82778931
+      Yaw: 104.795959
+      Roll: -1.8277899
     }
     Scale {
       X: 5.442204
@@ -66610,7 +68602,7 @@ Objects {
       Z: 2.36765
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -66638,7 +68630,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -66648,7 +68640,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -66668,9 +68659,9 @@ Objects {
       Z: 1285.66296
     }
     Rotation {
-      Pitch: -0.45678255
-      Yaw: -31.82967
-      Roll: 0.385091662
+      Pitch: -0.456775695
+      Yaw: -31.8296871
+      Roll: 0.385091633
     }
     Scale {
       X: 2.84256458
@@ -66678,7 +68669,7 @@ Objects {
       Z: 5.88304901
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -66706,7 +68697,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -66716,7 +68707,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -66737,8 +68727,8 @@ Objects {
     }
     Rotation {
       Pitch: -1.73790741
-      Yaw: 25.0166321
-      Roll: 112.202271
+      Yaw: 25.0166092
+      Roll: 112.202255
     }
     Scale {
       X: 4.62973261
@@ -66746,7 +68736,7 @@ Objects {
       Z: 28.900938
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -66774,7 +68764,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -66784,7 +68774,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -66804,9 +68793,9 @@ Objects {
       Z: 1751.13892
     }
     Rotation {
-      Pitch: -1.7379142
-      Yaw: 53.1200638
-      Roll: 112.20266
+      Pitch: -1.73790741
+      Yaw: 53.1200752
+      Roll: 112.202652
     }
     Scale {
       X: 4.62973595
@@ -66814,7 +68803,7 @@ Objects {
       Z: 19.3946419
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -66842,7 +68831,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -66852,7 +68841,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -66873,8 +68861,8 @@ Objects {
     }
     Rotation {
       Pitch: -13.537837
-      Yaw: 67.7148209
-      Roll: -12.7229805
+      Yaw: 67.7148438
+      Roll: -12.723
     }
     Scale {
       X: 6.97960234
@@ -66882,7 +68870,7 @@ Objects {
       Z: 18.1893654
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -66910,7 +68898,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -66920,7 +68908,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -66941,8 +68928,8 @@ Objects {
     }
     Rotation {
       Pitch: -5.54974699
-      Yaw: -31.9496384
-      Roll: 1.64296913
+      Yaw: -31.9496555
+      Roll: 1.64296901
     }
     Scale {
       X: 15.1004419
@@ -66950,7 +68937,7 @@ Objects {
       Z: 31.2521839
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -66978,7 +68965,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -66988,7 +68975,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -67010,7 +68996,7 @@ Objects {
     Rotation {
       Pitch: -0.722019255
       Yaw: -174.146271
-      Roll: 27.518362
+      Roll: 27.5183468
     }
     Scale {
       X: 15.1004505
@@ -67018,7 +69004,7 @@ Objects {
       Z: 51.9543266
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -67046,7 +69032,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -67056,7 +69042,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -67077,8 +69062,8 @@ Objects {
     }
     Rotation {
       Pitch: 3.56526971
-      Yaw: -75.3605728
-      Roll: 5.03827715
+      Yaw: -75.3605499
+      Roll: 5.03828
     }
     Scale {
       X: 11.9517689
@@ -67086,7 +69071,7 @@ Objects {
       Z: 24.7356281
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -67114,7 +69099,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -67124,7 +69109,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -67145,8 +69129,8 @@ Objects {
     }
     Rotation {
       Pitch: -5.12387085
-      Yaw: 12.3504791
-      Roll: -2.69366503
+      Yaw: 12.3504972
+      Roll: -2.6936655
     }
     Scale {
       X: 15.1004419
@@ -67154,7 +69138,7 @@ Objects {
       Z: 31.2521839
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -67182,7 +69166,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -67192,7 +69176,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -67214,7 +69197,7 @@ Objects {
     Rotation {
       Pitch: -0.527556956
       Yaw: -130.547699
-      Roll: -3.27356
+      Roll: -3.27356029
     }
     Scale {
       X: 14.4492884
@@ -67222,7 +69205,7 @@ Objects {
       Z: 37.6101837
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -67250,7 +69233,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -67260,7 +69243,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -67282,7 +69264,7 @@ Objects {
     Rotation {
       Pitch: -7.56381273
       Yaw: -174.94043
-      Roll: 21.3833771
+      Roll: 21.3833656
     }
     Scale {
       X: 15.1004505
@@ -67290,7 +69272,7 @@ Objects {
       Z: 51.9543266
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -67318,7 +69300,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -67328,7 +69310,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -67349,7 +69330,7 @@ Objects {
     }
     Rotation {
       Pitch: 5.94408798
-      Yaw: -147.948883
+      Yaw: -147.948853
       Roll: 170.678
     }
     Scale {
@@ -67358,7 +69339,7 @@ Objects {
       Z: 37.3334274
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -67386,7 +69367,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -67396,7 +69377,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -67416,7 +69396,7 @@ Objects {
     }
     Rotation {
       Pitch: 5.94409466
-      Yaw: 24.6232433
+      Yaw: 24.6232224
       Roll: 170.678
     }
     Scale {
@@ -67425,7 +69405,7 @@ Objects {
       Z: 37.3334274
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -67453,7 +69433,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -67463,7 +69443,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -67492,7 +69471,7 @@ Objects {
       Z: 37.3334274
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -67520,7 +69499,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -67530,7 +69509,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -67551,8 +69529,8 @@ Objects {
     }
     Rotation {
       Pitch: -4.34942341
-      Yaw: 72.7004471
-      Roll: -3.82113767
+      Yaw: 72.7004318
+      Roll: -3.82113934
     }
     Scale {
       X: 15.1004419
@@ -67560,7 +69538,7 @@ Objects {
       Z: 31.2521839
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -67588,7 +69566,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -67598,7 +69576,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -67620,7 +69597,7 @@ Objects {
     Rotation {
       Pitch: -4.34942341
       Yaw: -139.615234
-      Roll: -3.82113767
+      Roll: -3.82113886
     }
     Scale {
       X: 15.1004419
@@ -67628,7 +69605,7 @@ Objects {
       Z: 31.2521839
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -67656,7 +69633,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -67666,7 +69643,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -67687,8 +69663,8 @@ Objects {
     }
     Rotation {
       Pitch: -4.34942341
-      Yaw: 25.9395313
-      Roll: -3.82113767
+      Yaw: 25.9395103
+      Roll: -3.82113838
     }
     Scale {
       X: 15.1004419
@@ -67696,7 +69672,7 @@ Objects {
       Z: 31.2521839
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -67724,7 +69700,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -67734,7 +69710,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -67764,7 +69739,7 @@ Objects {
       Z: 31.2521839
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -67792,7 +69767,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -67802,7 +69777,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -67824,7 +69798,7 @@ Objects {
     Rotation {
       Pitch: -4.76705503
       Yaw: -130.304764
-      Roll: -3.2847898
+      Roll: -3.28479
     }
     Scale {
       X: 15.1004505
@@ -67832,7 +69806,7 @@ Objects {
       Z: 51.9543266
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -67860,7 +69834,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -67870,7 +69844,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -67891,7 +69864,7 @@ Objects {
     }
     Rotation {
       Pitch: -3.7518363
-      Yaw: -141.702271
+      Yaw: -141.702301
       Roll: 0.863338232
     }
     Scale {
@@ -67900,7 +69873,7 @@ Objects {
       Z: 19.711092
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -67928,7 +69901,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -67938,7 +69911,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -67968,7 +69940,7 @@ Objects {
       Z: 37.3334274
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -67996,7 +69968,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -68006,7 +69978,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -68026,9 +69997,9 @@ Objects {
       Z: 1474.57056
     }
     Rotation {
-      Pitch: -1.13141394
-      Yaw: -84.968605
-      Roll: 93.6081543
+      Pitch: -1.13143444
+      Yaw: -84.9685822
+      Roll: 93.6081238
     }
     Scale {
       X: 4.99147511
@@ -68036,7 +70007,7 @@ Objects {
       Z: -11.0447016
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -68060,7 +70031,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -68070,7 +70041,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -68090,8 +70060,8 @@ Objects {
       Z: 1611.72876
     }
     Rotation {
-      Yaw: -101.039253
-      Roll: -15.7594175
+      Yaw: -101.039268
+      Roll: -15.7594347
     }
     Scale {
       X: 10.8631887
@@ -68099,7 +70069,7 @@ Objects {
       Z: 6.53666306
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -68127,7 +70097,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -68137,7 +70107,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -68158,8 +70127,8 @@ Objects {
     }
     Rotation {
       Pitch: -0.0496486425
-      Yaw: 89.130043
-      Roll: 15.1867809
+      Yaw: 89.1300354
+      Roll: 15.1867981
     }
     Scale {
       X: 7.26835966
@@ -68167,7 +70136,7 @@ Objects {
       Z: 13.0530567
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -68191,7 +70160,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -68201,7 +70170,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -68222,8 +70190,8 @@ Objects {
     }
     Rotation {
       Pitch: 0.191457018
-      Yaw: 35.0812454
-      Roll: 91.0705795
+      Yaw: 35.0812531
+      Roll: 91.0705719
     }
     Scale {
       X: 4.99147
@@ -68231,7 +70199,7 @@ Objects {
       Z: 13.7867393
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -68255,7 +70223,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -68265,7 +70233,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -68295,7 +70262,7 @@ Objects {
       Z: 13.7867393
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -68319,7 +70286,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -68329,7 +70296,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -68350,7 +70316,7 @@ Objects {
     }
     Rotation {
       Pitch: 5.4239006
-      Yaw: 45.2335396
+      Yaw: 45.2335548
       Roll: 121.668747
     }
     Scale {
@@ -68359,7 +70325,7 @@ Objects {
       Z: 25.9509888
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -68387,7 +70353,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -68397,7 +70363,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -68418,8 +70383,8 @@ Objects {
     }
     Rotation {
       Pitch: 0.938488424
-      Yaw: -127.690773
-      Roll: 64.4598694
+      Yaw: -127.69075
+      Roll: 64.4598846
     }
     Scale {
       X: 6.20422792
@@ -68427,7 +70392,7 @@ Objects {
       Z: 32.7851372
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -68455,7 +70420,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -68465,7 +70430,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -68486,8 +70450,8 @@ Objects {
     }
     Rotation {
       Pitch: 6.56276655
-      Yaw: 78.2772598
-      Roll: 74.72789
+      Yaw: 78.2772369
+      Roll: 74.7278748
     }
     Scale {
       X: 4.99147
@@ -68495,7 +70459,7 @@ Objects {
       Z: 13.7867393
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -68519,7 +70483,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -68529,7 +70493,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -68550,7 +70513,7 @@ Objects {
     }
     Rotation {
       Yaw: -90.1693
-      Roll: -0.504455566
+      Roll: -0.504455626
     }
     Scale {
       X: 13.8922949
@@ -68558,7 +70521,7 @@ Objects {
       Z: 8.35935402
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -68586,7 +70549,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -68596,7 +70559,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -68616,9 +70578,9 @@ Objects {
       Z: 1543.76904
     }
     Rotation {
-      Pitch: -9.64859
-      Yaw: -101.593292
-      Roll: 80.851059
+      Pitch: -9.64858437
+      Yaw: -101.5933
+      Roll: 80.8510513
     }
     Scale {
       X: 4.21100616
@@ -68626,7 +70588,7 @@ Objects {
       Z: 13.7867422
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -68650,7 +70612,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -68660,7 +70622,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -68681,8 +70642,8 @@ Objects {
     }
     Rotation {
       Pitch: -3.45755076
-      Yaw: -85.9105606
-      Roll: -28.0163422
+      Yaw: -85.9105682
+      Roll: -28.0163383
     }
     Scale {
       X: 13.8922949
@@ -68690,7 +70651,7 @@ Objects {
       Z: 8.35935402
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -68718,7 +70679,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -68728,7 +70689,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -68749,8 +70709,8 @@ Objects {
     }
     Rotation {
       Pitch: 9.93412685
-      Yaw: -94.7293396
-      Roll: -106.407501
+      Yaw: -94.729332
+      Roll: -106.407509
     }
     Scale {
       X: 4.62973118
@@ -68758,7 +70718,7 @@ Objects {
       Z: 25.1527767
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -68786,7 +70746,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -68796,7 +70756,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -68817,8 +70776,8 @@ Objects {
     }
     Rotation {
       Pitch: 2.34701681
-      Yaw: -95.3837509
-      Roll: 2.82723975
+      Yaw: -95.3837585
+      Roll: 2.82724
     }
     Scale {
       X: 5.21802759
@@ -68826,7 +70785,7 @@ Objects {
       Z: 12.6749897
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -68846,7 +70805,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -68856,7 +70815,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -68876,7 +70834,7 @@ Objects {
       Z: 1834.36353
     }
     Rotation {
-      Pitch: -1.73791504
+      Pitch: -1.73790741
       Yaw: -49.1513977
       Roll: 112.20089
     }
@@ -68886,7 +70844,7 @@ Objects {
       Z: 25.1527767
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -68914,7 +70872,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -68924,7 +70882,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -68945,8 +70902,8 @@ Objects {
     }
     Rotation {
       Pitch: 29.5661602
-      Yaw: -31.045702
-      Roll: -165.745667
+      Yaw: -31.0457211
+      Roll: -165.745636
     }
     Scale {
       X: 5.99400949
@@ -68954,7 +70911,7 @@ Objects {
       Z: 15.6208477
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -68982,7 +70939,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -68992,7 +70949,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -69013,8 +70969,8 @@ Objects {
     }
     Rotation {
       Pitch: 10.1499472
-      Yaw: 59.8932
-      Roll: 76.8070374
+      Yaw: 59.8931885
+      Roll: 76.807
     }
     Scale {
       X: 4.99147
@@ -69022,7 +70978,7 @@ Objects {
       Z: 13.7867393
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -69046,7 +71002,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -69056,7 +71012,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -69077,7 +71032,7 @@ Objects {
     }
     Rotation {
       Pitch: 8.66155338
-      Yaw: -39.390667
+      Yaw: -39.3906441
       Roll: 151.418381
     }
     Scale {
@@ -69086,7 +71041,7 @@ Objects {
       Z: 13.7867346
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -69110,7 +71065,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -69120,7 +71075,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -69150,7 +71104,7 @@ Objects {
       Z: 37.3334274
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -69178,7 +71132,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -69188,7 +71142,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -69208,9 +71161,9 @@ Objects {
       Z: 1602.64355
     }
     Rotation {
-      Pitch: -9.90948391
+      Pitch: -9.90947723
       Yaw: -177.672592
-      Roll: 98.0013199
+      Roll: 98.0013046
     }
     Scale {
       X: 7.06494331
@@ -69218,7 +71171,7 @@ Objects {
       Z: 37.3334274
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -69246,7 +71199,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -69256,7 +71209,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -69277,8 +71229,8 @@ Objects {
     }
     Rotation {
       Pitch: -9.28469944
-      Yaw: -8.15634918
-      Roll: 78.4033356
+      Yaw: -8.15635681
+      Roll: 78.4033
     }
     Scale {
       X: 6.61505842
@@ -69286,7 +71238,7 @@ Objects {
       Z: 19.8982372
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -69310,7 +71262,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -69320,7 +71272,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -69341,8 +71292,8 @@ Objects {
     }
     Rotation {
       Pitch: 29.5668697
-      Yaw: 23.0902939
-      Roll: -165.75032
+      Yaw: 23.0902748
+      Roll: -165.75029
     }
     Scale {
       X: 5.99401855
@@ -69350,7 +71301,7 @@ Objects {
       Z: 15.6208477
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -69378,7 +71329,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -69388,7 +71339,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -69409,8 +71359,8 @@ Objects {
     }
     Rotation {
       Pitch: 29.5668831
-      Yaw: 23.090332
-      Roll: -165.750366
+      Yaw: 23.0903168
+      Roll: -165.750351
     }
     Scale {
       X: 5.99401855
@@ -69418,7 +71368,7 @@ Objects {
       Z: 15.6208477
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -69446,7 +71396,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -69456,7 +71406,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -69476,7 +71425,7 @@ Objects {
       Z: 1639.78882
     }
     Rotation {
-      Yaw: -101.567513
+      Yaw: -101.56752
       Roll: -0.504455566
     }
     Scale {
@@ -69485,7 +71434,7 @@ Objects {
       Z: 8.35935402
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -69513,7 +71462,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -69523,7 +71472,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -69544,8 +71492,8 @@ Objects {
     }
     Rotation {
       Pitch: -1.73790741
-      Yaw: 46.7084084
-      Roll: 112.202827
+      Yaw: 46.7084
+      Roll: 112.202805
     }
     Scale {
       X: 4.62973261
@@ -69553,7 +71501,7 @@ Objects {
       Z: 28.900938
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -69581,7 +71529,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -69591,7 +71539,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -69612,8 +71559,8 @@ Objects {
     }
     Rotation {
       Pitch: 10.1499949
-      Yaw: 54.2608566
-      Roll: 76.8078613
+      Yaw: 54.2608643
+      Roll: 76.8078537
     }
     Scale {
       X: 4.99147
@@ -69621,7 +71568,7 @@ Objects {
       Z: 13.7867393
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -69645,7 +71592,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -69655,7 +71602,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -69677,7 +71623,7 @@ Objects {
     Rotation {
       Pitch: 4.09021759
       Yaw: -130.992126
-      Roll: 76.9164
+      Roll: 76.9163818
     }
     Scale {
       X: 4.99147
@@ -69685,7 +71631,7 @@ Objects {
       Z: 13.7867393
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -69709,7 +71655,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -69719,7 +71665,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -69740,8 +71685,8 @@ Objects {
     }
     Rotation {
       Pitch: 6.91558
-      Yaw: -129.229767
-      Roll: 151.55014
+      Yaw: -129.229736
+      Roll: 151.550156
     }
     Scale {
       X: 12.4952393
@@ -69749,7 +71694,7 @@ Objects {
       Z: 7.51870775
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -69777,7 +71722,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -69787,7 +71732,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -69808,7 +71752,7 @@ Objects {
     }
     Rotation {
       Pitch: 2.92442036
-      Yaw: 47.2396965
+      Yaw: 47.2396812
       Roll: 2.22470593
     }
     Scale {
@@ -69817,7 +71761,7 @@ Objects {
       Z: 9.93508339
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -69837,7 +71781,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -69847,7 +71791,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -69868,7 +71811,7 @@ Objects {
     }
     Rotation {
       Yaw: -127.654907
-      Roll: 3.67393255
+      Roll: 3.67393422
     }
     Scale {
       X: 4.09006739
@@ -69876,7 +71819,7 @@ Objects {
       Z: 9.93508339
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -69896,7 +71839,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -69906,7 +71849,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -69928,7 +71870,7 @@ Objects {
     Rotation {
       Pitch: -0.761934876
       Yaw: -140.699875
-      Roll: -3.59371972
+      Roll: -3.59372044
     }
     Scale {
       X: 2.52980709
@@ -69936,7 +71878,7 @@ Objects {
       Z: 6.14509296
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -69956,7 +71898,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -69966,7 +71908,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -69986,9 +71927,9 @@ Objects {
       Z: 613.798584
     }
     Rotation {
-      Pitch: -12.2218924
-      Yaw: 121.85984
-      Roll: 2.77695918
+      Pitch: -12.2218847
+      Yaw: 121.859856
+      Roll: 2.7769587
     }
     Scale {
       X: 6.97960234
@@ -69996,7 +71937,7 @@ Objects {
       Z: 18.1893654
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -70024,7 +71965,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -70034,7 +71975,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -70056,7 +71996,7 @@ Objects {
     Rotation {
       Pitch: -0.761934876
       Yaw: -140.699875
-      Roll: -3.59371972
+      Roll: -3.59372044
     }
     Scale {
       X: 2.52980709
@@ -70064,7 +72004,7 @@ Objects {
       Z: 6.14509296
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -70084,7 +72024,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -70094,7 +72034,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -70115,7 +72054,7 @@ Objects {
     }
     Rotation {
       Pitch: 5.95849943
-      Yaw: -110.466286
+      Yaw: -110.466263
       Roll: 176.927338
     }
     Scale {
@@ -70124,7 +72063,7 @@ Objects {
       Z: 11.7259893
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -70144,7 +72083,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -70154,7 +72093,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -70175,8 +72113,8 @@ Objects {
     }
     Rotation {
       Pitch: 0.0189127922
-      Yaw: 50.9621849
-      Roll: 3.67370415
+      Yaw: 50.9622078
+      Roll: 3.67370582
     }
     Scale {
       X: 2.52980709
@@ -70184,7 +72122,7 @@ Objects {
       Z: 6.14509296
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -70204,7 +72142,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -70214,7 +72152,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -70235,8 +72172,8 @@ Objects {
     }
     Rotation {
       Pitch: -0.731690824
-      Yaw: -72.7699738
-      Roll: 8.66576195
+      Yaw: -72.7699509
+      Roll: 8.66577244
     }
     Scale {
       X: 2.28992724
@@ -70244,7 +72181,7 @@ Objects {
       Z: 2.18003058
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -70264,7 +72201,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -70274,7 +72211,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -70296,7 +72232,7 @@ Objects {
     Rotation {
       Pitch: -2.51385784
       Yaw: 85.7596283
-      Roll: -8.3275671
+      Roll: -8.32757664
     }
     Scale {
       X: 2.28992724
@@ -70304,7 +72240,7 @@ Objects {
       Z: 2.88942504
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -70324,7 +72260,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -70334,7 +72270,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -70355,8 +72290,8 @@ Objects {
     }
     Rotation {
       Pitch: -8.36337471
-      Yaw: -138.581558
-      Roll: 11.103179
+      Yaw: -138.581543
+      Roll: 11.1031952
     }
     Scale {
       X: 3.50995445
@@ -70364,7 +72299,7 @@ Objects {
       Z: 10.6857605
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -70384,7 +72319,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -70394,7 +72329,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -70424,7 +72358,7 @@ Objects {
       Z: 13.7867393
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -70448,7 +72382,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -70458,7 +72392,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -70486,7 +72419,7 @@ Objects {
       Z: 2.58117509
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -70515,7 +72448,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -70525,7 +72458,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -70553,7 +72485,7 @@ Objects {
       Z: 2.58117509
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -70582,7 +72514,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -70592,7 +72524,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -70620,7 +72551,7 @@ Objects {
       Z: 2.38915825
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -70649,7 +72580,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -70659,7 +72590,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -70687,7 +72617,7 @@ Objects {
       Z: 2.38915825
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -70716,7 +72646,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -70726,7 +72656,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -70754,7 +72683,7 @@ Objects {
       Z: 2.38915825
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -70783,7 +72712,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -70793,7 +72722,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -70813,7 +72741,7 @@ Objects {
       Z: 1100.24207
     }
     Rotation {
-      Yaw: -147.465637
+      Yaw: -147.465607
     }
     Scale {
       X: 4.2370615
@@ -70821,7 +72749,7 @@ Objects {
       Z: 2.58117509
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -70850,7 +72778,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -70860,7 +72788,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -70880,7 +72807,7 @@ Objects {
       Z: 1151.9137
     }
     Rotation {
-      Yaw: -164.08255
+      Yaw: -164.082535
     }
     Scale {
       X: 5.41871452
@@ -70888,7 +72815,7 @@ Objects {
       Z: 2.58117509
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -70917,7 +72844,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -70927,7 +72854,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -70947,7 +72873,7 @@ Objects {
       Z: 1204.56885
     }
     Rotation {
-      Yaw: -163.888962
+      Yaw: -163.888931
     }
     Scale {
       X: 6.91542625
@@ -70955,7 +72881,7 @@ Objects {
       Z: 2.58117509
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -70984,7 +72910,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -70994,7 +72920,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -71022,7 +72947,7 @@ Objects {
       Z: 2.58117509
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -71051,7 +72976,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -71061,7 +72986,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -71089,7 +73013,7 @@ Objects {
       Z: 2.58117509
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -71118,7 +73042,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -71128,7 +73052,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -71148,7 +73071,7 @@ Objects {
       Z: 1257.57129
     }
     Rotation {
-      Yaw: 13.1120911
+      Yaw: 13.1121111
     }
     Scale {
       X: 6.3872509
@@ -71156,7 +73079,7 @@ Objects {
       Z: 2.38915825
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -71185,7 +73108,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -71195,7 +73118,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -71215,7 +73137,7 @@ Objects {
       Z: 1352.04199
     }
     Rotation {
-      Yaw: -164.431183
+      Yaw: -164.431152
     }
     Scale {
       X: 2.57482982
@@ -71223,7 +73145,7 @@ Objects {
       Z: 2.58117509
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -71252,7 +73174,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -71262,7 +73184,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -71290,7 +73211,7 @@ Objects {
       Z: 2.38915825
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -71319,7 +73240,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -71329,7 +73250,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -71349,7 +73269,7 @@ Objects {
       Z: 1294.98511
     }
     Rotation {
-      Yaw: 33.1112099
+      Yaw: 33.1112251
     }
     Scale {
       X: 2.37458253
@@ -71357,7 +73277,7 @@ Objects {
       Z: 2.38915825
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -71386,7 +73306,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -71396,7 +73316,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -71416,7 +73335,7 @@ Objects {
       Z: 1536.7771
     }
     Rotation {
-      Yaw: -142.460449
+      Yaw: -142.460464
     }
     Scale {
       X: 7.08507347
@@ -71424,7 +73343,7 @@ Objects {
       Z: 2.58117509
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -71453,7 +73372,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -71463,7 +73382,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -71483,7 +73401,7 @@ Objects {
       Z: 1469.2561
     }
     Rotation {
-      Yaw: -146.141937
+      Yaw: -146.141922
     }
     Scale {
       X: 4.84452629
@@ -71491,7 +73409,7 @@ Objects {
       Z: 2.38915825
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -71520,7 +73438,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -71530,7 +73448,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -71560,7 +73477,7 @@ Objects {
       Z: 2.58117509
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -71589,7 +73506,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -71599,7 +73516,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -71620,8 +73536,8 @@ Objects {
     }
     Rotation {
       Pitch: -1.64919686
-      Yaw: 38.4134
-      Roll: -1.30740356
+      Yaw: 38.4133759
+      Roll: -1.30740368
     }
     Scale {
       X: 7.22234631
@@ -71629,7 +73545,7 @@ Objects {
       Z: 2.38915825
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -71658,7 +73574,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -71668,7 +73584,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -71696,7 +73611,7 @@ Objects {
       Z: 2.58117509
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -71725,7 +73640,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -71735,7 +73650,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -71763,7 +73677,7 @@ Objects {
       Z: 2.38915825
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -71792,7 +73706,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -71802,7 +73716,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -71830,7 +73743,7 @@ Objects {
       Z: 2.58117509
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -71859,7 +73772,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -71869,7 +73782,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -71889,7 +73801,7 @@ Objects {
       Z: 1536.7771
     }
     Rotation {
-      Yaw: -137.969452
+      Yaw: -137.969437
     }
     Scale {
       X: 7.02530336
@@ -71897,7 +73809,7 @@ Objects {
       Z: 2.58117509
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -71926,7 +73838,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -71936,7 +73848,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -71964,7 +73875,7 @@ Objects {
       Z: 2.58117509
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -71993,7 +73904,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -72003,7 +73914,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -72033,7 +73943,7 @@ Objects {
       Z: 2.58117509
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -72062,7 +73972,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -72072,7 +73982,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -72092,7 +74001,7 @@ Objects {
       Z: 1010.4978
     }
     Rotation {
-      Yaw: -112.446091
+      Yaw: -112.446068
     }
     Scale {
       X: 2.37458253
@@ -72100,7 +74009,7 @@ Objects {
       Z: 2.38915825
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -72129,7 +74038,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -72139,7 +74048,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -72167,7 +74075,7 @@ Objects {
       Z: 2.58117509
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -72196,7 +74104,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -72206,7 +74114,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -72227,7 +74134,7 @@ Objects {
     }
     Rotation {
       Pitch: 1.75295424
-      Yaw: -105.758667
+      Yaw: -105.758675
     }
     Scale {
       X: 1.98656321
@@ -72235,7 +74142,7 @@ Objects {
       Z: 3.42411566
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -72264,7 +74171,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -72274,7 +74181,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -72294,7 +74200,7 @@ Objects {
       Z: 926.104614
     }
     Rotation {
-      Yaw: 30.9687042
+      Yaw: 30.9687138
     }
     Scale {
       X: 1.55106246
@@ -72302,7 +74208,7 @@ Objects {
       Z: 2.2
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -72331,7 +74237,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -72341,7 +74247,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -72369,7 +74274,7 @@ Objects {
       Z: 2.20000029
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -72398,7 +74303,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -72408,7 +74313,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -72428,7 +74332,7 @@ Objects {
       Z: 931.104614
     }
     Rotation {
-      Yaw: 93.7928391
+      Yaw: 93.7928314
       Roll: -179.999954
     }
     Scale {
@@ -72437,7 +74341,7 @@ Objects {
       Z: 2.20000029
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -72466,7 +74370,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -72476,7 +74380,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -72496,8 +74399,8 @@ Objects {
       Z: 961.673462
     }
     Rotation {
-      Pitch: -5.10064697
-      Yaw: -128.656189
+      Pitch: -5.10064173
+      Yaw: -128.656158
     }
     Scale {
       X: 2.37459803
@@ -72505,7 +74408,7 @@ Objects {
       Z: 3.61851859
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -72534,7 +74437,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -72544,7 +74447,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -72572,7 +74474,7 @@ Objects {
       Z: 2.38915825
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -72601,7 +74503,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -72611,7 +74513,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -72641,7 +74542,7 @@ Objects {
       Z: 2.38915825
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -72670,7 +74571,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -72680,7 +74581,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -72700,8 +74600,8 @@ Objects {
       Z: 986.65387
     }
     Rotation {
-      Pitch: -2.77487183
-      Yaw: -119.815491
+      Pitch: -2.7748735
+      Yaw: -119.815498
     }
     Scale {
       X: 1.81051099
@@ -72709,7 +74609,7 @@ Objects {
       Z: 3.41458297
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -72738,7 +74638,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -72748,7 +74648,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -72768,7 +74667,7 @@ Objects {
       Z: 1010.4978
     }
     Rotation {
-      Yaw: -116.943832
+      Yaw: -116.943817
     }
     Scale {
       X: 2.37458253
@@ -72776,7 +74675,7 @@ Objects {
       Z: 2.38915825
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -72805,7 +74704,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -72815,7 +74714,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -72843,7 +74741,7 @@ Objects {
       Z: 2.58117509
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -72872,7 +74770,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -72882,7 +74780,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -72902,7 +74799,7 @@ Objects {
       Z: 1059.82898
     }
     Rotation {
-      Yaw: -108.947327
+      Yaw: -108.947319
     }
     Scale {
       X: 2.37458253
@@ -72910,7 +74807,7 @@ Objects {
       Z: 3.19911575
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -72939,7 +74836,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -72949,7 +74846,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -72969,7 +74865,8 @@ Objects {
       Z: 1046.71375
     }
     Rotation {
-      Yaw: -113.791107
+      Yaw: -113.790604
+      Roll: -5.20272827
     }
     Scale {
       X: 2.37458968
@@ -72977,7 +74874,7 @@ Objects {
       Z: 2.58117509
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -73006,7 +74903,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -73016,7 +74913,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -73031,12 +74927,13 @@ Objects {
   Name: "Sandstone"
   Transform {
     Location {
-      X: 305.621094
-      Y: -9114.68848
+      X: 327.248047
+      Y: -9085.47168
       Z: 1066.42114
     }
     Rotation {
-      Yaw: -108.729813
+      Yaw: -108.729828
+      Roll: -10.5761108
     }
     Scale {
       X: 2.37458253
@@ -73044,7 +74941,7 @@ Objects {
       Z: 2.38915825
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -73073,7 +74970,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -73083,7 +74980,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -73111,7 +75007,7 @@ Objects {
       Z: 2.38915825
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -73140,7 +75036,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -73150,7 +75046,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -73170,8 +75065,8 @@ Objects {
       Z: 1075.13696
     }
     Rotation {
-      Pitch: -1.44754028
-      Yaw: -116.977264
+      Pitch: -1.44753551
+      Yaw: -116.977242
       Roll: 0.0805808306
     }
     Scale {
@@ -73180,7 +75075,7 @@ Objects {
       Z: 3.37564039
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -73209,7 +75104,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -73219,7 +75114,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -73240,7 +75134,8 @@ Objects {
     }
     Rotation {
       Pitch: 4.55980682
-      Yaw: -112.94873
+      Yaw: -112.948692
+      Roll: 2.14121116e-07
     }
     Scale {
       X: 2.217062
@@ -73248,7 +75143,7 @@ Objects {
       Z: 3.01667929
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -73277,7 +75172,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -73287,7 +75182,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -73315,7 +75209,7 @@ Objects {
       Z: 2.2
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -73344,7 +75238,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -73354,7 +75248,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -73382,7 +75275,7 @@ Objects {
       Z: 2.2
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -73411,7 +75304,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -73421,7 +75314,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -73441,7 +75333,7 @@ Objects {
       Z: 1027.62598
     }
     Rotation {
-      Yaw: 51.4257355
+      Yaw: 51.4257469
     }
     Scale {
       X: 3.69249129
@@ -73449,7 +75341,7 @@ Objects {
       Z: 2.2
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -73478,7 +75370,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -73488,7 +75380,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -73508,7 +75399,7 @@ Objects {
       Z: 1027.62622
     }
     Rotation {
-      Yaw: 43.0507851
+      Yaw: 43.0508
     }
     Scale {
       X: 1.89999974
@@ -73516,7 +75407,7 @@ Objects {
       Z: 2.2
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -73545,7 +75436,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -73555,7 +75446,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -73575,7 +75465,7 @@ Objects {
       Z: 1027.62622
     }
     Rotation {
-      Yaw: -127.844772
+      Yaw: -127.844757
     }
     Scale {
       X: 3.3461566
@@ -73583,7 +75473,7 @@ Objects {
       Z: 2.2
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -73612,7 +75502,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -73622,7 +75512,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -73642,7 +75531,7 @@ Objects {
       Z: 926.104797
     }
     Rotation {
-      Yaw: -134.573013
+      Yaw: -134.573
     }
     Scale {
       X: 3.55935478
@@ -73650,7 +75539,7 @@ Objects {
       Z: 2.2
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -73679,7 +75568,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -73689,7 +75578,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -73717,7 +75605,7 @@ Objects {
       Z: 2.60656166
     }
   }
-  ParentId: 13102845937134120119
+  ParentId: 921302885554344351
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -73746,7 +75634,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -73756,7 +75644,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -73784,7 +75671,54 @@ Objects {
     }
   }
   ParentId: 9160281066032245732
-  ChildIds: 12762981605275096879
+  ChildIds: 14775973613683628208
+  ChildIds: 12966185604622458144
+  ChildIds: 6159193119124596399
+  ChildIds: 17323496143985805637
+  ChildIds: 11117873868294362077
+  ChildIds: 9724577803806397329
+  ChildIds: 13613364439378459868
+  ChildIds: 1017570400452065525
+  ChildIds: 8164228259163012042
+  ChildIds: 2455454796263168249
+  ChildIds: 12391873485452018516
+  ChildIds: 6033911605655397749
+  ChildIds: 5113912690591728487
+  ChildIds: 8048024671872427884
+  ChildIds: 2638921647993413736
+  ChildIds: 12776574991579130268
+  ChildIds: 14853028855815041388
+  ChildIds: 671286964339478586
+  ChildIds: 12625225113569796165
+  ChildIds: 14605747320320330916
+  ChildIds: 15963492150271382473
+  ChildIds: 17618347276146130076
+  ChildIds: 10818485969691018769
+  ChildIds: 3149812135441198669
+  ChildIds: 10223219352608785439
+  ChildIds: 11480412963821898416
+  ChildIds: 7777625015725987467
+  ChildIds: 11174888717012591374
+  ChildIds: 18276485971761175140
+  ChildIds: 18171354022911645640
+  ChildIds: 4670309740829267850
+  ChildIds: 15837994407115096658
+  ChildIds: 2802581139660222318
+  ChildIds: 3955067448143514626
+  ChildIds: 6140352993233474473
+  ChildIds: 15124683567671685613
+  ChildIds: 8763610569256983468
+  ChildIds: 7367788543145901775
+  ChildIds: 6299720903091933702
+  ChildIds: 11573852952606159724
+  ChildIds: 6426922507861714052
+  ChildIds: 5276108216707762670
+  ChildIds: 17798963904212110402
+  ChildIds: 10536644129402564729
+  ChildIds: 8489010397184879212
+  ChildIds: 66700635086167663
+  ChildIds: 14303797236589581615
+  ChildIds: 13060862904177391272
   ChildIds: 15992441867554638241
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -73830,17 +75764,10 @@ Objects {
   ChildIds: 5748959250387540932
   ChildIds: 9311945449201263470
   ChildIds: 14943534113636806877
-  ChildIds: 17202480330612323672
-  ChildIds: 10245136794430500355
-  ChildIds: 12180371447389827067
-  ChildIds: 2984804890502470866
-  ChildIds: 16779498655653568308
-  ChildIds: 16847103652230115858
   ChildIds: 12753707206572005341
   ChildIds: 3962267880988694834
   ChildIds: 17209140346659165126
   ChildIds: 2298907266719048504
-  ChildIds: 10859788997185195659
   ChildIds: 15921773476628300113
   ChildIds: 2045836490841838135
   ChildIds: 6073847156968166029
@@ -73863,9 +75790,6 @@ Objects {
   ChildIds: 17783119967680144789
   ChildIds: 9189766369166169326
   ChildIds: 3118770233209543503
-  ChildIds: 11586500693820349638
-  ChildIds: 6188651141543114880
-  ChildIds: 6786688457901061744
   ChildIds: 10511611076951801654
   ChildIds: 4063519920098048894
   ChildIds: 4346450837048271881
@@ -73931,7 +75855,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -73986,7 +75910,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -74041,214 +75965,11 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
       Id: 8914538356634040004
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 6786688457901061744
-  Name: "Urban Damaged Concrete Chunk 03"
-  Transform {
-    Location {
-      X: -881.918945
-      Y: -690.679688
-    }
-    Rotation {
-      Pitch: -5.12408257
-      Yaw: -49.5426331
-      Roll: 177.005341
-    }
-    Scale {
-      X: 0.321722776
-      Y: 0.259539
-      Z: 1.34154809
-    }
-  }
-  ParentId: 15992441867554638241
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13617846795509475504
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_DamagedEdge:color"
-      Color {
-        R: 0.606
-        G: 0.393862277
-        B: 0.25512597
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14345153403763633307
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 6188651141543114880
-  Name: "Urban Damaged Concrete Chunk 03"
-  Transform {
-    Location {
-      X: -1176.05347
-      Y: -581.779297
-      Z: 0.242797852
-    }
-    Rotation {
-      Pitch: -2.31655407
-      Yaw: -146.993195
-      Roll: -174.536469
-    }
-    Scale {
-      X: 0.698614
-      Y: 0.172494844
-      Z: 1.34154606
-    }
-  }
-  ParentId: 15992441867554638241
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13617846795509475504
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_DamagedEdge:color"
-      Color {
-        R: 0.606
-        G: 0.393862277
-        B: 0.25512597
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14345153403763633307
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 11586500693820349638
-  Name: "Urban Damaged Concrete Chunk 03"
-  Transform {
-    Location {
-      X: -725.744629
-      Y: 24.1367188
-      Z: 556.747803
-    }
-    Rotation {
-      Pitch: 23.1739025
-      Yaw: 43.6317673
-      Roll: -4.51107788
-    }
-    Scale {
-      X: 1.32436514
-      Y: 1.11271179
-      Z: 1.99998844
-    }
-  }
-  ParentId: 15992441867554638241
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13617846795509475504
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_DamagedEdge:color"
-      Color {
-        R: 0.606
-        G: 0.393862277
-        B: 0.25512597
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5483772166785938526
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -74329,7 +76050,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -74389,7 +76110,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -74474,7 +76195,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -74534,7 +76255,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -74679,7 +76400,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -74764,7 +76485,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -74824,7 +76545,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -74909,7 +76630,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -74969,7 +76690,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -75054,7 +76775,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -75114,7 +76835,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -75199,7 +76920,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -75259,7 +76980,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -75344,7 +77065,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -75404,7 +77125,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -75489,7 +77210,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -75549,7 +77270,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -75617,7 +77338,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -75702,7 +77423,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -75762,7 +77483,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -75847,7 +77568,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -75907,7 +77628,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -75992,7 +77713,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -76052,7 +77773,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -76106,7 +77827,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -76160,7 +77881,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -76215,7 +77936,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -76269,7 +77990,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -76324,7 +78045,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -76379,7 +78100,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -76434,7 +78155,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -76488,7 +78209,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -76543,79 +78264,11 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
       Id: 8914538356634040004
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 10859788997185195659
-  Name: "Urban Damaged Concrete Chunk 03"
-  Transform {
-    Location {
-      X: 1264.58276
-      Y: -575.837891
-      Z: 134.549561
-    }
-    Rotation {
-      Pitch: -5.79867315
-      Yaw: -67.6448059
-      Roll: 178.742676
-    }
-    Scale {
-      X: 0.650787354
-      Y: 0.273003548
-      Z: 1.16634083
-    }
-  }
-  ParentId: 15992441867554638241
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13617846795509475504
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_DamagedEdge:color"
-      Color {
-        R: 0.606
-        G: 0.393862277
-        B: 0.25512597
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14345153403763633307
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -76679,7 +78332,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -76747,7 +78400,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -76815,7 +78468,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -76870,419 +78523,11 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
       Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 16847103652230115858
-  Name: "Urban Damaged Concrete Chunk 03"
-  Transform {
-    Location {
-      X: -2021.43481
-      Y: 338.773438
-      Z: 80.2072144
-    }
-    Rotation {
-      Pitch: -0.523192465
-      Yaw: 5.05763721
-      Roll: 174.089813
-    }
-    Scale {
-      X: 0.457039446
-      Y: 0.191726819
-      Z: 0.819105864
-    }
-  }
-  ParentId: 15992441867554638241
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13617846795509475504
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_DamagedEdge:color"
-      Color {
-        R: 0.606
-        G: 0.393862277
-        B: 0.25512597
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14345153403763633307
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 16779498655653568308
-  Name: "Urban Damaged Concrete Chunk 03"
-  Transform {
-    Location {
-      X: -1462.70532
-      Y: -235.027344
-      Z: 38.6271973
-    }
-    Rotation {
-      Pitch: -4.05294514
-      Yaw: -32.8868942
-      Roll: 175.663437
-    }
-    Scale {
-      X: 0.650787354
-      Y: 0.273003548
-      Z: 1.16634083
-    }
-  }
-  ParentId: 15992441867554638241
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13617846795509475504
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_DamagedEdge:color"
-      Color {
-        R: 0.606
-        G: 0.393862277
-        B: 0.25512597
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14345153403763633307
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 2984804890502470866
-  Name: "Urban Damaged Concrete Chunk 03"
-  Transform {
-    Location {
-      X: -1864.4021
-      Y: 2.58007812
-      Z: 49.0317383
-    }
-    Rotation {
-      Pitch: -2.31655407
-      Yaw: -146.99321
-      Roll: -174.536469
-    }
-    Scale {
-      X: 0.748549521
-      Y: 0.314014494
-      Z: 1.34155
-    }
-  }
-  ParentId: 15992441867554638241
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13617846795509475504
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_DamagedEdge:color"
-      Color {
-        R: 0.606
-        G: 0.393862277
-        B: 0.25512597
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14345153403763633307
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 12180371447389827067
-  Name: "Urban Damaged Concrete Chunk 03"
-  Transform {
-    Location {
-      X: 102.580811
-      Y: -778.015625
-      Z: 132.462769
-    }
-    Rotation {
-      Pitch: -0.523192465
-      Yaw: 5.05763435
-      Roll: 174.089828
-    }
-    Scale {
-      X: 0.457039446
-      Y: 0.191726819
-      Z: 0.819105864
-    }
-  }
-  ParentId: 15992441867554638241
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13617846795509475504
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_DamagedEdge:color"
-      Color {
-        R: 0.606
-        G: 0.393862277
-        B: 0.25512597
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14345153403763633307
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 10245136794430500355
-  Name: "Urban Damaged Concrete Chunk 03"
-  Transform {
-    Location {
-      X: 249.261719
-      Y: -967.113281
-      Z: 110.443054
-    }
-    Rotation {
-      Pitch: -5.79867315
-      Yaw: -67.6448059
-      Roll: 178.742676
-    }
-    Scale {
-      X: 0.650787354
-      Y: 0.273003548
-      Z: 1.16634083
-    }
-  }
-  ParentId: 15992441867554638241
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13617846795509475504
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_DamagedEdge:color"
-      Color {
-        R: 0.606
-        G: 0.393862277
-        B: 0.25512597
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14345153403763633307
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 17202480330612323672
-  Name: "Urban Damaged Concrete Chunk 03"
-  Transform {
-    Location {
-      X: -36.2436523
-      Y: -793.373047
-      Z: 82.1381836
-    }
-    Rotation {
-      Pitch: -2.31655407
-      Yaw: -146.993225
-      Roll: -174.536469
-    }
-    Scale {
-      X: 1.11595428
-      Y: 0.468139827
-      Z: 2.00001287
-    }
-  }
-  ParentId: 15992441867554638241
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13617846795509475504
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_DamagedEdge:color"
-      Color {
-        R: 0.606
-        G: 0.393862277
-        B: 0.25512597
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14345153403763633307
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -77333,7 +78578,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -77401,7 +78646,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -77512,7 +78757,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -77580,7 +78825,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -77648,7 +78893,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -77716,7 +78961,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -77784,7 +79029,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -77852,7 +79097,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -77920,7 +79165,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -77988,7 +79233,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -78056,7 +79301,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -78124,7 +79369,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -78192,7 +79437,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -78260,7 +79505,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -78328,7 +79573,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -78396,7 +79641,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -78464,7 +79709,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -78532,7 +79777,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -78600,7 +79845,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -78667,7 +79912,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -78735,7 +79980,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -78803,7 +80048,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -78823,82 +80068,6 @@ Objects {
   }
 }
 Objects {
-  Id: 12762981605275096879
-  Name: "Group"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15268974022759026673
-  ChildIds: 14775973613683628208
-  ChildIds: 12966185604622458144
-  ChildIds: 6159193119124596399
-  ChildIds: 17323496143985805637
-  ChildIds: 11117873868294362077
-  ChildIds: 9724577803806397329
-  ChildIds: 13613364439378459868
-  ChildIds: 1017570400452065525
-  ChildIds: 8164228259163012042
-  ChildIds: 2455454796263168249
-  ChildIds: 12391873485452018516
-  ChildIds: 6033911605655397749
-  ChildIds: 5113912690591728487
-  ChildIds: 8048024671872427884
-  ChildIds: 2638921647993413736
-  ChildIds: 12776574991579130268
-  ChildIds: 14853028855815041388
-  ChildIds: 671286964339478586
-  ChildIds: 12625225113569796165
-  ChildIds: 14605747320320330916
-  ChildIds: 15963492150271382473
-  ChildIds: 17618347276146130076
-  ChildIds: 10818485969691018769
-  ChildIds: 3149812135441198669
-  ChildIds: 10223219352608785439
-  ChildIds: 11480412963821898416
-  ChildIds: 7777625015725987467
-  ChildIds: 11174888717012591374
-  ChildIds: 18276485971761175140
-  ChildIds: 18171354022911645640
-  ChildIds: 4670309740829267850
-  ChildIds: 15837994407115096658
-  ChildIds: 2802581139660222318
-  ChildIds: 3955067448143514626
-  ChildIds: 6140352993233474473
-  ChildIds: 15124683567671685613
-  ChildIds: 8763610569256983468
-  ChildIds: 7367788543145901775
-  ChildIds: 6299720903091933702
-  ChildIds: 11573852952606159724
-  ChildIds: 6426922507861714052
-  ChildIds: 5276108216707762670
-  ChildIds: 17798963904212110402
-  ChildIds: 10536644129402564729
-  ChildIds: 8489010397184879212
-  ChildIds: 66700635086167663
-  ChildIds: 14303797236589581615
-  ChildIds: 13060862904177391272
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
   Id: 13060862904177391272
   Name: "Cliff"
   Transform {
@@ -78908,9 +80077,9 @@ Objects {
       Z: 1962.7085
     }
     Rotation {
-      Pitch: -4.24823
+      Pitch: -4.24822712
       Yaw: -138.719254
-      Roll: -5.27185059
+      Roll: -5.27185392
     }
     Scale {
       X: 3.03175235
@@ -78918,7 +80087,7 @@ Objects {
       Z: 5.97512054
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -78946,7 +80115,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -78956,7 +80125,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -78971,7 +80139,7 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: 6390.49561
+      X: 6390.49609
       Y: -8762.1
       Z: 1311.73
     }
@@ -78986,7 +80154,7 @@ Objects {
       Z: 3.51939917
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -79014,7 +80182,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -79024,7 +80192,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -79039,14 +80206,14 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: 4982.62939
+      X: 4982.62891
       Y: 984.787109
       Z: 862.090393
     }
     Rotation {
       Pitch: 3.13670945
-      Yaw: 164.302246
-      Roll: -3.33667159
+      Yaw: 164.302231
+      Roll: -3.33667207
     }
     Scale {
       X: 4.52697659
@@ -79054,7 +80221,7 @@ Objects {
       Z: 3.51939917
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -79082,7 +80249,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -79092,7 +80259,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -79107,14 +80273,14 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: 6535.85693
+      X: 6535.85742
       Y: -3214.63818
       Z: 862.090454
     }
     Rotation {
       Pitch: 3.13670945
-      Yaw: -4.02261686
-      Roll: -3.33667111
+      Yaw: -4.02261829
+      Roll: -3.33667159
     }
     Scale {
       X: 4.52697659
@@ -79122,7 +80288,7 @@ Objects {
       Z: 3.51939917
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -79150,7 +80316,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -79160,7 +80326,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -79175,14 +80340,14 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: 2550.16455
+      X: 2550.16406
       Y: 3777.26172
       Z: 865.319824
     }
     Rotation {
       Pitch: 3.13670945
       Yaw: -95.4907227
-      Roll: -3.33667135
+      Roll: -3.33667207
     }
     Scale {
       X: 4.52697659
@@ -79190,7 +80355,7 @@ Objects {
       Z: 3.51939917
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -79218,7 +80383,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -79228,7 +80393,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -79249,7 +80413,7 @@ Objects {
     }
     Rotation {
       Pitch: -0.468018204
-      Yaw: -17.9403248
+      Yaw: -17.9403343
       Roll: 85.9507446
     }
     Scale {
@@ -79258,7 +80422,7 @@ Objects {
       Z: 13.7867336
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -79282,7 +80446,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -79292,7 +80456,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -79322,7 +80485,7 @@ Objects {
       Z: 13.7867413
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -79346,7 +80509,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -79356,7 +80519,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -79377,8 +80539,8 @@ Objects {
     }
     Rotation {
       Pitch: -2.94403
-      Yaw: -83.7161407
-      Roll: 4.98554039
+      Yaw: -83.7161255
+      Roll: 4.98554325
     }
     Scale {
       X: 3.44059777
@@ -79386,7 +80548,7 @@ Objects {
       Z: 7.12073231
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -79414,7 +80576,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -79424,7 +80586,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -79439,12 +80600,12 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: 5128.00732
+      X: 5128.00781
       Y: 13155.4795
     }
     Rotation {
       Pitch: 2.7591846
-      Yaw: 89.5962219
+      Yaw: 89.5962067
       Roll: 96.3342361
     }
     Scale {
@@ -79453,7 +80614,7 @@ Objects {
       Z: 13.7867413
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -79477,7 +80638,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -79487,7 +80648,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -79508,8 +80668,8 @@ Objects {
     }
     Rotation {
       Pitch: -2.03996563
-      Yaw: -46.117218
-      Roll: 86.8282776
+      Yaw: -46.1172371
+      Roll: 86.82827
     }
     Scale {
       X: 4.6916461
@@ -79517,7 +80677,7 @@ Objects {
       Z: 13.7867413
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -79541,7 +80701,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -79551,7 +80711,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -79573,7 +80732,7 @@ Objects {
     Rotation {
       Pitch: -0.42929104
       Yaw: -84.3544846
-      Roll: 8.74298286
+      Roll: 8.7429924
     }
     Scale {
       X: 14.4492884
@@ -79581,7 +80740,7 @@ Objects {
       Z: 37.6101837
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -79609,7 +80768,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -79619,7 +80778,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -79641,7 +80799,7 @@ Objects {
     Rotation {
       Pitch: -1.04818809
       Yaw: -91.315834
-      Roll: -13.9848709
+      Roll: -13.984889
     }
     Scale {
       X: 14.4492884
@@ -79649,7 +80807,7 @@ Objects {
       Z: 37.6101837
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -79677,7 +80835,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -79687,7 +80845,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -79708,8 +80865,8 @@ Objects {
     }
     Rotation {
       Pitch: -1.0481813
-      Yaw: 74.2103653
-      Roll: -13.9824266
+      Yaw: 74.2103348
+      Roll: -13.9824438
     }
     Scale {
       X: 14.4492884
@@ -79717,7 +80874,7 @@ Objects {
       Z: 37.6101837
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -79745,7 +80902,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -79755,7 +80912,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -79777,7 +80933,7 @@ Objects {
     Rotation {
       Pitch: 1.78654516
       Yaw: 98.9852524
-      Roll: 5.50580502
+      Roll: 5.50580835
     }
     Scale {
       X: 15.1004419
@@ -79785,7 +80941,7 @@ Objects {
       Z: 31.2521839
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -79813,7 +80969,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -79823,7 +80979,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -79844,8 +80999,8 @@ Objects {
     }
     Rotation {
       Pitch: -1.68887341
-      Yaw: -63.1847115
-      Roll: 16.3148937
+      Yaw: -63.1847229
+      Roll: 16.3149071
     }
     Scale {
       X: 6.06724739
@@ -79853,7 +81008,7 @@ Objects {
       Z: 6.53666306
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -79881,7 +81036,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -79891,7 +81046,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -79921,7 +81075,7 @@ Objects {
       Z: 13.7867413
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -79945,7 +81099,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -79955,7 +81109,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -79975,9 +81128,9 @@ Objects {
       Z: 2732.54248
     }
     Rotation {
-      Pitch: -5.57012939
+      Pitch: -5.57012129
       Yaw: 135.30925
-      Roll: 3.84915686
+      Roll: 3.84915757
     }
     Scale {
       X: 5.72899151
@@ -79985,7 +81138,7 @@ Objects {
       Z: 13.4746323
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -80013,7 +81166,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -80023,7 +81176,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -80043,9 +81195,9 @@ Objects {
       Z: 1763.05029
     }
     Rotation {
-      Pitch: -2.74481201
+      Pitch: -2.744807
       Yaw: 177.42804
-      Roll: -6.69918823
+      Roll: -6.699193
     }
     Scale {
       X: 6.01326609
@@ -80053,7 +81205,7 @@ Objects {
       Z: 17.3463898
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -80081,7 +81233,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -80091,7 +81243,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -80113,7 +81264,7 @@ Objects {
     Rotation {
       Pitch: -0.832975686
       Yaw: 172.115341
-      Roll: 0.0518879
+      Roll: 0.0518878922
     }
     Scale {
       X: 7.26835966
@@ -80121,7 +81272,7 @@ Objects {
       Z: 13.0530567
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -80145,7 +81296,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -80155,7 +81306,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -80185,7 +81335,7 @@ Objects {
       Z: 12.9000006
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -80213,7 +81363,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -80223,7 +81373,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -80244,8 +81393,8 @@ Objects {
     }
     Rotation {
       Pitch: -0.0224781521
-      Yaw: -141.482697
-      Roll: 87.3193893
+      Yaw: -141.482712
+      Roll: 87.3193817
     }
     Scale {
       X: 3.53738737
@@ -80253,7 +81402,7 @@ Objects {
       Z: -9.53406906
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -80281,7 +81430,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -80291,7 +81440,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -80312,8 +81460,8 @@ Objects {
     }
     Rotation {
       Pitch: -0.350388676
-      Yaw: -168.729141
-      Roll: 88.9643631
+      Yaw: -168.729111
+      Roll: 88.9643555
     }
     Scale {
       X: 3.53738737
@@ -80321,7 +81469,7 @@ Objects {
       Z: -9.53406906
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -80349,7 +81497,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -80359,7 +81507,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -80374,14 +81521,14 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: 3403.97607
+      X: 3403.97656
       Y: 1939.84473
       Z: 937.154297
     }
     Rotation {
       Pitch: -1.43186712
       Yaw: 122.582954
-      Roll: 90.8720856
+      Roll: 90.8720779
     }
     Scale {
       X: 4.99147
@@ -80389,7 +81536,7 @@ Objects {
       Z: 13.7867393
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -80413,7 +81560,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -80423,7 +81570,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -80438,14 +81584,14 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: 5486.76318
+      X: 5486.76367
       Y: -2435.26367
       Z: 1400.75037
     }
     Rotation {
       Pitch: -8.06704
       Yaw: -70.6558
-      Roll: 78.7487869
+      Roll: 78.748764
     }
     Scale {
       X: 5.84528589
@@ -80453,7 +81599,7 @@ Objects {
       Z: 5.84528589
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -80477,7 +81623,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -80487,7 +81633,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -80507,7 +81652,7 @@ Objects {
       Z: 1369.58154
     }
     Rotation {
-      Yaw: -55.7539177
+      Yaw: -55.7539024
     }
     Scale {
       X: 10.3460846
@@ -80515,7 +81660,7 @@ Objects {
       Z: 6.6279
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -80543,7 +81688,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -80553,7 +81698,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -80574,8 +81718,8 @@ Objects {
     }
     Rotation {
       Pitch: 3.99998403
-      Yaw: -15.6809435
-      Roll: -121.641098
+      Yaw: -15.6809626
+      Roll: -121.641113
     }
     Scale {
       X: 4.22412491
@@ -80583,7 +81727,7 @@ Objects {
       Z: 12.0988369
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -80607,7 +81751,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -80617,7 +81761,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -80638,8 +81781,8 @@ Objects {
     }
     Rotation {
       Pitch: 6.27120638
-      Yaw: -19.5913029
-      Roll: -6.73203516
+      Yaw: -19.591301
+      Roll: -6.73204088
     }
     Scale {
       X: 6.01326609
@@ -80647,7 +81790,7 @@ Objects {
       Z: 17.3463898
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -80675,7 +81818,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -80685,7 +81828,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -80706,8 +81848,8 @@ Objects {
     }
     Rotation {
       Pitch: -5.33398819
-      Yaw: 88.9097137
-      Roll: 88.5517273
+      Yaw: 88.9097
+      Roll: 88.5517197
     }
     Scale {
       X: 4.92097712
@@ -80715,7 +81857,7 @@ Objects {
       Z: 12.0988398
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -80739,7 +81881,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -80749,7 +81891,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -80764,14 +81905,14 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: 5716.88916
+      X: 5716.88867
       Y: -8303.09375
       Z: 1146.44592
     }
     Rotation {
       Pitch: -0.65032959
-      Yaw: 81.8961411
-      Roll: 93.7357788
+      Yaw: 81.8961334
+      Roll: 93.7357864
     }
     Scale {
       X: 4.99147
@@ -80779,7 +81920,7 @@ Objects {
       Z: 13.7867393
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -80803,7 +81944,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -80813,7 +81954,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -80828,14 +81968,14 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: 4500.61475
+      X: 4500.61523
       Y: 10.8720703
       Z: 1274.46362
     }
     Rotation {
       Pitch: -0.118776985
       Yaw: -68.130928
-      Roll: -9.31158
+      Roll: -9.3115921
     }
     Scale {
       X: 7.268363
@@ -80843,7 +81983,7 @@ Objects {
       Z: 11.4519272
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -80867,7 +82007,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -80877,7 +82017,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -80898,8 +82037,8 @@ Objects {
     }
     Rotation {
       Pitch: -3.6299994
-      Yaw: -73.3812485
-      Roll: 2.42244
+      Yaw: -73.3812256
+      Roll: 2.42244029
     }
     Scale {
       X: 4.54740524
@@ -80907,7 +82046,7 @@ Objects {
       Z: 7.89037514
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -80927,7 +82066,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -80937,7 +82076,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -80967,7 +82105,7 @@ Objects {
       Z: 25.9471092
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -80987,7 +82125,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -80997,7 +82135,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -81017,9 +82154,9 @@ Objects {
       Z: 1018.14746
     }
     Rotation {
-      Pitch: -6.40203857
-      Yaw: 92.0078049
-      Roll: 12.9699955
+      Pitch: -6.40203142
+      Yaw: 92.0077896
+      Roll: 12.9700146
     }
     Scale {
       X: 5.60969305
@@ -81027,7 +82164,7 @@ Objects {
       Z: 18.2045975
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -81047,7 +82184,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -81057,7 +82194,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -81078,7 +82214,7 @@ Objects {
     }
     Rotation {
       Pitch: 0.963404953
-      Yaw: -73.7043839
+      Yaw: -73.704361
       Roll: 86.9051743
     }
     Scale {
@@ -81087,7 +82223,7 @@ Objects {
       Z: 12.0988216
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -81111,7 +82247,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -81121,7 +82257,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -81143,7 +82278,7 @@ Objects {
     Rotation {
       Pitch: -2.51385784
       Yaw: 85.7596283
-      Roll: -8.32755375
+      Roll: -8.32756424
     }
     Scale {
       X: 2.28992724
@@ -81151,7 +82286,7 @@ Objects {
       Z: 2.88942504
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -81171,7 +82306,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -81181,7 +82316,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -81211,7 +82345,7 @@ Objects {
       Z: 2.88942456
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -81231,7 +82365,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -81241,7 +82375,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -81261,7 +82394,7 @@ Objects {
       Z: 1353.38184
     }
     Rotation {
-      Yaw: -6.74305868
+      Yaw: -6.74306393
     }
     Scale {
       X: 6.06724739
@@ -81269,7 +82402,7 @@ Objects {
       Z: 6.53666306
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -81297,7 +82430,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -81307,7 +82440,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -81327,7 +82459,7 @@ Objects {
       Z: 1027.77637
     }
     Rotation {
-      Yaw: 116.332184
+      Yaw: 116.332161
     }
     Scale {
       X: -1.45
@@ -81335,7 +82467,7 @@ Objects {
       Z: 2.55368614
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -81364,7 +82496,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -81374,7 +82506,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -81394,7 +82525,7 @@ Objects {
       Z: 919.419
     }
     Rotation {
-      Yaw: 82.3502197
+      Yaw: 82.3502045
     }
     Scale {
       X: 2.4
@@ -81402,7 +82533,7 @@ Objects {
       Z: 3.75837469
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -81431,7 +82562,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -81441,7 +82572,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -81463,7 +82593,7 @@ Objects {
     Rotation {
       Pitch: 1.48589396
       Yaw: -109.79039
-      Roll: -1.5645752
+      Roll: -1.56457508
     }
     Scale {
       X: 1.81467795
@@ -81471,7 +82601,7 @@ Objects {
       Z: 2.32195663
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -81500,7 +82630,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -81510,7 +82640,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -81531,7 +82660,7 @@ Objects {
     }
     Rotation {
       Pitch: 1.2828939
-      Yaw: -95.8076553
+      Yaw: -95.8076401
       Roll: -179.665558
     }
     Scale {
@@ -81540,7 +82669,7 @@ Objects {
       Z: 2.27604342
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -81569,7 +82698,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -81579,7 +82708,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -81607,7 +82735,7 @@ Objects {
       Z: 2.20000029
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -81636,7 +82764,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -81646,7 +82774,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -81675,7 +82802,7 @@ Objects {
       Z: 2.20000029
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -81704,7 +82831,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -81714,7 +82841,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -81734,7 +82860,7 @@ Objects {
       Z: 1022.27875
     }
     Rotation {
-      Yaw: 105.206818
+      Yaw: 105.206825
     }
     Scale {
       X: 1
@@ -81742,7 +82868,7 @@ Objects {
       Z: 1.9
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -81771,7 +82897,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -81781,7 +82907,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -81809,7 +82934,7 @@ Objects {
       Z: 1.9
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -81838,7 +82963,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -81848,7 +82973,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -81868,7 +82992,7 @@ Objects {
       Z: 1060.92871
     }
     Rotation {
-      Pitch: -6.2946167
+      Pitch: -6.29462
       Yaw: -82.059967
       Roll: -0.553985596
     }
@@ -81878,7 +83002,7 @@ Objects {
       Z: 1.67296696
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -81907,7 +83031,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -81917,7 +83041,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -81945,7 +83068,7 @@ Objects {
       Z: 2.58728027
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -81974,7 +83097,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -81984,7 +83107,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -82012,7 +83134,7 @@ Objects {
       Z: 2.20000029
     }
   }
-  ParentId: 12762981605275096879
+  ParentId: 15268974022759026673
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -82041,7 +83163,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -82051,7 +83173,731 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 6828931764924434663
+  Name: "MergedModel_collision disabled"
+  Transform {
+    Location {
+      X: 239.261078
+      Y: 25012.959
+      Z: 2466.91187
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9160281066032245732
+  ChildIds: 17202480330612323672
+  ChildIds: 10245136794430500355
+  ChildIds: 12180371447389827067
+  ChildIds: 2984804890502470866
+  ChildIds: 16779498655653568308
+  ChildIds: 16847103652230115858
+  ChildIds: 10859788997185195659
+  ChildIds: 11586500693820349638
+  ChildIds: 6188651141543114880
+  ChildIds: 6786688457901061744
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    Model {
+      AggressiveMerge: true
+    }
+  }
+}
+Objects {
+  Id: 6786688457901061744
+  Name: "Urban Damaged Concrete Chunk 03"
+  Transform {
+    Location {
+      X: -43.0950623
+      Y: -285.318359
+      Z: -38.6271973
+    }
+    Rotation {
+      Pitch: -5.12407589
+      Yaw: -49.5426331
+      Roll: 177.005341
+    }
+    Scale {
+      X: 0.321722776
+      Y: 0.259539
+      Z: 1.34154809
+    }
+  }
+  ParentId: 6828931764924434663
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13617846795509475504
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_DamagedEdge:color"
+      Color {
+        R: 0.606
+        G: 0.393862277
+        B: 0.25512597
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14345153403763633307
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 6188651141543114880
+  Name: "Urban Damaged Concrete Chunk 03"
+  Transform {
+    Location {
+      X: -337.229584
+      Y: -176.417969
+      Z: -38.3844
+    }
+    Rotation {
+      Pitch: -2.31655407
+      Yaw: -146.993164
+      Roll: -174.536469
+    }
+    Scale {
+      X: 0.698614
+      Y: 0.172494844
+      Z: 1.34154606
+    }
+  }
+  ParentId: 6828931764924434663
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13617846795509475504
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_DamagedEdge:color"
+      Color {
+        R: 0.606
+        G: 0.393862277
+        B: 0.25512597
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14345153403763633307
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 11586500693820349638
+  Name: "Urban Damaged Concrete Chunk 03"
+  Transform {
+    Location {
+      X: 113.079254
+      Y: 429.498047
+      Z: 518.120605
+    }
+    Rotation {
+      Pitch: 23.1739025
+      Yaw: 43.6317635
+      Roll: -4.51108
+    }
+    Scale {
+      X: 1.32436514
+      Y: 1.11271179
+      Z: 1.99998844
+    }
+  }
+  ParentId: 6828931764924434663
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13617846795509475504
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_DamagedEdge:color"
+      Color {
+        R: 0.606
+        G: 0.393862277
+        B: 0.25512597
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5483772166785938526
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 10859788997185195659
+  Name: "Urban Damaged Concrete Chunk 03"
+  Transform {
+    Location {
+      X: 2103.40674
+      Y: -170.476562
+      Z: 95.9223633
+    }
+    Rotation {
+      Pitch: -5.79867315
+      Yaw: -67.6448059
+      Roll: 178.742676
+    }
+    Scale {
+      X: 0.650787354
+      Y: 0.273003548
+      Z: 1.16634083
+    }
+  }
+  ParentId: 6828931764924434663
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13617846795509475504
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_DamagedEdge:color"
+      Color {
+        R: 0.606
+        G: 0.393862277
+        B: 0.25512597
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14345153403763633307
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 16847103652230115858
+  Name: "Urban Damaged Concrete Chunk 03"
+  Transform {
+    Location {
+      X: -1182.61096
+      Y: 744.134766
+      Z: 41.5800781
+    }
+    Rotation {
+      Pitch: -0.523192465
+      Yaw: 5.05764198
+      Roll: 174.089798
+    }
+    Scale {
+      X: 0.457039446
+      Y: 0.191726819
+      Z: 0.819105864
+    }
+  }
+  ParentId: 6828931764924434663
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13617846795509475504
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_DamagedEdge:color"
+      Color {
+        R: 0.606
+        G: 0.393862277
+        B: 0.25512597
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14345153403763633307
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 16779498655653568308
+  Name: "Urban Damaged Concrete Chunk 03"
+  Transform {
+    Location {
+      X: -623.88147
+      Y: 170.333984
+    }
+    Rotation {
+      Pitch: -4.05294514
+      Yaw: -32.8869362
+      Roll: 175.663437
+    }
+    Scale {
+      X: 0.650787354
+      Y: 0.273003548
+      Z: 1.16634083
+    }
+  }
+  ParentId: 6828931764924434663
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13617846795509475504
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_DamagedEdge:color"
+      Color {
+        R: 0.606
+        G: 0.393862277
+        B: 0.25512597
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14345153403763633307
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 2984804890502470866
+  Name: "Urban Damaged Concrete Chunk 03"
+  Transform {
+    Location {
+      X: -1025.57825
+      Y: 407.941406
+      Z: 10.404541
+    }
+    Rotation {
+      Pitch: -2.31655407
+      Yaw: -146.993164
+      Roll: -174.536469
+    }
+    Scale {
+      X: 0.748549521
+      Y: 0.314014494
+      Z: 1.34155
+    }
+  }
+  ParentId: 6828931764924434663
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13617846795509475504
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_DamagedEdge:color"
+      Color {
+        R: 0.606
+        G: 0.393862277
+        B: 0.25512597
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14345153403763633307
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 12180371447389827067
+  Name: "Urban Damaged Concrete Chunk 03"
+  Transform {
+    Location {
+      X: 941.404663
+      Y: -372.654297
+      Z: 93.8356934
+    }
+    Rotation {
+      Pitch: -0.523192465
+      Yaw: 5.05763865
+      Roll: 174.089798
+    }
+    Scale {
+      X: 0.457039446
+      Y: 0.191726819
+      Z: 0.819105864
+    }
+  }
+  ParentId: 6828931764924434663
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13617846795509475504
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_DamagedEdge:color"
+      Color {
+        R: 0.606
+        G: 0.393862277
+        B: 0.25512597
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14345153403763633307
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 10245136794430500355
+  Name: "Urban Damaged Concrete Chunk 03"
+  Transform {
+    Location {
+      X: 1088.08557
+      Y: -561.751953
+      Z: 71.815918
+    }
+    Rotation {
+      Pitch: -5.79867315
+      Yaw: -67.6448059
+      Roll: 178.742676
+    }
+    Scale {
+      X: 0.650787354
+      Y: 0.273003548
+      Z: 1.16634083
+    }
+  }
+  ParentId: 6828931764924434663
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13617846795509475504
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_DamagedEdge:color"
+      Color {
+        R: 0.606
+        G: 0.393862277
+        B: 0.25512597
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14345153403763633307
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 17202480330612323672
+  Name: "Urban Damaged Concrete Chunk 03"
+  Transform {
+    Location {
+      X: 802.5802
+      Y: -388.011719
+      Z: 43.5109863
+    }
+    Rotation {
+      Pitch: -2.31655407
+      Yaw: -146.993195
+      Roll: -174.536469
+    }
+    Scale {
+      X: 1.11595428
+      Y: 0.468139827
+      Z: 2.00001287
+    }
+  }
+  ParentId: 6828931764924434663
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13617846795509475504
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_DamagedEdge:color"
+      Color {
+        R: 0.606
+        G: 0.393862277
+        B: 0.25512597
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14345153403763633307
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
     StaticMesh {
       Physics {
         Mass: 100
@@ -82079,37 +83925,6 @@ Objects {
     }
   }
   ParentId: 9160281066032245732
-  ChildIds: 17588605924264395954
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    Model {
-      AggressiveMerge: true
-    }
-  }
-}
-Objects {
-  Id: 17588605924264395954
-  Name: "Group"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2683808031947549218
   ChildIds: 6500871412563342959
   ChildIds: 8474701869881390021
   ChildIds: 8392123122389988747
@@ -82169,7 +83984,9 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
-    IsGroup: true
+    Model {
+      AggressiveMerge: true
+    }
   }
 }
 Objects {
@@ -82182,9 +83999,9 @@ Objects {
       Z: 2591.97461
     }
     Rotation {
-      Pitch: -7.10836792
-      Yaw: -27.1253357
-      Roll: 10.2186289
+      Pitch: -7.10836172
+      Yaw: -27.1253185
+      Roll: 10.2186441
     }
     Scale {
       X: 2.22363973
@@ -82192,7 +84009,7 @@ Objects {
       Z: 3.16848946
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -82220,7 +84037,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -82230,7 +84047,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -82250,9 +84066,9 @@ Objects {
       Z: 2588.05078
     }
     Rotation {
-      Pitch: -7.58029175
-      Yaw: 154.812347
-      Roll: 7.28292274
+      Pitch: -7.58028698
+      Yaw: 154.812363
+      Roll: 7.28292894
     }
     Scale {
       X: 2.63843942
@@ -82260,7 +84076,7 @@ Objects {
       Z: 6.00003242
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -82288,7 +84104,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -82298,7 +84114,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -82320,7 +84135,7 @@ Objects {
     Rotation {
       Pitch: 2.36741185
       Yaw: 177.105026
-      Roll: -3.91986084
+      Roll: -3.91986108
     }
     Scale {
       X: 1.97623789
@@ -82328,7 +84143,7 @@ Objects {
       Z: 2.74652457
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -82356,7 +84171,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -82366,7 +84181,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -82387,8 +84201,8 @@ Objects {
     }
     Rotation {
       Pitch: 3.13670945
-      Yaw: 10.7638912
-      Roll: -3.33667
+      Yaw: 10.7639065
+      Roll: -3.33667088
     }
     Scale {
       X: 1.61453652
@@ -82396,7 +84210,7 @@ Objects {
       Z: 2.74652863
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -82424,7 +84238,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -82434,7 +84248,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -82456,7 +84269,7 @@ Objects {
     Rotation {
       Pitch: 3.13670945
       Yaw: -136.326965
-      Roll: -3.33667135
+      Roll: -3.33667231
     }
     Scale {
       X: 3.7790432
@@ -82464,7 +84277,7 @@ Objects {
       Z: 2.74653363
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -82492,7 +84305,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -82502,7 +84315,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -82522,9 +84334,9 @@ Objects {
       Z: 1855.48584
     }
     Rotation {
-      Pitch: 32.0789032
+      Pitch: 32.0788956
       Yaw: -152.206024
-      Roll: 22.8006706
+      Roll: 22.8006458
     }
     Scale {
       X: 7.0285821
@@ -82532,7 +84344,7 @@ Objects {
       Z: 3.61865163
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -82560,7 +84372,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -82570,7 +84382,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -82591,8 +84402,8 @@ Objects {
     }
     Rotation {
       Pitch: 3.13670945
-      Yaw: -112.982651
-      Roll: -3.33667111
+      Yaw: -112.98262
+      Roll: -3.33667183
     }
     Scale {
       X: 7.0285821
@@ -82600,7 +84411,7 @@ Objects {
       Z: 3.61865163
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -82628,7 +84439,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -82638,7 +84449,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -82659,8 +84469,8 @@ Objects {
     }
     Rotation {
       Pitch: 3.13670945
-      Yaw: 10.7638626
-      Roll: -3.33667135
+      Yaw: 10.7638769
+      Roll: -3.33667183
     }
     Scale {
       X: 3.7790451
@@ -82668,7 +84478,7 @@ Objects {
       Z: 2.74653101
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -82696,7 +84506,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -82706,7 +84516,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -82727,8 +84536,8 @@ Objects {
     }
     Rotation {
       Pitch: 3.13670945
-      Yaw: 23.6288033
-      Roll: -3.33667159
+      Yaw: 23.6287842
+      Roll: -3.33667231
     }
     Scale {
       X: 3.7790432
@@ -82736,7 +84545,7 @@ Objects {
       Z: 2.74653363
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -82764,7 +84573,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -82774,7 +84583,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -82796,7 +84604,7 @@ Objects {
     Rotation {
       Pitch: 3.13670945
       Yaw: -161.85936
-      Roll: -3.33667111
+      Roll: -3.33667135
     }
     Scale {
       X: 3.7790432
@@ -82804,7 +84612,7 @@ Objects {
       Z: 2.74653363
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -82832,7 +84640,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -82842,7 +84650,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -82863,8 +84670,8 @@ Objects {
     }
     Rotation {
       Pitch: 3.13670945
-      Yaw: -79.9776459
-      Roll: -3.33667111
+      Yaw: -79.9776077
+      Roll: -3.33667135
     }
     Scale {
       X: 3.7790432
@@ -82872,7 +84679,7 @@ Objects {
       Z: 2.74653363
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -82900,7 +84707,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -82910,7 +84717,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -82931,8 +84737,8 @@ Objects {
     }
     Rotation {
       Pitch: -4.30551863
-      Yaw: 104.155144
-      Roll: -5.22574472
+      Yaw: 104.155167
+      Roll: -5.22574711
     }
     Scale {
       X: 2.36764812
@@ -82940,7 +84746,7 @@ Objects {
       Z: 2.36764812
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -82968,7 +84774,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -82978,7 +84784,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -82999,8 +84804,8 @@ Objects {
     }
     Rotation {
       Pitch: 3.02925014
-      Yaw: 85.4337082
-      Roll: 4.93382406
+      Yaw: 85.4336853
+      Roll: 4.93382549
     }
     Scale {
       X: 15.1004419
@@ -83008,7 +84813,7 @@ Objects {
       Z: 31.2521839
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -83036,7 +84841,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -83046,7 +84851,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -83076,7 +84880,7 @@ Objects {
       Z: 10.7194
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -83104,7 +84908,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -83114,7 +84918,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -83136,7 +84939,7 @@ Objects {
     Rotation {
       Pitch: 5.36950493
       Yaw: 118.624344
-      Roll: 14.5511465
+      Roll: 14.5511656
     }
     Scale {
       X: 15.1004505
@@ -83144,7 +84947,7 @@ Objects {
       Z: 51.9543266
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -83172,7 +84975,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -83182,7 +84985,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -83203,8 +85005,8 @@ Objects {
     }
     Rotation {
       Pitch: -11.7445917
-      Yaw: 114.154663
-      Roll: 14.8021545
+      Yaw: 114.15464
+      Roll: 14.8021736
     }
     Scale {
       X: 15.1004505
@@ -83212,7 +85014,7 @@ Objects {
       Z: 51.9543266
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -83240,7 +85042,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -83250,7 +85052,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -83271,8 +85072,8 @@ Objects {
     }
     Rotation {
       Pitch: -2.75814629
-      Yaw: -71.9465
-      Roll: -4.59881926
+      Yaw: -71.9464798
+      Roll: -4.59882
     }
     Scale {
       X: 6.99306822
@@ -83280,7 +85081,7 @@ Objects {
       Z: 12.9805
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -83308,7 +85109,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -83318,7 +85119,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -83339,8 +85139,8 @@ Objects {
     }
     Rotation {
       Pitch: -2.75814629
-      Yaw: -75.402832
-      Roll: -4.59881973
+      Yaw: -75.4028
+      Roll: -4.59882164
     }
     Scale {
       X: -5.729
@@ -83348,7 +85148,7 @@ Objects {
       Z: 19.711092
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -83376,7 +85176,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -83386,7 +85186,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -83407,7 +85206,7 @@ Objects {
     }
     Rotation {
       Pitch: -6.03343344
-      Yaw: 61.2714386
+      Yaw: 61.2714462
       Roll: 108.925079
     }
     Scale {
@@ -83416,7 +85215,7 @@ Objects {
       Z: 9.48436451
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -83440,7 +85239,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -83450,7 +85249,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -83470,8 +85268,8 @@ Objects {
       Z: 1932.854
     }
     Rotation {
-      Pitch: -6.03338623
-      Yaw: -81.474884
+      Pitch: -6.03338575
+      Yaw: -81.4748688
       Roll: 87.9082794
     }
     Scale {
@@ -83480,7 +85278,7 @@ Objects {
       Z: 5.84528589
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -83504,7 +85302,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -83514,7 +85312,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -83536,7 +85333,7 @@ Objects {
     Rotation {
       Pitch: 0.938529432
       Yaw: -172.905975
-      Roll: 64.4590302
+      Roll: 64.4590454
     }
     Scale {
       X: 6.20422792
@@ -83544,7 +85341,7 @@ Objects {
       Z: 32.7851372
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -83572,7 +85369,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -83582,7 +85379,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -83604,7 +85400,7 @@ Objects {
     Rotation {
       Pitch: -9.912817
       Yaw: 90.009552
-      Roll: 111.841743
+      Roll: 111.841736
     }
     Scale {
       X: 3.30003548
@@ -83612,7 +85408,7 @@ Objects {
       Z: 25.1528225
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -83640,7 +85436,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -83650,7 +85446,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -83671,8 +85466,8 @@ Objects {
     }
     Rotation {
       Pitch: -9.15227509
-      Yaw: 134.552979
-      Roll: -72.8307419
+      Yaw: 134.552948
+      Roll: -72.830719
     }
     Scale {
       X: 4.93034029
@@ -83680,7 +85475,7 @@ Objects {
       Z: 15.0929737
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -83704,7 +85499,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -83714,7 +85509,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -83744,7 +85538,7 @@ Objects {
       Z: 51.9543266
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -83772,7 +85566,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -83782,7 +85576,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -83803,8 +85596,8 @@ Objects {
     }
     Rotation {
       Pitch: -1.61355019
-      Yaw: 140.884415
-      Roll: 6.57332087
+      Yaw: 140.884445
+      Roll: 6.57332611
     }
     Scale {
       X: 21.8080921
@@ -83812,7 +85605,7 @@ Objects {
       Z: 51.9543266
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -83840,7 +85633,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -83850,7 +85643,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -83880,7 +85672,7 @@ Objects {
       Z: 37.3334274
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -83908,7 +85700,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -83918,7 +85710,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -83939,7 +85730,7 @@ Objects {
     }
     Rotation {
       Pitch: 1.84632301
-      Yaw: 141.536331
+      Yaw: 141.536346
       Roll: 96.3172836
     }
     Scale {
@@ -83948,7 +85739,7 @@ Objects {
       Z: 37.3334274
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -83976,7 +85767,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -83986,7 +85777,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -84007,8 +85797,8 @@ Objects {
     }
     Rotation {
       Pitch: -9.90948391
-      Yaw: -163.859894
-      Roll: 113.417847
+      Yaw: -163.859879
+      Roll: 113.417831
     }
     Scale {
       X: 7.06494331
@@ -84016,7 +85806,7 @@ Objects {
       Z: 37.3334274
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -84044,7 +85834,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -84054,7 +85844,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -84075,8 +85864,8 @@ Objects {
     }
     Rotation {
       Pitch: -9.90945625
-      Yaw: 108.363403
-      Roll: 113.417526
+      Yaw: 108.363411
+      Roll: 113.417496
     }
     Scale {
       X: 4.75989628
@@ -84084,7 +85873,7 @@ Objects {
       Z: 25.1528187
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -84112,7 +85901,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -84122,7 +85911,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -84152,7 +85940,7 @@ Objects {
       Z: 5.84528589
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -84176,7 +85964,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -84186,7 +85974,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -84207,8 +85994,8 @@ Objects {
     }
     Rotation {
       Pitch: 3.1312933
-      Yaw: -38.5654259
-      Roll: -123.539032
+      Yaw: -38.565403
+      Roll: -123.539047
     }
     Scale {
       X: 3.34250402
@@ -84216,7 +86003,7 @@ Objects {
       Z: 10.2322178
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -84240,7 +86027,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -84250,7 +86037,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -84280,7 +86066,7 @@ Objects {
       Z: 12.098834
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -84308,7 +86094,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -84318,7 +86104,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -84338,9 +86123,9 @@ Objects {
       Z: 1978.14734
     }
     Rotation {
-      Pitch: -9.90948486
-      Yaw: 22.7193413
-      Roll: 113.420769
+      Pitch: -9.90948391
+      Yaw: 22.7193241
+      Roll: 113.420746
     }
     Scale {
       X: 4.75989628
@@ -84348,7 +86133,7 @@ Objects {
       Z: 25.1528187
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -84376,7 +86161,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -84386,7 +86171,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -84407,8 +86191,8 @@ Objects {
     }
     Rotation {
       Pitch: -4.30551863
-      Yaw: 104.155106
-      Roll: -5.22574472
+      Yaw: 104.155128
+      Roll: -5.22574711
     }
     Scale {
       X: 5.44549799
@@ -84416,7 +86200,7 @@ Objects {
       Z: 19.7110901
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -84444,7 +86228,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -84454,7 +86238,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -84475,8 +86258,8 @@ Objects {
     }
     Rotation {
       Pitch: 2.61272478
-      Yaw: -59.0851097
-      Roll: 6.24471521
+      Yaw: -59.0850945
+      Roll: 6.24472046
     }
     Scale {
       X: 3.16285586
@@ -84484,7 +86267,7 @@ Objects {
       Z: 18.8558655
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -84512,7 +86295,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -84522,7 +86305,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -84543,7 +86325,7 @@ Objects {
     }
     Rotation {
       Pitch: -5.57012129
-      Yaw: 18.8035545
+      Yaw: 18.8035603
       Roll: 3.84903169
     }
     Scale {
@@ -84552,7 +86334,7 @@ Objects {
       Z: 19.711092
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -84580,7 +86362,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -84590,7 +86372,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -84610,9 +86391,9 @@ Objects {
       Z: 1848.40161
     }
     Rotation {
-      Pitch: -9.15228271
-      Yaw: 19.8656578
-      Roll: -72.8317261
+      Pitch: -9.15228176
+      Yaw: 19.8656559
+      Roll: -72.8317
     }
     Scale {
       X: 3.34251428
@@ -84620,7 +86401,7 @@ Objects {
       Z: 10.2322235
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -84644,7 +86425,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -84654,7 +86435,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -84675,8 +86455,8 @@ Objects {
     }
     Rotation {
       Pitch: 0.61553663
-      Yaw: -100.35183
-      Roll: 89.1023712
+      Yaw: -100.351837
+      Roll: 89.1023788
     }
     Scale {
       X: 4.99147
@@ -84684,7 +86464,7 @@ Objects {
       Z: 13.7867393
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -84708,7 +86488,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -84718,7 +86498,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -84739,8 +86518,8 @@ Objects {
     }
     Rotation {
       Pitch: 3.36653852
-      Yaw: 53.6764793
-      Roll: -10.6882477
+      Yaw: 53.676487
+      Roll: -10.688262
     }
     Scale {
       X: 10.8631802
@@ -84748,7 +86527,7 @@ Objects {
       Z: 9.4274025
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -84776,7 +86555,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -84786,7 +86565,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -84807,7 +86585,7 @@ Objects {
     }
     Rotation {
       Yaw: -46.4313965
-      Roll: -15.758852
+      Roll: -15.7588692
     }
     Scale {
       X: 10.8631887
@@ -84815,7 +86593,7 @@ Objects {
       Z: 6.53666306
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -84843,7 +86621,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -84853,7 +86631,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -84883,7 +86660,7 @@ Objects {
       Z: 5.84528589
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -84907,7 +86684,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -84917,7 +86694,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -84939,7 +86715,7 @@ Objects {
     Rotation {
       Pitch: -0.109501585
       Yaw: 91.6945724
-      Roll: -13.3233585
+      Roll: -13.3233747
     }
     Scale {
       X: 3.50993967
@@ -84947,7 +86723,7 @@ Objects {
       Z: 8.35199547
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -84975,7 +86751,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -84985,7 +86761,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -85015,7 +86790,7 @@ Objects {
       Z: 7.20000029
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -85035,7 +86810,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -85045,7 +86820,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -85075,7 +86849,7 @@ Objects {
       Z: 12.0988255
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -85103,7 +86877,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -85113,7 +86887,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -85134,8 +86907,8 @@ Objects {
     }
     Rotation {
       Pitch: -1.73790741
-      Yaw: 46.708416
-      Roll: 112.202942
+      Yaw: 46.7084084
+      Roll: 112.202919
     }
     Scale {
       X: 4.62973118
@@ -85143,7 +86916,7 @@ Objects {
       Z: 25.1527767
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -85171,7 +86944,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -85181,7 +86954,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -85202,8 +86974,8 @@ Objects {
     }
     Rotation {
       Pitch: -0.00592177361
-      Yaw: -89.9717102
-      Roll: 8.21894932
+      Yaw: -89.9717
+      Roll: 8.2189579
     }
     Scale {
       X: 2.27916431
@@ -85211,7 +86983,7 @@ Objects {
       Z: 7.11099291
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -85239,7 +87011,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -85249,7 +87021,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -85270,8 +87041,8 @@ Objects {
     }
     Rotation {
       Pitch: -5.73888874
-      Yaw: 22.1265717
-      Roll: 7.18084574
+      Yaw: 22.1265583
+      Roll: 7.18085337
     }
     Scale {
       X: 2.85779357
@@ -85279,7 +87050,7 @@ Objects {
       Z: 8.35199642
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -85299,7 +87070,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -85309,7 +87080,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -85329,9 +87099,9 @@ Objects {
       Z: 1679.68225
     }
     Rotation {
-      Pitch: -3.98665142
-      Yaw: 84.6837158
-      Roll: 8.12158585
+      Pitch: -3.98664451
+      Yaw: 84.6837082
+      Roll: 8.12159348
     }
     Scale {
       X: 6.80344248
@@ -85339,7 +87109,7 @@ Objects {
       Z: 10.7194071
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -85359,7 +87129,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -85369,7 +87139,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -85390,7 +87159,8 @@ Objects {
     }
     Rotation {
       Pitch: 5.69690323
-      Yaw: -116.373596
+      Yaw: -116.373566
+      Roll: 2.14502862e-07
     }
     Scale {
       X: 2.40000224
@@ -85398,7 +87168,7 @@ Objects {
       Z: 2.35467625
     }
   }
-  ParentId: 17588605924264395954
+  ParentId: 2683808031947549218
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -85427,7 +87197,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -85437,7 +87207,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -85464,37 +87233,6 @@ Objects {
     }
   }
   ParentId: 9160281066032245732
-  ChildIds: 18165749215052169394
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    Model {
-      AggressiveMerge: true
-    }
-  }
-}
-Objects {
-  Id: 18165749215052169394
-  Name: "Group"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4065904118916193165
   ChildIds: 13614648982384099195
   ChildIds: 6664147409951817390
   ChildIds: 14968633989417388198
@@ -85566,7 +87304,9 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
-    IsGroup: true
+    Model {
+      AggressiveMerge: true
+    }
   }
 }
 Objects {
@@ -85574,13 +87314,13 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -4601.60596
+      X: -4601.60645
       Y: 14218.5635
       Z: 789.380554
     }
     Rotation {
-      Yaw: 118.099922
-      Roll: -15.760437
+      Yaw: 118.099907
+      Roll: -15.7604523
     }
     Scale {
       X: 19.487463
@@ -85588,7 +87328,7 @@ Objects {
       Z: 8.89685249
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -85616,7 +87356,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -85626,7 +87366,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -85648,7 +87387,7 @@ Objects {
     Rotation {
       Pitch: 3.13670945
       Yaw: -136.76268
-      Roll: -3.33667111
+      Roll: -3.33667135
     }
     Scale {
       X: 4.34801388
@@ -85656,7 +87395,7 @@ Objects {
       Z: 3.16005
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -85684,7 +87423,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -85694,7 +87433,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -85714,9 +87452,9 @@ Objects {
       Z: 1842.42737
     }
     Rotation {
-      Pitch: 48.5100594
-      Yaw: 174.484207
-      Roll: -7.27366
+      Pitch: 48.5100517
+      Yaw: 174.484192
+      Roll: -7.27366781
     }
     Scale {
       X: 4.34801388
@@ -85724,7 +87462,7 @@ Objects {
       Z: 3.16005
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -85752,7 +87490,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -85762,7 +87500,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -85783,8 +87520,8 @@ Objects {
     }
     Rotation {
       Pitch: 3.13670945
-      Yaw: -4.5030241
-      Roll: -3.33667135
+      Yaw: -4.50302553
+      Roll: -3.33667207
     }
     Scale {
       X: 4.34801388
@@ -85792,7 +87529,7 @@ Objects {
       Z: 3.16005
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -85820,7 +87557,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -85830,7 +87567,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -85851,8 +87587,8 @@ Objects {
     }
     Rotation {
       Pitch: 3.13670945
-      Yaw: 55.1581383
-      Roll: -3.33667064
+      Yaw: 55.1581268
+      Roll: -3.33667111
     }
     Scale {
       X: 4.34801388
@@ -85860,7 +87596,7 @@ Objects {
       Z: 3.16005
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -85888,7 +87624,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -85898,7 +87634,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -85919,8 +87654,8 @@ Objects {
     }
     Rotation {
       Pitch: 3.13670945
-      Yaw: -50.4771
-      Roll: -3.33667111
+      Yaw: -50.4771118
+      Roll: -3.33667135
     }
     Scale {
       X: 4.52697659
@@ -85928,7 +87663,7 @@ Objects {
       Z: 3.51939917
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -85956,7 +87691,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -85966,7 +87701,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -85988,7 +87722,7 @@ Objects {
     Rotation {
       Pitch: 3.13670945
       Yaw: 158.715607
-      Roll: -3.33667111
+      Roll: -3.33667135
     }
     Scale {
       X: 4.52697659
@@ -85996,7 +87730,7 @@ Objects {
       Z: 3.51939917
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -86024,7 +87758,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -86034,7 +87768,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -86056,7 +87789,7 @@ Objects {
     Rotation {
       Pitch: 3.13670945
       Yaw: -124.662376
-      Roll: -3.33667135
+      Roll: -3.33667231
     }
     Scale {
       X: 4.52697659
@@ -86064,7 +87797,7 @@ Objects {
       Z: 3.51939917
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -86092,7 +87825,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -86102,7 +87835,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -86117,14 +87849,14 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -3807.87842
+      X: -3807.87793
       Y: 5325.84277
       Z: 1519.3335
     }
     Rotation {
       Pitch: 3.13670945
-      Yaw: 50.8416862
-      Roll: -3.33667135
+      Yaw: 50.8417053
+      Roll: -3.33667183
     }
     Scale {
       X: 4.52697659
@@ -86132,7 +87864,7 @@ Objects {
       Z: 3.51939917
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -86160,7 +87892,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -86170,7 +87902,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -86191,8 +87922,8 @@ Objects {
     }
     Rotation {
       Pitch: -3.06973267
-      Yaw: -12.1055384
-      Roll: 1.71163285
+      Yaw: -12.1055565
+      Roll: 1.71163297
     }
     Scale {
       X: 4.52697659
@@ -86200,7 +87931,7 @@ Objects {
       Z: 3.51939917
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -86228,7 +87959,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -86238,7 +87969,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -86253,14 +87983,14 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -7727.68213
+      X: -7727.68262
       Y: 1906.46
       Z: 1649.18945
     }
     Rotation {
       Pitch: 13.2104664
-      Yaw: 163.311966
-      Roll: -1.82779014
+      Yaw: 163.311951
+      Roll: -1.8277905
     }
     Scale {
       X: 4.52698946
@@ -86268,7 +87998,7 @@ Objects {
       Z: 2.36765146
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -86296,7 +88026,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -86306,7 +88036,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -86327,8 +88056,8 @@ Objects {
     }
     Rotation {
       Pitch: 13.2104664
-      Yaw: 5.29091549
-      Roll: -1.82778931
+      Yaw: 5.29091883
+      Roll: -1.82778943
     }
     Scale {
       X: 5.442204
@@ -86336,7 +88065,7 @@ Objects {
       Z: 2.36765
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -86364,7 +88093,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -86374,7 +88103,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -86389,14 +88117,14 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -12091.4141
+      X: -12091.415
       Y: -1884.6792
       Z: 1493.31799
     }
     Rotation {
       Pitch: -22.820282
-      Yaw: 105.961708
-      Roll: -1.93057501
+      Yaw: 105.961739
+      Roll: -1.93057597
     }
     Scale {
       X: 2.36764431
@@ -86404,7 +88132,7 @@ Objects {
       Z: 2.36764956
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -86432,7 +88160,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -86442,7 +88170,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -86457,13 +88184,13 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -11795.2383
+      X: -11795.2393
       Y: 12829.8311
     }
     Rotation {
       Pitch: 5.32306671
-      Yaw: -82.1100693
-      Roll: -61.5775948
+      Yaw: -82.110054
+      Roll: -61.5776024
     }
     Scale {
       X: 5.72900391
@@ -86471,7 +88198,7 @@ Objects {
       Z: 19.711092
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -86499,7 +88226,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -86509,7 +88236,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -86524,7 +88250,7 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -5890.08154
+      X: -5890.08105
       Y: -1599.94873
       Z: 2163.47754
     }
@@ -86539,7 +88265,7 @@ Objects {
       Z: 25.1528187
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -86567,7 +88293,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -86577,7 +88303,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -86592,14 +88317,14 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -6065.7583
+      X: -6065.75879
       Y: -3749.9292
       Z: 2163.47754
     }
     Rotation {
       Pitch: 0.772699237
-      Yaw: 100.633499
-      Roll: 88.0312881
+      Yaw: 100.633514
+      Roll: 88.0312958
     }
     Scale {
       X: 4.75989628
@@ -86607,7 +88332,7 @@ Objects {
       Z: 25.1528187
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -86635,7 +88360,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -86645,7 +88370,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -86660,14 +88384,14 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -7772.43896
+      X: -7772.43848
       Y: -2058.66016
       Z: 2148.94507
     }
     Rotation {
       Pitch: -3.45755076
-      Yaw: -85.9105606
-      Roll: -28.0163422
+      Yaw: -85.9105682
+      Roll: -28.0163383
     }
     Scale {
       X: 13.8922949
@@ -86675,7 +88399,7 @@ Objects {
       Z: 8.35935402
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -86703,7 +88427,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -86713,7 +88437,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -86728,7 +88451,7 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -5616.96729
+      X: -5616.96777
       Y: -4479.83936
       Z: 1749.26685
     }
@@ -86743,7 +88466,7 @@ Objects {
       Z: 16.7957344
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -86771,7 +88494,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -86781,7 +88504,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -86796,7 +88518,7 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -7629.74463
+      X: -7629.74512
       Y: -4312.81738
       Z: 1749.26685
     }
@@ -86811,7 +88533,7 @@ Objects {
       Z: 16.7957344
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -86839,7 +88561,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -86849,7 +88571,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -86864,14 +88585,14 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -4079.74561
+      X: -4079.74512
       Y: 16118.4072
       Z: 2233.52979
     }
     Rotation {
-      Pitch: -5.57012939
-      Yaw: -73.2884827
-      Roll: 3.84917545
+      Pitch: -5.57012129
+      Yaw: -73.2884598
+      Roll: 3.84917593
     }
     Scale {
       X: 5.72900391
@@ -86879,7 +88600,7 @@ Objects {
       Z: 19.711092
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -86907,7 +88628,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -86917,7 +88638,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -86932,14 +88652,14 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -3891.2124
+      X: -3891.21191
       Y: 13120.2412
       Z: 1310.12622
     }
     Rotation {
       Pitch: 2.9358747
-      Yaw: -53.8870392
-      Roll: 91.7216721
+      Yaw: -53.887043
+      Roll: 91.7216797
     }
     Scale {
       X: 4.22412062
@@ -86947,7 +88667,7 @@ Objects {
       Z: 12.0988274
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -86975,7 +88695,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -86985,7 +88705,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -87007,7 +88726,7 @@ Objects {
     Rotation {
       Pitch: 4.08315516
       Yaw: -88.1671
-      Roll: -5.40128088
+      Roll: -5.40128326
     }
     Scale {
       X: 6.0802989
@@ -87015,7 +88734,7 @@ Objects {
       Z: 20.9197464
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -87043,7 +88762,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -87053,7 +88772,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -87074,8 +88792,8 @@ Objects {
     }
     Rotation {
       Pitch: 10.4248075
-      Yaw: -64.2644806
-      Roll: 10.6860218
+      Yaw: -64.2644958
+      Roll: 10.6860361
     }
     Scale {
       X: 5.72900391
@@ -87083,7 +88801,7 @@ Objects {
       Z: 19.711092
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -87111,7 +88829,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -87121,7 +88839,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -87136,14 +88853,14 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -18864.0684
+      X: -18864.0664
       Y: -1831.41602
       Z: 1880.98755
     }
     Rotation {
-      Pitch: -11.4307852
-      Yaw: -161.779083
-      Roll: -5.47077
+      Pitch: -11.4307785
+      Yaw: -161.779053
+      Roll: -5.47077227
     }
     Scale {
       X: 5.72900391
@@ -87151,7 +88868,7 @@ Objects {
       Z: 19.711092
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -87179,7 +88896,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -87189,7 +88906,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -87210,7 +88926,7 @@ Objects {
     }
     Rotation {
       Yaw: 59.911644
-      Roll: 24.7380962
+      Roll: 24.7380772
     }
     Scale {
       X: 10.8631878
@@ -87218,7 +88934,7 @@ Objects {
       Z: 8.42137051
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -87246,7 +88962,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -87256,7 +88972,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -87278,7 +88993,7 @@ Objects {
     Rotation {
       Pitch: -3.21136355
       Yaw: 83.0674744
-      Roll: 5.95997715
+      Roll: 5.95998096
     }
     Scale {
       X: 6.0802989
@@ -87286,7 +89001,7 @@ Objects {
       Z: 20.9197464
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -87314,7 +89029,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -87324,7 +89039,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -87345,8 +89059,8 @@ Objects {
     }
     Rotation {
       Pitch: 5.97248077
-      Yaw: 56.4187355
-      Roll: 80.2786789
+      Yaw: 56.4187202
+      Roll: 80.2786636
     }
     Scale {
       X: 4.99147
@@ -87354,7 +89068,7 @@ Objects {
       Z: 13.7867393
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -87378,7 +89092,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -87388,7 +89102,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -87409,8 +89122,8 @@ Objects {
     }
     Rotation {
       Pitch: -1.5533489
-      Yaw: -19.459877
-      Roll: -15.6853132
+      Yaw: -19.4598808
+      Roll: -15.6853304
     }
     Scale {
       X: 10.8631887
@@ -87418,7 +89131,7 @@ Objects {
       Z: 6.53666306
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -87446,7 +89159,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -87456,7 +89169,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -87477,8 +89189,8 @@ Objects {
     }
     Rotation {
       Pitch: 0.615440965
-      Yaw: -67.8656082
-      Roll: 89.1022263
+      Yaw: -67.8656235
+      Roll: 89.1022339
     }
     Scale {
       X: 4.99147
@@ -87486,7 +89198,7 @@ Objects {
       Z: 13.7867393
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -87510,7 +89222,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -87520,7 +89232,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -87535,13 +89246,13 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -6081.28857
+      X: -6081.28809
       Y: 15275.749
       Z: 1394.22742
     }
     Rotation {
       Yaw: -46.4313965
-      Roll: -15.7588806
+      Roll: -15.7589
     }
     Scale {
       X: 19.4874611
@@ -87549,7 +89260,7 @@ Objects {
       Z: 11.7261047
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -87577,7 +89288,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -87587,7 +89298,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -87602,14 +89312,14 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -2588.13135
+      X: -2588.13184
       Y: 15700.2334
       Z: 2439.15576
     }
     Rotation {
-      Pitch: -5.57012939
-      Yaw: 7.33620405
-      Roll: 3.84910464
+      Pitch: -5.57012129
+      Yaw: 7.3362112
+      Roll: 3.8491056
     }
     Scale {
       X: 5.72900391
@@ -87617,7 +89327,7 @@ Objects {
       Z: 19.711092
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -87645,7 +89355,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -87655,7 +89365,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -87675,9 +89384,9 @@ Objects {
       Z: 2402.55518
     }
     Rotation {
-      Pitch: -5.57012939
+      Pitch: -5.57012129
       Yaw: 158.851456
-      Roll: 3.84913588
+      Roll: 3.84913754
     }
     Scale {
       X: 5.72900391
@@ -87685,7 +89394,7 @@ Objects {
       Z: 19.711092
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -87713,7 +89422,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -87723,7 +89432,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -87743,9 +89451,9 @@ Objects {
       Z: 2251.42261
     }
     Rotation {
-      Pitch: -3.60055542
-      Yaw: 165.986465
-      Roll: 104.835655
+      Pitch: -3.60055447
+      Yaw: 165.986435
+      Roll: 104.83567
     }
     Scale {
       X: 4.62973118
@@ -87753,7 +89461,7 @@ Objects {
       Z: 25.1527767
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -87781,7 +89489,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -87791,7 +89499,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -87812,8 +89519,8 @@ Objects {
     }
     Rotation {
       Pitch: 3.47925711
-      Yaw: -66.4638672
-      Roll: 82.5671234
+      Yaw: -66.4638748
+      Roll: 82.5671158
     }
     Scale {
       X: 5.46606255
@@ -87821,7 +89528,7 @@ Objects {
       Z: 15.0975904
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -87845,7 +89552,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -87855,7 +89562,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -87876,7 +89582,7 @@ Objects {
     }
     Rotation {
       Pitch: 0.772788048
-      Yaw: 116.005417
+      Yaw: 116.005371
       Roll: 88.0313492
     }
     Scale {
@@ -87885,7 +89591,7 @@ Objects {
       Z: 25.1528187
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -87913,7 +89619,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -87923,7 +89629,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -87945,7 +89650,7 @@ Objects {
     Rotation {
       Pitch: -5.57012129
       Yaw: 110.120407
-      Roll: 3.84917045
+      Roll: 3.84917092
     }
     Scale {
       X: 5.72900391
@@ -87953,7 +89658,7 @@ Objects {
       Z: 19.711092
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -87981,7 +89686,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -87991,7 +89696,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -88006,7 +89710,7 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -7766.55322
+      X: -7766.55371
       Y: -995.923828
       Z: 1678.21106
     }
@@ -88021,7 +89725,7 @@ Objects {
       Z: 10.7905483
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -88049,7 +89753,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -88059,7 +89763,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -88074,13 +89777,13 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -7787.81787
+      X: -7787.81738
       Y: 991.451172
       Z: 1822.18042
     }
     Rotation {
       Pitch: 2.04903626
-      Yaw: 66.1072311
+      Yaw: 66.1072388
       Roll: 88.6462784
     }
     Scale {
@@ -88089,7 +89792,7 @@ Objects {
       Z: 10.7905483
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -88117,7 +89820,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -88127,7 +89830,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -88142,13 +89844,13 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -3847.46045
+      X: -3847.46
       Y: 4645.03027
       Z: 1905.35132
     }
     Rotation {
       Pitch: -2.94018459
-      Yaw: -172.583115
+      Yaw: -172.583099
       Roll: 91.3639374
     }
     Scale {
@@ -88157,7 +89859,7 @@ Objects {
       Z: -14.4558325
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -88177,7 +89879,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -88187,7 +89889,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -88202,14 +89903,14 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -4511.0083
+      X: -4511.00879
       Y: 4433.30371
       Z: 1678.21082
     }
     Rotation {
       Pitch: 2.04924107
-      Yaw: 170.06601
-      Roll: 88.6465378
+      Yaw: 170.066
+      Roll: 88.6465302
     }
     Scale {
       X: 4.22411585
@@ -88217,7 +89918,7 @@ Objects {
       Z: 10.7905483
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -88237,7 +89938,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -88247,7 +89948,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -88277,7 +89977,7 @@ Objects {
       Z: 12.0988274
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -88305,7 +90005,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -88315,7 +90015,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -88335,9 +90034,9 @@ Objects {
       Z: 2492.92798
     }
     Rotation {
-      Pitch: 2.04929566
-      Yaw: -56.859726
-      Roll: 88.6470184
+      Pitch: 2.04928875
+      Yaw: -56.8597
+      Roll: 88.647
     }
     Scale {
       X: 4.22412825
@@ -88345,7 +90044,7 @@ Objects {
       Z: 10.7905512
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -88365,7 +90064,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -88375,7 +90074,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -88396,8 +90094,8 @@ Objects {
     }
     Rotation {
       Pitch: 1.79962492
-      Yaw: 109.498276
-      Roll: 88.3295898
+      Yaw: 109.498253
+      Roll: 88.3295822
     }
     Scale {
       X: 4.22412777
@@ -88405,7 +90103,7 @@ Objects {
       Z: 16.7957344
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -88433,7 +90131,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -88443,7 +90141,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -88464,7 +90161,7 @@ Objects {
     }
     Rotation {
       Yaw: 95.5415039
-      Roll: 3.67369127
+      Roll: 3.67369223
     }
     Scale {
       X: 3.50993824
@@ -88472,7 +90169,7 @@ Objects {
       Z: 8.52590561
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -88492,7 +90189,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -88502,7 +90199,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -88523,7 +90219,7 @@ Objects {
     }
     Rotation {
       Yaw: 89.5335
-      Roll: 3.67372894
+      Roll: 3.67372966
     }
     Scale {
       X: 1.68388891
@@ -88531,7 +90227,7 @@ Objects {
       Z: 4.09029102
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -88551,7 +90247,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -88561,7 +90257,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -88582,8 +90277,8 @@ Objects {
     }
     Rotation {
       Pitch: 2.58029509
-      Yaw: -80.4232788
-      Roll: -11.2671509
+      Yaw: -80.4232635
+      Roll: -11.267169
     }
     Scale {
       X: 6.77964354
@@ -88591,7 +90286,7 @@ Objects {
       Z: 11.282897
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -88611,7 +90306,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -88621,7 +90316,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -88642,7 +90336,7 @@ Objects {
     }
     Rotation {
       Yaw: -89.971
-      Roll: 3.67365718
+      Roll: 3.67365766
     }
     Scale {
       X: 3.56048346
@@ -88650,7 +90344,7 @@ Objects {
       Z: 8.64868355
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -88670,7 +90364,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -88680,7 +90374,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -88701,8 +90394,8 @@ Objects {
     }
     Rotation {
       Pitch: 1.83193171
-      Yaw: 114.510765
-      Roll: -8.50245
+      Yaw: 114.510735
+      Roll: -8.50246048
     }
     Scale {
       X: 2.28992724
@@ -88710,7 +90403,7 @@ Objects {
       Z: 2.88942504
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -88730,7 +90423,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -88740,7 +90433,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -88770,7 +90462,7 @@ Objects {
       Z: 1.73474073
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -88790,7 +90482,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -88800,7 +90492,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -88822,7 +90513,7 @@ Objects {
     Rotation {
       Pitch: -1.95724523
       Yaw: -106.056778
-      Roll: 0.265788585
+      Roll: 0.265788525
     }
     Scale {
       X: 1.81467438
@@ -88830,7 +90521,7 @@ Objects {
       Z: 2.98547316
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -88859,7 +90550,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -88869,7 +90560,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -88897,7 +90587,7 @@ Objects {
       Z: 2.38915825
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -88926,7 +90616,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -88936,7 +90626,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -88956,7 +90645,7 @@ Objects {
       Z: 1489.9054
     }
     Rotation {
-      Yaw: 104.236992
+      Yaw: 104.237007
     }
     Scale {
       X: 0.999996
@@ -88964,7 +90653,7 @@ Objects {
       Z: 1.73474073
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -88993,7 +90682,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -89003,7 +90692,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -89031,7 +90719,7 @@ Objects {
       Z: 1.89097273
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -89060,7 +90748,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -89070,7 +90758,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -89091,8 +90778,8 @@ Objects {
     }
     Rotation {
       Pitch: 0.642946184
-      Yaw: -100.894104
-      Roll: 4.52137709
+      Yaw: -100.894127
+      Roll: 4.52137899
     }
     Scale {
       X: 3.71304202
@@ -89100,7 +90787,7 @@ Objects {
       Z: 3.0784843
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -89129,7 +90816,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -89139,7 +90826,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -89169,7 +90855,7 @@ Objects {
       Z: 2.27604175
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -89198,7 +90884,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -89208,7 +90894,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -89230,7 +90915,7 @@ Objects {
     Rotation {
       Pitch: -1.95724523
       Yaw: -96.9726181
-      Roll: 0.265790701
+      Roll: 0.265790612
     }
     Scale {
       X: 1.81466496
@@ -89238,7 +90923,7 @@ Objects {
       Z: 2.27604342
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -89267,7 +90952,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -89277,7 +90962,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -89307,7 +90991,7 @@ Objects {
       Z: 2.27604151
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -89336,7 +91020,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -89346,7 +91030,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -89366,7 +91049,7 @@ Objects {
       Z: 1464.13892
     }
     Rotation {
-      Yaw: -81.659729
+      Yaw: -81.6597061
     }
     Scale {
       X: 1.48011744
@@ -89374,7 +91057,7 @@ Objects {
       Z: 1.9
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -89403,7 +91086,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -89413,7 +91096,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -89433,8 +91115,9 @@ Objects {
       Z: 1503.11426
     }
     Rotation {
-      Pitch: -5.44464111
-      Yaw: 112.476616
+      Pitch: -5.4446373
+      Yaw: 112.476601
+      Roll: 2.14410747e-07
     }
     Scale {
       X: 0.954317927
@@ -89442,7 +91125,7 @@ Objects {
       Z: 2.09551215
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -89471,7 +91154,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -89481,7 +91164,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -89502,8 +91184,8 @@ Objects {
     }
     Rotation {
       Pitch: -0.379212081
-      Yaw: -79.7603912
-      Roll: 0.27740109
+      Yaw: -79.760376
+      Roll: 0.277401119
     }
     Scale {
       X: 1.780388
@@ -89511,7 +91193,7 @@ Objects {
       Z: 1.73474193
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -89540,7 +91222,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -89550,7 +91232,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -89571,7 +91252,7 @@ Objects {
     }
     Rotation {
       Pitch: 3.08509374
-      Yaw: 112.50209
+      Yaw: 112.502068
     }
     Scale {
       X: 1.26667821
@@ -89579,7 +91260,7 @@ Objects {
       Z: 1.9000001
     }
   }
-  ParentId: 18165749215052169394
+  ParentId: 4065904118916193165
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -89608,7 +91289,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -89618,7 +91299,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -92640,16 +94320,16 @@ Objects {
 }
 Objects {
   Id: 10620260710572183553
-  Name: "Plane 1m - One Sided"
+  Name: "Plane 1m - Two Sided"
   Transform {
     Location {
-      X: -11354.2178
-      Y: -27080.377
-      Z: 533.525
+      X: -11147.8672
+      Y: -27073.8633
+      Z: 603.346741
     }
     Rotation {
       Pitch: 90
-      Roll: 31.7104034
+      Roll: 24.5255127
     }
     Scale {
       X: 4.90875578
@@ -92689,7 +94369,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 4893467904009059928
+      Id: 10850769815684373087
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -92706,16 +94386,16 @@ Objects {
 }
 Objects {
   Id: 10079941941601789750
-  Name: "Plane 1m - One Sided"
+  Name: "Plane 1m - Two Sided"
   Transform {
     Location {
-      X: -11992.501
-      Y: -28409.2168
-      Z: 533.524902
+      X: -11614.9219
+      Y: -28472.1016
+      Z: 603.346619
     }
     Rotation {
       Pitch: 90
-      Roll: 23.0874348
+      Roll: 15.9023438
     }
     Scale {
       X: 4.90875626
@@ -92755,7 +94435,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 4893467904009059928
+      Id: 10850769815684373087
     }
     Teams {
       IsTeamCollisionEnabled: true
