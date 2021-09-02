@@ -37,6 +37,15 @@ function _G.utils.IsDriverValid(driver)
   return driver:IsA("AIPlayer") or Object.IsValid(driver)
 end
 
+function _G.utils.GetResource(driver, resourceName)
+    if driver.resources then
+      return driver.resources[resourceName] or 0
+    end
+    if Object.IsValid(driver) then
+      return driver:GetResource(resourceName)
+    end
+end
+
 function _G.utils.GetTankDrivers(options)
   if options == nil then options = {} end
   local results = {}
