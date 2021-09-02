@@ -17,12 +17,30 @@ Assets {
   }
 }
 Assets {
+  Id: 15613631792190449472
+  Name: "Icon Tank"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Tank"
+  }
+}
+Assets {
   Id: 14097001835618858858
   Name: "Fantasy Trophy 006"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Equip_Trophy_006"
+  }
+}
+Assets {
+  Id: 13257658630242510450
+  Name: "UI Gradient Circular 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_001"
   }
 }
 Assets {
@@ -41,6 +59,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundHighlighted_020"
+  }
+}
+Assets {
+  Id: 10447331643503989276
+  Name: "Device"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Urban_Icon_056"
   }
 }
 Assets {

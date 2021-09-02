@@ -48,6 +48,26 @@ local function SetPanelTeam(player, count)
     end
 end
 
+local function SetPanel(player, count)
+    SetPanelTeam(player, count)
+    scoreCards[player].kills.text = tostring(player.kills or 0)
+    scoreCards[player].damage.text = tostring(_G.utils.GetResource(player, "TankDamage"))
+    --player:GetResource("TankDamage"))
+    scoreCards[player].tankName.text =
+        player.clientUserData and player.clientUserData.currentTankData and player.clientUserData.currentTankData.name or
+        ""
+
+    if player.isDead then
+        scoreCards[player].health:SetColor(Color.RED)
+    else
+        scoreCards[player].health:SetColor(Color.GREEN)
+    end
+    --[[
+            scoreCard.spotted.text = tostring(player:GetResource("SpottingTracker"))
+            ]]
+    --
+end
+
 function Init()
     for _, child in ipairs(TeamTanksPanel:GetChildren()) do
         child:Destroy()
@@ -58,26 +78,31 @@ function Init()
 end
 
 function OnPlayerJoined(player)
-    scoreCards[player] = {}
-    local panel
-    if player.team == LOCAL_PLAYER.team then
-        panel = World.SpawnAsset(ENTRY_TEMPLATE)
-    else
-        panel = World.SpawnAsset(ENEMY_ENTRY_TEMPLATE)
+    if not scoreCards[player] then
+        scoreCards[player] = {}
+        local panel
+        if player.team == LOCAL_PLAYER.team then
+            panel = World.SpawnAsset(ENTRY_TEMPLATE)
+        else
+            panel = World.SpawnAsset(ENEMY_ENTRY_TEMPLATE)
+        end
+
+        scoreCards[player].panel = panel
+
+        scoreCards[player].name = panel:GetCustomProperty("PlayerName"):WaitForObject()
+        scoreCards[player].tankName = panel:GetCustomProperty("TankName"):WaitForObject()
+        scoreCards[player].damage = panel:GetCustomProperty("Damage"):WaitForObject()
+        scoreCards[player].kills = panel:GetCustomProperty("Kills"):WaitForObject()
+        scoreCards[player].health = panel:GetCustomProperty("Health"):WaitForObject()
+        scoreCards[player].team = player.team
+        scoreCards[player].name.text = player.name
+
+        scoreCards[player].damage.text = tostring(0)
+        --player:GetResource("TankDamage"))
+        scoreCards[player].kills.text = tostring(player.kills or 0)
+        Task.Wait()
+        warn(player.name)
     end
-
-    scoreCards[player].panel = panel
-
-    scoreCards[player].name = panel:GetCustomProperty("PlayerName"):WaitForObject()
-    scoreCards[player].tankName = panel:GetCustomProperty("TankName"):WaitForObject()
-    scoreCards[player].damage = panel:GetCustomProperty("Damage"):WaitForObject()
-    scoreCards[player].kills = panel:GetCustomProperty("Kills"):WaitForObject()
-    scoreCards[player].health = panel:GetCustomProperty("Health"):WaitForObject()
-    scoreCards[player].team = player.team
-    scoreCards[player].name.text = player.name
-
-    scoreCards[player].damage.text = tostring(player:GetResource("TankDamage"))
-    scoreCards[player].kills.text = tostring(player.kills)
 end
 
 function OnPlayerLeft(player)
@@ -87,29 +112,55 @@ function OnPlayerLeft(player)
     scoreCards[player] = nil
 end
 
+local lastAiCount = 0
+
 function Tick()
     if not isActive then
         return
     end
+
+   --[[for player, _ in pairs(scoreCards) do
+        if not player then
+            scoreCards[player].panel:Destroy()
+            scoreCards[player] = nil
+        end
+    end]]--
+
     local count = {team = 0, enemy = 0}
+    local driverTable = Game.GetLocalPlayer():GetPrivateNetworkedData("AIData")
+
     for _, player in ipairs(Game.GetPlayers()) do
         if scoreCards[player] and Object.IsValid(scoreCards[player].panel) then
-            SetPanelTeam(player, count)
-            scoreCards[player].kills.text = tostring(player.kills)
-            scoreCards[player].damage.text = tostring(player:GetResource("TankDamage"))
-            scoreCards[player].tankName.text =
-                player.clientUserData.currentTankData and player.clientUserData.currentTankData.name or ""
-
-            if player.isDead then
-                scoreCards[player].health:SetColor(Color.RED)
-            else
-                scoreCards[player].health:SetColor(Color.GREEN)
-            end
-        --[[
-            scoreCard.spotted.text = tostring(player:GetResource("SpottingTracker"))
-            ]]
-        --
+            SetPanel(player, count)
         end
+    end
+
+    if driverTable then
+        local currentAiCount = 0
+        for _, player in pairs(driverTable) do
+            if player then
+                currentAiCount = currentAiCount + 1
+            end
+        end
+        for _, player in pairs(driverTable) do
+            if lastAiCount ~= currentAiCount then
+                OnPlayerJoined(player)
+            end
+            if scoreCards[player] and Object.IsValid(scoreCards[player].panel) then
+                SetPanel(player, count)
+            end
+        end
+
+        if lastAiCount ~= currentAiCount then
+            for player, _ in pairs(scoreCards) do
+                if not player then
+                    scoreCards[player].panel:Destroy()
+                    scoreCards[player] = nil
+                end
+            end
+        end
+
+        lastAiCount = currentAiCount 
     end
 end
 

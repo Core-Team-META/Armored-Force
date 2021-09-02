@@ -23,6 +23,7 @@ function AIPlayer.New(team)
     position = Vector3.ZERO,
     rotation = Rotation.ZERO,
     serverUserData = {},
+    resources = {},
     id = string.format("AI_%d", GetNewId()),
     team = team,
     diedEvent = LuaEvents.New(),
@@ -102,6 +103,10 @@ end
 function TankTick(self)
   --print(">>>FIRE!<<<", self, self.tankId)
   --Task.Wait(math.random(0, 2))
+  if self.isDead then
+    return
+  end
+
   local SHOT_FREQUENCY = 1
   local PATH_UPDATE_FREQUENCY = 2
 
@@ -235,6 +240,10 @@ end
 
 function AIPlayer:HandleDriving(vehicle, params)
   if not Object.IsValid(vehicle) then return end
+  if self.isDead then
+    return
+  end
+
   --[[
   params.isHandbrakeEngaged = false
   params.throttleInput = 1.0
@@ -399,6 +408,8 @@ function AIPlayer:GetReplicatedData()
     tankId = self.tankId,
     team = self.team,
     name = self.name,
+    kills = self.kills,
+    resources = self.resources
   }
 end
  
@@ -467,7 +478,18 @@ function AIPlayer:GetWorldRotation()
   return self.rotation
 end
 
+
+--#TODO Adding these so we can track combat stats on AI - Morticai
+function AIPlayer:SetResource(resourceName, amount)
+  self.resources[resourceName] = amount or 0
+end
+
 function AIPlayer:AddResource(resourceName, amount)
+  self.resources[resourceName] = self.resources[resourceName] and self.resources[resourceName] + amount or 0 + amount 
+end
+
+function AIPlayer:GetResource(resourceName)
+  return self.resources[resourceName] or 0
 end
 
 
