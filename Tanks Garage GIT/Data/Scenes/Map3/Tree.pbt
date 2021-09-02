@@ -28,7 +28,6 @@ Objects {
   ChildIds: 12209608198557882361
   ChildIds: 7310433976514289622
   ChildIds: 5837658692554861011
-  ChildIds: 3100773473738435227
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -41,89 +40,6 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 3100773473738435227
-  Name: "Copy Adjustments"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:MINIMAP"
-      String: "================================="
-    }
-    Overrides {
-      Name: "cs:BoundsWidth"
-      Int: 76700
-    }
-    Overrides {
-      Name: "cs:BoundsHeight"
-      Int: 76700
-    }
-    Overrides {
-      Name: "cs:BoundsCenter"
-      Vector2 {
-        X: -7600
-        Y: -3300
-      }
-    }
-    Overrides {
-      Name: "cs:CAPTUREPOINTS"
-      String: "================================="
-    }
-    Overrides {
-      Name: "cs:APointLocation"
-      Vector {
-        X: -32820
-        Y: 33570
-      }
-    }
-    Overrides {
-      Name: "cs:BPointLocation"
-      Vector {
-        X: 31105
-        Y: -26440
-      }
-    }
-    Overrides {
-      Name: "cs:VICTORYSCREEN"
-      String: "================================="
-    }
-    Overrides {
-      Name: "cs:VictoryLocation"
-      Vector {
-        X: -9680
-        Y: -14760
-        Z: 830
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Copy Adjustments"
   }
 }
 Objects {

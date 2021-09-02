@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15134376386077723113
+  Name: "Rock Pile 002"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_002"
+  }
+}
+Assets {
   Id: 14607547610839051429
   Name: "Branches Cluster Medium"
   PlatformAssetType: 1
