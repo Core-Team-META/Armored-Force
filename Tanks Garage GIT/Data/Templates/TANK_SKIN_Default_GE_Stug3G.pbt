@@ -838,9 +838,7 @@ Assets {
         }
         ParentId: 7571431908998325051
         ChildIds: 8735030399325665784
-        ChildIds: 3138323332710694187
-        ChildIds: 10430618444430566702
-        ChildIds: 6317938523718035020
+        ChildIds: 9200800464407922150
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -942,26 +940,28 @@ Assets {
         }
       }
       Objects {
-        Id: 3138323332710694187
-        Name: "IgnoreGroup"
+        Id: 9200800464407922150
+        Name: "MergedModel"
         Transform {
           Location {
-            X: 45.2610741
-            Y: 9.78588
-            Z: 20.0000019
+            X: -36.1450462
+            Y: 4.4146657
+            Z: 15.0000086
           }
           Rotation {
           }
           Scale {
-            X: 0.99999994
-            Y: 0.99999994
-            Z: 0.99999994
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 16467214816414777444
         ChildIds: 11955125967836290109
         ChildIds: 160357900138121402
         ChildIds: 10150994240742758845
+        ChildIds: 10430618444430566702
+        ChildIds: 6317938523718035020
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -971,8 +971,13 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         Folder {
-          IsGroup: true
+          Model {
+            AggressiveMerge: true
+          }
         }
       }
       Objects {
@@ -980,18 +985,18 @@ Assets {
         Name: "Military Tank Historic Tread 01 Mid"
         Transform {
           Location {
-            X: -98.6881714
-            Z: -4.99999952
+            X: -17.2820454
+            Y: 5.37134409
           }
           Rotation {
           }
           Scale {
-            X: 1.69030249
-            Y: 1
-            Z: 1.34719539
+            X: 1.69030213
+            Y: 0.999999821
+            Z: 1.34719527
           }
         }
-        ParentId: 3138323332710694187
+        ParentId: 9200800464407922150
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -999,7 +1004,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1021,18 +1026,18 @@ Assets {
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: 241.291702
-            Z: -4.99999952
+            X: 322.697418
+            Y: 5.37134409
           }
           Rotation {
           }
           Scale {
-            X: 1.12416255
-            Y: 1
-            Z: 1.34719539
+            X: 1.1241622
+            Y: 0.999999821
+            Z: 1.34719527
           }
         }
-        ParentId: 3138323332710694187
+        ParentId: 9200800464407922150
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1040,7 +1045,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1062,19 +1067,19 @@ Assets {
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: -432.722
-            Y: -0.00170898438
-            Z: -4.99999523
+            X: -351.315918
+            Y: 5.36962891
+            Z: 1.52587891e-05
           }
           Rotation {
           }
           Scale {
-            X: -1
-            Y: 1
-            Z: 1.34719539
+            X: -0.999999821
+            Y: 0.999999821
+            Z: 1.34719527
           }
         }
-        ParentId: 3138323332710694187
+        ParentId: 9200800464407922150
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1082,7 +1087,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1104,19 +1109,19 @@ Assets {
         Name: "Urban Pipe Coupling 02"
         Transform {
           Location {
-            X: 247.167297
-            Y: -3.64118767
-            Z: 91.624939
+            X: 283.312408
+            Y: -8.05539227
+            Z: 76.6249313
           }
           Rotation {
           }
           Scale {
-            X: 0.963488877
-            Y: 0.963488877
-            Z: 1.83636141
+            X: 0.963488817
+            Y: 0.963488817
+            Z: 1.83636129
           }
         }
-        ParentId: 16467214816414777444
+        ParentId: 9200800464407922150
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1172,7 +1177,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1196,19 +1201,19 @@ Assets {
         Name: "Urban Pipe Coupling 02"
         Transform {
           Location {
-            X: -273.556793
-            Y: -3.64118767
-            Z: 91.624939
+            X: -237.411896
+            Y: -8.05539227
+            Z: 76.6249313
           }
           Rotation {
           }
           Scale {
-            X: 0.963488877
-            Y: 0.963488877
+            X: 0.963488817
+            Y: 0.963488817
             Z: 1.71638143
           }
         }
-        ParentId: 16467214816414777444
+        ParentId: 9200800464407922150
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1264,7 +1269,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -2267,7 +2272,8 @@ Assets {
           }
         }
         ParentId: 10554319447034855512
-        ChildIds: 16651784418562492953
+        ChildIds: 7502379077122198939
+        ChildIds: 18377766097407618302
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2282,53 +2288,23 @@ Assets {
         }
       }
       Objects {
-        Id: 16651784418562492953
-        Name: "IgnoreGroup"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 3606048249461767534
-        ChildIds: 7502379077122198939
-        ChildIds: 18377766097407618302
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 7502379077122198939
         Name: "Tank Tread"
         Transform {
           Location {
-            X: 19.4770508
-            Y: -9.57319832
+            X: 19.4768047
+            Y: -9.57305145
           }
           Rotation {
             Yaw: -179.999954
           }
           Scale {
-            X: 1.10092735
+            X: 1.10092723
             Y: 0.679809868
-            Z: 1.29185271
+            Z: 1.29185259
           }
         }
-        ParentId: 16651784418562492953
+        ParentId: 3606048249461767534
         UnregisteredParameters {
           Overrides {
             Name: "bp:Tread Type"
@@ -2420,18 +2396,18 @@ Assets {
         Name: "MergedModel"
         Transform {
           Location {
-            Y: -10.0000305
-            Z: 20
+            Y: -10.0000963
+            Z: 19.9999981
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.99999994
+            Y: 0.99999994
+            Z: 0.99999994
           }
         }
-        ParentId: 16651784418562492953
+        ParentId: 3606048249461767534
         ChildIds: 7316995814481357354
         ChildIds: 16211549957008106978
         ChildIds: 15253077705257048565
@@ -3743,9 +3719,7 @@ Assets {
         }
         ParentId: 6761515411014140237
         ChildIds: 12679060857167051088
-        ChildIds: 571245417608571023
-        ChildIds: 1829295148235981349
-        ChildIds: 9746304601954540371
+        ChildIds: 13778961419952162131
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3847,26 +3821,28 @@ Assets {
         }
       }
       Objects {
-        Id: 571245417608571023
-        Name: "IgnoreGroup"
+        Id: 13778961419952162131
+        Name: "MergedModel"
         Transform {
           Location {
-            X: 45.2610703
-            Y: 9.78590393
-            Z: 20
+            X: -36.1450844
+            Y: 4.41481352
+            Z: 15
           }
           Rotation {
           }
           Scale {
             X: 1
-            Y: 0.99999994
+            Y: -1
             Z: 1
           }
         }
         ParentId: 6320844655194198496
+        ChildIds: 9746304601954540371
         ChildIds: 17500982878398213731
         ChildIds: 9946490204575254467
         ChildIds: 3671790288164783069
+        ChildIds: 1829295148235981349
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3876,8 +3852,105 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         Folder {
-          IsGroup: true
+          Model {
+            AggressiveMerge: true
+          }
+        }
+      }
+      Objects {
+        Id: 9746304601954540371
+        Name: "Urban Pipe Coupling 02"
+        Transform {
+          Location {
+            X: -237.410645
+            Y: 8.05517578
+            Z: 76.6248932
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.963488936
+            Y: -0.963488698
+            Z: 1.71638143
+          }
+        }
+        ParentId: 13778961419952162131
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.318546832
+              G: 0.219526231
+              B: 0.102241717
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.318546832
+              G: 0.219526231
+              B: 0.102241717
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16163665952175281032
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
         }
       }
       Objects {
@@ -3885,18 +3958,18 @@ Assets {
         Name: "Military Tank Historic Tread 01 Mid"
         Transform {
           Location {
-            X: -98.6881714
-            Z: -4.99999952
+            X: -17.2822266
+            Y: -5.37207031
           }
           Rotation {
           }
           Scale {
-            X: 1.69030249
-            Y: 1
+            X: 1.69030225
+            Y: -0.999999702
             Z: 1.34719539
           }
         }
-        ParentId: 571245417608571023
+        ParentId: 13778961419952162131
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3904,7 +3977,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -3926,18 +3999,18 @@ Assets {
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: 241.291702
-            Z: -4.99999952
+            X: 322.697266
+            Y: -5.37207031
           }
           Rotation {
           }
           Scale {
-            X: 1.12416255
-            Y: 1
+            X: 1.12416244
+            Y: -0.999999702
             Z: 1.34719539
           }
         }
-        ParentId: 571245417608571023
+        ParentId: 13778961419952162131
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3945,7 +4018,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -3967,19 +4040,18 @@ Assets {
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: -432.722
-            Y: -0.00170898438
-            Z: -4.99999523
+            X: -351.315918
+            Y: -5.36914062
           }
           Rotation {
           }
           Scale {
             X: -1
-            Y: 1
+            Y: -0.999999702
             Z: 1.34719539
           }
         }
-        ParentId: 571245417608571023
+        ParentId: 13778961419952162131
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3987,7 +4059,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -4009,19 +4081,19 @@ Assets {
         Name: "Urban Pipe Coupling 02"
         Transform {
           Location {
-            X: 247.167343
-            Y: -3.64118958
-            Z: 91.6249237
+            X: 283.3125
+            Y: 8.05517578
+            Z: 76.6248932
           }
           Rotation {
           }
           Scale {
             X: 0.963488936
-            Y: 0.963488877
+            Y: -0.963488698
             Z: 1.83636153
           }
         }
-        ParentId: 6320844655194198496
+        ParentId: 13778961419952162131
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4077,99 +4149,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16163665952175281032
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 9746304601954540371
-        Name: "Urban Pipe Coupling 02"
-        Transform {
-          Location {
-            X: -273.556824
-            Y: -3.64118958
-            Z: 91.6249237
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.963488936
-            Y: 0.963488877
-            Z: 1.71638143
-          }
-        }
-        ParentId: 6320844655194198496
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.318546832
-              G: 0.219526231
-              B: 0.102241717
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.318546832
-              G: 0.219526231
-              B: 0.102241717
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:vtile"
-            Float: 3
-          }
-        }
-        Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -5174,7 +5154,8 @@ Assets {
           }
         }
         ParentId: 10554319447034855512
-        ChildIds: 16639299657095239932
+        ChildIds: 16924602688874694035
+        ChildIds: 2205097851788480291
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -5189,8 +5170,8 @@ Assets {
         }
       }
       Objects {
-        Id: 16639299657095239932
-        Name: "IgnoreGroup"
+        Id: 16924602688874694035
+        Name: "MergedModel"
         Transform {
           Location {
           }
@@ -5198,16 +5179,28 @@ Assets {
           }
           Scale {
             X: 1
-            Y: 1
+            Y: -0.999999881
             Z: 1
           }
         }
         ParentId: 17824163530722159823
-        ChildIds: 2205097851788480291
         ChildIds: 7337513585771008484
         ChildIds: 2681265061263822407
         ChildIds: 3682357130023087010
-        ChildIds: 10386203845144012430
+        ChildIds: 17685202965234487812
+        ChildIds: 9619703848687883057
+        ChildIds: 16877903181607325100
+        ChildIds: 2869812545302127162
+        ChildIds: 17388431483447319618
+        ChildIds: 11158737679967944112
+        ChildIds: 11636909602250674546
+        ChildIds: 6731889952711490367
+        ChildIds: 2557248488479286791
+        ChildIds: 4359152401551584620
+        ChildIds: 5672180220342313417
+        ChildIds: 916637931367436399
+        ChildIds: 3639855955452016564
+        ChildIds: 17426788642238339952
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -5217,8 +5210,1288 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         Folder {
-          IsGroup: true
+          Model {
+            AggressiveMerge: true
+          }
+        }
+      }
+      Objects {
+        Id: 7337513585771008484
+        Name: "Military Tank Historic Tread 01 Front"
+        Transform {
+          Location {
+            X: -422.72168
+            Y: -9.99853516
+            Z: 15
+          }
+          Rotation {
+          }
+          Scale {
+            X: -1
+            Y: -0.99999994
+            Z: 1.34719539
+          }
+        }
+        ParentId: 16924602688874694035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5201493243558163533
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 2681265061263822407
+        Name: "Military Tank Historic Tread 01 Mid"
+        Transform {
+          Location {
+            X: -88.6879883
+            Y: -10
+            Z: 15
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.69030225
+            Y: -0.99999994
+            Z: 1.34719539
+          }
+        }
+        ParentId: 16924602688874694035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 286982728900310227
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 3682357130023087010
+        Name: "Military Tank Historic Tread 01 Front"
+        Transform {
+          Location {
+            X: 251.29248
+            Y: -10
+            Z: 15
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.12416244
+            Y: -0.99999994
+            Z: 1.34719539
+          }
+        }
+        ParentId: 16924602688874694035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5201493243558163533
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 17685202965234487812
+        Name: "Military Tank Historic Gear 01"
+        Transform {
+          Location {
+            X: 117.487305
+            Y: 21.144043
+            Z: 159.800507
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.982654572
+            Y: -2.03080797
+            Z: 0.982654572
+          }
+        }
+        ParentId: 16924602688874694035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3242218384468801037
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 9619703848687883057
+        Name: "Military Tank Historic Gear 01"
+        Transform {
+          Location {
+            X: -93.4882812
+            Y: 21.144043
+            Z: 159.800507
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.982654572
+            Y: -2.03080797
+            Z: 0.982654572
+          }
+        }
+        ParentId: 16924602688874694035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3242218384468801037
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 16877903181607325100
+        Name: "Military Tank Historic Gear 01"
+        Transform {
+          Location {
+            X: -273.52002
+            Y: 21.144043
+            Z: 159.800507
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.982654572
+            Y: -2.03080797
+            Z: 0.982654572
+          }
+        }
+        ParentId: 16924602688874694035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3242218384468801037
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 2869812545302127162
+        Name: "Military Tank Historic Gear 03"
+        Transform {
+          Location {
+            X: 152.980957
+            Y: 22.5522461
+            Z: 63.8190155
+          }
+          Rotation {
+            Yaw: 13.7316208
+            Roll: -9.96196079
+          }
+          Scale {
+            X: 0.812031746
+            Y: -1.14741683
+            Z: 0.812031746
+          }
+        }
+        ParentId: 16924602688874694035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1630607435793532884
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 17388431483447319618
+        Name: "Military Tank Historic Gear 02"
+        Transform {
+          Location {
+            X: 303.736328
+            Y: 24.7592773
+            Z: 120.845062
+          }
+          Rotation {
+            Pitch: 1.06527722
+            Yaw: 7.42319584
+            Roll: -8.12114525
+          }
+          Scale {
+            X: 1.33486307
+            Y: -2.05687642
+            Z: 1.33486307
+          }
+        }
+        ParentId: 16924602688874694035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 789699710351458066
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 11158737679967944112
+        Name: "Military Tank Historic Gear 03"
+        Transform {
+          Location {
+            X: 58.0175781
+            Y: 27.9897461
+            Z: 63.8189774
+          }
+          Rotation {
+            Yaw: -11.9860058
+          }
+          Scale {
+            X: 0.812031746
+            Y: -1.14741683
+            Z: 0.812031746
+          }
+        }
+        ParentId: 16924602688874694035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1630607435793532884
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 11636909602250674546
+        Name: "Military Tank Historic Gear 03"
+        Transform {
+          Location {
+            X: -145.072754
+            Y: 26.8500977
+            Z: 63.8187943
+          }
+          Rotation {
+            Yaw: -4.5360837
+          }
+          Scale {
+            X: 0.812031746
+            Y: -1.14741683
+            Z: 0.812031746
+          }
+        }
+        ParentId: 16924602688874694035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1630607435793532884
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 6731889952711490367
+        Name: "Military Tank Historic Gear 03"
+        Transform {
+          Location {
+            X: -40.8032227
+            Y: 32.2617188
+            Z: 64.3961258
+          }
+          Rotation {
+            Roll: -6.08424902
+          }
+          Scale {
+            X: 0.812031746
+            Y: -1.14741683
+            Z: 0.812031746
+          }
+        }
+        ParentId: 16924602688874694035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1630607435793532884
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 2557248488479286791
+        Name: "Military Tank Historic Gear 03"
+        Transform {
+          Location {
+            X: -342.933594
+            Y: 26.4204102
+            Z: 63.7555771
+          }
+          Rotation {
+            Yaw: 13.4778194
+            Roll: -8.19705677
+          }
+          Scale {
+            X: 0.812031746
+            Y: -1.14741683
+            Z: 0.812031746
+          }
+        }
+        ParentId: 16924602688874694035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1630607435793532884
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 4359152401551584620
+        Name: "Military Tank Historic Gear 03"
+        Transform {
+          Location {
+            X: -241.069336
+            Y: 26.8500977
+            Z: 63.8187943
+          }
+          Rotation {
+            Yaw: -10.4158335
+          }
+          Scale {
+            X: 0.812031746
+            Y: -1.14741683
+            Z: 0.812031746
+          }
+        }
+        ParentId: 16924602688874694035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1630607435793532884
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 5672180220342313417
+        Name: "Urban Pipe Coupling 02"
+        Transform {
+          Location {
+            X: 202.203125
+            Y: 3.42724609
+            Z: 84.8570786
+          }
+          Rotation {
+            Pitch: -6.37325621
+          }
+          Scale {
+            X: 0.963488936
+            Y: -0.963488877
+            Z: 1.83636153
+          }
+        }
+        ParentId: 16924602688874694035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16163665952175281032
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 916637931367436399
+        Name: "Urban Pipe Coupling 02"
+        Transform {
+          Location {
+            X: -308.817871
+            Y: 3.42724609
+            Z: 91.6249313
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.963488936
+            Y: -0.963488877
+            Z: 1.71638143
+          }
+        }
+        ParentId: 16924602688874694035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16163665952175281032
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 3639855955452016564
+        Name: "Military Tank Modern Gear 01"
+        Transform {
+          Location {
+            X: -465.639404
+            Y: 36.4216576
+            Z: 116.873291
+          }
+          Rotation {
+            Yaw: -5.24531507
+            Roll: 90
+          }
+          Scale {
+            X: 0.827210128
+            Y: 0.826999664
+            Z: 0.827210128
+          }
+        }
+        ParentId: 16924602688874694035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18393437648231545508
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 17426788642238339952
+        Name: "Military Tank Modern Gear 01"
+        Transform {
+          Location {
+            X: -466.296387
+            Y: 29.2773438
+            Z: 116.873253
+          }
+          Rotation {
+            Yaw: 174.754669
+          }
+          Scale {
+            X: 0.827210486
+            Y: -1.2640419
+            Z: 0.827210426
+          }
+        }
+        ParentId: 16924602688874694035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 2288213157925483137
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.806952477
+              G: 0.508881748
+              B: 0.152926221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3657620392338592599
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
         }
       }
       Objects {
@@ -5226,19 +6499,19 @@ Assets {
         Name: "Tank Tread"
         Transform {
           Location {
-            X: -80.5221481
-            Y: -9.57180691
+            X: -80.5219727
+            Y: -9.57177734
           }
           Rotation {
             Yaw: -179.999954
           }
           Scale {
             X: 1.43072474
-            Y: 0.67980957
+            Y: 0.679809511
             Z: 1.29320204
           }
         }
-        ParentId: 16639299657095239932
+        ParentId: 17824163530722159823
         UnregisteredParameters {
           Overrides {
             Name: "bp:Tread Type"
@@ -5326,1330 +6599,6 @@ Assets {
         }
       }
       Objects {
-        Id: 7337513585771008484
-        Name: "Military Tank Historic Tread 01 Front"
-        Transform {
-          Location {
-            X: -422.72168
-            Y: 9.99853516
-            Z: 15
-          }
-          Rotation {
-          }
-          Scale {
-            X: -1
-            Y: 0.999999881
-            Z: 1.34719539
-          }
-        }
-        ParentId: 16639299657095239932
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5201493243558163533
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 2681265061263822407
-        Name: "Military Tank Historic Tread 01 Mid"
-        Transform {
-          Location {
-            X: -88.6879883
-            Y: 10
-            Z: 15
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.69030237
-            Y: 0.999999881
-            Z: 1.34719539
-          }
-        }
-        ParentId: 16639299657095239932
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 286982728900310227
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 3682357130023087010
-        Name: "Military Tank Historic Tread 01 Front"
-        Transform {
-          Location {
-            X: 251.291992
-            Y: 10
-            Z: 15
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.12416244
-            Y: 0.999999881
-            Z: 1.34719539
-          }
-        }
-        ParentId: 16639299657095239932
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5201493243558163533
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 10386203845144012430
-        Name: "MergedModel"
-        Transform {
-          Location {
-            Y: -10.0000305
-            Z: 20
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 16639299657095239932
-        ChildIds: 17685202965234487812
-        ChildIds: 9619703848687883057
-        ChildIds: 16877903181607325100
-        ChildIds: 2869812545302127162
-        ChildIds: 17388431483447319618
-        ChildIds: 11158737679967944112
-        ChildIds: 11636909602250674546
-        ChildIds: 6731889952711490367
-        ChildIds: 2557248488479286791
-        ChildIds: 4359152401551584620
-        ChildIds: 5672180220342313417
-        ChildIds: 916637931367436399
-        ChildIds: 3639855955452016564
-        ChildIds: 17426788642238339952
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          Model {
-            AggressiveMerge: true
-          }
-        }
-      }
-      Objects {
-        Id: 17685202965234487812
-        Name: "Military Tank Historic Gear 01"
-        Transform {
-          Location {
-            X: 117.487305
-            Y: -11.1435547
-            Z: 139.800507
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.982654572
-            Y: 2.03080773
-            Z: 0.982654572
-          }
-        }
-        ParentId: 10386203845144012430
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 3242218384468801037
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 9619703848687883057
-        Name: "Military Tank Historic Gear 01"
-        Transform {
-          Location {
-            X: -93.4880371
-            Y: -11.1435547
-            Z: 139.800507
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.982654572
-            Y: 2.03080773
-            Z: 0.982654572
-          }
-        }
-        ParentId: 10386203845144012430
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 3242218384468801037
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 16877903181607325100
-        Name: "Military Tank Historic Gear 01"
-        Transform {
-          Location {
-            X: -273.520264
-            Y: -11.1435547
-            Z: 139.800507
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.982654572
-            Y: 2.03080773
-            Z: 0.982654572
-          }
-        }
-        ParentId: 10386203845144012430
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 3242218384468801037
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 2869812545302127162
-        Name: "Military Tank Historic Gear 03"
-        Transform {
-          Location {
-            X: 152.980957
-            Y: -12.5522461
-            Z: 43.8190079
-          }
-          Rotation {
-            Yaw: -13.7316093
-            Roll: 9.96195221
-          }
-          Scale {
-            X: 0.812031746
-            Y: 1.14741683
-            Z: 0.812031746
-          }
-        }
-        ParentId: 10386203845144012430
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1630607435793532884
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 17388431483447319618
-        Name: "Military Tank Historic Gear 02"
-        Transform {
-          Location {
-            X: 303.736572
-            Y: -14.7592773
-            Z: 100.84507
-          }
-          Rotation {
-            Pitch: 1.06527722
-            Yaw: -7.42319155
-            Roll: 8.12114
-          }
-          Scale {
-            X: 1.33486307
-            Y: 2.05687642
-            Z: 1.33486307
-          }
-        }
-        ParentId: 10386203845144012430
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 789699710351458066
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 11158737679967944112
-        Name: "Military Tank Historic Gear 03"
-        Transform {
-          Location {
-            X: 58.017334
-            Y: -17.9892578
-            Z: 43.8189774
-          }
-          Rotation {
-            Yaw: 11.9859877
-          }
-          Scale {
-            X: 0.812031746
-            Y: 1.14741683
-            Z: 0.812031746
-          }
-        }
-        ParentId: 10386203845144012430
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1630607435793532884
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 11636909602250674546
-        Name: "Military Tank Historic Gear 03"
-        Transform {
-          Location {
-            X: -145.072754
-            Y: -16.8503418
-            Z: 43.8187943
-          }
-          Rotation {
-            Yaw: 4.53608179
-          }
-          Scale {
-            X: 0.812031746
-            Y: 1.14741683
-            Z: 0.812031746
-          }
-        }
-        ParentId: 10386203845144012430
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1630607435793532884
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 6731889952711490367
-        Name: "Military Tank Historic Gear 03"
-        Transform {
-          Location {
-            X: -40.8032227
-            Y: -22.2617188
-            Z: 44.3961258
-          }
-          Rotation {
-            Roll: 6.0842452
-          }
-          Scale {
-            X: 0.812031746
-            Y: 1.14741683
-            Z: 0.812031746
-          }
-        }
-        ParentId: 10386203845144012430
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1630607435793532884
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 2557248488479286791
-        Name: "Military Tank Historic Gear 03"
-        Transform {
-          Location {
-            X: -342.933594
-            Y: -16.4204102
-            Z: 43.7555771
-          }
-          Rotation {
-            Yaw: -13.4778023
-            Roll: 8.19704628
-          }
-          Scale {
-            X: 0.812031746
-            Y: 1.14741683
-            Z: 0.812031746
-          }
-        }
-        ParentId: 10386203845144012430
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1630607435793532884
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 4359152401551584620
-        Name: "Military Tank Historic Gear 03"
-        Transform {
-          Location {
-            X: -241.069092
-            Y: -16.8503418
-            Z: 43.8187943
-          }
-          Rotation {
-            Yaw: 10.4158182
-          }
-          Scale {
-            X: 0.812031746
-            Y: 1.14741683
-            Z: 0.812031746
-          }
-        }
-        ParentId: 10386203845144012430
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1630607435793532884
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 5672180220342313417
-        Name: "Urban Pipe Coupling 02"
-        Transform {
-          Location {
-            X: 202.203369
-            Y: 6.57275391
-            Z: 64.8570786
-          }
-          Rotation {
-            Pitch: -6.37325621
-          }
-          Scale {
-            X: 0.963488936
-            Y: 0.963488817
-            Z: 1.83636153
-          }
-        }
-        ParentId: 10386203845144012430
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16163665952175281032
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 916637931367436399
-        Name: "Urban Pipe Coupling 02"
-        Transform {
-          Location {
-            X: -308.817871
-            Y: 6.57275391
-            Z: 71.6249313
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.963488936
-            Y: 0.963488817
-            Z: 1.71638143
-          }
-        }
-        ParentId: 10386203845144012430
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16163665952175281032
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 3639855955452016564
-        Name: "Military Tank Modern Gear 01"
-        Transform {
-          Location {
-            X: -465.63916
-            Y: -26.4213867
-            Z: 96.8732834
-          }
-          Rotation {
-            Yaw: 5.24531317
-            Roll: -90
-          }
-          Scale {
-            X: 0.827210128
-            Y: -0.826999605
-            Z: 0.827210128
-          }
-        }
-        ParentId: 10386203845144012430
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18393437648231545508
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 17426788642238339952
-        Name: "Military Tank Modern Gear 01"
-        Transform {
-          Location {
-            X: -466.296631
-            Y: -19.2768555
-            Z: 96.8732529
-          }
-          Rotation {
-            Yaw: -174.754669
-          }
-          Scale {
-            X: 0.827210486
-            Y: 1.26404178
-            Z: 0.827210426
-          }
-        }
-        ParentId: 10386203845144012430
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 2288213157925483137
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.806952477
-              G: 0.508881748
-              B: 0.152926221
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 3657620392338592599
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 8703069560971717373
         Name: "HullGeo"
         Transform {
@@ -6694,8 +6643,6 @@ Assets {
         ChildIds: 10763176989242011272
         ChildIds: 8253780370977428860
         ChildIds: 4353490269642821852
-        ChildIds: 1718411803087691573
-        ChildIds: 11936559626007861589
         ChildIds: 7276345619595735046
         ChildIds: 5011025646408319645
         ChildIds: 17981828290307900787
@@ -7048,6 +6995,8 @@ Assets {
         ChildIds: 5022918294102090503
         ChildIds: 4169994129395024114
         ChildIds: 16887625009567906033
+        ChildIds: 11936559626007861589
+        ChildIds: 1718411803087691573
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -15250,6 +15199,156 @@ Assets {
         }
       }
       Objects {
+        Id: 11936559626007861589
+        Name: "Cylinder - Polished"
+        Transform {
+          Location {
+            X: -272.504761
+            Y: -107.77652
+            Z: -31.0011158
+          }
+          Rotation {
+            Pitch: 71.4002686
+            Yaw: -54.8981133
+            Roll: -56.3300705
+          }
+          Scale {
+            X: 0.235073477
+            Y: 0.4162305
+            Z: 0.106270894
+          }
+        }
+        ParentId: 3348247105886165848
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.318546832
+              G: 0.219526231
+              B: 0.102241717
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18088187323891878271
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 1718411803087691573
+        Name: "Cylinder - Chamfered Polished"
+        Transform {
+          Location {
+            X: -276.392548
+            Y: -107.592491
+            Z: -30.2510185
+          }
+          Rotation {
+            Pitch: 79.4322739
+          }
+          Scale {
+            X: 0.247923374
+            Y: 0.247923389
+            Z: 0.142559066
+          }
+        }
+        ParentId: 3348247105886165848
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.318546832
+              G: 0.219526231
+              B: 0.102241717
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18230358678822370135
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
         Id: 9233890402999405307
         Name: "Military Tank Historic Hull 01 - Rear"
         Transform {
@@ -17502,156 +17601,6 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 1758388402481224558
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 1718411803087691573
-        Name: "Cylinder - Chamfered Polished"
-        Transform {
-          Location {
-            X: -505.518982
-            Y: -80.4481049
-            Z: 35.3566093
-          }
-          Rotation {
-            Pitch: 79.4322739
-          }
-          Scale {
-            X: 0.247923493
-            Y: 0.247923508
-            Z: 0.142559096
-          }
-        }
-        ParentId: 8703069560971717373
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.318546832
-              G: 0.219526231
-              B: 0.102241717
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18230358678822370135
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 11936559626007861589
-        Name: "Cylinder - Polished"
-        Transform {
-          Location {
-            X: -501.63147
-            Y: -80.6321259
-            Z: 34.6065063
-          }
-          Rotation {
-            Pitch: 71.4004059
-            Yaw: -54.8982315
-            Roll: -56.330265
-          }
-          Scale {
-            X: 0.235073596
-            Y: 0.416230649
-            Z: 0.106270947
-          }
-        }
-        ParentId: 8703069560971717373
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.318546832
-              G: 0.219526231
-              B: 0.102241717
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18088187323891878271
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -23764,7 +23713,6 @@ Assets {
         ChildIds: 6894131995639705517
         ChildIds: 15240630545861893790
         ChildIds: 11713420856714710164
-        ChildIds: 12863822625284945964
         ChildIds: 17956870806094776872
         ChildIds: 5450198442744945058
         ChildIds: 12776757233498992012
@@ -23826,7 +23774,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -24132,8 +24080,6 @@ Assets {
         ChildIds: 1411791588398670809
         ChildIds: 12711040288673183547
         ChildIds: 5959099693525631781
-        ChildIds: 18054610169164864229
-        ChildIds: 5802960118800640955
         ChildIds: 6441141595117936024
         ChildIds: 5775909935400669335
         ChildIds: 816771453830458782
@@ -24146,6 +24092,7 @@ Assets {
         ChildIds: 14622236708347714908
         ChildIds: 14010437714402035425
         ChildIds: 8125383175461526598
+        ChildIds: 12863822625284945964
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -25571,144 +25518,6 @@ Assets {
         }
       }
       Objects {
-        Id: 18054610169164864229
-        Name: "Military Crate Hinge 01"
-        Transform {
-          Location {
-            X: -74.0776138
-            Y: 169.869827
-            Z: -14.5912638
-          }
-          Rotation {
-            Yaw: -89.9999542
-            Roll: -179.904556
-          }
-          Scale {
-            X: 1.07789314
-            Y: 1.07789314
-            Z: 1.07789314
-          }
-        }
-        ParentId: 6464361498184112718
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.209
-              G: 0.144032151
-              B: 0.0670812503
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 3
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9021880512678057409
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 5802960118800640955
-        Name: "Military Crate Hinge 01"
-        Transform {
-          Location {
-            X: -74.0776138
-            Y: 128.475723
-            Z: -14.5912638
-          }
-          Rotation {
-            Yaw: -89.9999542
-            Roll: -179.904556
-          }
-          Scale {
-            X: 1.07789314
-            Y: 1.07789314
-            Z: 1.07789314
-          }
-        }
-        ParentId: 6464361498184112718
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.209
-              G: 0.144032151
-              B: 0.0670812503
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 3
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9021880512678057409
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 6441141595117936024
         Name: "Military Crate Hinge 01"
         Transform {
@@ -26554,6 +26363,111 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 7900187111309595218
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 12863822625284945964
+        Name: "Urban Pipe Flange 01"
+        Transform {
+          Location {
+            X: -231.195633
+            Y: 146.198074
+            Z: -55.2790604
+          }
+          Rotation {
+            Pitch: 90
+          }
+          Scale {
+            X: 1.06133175
+            Y: 1.06133175
+            Z: 0.667332768
+          }
+        }
+        ParentId: 6464361498184112718
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 9431420845744582604
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.318546832
+              G: 0.219526231
+              B: 0.102241717
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:color"
+            Color {
+              R: 0.318546832
+              G: 0.219526231
+              B: 0.102241717
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:vtile"
+            Float: 3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14541379120575232735
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -28737,111 +28651,6 @@ Assets {
             Physics {
               Mass: 100
               LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 12863822625284945964
-        Name: "Urban Pipe Flange 01"
-        Transform {
-          Location {
-            X: -265.443085
-            Y: 44.7820358
-            Z: 172.250412
-          }
-          Rotation {
-            Pitch: 90
-          }
-          Scale {
-            X: 1.06133199
-            Y: 1.06133199
-            Z: 0.667332888
-          }
-        }
-        ParentId: 11545673583180138706
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 9431420845744582604
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.318546832
-              G: 0.219526231
-              B: 0.102241717
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:vtile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_Detail2:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail2:color"
-            Color {
-              R: 0.318546832
-              G: 0.219526231
-              B: 0.102241717
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail2:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_Detail2:vtile"
-            Float: 3
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 14541379120575232735
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
             }
             BoundsScale: 1
           }
@@ -31318,6 +31127,15 @@ Assets {
       }
     }
     Assets {
+      Id: 14541379120575232735
+      Name: "Urban Pipe Coupling 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_urb_pipes_acc_coupling_001_ref"
+      }
+    }
+    Assets {
       Id: 12002842006380093104
       Name: "Military Tank Historic Hatch 01"
       PlatformAssetType: 1
@@ -31351,15 +31169,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cube_002"
-      }
-    }
-    Assets {
-      Id: 14541379120575232735
-      Name: "Urban Pipe Coupling 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_urb_pipes_acc_coupling_001_ref"
       }
     }
     Assets {
