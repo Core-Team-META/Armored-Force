@@ -1,13 +1,13 @@
 Name: "IKPoints"
-RootId: 8633940625272241926
+RootId: 2131365287554369628
 Objects {
-  Id: 15359533259197229565
+  Id: 14166304048398932364
   Name: "8"
   Transform {
     Location {
-      X: -399.997894
+      X: -399.999
       Y: 2099.99976
-      Z: 162.711121
+      Z: 126.322449
     }
     Rotation {
       Yaw: 1.87830192e-05
@@ -18,8 +18,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8633940625272241926
-  ChildIds: 5336225859893301482
+  ParentId: 2131365287554369628
+  ChildIds: 2675117790320187191
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43,164 +43,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5336225859893301482
-  Name: "Group"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: -1.87830192e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15359533259197229565
-  ChildIds: 14750820522366505533
-  ChildIds: 359065771429148831
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 359065771429148831
-  Name: "1"
-  Transform {
-    Location {
-      X: 2.65224
-      Y: -30.3311481
-      Z: -132.117615
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5336225859893301482
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  IKAnchor {
-    AimOffset {
-    }
-    IKAnchorType {
-      Value: "mc:eikanchortype:leftfoot"
-    }
-    BlendWeight: 1
-  }
-}
-Objects {
-  Id: 14750820522366505533
-  Name: "1"
-  Transform {
-    Location {
-      X: 2.65497971
-      Y: 30.3313122
-      Z: -132.119476
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5336225859893301482
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  IKAnchor {
-    AimOffset {
-    }
-    IKAnchorType {
-      Value: "mc:eikanchortype:rightfoot"
-    }
-    BlendWeight: 1
-  }
-}
-Objects {
-  Id: 1066115046961695562
-  Name: "7"
-  Transform {
-    Location {
-      X: -300.001556
-      Y: -1549.99939
-      Z: 132.464447
-    }
-    Rotation {
-      Yaw: 1.62216984e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8633940625272241926
-  ChildIds: 742873946381311794
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  IKAnchor {
-    AimOffset {
-    }
-    IKAnchorType {
-      Value: "mc:eikanchortype:hip"
-    }
-    BlendWeight: 1
-  }
-}
-Objects {
-  Id: 742873946381311794
+  Id: 2675117790320187191
   Name: "Group"
   Transform {
     Location {
@@ -214,9 +57,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1066115046961695562
-  ChildIds: 664010174699269186
-  ChildIds: 12250197535033698008
+  ParentId: 14166304048398932364
+  ChildIds: 17598890338112482696
+  ChildIds: 11505974435291472885
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -235,12 +78,12 @@ Objects {
   }
 }
 Objects {
-  Id: 12250197535033698008
+  Id: 11505974435291472885
   Name: "1"
   Transform {
     Location {
-      X: 2.65224147
-      Y: -30.3311481
+      X: 2.65602446
+      Y: -30.3321877
       Z: -132.117615
     }
     Rotation {
@@ -251,7 +94,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 742873946381311794
+  ParentId: 2675117790320187191
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -275,13 +118,13 @@ Objects {
   }
 }
 Objects {
-  Id: 664010174699269186
+  Id: 17598890338112482696
   Name: "1"
   Transform {
     Location {
-      X: 2.65497875
-      Y: 30.3313122
-      Z: -132.119476
+      X: 2.65891051
+      Y: 30.3311157
+      Z: -132.119507
     }
     Rotation {
     }
@@ -291,7 +134,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 742873946381311794
+  ParentId: 2675117790320187191
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -315,16 +158,16 @@ Objects {
   }
 }
 Objects {
-  Id: 5664154366892123820
-  Name: "6"
+  Id: 3288908319020332543
+  Name: "7"
   Transform {
     Location {
-      X: -300.000305
-      Y: 1550.00012
-      Z: 164.023071
+      X: -300.002472
+      Y: -1549.99939
+      Z: 180.572845
     }
     Rotation {
-      Yaw: 1.36603776e-05
+      Yaw: 1.62216984e-05
     }
     Scale {
       X: 1
@@ -332,8 +175,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8633940625272241926
-  ChildIds: 12908889399881744658
+  ParentId: 2131365287554369628
+  ChildIds: 11731947191248919934
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -357,7 +200,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12908889399881744658
+  Id: 11731947191248919934
   Name: "Group"
   Transform {
     Location {
@@ -371,9 +214,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5664154366892123820
-  ChildIds: 6949398531227903722
-  ChildIds: 12049016777812953650
+  ParentId: 3288908319020332543
+  ChildIds: 6092041111219863383
+  ChildIds: 17745349598408600160
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -392,12 +235,12 @@ Objects {
   }
 }
 Objects {
-  Id: 12049016777812953650
+  Id: 17745349598408600160
   Name: "1"
   Transform {
     Location {
-      X: 2.65224338
-      Y: -30.3311481
+      X: 2.65602589
+      Y: -30.3321877
       Z: -132.117615
     }
     Rotation {
@@ -408,7 +251,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12908889399881744658
+  ParentId: 11731947191248919934
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -432,13 +275,13 @@ Objects {
   }
 }
 Objects {
-  Id: 6949398531227903722
+  Id: 6092041111219863383
   Name: "1"
   Transform {
     Location {
-      X: 2.65498734
-      Y: 30.3313732
-      Z: -132.119476
+      X: 2.65890908
+      Y: 30.3311157
+      Z: -132.119507
     }
     Rotation {
     }
@@ -448,7 +291,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12908889399881744658
+  ParentId: 11731947191248919934
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -472,13 +315,170 @@ Objects {
   }
 }
 Objects {
-  Id: 16637336014376961674
+  Id: 12408848464674010793
+  Name: "6"
+  Transform {
+    Location {
+      X: -299.99939
+      Y: 1550
+      Z: 136.519623
+    }
+    Rotation {
+      Yaw: 1.36603776e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2131365287554369628
+  ChildIds: 9483555284314226217
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  IKAnchor {
+    AimOffset {
+    }
+    IKAnchorType {
+      Value: "mc:eikanchortype:hip"
+    }
+    BlendWeight: 1
+  }
+}
+Objects {
+  Id: 9483555284314226217
+  Name: "Group"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -1.10990568e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12408848464674010793
+  ChildIds: 9072409425635847628
+  ChildIds: 15582104528563483241
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15582104528563483241
+  Name: "1"
+  Transform {
+    Location {
+      X: 2.65602756
+      Y: -30.3321857
+      Z: -132.117615
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9483555284314226217
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  IKAnchor {
+    AimOffset {
+    }
+    IKAnchorType {
+      Value: "mc:eikanchortype:leftfoot"
+    }
+    BlendWeight: 1
+  }
+}
+Objects {
+  Id: 9072409425635847628
+  Name: "1"
+  Transform {
+    Location {
+      X: 2.65890765
+      Y: 30.3311138
+      Z: -132.119507
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9483555284314226217
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  IKAnchor {
+    AimOffset {
+    }
+    IKAnchorType {
+      Value: "mc:eikanchortype:rightfoot"
+    }
+    BlendWeight: 1
+  }
+}
+Objects {
+  Id: 13703176406567521508
   Name: "5"
   Transform {
     Location {
-      X: -200.000488
-      Y: -1099.99878
-      Z: 130.912109
+      X: -199.999481
+      Y: -1099.9989
+      Z: 170.175934
     }
     Rotation {
       Yaw: 1.067217e-05
@@ -489,8 +489,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8633940625272241926
-  ChildIds: 9226767336087745595
+  ParentId: 2131365287554369628
+  ChildIds: 9746312036248316308
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -514,164 +514,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9226767336087745595
-  Name: "Group"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: -1.067217e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16637336014376961674
-  ChildIds: 11728367176322824181
-  ChildIds: 5767266308250860149
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 5767266308250860149
-  Name: "1"
-  Transform {
-    Location {
-      X: 2.65224409
-      Y: -30.3311481
-      Z: -132.117615
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9226767336087745595
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  IKAnchor {
-    AimOffset {
-    }
-    IKAnchorType {
-      Value: "mc:eikanchortype:leftfoot"
-    }
-    BlendWeight: 1
-  }
-}
-Objects {
-  Id: 11728367176322824181
-  Name: "1"
-  Transform {
-    Location {
-      X: 2.65497589
-      Y: 30.3313122
-      Z: -132.119476
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9226767336087745595
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  IKAnchor {
-    AimOffset {
-    }
-    IKAnchorType {
-      Value: "mc:eikanchortype:rightfoot"
-    }
-    BlendWeight: 1
-  }
-}
-Objects {
-  Id: 13020813588833216263
-  Name: "4"
-  Transform {
-    Location {
-      X: -199.998123
-      Y: 1099.99976
-      Z: 145.665863
-    }
-    Rotation {
-      Yaw: 8.11084919e-06
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8633940625272241926
-  ChildIds: 10307341042041964094
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  IKAnchor {
-    AimOffset {
-    }
-    IKAnchorType {
-      Value: "mc:eikanchortype:hip"
-    }
-    BlendWeight: 1
-  }
-}
-Objects {
-  Id: 10307341042041964094
+  Id: 9746312036248316308
   Name: "Group"
   Transform {
     Location {
@@ -685,9 +528,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13020813588833216263
-  ChildIds: 3502564762213690400
-  ChildIds: 6266445375158665865
+  ParentId: 13703176406567521508
+  ChildIds: 9182024464284052088
+  ChildIds: 8029560542321487101
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -706,12 +549,12 @@ Objects {
   }
 }
 Objects {
-  Id: 6266445375158665865
+  Id: 8029560542321487101
   Name: "1"
   Transform {
     Location {
-      X: 2.652246
-      Y: -30.3311462
+      X: 2.65602899
+      Y: -30.3321857
       Z: -132.117615
     }
     Rotation {
@@ -722,7 +565,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10307341042041964094
+  ParentId: 9746312036248316308
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -746,13 +589,13 @@ Objects {
   }
 }
 Objects {
-  Id: 3502564762213690400
+  Id: 9182024464284052088
   Name: "1"
   Transform {
     Location {
-      X: 2.65498209
-      Y: 30.331358
-      Z: -132.119476
+      X: 2.65890622
+      Y: 30.3311138
+      Z: -132.119507
     }
     Rotation {
     }
@@ -762,7 +605,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10307341042041964094
+  ParentId: 9746312036248316308
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -786,16 +629,16 @@ Objects {
   }
 }
 Objects {
-  Id: 16768936578353881982
-  Name: "3"
+  Id: 16740266906740377236
+  Name: "4"
   Transform {
     Location {
-      X: -99.9988632
-      Y: -550.000488
-      Z: 134.210602
+      X: -199.99913
+      Y: 1099.99976
+      Z: 136.850769
     }
     Rotation {
-      Yaw: 5.5495284e-06
+      Yaw: 8.11084919e-06
     }
     Scale {
       X: 1
@@ -803,8 +646,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8633940625272241926
-  ChildIds: 16598845012600993324
+  ParentId: 2131365287554369628
+  ChildIds: 4133471661326727426
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -828,7 +671,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16598845012600993324
+  Id: 4133471661326727426
   Name: "Group"
   Transform {
     Location {
@@ -842,9 +685,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16768936578353881982
-  ChildIds: 8730278945714774088
-  ChildIds: 14169731152062141170
+  ParentId: 16740266906740377236
+  ChildIds: 13722918921936694543
+  ChildIds: 2561581619028701125
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -863,12 +706,12 @@ Objects {
   }
 }
 Objects {
-  Id: 14169731152062141170
+  Id: 2561581619028701125
   Name: "1"
   Transform {
     Location {
-      X: 2.65224838
-      Y: -30.3311462
+      X: 2.65603
+      Y: -30.3321857
       Z: -132.117615
     }
     Rotation {
@@ -879,7 +722,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16598845012600993324
+  ParentId: 4133471661326727426
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -903,13 +746,13 @@ Objects {
   }
 }
 Objects {
-  Id: 8730278945714774088
+  Id: 13722918921936694543
   Name: "1"
   Transform {
     Location {
-      X: 2.65498209
-      Y: 30.3313732
-      Z: -132.119476
+      X: 2.65890527
+      Y: 30.3311157
+      Z: -132.119507
     }
     Rotation {
     }
@@ -919,7 +762,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16598845012600993324
+  ParentId: 4133471661326727426
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -943,13 +786,170 @@ Objects {
   }
 }
 Objects {
-  Id: 7356312395628695874
+  Id: 5405048791644533280
+  Name: "3"
+  Transform {
+    Location {
+      X: -99.9998169
+      Y: -550.000427
+      Z: 159.465302
+    }
+    Rotation {
+      Yaw: 5.5495284e-06
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2131365287554369628
+  ChildIds: 4335990068539330334
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  IKAnchor {
+    AimOffset {
+    }
+    IKAnchorType {
+      Value: "mc:eikanchortype:hip"
+    }
+    BlendWeight: 1
+  }
+}
+Objects {
+  Id: 4335990068539330334
+  Name: "Group"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -2.9882076e-06
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5405048791644533280
+  ChildIds: 2792766029850653839
+  ChildIds: 16382760304105028506
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16382760304105028506
+  Name: "1"
+  Transform {
+    Location {
+      X: 2.65603209
+      Y: -30.3321877
+      Z: -132.117615
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4335990068539330334
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  IKAnchor {
+    AimOffset {
+    }
+    IKAnchorType {
+      Value: "mc:eikanchortype:leftfoot"
+    }
+    BlendWeight: 1
+  }
+}
+Objects {
+  Id: 2792766029850653839
+  Name: "1"
+  Transform {
+    Location {
+      X: 2.65890336
+      Y: 30.3311157
+      Z: -132.119507
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4335990068539330334
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  IKAnchor {
+    AimOffset {
+    }
+    IKAnchorType {
+      Value: "mc:eikanchortype:rightfoot"
+    }
+    BlendWeight: 1
+  }
+}
+Objects {
+  Id: 6115247543991900667
   Name: "2"
   Transform {
     Location {
-      X: -100.000519
-      Y: 550
-      Z: 137.5289
+      X: -99.9995651
+      Y: 549.999878
+      Z: 140.981506
     }
     Rotation {
       Yaw: 2.5613208e-06
@@ -960,8 +960,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8633940625272241926
-  ChildIds: 12823953164564802966
+  ParentId: 2131365287554369628
+  ChildIds: 16561196170382127728
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -985,13 +985,12 @@ Objects {
   }
 }
 Objects {
-  Id: 12823953164564802966
+  Id: 16561196170382127728
   Name: "Group"
   Transform {
     Location {
     }
     Rotation {
-      Yaw: -2.5613208e-06
     }
     Scale {
       X: 1
@@ -999,9 +998,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7356312395628695874
-  ChildIds: 11018528327696243452
-  ChildIds: 14419158575502382185
+  ParentId: 6115247543991900667
+  ChildIds: 7910957438492036295
+  ChildIds: 6877774767451533137
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1020,12 +1019,12 @@ Objects {
   }
 }
 Objects {
-  Id: 14419158575502382185
+  Id: 6877774767451533137
   Name: "1"
   Transform {
     Location {
-      X: 2.65224838
-      Y: -30.3311462
+      X: 2.65603352
+      Y: -30.3321857
       Z: -132.117615
     }
     Rotation {
@@ -1036,7 +1035,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12823953164564802966
+  ParentId: 16561196170382127728
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1060,12 +1059,12 @@ Objects {
   }
 }
 Objects {
-  Id: 11018528327696243452
+  Id: 7910957438492036295
   Name: "1"
   Transform {
     Location {
-      X: 2.65498209
-      Y: 30.3313732
+      X: 2.65890193
+      Y: 30.3311157
       Z: -132.119476
     }
     Rotation {
@@ -1076,7 +1075,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12823953164564802966
+  ParentId: 16561196170382127728
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1100,13 +1099,13 @@ Objects {
   }
 }
 Objects {
-  Id: 9260220803332419955
+  Id: 7636067138817834906
   Name: "1"
   Transform {
     Location {
-      X: -32.679966
-      Y: 0.000594455749
-      Z: 135.352356
+      X: -32.6789932
+      Y: 0.000507898629
+      Z: 151.435791
     }
     Rotation {
     }
@@ -1116,8 +1115,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8633940625272241926
-  ChildIds: 12307183842465481585
+  ParentId: 2131365287554369628
+  ChildIds: 17746405238689264342
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1141,7 +1140,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12307183842465481585
+  Id: 17746405238689264342
   Name: "Group"
   Transform {
     Location {
@@ -1154,9 +1153,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9260220803332419955
-  ChildIds: 5236126309307051578
-  ChildIds: 15224838967839136617
+  ParentId: 7636067138817834906
+  ChildIds: 2823704490981260143
+  ChildIds: 14088215497044529454
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1175,12 +1174,12 @@ Objects {
   }
 }
 Objects {
-  Id: 15224838967839136617
+  Id: 14088215497044529454
   Name: "1"
   Transform {
     Location {
-      X: 2.65224838
-      Y: -30.3311462
+      X: 2.6536541
+      Y: -30.3314037
       Z: -132.117615
     }
     Rotation {
@@ -1191,7 +1190,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12307183842465481585
+  ParentId: 17746405238689264342
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1215,12 +1214,12 @@ Objects {
   }
 }
 Objects {
-  Id: 5236126309307051578
+  Id: 2823704490981260143
   Name: "1"
   Transform {
     Location {
-      X: 2.65498209
-      Y: 30.3313732
+      X: 2.65562534
+      Y: 30.3312473
       Z: -132.119476
     }
     Rotation {
@@ -1231,7 +1230,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12307183842465481585
+  ParentId: 17746405238689264342
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

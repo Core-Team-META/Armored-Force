@@ -1,7 +1,7 @@
 Name: "Tournament"
-RootId: 14345805352467479663
+RootId: 9841075533469702783
 Objects {
-  Id: 12066377047345646042
+  Id: 8093422520881667526
   Name: "TournamentSettings"
   Transform {
     Scale {
@@ -10,7 +10,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14345805352467479663
+  ParentId: 9841075533469702783
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -24,6 +24,16 @@ Objects {
         Overrides {
           Name: "Name"
           String: "TournamentSettings"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
         }
       }
     }

@@ -1,7 +1,7 @@
 Name: "LeaderboardResourceManager"
-RootId: 6306277881170883404
+RootId: 6817897231715354530
 Objects {
-  Id: 3909878557037540329
+  Id: 7789771445487100915
   Name: "GAMEHELPER_LeaderboardResourceManager"
   Transform {
     Location {
@@ -14,8 +14,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6306277881170883404
-  ChildIds: 261808421074201152
+  ParentId: 6817897231715354530
+  ChildIds: 4976064959454228979
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -33,7 +33,7 @@ Objects {
   }
 }
 Objects {
-  Id: 261808421074201152
+  Id: 4976064959454228979
   Name: "GAMEHELPER_LeaderboardResourceManager"
   Transform {
     Location {
@@ -46,18 +46,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3909878557037540329
+  ParentId: 7789771445487100915
   UnregisteredParameters {
     Overrides {
       Name: "cs:Keys"
       ObjectReference {
-        SelfId: 1947523069746062464
+        SelfId: 1947573229981394095
       }
     }
     Overrides {
       Name: "cs:Leaderboards"
       ObjectReference {
-        SelfId: 8916141426948844754
+        SelfId: 13331734031230280238
       }
     }
     Overrides {
