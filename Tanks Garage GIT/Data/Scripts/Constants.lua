@@ -193,6 +193,7 @@ function Const.GetDefaultTankData()
     return DEFAULT_TANK_DATA
 end
 ------------------------------------------------------------------------------------------------------------------------
+_G.const = Const
 return Const
 
  
