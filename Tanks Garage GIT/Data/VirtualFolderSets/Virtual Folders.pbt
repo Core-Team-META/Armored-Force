@@ -4,5 +4,9 @@ Assets {
   PlatformAssetType: 30
   SerializationVersion: 99
   VirtualFolderSetAsset {
+    Folders {
+      VirtualFolderPath: "Tanks"
+      PlatformAssetType: 5
+    }
   }
 }
