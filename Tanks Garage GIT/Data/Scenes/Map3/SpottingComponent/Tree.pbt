@@ -1,7 +1,7 @@
 Name: "SpottingComponent"
-RootId: 9495345503359524711
+RootId: 184479728482636850
 Objects {
-  Id: 10485957711276133404
+  Id: 5508313276976256264
   Name: "GAMEHELPER_SpottingComponent"
   Transform {
     Location {
@@ -14,9 +14,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9495345503359524711
-  ChildIds: 4205850501209299627
-  ChildIds: 5586094578134508622
+  ParentId: 184479728482636850
+  ChildIds: 921107166006970378
+  ChildIds: 16470143407590425271
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -31,7 +31,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5586094578134508622
+  Id: 16470143407590425271
   Name: "ClientContext"
   Transform {
     Location {
@@ -44,10 +44,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10485957711276133404
-  ChildIds: 5268778817315036311
-  ChildIds: 4107684534598861915
-  ChildIds: 253175623792259992
+  ParentId: 5508313276976256264
+  ChildIds: 1340086571144496636
+  ChildIds: 4335956641777333752
+  ChildIds: 18277282262640349687
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -61,7 +61,7 @@ Objects {
   }
 }
 Objects {
-  Id: 253175623792259992
+  Id: 18277282262640349687
   Name: "UI Container"
   Transform {
     Location {
@@ -74,8 +74,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5586094578134508622
-  ChildIds: 2733311089433459816
+  ParentId: 16470143407590425271
+  ChildIds: 15283871219063551254
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -117,7 +117,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2733311089433459816
+  Id: 15283871219063551254
   Name: "WarningUI"
   Transform {
     Location {
@@ -130,8 +130,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 253175623792259992
-  ChildIds: 12171462429002032591
+  ParentId: 18277282262640349687
+  ChildIds: 14881869336421016560
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -169,7 +169,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12171462429002032591
+  Id: 14881869336421016560
   Name: "UI Image"
   Transform {
     Location {
@@ -182,8 +182,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2733311089433459816
-  ChildIds: 4671362363528867947
+  ParentId: 15283871219063551254
+  ChildIds: 2496056815474475160
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -229,7 +229,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4671362363528867947
+  Id: 2496056815474475160
   Name: "UI Text Box"
   Transform {
     Location {
@@ -242,7 +242,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12171462429002032591
+  ParentId: 14881869336421016560
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -292,7 +292,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4107684534598861915
+  Id: 4335956641777333752
   Name: "WarningSFX"
   Transform {
     Location {
@@ -305,7 +305,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5586094578134508622
+  ParentId: 16470143407590425271
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -326,7 +326,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5268778817315036311
+  Id: 1340086571144496636
   Name: "GAMEHELPER_SpottingClient"
   Transform {
     Location {
@@ -339,24 +339,24 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5586094578134508622
+  ParentId: 16470143407590425271
   UnregisteredParameters {
     Overrides {
       Name: "cs:GAMEHELPER_SpottingServer"
       ObjectReference {
-        SelfId: 4205850501209299627
+        SelfId: 921107166006970378
       }
     }
     Overrides {
       Name: "cs:WarningUI"
       ObjectReference {
-        SelfId: 2733311089433459816
+        SelfId: 15283871219063551254
       }
     }
     Overrides {
       Name: "cs:WarningSFX"
       ObjectReference {
-        SelfId: 4107684534598861915
+        SelfId: 4335956641777333752
       }
     }
   }
@@ -376,7 +376,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4205850501209299627
+  Id: 921107166006970378
   Name: "GAMEHELPER_SpottingServer"
   Transform {
     Location {
@@ -389,7 +389,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10485957711276133404
+  ParentId: 5508313276976256264
   UnregisteredParameters {
     Overrides {
       Name: "cs:ViewRange"
@@ -398,7 +398,7 @@ Objects {
     Overrides {
       Name: "cs:GameStateManager"
       ObjectReference {
-        SelfId: 7224795630982014113
+        SelfId: 408224351884467425
       }
     }
     Overrides {

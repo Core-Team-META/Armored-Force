@@ -1,7 +1,7 @@
 Name: "RespawnVolume"
-RootId: 7489729118471427818
+RootId: 9561063808296421245
 Objects {
-  Id: 13773521688140370475
+  Id: 10572576182518425210
   Name: "GAMEHELPER_RespawnVolume"
   Transform {
     Location {
@@ -14,9 +14,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7489729118471427818
-  ChildIds: 2795202923782070044
-  ChildIds: 2898754494634629253
+  ParentId: 9561063808296421245
+  ChildIds: 15539319309254251212
+  ChildIds: 7968526525309651406
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -34,7 +34,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2898754494634629253
+  Id: 7968526525309651406
   Name: "Trigger"
   Transform {
     Location {
@@ -48,7 +48,7 @@ Objects {
       Z: 100
     }
   }
-  ParentId: 13773521688140370475
+  ParentId: 10572576182518425210
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -72,7 +72,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2795202923782070044
+  Id: 15539319309254251212
   Name: "GAMEHELPER_RespawnVolumeServer"
   Transform {
     Location {
@@ -85,12 +85,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13773521688140370475
+  ParentId: 10572576182518425210
   UnregisteredParameters {
     Overrides {
       Name: "cs:RespawnVolume"
       ObjectReference {
-        SelfId: 2898754494634629253
+        SelfId: 7968526525309651406
       }
     }
   }

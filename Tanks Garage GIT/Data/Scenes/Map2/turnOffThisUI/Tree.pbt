@@ -1,7 +1,7 @@
 Name: "turnOffThisUI"
-RootId: 17411094113771163993
+RootId: 8974037250228346299
 Objects {
-  Id: 16159614740853842502
+  Id: 12300152535283667575
   Name: "HealthUI"
   Transform {
     Location {
@@ -14,12 +14,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17411094113771163993
+  ParentId: 8974037250228346299
   UnregisteredParameters {
     Overrides {
       Name: "cs:UIReference"
       ObjectReference {
-        SelfId: 12286495853887800475
+        SelfId: 12320112594856207501
       }
     }
   }
@@ -42,7 +42,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16198740864160106107
+  Id: 16056266338971765642
   Name: "ActivityFeedUI"
   Transform {
     Location {
@@ -55,12 +55,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17411094113771163993
+  ParentId: 8974037250228346299
   UnregisteredParameters {
     Overrides {
       Name: "cs:UIReference"
       ObjectReference {
-        SelfId: 6814598680575359970
+        SelfId: 14176298260267393221
       }
     }
   }
@@ -83,7 +83,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7203140609156408336
+  Id: 16031697591997576045
   Name: "BaseCaptureUI"
   Transform {
     Location {
@@ -96,12 +96,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17411094113771163993
+  ParentId: 8974037250228346299
   UnregisteredParameters {
     Overrides {
       Name: "cs:UIReference"
       ObjectReference {
-        SelfId: 13679017910369283103
+        SelfId: 14318510510991907155
       }
     }
   }
@@ -124,7 +124,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3639630390872535025
+  Id: 7916951562107704230
   Name: "ConsumablesUI"
   Transform {
     Location {
@@ -137,12 +137,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17411094113771163993
+  ParentId: 8974037250228346299
   UnregisteredParameters {
     Overrides {
       Name: "cs:UIReference"
       ObjectReference {
-        SelfId: 7941857316503491464
+        SelfId: 357109761660708209
       }
     }
   }
@@ -165,7 +165,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5840367027953407095
+  Id: 14501886144134080750
   Name: "MidMatchUI"
   Transform {
     Location {
@@ -178,12 +178,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17411094113771163993
+  ParentId: 8974037250228346299
   UnregisteredParameters {
     Overrides {
       Name: "cs:UIReference"
       ObjectReference {
-        SelfId: 8648397871263923500
+        SelfId: 11329174269151025079
       }
     }
   }
@@ -206,7 +206,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3567197939283818150
+  Id: 14863718505750982320
   Name: "Crosshairs"
   Transform {
     Location {
@@ -219,12 +219,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17411094113771163993
+  ParentId: 8974037250228346299
   UnregisteredParameters {
     Overrides {
       Name: "cs:UIReference"
       ObjectReference {
-        SelfId: 7343106949626110226
+        SelfId: 10104492156914023824
       }
     }
   }
@@ -247,7 +247,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13164736036639205270
+  Id: 15414865407708269156
   Name: "LobbyUI"
   Transform {
     Location {
@@ -260,12 +260,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17411094113771163993
+  ParentId: 8974037250228346299
   UnregisteredParameters {
     Overrides {
       Name: "cs:UIReference"
       ObjectReference {
-        SelfId: 9294226657981880380
+        SelfId: 7033622454791968358
       }
     }
   }
@@ -288,7 +288,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6633889127871223942
+  Id: 15612946908823861251
   Name: "DamageStates"
   Transform {
     Location {
@@ -301,12 +301,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17411094113771163993
+  ParentId: 8974037250228346299
   UnregisteredParameters {
     Overrides {
       Name: "cs:UIReference"
       ObjectReference {
-        SelfId: 16335774233181490004
+        SelfId: 14899745917586432044
       }
     }
   }
