@@ -189,9 +189,12 @@ Assets {
           }
           Image {
             Brush {
-              Id: 1814707273787853473
+              Id: 13257658630242510450
             }
             Color {
+              R: 0.0405177474
+              G: 0.0650000051
+              B: 0.017615
               A: 1
             }
             TeamSettings {
@@ -269,6 +272,7 @@ Assets {
               A: 1
             }
             ShadowOffset {
+              Y: 1
             }
             ScreenshotIndex: 1
           }
@@ -450,12 +454,12 @@ Assets {
       }
     }
     Assets {
-      Id: 1814707273787853473
-      Name: "BG Flat 001"
+      Id: 13257658630242510450
+      Name: "UI Gradient Circular 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_020"
+        AssetId: "UI_Basic_Shape_001"
       }
     }
     Assets {
