@@ -99,22 +99,22 @@ Assets {
             FrontLeftWheelOffset {
               X: 295
               Y: -199.999969
-              Z: 90
+              Z: 85
             }
             FrontRightWheelOffset {
               X: 295
               Y: 200
-              Z: 90
+              Z: 85
             }
             RearLeftWheelOffset {
               X: -270.000061
               Y: -200
-              Z: 90
+              Z: 85
             }
             RearRightWheelOffset {
               X: -270.000061
               Y: 200
-              Z: 90
+              Z: 85
             }
             TurningRadius: 1500
           }
