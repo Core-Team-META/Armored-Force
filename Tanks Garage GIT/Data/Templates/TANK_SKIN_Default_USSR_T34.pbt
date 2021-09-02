@@ -791,7 +791,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Folder {
           IsGroup: true
@@ -4884,7 +4884,6 @@ Assets {
         ChildIds: 2100034599075834956
         ChildIds: 12206594662600913920
         ChildIds: 14082641225359946018
-        ChildIds: 7619395090604771726
         ChildIds: 1172460478832957715
         ChildIds: 16066042560000591658
         ChildIds: 7460092379552535954
@@ -5603,6 +5602,7 @@ Assets {
         ChildIds: 18007836901964661324
         ChildIds: 12083889803242841613
         ChildIds: 6321253272222827021
+        ChildIds: 7619395090604771726
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -16828,6 +16828,80 @@ Assets {
         }
       }
       Objects {
+        Id: 7619395090604771726
+        Name: "Cube - Polished"
+        Transform {
+          Location {
+            X: 372.419189
+            Y: -30.0575943
+            Z: 80.6047287
+          }
+          Rotation {
+            Pitch: 54.8978271
+          }
+          Scale {
+            X: 0.0598008297
+            Y: 0.867204428
+            Z: 0.0495688505
+          }
+        }
+        ParentId: 5797314833420592703
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.109461695
+              G: 0.147027284
+              B: 0.0423114151
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1758388402481224558
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
         Id: 12866175752764586108
         Name: "Pyramid - 4-Sided Truncated Polished"
         Transform {
@@ -17932,80 +18006,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 7619395090604771726
-        Name: "Cube - Polished"
-        Transform {
-          Location {
-            X: 394.256897
-            Y: -64.1543
-            Z: 20.471756
-          }
-          Rotation {
-            Pitch: 54.8978539
-          }
-          Scale {
-            X: 0.0598008297
-            Y: 0.867204428
-            Z: 0.0495688505
-          }
-        }
-        ParentId: 18368507031684321513
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.109461695
-              G: 0.147027284
-              B: 0.0423114151
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1758388402481224558
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
             }
             BoundsScale: 1
           }
@@ -21739,7 +21739,7 @@ Assets {
         }
         ParentId: 6470723128834270724
         ChildIds: 10810785360567725278
-        ChildIds: 16257697838095276082
+        ChildIds: 13412850120588099465
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -21809,13 +21809,13 @@ Assets {
         }
       }
       Objects {
-        Id: 16257697838095276082
-        Name: "IgnoreGroup"
+        Id: 13412850120588099465
+        Name: "MergedModel"
         Transform {
           Location {
-            X: 11.7866821
+            X: -5.37198114
             Y: 10
-            Z: 20
+            Z: 14.999999
           }
           Rotation {
           }
@@ -21838,8 +21838,13 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         Folder {
-          IsGroup: true
+          Model {
+            AggressiveMerge: true
+          }
         }
       }
       Objects {
@@ -21847,8 +21852,7 @@ Assets {
         Name: "Military Tank Historic Tread 01 Mid"
         Transform {
           Location {
-            X: -24.4377441
-            Z: -5
+            X: -7.27894163
           }
           Rotation {
           }
@@ -21858,7 +21862,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16257697838095276082
+        ParentId: 13412850120588099465
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -21866,7 +21870,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -21888,8 +21892,7 @@ Assets {
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: 267.4245
-            Z: -5
+            X: 284.58316
           }
           Rotation {
           }
@@ -21899,7 +21902,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16257697838095276082
+        ParentId: 13412850120588099465
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -21907,7 +21910,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -21929,8 +21932,7 @@ Assets {
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: -294.462463
-            Z: -5
+            X: -277.303711
           }
           Rotation {
           }
@@ -21940,7 +21942,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16257697838095276082
+        ParentId: 13412850120588099465
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -21948,7 +21950,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -22754,7 +22756,8 @@ Assets {
           }
         }
         ParentId: 1134233875652413941
-        ChildIds: 1200286872785066311
+        ChildIds: 11546161097993362694
+        ChildIds: 1358628456778399341
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -22769,12 +22772,13 @@ Assets {
         }
       }
       Objects {
-        Id: 1200286872785066311
-        Name: "IgnoreGroup"
+        Id: 11546161097993362694
+        Name: "MergedModel"
         Transform {
           Location {
-            X: -7.631392
-            Y: 1.615767
+            X: 12.9132633
+            Y: -43.2861328
+            Z: 13.6959801
           }
           Rotation {
           }
@@ -22785,129 +22789,6 @@ Assets {
           }
         }
         ParentId: 3071130033602359479
-        ChildIds: 1358628456778399341
-        ChildIds: 11546161097993362694
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 1358628456778399341
-        Name: "Tank Tread"
-        Transform {
-          Location {
-            X: 73.4111328
-          }
-          Rotation {
-            Yaw: -179.999954
-          }
-          Scale {
-            X: 1.00224876
-            Y: 1.04087722
-            Z: 0.871345103
-          }
-        }
-        ParentId: 1200286872785066311
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Tread Type"
-            Enum {
-              Value: "mc:etanktreadshapesmesh:newenumerator0"
-            }
-          }
-          Overrides {
-            Name: "bp:Tread Wear"
-            Float: 0.858432651
-          }
-          Overrides {
-            Name: "bp:Tread Shape"
-            Enum {
-              Value: "mc:etanktreadoverallshape:newenumerator0"
-            }
-          }
-          Overrides {
-            Name: "bp:Rust Amount"
-            Float: 0.75
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.097587347
-              G: 0.0802198276
-              B: 0.0595112406
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Rust Color"
-            Color {
-              R: 0.274677366
-              G: 0.116970696
-              B: 0.0761853755
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Tread Surface Breakup"
-            Float: 5
-          }
-          Overrides {
-            Name: "bp:Roughness"
-            Float: 0.75
-          }
-          Overrides {
-            Name: "bp:Edge Roughness"
-            Float: 0.75
-          }
-          Overrides {
-            Name: "bp:Rust Roughness"
-            Float: 0.75
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 2612619702971599303
-          }
-          TeamSettings {
-          }
-        }
-      }
-      Objects {
-        Id: 11546161097993362694
-        Name: "MergedModel"
-        Transform {
-          Location {
-            X: 19.9983425
-            Y: -43.7083626
-            Z: 13.3319283
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1200286872785066311
         ChildIds: 3620235825916110532
         ChildIds: 6697271509465934792
         ChildIds: 17036026449574755877
@@ -23745,6 +23626,97 @@ Assets {
         }
       }
       Objects {
+        Id: 1358628456778399341
+        Name: "Tank Tread"
+        Transform {
+          Location {
+            X: 67.7845306
+            Y: 1.615767
+          }
+          Rotation {
+            Yaw: -179.999954
+          }
+          Scale {
+            X: 1.02961695
+            Y: 1.06930029
+            Z: 0.8951388
+          }
+        }
+        ParentId: 3071130033602359479
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Tread Type"
+            Enum {
+              Value: "mc:etanktreadshapesmesh:newenumerator0"
+            }
+          }
+          Overrides {
+            Name: "bp:Tread Wear"
+            Float: 0.858432651
+          }
+          Overrides {
+            Name: "bp:Tread Shape"
+            Enum {
+              Value: "mc:etanktreadoverallshape:newenumerator0"
+            }
+          }
+          Overrides {
+            Name: "bp:Rust Amount"
+            Float: 0.75
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.097587347
+              G: 0.0802198276
+              B: 0.0595112406
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Rust Color"
+            Color {
+              R: 0.274677366
+              G: 0.116970696
+              B: 0.0761853755
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Tread Surface Breakup"
+            Float: 5
+          }
+          Overrides {
+            Name: "bp:Roughness"
+            Float: 0.75
+          }
+          Overrides {
+            Name: "bp:Edge Roughness"
+            Float: 0.75
+          }
+          Overrides {
+            Name: "bp:Rust Roughness"
+            Float: 0.75
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 2612619702971599303
+          }
+          TeamSettings {
+          }
+        }
+      }
+      Objects {
         Id: 16214079206841671179
         Name: "TreadsRight"
         Transform {
@@ -23793,7 +23765,7 @@ Assets {
         }
         ParentId: 16214079206841671179
         ChildIds: 591701846506637985
-        ChildIds: 15005987191045090736
+        ChildIds: 6586229776173234489
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -23863,26 +23835,23 @@ Assets {
         }
       }
       Objects {
-        Id: 15005987191045090736
-        Name: "IgnoreGroup"
+        Id: 6586229776173234489
+        Name: "MergedModel"
         Transform {
           Location {
-            X: 11.7866821
-            Y: 10
-            Z: 20
           }
           Rotation {
           }
           Scale {
             X: 1
-            Y: 1
+            Y: -1
             Z: 1
           }
         }
         ParentId: 6914212371983631013
+        ChildIds: 1491802727514039391
         ChildIds: 3632128691508720686
         ChildIds: 15533946561969463775
-        ChildIds: 1491802727514039391
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -23892,8 +23861,55 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         Folder {
-          IsGroup: true
+          Model {
+            AggressiveMerge: true
+          }
+        }
+      }
+      Objects {
+        Id: 1491802727514039391
+        Name: "Military Tank Historic Tread 01 Front"
+        Transform {
+          Location {
+            X: -282.675781
+            Y: -10.0002441
+            Z: 15
+          }
+          Rotation {
+          }
+          Scale {
+            X: -1
+            Y: -1
+            Z: 1
+          }
+        }
+        ParentId: 6586229776173234489
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5201493243558163533
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
         }
       }
       Objects {
@@ -23901,18 +23917,19 @@ Assets {
         Name: "Military Tank Historic Tread 01 Mid"
         Transform {
           Location {
-            X: -24.4377441
-            Z: -5
+            X: -12.6508789
+            Y: -10.0002441
+            Z: 15
           }
           Rotation {
           }
           Scale {
             X: 1.48818111
-            Y: 1
+            Y: -1
             Z: 1
           }
         }
-        ParentId: 15005987191045090736
+        ParentId: 6586229776173234489
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -23920,7 +23937,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -23942,18 +23959,19 @@ Assets {
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: 267.4245
-            Z: -5
+            X: 279.210938
+            Y: -10.0002441
+            Z: 15
           }
           Rotation {
           }
           Scale {
             X: 1
-            Y: 1
+            Y: -1
             Z: 1
           }
         }
-        ParentId: 15005987191045090736
+        ParentId: 6586229776173234489
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -23961,48 +23979,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5201493243558163533
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 1491802727514039391
-        Name: "Military Tank Historic Tread 01 Front"
-        Transform {
-          Location {
-            X: -294.462463
-            Z: -5
-          }
-          Rotation {
-          }
-          Scale {
-            X: -1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 15005987191045090736
-        Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -24808,7 +24785,8 @@ Assets {
           }
         }
         ParentId: 1134233875652413941
-        ChildIds: 17915923498505624508
+        ChildIds: 14397808337268930705
+        ChildIds: 10533527889650952436
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -24823,145 +24801,20 @@ Assets {
         }
       }
       Objects {
-        Id: 17915923498505624508
-        Name: "IgnoreGroup"
-        Transform {
-          Location {
-            X: -7.631392
-            Y: 1.615767
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.0273068
-            Y: 1.0273068
-            Z: 1.0273068
-          }
-        }
-        ParentId: 15964298979200680571
-        ChildIds: 10533527889650952436
-        ChildIds: 2406905331590361546
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 10533527889650952436
-        Name: "Tank Tread"
-        Transform {
-          Location {
-            X: 73.4111328
-          }
-          Rotation {
-            Yaw: -179.999954
-          }
-          Scale {
-            X: 1.00224876
-            Y: 1.04087722
-            Z: 0.871345103
-          }
-        }
-        ParentId: 17915923498505624508
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Tread Type"
-            Enum {
-              Value: "mc:etanktreadshapesmesh:newenumerator0"
-            }
-          }
-          Overrides {
-            Name: "bp:Tread Wear"
-            Float: 0.858432651
-          }
-          Overrides {
-            Name: "bp:Tread Shape"
-            Enum {
-              Value: "mc:etanktreadoverallshape:newenumerator0"
-            }
-          }
-          Overrides {
-            Name: "bp:Rust Amount"
-            Float: 0.75
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.097587347
-              G: 0.0802198276
-              B: 0.0595112406
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Rust Color"
-            Color {
-              R: 0.274677366
-              G: 0.116970696
-              B: 0.0761853755
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Tread Surface Breakup"
-            Float: 5
-          }
-          Overrides {
-            Name: "bp:Roughness"
-            Float: 0.75
-          }
-          Overrides {
-            Name: "bp:Edge Roughness"
-            Float: 0.75
-          }
-          Overrides {
-            Name: "bp:Rust Roughness"
-            Float: 0.75
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 2612619702971599303
-          }
-          TeamSettings {
-          }
-        }
-      }
-      Objects {
-        Id: 2406905331590361546
+        Id: 14397808337268930705
         Name: "MergedModel"
         Transform {
           Location {
-            X: 16.1286621
-            Y: -51.7426758
-            Z: 13.4219322
           }
           Rotation {
           }
           Scale {
             X: 1
-            Y: 1
+            Y: -1
             Z: 1
           }
         }
-        ParentId: 17915923498505624508
+        ParentId: 15964298979200680571
         ChildIds: 7022967532002109060
         ChildIds: 4670174654370841746
         ChildIds: 14496521410165483950
@@ -24996,21 +24849,21 @@ Assets {
         Name: "Military Tank Modern Gear 01"
         Transform {
           Location {
-            X: -396.102905
-            Y: -36.345459
-            Z: 7.62939453e-06
+            X: -397.981445
+            Y: 88.8781738
+            Z: 13.7884407
           }
           Rotation {
-            Yaw: -179.999954
-            Roll: -90.0000076
+            Yaw: 179.999954
+            Roll: 90.0000076
           }
           Scale {
-            X: 0.544821262
-            Y: 1.16992676
-            Z: 0.544817448
+            X: 0.559698582
+            Y: -1.20187378
+            Z: 0.559694707
           }
         }
-        ParentId: 2406905331590361546
+        ParentId: 14397808337268930705
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -25088,21 +24941,21 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: 239.845947
-            Y: 8.97021484
-            Z: 63.033844
+            X: 255.333496
+            Y: 42.3249512
+            Z: 78.5435333
           }
           Rotation {
-            Yaw: -11.3841715
-            Roll: 16.2924461
+            Yaw: 11.3841991
+            Roll: -16.2924652
           }
           Scale {
-            X: 2.2343874
-            Y: 2.53287
-            Z: 2.2343874
+            X: 2.29540133
+            Y: -2.60203457
+            Z: 2.29540133
           }
         }
-        ParentId: 2406905331590361546
+        ParentId: 14397808337268930705
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -25161,20 +25014,20 @@ Assets {
         Name: "Military Tank Modern Gear 01"
         Transform {
           Location {
-            X: 339.259521
-            Y: 22.8737793
-            Z: 74.9500275
+            X: 357.461426
+            Y: 28.0418701
+            Z: 90.7851
           }
           Rotation {
-            Yaw: -179.999954
+            Yaw: 179.999954
           }
           Scale {
-            X: 0.461898565
-            Y: 1.24097419
-            Z: 0.461898148
+            X: 0.474511534
+            Y: -1.27486122
+            Z: 0.474511087
           }
         }
-        ParentId: 2406905331590361546
+        ParentId: 14397808337268930705
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -25252,20 +25105,20 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: 111.662598
-            Y: 23.2902832
-            Z: 63.033844
+            X: 123.649658
+            Y: 27.6138916
+            Z: 78.5435333
           }
           Rotation {
-            Yaw: 27.6388397
+            Yaw: -27.638813
           }
           Scale {
-            X: 2.2343874
-            Y: 2.53287
-            Z: 2.2343874
+            X: 2.29540133
+            Y: -2.60203457
+            Z: 2.29540133
           }
         }
-        ParentId: 2406905331590361546
+        ParentId: 14397808337268930705
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -25324,22 +25177,22 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: -210.814209
-            Y: -15.4804688
-            Z: 41.5917587
+            X: -207.633057
+            Y: 67.4432373
+            Z: 56.5159302
           }
           Rotation {
             Pitch: -9.77093315
-            Yaw: 24.8263149
-            Roll: 20.1448021
+            Yaw: -24.8262634
+            Roll: -20.1447906
           }
           Scale {
-            X: 2.2343874
-            Y: 2.53287
-            Z: 2.2343874
+            X: 2.29540133
+            Y: -2.60203457
+            Z: 2.29540133
           }
         }
-        ParentId: 2406905331590361546
+        ParentId: 14397808337268930705
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -25398,22 +25251,22 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: -11.119873
-            Y: -21.3847656
-            Z: 21.757782
+            X: -2.48583984
+            Y: 73.5087891
+            Z: 36.1403427
           }
           Rotation {
-            Pitch: -6.83018879e-06
-            Yaw: -23.2224789
-            Roll: 68.3268814
+            Pitch: -1.36603776e-05
+            Yaw: 23.2224369
+            Roll: -68.3269043
           }
           Scale {
-            X: 2.2343874
-            Y: 2.53287
-            Z: 2.2343874
+            X: 2.29540133
+            Y: -2.60203457
+            Z: 2.29540133
           }
         }
-        ParentId: 2406905331590361546
+        ParentId: 14397808337268930705
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -25472,22 +25325,22 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: -315.514771
-            Y: -82.6999512
-            Z: 15.8198624
+            X: -315.192627
+            Y: 136.498413
+            Z: 30.0402832
           }
           Rotation {
-            Pitch: -14.0478134
-            Yaw: -28.459692
-            Roll: 89.6624
+            Pitch: -14.0477991
+            Yaw: 28.4596729
+            Roll: -89.6623764
           }
           Scale {
-            X: 2.2343874
-            Y: 2.53287
-            Z: 2.2343874
+            X: 2.29540133
+            Y: -2.60203457
+            Z: 2.29540133
           }
         }
-        ParentId: 2406905331590361546
+        ParentId: 14397808337268930705
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -25546,20 +25399,20 @@ Assets {
         Name: "Fantasy Mace Guard 01"
         Transform {
           Location {
-            X: 339.259521
-            Y: 13.6342773
-            Z: 74.9500275
+            X: 357.461426
+            Y: 37.5335693
+            Z: 90.7851
           }
           Rotation {
-            Roll: -89.9999771
+            Roll: 89.9999542
           }
           Scale {
-            X: 2.37832904
-            Y: 2.37833047
-            Z: 2.37832928
+            X: 2.44327331
+            Y: -2.44327521
+            Z: 2.44327378
           }
         }
-        ParentId: 2406905331590361546
+        ParentId: 14397808337268930705
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -25616,19 +25469,19 @@ Assets {
         Name: "Fantasy Mace Guard 01"
         Transform {
           Location {
-            X: -396.102905
-            Y: -36.345459
-            Z: 12.9385033
+            X: -397.981445
+            Y: 88.8781738
+            Z: 27.080246
           }
           Rotation {
           }
           Scale {
-            X: 2.80529761
-            Y: 2.80529761
-            Z: 2.80529761
+            X: 2.88190126
+            Y: -2.88190126
+            Z: 2.88190126
           }
         }
-        ParentId: 2406905331590361546
+        ParentId: 14397808337268930705
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -25685,19 +25538,19 @@ Assets {
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: 261.295898
-            Y: 61.7436523
-            Z: 1.57807159
+            X: 277.369141
+            Y: -11.8894043
+            Z: 15.4095955
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.0273068
+            Y: -1.0273068
+            Z: 1.0273068
           }
         }
-        ParentId: 2406905331590361546
+        ParentId: 14397808337268930705
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -25744,19 +25597,19 @@ Assets {
         Name: "Military Tank Historic Tread 01 Mid"
         Transform {
           Location {
-            X: 38.329834
-            Y: 61.7436523
-            Z: 1.57807159
+            X: 48.314209
+            Y: -11.8894043
+            Z: 15.4095955
           }
           Rotation {
           }
           Scale {
-            X: 1.13807607
-            Y: 1
-            Z: 1
+            X: 1.16915333
+            Y: -1.0273068
+            Z: 1.0273068
           }
         }
-        ParentId: 2406905331590361546
+        ParentId: 14397808337268930705
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -25795,6 +25648,97 @@ Assets {
             Physics {
             }
             BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 10533527889650952436
+        Name: "Tank Tread"
+        Transform {
+          Location {
+            X: 67.7844238
+            Y: 1.61572266
+          }
+          Rotation {
+            Yaw: -179.999954
+          }
+          Scale {
+            X: 1.02961695
+            Y: 1.06930029
+            Z: 0.8951388
+          }
+        }
+        ParentId: 15964298979200680571
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Tread Type"
+            Enum {
+              Value: "mc:etanktreadshapesmesh:newenumerator0"
+            }
+          }
+          Overrides {
+            Name: "bp:Tread Wear"
+            Float: 0.858432651
+          }
+          Overrides {
+            Name: "bp:Tread Shape"
+            Enum {
+              Value: "mc:etanktreadoverallshape:newenumerator0"
+            }
+          }
+          Overrides {
+            Name: "bp:Rust Amount"
+            Float: 0.75
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.097587347
+              G: 0.0802198276
+              B: 0.0595112406
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Rust Color"
+            Color {
+              R: 0.274677366
+              G: 0.116970696
+              B: 0.0761853755
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Tread Surface Breakup"
+            Float: 5
+          }
+          Overrides {
+            Name: "bp:Roughness"
+            Float: 0.75
+          }
+          Overrides {
+            Name: "bp:Edge Roughness"
+            Float: 0.75
+          }
+          Overrides {
+            Name: "bp:Rust Roughness"
+            Float: 0.75
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 2612619702971599303
+          }
+          TeamSettings {
           }
         }
       }

@@ -21810,8 +21810,6 @@ Assets {
         ChildIds: 8555197997216107204
         ChildIds: 15264966436908903060
         ChildIds: 2940538174998379034
-        ChildIds: 1671450535886117487
-        ChildIds: 3208210789477258933
         ChildIds: 12086099162846133571
         ChildIds: 17392800159922079055
         ChildIds: 9639228214880364872
@@ -21865,7 +21863,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -22213,6 +22211,8 @@ Assets {
           }
         }
         ParentId: 6266578775181846754
+        ChildIds: 1671450535886117487
+        ChildIds: 3208210789477258933
         ChildIds: 339592696495494978
         ChildIds: 13827220134092325540
         ChildIds: 3688437511599113348
@@ -22307,6 +22307,148 @@ Assets {
         Folder {
           Model {
             AggressiveMerge: true
+          }
+        }
+      }
+      Objects {
+        Id: 1671450535886117487
+        Name: "Urban Pipe Flange 02"
+        Transform {
+          Location {
+            X: -137.841705
+            Y: -187.872543
+            Z: 72.4483337
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.581896544
+            Y: 0.581896544
+            Z: 1.90394664
+          }
+        }
+        ParentId: 5280086575327799516
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.124771833
+              G: 0.147027284
+              B: 0.0865004584
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.1
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1527224994251334627
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 3208210789477258933
+        Name: "Urban Pipe Flange 02"
+        Transform {
+          Location {
+            X: -190.898132
+            Y: -93.8230209
+            Z: 76.8260193
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.581896544
+            Y: 0.581896544
+            Z: 1.38927448
+          }
+        }
+        ParentId: 5280086575327799516
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.124771833
+              G: 0.147027284
+              B: 0.0865004584
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.1
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1527224994251334627
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
           }
         }
       }
@@ -28331,148 +28473,6 @@ Assets {
         }
       }
       Objects {
-        Id: 1671450535886117487
-        Name: "Urban Pipe Flange 02"
-        Transform {
-          Location {
-            X: 15.4286642
-            Y: -65.6428909
-            Z: 255.8246
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.581896544
-            Y: 0.581896544
-            Z: 1.90394664
-          }
-        }
-        ParentId: 7816969538706829689
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.124771833
-              G: 0.147027284
-              B: 0.0865004584
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.1
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1527224994251334627
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 3208210789477258933
-        Name: "Urban Pipe Flange 02"
-        Transform {
-          Location {
-            X: -37.6277618
-            Y: 28.4066372
-            Z: 260.202271
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.581896544
-            Y: 0.581896544
-            Z: 1.38927448
-          }
-        }
-        ParentId: 7816969538706829689
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.124771833
-              G: 0.147027284
-              B: 0.0865004584
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.1
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1527224994251334627
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 12086099162846133571
         Name: "Cube - Polished"
         Transform {
@@ -30190,6 +30190,15 @@ Assets {
       }
     }
     Assets {
+      Id: 1527224994251334627
+      Name: "Urban Pipe Flange 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_urb_pipes_acc_flange_002_ref"
+      }
+    }
+    Assets {
       Id: 15897705887741699672
       Name: "Urban Pipe Straight"
       PlatformAssetType: 1
@@ -30286,15 +30295,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_ellipsoid_hollow_001"
-      }
-    }
-    Assets {
-      Id: 1527224994251334627
-      Name: "Urban Pipe Flange 02"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_urb_pipes_acc_flange_002_ref"
       }
     }
     Assets {
