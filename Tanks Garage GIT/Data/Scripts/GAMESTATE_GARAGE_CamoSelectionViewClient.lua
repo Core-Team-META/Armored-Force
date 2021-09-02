@@ -173,7 +173,7 @@ function AssignPreviewText()
 		selectedTank = "0" .. selectedTank
 	end
 	
-	print("tank preview shows " .. selectedTank)
+	--print("tank preview shows " .. selectedTank)
 	
 	if not tankEntries[selectedTank] then
 		return
