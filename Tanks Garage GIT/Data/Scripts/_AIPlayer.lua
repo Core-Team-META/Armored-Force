@@ -71,6 +71,12 @@ end
 function AIPlayer:ApplyDamage(damageTable)
   local wasAlive = self.hitPoints > 0
   self.hitPoints = self.hitPoints - damageTable.damage.amount
+
+  --#TODO Chris are we wanting to put this somewhere else? - Morticai
+  Events.Broadcast("CombatWrapAPI.OnDamageTaken", damageTable)
+  damageTable.source:SetResource("TankDamage", CoreMath.Round(damageTable.source:GetResource("TankDamage") + damageTable.damage.amount))
+
+
   if self.hitPoints < 0 then
     self.hitPoints = 0
     if wasAlive then
@@ -78,6 +84,13 @@ function AIPlayer:ApplyDamage(damageTable)
           Task.Wait()  -- This is important.  Death happens on the following frame.
           self.isDead = true
           self.diedEvent:Trigger(self)
+
+          --#TODO Chris are we wanting to put this somewhere else? - Morticai
+          if damageTable.source then
+            damageTable.source.kills = damageTable.source.kills + 1
+          end
+          Events.Broadcast("CombatWrapAPI.ObjectHasDied", damageTable)
+
         end)
     end
   end
@@ -193,7 +206,7 @@ function AIPlayer:FindNearestEnemyTank()
     local dist = -1
     for k,t in pairs(_G.lookup.tanks) do
       if t.team ~= self.team and Object.IsValid(t.chassis) then
-        local tDist = (t.chassis:GetWorldPosition() - myPos).size
+        local tDist = (t.chassis:GetWorldPosition() - myPos).sizeSquared
         if (dist == -1 or tDist < dist) then
           nearest = t.chassis
           dist = tDist
