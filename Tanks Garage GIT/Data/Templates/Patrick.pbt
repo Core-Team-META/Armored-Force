@@ -176,6 +176,9 @@ Assets {
             }
             PlayerInteractDistance: 500
             PlayerInteractAngleDeg: 50
+            PlayerStorageMode {
+              Value: "mc:eplayerstoragemode:writable"
+            }
           }
         }
       }
@@ -25980,5 +25983,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 99
 }
