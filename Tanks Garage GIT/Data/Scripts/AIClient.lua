@@ -50,9 +50,11 @@ function _G.utils.GetTankDrivers(options)
   if options == nil then options = {} end
   local results = {}
   for driver,tankData in pairs(_G.lookup.tanks) do
+    --[[
     for k, v in pairs(tankData) do
       print(k, v)
     end
+    ]]
 
     if (options.ignoreDead and driver.isDead)
         or (options.ignorePlayers and options.ignorePlayers == driver)
