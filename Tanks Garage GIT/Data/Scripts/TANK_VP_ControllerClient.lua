@@ -380,7 +380,7 @@ function SetWheelSpeed()
 		rightSpeedMultiplier = 1		
 	end
 	
-	print("setting speed: " .. tostring(movementSpeed))
+	--print("setting speed: " .. tostring(movementSpeed))
 	for _, w in ipairs(leftWheels) do
 		if Object.IsValid(w) then
 			w:RotateContinuous(Rotation.New(0, -1, 0), movementSpeed * leftSpeedMultiplier * wheelSpeedModifier, true)

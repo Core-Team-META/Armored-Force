@@ -20795,7 +20795,6 @@ Assets {
         ChildIds: 17959963354189993874
         ChildIds: 15652224452456946362
         ChildIds: 11718621880382284214
-        ChildIds: 13427735644461545047
         ChildIds: 4910553781775969333
         ChildIds: 17013802186372953023
         ChildIds: 5261771839602914847
@@ -20849,7 +20848,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -21032,7 +21031,7 @@ Assets {
       }
       Objects {
         Id: 5648274060913366979
-        Name: "Cylinder"
+        Name: "Prism - 8-Sided"
         Transform {
           Location {
             X: -41.8134689
@@ -21152,6 +21151,7 @@ Assets {
         ChildIds: 5315525056064294532
         ChildIds: 13263064005853997012
         ChildIds: 11956245685595475625
+        ChildIds: 13427735644461545047
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -23567,6 +23567,77 @@ Assets {
         }
       }
       Objects {
+        Id: 13427735644461545047
+        Name: "Urban Pipe Flange 02"
+        Transform {
+          Location {
+            X: -41.9552422
+            Y: -157.331467
+            Z: 9.62181473
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.581896603
+            Y: 0.581896603
+            Z: 1.25136435
+          }
+        }
+        ParentId: 5810935115440751604
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.124771833
+              G: 0.147027284
+              B: 0.0865004584
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.1
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1527224994251334627
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
         Id: 17959963354189993874
         Name: "Sphere - Half Thin"
         Transform {
@@ -23863,77 +23934,6 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 13295705863038029439
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 13427735644461545047
-        Name: "Urban Pipe Flange 02"
-        Transform {
-          Location {
-            X: 92.8794861
-            Y: -136.441864
-            Z: 126.329544
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.581896603
-            Y: 0.581896603
-            Z: 1.25136435
-          }
-        }
-        ParentId: 2120363887820311128
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.124771833
-              G: 0.147027284
-              B: 0.0865004584
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.1
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1527224994251334627
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -25890,21 +25890,21 @@ Assets {
       }
     }
     Assets {
-      Id: 13295705863038029439
-      Name: "Military Tank Historic Hatch Lid 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_mil_tank_hst_hatch_001_lid_ref"
-      }
-    }
-    Assets {
       Id: 1527224994251334627
       Name: "Urban Pipe Flange 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_prop_urb_pipes_acc_flange_002_ref"
+      }
+    }
+    Assets {
+      Id: 13295705863038029439
+      Name: "Military Tank Historic Hatch Lid 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_mil_tank_hst_hatch_001_lid_ref"
       }
     }
     Assets {

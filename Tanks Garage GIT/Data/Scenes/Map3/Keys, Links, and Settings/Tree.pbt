@@ -1,7 +1,7 @@
 Name: "Keys, Links, and Settings"
-RootId: 14984970434961653195
+RootId: 13525167241272998667
 Objects {
-  Id: 12713686028973581289
+  Id: 18332550613480876866
   Name: "Settings"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14984970434961653195
+  ParentId: 13525167241272998667
   UnregisteredParameters {
     Overrides {
       Name: "cs:MatchMode"
@@ -60,7 +60,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2659567604286010261
+  Id: 9769969992331536075
   Name: "Links"
   Transform {
     Location {
@@ -73,7 +73,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14984970434961653195
+  ParentId: 13525167241272998667
   UnregisteredParameters {
     Overrides {
       Name: "cs:Garage"
@@ -103,7 +103,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8916141426948844754
+  Id: 13331734031230280238
   Name: "Leaderboards"
   Transform {
     Location {
@@ -116,7 +116,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14984970434961653195
+  ParentId: 13525167241272998667
   UnregisteredParameters {
     Overrides {
       Name: "cs:MatchDestroyed"
@@ -183,7 +183,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1947523069746062464
+  Id: 1947573229981394095
   Name: "Keys"
   Transform {
     Location {
@@ -196,7 +196,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14984970434961653195
+  ParentId: 13525167241272998667
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tanks"
