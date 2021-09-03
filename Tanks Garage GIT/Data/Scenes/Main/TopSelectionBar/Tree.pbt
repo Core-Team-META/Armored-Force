@@ -167,6 +167,18 @@ Objects {
         SelfId: 10647935135568310505
       }
     }
+    Overrides {
+      Name: "cs:ShootingRangeHighlight"
+      ObjectReference {
+        SelfId: 13413136018443252881
+      }
+    }
+    Overrides {
+      Name: "cs:FrontlineHighlight"
+      ObjectReference {
+        SelfId: 15938523130675654681
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

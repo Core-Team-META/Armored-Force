@@ -186,13 +186,14 @@ end
 -- handler params: Player_player, string_key
 function OnPrivateData(player, string)
 	if string == "NEWSCORE" then
-		SetCurrentTrophy(GetNewScore())
+		SetCurrentTrophy(GetCurrentScore())
 		if time() > loadTime then
 			Show()
 		end
 	elseif string == "TSCORE" then
-		TOTALSCORE.text = tostring(GetCurrentScore())
 		SetCurrentTrophy(GetCurrentScore())
+		TOTALSCORE.text = tostring(GetCurrentScore())
+		
 	end
 end
 
