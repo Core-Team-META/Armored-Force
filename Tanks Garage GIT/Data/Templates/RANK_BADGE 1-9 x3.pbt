@@ -1,13 +1,13 @@
 Assets {
-  Id: 7388947560576348752
-  Name: "RANK_BADGE 20-29"
+  Id: 6290084106848226820
+  Name: "RANK_BADGE 1-9 x3"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 840329328833673434
+      RootId: 12859730056483873742
       Objects {
-        Id: 840329328833673434
-        Name: "RANK_BADGE 20-29"
+        Id: 12859730056483873742
+        Name: "RANK_BADGE 1-9 x3"
         Transform {
           Scale {
             X: 1
@@ -15,22 +15,24 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17070274267426031654
-        ChildIds: 15787016383398642179
-        ChildIds: 13947415026064159602
-        ChildIds: 18435210432246808277
+        ParentId: 5683197411013674233
+        ChildIds: 6503540934036997400
+        ChildIds: 5800552596127711309
+        ChildIds: 7653251194467212496
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 60
-          Height: 60
+          Width: 50
+          Height: 50
+          UIX: 20
+          UIY: -70
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -42,19 +44,19 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:middleright"
+                Value: "mc:euianchor:middleleft"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:middleright"
+                Value: "mc:euianchor:middleleft"
               }
             }
           }
         }
       }
       Objects {
-        Id: 15787016383398642179
+        Id: 6503540934036997400
         Name: "LAYER_1"
         Transform {
           Location {
@@ -67,10 +69,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 840329328833673434
-        ChildIds: 7360335096708751501
-        ChildIds: 17109141629524733072
-        ChildIds: 8468182202909637391
+        ParentId: 12859730056483873742
+        ChildIds: 2011654788156572835
+        ChildIds: 3326226645985734754
+        ChildIds: 12263121340780815249
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -81,8 +83,8 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 68
-          Height: 68
+          Width: 55
+          Height: 55
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -106,7 +108,66 @@ Assets {
         }
       }
       Objects {
-        Id: 7360335096708751501
+        Id: 2011654788156572835
+        Name: "INNER BACKGROUND"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6503540934036997400
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Control {
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 4205119910808973267
+            }
+            Color {
+              R: 0.350000024
+              G: 0.139072895
+              A: 0.125
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 3326226645985734754
         Name: "CIRCLE"
         Transform {
           Location {
@@ -119,7 +180,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15787016383398642179
+        ParentId: 6503540934036997400
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -144,9 +205,8 @@ Assets {
               Id: 13808555627449592887
             }
             Color {
-              R: 1
-              G: 0.964768231
-              B: 0.81
+              R: 0.549999952
+              G: 0.131125808
               A: 0.206000015
             }
             TeamSettings {
@@ -167,7 +227,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17109141629524733072
+        Id: 12263121340780815249
         Name: "SKULL"
         Transform {
           Location {
@@ -180,7 +240,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15787016383398642179
+        ParentId: 6503540934036997400
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -206,9 +266,8 @@ Assets {
               Id: 12280527778372703322
             }
             Color {
-              R: 1
-              G: 0.96013248
-              B: 0.86
+              R: 0.480000019
+              G: 0.133509934
               A: 0.206000015
             }
             TeamSettings {
@@ -229,68 +288,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8468182202909637391
-        Name: "EVIL LOOK"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 15787016383398642179
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Control {
-          Width: 200
-          Height: 200
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          UseParentWidth: true
-          UseParentHeight: true
-          Image {
-            Brush {
-              Id: 5649160773501862923
-            }
-            Color {
-              R: 1
-              G: 0.973509908
-              B: 0.9
-              A: 0.206000015
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 13947415026064159602
+        Id: 5800552596127711309
         Name: "LAYER_2"
         Transform {
           Location {
@@ -303,10 +301,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 840329328833673434
-        ChildIds: 1464797570111012255
-        ChildIds: 9201007080260501243
-        ChildIds: 17572108859506239452
+        ParentId: 12859730056483873742
+        ChildIds: 9216815628224702411
+        ChildIds: 12394472596351600366
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -317,8 +314,8 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 64
-          Height: 64
+          Width: 58
+          Height: 58
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -342,65 +339,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1464797570111012255
-        Name: "CIRCLE"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13947415026064159602
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Control {
-          Width: 200
-          Height: 200
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          UseParentWidth: true
-          UseParentHeight: true
-          Image {
-            Brush {
-              Id: 13808555627449592887
-            }
-            Color {
-              A: 1
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 9201007080260501243
+        Id: 9216815628224702411
         Name: "SKULL"
         Transform {
           Location {
@@ -413,7 +352,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13947415026064159602
+        ParentId: 5800552596127711309
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -459,7 +398,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17572108859506239452
+        Id: 12394472596351600366
         Name: "EVIL LOOK"
         Transform {
           Location {
@@ -472,7 +411,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13947415026064159602
+        ParentId: 5800552596127711309
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -517,7 +456,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18435210432246808277
+        Id: 7653251194467212496
         Name: "LAYER_3"
         Transform {
           Location {
@@ -530,12 +469,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 840329328833673434
-        ChildIds: 4145185858052717931
-        ChildIds: 2043312400317993126
-        ChildIds: 11060804923950709735
-        ChildIds: 188152404871794390
-        ChildIds: 15555951693896780806
+        ParentId: 12859730056483873742
+        ChildIds: 16342272684171554755
+        ChildIds: 13496257699822311028
+        ChildIds: 16508880370982054493
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -573,7 +510,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4145185858052717931
+        Id: 16342272684171554755
         Name: "CIRCLE"
         Transform {
           Location {
@@ -586,7 +523,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18435210432246808277
+        ParentId: 7653251194467212496
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -611,9 +548,9 @@ Assets {
               Id: 13808555627449592887
             }
             Color {
-              R: 0.603827536
-              G: 0.603827536
-              B: 0.603827536
+              R: 0.590619
+              G: 0.274677366
+              B: 0.149959818
               A: 1
             }
             TeamSettings {
@@ -634,7 +571,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2043312400317993126
+        Id: 13496257699822311028
         Name: "SKULL"
         Transform {
           Location {
@@ -647,7 +584,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18435210432246808277
+        ParentId: 7653251194467212496
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -658,8 +595,8 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: -20
-          Height: -20
+          Width: -15
+          Height: -15
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -673,9 +610,9 @@ Assets {
               Id: 12280527778372703322
             }
             Color {
-              R: 0.603827536
-              G: 0.603827536
-              B: 0.603827536
+              R: 0.590618849
+              G: 0.274677306
+              B: 0.149959788
               A: 1
             }
             TeamSettings {
@@ -696,69 +633,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11060804923950709735
-        Name: "EVIL LOOK"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 18435210432246808277
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Control {
-          Width: 200
-          Height: 200
-          UIY: -2
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          UseParentWidth: true
-          UseParentHeight: true
-          Image {
-            Brush {
-              Id: 5649160773501862923
-            }
-            Color {
-              R: 0.603827536
-              G: 0.603827536
-              B: 0.603827536
-              A: 1
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 188152404871794390
+        Id: 16508880370982054493
         Name: "GOLD_SHINE_TOP"
         Transform {
           Location {
@@ -771,7 +646,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18435210432246808277
+        ParentId: 7653251194467212496
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -782,9 +657,9 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 81
-          Height: 63
-          UIY: -14.8201046
+          Width: 75
+          Height: 55
+          UIY: -10
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -796,8 +671,8 @@ Assets {
             }
             Color {
               R: 1
-              G: 0.967682123
-              B: 0.92
+              G: 0.940662265
+              B: 0.44
               A: 0.496000022
             }
             TeamSettings {
@@ -817,62 +692,14 @@ Assets {
           }
         }
       }
-      Objects {
-        Id: 15555951693896780806
-        Name: "GOLD_SHINE_BOTTOM"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 18435210432246808277
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Control {
-          Width: 81
-          Height: 63
-          UIY: 21.0262032
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          Image {
-            Brush {
-              Id: 13257658630242510450
-            }
-            Color {
-              A: 0.376000017
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:topcenter"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:topcenter"
-              }
-            }
-          }
-        }
+    }
+    Assets {
+      Id: 4205119910808973267
+      Name: "Center Hex 001 Outline"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "CenterHex_001Outline"
       }
     }
     Assets {

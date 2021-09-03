@@ -1,13 +1,13 @@
 Assets {
-  Id: 12346830977779954617
-  Name: "Rank6_Small"
+  Id: 12560038427009297814
+  Name: "RANK_BADGE 1-9 x1"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 6525575072273300734
+      RootId: 18253599427763886476
       Objects {
-        Id: 6525575072273300734
-        Name: "Rank6_Small"
+        Id: 18253599427763886476
+        Name: "RANK_BADGE 1-9 x1"
         Transform {
           Scale {
             X: 1
@@ -15,8 +15,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1740522433144907480
-        ChildIds: 1948130411476360330
+        ParentId: 12088872234511372302
+        ChildIds: 12447221525639876968
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -35,6 +35,7 @@ Assets {
             }
           }
           Panel {
+            Opacity: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -51,8 +52,8 @@ Assets {
         }
       }
       Objects {
-        Id: 1948130411476360330
-        Name: "Chevron"
+        Id: 12447221525639876968
+        Name: "LAYER_3"
         Transform {
           Location {
           }
@@ -64,8 +65,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6525575072273300734
-        ChildIds: 5827238304097550183
+        ParentId: 18253599427763886476
+        ChildIds: 937792777212110707
+        ChildIds: 11531971681112792419
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -76,25 +78,74 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: -20
-          Height: -2
-          UIY: 0.693942368
+          Width: 100
+          Height: 100
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
-          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Panel {
+            Opacity: 1
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 937792777212110707
+        Name: "CIRCLE"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12447221525639876968
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 200
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
           UseParentWidth: true
           UseParentHeight: true
           Image {
             Brush {
-              Id: 4504686085818425438
+              Id: 13808555627449592887
             }
             Color {
-              R: 0.068
-              G: 0.068
-              B: 0.068
+              R: 0.590619
+              G: 0.274677366
+              B: 0.149959818
               A: 1
             }
             TeamSettings {
@@ -115,8 +166,8 @@ Assets {
         }
       }
       Objects {
-        Id: 5827238304097550183
-        Name: "Chevron"
+        Id: 11531971681112792419
+        Name: "SKULL"
         Transform {
           Location {
           }
@@ -128,9 +179,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1948130411476360330
-        ChildIds: 9715463249078464742
-        ChildIds: 16993756655965607648
+        ParentId: 12447221525639876968
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -141,8 +190,8 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 10
-          UIY: -1.19859588
+          Width: -10
+          Height: -10
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -153,136 +202,12 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 3350850441690232447
+              Id: 12280527778372703322
             }
             Color {
-              R: 0.392676026
-              G: 0.516000032
-              B: 0.470781296
-              A: 1
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 9715463249078464742
-        Name: "Chevron"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 5827238304097550183
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Control {
-          Width: -16
-          Height: -5
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          AddSizeToParentIfUsingParentSize: true
-          UseParentWidth: true
-          UseParentHeight: true
-          Image {
-            Brush {
-              Id: 4504686085818425438
-            }
-            Color {
-              R: 0.229000017
-              G: 0.0374643952
-              B: 0.00366399414
-              A: 1
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 16993756655965607648
-        Name: "Chevron"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 5827238304097550183
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Control {
-          Width: -5
-          Height: -5
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          AddSizeToParentIfUsingParentSize: true
-          UseParentWidth: true
-          UseParentHeight: true
-          Image {
-            Brush {
-              Id: 1010737327138341279
-            }
-            Color {
-              R: 0.417000026
-              G: 0.0682211667
-              B: 0.00667196419
+              R: 0.590618849
+              G: 0.274677306
+              B: 0.149959788
               A: 1
             }
             TeamSettings {
@@ -304,30 +229,21 @@ Assets {
       }
     }
     Assets {
-      Id: 4504686085818425438
-      Name: "BG Flat 001"
+      Id: 13808555627449592887
+      Name: "Center Circle 001 Outline"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_020"
+        AssetId: "CenterCircle_001Outline"
       }
     }
     Assets {
-      Id: 3350850441690232447
-      Name: "Emblem Bar"
+      Id: 12280527778372703322
+      Name: "Icon Skull"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Military_Icon_063"
-      }
-    }
-    Assets {
-      Id: 1010737327138341279
-      Name: "Center Arrow 011a Wedge"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "CenterArrow_011aWedge"
+        AssetId: "Icon_Skull"
       }
     }
     PrimaryAssetId {
