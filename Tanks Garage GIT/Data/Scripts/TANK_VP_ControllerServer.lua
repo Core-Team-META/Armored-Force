@@ -279,12 +279,10 @@ function AssignDriver(newDriver, playerStart, _isAI)
 	
 	SetServerData()
 	
-	--[[
 	checkStuckTankTask = Task.Spawn(CheckStuckTank, 0)
 	checkStuckTankTask.repeatCount = -1
 	checkStuckTankTask.repeatInterval = 0.5
-	]]
-	
+
 end
 
 function AssignOwner(newOwner)
