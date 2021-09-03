@@ -211,7 +211,8 @@ function AssignDriver(newDriver, playerStart, _isAI)
 	if not isAI then
 		chassis:SetDriver(driver)
 	else
-		driver:AssignToTank(chassis)
+		local identifier = script:GetCustomProperty("Identifier")
+		driver:AssignToTank(chassis, identifier)
 	end
 
 	originalSpeed = chassis.maxSpeed
@@ -351,6 +352,7 @@ function SetTankModifications()
 		--print("Default surivability")
 	end
 
+	
 	if modifications[3] == 2 then
 		traverseSpeed = upgradedTraverse
 		elevationSpeed = upgradedElevation

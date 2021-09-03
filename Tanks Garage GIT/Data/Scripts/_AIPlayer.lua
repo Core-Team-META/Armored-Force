@@ -34,7 +34,7 @@ function AIPlayer.New(team)
     currentAttackTarget = nil,
     lastShotTime = -1,
     name = "ROBO" .. tostring(nextId - 1),
-
+    identifier = "01",
     lastPathUpdateTime = -1,
 
     wriggleStartTime = -1,
@@ -403,6 +403,7 @@ function AIPlayer:GetReplicatedData()
     position = self.position,
     id = self.id,
     tankId = self.tankId,
+    identifier = self.identifier,
     team = self.team,
     name = self.name,
     kills = self.kills,
@@ -421,10 +422,11 @@ function AIPlayer.ReplicateTankAIData()
 end
 
 
-function AIPlayer:AssignToTank(tank)
+function AIPlayer:AssignToTank(tank, identifier)
   --print("assign to tank", tank.id, self)
   AIList[tank.id] = self
   self.tankId = tank.id
+  self.identifier = identifier or "01"
   table.insert(self.listeners, tank.serverMovementHook:Connect(RoboDriver))
   if self.tickTask == nil then
         self.tickTask = Task.Spawn(function()
