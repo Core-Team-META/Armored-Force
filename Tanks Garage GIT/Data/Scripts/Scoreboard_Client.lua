@@ -33,7 +33,7 @@ local function SetPanelTeam(player, count)
             scoreCards[player].damage = panel:GetCustomProperty("Damage"):WaitForObject()
             scoreCards[player].kills = panel:GetCustomProperty("Kills"):WaitForObject()
             scoreCards[player].health = panel:GetCustomProperty("Health"):WaitForObject()
-            scoreCards[player].name.text = player.name
+            scoreCards[player].name.text = player.name or ""
             scoreCards[player].team = player.team
         end
         if player.team == LOCAL_PLAYER.team then
@@ -51,7 +51,8 @@ end
 local function SetPanel(player, count)
     SetPanelTeam(player, count)
     scoreCards[player].kills.text = tostring(player.kills or 0)
-    scoreCards[player].damage.text = tostring(_G.utils.GetResource(player, "TankDamage"))
+    local damage = _G.utils and _G.utils.GetResource(player, "TankDamage")
+    scoreCards[player].damage.text = tostring(damage or 0)
     --player:GetResource("TankDamage"))
     scoreCards[player].tankName.text =
         player.clientUserData and player.clientUserData.currentTankData and player.clientUserData.currentTankData.name or
@@ -62,10 +63,6 @@ local function SetPanel(player, count)
     else
         scoreCards[player].health:SetColor(Color.GREEN)
     end
-    --[[
-            scoreCard.spotted.text = tostring(player:GetResource("SpottingTracker"))
-            ]]
-    --
 end
 
 function Init()
@@ -95,13 +92,17 @@ function OnPlayerJoined(player)
         scoreCards[player].kills = panel:GetCustomProperty("Kills"):WaitForObject()
         scoreCards[player].health = panel:GetCustomProperty("Health"):WaitForObject()
         scoreCards[player].team = player.team
-        scoreCards[player].name.text = player.name
+        scoreCards[player].name.text = player.name or ""
 
-        scoreCards[player].damage.text = tostring(0)
+        local damage = _G.utils and _G.utils.GetResource(player, "TankDamage")
+        scoreCards[player].damage.text = tostring(damage or 0)
         --player:GetResource("TankDamage"))
         scoreCards[player].kills.text = tostring(player.kills or 0)
-        Task.Wait()
-        warn(player.name)
+        if player.isDead then
+            scoreCards[player].health:SetColor(Color.RED)
+        else
+            scoreCards[player].health:SetColor(Color.GREEN)
+        end
     end
 end
 
@@ -119,15 +120,14 @@ function Tick()
         return
     end
 
-   --[[for player, _ in pairs(scoreCards) do
-        if not player then
-            scoreCards[player].panel:Destroy()
-            scoreCards[player] = nil
-        end
-    end]]--
-
-    local count = {team = 0, enemy = 0}
-    local driverTable = Game.GetLocalPlayer():GetPrivateNetworkedData("AIData")
+    local count = {
+        team = 0,
+        enemy = 0
+    }
+    local driverTable
+    if _G.utils then
+        driverTable = _G.utils.GetTankDrivers()
+    end
 
     for _, player in ipairs(Game.GetPlayers()) do
         if scoreCards[player] and Object.IsValid(scoreCards[player].panel) then
@@ -136,21 +136,13 @@ function Tick()
     end
 
     if driverTable then
-        local currentAiCount = 0
-        for _, player in pairs(driverTable) do
-            if player then
-                currentAiCount = currentAiCount + 1
-            end
-        end
-        for _, player in pairs(driverTable) do
+        local currentAiCount = #driverTable
+        for _, player in ipairs(driverTable) do
             if lastAiCount ~= currentAiCount then
                 OnPlayerJoined(player)
             end
-            if scoreCards[player] and Object.IsValid(scoreCards[player].panel) then
-                SetPanel(player, count)
-            end
+            SetPanel(player, count)
         end
-
         if lastAiCount ~= currentAiCount then
             for player, _ in pairs(scoreCards) do
                 if not player then
@@ -160,7 +152,7 @@ function Tick()
             end
         end
 
-        lastAiCount = currentAiCount 
+        lastAiCount = currentAiCount
     end
 end
 

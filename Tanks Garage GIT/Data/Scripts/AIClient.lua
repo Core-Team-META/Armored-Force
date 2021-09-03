@@ -50,14 +50,17 @@ function _G.utils.GetTankDrivers(options)
   if options == nil then options = {} end
   local results = {}
   for driver,tankData in pairs(_G.lookup.tanks) do
+    for k, v in pairs(tankData) do
+      print(k, v)
+    end
 
     if (options.ignoreDead and driver.isDead)
-        or (options.ignorePlayers == driver)
-        or (options.ignoreTeams == driver.team) 
-        or (options.includeTeams ~= nil and options.includeTeams ~= driver.team) then
+        or (options.ignorePlayers and options.ignorePlayers == driver)
+        or (options.ignoreTeams and options.ignoreTeams == driver.team) 
+        or (options.includeTeams and options.includeTeams ~= driver.team) then
       -- do nothing
     else
-      table.insert(results, driver)
+      table.insert(results, tankData)
     end
   end
   return results
