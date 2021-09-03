@@ -1538,7 +1538,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Prerequisite1"
-      String: "23"
+      String: "19"
     }
     Overrides {
       Name: "cs:PortalImageURL"

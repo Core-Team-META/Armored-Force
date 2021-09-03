@@ -1081,7 +1081,8 @@ function CheckStuckTank()
 
 	if not Object.IsValid(chassis) or not Object.IsValid(driver) or driver:IsA("AIPlayer") or (trackStatus > 0) then return end
 	
-	local checkInput = driver:IsBindingPressed("ability_extra_21") and not driver:IsBindingPressed("ability_extra_31")
+	local checkInput = not driver:IsBindingPressed("ability_extra_17") 
+	checkInput = checkInput or driver:IsBindingPressed("ability_extra_21") and not driver:IsBindingPressed("ability_extra_31")
 	checkInput = checkInput or (not driver:IsBindingPressed("ability_extra_21") and driver:IsBindingPressed("ability_extra_31"))
 	
 	if chassis.type == "TreadedVehicle" then
