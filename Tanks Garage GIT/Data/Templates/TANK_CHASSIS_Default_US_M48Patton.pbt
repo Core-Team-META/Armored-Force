@@ -79,12 +79,12 @@ Assets {
             LeftTreadOffset {
               X: -70
               Y: -250
-              Z: 60
+              Z: 40
             }
             RightTreadOffset {
               X: -70
               Y: 250
-              Z: 60
+              Z: 40
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

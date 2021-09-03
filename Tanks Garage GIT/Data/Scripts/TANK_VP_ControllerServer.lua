@@ -585,7 +585,7 @@ function OnArmorHit(trigger, other)
 			return
 		end
 		
-		print("Armor hit")
+		--print("Armor hit")
 		other.serverUserData.hitOnce = true
 		other.speed = 0
 		other.capsuleRadius = 0
@@ -593,7 +593,7 @@ function OnArmorHit(trigger, other)
 		other.lifeSpan = 0.1
 				
 		if not enemyPlayer or not enemyPlayer.serverUserData.currentTankData or enemyPlayer.team == driver.team then
-			print("Returning from armor hit")
+			--print("Returning from armor hit")
 			--[[
 			print(enemyPlayer)
 			print(enemyPlayer.serverUserData)
@@ -662,11 +662,11 @@ function OnArmorHit(trigger, other)
 		local possibleDamageState = math.random(100)
 		
 		if tonumber(enemyPlayer.serverUserData.currentTankData.id) == 26 then
-			if possibleDamageState < FIAT_DAMAGE_STATE_CHANCE then
+			if possibleDamageState > FIAT_DAMAGE_STATE_CHANCE then
 				return
 			end
 		else 
-			if possibleDamageState < STANDARD_DAMAGE_STATE_CHANCE then
+			if possibleDamageState > STANDARD_DAMAGE_STATE_CHANCE then
 				return
 			end		
 		end
@@ -818,7 +818,7 @@ function OnArmorHit(trigger, other)
 		
 		local possibleDamageState = math.random(100)
 				
-		if possibleDamageState < REAR_END_FIRE_CHANCE then
+		if possibleDamageState > REAR_END_FIRE_CHANCE then
 			return
 		end		
 		
@@ -1079,12 +1079,15 @@ end
 
 function CheckStuckTank()
 
-	if not Object.IsValid(chassis) or not Object.IsValid(driver) then return end
+	if not Object.IsValid(chassis) or not Object.IsValid(driver) or driver:IsA("AIPlayer") or (trackStatus > 0) then return end
 	
-	local checkInput = driver:IsA("AIPlayer") or driver:IsBindingPressed("ability_extra_21") or driver:IsBindingPressed("ability_extra_31")
+	local checkInput = not driver:IsBindingPressed("ability_extra_17") 
+	checkInput = checkInput or driver:IsBindingPressed("ability_extra_21") and not driver:IsBindingPressed("ability_extra_31")
+	checkInput = checkInput or (not driver:IsBindingPressed("ability_extra_21") and driver:IsBindingPressed("ability_extra_31"))
 	
 	if chassis.type == "TreadedVehicle" then
-		checkInput = checkInput or driver:IsBindingPressed("ability_extra_30") or driver:IsBindingPressed("ability_extra_32")
+		checkInput = checkInput or (driver:IsBindingPressed("ability_extra_30") and not driver:IsBindingPressed("ability_extra_32"))
+		checkInput = checkInput or (not driver:IsBindingPressed("ability_extra_30") and driver:IsBindingPressed("ability_extra_32"))
 	end
 	
 	if not checkInput then
@@ -1109,9 +1112,7 @@ function CheckStuckTank()
 	if GetAngleDifference(currentVector, idealVector) < MAX_NOT_FLIPPED_ANGLE then -- rollback mode
 		local rollbackPosition = GetRollbackPosition()
 		
-		if not rollbackPosition then 
-			return
-		end
+		if not rollbackPosition then return end
 		
 		local currentPosition = {chassis:GetWorldPosition(), chassis:GetWorldRotation()}
 		

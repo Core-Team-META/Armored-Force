@@ -15063,7 +15063,6 @@ Assets {
         ChildIds: 5846398439365416336
         ChildIds: 5183973742790424365
         ChildIds: 303283238570023946
-        ChildIds: 11108983603133826881
         ChildIds: 1054180197457490548
         ChildIds: 12679338756536410128
         ChildIds: 17853820050537595032
@@ -15128,7 +15127,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -16515,6 +16514,7 @@ Assets {
         ChildIds: 11511713079498080094
         ChildIds: 8759354631383267102
         ChildIds: 9205947408953391655
+        ChildIds: 11108983603133826881
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -19648,6 +19648,77 @@ Assets {
         }
       }
       Objects {
+        Id: 11108983603133826881
+        Name: "Urban Pipe Straight"
+        Transform {
+          Location {
+            X: -291.998901
+            Y: -79.7383194
+            Z: 24.0083733
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.40958261
+            Y: 1.40958261
+            Z: 0.40137884
+          }
+        }
+        ParentId: 18322997457451713641
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.127638355
+              G: 0.157
+              B: 0.121047
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 15897705887741699672
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
         Id: 14141622624230244544
         Name: "door"
         Transform {
@@ -20334,77 +20405,6 @@ Assets {
             Physics {
               Mass: 100
               LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 11108983603133826881
-        Name: "Urban Pipe Straight"
-        Transform {
-          Location {
-            X: -284.594727
-            Y: -108.650276
-            Z: 73.3439941
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.40958261
-            Y: 1.40958261
-            Z: 0.40137884
-          }
-        }
-        ParentId: 9315515487562432609
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.127638355
-              G: 0.157
-              B: 0.121047
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 15897705887741699672
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
             }
             BoundsScale: 1
           }

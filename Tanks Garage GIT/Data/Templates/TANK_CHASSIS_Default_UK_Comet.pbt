@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 15137556533864268076
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -71,12 +71,12 @@ Assets {
             LeftTreadOffset {
               X: 40
               Y: -270
-              Z: 40
+              Z: 32
             }
             RightTreadOffset {
               X: 40
               Y: 270
-              Z: 40
+              Z: 32
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

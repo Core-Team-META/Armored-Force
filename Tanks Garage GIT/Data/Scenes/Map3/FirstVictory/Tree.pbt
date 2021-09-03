@@ -1,7 +1,7 @@
 Name: "FirstVictory"
-RootId: 13799348291334725531
+RootId: 11587754917458239355
 Objects {
-  Id: 3480408917757306467
+  Id: 6966373899055169317
   Name: "ServerContext"
   Transform {
     Location {
@@ -14,8 +14,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13799348291334725531
-  ChildIds: 17232932880895015638
+  ParentId: 11587754917458239355
+  ChildIds: 4532740236577254667
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -33,7 +33,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17232932880895015638
+  Id: 4532740236577254667
   Name: "WinOfTheDay_Server"
   Transform {
     Location {
@@ -46,7 +46,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3480408917757306467
+  ParentId: 6966373899055169317
   UnregisteredParameters {
     Overrides {
       Name: "cs:MetaAbilityProgressionConstants_API"
@@ -63,13 +63,13 @@ Objects {
     Overrides {
       Name: "cs:TechTree_Contents"
       ObjectReference {
-        SelfId: 17485295703949328255
+        SelfId: 5085152468096436322
       }
     }
     Overrides {
       Name: "cs:Keys"
       ObjectReference {
-        SelfId: 1947523069746062464
+        SelfId: 1947573229981394095
       }
     }
   }
