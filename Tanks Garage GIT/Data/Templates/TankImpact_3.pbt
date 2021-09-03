@@ -7,7 +7,7 @@ Assets {
       RootId: 5832493884839804611
       Objects {
         Id: 5832493884839804611
-        Name: "ExplosionVFX6_17"
+        Name: "TankImpact_3"
         Transform {
           Scale {
             X: 1
@@ -21,6 +21,7 @@ Assets {
         ChildIds: 5715561931239161260
         ChildIds: 12003365782831004765
         ChildIds: 17491144786562464367
+        Lifespan: 6
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -292,6 +293,12 @@ Assets {
           }
         }
         ParentId: 5832493884839804611
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Sort Priority Adjustment"
+            Int: 1
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

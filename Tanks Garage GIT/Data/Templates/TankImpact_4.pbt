@@ -7,7 +7,7 @@ Assets {
       RootId: 3713843357083425565
       Objects {
         Id: 3713843357083425565
-        Name: "ExplosionVFX14_28"
+        Name: "TankImpact_4"
         Transform {
           Scale {
             X: 1
@@ -22,6 +22,7 @@ Assets {
         ChildIds: 2615844739808108784
         ChildIds: 17504300245193697244
         ChildIds: 256994097145175933
+        Lifespan: 6
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
