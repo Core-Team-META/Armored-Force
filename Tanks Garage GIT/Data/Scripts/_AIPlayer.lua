@@ -77,7 +77,6 @@ function AIPlayer:ApplyDamage(damageTable)
   Events.Broadcast("CombatWrapAPI.OnDamageTaken", damageTable)
   damageTable.source:SetResource("TankDamage", CoreMath.Round(damageTable.source:GetResource("TankDamage") + damageTable.damage.amount))
 
-
   if self.hitPoints <= 0 then
     self.hitPoints = 0
     if wasAlive then
@@ -95,7 +94,6 @@ function AIPlayer:ApplyDamage(damageTable)
         end)
     end
   end
-  print("Took damage!  New hitPoints:", self.hitPoints)
 end
 
 
@@ -109,7 +107,6 @@ function TankTick(self)
 
   local SHOT_FREQUENCY = 1
   local PATH_UPDATE_FREQUENCY = 2
-
 
   self:SetAim()
   self:UpdateAttackTarget()
@@ -440,14 +437,18 @@ function AIPlayer:AssignToTank(tank)
 end
 
 function AIPlayer:Destroy(tank)
-  AIList[tank.id] = nil
   -- disconnect listeners
   for k,v in pairs(self.listeners) do
     v:Disconnect()
   end
-  self.tickTask:Cancel()
   self.listeners = {}
-  self.tankId = nil
+  self.tickTask:Cancel()
+
+  -- We are no longer removing the table entry upon death.
+  -- This is so that code can still refer to it, and so it
+  -- still gets replicated.  -Chris
+  --AIList[tank.id] = nil
+  --self.tankId = nil
 end
 
 function AIPlayer.FindAIDriver(tank)
