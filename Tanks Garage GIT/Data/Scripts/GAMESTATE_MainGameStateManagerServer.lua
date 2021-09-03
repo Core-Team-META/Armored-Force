@@ -117,7 +117,8 @@ function OnChangeState(previousState)
 		
 		currentState = ""
 		
-		Game.TransferAllPlayersToGame(garageLink)
+		Game.TransferAllPlayersToScene("Main")
+		--Game.TransferAllPlayersToGame(garageLink)
 		
 		--[[
 		script:SetNetworkedCustomProperty("GameState", "STATS_STATE")
