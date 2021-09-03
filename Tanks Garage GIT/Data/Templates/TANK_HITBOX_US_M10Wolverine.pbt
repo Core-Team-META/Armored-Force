@@ -79,14 +79,14 @@ Assets {
         Name: "HULLSIDE"
         Transform {
           Location {
-            Z: 11.5116186
+            Z: -9.2970686
           }
           Rotation {
           }
           Scale {
             X: 6.4582696
             Y: 6.15022945
-            Z: 2.04299426
+            Z: 2.30664563
           }
         }
         ParentId: 10669220580562810907
@@ -124,14 +124,14 @@ Assets {
         Transform {
           Location {
             X: 433.336914
-            Z: 14.5005932
+            Z: -6.30809402
           }
           Rotation {
           }
           Scale {
             X: 2.10000014
             Y: 6.3
-            Z: 1.97800696
+            Z: 2.2332716
           }
         }
         ParentId: 10669220580562810907
@@ -169,14 +169,14 @@ Assets {
         Transform {
           Location {
             X: -398.481232
-            Z: 9.95513916
+            Z: -10.853549
           }
           Rotation {
           }
           Scale {
             X: 1.5
             Y: 6.20000029
-            Z: 2.06400776
+            Z: 2.3303709
           }
         }
         ParentId: 10669220580562810907
