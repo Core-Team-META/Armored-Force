@@ -1,6 +1,46 @@
 Name: "Morticai (Brent)"
 RootId: 17846127275428705935
 Objects {
+  Id: 11703131514259615465
+  Name: "Rank Manager"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17846127275428705935
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12360689874144092097
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Rank Manager"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6676334424509974663
+    }
+  }
+}
+Objects {
   Id: 4181828489816351997
   Name: "Scoreboard"
   Transform {
@@ -2278,35 +2318,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "META KilledByUI"
-  }
-}
-Objects {
-  Id: 5628723979720921381
-  Name: "Rank Manager"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17846127275428705935
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Rank Manager"
   }
 }
 Objects {

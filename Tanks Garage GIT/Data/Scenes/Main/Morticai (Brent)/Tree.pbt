@@ -318,13 +318,9 @@ Objects {
   }
 }
 Objects {
-  Id: 7739616007279329192
+  Id: 7506589495387134923
   Name: "Rank Manager"
   Transform {
-    Location {
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -338,12 +334,19 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Rank Manager"
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12360689874144092097
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Rank Manager"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6676334424509974663
+    }
   }
 }
 Objects {

@@ -11,73 +11,24 @@ local ENTRY_TEMPLATE = script:GetCustomProperty("Scoreboard_Entry_Template")
 local ENEMY_ENTRY_TEMPLATE = script:GetCustomProperty("Scoreboard_Entry_Enemy_Template")
 
 local scoreCards = {}
+local lastAiCount = 0
 
 local isActive = false
 
-local function SetPanelTeam(player, count)
-    if scoreCards[player] and Object.IsValid(scoreCards[player].panel) then
-        if player.team ~= scoreCards[player].team then
-            scoreCards[player].panel:Destroy()
+while not _G.PLAYER_RANKS do
+    Task.Wait()
+end
+local RANK = _G.PLAYER_RANKS
 
-            local panel
-
-            if player.team == LOCAL_PLAYER.team then
-                panel = World.SpawnAsset(ENTRY_TEMPLATE)
-            else
-                panel = World.SpawnAsset(ENEMY_ENTRY_TEMPLATE)
-            end
-
-            scoreCards[player].panel = panel
-            scoreCards[player].name = panel:GetCustomProperty("PlayerName"):WaitForObject()
-            scoreCards[player].tankName = panel:GetCustomProperty("TankName"):WaitForObject()
-            scoreCards[player].damage = panel:GetCustomProperty("Damage"):WaitForObject()
-            scoreCards[player].kills = panel:GetCustomProperty("Kills"):WaitForObject()
-            scoreCards[player].health = panel:GetCustomProperty("Health"):WaitForObject()
-            scoreCards[player].name.text = player.name
-            scoreCards[player].team = player.team
-        end
-        if player.team == LOCAL_PLAYER.team then
-            scoreCards[player].panel.parent = TeamTanksPanel
-            scoreCards[player].panel.y = count.team * 45
-            count.team = count.team + 1
-        else
-            scoreCards[player].panel.parent = EnemyTanksPanel
-            scoreCards[player].panel.y = count.enemy * 45
-            count.enemy = count.enemy + 1
+local function ClearRankPanel(rankPanel)
+    for _, child in ipairs(rankPanel:GetChildren()) do
+        if child and Object.IsValid(child) then
+            child:Destroy()
         end
     end
 end
 
-local function SetPanel(player, count)
-    SetPanelTeam(player, count)
-    scoreCards[player].kills.text = tostring(player.kills or 0)
-    scoreCards[player].damage.text = tostring(_G.utils.GetResource(player, "TankDamage"))
-    --player:GetResource("TankDamage"))
-    scoreCards[player].tankName.text =
-        player.clientUserData and player.clientUserData.currentTankData and player.clientUserData.currentTankData.name or
-        ""
-
-    if player.isDead then
-        scoreCards[player].health:SetColor(Color.RED)
-    else
-        scoreCards[player].health:SetColor(Color.GREEN)
-    end
-    --[[
-            scoreCard.spotted.text = tostring(player:GetResource("SpottingTracker"))
-            ]]
-    --
-end
-
-function Init()
-    for _, child in ipairs(TeamTanksPanel:GetChildren()) do
-        child:Destroy()
-    end
-    for _, child in ipairs(EnemyTanksPanel:GetChildren()) do
-        child:Destroy()
-    end
-end
-
-function OnPlayerJoined(player)
+local function SpawnPanel(player)
     if not scoreCards[player] then
         scoreCards[player] = {}
         local panel
@@ -94,14 +45,60 @@ function OnPlayerJoined(player)
         scoreCards[player].damage = panel:GetCustomProperty("Damage"):WaitForObject()
         scoreCards[player].kills = panel:GetCustomProperty("Kills"):WaitForObject()
         scoreCards[player].health = panel:GetCustomProperty("Health"):WaitForObject()
+        scoreCards[player].rank = panel:GetCustomProperty("Rank"):WaitForObject()
         scoreCards[player].team = player.team
-        scoreCards[player].name.text = player.name
+        scoreCards[player].name.text = player.name or ""
 
-        scoreCards[player].damage.text = tostring(0)
+        local rankPanel = panel:GetCustomProperty("Rank"):WaitForObject()
+        ClearRankPanel(rankPanel)
+        local iconSmall = World.SpawnAsset(RANK.GetSmallRankIcon(player))
+        iconSmall.parent = rankPanel
+        scoreCards[player].rank = rankPanel
+
+        local damage = _G.utils and _G.utils.GetResource(player, "TankDamage")
+        scoreCards[player].damage.text = tostring(damage or 0)
         --player:GetResource("TankDamage"))
         scoreCards[player].kills.text = tostring(player.kills or 0)
-        Task.Wait()
-        warn(player.name)
+        if player.isDead then
+            scoreCards[player].health:SetColor(Color.RED)
+        else
+            scoreCards[player].health:SetColor(Color.GREEN)
+        end
+    end
+end
+
+local function SetPanelTeam(player, count)
+    if scoreCards[player] and Object.IsValid(scoreCards[player].panel) then
+        if player.team ~= scoreCards[player].team then
+            scoreCards[player].panel:Destroy()
+        end
+        if player.team == LOCAL_PLAYER.team then
+            scoreCards[player].panel.parent = TeamTanksPanel
+            scoreCards[player].panel.y = count.team * 45
+            count.team = count.team + 1
+        else
+            scoreCards[player].panel.parent = EnemyTanksPanel
+            scoreCards[player].panel.y = count.enemy * 45
+            count.enemy = count.enemy + 1
+        end
+    end
+end
+
+local function SetPanel(player, count)
+    SpawnPanel(player)
+    SetPanelTeam(player, count)
+    scoreCards[player].kills.text = tostring(player.kills or 0)
+    local damage = _G.utils and _G.utils.GetResource(player, "TankDamage")
+    scoreCards[player].damage.text = tostring(damage or 0)
+
+    scoreCards[player].tankName.text =
+        player.clientUserData and player.clientUserData.currentTankData and player.clientUserData.currentTankData.name or
+        ""
+
+    if player.isDead then
+        scoreCards[player].health:SetColor(Color.RED)
+    else
+        scoreCards[player].health:SetColor(Color.GREEN)
     end
 end
 
@@ -112,45 +109,29 @@ function OnPlayerLeft(player)
     scoreCards[player] = nil
 end
 
-local lastAiCount = 0
-
 function Tick()
     if not isActive then
         return
     end
 
-   --[[for player, _ in pairs(scoreCards) do
-        if not player then
-            scoreCards[player].panel:Destroy()
-            scoreCards[player] = nil
-        end
-    end]]--
-
-    local count = {team = 0, enemy = 0}
-    local driverTable = Game.GetLocalPlayer():GetPrivateNetworkedData("AIData")
+    local count = {
+        team = 0,
+        enemy = 0
+    }
+    local driverTable
+    if _G.utils then
+        driverTable = _G.utils.GetTankDrivers()
+    end
 
     for _, player in ipairs(Game.GetPlayers()) do
-        if scoreCards[player] and Object.IsValid(scoreCards[player].panel) then
-            SetPanel(player, count)
-        end
+        SetPanel(player, count)
     end
 
     if driverTable then
-        local currentAiCount = 0
-        for _, player in pairs(driverTable) do
-            if player then
-                currentAiCount = currentAiCount + 1
-            end
+        local currentAiCount = #driverTable
+        for _, player in ipairs(driverTable) do
+            SetPanel(player, count)
         end
-        for _, player in pairs(driverTable) do
-            if lastAiCount ~= currentAiCount then
-                OnPlayerJoined(player)
-            end
-            if scoreCards[player] and Object.IsValid(scoreCards[player].panel) then
-                SetPanel(player, count)
-            end
-        end
-
         if lastAiCount ~= currentAiCount then
             for player, _ in pairs(scoreCards) do
                 if not player then
@@ -160,7 +141,7 @@ function Tick()
             end
         end
 
-        lastAiCount = currentAiCount 
+        lastAiCount = currentAiCount
     end
 end
 
@@ -182,7 +163,11 @@ LOCAL_PLAYER.bindingReleasedEvent:Connect(
     end
 )
 
-Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 
-Init()
+for _, child in ipairs(TeamTanksPanel:GetChildren()) do
+    child:Destroy()
+end
+for _, child in ipairs(EnemyTanksPanel:GetChildren()) do
+    child:Destroy()
+end
