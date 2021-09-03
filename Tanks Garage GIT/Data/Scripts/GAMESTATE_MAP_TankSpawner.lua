@@ -141,6 +141,7 @@ function SpawnAITank(position, team)
 	--print("spawned", equippedTank[newAI])
 	Task.Wait(0.1)
 	newAI.team = team
+	newAI.tankId = 34
 	_G.lookup.tanks[newAI] = {team = newAI.team, tank = equippedTank[newAI]}
 	equippedTank[newAI].context.AssignDriver(newAI, position, true)
 end
