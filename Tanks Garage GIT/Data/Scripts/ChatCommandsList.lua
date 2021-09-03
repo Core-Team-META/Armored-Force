@@ -47,7 +47,47 @@ commands = {
         adminOnly = true,
         adminRank = AdminData.AdminRanks.Admin
     },
+    
+    ["/playerxp"] = {
+        OnCommandCalledClient = function (player, message)
+        	
+        	for section in (message.." "):gmatch("(.-) ") do
 
+        		if tonumber(section) then
+        		
+        			Chat.LocalMessage("Setting XP resource to " .. section)
+        			
+        			return
+        			
+        		end
+        	
+        	end
+
+        	Chat.LocalMessage("ERROR: command does not contain a valid resource amount. Format: /playerxp <XPValue>")
+        end,
+        OnCommandCalledServer = function (player, message)
+        	
+        	for section in (message.." "):gmatch("(.-) ") do
+
+        		if tonumber(section) then
+        		
+        			player:SetResource("XP", tonumber(section))
+        			
+        			return
+        			
+        		end
+        	
+        	end
+        	
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "Set the player xp value (determines rank). Format: /playerxp <XPValue>",
+        requireMessage = false,
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.HigherAdmin
+    },
+    
     ["/parts"] = {
         OnCommandCalledClient = function (player, message)
         
