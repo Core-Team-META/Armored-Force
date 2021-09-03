@@ -787,7 +787,9 @@ function OnArmorHit(trigger, other)
 			Events.Broadcast("PlayerRammedTank", playerWhoBurned)
 		end
 		
-		damageDealt.sourcePlayer = driver
+		if driver:IsA("Player") then
+			damageDealt.sourcePlayer = driver
+		end
 		damageDealt.reason = DamageReason.COMBAT
 		
 		if not COMBAT then
