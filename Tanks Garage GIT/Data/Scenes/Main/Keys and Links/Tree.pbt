@@ -189,8 +189,9 @@ Objects {
     Overrides {
       Name: "cs:Tanks"
       NetReference {
+        Key: "c43fcd2160184df0a6269654c7ceb712"
         Type {
-          Value: "mc:enetreferencetype:unknown"
+          Value: "mc:enetreferencetype:sharedpersistence"
         }
       }
     }
