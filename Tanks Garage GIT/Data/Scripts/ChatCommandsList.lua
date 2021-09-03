@@ -407,15 +407,15 @@ commands = {
         adminRank = AdminData.AdminRanks.Admin
     },
 
-    ["/clearai"] = {
+    ["/testai"] = {
         OnCommandCalledClient = function (player, message)
         end,
         OnCommandCalledServer = function (player, message)
-            Events.Broadcast("REMOVE_ALL_AI")
+            Events.Broadcast("SPAWN_TEST_AI", player)
         end,
         OnCommandReceivedClient = function (player, message)
         end,
-        description = "removes all AI tanks",
+        description = "spawns an enemy to test with",
         requireMessage = false,
         adminOnly = true,
         adminRank = AdminData.AdminRanks.Admin
