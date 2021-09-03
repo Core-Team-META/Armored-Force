@@ -22,7 +22,7 @@ Assets {
         ChildIds: 14928227650853971190
         ChildIds: 2075665227415662746
         ChildIds: 13865439477495415417
-        ChildIds: 9848407683415977864
+        ChildIds: 15573659013267108440
         UnregisteredParameters {
           Overrides {
             Name: "cs:PlayerName"
@@ -52,6 +52,12 @@ Assets {
             Name: "cs:Health"
             ObjectReference {
               SubObjectId: 13865439477495415417
+            }
+          }
+          Overrides {
+            Name: "cs:Rank"
+            ObjectReference {
+              SubObjectId: 15573659013267108440
             }
           }
         }
@@ -555,16 +561,12 @@ Assets {
         }
       }
       Objects {
-        Id: 9848407683415977864
+        Id: 15573659013267108440
         Name: "Rank"
         Transform {
           Location {
-            X: 44697.5156
-            Y: -42063.2305
-            Z: 1177.05261
           }
           Rotation {
-            Yaw: -56.8993073
           }
           Scale {
             X: 1
@@ -573,6 +575,7 @@ Assets {
           }
         }
         ParentId: 600100305950607330
+        ChildIds: 9076041696861577811
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -589,6 +592,62 @@ Assets {
           Width: 30
           Height: 30
           UIX: -15
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Panel {
+            Opacity: 1
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middleright"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middleright"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 9076041696861577811
+        Name: "Rank"
+        Transform {
+          Location {
+            X: 44697.5156
+            Y: -42063.2305
+            Z: 1177.05261
+          }
+          Rotation {
+            Yaw: -56.8993073
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15573659013267108440
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 30
+          Height: 30
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
