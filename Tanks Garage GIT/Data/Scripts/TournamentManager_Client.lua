@@ -57,7 +57,6 @@ end
 local function SetCurrentTrophy(score)
 	for i, trophy in ipairs(trophyData) do
 		if score >= trophy.min and score <= trophy.max then
-			NEW_1.text = tostring(score)
 			CURRENT_TROPHY_IMAGE:SetImage(trophy.icon)
 			TROPHY_NAME_TEXT.text = tostring(trophy.name)
 			local scoreProgress = score - trophy.min
@@ -186,14 +185,14 @@ end
 -- handler params: Player_player, string_key
 function OnPrivateData(player, string)
 	if string == "NEWSCORE" then
+		NEW_1.text = tostring(GetNewScore())
 		SetCurrentTrophy(GetCurrentScore())
 		if time() > loadTime then
 			Show()
 		end
 	elseif string == "TSCORE" then
-		SetCurrentTrophy(GetCurrentScore())
 		TOTALSCORE.text = tostring(GetCurrentScore())
-		
+		SetCurrentTrophy(GetCurrentScore())
 	end
 end
 
