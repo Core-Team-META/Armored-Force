@@ -166,18 +166,6 @@ Objects {
       Int: 999
     }
     Overrides {
-      Name: "cs:SmallRankIcon"
-      AssetReference {
-        Id: 9006746904471052712
-      }
-    }
-    Overrides {
-      Name: "cs:LargeRankIcon"
-      AssetReference {
-        Id: 5817253659607419480
-      }
-    }
-    Overrides {
       Name: "cs:MedRankIcon"
       AssetReference {
         Id: 13754214866157378522
@@ -222,18 +210,6 @@ Objects {
     Overrides {
       Name: "cs:MaxLevel"
       Int: 49
-    }
-    Overrides {
-      Name: "cs:SmallRankIcon"
-      AssetReference {
-        Id: 8047278241115218266
-      }
-    }
-    Overrides {
-      Name: "cs:LargeRankIcon"
-      AssetReference {
-        Id: 13143365103230173695
-      }
     }
     Overrides {
       Name: "cs:MedRankIcon"
@@ -282,18 +258,6 @@ Objects {
       Int: 39
     }
     Overrides {
-      Name: "cs:SmallRankIcon"
-      AssetReference {
-        Id: 12494197539304253630
-      }
-    }
-    Overrides {
-      Name: "cs:LargeRankIcon"
-      AssetReference {
-        Id: 16044300762559394628
-      }
-    }
-    Overrides {
       Name: "cs:MedRankIcon"
       AssetReference {
         Id: 9033700003077298857
@@ -340,18 +304,6 @@ Objects {
       Int: 29
     }
     Overrides {
-      Name: "cs:SmallRankIcon"
-      AssetReference {
-        Id: 9868635598729909032
-      }
-    }
-    Overrides {
-      Name: "cs:LargeRankIcon"
-      AssetReference {
-        Id: 13537399154269467777
-      }
-    }
-    Overrides {
       Name: "cs:MedRankIcon"
       AssetReference {
         Id: 7388947560576348752
@@ -396,18 +348,6 @@ Objects {
     Overrides {
       Name: "cs:MaxLevel"
       Int: 19
-    }
-    Overrides {
-      Name: "cs:SmallRankIcon"
-      AssetReference {
-        Id: 18124630474588117119
-      }
-    }
-    Overrides {
-      Name: "cs:LargeRankIcon"
-      AssetReference {
-        Id: 6040270537226444541
-      }
     }
     Overrides {
       Name: "cs:MedRankIcon"
@@ -458,18 +398,6 @@ Objects {
     Overrides {
       Name: "cs:RankAcronym"
       String: ""
-    }
-    Overrides {
-      Name: "cs:SmallRankIcon"
-      AssetReference {
-        Id: 17552513854983087143
-      }
-    }
-    Overrides {
-      Name: "cs:LargeRankIcon"
-      AssetReference {
-        Id: 10661108433172173940
-      }
     }
     Overrides {
       Name: "cs:MedRankIcon"
