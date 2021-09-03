@@ -390,7 +390,7 @@ Assets {
           Overrides {
             Name: "ma:Nature_Trunk:id"
             AssetReference {
-              Id: 10451866999938289708
+              Id: 16257896527158054254
             }
           }
           Overrides {
@@ -441,19 +441,19 @@ Assets {
         Name: "Tree Birch Bare 01"
         Transform {
           Location {
-            X: 8.20167351
-            Y: 2.13682032
-            Z: 5.27816868
+            X: 15.5988579
+            Y: 2.13670301
+            Z: 25.5809746
           }
           Rotation {
-            Pitch: 0.252710164
-            Yaw: -85.6716614
-            Roll: -3.33679199
+            Pitch: 1.68232334
+            Yaw: -85.7550049
+            Roll: -3.3381958
           }
           Scale {
-            X: 0.490383446
-            Y: 0.490382791
-            Z: 0.485167533
+            X: 0.490383267
+            Y: 0.490383029
+            Z: 0.566360116
           }
         }
         ParentId: 13827306456546468593
@@ -461,7 +461,7 @@ Assets {
           Overrides {
             Name: "ma:Nature_Trunk:id"
             AssetReference {
-              Id: 10451866999938289708
+              Id: 16257896527158054254
             }
           }
           Overrides {
@@ -524,15 +524,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_tree_birch_002"
-      }
-    }
-    Assets {
-      Id: 10451866999938289708
-      Name: "Wood Raw White"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_raw_white_001_uv"
       }
     }
     PrimaryAssetId {
