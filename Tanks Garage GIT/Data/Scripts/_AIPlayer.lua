@@ -78,7 +78,7 @@ function AIPlayer:ApplyDamage(damageTable)
   damageTable.source:SetResource("TankDamage", CoreMath.Round(damageTable.source:GetResource("TankDamage") + damageTable.damage.amount))
 
 
-  if self.hitPoints < 0 then
+  if self.hitPoints <= 0 then
     self.hitPoints = 0
     if wasAlive then
       Task.Spawn(function()
