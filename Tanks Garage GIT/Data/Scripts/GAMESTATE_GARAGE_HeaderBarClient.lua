@@ -16,6 +16,8 @@ local deployButton = script:GetCustomProperty("DeployButton"):WaitForObject()
 local deployHover = script:GetCustomProperty("DeployHover"):WaitForObject()
 local chosenModeTextA = script:GetCustomProperty("ChosenModeTextA"):WaitForObject()
 local chosenModeTextB = script:GetCustomProperty("ChosenModeTextB"):WaitForObject()
+local shootingRangeHighlight = script:GetCustomProperty("ShootingRangeHighlight"):WaitForObject()
+local frontlineHighlight = script:GetCustomProperty("FrontlineHighlight"):WaitForObject()
 
 local clickSFX = script:GetCustomProperty("ClickSFX"):WaitForObject()
 local hoverSFX = script:GetCustomProperty("HoverSFX"):WaitForObject()
@@ -133,9 +135,13 @@ function OnGameModeClicked(button)
 	chooseModeState = false	
 	
 	local selectedText = "MODE: Shooting Range"
-	
+	shootingRangeHighlight.visibility = Visibility.FORCE_ON
+	frontlineHighlight.visibility = Visibility.FORCE_OFF
+
 	if selectedGameMode == "Frontline" then
 		selectedText = "MODE: Frontline"
+		shootingRangeHighlight.visibility = Visibility.FORCE_OFF
+	frontlineHighlight.visibility = Visibility.FORCE_ON
 	end
 	
 	chosenModeTextA.text = selectedText
@@ -247,6 +253,9 @@ function Initialize()
 	
 	chosenModeTextA.text = "MODE: Frontline"
 	chosenModeTextB.text = chosenModeTextA.text
+
+	shootingRangeHighlight.visibility = Visibility.FORCE_OFF
+	frontlineHighlight.visibility = Visibility.FORCE_ON
 
 end
 
