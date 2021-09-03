@@ -223,11 +223,15 @@ function RemoveAllAI()
 
 end
 
-
+function SpawnTestAI(player)
+	local offset = Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 3000 + Vector3.UP * 1000
+	SpawnAITank(player:GetWorldPosition() + offset, player.team % 2 + 1)
+end
 
 Events.Connect("FILL_TEAMS_WITH_AI", FillTeamsWithAI)
 Events.Connect("REMOVE_ALL_AI", RemoveAllAI)
 
+Events.Connect("SPAWN_TEST_AI", SpawnTestAI)
 
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)

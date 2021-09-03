@@ -2092,7 +2092,7 @@ Assets {
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 7538656955959889408
+              Id: 15545389605364495852
             }
           }
         }
@@ -2260,6 +2260,15 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_Equip_Trophy_004"
+      }
+    }
+    Assets {
+      Id: 15545389605364495852
+      Name: "Fantasy Trophy 005"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Equip_Trophy_005"
       }
     }
     Assets {
