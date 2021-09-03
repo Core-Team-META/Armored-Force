@@ -8,8 +8,7 @@ local Const = {}
 ------------------------------------------------------------------------------------------------------------------------
 -- CONSTANTS
 ------------------------------------------------------------------------------------------------------------------------
-local NUMBER_OF_TANKS = 33
-local EQUIPPED_TANK_RES = "EquippedTank"
+ 
 
 ------------------------------------------------------------------------------------------------------------------------
 -- STORAGE KEYS -- DO NOT EDIT
@@ -44,20 +43,7 @@ Const.PERK_STORAGE_KEYS = {
 ------------------------------------------------------------------------------------------------------------------------
 -- PROGRESS KEYS
 ------------------------------------------------------------------------------------------------------------------------
--- TANK TYPE KEYS
-Const.TANK_TYPE = {
-    LIGHT = 1,
-    MEDIUM = 2,
-    HEAVY = 3,
-    TANKDESTROYER = 4
-}
 
-Const.TANK_TYPE_NAME = {
-    [Const.TANK_TYPE.LIGHT] = "Light",
-    [Const.TANK_TYPE.MEDIUM] = "Medium",
-    [Const.TANK_TYPE.HEAVY] = "Heavy",
-    [Const.TANK_TYPE.TANKDESTROYER] = "Tank Destroyer"
-}
 
 -- REWARD KEYS
 Const.REWARDS = {
@@ -124,14 +110,7 @@ Const.COMBAT_STATS = {
     TOTAL_SHOTS_FIRED = "TOTALSHOTSFIRED",
     TOTAL_SHOTS_HIT = "TOTALSHOTSHIT"  
 }
-
-Const.CURRENCY = {
-    [1] = "Silver",
-    [2] = "Free XP",
-    [3] = "Gold",
-    [4] = "XP"
-}
-
+ 
 Const.PERKS = {
     BUNDLE1 = "B1",
     BUNDLE2 = "B2",
@@ -147,12 +126,7 @@ Const.CONSUMABLES = {
 	AUTO_REPAIR = "AutoSupplyRepair"
 	
 }
-
-Const.SILVER = Const.CURRENCY[1]
-Const.FREERP = Const.CURRENCY[2]
-Const.GOLD = Const.CURRENCY[3]
-Const.XP = Const.CURRENCY[4]
-
+ 
 Const.TEAM = {
     ALLIES = 1,
     AXIS = 2
@@ -177,21 +151,7 @@ Const.XP_GAIN_TEXT = {
 
 Const.RANK_NAME = "Rank"
 Const.TUTORIAL_PROGRESS = "TutorialProgress"
-
-Const.SILVER_ICON = "56EA955F1A2355F0:Fantasy Craft Bar 002"
-Const.GOLD_ICON = "11CFC7556A4E84B5:Fantasy Gold 001"
-
-function Const.GetNumberOfTanks()
-    return NUMBER_OF_TANKS
-end
-
-function Const.GetEquippedTankResource()
-    return EQUIPPED_TANK_RES
-end
-
-function Const.GetDefaultTankData()
-    return DEFAULT_TANK_DATA
-end
+Const.EQUIPPED_TANK_RES = "EquippedTank"
 ------------------------------------------------------------------------------------------------------------------------
 _G.const = Const
 return Const

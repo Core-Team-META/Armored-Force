@@ -1,6 +1,39 @@
 Name: "Blake"
 RootId: 1729280101287281465
 Objects {
+  Id: 16144077479330144600
+  Name: "Storage_API"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1729280101287281465
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6175909573814580180
+    }
+  }
+}
+Objects {
   Id: 11955821821189344362
   Name: "Constants"
   Transform {
@@ -15,7 +48,10 @@ Objects {
     }
   }
   ParentId: 1729280101287281465
-  ChildIds: 12155348233718221897
+  ChildIds: 8428918638154795264
+  ChildIds: 10546462214013177778
+  ChildIds: 14183345195077321613
+  ChildIds: 15402419915800778106
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -33,8 +69,8 @@ Objects {
   }
 }
 Objects {
-  Id: 12155348233718221897
-  Name: "TankRegistry"
+  Id: 15402419915800778106
+  Name: "Skins"
   Transform {
     Location {
     }
@@ -47,7 +83,27 @@ Objects {
     }
   }
   ParentId: 11955821821189344362
-  ChildIds: 4627209641736720243
+  ChildIds: 285225118966804246
+  ChildIds: 7119568423119376739
+  ChildIds: 4716421036478184069
+  ChildIds: 431084585447746094
+  ChildIds: 10108857244440178650
+  ChildIds: 13161927349024039868
+  ChildIds: 7240187082686815809
+  ChildIds: 8247012760891979217
+  ChildIds: 14315489317731473225
+  ChildIds: 12630783717214676791
+  ChildIds: 397948607754910144
+  ChildIds: 5807152589066538847
+  ChildIds: 11585426455237556676
+  ChildIds: 11103541515489958127
+  ChildIds: 11777778443327445624
+  ChildIds: 11311610073249323796
+  ChildIds: 11745686115509285949
+  ChildIds: 6854585085126102313
+  ChildIds: 16471655445956868642
+  ChildIds: 9516021441986012114
+  ChildIds: 6107521906791615652
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -60,13 +116,13 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  NetworkContext {
-    Type: RuntimeStatic
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
-  Id: 4627209641736720243
-  Name: "TankRegisty"
+  Id: 6107521906791615652
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -78,40 +134,1644 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12155348233718221897
-  ChildIds: 4891743929451106183
-  ChildIds: 9751312557709588628
-  ChildIds: 4605971117425515096
-  ChildIds: 4368140733057917078
-  ChildIds: 677266005577929283
-  ChildIds: 16185962644278169204
-  ChildIds: 8801035787694818094
-  ChildIds: 4581832438004629787
-  ChildIds: 5181732821146982762
-  ChildIds: 14998490788610534119
-  ChildIds: 6711663443493071260
-  ChildIds: 5957323784067918363
-  ChildIds: 13325097102619233626
-  ChildIds: 11688264768722353906
-  ChildIds: 8248103049089238548
-  ChildIds: 16522114398036114422
-  ChildIds: 13758674452467291256
-  ChildIds: 10028988736579156900
-  ChildIds: 2041849247281351777
-  ChildIds: 16890910009453703572
-  ChildIds: 1558823199986152662
-  ChildIds: 13669858646675890464
-  ChildIds: 14778489487136594286
-  ChildIds: 10943900983422635871
-  ChildIds: 3412077256889579614
-  ChildIds: 8982021377775266738
-  ChildIds: 15250779453053191158
-  ChildIds: 11044764878927637174
-  ChildIds: 14604345959040411191
-  ChildIds: 18295971205936397406
-  ChildIds: 7781385510624584118
-  ChildIds: 2356404881866757705
-  ChildIds: 12062198854912935508
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Camo Orange"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 7962709208819931505
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 9516021441986012114
+  Name: "Container 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Container 01"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 0.149802029
+        B: 0.0100330114
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 9521961532316426949
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 16471655445956868642
+  Name: "Metal Greebles"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Metal Greebles"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.494792
+        G: 0.494792
+        B: 0.494792
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 4465877919970375297
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 6854585085126102313
+  Name: "Stripes Purple"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Stripes Purple"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.0171000138
+        G: 0.0548199
+        B: 0.3
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 13501404373750306564
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 11745686115509285949
+  Name: "Stripes Blue"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Stripes Blue"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.0284429919
+        G: 0.0911837667
+        B: 0.499
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 4085560558169437084
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 11311610073249323796
+  Name: "Stripes Pink"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Stripes Pink"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.593000054
+        G: 0.154179975
+        B: 0.432099313
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 942118974176962227
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 11777778443327445624
+  Name: "Candy Apple"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Candy Apple"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 2329230905657722655
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 11103541515489958127
+  Name: "Camo Dark"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Diamond Green"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 3503457931000356404
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 11585426455237556676
+  Name: "Camo Blue"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Camo Blue"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 682700398407096474
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 5807152589066538847
+  Name: "Rusty"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Rusty"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 12770190894867165207
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 397948607754910144
+  Name: "Cardboard"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Cardboard"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 9404968316769731104
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 3
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 12630783717214676791
+  Name: "Tech Design 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Tech Design 01"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 3845926179118691013
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 3
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 14315489317731473225
+  Name: "Carbon Fiber"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Carbon Fiber"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 1
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 8247012760891979217
+  Name: "Moon"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Moon"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 9960906544699791848
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 7240187082686815809
+  Name: "Advanced Metal"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Advanced Metal"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.0410959721
+        G: 0.403114349
+        B: 0.467
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 9187540498960513143
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 13161927349024039868
+  Name: "Camo Digital"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Camo Digital"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 6368363392805105925
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 10108857244440178650
+  Name: "Camo Woodland"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Camo Woodland"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 6900641435737272158
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 431084585447746094
+  Name: "Camo Splinter"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Camo Splinter"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 7675962363203525070
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "03"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 4716421036478184069
+  Name: "Gold"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Gold"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.73300004
+        G: 0.525316715
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 3180794530394243418
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "02"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 7119568423119376739
+  Name: "Chrome"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Chrome"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 3180794530394243418
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "01"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 285225118966804246
+  Name: "Stock"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15402419915800778106
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Stock"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "00"
+    }
+    Overrides {
+      Name: "cs:Resource"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6308415745269538681
+    }
+  }
+}
+Objects {
+  Id: 14183345195077321613
+  Name: "RanksRegistry"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11955821821189344362
+  ChildIds: 2539629998133608914
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2539629998133608914
+  Name: "RankRegister"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14183345195077321613
+  ChildIds: 8322195275330284512
+  ChildIds: 175641609894628484
+  ChildIds: 17267043858563204161
+  ChildIds: 3178423598194019054
+  ChildIds: 16176249918353776632
+  ChildIds: 1247105310867250768
   UnregisteredParameters {
     Overrides {
       Name: "cs:Constants_API"
@@ -134,13 +1794,13 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 9024776375142807943
+      Id: 12305959328286844782
     }
   }
 }
 Objects {
-  Id: 12062198854912935508
-  Name: "TechTree_Jagdtiger"
+  Id: 1247105310867250768
+  Name: "RankFinal"
   Transform {
     Location {
     }
@@ -152,223 +1812,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4627209641736720243
+  ParentId: 2539629998133608914
   UnregisteredParameters {
     Overrides {
-      Name: "cs:Name"
-      String: "Jagdtiger"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "33"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Axis"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "GER"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 4
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Tank Destroyer"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 75000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 9
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 25
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 35
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -11
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 11
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 24000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 35000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 950
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 1000
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 1200
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1300
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 960
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1050
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 300
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 2400
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 2700
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
+      Name: "cs:MinLevel"
       Int: 50
     }
     Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 60
+      Name: "cs:MaxLevel"
+      Int: 999
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      String: "22"
+      Name: "cs:MedRankIcon"
+      AssetReference {
+        Id: 13754214866157378522
+      }
     }
     Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
+      Name: "cs:SmallRankIcon"
+      AssetReference {
+        Id: 163097902409053826
+      }
     }
   }
   Collidable_v2 {
@@ -382,13 +1846,13 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 4338756373939568011
+      Id: 2893761781180628874
     }
   }
 }
 Objects {
-  Id: 2356404881866757705
-  Name: "TechTree_VK72.01"
+  Id: 16176249918353776632
+  Name: "Rank5"
   Transform {
     Location {
     }
@@ -400,223 +1864,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4627209641736720243
+  ParentId: 2539629998133608914
   UnregisteredParameters {
     Overrides {
-      Name: "cs:Name"
-      String: "VK72.01"
+      Name: "cs:MinLevel"
+      Int: 40
     }
     Overrides {
-      Name: "cs:ID"
-      String: "32"
+      Name: "cs:MaxLevel"
+      Int: 49
     }
     Overrides {
-      Name: "cs:Team"
-      String: "Axis"
+      Name: "cs:MedRankIcon"
+      AssetReference {
+        Id: 14052890819589790136
+      }
     }
     Overrides {
-      Name: "cs:Country"
-      String: "GER"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 4
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Heavy"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 75000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 8
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 7
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 26
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 36
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 12
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 16
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 17
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -10
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 21000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 25000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 600
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 650
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 1800
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1900
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 950
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1050
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 300
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 2100
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 2500
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 50
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "24"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
+      Name: "cs:SmallRankIcon"
+      AssetReference {
+        Id: 1964403007004973004
+      }
     }
   }
   Collidable_v2 {
@@ -630,13 +1898,13 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 4338756373939568011
+      Id: 2893761781180628874
     }
   }
 }
 Objects {
-  Id: 7781385510624584118
-  Name: "TechTree_E-100"
+  Id: 3178423598194019054
+  Name: "Rank4"
   Transform {
     Location {
     }
@@ -648,223 +1916,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4627209641736720243
+  ParentId: 2539629998133608914
   UnregisteredParameters {
     Overrides {
-      Name: "cs:Name"
-      String: "E-100"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "31"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Axis"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "GER"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 4
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Heavy"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 75000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 8
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 7
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
+      Name: "cs:MinLevel"
       Int: 30
     }
     Overrides {
-      Name: "cs:Elevation"
-      Int: 12
+      Name: "cs:MaxLevel"
+      Int: 39
     }
     Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 18
+      Name: "cs:MedRankIcon"
+      AssetReference {
+        Id: 9033700003077298857
+      }
     }
     Overrides {
-      Name: "cs:MaxElevation"
-      Int: 23
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -11
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 21000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 25000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 640
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 710
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 1700
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1800
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 1200
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1350
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 300
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 2700
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 3800
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 50
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "24"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
+      Name: "cs:SmallRankIcon"
+      AssetReference {
+        Id: 3262358769941651946
+      }
     }
   }
   Collidable_v2 {
@@ -878,13 +1950,13 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 4338756373939568011
+      Id: 2893761781180628874
     }
   }
 }
 Objects {
-  Id: 18295971205936397406
-  Name: "TechTree_Maus"
+  Id: 17267043858563204161
+  Name: "Rank3"
   Transform {
     Location {
     }
@@ -896,471 +1968,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4627209641736720243
+  ParentId: 2539629998133608914
   UnregisteredParameters {
     Overrides {
-      Name: "cs:Name"
-      String: "Maus"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "30"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Axis"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "GER"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 4
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Heavy"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 75000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 8
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 7
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 14
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
+      Name: "cs:MinLevel"
       Int: 20
     }
     Overrides {
-      Name: "cs:Elevation"
-      Int: 10
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 17
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 23
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -9
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 21000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 25000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 710
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 780
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 1900
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 2000
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 1150
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1250
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 400
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 1500
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 1800
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 40
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 50
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "24"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 14604345959040411191
-  Name: "TechTree_Type 74"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "Type 74"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "29"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Axis"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "JP"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 4
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Medium"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 75000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 4
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 40
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 50
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 24
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
+      Name: "cs:MaxLevel"
       Int: 29
     }
     Overrides {
-      Name: "cs:MaxElevation"
-      Int: 9
+      Name: "cs:MedRankIcon"
+      AssetReference {
+        Id: 7388947560576348752
+      }
     }
     Overrides {
-      Name: "cs:MaxDepression"
-      Int: -10
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 27000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 40000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 310
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 330
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 900
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1050
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 1120
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1345
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 300
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 600
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 700
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 70
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "23"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
+      Name: "cs:SmallRankIcon"
+      AssetReference {
+        Id: 7150784161820162714
+      }
     }
   }
   Collidable_v2 {
@@ -1374,13 +2002,13 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 4338756373939568011
+      Id: 2893761781180628874
     }
   }
 }
 Objects {
-  Id: 11044764878927637174
-  Name: "TechTree_E-50"
+  Id: 175641609894628484
+  Name: "Rank2"
   Transform {
     Location {
     }
@@ -1392,4191 +2020,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4627209641736720243
+  ParentId: 2539629998133608914
   UnregisteredParameters {
     Overrides {
-      Name: "cs:Name"
-      String: "E-50"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "28"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Axis"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "GER"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 4
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Medium"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 75000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 4
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 3
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 50
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 15
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -11
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 21000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 40000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 225
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 250
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 950
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1100
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 1215
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1440
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 400
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 2100
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 2500
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 55
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 65
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "23"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 15250779453053191158
-  Name: "TechTree_OF-40"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "OF-40"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "27"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Axis"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "IT"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 4
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Medium"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 75000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 4
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 30
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 40
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 15
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 22
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -9
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 27000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 40000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 280
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 320
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 950
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1100
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 1350
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1575
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 500
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 4000
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 4500
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 70
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "23"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 8982021377775266738
-  Name: "TechTree_FIAT 6616"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "FIAT 6616"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "26"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Axis"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "IT"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 4
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Light"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 75000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 0.7
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 0.5
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 30
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 40
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 25
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 30
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 15
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -10
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 21000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 55
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 66
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 650
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 750
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 3750
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 4100
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 500
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 3900
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 4400
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 1500
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 1500
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "23"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 3412077256889579614
-  Name: "TechTree_Lowe"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "Lowe"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "25"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Axis"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "GER"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 3
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Heavy"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Gold"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 1000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 6
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 34
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 46
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 16
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 40
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -13
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 21000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 25000
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 475
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1600
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 425
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 1500
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 900
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1000
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 300
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 1200
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 50
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 1700
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 10943900983422635871
-  Name: "TechTree_Tiger 2"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "Tiger 2"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "24"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Axis"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "GER"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 3
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Heavy"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 25000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 5.7
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 4.7
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 26
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 36
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 12
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 16
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 15
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -10
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 24000
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 350
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 315
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 25000
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1450
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 1350
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 720
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1050
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 300
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 1300
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 1400
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 30
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "20"
-    }
-    Overrides {
-      Name: "cs:Prerequisite2"
-      String: "21"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 14778489487136594286
-  Name: "TechTree_Panther"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "Panther"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "23"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Axis"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "GER"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 3
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Medium"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 25000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 5.7
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 4.7
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 16
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 24
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 15
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 25
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -11
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 22500
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 300
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 280
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 40000
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1000
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 950
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 1102
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1327
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 250
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 2100
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 2300
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 55
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 65
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "20"
-    }
-    Overrides {
-      Name: "cs:Prerequisite2"
-      String: "21"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 13669858646675890464
-  Name: "TechTree_StuG 3 G"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "StuG 3 G"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "22"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Axis"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "GER"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 2
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Tank Destroyer"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 20000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 4.7
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 3.7
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 15
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 25
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 17
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -9
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 9
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 21000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 35000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 330
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 360
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 750
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 850
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 940
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1070
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 250
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 800
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 900
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 70
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "18"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 1558823199986152662
-  Name: "TechTree_Panzer 4"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "Panzer 4"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "21"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Axis"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "GER"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 2
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Medium"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 20000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 4.7
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 3.7
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 40
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 18
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 22
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -12
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 21000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 40000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 160
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 175
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 1150
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1250
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 778
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 865
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 300
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 900
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 1300
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 55
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 65
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "18"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 16890910009453703572
-  Name: "TechTree_Chi-Nu"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "Chi-Nu"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "20"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Axis"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "JP"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 2
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Medium"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 20000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 4.7
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 3.7
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 24
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 30
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 15
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 22
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -10
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 21000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 40000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 180
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 205
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 900
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1000
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 720
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 990
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 320
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 500
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 600
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 70
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "18"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 2041849247281351777
-  Name: "TechTree_Leopard VK1602"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "Leopard VK1602"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "19"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Axis"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "GER"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 2
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Light"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 20000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 36
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 44
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 18
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 27
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -12
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 21000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 55
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 62
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 750
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 850
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 1127
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1260
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 450
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 500
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 500
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 55
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 65
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "18"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 10028988736579156900
-  Name: "TechTree_Panzer 3"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "Panzer 3"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "18"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Axis"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "GER"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 1
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Light"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 2500
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 2500
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 2500
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 3
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 28
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 36
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 15
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 21
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -10
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 21000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 80
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 925
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 65
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 850
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 1160
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1360
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 350
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 500
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 55
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 65
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 500
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 13758674452467291256
-  Name: "TechTree_T110 E3"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "T110 E3"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "17"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Allies"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "US"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 4
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Tank Destroyer"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 75000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 8
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 7
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:Elevation"
+      Name: "cs:MinLevel"
       Int: 10
     }
     Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 15
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 16
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -11
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 16
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 24000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 35000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 850
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 880
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 1400
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1500
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 830
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 920
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 300
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 1400
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 1500
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 65
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 75
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "07"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 16522114398036114422
-  Name: "TechTree_AMX-50"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "AMX-50"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "16"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Allies"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "FR"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 4
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Heavy"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 75000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 4
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 4
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 50
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 10
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 15
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 14
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -12
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 22500
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 25000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 270
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 310
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 1500
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1600
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 1175
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1225
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 150
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 1900
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 2200
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 50
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "06"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 8248103049089238548
-  Name: "TechTree_IS-7"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "IS-7"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "15"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Allies"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "USSR"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 4
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Heavy"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 75000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 6.7
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 6.2
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 24
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 40
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 12
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 17
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 15
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -13
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 24000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 25000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 490
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 560
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 1700
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1800
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 1025
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1175
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 450
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 2100
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 2200
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 70
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "06"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 11688264768722353906
-  Name: "TechTree_T57"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "T57"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "14"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Allies"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "US"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 4
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Heavy"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 75000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 5.3
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 4.5
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 40
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 10
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 15
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 12
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -11
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 22500
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 25000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 415
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 445
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 1500
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1600
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 725
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 975
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 300
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 2100
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 2200
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 70
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "06"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 13325097102619233626
-  Name: "TechTree_T-62A1"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "T-62A1"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "13"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Allies"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "USSR"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 4
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Medium"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 75000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 6.7
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 5.7
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 22
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 32
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 25
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 30
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 16
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -11
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 24000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 40000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 420
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 500
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 900
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1000
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 1012
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1237
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 250
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 1100
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 1200
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 70
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "05"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 5957323784067918363
-  Name: "TechTree_M48 Patton"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "M48 Patton"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "12"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Allies"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "US"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 4
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Medium"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 75000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 5.7
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 4.7
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 40
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 48
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 25
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
+      Name: "cs:MaxLevel"
       Int: 19
     }
     Overrides {
-      Name: "cs:MaxDepression"
-      Int: -11
+      Name: "cs:MedRankIcon"
+      AssetReference {
+        Id: 11918174607508767811
+      }
     }
     Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 24000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 40000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 310
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 325
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 900
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1000
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 877
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1102
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 350
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 1100
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 1600
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 55
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 65
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "05"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
+      Name: "cs:SmallRankIcon"
+      AssetReference {
+        Id: 2908295658805356699
+      }
     }
   }
   Collidable_v2 {
@@ -5590,13 +2054,13 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 4338756373939568011
+      Id: 2893761781180628874
     }
   }
 }
 Objects {
-  Id: 6711663443493071260
-  Name: "TechTree_Bat-Chat 25T"
+  Id: 8322195275330284512
+  Name: "Rank1"
   Transform {
     Location {
     }
@@ -5608,223 +2072,31 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4627209641736720243
+  ParentId: 2539629998133608914
   UnregisteredParameters {
     Overrides {
-      Name: "cs:Name"
-      String: "Bat-Chat 25T"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "11"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Allies"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "FR"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 4
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Medium"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 75000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 4.7
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 4.7
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 40
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 50
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 10
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 15
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 11
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -10
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
+      Name: "cs:MinLevel"
       Int: 0
     }
     Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 22500
+      Name: "cs:MaxLevel"
+      Int: 9
     }
     Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
+      Name: "cs:RankAcronym"
+      String: ""
     }
     Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
+      Name: "cs:MedRankIcon"
+      AssetReference {
+        Id: 3055614023848673770
+      }
     }
     Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 40000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 425
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 465
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 850
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 900
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 1200
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1500
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 1200
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 1900
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 2100
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 50
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "05"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
+      Name: "cs:SmallRankIcon"
+      AssetReference {
+        Id: 12560038427009297814
+      }
     }
   }
   Collidable_v2 {
@@ -5838,13 +2110,48 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 4338756373939568011
+      Id: 2893761781180628874
     }
   }
 }
 Objects {
-  Id: 14998490788610534119
-  Name: "TechTree_1955 Chimera"
+  Id: 10546462214013177778
+  Name: "CurrencyRegistry"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11955821821189344362
+  ChildIds: 6758797632983932561
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 10546462214013177778
+    SubobjectId: 17749541630557761566
+    InstanceId: 16731716681513010579
+    TemplateId: 9298200724150212839
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 6758797632983932561
+  Name: "Currency"
   Transform {
     Location {
     }
@@ -5856,223 +2163,17 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4627209641736720243
+  ParentId: 10546462214013177778
+  ChildIds: 9522003015580910306
+  ChildIds: 18152587807334884647
+  ChildIds: 12174354910304600613
+  ChildIds: 11316244312431131959
+  ChildIds: 1970207434065438946
+  ChildIds: 5701414219307769669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
-      String: "1955 Chimera"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "10"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Allies"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "UK"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 4
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Light"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 75000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 15000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 6.7
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 6.7
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 80
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 25
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 8
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -9
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 25500
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 530
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 550
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 700
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 850
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 1262
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1375
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 600
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 500
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 550
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 70
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "02"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
+      String: "Currency"
     }
   }
   Collidable_v2 {
@@ -6084,15 +2185,24 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
   Script {
     ScriptAsset {
-      Id: 4338756373939568011
+      Id: 11034628940190777780
     }
+  }
+  InstanceHistory {
+    SelfId: 6758797632983932561
+    SubobjectId: 4162336716775022909
+    InstanceId: 16731716681513010579
+    TemplateId: 9298200724150212839
   }
 }
 Objects {
-  Id: 5181732821146982762
-  Name: "TechTree_T34 Heavy"
+  Id: 5701414219307769669
+  Name: "Universal tank part"
   Transform {
     Location {
     }
@@ -6104,219 +2214,243 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4627209641736720243
+  ParentId: 6758797632983932561
   UnregisteredParameters {
     Overrides {
-      Name: "cs:Name"
-      String: "T34 Heavy"
+      Name: "cs:ID"
+      Int: 6
     }
+    Overrides {
+      Name: "cs:Name"
+      String: "Universal Tank Parts"
+    }
+    Overrides {
+      Name: "cs:DisplayName"
+      String: "Universal Tank Parts"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 15087097116682079611
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 639029098114520223
+    }
+  }
+  InstanceHistory {
+    SelfId: 11316244312431131959
+    SubobjectId: 17943719346170692251
+    InstanceId: 16731716681513010579
+    TemplateId: 9298200724150212839
+  }
+}
+Objects {
+  Id: 1970207434065438946
+  Name: "Tank parts"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6758797632983932561
+  UnregisteredParameters {
     Overrides {
       Name: "cs:ID"
-      String: "09"
+      Int: 5
     }
     Overrides {
-      Name: "cs:Team"
-      String: "Allies"
+      Name: "cs:Name"
+      String: "Tank parts"
     }
     Overrides {
-      Name: "cs:Country"
-      String: "US"
+      Name: "cs:DisplayName"
+      String: "Tank parts"
     }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 639029098114520223
+    }
+  }
+  InstanceHistory {
+    SelfId: 11316244312431131959
+    SubobjectId: 17943719346170692251
+    InstanceId: 16731716681513010579
+    TemplateId: 9298200724150212839
+  }
+}
+Objects {
+  Id: 11316244312431131959
+  Name: "XP"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6758797632983932561
+  UnregisteredParameters {
     Overrides {
-      Name: "cs:Tier"
+      Name: "cs:ID"
       Int: 4
     }
     Overrides {
-      Name: "cs:Type"
-      String: "Heavy"
+      Name: "cs:Name"
+      String: "XP"
     }
     Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
+      Name: "cs:DisplayName"
+      String: "XP"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 639029098114520223
+    }
+  }
+  InstanceHistory {
+    SelfId: 11316244312431131959
+    SubobjectId: 17943719346170692251
+    InstanceId: 16731716681513010579
+    TemplateId: 9298200724150212839
+  }
+}
+Objects {
+  Id: 12174354910304600613
+  Name: "Free XP"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6758797632983932561
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ID"
+      Int: 3
     }
     Overrides {
-      Name: "cs:PurchaseCurrencyName"
+      Name: "cs:Name"
+      String: "Free XP"
+    }
+    Overrides {
+      Name: "cs:DisplayName"
+      String: "Free XP"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 639029098114520223
+    }
+  }
+  InstanceHistory {
+    SelfId: 12174354910304600613
+    SubobjectId: 14770815955631078793
+    InstanceId: 16731716681513010579
+    TemplateId: 9298200724150212839
+  }
+}
+Objects {
+  Id: 18152587807334884647
+  Name: "Gold"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6758797632983932561
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ID"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Name"
       String: "Gold"
     }
     Overrides {
-      Name: "cs:ResearchCost"
-      Int: 0
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 1283463588493558965
+      }
     }
     Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 1000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 7
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 6
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 28
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 36
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 10
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 15
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 15
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -13
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 25500
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 25000
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 635
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1800
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 605
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 1700
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 860
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 975
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 300
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 1100
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 70
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 1200
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
+      Name: "cs:DisplayName"
+      String: "Gold"
     }
   }
   Collidable_v2 {
@@ -6328,15 +2462,24 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
   Script {
     ScriptAsset {
-      Id: 4338756373939568011
+      Id: 639029098114520223
     }
+  }
+  InstanceHistory {
+    SelfId: 18152587807334884647
+    SubobjectId: 11521747149175560843
+    InstanceId: 16731716681513010579
+    TemplateId: 9298200724150212839
   }
 }
 Objects {
-  Id: 4581832438004629787
-  Name: "TechTree_M6A1 Heavy"
+  Id: 9522003015580910306
+  Name: "Silver"
   Transform {
     Location {
     }
@@ -6348,1959 +2491,25 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4627209641736720243
+  ParentId: 6758797632983932561
   UnregisteredParameters {
     Overrides {
-      Name: "cs:Name"
-      String: "M6A1 Heavy"
-    }
-    Overrides {
       Name: "cs:ID"
-      String: "08"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Allies"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "US"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 3
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Heavy"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 1000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 4.7
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 3.7
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 26
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 36
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 16
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 22
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 30
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -12
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 22500
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 25000
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 290
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1400
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 270
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 1300
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 775
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 975
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 250
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 2200
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 50
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 2400
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 8801035787694818094
-  Name: "TechTree_M10 Wolverine"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "M10 Wolverine"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "07"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Allies"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "US"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 2
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Tank Destroyer"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 20000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 4.7
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 4.2
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 36
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 50
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 12
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 18
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 30
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -14
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 22500
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 35000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 340
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 380
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 650
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 750
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 936
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1012
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 250
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 900
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 950
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 65
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "01"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 16185962644278169204
-  Name: "TechTree_IS-3"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "IS-3"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "06"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Allies"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "USSR"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 3
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Heavy"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 25000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 8
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 7
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 16
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 10
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 15
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -11
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 22500
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 535
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 515
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 25000
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1500
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 1400
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 780
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 920
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 300
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 1700
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 1900
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 50
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "03"
-    }
-    Overrides {
-      Name: "cs:Prerequisite2"
-      String: "04"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 677266005577929283
-  Name: "TechTree_Comet"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "Comet"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "05"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Allies"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "UK"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 3
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Medium"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 25000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 4.7
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 3.7
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 30
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 18
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 22
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -12
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 24000
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 280
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 260
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 40000
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 925
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 850
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 1035
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1215
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 200
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 600
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 700
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 55
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 65
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "03"
-    }
-    Overrides {
-      Name: "cs:Prerequisite2"
-      String: "04"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 4368140733057917078
-  Name: "TechTree_T-34"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "T-34"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "04"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Allies"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "USSR"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 2
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Medium"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 20000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 6
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 36
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 44
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 12
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 17
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 30
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -10
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 21000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 40000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 260
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 290
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 950
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1050
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 1045
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1110
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 300
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 500
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 600
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 55
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 65
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "01"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 4605971117425515096
-  Name: "TechTree_M4A1Sherman"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "M4A1 Sherman"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "03"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Allies"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "US"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 2
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Medium"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 20000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 4
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 3
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 40
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 50
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 25
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 25
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -12
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 21000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 40000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 185
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 200
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 1050
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 1100
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 945
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1040
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 350
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 600
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 700
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 50
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "01"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 9751312557709588628
-  Name: "TechTree_M24Chaffee"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "M24 Chaffee"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "02"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Allies"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "US"
-    }
-    Overrides {
-      Name: "cs:Tier"
-      Int: 2
-    }
-    Overrides {
-      Name: "cs:Type"
-      String: "Light"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:ResearchCost"
-      Int: 10000
-    }
-    Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 20000
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 7500
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 4
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 36
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 50
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 15
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 22
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 15
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -12
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 21000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 230
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 270
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 550
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 650
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 1150
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1330
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 600
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 400
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 400
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 70
-    }
-    Overrides {
-      Name: "cs:Prerequisite1"
-      String: "01"
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4338756373939568011
-    }
-  }
-}
-Objects {
-  Id: 4891743929451106183
-  Name: "TechTree_M3Stuart"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4627209641736720243
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "M3 Stuart"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "01"
-    }
-    Overrides {
-      Name: "cs:Team"
-      String: "Allies"
-    }
-    Overrides {
-      Name: "cs:Country"
-      String: "US"
-    }
-    Overrides {
-      Name: "cs:Tier"
       Int: 1
     }
     Overrides {
-      Name: "cs:Type"
-      String: "Light"
-    }
-    Overrides {
-      Name: "cs:ResearchCurrencyName"
-      String: "RP"
-    }
-    Overrides {
-      Name: "cs:PurchaseCurrencyName"
+      Name: "cs:Name"
       String: "Silver"
     }
     Overrides {
-      Name: "cs:ResearchCost"
-      Int: 0
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 6262982467505051120
+      }
     }
     Overrides {
-      Name: "cs:PurchaseCost"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:WeaponResearchCost"
-      Int: 2500
-    }
-    Overrides {
-      Name: "cs:WeaponPurchaseCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:ArmorResearchCost"
-      Int: 2500
-    }
-    Overrides {
-      Name: "cs:ArmorPurchaseCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:MobilityResearchCost"
-      Int: 2500
-    }
-    Overrides {
-      Name: "cs:MobilityPurchaseCost"
-      Int: 5000
-    }
-    Overrides {
-      Name: "cs:Reload"
-      Float: 3
-    }
-    Overrides {
-      Name: "cs:ReloadUpgraded"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:Turret"
-      Int: 30
-    }
-    Overrides {
-      Name: "cs:TurretUpgraded"
-      Int: 40
-    }
-    Overrides {
-      Name: "cs:Elevation"
-      Int: 16
-    }
-    Overrides {
-      Name: "cs:ElevationUpgraded"
-      Int: 22
-    }
-    Overrides {
-      Name: "cs:MaxElevation"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles"
-      Int: 0
-    }
-    Overrides {
-      Name: "cs:MaxDepression"
-      Int: -14
-    }
-    Overrides {
-      Name: "cs:ProjectileSpeed"
-      Int: 21000
-    }
-    Overrides {
-      Name: "cs:ProjectileLength"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RecoilAmount"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier"
-      Float: 2
-    }
-    Overrides {
-      Name: "cs:ViewRange"
-      Int: 50000
-    }
-    Overrides {
-      Name: "cs:DamageUpgraded"
-      Int: 90
-    }
-    Overrides {
-      Name: "cs:HitPointsUpgraded"
-      Int: 800
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: 70
-    }
-    Overrides {
-      Name: "cs:HitPoints"
-      Int: 750
-    }
-    Overrides {
-      Name: "cs:TopSpeed"
-      Int: 1160
-    }
-    Overrides {
-      Name: "cs:TopSpeedUpgraded"
-      Int: 1200
-    }
-    Overrides {
-      Name: "cs:ReverseSpeed"
-      Int: 300
-    }
-    Overrides {
-      Name: "cs:Acceleration"
-      Int: 500
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:TurningSpeed"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded"
-      Int: 70
-    }
-    Overrides {
-      Name: "cs:AccelerationUpgraded"
-      Int: 500
-    }
-    Overrides {
-      Name: "cs:TurningSpeedUpgraded:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileLength:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ProjectileRadius:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilRockingMultiplier:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:RecoilAmount:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:AllowHoldDownFiring:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:ViewRange:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:HorizontalAngles:category"
-      String: "Custom"
-    }
-    Overrides {
-      Name: "cs:WheelSpeedModifier:category"
-      String: "Custom"
+      Name: "cs:DisplayName"
+      String: "Silver"
     }
   }
   Collidable_v2 {
@@ -8312,9 +2521,50 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
   Script {
     ScriptAsset {
-      Id: 4338756373939568011
+      Id: 639029098114520223
+    }
+  }
+  InstanceHistory {
+    SelfId: 9522003015580910306
+    SubobjectId: 16153135163240676686
+    InstanceId: 16731716681513010579
+    TemplateId: 9298200724150212839
+  }
+}
+Objects {
+  Id: 8428918638154795264
+  Name: "TankRegistry"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11955821821189344362
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13088315100642592667
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TankRegistry"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1305280032722446335
     }
   }
 }
