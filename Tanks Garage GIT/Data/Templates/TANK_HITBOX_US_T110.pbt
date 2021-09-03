@@ -61,7 +61,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:forceon"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -468,7 +468,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -485,15 +485,15 @@ Assets {
         Name: "TURRETSIDE"
         Transform {
           Location {
-            X: 9.61114502
-            Z: 230
+            X: -1.75249
+            Z: 229.999985
           }
           Rotation {
           }
           Scale {
-            X: 3.90000033
-            Y: 3.9
-            Z: 1.4
+            X: 4.2
+            Y: 5
+            Z: 1.39999986
           }
         }
         ParentId: 7320820100865908377
@@ -538,7 +538,7 @@ Assets {
           }
           Scale {
             X: 1.5
-            Y: 3.5
+            Y: 4.51315832
             Z: 1.49999988
           }
         }
@@ -576,7 +576,7 @@ Assets {
         Name: "TURRETREAR"
         Transform {
           Location {
-            X: -175.388855
+            X: -212.66156
             Z: 195
           }
           Rotation {
@@ -584,7 +584,7 @@ Assets {
           }
           Scale {
             X: 1.5
-            Y: 3.8
+            Y: 4.89999914
             Z: 1.5
           }
         }
@@ -657,14 +657,14 @@ Assets {
         Name: "Muzzle"
         Transform {
           Location {
-            X: 235.653732
+            X: 653.657288
           }
           Rotation {
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 0.4
+            X: 2
+            Y: 2
+            Z: 2
           }
         }
         ParentId: 581302846502690813
@@ -676,6 +676,8 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
+              R: 0.809999943
+              G: 3.86238071e-07
               A: 1
             }
           }
@@ -684,7 +686,7 @@ Assets {
           Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:forceon"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:forceoff"
