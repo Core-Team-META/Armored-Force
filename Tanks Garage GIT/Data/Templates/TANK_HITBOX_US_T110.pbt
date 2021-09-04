@@ -657,14 +657,14 @@ Assets {
         Name: "Muzzle"
         Transform {
           Location {
-            X: 653.657288
+            X: 231.839264
           }
           Rotation {
           }
           Scale {
-            X: 2
-            Y: 2
-            Z: 2
+            X: 0.4
+            Y: 0.4
+            Z: 0.4
           }
         }
         ParentId: 581302846502690813
@@ -686,7 +686,7 @@ Assets {
           Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:forceoff"
