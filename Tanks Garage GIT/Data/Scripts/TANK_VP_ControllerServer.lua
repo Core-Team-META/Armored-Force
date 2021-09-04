@@ -1097,10 +1097,12 @@ function CheckStuckTank()
 	local checkInput = driver:IsBindingPressed("ability_extra_21") and not driver:IsBindingPressed("ability_extra_31")
 	checkInput = checkInput or (not driver:IsBindingPressed("ability_extra_21") and driver:IsBindingPressed("ability_extra_31"))
 	
+	--[[
 	if chassis.type == "TreadedVehicle" then
 		checkInput = checkInput or (driver:IsBindingPressed("ability_extra_30") and not driver:IsBindingPressed("ability_extra_32"))
 		checkInput = checkInput or (not driver:IsBindingPressed("ability_extra_30") and driver:IsBindingPressed("ability_extra_32"))
 	end
+	]]
 	
 	checkInput = checkInput and not driver:IsBindingPressed("ability_extra_17")
 	
