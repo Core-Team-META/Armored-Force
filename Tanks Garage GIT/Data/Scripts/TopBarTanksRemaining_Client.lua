@@ -9,6 +9,7 @@ local TEAMCOUNT_2_SHINE = script:GetCustomProperty("TEAMCOUNT_2_SHINE"):WaitForO
 
 local friendlyCount = 0
 local enemyCount = 0
+local tickTime = 0
 
 while not _G.utils do
     Task.Wait()
@@ -24,26 +25,45 @@ local function HideDead(count, panel)
     end
 end
 
-function Tick()
-    local friendlyTeam =
-        #_G.utils.GetTankDrivers({ignoreDead = true, ignoreTeams = 3 - LocalPlayer.team}) +
-        #Game.GetPlayers({ignoreDead = true, ignoreTeams = 3 - LocalPlayer.team})
-
-    local enemyTeam =
-        #_G.utils.GetTankDrivers({ignoreDead = true, ignoreTeams = LocalPlayer.team}) +
-        #Game.GetPlayers({ignoreDead = true, ignoreTeams = LocalPlayer.team})
-
-    if friendlyTeam ~= friendlyCount then
-        friendlyCount = friendlyTeam
-        HideDead(friendlyCount, FriendlyTeamPanel)
-
-        TEAMCOUNT_1.text = tostring(friendlyCount)
-        TEAMCOUNT_1_SHINE.text = tostring(friendlyCount)
+function CheckTeamCount()
+    local players = Game.GetPlayers()
+    local friendlyCount = 0
+    local enemyCount = 0
+    for _, player in ipairs(players) do
+        if player.team == LocalPlayer.team and not player.isDead then
+            friendlyCount = friendlyCount + 1
+        elseif player.team ~= LocalPlayer.team and not player.isDead then
+            enemyCount = enemyCount + 1
+        end
     end
-    if enemyTeam ~= enemyCount then
-        enemyCount = enemyTeam
-        HideDead(enemyCount, EnemyTeamPanel)
-        TEAMCOUNT_2.text = tostring(enemyCount)
-        TEAMCOUNT_2_SHINE.text = tostring(enemyCount)
+    if #players < 4 then
+        for _, aiPlayer in ipairs(_G.utils.GetTankDrivers()) do
+            if aiPlayer.team == LocalPlayer.team and not aiPlayer.isDead then
+                friendlyCount = friendlyCount + 1
+            elseif aiPlayer.team ~= LocalPlayer.team and not aiPlayer.isDead then
+                enemyCount = enemyCount + 1
+            end
+        end
+    end
+    return friendlyCount, enemyCount
+end
+
+function Tick(dt)
+    tickTime = tickTime + dt
+    if tickTime > 1 then
+        local friendlyTeam, enemyTeam = CheckTeamCount()
+        if friendlyTeam ~= friendlyCount then
+            friendlyCount = friendlyTeam
+            HideDead(friendlyCount, FriendlyTeamPanel)
+            TEAMCOUNT_1.text = tostring(friendlyCount)
+            TEAMCOUNT_1_SHINE.text = tostring(friendlyCount)
+        end
+        if enemyTeam ~= enemyCount then
+            enemyCount = enemyTeam
+            HideDead(enemyCount, EnemyTeamPanel)
+            TEAMCOUNT_2.text = tostring(enemyCount)
+            TEAMCOUNT_2_SHINE.text = tostring(enemyCount)
+        end
+        tickTime = 0
     end
 end

@@ -211,7 +211,8 @@ function AssignDriver(newDriver, playerStart, _isAI)
 	if not isAI then
 		chassis:SetDriver(driver)
 	else
-		driver:AssignToTank(chassis)
+		local identifier = script:GetCustomProperty("Identifier")
+		driver:AssignToTank(chassis, identifier)
 	end
 
 	originalSpeed = chassis.maxSpeed
@@ -279,12 +280,10 @@ function AssignDriver(newDriver, playerStart, _isAI)
 	
 	SetServerData()
 	
-	--[[
 	checkStuckTankTask = Task.Spawn(CheckStuckTank, 0)
 	checkStuckTankTask.repeatCount = -1
 	checkStuckTankTask.repeatInterval = 0.5
-	]]
-	
+
 end
 
 function AssignOwner(newOwner)
@@ -353,6 +352,7 @@ function SetTankModifications()
 		--print("Default surivability")
 	end
 
+	
 	if modifications[3] == 2 then
 		traverseSpeed = upgradedTraverse
 		elevationSpeed = upgradedElevation
@@ -563,8 +563,8 @@ function ProjectileImpacted(expiredProjectile, other)
 	end
 
 	
-	if driver:IsA("Player") then
-		--Events.BroadcastToPlayer(driver, "ShowDamageFeedback", totalDamage, "TRACK", chassis:GetWorldPosition(), other.driver.id)
+	if driver:IsA("AIPlayer") then
+		driver:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
 	end
 
 end
@@ -630,6 +630,9 @@ function OnArmorHit(trigger, other)
 				driver:ApplyDamage(attackData)
 			else
 				COMBAT.ApplyDamage(attackData)
+			end
+			if driver:IsA("AIPlayer") then
+				driver:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
 			end
 		end
 		
@@ -789,7 +792,9 @@ function OnArmorHit(trigger, other)
 			Events.Broadcast("PlayerRammedTank", playerWhoBurned)
 		end
 		
-		damageDealt.sourcePlayer = driver
+		if driver:IsA("Player") then
+			damageDealt.sourcePlayer = driver
+		end
 		damageDealt.reason = DamageReason.COMBAT
 		
 		if not COMBAT then
@@ -805,6 +810,10 @@ function OnArmorHit(trigger, other)
 			}
 	   		COMBAT.ApplyDamage(attackData)
 	   	end
+
+		if driver:IsA("AIPlayer") then
+			driver:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
+		end
     
 	if enemyPlayer:IsA("Player") then
 		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", ramDamage, armorName, trigger:GetWorldPosition(), driver.id)
@@ -936,7 +945,9 @@ function OnBurning()
 		}
 		
 		COMBAT.ApplyDamage(attackData)
-		
+		if playerWhoBurned:IsA("AIPlayer") then
+			playerWhoBurned:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
+		end
 		Task.Wait(1)
 	end
 	
