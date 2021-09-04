@@ -17,15 +17,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15613631792190449472
-  Name: "Icon Tank"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Tank"
-  }
-}
-Assets {
   Id: 14097001835618858858
   Name: "Fantasy Trophy 006"
   PlatformAssetType: 9
@@ -59,15 +50,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundHighlighted_020"
-  }
-}
-Assets {
-  Id: 10447331643503989276
-  Name: "Device"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Urban_Icon_056"
   }
 }
 Assets {
