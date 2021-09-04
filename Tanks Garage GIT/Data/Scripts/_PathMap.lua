@@ -19,16 +19,26 @@ function API.RegisterBlockedSpot(zone)
     radius = radius})
 
   --print("area:", radius, radius//GRIDSIZE)
+
   blockMap[GridKey(pos)] = true
+  --DrawDebugVolume(pos)
   for x = pos.x - radius, pos.x + radius, GRIDSIZE do
     for y = pos.y - radius, pos.y + radius, GRIDSIZE do
       if (Vector3.New(x, y, 0) - pos).size < radius then
         blockMap[GridKey(Vector3.New(x, y, 0))] = true
+        --DrawDebugVolume(Vector3.New(x, y, 0))
       end
     end
   end
 end
 
+function DrawDebugVolume(basePos)
+  local pos = Vector3.New(
+    (basePos.x // GRIDSIZE) * GRIDSIZE,
+    (basePos.y // GRIDSIZE) * GRIDSIZE,
+    0)
+  CoreDebug.DrawBox(basePos, Vector3.New(GRIDSIZE, GRIDSIZE, 1000), {color = Color.RED, thickness = 15, duration = 30})
+end
 
 function API.IsBlocked(worldPos)
   --[[
@@ -41,7 +51,7 @@ function API.IsBlocked(worldPos)
   end
   return false
   ]]
-  return blockMap[GridKey(worldPos)] or false
+  return blockMap[GridKey(worldPos - Vector3.ONE * GRIDSIZE/2)] or false
 end
 
 
