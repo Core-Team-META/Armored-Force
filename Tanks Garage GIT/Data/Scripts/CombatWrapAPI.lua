@@ -64,7 +64,6 @@ function API.ApplyDamage(attackData)
 		function()
 			GetWrapperFor(object).ApplyDamage(attackData)
 
-
 			Events.Broadcast("CombatWrapAPI.OnDamageTaken", attackData)
 
 			local currentHealth = API.GetHitPoints(object)
@@ -108,7 +107,7 @@ function API.FindInSphere(position, radius, parameters)
 end
 
 function GetWrapperFor(object)
-	if object and object:IsA("Player") then
+	if object and (object:IsA("Player") or object.IsA("AIPlayer")) then
 		return PLAYER_WRAPPER
 	end
 	return NPC_WRAPPER
