@@ -34,9 +34,9 @@ function AIPlayer.New(team)
     currentAttackTarget = nil,
     lastShotTime = -1,
     name = "ROBO" .. tostring(nextId - 1),
-
+    identifier = "01",
     lastPathUpdateTime = -1,
-
+    kills = 0,
     wriggleStartTime = -1,
     wriggleAngle = 0,
     lastPos = Vector3.ZERO,
@@ -403,6 +403,7 @@ function AIPlayer:GetReplicatedData()
     position = self.position,
     id = self.id,
     tankId = self.tankId,
+    identifier = self.identifier,
     team = self.team,
     name = self.name,
     kills = self.kills,
@@ -421,10 +422,11 @@ function AIPlayer.ReplicateTankAIData()
 end
 
 
-function AIPlayer:AssignToTank(tank)
+function AIPlayer:AssignToTank(tank, identifier)
   --print("assign to tank", tank.id, self)
   AIList[tank.id] = self
   self.tankId = tank.id
+  self.identifier = identifier or "01"
   table.insert(self.listeners, tank.serverMovementHook:Connect(RoboDriver))
   if self.tickTask == nil then
         self.tickTask = Task.Spawn(function()
@@ -482,10 +484,12 @@ end
 
 --#TODO Adding these so we can track combat stats on AI - Morticai
 function AIPlayer:SetResource(resourceName, amount)
+  amount = CoreMath.Round(amount)
   self.resources[resourceName] = amount or 0
 end
 
 function AIPlayer:AddResource(resourceName, amount)
+  amount = CoreMath.Round(amount)
   self.resources[resourceName] = self.resources[resourceName] and self.resources[resourceName] + amount or 0 + amount 
 end
 
