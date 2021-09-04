@@ -84,7 +84,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -112,20 +112,19 @@ Objects {
   }
   ParentId: 4353539602714003457
   ChildIds: 3724851381894902621
-  ChildIds: 14753688003302403652
-  ChildIds: 17475471692655360049
-  ChildIds: 5804023020329778696
-  ChildIds: 5818657326927499644
-  ChildIds: 12189845035373611878
-  ChildIds: 7879511797282808905
-  ChildIds: 12871906871281921385
-  ChildIds: 6900074125009814370
-  ChildIds: 16770142390835567620
-  ChildIds: 7619602256111130068
-  ChildIds: 5577226117736559344
-  ChildIds: 3160800268856238209
-  ChildIds: 1323546216885474480
-  ChildIds: 16158826252172480196
+  ChildIds: 9658465962030564640
+  ChildIds: 3929424797442102013
+  ChildIds: 13447980534075602223
+  ChildIds: 12779625255099868688
+  ChildIds: 15099643506808878879
+  ChildIds: 17319965098076839392
+  ChildIds: 10592712828628198811
+  ChildIds: 4639266423413448999
+  ChildIds: 16029887088382572021
+  ChildIds: 3022336606528302340
+  ChildIds: 5927140706099819425
+  ChildIds: 10451936394934246347
+  ChildIds: 1976442953987784267
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -143,23 +142,64 @@ Objects {
   }
 }
 Objects {
-  Id: 16158826252172480196
-  Name: "AI_BlockedPathMarker"
+  Id: 1976442953987784267
+  Name: "Misc"
   Transform {
     Location {
-      X: -6190
-      Y: -35280
+      X: -8140
+      Y: -47910
       Z: 180
     }
     Rotation {
+      Yaw: 89.9999542
     }
     Scale {
-      X: 100.999985
-      Y: 100.999985
-      Z: 100.999985
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 11455135778362922800
+  ChildIds: 13383916672943692438
+  ChildIds: 12638351268925550121
+  ChildIds: 3199803688966248371
+  ChildIds: 9012274013143917216
+  ChildIds: 13053407973887675554
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13053407973887675554
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -12460.0156
+      Y: -39930
+      Z: 180
+    }
+    Rotation {
+      Yaw: -4.78113216e-05
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 1976442953987784267
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -177,22 +217,22 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 31180
-            Y: -46050
-            Z: 180
+            X: -5909.99902
+            Y: -12970.0449
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: -90
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 100.999985
-            Y: 100.999985
-            Z: 100.999985
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
           }
         }
       }
@@ -203,23 +243,24 @@ Objects {
   }
 }
 Objects {
-  Id: 1323546216885474480
+  Id: 9012274013143917216
   Name: "AI_BlockedPathMarker"
   Transform {
     Location {
-      X: -3410
-      Y: -43100
+      X: 23610.2676
+      Y: -46679.9766
       Z: 180
     }
     Rotation {
+      Yaw: -4.78113216e-05
     }
     Scale {
-      X: 100.999985
-      Y: 100.999985
-      Z: 100.999985
+      X: 15.75
+      Y: 15.75
+      Z: 15.75
     }
   }
-  ParentId: 11455135778362922800
+  ParentId: 1976442953987784267
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -237,22 +278,22 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -6190
-            Y: -35280
-            Z: 180
+            X: 3660.02734
+            Y: -39440.1
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: -90
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 100.999985
-            Y: 100.999985
-            Z: 100.999985
+            X: 65.0000076
+            Y: 65.0000076
+            Z: 65.0000076
           }
         }
       }
@@ -263,23 +304,24 @@ Objects {
   }
 }
 Objects {
-  Id: 3160800268856238209
+  Id: 3199803688966248371
   Name: "AI_BlockedPathMarker"
   Transform {
     Location {
-      X: -11500
-      Y: -40670
+      X: -9700
+      Y: -8610
       Z: 180
     }
     Rotation {
+      Yaw: -89.9999924
     }
     Scale {
-      X: 100.999985
-      Y: 100.999985
-      Z: 100.999985
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
     }
   }
-  ParentId: 11455135778362922800
+  ParentId: 1976442953987784267
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -297,22 +339,22 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1410
-            Y: -40290
-            Z: 180
+            X: 1230.04492
+            Y: -31750.2656
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: -90
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 100.999985
-            Y: 100.999985
-            Z: 100.999985
+            X: 15.75
+            Y: 15.75
+            Z: 15.75
           }
         }
       }
@@ -323,23 +365,24 @@ Objects {
   }
 }
 Objects {
-  Id: 5577226117736559344
+  Id: 12638351268925550121
   Name: "AI_BlockedPathMarker"
   Transform {
     Location {
-      X: -12180
-      Y: -51060
+      X: -6530
+      Y: -8610
       Z: 180
     }
     Rotation {
+      Yaw: -89.9999924
     }
     Scale {
-      X: 100.999985
-      Y: 100.999985
-      Z: 100.999985
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
     }
   }
-  ParentId: 11455135778362922800
+  ParentId: 1976442953987784267
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -357,22 +400,22 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -11500
-            Y: -40670
-            Z: 180
+            X: -7700.01172
+            Y: -26500.084
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: -90
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 100.999985
-            Y: 100.999985
-            Z: 100.999985
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
           }
         }
       }
@@ -383,23 +426,24 @@ Objects {
   }
 }
 Objects {
-  Id: 7619602256111130068
+  Id: 13383916672943692438
   Name: "AI_BlockedPathMarker"
   Transform {
     Location {
-      X: 17580
-      Y: -43930
+      X: -3650
+      Y: -6170
       Z: 180
     }
     Rotation {
+      Yaw: -89.9999924
     }
     Scale {
-      X: 100.999985
-      Y: 100.999985
-      Z: 100.999985
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
     }
   }
-  ParentId: 11455135778362922800
+  ParentId: 1976442953987784267
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -417,22 +461,22 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -6230
-            Y: -46110
-            Z: 180
+            X: 6839.99756
+            Y: 3900.01221
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: -90
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 100.999985
-            Y: 100.999985
-            Z: 100.999985
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
           }
         }
       }
@@ -443,23 +487,62 @@ Objects {
   }
 }
 Objects {
-  Id: 16770142390835567620
-  Name: "AI_BlockedPathMarker"
+  Id: 10451936394934246347
+  Name: "Some Rocks"
   Transform {
     Location {
-      X: 19690
-      Y: -33970
+      X: -8140
+      Y: -47910
       Z: 180
     }
     Rotation {
+      Yaw: 89.9999542
     }
     Scale {
-      X: 100.999985
-      Y: 100.999985
-      Z: 100.999985
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 11455135778362922800
+  ChildIds: 5865344466910939164
+  ChildIds: 1779219076676476343
+  ChildIds: 8076705709890597462
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8076705709890597462
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -9700
+      Y: -8610
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 10451936394934246347
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -477,22 +560,22 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 17580
-            Y: -43930
-            Z: 180
+            X: 469.999969
+            Y: 0.000274658203
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: -90
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 100.999985
-            Y: 100.999985
-            Z: 100.999985
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
           }
         }
       }
@@ -503,23 +586,24 @@ Objects {
   }
 }
 Objects {
-  Id: 6900074125009814370
+  Id: 1779219076676476343
   Name: "AI_BlockedPathMarker"
   Transform {
     Location {
-      X: 8340
-      Y: -32460
+      X: -6530
+      Y: -8610
       Z: 180
     }
     Rotation {
+      Yaw: -89.9999924
     }
     Scale {
-      X: 100.999985
-      Y: 100.999985
-      Z: 100.999985
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
     }
   }
-  ParentId: 11455135778362922800
+  ParentId: 10451936394934246347
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -537,22 +621,22 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 21200
-            Y: -32720
-            Z: 180
+            X: -1170
+            Y: -0.000610351562
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: -90
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 100.999985
-            Y: 100.999985
-            Z: 100.999985
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
           }
         }
       }
@@ -563,23 +647,24 @@ Objects {
   }
 }
 Objects {
-  Id: 12871906871281921385
+  Id: 5865344466910939164
   Name: "AI_BlockedPathMarker"
   Transform {
     Location {
-      X: 13790
-      Y: -9100
+      X: -3650
+      Y: -6170
       Z: 180
     }
     Rotation {
+      Yaw: -89.9999924
     }
     Scale {
-      X: 52.9999657
-      Y: 52.9999657
-      Z: 52.9999657
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
     }
   }
-  ParentId: 11455135778362922800
+  ParentId: 10451936394934246347
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -597,22 +682,22 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 8340
-            Y: -32460
-            Z: 180
+            X: 2109.99976
+            Y: 0.000244140625
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: -89.9999847
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 100.999985
-            Y: 100.999985
-            Z: 100.999985
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
           }
         }
       }
@@ -623,23 +708,62 @@ Objects {
   }
 }
 Objects {
-  Id: 7879511797282808905
-  Name: "AI_BlockedPathMarker"
+  Id: 5927140706099819425
+  Name: "Some Rocks"
   Transform {
     Location {
-      X: 1050
-      Y: -11930
+      X: -4250
+      Y: -40840
       Z: 180
     }
     Rotation {
+      Yaw: -179.999954
     }
     Scale {
-      X: 90.0000076
-      Y: 90.0000076
-      Z: 90.0000076
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 11455135778362922800
+  ChildIds: 18393291192973500889
+  ChildIds: 16161210952054710514
+  ChildIds: 17264978500325613200
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17264978500325613200
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -4719.99951
+      Y: -40840
+      Z: 180
+    }
+    Rotation {
+      Yaw: 90.0000153
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 5927140706099819425
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -657,22 +781,22 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 13790
-            Y: -9100
-            Z: 180
+            X: 1349.95947
+            Y: -0.000965566491
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: -90
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 52.9999657
-            Y: 52.9999657
-            Z: 52.9999657
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
           }
         }
       }
@@ -683,23 +807,24 @@ Objects {
   }
 }
 Objects {
-  Id: 12189845035373611878
+  Id: 16161210952054710514
   Name: "AI_BlockedPathMarker"
   Transform {
     Location {
-      X: -17350
-      Y: -16790
+      X: -9700
+      Y: -8610
       Z: 180
     }
     Rotation {
+      Yaw: -89.9999924
     }
     Scale {
-      X: 68.5
-      Y: 68.5
-      Z: 68.5
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
     }
   }
-  ParentId: 11455135778362922800
+  ParentId: 5927140706099819425
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -717,22 +842,22 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1050
-            Y: -11930
-            Z: 180
+            X: -99.9999695
+            Y: 7.15255665e-05
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: -90
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 90.0000076
-            Y: 90.0000076
-            Z: 90.0000076
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
           }
         }
       }
@@ -743,23 +868,24 @@ Objects {
   }
 }
 Objects {
-  Id: 5818657326927499644
+  Id: 18393291192973500889
   Name: "AI_BlockedPathMarker"
   Transform {
     Location {
-      X: -9220
-      Y: -10900
+      X: -6530
+      Y: -8610
       Z: 180
     }
     Rotation {
+      Yaw: -89.9999924
     }
     Scale {
-      X: 68.5
-      Y: 68.5
-      Z: 68.5
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
     }
   }
-  ParentId: 11455135778362922800
+  ParentId: 5927140706099819425
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -777,22 +903,22 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -17350
-            Y: -16790
-            Z: 180
+            X: -1170
+            Y: -0.000610351562
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: -90
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 68.5
-            Y: 68.5
-            Z: 68.5
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
           }
         }
       }
@@ -803,23 +929,61 @@ Objects {
   }
 }
 Objects {
-  Id: 5804023020329778696
-  Name: "AI_BlockedPathMarker"
+  Id: 3022336606528302340
+  Name: "Some Rocks"
   Transform {
     Location {
-      X: -9220
-      Y: -10900
+      X: 940
+      Y: -40000
       Z: 180
     }
     Rotation {
+      Yaw: -179.999954
     }
     Scale {
-      X: 68.5
-      Y: 68.5
-      Z: 68.5
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 11455135778362922800
+  ChildIds: 4252959800159026995
+  ChildIds: 324379974918524740
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 324379974918524740
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -9700
+      Y: -8610
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 3022336606528302340
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -837,22 +1001,22 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -5890
-            Y: -16580
-            Z: 180
+            X: 469.999969
+            Y: 0.000274658203
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: -90
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 101.000023
-            Y: 101.000023
-            Z: 101.000023
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
           }
         }
       }
@@ -863,23 +1027,24 @@ Objects {
   }
 }
 Objects {
-  Id: 17475471692655360049
+  Id: 4252959800159026995
   Name: "AI_BlockedPathMarker"
   Transform {
     Location {
-      X: -4630
-      Y: -6730
+      X: -6530
+      Y: -8610
       Z: 180
     }
     Rotation {
+      Yaw: -89.9999924
     }
     Scale {
-      X: 68.5
-      Y: 68.5
-      Z: 68.5
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
     }
   }
-  ParentId: 11455135778362922800
+  ParentId: 3022336606528302340
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -897,22 +1062,22 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -9220
-            Y: -10900
-            Z: 180
+            X: -1170
+            Y: -0.000610351562
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: -90
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 68.5
-            Y: 68.5
-            Z: 68.5
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
           }
         }
       }
@@ -923,23 +1088,61 @@ Objects {
   }
 }
 Objects {
-  Id: 14753688003302403652
-  Name: "AI_BlockedPathMarker"
+  Id: 16029887088382572021
+  Name: "Some Rocks"
   Transform {
     Location {
-      X: -37560
-      Y: 9550
+      X: -9170
+      Y: -35670
       Z: 180
     }
     Rotation {
+      Yaw: -179.999954
     }
     Scale {
-      X: 45.25
-      Y: 45.25
-      Z: 45.25
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 11455135778362922800
+  ChildIds: 16511492121638911429
+  ChildIds: 13606432548193989287
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13606432548193989287
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -9700
+      Y: -8610
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 16029887088382572021
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -957,22 +1160,3856 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -4630
-            Y: -6730
-            Z: 180
+            X: 469.999969
+            Y: 0.000274658203
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: -90
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 68.5
-            Y: 68.5
-            Z: 68.5
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 16511492121638911429
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -6530
+      Y: -8610
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 16029887088382572021
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1170
+            Y: -0.000610351562
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 4639266423413448999
+  Name: "Some Rocks"
+  Transform {
+    Location {
+      X: -4600
+      Y: -32000
+      Z: 180
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11455135778362922800
+  ChildIds: 6769974001478161130
+  ChildIds: 16001804274652594498
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16001804274652594498
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -9700
+      Y: -8610
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 4639266423413448999
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 469.999969
+            Y: 0.000274658203
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 6769974001478161130
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -6530
+      Y: -8610
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 4639266423413448999
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1170
+            Y: -0.000610351562
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 10592712828628198811
+  Name: "Some Rocks"
+  Transform {
+    Location {
+      X: 6880
+      Y: -28080
+      Z: 180
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11455135778362922800
+  ChildIds: 18153825282961928291
+  ChildIds: 16412869495497845012
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16412869495497845012
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -9700
+      Y: -8610
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 10592712828628198811
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 469.999969
+            Y: 0.000274658203
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 18153825282961928291
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -6530
+      Y: -8610
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 10592712828628198811
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1170
+            Y: -0.000610351562
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 17319965098076839392
+  Name: "Some Rocks"
+  Transform {
+    Location {
+      X: 12690
+      Y: -28080
+      Z: 180
+    }
+    Rotation {
+      Yaw: -179.999969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11455135778362922800
+  ChildIds: 6459602250878099518
+  ChildIds: 863542869177058169
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 863542869177058169
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -9700
+      Y: -8610
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 17319965098076839392
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 469.999969
+            Y: 0.000274658203
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 6459602250878099518
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -6530
+      Y: -8610
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 17319965098076839392
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1170
+            Y: -0.000610351562
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 15099643506808878879
+  Name: "Some Rocks"
+  Transform {
+    Location {
+      X: 16750
+      Y: -47330
+      Z: 180
+    }
+    Rotation {
+      Yaw: 180
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11455135778362922800
+  ChildIds: 14341576602565281290
+  ChildIds: 10741586563077854877
+  ChildIds: 17096336356652050642
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17096336356652050642
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -9700
+      Y: -8610
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 15099643506808878879
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 469.999969
+            Y: 0.000274658203
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 10741586563077854877
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -6530
+      Y: -8610
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 15099643506808878879
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1170
+            Y: -0.000610351562
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 14341576602565281290
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3650
+      Y: -6170
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 15099643506808878879
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2109.99976
+            Y: 0.000244140625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999847
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 12779625255099868688
+  Name: "Some Rocks"
+  Transform {
+    Location {
+      X: 19860
+      Y: -41760
+      Z: 180
+    }
+    Rotation {
+      Yaw: 89.9999771
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11455135778362922800
+  ChildIds: 8757864581737846616
+  ChildIds: 3176690292065652537
+  ChildIds: 4584208930515517109
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4584208930515517109
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -9700
+      Y: -8610
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 12779625255099868688
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 469.999969
+            Y: 0.000274658203
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 3176690292065652537
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -6530
+      Y: -8610
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 12779625255099868688
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1170
+            Y: -0.000610351562
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 8757864581737846616
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3650
+      Y: -6170
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 12779625255099868688
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2109.99976
+            Y: 0.000244140625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999847
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 13447980534075602223
+  Name: "Some Rocks"
+  Transform {
+    Location {
+      X: 20640
+      Y: -31400
+      Z: 180
+    }
+    Rotation {
+      Yaw: 90
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11455135778362922800
+  ChildIds: 13595400246232714896
+  ChildIds: 5299988155404815562
+  ChildIds: 2115602005097194900
+  ChildIds: 5214379202785689813
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 5214379202785689813
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -6720
+      Y: -8360
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 13447980534075602223
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 440
+            Y: -1680
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 2115602005097194900
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3650
+      Y: -6170
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 13447980534075602223
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 610
+            Y: 610
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 5299988155404815562
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3650
+      Y: -4510
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 13447980534075602223
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 610
+            Y: 610
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 13595400246232714896
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3660
+      Y: 10350
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 20.25
+      Y: 20.25
+      Z: 20.25
+    }
+  }
+  ParentId: 13447980534075602223
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 610
+            Y: 2270
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 3929424797442102013
+  Name: "Some Rocks"
+  Transform {
+    Location {
+      X: 24170
+      Y: -34310
+      Z: 180
+    }
+    Rotation {
+      Yaw: 89.9999924
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11455135778362922800
+  ChildIds: 15990556278883558635
+  ChildIds: 2911668931399392109
+  ChildIds: 14106264167296585666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 14106264167296585666
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -9700
+      Y: -8610
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 3929424797442102013
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -139.999985
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999847
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 2911668931399392109
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -6530
+      Y: -8610
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 3929424797442102013
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1969.99976
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999847
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 15990556278883558635
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3650
+      Y: -6170
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 3929424797442102013
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2109.99976
+            Y: 0.000244140625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999847
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 9658465962030564640
+  Name: "Zone2"
+  Transform {
+    Location {
+      X: -3860
+      Y: -10310
+      Z: 180
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11455135778362922800
+  ChildIds: 17664331288776964866
+  ChildIds: 9976424371017493667
+  ChildIds: 14402004706473210156
+  ChildIds: 13235598965706330249
+  ChildIds: 10610911507274941271
+  ChildIds: 3335494662881571234
+  ChildIds: 7362977448837331342
+  ChildIds: 11463147207265575325
+  ChildIds: 6322873525359212388
+  ChildIds: 12678510154632800936
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 12678510154632800936
+  Name: "Misc Rocks"
+  Transform {
+    Location {
+      X: 11030
+      Y: -10210
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9658465962030564640
+  ChildIds: 174022189072468856
+  ChildIds: 13234973694953869984
+  ChildIds: 15076484031192574611
+  ChildIds: 10169796250816516399
+  ChildIds: 14879642150023427453
+  ChildIds: 365541497329618049
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 365541497329618049
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -14750
+      Y: -14330
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.999939
+    }
+    Scale {
+      X: 21.25
+      Y: 21.25
+      Z: 21.25
+    }
+  }
+  ParentId: 12678510154632800936
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1310
+            Y: 1440
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 14879642150023427453
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -16480
+      Y: -14330
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.999939
+    }
+    Scale {
+      X: 21.25
+      Y: 21.25
+      Z: 21.25
+    }
+  }
+  ParentId: 12678510154632800936
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 4570
+            Y: -650
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 10169796250816516399
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -2840
+      Y: -11900
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.999939
+    }
+    Scale {
+      X: 21.25
+      Y: 21.25
+      Z: 21.25
+    }
+  }
+  ParentId: 12678510154632800936
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 6660
+            Y: 10750
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 32.7500076
+            Y: 32.7500076
+            Z: 32.7500076
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 15076484031192574611
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3650
+      Y: -4510
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 12678510154632800936
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 5860
+            Y: 12110
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 26.7500095
+            Y: 26.7500095
+            Z: 26.7500095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 13234973694953869984
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -2840
+      Y: -11900
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.999939
+    }
+    Scale {
+      X: 21.25
+      Y: 21.25
+      Z: 21.25
+    }
+  }
+  ParentId: 12678510154632800936
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 7890
+            Y: 11870
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 25.2500057
+            Y: 25.2500057
+            Z: 25.2500057
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 174022189072468856
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3650
+      Y: -4510
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 12678510154632800936
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1510
+            Y: 2920
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 18
+            Y: 18
+            Z: 18
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 6322873525359212388
+  Name: "Small Rocks"
+  Transform {
+    Location {
+      X: -12710
+      Y: -4700
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9658465962030564640
+  ChildIds: 459480309786781345
+  ChildIds: 10944290427573039023
+  ChildIds: 9574733576836850952
+  ChildIds: 2108880230080257192
+  ChildIds: 2540760182348745689
+  ChildIds: 15054081634839403865
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15054081634839403865
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -14750
+      Y: -14330
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.999939
+    }
+    Scale {
+      X: 21.25
+      Y: 21.25
+      Z: 21.25
+    }
+  }
+  ParentId: 6322873525359212388
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1600
+            Y: 680
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 2540760182348745689
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -16480
+      Y: -14330
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.999939
+    }
+    Scale {
+      X: 21.25
+      Y: 21.25
+      Z: 21.25
+    }
+  }
+  ParentId: 6322873525359212388
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1820
+            Y: 680
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 2108880230080257192
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -2840
+      Y: -11900
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.999939
+    }
+    Scale {
+      X: 21.25
+      Y: 21.25
+      Z: 21.25
+    }
+  }
+  ParentId: 6322873525359212388
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -220
+            Y: -3410
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 9574733576836850952
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3650
+      Y: -4510
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 6322873525359212388
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -50
+            Y: -2060
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 10944290427573039023
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -2840
+      Y: -11900
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.999939
+    }
+    Scale {
+      X: 21.25
+      Y: 21.25
+      Z: 21.25
+    }
+  }
+  ParentId: 6322873525359212388
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -80
+            Y: -670
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 459480309786781345
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3650
+      Y: -4510
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 6322873525359212388
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 90
+            Y: 680
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 11463147207265575325
+  Name: "Small Rocks"
+  Transform {
+    Location {
+      X: 4900
+      Y: -5550
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9658465962030564640
+  ChildIds: 3835790914256689204
+  ChildIds: 11902160107107836689
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11902160107107836689
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -2840
+      Y: -11900
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.999939
+    }
+    Scale {
+      X: 21.25
+      Y: 21.25
+      Z: 21.25
+    }
+  }
+  ParentId: 11463147207265575325
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -80
+            Y: -670
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 3835790914256689204
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3650
+      Y: -4510
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 11463147207265575325
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 90
+            Y: 680
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 7362977448837331342
+  Name: "Small Rocks"
+  Transform {
+    Location {
+      X: -930
+      Y: -10390
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9658465962030564640
+  ChildIds: 364021653202794813
+  ChildIds: 15075561638749831594
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15075561638749831594
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -2840
+      Y: -11900
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.999939
+    }
+    Scale {
+      X: 21.25
+      Y: 21.25
+      Z: 21.25
+    }
+  }
+  ParentId: 7362977448837331342
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -80
+            Y: -670
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 364021653202794813
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3650
+      Y: -4510
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 7362977448837331342
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 90
+            Y: 680
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 3335494662881571234
+  Name: "Small Rocks"
+  Transform {
+    Location {
+      X: -3950
+      Y: -3450
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9658465962030564640
+  ChildIds: 10546522556164278480
+  ChildIds: 15235931311042384092
+  ChildIds: 5093480394288957113
+  ChildIds: 14036047880457222572
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 14036047880457222572
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -2840
+      Y: -11900
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.999939
+    }
+    Scale {
+      X: 21.25
+      Y: 21.25
+      Z: 21.25
+    }
+  }
+  ParentId: 3335494662881571234
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -220
+            Y: -3410
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 5093480394288957113
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3650
+      Y: -4510
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 3335494662881571234
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -50
+            Y: -2060
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 15235931311042384092
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -2840
+      Y: -11900
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.999939
+    }
+    Scale {
+      X: 21.25
+      Y: 21.25
+      Z: 21.25
+    }
+  }
+  ParentId: 3335494662881571234
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -80
+            Y: -670
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 10546522556164278480
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3650
+      Y: -4510
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 3335494662881571234
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 90
+            Y: 680
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 10610911507274941271
+  Name: "Small Rocks"
+  Transform {
+    Location {
+      X: 5330
+      Y: 1030
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9658465962030564640
+  ChildIds: 12568191626727092558
+  ChildIds: 13647015047104803433
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13647015047104803433
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -2840
+      Y: -11900
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.999939
+    }
+    Scale {
+      X: 21.25
+      Y: 21.25
+      Z: 21.25
+    }
+  }
+  ParentId: 10610911507274941271
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -80
+            Y: -670
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 12568191626727092558
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3650
+      Y: -4510
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 10610911507274941271
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 90
+            Y: 680
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 13235598965706330249
+  Name: "Small Rocks"
+  Transform {
+    Location {
+      X: 930
+      Y: -2270
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9658465962030564640
+  ChildIds: 16610006595033480322
+  ChildIds: 11438393097727739140
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11438393097727739140
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -2840
+      Y: -11900
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.999939
+    }
+    Scale {
+      X: 21.25
+      Y: 21.25
+      Z: 21.25
+    }
+  }
+  ParentId: 13235598965706330249
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -80
+            Y: -670
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 16610006595033480322
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3650
+      Y: -4510
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 13235598965706330249
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 90
+            Y: 680
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 21.25
+            Y: 21.25
+            Z: 21.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 14402004706473210156
+  Name: "Some Rocks"
+  Transform {
+    Location {
+      X: -400
+      Y: 3530
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9658465962030564640
+  ChildIds: 7324011307224463848
+  ChildIds: 2702284617374762684
+  ChildIds: 2959079932583224091
+  ChildIds: 9602026894428215554
+  ChildIds: 1060296269781079745
+  ChildIds: 8035472022306208875
+  ChildIds: 10919051754424240760
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10919051754424240760
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -9700
+      Y: -8610
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 14402004706473210156
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3610
+            Y: -1830
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 8035472022306208875
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -6530
+      Y: -8610
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 14402004706473210156
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5440
+            Y: -1830
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 1060296269781079745
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -6720
+      Y: -8360
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 14402004706473210156
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 440
+            Y: -1680
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 9602026894428215554
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3650
+      Y: -6170
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 14402004706473210156
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1360
+            Y: -1830
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 2959079932583224091
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3650
+      Y: -6170
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 14402004706473210156
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 610
+            Y: 610
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 2702284617374762684
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3650
+      Y: -4510
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 27.5000095
+      Y: 27.5000095
+      Z: 27.5000095
+    }
+  }
+  ParentId: 14402004706473210156
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 610
+            Y: 610
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 7324011307224463848
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -3660
+      Y: 10350
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 20.25
+      Y: 20.25
+      Z: 20.25
+    }
+  }
+  ParentId: 14402004706473210156
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 610
+            Y: 2270
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 27.5000095
+            Y: 27.5000095
+            Z: 27.5000095
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 9976424371017493667
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -8220
+      Y: 1070
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 20.25
+      Y: 20.25
+      Z: 20.25
+    }
+  }
+  ParentId: 9658465962030564640
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 200
+            Y: 20660
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 20.25
+            Y: 20.25
+            Z: 20.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
+  }
+}
+Objects {
+  Id: 17664331288776964866
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -17290
+      Y: 8730
+      Z: 180
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 20.25
+      Y: 20.25
+      Z: 20.25
+    }
+  }
+  ParentId: 9658465962030564640
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4360
+            Y: 11380
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 20.25
+            Y: 20.25
+            Z: 20.25
           }
         }
       }
@@ -1024,6 +5061,7 @@ Objects {
   ChildIds: 13586433474757756124
   ChildIds: 1536552913672365333
   ChildIds: 16688878289350717862
+  ChildIds: 18120053272022120924
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1038,6 +5076,65 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 18120053272022120924
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: -37560
+      Y: 9550
+      Z: 180
+    }
+    Rotation {
+    }
+    Scale {
+      X: 45.25
+      Y: 45.25
+      Z: 45.25
+    }
+  }
+  ParentId: 3724851381894902621
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11100
+            Y: 18970
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 63.25
+            Y: 63.25
+            Z: 63.25
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
   }
 }
 Objects {
