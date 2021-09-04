@@ -10,7 +10,7 @@ Assets {
         Name: "TANK_CHASSIS_Default_US_T110"
         Transform {
           Scale {
-            X: 1.2
+            X: 1
             Y: 1
             Z: 1
           }
@@ -42,9 +42,9 @@ Assets {
           }
           Mass: 58000
           PhysicsBodyScale {
-            X: 8.5
+            X: 9
             Y: 6
-            Z: 2
+            Z: 1.7
           }
           ExitBinding {
             Value: "mc:egameaction:invalid"

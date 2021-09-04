@@ -407,6 +407,7 @@ end
 --	table GetPlayerTitleByMUID(Player)
 --	Gets a title for a specific player based on their MUID
 function Module.GetPlayerTitleByMUID(player)
+	if not Object.IsValid(player) then return end
 	for _, title in pairs(Module.titles) do
 		if(title.playerMUIDs) then
 			for _, playerId in pairs(title.playerMUIDs) do

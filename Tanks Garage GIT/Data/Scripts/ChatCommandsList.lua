@@ -47,7 +47,47 @@ commands = {
         adminOnly = true,
         adminRank = AdminData.AdminRanks.Admin
     },
+    
+    ["/playerxp"] = {
+        OnCommandCalledClient = function (player, message)
+        	
+        	for section in (message.." "):gmatch("(.-) ") do
 
+        		if tonumber(section) then
+        		
+        			Chat.LocalMessage("Setting XP resource to " .. section)
+        			
+        			return
+        			
+        		end
+        	
+        	end
+
+        	Chat.LocalMessage("ERROR: command does not contain a valid resource amount. Format: /playerxp <XPValue>")
+        end,
+        OnCommandCalledServer = function (player, message)
+        	
+        	for section in (message.." "):gmatch("(.-) ") do
+
+        		if tonumber(section) then
+        		
+        			player:SetResource("XP", tonumber(section))
+        			
+        			return
+        			
+        		end
+        	
+        	end
+        	
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "Set the player xp value (determines rank). Format: /playerxp <XPValue>",
+        requireMessage = false,
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.HigherAdmin
+    },
+    
     ["/parts"] = {
         OnCommandCalledClient = function (player, message)
         
@@ -367,15 +407,15 @@ commands = {
         adminRank = AdminData.AdminRanks.Admin
     },
 
-    ["/clearai"] = {
+    ["/testai"] = {
         OnCommandCalledClient = function (player, message)
         end,
         OnCommandCalledServer = function (player, message)
-            Events.Broadcast("REMOVE_ALL_AI")
+            Events.Broadcast("SPAWN_TEST_AI", player)
         end,
         OnCommandReceivedClient = function (player, message)
         end,
-        description = "removes all AI tanks",
+        description = "spawns an enemy to test with",
         requireMessage = false,
         adminOnly = true,
         adminRank = AdminData.AdminRanks.Admin

@@ -178,7 +178,7 @@ function FindTank()
 	defaultCamera = clientSkin:FindDescendantByName("Tank Camera")
 	defaultCamera.currentDistance = defaultCamera.minDistance + 400
 	sniperCamera = clientSkin:FindDescendantByName("Sniper Camera")
-	sniperCamera.currentDistance = sniperCamera.maxDistance
+	sniperCamera.currentDistance = sniperCamera.minDistance
 	
 	local turretRotation = localPlayer.clientUserData.currentTankData.serverControlScript:GetCustomProperty("UpgradedTraverse")
 	local turretElevation = localPlayer.clientUserData.currentTankData.serverControlScript:GetCustomProperty("UpgradedElevation")

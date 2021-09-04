@@ -34,9 +34,9 @@ function AIPlayer.New(team)
     currentAttackTarget = nil,
     lastShotTime = -1,
     name = "ROBO" .. tostring(nextId - 1),
-
+    identifier = "01",
     lastPathUpdateTime = -1,
-
+    kills = 0,
     wriggleStartTime = -1,
     wriggleAngle = 0,
     lastPos = Vector3.ZERO,
@@ -77,8 +77,7 @@ function AIPlayer:ApplyDamage(damageTable)
   Events.Broadcast("CombatWrapAPI.OnDamageTaken", damageTable)
   damageTable.source:SetResource("TankDamage", CoreMath.Round(damageTable.source:GetResource("TankDamage") + damageTable.damage.amount))
 
-
-  if self.hitPoints < 0 then
+  if self.hitPoints <= 0 then
     self.hitPoints = 0
     if wasAlive then
       Task.Spawn(function()
@@ -95,7 +94,6 @@ function AIPlayer:ApplyDamage(damageTable)
         end)
     end
   end
-  print("Took damage!  New hitPoints:", self.hitPoints)
 end
 
 
@@ -109,7 +107,6 @@ function TankTick(self)
 
   local SHOT_FREQUENCY = 1
   local PATH_UPDATE_FREQUENCY = 2
-
 
   self:SetAim()
   self:UpdateAttackTarget()
@@ -406,6 +403,7 @@ function AIPlayer:GetReplicatedData()
     position = self.position,
     id = self.id,
     tankId = self.tankId,
+    identifier = self.identifier,
     team = self.team,
     name = self.name,
     kills = self.kills,
@@ -424,10 +422,11 @@ function AIPlayer.ReplicateTankAIData()
 end
 
 
-function AIPlayer:AssignToTank(tank)
+function AIPlayer:AssignToTank(tank, identifier)
   --print("assign to tank", tank.id, self)
   AIList[tank.id] = self
   self.tankId = tank.id
+  self.identifier = identifier or "01"
   table.insert(self.listeners, tank.serverMovementHook:Connect(RoboDriver))
   if self.tickTask == nil then
         self.tickTask = Task.Spawn(function()
@@ -440,14 +439,18 @@ function AIPlayer:AssignToTank(tank)
 end
 
 function AIPlayer:Destroy(tank)
-  AIList[tank.id] = nil
   -- disconnect listeners
   for k,v in pairs(self.listeners) do
     v:Disconnect()
   end
-  self.tickTask:Cancel()
   self.listeners = {}
-  self.tankId = nil
+  self.tickTask:Cancel()
+
+  -- We are no longer removing the table entry upon death.
+  -- This is so that code can still refer to it, and so it
+  -- still gets replicated.  -Chris
+  --AIList[tank.id] = nil
+  --self.tankId = nil
 end
 
 function AIPlayer.FindAIDriver(tank)
@@ -481,10 +484,12 @@ end
 
 --#TODO Adding these so we can track combat stats on AI - Morticai
 function AIPlayer:SetResource(resourceName, amount)
+  amount = CoreMath.Round(amount)
   self.resources[resourceName] = amount or 0
 end
 
 function AIPlayer:AddResource(resourceName, amount)
+  amount = CoreMath.Round(amount)
   self.resources[resourceName] = self.resources[resourceName] and self.resources[resourceName] + amount or 0 + amount 
 end
 
