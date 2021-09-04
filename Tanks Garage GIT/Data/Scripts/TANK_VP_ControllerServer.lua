@@ -563,8 +563,8 @@ function ProjectileImpacted(expiredProjectile, other)
 	end
 
 	
-	if driver:IsA("Player") then
-		--Events.BroadcastToPlayer(driver, "ShowDamageFeedback", totalDamage, "TRACK", chassis:GetWorldPosition(), other.driver.id)
+	if driver:IsA("AIPlayer") then
+		driver:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
 	end
 
 end
@@ -630,6 +630,9 @@ function OnArmorHit(trigger, other)
 				driver:ApplyDamage(attackData)
 			else
 				COMBAT.ApplyDamage(attackData)
+			end
+			if driver:IsA("AIPlayer") then
+				driver:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
 			end
 		end
 		
@@ -807,6 +810,10 @@ function OnArmorHit(trigger, other)
 			}
 	   		COMBAT.ApplyDamage(attackData)
 	   	end
+
+		if driver:IsA("AIPlayer") then
+			driver:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
+		end
     
 	if enemyPlayer:IsA("Player") then
 		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", ramDamage, armorName, trigger:GetWorldPosition(), driver.id)
@@ -938,7 +945,9 @@ function OnBurning()
 		}
 		
 		COMBAT.ApplyDamage(attackData)
-		
+		if playerWhoBurned:IsA("AIPlayer") then
+			playerWhoBurned:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
+		end
 		Task.Wait(1)
 	end
 	

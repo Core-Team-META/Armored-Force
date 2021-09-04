@@ -36,7 +36,7 @@ function AIPlayer.New(team)
     name = "ROBO" .. tostring(nextId - 1),
     identifier = "01",
     lastPathUpdateTime = -1,
-
+    kills = 0,
     wriggleStartTime = -1,
     wriggleAngle = 0,
     lastPos = Vector3.ZERO,
@@ -484,10 +484,12 @@ end
 
 --#TODO Adding these so we can track combat stats on AI - Morticai
 function AIPlayer:SetResource(resourceName, amount)
+  amount = CoreMath.Round(amount)
   self.resources[resourceName] = amount or 0
 end
 
 function AIPlayer:AddResource(resourceName, amount)
+  amount = CoreMath.Round(amount)
   self.resources[resourceName] = self.resources[resourceName] and self.resources[resourceName] + amount or 0 + amount 
 end
 
