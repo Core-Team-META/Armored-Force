@@ -12,6 +12,7 @@ local ENEMY_ENTRY_TEMPLATE = script:GetCustomProperty("Scoreboard_Entry_Enemy_Te
 
 local scoreCards = {}
 local lastAiCount = 0
+local lastUpdateTime = 0
 
 local isActive = false
 
@@ -118,10 +119,17 @@ function OnPlayerLeft(player)
     scoreCards[player.id] = nil
 end
 
-function Tick() --
-    --[[if not isActive then
+function Tick(dt) --
+    if not isActive then
         return
-    end]] local count = {
+    end
+    if lastUpdateTime < 1 then
+        return
+    else
+        lastUpdateTime = 0
+    end
+
+    local count = {
         team = 0,
         enemy = 0
     }
@@ -148,6 +156,7 @@ function Tick() --
             lastAiCount = currentAiCount
         end
     end
+    lastUpdateTime = lastUpdateTime + dt
 end
 
 LOCAL_PLAYER.bindingPressedEvent:Connect(
