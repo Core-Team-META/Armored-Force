@@ -124,6 +124,7 @@ function Tick(dt) --
         return
     end
     if lastUpdateTime < 1 then
+        lastUpdateTime = lastUpdateTime + dt
         return
     else
         lastUpdateTime = 0
@@ -156,7 +157,6 @@ function Tick(dt) --
             lastAiCount = currentAiCount
         end
     end
-    lastUpdateTime = lastUpdateTime + dt
 end
 
 LOCAL_PLAYER.bindingPressedEvent:Connect(
