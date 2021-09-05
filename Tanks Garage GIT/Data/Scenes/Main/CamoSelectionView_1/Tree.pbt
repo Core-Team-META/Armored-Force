@@ -152,12 +152,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:TechTreeContents"
-      ObjectReference {
-        SelfId: 7647187385909291407
-      }
-    }
-    Overrides {
       Name: "cs:GAMEHELPER_SkinsClient"
       ObjectReference {
         SelfId: 9828983140129475871

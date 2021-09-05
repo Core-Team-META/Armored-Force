@@ -1,6 +1,11 @@
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
-local techTreeContents = script:GetCustomProperty("TechTreeContents"):WaitForObject()
+
+while not _G.TANK_DATA do
+	Task.Wait()
+end
+
+local TANK_INFO = _G.TANK_DATA
 
 local goldBundles = {
 	[1] = script:GetCustomProperty("GoldBundle1"),
@@ -38,8 +43,8 @@ function PurchasePremiumTank(player, tankId)
 
 	local cost = nil
 
-	for x, t in ipairs(techTreeContents:GetChildren()) do
-		if t:GetCustomProperty("PurchaseCurrencyName") == "Gold" and t:GetCustomProperty("ID") == tankId then
+	for x, t in ipairs(TANK_INFO) do
+		if t.purchaseCurrencyName == "Gold" and t.id == tankId then
 			cost = t:GetCustomProperty("PurchaseCost")
 			break
 		end
