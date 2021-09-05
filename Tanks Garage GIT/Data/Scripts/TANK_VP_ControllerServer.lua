@@ -631,8 +631,8 @@ function OnArmorHit(trigger, other)
 			else
 				COMBAT.ApplyDamage(attackData)
 			end
-			if driver:IsA("AIPlayer") then
-				driver:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
+			if enemyPlayer:IsA("AIPlayer") then
+				enemyPlayer:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
 			end
 		end
 		
@@ -809,11 +809,13 @@ function OnArmorHit(trigger, other)
 				tags = {id = "Ram"}
 			}
 	   		COMBAT.ApplyDamage(attackData)
+			   
+			   if enemyPlayer:IsA("AIPlayer") then
+				enemyPlayer:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
+			end
 	   	end
 
-		if driver:IsA("AIPlayer") then
-			driver:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
-		end
+		
     
 	if enemyPlayer:IsA("Player") then
 		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", ramDamage, armorName, trigger:GetWorldPosition(), driver.id)
@@ -945,8 +947,8 @@ function OnBurning()
 		}
 		
 		COMBAT.ApplyDamage(attackData)
-		if playerWhoBurned:IsA("AIPlayer") then
-			playerWhoBurned:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
+		if driver:IsA("AIPlayer") then
+			driver:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
 		end
 		Task.Wait(1)
 	end
