@@ -15,7 +15,6 @@ local universalButtonAssets = script:GetCustomProperty("UniversalButtonAssets"):
 local individualButtonAssets = script:GetCustomProperty("IndividualButtonAssets"):WaitForObject()
 local camoContainer = script:GetCustomProperty("CamoContainer"):WaitForObject()
 local skinsClient = script:GetCustomProperty("GAMEHELPER_SkinsClient"):WaitForObject()
-local techTreeContents = script:GetCustomProperty("TechTreeContents"):WaitForObject()
 
 local unlockedColor = script:GetCustomProperty("UnlockedColor")
 local lockedColor = script:GetCustomProperty("LockedColor")
@@ -32,6 +31,12 @@ while not _G.PORTAL_IMAGES do
 end
 
 local IMAGE_API = _G.PORTAL_IMAGES
+
+while not _G.TANK_DATA do
+	Task.Wait()
+end
+
+local TANK_INFO = _G.TANK_DATA
 
 local thisComponent = "CAMOSPRAYS_MENU"
 local savedState = ""
@@ -290,25 +295,24 @@ end
 
 function InitializeTankButtonInfo()
 
-	local tankInfo = techTreeContents:GetChildren()
 	local tankID = nil
 	local tankTier = nil
 	local tankType = nil
 	local tankTeam = nil
 	local tankName = nil
 	
-	for _, t in ipairs(tankInfo) do
-		tankID = t:GetCustomProperty("ID")
-		tankTier = t:GetCustomProperty("Tier")
-		tankType = t:GetCustomProperty("Type")
-		tankTeam = t:GetCustomProperty("Team")
-		tankName = t:GetCustomProperty("Name")
+	for _, t in ipairs(TANK_INFO) do
+		tankID = t.id
+		tankTier = t.tier
+		tankType = t.type
+		tankTeam = t.team
+		tankName = t.name
 		
 		if (tankID ~= "08") and (tankID ~= "34") then
 			if tankTeam == "Allies" then
-				alliesTankNames[tankID] = tankTier .. " " .. tankType .. " " .. tankName
+				alliesTankNames[tankID] = "T" .. tankTier .. " " .. tankType .. " " .. tankName
 			elseif tankTeam == "Axis" then
-				axisTankNames[tankID] = tankTier .. " " .. tankType .. " " .. tankName
+				axisTankNames[tankID] = "T" .. tankTier .. " " .. tankType .. " " .. tankName
 			end
 		end
 	end
