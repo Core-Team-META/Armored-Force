@@ -6,6 +6,12 @@ local Constants_API = require(script:GetCustomProperty("Constants_API"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 local API_Tutorial = require(script:GetCustomProperty("API_Tutorial"))
 
+while not _G.TANK_DATA do
+	Task.Wait()
+end
+
+local TANK_INFO = _G.TANK_DATA
+
 -- Definitions
 local TEAM_DEFINITIONS = script:GetCustomProperty("TechTree_TeamDefinitions"):WaitForObject()
 local CURRENCY_DEFINITIONS = script:GetCustomProperty("TechTree_CurrencyDefinitions"):WaitForObject()
@@ -47,7 +53,6 @@ local keyBindingToOpen = script:GetCustomProperty("KeyBindingToOpen")
 local openSFX = script:GetCustomProperty("OpenSFX"):WaitForObject()
 local techTreeUIContainer = script:GetCustomProperty("TechTreeUIContainer"):WaitForObject()
 local teamSelectorButton = script:GetCustomProperty("TeamSelectorButton")
-local techTreeContents = script:GetCustomProperty("TechTree_Contents"):WaitForObject()
 local currencyPanel = script:GetCustomProperty("CurrencyPanel"):WaitForObject()
 local currencyContentsPanel = script:GetCustomProperty("CurrencyContentsPanel")
 local overrideCamera = script:GetCustomProperty("OverrideCamera"):WaitForObject()
@@ -164,7 +169,7 @@ local BASE_CURRENCY_POSITION_X = -10
 local BASE_CURRENCY_POSITION_Y = 10
 local CURRENCY_X_OFFSET = -200
 
-local TANK_LIST = techTreeContents:GetChildren()
+local TANK_LIST = TANK_INFO
 local ALLIES_TANKS = {}
 local AXIS_TANKS = {}
 local TEAMS = {}
@@ -240,9 +245,9 @@ InitializeComponent()
 function Init()
 	-- Populate tables corresponding to each team's set of tanks
 	for k, v in ipairs(TANK_LIST) do
-		if (v:GetCustomProperty("Team") == ALLIES_TEAM) then
+		if (v.team == ALLIES_TEAM) then
 			table.insert(ALLIES_TANKS, PopulateTank(v))
-		elseif (v:GetCustomProperty("Team") == AXIS_TEAM) then
+		elseif (v.team == AXIS_TEAM) then
 			table.insert(AXIS_TANKS, PopulateTank(v))
 		end
 	end
@@ -717,7 +722,7 @@ function OpenDetails(button)
 	techTreeModalPopup.visibility = Visibility.FORCE_ON
 	local id = button.name
 	for i, tank in ipairs(TANK_LIST) do
-		if (tank:GetCustomProperty("ID") == id) then
+		if (tank.id == id) then
 			PopulateDetailsModal(tank)
 		end
 	end
@@ -835,41 +840,41 @@ end
 
 function PopulateTank(tank)
 	return {
-		id = tank:GetCustomProperty("ID"),
-		name = tank:GetCustomProperty("Name"),
-		type = tank:GetCustomProperty("Type"),
-		country = tank:GetCustomProperty("Country"),
-		tier = tank:GetCustomProperty("Tier"),
-		researchCurrencyName = tank:GetCustomProperty("ResearchCurrencyName"),
-		purchaseCurrencyName = tank:GetCustomProperty("PurchaseCurrencyName"),
-		researchCost = tank:GetCustomProperty("ResearchCost"),
-		purchaseCost = tank:GetCustomProperty("PurchaseCost"),
-		weaponResearchCost = tank:GetCustomProperty("WeaponResearchCost"),
-		weaponPurchaseCost = tank:GetCustomProperty("WeaponPurchaseCost"),
-		armorResearchCost = tank:GetCustomProperty("ArmorResearchCost"),
-		armorPurchaseCost = tank:GetCustomProperty("ArmorPurchaseCost"),
-		mobilityResearchCost = tank:GetCustomProperty("MobilityResearchCost"),
-		mobilityPurchaseCost = tank:GetCustomProperty("MobilityPurchaseCost"),
-		prerequisite1 = tank:GetCustomProperty("Prerequisite1") or nil,
-		prerequisite2 = tank:GetCustomProperty("Prerequisite2") or nil,
-		damage = tank:GetCustomProperty("Damage"),
-		damageUpgraded = tank:GetCustomProperty("DamageUpgraded"),
-		reload = tank:GetCustomProperty("Reload"),
-		reloadUpgraded = tank:GetCustomProperty("ReloadUpgraded"),
-		turret = tank:GetCustomProperty("Turret"),
-		turretUpgraded = tank:GetCustomProperty("TurretUpgraded"),
-		hitPoints = tank:GetCustomProperty("HitPoints"),
-		hitPointsUpgraded = tank:GetCustomProperty("HitPointsUpgraded"),
-		topSpeed = tank:GetCustomProperty("TopSpeed"),
-		topSpeedUpgraded = tank:GetCustomProperty("TopSpeedUpgraded"),
-		acceleration = tank:GetCustomProperty("Acceleration"),
-		accelerationUpgraded = tank:GetCustomProperty("AccelerationUpgraded"),
-		traverse = tank:GetCustomProperty("Traverse"),
-		traverseUpgraded = tank:GetCustomProperty("TraverseUpgraded"),
-		elevation = tank:GetCustomProperty("Elevation"),
-		elevationUpgraded = tank:GetCustomProperty("ElevationUpgraded"),
-		turningSpeed = tank:GetCustomProperty("TurningSpeed"),
-		--turningSpeedUpgraded = tank:GetCustomProperty("TurningSpeedUpraded")
+		id = tank.id,
+		name = tank.name,
+		type = tank.type,
+		country = tank.country,
+		tier = tank.tier,
+		researchCurrencyName = tank.researchCurrencyName,
+		purchaseCurrencyName = tank.purchaseCurrencyName,
+		researchCost = tank.researchCost,
+		purchaseCost = tank.purchaseCost,
+		weaponResearchCost = tank.weaponResearchCost,
+		weaponPurchaseCost = tank.weaponPurchaseCost,
+		armorResearchCost = tank.armorResearchCost,
+		armorPurchaseCost = tank.armorPurchaseCost,
+		mobilityResearchCost = tank.mobilityResearchCost,
+		mobilityPurchaseCost = tank.mobilityPurchaseCost,
+		prerequisite1 = tank.prerequisite1 or nil,
+		prerequisite2 = tank.prerequisite2 or nil,
+		damage = tank.damage,
+		damageUpgraded = tank.damageUpgraded,
+		reload = tank.reload,
+		reloadUpgraded = tank.reloadUpgraded,
+		turret = tank.turret,
+		turretUpgraded = tank.turretUpgraded,
+		hitPoints = tank.hitPoints,
+		hitPointsUpgraded = tank.hitPointsUpgraded,
+		topSpeed = tank.topSpeed,
+		topSpeedUpgraded = tank.topSpeedUpgraded,
+		acceleration = tank.acceleration,
+		accelerationUpgraded = tank.accelerationUpgraded,
+		traverse = tank.traverse,
+		traverseUpgraded = tank.traverseUpgraded,
+		elevation = tank.elevation,
+		elevationUpgraded = tank.elevationUpgraded,
+		turningSpeed = tank.turningSpeed,
+		turningSpeedUpgraded = tank.turningSpeedUpgraded
 	}
 end
 
@@ -1259,10 +1264,10 @@ function GetPrerequisiteRPValues(id)
 	local prerequisite2 = {}
 	--print("Getting pre-req RP values")
 	for i, tank in ipairs(TANK_LIST) do
-		if (tostring(tank:GetCustomProperty("ID")) == tostring(id)) then
+		if (tostring(tank.id) == tostring(id)) then
 			--print("Match found for tank: " .. tostring(tank:GetCustomProperty("Name")))
-			if (tank:GetCustomProperty("Prerequisite1")) then
-				local preReq1Id = tank:GetCustomProperty("Prerequisite1")
+			if (tank.prerequisite1) then
+				local preReq1Id = tank.prerequisite1
 				local preReq1Tank = GetTankData(preReq1Id)
 				prerequisite1.usable = false
 				-- Check to make sure the pre-req has at least one completed upgrade
@@ -1275,8 +1280,8 @@ function GetPrerequisiteRPValues(id)
 					end
 				end
 			end
-			if (tank:GetCustomProperty("Prerequisite2")) then
-				local preReq2Id = tank:GetCustomProperty("Prerequisite2")
+			if (tank.prerequisite2) then
+				local preReq2Id = tank.prerequisite2
 				local preReq2Tank = GetTankData(preReq2Id)
 				prerequisite2.usable = false
 				-- Check to make sure the pre-req has at least one completed upgrade
@@ -1301,37 +1306,37 @@ function PopulateDetailsModal(tank)
 		return
 	end
 
-	if CanTankBeResearched(tank:GetCustomProperty("ID")) then
+	if CanTankBeResearched(tank.id) then
 		upgradeTank.visibility = Visibility.FORCE_ON
 	else
 		upgradeTank.visibility = Visibility.FORCE_OFF
 	end
 
 	-- Load up the tank details
-	tankFullName.text = tank:GetCustomProperty("Name")
-	local reload = tank:GetCustomProperty("Reload")
-	local reloadUpgrade = tank:GetCustomProperty("ReloadUpgraded")
-	local damage = tank:GetCustomProperty("Damage")
-	local damageUpgrade = tank:GetCustomProperty("DamageUpgraded")
-	local hitPoints = tank:GetCustomProperty("HitPoints")
-	local hitPointsUpgraded = tank:GetCustomProperty("HitPointsUpgraded")
-	local topSpeed = tank:GetCustomProperty("TopSpeed")
-	local topSpeedUpgraded = tank:GetCustomProperty("TopSpeedUpgraded")
-	local hullTraverse = tank:GetCustomProperty("Traverse")
-	local hullTraverseUpgraded = tank:GetCustomProperty("TraverseUpgraded")
-	local turretTraverse = tank:GetCustomProperty("Turret")
-	local turretTraverseUpgrade = tank:GetCustomProperty("TurretUpgraded")
-	local elevation = tank:GetCustomProperty("Elevation")
-	local elevationUpgraded = tank:GetCustomProperty("ElevationUpgraded")
-	local maxDepth = tank:GetCustomProperty("MaxDepth")
+	tankFullName.text = tank.name
+	local reload = tank.reload
+	local reloadUpgrade = tank.reloadUpgraded 
+	local damage = tank.damage
+	local damageUpgrade = tank.damageUpgraded
+	local hitPoints = tank.hitPoints
+	local hitPointsUpgraded = tank.hitPointsUpgraded
+	local topSpeed = tank.topSpeed
+	local topSpeedUpgraded = tank.topSpeedUpgraded
+	local hullTraverse = tank.turningSpeed
+	local hullTraverseUpgraded = tank.turningSpeedUpgraded
+	local turretTraverse = tank.turret
+	local turretTraverseUpgrade = tank.turretUpgraded
+	local elevation = tank.elevation
+	local elevationUpgraded = tank.elevationUpgraded
+	local maxDepth = tank.maxDepression 
 
 	-- Get the player's tank data
 	LoadProgressIntoTankDetails()
 
 	-- Populate the UI with tank data based on player's progression
-	tankDetails.tankResearchCost = tank:GetCustomProperty("ResearchCost")
-	tankDetails.tankPurchaseCost = tank:GetCustomProperty("PurchaseCost")
-	tankDetails.currency = tank:GetCustomProperty("PurchaseCurrencyName")
+	tankDetails.tankResearchCost = tank.purchaseCost -- <-- NOTE: should not be used anymore
+	tankDetails.tankPurchaseCost = tank.purchaseCost
+	tankDetails.currency = tank.purchaseCurrencyName
 	--print(tankDetails.currency)
 	if (tankDetails.purchasedTank) then
 		upgradeTank.text = "Equip"
@@ -1347,12 +1352,12 @@ function PopulateDetailsModal(tank)
 		upgradeTankCost.visibility = Visibility.FORCE_ON
 	end
 
-	tankDetails.weaponResearchCost = tank:GetCustomProperty("WeaponResearchCost")
-	tankDetails.weaponPurchaseCost = tank:GetCustomProperty("WeaponPurchaseCost")
-	tankDetails.armorResearchCost = tank:GetCustomProperty("ArmorResearchCost")
-	tankDetails.armorPurchaseCost = tank:GetCustomProperty("ArmorPurchaseCost")
-	tankDetails.engineResearchCost = tank:GetCustomProperty("MobilityResearchCost")
-	tankDetails.enginePurchaseCost = tank:GetCustomProperty("MobilityPurchaseCost")
+	tankDetails.weaponResearchCost = tank.weaponResearchCost
+	tankDetails.weaponPurchaseCost = tank.weaponPurchaseCost 
+	tankDetails.armorResearchCost = tank.armorResearchCost
+	tankDetails.armorPurchaseCost = tank.armorPurchaseCost
+	tankDetails.engineResearchCost = tank.mobilityResearchCost
+	tankDetails.enginePurchaseCost = tank.mobilityPurchaseCost
 
 	reloadSubStat.text = "Reload: " .. string.format("%.1f", reload) .. " s"
 	damageSubStat.text = "Damage: " .. string.format(math.floor(damage)) .. "pt"
@@ -1378,12 +1383,12 @@ function PopulateDetailsModal(tank)
 		elseif (tostring(tankDetails.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.RESEARCHED)) then
 			--print("weapon researched")
 			upgradeWeapon.visibility = Visibility.FORCE_ON
-			upgradeWeapon.text = "P " .. tostring(tank:GetCustomProperty("WeaponPurchaseCost"))
+			upgradeWeapon.text = "P " .. tostring(tank.weaponPurchaseCost)
 			upgradeWeapon:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
 		elseif (tostring(tankDetails.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then
 			--print("no weapon progress")
 			upgradeWeapon.visibility = Visibility.FORCE_ON
-			upgradeWeapon.text = "R " .. tostring(tank:GetCustomProperty("WeaponResearchCost"))
+			upgradeWeapon.text = "R " .. tostring(tank.weaponResearchCost)
 			upgradeWeapon:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
 		else
 			warn("Weapon progress not found with value: " .. tostring(weaponProgress))
@@ -1393,11 +1398,11 @@ function PopulateDetailsModal(tank)
 			upgradeArmor:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_ON
 		elseif (tostring(tankDetails.armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.RESEARCHED)) then
 			upgradeArmor:FindDescendantByName("BUTTON_UPGRADE_SHELL_CONTAINER").visibility = Visibility.FORCE_ON
-			upgradeArmor.text = "P " .. tostring(tank:GetCustomProperty("ArmorPurchaseCost"))
+			upgradeArmor.text = "P " .. tostring(tank.armorPurchaseCost)
 			upgradeArmor:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
 		elseif (tostring(tankDetails.armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then
 			upgradeArmor:FindDescendantByName("BUTTON_UPGRADE_SHELL_CONTAINER").visibility = Visibility.FORCE_ON
-			upgradeArmor.text = "R " .. tostring(tank:GetCustomProperty("ArmorResearchCost"))
+			upgradeArmor.text = "R " .. tostring(tank.armorResearchCost)
 			upgradeArmor:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
 		else
 			warn("Armor progress not found with value: " .. tostring(armorProgress))
@@ -1407,11 +1412,11 @@ function PopulateDetailsModal(tank)
 			upgradeEngine:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_ON
 		elseif (tostring(tankDetails.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.RESEARCHED)) then
 			upgradeEngine.visibility = Visibility.FORCE_ON
-			upgradeEngine.text = "P  " .. tostring(tank:GetCustomProperty("MobilityPurchaseCost"))
+			upgradeEngine.text = "P  " .. tostring(tank.enginePurchaseCost)
 			upgradeEngine:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
 		elseif (tostring(tankDetails.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then
 			upgradeEngine.visibility = Visibility.FORCE_ON
-			upgradeEngine.text = "R  " .. tostring(tank:GetCustomProperty("MobilityResearchCost"))
+			upgradeEngine.text = "R  " .. tostring(tank.engineResearchCost)
 			upgradeEngine:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
 		else
 			warn("Engine progress not found with value: " .. tostring(engineProgress))
@@ -1424,16 +1429,16 @@ function CanTankBeResearched(id)
 	-- Start by assuming the tank can be researched
 	local canBeResearched = true
 	for i, tank in ipairs(TANK_LIST) do
-		if (tostring(tank:GetCustomProperty("ID")) == tostring(id)) then
-			if (tank:GetCustomProperty("Prerequisite1") or 0 ~= 0) then
+		if (tostring(tank.id) == tostring(id)) then
+			if (tank.prerequisite1 or 0 ~= 0) then
 				-- The selected tank has a pre-requisite. Let's get its data
-				local preReq1Id = tank:GetCustomProperty("Prerequisite1")
+				local preReq1Id = tank.prerequisite1
 				local preReq1Tank = {}
 				for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 					-- Loading up the data for the pre-req tank
 					if (tostring(t.id) == tostring(preReq1Id)) then
 						preReq1Tank.id = t.id
-						preReq1Tank.name = tank:GetCustomProperty("Name")
+						preReq1Tank.name = tank.name
 						preReq1Tank.researchedTank = t.researched
 						preReq1Tank.purchasedTank = t.purchased
 						preReq1Tank.weaponProgress = t.weaponProgress
@@ -1456,9 +1461,9 @@ function CanTankBeResearched(id)
 				return canBeResearched
 			end
 
-			if (tank:GetCustomProperty("Prerequisite2") or 0 ~= 0) then
+			if (tank.prerequisite2 or 0 ~= 0) then
 				-- Tank has two pre-reqs, load up data for this one
-				local preReq2Id = tank:GetCustomProperty("Prerequisite2")
+				local preReq2Id = tank.prerequisite2
 				local preReq2Tank = GetTankData(preReq2Id)
 				-- If the pre-req tank doesn't have at least 1 upgrade at purchased, then we cannot research
 				if
@@ -1477,9 +1482,9 @@ end
 function LoadProgressIntoTankDetails()
 	-- Get the player's tank data
 	for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-		if (t.id == tank:GetCustomProperty("ID")) then
+		if (t.id == tank.id) then
 			tankDetails.id = t.id
-			tankDetails.name = tank:GetCustomProperty("Name")
+			tankDetails.name = tank.name
 			tankDetails.researchedTank = t.researched
 			tankDetails.purchasedTank = t.purchased
 			tankDetails.weaponProgress = t.weaponProgress
@@ -1529,7 +1534,7 @@ end
 -- Returns the data associated for the given tank
 function GetTankData(id)
 	for i, tank in ipairs(TANK_LIST) do
-		if (tostring(tank:GetCustomProperty("ID")) == tostring(id)) then
+		if (tostring(tank.id) == tostring(id)) then
 			return PopulateTank(tank)
 		end
 	end
@@ -1575,7 +1580,7 @@ function PopulateHoverTankStats(tankData)
 	local entry = {}
 	local progress = {}
 	for i, tank in ipairs(TANK_LIST) do
-		local id = tank:GetCustomProperty("ID")
+		local id = tank.id
 		if tonumber(id) == tonumber(tankData.id) then
 			entry = tank
 		end
@@ -1590,40 +1595,40 @@ function PopulateHoverTankStats(tankData)
 	VIEWED_TANK_STATS:FindDescendantByName("VIEWING_TANK").text = tankData.name
 	VIEWED_TANK_STATS:FindDescendantByName("EXPERIENCE_EQUIPPED_TANK").text = tostring(LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankData.id))))
 	if tostring(progress.weaponProgress) ~= tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-		local damage = entry:GetCustomProperty("Damage")
-		local reload = entry:GetCustomProperty("Reload")
-		local turret = entry:GetCustomProperty("Turret")
+		local damage = entry.damage
+		local reload = entry.reload
+		local turret = entry.turret
 		VIEWED_TANK_STATS:FindDescendantByName("BAR_4").progress = tonumber(damage) / UTIL_API.GetHighestDamage()
 		VIEWED_TANK_STATS:FindDescendantByName("BAR_5").progress = 1 - (tonumber(reload) / UTIL_API.GetHighestReload())
 		VIEWED_TANK_STATS:FindDescendantByName("BAR_6").progress = tonumber(turret) / UTIL_API.GetHighestTurretSpeed()
 	else
-		local damage = entry:GetCustomProperty("DamageUpgraded")
-		local reload = entry:GetCustomProperty("ReloadUpgraded")
-		local turret = entry:GetCustomProperty("TurretUpgraded")
+		local damage = entry.damageUpgraded
+		local reload = entry.reloadUpgraded
+		local turret = entry.turretUpgraded
 		VIEWED_TANK_STATS:FindDescendantByName("BAR_4").progress = tonumber(damage) / UTIL_API.GetHighestDamage()
 		VIEWED_TANK_STATS:FindDescendantByName("BAR_5").progress = 1 - (tonumber(reload) / UTIL_API.GetHighestReload())
 		VIEWED_TANK_STATS:FindDescendantByName("BAR_6").progress = tonumber(turret) / UTIL_API.GetHighestTurretSpeed()
 	end
 
 	if tostring(progress.armorProgress) ~= tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-		local hitPoints = entry:GetCustomProperty("HitPoints")
+		local hitPoints = entry.hitPoints
 		VIEWED_TANK_STATS:FindDescendantByName("BAR_1").progress = tonumber(hitPoints) / UTIL_API.GetHighestHitPoints()
 	else
-		local hitPoints = entry:GetCustomProperty("HitPointsUpgraded")
+		local hitPoints = entry.hitPointsUpgraded
 		VIEWED_TANK_STATS:FindDescendantByName("BAR_1").progress = tonumber(hitPoints) / UTIL_API.GetHighestHitPoints()
 	end
 
 	if tostring(progress.engineProgress) ~= tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-		local topSpeed = entry:GetCustomProperty("TopSpeed")
-		local acceleration = entry:GetCustomProperty("Acceleration")
-		local turningSpeed = entry:GetCustomProperty("TurningSpeed")
+		local topSpeed = entry.topSpeed
+		local acceleration = entry.acceleration
+		local turningSpeed = entry.turningSpeed
 		VIEWED_TANK_STATS:FindDescendantByName("BAR_8").progress = tonumber(topSpeed) / UTIL_API.GetHighestTopSpeed()
 		VIEWED_TANK_STATS:FindDescendantByName("BAR_9").progress = tonumber(acceleration) / UTIL_API.GetHighestAcceleration()
 		VIEWED_TANK_STATS:FindDescendantByName("BAR_10").progress = tonumber(turningSpeed) / UTIL_API.GetHighestTurningSpeed()
 	else		
-		local topSpeed = entry:GetCustomProperty("TopSpeedUpgraded")
-		local acceleration = entry:GetCustomProperty("AccelerationUpgraded")
-		local turningSpeed = entry:GetCustomProperty("TurningSpeed") -- TODO
+		local topSpeed = entry.topSpeedUpgraded
+		local acceleration = entry.accelerationUpgraded
+		local turningSpeed = entry.turningSpeedUpgraded -- TODO
 		VIEWED_TANK_STATS:FindDescendantByName("BAR_8").progress = tonumber(topSpeed) / UTIL_API.GetHighestTopSpeed()
 		VIEWED_TANK_STATS:FindDescendantByName("BAR_9").progress = tonumber(acceleration) / UTIL_API.GetHighestAcceleration()
 		VIEWED_TANK_STATS:FindDescendantByName("BAR_10").progress = tonumber(turningSpeed) / UTIL_API.GetHighestTurningSpeed()
@@ -1635,7 +1640,7 @@ function PopulateHoverTankStats(tankData)
 	else
 		print("DO NOT OWN TANK")
 		VIEWED_TANK_STATS:FindDescendantByName("TITLE_SILVER").text = tostring(tankData.purchaseCost)
-		local purchaseCurrency = entry:GetCustomProperty("PurchaseCurrencyName")
+		local purchaseCurrency = entry.purchaseCurrencyName
 		VIEWED_TANK_STATS:FindDescendantByName("ICON_SILVER"):SetImage(UTIL_API.GetCurrencyIcon(purchaseCurrency))		
 		VIEWED_TANK_STATS:FindDescendantByName("BUY_PRICE").visibility = Visibility.FORCE_ON
 	end	
@@ -1718,7 +1723,7 @@ function OpenTankUpgradeWindow(button, id)
 	local entry = {}
 	local progress = {}
 	for i, tank in ipairs(TANK_LIST) do
-		local id = tank:GetCustomProperty("ID")
+		local id = tank.id
 		if tonumber(id) == selectedTankId then
 			entry = tank
 		end
@@ -1736,8 +1741,8 @@ function OpenTankUpgradeWindow(button, id)
 		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_WEAPON"):FindDescendantByName("BUTTONTEXT_LIGHT").text = "UPGRADE"
 		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_WEAPON"):FindDescendantByName("UPGRADE_ITEM_NEXTLV").visibility = Visibility.FORCE_ON
 		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_WEAPON"):FindDescendantByName("UPGRADE_ICON").visibility = Visibility.FORCE_ON
-		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_SILVER_WEAPON").text = "Silver: " .. tostring(entry:GetCustomProperty("WeaponPurchaseCost"))
-		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_TP_WEAPON").text = "Tank Parts: " .. tostring(entry:GetCustomProperty("WeaponResearchCost"))
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_SILVER_WEAPON").text = "Silver: " .. tostring(entry.weaponPurchaseCost)
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_TP_WEAPON").text = "Tank Parts: " .. tostring(entry.weaponResearchCost)
 		UPGRADE_TANK_CONTAINER:FindDescendantByName("TURRET_LEVEL").text = "Lv1" -- TODO
 	else
 		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_CONTAINER_WEAPON").visibility = Visibility.FORCE_OFF
@@ -1754,8 +1759,8 @@ function OpenTankUpgradeWindow(button, id)
 		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_ARMOR"):FindDescendantByName("BUTTONTEXT_LIGHT").text = "UPGRADE"
 		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_ARMOR"):FindDescendantByName("UPGRADE_ITEM_NEXTLV").visibility = Visibility.FORCE_ON
 		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_ARMOR"):FindDescendantByName("UPGRADE_ICON").visibility = Visibility.FORCE_ON
-		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_SILVER_ARMOR").text = "Silver: " .. tostring(entry:GetCustomProperty("ArmorPurchaseCost"))
-		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_TP_ARMOR").text = "Tank Parts: " .. tostring(entry:GetCustomProperty("ArmorResearchCost"))	
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_SILVER_ARMOR").text = "Silver: " .. tostring(entry.armorPurchaseCost)
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_TP_ARMOR").text = "Tank Parts: " .. tostring(entry.armorResearchCost)	
 		UPGRADE_TANK_CONTAINER:FindDescendantByName("SHELL_LEVEL").text = "Lv1" -- TODO
 	else
 		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_CONTAINER_ARMOR").visibility = Visibility.FORCE_OFF
@@ -1772,8 +1777,8 @@ function OpenTankUpgradeWindow(button, id)
 		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_ENGINE"):FindDescendantByName("BUTTONTEXT_LIGHT").text = "UPGRADE"
 		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_ENGINE"):FindDescendantByName("UPGRADE_ITEM_NEXTLV").visibility = Visibility.FORCE_ON
 		UPGRADE_TANK_CONTAINER:FindDescendantByName("UPGRADE_BUTTON_CONTAINER_ENGINE"):FindDescendantByName("UPGRADE_ICON").visibility = Visibility.FORCE_ON
-		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_SILVER_ENGINE").text = "Silver: " .. tostring(entry:GetCustomProperty("MobilityPurchaseCost"))
-		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_TP_ENGINE").text = "Tank Parts: " .. tostring(entry:GetCustomProperty("MobilityResearchCost"))	
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_SILVER_ENGINE").text = "Silver: " .. tostring(entry.mobilityPurchaseCost)
+		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_TP_ENGINE").text = "Tank Parts: " .. tostring(entry.mobilityResearchCost)	
 		UPGRADE_TANK_CONTAINER:FindDescendantByName("ENGINE_LEVEL").text = "Lv1" -- TODO
 	else
 		UPGRADE_TANK_CONTAINER:FindDescendantByName("COSTS_CONTAINER_ENGINE").visibility = Visibility.FORCE_OFF
@@ -1820,51 +1825,51 @@ end
 function PopulateEquippedTankStats(entry)
 	local tankProgress = {}
 	for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-		local id = entry:GetCustomProperty("ID")
+		local id = entry.id
 		if tonumber(tank.id) == tonumber(id) then
 			tankProgress = tank
 		end
 	end
-	local id = entry:GetCustomProperty("ID")
+	local id = entry.id
 	print("ENTRY ID " .. tostring(id))
 	-- Set base versions
-	STATS_TANK_CONTAINER:FindDescendantByName("EQUIPPED_TANK").text = entry:GetCustomProperty("Name")
+	STATS_TANK_CONTAINER:FindDescendantByName("EQUIPPED_TANK").text = entry.name
 	STATS_TANK_CONTAINER:FindDescendantByName("EQUIPPED_EXPERIENCE_EQUIPPED_TANK_PARTS").text = tostring(LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(id))))
-	local damage = entry:GetCustomProperty("Damage")
-	if tostring(tankProgress.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then damage = entry:GetCustomProperty("DamageUpgraded") end
+	local damage = entry.damage
+	if tostring(tankProgress.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then damage = entry.damageUpgraded end
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_4").progress = damage / UTIL_API.GetHighestDamage()
-	local reload = entry:GetCustomProperty("Reload")
-	if tostring(tankProgress.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then reload = entry:GetCustomProperty("ReloadUpgraded") end
+	local reload = entry.reload
+	if tostring(tankProgress.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then reload = entry.reloadUpgraded end
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_5").progress = 1 - (reload / UTIL_API.GetHighestReload())
-	local turret = entry:GetCustomProperty("Turret")
-	if tostring(tankProgress.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then turret = entry:GetCustomProperty("TurretUpgraded") end
+	local turret = entry.turret
+	if tostring(tankProgress.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then turret = entry.turretUpgraded end
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_6").progress = turret / UTIL_API.GetHighestTurretSpeed()
-	local hitPoints = entry:GetCustomProperty("HitPoints")
-	if tostring(tankProgress.armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then hitPoints = entry:GetCustomProperty("HitPointsUpgraded") end
+	local hitPoints = entry.hitPoints
+	if tostring(tankProgress.armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then hitPoints = entry.hitPointsUpgraded end
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_1").progress = hitPoints / UTIL_API.GetHighestHitPoints()
-	local topSpeed = entry:GetCustomProperty("TopSpeed")
-	if tostring(tankProgress.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then topSpeed = entry:GetCustomProperty("TopSpeedUpgraded") end
+	local topSpeed = entry.topSpeed
+	if tostring(tankProgress.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then topSpeed = entry.topSpeedUpgraded end
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_8").progress = topSpeed / UTIL_API.GetHighestTopSpeed()
-	local acceleration = entry:GetCustomProperty("Acceleration")
-	if tostring(tankProgress.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then acceleration = entry:GetCustomProperty("AccelerationUpgraded") end
+	local acceleration = entry.acceleration
+	if tostring(tankProgress.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then acceleration = entry.accelerationUpgraded end
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_9").progress = acceleration / UTIL_API.GetHighestAcceleration()
-	local turningSpeed = entry:GetCustomProperty("TurningSpeed")
-	if tostring(tankProgress.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then turningSpeed = entry:GetCustomProperty("TurningSpeed") end -- TODO
+	local turningSpeed = entry.turningSpeed
+	if tostring(tankProgress.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then turningSpeed = entry.turningSpeedUpgraded end -- TODO
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_10").progress = turningSpeed / UTIL_API.GetHighestTurningSpeed()
 	-- Set upgraded versions
-	local damage = entry:GetCustomProperty("DamageUpgraded")
+	local damage = entry.damageUpgraded
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_4_LVLUP").progress = damage / UTIL_API.GetHighestDamage()
-	local reload = entry:GetCustomProperty("ReloadUpgraded")
+	local reload = entry.reloadUpgraded
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_5_LVLUP").progress = 1 - (reload / UTIL_API.GetHighestReload())
-	local turret = entry:GetCustomProperty("TurretUpgraded")
+	local turret = entry.turretUpgraded
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_6_LVLUP").progress = turret / UTIL_API.GetHighestTurretSpeed()
-	local hitPoints = entry:GetCustomProperty("HitPointsUpgraded")
+	local hitPoints = entry.hitPointsUpgraded
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_1_LVLUP").progress = hitPoints / UTIL_API.GetHighestHitPoints()
-	local topSpeed = entry:GetCustomProperty("TopSpeedUpgraded")
+	local topSpeed = entry.topSpeedUpgraded
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_8_LVLUP").progress = topSpeed / UTIL_API.GetHighestTopSpeed()
-	local acceleration = entry:GetCustomProperty("AccelerationUpgraded")
+	local acceleration = entry.accelerationUpgraded
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_9_LVLUP").progress = acceleration / UTIL_API.GetHighestAcceleration()
-	local turningSpeed = entry:GetCustomProperty("TurningSpeed") -- TODO
+	local turningSpeed = entry.turningSpeedUpgraded -- TODO
 	STATS_TANK_CONTAINER:FindDescendantByName("BAR_10_LVLUP").progress = turningSpeed / UTIL_API.GetHighestTurningSpeed()
 end
 
@@ -2082,7 +2087,7 @@ function OnServerDataUpdated(player, string)
 		print("Currently equipped with tank: " .. tostring(equippedTankId))
 
 		for i, entry in ipairs(TANK_LIST) do
-			local id = entry:GetCustomProperty("ID")
+			local id = entry.id
 			if tonumber(id) == tonumber(equippedTankId) then
 				PopulateEquippedTankStats(entry)
 			end
@@ -2096,7 +2101,7 @@ function OnResourceChanged(player, resource, value)
 		print("Currently equipped with tank: " .. tostring(equippedTankId))
 
 		for i, entry in ipairs(TANK_LIST) do
-			local id = entry:GetCustomProperty("ID")
+			local id = entry.id
 			if tonumber(id) == tonumber(equippedTankId) then
 				PopulateEquippedTankStats(entry)
 				equippedTank = entry
