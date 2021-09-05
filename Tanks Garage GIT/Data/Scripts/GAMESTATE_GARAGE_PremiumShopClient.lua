@@ -10,11 +10,15 @@ local goldAmountText = script:GetCustomProperty("GoldAmountText"):WaitForObject(
 local freeXPAmountText = script:GetCustomProperty("FreeXPAmountText"):WaitForObject()
 local subscriptionTitle = script:GetCustomProperty("SubscriptionTitle"):WaitForObject()
 local premiumSubscription = script:GetCustomProperty("PremiumSubscription")
-local techTreeContents = script:GetCustomProperty("TechTreeContents"):WaitForObject()
 
 local alliesPremiumButton = script:GetCustomProperty("ALLIES_PURCHASE_PREMIUM_BUTTON"):WaitForObject()
 local axisPremiumButton = script:GetCustomProperty("AXIS_PURCHASE_PREMIUM_BUTTON"):WaitForObject()
 
+while not _G.TANK_DATA do
+	Task.Wait()
+end
+
+local TANK_INFO = _G.TANK_DATA
 
 local thisComponent = "SHOP_MENU"
 local savedState = ""
@@ -213,9 +217,9 @@ function PopulateXPTanks()
 	local resourceAmount = 0
 	local tankCount = 0
 	
-	for x, t in ipairs(techTreeContents:GetChildren()) do
-		id = t:GetCustomProperty("ID")
-		name = t:GetCustomProperty("Name")
+	for x, t in ipairs(TANK_INFO) do
+		id = t.id
+		name = t.name
 		resourceAmount = localPlayer:GetResource(UTIL_API.GetTankRPString(tonumber(id)))
 		
 		if resourceAmount > 0 then
@@ -248,9 +252,9 @@ function PopulatePremiumTanks()
 	
 	--print("populating premium tanks")
 	
-	for x, t in ipairs(techTreeContents:GetChildren()) do
-		if t:GetCustomProperty("PurchaseCurrencyName") == "Gold" then
-			local team = t:GetCustomProperty("Team")
+	for x, t in ipairs(TANK_INFO) do
+		if t.purchaseCurrencyName == "Gold" then
+			local team = t.team
 			
 			if team == "Allies" then
 				button = alliesPremiumButton
@@ -261,8 +265,8 @@ function PopulatePremiumTanks()
 			end
 			
 			--premiumEntry = World.SpawnAsset(premiumTankEntry, {parent = premiumTanks:GetCustomProperty("ScrollPanel"):WaitForObject()})
-			cost = t:GetCustomProperty("PurchaseCost")
-			id = t:GetCustomProperty("ID")
+			cost = t.purchaseCost
+			id = t.id
 
 			--premiumEntry.y = entryCount * (premiumEntry.height + 10)
 			--premiumEntry:GetCustomProperty("TankText"):WaitForObject().text = t:GetCustomProperty("Name")

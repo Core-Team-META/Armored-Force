@@ -2555,12 +2555,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:TechTreeContents"
-      ObjectReference {
-        SelfId: 7647187385909291407
-      }
-    }
-    Overrides {
       Name: "cs:BIG_DEALS_CONTAINER"
       ObjectReference {
         SelfId: 13341102131129763218
@@ -2674,12 +2668,6 @@ Objects {
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }
-      }
-    }
-    Overrides {
-      Name: "cs:TechTreeContents"
-      ObjectReference {
-        SelfId: 7647187385909291407
       }
     }
   }
