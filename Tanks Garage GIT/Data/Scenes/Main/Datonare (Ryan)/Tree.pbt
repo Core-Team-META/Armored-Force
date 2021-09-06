@@ -21759,7 +21759,7 @@ Objects {
     Overrides {
       Name: "cs:TechTree_Contents"
       ObjectReference {
-        SelfId: 7647187385909291407
+        SelfId: 841534158063459245
       }
     }
   }
@@ -21825,7 +21825,6 @@ Objects {
   ParentId: 17398334354223688829
   ChildIds: 12989815023110866131
   ChildIds: 16436024182469445581
-  ChildIds: 7647187385909291407
   ChildIds: 2727903136666322489
   ChildIds: 13913490470932699060
   ChildIds: 3833186992931337763
@@ -26434,43 +26433,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "TechTree_CurrencyDefinitions"
-  }
-}
-Objects {
-  Id: 7647187385909291407
-  Name: "TechTree_Contents"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7540281279584508332
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:TechTree_Contents"
-      ObjectReference {
-        SelfId: 7647187385909291407
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "TechTree_Contents"
   }
 }
 Objects {

@@ -94,12 +94,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:TechTree_Contents"
-      ObjectReference {
-        SelfId: 7647187385909291407
-      }
-    }
-    Overrides {
       Name: "cs:SFX_HOVER"
       ObjectReference {
         SelfId: 10647935135568310505
