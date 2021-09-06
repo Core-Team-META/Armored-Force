@@ -47,7 +47,7 @@ Objects {
 }
 Objects {
   Id: 1729280101287281465
-  Name: "Blake"
+  Name: "Database"
   Transform {
     Location {
     }

@@ -46,6 +46,7 @@ function API:WaitForConstant(name, timeout)
         end
         time = time + Task.Wait()
     end
+    return Const[name]
 end
 
 function API:FindMatchingKeys(tbl, key, value)
@@ -56,6 +57,10 @@ function API:FindMatchingKeys(tbl, key, value)
         end
     end
     return Tbl
+end
+
+function API:GetAllConstants()
+    return Const
 end
 
 _G.constAPI = API

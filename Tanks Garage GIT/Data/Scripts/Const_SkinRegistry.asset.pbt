@@ -1,6 +1,6 @@
 Assets {
-  Id: 11639989549555182842
-  Name: "GAMEHELPER_GARAGE_TankSpawner"
+  Id: 17601134066345910203
+  Name: "Const_SkinRegistry"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
@@ -9,6 +9,15 @@ Assets {
         AssetReference {
           Id: 9930510073357529478
         }
+      }
+      Overrides {
+        Name: "cs:Folder"
+        ObjectReference {
+        }
+      }
+      Overrides {
+        Name: "cs:Folder:category"
+        String: "Custom"
       }
     }
   }

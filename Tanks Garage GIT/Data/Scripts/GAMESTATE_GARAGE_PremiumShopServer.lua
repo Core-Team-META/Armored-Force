@@ -1,11 +1,8 @@
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
+local _Constants_API = require(script:GetCustomProperty("Constants_API"))
 
-while not _G.TANK_DATA do
-	Task.Wait()
-end
-
-local TANK_INFO = _G.TANK_DATA
+local TANK_INFO = _Constants_API:WaitForConstant("Tanks").GetTanks()
 
 local goldBundles = {
 	[1] = script:GetCustomProperty("GoldBundle1"),

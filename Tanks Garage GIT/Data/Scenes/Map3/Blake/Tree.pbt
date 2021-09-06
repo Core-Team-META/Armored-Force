@@ -1,7 +1,7 @@
 Name: "Blake"
-RootId: 1729280101287281465
+RootId: 12568937537718954231
 Objects {
-  Id: 15818976189543274029
+  Id: 578043441780524938
   Name: "Constants"
   Transform {
     Location {
@@ -14,13 +14,13 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1729280101287281465
-  ChildIds: 8428918638154795264
-  ChildIds: 16731716681513010579
-  ChildIds: 2002695381261427726
-  ChildIds: 10515759228973231481
-  ChildIds: 16203642167795183332
-  ChildIds: 16980289221520708794
+  ParentId: 12568937537718954231
+  ChildIds: 16160333864910961945
+  ChildIds: 9850134132966390717
+  ChildIds: 8463237207293560792
+  ChildIds: 6844245833795571875
+  ChildIds: 17501569972187954327
+  ChildIds: 11174100860922413102
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -38,7 +38,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16980289221520708794
+  Id: 11174100860922413102
   Name: "Registry_LeaderBoards"
   Transform {
     Scale {
@@ -47,7 +47,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15818976189543274029
+  ParentId: 578043441780524938
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -80,7 +80,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16203642167795183332
+  Id: 17501569972187954327
   Name: "Registry_Keys"
   Transform {
     Scale {
@@ -89,7 +89,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15818976189543274029
+  ParentId: 578043441780524938
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -122,7 +122,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10515759228973231481
+  Id: 6844245833795571875
   Name: "Registry_Skins"
   Transform {
     Scale {
@@ -131,7 +131,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15818976189543274029
+  ParentId: 578043441780524938
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -164,7 +164,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2002695381261427726
+  Id: 8463237207293560792
   Name: "Registry_Ranks"
   Transform {
     Scale {
@@ -173,7 +173,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15818976189543274029
+  ParentId: 578043441780524938
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -206,7 +206,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16731716681513010579
+  Id: 9850134132966390717
   Name: "Registry_Currency"
   Transform {
     Scale {
@@ -215,7 +215,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15818976189543274029
+  ParentId: 578043441780524938
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -248,7 +248,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8428918638154795264
+  Id: 16160333864910961945
   Name: "Registry_Tanks"
   Transform {
     Scale {
@@ -257,7 +257,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15818976189543274029
+  ParentId: 578043441780524938
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -290,7 +290,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13624502510333257650
+  Id: 3788635847169452960
   Name: "ScriptLoader"
   Transform {
     Location {
@@ -303,9 +303,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1729280101287281465
-  ChildIds: 12887548445608273684
-  ChildIds: 1100237790679702508
+  ParentId: 12568937537718954231
+  ChildIds: 16090868389890958770
+  ChildIds: 10724681608969615752
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -322,7 +322,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1100237790679702508
+  Id: 10724681608969615752
   Name: "Constants"
   Transform {
     Location {
@@ -335,7 +335,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13624502510333257650
+  ParentId: 3788635847169452960
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -355,7 +355,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12887548445608273684
+  Id: 16090868389890958770
   Name: "Constants_API"
   Transform {
     Location {
@@ -368,7 +368,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13624502510333257650
+  ParentId: 3788635847169452960
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

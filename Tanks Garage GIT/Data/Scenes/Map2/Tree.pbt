@@ -15,6 +15,7 @@ Objects {
     }
   }
   ChildIds: 5326532604461902996
+  ChildIds: 10097475407457999158
   ChildIds: 9979275421894607866
   ChildIds: 8533495559679364907
   ChildIds: 4316049936135708946
@@ -684,6 +685,38 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "TW_Settings"
+  }
+}
+Objects {
+  Id: 10097475407457999158
+  Name: "Database"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Blake"
   }
 }
 Objects {

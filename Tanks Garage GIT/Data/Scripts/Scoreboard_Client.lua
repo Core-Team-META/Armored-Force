@@ -9,18 +9,18 @@ local EnemyTanksPanel = script:GetCustomProperty("EnemyTanks"):WaitForObject()
 
 local ENTRY_TEMPLATE = script:GetCustomProperty("Scoreboard_Entry_Template")
 local ENEMY_ENTRY_TEMPLATE = script:GetCustomProperty("Scoreboard_Entry_Enemy_Template")
-
+local Constants_API = require(script:GetCustomProperty("Constants_API"))
 local scoreCards = {}
 local lastAiCount = 0
 local lastUpdateTime = 0
 
 local isActive = false
 
-while not _G.PLAYER_RANKS or not _G.TANK_DATA do
+while not _G.PLAYER_RANKS  do
     Task.Wait()
 end
 local RANK = _G.PLAYER_RANKS
-local TANKS = _G.TANK_DATA
+local TANKS = Constants_API:WaitForConstant("Tanks").GetTanks()
 
 local function ClearRankPanel(rankPanel)
     for _, child in ipairs(rankPanel:GetChildren()) do

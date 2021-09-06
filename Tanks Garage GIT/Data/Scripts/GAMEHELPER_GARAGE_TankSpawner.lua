@@ -1,7 +1,11 @@
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
+local _Constants_API = require(script:GetCustomProperty("Constants_API"))
+
+local TankApi =  _Constants_API:WaitForConstant("Tanks")
+
 local mainManagerServer = script:GetCustomProperty("MainManagerServer"):WaitForObject()
 local tankGarage = script:GetCustomProperty("TANK_VP_TankGarage"):WaitForObject()
-local tankCount = script:GetCustomProperty("TankCount")
+local tankCount = TankApi.NumberOfTanks 
 
 local tankTemplates = script.parent
 local equippedTank = {}
@@ -12,10 +16,10 @@ function GetEquippedTankTemplate(player, id)
 		--print("Tank with given id found")
 		--print(id)
 		--print(tankTemplates:GetCustomProperty(id))
-		return tankTemplates:GetCustomProperty(id)
+		return TankApi.GetTankFromId(tonumber(id)).main
 	else
 		--print("Returning default")
-		return tankTemplates:GetCustomProperty("Default")
+		return TankApi.GetTankFromId(1).main
 	end
 	
 end

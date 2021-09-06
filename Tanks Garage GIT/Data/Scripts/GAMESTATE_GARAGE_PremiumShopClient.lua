@@ -1,5 +1,6 @@
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
+local _Constants_API = require(script:GetCustomProperty("Constants_API"))
 
 local shopViewUI = script:GetCustomProperty("ShopViewUI"):WaitForObject()
 local premiumTanks = script:GetCustomProperty("PremiumTanks"):WaitForObject()
@@ -14,11 +15,8 @@ local premiumSubscription = script:GetCustomProperty("PremiumSubscription")
 local alliesPremiumButton = script:GetCustomProperty("ALLIES_PURCHASE_PREMIUM_BUTTON"):WaitForObject()
 local axisPremiumButton = script:GetCustomProperty("AXIS_PURCHASE_PREMIUM_BUTTON"):WaitForObject()
 
-while not _G.TANK_DATA do
-	Task.Wait()
-end
-
-local TANK_INFO = _G.TANK_DATA
+ 
+local TANK_INFO  = _Constants_API:WaitForConstant("Tanks").GetTanks()
 
 local thisComponent = "SHOP_MENU"
 local savedState = ""

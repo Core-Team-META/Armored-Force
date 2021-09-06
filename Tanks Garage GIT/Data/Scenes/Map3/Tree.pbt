@@ -15,6 +15,7 @@ Objects {
     }
   }
   ChildIds: 13525167241272998667
+  ChildIds: 12568937537718954231
   ChildIds: 8050746695721076935
   ChildIds: 8129487323723183523
   ChildIds: 15182677334456928949
@@ -1685,6 +1686,38 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "TW1_Minimap"
+  }
+}
+Objects {
+  Id: 12568937537718954231
+  Name: "Database"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Blake"
   }
 }
 Objects {
