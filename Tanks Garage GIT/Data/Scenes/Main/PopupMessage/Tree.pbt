@@ -115,6 +115,12 @@ Objects {
         SelfId: 12427928784523822931
       }
     }
+    Overrides {
+      Name: "cs:ClickSFX"
+      ObjectReference {
+        SelfId: 8745392010101095915
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
