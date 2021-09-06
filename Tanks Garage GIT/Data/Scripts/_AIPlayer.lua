@@ -484,11 +484,13 @@ end
 
 --#TODO Adding these so we can track combat stats on AI - Morticai
 function AIPlayer:SetResource(resourceName, amount)
+  if resourceName ~= "TankDamage" then return end
   amount = CoreMath.Round(amount)
   self.resources[resourceName] = amount or 0
 end
 
 function AIPlayer:AddResource(resourceName, amount)
+  if resourceName ~= "TankDamage" then return end
   amount = CoreMath.Round(amount)
   self.resources[resourceName] = self.resources[resourceName] and self.resources[resourceName] + amount or 0 + amount 
 end
