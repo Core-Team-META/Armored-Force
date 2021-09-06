@@ -33,8 +33,9 @@ local ALLIES_PURCHASED_BUTTON = script:GetCustomProperty("ALLIES_PURCHASED_BUTTO
 local AXIS_PURCHASED_BUTTON = script:GetCustomProperty("AXIS_PURCHASED_BUTTON"):WaitForObject()
 local ALLIES_BUY_BUTTON = script:GetCustomProperty("ALLIES_BUY_BUTTON"):WaitForObject()
 local AXIS_BUY_BUTTON = script:GetCustomProperty("AXIS_BUY_BUTTON"):WaitForObject()
+local Constants_API = require(script:GetCustomProperty("Constants_API"))
 
-local TANK_LIST = World.FindObjectByName("TechTree_Contents"):GetChildren()
+local TANK_LIST = Constants_API:WaitForConstant("Tanks").GetTanks()
 local ALLIES_TANKS = {}
 local AXIS_TANKS = {}
 
@@ -269,11 +270,11 @@ function HideSubmenuContent()
 end
 
 function Init()
-	for k,v in ipairs(TANK_LIST) do
-		if(v:GetCustomProperty("Team") == "Allies") then
-			table.insert(ALLIES_TANKS, PopulateTank(v))
-		elseif(v:GetCustomProperty("Team") == "Axis") then
-			table.insert(AXIS_TANKS, PopulateTank(v))
+	for k,v in pairs(TANK_LIST) do
+		if(v.team == "Allies") then
+			table.insert(ALLIES_TANKS,v)
+		elseif(v.team == "Axis") then
+			table.insert(AXIS_TANKS, v)
 		end
 	end
 end
@@ -455,7 +456,7 @@ function UnhoverButton()
 end
 
 function HoverAlliesPurchase(button)
-	HoverButton()
+	HoverButton()	
 	TogglePremiumTankOwnedState()
 	local tankId = ALLIES_PREMIUM_TANK_ID
 	if not UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, tankId) then

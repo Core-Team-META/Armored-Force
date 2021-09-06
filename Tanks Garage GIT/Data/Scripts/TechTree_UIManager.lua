@@ -250,16 +250,17 @@ function Init()
 			table.insert(AXIS_TANKS, PopulateTank(v))
 		end
 	end
+	
 	-- Initialize the teams
 	local teamCount = 0
-	for k, v in ipairs(TEAM_DEFINITIONS:GetChildren()) do
-		table.insert(TEAMS, {name = v.name, id = v:GetCustomProperty("Id")})
+	for k, v in pairs(TankApi.TEAMS) do
+		table.insert(TEAMS, {name = k, id = tostring(v)})
 		-- Add a button to toggle between each team
-		CreateAndPopulateTeamButton(v, teamCount)
+		CreateAndPopulateTeamButton({name = k, id = tostring(v)}, teamCount)
 		teamCount = teamCount + 1
 		-- Select the first team as default
 		if not selectedTeam then
-			selectedTeam = v:GetCustomProperty("Id")
+			selectedTeam =  tostring(v)
 		end
 	end
 
@@ -456,6 +457,7 @@ function PopulateSelectedTankPanel(id)
 		tankData = TankApi.GetTankFromId(tonumber( stringTankId))
 		selectedTankId = stringTankId
 	else
+		print(id)
 		tankData = TankApi.GetTankFromId(tonumber( id))
 	end 
 	tankDetails = tankData
@@ -1057,22 +1059,22 @@ end
 
 function PopulateTankUpgradeModal(type)
 	selectedTankUpgrade = type
-	local tankName = equippedTank:GetCustomProperty("Name")
-	local id = selectedTankId --or equippedTank:GetCustomProperty("ID")
+	local tankName = equippedTank.name
+	local id = selectedTankId --or equippedTank:GetCustomProperty("ID") 
 	local purchaseCost = 0
 	local researchCost = 0
 	
 	IMAGE_API.SetTankImage(tankConfirmImage, id)
 	
 	if type == "WEAPON" then
-		purchaseCost = equippedTank:GetCustomProperty("WeaponPurchaseCost")
-		researchCost = equippedTank:GetCustomProperty("WeaponResearchCost")
+		purchaseCost = equippedTank.weaponpurchasecost
+		researchCost = equippedTank.weaponresearchcost
 	elseif type == "ARMOR" then
-		purchaseCost = equippedTank:GetCustomProperty("ArmorPurchaseCost")
-		researchCost = equippedTank:GetCustomProperty("ArmorResearchCost")
+		purchaseCost = equippedTank.armorpurchasecost
+		researchCost = equippedTank.armorresearchcost
 	elseif type == "ENGINE" then
-		purchaseCost = equippedTank:GetCustomProperty("MobilityPurchaseCost")
-		researchCost = equippedTank:GetCustomProperty("MobilityResearchCost")
+		purchaseCost = equippedTank.mobilitypurchasecost
+		researchCost = equippedTank.mobilityresearchcost
 	end
 	UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName("TITLE_TEXT").text = "UPGRADE " .. string.upper(tankName) .. "'S " .. type
 
@@ -1124,7 +1126,7 @@ function UpgradeWeapon()
 		SFX_DENIED:Play()
 		return
 	end
-
+	
 	local tankRPString = UTIL_API.GetTankRPString(tonumber(tankDetails.id))
 	local tankRP = LOCAL_PLAYER:GetResource(tankRPString)
 	local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)

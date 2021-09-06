@@ -2,29 +2,20 @@ local CONST = require(script:GetCustomProperty("MetaAbilityProgressionConstants_
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 local CHOSEN_TANKNAME = script:GetCustomProperty("CHOSEN_TANKNAME"):WaitForObject()
 local CONTENTS = script:GetCustomProperty("TechTree_Contents"):WaitForObject()
-local tankTbl = {}
+local Constants_API = require(script:GetCustomProperty("Constants_API"))
+
+local tankTbl = Constants_API:WaitForConstant("Tanks").GetTanks()
 
 local function SetTankInfo(value)
     local tankType = tankTbl[value].type
     if tankType == "Tank Destroyer" then
         tankType = "Destroyer"
     end
-    CHOSEN_TANKNAME.text = tankTbl[value].name .. " (T" .. tankTbl[value].teir .. " " .. tankType .. ")"
+    CHOSEN_TANKNAME.text = tankTbl[value].name .. " (T" .. tankTbl[value].tier .. " " .. tankType .. ")"
 end
 
 function Init()
-    for _, child in ipairs(CONTENTS:GetChildren()) do
-        local id = child:GetCustomProperty("ID")
-        local name = child:GetCustomProperty("Name")
-        local teir = child:GetCustomProperty("Tier")
-        local tankType = child:GetCustomProperty("Type")
-        local tempTbl = {}
-        tempTbl.id = id
-        tempTbl.name = name
-        tempTbl.teir = teir
-        tempTbl.type = tankType
-        tankTbl[tonumber(id)] = tempTbl
-    end
+ 
     Task.Wait(2)
     SetTankInfo(LOCAL_PLAYER:GetResource(CONST.GetEquippedTankResource()))
 end

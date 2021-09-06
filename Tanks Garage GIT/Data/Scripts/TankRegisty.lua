@@ -75,6 +75,11 @@ Tanks.TANK_TYPE = {
     TankDestroyer = {Name = 'Tank Destroyer'}
 }
 
+Tanks.TEAMS = {
+    Allies = 1,
+    Axis = 2,
+}
+
 
 function Tanks.GetHighestDamage()
 	return 550
