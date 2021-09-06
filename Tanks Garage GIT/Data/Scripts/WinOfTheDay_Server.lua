@@ -4,11 +4,9 @@ local UTIL = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 local KEYS = script:GetCustomProperty("Keys"):WaitForObject()
 local STORAGE_NET_REF = KEYS:GetCustomProperty("Achievements")
 
-while not _G.TANK_DATA do
-    Task.Wait()
-end
+local _Constants_API = require(script:GetCustomProperty("Constants_API"))
 
-local TANK_CONTENT = _G.TANK_DATA
+local TANK_CONTENT =  _Constants_API:WaitForConstant("Tanks").GetTanks()
 
 local tankTbl = {}
 local playerDailyTbl = {}

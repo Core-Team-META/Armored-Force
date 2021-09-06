@@ -4,12 +4,9 @@ local templateReferences = script:GetCustomProperty("TemplateReferences"):WaitFo
 
 -- API
 local identifier = tankControllerServer:GetCustomProperty("Identifier")
+local Constants_API = require(script:GetCustomProperty("Constants_API"))
 
-while not _G.TANK_DATA do
-	Task.Wait()
-end
-
-local tankData = _G.TANK_DATA[tonumber(identifier)]
+local tankData =   Constants_API:WaitForConstant("Tanks").GetTankFromId(tonumber(identifier)) 
 
 -- Visual Settings
 local recoilRockingMultiplier = tankControllerServer:GetCustomProperty("RecoilRockingMultiplier")
@@ -150,7 +147,7 @@ function SetClientData()
 	driver.clientUserData.currentTankData.id = identifier
 	driver.clientUserData.currentTankData.name = tankData.name
 	driver.clientUserData.currentTankData.teir = tankData.tier
-	driver.clientUserData.currentTankData.viewRange = tankData.viewRange
+	driver.clientUserData.currentTankData.viewRange = tankData.viewrange
 	driver.clientUserData.currentTankData.controlScript = script
 	driver.clientUserData.currentTankData.serverControlScript = tankControllerServer
 

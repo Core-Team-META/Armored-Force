@@ -4,12 +4,10 @@ local GAME_STATE = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServe
 local GAME_STATE_LOBBY = script:GetCustomProperty("GAMESTATE_MatchLobbyServer"):WaitForObject()
 
 local DEBUG_SAME_TEAM = script:GetCustomProperty("DebugSameTeam")
+local Constants_API = require(script:GetCustomProperty("Constants_API"))
 
-while not _G.TANK_DATA do
-	Task.Wait()
-end
 
-local tankData = _G.TANK_DATA
+local tankData = Constants_API:WaitForConstant("Tanks").GetTanks()
 
 local BASE_VALUE_PER_PLAYER = 1
 local WIN_RATE_MIN = 0.2

@@ -24,6 +24,8 @@ local SFX_CLICK = World.FindObjectByName("SFX_CLICK")
 local SFX_HOVER = World.FindObjectByName("SFX_HOVER")
 local SFX_UNHOVERED = World.FindObjectByName("SFX_UNHOVERED")
 
+local Constants_API = require(script:GetCustomProperty("Constants_API"))
+
 -------------------
 
 while not _G.PORTAL_IMAGES do
@@ -32,11 +34,7 @@ end
 
 local IMAGE_API = _G.PORTAL_IMAGES
 
-while not _G.TANK_DATA do
-	Task.Wait()
-end
-
-local TANK_INFO = _G.TANK_DATA
+local TANK_INFO = Constants_API:WaitForConstant("Tanks").GetTanks()
 
 local thisComponent = "CAMOSPRAYS_MENU"
 local savedState = ""

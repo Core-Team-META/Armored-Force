@@ -30,7 +30,7 @@ local function GetChangeableGeo(tank)
 end
 
 function InitializeTankSkin(player)
-
+	if not player then warn("No player found") return end
 	if not player.clientUserData.camoData then
 		RetrieveData(player)
 	end
@@ -144,6 +144,7 @@ function OnSkinDataChange(object, property)
 
 	local ownerID = object:GetCustomProperty("OwnerId")
 	local player = Game.FindPlayer(ownerID)
+	if not player then warn("No player found") return end
 	local dataString = object:GetCustomProperty("Data")
 	
 	SetTankSkinDataForClient(player, dataString)
