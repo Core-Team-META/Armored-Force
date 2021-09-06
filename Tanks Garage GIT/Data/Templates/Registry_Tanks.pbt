@@ -1,13 +1,13 @@
 Assets {
   Id: 1305280032722446335
-  Name: "TankRegistry"
+  Name: "Registry_Tanks"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 13088315100642592667
+      RootId: 9937031949216304537
       Objects {
-        Id: 13088315100642592667
-        Name: "TankRegistry"
+        Id: 9937031949216304537
+        Name: "Registry_Tanks"
         Transform {
           Scale {
             X: 1
@@ -16,7 +16,9 @@ Assets {
           }
         }
         ParentId: 11955821821189344362
-        ChildIds: 13251955418750681073
+        ChildIds: 11422602052222339325
+        ChildIds: 4572574912823670652
+        ChildIds: 13357942947765431494
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -29,13 +31,13 @@ Assets {
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
-        NetworkContext {
-          Type: RuntimeStatic
+        Folder {
+          IsGroup: true
         }
       }
       Objects {
-        Id: 13251955418750681073
-        Name: "TankRegisty"
+        Id: 11422602052222339325
+        Name: "Data"
         Transform {
           Location {
           }
@@ -47,7 +49,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13088315100642592667
+        ParentId: 9937031949216304537
         ChildIds: 6734576287303413843
         ChildIds: 14150352478156555266
         ChildIds: 9521911245889456212
@@ -81,14 +83,6 @@ Assets {
         ChildIds: 3158080304824873217
         ChildIds: 9730244800535060077
         ChildIds: 10339792434115275849
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Constants_API"
-            AssetReference {
-              Id: 9930510073357529478
-            }
-          }
-        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -101,10 +95,8 @@ Assets {
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
-        Script {
-          ScriptAsset {
-            Id: 9024776375142807943
-          }
+        Folder {
+          IsGroup: true
         }
       }
       Objects {
@@ -121,7 +113,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -395,7 +387,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -673,7 +665,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -951,7 +943,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -1229,7 +1221,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -1511,7 +1503,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -1793,7 +1785,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -2071,7 +2063,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -2345,7 +2337,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -2619,7 +2611,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -2897,7 +2889,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -3175,7 +3167,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -3453,7 +3445,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -3731,7 +3723,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -4009,7 +4001,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -4287,7 +4279,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -4565,7 +4557,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -4843,7 +4835,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -5117,7 +5109,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -5395,7 +5387,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -5673,7 +5665,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -5951,7 +5943,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -6229,7 +6221,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -6511,7 +6503,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -6793,7 +6785,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -7067,7 +7059,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -7345,7 +7337,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -7623,7 +7615,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -7901,7 +7893,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -8179,7 +8171,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -8457,7 +8449,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -8735,7 +8727,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -9013,7 +9005,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13251955418750681073
+        ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -9274,6 +9266,163 @@ Assets {
         Script {
           ScriptAsset {
             Id: 11538952017563604218
+          }
+        }
+      }
+      Objects {
+        Id: 4572574912823670652
+        Name: "ClientContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9937031949216304537
+        ChildIds: 13251955418750681073
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 13251955418750681073
+        Name: "TankRegisty"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4572574912823670652
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Constants_API"
+            AssetReference {
+              Id: 9930510073357529478
+            }
+          }
+          Overrides {
+            Name: "cs:Folder"
+            ObjectReference {
+              SubObjectId: 11422602052222339325
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 9024776375142807943
+          }
+        }
+      }
+      Objects {
+        Id: 13357942947765431494
+        Name: "ServerContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9937031949216304537
+        ChildIds: 5595721571049222160
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+          Type: Server
+        }
+      }
+      Objects {
+        Id: 5595721571049222160
+        Name: "TankRegisty"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13357942947765431494
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Constants_API"
+            AssetReference {
+              Id: 9930510073357529478
+            }
+          }
+          Overrides {
+            Name: "cs:Folder"
+            ObjectReference {
+              SubObjectId: 11422602052222339325
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 9024776375142807943
           }
         }
       }

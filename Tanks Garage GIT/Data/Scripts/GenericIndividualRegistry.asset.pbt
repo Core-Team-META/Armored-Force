@@ -1,6 +1,6 @@
 Assets {
-  Id: 12305959328286844782
-  Name: "RankRegister"
+  Id: 11022730790066612020
+  Name: "GenericIndividualRegistry"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
@@ -11,12 +11,20 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:Folder"
+        Name: "cs:Name"
+        String: ""
+      }
+      Overrides {
+        Name: "cs:Object"
         ObjectReference {
         }
       }
       Overrides {
-        Name: "cs:Folder:category"
+        Name: "cs:Name:category"
+        String: "Custom"
+      }
+      Overrides {
+        Name: "cs:Object:category"
         String: "Custom"
       }
     }

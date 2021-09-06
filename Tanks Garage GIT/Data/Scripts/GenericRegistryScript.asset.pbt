@@ -15,7 +15,16 @@ Assets {
         String: ""
       }
       Overrides {
+        Name: "cs:Folder"
+        ObjectReference {
+        }
+      }
+      Overrides {
         Name: "cs:Name:category"
+        String: "Custom"
+      }
+      Overrides {
+        Name: "cs:Folder:category"
         String: "Custom"
       }
     }

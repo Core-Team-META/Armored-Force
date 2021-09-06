@@ -1,14 +1,8 @@
 ------------------------------------------------------------------------------------------------------------------------
--- Meta Ability Progressioni Constants
--- Author Morticai (META) - (https://www.coregames.com/user/d1073dbcc404405cbef8ce728e53d380)
--- Date: 2021/1/8
--- Version 0.1.4
-------------------------------------------------------------------------------------------------------------------------
 local Const = {}
 ------------------------------------------------------------------------------------------------------------------------
 -- CONSTANTS
 ------------------------------------------------------------------------------------------------------------------------
- 
 
 ------------------------------------------------------------------------------------------------------------------------
 -- STORAGE KEYS -- DO NOT EDIT
@@ -43,7 +37,17 @@ Const.PERK_STORAGE_KEYS = {
 ------------------------------------------------------------------------------------------------------------------------
 -- PROGRESS KEYS
 ------------------------------------------------------------------------------------------------------------------------
+Const.MAPLINKS = {
+    map1 = 'f19478/armored-force-frontline',
+    map2 = '',
+    map3 = ''
+} 
 
+Const.PORTALIMAGES = {
+    ImageHolder1 = "80e9b4/tanksportal-images1",
+    ImageHolder2 = "39cdb8/tanksportal-images2",
+    ImageHolder3 = "",
+}
 
 -- REWARD KEYS
 Const.REWARDS = {
@@ -81,52 +85,51 @@ Const.UPGRADE_SLOT = {
 }
 
 Const.TANK_SKIN = {
-	INDIVIDUAL = 1,
-	UNIVERSAL = 2
+    INDIVIDUAL = 1,
+    UNIVERSAL = 2
 }
 ------------------------------------------------------------------------------------------------------------------------
 -- DAILY CHALLENGES PROGRESS
 ------------------------------------------------------------------------------------------------------------------------
 Const.DAILIES = {
-    CHALLENGE_INFO = "CHALLENGEINFO",
-    LOGIN = "LOGINTIME"
+    CHALLENGE_INFO = 'CHALLENGEINFO',
+    LOGIN = 'LOGINTIME'
 }
 ------------------------------------------------------------------------------------------------------------------------
 -- RESOURCE NAMES
 ------------------------------------------------------------------------------------------------------------------------
 Const.COMBAT_STATS = {
-    TOTAL_DAMAGE_RES = "TOTALDMG",
-    ACCURACY = "ACCURACY",
-    AVERAGE_DAMAGE = "AVERAGEDMG",
-    CURRENT_KILL_STREAK = "CKSTREAK",
-    LARGEST_KILL_STREAK = "LKSTREAK",
-    GAMES_PLAYED_RES = "GAMESPLAYED",
-    TOTAL_WINS = "TOTALWINS",
-    TOTAL_LOSSES = "TOTALLOSSES",
-    TOTAL_KILLS = "TOTALKILLS",
-    TOTAL_DEATHS = "TOTALDEATHS",
-    TOTAL_ASSISTS = "TOTALASSISTS",
-    MOST_TANKS_DESTROYED = "MOSTDESTROYED",
-    TOTAL_SHOTS_FIRED = "TOTALSHOTSFIRED",
-    TOTAL_SHOTS_HIT = "TOTALSHOTSHIT"  
+    TOTAL_DAMAGE_RES = 'TOTALDMG',
+    ACCURACY = 'ACCURACY',
+    AVERAGE_DAMAGE = 'AVERAGEDMG',
+    CURRENT_KILL_STREAK = 'CKSTREAK',
+    LARGEST_KILL_STREAK = 'LKSTREAK',
+    GAMES_PLAYED_RES = 'GAMESPLAYED',
+    TOTAL_WINS = 'TOTALWINS',
+    TOTAL_LOSSES = 'TOTALLOSSES',
+    TOTAL_KILLS = 'TOTALKILLS',
+    TOTAL_DEATHS = 'TOTALDEATHS',
+    TOTAL_ASSISTS = 'TOTALASSISTS',
+    MOST_TANKS_DESTROYED = 'MOSTDESTROYED',
+    TOTAL_SHOTS_FIRED = 'TOTALSHOTSFIRED',
+    TOTAL_SHOTS_HIT = 'TOTALSHOTSHIT'
 }
- 
+
 Const.PERKS = {
-    BUNDLE1 = "B1",
-    BUNDLE2 = "B2",
-    BUNDLE3 = "B3"
+    BUNDLE1 = 'B1',
+    BUNDLE2 = 'B2',
+    BUNDLE3 = 'B3'
 }
 
 Const.CONSUMABLES = {
-	TREADS = "ExtraTreads",
-	EXTINGUISHER = "Extinguisher",
-	REPAIR = "TurretRepair",
-	AUTO_TREADS = "AutoSupplyTreads",
-	AUTO_EXTINGUISHER = "AutoSupplyExtinguisher",
-	AUTO_REPAIR = "AutoSupplyRepair"
-	
+    TREADS = 'ExtraTreads',
+    EXTINGUISHER = 'Extinguisher',
+    REPAIR = 'TurretRepair',
+    AUTO_TREADS = 'AutoSupplyTreads',
+    AUTO_EXTINGUISHER = 'AutoSupplyExtinguisher',
+    AUTO_REPAIR = 'AutoSupplyRepair'
 }
- 
+
 Const.TEAM = {
     ALLIES = 1,
     AXIS = 2
@@ -145,15 +148,13 @@ Const.XP_GAIN_REASON = {
 }
 
 Const.XP_GAIN_TEXT = {
-    [1] = "Damage Dealt",
-    [2] = "Spotted Enemy"
+    [1] = 'Damage Dealt',
+    [2] = 'Spotted Enemy'
 }
 
-Const.RANK_NAME = "Rank"
-Const.TUTORIAL_PROGRESS = "TutorialProgress"
-Const.EQUIPPED_TANK_RES = "EquippedTank"
+Const.RANK_NAME = 'Rank'
+Const.TUTORIAL_PROGRESS = 'TutorialProgress'
+Const.EQUIPPED_TANK_RES = 'EquippedTank'
 ------------------------------------------------------------------------------------------------------------------------
 _G.const = Const
 return Const
-
- 

@@ -3,6 +3,7 @@ local AIPlayer = require(script:GetCustomProperty("_AIPlayer"))
 -- Tank Custom Properties:
 -- INFO
 local identifier = script:GetCustomProperty("Identifier")
+local Constants_API = require(script:GetCustomProperty("Constants_API"))
 
 -- Impact vfx
 local TankImpact_1 = script:GetCustomProperty("TankImpact_1")
@@ -10,43 +11,40 @@ local TankImpact_2 = script:GetCustomProperty("TankImpact_2")
 local TankImpact_3 = script:GetCustomProperty("TankImpact_3")
 local TankImpact_4 = script:GetCustomProperty("TankImpact_4")
 
-while not _G.TANK_DATA do
-	Task.Wait()
-end
-
-local tankData = _G.TANK_DATA[tonumber(identifier)]
+ 
+local tankData =  Constants_API:WaitForConstant("Tanks").GetTankFromId(tonumber(identifier)) 
 local type = tankData.type
 local tierValue = tankData.tier
 
 -- TURRET
 local reloadSpeed = tankData.reload
-local upgradedReload = tankData.reloadUpgraded
-local projectileSpeed = tankData.projectileSpeed
-local projectileLength = tankData.projectileLength
-local projectileRadius = tankData.projectileRadius
+local upgradedReload = tankData.reloadupgraded
+local projectileSpeed = tankData.projectilespeed
+local projectileLength = tankData.projectilelength
+local projectileRadius = tankData.projectileradius
 local damagePerShot = tankData.damage
-local upgradedDamage = tankData.damageUpgraded
-local allowHoldDownFiring = tankData.allowHoldDownFiring
+local upgradedDamage = tankData.damageupgraded
+local allowHoldDownFiring = tankData.allowholddownfiring
 local turretTraverseSpeed = tankData.turret
-local upgradedTraverse = tankData.turretUpgraded
+local upgradedTraverse = tankData.turretupgraded
 local turretElevationSpeed = tankData.elevation
-local upgradedElevation = tankData.elevationUpgraded
-local maxElevationAngle = tankData.maxElevation
-local minDepressionAngle = tankData.maxDepression
-local horizontalCannonAngles = tankData.horizontalAngles
+local upgradedElevation = tankData.elevationupgraded
+local maxElevationAngle = tankData.maxelevation
+local minDepressionAngle = tankData.maxdepression
+local horizontalCannonAngles = tankData.horizontalangles
 
 -- SHELL
-local hitPoints = tankData.hitPoints
-local upgradedHitPoints = tankData.hitPointsUpgraded
-local viewRange = tankData.viewRange
+local hitPoints = tankData.hitpoints
+local upgradedHitPoints = tankData.hitpointsupgraded
+local viewRange = tankData.viewrange
 
 -- ENGINE
-local topSpeed = tankData.topSpeed
-local upgradedTopSpeed = tankData.topSpeedUpgraded
+local topSpeed = tankData.topspeed
+local upgradedTopSpeed = tankData.topspeedupgraded
 local acceleration = tankData.acceleration
-local upgradedAcceleration = tankData.accelerationUpgraded
-local turningSpeed = tankData.turningSpeed
-local upgradedTurningSpeed = tankData.turningSpeedUpgraded
+local upgradedAcceleration = tankData.accelerationupgraded
+local turningSpeed = tankData.turningspeed
+local upgradedTurningSpeed = tankData.turningspeedupgraded
 
 -- Main Component References
 local templateReferences = script:GetCustomProperty("TemplateReferences"):WaitForObject()

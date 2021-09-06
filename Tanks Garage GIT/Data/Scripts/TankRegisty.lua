@@ -1,15 +1,18 @@
 local Constants_API = require(script:GetCustomProperty('Constants_API'))
+local Folder = script:GetCustomProperty("Folder"):WaitForObject()
 
 local Data = {}
 
-for _, tank in pairs(script:GetChildren()) do
-    local id = tank:GetCustomProperty('ID')
+for _, tank in pairs(Folder:GetChildren()) do
+    local idString = (tank:GetCustomProperty('ID'))
+    local id = tonumber(idString)
 
     Data[id] = {}
 
     for key, value in pairs(tank:GetCustomProperties()) do
-        Data[id][key] = value
+        Data[id][string.lower(key)] = value
     end
+    Data[id]["skins"] = {}
 end
 
 local Tanks = {}
@@ -37,7 +40,7 @@ end
 Tanks.GetTanksInType = function(Type)
     local tanks = {}
     for key, tank in pairs(Tanks.Data) do
-        if tank.Type == Type then
+        if tank.type == Type then
             table.insert(tanks, tank)
         end
     end
@@ -52,6 +55,11 @@ Tanks.FilterByKey = function(key, rank)
     end
     return tanks
 end
+
+Tanks.GetTanks = function()
+    return Tanks.Data
+end
+
 Tanks.NumberOfTanks = function()
     local int = 0
     for key, value in pairs(Tanks.Data) do
@@ -59,6 +67,7 @@ Tanks.NumberOfTanks = function()
     end
     return int
 end
+
 Tanks.TANK_TYPE = {
     Light = {Name = 'Light'},
     Medium = {Name = 'Medium'},

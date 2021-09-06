@@ -1,5 +1,7 @@
 -- API
 local Constants_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
+local _Constants_API = require(script:GetCustomProperty("Constants_API"))
+
 local UTIL = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 
 -- Object references
@@ -10,13 +12,15 @@ local SFX_CLICK = script:GetCustomProperty("SFX_CLICK"):WaitForObject()
 local TANKS_OWNED = script:GetCustomProperty("TANKS_OWNED"):WaitForObject()
 
 -- Local properties
-
-while not _G.PORTAL_IMAGES or not _G.TANK_DATA do
+ 
+while not _G.PORTAL_IMAGES  do
     Task.Wait()
 end
 
 local IMAGE_API = _G.PORTAL_IMAGES
-local TANK_LIST = _G.TANK_DATA
+local Tank_API  =  _Constants_API:WaitForConstant("Tanks") 
+
+local TANK_LIST = Tank_API.GetTanks()
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 local X_OFFSET = 180
