@@ -1,12 +1,13 @@
 -- API
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 local Constants_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
+local _Constants_API = require(script:GetCustomProperty("Constants_API"))
 
 -- Objects
-local DATA_TRANSFER = script:GetCustomProperty("DataTransfer"):WaitForObject()
-local TANK_CONTENTS = script:GetCustomProperty("TankContents"):WaitForObject()
+local DATA_TRANSFER = script:GetCustomProperty("DataTransfer"):WaitForObject() 
 
 -- Local properties
+local Tanks = _Constants_API:WaitForConstant("Tanks") 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 LOCAL_PLAYER.clientUserData.techTreeProgress = {}
 local DELIMITER = "|"
@@ -55,7 +56,7 @@ function RetrieveData()
 	                    end
 	                    position = position + 1
 	                end                
-	                tankEntry.name = UTIL_API.RetrieveTankNameById(tankEntry.id, TANK_CONTENTS:GetChildren())
+	                tankEntry.name = Tanks.GetTankFromId(tonumber(tankEntry.id)).name 
 	                table.insert(tankEntryCollection, tankEntry)
 	            end 
 	            
