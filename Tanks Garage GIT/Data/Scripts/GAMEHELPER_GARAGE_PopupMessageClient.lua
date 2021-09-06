@@ -5,11 +5,13 @@ local closeButton = script:GetCustomProperty("CloseButton"):WaitForObject()
 local bodyText = script:GetCustomProperty("BodyText"):WaitForObject()
 local titleText = script:GetCustomProperty("TitleText"):WaitForObject()
 local buttonText = script:GetCustomProperty("ButtonText"):WaitForObject()
+local clickSFX = script:GetCustomProperty("ClickSFX"):WaitForObject()
 
 local localPlayer = Game.GetLocalPlayer()
 
 function CloseWindow()
 	messageUIWindow.visibility = Visibility.FORCE_OFF
+	clickSFX:Play()
 end
 
 function PopUpWindow(player, titleMessage, bodyMessage, buttonMessage)
