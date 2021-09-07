@@ -43,7 +43,6 @@ function OnPlayerJoined(player)
 		player:SetResource(CONSTANTS_API.RANK_NAME, 1)
 	end
 
-
 	-- Uncomment to reset tutorial progress
 	--player:SetResource("TutorialProgress", 0)
 		

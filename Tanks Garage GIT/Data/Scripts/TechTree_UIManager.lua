@@ -1573,6 +1573,7 @@ function HoverTank(button)
 end
 
 function PopulateHoverTankStats(tankData)
+    print(TankApi.GetHighestDamage())
     local entry = {}
     local progress = {}
     for i, tank in ipairs(TANK_LIST) do
@@ -1602,6 +1603,9 @@ function PopulateHoverTankStats(tankData)
         local damage = entry.damageUpgraded
         local reload = entry.reloadUpgraded
         local turret = entry.turretUpgraded
+        print(damage)
+        print(reload)
+        print(turret)
         VIEWED_TANK_STATS:FindDescendantByName('BAR_4').progress = tonumber(damage) / TankApi.GetHighestDamage()
         VIEWED_TANK_STATS:FindDescendantByName('BAR_5').progress = 1 - (tonumber(reload) / TankApi.GetHighestReload())
         VIEWED_TANK_STATS:FindDescendantByName('BAR_6').progress = tonumber(turret) / TankApi.GetHighestTurretSpeed()
