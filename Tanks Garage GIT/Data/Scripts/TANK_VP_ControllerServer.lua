@@ -848,7 +848,8 @@ function OnArmorHit(trigger, other)
 		if armorName == "HULLREAR" and not burnTask then
 			playerWhoBurned = enemyPlayer
 			burnTask = Task.Spawn(OnBurning, 0)
-			if enemyPlayer:IsA("Player") then
+			--#TODO Currently only players can get caught on fire - Morticai
+			if enemyPlayer:IsA("Player") and driver:IsA("Player") then
 				Events.BroadcastToPlayer(driver, "INFLICTED_STATE", "FIRE")
 			end
 		end
