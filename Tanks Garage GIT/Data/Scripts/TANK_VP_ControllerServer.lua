@@ -150,9 +150,9 @@ function GetDriver()
 
 end
 
-function AssignDriver(newDriver, playerStart, _isAI)
+function AssignDriver(newDriver)
 
-	isAI = _isAI or false
+	isAI = newDriver:IsA("AIPlayer")
 	print("assigning a driver.  AI?", isAI)
 	print("new driver: " .. tostring(newDriver))
 
@@ -165,15 +165,8 @@ function AssignDriver(newDriver, playerStart, _isAI)
 	
 	local baseForPosition = newDriver
 	
-	if playerStart then
-		--print("Using player start position")
-		--baseForPosition = playerStart
-	end
-	--print(baseForPosition)
-	--print(CoreDebug.GetStackTrace())
 	local newScriptPosition = baseForPosition:GetWorldPosition()
 	local newScriptRotation = baseForPosition:GetWorldRotation()
-	print("newscript stuff", newScriptPosition, newScriptRotation)
 	local moreIdealPositionRaycast = World.Raycast(newScriptPosition + Vector3.UP * 1000, newScriptPosition - Vector3.UP * 1000, {ignorePlayers = true})
 	
 	if moreIdealPositionRaycast then
