@@ -156,6 +156,8 @@ Const.XP_GAIN_TEXT = {
 Const.RANK_NAME = 'Rank'
 Const.TUTORIAL_PROGRESS = 'TutorialProgress'
 Const.EQUIPPED_TANK_RES = 'EquippedTank'
+
+Const.HIGHEST_DAMAGE = 100
 ------------------------------------------------------------------------------------------------------------------------
 _G.const = Const
 return Const
