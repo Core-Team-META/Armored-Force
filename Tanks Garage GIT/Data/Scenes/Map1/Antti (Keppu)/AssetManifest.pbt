@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15812398897488532618
+  Name: "Large Wood Beam 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_large_beam_6m"
+  }
+}
+Assets {
   Id: 15630366334838468242
   Name: "Bush 02"
   PlatformAssetType: 1
@@ -122,6 +131,24 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_mil_decal_tracks_001_ref"
+  }
+}
+Assets {
+  Id: 12993753533106775349
+  Name: "Tree Redwood Bare Big"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_redwood_003"
+  }
+}
+Assets {
+  Id: 12250067734840047801
+  Name: "Wedge - Corner-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wedge_002"
   }
 }
 Assets {
@@ -320,6 +347,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_002"
+  }
+}
+Assets {
+  Id: 2908639793150004171
+  Name: "Trim Side 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_trim_side_6m_001"
   }
 }
 Assets {

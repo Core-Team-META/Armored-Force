@@ -6787,10 +6787,12 @@ Objects {
   Name: "TeamBasesBPoint"
   Transform {
     Location {
-      X: -34550
-      Y: 28055
+      X: -22761.2129
+      Y: 16850.2637
+      Z: 298.155457
     }
     Rotation {
+      Yaw: 33.8800964
     }
     Scale {
       X: 1
@@ -6907,15 +6909,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1117.41406
-            Y: 4189.83789
-            Z: -3587.54785
+            X: 2063.448
+            Y: 3003.78687
+            Z: -3078.9043
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -109.95433
+            Yaw: -130.623245
           }
         }
       }
@@ -7495,14 +7497,14 @@ Objects {
   Name: "destructible sandbags"
   Transform {
     Location {
-      X: -1662.09766
-      Y: -2652.01758
-      Z: -2293.08911
+      X: -1850.05103
+      Y: -3062.99268
+      Z: -2513.86792
     }
     Rotation {
       Pitch: -1.39251709
-      Yaw: 36.0895233
-      Roll: 0.998733699
+      Yaw: 36.0894928
+      Roll: -0.345489502
     }
     Scale {
       X: 1
@@ -8106,13 +8108,14 @@ Objects {
   Name: "destructible sandbags"
   Transform {
     Location {
-      X: 2483.24219
-      Y: -1146.54883
-      Z: -2277.57715
+      X: -3942.23608
+      Y: 1041.99377
+      Z: -2168.83
     }
     Rotation {
-      Yaw: 96.0315094
-      Roll: 2.14327884
+      Pitch: 1.57114148
+      Yaw: -36.8327637
+      Roll: -11.5603638
     }
     Scale {
       X: 1
@@ -8388,17 +8391,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1972.10938
-            Y: 1104.60547
-            Z: -2161.1582
+            X: -893.531311
+            Y: 2526.79614
+            Z: -1721.8783
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -0.5390625
-            Yaw: -77.9379883
-            Roll: 0.38492614
+            Pitch: 0.193745136
+            Yaw: -149.414139
+            Roll: 0.633414865
           }
         }
       }
@@ -8536,12 +8539,12 @@ Objects {
   Name: "collision"
   Transform {
     Location {
-      X: -1824.80469
-      Y: -711.003906
-      Z: -1.80554199
+      X: -606.510193
+      Y: 890.107117
+      Z: 432.451294
     }
     Rotation {
-      Yaw: -86.7444382
+      Yaw: -157.994644
     }
     Scale {
       X: 10.1145544
@@ -8588,12 +8591,12 @@ Objects {
   Name: "collision"
   Transform {
     Location {
-      X: 1467.4375
-      Y: 2513.57812
-      Z: 123.428223
+      X: 2463.97
+      Y: 1214.00818
+      Z: 686.119
     }
     Rotation {
-      Yaw: -89.6990891
+      Yaw: -20.6381226
     }
     Scale {
       X: 10.8265285
@@ -8775,8 +8778,9 @@ Objects {
   Name: "TeamBasesAPoint"
   Transform {
     Location {
-      X: 31105
-      Y: -44430
+      X: 10080.46
+      Y: -12012.3359
+      Z: 216.865967
     }
     Rotation {
     }
@@ -8919,7 +8923,7 @@ Objects {
           Vector {
             X: 58.3359375
             Y: -4522.03516
-            Z: -3523.28149
+            Z: -3344.80957
           }
         }
         Overrides {
@@ -8976,9 +8980,9 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -0.25604248
-            Yaw: 110.149925
-            Roll: -0.425140381
+            Pitch: -0.433074951
+            Yaw: 80.4429703
+            Roll: -0.242370605
           }
         }
         Overrides {
@@ -8992,9 +8996,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 2499.30469
-            Y: 135.03125
-            Z: -2130.50464
+            X: 2064.91406
+            Y: -809.920898
+            Z: -2144.06201
           }
         }
         Overrides {
@@ -9017,11 +9021,11 @@ Objects {
     Location {
       X: 774.080078
       Y: 2380.63672
-      Z: -2306.38037
+      Z: -2159.67139
     }
     Rotation {
       Yaw: -125.95697
-      Roll: 4.1528573
+      Roll: -0.411895752
     }
     Scale {
       X: 1
@@ -9190,10 +9194,11 @@ Objects {
     Location {
       X: -3083.76562
       Y: -277.003906
-      Z: -2293.08594
+      Z: -2570.50488
     }
     Rotation {
       Yaw: -69.9522095
+      Roll: -1.0874939
     }
     Scale {
       X: 1
@@ -10485,12 +10490,12 @@ Objects {
   Name: "collision"
   Transform {
     Location {
-      X: -861.664062
-      Y: -3072.03516
-      Z: 185.090698
+      X: -900.394531
+      Y: -3111.06836
+      Z: 424.230347
     }
     Rotation {
-      Yaw: -89.6991
+      Yaw: -179.699051
     }
     Scale {
       X: 10.8265285
@@ -10537,12 +10542,12 @@ Objects {
   Name: "collision"
   Transform {
     Location {
-      X: 1773.08203
-      Y: 1614.38672
-      Z: -0.929016113
+      X: 1325.16797
+      Y: 571.213867
+      Z: -0.928955078
     }
     Rotation {
-      Yaw: -79.4927826
+      Yaw: -108.769196
     }
     Scale {
       X: 10.1145544

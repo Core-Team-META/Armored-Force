@@ -5,9 +5,9 @@ Objects {
   Name: "Spawn Point Team 2"
   Transform {
     Location {
-      X: -45897.5859
-      Y: 38254.0703
-      Z: 550
+      X: -30437.334
+      Y: 15514.4902
+      Z: 955.747559
     }
     Rotation {
       Yaw: -42.3683777
@@ -38,9 +38,9 @@ Objects {
   Name: "Spawn Point Team 2"
   Transform {
     Location {
-      X: -45822.7188
-      Y: 40874.6055
-      Z: 550
+      X: -30362.4668
+      Y: 18135.0273
+      Z: 944.280151
     }
     Rotation {
       Yaw: -42.3683472
@@ -71,9 +71,9 @@ Objects {
   Name: "Spawn Point Team 2"
   Transform {
     Location {
-      X: -49450.5938
-      Y: 38094.668
-      Z: 550
+      X: -33990.3594
+      Y: 15355.0879
+      Z: 849.506104
     }
     Rotation {
       Yaw: -42.3683472
@@ -104,9 +104,9 @@ Objects {
   Name: "Spawn Point Team 2"
   Transform {
     Location {
-      X: -51790.9961
-      Y: 38801.6875
-      Z: 550
+      X: -36330.7422
+      Y: 16062.1074
+      Z: 810.227
     }
     Rotation {
       Yaw: -42.3683472
@@ -137,9 +137,9 @@ Objects {
   Name: "Spawn Point Team 2"
   Transform {
     Location {
-      X: -51187.7148
-      Y: 41243.1914
-      Z: 550
+      X: -35727.4688
+      Y: 18503.6172
+      Z: 573.664185
     }
     Rotation {
       Yaw: -42.3683472
@@ -170,9 +170,9 @@ Objects {
   Name: "Spawn Point Team 2"
   Transform {
     Location {
-      X: -48207.8281
-      Y: 42826.2188
-      Z: 550
+      X: -32747.584
+      Y: 20086.6406
+      Z: 577.304504
     }
     Rotation {
       Yaw: -42.3683472
@@ -203,9 +203,9 @@ Objects {
   Name: "Spawn Point Team 2"
   Transform {
     Location {
-      X: -48309.4023
-      Y: 39684.2969
-      Z: 550
+      X: -32849.1641
+      Y: 16944.7188
+      Z: 802.906494
     }
     Rotation {
       Yaw: -42.3683472
@@ -236,9 +236,9 @@ Objects {
   Name: "Spawn Point Team 2"
   Transform {
     Location {
-      X: -48109.4258
-      Y: 35223.9961
-      Z: 550
+      X: -32377.0625
+      Y: 13664.2139
+      Z: 1000.50928
     }
     Rotation {
       Yaw: -42.3683472
@@ -269,9 +269,9 @@ Objects {
   Name: "Spawn Point Team 1"
   Transform {
     Location {
-      X: 36888.1562
-      Y: -53633.3594
-      Z: 550
+      X: 17324.6836
+      Y: -24222.5527
+      Z: 430.384888
     }
     Rotation {
       Yaw: 117.995
@@ -302,9 +302,9 @@ Objects {
   Name: "Spawn Point Team 1"
   Transform {
     Location {
-      X: 35022.2109
-      Y: -54839.7969
-      Z: 550
+      X: 15458.7383
+      Y: -25428.9883
+      Z: 442.249878
     }
     Rotation {
       Yaw: 117.995
@@ -335,9 +335,9 @@ Objects {
   Name: "Spawn Point Team 1"
   Transform {
     Location {
-      X: 35897.0703
-      Y: -51697.1406
-      Z: 550
+      X: 16333.5977
+      Y: -22286.334
+      Z: 425.525482
     }
     Rotation {
       Yaw: 117.995
@@ -368,9 +368,9 @@ Objects {
   Name: "Spawn Point Team 1"
   Transform {
     Location {
-      X: 36213.0312
-      Y: -49386.0859
-      Z: 550
+      X: 17449.0391
+      Y: -20251.7266
+      Z: 423.760193
     }
     Rotation {
       Yaw: 117.995
@@ -401,9 +401,9 @@ Objects {
   Name: "Spawn Point Team 1"
   Transform {
     Location {
-      X: 38470.4414
-      Y: -49148.8555
-      Z: 550
+      X: 18608.9453
+      Y: -21031.0449
+      Z: 450.203796
     }
     Rotation {
       Yaw: 117.995
@@ -434,9 +434,9 @@ Objects {
   Name: "Spawn Point Team 1"
   Transform {
     Location {
-      X: 33780.3359
-      Y: -52738.1875
-      Z: 550
+      X: 14216.8633
+      Y: -23327.3809
+      Z: 562.806274
     }
     Rotation {
       Yaw: 117.995
@@ -467,9 +467,9 @@ Objects {
   Name: "Spawn Point Team 1"
   Transform {
     Location {
-      X: 40539.1953
-      Y: -49226.3164
-      Z: 550
+      X: 20975.7266
+      Y: -19815.5098
+      Z: 581.237671
     }
     Rotation {
       Yaw: 117.995
@@ -500,9 +500,9 @@ Objects {
   Name: "Spawn Point Team 1"
   Transform {
     Location {
-      X: 39363.25
-      Y: -52292.9688
-      Z: 549.999756
+      X: 19799.7812
+      Y: -22882.1621
+      Z: 495.064758
     }
     Rotation {
       Yaw: 133.639481
