@@ -5,7 +5,7 @@ local TankApi =  _Constants_API:WaitForConstant("Tanks")
 
 local mainManagerServer = script:GetCustomProperty("MainManagerServer"):WaitForObject()
 local tankGarage = script:GetCustomProperty("TANK_VP_TankGarage"):WaitForObject()
-local tankCount = TankApi.NumberOfTanks 
+local tankCount = TankApi.NumberOfTanks()
 
 local tankTemplates = script.parent
 local equippedTank = {}
@@ -16,10 +16,10 @@ function GetEquippedTankTemplate(player, id)
 		--print("Tank with given id found")
 		--print(id)
 		--print(tankTemplates:GetCustomProperty(id))
-		return TankApi.GetTankFromId(tonumber(id)).main
+		return TankApi.GetTankFromId(tonumber(id)).Main
 	else
 		--print("Returning default")
-		return TankApi.GetTankFromId(1).main
+		return TankApi.GetTankFromId(1).Main
 	end
 	
 end
@@ -157,7 +157,9 @@ function OnPlayerLeft(player)
 	RemovePlayerEquipment(player)
 	
 end
-
+for key, player in pairs(Game.GetPlayers()) do
+	OnPlayerJoined(player)
+end
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 Events.ConnectForPlayer("CHANGE_EQUIPPED_TANK", ChangeEquippedTank)
