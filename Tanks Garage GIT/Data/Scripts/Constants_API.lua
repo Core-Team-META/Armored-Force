@@ -4,7 +4,7 @@ local API = {}
 
 local function GetFunctionsFromTable(tbl)
     local functs = {}
-    for key, value in pairs(tble) do
+    for key, value in pairs(tbl) do
         if type(value) == 'function' then
             table.insert(functs, value)
         end
