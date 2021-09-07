@@ -16,7 +16,7 @@ local WIN_RATE_EXPONENT = 1
 local WIN_RATE_COEFFICIENT = 500
 local LOBBY_REBALANCE_TIME = 8
 
-local MINIMUM_TEAMSIZE = 2
+local MINIMUM_TEAMSIZE = 1 -- TODO - put this back to 2 or something. CJC
 
 local function IsLobby()
 	return GAME_STATE:GetCustomProperty("GameState") == "LOBBYSTATE"

@@ -121,13 +121,6 @@ function SpawnAITank(position, team)
         id = '0' .. tostring(resourceID)
     end
 
-    --[[
-	local newAI = {
-		GetHealth = function() return 100 end,
-		GetWorldPosition = function() return position end,
-		GetWorldRotation = function() return Rotation.New() end,
-		serverUserData = {},
-	}]]
     local newAI = AIPlayer.New()
     newAI:SetWorldPosition(position)
     local playerPosition = position
@@ -142,7 +135,7 @@ function SpawnAITank(position, team)
     newAI.team = team
     newAI.tankId = 34
     _G.lookup.tanks[newAI] = {team = newAI.team, tank = equippedTank[newAI]}
-    equippedTank[newAI].context.AssignDriver(newAI, position, true)
+    equippedTank[newAI].context.AssignDriver(newAI)
 end
 
 -- nil RemovePlayerEquipment(Player)
@@ -194,7 +187,30 @@ end
 -- nil OnPlayerLeft(Player)
 -- Removes equipment
 function OnPlayerLeft(player)
-    RemovePlayerEquipment(player)
+	if false then 	-- replace with "if game not yet started"
+			RemovePlayerEquipment(player)
+	else
+		if equippedTank[player] and equippedTank[player]:IsValid() then
+			print(string.format("Converting player %s to AI.", player.name))
+			if Object.IsValid(_G.lookup.tanks[player].chassis) then
+				_G.lookup.tanks[player].chassis:RemoveDriver()
+			else
+				warn("Could not find chassis!!!")
+			end
+			local newAI = AIPlayer.New()
+			--newAI:SetWorldPosition(player:GetWorldPosition())
+			newAI.team = player.team
+			newAI.tankId = 34
+			newAI.name = "Robo-"..player.name
+			_G.lookup.tanks[newAI] = _G.lookup.tanks[player]
+			_G.lookup.tanks[player] = nil --{team = newAI.team, tank = equippedTank[newAI]}
+
+			equippedTank[newAI] = equippedTank[player]
+			equippedTank[player] = nil
+
+			equippedTank[newAI].context.AssignDriver(newAI)
+		end
+	end
 end
 
 function FillTeamsWithAI(teamSize)
