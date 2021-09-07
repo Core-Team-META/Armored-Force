@@ -105,6 +105,8 @@ local diedEventListener = nil
 local destroyedListener = nil
 local consumableListener = nil
 local armorImpactListeners = {}
+local armorReleaseListeners = {}
+local vehicleCollideCount = 0
 
 --local MAX_ANGULAR_VELOCITY = 150
 local MIN_NOT_STUCK_VELOCITY = 100
@@ -265,6 +267,7 @@ function AssignDriver(newDriver, playerStart, _isAI)
 	
 	for _, t in pairs(hitbox:FindDescendantsByType("Trigger")) do
 	 	armorImpactListeners[t] = t.beginOverlapEvent:Connect(OnArmorHit)
+	 	armorReleaseListeners[t] = t.endOverlapEvent:Connect(OnArmorRelease)
 	end
 	
 	if not isAI then
@@ -443,6 +446,11 @@ function OnDestroy(object)
 		a = nil
 	end
 	
+	for _, a in pairs(armorReleaseListeners) do
+		a:Disconnect()
+		a = nil
+	end
+	
 	if Object.IsValid(hitbox) then
 		hitbox:Destroy()
 	end
@@ -579,12 +587,13 @@ end
 function OnArmorHit(trigger, other)	
 	if other.type == "Projectile" and other.owner ~= driver then
         local enemyPlayer = other.owner -- for player
-		if not enemyPlayer then -- for bot
+		if not other.owner and other.serverUserData.owner then -- for bot
 			--enemyPlayer = AIPlayer.FindAIDriver(other)
 			enemyPlayer = other.serverUserData.owner
 		end
 		
 		if not enemyPlayer or other.serverUserData.hitOnce then -- if projectile is marked or does not have owner yet
+			print("enemy player could not be identified")
 			return
 		end
 		
@@ -596,12 +605,11 @@ function OnArmorHit(trigger, other)
 		other.lifeSpan = 0.1
 				
 		if not enemyPlayer or not enemyPlayer.serverUserData.currentTankData or enemyPlayer.team == driver.team then
-			--print("Returning from armor hit")
-			--[[
+			print("enemy not valid")
 			print(enemyPlayer)
 			print(enemyPlayer.serverUserData)
 			print(enemyPlayer.serverUserData.currentTankData)
-			print(enemyPlayer.team, driver.team)]]
+			print(enemyPlayer.team, driver.team)
 			return
 		end
 		
@@ -636,7 +644,7 @@ function OnArmorHit(trigger, other)
 				enemyPlayer:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
 			end
 			
-			print(enemyPlayer.name .. " dealing " .. tostring(totalDamage) .. to .. driver.name)
+			print(enemyPlayer.name .. " dealing " .. tostring(totalDamage) .. "to" .. driver.name)
 		end
 		
         local dmgPercent = totalDamage / potentialDamage
@@ -730,6 +738,8 @@ function OnArmorHit(trigger, other)
 			end
 		end
 	elseif other.type == "TreadedVehicle" or other.type == "Vehicle" then
+		vehicleCollideCount = vehicleCollideCount + 1
+		
 		local otherIsAI = false
 		local enemyPlayer = other.driver
 		if enemyPlayer == nil then
@@ -844,6 +854,13 @@ function OnArmorHit(trigger, other)
 		end
 	end
 	
+end
+
+function OnArmorRelease(trigger, other)
+	
+	if other.type == "TreadedVehicle" or other.type == "Vehicle" then
+		vehicleCollideCount = vehicleCollideCount - 1
+	end
 end
 
 function ResetRamCooldown()
@@ -1094,7 +1111,7 @@ end
 
 function CheckStuckTank()
 
-	if not Object.IsValid(chassis) or not Object.IsValid(driver) or driver:IsA("AIPlayer") or (trackStatus > 0) then return end
+	if not Object.IsValid(chassis) or not Object.IsValid(driver) or driver:IsA("AIPlayer") or (trackStatus > 0) or (vehicleCollideCount > 0) then return end
 	
 	local checkInput = driver:IsBindingPressed("ability_extra_21") and not driver:IsBindingPressed("ability_extra_31")
 	checkInput = checkInput or (not driver:IsBindingPressed("ability_extra_21") and driver:IsBindingPressed("ability_extra_31"))
