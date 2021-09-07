@@ -13,13 +13,13 @@ end
 ------------------------------------------------------------------------------------------------------------------------
 local CONST = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local UTIL = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
-
+local _Constants_API = require(script:GetCustomProperty("Constants_API")) 
 ------------------------------------------------------------------------------------------------------------------------
 -- OBJECTS
 ------------------------------------------------------------------------------------------------------------------------
 local PERKS_DATA = script:GetCustomProperty("PerksData"):WaitForObject()
-local PROJECT_KEYS = script:GetCustomProperty("Keys"):WaitForObject()
-local STORAGE_KEY = PROJECT_KEYS:GetCustomProperty("Tanks")
+local PROJECT_KEYS =  _Constants_API:WaitForConstant("Storage_Keys") 
+local STORAGE_KEY = PROJECT_KEYS.Tanks
 
 ------------------------------------------------------------------------------------------------------------------------
 -- NET REFRENCE

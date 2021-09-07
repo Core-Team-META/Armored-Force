@@ -9,10 +9,11 @@ local isEnabled = ROOT:GetCustomProperty("Enabled")
 if not isEnabled then
     return
 end
+local Constants_API = require(script:GetCustomProperty("Constants_API"))
 
 local shouldSaveProgress = ROOT:GetCustomProperty("SaveProgress")
 local useSharedKey = ROOT:GetCustomProperty("UseSharedKey")
-local sharedKeyNetRef = World.FindObjectByName("Keys"):GetCustomProperty("Achievements")
+local sharedKeyNetRef = Constants_API:WaitForConstant("Storage_Keys").Achievements 
 
 ------------------------------------------------------------------------------------------------------------------------
 -- REQUIRES

@@ -63,7 +63,7 @@ Objects {
     Overrides {
       Name: "cs:TechTree_Contents"
       ObjectReference {
-        SelfId: 7275808827381717669
+        SelfId: 841534158063459245
       }
     }
     Overrides {

@@ -94,7 +94,7 @@ Objects {
     Overrides {
       Name: "cs:TankContents"
       ObjectReference {
-        SelfId: 7275808827381717669
+        SelfId: 841534158063459245
       }
     }
   }

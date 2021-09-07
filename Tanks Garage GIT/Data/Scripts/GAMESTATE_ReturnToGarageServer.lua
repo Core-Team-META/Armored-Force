@@ -1,18 +1,16 @@
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
-local links = script:GetCustomProperty("Links"):WaitForObject()
+ 
 local settings = script:GetCustomProperty("Settings"):WaitForObject()
 local statisticsComponent = script:GetCustomProperty("GAMESTATE_StatisticsComponent"):WaitForObject()
 local mainGameStateManagerServer = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 
-function SendPlayerToGarage(player)
-	local garageLink = links:GetCustomProperty("Garage")
-	player:TransferToGame(garageLink)
+function SendPlayerToGarage(player) 
+	player:TransferToScene("Main")
 end
 
-function RequeuePlayer(player)
-	local garageLink = links:GetCustomProperty("Map1")
-	player:TransferToGame(garageLink)
+function RequeuePlayer(player) 
+	player:TransferToScene("Map1")
 end
 
 function LeaveEarly(player, id)

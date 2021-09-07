@@ -45,6 +45,7 @@ function API:WaitForConstant(name, timeout)
             return
         end
         time = time + Task.Wait()
+        if time >= 2 then warn(name.." is not found") return end 
     end
     return Const[name]
 end

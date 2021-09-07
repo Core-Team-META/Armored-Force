@@ -14,9 +14,7 @@ local matchMaxDuration = settings:GetCustomProperty("MatchMaxDuration")
 local cardMaxDuration = settings:GetCustomProperty("CardMaxDuration")
 local victoryMaxDuration = settings:GetCustomProperty("VictoryMaxDuration")
 local statsMaxDuration = settings:GetCustomProperty("StatsMaxDuration")
-
-local links = script:GetCustomProperty("Links"):WaitForObject()
-local garageLink = links:GetCustomProperty("Garage")
+ 
 
 local tankSettings = script:GetCustomProperty("TankSettings"):WaitForObject()
 

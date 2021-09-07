@@ -147,7 +147,7 @@ function SetClientData()
 	driver.clientUserData.currentTankData.id = identifier
 	driver.clientUserData.currentTankData.name = tankData.name
 	driver.clientUserData.currentTankData.teir = tankData.tier
-	driver.clientUserData.currentTankData.viewRange = tankData.viewrange
+	driver.clientUserData.currentTankData.viewRange = tankData.viewRange
 	driver.clientUserData.currentTankData.controlScript = script
 	driver.clientUserData.currentTankData.serverControlScript = tankControllerServer
 

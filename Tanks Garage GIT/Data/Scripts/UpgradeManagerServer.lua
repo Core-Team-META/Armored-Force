@@ -14,11 +14,11 @@ function PurchaseTank(player, id, prereqs)
 		local tankId = tankData.id
 		if (tonumber(tankId) == tonumber(id)) then
 			print("DEBUG: Found match")
-			local purchaseCost = tankData.purchasecost
+			local purchaseCost = tankData.purchaseCost
 			--local researchCost = v:GetCustomProperty("ResearchCost")
 			--local tankRPString = UTIL_API.GetTankRPString(tonumber(id))
 			
-			local purchaseCurrencyName =  tankData.purchasecurrencyname
+			local purchaseCurrencyName =  tankData.purchaseCurrencyName
 			
 			local currencyAmount = player:GetResource(purchaseCurrencyName)
 			--local rpAmount1 = 0
@@ -147,7 +147,7 @@ function PurchaseWeapon(player, id)
 	for k, tankData in ipairs(TANK_LIST) do
 		if(tankData.id == id) then
 			print("DEBUG: Found match")
-			local cost = tankData.weaponpurchasecost
+			local cost = tankData.weaponpurchaseCost
 			local researchCost = tankData.weaponresearchcost
 			local silver = player:GetResource(Constants_API.SILVER)
 			if(silver < cost) then return BroadcastEventResultCode.FAILURE end
@@ -196,7 +196,7 @@ function PurchaseArmor(player, id)
 	for k, tankData in ipairs(TANK_LIST) do
 		if(tankData.id == id) then
 			print("DEBUG: Found match")
-			local cost = tankData.armorpurchasecost
+			local cost = tankData.armorpurchaseCost
 			local researchCost = tankData.armorresearchcost
 			local silver = player:GetResource(Constants_API.SILVER)
 			if(silver < cost) then return BroadcastEventResultCode.FAILURE end
@@ -245,7 +245,7 @@ function PurchaseEngine(player, id)
 	for k, tankData in ipairs(TANK_LIST) do
 		if(tankData.id == id) then
 			print("DEBUG: Found match")
-			local cost = tankData.mobilitypurchasecost
+			local cost = tankData.mobilitypurchaseCost
 			local researchCost = tankData.mobilityresearchcost
 			local silver = player:GetResource(Constants_API.SILVER)
 			if(silver < cost) then return BroadcastEventResultCode.FAILURE end

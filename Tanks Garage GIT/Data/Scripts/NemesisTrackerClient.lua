@@ -1,4 +1,7 @@
 
+local IsEnabled = script:GetCustomProperty("IsEnabled")
+if not IsEnabled then return end 
+
 local EaseUI = require(script:GetCustomProperty("EaseUI"))
 
 --local PlayerKilledEvent = script:GetCustomProperty("PlayerKilledEvent")

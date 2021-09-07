@@ -648,7 +648,7 @@ end
 --@return table tankData => table consisting of player's progression for the tank
 function API.RetrieveTankDataById(id, playerTanks)
 	id = NumConverter(id)
-	local tankData = {}
+	local tankData = {} 
 	for k, tank in ipairs(playerTanks) do
 		if(tank.id == id) then
 			--print("Tank found with Id: " .. tostring(id))

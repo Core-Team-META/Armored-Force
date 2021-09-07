@@ -1,14 +1,12 @@
 local UTIL = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
-
-local KEYS = script:GetCustomProperty("Keys"):WaitForObject()
-local STORAGE_LEADERBOARD = KEYS:GetCustomProperty("Leaderboards")
-
-local LEADERBOARDS = script:GetCustomProperty("Leaderboards"):WaitForObject()
-local MTD_LEADERBOARD = LEADERBOARDS:GetCustomProperty("MatchDestroyed")
-local MDD_LEADERBOARD = LEADERBOARDS:GetCustomProperty("MatchDamage")
-local LTTD_LEADERBOARD = LEADERBOARDS:GetCustomProperty("TotalDestroyed")
-local LTDD_LEADERBOARD = LEADERBOARDS:GetCustomProperty("TotalDamage")
-local LTWR_LEADERBOARD = LEADERBOARDS:GetCustomProperty("TotalWinRate")
+local _Constants_API = require(script:GetCustomProperty("Constants_API"))
+ 
+local STORAGE_LEADERBOARD = _Constants_API:WaitForConstant("Storage_Keys").Leaderboards 
+local MTD_LEADERBOARD = STORAGE_LEADERBOARD.MatchDestroyed
+local MDD_LEADERBOARD = STORAGE_LEADERBOARD.MatchDamage
+local LTTD_LEADERBOARD = STORAGE_LEADERBOARD.TotalDestroyed
+local LTDD_LEADERBOARD = STORAGE_LEADERBOARD.TotalDamage
+local LTWR_LEADERBOARD = STORAGE_LEADERBOARD.TotalWinRate
 
 local MAX_ENTRIES = 10
 

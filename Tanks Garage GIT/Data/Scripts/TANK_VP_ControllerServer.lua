@@ -18,33 +18,33 @@ local tierValue = tankData.tier
 
 -- TURRET
 local reloadSpeed = tankData.reload
-local upgradedReload = tankData.reloadupgraded
-local projectileSpeed = tankData.projectilespeed
-local projectileLength = tankData.projectilelength
-local projectileRadius = tankData.projectileradius
+local upgradedReload = tankData.reloadUpgraded
+local projectileSpeed = tankData.projectileSpeed
+local projectileLength = tankData.projectileLength
+local projectileRadius = tankData.projectileRadius
 local damagePerShot = tankData.damage
-local upgradedDamage = tankData.damageupgraded
-local allowHoldDownFiring = tankData.allowholddownfiring
+local upgradedDamage = tankData.damageUpgraded
+local allowHoldDownFiring = tankData.allowHoldDownFiring
 local turretTraverseSpeed = tankData.turret
-local upgradedTraverse = tankData.turretupgraded
+local upgradedTraverse = tankData.turretUpgraded
 local turretElevationSpeed = tankData.elevation
-local upgradedElevation = tankData.elevationupgraded
-local maxElevationAngle = tankData.maxelevation
-local minDepressionAngle = tankData.maxdepression
-local horizontalCannonAngles = tankData.horizontalangles
+local upgradedElevation = tankData.elevationUpgraded
+local maxElevationAngle = tankData.maxElevation
+local minDepressionAngle = tankData.maxDepression
+local horizontalCannonAngles = tankData.horizontalAngles
 
 -- SHELL
-local hitPoints = tankData.hitpoints
-local upgradedHitPoints = tankData.hitpointsupgraded
-local viewRange = tankData.viewrange
+local hitPoints = tankData.hitPoints
+local upgradedHitPoints = tankData.hitPointsUpgraded
+local viewRange = tankData.viewRange
 
 -- ENGINE
-local topSpeed = tankData.topspeed
-local upgradedTopSpeed = tankData.topspeedupgraded
+local topSpeed = tankData.topSpeed
+local upgradedTopSpeed = tankData.topSpeedUpgraded
 local acceleration = tankData.acceleration
-local upgradedAcceleration = tankData.accelerationupgraded
-local turningSpeed = tankData.turningspeed
-local upgradedTurningSpeed = tankData.turningspeedupgraded
+local upgradedAcceleration = tankData.accelerationUpgraded
+local turningSpeed = tankData.turningSpeed
+local upgradedTurningSpeed = tankData.turningSpeedUpgraded
 
 -- Main Component References
 local templateReferences = script:GetCustomProperty("TemplateReferences"):WaitForObject()

@@ -1,6 +1,7 @@
 -- SHARED STORAGE KEY
-local KEYS = script:GetCustomProperty("Keys"):WaitForObject()
-local PLAYER_SHARED_STORAGE = KEYS:GetCustomProperty("Tanks")
+local _Constants_API = require(script:GetCustomProperty("Constants_API"))
+local KEYS =  _Constants_API:WaitForConstant("Storage_Keys") 
+local PLAYER_SHARED_STORAGE = KEYS.Tanks
 
 -- API
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
@@ -28,7 +29,7 @@ end
 
 function OnPlayerJoined(player)
 
-	--print("Player Joined " .. player.name)
+	print("Player Joined " .. player.name)
 	
 	local playerData = Storage.GetPlayerData(player)
 	--UTIL_API.TablePrint(playerData)
@@ -413,7 +414,9 @@ function ChangeEquippedTank(player, tankId)
 	-- DEBUG
 	--print("Set player's equipped tank to: " .. tankId)
 end
-
+for key, player in pairs(Game.GetPlayers()) do
+	OnPlayerJoined(player)
+end
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 

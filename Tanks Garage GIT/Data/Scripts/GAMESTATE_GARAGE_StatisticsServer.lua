@@ -1,15 +1,16 @@
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
+local _Constants_API = require(script:GetCustomProperty("Constants_API"))
 
+  
 local LEADERBOARDS = script:GetCustomProperty("Leaderboards"):WaitForObject()
 local MTD_LEADERBOARD = LEADERBOARDS:GetCustomProperty("MatchDestroyed")
 local MDD_LEADERBOARD = LEADERBOARDS:GetCustomProperty("MatchDamage")
 local LTTD_LEADERBOARD = LEADERBOARDS:GetCustomProperty("TotalDestroyed")
 local LTDD_LEADERBOARD = LEADERBOARDS:GetCustomProperty("TotalDamage")
 local LTWR_LEADERBOARD = LEADERBOARDS:GetCustomProperty("TotalWinRate")
-
-local KEYS = script:GetCustomProperty("Keys"):WaitForObject()
-local STORAGE_LEADERBOARD = KEYS:GetCustomProperty("Leaderboards")
+ 
+local STORAGE_LEADERBOARD = _Constants_API:WaitForConstant("Storage_Keys").Leaderboards 
 
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local victoryComponent = script:GetCustomProperty("GAMESTATE_VictoryComponent"):WaitForObject()

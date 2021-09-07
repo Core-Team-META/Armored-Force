@@ -1,9 +1,9 @@
 local UTIL = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 local CONST = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
-
+local _Constants_API = require(script:GetCustomProperty("Constants_API"))
+local KEYS =  _Constants_API:WaitForConstant("Storage_Keys") 
 local NETWORKED = script:GetCustomProperty("NETWORKED"):WaitForObject()
-local KEYS = script:GetCustomProperty("Keys"):WaitForObject()
-local STORAGE_LEADERBOARDS = KEYS:GetCustomProperty("Leaderboards")
+local STORAGE_LEADERBOARDS = KEYS.Leaderboards
 
 local DATA_TEMPLATE = script:GetCustomProperty("LastRoundStats_DATA")
 

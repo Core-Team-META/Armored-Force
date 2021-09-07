@@ -213,12 +213,6 @@ Objects {
       String: ""
     }
     Overrides {
-      Name: "cs:Keys"
-      ObjectReference {
-        SelfId: 1126690814057033551
-      }
-    }
-    Overrides {
       Name: "cs:MetaAbilityProgressionUTIL_API"
       AssetReference {
         Id: 2269572116006940077

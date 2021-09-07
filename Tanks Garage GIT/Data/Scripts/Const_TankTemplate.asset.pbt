@@ -5,163 +5,163 @@ Assets {
   TextAsset {
     CustomParameters {
       Overrides {
-        Name: "cs:Name"
+        Name: "cs:name"
         String: ""
       }
       Overrides {
-        Name: "cs:ID"
+        Name: "cs:id"
         String: ""
       }
       Overrides {
-        Name: "cs:Team"
+        Name: "cs:team"
         String: ""
       }
       Overrides {
-        Name: "cs:Country"
+        Name: "cs:country"
         String: ""
       }
       Overrides {
-        Name: "cs:Tier"
+        Name: "cs:tier"
         Int: 1
       }
       Overrides {
-        Name: "cs:Type"
+        Name: "cs:type"
         String: "Light"
       }
       Overrides {
-        Name: "cs:ResearchCurrencyName"
+        Name: "cs:researchCurrencyName"
         String: "RP"
       }
       Overrides {
-        Name: "cs:PurchaseCurrencyName"
+        Name: "cs:purchaseCurrencyName"
         String: "Silver"
       }
       Overrides {
-        Name: "cs:ResearchCost"
+        Name: "cs:researchCost"
         Int: 0
       }
       Overrides {
-        Name: "cs:PurchaseCost"
+        Name: "cs:purchaseCost"
         Int: 0
       }
       Overrides {
-        Name: "cs:WeaponResearchCost"
+        Name: "cs:weaponResearchCost"
         Int: 2500
       }
       Overrides {
-        Name: "cs:WeaponPurchaseCost"
+        Name: "cs:weaponPurchaseCost"
         Int: 5000
       }
       Overrides {
-        Name: "cs:ArmorResearchCost"
+        Name: "cs:armorResearchCost"
         Int: 2500
       }
       Overrides {
-        Name: "cs:ArmorPurchaseCost"
+        Name: "cs:armorPurchaseCost"
         Int: 5000
       }
       Overrides {
-        Name: "cs:MobilityResearchCost"
+        Name: "cs:mobilityResearchCost"
         Int: 2500
       }
       Overrides {
-        Name: "cs:MobilityPurchaseCost"
+        Name: "cs:mobilityPurchaseCost"
         Int: 5000
       }
       Overrides {
-        Name: "cs:Reload"
+        Name: "cs:reload"
         Float: 3
       }
       Overrides {
-        Name: "cs:ReloadUpgraded"
+        Name: "cs:reloadUpgraded"
         Float: 2
       }
       Overrides {
-        Name: "cs:Turret"
+        Name: "cs:turret"
         Int: 30
       }
       Overrides {
-        Name: "cs:TurretUpgraded"
+        Name: "cs:turretUpgraded"
         Int: 40
       }
       Overrides {
-        Name: "cs:Elevation"
+        Name: "cs:elevation"
         Int: 16
       }
       Overrides {
-        Name: "cs:ElevationUpgraded"
+        Name: "cs:elevationUpgraded"
         Int: 22
       }
       Overrides {
-        Name: "cs:MaxElevation"
+        Name: "cs:maxElevation"
         Int: 20
       }
       Overrides {
-        Name: "cs:HorizontalAngles"
+        Name: "cs:horizontalAngles"
         Int: 0
       }
       Overrides {
-        Name: "cs:ProjectileSpeed"
+        Name: "cs:projectileSpeed"
         Int: 21000
       }
       Overrides {
-        Name: "cs:MaxDepression"
+        Name: "cs:maxDepression"
         Int: -14
       }
       Overrides {
-        Name: "cs:ProjectileLength"
+        Name: "cs:projectileLength"
         Float: 20
       }
       Overrides {
-        Name: "cs:ProjectileRadius"
+        Name: "cs:projectileRadius"
         Float: 5
       }
       Overrides {
-        Name: "cs:AllowHoldDownFiring"
+        Name: "cs:allowHoldDownFiring"
         Bool: false
       }
       Overrides {
-        Name: "cs:RecoilAmount"
+        Name: "cs:recoilAmount"
         Float: 10
       }
       Overrides {
-        Name: "cs:ViewRange"
+        Name: "cs:viewRange"
         Int: 50000
       }
       Overrides {
-        Name: "cs:RecoilRockingMultiplier"
+        Name: "cs:recoilRockingMultiplier"
         Float: 2
       }
       Overrides {
-        Name: "cs:DamageUpgraded"
+        Name: "cs:damageUpgraded"
         Int: 90
       }
       Overrides {
-        Name: "cs:HitPointsUpgraded"
+        Name: "cs:hitPointsUpgraded"
         Int: 800
       }
       Overrides {
-        Name: "cs:Damage"
+        Name: "cs:damage"
         Int: 70
       }
       Overrides {
-        Name: "cs:HitPoints"
+        Name: "cs:hitPoints"
         Int: 750
       }
       Overrides {
-        Name: "cs:TopSpeed"
+        Name: "cs:topSpeed"
         Int: 1160
       }
       Overrides {
-        Name: "cs:TopSpeedUpgraded"
+        Name: "cs:topSpeedUpgraded"
         Int: 1200
       }
       Overrides {
-        Name: "cs:ReverseSpeed"
+        Name: "cs:reverseSpeed"
         Int: 300
       }
       Overrides {
-        Name: "cs:Acceleration"
+        Name: "cs:acceleration"
         Int: 500
       }
       Overrides {
@@ -171,23 +171,23 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:WheelSpeedModifier"
+        Name: "cs:wheelSpeedModifier"
         Float: 1
       }
       Overrides {
-        Name: "cs:TurningSpeed"
+        Name: "cs:turningSpeed"
         Int: 60
       }
       Overrides {
-        Name: "cs:TurningSpeedUpgraded"
+        Name: "cs:turningSpeedUpgraded"
         Int: 70
       }
       Overrides {
-        Name: "cs:AccelerationUpgraded"
+        Name: "cs:accelerationUpgraded"
         Int: 500
       }
       Overrides {
-        Name: "cs:Prerequisite1"
+        Name: "cs:prerequisite1"
         String: ""
       }
       Overrides {
@@ -215,395 +215,395 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:Name:isrep"
+        Name: "cs:name:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:Name:ml"
+        Name: "cs:name:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:ID:isrep"
+        Name: "cs:id:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:ID:ml"
+        Name: "cs:id:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:Team:isrep"
+        Name: "cs:team:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:Team:ml"
+        Name: "cs:team:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:Country:isrep"
+        Name: "cs:country:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:Country:ml"
+        Name: "cs:country:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:Tier:isrep"
+        Name: "cs:tier:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:Tier:ml"
+        Name: "cs:tier:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:Type:isrep"
+        Name: "cs:type:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:Type:ml"
+        Name: "cs:type:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:ResearchCurrencyName:isrep"
+        Name: "cs:researchCurrencyName:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:ResearchCurrencyName:ml"
+        Name: "cs:researchCurrencyName:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:PurchaseCurrencyName:isrep"
+        Name: "cs:purchaseCurrencyName:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:PurchaseCurrencyName:ml"
+        Name: "cs:purchaseCurrencyName:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:ResearchCost:isrep"
+        Name: "cs:researchCost:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:ResearchCost:ml"
+        Name: "cs:researchCost:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:PurchaseCost:isrep"
+        Name: "cs:purchaseCost:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:PurchaseCost:ml"
+        Name: "cs:purchaseCost:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:WeaponResearchCost:isrep"
+        Name: "cs:weaponResearchCost:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:WeaponResearchCost:ml"
+        Name: "cs:weaponResearchCost:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:WeaponPurchaseCost:isrep"
+        Name: "cs:weaponPurchaseCost:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:WeaponPurchaseCost:ml"
+        Name: "cs:weaponPurchaseCost:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:ArmorResearchCost:isrep"
+        Name: "cs:armorResearchCost:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:ArmorResearchCost:ml"
+        Name: "cs:armorResearchCost:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:ArmorPurchaseCost:isrep"
+        Name: "cs:armorPurchaseCost:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:ArmorPurchaseCost:ml"
+        Name: "cs:armorPurchaseCost:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:MobilityResearchCost:isrep"
+        Name: "cs:mobilityResearchCost:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:MobilityResearchCost:ml"
+        Name: "cs:mobilityResearchCost:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:MobilityPurchaseCost:isrep"
+        Name: "cs:mobilityPurchaseCost:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:MobilityPurchaseCost:ml"
+        Name: "cs:mobilityPurchaseCost:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:Reload:isrep"
+        Name: "cs:reload:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:Reload:ml"
+        Name: "cs:reload:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:ReloadUpgraded:isrep"
+        Name: "cs:reloadUpgraded:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:ReloadUpgraded:ml"
+        Name: "cs:reloadUpgraded:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:Turret:isrep"
+        Name: "cs:turret:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:Turret:ml"
+        Name: "cs:turret:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:TurretUpgraded:isrep"
+        Name: "cs:turretUpgraded:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:TurretUpgraded:ml"
+        Name: "cs:turretUpgraded:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:Elevation:isrep"
+        Name: "cs:elevation:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:Elevation:ml"
+        Name: "cs:elevation:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:ElevationUpgraded:isrep"
+        Name: "cs:elevationUpgraded:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:ElevationUpgraded:ml"
+        Name: "cs:elevationUpgraded:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:MaxElevation:isrep"
+        Name: "cs:maxElevation:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:MaxElevation:ml"
+        Name: "cs:maxElevation:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:HorizontalAngles:isrep"
+        Name: "cs:horizontalAngles:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:HorizontalAngles:ml"
+        Name: "cs:horizontalAngles:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:HorizontalAngles:category"
+        Name: "cs:horizontalAngles:category"
         String: "Custom"
       }
       Overrides {
-        Name: "cs:MaxDepression:isrep"
+        Name: "cs:maxDepression:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:MaxDepression:ml"
+        Name: "cs:maxDepression:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:ProjectileSpeed:isrep"
+        Name: "cs:projectileSpeed:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:ProjectileSpeed:ml"
+        Name: "cs:projectileSpeed:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:ProjectileLength:isrep"
+        Name: "cs:projectileLength:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:ProjectileLength:ml"
+        Name: "cs:projectileLength:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:ProjectileLength:category"
+        Name: "cs:projectileLength:category"
         String: "Custom"
       }
       Overrides {
-        Name: "cs:ProjectileRadius:isrep"
+        Name: "cs:projectileRadius:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:ProjectileRadius:ml"
+        Name: "cs:projectileRadius:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:ProjectileRadius:category"
+        Name: "cs:projectileRadius:category"
         String: "Custom"
       }
       Overrides {
-        Name: "cs:AllowHoldDownFiring:isrep"
+        Name: "cs:allowHoldDownFiring:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:AllowHoldDownFiring:ml"
+        Name: "cs:allowHoldDownFiring:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:AllowHoldDownFiring:category"
+        Name: "cs:allowHoldDownFiring:category"
         String: "Custom"
       }
       Overrides {
-        Name: "cs:RecoilAmount:isrep"
+        Name: "cs:recoilAmount:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:RecoilAmount:ml"
+        Name: "cs:recoilAmount:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:RecoilAmount:category"
+        Name: "cs:recoilAmount:category"
         String: "Custom"
       }
       Overrides {
-        Name: "cs:RecoilRockingMultiplier:isrep"
+        Name: "cs:recoilRockingMultiplier:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:RecoilRockingMultiplier:ml"
+        Name: "cs:recoilRockingMultiplier:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:RecoilRockingMultiplier:category"
+        Name: "cs:recoilRockingMultiplier:category"
         String: "Custom"
       }
       Overrides {
-        Name: "cs:ViewRange:isrep"
+        Name: "cs:viewRange:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:ViewRange:ml"
+        Name: "cs:viewRange:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:ViewRange:category"
+        Name: "cs:viewRange:category"
         String: "Custom"
       }
       Overrides {
-        Name: "cs:DamageUpgraded:isrep"
+        Name: "cs:damageUpgraded:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:DamageUpgraded:ml"
+        Name: "cs:damageUpgraded:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:HitPointsUpgraded:isrep"
+        Name: "cs:hitPointsUpgraded:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:HitPointsUpgraded:ml"
+        Name: "cs:hitPointsUpgraded:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:Damage:isrep"
+        Name: "cs:damage:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:Damage:ml"
+        Name: "cs:damage:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:HitPoints:isrep"
+        Name: "cs:hitPoints:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:HitPoints:ml"
+        Name: "cs:hitPoints:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:TopSpeed:isrep"
+        Name: "cs:topSpeed:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:TopSpeed:ml"
+        Name: "cs:topSpeed:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:TopSpeedUpgraded:isrep"
+        Name: "cs:topSpeedUpgraded:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:TopSpeedUpgraded:ml"
+        Name: "cs:topSpeedUpgraded:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:ReverseSpeed:isrep"
+        Name: "cs:reverseSpeed:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:ReverseSpeed:ml"
+        Name: "cs:reverseSpeed:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:Acceleration:isrep"
+        Name: "cs:acceleration:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:Acceleration:ml"
+        Name: "cs:acceleration:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:WheelSpeedModifier:isrep"
+        Name: "cs:wheelSpeedModifier:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:WheelSpeedModifier:ml"
+        Name: "cs:wheelSpeedModifier:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:WheelSpeedModifier:category"
+        Name: "cs:wheelSpeedModifier:category"
         String: "Custom"
       }
       Overrides {
-        Name: "cs:TurningSpeed:isrep"
+        Name: "cs:turningSpeed:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:TurningSpeed:ml"
+        Name: "cs:turningSpeed:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:TurningSpeedUpgraded:isrep"
+        Name: "cs:turningSpeedUpgraded:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:TurningSpeedUpgraded:ml"
+        Name: "cs:turningSpeedUpgraded:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:TurningSpeedUpgraded:category"
+        Name: "cs:turningSpeedUpgraded:category"
         String: "Custom"
       }
       Overrides {
-        Name: "cs:AccelerationUpgraded:isrep"
+        Name: "cs:accelerationUpgraded:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:AccelerationUpgraded:ml"
+        Name: "cs:accelerationUpgraded:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:Prerequisite1:category"
+        Name: "cs:prerequisite1:category"
         String: "Custom"
       }
       Overrides {

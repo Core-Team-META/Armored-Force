@@ -5,9 +5,9 @@ Assets {
   TextAsset {
     CustomParameters {
       Overrides {
-        Name: "cs:PortalImageHolderLinks"
-        ObjectReference {
-          SelfId: 2861077407936266023
+        Name: "cs:Constants_API"
+        AssetReference {
+          Id: 9930510073357529478
         }
       }
     }

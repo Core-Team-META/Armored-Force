@@ -38,9 +38,10 @@ Const.PERK_STORAGE_KEYS = {
 -- PROGRESS KEYS
 ------------------------------------------------------------------------------------------------------------------------
 Const.MAPLINKS = {
-    map1 = 'f19478/armored-force-frontline',
-    map2 = '',
-    map3 = ''
+    Garage = "bf3d88/armored-force",
+    Map1 = 'f19478/armored-force-frontline',
+    Map2 = '',
+    Map3 = ''
 } 
 
 Const.PORTALIMAGES = {
