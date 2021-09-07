@@ -9,6 +9,12 @@
 ------------------------------------------------------------------------------------------------------------------------
 local CONST = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local BASE = require(script:GetCustomProperty("Base64"))
+
+local _Constants_API = require(script:GetCustomProperty("Constants_API"))
+
+
+local Tank_API = _Constants_API:WaitForConstant("Tanks")
+local TANK_LIST = Tank_API.GetTanks()
 ------------------------------------------------------------------------------------------------------------------------
 -- Global Table Setup
 ------------------------------------------------------------------------------------------------------------------------
@@ -404,9 +410,9 @@ function API.GetHighestTurningSpeed()
 end
 
 function API.GetTankXPValueFromId(tankId)
-	for i, tank in ipairs(World.FindObjectByName("TechTree_Contents"):GetChildren()) do
-		if(tank:GetCustomProperty("ID") == tankId) then
-			local tier = tank:GetCustomProperty("Tier")
+	for i, tank in ipairs(TANK_LIST) do
+		if(tank.id == tankId) then
+			local tier = tank.tier
 			if(tier == 1) then
 				return CONST.XP_TIER_VALUE.TIER1
 			elseif(tier == 2) then
@@ -666,9 +672,9 @@ function API.RetrieveTankDataById(id, playerTanks)
 end
 
 function API.RetrieveTankNameById(id, tankCollection)
-	for i, tank in ipairs(tankCollection) do
-		if(tank:GetCustomProperty("ID") == id) then
-			return tank:GetCustomProperty("Name")
+	for i, tank in ipairs(TANK_LIST) do
+		if(tank.id == id) then
+			return tank.name
 		end
 	end
 	warn("Tank not found with Id: " .. id)
@@ -690,9 +696,9 @@ function API.CalculateLeaveEarlyEarnings(timeElapsed, matchDuration, maxAwardXP)
 end
 
 function API.GetTierFromId(tankId)
-    for i, tank in ipairs(World.FindObjectByName("TechTree_Contents"):GetChildren()) do
-		if(tank:GetCustomProperty("ID") == tankId) then
-			return tank:GetCustomProperty("Tier")			
+    for i, tank in ipairs(TANK_LIST) do
+		if(tank.id == tankId) then
+			return tank.tier		
 		end
 	end
 	warn("XP value not found with tank Id: " .. tankId)
@@ -708,11 +714,11 @@ function API.PlayerOwnsTank(techTreeProgress, tankId)
 end
 
 function API.GetPurchaseCost(tankId)
-    for i, tank in ipairs(World.FindObjectByName("TechTree_Contents"):GetChildren()) do
-        local id = tank:GetCustomProperty("ID")
+    for i, tank in ipairs(TANK_LIST) do
+        local id = tank.id
 		if tonumber(id) == tonumber(tankId) then
-            tankResourceName = tank:GetCustomProperty("PurchaseCurrencyName")
-            tankPurchaseAmount = tank:GetCustomProperty("PurchaseCost")
+            local tankResourceName = tank.properurchaseCurrencyName
+            local tankPurchaseAmount = tank.purchaseCost
 			return {resource = tostring(tankResourceName), amount = tonumber(tankPurchaseAmount)}		
 		end
 	end
