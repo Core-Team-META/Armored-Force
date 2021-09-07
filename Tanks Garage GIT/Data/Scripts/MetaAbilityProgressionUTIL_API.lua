@@ -373,15 +373,15 @@ end
 
 -- Retrieves the highest damage of a tank to use as the upper limit for the stat progress bar
 function API.GetHighestDamage()
-	return 550
+	return 100
 end
 
 function API.GetHighestReload()
-	return 16
+	return 10
 end
 
 function API.GetHighestTurretSpeed()
-	return 40
+	return 80
 end
 
 function API.GetHighestHitPoints()
@@ -389,11 +389,11 @@ function API.GetHighestHitPoints()
 end
 
 function API.GetHighestTopSpeed()
-	return 2000
+	return 4100
 end
 
 function API.GetHighestAcceleration()
-	return 1200
+	return 4500
 end
 
 function API.GetHighestTraverse()
@@ -401,12 +401,12 @@ function API.GetHighestTraverse()
 end
 
 function API.GetHighestElevation()
-	return 30
+	return 35
 end
 
 function API.GetHighestTurningSpeed()
     -- TODO
-	return 30
+	return 1500
 end
 
 function API.GetTankXPValueFromId(tankId)
