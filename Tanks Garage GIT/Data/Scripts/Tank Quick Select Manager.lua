@@ -12,13 +12,13 @@ local SFX_CLICK = script:GetCustomProperty("SFX_CLICK"):WaitForObject()
 local TANKS_OWNED = script:GetCustomProperty("TANKS_OWNED"):WaitForObject()
 
 -- Local properties
- 
-while not _G.PORTAL_IMAGES  do
+
+while not _G.PORTAL_IMAGES do
     Task.Wait()
 end
 
 local IMAGE_API = _G.PORTAL_IMAGES
-local Tank_API  =  _Constants_API:WaitForConstant("Tanks") 
+local Tank_API = _Constants_API:WaitForConstant("Tanks")
 
 local TANK_LIST = Tank_API.GetTanks()
 
@@ -50,13 +50,13 @@ local function SortByTier(tankA, tankB)
 end
 
 function Init()
-    if Environment.IsSinglePlayerPreview() then
-        Task.Wait(3)
-    end
+    Task.Wait(3)
+
     if isLoaded then
         return
     end
     ClearPanel()
+
     while not next(LOCAL_PLAYER.clientUserData.techTreeProgress) do
         Task.Wait()
     end
@@ -119,7 +119,6 @@ function Init()
 end
 
 function PopulateQuickSelectPanel()
-
     if not isLoaded then
         Init()
     end
@@ -141,8 +140,7 @@ function PopulateQuickSelectPanel()
         --local entry = World.SpawnAsset(TANK_TABLE_TEMPLATE, {parent = UIScrollPanel})
         --entry.x = tankCount * X_OFFSET
 
-        entry:FindDescendantByName("TANKTIER").text =
-            tostring(tankData.tier) .. " " .. tankData.type
+        entry:FindDescendantByName("TANKTIER").text = tostring(tankData.tier) .. " " .. tankData.type
 
         local tankId = tank.data.id
 
@@ -185,7 +183,7 @@ function ClearPanel()
 end
 
 function GetTankDataById(id)
-   return TANK_LIST[tonumber(id)]
+    return TANK_LIST[tonumber(id)]
 end
 
 function SelectTank(button)
