@@ -18,6 +18,8 @@ local LOBBY_REBALANCE_TIME = 8
 
 local MINIMUM_TEAMSIZE = 2
 
+local teamBalance = {}
+
 local function IsLobby()
 	return GAME_STATE:GetCustomProperty("GameState") == "LOBBYSTATE"
 end
@@ -185,6 +187,8 @@ function DoRebalance(playerToIgnore)
 			bestDelta = newDelta
 			value1 = v1
 			value2 = v2
+			teamBalance[1] = value1
+			teamBalance[2] = value2
 		else
 			-- Revert the swap
 			table.remove(team1, #team1)
@@ -250,7 +254,7 @@ function OnLobbyTimerChanged(object, string)
 		Events.BroadcastToAllPlayers("FadeScreen")
 		Task.Wait(1)
 		DoRebalance()
-		Events.Broadcast("FILL_TEAMS_WITH_AI", MINIMUM_TEAMSIZE)
+		Events.Broadcast("FILL_TEAMS_WITH_AI", MINIMUM_TEAMSIZE, teamBalance)
 	end
 end
 
