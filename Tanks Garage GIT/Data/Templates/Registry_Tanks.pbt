@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11955821821189344362
+        ParentId: 2974750608502516638
         ChildIds: 11422602052222339325
         ChildIds: 4572574912823670652
         ChildIds: 13357942947765431494
@@ -292,6 +292,36 @@ Assets {
             Int: 500
           }
           Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 18440003844035607917
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 2853304277705965791
+            }
+          }
+          Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 17656652147537912598
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 4049138204535402142
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 18362966145195176330
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -326,36 +356,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 18440003844035607917
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 2853304277705965791
-            }
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 17656652147537912598
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 4049138204535402142
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 18362966145195176330
-            }
           }
         }
         Collidable_v2 {
@@ -570,6 +570,36 @@ Assets {
             String: "01"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 415270528703766185
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 174747048665006779
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 14176318670474214506
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 13459062561465717307
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 11101099943238474651
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -604,36 +634,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 415270528703766185
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 174747048665006779
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 14176318670474214506
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 13459062561465717307
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 11101099943238474651
-            }
           }
         }
         Collidable_v2 {
@@ -848,6 +848,36 @@ Assets {
             String: "01"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 10433149572241240872
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 11324124963014893619
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 2431366245073015773
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 5147025571090304892
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 9664213398154049099
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -882,36 +912,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 10433149572241240872
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 11324124963014893619
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 2431366245073015773
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 5147025571090304892
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 9664213398154049099
-            }
           }
         }
         Collidable_v2 {
@@ -1126,6 +1126,36 @@ Assets {
             String: "01"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 17016571929775072076
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 2046142436031476287
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 13453632216196268465
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 7573468204549063665
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 14976029984994932141
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -1160,36 +1190,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 17016571929775072076
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 2046142436031476287
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 13453632216196268465
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 7573468204549063665
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 14976029984994932141
-            }
           }
         }
         Collidable_v2 {
@@ -1408,6 +1408,36 @@ Assets {
             String: "04"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 716652702964836540
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 4792894603005875016
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 8055656910186274677
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 7817298435634758891
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 3717964565853863851
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -1442,36 +1472,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 716652702964836540
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 4792894603005875016
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 8055656910186274677
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 7817298435634758891
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 3717964565853863851
-            }
           }
         }
         Collidable_v2 {
@@ -1690,6 +1690,36 @@ Assets {
             String: "04"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 1616956077389727325
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 16749601013821094976
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 15775573894372188172
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 6798521115850491294
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 17379275198927723298
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -1724,36 +1754,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 1616956077389727325
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 16749601013821094976
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 15775573894372188172
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 6798521115850491294
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 17379275198927723298
-            }
           }
         }
         Collidable_v2 {
@@ -1968,6 +1968,36 @@ Assets {
             String: "01"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 1618747983464716432
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 17207013674888550295
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 13688736630471301991
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 12927889372863480900
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 15390563987012436716
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -2002,36 +2032,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 1618747983464716432
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 17207013674888550295
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 13688736630471301991
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 12927889372863480900
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 15390563987012436716
-            }
           }
         }
         Collidable_v2 {
@@ -2242,6 +2242,36 @@ Assets {
             Int: 2400
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 1426231770220476750
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 14339131655113774916
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 9504793350714145128
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 3238522791261418239
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 3413467583475604137
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -2276,36 +2306,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 1426231770220476750
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 14339131655113774916
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 9504793350714145128
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 3238522791261418239
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 3413467583475604137
-            }
           }
         }
         Collidable_v2 {
@@ -2516,6 +2516,36 @@ Assets {
             Int: 1200
           }
           Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 16444073768052727388
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 14515297841516184650
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 13049495521590987872
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 1597404408329507547
+            }
+          }
+          Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 8938523193322671263
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -2550,36 +2580,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 16444073768052727388
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 14515297841516184650
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 13049495521590987872
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 1597404408329507547
-            }
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 8938523193322671263
-            }
           }
         }
         Collidable_v2 {
@@ -2794,6 +2794,36 @@ Assets {
             String: "02"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 4894006791413067583
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 15999249858457301640
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 2299655779499696148
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 9444191790069408762
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 7077828682431451083
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -2828,36 +2858,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 4894006791413067583
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 15999249858457301640
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 2299655779499696148
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 9444191790069408762
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 7077828682431451083
-            }
           }
         }
         Collidable_v2 {
@@ -3072,6 +3072,36 @@ Assets {
             String: "05"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 13924359390479276914
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 14982722973246417461
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 5022358164993766478
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 18278762637394548912
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 13056561992288445029
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -3106,36 +3136,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 13924359390479276914
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 14982722973246417461
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 5022358164993766478
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 18278762637394548912
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 13056561992288445029
-            }
           }
         }
         Collidable_v2 {
@@ -3350,6 +3350,36 @@ Assets {
             String: "05"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 6028044853128548708
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 8426571742717328861
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 13757466797355639610
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 4229056377103261699
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 14734618150306082998
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -3384,36 +3414,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 6028044853128548708
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 8426571742717328861
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 13757466797355639610
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 4229056377103261699
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 14734618150306082998
-            }
           }
         }
         Collidable_v2 {
@@ -3628,6 +3628,36 @@ Assets {
             String: "05"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 2118376248870002276
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 6858336674420563183
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 294162726500130901
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 291051702507339058
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 16618425757165247819
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -3662,36 +3692,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 2118376248870002276
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 6858336674420563183
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 294162726500130901
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 291051702507339058
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 16618425757165247819
-            }
           }
         }
         Collidable_v2 {
@@ -3906,6 +3906,36 @@ Assets {
             String: "06"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 13656410226284132837
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 9731566087371116282
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 12007025093329606674
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 15624816102823618856
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 9887550778252466470
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -3940,36 +3970,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 13656410226284132837
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 9731566087371116282
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 12007025093329606674
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 15624816102823618856
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 9887550778252466470
-            }
           }
         }
         Collidable_v2 {
@@ -4184,6 +4184,36 @@ Assets {
             String: "06"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 5230482351496717709
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 6967810016710749395
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 6462898876822636547
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 3232938775486535992
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 15974362603269863725
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -4218,36 +4248,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 5230482351496717709
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 6967810016710749395
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 6462898876822636547
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 3232938775486535992
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 15974362603269863725
-            }
           }
         }
         Collidable_v2 {
@@ -4462,6 +4462,36 @@ Assets {
             String: "06"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 8037028623213273329
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 8835818957183097909
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 8901046681371012671
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 17747117309729285417
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 292989087944729503
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -4496,36 +4526,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 8037028623213273329
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 8835818957183097909
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 8901046681371012671
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 17747117309729285417
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 292989087944729503
-            }
           }
         }
         Collidable_v2 {
@@ -4740,6 +4740,36 @@ Assets {
             String: "07"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 6160157923482332176
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 6431083597330734809
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 5391953625370307650
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 10177150070658171554
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 17543628135159375808
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -4774,36 +4804,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 6160157923482332176
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 6431083597330734809
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 5391953625370307650
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 10177150070658171554
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 17543628135159375808
-            }
           }
         }
         Collidable_v2 {
@@ -5014,6 +5014,36 @@ Assets {
             Int: 500
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 16378492590068368173
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 1883458755664131977
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 2798037811744277311
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 8080609240915314781
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 16373468405269177347
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -5048,36 +5078,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 16378492590068368173
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 1883458755664131977
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 2798037811744277311
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 8080609240915314781
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 16373468405269177347
-            }
           }
         }
         Collidable_v2 {
@@ -5292,6 +5292,36 @@ Assets {
             String: "18"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 3238018855036756663
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 9867519550485358665
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 1209190648782530390
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 13643807608603909492
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 16688209154811981123
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -5326,36 +5356,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 3238018855036756663
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 9867519550485358665
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 1209190648782530390
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 13643807608603909492
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 16688209154811981123
-            }
           }
         }
         Collidable_v2 {
@@ -5570,6 +5570,36 @@ Assets {
             String: "18"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 1762352527973895796
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 14231213766044306774
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 14647316287464111668
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 14765999666295613620
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 16344738401084009260
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -5604,36 +5634,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 1762352527973895796
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 14231213766044306774
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 14647316287464111668
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 14765999666295613620
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 16344738401084009260
-            }
           }
         }
         Collidable_v2 {
@@ -5848,6 +5848,36 @@ Assets {
             String: "18"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 7601215625603852117
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 6460021139447004704
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 2620190192842972240
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 7857932562461835300
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 13519590410405361860
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -5882,36 +5912,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 7601215625603852117
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 6460021139447004704
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 2620190192842972240
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 7857932562461835300
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 13519590410405361860
-            }
           }
         }
         Collidable_v2 {
@@ -6126,6 +6126,36 @@ Assets {
             String: "18"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 8764920601547859586
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 1442096656860854916
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 414790167710219384
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 5463742840844704149
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 790130176502935494
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -6160,36 +6190,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 8764920601547859586
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 1442096656860854916
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 414790167710219384
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 5463742840844704149
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 790130176502935494
-            }
           }
         }
         Collidable_v2 {
@@ -6408,6 +6408,36 @@ Assets {
             String: "21"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 18389496770176763377
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 714012839332498872
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 64026207752514421
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 6264001334907546554
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 1796766768434848394
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -6442,36 +6472,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 18389496770176763377
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 714012839332498872
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 64026207752514421
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 6264001334907546554
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 1796766768434848394
-            }
           }
         }
         Collidable_v2 {
@@ -6690,6 +6690,36 @@ Assets {
             String: "21"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 12845603183121814423
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 2498608042342450754
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 4927656277343069890
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 14706452837136483777
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 1988775105748760057
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -6724,36 +6754,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 12845603183121814423
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 2498608042342450754
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 4927656277343069890
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 14706452837136483777
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 1988775105748760057
-            }
           }
         }
         Collidable_v2 {
@@ -6964,6 +6964,36 @@ Assets {
             Int: 1700
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 18304278403620108250
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 17803770010812892952
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 12183072156117960715
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 12183072156117960715
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 1752270606102116538
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -6998,36 +7028,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 18304278403620108250
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 17803770010812892952
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 12183072156117960715
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 12183072156117960715
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 1752270606102116538
-            }
           }
         }
         Collidable_v2 {
@@ -7242,6 +7242,36 @@ Assets {
             String: "23"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 6261709663710860535
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 4424364526519396604
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 1562030960033920715
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 1481160716434026854
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 3718229507894421252
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -7276,36 +7306,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 6261709663710860535
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 4424364526519396604
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 1562030960033920715
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 1481160716434026854
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 3718229507894421252
-            }
           }
         }
         Collidable_v2 {
@@ -7520,6 +7520,36 @@ Assets {
             String: "23"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 7999295844299688900
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 9448563897710362426
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 3937762914138199176
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 9711441193199724072
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 4256601851975390962
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -7554,36 +7584,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 7999295844299688900
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 9448563897710362426
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 3937762914138199176
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 9711441193199724072
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 4256601851975390962
-            }
           }
         }
         Collidable_v2 {
@@ -7798,6 +7798,36 @@ Assets {
             String: "23"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 16952317707152695295
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 16282881575517012136
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 1871339128614518893
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 15875163918548221500
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 15237042267805894644
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -7832,36 +7862,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 16952317707152695295
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 16282881575517012136
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 1871339128614518893
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 15875163918548221500
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 15237042267805894644
-            }
           }
         }
         Collidable_v2 {
@@ -8076,6 +8076,36 @@ Assets {
             String: "23"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 6077460079880055934
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 10551614147404729915
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 9146627166811278576
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 16272041800017840039
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 1168590625939389549
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -8110,36 +8140,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 6077460079880055934
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 10551614147404729915
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 9146627166811278576
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 16272041800017840039
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 1168590625939389549
-            }
           }
         }
         Collidable_v2 {
@@ -8354,6 +8354,36 @@ Assets {
             String: "24"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 4170242859529654530
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 8444509078946312129
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 5580645487994058771
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 14675533349773130751
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 7957024012220238345
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -8388,36 +8418,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 4170242859529654530
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 8444509078946312129
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 5580645487994058771
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 14675533349773130751
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 7957024012220238345
-            }
           }
         }
         Collidable_v2 {
@@ -8632,6 +8632,36 @@ Assets {
             String: "24"
           }
           Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 7856987151335289233
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 8622017408546023531
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 5477701023819894307
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 11119941561783530518
+            }
+          }
+          Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 17317649089193616584
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -8666,36 +8696,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 7856987151335289233
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 8622017408546023531
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 5477701023819894307
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 11119941561783530518
-            }
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 17317649089193616584
-            }
           }
         }
         Collidable_v2 {
@@ -8910,6 +8910,36 @@ Assets {
             String: "24"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 17254530331204344547
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 16164927167686131757
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 14772887467337954177
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 13212121591547980243
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 11265789710049643482
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -8944,36 +8974,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 17254530331204344547
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 16164927167686131757
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 14772887467337954177
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 13212121591547980243
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 11265789710049643482
-            }
           }
         }
         Collidable_v2 {
@@ -9188,6 +9188,36 @@ Assets {
             String: "22"
           }
           Overrides {
+            Name: "cs:BurntTank"
+            AssetReference {
+              Id: 14823438633197258587
+            }
+          }
+          Overrides {
+            Name: "cs:Skin"
+            AssetReference {
+              Id: 2921756505793099649
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            AssetReference {
+              Id: 6870222093700596650
+            }
+          }
+          Overrides {
+            Name: "cs:Chassis"
+            AssetReference {
+              Id: 15603542361340627950
+            }
+          }
+          Overrides {
+            Name: "cs:Main"
+            AssetReference {
+              Id: 925562555765529011
+            }
+          }
+          Overrides {
             Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
@@ -9222,36 +9252,6 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
-          }
-          Overrides {
-            Name: "cs:BurntTank"
-            AssetReference {
-              Id: 14823438633197258587
-            }
-          }
-          Overrides {
-            Name: "cs:Skin"
-            AssetReference {
-              Id: 2921756505793099649
-            }
-          }
-          Overrides {
-            Name: "cs:HitBox"
-            AssetReference {
-              Id: 6870222093700596650
-            }
-          }
-          Overrides {
-            Name: "cs:Chassis"
-            AssetReference {
-              Id: 15603542361340627950
-            }
-          }
-          Overrides {
-            Name: "cs:Main"
-            AssetReference {
-              Id: 925562555765529011
-            }
           }
         }
         Collidable_v2 {

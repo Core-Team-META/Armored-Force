@@ -209,6 +209,12 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:SkinLoFi"
+        AssetReference {
+          Id: 841534158063459245
+        }
+      }
+      Overrides {
         Name: "cs:BurntTank"
         AssetReference {
           Id: 841534158063459245
@@ -624,6 +630,10 @@ Assets {
       }
       Overrides {
         Name: "cs:BurntTank:category"
+        String: "SpawnData"
+      }
+      Overrides {
+        Name: "cs:SkinLoFi:category"
         String: "SpawnData"
       }
     }
