@@ -542,7 +542,7 @@ function ProjectileImpacted(expiredProjectile, other)
         ProjectileExpired(expiredProjectile)
     end
 
-	if not other:IsA("Vehicle") or expiredProjectile.serverUserData.hitOnce or other.driver == driver then
+	if not other:IsA("Vehicle") or expiredProjectile.serverUserData.hitOnce or (other.driver == driver) or (other.serverUserData.owner == driver) then
 		return
 	end
 	print("damage stuff")
@@ -585,7 +585,7 @@ function ProjectileExpired(expiredProjectile)
 end
 
 function OnArmorHit(trigger, other)	
-	if other.type == "Projectile" and other.owner ~= driver then
+	if other.type == "Projectile" and (other.owner ~= driver) and (other.serverUserData.owner ~= driver) then
         local enemyPlayer = other.owner -- for player
 		if not other.owner and other.serverUserData.owner then -- for bot
 			--enemyPlayer = AIPlayer.FindAIDriver(other)
