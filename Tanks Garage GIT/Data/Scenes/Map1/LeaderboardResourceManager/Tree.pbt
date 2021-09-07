@@ -49,12 +49,6 @@ Objects {
   ParentId: 12343401287775283292
   UnregisteredParameters {
     Overrides {
-      Name: "cs:Keys"
-      ObjectReference {
-        SelfId: 8053548290070406507
-      }
-    }
-    Overrides {
       Name: "cs:Leaderboards"
       ObjectReference {
         SelfId: 17736868490696546371

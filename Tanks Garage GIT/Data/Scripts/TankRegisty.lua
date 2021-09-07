@@ -4,13 +4,13 @@ local Folder = script:GetCustomProperty("Folder"):WaitForObject()
 local Data = {}
 
 for _, tank in pairs(Folder:GetChildren()) do
-    local idString = (tank:GetCustomProperty('ID'))
+    local idString = (tank:GetCustomProperty('id'))
     local id = tonumber(idString)
 
     Data[id] = {}
 
     for key, value in pairs(tank:GetCustomProperties()) do
-        Data[id][string.lower(key)] = value
+        Data[id][key] = value
     end
     Data[id]["skins"] = {}
 end
@@ -66,6 +66,12 @@ Tanks.NumberOfTanks = function()
         int = int + 1
     end
     return int
+end
+Tanks.GetPurchaseCost = function(id)
+    local tank = Tanks.GetTankFromId(tonumber(id))
+    if tank then 
+        return {resource = tostring(tank.tankResourceName), amount = tonumber(tank.tankPurchaseAmount)}	
+    end
 end
 
 Tanks.TANK_TYPE = {

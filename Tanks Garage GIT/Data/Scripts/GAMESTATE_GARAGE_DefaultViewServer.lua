@@ -1,4 +1,4 @@
-local links = script:GetCustomProperty("Links"):WaitForObject()
+
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local map = {"Map1", "Map2", "Map3"}
 local consumableCost = {}

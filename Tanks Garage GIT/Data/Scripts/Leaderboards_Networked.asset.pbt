@@ -11,9 +11,9 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:Keys"
-        ObjectReference {
-          SelfId: 1126690814057033551
+        Name: "cs:Constants_API"
+        AssetReference {
+          Id: 9930510073357529478
         }
       }
     }

@@ -116,215 +116,215 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "M3 Stuart"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "01"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Allies"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "US"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 1
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Light"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 2500
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 2500
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 2500
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 3
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 2
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 30
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 40
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 16
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 22
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 20
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -14
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 21000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 50000
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 90
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 800
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 70
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 750
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 1160
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1200
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 300
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 500
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 60
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 70
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 500
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -390,219 +390,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "M24 Chaffee"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "02"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Allies"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "US"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 2
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Light"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 20000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 5
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 4
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 36
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 50
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 15
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 22
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 15
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -12
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 21000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 50000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 230
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 270
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 550
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 650
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 1150
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1330
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 600
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 400
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 400
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 60
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 70
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "01"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -668,219 +668,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "M4A1 Sherman"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "03"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Allies"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "US"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 2
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Medium"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 20000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 4
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 3
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 40
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 50
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 20
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 25
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 25
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -12
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 21000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 40000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 185
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 200
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 1050
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1100
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 945
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1040
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 350
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 600
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 700
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 50
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 60
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "01"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -946,219 +946,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "T-34"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "04"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Allies"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "USSR"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 2
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Medium"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 20000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 6
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 5
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 36
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 44
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 12
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 17
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 30
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -10
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 21000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 40000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 260
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 290
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 950
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1050
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 1045
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1110
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 300
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 500
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 600
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 55
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 65
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "01"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -1224,183 +1224,183 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "Comet"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "05"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Allies"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "UK"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 3
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Medium"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 25000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 4.7
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 3.7
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 20
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 30
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 18
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 22
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -12
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 24000
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 280
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 260
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 40000
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 925
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 850
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 1035
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1215
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 200
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 600
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 700
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 55
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 65
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "03"
           }
           Overrides {
@@ -1408,39 +1408,39 @@ Assets {
             String: "04"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -1506,183 +1506,183 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "IS-3"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "06"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Allies"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "USSR"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 3
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Heavy"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 25000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 8
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 7
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 16
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 20
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 10
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 15
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -11
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 22500
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 535
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 515
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 25000
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1500
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 1400
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 780
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 920
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 300
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 1700
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 1900
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 50
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 60
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "03"
           }
           Overrides {
@@ -1690,39 +1690,39 @@ Assets {
             String: "04"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -1788,219 +1788,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "M10 Wolverine"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "07"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Allies"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "US"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 2
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "TankDestroyer"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 20000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 4.7
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 4.2
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 36
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 50
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 12
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 18
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 30
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -14
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 22500
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 35000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 340
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 380
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 650
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 750
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 936
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1012
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 250
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 900
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 950
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 60
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 65
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "01"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -2066,215 +2066,215 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "M6A1 Heavy"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "08"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Allies"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "US"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 3
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Heavy"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 1000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 4.7
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 3.7
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 26
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 36
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 16
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 22
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 30
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -12
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 22500
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 25000
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 290
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1400
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 270
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 1300
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 775
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 975
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 250
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 2200
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 50
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 60
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 2400
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -2340,215 +2340,215 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "T34 Heavy"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "09"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Allies"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "US"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 4
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Heavy"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Gold"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 1000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 7
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 6
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 28
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 36
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 10
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 15
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 15
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -13
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 25500
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 25000
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 635
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1800
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 605
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 1700
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 860
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 975
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 300
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 1100
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 60
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 70
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 1200
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -2614,219 +2614,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "1955 Chimera"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "10"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Allies"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "UK"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 4
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Light"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 75000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 6.7
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 6.7
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 60
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 80
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 20
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 25
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 8
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -9
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 25500
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 50000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 530
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 550
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 700
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 850
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 1262
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1375
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 600
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 500
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 550
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 60
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 70
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "02"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -2892,219 +2892,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "Bat-Chat 25T"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "11"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Allies"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "FR"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 4
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Medium"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 75000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 4.7
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 4.7
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 40
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 50
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 10
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 15
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 11
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -10
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 22500
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 40000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 425
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 465
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 850
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 900
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 1200
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1500
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 1200
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 1900
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 2100
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 50
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 60
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "05"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -3170,219 +3170,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "M48 Patton"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "12"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Allies"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "US"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 4
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Medium"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 75000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 5.7
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 4.7
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 40
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 48
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 20
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 25
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 19
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -11
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 24000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 40000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 310
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 325
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 900
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1000
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 877
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1102
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 350
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 1100
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 1600
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 55
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 65
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "05"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -3448,219 +3448,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "T-62A1"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "13"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Allies"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "USSR"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 4
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Medium"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 75000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 6.7
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 5.7
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 22
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 32
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 25
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 30
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 16
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -11
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 24000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 40000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 420
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 500
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 900
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1000
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 1012
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1237
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 250
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 1100
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 1200
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 60
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 70
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "05"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -3726,219 +3726,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "T57"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "14"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Allies"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "US"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 4
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Heavy"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 75000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 5.3
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 4.5
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 40
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 60
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 10
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 15
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 12
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -11
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 22500
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 25000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 415
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 445
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 1500
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1600
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 725
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 975
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 300
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 2100
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 2200
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 60
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 70
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "06"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -4004,219 +4004,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "IS-7"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "15"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Allies"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "USSR"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 4
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Heavy"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 75000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 6.7
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 6.2
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 24
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 40
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 12
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 17
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 15
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -13
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 24000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 25000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 490
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 560
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 1700
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1800
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 1025
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1175
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 450
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 2100
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 2200
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 60
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 70
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "06"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -4282,219 +4282,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "AMX-50"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "16"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Allies"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "FR"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 4
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Heavy"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 75000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 4
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 4
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 50
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 60
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 10
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 15
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 14
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -12
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 22500
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 25000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 270
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 310
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 1500
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1600
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 1175
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1225
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 150
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 1900
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 2200
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 50
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 60
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "06"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -4560,219 +4560,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "T110 E3"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "17"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Allies"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "US"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 4
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "TankDestroyer"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 75000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 8
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 7
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 0
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 0
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 10
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 15
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 16
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -11
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 16
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 24000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 35000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 850
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 880
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 1400
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1500
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 830
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 920
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 300
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 1400
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 1500
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 65
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 75
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "07"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -4838,215 +4838,215 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "Panzer 3"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "18"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Axis"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "GER"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 1
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Light"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 2500
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 2500
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 2500
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 3
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 2
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 28
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 36
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 15
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 21
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 20
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -10
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 21000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 50000
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 80
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 925
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 65
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 850
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 1160
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1360
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 350
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 500
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 55
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 65
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 500
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -5112,219 +5112,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "Leopard VK1602"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "19"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Axis"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "GER"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 2
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Light"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 20000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 2
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 1
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 36
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 44
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 18
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 27
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -12
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 21000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 50000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 55
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 62
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 750
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 850
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 1127
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1260
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 450
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 500
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 500
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 55
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 65
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "18"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -5390,219 +5390,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "Chi-Nu"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "20"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Axis"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "JP"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 2
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Medium"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 20000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 4.7
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 3.7
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 24
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 30
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 15
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 22
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -10
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 21000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 40000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 180
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 205
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 900
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1000
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 720
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 990
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 320
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 500
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 600
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 60
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 70
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "18"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -5668,219 +5668,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "Panzer 4"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "21"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Axis"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "GER"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 2
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Medium"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 20000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 4.7
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 3.7
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 20
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 40
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 18
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 22
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -12
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 21000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 40000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 160
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 175
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 1150
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1250
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 778
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 865
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 300
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 900
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 1300
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 55
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 65
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "18"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -5946,219 +5946,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "StuG 3 G"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "22"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Axis"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "GER"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 2
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "TankDestroyer"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 20000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 4.7
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 3.7
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 0
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 0
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 15
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 25
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 17
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -9
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 9
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 21000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 35000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 330
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 360
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 750
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 850
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 940
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1070
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 250
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 800
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 900
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 60
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 70
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "18"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -6224,183 +6224,183 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "Panther"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "23"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Axis"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "GER"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 3
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Medium"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 25000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 5.7
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 4.7
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 16
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 24
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 15
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 25
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -11
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 22500
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 300
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 280
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 40000
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1000
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 950
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 1102
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1327
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 250
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 2100
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 2300
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 55
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 65
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "20"
           }
           Overrides {
@@ -6408,39 +6408,39 @@ Assets {
             String: "21"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -6506,183 +6506,183 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "Tiger 2"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "24"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Axis"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "GER"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 3
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Heavy"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 25000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 7500
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 5.7
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 4.7
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 26
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 36
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 12
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 16
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 15
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -10
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 24000
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 350
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 315
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 25000
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1450
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 1350
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 720
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1050
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 300
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 1300
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 1400
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 30
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 60
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "20"
           }
           Overrides {
@@ -6690,39 +6690,39 @@ Assets {
             String: "21"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -6788,215 +6788,215 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "Lowe"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "25"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Axis"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "GER"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 3
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Heavy"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Gold"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 1000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 0
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 6
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 5
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 34
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 46
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 16
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 40
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -13
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 21000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 25000
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 475
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1600
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 425
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 1500
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 900
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1000
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 300
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 1200
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 50
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 60
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 1700
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -7062,219 +7062,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "FIAT 6616"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "26"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Axis"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "IT"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 4
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Light"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 75000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 0.7
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 0.5
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 30
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 40
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 25
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 30
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 15
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -10
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 21000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: true
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 50000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 55
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 66
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 650
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 750
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 3750
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 4100
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 500
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 3900
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 4400
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 1500
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 1500
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "23"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -7340,219 +7340,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "OF-40"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "27"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Axis"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "IT"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 4
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Medium"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 75000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 5
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 4
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 30
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 40
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 15
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 22
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -9
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 27000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 40000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 280
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 320
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 950
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1100
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 1350
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1575
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 500
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 4000
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 4500
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 60
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 70
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "23"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -7618,219 +7618,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "E-50"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "28"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Axis"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "GER"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 4
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Medium"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 75000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 4
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 3
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 50
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 60
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 15
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -11
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 21000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 40000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 225
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 250
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 950
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1100
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 1215
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1440
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 400
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 2100
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 2500
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 55
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 65
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "23"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -7896,219 +7896,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "Type 74"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "29"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Axis"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "JP"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 4
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Medium"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 75000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 5
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 4
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 40
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 50
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 24
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 29
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 9
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -10
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 27000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 40000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 310
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 330
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 900
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1050
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 1120
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1345
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 300
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 600
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 700
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 60
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 70
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "23"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -8174,219 +8174,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "Maus"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "30"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Axis"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "GER"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 4
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Heavy"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 75000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 8
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 7
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 14
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 20
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 10
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 17
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 23
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -9
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 21000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 25000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 710
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 780
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 1900
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 2000
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 1150
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1250
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 400
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 1500
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 1800
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 40
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 50
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "24"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -8452,219 +8452,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "E-100"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "31"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Axis"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "GER"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 4
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Heavy"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 75000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 8
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 7
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 20
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 30
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 12
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 18
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 23
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -11
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 21000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 25000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 640
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 710
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 1700
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1800
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 1200
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1350
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 300
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 2700
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 3800
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 50
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 60
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "24"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -8730,219 +8730,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "VK72.01"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "32"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Axis"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "GER"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 4
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "Heavy"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 75000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 8
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 7
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 26
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 36
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 12
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 16
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 17
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -10
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 0
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 21000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 25000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 600
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 650
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 1800
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1900
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 950
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1050
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 300
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 2100
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 2500
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 50
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 60
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "24"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {
@@ -9008,219 +9008,219 @@ Assets {
         ParentId: 11422602052222339325
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Name"
+            Name: "cs:name"
             String: "Jagdtiger"
           }
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:id"
             String: "33"
           }
           Overrides {
-            Name: "cs:Team"
+            Name: "cs:team"
             String: "Axis"
           }
           Overrides {
-            Name: "cs:Country"
+            Name: "cs:country"
             String: "GER"
           }
           Overrides {
-            Name: "cs:Tier"
+            Name: "cs:tier"
             Int: 4
           }
           Overrides {
-            Name: "cs:Type"
+            Name: "cs:type"
             String: "TankDestroyer"
           }
           Overrides {
-            Name: "cs:ResearchCurrencyName"
+            Name: "cs:researchCurrencyName"
             String: "RP"
           }
           Overrides {
-            Name: "cs:PurchaseCurrencyName"
+            Name: "cs:purchaseCurrencyName"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:ResearchCost"
+            Name: "cs:researchCost"
             Int: 50000
           }
           Overrides {
-            Name: "cs:PurchaseCost"
+            Name: "cs:purchaseCost"
             Int: 75000
           }
           Overrides {
-            Name: "cs:WeaponResearchCost"
+            Name: "cs:weaponResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:WeaponPurchaseCost"
+            Name: "cs:weaponPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:ArmorResearchCost"
+            Name: "cs:armorResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:ArmorPurchaseCost"
+            Name: "cs:armorPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:MobilityResearchCost"
+            Name: "cs:mobilityResearchCost"
             Int: 10000
           }
           Overrides {
-            Name: "cs:MobilityPurchaseCost"
+            Name: "cs:mobilityPurchaseCost"
             Int: 15000
           }
           Overrides {
-            Name: "cs:Reload"
+            Name: "cs:reload"
             Float: 10
           }
           Overrides {
-            Name: "cs:ReloadUpgraded"
+            Name: "cs:reloadUpgraded"
             Float: 9
           }
           Overrides {
-            Name: "cs:Turret"
+            Name: "cs:turret"
             Int: 0
           }
           Overrides {
-            Name: "cs:TurretUpgraded"
+            Name: "cs:turretUpgraded"
             Int: 0
           }
           Overrides {
-            Name: "cs:Elevation"
+            Name: "cs:elevation"
             Int: 25
           }
           Overrides {
-            Name: "cs:ElevationUpgraded"
+            Name: "cs:elevationUpgraded"
             Int: 35
           }
           Overrides {
-            Name: "cs:MaxElevation"
+            Name: "cs:maxElevation"
             Int: 20
           }
           Overrides {
-            Name: "cs:MaxDepression"
+            Name: "cs:maxDepression"
             Int: -11
           }
           Overrides {
-            Name: "cs:HorizontalAngles"
+            Name: "cs:horizontalAngles"
             Int: 11
           }
           Overrides {
-            Name: "cs:ProjectileSpeed"
+            Name: "cs:projectileSpeed"
             Int: 24000
           }
           Overrides {
-            Name: "cs:ProjectileLength"
+            Name: "cs:projectileLength"
             Float: 20
           }
           Overrides {
-            Name: "cs:ProjectileRadius"
+            Name: "cs:projectileRadius"
             Float: 5
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring"
+            Name: "cs:allowHoldDownFiring"
             Bool: false
           }
           Overrides {
-            Name: "cs:RecoilAmount"
+            Name: "cs:recoilAmount"
             Float: 10
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier"
+            Name: "cs:recoilRockingMultiplier"
             Float: 2
           }
           Overrides {
-            Name: "cs:ViewRange"
+            Name: "cs:viewRange"
             Int: 35000
           }
           Overrides {
-            Name: "cs:Damage"
+            Name: "cs:damage"
             Int: 950
           }
           Overrides {
-            Name: "cs:DamageUpgraded"
+            Name: "cs:damageUpgraded"
             Int: 1000
           }
           Overrides {
-            Name: "cs:HitPoints"
+            Name: "cs:hitPoints"
             Int: 1200
           }
           Overrides {
-            Name: "cs:HitPointsUpgraded"
+            Name: "cs:hitPointsUpgraded"
             Int: 1300
           }
           Overrides {
-            Name: "cs:TopSpeed"
+            Name: "cs:topSpeed"
             Int: 960
           }
           Overrides {
-            Name: "cs:TopSpeedUpgraded"
+            Name: "cs:topSpeedUpgraded"
             Int: 1050
           }
           Overrides {
-            Name: "cs:ReverseSpeed"
+            Name: "cs:reverseSpeed"
             Int: 300
           }
           Overrides {
-            Name: "cs:Acceleration"
+            Name: "cs:acceleration"
             Int: 2400
           }
           Overrides {
-            Name: "cs:AccelerationUpgraded"
+            Name: "cs:accelerationUpgraded"
             Int: 2700
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier"
+            Name: "cs:wheelSpeedModifier"
             Float: 1
           }
           Overrides {
-            Name: "cs:TurningSpeed"
+            Name: "cs:turningSpeed"
             Int: 50
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded"
+            Name: "cs:turningSpeedUpgraded"
             Int: 60
           }
           Overrides {
-            Name: "cs:Prerequisite1"
+            Name: "cs:prerequisite1"
             String: "22"
           }
           Overrides {
-            Name: "cs:TurningSpeedUpgraded:category"
+            Name: "cs:turningSpeedUpgraded:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileLength:category"
+            Name: "cs:projectileLength:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ProjectileRadius:category"
+            Name: "cs:projectileRadius:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilRockingMultiplier:category"
+            Name: "cs:recoilRockingMultiplier:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:RecoilAmount:category"
+            Name: "cs:recoilAmount:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:AllowHoldDownFiring:category"
+            Name: "cs:allowHoldDownFiring:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:ViewRange:category"
+            Name: "cs:viewRange:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:HorizontalAngles:category"
+            Name: "cs:horizontalAngles:category"
             String: "Custom"
           }
           Overrides {
-            Name: "cs:WheelSpeedModifier:category"
+            Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
           Overrides {

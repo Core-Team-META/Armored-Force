@@ -94,15 +94,15 @@ local function CalculateScore(player, winningTeam, playerBonus)
     local killScore = playerData[player].kills * POINTS_PER_KILL
 
     -- Give Points to player based on damage
-    local damageScore = playerData[player].damage * POINTS_PER_DAMAGE
+    damageScore = playerData[player].damage * POINTS_PER_DAMAGE
 
     -- Calculate total score
     newScore = matchScore + killScore + captureScore + damageScore
     newScore = newScore + (newScore * playerBonus)
 
     player:SetPrivateNetworkedData("NEWSCORE", CoreMath.Round(newScore))
-
-    newScore = CoreMath.Round(playerScore[player] + newScore)
+ 
+    newScore = CoreMath.Round((playerScore[player] or 0 ) + newScore)
     player:SetPrivateNetworkedData("TSCORE", newScore)
     
     playerScore[player] = newScore

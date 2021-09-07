@@ -1,7 +1,9 @@
-local portalImageHolderLinks = script:GetCustomProperty("PortalImageHolderLinks"):WaitForObject()
+local _Constants_API = require(script:GetCustomProperty("Constants_API"))
+local Images =  _Constants_API:WaitForConstant("PORTALIMAGES") 
 
-local imageHolder1 = portalImageHolderLinks:GetCustomProperty("ImageHolder1") -- title card and all tanks
-local imageHolder2 = portalImageHolderLinks:GetCustomProperty("ImageHolder2") -- all premium shop and all skins
+
+local imageHolder1 =Images.ImageHolder1 -- title card and all tanks
+local imageHolder2 =Images.ImageHolder2 -- all premium shop and all skins
 
 local holder1Index = {
 	["title"] = 1,

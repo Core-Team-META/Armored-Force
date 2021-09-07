@@ -1,7 +1,7 @@
 local UTIL = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
-
-local KEYS = script:GetCustomProperty("Keys"):WaitForObject()
-local LEADERBOARD_NETREF = KEYS:GetCustomProperty("Leaderboards")
+local _Constants_API = require(script:GetCustomProperty("Constants_API"))
+local KEYS =  _Constants_API:WaitForConstant("Storage_Keys") 
+local LEADERBOARD_NETREF = KEYS["Leaderboards"]
 
 if not LEADERBOARD_NETREF then
     warn("Leaderboard Net Refrence Missing!")

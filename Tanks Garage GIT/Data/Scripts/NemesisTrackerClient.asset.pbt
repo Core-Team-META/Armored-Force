@@ -3,6 +3,16 @@ Assets {
   Name: "NemesisTrackerClient"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+      Overrides {
+        Name: "cs:IsEnabled"
+        Bool: false
+      }
+      Overrides {
+        Name: "cs:IsEnabled:category"
+        String: "Custom"
+      }
+    }
   }
   SerializationVersion: 99
 }

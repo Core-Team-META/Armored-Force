@@ -3,48 +3,48 @@ local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_AP
 local Constants_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 
 -- Menu
-local BUTTON_PREMIUM_SHOP = script:GetCustomProperty("BUTTON_PREMIUM_SHOP"):WaitForObject()
-local PREMIUM_SHOP = script:GetCustomProperty("PREMIUM_SHOP"):WaitForObject()
+local BUTTON_PREMIUM_SHOP = script:GetCustomProperty("BUTTON_PREMIUM_SHOP"):WaitForObject(1)
+local PREMIUM_SHOP = script:GetCustomProperty("PREMIUM_SHOP"):WaitForObject(1)
 
 -- Sub Menu
-local SUB_MENU = script:GetCustomProperty("SUB_MENU"):WaitForObject()
+local SUB_MENU = script:GetCustomProperty("SUB_MENU"):WaitForObject(1)
 
-local SUBMENU_ITEM_1_BUTTON = script:GetCustomProperty("SUBMENU_ITEM_1_BUTTON"):WaitForObject()
-local SUBMENU_ITEM_2_BUTTON = script:GetCustomProperty("SUBMENU_ITEM_2_BUTTON"):WaitForObject()
-local SUBMENU_ITEM_3_BUTTON = script:GetCustomProperty("SUBMENU_ITEM_3_BUTTON"):WaitForObject()
-local SUBMENU_ITEM_4_BUTTON = script:GetCustomProperty("SUBMENU_ITEM_4_BUTTON"):WaitForObject()
+local SUBMENU_ITEM_1_BUTTON = script:GetCustomProperty("SUBMENU_ITEM_1_BUTTON"):WaitForObject(1)
+local SUBMENU_ITEM_2_BUTTON = script:GetCustomProperty("SUBMENU_ITEM_2_BUTTON"):WaitForObject(1)
+local SUBMENU_ITEM_3_BUTTON = script:GetCustomProperty("SUBMENU_ITEM_3_BUTTON"):WaitForObject(1)
+local SUBMENU_ITEM_4_BUTTON = script:GetCustomProperty("SUBMENU_ITEM_4_BUTTON"):WaitForObject(1)
 
-local SUBMENU_ITEM_1 = script:GetCustomProperty("SUBMENU_ITEM_1"):WaitForObject()
-local SUBMENU_ITEM_2 = script:GetCustomProperty("SUBMENU_ITEM_2"):WaitForObject()
+local SUBMENU_ITEM_1 = script:GetCustomProperty("SUBMENU_ITEM_1"):WaitForObject(1)
+local SUBMENU_ITEM_2 = script:GetCustomProperty("SUBMENU_ITEM_2"):WaitForObject(1)
 
-local BIG_DEALS = script:GetCustomProperty("BIG_DEALS_CONTAINER"):WaitForObject()
-local MONEY = script:GetCustomProperty("MONEY_CONTAINER"):WaitForObject()
-local RESEARCH_POINTS = script:GetCustomProperty("TRADE_CONTAINER"):WaitForObject()
-local PREMIUM_TANKS = script:GetCustomProperty("PREMIUM_TANKS_CONTAINER"):WaitForObject()
+local BIG_DEALS = script:GetCustomProperty("BIG_DEALS_CONTAINER"):WaitForObject(1)
+local MONEY = script:GetCustomProperty("MONEY_CONTAINER"):WaitForObject(1)
+local RESEARCH_POINTS = script:GetCustomProperty("TRADE_CONTAINER"):WaitForObject(1)
+local PREMIUM_TANKS = script:GetCustomProperty("PREMIUM_TANKS_CONTAINER"):WaitForObject(1)
 local RP_TANKLIST_TANK = script:GetCustomProperty("RP_TANKLIST_TANK")
-local TANK_LIST_SCROLL_PANEL = script:GetCustomProperty("TANK_LIST_SCROLL_PANEL"):WaitForObject()
-local OUTCOME_RPs = script:GetCustomProperty("OUTCOME_RPs"):WaitForObject()
-local BUTTON_CONVERT_RPs = script:GetCustomProperty("BUTTON_CONVERT_RPs"):WaitForObject()
-local ALLIES_PURCHASE_PREMIUM_BUTTON = script:GetCustomProperty("ALLIES_PURCHASE_PREMIUM_BUTTON"):WaitForObject()
-local AXIS_PURCHASE_PREMIUM_BUTTON = script:GetCustomProperty("AXIS_PURCHASE_PREMIUM_BUTTON"):WaitForObject()
+local TANK_LIST_SCROLL_PANEL = script:GetCustomProperty("TANK_LIST_SCROLL_PANEL"):WaitForObject(1)
+local OUTCOME_RPs = script:GetCustomProperty("OUTCOME_RPs"):WaitForObject(1)
+local BUTTON_CONVERT_RPs = script:GetCustomProperty("BUTTON_CONVERT_RPs"):WaitForObject(1)
+local ALLIES_PURCHASE_PREMIUM_BUTTON = script:GetCustomProperty("ALLIES_PURCHASE_PREMIUM_BUTTON"):WaitForObject(1)
+local AXIS_PURCHASE_PREMIUM_BUTTON = script:GetCustomProperty("AXIS_PURCHASE_PREMIUM_BUTTON"):WaitForObject(1)
 local ALLIES_PREMIUM_TANK_ID = script:GetCustomProperty("AlliesPremiumTankId")
 local AXIS_PREMIUM_TANK_ID = script:GetCustomProperty("AxisPremiumTankId")
-local ALLIES_PURCHASED_BUTTON = script:GetCustomProperty("ALLIES_PURCHASED_BUTTON"):WaitForObject()
-local AXIS_PURCHASED_BUTTON = script:GetCustomProperty("AXIS_PURCHASED_BUTTON"):WaitForObject()
-local ALLIES_BUY_BUTTON = script:GetCustomProperty("ALLIES_BUY_BUTTON"):WaitForObject()
-local AXIS_BUY_BUTTON = script:GetCustomProperty("AXIS_BUY_BUTTON"):WaitForObject()
+local ALLIES_PURCHASED_BUTTON = script:GetCustomProperty("ALLIES_PURCHASED_BUTTON"):WaitForObject(1)
+local AXIS_PURCHASED_BUTTON = script:GetCustomProperty("AXIS_PURCHASED_BUTTON"):WaitForObject(1)
+local ALLIES_BUY_BUTTON = script:GetCustomProperty("ALLIES_BUY_BUTTON"):WaitForObject(1)
+local AXIS_BUY_BUTTON = script:GetCustomProperty("AXIS_BUY_BUTTON"):WaitForObject(1)
 local Constants_API = require(script:GetCustomProperty("Constants_API"))
-
-local TANK_LIST = Constants_API:WaitForConstant("Tanks").GetTanks()
+local TankAPI = Constants_API:WaitForConstant("Tanks")
+local TANK_LIST = TankAPI.GetTanks()
 local ALLIES_TANKS = {}
 local AXIS_TANKS = {}
 
 -- SFX
-local SFX_CLICK = script:GetCustomProperty("SFX_CLICK"):WaitForObject()
-local SFX_HOVER = script:GetCustomProperty("SFX_HOVER"):WaitForObject()
-local SFX_UNHOVERED = script:GetCustomProperty("SFX_UNHOVERED"):WaitForObject()
-local SFX_DENIED = script:GetCustomProperty("SFX_DENIED"):WaitForObject()
-local SFX_EQUIP_TANK = script:GetCustomProperty("SFX_EQUIP_TANK"):WaitForObject()
+local SFX_CLICK = script:GetCustomProperty("SFX_CLICK"):WaitForObject(1)
+local SFX_HOVER = script:GetCustomProperty("SFX_HOVER"):WaitForObject(1)
+local SFX_UNHOVERED = script:GetCustomProperty("SFX_UNHOVERED"):WaitForObject(1)
+local SFX_DENIED = script:GetCustomProperty("SFX_DENIED"):WaitForObject(1)
+local SFX_EQUIP_TANK = script:GetCustomProperty("SFX_EQUIP_TANK"):WaitForObject(1)
 
 -- Local properties
 local TANK_ENTRY_Y_OFFSET = 40
@@ -356,7 +356,7 @@ end
 
 function TogglePremiumTankOwnedState()
 	local alliesTankId = ALLIES_PREMIUM_TANK_ID	
-	local alliesPurchaseCosts = UTIL_API.GetPurchaseCost(alliesTankId)
+	local alliesPurchaseCosts = TankAPI.GetPurchaseCost(alliesTankId)
 	print ("Owns Allies Tank: " .. tostring(UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, alliesTankId)))
 	if UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, alliesTankId) then
 		ALLIES_BUY_BUTTON.visibility = Visibility.FORCE_OFF
@@ -375,7 +375,7 @@ function TogglePremiumTankOwnedState()
 	end
 
 	local axisTankId = AXIS_PREMIUM_TANK_ID
-	local axisPurchaseCosts = UTIL_API.GetPurchaseCost(axisTankId)
+	local axisPurchaseCosts = TankAPI.GetPurchaseCost(axisTankId)
 	if UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, axisTankId) then
 		AXIS_BUY_BUTTON.visibility = Visibility.FORCE_OFF
 		AXIS_PURCHASED_BUTTON.visibility = Visibility.FORCE_ON
@@ -396,7 +396,7 @@ end
 function PurchaseAlliesPremiumTank()
 	local tankId = ALLIES_PREMIUM_TANK_ID
 	if not UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, tankId) then
-		local purchaseCosts = UTIL_API.GetPurchaseCost(tankId)
+		local purchaseCosts = TankAPI.GetPurchaseCost(tankId)
 		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < purchaseCosts.amount then
 			SFX_DENIED:Play()
 			return
@@ -419,7 +419,7 @@ end
 function PurchaseAxisPremiumTank()
 	local tankId = AXIS_PREMIUM_TANK_ID
 	if not UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, tankId) then
-		local purchaseCosts = UTIL_API.GetPurchaseCost(tankId)
+		local purchaseCosts = TankAPI.GetPurchaseCost(tankId)
 		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < purchaseCosts.amount then
 			SFX_DENIED:Play()
 			return
@@ -460,7 +460,7 @@ function HoverAlliesPurchase(button)
 	TogglePremiumTankOwnedState()
 	local tankId = ALLIES_PREMIUM_TANK_ID
 	if not UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, tankId) then
-		local purchaseCosts = UTIL_API.GetPurchaseCost(tankId)
+		local purchaseCosts = TankAPI.GetPurchaseCost(tankId)
 		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < purchaseCosts.amount then
 			button.parent:FindDescendantByName("Insufficient Funds Panel").visibility = Visibility.FORCE_ON			
 		end
@@ -472,7 +472,7 @@ function HoverAxisPurchase(button)
 	TogglePremiumTankOwnedState()
 	local tankId = AXIS_PREMIUM_TANK_ID
 	if not UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, tankId) then
-		local purchaseCosts = UTIL_API.GetPurchaseCost(tankId)
+		local purchaseCosts = TankAPI.GetPurchaseCost(tankId)
 		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < purchaseCosts.amount then
 			button.parent:FindDescendantByName("Insufficient Funds Panel").visibility = Visibility.FORCE_ON			
 		end

@@ -1,8 +1,8 @@
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
+local _Constants_API = require(script:GetCustomProperty("Constants_API"))
 
-local KEYS = script:GetCustomProperty("Keys"):WaitForObject()
-local PLAYER_SHARED_STORAGE = KEYS:GetCustomProperty("Skins")
+local PLAYER_SHARED_STORAGE =  _Constants_API:WaitForConstant("Storage_Keys").Skins
 
 local DATA_TRANSFER = script:GetCustomProperty("DataTransfer"):WaitForObject()
 local DATA_TRANSFER_OBJECT = script:GetCustomProperty("DataTransferObject")
@@ -43,8 +43,10 @@ end
 
 function OnPlayerLeft(player)
 
-	dataTransferSet[player]:Destroy()
-	dataTransferSet[player] = nil
+	if Object.IsValid(dataTransferSet[player]) then
+		dataTransferSet[player]:Destroy()
+		dataTransferSet[player] = nil
+	end
 
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 		
@@ -253,7 +255,9 @@ function Initialize()
 end
 
 Initialize()
-
+for key, player in pairs(Game.GetPlayers()) do
+	OnPlayerJoined(player)
+end
 Events.ConnectForPlayer("PURCHASE_SKIN", OnPurchaseSkin)
 Events.ConnectForPlayer("EQUIP_SKIN", OnEquipSkin)
 Game.playerJoinedEvent:Connect(OnPlayerJoined)

@@ -21,14 +21,15 @@ local SFX_UNHOVERED = script:GetCustomProperty("SFX_UNHOVERED"):WaitForObject()
 local LEADERBOARDS_ENTRY = script:GetCustomProperty("LEADERBOARDS_ENTRY")
 
 local NETWORKED = script:GetCustomProperty("Leaderboards_Networked"):WaitForObject()
+local _Constants_API = require(script:GetCustomProperty("Constants_API"))
+local KEYS =  _Constants_API:WaitForConstant("Storage_Keys") 
+local LEADBOARDS = KEYS.Leaderboards
 
-
-local LEADBOARDS = script:GetCustomProperty("Leaderboards"):WaitForObject()
-local MTD_LEADERBOARD = LEADBOARDS:GetCustomProperty("MatchDestroyed")
-local MDD_LEADERBOARD = LEADBOARDS:GetCustomProperty("MatchDamage")
-local LTTD_LEADERBOARD = LEADBOARDS:GetCustomProperty("TotalDestroyed")
-local LTDD_LEADERBOARD = LEADBOARDS:GetCustomProperty("TotalDamage")
-local LTWR_LEADERBOARD = LEADBOARDS:GetCustomProperty("TotalWinRate")
+local MTD_LEADERBOARD = LEADBOARDS.MatchDestroyed
+local MDD_LEADERBOARD = LEADBOARDS.MatchDamage
+local LTTD_LEADERBOARD = LEADBOARDS.TotalDestroyed
+local LTDD_LEADERBOARD = LEADBOARDS.TotalDamage
+local LTWR_LEADERBOARD = LEADBOARDS.TotalWinRate
 
 --#TODO not able to scale, should have this all on custom properties.
 local leaderBoards = {

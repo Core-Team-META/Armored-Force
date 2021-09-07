@@ -143,28 +143,28 @@ function OnJoin(player)
 end
 
 function OnLeft(player)
-
-	if consumables[player.id].trackRepair and consumables[player.id].trackRepair.ability then
-		consumables[player.id].trackRepair.ability.owner = nil
-		consumables[player.id].trackRepair.listener:Disconnect()
-		consumables[player.id].trackRepair.ability:Destroy()
-		consumables[player.id].trackRepair.ability = nil
+	if consumables[player.id] then 
+		if consumables[player.id].trackRepair and consumables[player.id].trackRepair.ability then
+			consumables[player.id].trackRepair.ability.owner = nil
+			consumables[player.id].trackRepair.listener:Disconnect()
+			consumables[player.id].trackRepair.ability:Destroy()
+			consumables[player.id].trackRepair.ability = nil
+		end
+		
+		if consumables[player.id].fireExtinguisher and consumables[player.id].fireExtinguisher.ability then	
+			consumables[player.id].fireExtinguisher.ability.owner = nil
+			consumables[player.id].fireExtinguisher.listener:Disconnect()
+			consumables[player.id].fireExtinguisher.ability:Destroy()
+			consumables[player.id].fireExtinguisher.ability = nil
+		end
+		
+		if consumables[player.id].turretKit and consumables[player.id].turretKit.ability then
+			consumables[player.id].turretKit.ability.owner = nil
+			consumables[player.id].turretKit.listener:Disconnect()
+			consumables[player.id].turretKit.ability:Destroy()
+			consumables[player.id].turretKit.ability = nil
+		end
 	end
-	
-	if consumables[player.id].fireExtinguisher and consumables[player.id].fireExtinguisher.ability then	
-		consumables[player.id].fireExtinguisher.ability.owner = nil
-		consumables[player.id].fireExtinguisher.listener:Disconnect()
-		consumables[player.id].fireExtinguisher.ability:Destroy()
-		consumables[player.id].fireExtinguisher.ability = nil
-	end
-	
-	if consumables[player.id].turretKit and consumables[player.id].turretKit.ability then
-		consumables[player.id].turretKit.ability.owner = nil
-		consumables[player.id].turretKit.listener:Disconnect()
-		consumables[player.id].turretKit.ability:Destroy()
-		consumables[player.id].turretKit.ability = nil
-	end
-
 end
 
 Events.Connect("ToggleConsumable", ToggleAbility)
