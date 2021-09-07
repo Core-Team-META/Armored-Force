@@ -2,7 +2,7 @@ Name: "TW2_SpawnPoints"
 RootId: 4965067273124672211
 Objects {
   Id: 5939211367935874922
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 2"
   Transform {
     Location {
       X: 21068.7695
@@ -37,7 +37,7 @@ Objects {
 }
 Objects {
   Id: 4477350991828017677
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 2"
   Transform {
     Location {
       X: 23080.7227
@@ -72,7 +72,7 @@ Objects {
 }
 Objects {
   Id: 5985292026005779324
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 2"
   Transform {
     Location {
       X: 24251.752
@@ -107,7 +107,7 @@ Objects {
 }
 Objects {
   Id: 4134687222286043378
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 2"
   Transform {
     Location {
       X: 23286.8047
@@ -142,7 +142,7 @@ Objects {
 }
 Objects {
   Id: 11282399702332670292
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 2"
   Transform {
     Location {
       X: 21704.1152
@@ -177,7 +177,7 @@ Objects {
 }
 Objects {
   Id: 7411773444401542306
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 2"
   Transform {
     Location {
       X: 20132.8359
@@ -212,7 +212,7 @@ Objects {
 }
 Objects {
   Id: 1734404583836369623
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 2"
   Transform {
     Location {
       X: 21340.7949
@@ -247,7 +247,7 @@ Objects {
 }
 Objects {
   Id: 13248432423774206034
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 2"
   Transform {
     Location {
       X: 19509.0098
@@ -282,7 +282,7 @@ Objects {
 }
 Objects {
   Id: 8641851438271780694
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 1"
   Transform {
     Location {
       X: -18852.916
@@ -317,7 +317,7 @@ Objects {
 }
 Objects {
   Id: 14405582503081040127
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 1"
   Transform {
     Location {
       X: -20595.4961
@@ -352,7 +352,7 @@ Objects {
 }
 Objects {
   Id: 9953260908235908254
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 1"
   Transform {
     Location {
       X: -23716.6055
@@ -387,7 +387,7 @@ Objects {
 }
 Objects {
   Id: 13661188411569789626
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 1"
   Transform {
     Location {
       X: -16809.5703
@@ -422,7 +422,7 @@ Objects {
 }
 Objects {
   Id: 8314381888673487895
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 1"
   Transform {
     Location {
       X: -19276.7559
@@ -457,7 +457,7 @@ Objects {
 }
 Objects {
   Id: 2270867798794831817
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 1"
   Transform {
     Location {
       X: -21161.2461
@@ -492,7 +492,7 @@ Objects {
 }
 Objects {
   Id: 4781284579470855771
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 1"
   Transform {
     Location {
       X: -22649.916
@@ -527,7 +527,7 @@ Objects {
 }
 Objects {
   Id: 16813558807825262224
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 1"
   Transform {
     Location {
       X: -23914.8223

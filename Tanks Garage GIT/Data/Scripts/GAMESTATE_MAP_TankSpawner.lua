@@ -229,7 +229,7 @@ function SpawnTestAI(player)
 	SpawnAITank(player:GetWorldPosition() + offset, player.team % 2 + 1)
 end
 
-Events.Connect("FILL_TEAMS_WITH_AI", FillTeamsWithAI)
+--Events.Connect("FILL_TEAMS_WITH_AI", FillTeamsWithAI)
 Events.Connect("REMOVE_ALL_AI", RemoveAllAI)
 
 Events.Connect("SPAWN_TEST_AI", SpawnTestAI)

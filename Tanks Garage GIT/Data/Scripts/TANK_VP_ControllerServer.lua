@@ -498,6 +498,7 @@ function FireProjectile(player)
 	end
 
 	local firedProjectile = Projectile.Spawn(projectile, muzzle:GetWorldPosition(), aimVector)
+	firedProjectile.speed = 0
 	
 	if player:IsA("Player") then
 		firedProjectile.owner = player
@@ -508,12 +509,14 @@ function FireProjectile(player)
 	firedProjectile.lifeSpan = 5
 	firedProjectile.capsuleRadius = projectileRadius 
 	firedProjectile.capsuleLength = projectileLength * 5
-	firedProjectile.speed = projectileSpeed
 	
 	firedProjectile.lifeSpanEndedEvent:Connect(ProjectileExpired)
 	firedProjectile.impactEvent:Connect(ProjectileImpacted)
 	
+	Task.Wait()
+	
 	firedProjectile.shouldDieOnImpact = true
+	firedProjectile.speed = projectileSpeed
 	
 	Events.BroadcastToAllPlayers("ANIMATE_FIRING", player.id, reloadTime)
 
@@ -575,13 +578,13 @@ end
 
 function OnArmorHit(trigger, other)	
 	if other.type == "Projectile" and other.owner ~= driver then
-        local enemyPlayer = other.owner
-		if enemyPlayer == nil then
+        local enemyPlayer = other.owner -- for player
+		if not enemyPlayer then -- for bot
 			--enemyPlayer = AIPlayer.FindAIDriver(other)
 			enemyPlayer = other.serverUserData.owner
 		end
-
-		if other.serverUserData.hitOnce then
+		
+		if not enemyPlayer or other.serverUserData.hitOnce then -- if projectile is marked or does not have owner yet
 			return
 		end
 		
@@ -632,6 +635,8 @@ function OnArmorHit(trigger, other)
 			if enemyPlayer:IsA("AIPlayer") then
 				enemyPlayer:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
 			end
+			
+			print(enemyPlayer.name .. " dealing " .. tostring(totalDamage) .. to .. driver.name)
 		end
 		
         local dmgPercent = totalDamage / potentialDamage
@@ -812,16 +817,13 @@ function OnArmorHit(trigger, other)
 				enemyPlayer:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
 			end
 	   	end
-
-		
-    
+	   	
 	if enemyPlayer:IsA("Player") then
 		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", ramDamage, armorName, trigger:GetWorldPosition(), driver.id)
   	end
   	if driver:IsA("Player") then
 		Events.BroadcastToPlayer(driver, "ShowHitFeedback", ramDamage, armorName, trigger:GetWorldPosition())
 	end
-
 		
 		if otherVehicleSpeed > thisVehicleSpeed then
 			return
