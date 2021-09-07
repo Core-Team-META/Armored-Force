@@ -94,7 +94,7 @@ end
 
 function UpdateContent()
 	-- Team
-	
+	if not Object.IsValid(myPlayer) then return end
 	if myPlayer == localPlayer and CIRCLE:GetColor() ~= Color.ORANGE then
 		local rot = myPlayer:GetWorldRotation()
 		local viewRot = myPlayer:GetViewWorldRotation()
