@@ -1,5 +1,4 @@
 -- API
-local Constants_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local _Constants_API = require(script:GetCustomProperty("Constants_API"))
 
 local UTIL = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
@@ -19,7 +18,7 @@ end
 
 local IMAGE_API = _G.PORTAL_IMAGES
 local Tank_API = _Constants_API:WaitForConstant("Tanks")
-
+local NUMBEROFTANKS = Tank_API.NumberOfTanks()
 local TANK_LIST = Tank_API.GetTanks()
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
@@ -171,7 +170,7 @@ function PopulateQuickSelectPanel()
     -- end
     expectedEquip = nil
 
-    TANKS_OWNED.text = "Tanks owned : " .. tostring(tankCount) .. " / " .. tostring(Constants_API.GetNumberOfTanks())
+    TANKS_OWNED.text = "Tanks owned : " .. tostring(tankCount) .. " / " .. tostring(NUMBEROFTANKS)
 end
 
 function ClearPanel()

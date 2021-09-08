@@ -1,9 +1,10 @@
-local CONST = require(script:GetCustomProperty('MetaAbilityProgressionConstants_API'))
+
 local UTIL = require(script:GetCustomProperty('MetaAbilityProgressionUTIL_API'))
 local _Constants_API = require(script:GetCustomProperty('Constants_API'))
 local KEYS = _Constants_API:WaitForConstant('Storage_Keys')
 local STORAGE_NET_REF = KEYS.Achievements
-local TANK_CONTENT = _Constants_API:WaitForConstant('Tanks').GetTanks()
+local TankAPI = _Constants_API:WaitForConstant('Tanks') 
+local TANK_CONTENT = TankAPI.GetTanks()
 
 local tankTbl = {}
 local playerDailyTbl = {}
@@ -15,7 +16,7 @@ local function BuildTankTable()
 end
 
 local function SetDailyBonusStatus(player)
-    local currentId = player:GetResource(CONST.GetEquippedTankResource())
+    local currentId = player:GetResource(TankAPI.EquipResource)
     for tankId, value in pairs(playerDailyTbl[player.id]) do
         if tankId == currentId and tonumber(value) == 0 then
             player:SetResource('DAILY_BONUS', 1)
@@ -26,7 +27,7 @@ local function SetDailyBonusStatus(player)
 end
 
 function SetWinning(player)
-    local tankId = player:GetResource(CONST.GetEquippedTankResource())
+    local tankId = player:GetResource(TankAPI.EquipResource)
     if playerDailyTbl[player.id] and player:GetResource('DAILY_BONUS') == 1 then
         playerDailyTbl[player.id][tankId] = 1
     end

@@ -1,9 +1,8 @@
-local CONST = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 local CHOSEN_TANKNAME = script:GetCustomProperty("CHOSEN_TANKNAME"):WaitForObject() 
 local Constants_API = require(script:GetCustomProperty("Constants_API"))
-
-local tankTbl = Constants_API:WaitForConstant("Tanks").GetTanks()
+local TankAPI = Constants_API:WaitForConstant("Tanks")
+local tankTbl = TankAPI.GetTanks()
 
 local function SetTankInfo(value) 
     local tank = tankTbl[value] 
@@ -19,11 +18,11 @@ end
 function Init()
  
     Task.Wait(2)
-    SetTankInfo(LOCAL_PLAYER:GetResource(CONST.GetEquippedTankResource()))
+    SetTankInfo(LOCAL_PLAYER:GetResource(TankAPI.EquipResource))
 end
 
 function OnResourceChanged(player, key, value)
-    if key == CONST.GetEquippedTankResource() then 
+    if key == TankAPI.EquipResource then 
         SetTankInfo(value)
     end
 end

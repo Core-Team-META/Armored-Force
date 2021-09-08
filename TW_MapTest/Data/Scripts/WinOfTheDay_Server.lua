@@ -2,7 +2,6 @@ local CONST = require(script:GetCustomProperty("MetaAbilityProgressionConstants_
 local UTIL = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 
 local KEYS = script:GetCustomProperty("Keys"):WaitForObject()
-local TANK_CONTENT = script:GetCustomProperty("TechTree_Contents"):WaitForObject()
 
 local STORAGE_NET_REF = KEYS:GetCustomProperty("Achievements")
 

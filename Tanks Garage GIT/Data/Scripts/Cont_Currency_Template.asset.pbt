@@ -17,6 +17,10 @@ Assets {
         String: ""
       }
       Overrides {
+        Name: "cs:ResourceName"
+        String: ""
+      }
+      Overrides {
         Name: "cs:Icon"
         AssetReference {
           Id: 841534158063459245

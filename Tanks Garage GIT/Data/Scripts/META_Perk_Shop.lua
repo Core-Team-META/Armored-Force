@@ -85,7 +85,7 @@ local function OnSaveCurrencyData(player)
     local currencyData = Storage.GetSharedPlayerData(STORAGE_KEY, player)
     local playerCurrency = {}
     for index, resName in pairs(CURRENCY) do
-        currencyData[resName.Name] = player:GetResource(resName.Name)
+        currencyData[resName.ResourceName] = player:GetResource(resName.ResourceName)
     end
     Storage.SetSharedPlayerData(STORAGE_KEY, player, currencyData)
 end
@@ -163,7 +163,7 @@ end
 
 -- If player spend and earns the currency resource, update the storage
 function OnResourceChanged(player, resource)
-    if resource == CURRENCY.GOLD.Name or resource == CURRENCY.SILVER.Name then
+    if resource == CURRENCY.GOLD.ResourceName or resource == CURRENCY.SILVER.ResourceName then
         OnSaveCurrencyData(player)
     end
 end

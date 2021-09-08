@@ -94,7 +94,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Name"
-            String: "Silver"
+            String: "SILVER"
           }
           Overrides {
             Name: "cs:Icon"
@@ -104,6 +104,10 @@ Assets {
           }
           Overrides {
             Name: "cs:DisplayName"
+            String: "Silver"
+          }
+          Overrides {
+            Name: "cs:ResourceName"
             String: "Silver"
           }
         }
@@ -159,6 +163,10 @@ Assets {
             Name: "cs:DisplayName"
             String: "Gold"
           }
+          Overrides {
+            Name: "cs:ResourceName"
+            String: "Gold"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -212,6 +220,10 @@ Assets {
               Id: 7053705669844552709
             }
           }
+          Overrides {
+            Name: "cs:ResourceName"
+            String: "Free XP"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -259,6 +271,10 @@ Assets {
             Name: "cs:DisplayName"
             String: "XP"
           }
+          Overrides {
+            Name: "cs:ResourceName"
+            String: "XP"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -304,6 +320,10 @@ Assets {
           }
           Overrides {
             Name: "cs:DisplayName"
+            String: "Tank parts"
+          }
+          Overrides {
+            Name: "cs:ResourceName"
             String: "Tank parts"
           }
         }
@@ -358,6 +378,10 @@ Assets {
             AssetReference {
               Id: 15087097116682079611
             }
+          }
+          Overrides {
+            Name: "cs:ResourceName"
+            String: "Universal Tank Parts"
           }
         }
         Collidable_v2 {

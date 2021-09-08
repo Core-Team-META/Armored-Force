@@ -1,6 +1,5 @@
 -- API
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
-local Constants_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 
 -- Menu
 local BUTTON_PREMIUM_SHOP = script:GetCustomProperty("BUTTON_PREMIUM_SHOP"):WaitForObject(1)
@@ -34,6 +33,7 @@ local AXIS_PURCHASED_BUTTON = script:GetCustomProperty("AXIS_PURCHASED_BUTTON"):
 local ALLIES_BUY_BUTTON = script:GetCustomProperty("ALLIES_BUY_BUTTON"):WaitForObject(1)
 local AXIS_BUY_BUTTON = script:GetCustomProperty("AXIS_BUY_BUTTON"):WaitForObject(1)
 local Constants_API = require(script:GetCustomProperty("Constants_API"))
+local CURRENCY = Constants_API:WaitForConstant("Currency")
 local TankAPI = Constants_API:WaitForConstant("Tanks")
 local TANK_LIST = TankAPI.GetTanks()
 local ALLIES_TANKS = {}
@@ -217,7 +217,7 @@ function ConvertSelectedTankRPClick(button)
 	SFX_CLICK:Play()
 	
 	local cost = UTIL_API.GetRPConversionCost(RPTradeTotal)
-	if cost > LOCAL_PLAYER:GetResource(Constants_API.GOLD) then
+	if cost > LOCAL_PLAYER:GetResource(CURRENCY.GOLD.ResourceName) then
 		warn("ERROR (Client): cannot afford conversion for Free RP")
 		return
 	end

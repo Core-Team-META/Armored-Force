@@ -1,11 +1,10 @@
-local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local _Constants_API = require(script:GetCustomProperty("Constants_API"))
 
-local TankApi =  _Constants_API:WaitForConstant("Tanks")
+local TankAPI =  _Constants_API:WaitForConstant("Tanks")
 
 local mainManagerServer = script:GetCustomProperty("MainManagerServer"):WaitForObject()
 local tankGarage = script:GetCustomProperty("TANK_VP_TankGarage"):WaitForObject()
-local tankCount = TankApi.NumberOfTanks()
+local tankCount = TankAPI.NumberOfTanks()
 
 local tankTemplates = script.parent
 local equippedTank = {}
@@ -16,10 +15,10 @@ function GetEquippedTankTemplate(player, id)
 		--print("Tank with given id found")
 		--print(id)
 		--print(tankTemplates:GetCustomProperty(id))
-		return TankApi.GetTankFromId(tonumber(id)).Main
+		return TankAPI.GetTankFromId(tonumber(id)).Main
 	else
 		--print("Returning default")
-		return TankApi.GetTankFromId(1).Main
+		return TankAPI.GetTankFromId(1).Main
 	end
 	
 end
@@ -84,7 +83,7 @@ function ChangeEquippedTank(player, id)
 
 	print("equip passed")
 	
-	player:SetResource(CONSTANTS_API.GetEquippedTankResource(), tonumber(id))
+	player:SetResource(TankAPI.EquipResource, tonumber(id))
 	RemovePlayerEquipment(player)
 	
 	if CheckPlayerState(player) then
@@ -115,7 +114,7 @@ end
 -- nil GivePlayerEquipment(Player)
 -- Gives the referenced equipment to the player
 function GivePlayerEquipment(player)
-	local resourceID =  player:GetResource(CONSTANTS_API.GetEquippedTankResource())
+	local resourceID =  player:GetResource(TankAPI.EquipResource)
 	local id = tostring(resourceID)
 	
 	if resourceID < 10 then

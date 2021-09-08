@@ -1,8 +1,9 @@
-local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 local _Constants_API = require(script:GetCustomProperty("Constants_API"))
 
 local TANK_INFO = _Constants_API:WaitForConstant("Tanks").GetTanks()
+local CURRENCY = _Constants_API:WaitForConstant("Currency")
+local TECHTREE = _Constants_API:WaitForConstant("TechTree")
 
 local goldBundles = {
 	[1] = script:GetCustomProperty("GoldBundle1"),
@@ -27,7 +28,7 @@ function CheckPerks(player, perk)
 	for p = 1, 3, 1 do
 		difference = player:GetPerkCount(goldBundles[p]) - player.serverUserData.GOLD_FROM_BUNDLE[p]
 		if difference > 0 then
-			player:AddResource(CONSTANTS_API.GOLD, difference * bundleAmounts[p])
+			player:AddResource(CURRENCY.GOLD.ResourceName, difference * bundleAmounts[p])
 			player.serverUserData.GOLD_FROM_BUNDLE[p] = player:GetPerkCount(goldBundles[p])
 		end
 	end	
@@ -47,7 +48,7 @@ function PurchasePremiumTank(player, tankId)
 		end
 	end
 	
-	if not cost or cost > player:GetResource(CONSTANTS_API.GOLD) then
+	if not cost or cost > player:GetResource(CURRENCY.GOLD.ResourceName) then
 		Events.BroadcastToPlayer(player, "PremTankPurchased", tankId, false)
 		print("purchase failed")
 		return
@@ -55,13 +56,13 @@ function PurchasePremiumTank(player, tankId)
 	
 	for x, t in pairs(player.serverUserData.techTreeProgress) do
 		if t.id == tankId and not t.purchased then
-			player:RemoveResource(CONSTANTS_API.GOLD, tonumber(cost))
+			player:RemoveResource(CURRENCY.GOLD.ResourceName, tonumber(cost))
 			
 			t.purchased = true
 			t.researched = true
-			t.weaponProgress = CONSTANTS_API.UPGRADE_PROGRESS.PURCHASED
-			t.armorProgress = CONSTANTS_API.UPGRADE_PROGRESS.PURCHASED
-			t.engineProgress = CONSTANTS_API.UPGRADE_PROGRESS.PURCHASED
+			t.weaponProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
+			t.armorProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
+			t.engineProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
 			
 			Events.BroadcastToPlayer(player, "PremTankPurchased", tankId, true)
 			print("purchase passed")
@@ -79,7 +80,7 @@ function ConvertToFreeXP(player, xpTankString, RPTradeTotal)
 	
 	local cost = UTIL_API.GetRPConversionCost(RPTradeTotal)
 	
-	if cost > player:GetResource(CONSTANTS_API.GOLD) then
+	if cost > player:GetResource(CURRENCY.GOLD.ResourceName) then
 		warn("ERROR (Server): cannot afford conversion for Free RP")
 		return
 	end
@@ -90,8 +91,8 @@ function ConvertToFreeXP(player, xpTankString, RPTradeTotal)
 		player:SetResource(UTIL_API.GetTankRPString(tonumber(s)), 0)
 	end
 		
-	player:AddResource(CONSTANTS_API.FREERP, totalXP)
-	player:RemoveResource(CONSTANTS_API.GOLD, tonumber(cost))
+	player:AddResource(CURRENCY.FREERP.ResourceName, totalXP)
+	player:RemoveResource(CURRENCY.GOLD.ResourceName, tonumber(cost))
 	
 end
 
