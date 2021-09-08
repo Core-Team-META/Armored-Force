@@ -133,7 +133,7 @@ function SpawnAITank(position, team, id)
     newAI.team = team
     newAI.tankId = id
     _G.lookup.tanks[newAI] = {team = newAI.team, tank = equippedTank[newAI]}
-    equippedTank[newAI].context.AssignDriver(newAI, position, true)
+    equippedTank[newAI].context.AssignDriver(newAI)
 end
 
 -- nil RemovePlayerEquipment(Player)
@@ -149,43 +149,44 @@ end
 -- Gives original equipment
 function OnPlayerJoined(player)
     player.spawnedEvent:Connect(OnPlayerRespawned)
-    --player:SetWorldPosition(Vector3.UP * 1000)
 
     local nonPlayerTeam = 1
     if player.team == 1 then
         nonPlayerTeam = 2
     end
-    --[[
-	SpawnAITank(player:GetWorldPosition() + Vector3.New(1000, 1000, 1000), team)
-]]
 
-    --[[
-	--teams
-	-- + player:GetWorldPosition()
-	for i = 1, 4 do
-		local offset = Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 30000 + Vector3.UP * 1000
-		SpawnAITank(offset, nonPlayerTeam)
-	end
-	for i = 1, 2 do
-		local offset = Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 30000 + Vector3.UP * 1000
-		SpawnAITank(offset, player.team)
-	end
-	]]
-
-    --[[
-	-- pairs
-	for i = 1, 2 do
-		local offset = Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 30000 + Vector3.UP * 1000
-		SpawnAITank(offset, i % 2 + 1 )
-	end
-
-]]
 end
 
 -- nil OnPlayerLeft(Player)
 -- Removes equipment
 function OnPlayerLeft(player)
-    RemovePlayerEquipment(player)
+	if true then
+			RemovePlayerEquipment(player)
+	else
+		-- Code to replace player tanks with AI controllers when players leave.
+		-- Currently disabled while I work on it.  -CJC
+
+		if equippedTank[player] and equippedTank[player]:IsValid() then
+			print(string.format("Converting player %s to AI.", player.name))
+			if Object.IsValid(_G.lookup.tanks[player].chassis) then
+				_G.lookup.tanks[player].chassis:RemoveDriver()
+			else
+				warn("Could not find chassis!!!")
+			end
+			local newAI = AIPlayer.New()
+			--newAI:SetWorldPosition(player:GetWorldPosition())
+			newAI.team = player.team
+			newAI.tankId = 34
+			newAI.name = "Robo-"..player.name
+			_G.lookup.tanks[newAI] = _G.lookup.tanks[player]
+			_G.lookup.tanks[player] = nil --{team = newAI.team, tank = equippedTank[newAI]}
+
+			equippedTank[newAI] = equippedTank[player]
+			equippedTank[player] = nil
+
+			equippedTank[newAI].context.AssignDriver(newAI)
+		end
+	end
 end
 
 function FillTeamsWithAI(teamSize, teamBalance)
