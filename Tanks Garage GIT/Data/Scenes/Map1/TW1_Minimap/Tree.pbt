@@ -265,7 +265,7 @@ Objects {
   ParentId: 26148042514551584
   ChildIds: 6305638154366607685
   ChildIds: 2041376987470878802
-  ChildIds: 5710145084287052893
+  ChildIds: 10483395453228517758
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -307,6 +307,70 @@ Objects {
   }
 }
 Objects {
+  Id: 10483395453228517758
+  Name: "UI Container"
+  Transform {
+    Location {
+      X: -5210.81055
+      Y: -1371.04395
+      Z: -8430
+    }
+    Rotation {
+      Yaw: -44.9999924
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3302597894179016669
+  ChildIds: 5710145084287052893
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+      ContentType {
+        Value: "mc:ecanvascontenttype:static"
+      }
+      Opacity: 1
+      IsHUD: true
+      CanvasWorldSize {
+        X: 1024
+        Y: 1024
+      }
+      RedrawTime: 30
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 5710145084287052893
   Name: "Gridlines Panel"
   Transform {
@@ -324,7 +388,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3302597894179016669
+  ParentId: 10483395453228517758
   ChildIds: 3665683563688442270
   ChildIds: 1259161365012735534
   ChildIds: 8887770639261738743

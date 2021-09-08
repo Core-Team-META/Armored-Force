@@ -62,7 +62,7 @@ Objects {
     }
     Canvas {
       ContentType {
-        Value: "mc:ecanvascontenttype:dynamic"
+        Value: "mc:ecanvascontenttype:static"
       }
       Opacity: 1
       IsHUD: true
