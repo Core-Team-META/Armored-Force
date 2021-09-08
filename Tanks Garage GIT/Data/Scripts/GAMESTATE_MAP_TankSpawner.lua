@@ -63,15 +63,18 @@ end
 
 function OnPlayerRespawned(player, playerStart)
     player:DisableRagdoll()
-
+    RemovePlayerEquipment(player)
+    
     --player.isVisible = false
-    Task.Wait(0.5)
+    Task.Wait(0.25)
+    
+    player:ResetVelocity()
+    
+    Task.Wait(0.25)
 
     if resetOverride then
         return
     end
-
-    RemovePlayerEquipment(player)
 
     local currentState = mainManagerServer:GetCustomProperty('GameState')
 

@@ -45,8 +45,8 @@ Const.MAPLINKS = {
 }
 
 Const.PORTALIMAGES = {
-    ImageHolder1 = '80e9b4/tanksportal-images1',
-    ImageHolder2 = '39cdb8/tanksportal-images2',
+    ImageHolder1 = '14abde/tanksportal-images1',
+    ImageHolder2 = 'b7933d/tanksportal-images2',
     ImageHolder3 = ''
 }
 
