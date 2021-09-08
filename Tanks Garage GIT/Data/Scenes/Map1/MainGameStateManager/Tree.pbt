@@ -70,7 +70,10 @@ Objects {
     Overrides {
       Name: "cs:TankSettings"
       ObjectReference {
-        SelfId: 17367108380574281693
+        SelfId: 7781804857004660996
+        SubObjectId: 11592647923584693331
+        InstanceId: 1604246116111474068
+        TemplateId: 13342367558272271329
       }
     }
     Overrides {
