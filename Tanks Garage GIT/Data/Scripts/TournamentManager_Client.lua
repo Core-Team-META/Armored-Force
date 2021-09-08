@@ -175,6 +175,9 @@ function Show()
 end
 
 function OnBindingPressed(player, action)
+	if Game.GetCurrentSceneName() == "Main" then
+		return
+	end
 	if currentState == STATE_WAITING and action == "ability_extra_37" then -- K
 		SetState(STATE_OUT)
 	elseif currentState == STATE_HIDDEN and action == "ability_extra_37" then
