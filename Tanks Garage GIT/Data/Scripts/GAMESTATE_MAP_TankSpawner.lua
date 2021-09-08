@@ -106,41 +106,32 @@ function GivePlayerEquipment(player, playerStart)
     equippedTank[player].context.AssignDriver(player, playerStart)
 end
 
-function SpawnAITank(position, team)
+function SpawnAITank(position, team, id)
     print('Spawning an AI tank...')
     --player.isVisible = false
 
     local currentState = mainManagerServer:GetCustomProperty('GameState')
-    --GivePlayerEquipment(player)
-
-    --local resourceID =  player:GetResource(CONSTANTS_API.GetEquippedTankResource())
-    local resourceID = 0
+   
+    local resourceID = id or team == 1 and 3 or team == 2 and 21 
     local id = tostring(resourceID)
 
     if resourceID < 10 then
         id = '0' .. tostring(resourceID)
     end
 
-    --[[
-	local newAI = {
-		GetHealth = function() return 100 end,
-		GetWorldPosition = function() return position end,
-		GetWorldRotation = function() return Rotation.New() end,
-		serverUserData = {},
-	}]]
     local newAI = AIPlayer.New()
     newAI:SetWorldPosition(position)
     local playerPosition = position
     local playerRotation = Rotation.New()
     equippedTank[newAI] =
         World.SpawnAsset(
-        GetEquippedTankTemplate(nil, -1),
+        GetEquippedTankTemplate(nil, id),
         {parent = tankGarage, position = playerPosition, rotation = playerRotation}
     )
     --print("spawned", equippedTank[newAI])
     Task.Wait(0.1)
     newAI.team = team
-    newAI.tankId = 34
+    newAI.tankId = id
     _G.lookup.tanks[newAI] = {team = newAI.team, tank = equippedTank[newAI]}
     equippedTank[newAI].context.AssignDriver(newAI, position, true)
 end
@@ -197,7 +188,7 @@ function OnPlayerLeft(player)
     RemovePlayerEquipment(player)
 end
 
-function FillTeamsWithAI(teamSize)
+function FillTeamsWithAI(teamSize, teamBalance)
     if teamSize == nil then
         teamSize = 2
     end
@@ -222,7 +213,7 @@ function SpawnTestAI(player)
     SpawnAITank(player:GetWorldPosition() + offset, player.team % 2 + 1)
 end
 
---Events.Connect("FILL_TEAMS_WITH_AI", FillTeamsWithAI)
+Events.Connect("FILL_TEAMS_WITH_AI", FillTeamsWithAI)
 Events.Connect('REMOVE_ALL_AI', RemoveAllAI)
 
 Events.Connect('SPAWN_TEST_AI', SpawnTestAI)

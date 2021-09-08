@@ -21,6 +21,7 @@ local Tutorial_OptOutPanel = script:GetCustomProperty("Tutorial_OptOutPanel"):Wa
 local Close = script:GetCustomProperty("Close"):WaitForObject()
 local Tutorial_UpgradeTankPanel = script:GetCustomProperty("Tutorial_UpgradeTankPanel"):WaitForObject()
 local CloseUpgradeTutorial = script:GetCustomProperty("CloseUpgradeTutorial"):WaitForObject()
+local Tutorial_UpgradeTankSidePanel = script:GetCustomProperty("Tutorial_UpgradeTankSidePanel"):WaitForObject()
 
 local EnemyTargetPracticeAI = script:GetCustomProperty("EnemyTargetPracticeAI"):WaitForObject()
 
@@ -44,20 +45,6 @@ Task.Wait(2)
 function Tick()
 	Task.Wait(0.2)
 	ToggleTutorialState()
-end
-
-function Init()
-	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) < API_Tutorial.TutorialPhase.Upgrade and not inShootingRange) then
-		Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_ON
-	else
-		Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_OFF
-	end
-	-- Show panel to upgrade tank
-	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.Upgrade and not inShootingRange) then
-		Tutorial_UpgradeTankPanel.visibility = Visibility.FORCE_ON
-	else
-		Tutorial_UpgradeTankPanel.visibility = Visibility.FORCE_OFF
-	end
 end
 
 function GotoShootingRange(button)
@@ -101,8 +88,6 @@ function UnhoverSound()
 	SFX_UNHOVERED:Play()
 end
 
-Init()
-
 function EnableComponent(obj)
 	if(obj == "SHOOTING_RANGE") then
 		inShootingRange = true
@@ -125,12 +110,24 @@ function ToggleTutorialState()
 	--JoinBattle.visibility = Visibility.FORCE_OFF
 	Tutorial_JoinBattlePanel.visibility = Visibility.FORCE_OFF
 	Tutorial_OptOutPanel.visibility = Visibility.FORCE_OFF
-	
-	if(tutorialProgress == API_Tutorial.TutorialPhase.Completed) then return end	
-	
+	Tutorial_UpgradeTankSidePanel.visibility = Visibility.FORCE_OFF
+
 	--warn("tutorial1")
 	--warn(tostring(LOCAL_PLAYER.clientUserData.tutorial1))	
+	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) < API_Tutorial.TutorialPhase.Upgrade and not inShootingRange) then
+		Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_ON
+	else
+		Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_OFF
+	end
+	-- Show panel to upgrade tank
+	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.Upgrade and not inShootingRange) then
+		Tutorial_UpgradeTankPanel.visibility = Visibility.FORCE_ON
+	else
+		Tutorial_UpgradeTankPanel.visibility = Visibility.FORCE_OFF
+	end
 
+	if(tutorialProgress == API_Tutorial.TutorialPhase.Completed) then return end	
+	
 	 --Show Tutorial Phase 1 (MovedToShootingRange)
 	if(tutorialProgress == API_Tutorial.TutorialPhase.MovedToShootingRange and inShootingRange) then
 		Tutorial_WaypointsPanel.visibility = Visibility.FORCE_ON
@@ -178,6 +175,11 @@ function ToggleTutorialState()
 	if(tutorialProgress == API_Tutorial.TutorialPhase.JoinBattle and inShootingRange) then
 		Tutorial_JoinBattlePanel.visibility = Visibility.FORCE_ON		
 	end
+
+	-- Show Tutorial Phase 6 (UpgradeTank)
+	if(tutorialProgress == API_Tutorial.TutorialPhase.Upgrade and inShootingRange) then
+		Tutorial_UpgradeTankSidePanel.visibility = Visibility.FORCE_ON
+	end
 	
 	-- Show panel to join battle
 	if(tutorialProgress >= API_Tutorial.TutorialPhase.JoinBattle and inShootingRange) then
@@ -185,7 +187,8 @@ function ToggleTutorialState()
 	end
 	
 	-- Show opt out panel
-	if(tutorialProgress < API_Tutorial.TutorialPhase.Completed and inShootingRange) then
+	-- TODO this should only show when less than completed, but tutorial is on hold for now until bug fixes are done
+	if(tutorialProgress < API_Tutorial.TutorialPhase.RepairTank and inShootingRange) then
 		Tutorial_OptOutPanel.visibility = Visibility.FORCE_ON
 		Tutorial_OptOutPanel:FindDescendantByName("TOTAL_SILVER_TEXT").text = string.format("%i Silver", API_Tutorial.GetTotalSilverFromTutorials())
 		Tutorial_OptOutPanel:FindDescendantByName("TOTAL_TP_TEXT").text = string.format("%i Universal Tank Parts", API_Tutorial.GetTotalTankPartsFromTutorials())
@@ -197,6 +200,8 @@ end
 function BindingPressed(player, binding)
 	if(binding == "ability_extra_54" and LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) < API_Tutorial.TutorialPhase.Completed) then
 		Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.Completed, false)
+	elseif(binding == "ability_extra_54" and LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.Completed) then
+		Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.None, false)
 	end
 end
 
@@ -210,15 +215,8 @@ function CloseUpgradeTutorialPopup()
 	Tutorial_UpgradeTankPanel.visibility = Visibility.FORCE_OFF
 end
 
-function OnResourceChanged(player, resource, value)
-	if resource == API_Tutorial.GetTutorialResource() then
-		Init()
-	end
-end
-
 Events.Connect("ENABLE_GARAGE_COMPONENT", EnableComponent)
 
-LOCAL_PLAYER.resourceChangedEvent:Connect(OnResourceChanged)
 LOCAL_PLAYER.bindingPressedEvent:Connect(BindingPressed)
 Close.clickedEvent:Connect(CloseTutorialPopup)
 Close.hoveredEvent:Connect(HoverSound)

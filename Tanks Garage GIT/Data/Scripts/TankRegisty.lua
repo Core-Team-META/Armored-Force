@@ -88,15 +88,15 @@ Tanks.TEAMS = {
 
 
 function Tanks.GetHighestDamage()
-	return 550
+	return 1000
 end
 
 function Tanks.GetHighestReload()
-	return 16
+	return 10
 end
 
 function Tanks.GetHighestTurretSpeed()
-	return 40
+	return 80
 end
 
 function Tanks.GetHighestHitPoints()
@@ -104,11 +104,11 @@ function Tanks.GetHighestHitPoints()
 end
 
 function Tanks.GetHighestTopSpeed()
-	return 2000
+	return 4100
 end
 
 function Tanks.GetHighestAcceleration()
-	return 1200
+	return 4500
 end
 
 function Tanks.GetHighestTraverse()
@@ -116,11 +116,11 @@ function Tanks.GetHighestTraverse()
 end
 
 function Tanks.GetHighestElevation()
-	return 30
+	return 35
 end
 
 function Tanks.GetHighestTurningSpeed() 
-	return 30
+	return 1500
 end
 
 Constants_API:Register('Tanks', Tanks)
