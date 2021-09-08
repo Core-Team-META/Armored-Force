@@ -151,45 +151,23 @@ end
 -- Gives original equipment
 function OnPlayerJoined(player)
     player.spawnedEvent:Connect(OnPlayerRespawned)
-    --player:SetWorldPosition(Vector3.UP * 1000)
 
     local nonPlayerTeam = 1
     if player.team == 1 then
         nonPlayerTeam = 2
     end
-    --[[
-	SpawnAITank(player:GetWorldPosition() + Vector3.New(1000, 1000, 1000), team)
-]]
 
-    --[[
-	--teams
-	-- + player:GetWorldPosition()
-	for i = 1, 4 do
-		local offset = Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 30000 + Vector3.UP * 1000
-		SpawnAITank(offset, nonPlayerTeam)
-	end
-	for i = 1, 2 do
-		local offset = Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 30000 + Vector3.UP * 1000
-		SpawnAITank(offset, player.team)
-	end
-	]]
-
-    --[[
-	-- pairs
-	for i = 1, 2 do
-		local offset = Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 30000 + Vector3.UP * 1000
-		SpawnAITank(offset, i % 2 + 1 )
-	end
-
-]]
 end
 
 -- nil OnPlayerLeft(Player)
 -- Removes equipment
 function OnPlayerLeft(player)
-	if false then 	-- replace with "if game not yet started"
+	if true then
 			RemovePlayerEquipment(player)
 	else
+		-- Code to replace player tanks with AI controllers when players leave.
+		-- Currently disabled while I work on it.  -CJC
+
 		if equippedTank[player] and equippedTank[player]:IsValid() then
 			print(string.format("Converting player %s to AI.", player.name))
 			if Object.IsValid(_G.lookup.tanks[player].chassis) then
