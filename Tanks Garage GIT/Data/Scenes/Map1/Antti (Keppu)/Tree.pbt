@@ -37496,9 +37496,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1210.05542
-            Y: -1627.93945
-            Z: 235.822906
+            X: 1672.32568
+            Y: -1889.52637
+            Z: 108.370941
           }
         }
         Overrides {
@@ -37506,7 +37506,7 @@ Objects {
           Rotator {
             Pitch: 6.79885864
             Yaw: -147.051636
-            Roll: -1.39462256
+            Roll: -1.3946228
           }
         }
         Overrides {
@@ -41094,13 +41094,13 @@ Objects {
   }
 }
 Objects {
-  Id: 11334371920541736413
-  Name: "TW_bg cosmetics"
+  Id: 11956939186599304772
+  Name: "Dividers"
   Transform {
     Location {
-      X: 24029.4062
-      Y: -23583.5762
-      Z: 678.732117
+      X: -27503.1172
+      Y: 14969.1074
+      Z: 183.971619
     }
     Rotation {
     }
@@ -41111,71 +41111,6 @@ Objects {
     }
   }
   ParentId: 4689494391382931675
-  ChildIds: 2421450049458700277
-  ChildIds: 7538939348193651981
-  ChildIds: 13411533552843896404
-  ChildIds: 8544944569363190739
-  ChildIds: 14329691728477596286
-  ChildIds: 5640840405192972562
-  ChildIds: 2633029473974092287
-  ChildIds: 7430710741170581748
-  ChildIds: 10284393082076602257
-  ChildIds: 14833917337663137043
-  ChildIds: 2077371781457199800
-  ChildIds: 15198774278037074984
-  ChildIds: 6759219890063524361
-  ChildIds: 9680250444224587071
-  ChildIds: 7052453269545342622
-  ChildIds: 13315607651901117563
-  ChildIds: 2747149223166499189
-  ChildIds: 8716839660567289672
-  ChildIds: 3213195203913252166
-  ChildIds: 16108046744201012973
-  ChildIds: 7507457248965094877
-  ChildIds: 16911504013271087646
-  ChildIds: 11670673138849488373
-  ChildIds: 14124455568668631135
-  ChildIds: 10154278826567770943
-  ChildIds: 2457646095857851168
-  ChildIds: 17726763293828569855
-  ChildIds: 15482319096882077679
-  ChildIds: 17224972902887130158
-  ChildIds: 3518499238900764799
-  ChildIds: 11956939186599304772
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 11956939186599304772
-  Name: "Dividers"
-  Transform {
-    Location {
-      X: -51532.5234
-      Y: 38552.6836
-      Z: -494.760498
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11334371920541736413
   ChildIds: 14418295405733545438
   ChildIds: 15965890119262313385
   ChildIds: 16151717832016079593
@@ -41235,7 +41170,6 @@ Objects {
     }
   }
   ParentId: 11956939186599304772
-  ChildIds: 14177333623042834328
   ChildIds: 297969669976055210
   ChildIds: 15984276660654497370
   ChildIds: 15804038639444583632
@@ -41243,6 +41177,7 @@ Objects {
   ChildIds: 15919778192493752612
   ChildIds: 18316333286518876104
   ChildIds: 8695222667256637050
+  ChildIds: 7596004343151188359
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -41257,6 +41192,226 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 7596004343151188359
+  Name: "colliders"
+  Transform {
+    Location {
+      X: 173.497681
+      Y: 1079.12903
+      Z: -86.6534195
+    }
+    Rotation {
+      Pitch: 0.161820829
+      Yaw: -3.83206177
+      Roll: 0.87609762
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7561915382660270542
+  ChildIds: 15136084124831778891
+  ChildIds: 10974806667976240235
+  ChildIds: 11724217447897379396
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11724217447897379396
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.00120544434
+      Y: -1398.66699
+      Z: 68.5682526
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352087691
+    }
+    Scale {
+      X: 14.6957722
+      Y: 10.0982742
+      Z: 10.198081
+    }
+  }
+  ParentId: 7596004343151188359
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 10974806667976240235
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.000820159912
+      Y: -476.450958
+      Z: 43.2260818
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352095179
+    }
+    Scale {
+      X: 23.3612709
+      Y: 10.0982761
+      Z: 10.198081
+    }
+  }
+  ParentId: 7596004343151188359
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 15136084124831778891
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.00127792358
+      Y: 362.661469
+      Z: 20.1692905
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999619
+      Roll: 0.0352104753
+    }
+    Scale {
+      X: 18.5300655
+      Y: 10.0982809
+      Z: 10.198081
+    }
+  }
+  ParentId: 7596004343151188359
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -41951,25 +42106,67 @@ Objects {
   }
 }
 Objects {
-  Id: 14177333623042834328
+  Id: 3688359193987978549
+  Name: "DividerMini"
+  Transform {
+    Location {
+      X: 34174.2578
+      Y: -34392.5664
+      Z: 501.532104
+    }
+    Rotation {
+      Yaw: -11.9657288
+      Roll: -2.08093262
+    }
+    Scale {
+      X: 0.663493395
+      Y: 0.663493395
+      Z: 0.663493395
+    }
+  }
+  ParentId: 11956939186599304772
+  ChildIds: 5801683764781176091
+  ChildIds: 684252368666142973
+  ChildIds: 5420028212562620499
+  ChildIds: 12680423755722624673
+  ChildIds: 943881996701590976
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 943881996701590976
   Name: "InvisibleStoneHedgeCollider_divider"
   Transform {
     Location {
-      X: 149.66687
-      Y: 584.889526
-      Z: 5.84608555
+      X: 105.488243
+      Y: 57.7409134
+      Z: -290.653839
     }
     Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
+      Pitch: 8.27256775
+      Yaw: -90.3406296
+      Roll: -1.07800424
     }
     Scale {
-      X: 9.77403545
-      Y: 10.0888309
-      Z: 31.1255817
+      X: 27.9280529
+      Y: 13.470645
+      Z: 15.3702917
     }
   }
-  ParentId: 7561915382660270542
+  ParentId: 3688359193987978549
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -41994,7 +42191,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 2330090075218241288
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -42007,47 +42204,6 @@ Objects {
       }
       BoundsScale: 1
     }
-  }
-}
-Objects {
-  Id: 3688359193987978549
-  Name: "DividerMini"
-  Transform {
-    Location {
-      X: 34174.2578
-      Y: -34392.5664
-      Z: 501.532104
-    }
-    Rotation {
-      Yaw: -11.9657288
-      Roll: -2.08093262
-    }
-    Scale {
-      X: 0.663493395
-      Y: 0.663493395
-      Z: 0.663493395
-    }
-  }
-  ParentId: 11956939186599304772
-  ChildIds: 5241197198080499852
-  ChildIds: 5801683764781176091
-  ChildIds: 684252368666142973
-  ChildIds: 5420028212562620499
-  ChildIds: 12680423755722624673
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
   }
 }
 Objects {
@@ -42450,25 +42606,67 @@ Objects {
   }
 }
 Objects {
-  Id: 5241197198080499852
+  Id: 921082846439593663
+  Name: "DividerMini"
+  Transform {
+    Location {
+      X: 28968.1172
+      Y: -29850.4082
+      Z: 7.59564209
+    }
+    Rotation {
+      Yaw: 0.0540220365
+      Roll: -2.08093262
+    }
+    Scale {
+      X: 0.663493395
+      Y: 0.663493395
+      Z: 0.663493395
+    }
+  }
+  ParentId: 11956939186599304772
+  ChildIds: 12139408051573592529
+  ChildIds: 3285036826067292534
+  ChildIds: 1649302819903472246
+  ChildIds: 8642941171706885349
+  ChildIds: 13420434546222567449
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13420434546222567449
   Name: "InvisibleStoneHedgeCollider_divider"
   Transform {
     Location {
-      X: 149.668503
-      Y: 105.79512
-      Z: 18.7200718
+      X: 105.983765
+      Y: 102.172539
+      Z: -322.618683
     }
     Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
+      Pitch: 2.08092642
+      Yaw: -90
+      Roll: -2.0809021
     }
     Scale {
-      X: 9.77406216
-      Y: 10.0888309
-      Z: 22.5848045
+      X: 27.6412144
+      Y: 12.0371208
+      Z: 15.3702917
     }
   }
-  ParentId: 3688359193987978549
+  ParentId: 921082846439593663
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -42493,7 +42691,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 2330090075218241288
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -42506,47 +42704,6 @@ Objects {
       }
       BoundsScale: 1
     }
-  }
-}
-Objects {
-  Id: 921082846439593663
-  Name: "DividerMini"
-  Transform {
-    Location {
-      X: 28968.1172
-      Y: -29850.4082
-      Z: 7.59564209
-    }
-    Rotation {
-      Yaw: 0.0540220365
-      Roll: -2.08093262
-    }
-    Scale {
-      X: 0.663493395
-      Y: 0.663493395
-      Z: 0.663493395
-    }
-  }
-  ParentId: 11956939186599304772
-  ChildIds: 18191887884351634064
-  ChildIds: 12139408051573592529
-  ChildIds: 3285036826067292534
-  ChildIds: 1649302819903472246
-  ChildIds: 8642941171706885349
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
   }
 }
 Objects {
@@ -42949,65 +43106,6 @@ Objects {
   }
 }
 Objects {
-  Id: 18191887884351634064
-  Name: "InvisibleStoneHedgeCollider_divider"
-  Transform {
-    Location {
-      X: 149.668503
-      Y: 105.79512
-      Z: 18.7200718
-    }
-    Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
-    }
-    Scale {
-      X: 9.77406216
-      Y: 10.0888309
-      Z: 22.5848045
-    }
-  }
-  ParentId: 921082846439593663
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.947286546
-        B: 0.960000038
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 16748103974499383899
   Name: "DividerMD"
   Transform {
@@ -43027,7 +43125,7 @@ Objects {
     }
   }
   ParentId: 11956939186599304772
-  ChildIds: 4472271121875675548
+  ChildIds: 14682878453364846531
   ChildIds: 14914305139652534668
   ChildIds: 7270383308888477946
   ChildIds: 15968348290842198772
@@ -43036,6 +43134,7 @@ Objects {
   ChildIds: 10893509036122229346
   ChildIds: 6802957610602997663
   ChildIds: 10955196273314792825
+  ChildIds: 1091017851918565993
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -43050,6 +43149,225 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 1091017851918565993
+  Name: "colliders"
+  Transform {
+    Location {
+      X: 71.3815231
+      Y: 261.850586
+      Z: -1.66893e-05
+    }
+    Rotation {
+      Yaw: -3.05175781e-05
+      Roll: 4.26886658e-07
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16748103974499383899
+  ChildIds: 3601448787164473524
+  ChildIds: 2829176676534493412
+  ChildIds: 18187222125059727076
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 18187222125059727076
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.000745201134
+      Y: -1076.36694
+      Z: 59.7121201
+    }
+    Rotation {
+      Pitch: -1.57396924
+      Yaw: 89.9999695
+      Roll: 0.0352087691
+    }
+    Scale {
+      X: 21.4398746
+      Y: 10.0982733
+      Z: 10.198081
+    }
+  }
+  ParentId: 1091017851918565993
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 2829176676534493412
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.000483238429
+      Y: -20.3150063
+      Z: 30.6923809
+    }
+    Rotation {
+      Pitch: -1.57396924
+      Yaw: 89.9999695
+      Roll: 0.0352095179
+    }
+    Scale {
+      X: 23.3612709
+      Y: 10.0982761
+      Z: 10.198081
+    }
+  }
+  ParentId: 1091017851918565993
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 3601448787164473524
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.00172621326
+      Y: 1096.6792
+      Z: 5.34057617e-05
+    }
+    Rotation {
+      Pitch: -1.57396924
+      Yaw: 89.9999619
+      Roll: 0.0352104753
+    }
+    Scale {
+      X: 21.4398746
+      Y: 10.0982733
+      Z: 10.198081
+    }
+  }
+  ParentId: 1091017851918565993
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -43864,22 +44182,23 @@ Objects {
   }
 }
 Objects {
-  Id: 4472271121875675548
+  Id: 14682878453364846531
   Name: "InvisibleStoneHedgeCollider_divider"
   Transform {
     Location {
-      X: 149.667969
-      Y: 153.724609
-      Z: 17.4319763
+      X: 169.630112
+      Y: 309.9198
+      Z: 13.1426296
     }
     Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
+      Pitch: 88.4274
+      Yaw: 90
+      Roll: 0.0339049585
     }
     Scale {
-      X: 9.76476288
-      Y: 10.0982533
-      Z: 40.0940285
+      X: 11.6221027
+      Y: 10.0982513
+      Z: 39.5520172
     }
   }
   ParentId: 16748103974499383899
@@ -43907,7 +44226,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 17858736014608014985
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -43943,7 +44262,6 @@ Objects {
     }
   }
   ParentId: 11956939186599304772
-  ChildIds: 6366048001956156337
   ChildIds: 15157314235206214065
   ChildIds: 5770380924154740623
   ChildIds: 7954309984535762505
@@ -43951,6 +44269,7 @@ Objects {
   ChildIds: 6670017194705651990
   ChildIds: 14593544789655328483
   ChildIds: 17541495577691559099
+  ChildIds: 1702452397027840701
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -43965,6 +44284,226 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 1702452397027840701
+  Name: "colliders"
+  Transform {
+    Location {
+      X: 126.051788
+      Y: 1059.1394
+      Z: -78.4736633
+    }
+    Rotation {
+      Pitch: 0.0338845663
+      Yaw: -1.39309692
+      Roll: -0.0048828125
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12239063810526808724
+  ChildIds: 9892202829588541944
+  ChildIds: 1440963338311397500
+  ChildIds: 9508382449888812657
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9508382449888812657
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.00120544434
+      Y: -1398.66699
+      Z: 68.5682526
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352087691
+    }
+    Scale {
+      X: 14.6957722
+      Y: 10.0982742
+      Z: 10.198081
+    }
+  }
+  ParentId: 1702452397027840701
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 1440963338311397500
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.000820159912
+      Y: -476.450958
+      Z: 43.2260818
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352095179
+    }
+    Scale {
+      X: 23.3612709
+      Y: 10.0982761
+      Z: 10.198081
+    }
+  }
+  ParentId: 1702452397027840701
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 9892202829588541944
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.00127792358
+      Y: 362.661469
+      Z: 20.1692905
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999619
+      Roll: 0.0352104753
+    }
+    Scale {
+      X: 18.5300655
+      Y: 10.0982809
+      Z: 10.198081
+    }
+  }
+  ParentId: 1702452397027840701
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -44659,65 +45198,6 @@ Objects {
   }
 }
 Objects {
-  Id: 6366048001956156337
-  Name: "InvisibleStoneHedgeCollider_divider"
-  Transform {
-    Location {
-      X: 149.66687
-      Y: 584.889526
-      Z: 5.84608555
-    }
-    Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
-    }
-    Scale {
-      X: 9.77403545
-      Y: 10.0888309
-      Z: 31.1255817
-    }
-  }
-  ParentId: 12239063810526808724
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.947286546
-        B: 0.960000038
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 2175168165650548729
   Name: "DividerMD"
   Transform {
@@ -44737,7 +45217,6 @@ Objects {
     }
   }
   ParentId: 11956939186599304772
-  ChildIds: 7755477806480115495
   ChildIds: 12506536166139399398
   ChildIds: 14132864070598981582
   ChildIds: 8044314651851373020
@@ -44746,6 +45225,7 @@ Objects {
   ChildIds: 13921791858750076536
   ChildIds: 6982744574434028250
   ChildIds: 4199557191863394969
+  ChildIds: 2630516293832965439
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -44760,6 +45240,223 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 2630516293832965439
+  Name: "colliders"
+  Transform {
+    Location {
+      X: 134.764175
+      Y: 303.883362
+      Z: -16.7940407
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2175168165650548729
+  ChildIds: 7885982758162324627
+  ChildIds: 13966713543698939164
+  ChildIds: 4756587220960125055
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4756587220960125055
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.000745201134
+      Y: -1076.36694
+      Z: 59.7121201
+    }
+    Rotation {
+      Pitch: -1.57396924
+      Yaw: 89.9999695
+      Roll: 0.0352087691
+    }
+    Scale {
+      X: 21.4398746
+      Y: 10.0982733
+      Z: 10.198081
+    }
+  }
+  ParentId: 2630516293832965439
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 13966713543698939164
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.000483238429
+      Y: -20.3150063
+      Z: 30.6923809
+    }
+    Rotation {
+      Pitch: -1.57396924
+      Yaw: 89.9999695
+      Roll: 0.0352095179
+    }
+    Scale {
+      X: 23.3612709
+      Y: 10.0982761
+      Z: 10.198081
+    }
+  }
+  ParentId: 2630516293832965439
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 7885982758162324627
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.00172621326
+      Y: 1096.6792
+      Z: 5.34057617e-05
+    }
+    Rotation {
+      Pitch: -1.57396924
+      Yaw: 89.9999619
+      Roll: 0.0352104753
+    }
+    Scale {
+      X: 21.4398746
+      Y: 10.0982733
+      Z: 10.198081
+    }
+  }
+  ParentId: 2630516293832965439
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -45575,67 +46272,8 @@ Objects {
   }
 }
 Objects {
-  Id: 7755477806480115495
-  Name: "InvisibleStoneHedgeCollider_divider"
-  Transform {
-    Location {
-      X: 149.667969
-      Y: 153.724609
-      Z: 17.4319763
-    }
-    Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
-    }
-    Scale {
-      X: 9.76476288
-      Y: 10.0982533
-      Z: 40.0940285
-    }
-  }
-  ParentId: 2175168165650548729
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.947286546
-        B: 0.960000038
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 306801492057620804
-  Name: "DividerLG"
+  Name: "DividerLGMD"
   Transform {
     Location {
       X: 21624.0664
@@ -45653,7 +46291,6 @@ Objects {
     }
   }
   ParentId: 11956939186599304772
-  ChildIds: 5811570707238030630
   ChildIds: 17004478434490825120
   ChildIds: 9987469671066964701
   ChildIds: 17009911102021409291
@@ -45662,7 +46299,7 @@ Objects {
   ChildIds: 12582141105415139424
   ChildIds: 9022440848408776029
   ChildIds: 9858882938434075304
-  ChildIds: 4882701097889637098
+  ChildIds: 12454257072641785728
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -45680,31 +46317,73 @@ Objects {
   }
 }
 Objects {
-  Id: 4882701097889637098
-  Name: "Rock 03"
+  Id: 12454257072641785728
+  Name: "colliders"
   Transform {
     Location {
-      X: 215.221283
-      Y: 2826.38794
-      Z: -14.159317
+      X: 94.585083
+      Y: 555.779114
+      Z: -64.4023285
     }
     Rotation {
-      Pitch: 69.3031
-      Yaw: -159.1091
-      Roll: -20.6563721
+      Pitch: -0.0205993652
+      Yaw: 179.742401
+      Roll: -3.84667969
     }
     Scale {
-      X: 4.30682755
-      Y: 3.32829714
-      Z: 3.32830095
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 306801492057620804
+  ChildIds: 9310422425628525239
+  ChildIds: 3595157149201682467
+  ChildIds: 16929080753716003561
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16929080753716003561
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -22.7224731
+      Y: -999.799744
+      Z: 104.023926
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999161
+      Roll: 0.0352109037
+    }
+    Scale {
+      X: 17.8098755
+      Y: 10.0982847
+      Z: 10.198081
+    }
+  }
+  ParentId: 12454257072641785728
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14823769434463567155
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
       }
     }
   }
@@ -45717,9 +46396,12 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
   CoreMesh {
     MeshAsset {
-      Id: 1908253659651347838
+      Id: 2330090075218241288
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -45727,6 +46409,128 @@ Objects {
     }
     StaticMesh {
       Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 3595157149201682467
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.0164794922
+      Y: 179.038849
+      Z: 51.1722488
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352095179
+    }
+    Scale {
+      X: 27.4988632
+      Y: 10.0982771
+      Z: 10.198081
+    }
+  }
+  ParentId: 12454257072641785728
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 9310422425628525239
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.00207519531
+      Y: 1552.3894
+      Z: -12.523201
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999619
+      Roll: 0.0352104753
+    }
+    Scale {
+      X: 21.8726673
+      Y: 10.0982895
+      Z: 10.198081
+    }
+  }
+  ParentId: 12454257072641785728
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
       }
       BoundsScale: 1
     }
@@ -46568,9 +47372,9 @@ Objects {
       Z: 63.5575562
     }
     Rotation {
-      Pitch: -0.130859584
+      Pitch: -0.130859375
       Yaw: 108.371193
-      Roll: -8.97213936
+      Roll: -8.97213745
     }
     Scale {
       X: 2.1570437
@@ -46612,25 +47416,67 @@ Objects {
   }
 }
 Objects {
-  Id: 5811570707238030630
+  Id: 18421727557858177872
+  Name: "DividerMini"
+  Transform {
+    Location {
+      X: 17396.75
+      Y: -23899.5156
+      Z: -71.285881
+    }
+    Rotation {
+      Yaw: 90.0540237
+      Roll: -2.08093262
+    }
+    Scale {
+      X: 0.779892325
+      Y: 0.779892325
+      Z: 0.779892325
+    }
+  }
+  ParentId: 11956939186599304772
+  ChildIds: 12746641178794104257
+  ChildIds: 17468776001303483850
+  ChildIds: 10878989490039238791
+  ChildIds: 14423422817333171797
+  ChildIds: 3738633027292461374
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 3738633027292461374
   Name: "InvisibleStoneHedgeCollider_divider"
   Transform {
     Location {
-      X: 149.66806
-      Y: 609.065857
-      Z: 5.19585609
+      X: 91.1963425
+      Y: -79.0999908
+      Z: -174.48056
     }
     Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
+      Pitch: -2.08093262
+      Yaw: 90
+      Roll: -2.0809021
     }
     Scale {
-      X: 9.76473331
-      Y: 10.0982533
-      Z: 50.4429436
+      X: 23.5157604
+      Y: 10.2405806
+      Z: 13.0762749
     }
   }
-  ParentId: 306801492057620804
+  ParentId: 18421727557858177872
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -46655,7 +47501,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 2330090075218241288
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -46668,47 +47514,6 @@ Objects {
       }
       BoundsScale: 1
     }
-  }
-}
-Objects {
-  Id: 18421727557858177872
-  Name: "DividerMini"
-  Transform {
-    Location {
-      X: 17396.75
-      Y: -23899.5156
-      Z: -71.285881
-    }
-    Rotation {
-      Yaw: 90.0540237
-      Roll: -2.08093262
-    }
-    Scale {
-      X: 0.779892325
-      Y: 0.779892325
-      Z: 0.779892325
-    }
-  }
-  ParentId: 11956939186599304772
-  ChildIds: 11039970481741532296
-  ChildIds: 12746641178794104257
-  ChildIds: 17468776001303483850
-  ChildIds: 10878989490039238791
-  ChildIds: 14423422817333171797
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
   }
 }
 Objects {
@@ -47111,65 +47916,6 @@ Objects {
   }
 }
 Objects {
-  Id: 11039970481741532296
-  Name: "InvisibleStoneHedgeCollider_divider"
-  Transform {
-    Location {
-      X: 149.668503
-      Y: 105.79512
-      Z: 18.7200718
-    }
-    Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
-    }
-    Scale {
-      X: 9.77406216
-      Y: 10.0888309
-      Z: 22.5848045
-    }
-  }
-  ParentId: 18421727557858177872
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.947286546
-        B: 0.960000038
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 18248001401727236915
   Name: "DividerLG"
   Transform {
@@ -47188,7 +47934,6 @@ Objects {
     }
   }
   ParentId: 11956939186599304772
-  ChildIds: 17633877857140328251
   ChildIds: 14393949142372656327
   ChildIds: 2660827842415418677
   ChildIds: 10104308951177413289
@@ -47197,6 +47942,7 @@ Objects {
   ChildIds: 8547321684997715552
   ChildIds: 16120914652078678848
   ChildIds: 8351402911744486483
+  ChildIds: 17940082633570019319
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -47211,6 +47957,287 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 17940082633570019319
+  Name: "colliders"
+  Transform {
+    Location {
+      X: 94.5860214
+      Y: 554.33667
+      Z: -85.8609085
+    }
+    Rotation {
+      Pitch: -0.0205993652
+      Yaw: 179.742401
+      Roll: -3.84667969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18248001401727236915
+  ChildIds: 10849778714361585018
+  ChildIds: 12765064961480735004
+  ChildIds: 12945990375430400516
+  ChildIds: 1988323717246421747
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1988323717246421747
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.00172093068
+      Y: -730.266
+      Z: 50.200489
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999161
+      Roll: 0.0352109037
+    }
+    Scale {
+      X: 30.7557335
+      Y: 10.0982838
+      Z: 10.198081
+    }
+  }
+  ParentId: 17940082633570019319
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 12945990375430400516
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.000381875783
+      Y: -1863.64392
+      Z: 81.3462524
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352087691
+    }
+    Scale {
+      X: 17.4089928
+      Y: 10.0983047
+      Z: 10.198081
+    }
+  }
+  ParentId: 17940082633570019319
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 12765064961480735004
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.000613966957
+      Y: 690.009888
+      Z: 11.1740608
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352095179
+    }
+    Scale {
+      X: 27.4988632
+      Y: 10.0982771
+      Z: 10.198081
+    }
+  }
+  ParentId: 17940082633570019319
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 10849778714361585018
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.00144851953
+      Y: 1758.3877
+      Z: -18.1835155
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999619
+      Roll: 0.0352104753
+    }
+    Scale {
+      X: 16.9133072
+      Y: 10.0982676
+      Z: 10.198081
+    }
+  }
+  ParentId: 17940082633570019319
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -48093,65 +49120,6 @@ Objects {
   }
 }
 Objects {
-  Id: 17633877857140328251
-  Name: "InvisibleStoneHedgeCollider_divider"
-  Transform {
-    Location {
-      X: 149.66806
-      Y: 609.065857
-      Z: 5.19585609
-    }
-    Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
-    }
-    Scale {
-      X: 9.76473331
-      Y: 10.0982533
-      Z: 50.4429436
-    }
-  }
-  ParentId: 18248001401727236915
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.947286546
-        B: 0.960000038
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 7154174294713353703
   Name: "DividerMD"
   Transform {
@@ -48170,7 +49138,6 @@ Objects {
     }
   }
   ParentId: 11956939186599304772
-  ChildIds: 5964395609071630989
   ChildIds: 13425663856200800883
   ChildIds: 14164462346482483691
   ChildIds: 5850057285309494435
@@ -48179,6 +49146,7 @@ Objects {
   ChildIds: 1717077869654293961
   ChildIds: 10892822748628127318
   ChildIds: 13531096533155836388
+  ChildIds: 11501475871338891875
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -48193,6 +49161,225 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 11501475871338891875
+  Name: "colliders"
+  Transform {
+    Location {
+      X: 137.27536
+      Y: 128.345612
+      Z: 3.52455139
+    }
+    Rotation {
+      Yaw: 6.83018607e-06
+      Roll: -1.57302856
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7154174294713353703
+  ChildIds: 12798956379981390334
+  ChildIds: 17513011118122558663
+  ChildIds: 18370467392794472252
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 18370467392794472252
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.000745201134
+      Y: -1076.36694
+      Z: 59.7121201
+    }
+    Rotation {
+      Pitch: -1.57396924
+      Yaw: 89.9999695
+      Roll: 0.0352087691
+    }
+    Scale {
+      X: 21.4398746
+      Y: 10.0982733
+      Z: 10.198081
+    }
+  }
+  ParentId: 11501475871338891875
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 17513011118122558663
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.000483238429
+      Y: -20.3150063
+      Z: 30.6923809
+    }
+    Rotation {
+      Pitch: -1.57396924
+      Yaw: 89.9999695
+      Roll: 0.0352095179
+    }
+    Scale {
+      X: 23.3612709
+      Y: 10.0982761
+      Z: 10.198081
+    }
+  }
+  ParentId: 11501475871338891875
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 12798956379981390334
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.00172621326
+      Y: 1096.6792
+      Z: 5.34057617e-05
+    }
+    Rotation {
+      Pitch: -1.57396924
+      Yaw: 89.9999619
+      Roll: 0.0352104753
+    }
+    Scale {
+      X: 21.4398746
+      Y: 10.0982733
+      Z: 10.198081
+    }
+  }
+  ParentId: 11501475871338891875
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -49008,65 +50195,6 @@ Objects {
   }
 }
 Objects {
-  Id: 5964395609071630989
-  Name: "InvisibleStoneHedgeCollider_divider"
-  Transform {
-    Location {
-      X: 149.667969
-      Y: 153.724609
-      Z: 17.4319763
-    }
-    Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
-    }
-    Scale {
-      X: 9.76476288
-      Y: 10.0982533
-      Z: 40.0940285
-    }
-  }
-  ParentId: 7154174294713353703
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.947286546
-        B: 0.960000038
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 14957161485987729133
   Name: "DividerLG"
   Transform {
@@ -49086,7 +50214,6 @@ Objects {
     }
   }
   ParentId: 11956939186599304772
-  ChildIds: 13557764747039243664
   ChildIds: 18070891542743015273
   ChildIds: 1034695595102412700
   ChildIds: 11730413338208246190
@@ -49096,6 +50223,7 @@ Objects {
   ChildIds: 17780199491833798210
   ChildIds: 17179026615596502243
   ChildIds: 3461258097474525263
+  ChildIds: 5725841763756530486
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -49110,6 +50238,287 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 5725841763756530486
+  Name: "colliders"
+  Transform {
+    Location {
+      X: 94.390625
+      Y: 511.17868
+      Z: -82.9591141
+    }
+    Rotation {
+      Pitch: -0.0205993652
+      Yaw: 179.742401
+      Roll: -3.84667969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14957161485987729133
+  ChildIds: 7776814653217364437
+  ChildIds: 7449180009791991072
+  ChildIds: 10168219409088367733
+  ChildIds: 17143028905778857278
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17143028905778857278
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.00172093068
+      Y: -730.266
+      Z: 50.200489
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999161
+      Roll: 0.0352109037
+    }
+    Scale {
+      X: 30.7557335
+      Y: 10.0982838
+      Z: 10.198081
+    }
+  }
+  ParentId: 5725841763756530486
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 10168219409088367733
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.000381875783
+      Y: -1863.64392
+      Z: 81.3462524
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352087691
+    }
+    Scale {
+      X: 17.4089928
+      Y: 10.0983047
+      Z: 10.198081
+    }
+  }
+  ParentId: 5725841763756530486
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 7449180009791991072
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.000613966957
+      Y: 690.009888
+      Z: 11.1740608
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352095179
+    }
+    Scale {
+      X: 27.4988632
+      Y: 10.0982771
+      Z: 10.198081
+    }
+  }
+  ParentId: 5725841763756530486
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 7776814653217364437
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.00144851953
+      Y: 1758.3877
+      Z: -18.1835155
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999619
+      Roll: 0.0352104753
+    }
+    Scale {
+      X: 16.9133072
+      Y: 10.0982676
+      Z: 10.198081
+    }
+  }
+  ParentId: 5725841763756530486
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -50045,65 +51454,6 @@ Objects {
   }
 }
 Objects {
-  Id: 13557764747039243664
-  Name: "InvisibleStoneHedgeCollider_divider"
-  Transform {
-    Location {
-      X: 149.66806
-      Y: 609.065857
-      Z: 5.19585609
-    }
-    Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
-    }
-    Scale {
-      X: 9.76473331
-      Y: 10.0982533
-      Z: 50.4429436
-    }
-  }
-  ParentId: 14957161485987729133
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.947286546
-        B: 0.960000038
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 1372130905670236636
   Name: "DividerSM"
   Transform {
@@ -50124,7 +51474,6 @@ Objects {
     }
   }
   ParentId: 11956939186599304772
-  ChildIds: 11637237019100685728
   ChildIds: 16426327955690590461
   ChildIds: 5545796695068497352
   ChildIds: 9537464564397291288
@@ -50132,6 +51481,7 @@ Objects {
   ChildIds: 11785818293603176564
   ChildIds: 5770214204334198224
   ChildIds: 8011619801139276760
+  ChildIds: 13212338745647053966
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -50146,6 +51496,226 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 13212338745647053966
+  Name: "colliders"
+  Transform {
+    Location {
+      X: 206.77272
+      Y: 189.103668
+      Z: -18.5277367
+    }
+    Rotation {
+      Pitch: 0.226482227
+      Yaw: -178
+      Roll: -1.95419312
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1372130905670236636
+  ChildIds: 5353885229400530302
+  ChildIds: 11051779619402694281
+  ChildIds: 10696681134000302577
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10696681134000302577
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.00122070312
+      Y: -1120.90979
+      Z: 60.9358788
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352087691
+    }
+    Scale {
+      X: 21.4398746
+      Y: 10.0982733
+      Z: 10.198081
+    }
+  }
+  ParentId: 13212338745647053966
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 11051779619402694281
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.000427246094
+      Y: -452.823029
+      Z: 42.5767593
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352095179
+    }
+    Scale {
+      X: 23.3612709
+      Y: 10.0982761
+      Z: 10.198081
+    }
+  }
+  ParentId: 13212338745647053966
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 5353885229400530302
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.00173950195
+      Y: 383.238312
+      Z: 19.6038971
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999619
+      Roll: 0.0352104753
+    }
+    Scale {
+      X: 18.5300655
+      Y: 10.0982809
+      Z: 10.198081
+    }
+  }
+  ParentId: 13212338745647053966
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -50840,25 +52410,68 @@ Objects {
   }
 }
 Objects {
-  Id: 11637237019100685728
+  Id: 18025959529081915471
+  Name: "DividerMini"
+  Transform {
+    Location {
+      X: -2417.42578
+      Y: -16287.3906
+      Z: -185.549484
+    }
+    Rotation {
+      Pitch: -0.361297607
+      Yaw: 90.0540237
+      Roll: -2.35083
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11956939186599304772
+  ChildIds: 3561054953275954292
+  ChildIds: 1039816450750595226
+  ChildIds: 15726617846927278009
+  ChildIds: 17729001560636617940
+  ChildIds: 18279716098256613121
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 18279716098256613121
   Name: "InvisibleStoneHedgeCollider_divider"
   Transform {
     Location {
-      X: 149.66687
-      Y: 584.889526
-      Z: 5.84608555
+      X: 150.508789
+      Y: -93.9518585
+      Z: -138.353577
     }
     Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
+      Pitch: -2.08563232
+      Yaw: 90.0198
+      Roll: 2.17332554
     }
     Scale {
-      X: 9.77403545
-      Y: 10.0888309
-      Z: 31.1255817
+      X: 23.5157604
+      Y: 10.2405806
+      Z: 13.0762749
     }
   }
-  ParentId: 1372130905670236636
+  ParentId: 18025959529081915471
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -50883,7 +52496,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 2330090075218241288
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -50896,48 +52509,6 @@ Objects {
       }
       BoundsScale: 1
     }
-  }
-}
-Objects {
-  Id: 18025959529081915471
-  Name: "DividerMini"
-  Transform {
-    Location {
-      X: -2417.42578
-      Y: -16287.3906
-      Z: -185.549484
-    }
-    Rotation {
-      Pitch: -0.361297607
-      Yaw: 90.0540237
-      Roll: -2.35083
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11956939186599304772
-  ChildIds: 9388876814299648852
-  ChildIds: 3561054953275954292
-  ChildIds: 1039816450750595226
-  ChildIds: 15726617846927278009
-  ChildIds: 17729001560636617940
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
   }
 }
 Objects {
@@ -51340,65 +52911,6 @@ Objects {
   }
 }
 Objects {
-  Id: 9388876814299648852
-  Name: "InvisibleStoneHedgeCollider_divider"
-  Transform {
-    Location {
-      X: 149.668503
-      Y: 105.79512
-      Z: 18.7200718
-    }
-    Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
-    }
-    Scale {
-      X: 9.77406216
-      Y: 10.0888309
-      Z: 22.5848045
-    }
-  }
-  ParentId: 18025959529081915471
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.947286546
-        B: 0.960000038
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 14580520777642422137
   Name: "DividerLG"
   Transform {
@@ -51417,7 +52929,6 @@ Objects {
     }
   }
   ParentId: 11956939186599304772
-  ChildIds: 7794367761736981742
   ChildIds: 5640706196139573574
   ChildIds: 13318478422866641009
   ChildIds: 1217164813140847929
@@ -51428,6 +52939,7 @@ Objects {
   ChildIds: 16301127846594909644
   ChildIds: 11012617632468637074
   ChildIds: 10786720797952053502
+  ChildIds: 10420271628721299728
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -51442,6 +52954,287 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 10420271628721299728
+  Name: "colliders"
+  Transform {
+    Location {
+      X: 94.5860214
+      Y: 554.33667
+      Z: -85.8609085
+    }
+    Rotation {
+      Pitch: -0.0205993652
+      Yaw: 179.742401
+      Roll: -3.84667969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14580520777642422137
+  ChildIds: 3121560159713083529
+  ChildIds: 1153441857586306417
+  ChildIds: 415854399757834152
+  ChildIds: 13333774323126223431
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13333774323126223431
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.00172093068
+      Y: -730.266
+      Z: 50.200489
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999161
+      Roll: 0.0352109037
+    }
+    Scale {
+      X: 30.7557335
+      Y: 10.0982838
+      Z: 10.198081
+    }
+  }
+  ParentId: 10420271628721299728
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 415854399757834152
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.000381875783
+      Y: -1863.64392
+      Z: 81.3462524
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352087691
+    }
+    Scale {
+      X: 17.4089928
+      Y: 10.0983047
+      Z: 10.198081
+    }
+  }
+  ParentId: 10420271628721299728
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 1153441857586306417
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.000613966957
+      Y: 690.009888
+      Z: 11.1740608
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352095179
+    }
+    Scale {
+      X: 27.4988632
+      Y: 10.0982771
+      Z: 10.198081
+    }
+  }
+  ParentId: 10420271628721299728
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 3121560159713083529
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.00144851953
+      Y: 1758.3877
+      Z: -18.1835155
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999619
+      Roll: 0.0352104753
+    }
+    Scale {
+      X: 16.9133072
+      Y: 10.0982676
+      Z: 10.198081
+    }
+  }
+  ParentId: 10420271628721299728
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -52430,65 +54223,6 @@ Objects {
   }
 }
 Objects {
-  Id: 7794367761736981742
-  Name: "InvisibleStoneHedgeCollider_divider"
-  Transform {
-    Location {
-      X: 149.66806
-      Y: 609.065857
-      Z: 5.19585609
-    }
-    Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
-    }
-    Scale {
-      X: 9.76473331
-      Y: 10.0982533
-      Z: 50.4429436
-    }
-  }
-  ParentId: 14580520777642422137
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.947286546
-        B: 0.960000038
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 14529280372844139024
   Name: "DividerLG"
   Transform {
@@ -52507,7 +54241,6 @@ Objects {
     }
   }
   ParentId: 11956939186599304772
-  ChildIds: 3206231440625838164
   ChildIds: 1170616997817275857
   ChildIds: 2531058309857890674
   ChildIds: 3323176112637361986
@@ -52518,6 +54251,7 @@ Objects {
   ChildIds: 6489129626676655702
   ChildIds: 1264950863547839590
   ChildIds: 8623807498184447710
+  ChildIds: 10871311555639982994
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -52532,6 +54266,287 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 10871311555639982994
+  Name: "colliders"
+  Transform {
+    Location {
+      X: 94.5860214
+      Y: 554.33667
+      Z: -85.8609085
+    }
+    Rotation {
+      Pitch: -0.0205993652
+      Yaw: 179.742401
+      Roll: -3.84667969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14529280372844139024
+  ChildIds: 15675146218419214941
+  ChildIds: 3859365299498241899
+  ChildIds: 17667660227745497168
+  ChildIds: 13118268834390002742
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13118268834390002742
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.00172093068
+      Y: -730.266
+      Z: 50.200489
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999161
+      Roll: 0.0352109037
+    }
+    Scale {
+      X: 30.7557335
+      Y: 10.0982838
+      Z: 10.198081
+    }
+  }
+  ParentId: 10871311555639982994
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 17667660227745497168
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.000381875783
+      Y: -1863.64392
+      Z: 81.3462524
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352087691
+    }
+    Scale {
+      X: 17.4089928
+      Y: 10.0983047
+      Z: 10.198081
+    }
+  }
+  ParentId: 10871311555639982994
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 3859365299498241899
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.000613966957
+      Y: 690.009888
+      Z: 11.1740608
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352095179
+    }
+    Scale {
+      X: 27.4988632
+      Y: 10.0982771
+      Z: 10.198081
+    }
+  }
+  ParentId: 10871311555639982994
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 15675146218419214941
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.00144851953
+      Y: 1758.3877
+      Z: -18.1835155
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999619
+      Roll: 0.0352104753
+    }
+    Scale {
+      X: 16.9133072
+      Y: 10.0982676
+      Z: 10.198081
+    }
+  }
+  ParentId: 10871311555639982994
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -53520,65 +55535,6 @@ Objects {
   }
 }
 Objects {
-  Id: 3206231440625838164
-  Name: "InvisibleStoneHedgeCollider_divider"
-  Transform {
-    Location {
-      X: 149.66806
-      Y: 609.065857
-      Z: 5.19585609
-    }
-    Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
-    }
-    Scale {
-      X: 9.76473331
-      Y: 10.0982533
-      Z: 50.4429436
-    }
-  }
-  ParentId: 14529280372844139024
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.947286546
-        B: 0.960000038
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 9196040116331844309
   Name: "DividerLG"
   Transform {
@@ -53598,7 +55554,6 @@ Objects {
     }
   }
   ParentId: 11956939186599304772
-  ChildIds: 11723749774980907726
   ChildIds: 2411890713944608133
   ChildIds: 15297238717224552558
   ChildIds: 14535519496792995532
@@ -53608,6 +55563,7 @@ Objects {
   ChildIds: 11018418144557018651
   ChildIds: 7970148569831376583
   ChildIds: 11266577934495495442
+  ChildIds: 10108432839046265001
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -53622,6 +55578,287 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 10108432839046265001
+  Name: "colliders"
+  Transform {
+    Location {
+      X: 94.5860214
+      Y: 554.33667
+      Z: -85.8609085
+    }
+    Rotation {
+      Pitch: -0.0205993652
+      Yaw: 179.742401
+      Roll: -3.84667969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9196040116331844309
+  ChildIds: 12016876261116400301
+  ChildIds: 9183191647856274517
+  ChildIds: 3017629146770943402
+  ChildIds: 14899871540362993798
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 14899871540362993798
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.00172093068
+      Y: -730.266
+      Z: 50.200489
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999161
+      Roll: 0.0352109037
+    }
+    Scale {
+      X: 30.7557335
+      Y: 10.0982838
+      Z: 10.198081
+    }
+  }
+  ParentId: 10108432839046265001
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 3017629146770943402
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.000381875783
+      Y: -1863.64392
+      Z: 81.3462524
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352087691
+    }
+    Scale {
+      X: 17.4089928
+      Y: 10.0983047
+      Z: 10.198081
+    }
+  }
+  ParentId: 10108432839046265001
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 9183191647856274517
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.000613966957
+      Y: 690.009888
+      Z: 11.1740608
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352095179
+    }
+    Scale {
+      X: 27.4988632
+      Y: 10.0982771
+      Z: 10.198081
+    }
+  }
+  ParentId: 10108432839046265001
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 12016876261116400301
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.00144851953
+      Y: 1758.3877
+      Z: -18.1835155
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999619
+      Roll: 0.0352104753
+    }
+    Scale {
+      X: 16.9133072
+      Y: 10.0982676
+      Z: 10.198081
+    }
+  }
+  ParentId: 10108432839046265001
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -54557,25 +56794,68 @@ Objects {
   }
 }
 Objects {
-  Id: 11723749774980907726
+  Id: 12066104789377457703
+  Name: "DividerMini"
+  Transform {
+    Location {
+      X: 10236.8281
+      Y: -7230.13379
+      Z: -130.634201
+    }
+    Rotation {
+      Pitch: -1.59387207
+      Yaw: -179.93573
+      Roll: -0.361450195
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11956939186599304772
+  ChildIds: 9872684947107795801
+  ChildIds: 1127138863453801848
+  ChildIds: 11128971391802309869
+  ChildIds: 10126957652067167013
+  ChildIds: 5484323601223220863
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 5484323601223220863
   Name: "InvisibleStoneHedgeCollider_divider"
   Transform {
     Location {
-      X: 149.66806
-      Y: 609.065857
-      Z: 5.19585609
+      X: 134.581375
+      Y: 93.2933502
+      Z: -133.019196
     }
     Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
+      Pitch: -2.07754517
+      Yaw: 89.8107
+      Roll: 4.21507215
     }
     Scale {
-      X: 9.76473331
-      Y: 10.0982533
-      Z: 50.4429436
+      X: 27.1739635
+      Y: 10.2405825
+      Z: 13.0762806
     }
   }
-  ParentId: 9196040116331844309
+  ParentId: 12066104789377457703
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -54600,7 +56880,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 2330090075218241288
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -54613,48 +56893,6 @@ Objects {
       }
       BoundsScale: 1
     }
-  }
-}
-Objects {
-  Id: 12066104789377457703
-  Name: "DividerMini"
-  Transform {
-    Location {
-      X: 10236.8281
-      Y: -7230.13379
-      Z: -130.634201
-    }
-    Rotation {
-      Pitch: -1.59387207
-      Yaw: -179.93573
-      Roll: -0.361450195
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11956939186599304772
-  ChildIds: 9211229678115909704
-  ChildIds: 9872684947107795801
-  ChildIds: 1127138863453801848
-  ChildIds: 11128971391802309869
-  ChildIds: 10126957652067167013
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
   }
 }
 Objects {
@@ -55057,65 +57295,6 @@ Objects {
   }
 }
 Objects {
-  Id: 9211229678115909704
-  Name: "InvisibleStoneHedgeCollider_divider"
-  Transform {
-    Location {
-      X: 149.668503
-      Y: 105.79512
-      Z: 18.7200718
-    }
-    Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
-    }
-    Scale {
-      X: 9.77406216
-      Y: 10.0888309
-      Z: 22.5848045
-    }
-  }
-  ParentId: 12066104789377457703
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.947286546
-        B: 0.960000038
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 3051891216293770505
   Name: "DividerSM"
   Transform {
@@ -55136,7 +57315,6 @@ Objects {
     }
   }
   ParentId: 11956939186599304772
-  ChildIds: 11046951215876708900
   ChildIds: 5457294048153295433
   ChildIds: 4430329983132424778
   ChildIds: 17880740357113927624
@@ -55144,6 +57322,7 @@ Objects {
   ChildIds: 6649683190381773369
   ChildIds: 13150287586154385299
   ChildIds: 9886480196493885550
+  ChildIds: 7603950699224688455
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -55158,6 +57337,223 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 7603950699224688455
+  Name: "colliders"
+  Transform {
+    Location {
+      X: 135.210205
+      Y: 1013.76416
+      Z: -43.4211502
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3051891216293770505
+  ChildIds: 5161218984987788194
+  ChildIds: 8793677057439361441
+  ChildIds: 16431919270061314518
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16431919270061314518
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.000366210938
+      Y: -1155.25269
+      Z: 61.8794327
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352087691
+    }
+    Scale {
+      X: 21.4398746
+      Y: 10.0982733
+      Z: 10.198081
+    }
+  }
+  ParentId: 7603950699224688455
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 8793677057439361441
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.000427246094
+      Y: -452.823029
+      Z: 42.5767593
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352095179
+    }
+    Scale {
+      X: 23.3612709
+      Y: 10.0982761
+      Z: 10.198081
+    }
+  }
+  ParentId: 7603950699224688455
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 5161218984987788194
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.00106811523
+      Y: 377.699951
+      Z: 19.7562084
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999619
+      Roll: 0.0352104753
+    }
+    Scale {
+      X: 21.4398746
+      Y: 10.0982733
+      Z: 10.198081
+    }
+  }
+  ParentId: 7603950699224688455
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -55852,65 +58248,6 @@ Objects {
   }
 }
 Objects {
-  Id: 11046951215876708900
-  Name: "InvisibleStoneHedgeCollider_divider"
-  Transform {
-    Location {
-      X: 149.66687
-      Y: 584.889526
-      Z: 5.84608555
-    }
-    Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
-    }
-    Scale {
-      X: 9.77403545
-      Y: 10.0888309
-      Z: 31.1255817
-    }
-  }
-  ParentId: 3051891216293770505
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.947286546
-        B: 0.960000038
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 4344067750707233121
   Name: "DividerSM"
   Transform {
@@ -55931,7 +58268,6 @@ Objects {
     }
   }
   ParentId: 11956939186599304772
-  ChildIds: 11425675089101678944
   ChildIds: 4940791073447469792
   ChildIds: 12681573724426139002
   ChildIds: 8738961984177647658
@@ -55939,6 +58275,7 @@ Objects {
   ChildIds: 7009076649723528244
   ChildIds: 17235272948910295708
   ChildIds: 7856968992183637857
+  ChildIds: 14495303633656939977
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -55953,6 +58290,223 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 14495303633656939977
+  Name: "colliders"
+  Transform {
+    Location {
+      X: 139.476562
+      Y: 1051.99524
+      Z: -43.6136
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4344067750707233121
+  ChildIds: 12761038182703361724
+  ChildIds: 12221864909897671444
+  ChildIds: 1010970540123977546
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1010970540123977546
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.000366210938
+      Y: -1155.25269
+      Z: 61.8794327
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352087691
+    }
+    Scale {
+      X: 21.4398746
+      Y: 10.0982733
+      Z: 10.198081
+    }
+  }
+  ParentId: 14495303633656939977
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 12221864909897671444
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.000427246094
+      Y: -452.823029
+      Z: 42.5767593
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352095179
+    }
+    Scale {
+      X: 23.3612709
+      Y: 10.0982761
+      Z: 10.198081
+    }
+  }
+  ParentId: 14495303633656939977
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 12761038182703361724
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.00106811523
+      Y: 377.699951
+      Z: 19.7562084
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999619
+      Roll: 0.0352104753
+    }
+    Scale {
+      X: 21.4398746
+      Y: 10.0982733
+      Z: 10.198081
+    }
+  }
+  ParentId: 14495303633656939977
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -56647,65 +59201,6 @@ Objects {
   }
 }
 Objects {
-  Id: 11425675089101678944
-  Name: "InvisibleStoneHedgeCollider_divider"
-  Transform {
-    Location {
-      X: 149.66687
-      Y: 584.889526
-      Z: 5.84608555
-    }
-    Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
-    }
-    Scale {
-      X: 9.77403545
-      Y: 10.0888309
-      Z: 31.1255817
-    }
-  }
-  ParentId: 4344067750707233121
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.947286546
-        B: 0.960000038
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 16151717832016079593
   Name: "DividerMD"
   Transform {
@@ -56726,7 +59221,6 @@ Objects {
     }
   }
   ParentId: 11956939186599304772
-  ChildIds: 14593304876777728371
   ChildIds: 637042721714782405
   ChildIds: 11042803215208889092
   ChildIds: 7604271749919673399
@@ -56735,6 +59229,7 @@ Objects {
   ChildIds: 12412990362438209886
   ChildIds: 17300045723167027100
   ChildIds: 18178626321189422076
+  ChildIds: 10577221680044966238
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -56749,6 +59244,226 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 10577221680044966238
+  Name: "colliders"
+  Transform {
+    Location {
+      X: 102.886932
+      Y: 143.037842
+      Z: -44.3511887
+    }
+    Rotation {
+      Pitch: 0.205998495
+      Yaw: -2.584198
+      Roll: 0.0116988327
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16151717832016079593
+  ChildIds: 11329014201237494322
+  ChildIds: 9931699312093505892
+  ChildIds: 6561635932869740432
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 6561635932869740432
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.0009765625
+      Y: -1221.34241
+      Z: 63.6955261
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352087691
+    }
+    Scale {
+      X: 21.4398746
+      Y: 10.0982733
+      Z: 10.198081
+    }
+  }
+  ParentId: 10577221680044966238
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 9931699312093505892
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.000179290771
+      Y: -20.3153801
+      Z: 30.6923637
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352095179
+    }
+    Scale {
+      X: 29.6785965
+      Y: 10.0982742
+      Z: 10.198081
+    }
+  }
+  ParentId: 10577221680044966238
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 11329014201237494322
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.001953125
+      Y: 1209.25537
+      Z: -3.09331894
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999619
+      Roll: 0.0352104753
+    }
+    Scale {
+      X: 21.4398746
+      Y: 10.0982733
+      Z: 10.198081
+    }
+  }
+  ParentId: 10577221680044966238
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -57631,65 +60346,6 @@ Objects {
   }
 }
 Objects {
-  Id: 14593304876777728371
-  Name: "InvisibleStoneHedgeCollider_divider"
-  Transform {
-    Location {
-      X: 149.66748
-      Y: 125.83976
-      Z: 18.1812935
-    }
-    Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
-    }
-    Scale {
-      X: 9.76476097
-      Y: 10.0982523
-      Z: 40.9346466
-    }
-  }
-  ParentId: 16151717832016079593
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.947286546
-        B: 0.960000038
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 15965890119262313385
   Name: "DividerMD"
   Transform {
@@ -57707,7 +60363,6 @@ Objects {
     }
   }
   ParentId: 11956939186599304772
-  ChildIds: 9521905091369506289
   ChildIds: 14345795476764042450
   ChildIds: 17881120533799724139
   ChildIds: 10388815727657367490
@@ -57716,6 +60371,7 @@ Objects {
   ChildIds: 4486765606862796033
   ChildIds: 11750347452304904401
   ChildIds: 13720490683264273091
+  ChildIds: 16002457838725722333
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -57730,6 +60386,224 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 16002457838725722333
+  Name: "colliders"
+  Transform {
+    Location {
+      X: 106.204102
+      Y: 85.5976486
+      Z: -45.5657349
+    }
+    Rotation {
+      Yaw: -1.42352295
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15965890119262313385
+  ChildIds: 1440863757146611663
+  ChildIds: 14712609282387272501
+  ChildIds: 15959670046652545996
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15959670046652545996
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -0.000854492188
+      Y: -1201.51709
+      Z: 63.1509552
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352087691
+    }
+    Scale {
+      X: 21.4398746
+      Y: 10.0982733
+      Z: 10.198081
+    }
+  }
+  ParentId: 16002457838725722333
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 14712609282387272501
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -6.10351562e-05
+      Y: 79.4483261
+      Z: 27.9510803
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352095179
+    }
+    Scale {
+      X: 30.8972111
+      Y: 10.0982952
+      Z: 10.198081
+    }
+  }
+  ParentId: 16002457838725722333
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 1440863757146611663
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.001953125
+      Y: 1331.7876
+      Z: -6.46026611
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999619
+      Roll: 0.0352104753
+    }
+    Scale {
+      X: 21.4398746
+      Y: 10.0982733
+      Z: 10.198081
+    }
+  }
+  ParentId: 16002457838725722333
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -58611,65 +61485,6 @@ Objects {
   }
 }
 Objects {
-  Id: 9521905091369506289
-  Name: "InvisibleStoneHedgeCollider_divider"
-  Transform {
-    Location {
-      X: 149.667969
-      Y: 153.724609
-      Z: 17.4319763
-    }
-    Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
-    }
-    Scale {
-      X: 9.76476288
-      Y: 10.0982533
-      Z: 40.0940285
-    }
-  }
-  ParentId: 15965890119262313385
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.947286546
-        B: 0.960000038
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 14418295405733545438
   Name: "DividerMD"
   Transform {
@@ -58686,7 +61501,6 @@ Objects {
     }
   }
   ParentId: 11956939186599304772
-  ChildIds: 15469558146786073135
   ChildIds: 16611099797696791674
   ChildIds: 7356985766988170929
   ChildIds: 13305777923867499184
@@ -58695,6 +61509,7 @@ Objects {
   ChildIds: 12346667816546589250
   ChildIds: 18442424553913564110
   ChildIds: 7599413468513669369
+  ChildIds: 16567239894624072569
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -58709,6 +61524,226 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 16567239894624072569
+  Name: "colliders"
+  Transform {
+    Location {
+      X: 82.8203125
+      Y: 153.845703
+      Z: -43.0232697
+    }
+    Rotation {
+      Pitch: -0.0664367676
+      Yaw: 178.32637
+      Roll: -3.84591675
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14418295405733545438
+  ChildIds: 10830266371058276162
+  ChildIds: 11047329341394624745
+  ChildIds: 514592520424910070
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 514592520424910070
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.00134277344
+      Y: -1171.74976
+      Z: 62.3345795
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352087691
+    }
+    Scale {
+      X: 21.4398746
+      Y: 10.0982733
+      Z: 10.198081
+    }
+  }
+  ParentId: 16567239894624072569
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 11047329341394624745
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: -7.56361851e-06
+      Y: -20.3145218
+      Z: 30.6923752
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999695
+      Roll: 0.0352095179
+    }
+    Scale {
+      X: 27.4988632
+      Y: 10.0982771
+      Z: 10.198081
+    }
+  }
+  ParentId: 16567239894624072569
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 10830266371058276162
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 0.00114440918
+      Y: 1149.53967
+      Z: -1.45345306
+    }
+    Rotation {
+      Pitch: -1.57397461
+      Yaw: 89.9999619
+      Roll: 0.0352104753
+    }
+    Scale {
+      X: 21.4398746
+      Y: 10.0982733
+      Z: 10.198081
+    }
+  }
+  ParentId: 16567239894624072569
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2330090075218241288
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -59590,77 +62625,15 @@ Objects {
   }
 }
 Objects {
-  Id: 15469558146786073135
-  Name: "InvisibleStoneHedgeCollider_divider"
+  Id: 11334371920541736413
+  Name: "TW_bg cosmetics"
   Transform {
     Location {
-      X: 149.667969
-      Y: 153.724609
-      Z: 17.4319763
+      X: 24029.4062
+      Y: -23583.5762
+      Z: 678.732117
     }
     Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
-    }
-    Scale {
-      X: 9.76476288
-      Y: 10.0982533
-      Z: 40.0940285
-    }
-  }
-  ParentId: 14418295405733545438
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.947286546
-        B: 0.960000038
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 3518499238900764799
-  Name: "DividerSM"
-  Transform {
-    Location {
-      X: -52071.4922
-      Y: 59327.9531
-      Z: -695.508423
-    }
-    Rotation {
-      Pitch: 0.276376754
-      Yaw: -92.9805603
-      Roll: -1.61080873
     }
     Scale {
       X: 1
@@ -59668,12 +62641,39 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11334371920541736413
-  ChildIds: 17068543902588967726
-  ChildIds: 7674375980608005270
-  ChildIds: 2537788603084976731
+  ParentId: 4689494391382931675
+  ChildIds: 2421450049458700277
+  ChildIds: 7538939348193651981
+  ChildIds: 13411533552843896404
+  ChildIds: 8544944569363190739
+  ChildIds: 14329691728477596286
+  ChildIds: 5640840405192972562
+  ChildIds: 2633029473974092287
+  ChildIds: 7430710741170581748
+  ChildIds: 10284393082076602257
+  ChildIds: 14833917337663137043
+  ChildIds: 2077371781457199800
+  ChildIds: 15198774278037074984
+  ChildIds: 6759219890063524361
+  ChildIds: 9680250444224587071
+  ChildIds: 7052453269545342622
+  ChildIds: 13315607651901117563
+  ChildIds: 2747149223166499189
+  ChildIds: 8716839660567289672
+  ChildIds: 17224972902887130158
+  ChildIds: 3518499238900764799
+  ChildIds: 3213195203913252166
+  ChildIds: 16108046744201012973
+  ChildIds: 7507457248965094877
+  ChildIds: 16911504013271087646
+  ChildIds: 11670673138849488373
+  ChildIds: 14124455568668631135
+  ChildIds: 10154278826567770943
+  ChildIds: 2457646095857851168
+  ChildIds: 17726763293828569855
+  ChildIds: 15482319096882077679
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -59686,376 +62686,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-}
-Objects {
-  Id: 2537788603084976731
-  Name: "Rock Flat 02"
-  Transform {
-    Location {
-      X: 121.309296
-      Y: -247.37204
-      Z: 218.56134
-    }
-    Rotation {
-      Pitch: -2.02661133
-      Yaw: -94.1057129
-      Roll: -5.45388794
-    }
-    Scale {
-      X: 1.5494796
-      Y: 2.49999952
-      Z: 4.99999666
-    }
-  }
-  ParentId: 3518499238900764799
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14823769434463567155
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5621809922852842752
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 7674375980608005270
-  Name: "Rock Flat 02"
-  Transform {
-    Location {
-      X: 220.382812
-      Y: 1165.32812
-      Z: 8.76629639
-    }
-    Rotation {
-      Pitch: -4.02084351
-      Yaw: -105.0047
-      Roll: 7.86166954
-    }
-    Scale {
-      X: 2.24996114
-      Y: 3.09426379
-      Z: 6.5662117
-    }
-  }
-  ParentId: 3518499238900764799
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14823769434463567155
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5621809922852842752
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 17068543902588967726
-  Name: "InvisibleStoneHedgeCollider_divider"
-  Transform {
-    Location {
-      X: 149.66687
-      Y: 584.889526
-      Z: 5.84608555
-    }
-    Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
-    }
-    Scale {
-      X: 9.77403545
-      Y: 10.0888309
-      Z: 31.1255817
-    }
-  }
-  ParentId: 3518499238900764799
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.947286546
-        B: 0.960000038
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 17224972902887130158
-  Name: "DividerSM"
-  Transform {
-    Location {
-      X: -9962.63086
-      Y: 44792.3594
-      Z: 109.27594
-    }
-    Rotation {
-      Pitch: -0.233981773
-      Yaw: -179.105865
-      Roll: 0.499710172
-    }
-    Scale {
-      X: 0.953854442
-      Y: 0.953854442
-      Z: 0.953854442
-    }
-  }
-  ParentId: 11334371920541736413
-  ChildIds: 1436115136598313905
-  ChildIds: 15419407132493265774
-  ChildIds: 15330662880106195305
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 15330662880106195305
-  Name: "Rock Flat 02"
-  Transform {
-    Location {
-      X: 121.309296
-      Y: -247.37204
-      Z: 218.56134
-    }
-    Rotation {
-      Pitch: -2.02661133
-      Yaw: -94.1057129
-      Roll: -5.45388794
-    }
-    Scale {
-      X: 1.5494796
-      Y: 2.49999952
-      Z: 4.99999666
-    }
-  }
-  ParentId: 17224972902887130158
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14823769434463567155
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5621809922852842752
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 15419407132493265774
-  Name: "Rock Flat 02"
-  Transform {
-    Location {
-      X: 220.382812
-      Y: 1165.32812
-      Z: 8.76629639
-    }
-    Rotation {
-      Pitch: -4.02084351
-      Yaw: -105.0047
-      Roll: 7.86166954
-    }
-    Scale {
-      X: 2.24996114
-      Y: 3.09426379
-      Z: 6.5662117
-    }
-  }
-  ParentId: 17224972902887130158
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14823769434463567155
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5621809922852842752
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 1436115136598313905
-  Name: "InvisibleStoneHedgeCollider_divider"
-  Transform {
-    Location {
-      X: 149.310059
-      Y: 619.965332
-      Z: 5.11904049
-    }
-    Rotation {
-      Yaw: -179.999969
-      Roll: 88.4607544
-    }
-    Scale {
-      X: 9.77403545
-      Y: 10.0888309
-      Z: 31.1255817
-    }
-  }
-  ParentId: 17224972902887130158
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.947286546
-        B: 0.960000038
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
   }
 }
 Objects {
@@ -60716,6 +63346,416 @@ Objects {
     SubobjectId: 258340863939031136
     InstanceId: 15885187871675160848
     TemplateId: 1877293447267286738
+  }
+}
+Objects {
+  Id: 3518499238900764799
+  Name: "DividerSM"
+  Transform {
+    Location {
+      X: -52071.4922
+      Y: 59327.9531
+      Z: -695.508423
+    }
+    Rotation {
+      Pitch: 0.276376754
+      Yaw: -92.9805603
+      Roll: -1.61080873
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11334371920541736413
+  ChildIds: 17068543902588967726
+  ChildIds: 7674375980608005270
+  ChildIds: 2537788603084976731
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2537788603084976731
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: 121.309296
+      Y: -247.37204
+      Z: 218.56134
+    }
+    Rotation {
+      Pitch: -2.02661133
+      Yaw: -94.1057129
+      Roll: -5.45388794
+    }
+    Scale {
+      X: 1.5494796
+      Y: 2.49999952
+      Z: 4.99999666
+    }
+  }
+  ParentId: 3518499238900764799
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14823769434463567155
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5621809922852842752
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 7674375980608005270
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: 220.382812
+      Y: 1165.32812
+      Z: 8.76629639
+    }
+    Rotation {
+      Pitch: -4.02084351
+      Yaw: -105.0047
+      Roll: 7.86166954
+    }
+    Scale {
+      X: 2.24996114
+      Y: 3.09426379
+      Z: 6.5662117
+    }
+  }
+  ParentId: 3518499238900764799
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14823769434463567155
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5621809922852842752
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 17068543902588967726
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 149.66687
+      Y: 584.889526
+      Z: 5.84608555
+    }
+    Rotation {
+      Yaw: -179.999969
+      Roll: 88.4607544
+    }
+    Scale {
+      X: 9.77403545
+      Y: 10.0888309
+      Z: 31.1255817
+    }
+  }
+  ParentId: 3518499238900764799
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 17224972902887130158
+  Name: "DividerSM"
+  Transform {
+    Location {
+      X: -9962.63086
+      Y: 44792.3594
+      Z: 109.27594
+    }
+    Rotation {
+      Pitch: -0.233981773
+      Yaw: -179.105865
+      Roll: 0.499710172
+    }
+    Scale {
+      X: 0.953854442
+      Y: 0.953854442
+      Z: 0.953854442
+    }
+  }
+  ParentId: 11334371920541736413
+  ChildIds: 1436115136598313905
+  ChildIds: 15419407132493265774
+  ChildIds: 15330662880106195305
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15330662880106195305
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: 121.309296
+      Y: -247.37204
+      Z: 218.56134
+    }
+    Rotation {
+      Pitch: -2.02661133
+      Yaw: -94.1057129
+      Roll: -5.45388794
+    }
+    Scale {
+      X: 1.5494796
+      Y: 2.49999952
+      Z: 4.99999666
+    }
+  }
+  ParentId: 17224972902887130158
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14823769434463567155
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5621809922852842752
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 15419407132493265774
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: 220.382812
+      Y: 1165.32812
+      Z: 8.76629639
+    }
+    Rotation {
+      Pitch: -4.02084351
+      Yaw: -105.0047
+      Roll: 7.86166954
+    }
+    Scale {
+      X: 2.24996114
+      Y: 3.09426379
+      Z: 6.5662117
+    }
+  }
+  ParentId: 17224972902887130158
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14823769434463567155
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5621809922852842752
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 1436115136598313905
+  Name: "InvisibleStoneHedgeCollider_divider"
+  Transform {
+    Location {
+      X: 149.310059
+      Y: 619.965332
+      Z: 5.11904049
+    }
+    Rotation {
+      Yaw: -179.999969
+      Roll: 88.4607544
+    }
+    Scale {
+      X: 9.77403545
+      Y: 10.0888309
+      Z: 31.1255817
+    }
+  }
+  ParentId: 17224972902887130158
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.947286546
+        B: 0.960000038
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
