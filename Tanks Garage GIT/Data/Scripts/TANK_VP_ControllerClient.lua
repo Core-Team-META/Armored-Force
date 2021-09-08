@@ -303,7 +303,7 @@ function PerformSalute()
 		Task.Wait()
 	end
 		
-	tankBodyClient = World.SpawnAsset(GetSkin(owner), {parent = script})
+	tankBodyClient = World.SpawnAsset(tankData.Skin, {parent = script})
 	tankBodyClient:SetPosition(Vector3.ZERO)
 	tankBodyClient:SetRotation(Rotation.ZERO)
 	
