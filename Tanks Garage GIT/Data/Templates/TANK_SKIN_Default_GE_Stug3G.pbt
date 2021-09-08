@@ -227,7 +227,7 @@ Assets {
           }
         }
         Relevance {
-          Value: "mc:eproxyrelevance:medium"
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -282,7 +282,7 @@ Assets {
           }
         }
         Relevance {
-          Value: "mc:eproxyrelevance:medium"
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -432,7 +432,7 @@ Assets {
           }
         }
         Relevance {
-          Value: "mc:eproxyrelevance:medium"
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -496,7 +496,7 @@ Assets {
           }
         }
         Relevance {
-          Value: "mc:eproxyrelevance:medium"
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -606,7 +606,7 @@ Assets {
           }
         }
         Relevance {
-          Value: "mc:eproxyrelevance:medium"
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -716,7 +716,7 @@ Assets {
           }
         }
         Relevance {
-          Value: "mc:eproxyrelevance:medium"
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -6978,7 +6978,6 @@ Assets {
         ChildIds: 6997244360497931126
         ChildIds: 3912815752266631389
         ChildIds: 629826152682350257
-        ChildIds: 16518659162204981839
         ChildIds: 14132430187860631495
         ChildIds: 3464468777899843920
         ChildIds: 7946263995733026831
@@ -6987,7 +6986,6 @@ Assets {
         ChildIds: 16489197716875911555
         ChildIds: 15708703701543576623
         ChildIds: 2438180217841366196
-        ChildIds: 12845876813870695707
         ChildIds: 2089684798191664186
         ChildIds: 6060283060849214400
         ChildIds: 7377079538830242922
@@ -13980,77 +13978,6 @@ Assets {
         }
       }
       Objects {
-        Id: 16518659162204981839
-        Name: "Cube - Polished"
-        Transform {
-          Location {
-            X: -240.490219
-            Y: -148.796341
-            Z: 118.539062
-          }
-          Rotation {
-            Yaw: -90
-            Roll: -7.01136446
-          }
-          Scale {
-            X: 1.15394783
-            Y: 0.0199999921
-            Z: 0.0683561042
-          }
-        }
-        ParentId: 3348247105886165848
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.318546832
-              G: 0.219526231
-              B: 0.102241717
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1758388402481224558
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 14132430187860631495
         Name: "Cube - Polished"
         Transform {
@@ -14136,9 +14063,9 @@ Assets {
             Roll: -7.01135826
           }
           Scale {
-            X: 1.24749267
-            Y: 0.0200000014
-            Z: 0.0683561042
+            X: 3.59012747
+            Y: 0.019999167
+            Z: 0.0683561414
           }
         }
         ParentId: 3348247105886165848
@@ -14561,77 +14488,6 @@ Assets {
           Scale {
             X: 0.860934734
             Y: -0.0295792073
-            Z: 0.0683561042
-          }
-        }
-        ParentId: 3348247105886165848
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.318546832
-              G: 0.219526231
-              B: 0.102241717
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1758388402481224558
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 12845876813870695707
-        Name: "Cube - Polished"
-        Transform {
-          Location {
-            X: -240.490967
-            Y: 93.0251465
-            Z: 118.539062
-          }
-          Rotation {
-            Yaw: 89.999939
-            Roll: 7.01138067
-          }
-          Scale {
-            X: 1.15394783
-            Y: -0.0199999921
             Z: 0.0683561042
           }
         }
@@ -20148,7 +20004,7 @@ Assets {
           }
         }
         Relevance {
-          Value: "mc:eproxyrelevance:medium"
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
