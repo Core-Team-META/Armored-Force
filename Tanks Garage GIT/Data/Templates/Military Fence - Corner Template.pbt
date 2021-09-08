@@ -615,5 +615,5 @@ Assets {
       AssetId: "Military_Fence_-_Corner_Template"
     }
   }
-  SerializationVersion: 99
+  SerializationVersion: 98
 }

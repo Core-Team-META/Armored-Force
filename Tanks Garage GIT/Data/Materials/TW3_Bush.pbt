@@ -2,7 +2,7 @@ Assets {
   Id: 179407668354224432
   Name: "TW3_Bush"
   PlatformAssetType: 13
-  SerializationVersion: 99
+  SerializationVersion: 98
   CustomMaterialAsset {
     BaseMaterialId: 555922902272108078
     ParameterOverrides {

@@ -1,4 +1,3 @@
 SceneName: "Map3"
-SceneId: "7db9c0ff4b406df7b6ef8bba8aca6d3e"
-SceneCreationDateTime: 637644956460000000
-IncludeForPublish: true
+SceneId: "e29e4f9847011bb883b3cca193a2600d"
+SceneCreationDateTime: 637647363170000000
