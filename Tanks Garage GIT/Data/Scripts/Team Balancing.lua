@@ -1,13 +1,11 @@
-local CONST = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
-
 local GAME_STATE = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local GAME_STATE_LOBBY = script:GetCustomProperty("GAMESTATE_MatchLobbyServer"):WaitForObject()
 
 local DEBUG_SAME_TEAM = script:GetCustomProperty("DebugSameTeam")
 local Constants_API = require(script:GetCustomProperty("Constants_API"))
 
-
-local tankData = Constants_API:WaitForConstant("Tanks").GetTanks()
+local TankAPI = Constants_API:WaitForConstant("Tanks")
+local tankData = TankAPI.GetTanks() 
 
 local BASE_VALUE_PER_PLAYER = 1
 local WIN_RATE_MIN = 0.2
@@ -51,7 +49,7 @@ function ComputePlayerValue(player)
 	-- Each player brings a base value to the team
 	local value = BASE_VALUE_PER_PLAYER
 
-	local tankId = player:GetResource(CONST.GetEquippedTankResource())
+	local tankId = player:GetResource(TankAPI.EquipResource)
 	local tankMultiplier = GetTankTypeMultiplier(tankId)
 	local tankStrength = (tankData[tankId].tier * tankMultiplier)
 	value = value + tankStrength

@@ -513,8 +513,8 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
     --CONFIRM_TANK_UPGRADE:FindDescendantByName("TITLE_SECONDARY").text = "CONFIRM " .. tankData.name .. " PURCHASE"
     --CONFIRM_TANK_UPGRADE:FindDescendantByName("TITLE_LIGHT").text = "CONFIRM " .. tankData.name .. " PURCHASE"
 
-    local cost = tankData.researchCost
-    CONFIRM_TANK_UPGRADE:FindDescendantByName('PRICE_1').text = tostring(cost)
+    local Cost = tankData.researchCost
+    CONFIRM_TANK_UPGRADE:FindDescendantByName('PRICE_1').text = tostring(Cost)
     local rpPayment = 0
     if (prereqs[1]) then
         if prereqs[1].usable then
@@ -523,10 +523,10 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
             CONFIRM_TANK_UPGRADE:FindDescendantByName('OWNED_1').text = tostring(currentRP)
             if (currentRP > tankData.researchCost) then
                 rpPayment = tankData.researchCost
-                cost = 0
+                Cost = 0
             else
                 rpPayment = tonumber(currentRP)
-                cost = cost - rpPayment
+                Cost = Cost - rpPayment
             end
             PURCHASE_NOTIFICATION.visibility = Visibility.FORCE_OFF
         else
@@ -542,20 +542,20 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
     CONFIRM_TANK_UPGRADE:FindDescendantByName('PAYMENT_1').text = tostring(rpPayment)
     CONFIRM_TANK_UPGRADE:FindDescendantByName('OWNED_2').text = tostring(freeRP)
 
-    if (cost > 0) then
-        if (freeRP > cost) then
-            CONFIRM_TANK_UPGRADE:FindDescendantByName('PAYMENT_2').text = tostring(freeRP - cost)
-            cost = 0
+    if (Cost > 0) then
+        if (freeRP > Cost) then
+            CONFIRM_TANK_UPGRADE:FindDescendantByName('PAYMENT_2').text = tostring(freeRP - Cost)
+            Cost = 0
         else
             CONFIRM_TANK_UPGRADE:FindDescendantByName('PAYMENT_2').text = tostring(freeRP)
-            cost = cost - freeRP
+            Cost = Cost - freeRP
         end
     else
         CONFIRM_TANK_UPGRADE:FindDescendantByName('PAYMENT_2').text = '0'
     end
 
     local silverCost = tonumber(tankData.purchaseCost)
-    print('Silver cost to purchase: ' .. tostring(silverCost))
+    print('Silver Cost to purchase: ' .. tostring(silverCost))
     CONFIRM_TANK_UPGRADE:FindDescendantByName('PRICE_3').text = tostring(silverCost)
     CONFIRM_TANK_UPGRADE:FindDescendantByName('ITEMNAME_3').text = tankData.purchaseCurrencyName
     local playerCurrency = 0
@@ -586,7 +586,7 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
             CONFIRM_WINDOW_CONFIRM_BUTTON.text = 'PURCHASE'
             confirmButtonFunction = 'PURCHASE'
 
-            if (cost > 0 or silverCost > 0) then
+            if (Cost > 0 or silverCost > 0) then
                 CONFIRM_WINDOW_CONFIRM_BUTTON.text = "CAN'T AFFORD"
                 confirmButtonFunction = "CAN'T AFFORD"
             end
@@ -708,7 +708,7 @@ function PopulateCurrencyUI()
                 child:SetImage(icon)
                 child:SetColor(Color.WHITE)
             elseif (child.name == 'Amount') then
-                child.text = tostring(LOCAL_PLAYER:GetResource(v.Name))
+                child.text = tostring(LOCAL_PLAYER:GetResource(v.ResourceName))
             end
         end
         currencyCount = currencyCount + 1
@@ -920,13 +920,13 @@ function GetPlayerTankData(id)
     return {}
 end
 
-function GetUpgradeText(hasUpgrade, cost, upgradeType)
+function GetUpgradeText(hasUpgrade, Cost, upgradeType)
     if (hasUpgrade and upgradeType == Constants_API.UPGRADE_TYPE.RESEARCH) then
         return HAS_RESEARCH_TEXT
     elseif (hasUpgrade and upgradeType == Constants_API.UPGRADE_TYPE.PURCHASE) then
         return HAS_PURCHASE_TEXT
     end
-    return tostring(cost)
+    return tostring(Cost)
 end
 
 function GetScrollPanelByTier(tier)
@@ -1068,14 +1068,14 @@ function PopulateTankUpgradeModal(type)
     IMAGE_API.SetTankImage(tankConfirmImage, id)
 
     if type == 'WEAPON' then
-        purchaseCost = equippedTank.weaponpurchaseCost
-        researchCost = equippedTank.weaponresearchcost
+        purchaseCost = equippedTank.weaponPurchaseCost
+        researchCost = equippedTank.weaponResearchCost
     elseif type == 'ARMOR' then
-        purchaseCost = equippedTank.armorpurchaseCost
-        researchCost = equippedTank.armorresearchcost
+        purchaseCost = equippedTank.armorPurchaseCost
+        researchCost = equippedTank.armorResearchCost
     elseif type == 'ENGINE' then
-        purchaseCost = equippedTank.mobilitypurchaseCost
-        researchCost = equippedTank.mobilityresearchcost
+        purchaseCost = equippedTank.mobilityPurchaseCost
+        researchCost = equippedTank.mobilityResearchCost
     end
     UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('TITLE_TEXT').text =
         'UPGRADE ' .. string.upper(tankName) .. "'S " .. type
@@ -1120,9 +1120,9 @@ end
 
 -- Upgrade the weapon progress for the tank loaded into tankDetails
 function UpgradeWeapon()
-    --print("Purchase cost: " .. tankDetails.weaponPurchaseCost)
+    --print("Purchase Cost: " .. tankDetails.weaponPurchaseCost)
     local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
-    if (silver < tankDetails.weaponpurchaseCost) then
+    if (silver < tankDetails.weaponPurchaseCost) then
         -- DEBUG
         ShowNotEnoughCurrencyMessage('Weapon')
         SFX_DENIED:Play()
@@ -1133,7 +1133,7 @@ function UpgradeWeapon()
     local tankRP = LOCAL_PLAYER:GetResource(tankRPString)
     local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
 
-    if (tankRP + freeRP < tankDetails.weaponresearchcost) then
+    if (tankRP + freeRP < tankDetails.weaponResearchCost) then
         ShowNotEnoughRPMessage('Weapon')
         SFX_DENIED:Play()
         return
@@ -1168,9 +1168,9 @@ end
 
 -- Upgrade the armor progress for the tank loaded into tankDetails
 function UpgradeArmor()
-    --print("Purchase cost: " .. tankDetails.armorPurchaseCost)
+    --print("Purchase Cost: " .. tankDetails.armorPurchaseCost)
     local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
-    if (silver < tankDetails.armorpurchaseCost) then
+    if (silver < tankDetails.armorPurchaseCost) then
         -- DEBUG
         ShowNotEnoughCurrencyMessage('Armor')
         SFX_DENIED:Play()
@@ -1180,7 +1180,7 @@ function UpgradeArmor()
     local tankRP = LOCAL_PLAYER:GetResource(tankRPString)
     local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
 
-    if (tankRP + freeRP < tankDetails.armorresearchcost) then
+    if (tankRP + freeRP < tankDetails.armorResearchCost) then
         ShowNotEnoughRPMessage('Armor')
         SFX_DENIED:Play()
         return
@@ -1211,9 +1211,9 @@ end
 
 -- Upgrade the engine progress for the tank loaded into tankDetails
 function UpgradeEngine()
-    --print("Purchase cost: " .. tankDetails.mobilityPurchaseCost)
+    --print("Purchase Cost: " .. tankDetails.mobilityPurchaseCost)
     local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
-    if (silver < tankDetails.mobilitypurchaseCost) then
+    if (silver < tankDetails.mobilityPurchaseCost) then
         -- DEBUG
         ShowNotEnoughCurrencyMessage('Engine')
         SFX_DENIED:Play()
@@ -1223,7 +1223,7 @@ function UpgradeEngine()
     local tankRP = LOCAL_PLAYER:GetResource(tankRPString)
     local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
 
-    if (tankRP + freeRP < tankDetails.mobilityresearchcost) then
+    if (tankRP + freeRP < tankDetails.mobilityResearchCost) then
         ShowNotEnoughRPMessage('Engine')
         SFX_DENIED:Play()
         return
@@ -1354,16 +1354,16 @@ function PopulateDetailsModal(tank)
         upgradeTankCost.visibility = Visibility.FORCE_ON
     else
         upgradeTank.text = 'Research'
-        upgradeTankCost.text = 'Cost ' .. tostring(tankDetails.tankresearchcost)
+        upgradeTankCost.text = 'Cost ' .. tostring(tankDetails.tankresearchCost)
         upgradeTankCost.visibility = Visibility.FORCE_ON
     end
 
-    tankDetails.weaponresearchcost = tank.weaponresearchcost
-    tankDetails.weaponpurchaseCost = tank.weaponpurchaseCost
-    tankDetails.armorresearchcost = tank.armorresearchcost
-    tankDetails.armorpurchaseCost = tank.armorpurchaseCost
-    tankDetails.engineresearchcost = tank.mobilityresearchcost
-    tankDetails.enginepurchaseCost = tank.mobilitypurchaseCost
+    tankDetails.weaponResearchCost = tank.weaponResearchCost
+    tankDetails.weaponPurchaseCost = tank.weaponPurchaseCost
+    tankDetails.armorResearchCost = tank.armorResearchCost
+    tankDetails.armorPurchaseCost = tank.armorPurchaseCost
+    tankDetails.engineresearchCost = tank.mobilityResearchCost
+    tankDetails.enginepurchaseCost = tank.mobilityPurchaseCost
 
     reloadSubStat.text = 'Reload: ' .. string.format('%.1f', reload) .. ' s'
     damageSubStat.text = 'Damage: ' .. string.format(math.floor(damage)) .. 'pt'
@@ -1408,7 +1408,7 @@ function PopulateDetailsModal(tank)
             upgradeArmor:FindDescendantByName('MAXED_OUT').visibility = Visibility.FORCE_OFF
         elseif (tostring(tankDetails.armorprogress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then
             upgradeArmor:FindDescendantByName('BUTTON_UPGRADE_SHELL_CONTAINER').visibility = Visibility.FORCE_ON
-            upgradeArmor.text = 'R ' .. tostring(tank.armorresearchcost)
+            upgradeArmor.text = 'R ' .. tostring(tank.armorResearchCost)
             upgradeArmor:FindDescendantByName('MAXED_OUT').visibility = Visibility.FORCE_OFF
         else
             warn('Armor progress not found with value: ' .. tostring(armorProgress))

@@ -1,11 +1,10 @@
 -- API
-local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
-local Constants_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
+local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API")) 
 local _Constants_API = require(script:GetCustomProperty("Constants_API"))
 
 local TANK_LIST =  _Constants_API:WaitForConstant("Tanks").GetTanks()
-
-
+local TECHTREE =  _Constants_API:WaitForConstant("TechTree")
+local CURRENCY = _Constants_API:WaitForConstant("Currency")
 
 function PurchaseTank(player, id, prereqs)
 
@@ -47,7 +46,7 @@ function PurchaseTank(player, id, prereqs)
 				end
 			end
 			
-			--local freeRP = player:GetResource(Constants_API.FREERP)
+			--local freeRP = player:GetResource(CURRENCY.FREERP.ResourceName)
 			
 			--totalRPToUse = freeRP + rpAmount1 + rpAmount2
 			
@@ -79,16 +78,16 @@ function PurchaseTank(player, id, prereqs)
 					end
 					
 					if(researchCost > 0) then
-						player:RemoveResource(Constants_API.FREERP, researchCost)
+						player:RemoveResource(CURRENCY.FREERP.ResourceName, researchCost)
 					end					
 					--]]
 
 					-- If the tank is a premium tank, set all upgrades to owned
 					if(purchaseCurrencyName == "Gold") then
 						print("Premium tank. All upgrades purchased.")
-						tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
-						tank.armorProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
-						tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+						tank.weaponProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
+						tank.armorProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
+						tank.engineProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
 					end
 					Events.BroadcastToPlayer(player, "TankPurchaseSuccessful")
 					Events.Broadcast("TankAcquired", player, id,  tankData.tier)
@@ -112,7 +111,7 @@ function ResearchTank(player, id, prereqId, useFreeRP)
 			local cost = v:GetCustomProperty("ResearchCost")
 			local rp = 0
 			if(useFreeRP) then
-				rp = player:GetResource(Constants_API.FREERP)
+				rp = player:GetResource(CURRENCY.FREERP.ResourceName)
 			else
 				rp = player:GetResource(UTIL_API.GetTankRPString(tonumber(prereqId)))
 			end
@@ -147,14 +146,14 @@ function PurchaseWeapon(player, id)
 	for k, tankData in ipairs(TANK_LIST) do
 		if(tankData.id == id) then
 			print("DEBUG: Found match")
-			local cost = tankData.weaponpurchaseCost
-			local researchCost = tankData.weaponresearchcost
-			local silver = player:GetResource(Constants_API.SILVER)
+			local cost = tankData.weaponPurchaseCost
+			local researchCost = tankData.weaponResearchCost
+			local silver = player:GetResource(CURRENCY.SILVER.ResourceName)
 			if(silver < cost) then return BroadcastEventResultCode.FAILURE end
 			
 			local tankRPString = UTIL_API.GetTankRPString(tonumber(id))
 			local tankRP = player:GetResource(tankRPString)
-			local freeRP = player:GetResource(Constants_API.FREERP)
+			local freeRP = player:GetResource(CURRENCY.FREERP.ResourceName)
 			
 			if(tankRP + freeRP < researchCost) then
 				return BroadcastEventResultCode.FAILURE				
@@ -163,7 +162,7 @@ function PurchaseWeapon(player, id)
 			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
 				if(tank.id == id) then
 					print("DEBUG: Owned tank found")					
-					player:RemoveResource(Constants_API.SILVER, cost)
+					player:RemoveResource(CURRENCY.SILVER.ResourceName, cost)
 					
 					if(tankRP < researchCost) then
 						researchCost = researchCost - tankRP
@@ -173,13 +172,13 @@ function PurchaseWeapon(player, id)
 					end
 					
 					if(researchCost > 0) then
-						player:RemoveResource(Constants_API.FREERP, researchCost)
+						player:RemoveResource(CURRENCY.FREERP.ResourceName, researchCost)
 					end
 					
-					tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+					tank.weaponProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
 					
 					Events.BroadcastToPlayer(player, "WeaponUpgradeSuccessful")
-					Events.Broadcast("UpgradeAcquired", player, id, Constants_API.UPGRADE_SLOT.WEAPON)
+					Events.Broadcast("UpgradeAcquired", player, id, TECHTREE.UPGRADE_SLOT.WEAPON)
 					player:SetPrivateNetworkedData("PlayerTankData", player.serverUserData.techTreeProgress)
 					return BroadcastEventResultCode.SUCCESS
 				end
@@ -196,14 +195,14 @@ function PurchaseArmor(player, id)
 	for k, tankData in ipairs(TANK_LIST) do
 		if(tankData.id == id) then
 			print("DEBUG: Found match")
-			local cost = tankData.armorpurchaseCost
-			local researchCost = tankData.armorresearchcost
-			local silver = player:GetResource(Constants_API.SILVER)
+			local cost = tankData.armorPurchaseCost
+			local researchCost = tankData.armorResearchCost
+			local silver = player:GetResource(CURRENCY.SILVER.ResourceName)
 			if(silver < cost) then return BroadcastEventResultCode.FAILURE end
 			
 			local tankRPString = UTIL_API.GetTankRPString(tonumber(id))
 			local tankRP = player:GetResource(tankRPString)
-			local freeRP = player:GetResource(Constants_API.FREERP)
+			local freeRP = player:GetResource(CURRENCY.FREERP.ResourceName)
 			
 			if(tankRP + freeRP < researchCost) then
 				return BroadcastEventResultCode.FAILURE				
@@ -212,7 +211,7 @@ function PurchaseArmor(player, id)
 			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
 				if(tank.id == id) then
 					print("DEBUG: Owned tank found")					
-					player:RemoveResource(Constants_API.SILVER, cost)
+					player:RemoveResource(CURRENCY.SILVER.ResourceName, cost)
 					
 					if(tankRP < researchCost) then
 						researchCost = researchCost - tankRP
@@ -222,13 +221,13 @@ function PurchaseArmor(player, id)
 					end
 					
 					if(researchCost > 0) then
-						player:RemoveResource(Constants_API.FREERP, researchCost)
+						player:RemoveResource(CURRENCY.FREERP.ResourceName, researchCost)
 					end
 					
-					tank.armorProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+					tank.armorProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
 					
 					Events.BroadcastToPlayer(player, "ArmorUpgradeSuccessful")
-					Events.Broadcast("UpgradeAcquired", player, id, Constants_API.UPGRADE_SLOT.ARMOR)
+					Events.Broadcast("UpgradeAcquired", player, id, TECHTREE.UPGRADE_SLOT.ARMOR)
 					player:SetPrivateNetworkedData("PlayerTankData", player.serverUserData.techTreeProgress)
 					return BroadcastEventResultCode.SUCCESS
 				end
@@ -245,14 +244,14 @@ function PurchaseEngine(player, id)
 	for k, tankData in ipairs(TANK_LIST) do
 		if(tankData.id == id) then
 			print("DEBUG: Found match")
-			local cost = tankData.mobilitypurchaseCost
-			local researchCost = tankData.mobilityresearchcost
-			local silver = player:GetResource(Constants_API.SILVER)
+			local cost = tankData.mobilityPurchaseCost
+			local researchCost = tankData.mobilityResearchCost
+			local silver = player:GetResource(CURRENCY.SILVER.ResourceName)
 			if(silver < cost) then return BroadcastEventResultCode.FAILURE end
 			
 			local tankRPString = UTIL_API.GetTankRPString(tonumber(id))
 			local tankRP = player:GetResource(tankRPString)
-			local freeRP = player:GetResource(Constants_API.FREERP)
+			local freeRP = player:GetResource(CURRENCY.FREERP.ResourceName)
 			
 			if(tankRP + freeRP < researchCost) then
 				return BroadcastEventResultCode.FAILURE				
@@ -261,7 +260,7 @@ function PurchaseEngine(player, id)
 			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
 				if(tank.id == id) then
 					print("DEBUG: Owned tank found")					
-					player:RemoveResource(Constants_API.SILVER, cost)
+					player:RemoveResource(CURRENCY.SILVER.ResourceName, cost)
 					
 					if(tankRP < researchCost) then
 						researchCost = researchCost - tankRP
@@ -271,13 +270,13 @@ function PurchaseEngine(player, id)
 					end
 					
 					if(researchCost > 0) then
-						player:RemoveResource(Constants_API.FREERP, researchCost)
+						player:RemoveResource(CURRENCY.FREERP.ResourceName, researchCost)
 					end
 					
-					tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+					tank.engineProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
 					
 					Events.BroadcastToPlayer(player, "EngineUpgradeSuccessful")
-					Events.Broadcast("UpgradeAcquired", player, id, Constants_API.UPGRADE_SLOT.ENGINE)
+					Events.Broadcast("UpgradeAcquired", player, id, TECHTREE.UPGRADE_SLOT.ENGINE)
 					player:SetPrivateNetworkedData("PlayerTankData", player.serverUserData.techTreeProgress)
 					return BroadcastEventResultCode.SUCCESS
 				end

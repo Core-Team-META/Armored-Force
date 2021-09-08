@@ -1,4 +1,3 @@
-local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 local _Constants_API = require(script:GetCustomProperty("Constants_API"))
 
@@ -17,7 +16,8 @@ local axisPremiumButton = script:GetCustomProperty("AXIS_PURCHASE_PREMIUM_BUTTON
 
  
 local TANK_INFO  = _Constants_API:WaitForConstant("Tanks").GetTanks()
-
+local CURRENCY = _Constants_API:WaitForConstant("Currency")
+local TECHTREE = _Constants_API:WaitForConstant("TechTree")
 local thisComponent = "SHOP_MENU"
 local savedState = ""
 
@@ -36,8 +36,8 @@ function ToggleThisComponent(requestedPlayerState)
 	
 	if requestedPlayerState == thisComponent then
 
-		freeXPAmountText.text = "Free XP: " .. tostring(localPlayer:GetResource(CONSTANTS_API.FREERP))
-		goldAmountText.text = "Gold: " .. tostring(localPlayer:GetResource(CONSTANTS_API.GOLD))
+		freeXPAmountText.text = "Free XP: " .. tostring(localPlayer:GetResource(CURRENCY.FREERP.ResourceName))
+		goldAmountText.text = "Gold: " .. tostring(localPlayer:GetResource(CURRENCY.GOLD.ResourceName))
 		
 		CheckPerks(localPlayer, premiumSubscription)
 		CheckPremiumTankOwnership()
@@ -66,10 +66,10 @@ end
 
 function OnResourceChanged(player, resource, amount)
 
-	if resource == CONSTANTS_API.FREERP then
+	if resource == CURRENCY.FREERP.ResourceName then
 		freeXPAmountText.text = "Free XP: " .. tostring(amount)
 		PopulateXPTanks()
-	elseif resource == CONSTANTS_API.GOLD then
+	elseif resource == CURRENCY.GOLD.ResourceName then
 		goldAmountText.text = "Gold: " .. tostring(amount)
 	end
 
@@ -104,7 +104,7 @@ function AttemptPremiumPurchase(button)
 
 	--print("attempting to purchase")
 
-	if localPlayer:GetResource(CONSTANTS_API.GOLD) >= premiumTanksInfo[button.id].cost then
+	if localPlayer:GetResource(CURRENCY.GOLD.ResourceName) >= premiumTanksInfo[button.id].cost then
 		Events.BroadcastToServer("PurchasePremTank", premiumTanksInfo[button.id].id)
 	else 
 		AcknowledgePurchase(premiumTanksInfo[button.id].id, false)
@@ -135,9 +135,9 @@ function AcknowledgePurchase(tankId, confirmed)
 		if t.id == tankId then
 			t.purchased = true
 			t.researched = true
-			t.weaponProgress = CONSTANTS_API.UPGRADE_PROGRESS.PURCHASED
-			t.armorProgress = CONSTANTS_API.UPGRADE_PROGRESS.PURCHASED
-			t.engineProgress = CONSTANTS_API.UPGRADE_PROGRESS.PURCHASED
+			t.weaponProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
+			t.armorProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
+			t.engineProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
 
 			--print("Purchase successful")
 		end

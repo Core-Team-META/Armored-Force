@@ -56,33 +56,29 @@ Const.REWARDS = {
     SILVER = 2
 }
 
--- TECH TREE PROGRESS POSITION PLACEMENTS
-Const.TECH_TREE_POSITION = {
-    TANKID = 1,
-    RESEARCHED = 2,
-    PURCHASED = 3,
-    HASWEAPON = 4,
-    HASARMOR = 5,
-    HASENGINE = 6
-}
-
--- UPGRADE TYPES
-Const.UPGRADE_TYPE = {
-    RESEARCH = 1,
-    PURCHASE = 2
-}
-
--- UPGRADE PROGRESS
-Const.UPGRADE_PROGRESS = {
-    NONE = 0,
-    RESEARCHED = 1,
-    PURCHASED = 2
-}
-
-Const.UPGRADE_SLOT = {
-    WEAPON = 0,
-    ARMOR = 1,
-    ENGINE = 2
+Const.TechTree = {
+    TECH_TREE_POSITION = {
+        TANKID = 1,
+        RESEARCHED = 2,
+        PURCHASED = 3,
+        HASWEAPON = 4,
+        HASARMOR = 5,
+        HASENGINE = 6
+    },
+    UPGRADE_TYPE = {
+        RESEARCH = 1,
+        PURCHASE = 2
+    },
+    UPGRADE_PROGRESS = {
+        NONE = 0,
+        RESEARCHED = 1,
+        PURCHASED = 2
+    },
+    UPGRADE_SLOT = {
+        WEAPON = 0,
+        ARMOR = 1,
+        ENGINE = 2
+    },
 }
 
 Const.TANK_SKIN = {

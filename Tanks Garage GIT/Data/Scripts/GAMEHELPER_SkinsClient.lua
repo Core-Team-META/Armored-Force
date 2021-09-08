@@ -1,4 +1,3 @@
-local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 
 local DATA_TRANSFER = script:GetCustomProperty("DataTransfer"):WaitForObject()
