@@ -19,6 +19,20 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 10701494385582522241
+      value {
+        Overrides {
+          Name: "cs:Insignia"
+          ObjectReference {
+            SelfId: 18347734446902034779
+            SubObjectId: 14249267920363495744
+            InstanceId: 11703131514259615465
+            TemplateId: 6676334424509974663
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 12360689874144092097
       value {
         Overrides {
