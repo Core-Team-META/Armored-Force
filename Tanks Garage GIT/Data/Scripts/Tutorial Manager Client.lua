@@ -37,6 +37,9 @@ LOCAL_PLAYER.clientUserData.tutorial3_3 = 0
 LOCAL_PLAYER.clientUserData.tutorial4 = 1
 LOCAL_PLAYER.clientUserData.tutorial6 = 0
 
+local hideShootingRangeTutorial = false
+local hideUpgradeTankTutorial = false
+
 Task.Wait(2)
 
 --warn("tutorial1")
@@ -114,13 +117,13 @@ function ToggleTutorialState()
 
 	--warn("tutorial1")
 	--warn(tostring(LOCAL_PLAYER.clientUserData.tutorial1))	
-	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) < API_Tutorial.TutorialPhase.Upgrade and not inShootingRange) then
+	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) < API_Tutorial.TutorialPhase.Upgrade and not inShootingRange and not hideShootingRangeTutorial) then
 		Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_ON
 	else
 		Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_OFF
 	end
 	-- Show panel to upgrade tank
-	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.Upgrade and not inShootingRange) then
+	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.Upgrade and not inShootingRange and not hideUpgradeTankTutorial) then
 		Tutorial_UpgradeTankPanel.visibility = Visibility.FORCE_ON
 	else
 		Tutorial_UpgradeTankPanel.visibility = Visibility.FORCE_OFF
@@ -147,7 +150,7 @@ function ToggleTutorialState()
 	end
 	
 	--Show Tutorial Phase 2 (TargetPractice)
-	if(tutorialProgress == API_Tutorial.TutorialPhase.TargetPractice and inShootingRange) then
+	if(tutorialProgress == API_Tutorial.TutorialPhase.TargetPractice and inShootingRange and not hideShootingRangeTutorial) then
 		Tutorial_DestroyTanksPanel.visibility = Visibility.FORCE_ON
 		Tutorial_DestroyTanksPanel:FindDescendantByName("Objective").text = "Shoot training tanks and deal 50 damage ("..tostring(LOCAL_PLAYER.clientUserData.tutorial2).."/50)"
 		--local waypoints = EnemyTargetPracticeAI:FindChildrenByName("Waypoint_2")
@@ -177,7 +180,7 @@ function ToggleTutorialState()
 	end
 
 	-- Show Tutorial Phase 6 (UpgradeTank)
-	if(tutorialProgress == API_Tutorial.TutorialPhase.Upgrade and inShootingRange) then
+	if(tutorialProgress == API_Tutorial.TutorialPhase.Upgrade and inShootingRange and not hideUpgradeTankTutorial) then
 		Tutorial_UpgradeTankSidePanel.visibility = Visibility.FORCE_ON
 	end
 	
@@ -208,11 +211,13 @@ end
 function CloseTutorialPopup()
 	SFX_CLICK:Play()
 	Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_OFF
+	hideShootingRangeTutorial = true
 end
 
 function CloseUpgradeTutorialPopup()
 	SFX_CLICK:Play()
 	Tutorial_UpgradeTankPanel.visibility = Visibility.FORCE_OFF
+	hideUpgradeTankTutorial = true
 end
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", EnableComponent)
