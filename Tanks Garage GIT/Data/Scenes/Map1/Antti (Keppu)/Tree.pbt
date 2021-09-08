@@ -1,6 +1,84 @@
 Name: "Antti (Keppu)"
 RootId: 4689494391382931675
 Objects {
+  Id: 10834230882862281489
+  Name: "Basic Apple"
+  Transform {
+    Location {
+      X: 17839.4473
+      Y: -23416.6348
+      Z: -191.936707
+    }
+    Rotation {
+      Pitch: 0.492893755
+    }
+    Scale {
+      X: 95.7927475
+      Y: 72.7781525
+      Z: 11.6022139
+    }
+  }
+  ParentId: 4689494391382931675
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2246810950725948328
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.615
+        G: 0.404506
+        B: 0.243539989
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 5
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 5
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3773142637494405427
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableCastShadows: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
   Id: 16150101728613406469
   Name: "Windmills and Propane"
   Transform {
@@ -113382,16 +113460,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 17309.1133
-            Y: -17156.8398
-            Z: 158.349014
+            X: 15841.8965
+            Y: -11911.8926
+            Z: 270.330627
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 15
-            Roll: 1.65085936
+            Pitch: -2.94110107
+            Yaw: 15.0771294
+            Roll: -0.20425415
           }
         }
         Overrides {
@@ -146819,9 +146898,9 @@ Objects {
   Name: "EdgeIndicator"
   Transform {
     Location {
-      X: 28059.0332
+      X: 28304.1211
       Y: 39414.9688
-      Z: 100.001396
+      Z: 196.410706
     }
     Rotation {
       Pitch: -5
@@ -146875,9 +146954,9 @@ Objects {
   Name: "EdgeIndicator"
   Transform {
     Location {
-      X: 53146.4531
+      X: 53391.5391
       Y: 7959.75684
-      Z: -3574.2998
+      Z: -3477.89062
     }
     Rotation {
       Pitch: -5
@@ -146987,9 +147066,9 @@ Objects {
   Name: "EdgeIndicator"
   Transform {
     Location {
-      X: -268.574219
+      X: -23.484375
       Y: -11990.7871
-      Z: 100.001503
+      Z: 196.410797
     }
     Rotation {
       Pitch: -5
@@ -147915,9 +147994,9 @@ Objects {
   Name: "TW_Water"
   Transform {
     Location {
-      X: -1397.52136
+      X: -1152.42615
       Y: 12669.4
-      Z: -511.289429
+      Z: -414.880127
     }
     Rotation {
       Yaw: -90
