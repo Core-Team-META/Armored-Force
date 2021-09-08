@@ -86,6 +86,7 @@ Tanks.TEAMS = {
     Axis = 2,
 }
 
+Tanks.EquipResource = "EquippedTank"
 
 function Tanks.GetHighestDamage()
 	return 1000

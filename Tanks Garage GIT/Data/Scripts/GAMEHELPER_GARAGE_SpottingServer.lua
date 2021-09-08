@@ -4,10 +4,12 @@ local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_AP
 local _Constants_API = require(script:GetCustomProperty("Constants_API"))
 
 local CURRENCY = _Constants_API:WaitForConstant("Currency")
+local XP = _Constants_API:WaitForConstant("XP")
 
-local viewRange = script:GetCustomProperty("ViewRange")
-local gameStateManager = script:GetCustomProperty("GameStateManager"):WaitForObject()
-local spottingXP = script:GetCustomProperty("SpottingXP")
+local viewRange = script:GetCustomProperty("ViewRange") 
+local spottingXP =  XP.SPOTTED_ENEMY.XP_AMOUNT
+
+local TANKS = _Constants_API:WaitForConstant("Tanks")
 
 local spottingList = {}
 local viewPointList = {}
@@ -60,8 +62,11 @@ function AddToList(player)
 				-- Add XP
 				player:AddResource(CURRENCY.XP.Name, spottingXP)
 				-- Add RP to tank
-				player:AddResource(UTIL_API.GetTankRPString(player:GetResource(Constants_API.GetEquippedTankResource())), spottingXP)
-				Events.BroadcastToPlayer(player, "GainXP", {reason = Constants_API.XP_GAIN_REASON.SPOTTED_ENEMY, amount = spottingXP})
+				
+				player:AddResource(UTIL_API.GetTankRPString(player:GetResource(TANKS.EquipResource)), spottingXP)
+				Events.BroadcastToPlayer(player, "GainXP", {
+					reason = "SPOTTED_ENEMY", 
+					amount = spottingXP})
 			end
 			script:SetNetworkedCustomProperty("P" .. tostring(i), player.id)
 			return
