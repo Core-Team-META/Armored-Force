@@ -11,9 +11,8 @@ local TankApi = _Constants_API:WaitForConstant('Tanks')
 
 local TANK_INFO = TankApi.GetTanks()
 
--- Definitions
-local TEAM_DEFINITIONS = script:GetCustomProperty('TechTree_TeamDefinitions'):WaitForObject()
-local CURRENCY_DEFINITIONS = script:GetCustomProperty('TechTree_CurrencyDefinitions'):WaitForObject()
+-- Definitions 
+local CURRENCY_DEFINITIONS = _Constants_API:WaitForConstant("Currency")
 
 -- Player stat panel properties
 local XP_Texts = script:GetCustomProperty('XP_Texts'):WaitForObject()
@@ -699,17 +698,17 @@ function PopulateCurrencyUI()
 
     -- Load up currency panels based on set definitions
     local currencyCount = 0
-    for k, v in ipairs(CURRENCY_DEFINITIONS:GetChildren()) do
+    for _, v in pairs(CURRENCY_DEFINITIONS) do
         local panel = World.SpawnAsset(currencyContentsPanel, {parent = currencyPanel})
         panel.x = BASE_CURRENCY_POSITION_X + (currencyCount * CURRENCY_X_OFFSET)
         panel.y = BASE_CURRENCY_POSITION_Y
         for _, child in ipairs(panel:GetChildren()) do
             if (child.name == 'Icon') then
-                local icon = v:GetCustomProperty('Icon')
+                local icon = v.Icon
                 child:SetImage(icon)
                 child:SetColor(Color.WHITE)
             elseif (child.name == 'Amount') then
-                child.text = tostring(LOCAL_PLAYER:GetResource(v.name))
+                child.text = tostring(LOCAL_PLAYER:GetResource(v.Name))
             end
         end
         currencyCount = currencyCount + 1

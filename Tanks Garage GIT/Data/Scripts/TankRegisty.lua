@@ -69,8 +69,8 @@ Tanks.NumberOfTanks = function()
 end
 Tanks.GetPurchaseCost = function(id)
     local tank = Tanks.GetTankFromId(tonumber(id))
-    if tank then 
-        return {resource = tostring(tank.tankResourceName), amount = tonumber(tank.tankPurchaseAmount)}	
+    if tank then
+        return {resource = tostring(tank.purchaseCurrencyName), amount = tonumber(tank.purchaseCost)}	
     end
 end
 

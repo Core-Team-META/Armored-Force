@@ -1,13 +1,13 @@
 Assets {
-  Id: 9298200724150212839
-  Name: "Registry_Currency"
+  Id: 14265157932256014828
+  Name: "Registry_Perks"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 17749541630557761566
+      RootId: 1319858093794456057
       Objects {
-        Id: 17749541630557761566
-        Name: "Registry_Currency"
+        Id: 1319858093794456057
+        Name: "Registry_Perks"
         Transform {
           Scale {
             X: 1
@@ -16,9 +16,9 @@ Assets {
           }
         }
         ParentId: 15818976189543274029
-        ChildIds: 12568862925550255065
-        ChildIds: 15775605634258636963
-        ChildIds: 9155031731177811509
+        ChildIds: 3907244042138425379
+        ChildIds: 8616652428306664775
+        ChildIds: 11061818213495800869
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -36,7 +36,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12568862925550255065
+        Id: 3907244042138425379
         Name: "Folder"
         Transform {
           Location {
@@ -49,13 +49,16 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17749541630557761566
-        ChildIds: 16153135163240676686
-        ChildIds: 11521747149175560843
-        ChildIds: 14770815955631078793
-        ChildIds: 17943719346170692251
-        ChildIds: 9176102567015290702
-        ChildIds: 3103256762824892649
+        ParentId: 1319858093794456057
+        ChildIds: 3810405590266955562
+        ChildIds: 2059028602147466130
+        ChildIds: 9321970021007929916
+        ChildIds: 1255515599189039907
+        ChildIds: 14414562583090469465
+        ChildIds: 13591350870671128762
+        ChildIds: 12648561155297033475
+        ChildIds: 14865719219927355360
+        ChildIds: 17341006233999402890
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -73,8 +76,8 @@ Assets {
         }
       }
       Objects {
-        Id: 16153135163240676686
-        Name: "Silver"
+        Id: 3810405590266955562
+        Name: "SILVER_PACK1"
         Transform {
           Location {
           }
@@ -86,25 +89,24 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12568862925550255065
+        ParentId: 3907244042138425379
         UnregisteredParameters {
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:perk"
+            NetReference {
+              Key: "6841e816f81042a6a3b06747310de3ff"
+              Type {
+                Value: "mc:enetreferencetype:creatorperk"
+              }
+            }
+          }
+          Overrides {
+            Name: "cs:id"
             Int: 1
           }
           Overrides {
-            Name: "cs:Name"
-            String: "Silver"
-          }
-          Overrides {
-            Name: "cs:Icon"
-            AssetReference {
-              Id: 6262982467505051120
-            }
-          }
-          Overrides {
-            Name: "cs:DisplayName"
-            String: "Silver"
+            Name: "cs:name"
+            String: "SILVER_PACK1"
           }
         }
         Collidable_v2 {
@@ -121,13 +123,13 @@ Assets {
         }
         Script {
           ScriptAsset {
-            Id: 639029098114520223
+            Id: 12862310799012227579
           }
         }
       }
       Objects {
-        Id: 11521747149175560843
-        Name: "Gold"
+        Id: 2059028602147466130
+        Name: "SILVER_PACK2"
         Transform {
           Location {
           }
@@ -139,25 +141,24 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12568862925550255065
+        ParentId: 3907244042138425379
         UnregisteredParameters {
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:perk"
+            NetReference {
+              Key: "8bf50a39b36a41f6955c8d5da9318967"
+              Type {
+                Value: "mc:enetreferencetype:creatorperk"
+              }
+            }
+          }
+          Overrides {
+            Name: "cs:id"
             Int: 2
           }
           Overrides {
-            Name: "cs:Name"
-            String: "GOLD"
-          }
-          Overrides {
-            Name: "cs:Icon"
-            AssetReference {
-              Id: 1283463588493558965
-            }
-          }
-          Overrides {
-            Name: "cs:DisplayName"
-            String: "Gold"
+            Name: "cs:name"
+            String: "SILVER_PACK2"
           }
         }
         Collidable_v2 {
@@ -174,13 +175,13 @@ Assets {
         }
         Script {
           ScriptAsset {
-            Id: 639029098114520223
+            Id: 12862310799012227579
           }
         }
       }
       Objects {
-        Id: 14770815955631078793
-        Name: "Free XP"
+        Id: 9321970021007929916
+        Name: "SILVER_PACK3"
         Transform {
           Location {
           }
@@ -192,25 +193,24 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12568862925550255065
+        ParentId: 3907244042138425379
         UnregisteredParameters {
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:perk"
+            NetReference {
+              Key: "8cadd4667c1044fcaa914b011d86e503"
+              Type {
+                Value: "mc:enetreferencetype:creatorperk"
+              }
+            }
+          }
+          Overrides {
+            Name: "cs:id"
             Int: 3
           }
           Overrides {
-            Name: "cs:Name"
-            String: "FREERP"
-          }
-          Overrides {
-            Name: "cs:DisplayName"
-            String: "Free XP"
-          }
-          Overrides {
-            Name: "cs:Icon"
-            AssetReference {
-              Id: 7053705669844552709
-            }
+            Name: "cs:name"
+            String: "SILVER_PACK3"
           }
         }
         Collidable_v2 {
@@ -227,13 +227,13 @@ Assets {
         }
         Script {
           ScriptAsset {
-            Id: 639029098114520223
+            Id: 12862310799012227579
           }
         }
       }
       Objects {
-        Id: 17943719346170692251
-        Name: "XP"
+        Id: 1255515599189039907
+        Name: "GOLD_PACK1"
         Transform {
           Location {
           }
@@ -245,19 +245,24 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12568862925550255065
+        ParentId: 3907244042138425379
         UnregisteredParameters {
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:perk"
+            NetReference {
+              Key: "da73711944b048e58985da9e60dedca8"
+              Type {
+                Value: "mc:enetreferencetype:creatorperk"
+              }
+            }
+          }
+          Overrides {
+            Name: "cs:id"
             Int: 4
           }
           Overrides {
-            Name: "cs:Name"
-            String: "XP"
-          }
-          Overrides {
-            Name: "cs:DisplayName"
-            String: "XP"
+            Name: "cs:name"
+            String: "GOLD_PACK1"
           }
         }
         Collidable_v2 {
@@ -274,13 +279,13 @@ Assets {
         }
         Script {
           ScriptAsset {
-            Id: 639029098114520223
+            Id: 12862310799012227579
           }
         }
       }
       Objects {
-        Id: 9176102567015290702
-        Name: "Tank parts"
+        Id: 14414562583090469465
+        Name: "GOLD_PACK2"
         Transform {
           Location {
           }
@@ -292,19 +297,24 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12568862925550255065
+        ParentId: 3907244042138425379
         UnregisteredParameters {
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:perk"
+            NetReference {
+              Key: "9b2b70e29b3c4e169bdbbb392256e9d5"
+              Type {
+                Value: "mc:enetreferencetype:creatorperk"
+              }
+            }
+          }
+          Overrides {
+            Name: "cs:id"
             Int: 5
           }
           Overrides {
-            Name: "cs:Name"
-            String: "TANKPARTS"
-          }
-          Overrides {
-            Name: "cs:DisplayName"
-            String: "Tank parts"
+            Name: "cs:name"
+            String: "GOLD_PACK2"
           }
         }
         Collidable_v2 {
@@ -321,13 +331,13 @@ Assets {
         }
         Script {
           ScriptAsset {
-            Id: 639029098114520223
+            Id: 12862310799012227579
           }
         }
       }
       Objects {
-        Id: 3103256762824892649
-        Name: "Universal tank part"
+        Id: 13591350870671128762
+        Name: "GOLD_PACK3"
         Transform {
           Location {
           }
@@ -339,25 +349,24 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12568862925550255065
+        ParentId: 3907244042138425379
         UnregisteredParameters {
           Overrides {
-            Name: "cs:ID"
+            Name: "cs:perk"
+            NetReference {
+              Key: "ac05a84be6ff4d1bb1473bd3381171bf"
+              Type {
+                Value: "mc:enetreferencetype:creatorperk"
+              }
+            }
+          }
+          Overrides {
+            Name: "cs:id"
             Int: 6
           }
           Overrides {
-            Name: "cs:Name"
-            String: "Universal Tank Parts"
-          }
-          Overrides {
-            Name: "cs:DisplayName"
-            String: "Universal Tank Parts"
-          }
-          Overrides {
-            Name: "cs:Icon"
-            AssetReference {
-              Id: 15087097116682079611
-            }
+            Name: "cs:name"
+            String: "GOLD_PACK3"
           }
         }
         Collidable_v2 {
@@ -374,12 +383,168 @@ Assets {
         }
         Script {
           ScriptAsset {
-            Id: 639029098114520223
+            Id: 12862310799012227579
           }
         }
       }
       Objects {
-        Id: 15775605634258636963
+        Id: 12648561155297033475
+        Name: "SOLDIERPACK"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3907244042138425379
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:perk"
+            NetReference {
+              Key: "49585fe5e81b4de9827fd8d8e6190685"
+              Type {
+                Value: "mc:enetreferencetype:creatorperk"
+              }
+            }
+          }
+          Overrides {
+            Name: "cs:id"
+            Int: 7
+          }
+          Overrides {
+            Name: "cs:name"
+            String: "SOLDIERPACK"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 12862310799012227579
+          }
+        }
+      }
+      Objects {
+        Id: 14865719219927355360
+        Name: "CAPTAINPACK"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3907244042138425379
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:perk"
+            NetReference {
+              Key: "1876b0cd2220432ba9aaadddd077f041"
+              Type {
+                Value: "mc:enetreferencetype:creatorperk"
+              }
+            }
+          }
+          Overrides {
+            Name: "cs:id"
+            Int: 8
+          }
+          Overrides {
+            Name: "cs:name"
+            String: "CAPTAINPACK"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 12862310799012227579
+          }
+        }
+      }
+      Objects {
+        Id: 17341006233999402890
+        Name: "GENERALPACK"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3907244042138425379
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:perk"
+            NetReference {
+              Key: "67664d19c16944bba2de6e88ec6c7404"
+              Type {
+                Value: "mc:enetreferencetype:creatorperk"
+              }
+            }
+          }
+          Overrides {
+            Name: "cs:id"
+            Int: 9
+          }
+          Overrides {
+            Name: "cs:name"
+            String: "GENERALPACK"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 12862310799012227579
+          }
+        }
+      }
+      Objects {
+        Id: 8616652428306664775
         Name: "ServerContext"
         Transform {
           Location {
@@ -392,8 +557,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17749541630557761566
-        ChildIds: 4162336716775022909
+        ParentId: 1319858093794456057
+        ChildIds: 14723679133619392136
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -411,8 +576,8 @@ Assets {
         }
       }
       Objects {
-        Id: 4162336716775022909
-        Name: "Currency"
+        Id: 14723679133619392136
+        Name: "Perk"
         Transform {
           Location {
           }
@@ -424,16 +589,16 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15775605634258636963
+        ParentId: 8616652428306664775
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
-            String: "Currency"
+            String: "Perks"
           }
           Overrides {
             Name: "cs:Folder"
             ObjectReference {
-              SubObjectId: 12568862925550255065
+              SubObjectId: 3907244042138425379
             }
           }
           Overrides {
@@ -442,7 +607,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Key"
-            String: "Name"
+            String: "name"
           }
         }
         Collidable_v2 {
@@ -464,7 +629,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9155031731177811509
+        Id: 11061818213495800869
         Name: "ClientContext"
         Transform {
           Location {
@@ -477,8 +642,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17749541630557761566
-        ChildIds: 10433251284736921515
+        ParentId: 1319858093794456057
+        ChildIds: 7114809786692614277
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -495,8 +660,8 @@ Assets {
         }
       }
       Objects {
-        Id: 10433251284736921515
-        Name: "Currency"
+        Id: 7114809786692614277
+        Name: "Perk"
         Transform {
           Location {
           }
@@ -508,16 +673,16 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9155031731177811509
+        ParentId: 11061818213495800869
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
-            String: "Currency"
+            String: "Perks"
           }
           Overrides {
             Name: "cs:Folder"
             ObjectReference {
-              SubObjectId: 12568862925550255065
+              SubObjectId: 3907244042138425379
             }
           }
           Overrides {
@@ -526,7 +691,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Key"
-            String: "Name"
+            String: "name"
           }
         }
         Collidable_v2 {
@@ -546,42 +711,6 @@ Assets {
             Id: 11034628940190777780
           }
         }
-      }
-    }
-    Assets {
-      Id: 6262982467505051120
-      Name: "Fantasy Craft Bar 002"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Crafting_Bar_002"
-      }
-    }
-    Assets {
-      Id: 1283463588493558965
-      Name: "Fantasy Gold 001"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Equip_Gold_002"
-      }
-    }
-    Assets {
-      Id: 7053705669844552709
-      Name: "Survival Gear 001"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Survival_Equip_Gear_001"
-      }
-    }
-    Assets {
-      Id: 15087097116682079611
-      Name: "Sci-fi Container 002"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_SciFi_Equip_Container_002"
       }
     }
     PrimaryAssetId {

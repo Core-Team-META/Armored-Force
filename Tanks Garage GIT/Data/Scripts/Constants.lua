@@ -143,6 +143,21 @@ Const.XP_TIER_VALUE = {
     TIER4 = 400
 }
 
+Const.XP = {
+    REASONS = {
+        DAMAGE_DEALT = {
+            TEXT =  'Damage Dealt',
+            XP = 25,
+            ID = 1,
+        },
+        SPOTTED_ENEMY  = {
+            TEXT =  'Spotted Enemy',
+            XP = 25,
+            ID = 2,
+        }
+    }
+}
+
 Const.XP_GAIN_REASON = {
     DAMAGE_DEALT = 1,
     SPOTTED_ENEMY = 2

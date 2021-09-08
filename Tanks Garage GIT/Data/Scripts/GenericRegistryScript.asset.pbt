@@ -20,6 +20,14 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:UseKey"
+        Bool: false
+      }
+      Overrides {
+        Name: "cs:Key"
+        String: ""
+      }
+      Overrides {
         Name: "cs:Name:category"
         String: "Custom"
       }

@@ -16,6 +16,7 @@ Objects {
   }
   ParentId: 1729280101287281465
   ChildIds: 8428918638154795264
+  ChildIds: 11700345402278708887
   ChildIds: 16731716681513010579
   ChildIds: 2002695381261427726
   ChildIds: 10515759228973231481
@@ -258,6 +259,48 @@ Objects {
     }
     TemplateAsset {
       Id: 9298200724150212839
+    }
+  }
+}
+Objects {
+  Id: 11700345402278708887
+  Name: "Registry_Perks"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15818976189543274029
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1319858093794456057
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Registry_Perks"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14265157932256014828
     }
   }
 }

@@ -1,6 +1,9 @@
 -- API
 local Constants_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
+local _Constants_API = require(script:GetCustomProperty("Constants_API"))
+
+local CURRENCY = _Constants_API:WaitForConstant("Currency")
 
 local viewRange = script:GetCustomProperty("ViewRange")
 local gameStateManager = script:GetCustomProperty("GameStateManager"):WaitForObject()
@@ -55,7 +58,7 @@ function AddToList(player)
 		if script:GetCustomProperty("P" .. tostring(i)) == "" then
 			if player:IsA("Player") then
 				-- Add XP
-				player:AddResource(Constants_API.XP, spottingXP)
+				player:AddResource(CURRENCY.XP.Name, spottingXP)
 				-- Add RP to tank
 				player:AddResource(UTIL_API.GetTankRPString(player:GetResource(Constants_API.GetEquippedTankResource())), spottingXP)
 				Events.BroadcastToPlayer(player, "GainXP", {reason = Constants_API.XP_GAIN_REASON.SPOTTED_ENEMY, amount = spottingXP})
