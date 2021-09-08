@@ -326,5 +326,5 @@ Assets {
       AssetId: "Sky_Cape_Canaveral"
     }
   }
-  SerializationVersion: 99
+  SerializationVersion: 98
 }

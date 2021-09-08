@@ -948,5 +948,5 @@ Assets {
       AssetId: "Vehicle_Speedometer_Display"
     }
   }
-  SerializationVersion: 99
+  SerializationVersion: 98
 }

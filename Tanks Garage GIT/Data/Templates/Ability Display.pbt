@@ -915,5 +915,5 @@ Assets {
       AssetId: "Ability_Display"
     }
   }
-  SerializationVersion: 99
+  SerializationVersion: 98
 }

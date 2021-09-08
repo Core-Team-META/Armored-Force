@@ -328,5 +328,5 @@ Assets {
       AssetId: "Sign_-_One_Way"
     }
   }
-  SerializationVersion: 99
+  SerializationVersion: 98
 }
