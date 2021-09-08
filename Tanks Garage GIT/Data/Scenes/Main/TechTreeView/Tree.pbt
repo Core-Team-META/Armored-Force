@@ -284,7 +284,7 @@ Objects {
     Overrides {
       Name: "cs:TechTree_TeamDefinitions"
       ObjectReference {
-        SelfId: 7712902404816319527
+        SelfId: 841534158063459245
       }
     }
     Overrides {

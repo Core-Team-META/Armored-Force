@@ -11,82 +11,68 @@ end
 ------------------------------------------------------------------------------------------------------------------------
 -- REQUIRE
 ------------------------------------------------------------------------------------------------------------------------
-local CONST = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local UTIL = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 local _Constants_API = require(script:GetCustomProperty("Constants_API")) 
 ------------------------------------------------------------------------------------------------------------------------
 -- OBJECTS
-------------------------------------------------------------------------------------------------------------------------
-local PERKS_DATA = script:GetCustomProperty("PerksData"):WaitForObject()
+------------------------------------------------------------------------------------------------------------------------ 
 local PROJECT_KEYS =  _Constants_API:WaitForConstant("Storage_Keys") 
+local STORAGE =  _Constants_API:WaitForConstant("STORAGE") 
+local PERKS = _Constants_API:WaitForConstant("Perks")
+local CURRENCY = _Constants_API:WaitForConstant("Currency")
+
 local STORAGE_KEY = PROJECT_KEYS.Tanks
-
-------------------------------------------------------------------------------------------------------------------------
--- NET REFRENCE
-------------------------------------------------------------------------------------------------------------------------
-local GoldPack1 = PERKS_DATA:GetCustomProperty("GoldPack1")
-local GoldPack2 = PERKS_DATA:GetCustomProperty("GoldPack2")
-local GoldPack3 = PERKS_DATA:GetCustomProperty("GoldPack3")
-
-local SilverPack1 = PERKS_DATA:GetCustomProperty("SilverPack1")
-local SilverPack2 = PERKS_DATA:GetCustomProperty("SilverPack2")
-local SilverPack3 = PERKS_DATA:GetCustomProperty("SilverPack3")
-
-local CaptainPack = PERKS_DATA:GetCustomProperty("CaptainPack")
-local GeneralPack = PERKS_DATA:GetCustomProperty("GeneralPack")
-local SoldierPack = PERKS_DATA:GetCustomProperty("SoldierPack")
-
 ------------------------------------------------------------------------------------------------------------------------
 -- TABLE BUILDER
 ------------------------------------------------------------------------------------------------------------------------
 local bundles = {}
 bundles[#bundles + 1] = {
-    perk = GoldPack1,
-    storageId = CONST.PERK_STORAGE_KEYS.GOLD_PACK1,
-    resourceName = CONST.GOLD,
+    perk = PERKS.GOLD_PACK1.perk,
+    storageId = PERKS.GOLD_PACK1.id,
+    resourceName = CURRENCY.GOLD,
     reward = 100
 }
 bundles[#bundles + 1] = {
-    perk = GoldPack2,
-    storageId = CONST.PERK_STORAGE_KEYS.GOLD_PACK2,
-    resourceName = CONST.GOLD,
+    perk =  PERKS.GOLD_PACK2.perk,
+    storageId = PERKS.GOLD_PACK2.id,
+    resourceName = CURRENCY.GOLD,
     reward = 250
 }
 bundles[#bundles + 1] = {
-    perk = GoldPack3,
-    storageId = CONST.PERK_STORAGE_KEYS.GOLD_PACK3,
-    resourceName = CONST.GOLD,
+    perk = PERKS.GOLD_PACK3.perk,
+    storageId = PERKS.GOLD_PACK3.id,
+    resourceName = CURRENCY.GOLD,
     reward = 500
 }
 bundles[#bundles + 1] = {
-    perk = SilverPack1,
-    storageId = CONST.PERK_STORAGE_KEYS.SILVER_PACK1,
-    resourceName = CONST.SILVER,
+    perk = PERKS.SILVER_PACK1.perk,
+    storageId = PERKS.SILVER_PACK1.id,
+    resourceName = CURRENCY.SILVER,
     reward = 10000
 }
 bundles[#bundles + 1] = {
-    perk = SilverPack2,
-    storageId = CONST.PERK_STORAGE_KEYS.SILVER_PACK2,
-    resourceName = CONST.SILVER,
+    perk = PERKS.SILVER_PACK2.perk,
+    storageId = PERKS.SILVER_PACK2.id,
+    resourceName = CURRENCY.SILVER,
     reward = 25000
 }
 bundles[#bundles + 1] = {
-    perk = SilverPack3,
-    storageId = CONST.PERK_STORAGE_KEYS.SILVER_PACK3,
-    resourceName = CONST.SILVER,
+    perk = PERKS.SILVER_PACK3.perk,
+    storageId = PERKS.SILVER_PACK3.id,
+    resourceName = CURRENCY.SILVER,
     reward = 50000
 }
 bundles[#bundles + 1] = {
-    perk = SoldierPack,
-    storageId = CONST.PERK_STORAGE_KEYS.SOLDIERPACK
+    perk =  PERKS.SOLDIERPACK,
+    storageId = PERKS.SOLDIERPACK.id
 }
 bundles[#bundles + 1] = {
-    perk = CaptainPack,
-    storageId = CONST.PERK_STORAGE_KEYS.CAPTAINPACK
+    perk = PERKS.CAPTAINPACK,
+    storageId = PERKS.CAPTAINPACK.id
 }
 bundles[#bundles + 1] = {
-    perk = GeneralPack,
-    storageId = CONST.PERK_STORAGE_KEYS.GENERALPACK
+    perk = PERKS.GENERALPACK,
+    storageId = PERKS.GENERALPACK.id
 }
 
 --------------------------------------------------------------------------------------------------------------------------
@@ -98,8 +84,8 @@ bundles[#bundles + 1] = {
 local function OnSaveCurrencyData(player)
     local currencyData = Storage.GetSharedPlayerData(STORAGE_KEY, player)
     local playerCurrency = {}
-    for index, resName in ipairs(CONST.CURRENCY) do
-        currencyData[resName] = player:GetResource(resName)
+    for index, resName in pairs(CURRENCY) do
+        currencyData[resName.Name] = player:GetResource(resName.Name)
     end
     Storage.SetSharedPlayerData(STORAGE_KEY, player, currencyData)
 end
@@ -108,8 +94,8 @@ end
 --@return table tempTbl
 local function OnLoadPerkData(data)
     local tempTbl = {}
-    if data[CONST.STORAGE.PERKS] then
-        tempTbl = UTIL.ConvertStringToTable(data[CONST.STORAGE.PERKS], ",", "=")
+    if data[STORAGE.PERKS] then
+        tempTbl = UTIL.ConvertStringToTable(data[STORAGE.PERKS], ",", "=")
     end
     return tempTbl
 end
@@ -119,7 +105,7 @@ end
 --@param table data
 --@param table perks
 local function OnSavePerkData(player, data, perks)
-    data[CONST.STORAGE.PERKS] = next(perks) ~= nil and UTIL.ConvertTableToString(perks, ",", "=") or ""
+    data[STORAGE.PERKS] = next(perks) ~= nil and UTIL.ConvertTableToString(perks, ",", "=") or ""
     Storage.SetSharedPlayerData(STORAGE_KEY, player, data)
 end
 
@@ -148,25 +134,25 @@ function CheckPerkCountWithStorage(player, data)
             end
 
             --Bundles
-            if bundle.perk == SoldierPack and player:HasPerk(bundle.perk) then
+            if bundle.perk == PERKS.SOLDIERPACK and player:HasPerk(bundle.perk) then
                 if perkCount > storageCount then
-                    player:AddResource(CONST.SILVER, 10000)
-                    player:AddResource(CONST.GOLD, 100)
-                    player:AddResource(CONST.FREERP, 10000)
+                    player:AddResource(CURRENCY.SILVER, 10000)
+                    player:AddResource(CURRENCY.GOLD, 100)
+                    player:AddResource(CURRENCY.FREERP, 10000)
                     perks[bundle.storageId] = perkCount
                 end
-            elseif bundle.perk == CaptainPack and player:HasPerk(bundle.perk) then
+            elseif bundle.perk == PERKS.CAPTAINPACK and player:HasPerk(bundle.perk) then
                 if perkCount > storageCount then
-                    player:AddResource(CONST.SILVER, 25000)
-                    player:AddResource(CONST.GOLD, 250)
-                    player:AddResource(CONST.FREERP, 25000)
+                    player:AddResource(CURRENCY.SILVER, 25000)
+                    player:AddResource(CURRENCY.GOLD, 250)
+                    player:AddResource(CURRENCY.FREERP, 25000)
                     perks[bundle.storageId] = perkCount
                 end
-            elseif bundle.perk == GeneralPack and player:HasPerk(bundle.perk) then
+            elseif bundle.perk == PERKS.GENERALPACK and player:HasPerk(bundle.perk) then
                 if perkCount > storageCount then
-                    player:AddResource(CONST.SILVER, 50000)
-                    player:AddResource(CONST.GOLD, 500)
-                    player:AddResource(CONST.FREERP, 50000)
+                    player:AddResource(CURRENCY.SILVER, 50000)
+                    player:AddResource(CURRENCY.GOLD, 500)
+                    player:AddResource(CURRENCY.FREERP, 50000)
                     perks[bundle.storageId] = perkCount
                 end
             end
@@ -177,7 +163,7 @@ end
 
 -- If player spend and earns the currency resource, update the storage
 function OnResourceChanged(player, resource)
-    if resource == CONST.GOLD or resource == CONST.SILVER then
+    if resource == CURRENCY.GOLD.Name or resource == CURRENCY.SILVER.Name then
         OnSaveCurrencyData(player)
     end
 end

@@ -1,5 +1,4 @@
-local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
-
+ 
 function UnpackChallengeInfo(player)
 
 	player.serverUserData.CHALLENGE = {}
