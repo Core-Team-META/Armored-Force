@@ -6191,6 +6191,12 @@ Assets {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 13279159262114080746
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
