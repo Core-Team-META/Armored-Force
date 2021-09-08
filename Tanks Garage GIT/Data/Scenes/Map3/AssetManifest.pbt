@@ -1,17 +1,4 @@
 Assets {
-  Id: 18343622613119757208
-  Name: "achievements"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "3da404ca739944b89c7482c636a4205e"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 18000572852129032995
   Name: "PremiumSubscription"
   PlatformAssetType: 24
@@ -34,12 +21,38 @@ Assets {
   }
 }
 Assets {
+  Id: 15819879333164973552
+  Name: "leaderboards"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "0769d3926b484298a272db2e3fb6b331"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 15377096960086681777
   Name: "Marble Basic 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_gen_marble_tiles_001_uv"
+  }
+}
+Assets {
+  Id: 14856115594490923278
+  Name: "tanks"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "fa9ee29be1d64b50a639f83e782c272b"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }
 Assets {
@@ -69,6 +82,19 @@ Assets {
   }
 }
 Assets {
+  Id: 13259373968546689460
+  Name: "achievements"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "0709e15d490a4304b5b0ec87b4c27170"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 10275389552133456967
   Name: "SoldierPack"
   PlatformAssetType: 24
@@ -77,19 +103,6 @@ Assets {
       Key: "49585fe5e81b4de9827fd8d8e6190685"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
-  Id: 9950104259964228469
-  Name: "PlayerSharedStorage"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "8cd7b4910d07447a8fac4ca5a361a105"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
   }
@@ -143,25 +156,25 @@ Assets {
   }
 }
 Assets {
-  Id: 7150303638435450024
-  Name: "skins"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "dcf79b56c55f4d75a9efc3afebd4b018"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 5351428073291024820
   Name: "Emissive Glow Opaque"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxma_opaque_emissive"
+  }
+}
+Assets {
+  Id: 5252968813920801092
+  Name: "skins"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "f4abf4b9e13944fd955af3eaaeb43905"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }
 Assets {
@@ -221,32 +234,6 @@ Assets {
       Key: "1876b0cd2220432ba9aaadddd077f041"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
-  Id: 3019015013360940982
-  Name: "tank"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "c43fcd2160184df0a6269654c7ceb712"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
-  Id: 2471593252014101833
-  Name: "leaderboards"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "279d6cb10c5944d3ad583f41b2f139d3"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
   }
