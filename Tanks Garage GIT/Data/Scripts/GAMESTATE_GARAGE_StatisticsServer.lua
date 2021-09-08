@@ -244,7 +244,7 @@ function OnDamagedRecord(player, damage)
 				damage.sourcePlayer,
 				"GainXP",
 				{
-					reason = CONSTANTS_API.XP_GAIN_REASON.DAMAGE_DEALT,
+					reason = "DAMAGE_DEALT",
 					amount = xpRewarded,
 					premium = UTIL_API.UsingPremiumTank(tonumber(sourceTankId))
 				}

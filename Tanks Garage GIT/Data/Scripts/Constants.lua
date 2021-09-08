@@ -38,16 +38,16 @@ Const.PERK_STORAGE_KEYS = {
 -- PROGRESS KEYS
 ------------------------------------------------------------------------------------------------------------------------
 Const.MAPLINKS = {
-    Garage = "bf3d88/armored-force",
+    Garage = 'bf3d88/armored-force',
     Map1 = 'f19478/armored-force-frontline',
     Map2 = '',
     Map3 = ''
-} 
+}
 
 Const.PORTALIMAGES = {
-    ImageHolder1 = "80e9b4/tanksportal-images1",
-    ImageHolder2 = "39cdb8/tanksportal-images2",
-    ImageHolder3 = "",
+    ImageHolder1 = '14abde/tanksportal-images1',
+    ImageHolder2 = 'b7933d/tanksportal-images2',
+    ImageHolder3 = ''
 }
 
 -- REWARD KEYS
@@ -144,17 +144,15 @@ Const.XP_TIER_VALUE = {
 }
 
 Const.XP = {
-    REASONS = {
-        DAMAGE_DEALT = {
-            TEXT =  'Damage Dealt',
-            XP = 25,
-            ID = 1,
-        },
-        SPOTTED_ENEMY  = {
-            TEXT =  'Spotted Enemy',
-            XP = 25,
-            ID = 2,
-        }
+    DAMAGE_DEALT = {
+        TEXT = 'Damage Dealt',
+        XP_AMOUNT = 25,
+        ID = 1
+    },
+    SPOTTED_ENEMY = {
+        TEXT = 'Spotted Enemy',
+        XP_AMOUNT = 25,
+        ID = 2
     }
 }
 

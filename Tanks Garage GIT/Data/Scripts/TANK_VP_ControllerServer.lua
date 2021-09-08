@@ -195,9 +195,12 @@ function AssignDriver(newDriver)
 	destroyedTankTempate = templateReferences:GetCustomProperty("DestroyedTank")
 	
 	chassis = World.SpawnAsset(chassisTemplate)
-	chassis:SetWorldPosition(script:GetWorldPosition())
-	chassis:SetWorldRotation(script:GetWorldRotation())
-
+	
+	local originalGravity = chassis.gravityScale
+	chassis.gravityScale = 0
+	--chassis:SetWorldPosition(script:GetWorldPosition())
+	--chassis:SetWorldRotation(script:GetWorldRotation())
+	chassis:SetWorldTransform(script:GetWorldTransform())
 	
 	Task.Wait()
 
@@ -277,6 +280,10 @@ function AssignDriver(newDriver)
 	checkStuckTankTask = Task.Spawn(CheckStuckTank, 0)
 	checkStuckTankTask.repeatCount = -1
 	checkStuckTankTask.repeatInterval = 0.5
+	
+	Task.Wait(0.5)
+	
+	chassis.gravityScale = originalGravity
 
 end
 
