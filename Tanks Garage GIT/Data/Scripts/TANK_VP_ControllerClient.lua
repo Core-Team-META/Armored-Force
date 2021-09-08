@@ -1,6 +1,5 @@
 -- Main Component References
 local tankControllerServer = script:GetCustomProperty("TankControllerServer"):WaitForObject()
-local templateReferences = script:GetCustomProperty("TemplateReferences"):WaitForObject()
 
 -- API
 local identifier = tankControllerServer:GetCustomProperty("Identifier")
@@ -9,9 +8,9 @@ local Constants_API = require(script:GetCustomProperty("Constants_API"))
 local tankData =   Constants_API:WaitForConstant("Tanks").GetTankFromId(tonumber(identifier)) 
 
 -- Visual Settings
-local recoilRockingMultiplier = tankControllerServer:GetCustomProperty("RecoilRockingMultiplier")
-local recoilAmount = tankControllerServer:GetCustomProperty("RecoilAmount")
-local wheelSpeedModifier = tankControllerServer:GetCustomProperty("WheelSpeedModifier")
+local recoilRockingMultiplier = tankData.recoilRockingMultiplier
+local recoilAmount = tankData.recoilAmount
+local wheelSpeedModifier = tankData.wheelSpeedModifier
 
 -- Other asset refs
 local extinguishVFX = script:GetCustomProperty("ExtinguishVFX")
@@ -124,7 +123,13 @@ end
 
 function GetSkin(player)
 
-	return templateReferences:GetCustomProperty("Default" .. "Skin")
+	local selectedSkin = tankData.Skin
+
+	if (player ~= Game.GetLocalPlayer()) and tankData.SkinLoFi then	
+		selectedSkin = tankData.SkinLoFi
+	end
+
+	return selectedSkin
 	
 end
 
