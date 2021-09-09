@@ -30,6 +30,11 @@ local killCurrencyValue = victoryComponent:GetCustomProperty("KillCurrencyValue"
 local survivalXPValue = victoryComponent:GetCustomProperty("SurvivalXPValue")
 local survivalCurrencyValue = victoryComponent:GetCustomProperty("SurvivalCurrencyValue")
 
+local PLAYER_JOINED_XP_AMOUNT = 50
+local VICTORY_XP_PER_PLAYER_AMOUNT = 150
+local TIER_BONUS_DIVIDER = 5
+
+
 local winner = -1
 
 function TrackDailyChallenge(player, type, amount)
@@ -230,7 +235,7 @@ function OnDamagedRecord(player, damage)
 			local sourcePlayerTier = UTIL_API.GetTierFromId(sourceTankId)
 			local targetPlayerTier = UTIL_API.GetTierFromId(tankId)
 
-			local bonus = 1 + ((targetPlayerTier - sourcePlayerTier) / 10)
+			local bonus = 1 + ((targetPlayerTier - sourcePlayerTier) / TIER_BONUS_DIVIDER)
 			print("BONUS: " .. tostring(bonus))
 			xpRewarded = xpRewarded * bonus
 
@@ -339,6 +344,13 @@ function OnJoined(player)
 	player:SetResource("MatchKills", 0)
 	player:SetResource("DamageTracker", 0)
 	player:SetResource("SpottingTracker", 0)
+	
+	Task.Wait(1)
+	
+	for _, p in ipairs(Game.GetPlayers()) do
+		p:AddResource(CONSTANTS_API.XP, PLAYER_JOINED_XP_AMOUNT)
+	end
+	
 	--Task.Wait(20)
 	--ResourceCheck(player)
 end
