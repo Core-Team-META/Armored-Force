@@ -57,6 +57,10 @@ Assets {
         String: ""
       }
       Overrides {
+        Name: "cs:IsTournament"
+        Bool: false
+      }
+      Overrides {
         Name: "cs:PreRequisite:tooltip"
         String: "Quests needing to be completed before progress can begin"
       }
