@@ -7389,7 +7389,7 @@ Assets {
           }
           Overrides {
             Name: "cs:prerequisite1"
-            String: "23"
+            String: "19"
           }
           Overrides {
             Name: "cs:BurntTank"
