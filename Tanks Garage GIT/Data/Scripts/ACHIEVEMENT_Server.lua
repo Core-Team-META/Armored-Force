@@ -33,7 +33,7 @@ local tankInfo = {}
 -- LOCAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
 local function IsValidPlayer(object)
-    return Object.IsValid(object) and object:IsA("Player")
+    return Object.IsValid(object) and object:IsA("Player") or object:IsA("AIPlayer")
 end
 
 local function SetPlayerFlags(player)
