@@ -82,6 +82,7 @@ function API.RegisterAchievements(list)
             local preReq = child:GetCustomProperty("PreRequisite")
             local tier = child:GetCustomProperty("AchievementTier")
             local saveCount = child:GetCustomProperty("SaveCompletedCount")
+            local isTournament = child:GetCustomProperty("IsTournament")
 
             local achievement = {
                 id = id,
@@ -97,7 +98,8 @@ function API.RegisterAchievements(list)
                 givesReward = givesReward,
                 tier = tier,
                 saveCount = saveCount,
-                preReq = preReq
+                preReq = preReq,
+                isTournament = isTournament
             }
             if givesReward then
                 local rewardsTbl = {}
@@ -218,17 +220,24 @@ function API.GiveRewards(player, id)
     if achievements[id] then
         local achievement = achievements[id]
         if API.IsUnlocked(player, id) and API.HasRewards(id) then
-            -- Check to see if player unlocked achievement
-            for _, reward in ipairs(achievements[id].rewards) do
-                local resourceName = reward:GetCustomProperty("ResourceName")
-                local rewardAmount = reward:GetCustomProperty("Amount")
+            if not achievement.isTournament then
+                -- Check to see if player unlocked achievement
+                for _, reward in ipairs(achievements[id].rewards) do
+                    local resourceName = reward:GetCustomProperty("ResourceName")
+                    local rewardAmount = reward:GetCustomProperty("Amount")
 
-                if resourceName and rewardAmount then
-                    --player.serverUserData.XP:AddXP(rewardAmount) -- #TODO use XP Manager
-                    player:AddResource(resourceName, rewardAmount)
+                    if resourceName and rewardAmount then
+                        --player.serverUserData.XP:AddXP(rewardAmount) -- #TODO use XP Manager
+                        player:AddResource(resourceName, rewardAmount)
+                    end
+                end
+                API.SetClaimed(player, id)
+            elseif achievement.isTournament then
+                for _, reward in ipairs(achievements[id].rewards) do
+                local gamelink = reward:GetCustomProperty("GameLink")
+                player:TransferToGame(gamelink)
                 end
             end
-            API.SetClaimed(player, id)
         end
     end
 end
@@ -358,7 +367,7 @@ function API.AddProgress(player, id, value)
         if not achievements[id] then
             return
         end
-     
+
         local required = API.GetAchievementRequired(id)
         if currentProgress == 0 then
             player:SetResource(id, value + 1)
@@ -442,5 +451,3 @@ function API.FormatInt(number)
     int = int:reverse():gsub("(%d%d%d)", "%1,")
     return minus .. int:reverse():gsub("^,", "") .. fraction
 end
-
-

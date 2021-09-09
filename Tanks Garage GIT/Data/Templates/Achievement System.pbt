@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13885528144380728394
+        ParentId: 8082583568088031768
         ChildIds: 5507159331486064859
         ChildIds: 16921727977614181318
         ChildIds: 4985701431424760958
@@ -315,6 +315,24 @@ Assets {
             Name: "cs:REWARD_SFX"
             AssetReference {
               Id: 8077372839145882330
+            }
+          }
+          Overrides {
+            Name: "cs:ACHIEVEMENTS_ACTIVE_BUTTON"
+            ObjectReference {
+              SelfId: 13210944629277301871
+            }
+          }
+          Overrides {
+            Name: "cs:ACHIEVEMENTS_COMPLETE_BUTTON"
+            ObjectReference {
+              SelfId: 17885392631644371229
+            }
+          }
+          Overrides {
+            Name: "cs:ACHIEVEMENT_COMPLETE_SCROLL"
+            ObjectReference {
+              SelfId: 9856274255872680331
             }
           }
         }
@@ -5585,8 +5603,6 @@ Assets {
         }
         ParentId: 4985701431424760958
         ChildIds: 9226323274405837958
-        ChildIds: 10301791563149428195
-        ChildIds: 561078737231427539
         UnregisteredParameters {
           Overrides {
             Name: "cs:Description"
@@ -5626,6 +5642,10 @@ Assets {
             Name: "cs:GivesReward"
             Bool: true
           }
+          Overrides {
+            Name: "cs:IsTournament"
+            Bool: true
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5644,7 +5664,7 @@ Assets {
       }
       Objects {
         Id: 9226323274405837958
-        Name: "Silver"
+        Name: "Trophy"
         Transform {
           Location {
           }
@@ -5664,99 +5684,15 @@ Assets {
           }
           Overrides {
             Name: "cs:ResourceName"
-            String: "Silver"
+            String: "Trophy"
           }
           Overrides {
             Name: "cs:Amount"
-            Int: 400
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 8563684984866158969
-          }
-        }
-      }
-      Objects {
-        Id: 10301791563149428195
-        Name: "Gold"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 7697383570652242780
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:ResourceName"
-            String: "Gold"
+            Int: 1
           }
           Overrides {
-            Name: "cs:Enabled"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Amount"
-            Int: 100
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 8563684984866158969
-          }
-        }
-      }
-      Objects {
-        Id: 561078737231427539
-        Name: "Xp"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 7697383570652242780
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:ResourceName"
-            String: "Free XP"
-          }
-          Overrides {
-            Name: "cs:Enabled"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Amount"
-            Int: 8000
+            Name: "cs:GameLink"
+            String: "f1942a/vehicle-hub-4th-place"
           }
         }
         Collidable_v2 {
@@ -5789,9 +5725,7 @@ Assets {
           }
         }
         ParentId: 4985701431424760958
-        ChildIds: 12234852830189525791
-        ChildIds: 9609884434238932501
-        ChildIds: 11261909247304798429
+        ChildIds: 10403873602396555613
         UnregisteredParameters {
           Overrides {
             Name: "cs:Description"
@@ -5831,6 +5765,10 @@ Assets {
             Name: "cs:GivesReward"
             Bool: true
           }
+          Overrides {
+            Name: "cs:IsTournament"
+            Bool: true
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5848,8 +5786,8 @@ Assets {
         }
       }
       Objects {
-        Id: 12234852830189525791
-        Name: "Silver"
+        Id: 10403873602396555613
+        Name: "Trophy"
         Transform {
           Location {
           }
@@ -5869,99 +5807,15 @@ Assets {
           }
           Overrides {
             Name: "cs:ResourceName"
-            String: "Silver"
+            String: "Trophy"
           }
           Overrides {
             Name: "cs:Amount"
-            Int: 400
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 8563684984866158969
-          }
-        }
-      }
-      Objects {
-        Id: 9609884434238932501
-        Name: "Gold"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 6427274668352841898
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:ResourceName"
-            String: "Gold"
+            Int: 1
           }
           Overrides {
-            Name: "cs:Enabled"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Amount"
-            Int: 100
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 8563684984866158969
-          }
-        }
-      }
-      Objects {
-        Id: 11261909247304798429
-        Name: "Xp"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 6427274668352841898
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:ResourceName"
-            String: "Free XP"
-          }
-          Overrides {
-            Name: "cs:Enabled"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Amount"
-            Int: 8000
+            Name: "cs:GameLink"
+            String: "a7d342/vehicle-hub-3rd-place"
           }
         }
         Collidable_v2 {
@@ -5994,9 +5848,7 @@ Assets {
           }
         }
         ParentId: 4985701431424760958
-        ChildIds: 11422071578160286410
-        ChildIds: 9367663648353147118
-        ChildIds: 6193362744142691551
+        ChildIds: 9964489536896069145
         UnregisteredParameters {
           Overrides {
             Name: "cs:Description"
@@ -6036,6 +5888,10 @@ Assets {
             Name: "cs:GivesReward"
             Bool: true
           }
+          Overrides {
+            Name: "cs:IsTournament"
+            Bool: true
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6053,8 +5909,8 @@ Assets {
         }
       }
       Objects {
-        Id: 11422071578160286410
-        Name: "Silver"
+        Id: 9964489536896069145
+        Name: "Trophy"
         Transform {
           Location {
           }
@@ -6074,99 +5930,15 @@ Assets {
           }
           Overrides {
             Name: "cs:ResourceName"
-            String: "Silver"
+            String: "Trophy"
           }
           Overrides {
             Name: "cs:Amount"
-            Int: 400
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 8563684984866158969
-          }
-        }
-      }
-      Objects {
-        Id: 9367663648353147118
-        Name: "Gold"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 8323316762385731621
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:ResourceName"
-            String: "Gold"
+            Int: 1
           }
           Overrides {
-            Name: "cs:Enabled"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Amount"
-            Int: 100
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 8563684984866158969
-          }
-        }
-      }
-      Objects {
-        Id: 6193362744142691551
-        Name: "Xp"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 8323316762385731621
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:ResourceName"
-            String: "Free XP"
-          }
-          Overrides {
-            Name: "cs:Enabled"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Amount"
-            Int: 8000
+            Name: "cs:GameLink"
+            String: "7738ce/vehicle-hub-2nd-place"
           }
         }
         Collidable_v2 {
@@ -6199,9 +5971,7 @@ Assets {
           }
         }
         ParentId: 4985701431424760958
-        ChildIds: 10126606604468187546
-        ChildIds: 17479198090261623444
-        ChildIds: 9470582043619898035
+        ChildIds: 4981953570694071087
         UnregisteredParameters {
           Overrides {
             Name: "cs:Description"
@@ -6241,6 +6011,10 @@ Assets {
             Name: "cs:GivesReward"
             Bool: true
           }
+          Overrides {
+            Name: "cs:IsTournament"
+            Bool: true
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6258,8 +6032,8 @@ Assets {
         }
       }
       Objects {
-        Id: 10126606604468187546
-        Name: "Silver"
+        Id: 4981953570694071087
+        Name: "Trophy"
         Transform {
           Location {
           }
@@ -6279,99 +6053,15 @@ Assets {
           }
           Overrides {
             Name: "cs:ResourceName"
-            String: "Silver"
+            String: "Trophy"
           }
           Overrides {
             Name: "cs:Amount"
-            Int: 400
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 8563684984866158969
-          }
-        }
-      }
-      Objects {
-        Id: 17479198090261623444
-        Name: "Gold"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 9530778549691661289
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:ResourceName"
-            String: "Gold"
+            Int: 1
           }
           Overrides {
-            Name: "cs:Enabled"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Amount"
-            Int: 100
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 8563684984866158969
-          }
-        }
-      }
-      Objects {
-        Id: 9470582043619898035
-        Name: "Xp"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 9530778549691661289
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:ResourceName"
-            String: "Free XP"
-          }
-          Overrides {
-            Name: "cs:Enabled"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Amount"
-            Int: 8000
+            Name: "cs:GameLink"
+            String: "0c7c0c/vehicle-hub-1st-place"
           }
         }
         Collidable_v2 {

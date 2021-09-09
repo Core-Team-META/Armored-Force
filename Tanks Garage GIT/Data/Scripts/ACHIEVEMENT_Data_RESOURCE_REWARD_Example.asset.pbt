@@ -9,7 +9,7 @@ Assets {
         Bool: false
       }
       Overrides {
-        Name: "cs:RewardDescription"
+        Name: "cs:GameLink"
         String: ""
       }
       Overrides {
