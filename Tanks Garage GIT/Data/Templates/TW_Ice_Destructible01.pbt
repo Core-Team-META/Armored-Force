@@ -326,7 +326,6 @@ Assets {
         }
         Folder {
           Model {
-            AggressiveMerge: true
           }
         }
       }
