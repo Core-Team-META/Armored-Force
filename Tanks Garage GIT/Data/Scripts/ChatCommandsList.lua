@@ -53,7 +53,7 @@ commands = {
         end,
         OnCommandCalledServer = function (player, message)
         	for _, v in ipairs(player.serverUserData.techTreeProgress) do
-        		if (v.id ~= "01") or (v.id ~= "18") then
+        		if (v.id ~= "01") and (v.id ~= "18") then
 	        		v.researched = false
 	        		v.purchased = false
 	        	end
