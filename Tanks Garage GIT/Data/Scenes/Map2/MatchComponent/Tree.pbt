@@ -6787,8 +6787,8 @@ Objects {
   Name: "TeamBasesBPoint"
   Transform {
     Location {
-      X: 20510
-      Y: -21340
+      X: 18356.2012
+      Y: -19570.7617
     }
     Rotation {
     }
@@ -6907,15 +6907,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1117.41406
-            Y: 4189.83789
-            Z: -3587.54785
+            X: 3174.92773
+            Y: 3683.24414
+            Z: -3694.11426
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -109.95433
+            Yaw: -61.6946411
           }
         }
       }
@@ -6930,7 +6930,7 @@ Objects {
   Name: "flag"
   Transform {
     Location {
-      Z: -2342.13184
+      Z: -2475.68262
     }
     Rotation {
       Yaw: -41.0780334
@@ -7495,14 +7495,14 @@ Objects {
   Name: "destructible sandbags"
   Transform {
     Location {
-      X: -1662.09766
-      Y: -2652.01758
-      Z: -2293.08911
+      X: -438.144531
+      Y: 3995.63672
+      Z: -2444.3418
     }
     Rotation {
       Pitch: -1.39251709
-      Yaw: 36.0895233
-      Roll: 0.998733699
+      Yaw: -99.765686
+      Roll: 0.998734772
     }
     Scale {
       X: 1
@@ -8106,9 +8106,9 @@ Objects {
   Name: "destructible sandbags"
   Transform {
     Location {
-      X: 2483.24219
-      Y: -1146.54883
-      Z: -2277.57715
+      X: 1843.25781
+      Y: -3038.12109
+      Z: -2419.51587
     }
     Rotation {
       Yaw: 96.0315094
@@ -8388,17 +8388,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1972.10938
-            Y: 1104.60547
-            Z: -2161.1582
+            X: 4319.49414
+            Y: -551.212891
+            Z: -2247.10889
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Pitch: -0.5390625
-            Yaw: -77.9379883
-            Roll: 0.38492614
+            Yaw: 97.4482574
+            Roll: 0.384922266
           }
         }
       }
@@ -8775,8 +8775,8 @@ Objects {
   Name: "TeamBasesAPoint"
   Transform {
     Location {
-      X: -20540
-      Y: 15705
+      X: -19080
+      Y: 11220
     }
     Rotation {
     }
@@ -8903,7 +8903,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 70.0456467
+            Yaw: 35.0456543
           }
         }
         Overrides {
@@ -8917,9 +8917,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 58.3359375
-            Y: -4522.03516
-            Z: -3523.28149
+            X: -1880
+            Y: -3310
+            Z: -3710
           }
         }
         Overrides {
@@ -8977,7 +8977,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: -0.25604248
-            Yaw: 110.149925
+            Yaw: 80.1729584
             Roll: -0.425140381
           }
         }
@@ -8992,9 +8992,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 2499.30469
-            Y: 135.03125
-            Z: -2130.50464
+            X: 2786.73633
+            Y: -1310.01953
+            Z: -2285.61719
           }
         }
         Overrides {
@@ -9015,13 +9015,13 @@ Objects {
   Name: "destructible sandbags"
   Transform {
     Location {
-      X: 774.080078
-      Y: 2380.63672
-      Z: -2306.38037
+      X: -1910.86719
+      Y: 3368.73438
+      Z: -2464.96167
     }
     Rotation {
-      Yaw: -125.95697
-      Roll: 4.1528573
+      Yaw: -94.4500427
+      Roll: 4.15289736
     }
     Scale {
       X: 1
@@ -9188,12 +9188,12 @@ Objects {
   Name: "destructible sandbags"
   Transform {
     Location {
-      X: -3083.76562
-      Y: -277.003906
-      Z: -2293.08594
+      X: -3780
+      Y: -150
+      Z: -2521.56323
     }
     Rotation {
-      Yaw: -69.9522095
+      Yaw: -19.9522705
     }
     Scale {
       X: 1
@@ -9797,7 +9797,7 @@ Objects {
   Name: "flag"
   Transform {
     Location {
-      Z: -2294.5542
+      Z: -2516.76025
     }
     Rotation {
       Yaw: 120
