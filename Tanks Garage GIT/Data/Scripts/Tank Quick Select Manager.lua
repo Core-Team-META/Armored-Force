@@ -18,7 +18,7 @@ end
 
 local IMAGE_API = _G.PORTAL_IMAGES
 local Tank_API = _Constants_API:WaitForConstant("Tanks")
-local NUMBEROFTANKS = Tank_API.NumberOfTanks()
+local NUMBEROFTANKS = Tank_API.NumberOfTanks() - 1
 local TANK_LIST = Tank_API.GetTanks()
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
