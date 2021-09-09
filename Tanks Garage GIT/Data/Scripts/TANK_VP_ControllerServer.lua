@@ -109,7 +109,7 @@ local armorReleaseListeners = {}
 local vehicleCollideCount = 0
 
 --local MAX_ANGULAR_VELOCITY = 150
-local MIN_NOT_STUCK_VELOCITY = 100
+local MIN_NOT_STUCK_VELOCITY = 20
 local MAX_NOT_FLIPPED_ANGLE = 10
 local MAX_ROLLBACK_COUNT = 10
 
@@ -1110,12 +1110,11 @@ function GetAngleDifference(vec1, vec2)
 	
 end
 
-function CheckStuckTank()
+function CheckInput()
 
-	if not Object.IsValid(chassis) or not Object.IsValid(driver) or driver:IsA("AIPlayer") or (trackStatus > 0) or (vehicleCollideCount > 0) then return end
-	
 	local checkInput = driver:IsBindingPressed("ability_extra_21") and not driver:IsBindingPressed("ability_extra_31")
 	checkInput = checkInput or (not driver:IsBindingPressed("ability_extra_21") and driver:IsBindingPressed("ability_extra_31"))
+	checkInput = checkInput and not driver:IsBindingPressed("ability_extra_17")
 	
 	--[[
 	if chassis.type == "TreadedVehicle" then
@@ -1124,21 +1123,28 @@ function CheckStuckTank()
 	end
 	]]
 	
-	checkInput = checkInput and not driver:IsBindingPressed("ability_extra_17")
-	
 	if not checkInput then
-		return
+		return true
 	elseif (chassis:GetVelocity().size > MIN_NOT_STUCK_VELOCITY) then
 		SaveRollbackPosition()
-		return
+		return true
+	else 
+		return false
 	end
 	
-	Task.Wait(0.5)
+end
+
+function CheckStuckTank()
+
+	if not Object.IsValid(chassis) or not Object.IsValid(driver) or driver:IsA("AIPlayer") or (trackStatus > 0) or (vehicleCollideCount > 0) then return end
 	
-	if (chassis:GetVelocity().size > MIN_NOT_STUCK_VELOCITY) then
-		SaveRollbackPosition()
-		return	
+	for i = 1, 10 do
+		if CheckInput() then
+			return
+		end
+		Task.Wait(0.1)
 	end
+
 	
 	local currentVector = chassis:GetWorldRotation() * Vector3.FORWARD
 	local idealVector = Rotation.New(0, 0, chassis:GetWorldRotation().z) * Vector3.FORWARD
