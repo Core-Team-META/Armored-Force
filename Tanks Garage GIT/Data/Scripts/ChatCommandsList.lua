@@ -48,6 +48,28 @@ commands = {
         adminRank = AdminData.AdminRanks.Admin
     },
     
+    ["/reverttanks"] = {
+        OnCommandCalledClient = function (player, message)       
+        end,
+        OnCommandCalledServer = function (player, message)
+        	for _, v in ipairs(player.serverUserData.techTreeProgress) do
+        		if (v.id ~= "01") or (v.id ~= "18") then
+	        		v.researched = false
+	        		v.purchased = false
+	        	end
+	        	v.weaponProgress = 0
+	        	v.armorProgress = 0
+	        	v.engineProgress = 0
+        	end
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "revert all tank progress (may require restart)",
+        requireMessage = false,
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
+    },
+    
     ["/playerxp"] = {
         OnCommandCalledClient = function (player, message)
         	
