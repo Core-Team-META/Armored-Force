@@ -219,8 +219,13 @@ function AssignDriver(newDriver)
 	chassis.coastBrakeStrength = 70
 	originalAcceleration = chassis.accelerationRate
 	chassis.accelerationRate = originalAcceleration
-
-
+	
+	if chassis.turnSpeed then
+		chassis.turnSpeed = originalTurnSpeed
+	elseif chassis.turnRadius then
+		chassis.turnRadius = originalTurnRadius
+	end
+	
 	originalFriction = chassis.tireFriction
 	chassis.brakeStrength = 100
 	chassis.coastBrakeStrength = 70
