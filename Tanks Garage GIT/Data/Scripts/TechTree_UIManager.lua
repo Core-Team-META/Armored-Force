@@ -129,6 +129,7 @@ while not _G.PORTAL_IMAGES do
     Task.Wait()
 end
 
+
 local IMAGE_API = _G.PORTAL_IMAGES
 
 local ALLIES_TEAM = script:GetCustomProperty('AlliesTeam')
@@ -194,6 +195,12 @@ local confirmButtonFunction = ''
 
 local prereqLineInactiveColor = Color.New(0.021, 0.021, 0.021, 1)
 local prereqLineActiveColor = Color.New(0.153, 0.313, 0.004, 1)
+
+
+while not LOCAL_PLAYER.clientUserData.techTreeProgress do
+    Task.Wait()
+end
+
 ------------------------------------------------------------------------------------
 -- Completed UI references. Remove above ones as they are made obsolete
 
