@@ -144,6 +144,10 @@ function FindTank()
 	local tankID = localPlayer.clientUserData.currentTankData.id
 	
 	local tankData = Constants_API:WaitForConstant("Tanks").GetTankFromId(tonumber(tankID)) 
+	
+	turret = nil
+	mantlet = nil
+	cannon = nil
 
 	while not turret or not mantlet or not cannon do
 		turret = clientSkin:FindDescendantByName("Turret")
@@ -161,8 +165,12 @@ function FindTank()
 	aimAssistantOffset:SetRotation(Rotation.ZERO)
 	aimAssistantElevation:SetRotation(Rotation.ZERO)
 	
-	for _, e in ipairs(localPlayer.clientUserData.techTreeProgress) do
-		if e.id == tankID then
+	--print("Tank ID:" .. tostring(tankID))
+	--print(localPlayer.clientUserData.techTreeProgress)
+	--print(#localPlayer.clientUserData.techTreeProgress)
+	
+	for _, e in pairs(localPlayer.clientUserData.techTreeProgress) do
+		if tonumber(e.id) == tonumber(tankID) then
 			print(e.engineProgress)
 			if tonumber(e.engineProgress) == 2 then
 				rotationSpeed = tankData.turretUpgraded
@@ -175,6 +183,12 @@ function FindTank()
 			end		
 			break
 		end
+	end
+	
+	if (rotationSpeed <= 0) or (verticalSpeed <= 0) then
+		warn("COULD NOT FIND TANK DATA, USING UPGRADED VALUES")
+		rotationSpeed = tankData.turretUpgraded
+		verticalSpeed = tankData.elevationUpgraded
 	end
 		
 	if not moveUITask then
@@ -230,11 +244,12 @@ function JordanApproach()
 	local currentRotation = aimAssistantElevation:GetRotation()
 	
 	activeVerticalSpeed = (math.abs(targetRotation.z - aimAssistantOffset:GetWorldRotation().z) / rotationSpeed)
+		
 	--activeVerticalSpeed = math.abs(targetRotation.y - currentRotation.y) / verticalSpeed
 	
 	aimAssistant:MoveTo(Vector3.FORWARD * (tankTarget:GetWorldPosition() - activeCamera:GetWorldPosition()).size , 0.001, true)
 	aimAssistantBase:RotateTo(Rotation.New(0, 0, activeCamera:GetWorldRotation().z), 0.001, false)
-	print(mantlet:GetRotation().y)
+
 	if horizontalLimits <= 0 then
 		if (verticalLimits.max - 0.01 >=  mantlet:GetRotation().y) and (verticalLimits.min + 0.01 <=  mantlet:GetRotation().y) then
 			aimAssistantElevation:RotateTo(Rotation.New(0, targetRotation.y, 0), activeVerticalSpeed, true) -- difference / verticalSpeed
