@@ -270,40 +270,6 @@ Objects {
   }
 }
 Objects {
-  Id: 3590722752622889131
-  Name: "AimUI"
-  Transform {
-    Location {
-      X: 120
-      Y: -135
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12294532654037121060
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "AimUI"
-  }
-}
-Objects {
   Id: 3976470939927333707
   Name: "DailyChallenges"
   Transform {
@@ -369,5 +335,39 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "NemesisTracker"
+  }
+}
+Objects {
+  Id: 9149882720254898963
+  Name: "AimUI"
+  Transform {
+    Location {
+      X: 120
+      Y: -135
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12294532654037121060
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "AimUI"
   }
 }
