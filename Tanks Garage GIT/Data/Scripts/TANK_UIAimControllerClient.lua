@@ -1,4 +1,5 @@
 local EaseUI = require(script:GetCustomProperty("EaseUI"))
+local Constants_API = require(script:GetCustomProperty("Constants_API"))
 
 local mainPointer = script:GetCustomProperty("Main"):WaitForObject()
 local reticleUI = script:GetCustomProperty("ReticleUI"):WaitForObject()
@@ -42,6 +43,7 @@ local uiPostion = nil
 
 local turret = nil
 local cannon = nil
+local mantlet = nil
 local defaultCamera = nil
 local sniperCamera = nil
 
@@ -140,27 +142,36 @@ function FindTank()
 	local serverScript = localPlayer.clientUserData.currentTankData.serverControlScript
 	local chassis = localPlayer.clientUserData.currentTankData.chassis
 	local tankID = localPlayer.clientUserData.currentTankData.id
+	
+	local tankData = Constants_API:WaitForConstant("Tanks").GetTankFromId(tonumber(tankID)) 
 
-	turret = clientSkin:FindDescendantByName("Turret")
-	cannon = clientSkin:FindDescendantByName("FiringFX")
+	while not turret or not mantlet or not cannon do
+		turret = clientSkin:FindDescendantByName("Turret")
+		mantlet = clientSkin:FindDescendantByName("Cannon")
+		cannon = clientSkin:FindDescendantByName("FiringFX")
+		Task.Wait()
+	end
 	
 	tankTarget = serverScript:FindDescendantByName("Target")
-	verticalLimits.max = serverScript:GetCustomProperty("MaxElevationAngle")
-	verticalLimits.min = serverScript:GetCustomProperty("MinDepressionAngle")
-	horizontalLimits = serverScript:GetCustomProperty("HorizontalCannonAngles")
+	verticalLimits.max = tankData.maxElevation
+	verticalLimits.min = tankData.maxDepression
+	horizontalLimits = tankData.horizontalAngles
 	
-	--aimAssistantBase:SetWorldRotation(turret:GetWorldRotation())
-	--aimAssistantOffset:SetRotation(Rotation.ZERO)
-	--aimAssistantElevation:SetRotation(Rotation.ZERO)
+	aimAssistantBase:SetWorldRotation(turret:GetWorldRotation())
+	aimAssistantOffset:SetRotation(Rotation.ZERO)
+	aimAssistantElevation:SetRotation(Rotation.ZERO)
 	
 	for _, e in ipairs(localPlayer.clientUserData.techTreeProgress) do
 		if e.id == tankID then
-			if e.engineProgress == 2 then
-				rotationSpeed = serverScript:GetCustomProperty("UpgradedTraverse")
-				verticalSpeed = serverScript:GetCustomProperty("UpgradedElevation")
+			print(e.engineProgress)
+			if tonumber(e.engineProgress) == 2 then
+				rotationSpeed = tankData.turretUpgraded
+				verticalSpeed = tankData.elevationUpgraded
+				print("aiming system using upgraded data")
 			else 
-				rotationSpeed = serverScript:GetCustomProperty("TurretTraverseSpeed")
-				verticalSpeed = serverScript:GetCustomProperty("TurretElevationSpeed")
+				rotationSpeed = tankData.turret
+				verticalSpeed = tankData.elevation
+				print("aiming system using default data")
 			end		
 			break
 		end
@@ -170,24 +181,21 @@ function FindTank()
 		moveUITask = Task.Spawn(MoveToUIPosition)
 		moveUITask.repeatCount = -1
 	end
-	--[[
+
 	if (horizontalLimits <= 0) then
 		aimAssistantOffset:LookAtContinuous(tankTarget, true, rotationSpeed/57)
 	end
-	]]
+	
 	defaultCamera = clientSkin:FindDescendantByName("Tank Camera")
 	defaultCamera.currentDistance = defaultCamera.minDistance + 400
 	sniperCamera = clientSkin:FindDescendantByName("Sniper Camera")
 	sniperCamera.currentDistance = sniperCamera.minDistance
-	
-	local turretRotation = localPlayer.clientUserData.currentTankData.serverControlScript:GetCustomProperty("UpgradedTraverse")
-	local turretElevation = localPlayer.clientUserData.currentTankData.serverControlScript:GetCustomProperty("UpgradedElevation")
-			
+				
 	Task.Wait(0.1)
 				
 	if Object.IsValid(defaultCamera) then
 		localPlayer:SetOverrideCamera(defaultCamera)
-		--aimAssistantBase:Follow(defaultCamera, aimBaseSpeed)
+		aimAssistantBase:Follow(defaultCamera, aimBaseSpeed)
 		defaultCamera.currentPitch = 0
 		defaultCamera.currentYaw = localPlayer.clientUserData.currentTankData.chassis:GetWorldRotation().z
 	end
@@ -195,13 +203,17 @@ function FindTank()
 end
 
 function UpdatePointer()
-
+	
 	local position = RaycastResultFromPointRotationDistance(cannon:GetWorldPosition(), cannon:GetWorldRotation(), 100000)
 	local distance = math.ceil((position - cannon:GetWorldPosition()).size * 5 / 1000)
 	
+	--[[
 	if position then
 		aimAssistant:MoveTo(position, 0.001, false)
 	end
+	]]
+	
+	JordanApproach()
 	
 	if distanceMaxed then
 		distanceReadout.text = "-- m"
@@ -217,17 +229,16 @@ function JordanApproach()
 	local targetRotation = localPlayer:GetViewWorldRotation()
 	local currentRotation = aimAssistantElevation:GetRotation()
 	
-	if smoothAimMode then
-		activeVerticalSpeed = (math.abs(targetRotation.z - aimAssistantOffset:GetWorldRotation().z) / rotationSpeed)
-	else
-		activeVerticalSpeed = math.abs(targetRotation.y - currentRotation.y) / verticalSpeed
-	end
+	activeVerticalSpeed = (math.abs(targetRotation.z - aimAssistantOffset:GetWorldRotation().z) / rotationSpeed)
+	--activeVerticalSpeed = math.abs(targetRotation.y - currentRotation.y) / verticalSpeed
 	
 	aimAssistant:MoveTo(Vector3.FORWARD * (tankTarget:GetWorldPosition() - activeCamera:GetWorldPosition()).size , 0.001, true)
 	aimAssistantBase:RotateTo(Rotation.New(0, 0, activeCamera:GetWorldRotation().z), 0.001, false)
-	
+	print(mantlet:GetRotation().y)
 	if horizontalLimits <= 0 then
-		aimAssistantElevation:RotateTo(Rotation.New(0, targetRotation.y, 0), activeVerticalSpeed, true) -- difference / verticalSpeed
+		if (verticalLimits.max - 0.01 >=  mantlet:GetRotation().y) and (verticalLimits.min + 0.01 <=  mantlet:GetRotation().y) then
+			aimAssistantElevation:RotateTo(Rotation.New(0, targetRotation.y, 0), activeVerticalSpeed, true) -- difference / verticalSpeed
+		end
 	else
 		local offsetRotation = targetRotation - turret:GetWorldRotation()
 		
@@ -380,7 +391,7 @@ function TransitionCameras(oldCamera, newCamera)
 	newCamera.currentPitch = newPitch
 	newCamera.currentYaw = newYaw
 	
-	--aimAssistantBase:Follow(newCamera, aimBaseSpeed)
+	aimAssistantBase:Follow(newCamera, aimBaseSpeed)
 	
 	localPlayer:SetOverrideCamera(newCamera)
 end
