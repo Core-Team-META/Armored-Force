@@ -6787,8 +6787,8 @@ Objects {
   Name: "TeamBasesBPoint"
   Transform {
     Location {
-      X: 31105
-      Y: -26440
+      X: 11482.3828
+      Y: -22513.1758
     }
     Rotation {
     }
@@ -6907,8 +6907,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1117.41406
-            Y: 4189.83789
+            X: -488.926758
+            Y: -3008.17578
             Z: -3587.54785
           }
         }
@@ -7495,9 +7495,9 @@ Objects {
   Name: "destructible sandbags"
   Transform {
     Location {
-      X: -1662.09766
-      Y: -2652.01758
-      Z: -2293.08911
+      X: -2385.76367
+      Y: -2349.2168
+      Z: -2350.95435
     }
     Rotation {
       Pitch: -1.39251709
@@ -8106,13 +8106,13 @@ Objects {
   Name: "destructible sandbags"
   Transform {
     Location {
-      X: 2483.24219
-      Y: -1146.54883
-      Z: -2277.57715
+      X: 1349.71777
+      Y: 3406.22461
+      Z: -2409.41284
     }
     Rotation {
-      Yaw: 96.0315094
-      Roll: 2.14327884
+      Yaw: -122.226807
+      Roll: 2.14327979
     }
     Scale {
       X: 1
@@ -8388,17 +8388,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1972.10938
-            Y: 1104.60547
-            Z: -2161.1582
+            X: 3009.34082
+            Y: 502.806641
+            Z: -2215.67798
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Pitch: -0.5390625
-            Yaw: -77.9379883
-            Roll: 0.38492614
+            Yaw: 92.7355804
+            Roll: 0.384923398
           }
         }
       }
@@ -8775,8 +8775,9 @@ Objects {
   Name: "TeamBasesAPoint"
   Transform {
     Location {
-      X: -32820
-      Y: 33570
+      X: -14133.3613
+      Y: 22360.7793
+      Z: 237.41217
     }
     Rotation {
     }
@@ -8917,9 +8918,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 58.3359375
-            Y: -4522.03516
-            Z: -3523.28149
+            X: -2186.58496
+            Y: -2054.42
+            Z: -3415.63037
           }
         }
         Overrides {
@@ -8977,7 +8978,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: -0.25604248
-            Yaw: 110.149925
+            Yaw: 152.304947
             Roll: -0.425140381
           }
         }
@@ -8992,9 +8993,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 2499.30469
-            Y: 135.03125
-            Z: -2130.50464
+            X: 2011.85938
+            Y: 1794.32617
+            Z: -2215.55103
           }
         }
         Overrides {
@@ -9015,9 +9016,9 @@ Objects {
   Name: "destructible sandbags"
   Transform {
     Location {
-      X: 774.080078
-      Y: 2380.63672
-      Z: -2306.38037
+      X: -50.2529297
+      Y: 3192.64062
+      Z: -2317.073
     }
     Rotation {
       Yaw: -125.95697
@@ -9190,10 +9191,10 @@ Objects {
     Location {
       X: -3083.76562
       Y: -277.003906
-      Z: -2293.08594
+      Z: -2178.76514
     }
     Rotation {
-      Yaw: -69.9522095
+      Yaw: -17.0082397
     }
     Scale {
       X: 1
