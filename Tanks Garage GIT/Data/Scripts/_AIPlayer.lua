@@ -236,24 +236,11 @@ end
 
 
 function AIPlayer:HandleDriving(vehicle, params)
-  --print("handling driving...", Object.IsValid(vehicle), self.isDead)
-  if true then 
-    params.steeringInput = 0.2
-    params.throttleInput = 1.0
-    params.isHandbrakeEngaged = false
-    return
-  end
-
   if not Object.IsValid(vehicle) then return end
   if self.isDead then
     return
   end
 
-  --[[
-  params.isHandbrakeEngaged = false
-  params.throttleInput = 1.0
-  params.steeringInput = 0.5
-]]
 
   if self.currentMovementTarget == nil then return end
   local currentTarget = self.currentMovementTarget
