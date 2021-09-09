@@ -197,10 +197,6 @@ local prereqLineInactiveColor = Color.New(0.021, 0.021, 0.021, 1)
 local prereqLineActiveColor = Color.New(0.153, 0.313, 0.004, 1)
 
 
-while not LOCAL_PLAYER.clientUserData.techTreeProgress do
-    Task.Wait()
-end
-
 ------------------------------------------------------------------------------------
 -- Completed UI references. Remove above ones as they are made obsolete
 
@@ -211,6 +207,7 @@ function ToggleThisComponent(requestedPlayerState)
     savedState = requestedPlayerState
 
     if requestedPlayerState == thisComponent then
+        UPGRADE_TANK_CONTAINER.visibility = Visibility.FORCE_OFF
         Task.Wait(2.5)
 
         if savedState ~= thisComponent then
@@ -655,6 +652,7 @@ end
 
 function CloseUI()
     techTreeUIContainer.visibility = Visibility.FORCE_OFF
+    UPGRADE_TANK_CONTAINER.visibility = Visibility.FORCE_OFF
     ToggleUIInteraction(false)
     -- Clear out the scroll panels of their contents
     EmptyUI()
