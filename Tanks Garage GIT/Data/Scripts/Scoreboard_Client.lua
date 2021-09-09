@@ -137,6 +137,7 @@ function OnStateChanged(manager, propertyName)
         ParentPanel.visibility = Visibility.INHERIT
         ClosePanel.visibility = Visibility.INHERIT
         forceMouseActive = true
+        Events.Broadcast("ShowVictoryState")
     end
 end
 
