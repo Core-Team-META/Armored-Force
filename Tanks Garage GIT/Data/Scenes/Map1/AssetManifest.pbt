@@ -131,6 +131,19 @@ Assets {
   }
 }
 Assets {
+  Id: 10529050719318766648
+  Name: "TankStorage"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "e8411075f5e74695be9e634743b574d4"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 10435621986531285937
   Name: "Flower Daisy Patch 01"
   PlatformAssetType: 1

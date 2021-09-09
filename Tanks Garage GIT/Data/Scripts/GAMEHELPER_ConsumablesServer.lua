@@ -1,4 +1,5 @@
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
+local API_Tutorial = require(script:GetCustomProperty("API_Tutorial"))
 local trackConsumable = script:GetCustomProperty("TrackConsumable")
 local extinguisherConsumable = script:GetCustomProperty("ExtinguisherConsumable")
 local turretRepairConsumable = script:GetCustomProperty("TurretRepairConsumable")
@@ -37,6 +38,7 @@ function OnRecovery(abilityUsed)
 		end
 		abilityUsed:SetNetworkedCustomProperty("Charges", count)
 	end
+	Events.BroadcastToPlayer(abilityUsed.owner, "AdvanceTutorialRequest", API_Tutorial.TutorialPhase.Completed, true)
 	abilityUsed.isEnabled = false
 	--abilityUsed:SetNetworkedCustomProperty("Enabled", false)
 	

@@ -99,6 +99,19 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 1605275179467651420
+      value {
+        Overrides {
+          Name: "cs:Tanks"
+          NetReference {
+            Type {
+              Value: "mc:enetreferencetype:unknown"
+            }
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16224702300220691365
       value {
         Overrides {
