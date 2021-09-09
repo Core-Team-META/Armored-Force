@@ -79,7 +79,7 @@ function CheckAndSetSharedStorageDefault(player)
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 
 	-- DEBUG: Clear shared storage
-	-- playerSharedStorage = {}
+	--playerSharedStorage = {}
 			
 	-- DEBUG: Reset progression to force the use of SetNewPlayerProgression(playerSharedStorage) function
 	--playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = nil
@@ -278,7 +278,7 @@ function SetNewPlayerProgression(playerSharedStorage)
 			
 		end
 		
-		
+		--[[
 		-- players get tanks 1 and 18 (M3 and Panzer 3) as starter tanks.
 		-- Currently set 
 		if i ~= 1 and i ~= 18 and i ~= CONSTANTS_API.GetNumberOfTanks() then
@@ -291,17 +291,18 @@ function SetNewPlayerProgression(playerSharedStorage)
 			
 		-- DEBUG: Add elseif statements to seed more tanks: i = tank id.
 		-- (requires forced use of SetNewPlayerProgression(playerSharedStorage) function)
-		--[[
-		elseif i == 2 then
+		--elseif i == 2 then
 		
-			tankEntry = tankEntry .. "|1|1|0|0|0~"
-		]]--
+			--tankEntry = tankEntry .. "|1|1|0|0|0~"
 			
 		else 
 		
 			tankEntry = tankEntry .. "|0|0|0|0|0"
 			
 		end
+		]]
+
+		tankEntry = tankEntry .. "|0|0|0|0|0"
 		
 		
 		tankString = tankString .. tankEntry

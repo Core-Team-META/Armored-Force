@@ -21,6 +21,10 @@ function API.GetTutorialResource()
 	return "TutorialProgress"
 end
 
+function API.GetTutorialRewardResource()
+	return "TutorialReward"
+end
+
 function API.GetTotalSilverFromTutorials()
 	return TOTAL_SILVER
 end
