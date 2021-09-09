@@ -223,7 +223,7 @@ function AssignDriver(newDriver)
 	if chassis.turnSpeed then
 		chassis.turnSpeed = originalTurnSpeed
 	elseif chassis.turnRadius then
-		chassis.turnRadius = originalTurnRadius
+		chassis.turnRadius = originalTurnSpeed
 	end
 	
 	originalFriction = chassis.tireFriction
