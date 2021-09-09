@@ -2,10 +2,14 @@ local KEYBIND = "ability_extra_19" -- TAB
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
+local GameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
+
 -- Custom
 local ParentPanel = script:GetCustomProperty("ParentPanel"):WaitForObject()
 local TeamTanksPanel = script:GetCustomProperty("TeamTanks"):WaitForObject()
 local EnemyTanksPanel = script:GetCustomProperty("EnemyTanks"):WaitForObject()
+local ClosePanel = script:GetCustomProperty("CLOSE"):WaitForObject()
+local ConfirmCloseButton = script:GetCustomProperty("CONFIRM_WINDOW_CLOSE_BUTTON"):WaitForObject()
 
 local ENTRY_TEMPLATE = script:GetCustomProperty("Scoreboard_Entry_Template")
 local ENEMY_ENTRY_TEMPLATE = script:GetCustomProperty("Scoreboard_Entry_Enemy_Template")
@@ -15,8 +19,9 @@ local lastAiCount = 0
 local lastUpdateTime = 0
 
 local isActive = false
+local forceMouseActive = false
 
-while not _G.PLAYER_RANKS  do
+while not _G.PLAYER_RANKS do
     Task.Wait()
 end
 local RANK = _G.PLAYER_RANKS
@@ -99,10 +104,13 @@ local function SetPanel(player, count)
     scoreCards[player.id].kills.text = tostring(player.kills or 0)
     local damage = _G.utils and _G.utils.GetResource(player, "TankDamage")
     scoreCards[player.id].damage.text = tostring(damage or 0)
-
+    scoreCards[player.id].playerTankName =
+        player.clientUserData and player.clientUserData.currentTankData and player.clientUserData.currentTankData.name or
+        scoreCards[player.id].playerTankName
     scoreCards[player.id].tankName.text =
         player.clientUserData and player.clientUserData.currentTankData and player.clientUserData.currentTankData.name or
         scoreCards[player.id].aiTankName or
+        scoreCards[player.id].playerTankName or
         ""
 
     if player.isDead then
@@ -117,6 +125,19 @@ function OnPlayerLeft(player)
         scoreCards[player.id].panel:Destroy()
     end
     scoreCards[player.id] = nil
+end
+
+function OnStateChanged(manager, propertyName)
+    if propertyName ~= "GameState" then
+        return
+    end
+
+    if GameStateManager:GetCustomProperty("GameState") == "VICTORY_STATE" then
+        isActive = true
+        ParentPanel.visibility = Visibility.INHERIT
+        ClosePanel.visibility = Visibility.INHERIT
+        forceMouseActive = true
+    end
 end
 
 function Tick(dt) --
@@ -157,7 +178,13 @@ function Tick(dt) --
             lastAiCount = currentAiCount
         end
     end
+    if forceMouseActive then
+        UI.SetCursorVisible(true)
+        UI.SetCanCursorInteractWithUI(true)
+    end
 end
+
+ClosePanel.visibility = Visibility.FORCE_OFF
 
 LOCAL_PLAYER.bindingPressedEvent:Connect(
     function(player, string)
@@ -178,6 +205,13 @@ LOCAL_PLAYER.bindingReleasedEvent:Connect(
 )
 
 Game.playerLeftEvent:Connect(OnPlayerLeft)
+GameStateManager.networkedPropertyChangedEvent:Connect(OnStateChanged)
+ConfirmCloseButton.clickedEvent:Connect(
+    function()
+        isActive = false
+        ParentPanel.visibility = Visibility.FORCE_OFF
+    end
+)
 
 for _, child in ipairs(TeamTanksPanel:GetChildren()) do
     child:Destroy()
