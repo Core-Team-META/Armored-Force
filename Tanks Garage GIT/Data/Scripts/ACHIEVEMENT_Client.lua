@@ -41,6 +41,10 @@ local ScrollPanelTemplate = script:GetCustomProperty("UIAchievementScrollPanel")
 local REWARD_SFX = script:GetCustomProperty("REWARD_SFX")
 
 local achievementScrollPanel = script:GetCustomProperty("ACHIEVEMENT_SCROLL"):WaitForObject()
+local achievementCompleteScrollPanel = script:GetCustomProperty("ACHIEVEMENT_COMPLETE_SCROLL"):WaitForObject()
+local achievementsActiveButton = script:GetCustomProperty("ACHIEVEMENTS_ACTIVE_BUTTON"):WaitForObject()
+local achievementsCompleteButton = script:GetCustomProperty("ACHIEVEMENTS_COMPLETE_BUTTON"):WaitForObject()
+
 ------------------------------------------------------------------------------------------------------------------------
 -- Variables
 ------------------------------------------------------------------------------------------------------------------------
@@ -86,13 +90,13 @@ end
 local function CompareAchievement(a, b)
     local isAUnlocked = ACH_API.IsUnlocked(LOCAL_PLAYER, a.id)
     local aProgress =
-        isAUnlocked and IsTournamentId(a.id) and 100001 or isAUnlocked and 100000 or
+        a.isTournament and 100000 or isAUnlocked and a.isTournament and 100001 or isAUnlocked and 99999 or
         not ACH_API.HasPreRequsistCompleted(LOCAL_PLAYER, a.id) and -1 or
         ACH_API.GetProgressPercentage(LOCAL_PLAYER, a.id) + 2
 
     local isBUnlocked = ACH_API.IsUnlocked(LOCAL_PLAYER, b.id)
     local bProgress =
-        isBUnlocked and IsTournamentId(b.id) and 100001 or isBUnlocked and 100000 or
+        b.isTournament and 100000 or isBUnlocked and b.isTournament and 100001 or isBUnlocked and 99999 or
         not ACH_API.HasPreRequsistCompleted(LOCAL_PLAYER, b.id) and -1 or
         ACH_API.GetProgressPercentage(LOCAL_PLAYER, b.id) + 2
     return aProgress > bProgress
@@ -108,139 +112,177 @@ local function ClearListeners(listeners)
 end
 
 local function ClearAchievements() --
-    --[[    if not achievementScrollPanel then
-        return
-    end]] for _, child in ipairs(
-        achievementScrollPanel:GetChildren()
-    ) do
+    for _, child in ipairs(achievementScrollPanel:GetChildren()) do
+        if Object.IsValid(child) then
+            child:Destroy()
+        end
+    end
+    for _, child in ipairs(achievementCompleteScrollPanel:GetChildren()) do
         if Object.IsValid(child) then
             child:Destroy()
         end
     end
 end
 
+local function SetActiveAchievements()
+    local totalCount = {active = 0, complete = 0}
+    local xCount = {active = 0, complete = 0}
+    local yCount = {active = 0, complete = 0}
+    for _, achievement in ipairs(activeAchievements) do
+        local achievementPanel = nil
+
+        local isActive = ACH_API.GetCurrentProgress(LOCAL_PLAYER, achievement.id) ~= 1
+        local isComplete = ACH_API.GetCurrentProgress(LOCAL_PLAYER, achievement.id) == 1
+
+        if isActive then
+            achievementPanel = World.SpawnAsset(AchievementPanelTemplate, {parent = achievementScrollPanel})
+        elseif isComplete then
+            achievementPanel = World.SpawnAsset(AchievementPanelTemplate, {parent = achievementCompleteScrollPanel})
+        end
+
+        local icon = achievementPanel:GetCustomProperty("Icon"):WaitForObject()
+        local name = achievementPanel:GetCustomProperty("Name"):WaitForObject()
+        local progressBar = achievementPanel:GetCustomProperty("ProgressBar"):WaitForObject()
+        local progressText = achievementPanel:GetCustomProperty("ProgressText"):WaitForObject()
+        local status = achievementPanel:GetCustomProperty("StatusText"):WaitForObject()
+        local preReqPanel = achievementPanel:GetCustomProperty("PREREQUISITE"):WaitForObject()
+        local RewardClaimButton = achievementPanel:GetCustomProperty("RewardClaimButton"):WaitForObject()
+        local RewardButtonPanel = achievementPanel:GetCustomProperty("Reward_Button_IDLE"):WaitForObject()
+        local trophyBackground = achievementPanel:GetCustomProperty("Trophy"):WaitForObject()
+
+        local checkmark = achievementPanel:GetCustomProperty("Completed_CheckMark"):WaitForObject()
+
+
+        local Description = achievementPanel:GetCustomProperty("Description"):WaitForObject()
+        local Silver = achievementPanel:GetCustomProperty("Silver"):WaitForObject()
+        local Free_RP = achievementPanel:GetCustomProperty("FREERP"):WaitForObject()
+        local Gold = achievementPanel:GetCustomProperty("Gold"):WaitForObject()
+        local rewardPanels = {Silver = Silver, Xp = Free_RP, Gold = Gold}
+
+
+        if achievement.isTournament then
+            trophyBackground.visibility = Visibility.INHERIT
+        else
+            trophyBackground.visibility = Visibility.FORCE_OFF
+        end
+
+        RewardClaimButton.isInteractable = false
+        RewardClaimButton.visibility = Visibility.FORCE_OFF
+        RewardButtonPanel.visibility = Visibility.FORCE_OFF
+        RewardClaimButton.clientUserData.key = achievement.id
+
+        for _, rewardPanel in pairs(rewardPanels) do
+            rewardPanel.visibility = Visibility.FORCE_OFF
+        end
+
+        if ACH_API.IsUnlocked(LOCAL_PLAYER, achievement.id) then
+            progressBar.visibility = Visibility.FORCE_OFF
+            RewardButtonPanel.visibility = Visibility.FORCE_ON
+            progressText.text = "Click To Claim Reward"
+            RewardClaimButton.isInteractable = true
+            RewardClaimButton.visibility = Visibility.FORCE_ON
+            RewardClaimButton.text = ""
+            listeners[#listeners + 1] = RewardClaimButton.clickedEvent:Connect(OnClaimButtonPressed)
+            status.text = "Completed"
+        elseif isComplete then
+            progressBar.visibility = Visibility.FORCE_OFF
+            checkmark.visibility = Visibility.INHERIT
+            status.visibility = Visibility.FORCE_OFF
+        else
+            progressBar.visibility = Visibility.FORCE_ON
+            local currentProgress = CoreMath.Round(ACH_API.GetCurrentProgress(LOCAL_PLAYER, achievement.id))
+            local requiredProgress = CoreMath.Round(ACH_API.GetAchievementRequired(achievement.id))
+            currentProgress = currentProgress > 0 and currentProgress - 1 or 0
+            progressBar.progress = currentProgress / requiredProgress
+            progressText.text = tostring(currentProgress) .. " / " .. tostring(requiredProgress - 1)
+
+            status.text = "Active"
+        end
+
+        if achievement.preReq and not ACH_API.HasPreRequsistCompleted(LOCAL_PLAYER, achievement.id) then
+            --inactivePanel:GetCustomProperty("Text"):WaitForObject().text = "Requires completion of: " .. "\n" .. str
+            local PreReqText = achievementPanel:GetCustomProperty("PreReqText"):WaitForObject()
+            local tempTbl = {CoreString.Split(achievement.preReq, ",")}
+            local str = ""
+            for _, preReqId in ipairs(tempTbl) do
+                if not ACH_API.IsUnlocked(LOCAL_PLAYER, preReqId) then
+                    str = preReqId
+                end
+            end
+            --#TODO How do we want to show pre req achievements?
+
+            local preReqName = ACH_API.GetAchievementName(str)
+            PreReqText.text = "Unlocked after completing " .. preReqName
+            status.text = "Inactive"
+            preReqPanel.visibility = Visibility.FORCE_ON
+        end
+
+        if achievement.givesReward then
+            for _, reward in ipairs(achievement.rewards) do
+                local rewardAmount = reward:GetCustomProperty("Amount")
+                local resoureName = reward:GetCustomProperty("ResourceName")
+                if resoureName == "Free XP" then
+                    resoureName = "Xp"
+                end
+                if resoureName ~= "Trophy" then
+                    rewardPanels[resoureName].visibility = Visibility.FORCE_ON
+                    rewardPanels[resoureName]:GetCustomProperty("Value"):WaitForObject().text = tostring(rewardAmount)
+                end
+            end
+        end
+
+        icon:SetImage(achievement.icon)
+
+        name.text = achievement.name
+        Description.text = achievement.description
+
+        if isActive then
+            achievementPanel.y = (210 * yCount.active - 1) + 5
+            achievementPanel.x = (427.5 * xCount.active) + 5
+
+            totalCount.active = totalCount.active + 1
+            xCount.active = xCount.active + 1
+            if (totalCount.active % 3 == 0) then
+                yCount.active = yCount.active + 1
+                xCount.active = 0
+            end
+        elseif isComplete then
+            achievementPanel.y = (210 * yCount.complete - 1) + 5
+            achievementPanel.x = (427.5 * xCount.complete) + 5
+
+            totalCount.complete = totalCount.complete + 1
+            xCount.complete = xCount.complete + 1
+            if (totalCount.complete % 3 == 0) then
+                yCount.complete = yCount.complete + 1
+                xCount.complete = 0
+            end
+        end
+
+        achievementScrollPanel.scrollPosition = 0
+        achievementCompleteScrollPanel.scrollPosition = 0
+
+        achievementsActiveButton.text = "Active (" .. tostring(totalCount.active) .. ")"
+        achievementsCompleteButton.text = "Completed (" .. tostring(totalCount.complete) .. ")"
+    end
+end
+
 local function BuildAchievementInfoPanel()
     activeAchievements = {}
+
+    achievementCompleteScrollPanel.visibility = Visibility.FORCE_OFF
+    achievementScrollPanel.visibility = Visibility.INHERIT
+
     DisableThisComponent()
     --ClearAchievements()
-
-    local totalCount = 0
-    local xCount = 0
-    local yCount = 0
 
     for _, achievement in pairs(ACH_API.GetAchievements()) do
         table.insert(activeAchievements, achievement)
     end
     table.sort(activeAchievements, CompareAchievement)
 
-    for _, achievement in ipairs(activeAchievements) do
-        if ACH_API.GetCurrentProgress(LOCAL_PLAYER, achievement.id) ~= 1 then
-            --#TODO Needs to be changed to how many achievements should show in the end round panel
-            local achievementPanel = World.SpawnAsset(AchievementPanelTemplate, {parent = achievementScrollPanel})
-            --local iconBG = achievementPanel:GetCustomProperty("Background"):WaitForObject()
-            local icon = achievementPanel:GetCustomProperty("Icon"):WaitForObject()
-            local name = achievementPanel:GetCustomProperty("Name"):WaitForObject()
-            local progressBar = achievementPanel:GetCustomProperty("ProgressBar"):WaitForObject()
-            local progressText = achievementPanel:GetCustomProperty("ProgressText"):WaitForObject()
-            local status = achievementPanel:GetCustomProperty("StatusText"):WaitForObject()
-            local preReqPanel = achievementPanel:GetCustomProperty("PREREQUISITE"):WaitForObject()
-            local RewardClaimButton = achievementPanel:GetCustomProperty("RewardClaimButton"):WaitForObject()
-            local RewardButtonPanel = achievementPanel:GetCustomProperty("Reward_Button_IDLE"):WaitForObject()
-
-            local Description = achievementPanel:GetCustomProperty("Description"):WaitForObject()
-            local Silver = achievementPanel:GetCustomProperty("Silver"):WaitForObject()
-            local Free_RP = achievementPanel:GetCustomProperty("FREERP"):WaitForObject()
-            local Gold = achievementPanel:GetCustomProperty("Gold"):WaitForObject()
-            local rewardPanels = {Silver = Silver, Xp = Free_RP, Gold = Gold}
-
-            RewardClaimButton.isInteractable = false
-            RewardClaimButton.visibility = Visibility.FORCE_OFF
-            RewardButtonPanel.visibility = Visibility.FORCE_OFF
-            RewardClaimButton.clientUserData.key = achievement.id
-
-            for _, rewardPanel in pairs(rewardPanels) do
-                rewardPanel.visibility = Visibility.FORCE_OFF
-            end
-
-            if ACH_API.IsUnlocked(LOCAL_PLAYER, achievement.id) then
-                progressBar.visibility = Visibility.FORCE_OFF
-                RewardButtonPanel.visibility = Visibility.FORCE_ON
-                progressText.text = "Click To Claim Reward"
-                RewardClaimButton.isInteractable = true
-                RewardClaimButton.visibility = Visibility.FORCE_ON
-                listeners[#listeners + 1] = RewardClaimButton.clickedEvent:Connect(OnClaimButtonPressed)
-                status.text = "Completed"
-            else
-                progressBar.visibility = Visibility.FORCE_ON
-                local currentProgress = CoreMath.Round(ACH_API.GetCurrentProgress(LOCAL_PLAYER, achievement.id))
-                local requiredProgress = CoreMath.Round(ACH_API.GetAchievementRequired(achievement.id))
-                currentProgress = currentProgress > 0 and currentProgress - 1 or 0
-                progressBar.progress = currentProgress / requiredProgress
-                progressText.text = tostring(currentProgress) .. " / " .. tostring(requiredProgress - 1)
-
-                status.text = "Active"
-            end
-
-            if achievement.preReq and not ACH_API.HasPreRequsistCompleted(LOCAL_PLAYER, achievement.id) then
-                --inactivePanel:GetCustomProperty("Text"):WaitForObject().text = "Requires completion of: " .. "\n" .. str
-                local PreReqText = achievementPanel:GetCustomProperty("PreReqText"):WaitForObject()
-                local tempTbl = {CoreString.Split(achievement.preReq, ",")}
-                local str = ""
-                for _, preReqId in ipairs(tempTbl) do
-                    if not ACH_API.IsUnlocked(LOCAL_PLAYER, preReqId) then
-                        str = preReqId
-                    end
-                end
-                --#TODO How do we want to show pre req achievements?
-
-                local preReqName = ACH_API.GetAchievementName(str)
-                PreReqText.text = "Unlocked after completing " .. preReqName
-                status.text = "Inactive"
-                preReqPanel.visibility = Visibility.FORCE_ON
-            end
-
-            if achievement.givesReward then
-                for _, reward in ipairs(achievement.rewards) do
-                    local rewardAmount = reward:GetCustomProperty("Amount")
-                    local resoureName = reward:GetCustomProperty("ResourceName")
-                    if resoureName == "Free XP" then
-                        resoureName = "Xp"
-                    end
-                    rewardPanels[resoureName].visibility = Visibility.FORCE_ON
-                    rewardPanels[resoureName]:GetCustomProperty("Value"):WaitForObject().text = tostring(rewardAmount)
-                end
-            end
-
-            icon:SetImage(achievement.icon)
-
-            name.text = achievement.name
-            Description.text = achievement.description
-
-            achievementPanel.y = (210 * yCount - 1) + 5
-            achievementPanel.x = (427.5 * xCount) + 5
-
-            totalCount = totalCount + 1
-            xCount = xCount + 1
-            if (totalCount % 3 == 0) then
-                yCount = yCount + 1
-                xCount = 0
-            end
-        end
-    end
-    achievementScrollPanel.scrollPosition = 0
+    SetActiveAchievements()
 end
 
-local function AnimateNotification(id)
-    NOTIFICATION_ICON:SetImage(ACH_API.GetAchievementIcon(id))
-    NOTIFICATION_ICON_BG:SetImage(ACH_API.GetAchievementIconBG(id))
-    ACHIEVEMENT_NAME_TEXT.text = (ACH_API.GetAchievementName(id))
-    EaseUI.EaseX(NOTIFICATION, 10, 1, EaseUI.EasingEquation.BACK, EaseUI.EasingDirection.OUT)
-    Task.Wait(0.5)
-    World.SpawnAsset(SFX)
-    Task.Wait(5)
-    EaseUI.EaseX(NOTIFICATION, 400, 1, EaseUI.EasingEquation.SINE, EaseUI.EasingDirection.OUT)
-    Task.Wait(1)
-end
 ------------------------------------------------------------------------------------------------------------------------
 -- GLOBAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
@@ -310,6 +352,16 @@ function OnGameStateChanged(oldState, newState, stateHasDuration, stateEndTime) 
     end
 end
 
+function OnToggleButtonClicked(button)
+    if button == achievementsActiveButton then
+        achievementCompleteScrollPanel.visibility = Visibility.FORCE_OFF
+        achievementScrollPanel.visibility = Visibility.INHERIT
+    elseif button == achievementsCompleteButton then
+        achievementScrollPanel.visibility = Visibility.FORCE_OFF
+        achievementCompleteScrollPanel.visibility = Visibility.INHERIT
+    end
+end
+
 function ToggleThisComponent(requestedPlayerState)
     savedState = requestedPlayerState
 
@@ -330,15 +382,6 @@ function DisableThisComponent()
     ClearAchievements()
 end
 
-function Tick()
-    if shouldShow and #achievementQueue > 0 then
-        for _, id in ipairs(achievementQueue) do
-            AnimateNotification(id)
-        end
-        achievementQueue = {}
-    end
-end
-
 Int()
 scriptListeners[#scriptListeners + 1] = LOCAL_PLAYER.resourceChangedEvent:Connect(OnResourceChanged)
 --scriptListeners[#scriptListeners + 1] = Events.Connect("GameStateChanged", OnGameStateChanged)
@@ -351,3 +394,7 @@ scriptListeners[#scriptListeners + 1] =
         ClearListeners(scriptListeners)
     end
 )
+
+-- handler params: UIButton_button
+achievementsActiveButton.clickedEvent:Connect(OnToggleButtonClicked)
+achievementsCompleteButton.clickedEvent:Connect(OnToggleButtonClicked)
