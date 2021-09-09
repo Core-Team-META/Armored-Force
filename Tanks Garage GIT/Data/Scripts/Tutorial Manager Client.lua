@@ -22,6 +22,8 @@ local Close = script:GetCustomProperty("Close"):WaitForObject()
 local Tutorial_UpgradeTankPanel = script:GetCustomProperty("Tutorial_UpgradeTankPanel"):WaitForObject()
 local CloseUpgradeTutorial = script:GetCustomProperty("CloseUpgradeTutorial"):WaitForObject()
 local Tutorial_UpgradeTankSidePanel = script:GetCustomProperty("Tutorial_UpgradeTankSidePanel"):WaitForObject()
+local Tutorial_Reset = script:GetCustomProperty("Tutorial_Reset"):WaitForObject()
+local Tutorial_TutorialResetPanel = script:GetCustomProperty("Tutorial_TutorialResetPanel"):WaitForObject()
 
 local EnemyTargetPracticeAI = script:GetCustomProperty("EnemyTargetPracticeAI"):WaitForObject()
 
@@ -62,8 +64,10 @@ function AdvanceTutorial(phase, giveRewards)
 	print("Advancing tutorial to phase: " .. tostring(phase))
 	print("Tutorial currently: " .. tostring(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource())))
 	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) < phase) then
-		local panel = World.SpawnAsset(TutorialCompletePopup, {parent = script.parent:FindChildByName("Tutorial UI")})
-		panel.lifeSpan = 3
+		if LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialRewardResource()) < phase then
+			local panel = World.SpawnAsset(TutorialCompletePopup, {parent = script.parent:FindChildByName("Tutorial UI")})
+			panel.lifeSpan = 3
+		end		
 		Events.BroadcastToServer("AdvanceTutorial",  API_Tutorial.TutorialPhase.MovedToShootingRange, giveRewards or true)
 	end
 end
@@ -114,6 +118,7 @@ function ToggleTutorialState()
 	Tutorial_JoinBattlePanel.visibility = Visibility.FORCE_OFF
 	Tutorial_OptOutPanel.visibility = Visibility.FORCE_OFF
 	Tutorial_UpgradeTankSidePanel.visibility = Visibility.FORCE_OFF
+	Tutorial_TutorialResetPanel.visibility = Visibility.FORCE_OFF
 
 	--warn("tutorial1")
 	--warn(tostring(LOCAL_PLAYER.clientUserData.tutorial1))	
@@ -127,6 +132,10 @@ function ToggleTutorialState()
 		Tutorial_UpgradeTankPanel.visibility = Visibility.FORCE_ON
 	else
 		Tutorial_UpgradeTankPanel.visibility = Visibility.FORCE_OFF
+	end
+	
+	if(tutorialProgress == API_Tutorial.TutorialPhase.Completed) then
+		Tutorial_TutorialResetPanel.visibility = Visibility.FORCE_ON
 	end
 
 	if(tutorialProgress == API_Tutorial.TutorialPhase.Completed) then return end	
@@ -202,10 +211,13 @@ end
 
 function BindingPressed(player, binding)
 	if(binding == "ability_extra_54" and LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) < API_Tutorial.TutorialPhase.Completed) then
-		Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.Completed, false)
-	elseif(binding == "ability_extra_54" and LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.Completed) then
-		Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.None, false)
+		Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.Completed, false)		
 	end
+end
+
+function ResetTutorialProgress()
+	SFX_CLICK:Play()
+	Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.None, false)
 end
 
 function CloseTutorialPopup()
@@ -234,5 +246,8 @@ Tutorial_ShootingRangeButton.clickedEvent:Connect(GotoShootingRange)
 Tutorial_ShootingRangeButton.releasedEvent:Connect(ButtonRelease)
 Tutorial_ShootingRangeButton.hoveredEvent:Connect(ButtonHover)
 Tutorial_ShootingRangeButton.unhoveredEvent:Connect(ButtonUnhover)
+
+Tutorial_Reset.clickedEvent:Connect(ResetTutorialProgress)
+Tutorial_Reset.hoveredEvent:Connect(HoverSound)
 
 Events.Connect("AdvanceTutorialRequest", AdvanceTutorial)
