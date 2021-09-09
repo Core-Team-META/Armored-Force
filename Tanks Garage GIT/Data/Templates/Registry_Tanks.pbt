@@ -357,6 +357,12 @@ Assets {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 17752883692918200346
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -634,6 +640,12 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
+          }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 11070642240578917934
+            }
           }
         }
         Collidable_v2 {
@@ -913,6 +925,12 @@ Assets {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 2127399804989024861
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1190,6 +1208,12 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
+          }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 5525593764342227269
+            }
           }
         }
         Collidable_v2 {
@@ -1473,6 +1497,12 @@ Assets {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 15450691342083558414
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1755,6 +1785,12 @@ Assets {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 16941616078817355593
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2033,6 +2069,12 @@ Assets {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 13972934165814476756
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2307,6 +2349,12 @@ Assets {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 756910375302462041
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2580,6 +2628,12 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
+          }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 8664588434407905078
+            }
           }
         }
         Collidable_v2 {
@@ -2859,6 +2913,12 @@ Assets {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 11218615546638032808
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3136,6 +3196,12 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
+          }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 14550895355637300646
+            }
           }
         }
         Collidable_v2 {
@@ -3415,6 +3481,12 @@ Assets {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 9896375689073672449
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3692,6 +3764,12 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
+          }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 10090281557179387312
+            }
           }
         }
         Collidable_v2 {
@@ -3971,6 +4049,12 @@ Assets {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 9293910615263428976
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4248,6 +4332,12 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
+          }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 12306847251217702731
+            }
           }
         }
         Collidable_v2 {
@@ -4527,6 +4617,12 @@ Assets {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 4625738917005293060
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4804,6 +4900,12 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
+          }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 12517003562365117692
+            }
           }
         }
         Collidable_v2 {
@@ -5363,6 +5465,12 @@ Assets {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 10267322623783584390
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5641,6 +5749,12 @@ Assets {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 17083346250412936352
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5918,6 +6032,12 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
+          }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 17995605423522335680
+            }
           }
         }
         Collidable_v2 {
@@ -6485,6 +6605,12 @@ Assets {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 5968710225963699877
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6767,6 +6893,12 @@ Assets {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 7180696728697394149
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7040,6 +7172,12 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
+          }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 17422712522509517675
+            }
           }
         }
         Collidable_v2 {
@@ -7319,6 +7457,12 @@ Assets {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 17461203481784218089
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7596,6 +7740,12 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
+          }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 11082612207778707572
+            }
           }
         }
         Collidable_v2 {
@@ -7875,6 +8025,12 @@ Assets {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 6418637844226660454
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8152,6 +8308,12 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
+          }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 3988770454890088959
+            }
           }
         }
         Collidable_v2 {
@@ -8431,6 +8593,12 @@ Assets {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 6727905754861090872
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8708,6 +8876,12 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
+          }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 14687832177726791735
+            }
           }
         }
         Collidable_v2 {
@@ -8987,6 +9161,12 @@ Assets {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
           }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 10267322623783584390
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9264,6 +9444,12 @@ Assets {
           Overrides {
             Name: "cs:wheelSpeedModifier:category"
             String: "Custom"
+          }
+          Overrides {
+            Name: "cs:SkinLoFi"
+            AssetReference {
+              Id: 4729153102520822264
+            }
           }
         }
         Collidable_v2 {
