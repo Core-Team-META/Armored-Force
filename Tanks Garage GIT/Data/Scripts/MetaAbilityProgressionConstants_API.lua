@@ -159,10 +159,10 @@ API.TEAM = {
 }
 
 API.XP_TIER_VALUE = {
-    TIER1 = 100,
-    TIER2 = 200,
-    TIER3 = 300,
-    TIER4 = 400
+    TIER1 = 300,
+    TIER2 = 500,
+    TIER3 = 700,
+    TIER4 = 900
 }
 
 API.XP_GAIN_REASON = {
