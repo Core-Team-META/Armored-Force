@@ -1,13 +1,4 @@
 Assets {
-  Id: 17858736014608014985
-  Name: "Prism - 6-Sided Half"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_half_hexagon_001"
-  }
-}
-Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -167,15 +158,6 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_stain_top_001"
-  }
-}
-Assets {
-  Id: 12095835209017042614
-  Name: "Cube"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_002"
   }
 }
 Assets {
@@ -350,15 +332,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3773142637494405427
-  Name: "Basic Apple"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prim_org_apple_001_ref"
-  }
-}
-Assets {
   Id: 3377721323622766709
   Name: "Rock Pile 002"
   PlatformAssetType: 1
@@ -401,15 +374,6 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "dcl_liquid"
-  }
-}
-Assets {
-  Id: 2246810950725948328
-  Name: "Gravel Raked 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_gravel_001_uv"
   }
 }
 Assets {
