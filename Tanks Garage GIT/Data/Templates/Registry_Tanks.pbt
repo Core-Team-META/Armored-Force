@@ -5468,7 +5468,7 @@ Assets {
           Overrides {
             Name: "cs:SkinLoFi"
             AssetReference {
-              Id: 10267322623783584390
+              Id: 16683487602112062081
             }
           }
         }

@@ -73178,7 +73178,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -77377,7 +77377,7 @@ Objects {
           Vector {
             X: 4623.39844
             Y: -15228.6289
-            Z: 297.673828
+            Z: 397.525757
           }
         }
         Overrides {
