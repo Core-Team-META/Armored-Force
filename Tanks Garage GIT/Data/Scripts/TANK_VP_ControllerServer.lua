@@ -380,6 +380,17 @@ function SetTankModifications()
 	
 end
 
+function ApplyDamage(object, enemy, attackData, amount)
+	--if object:IsA("AIPlayer") then
+	--	object:ApplyDamage(attackData)
+	--else
+		COMBAT.ApplyDamage(attackData)
+	--end
+	--[[if enemy:IsA("AIPlayer") then
+		enemy:AddResource("TankDamage", CoreMath.Round(amount))
+	end]]--
+end
+
 function OnDeath(player, damage)
 	
 	if bindingPressedListener then
@@ -573,14 +584,11 @@ function ProjectileImpacted(expiredProjectile, other)
 			rotation = nil,
 			tags = {id = "Projectile"}
 		}
-		COMBAT.ApplyDamage(attackData)
+		ApplyDamage(driver, other.driver, attackData, damageDealt.amount)
 	end
 
 	
-	if driver:IsA("AIPlayer") then
-		driver:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
-	end
-
+	
 end
 
 function ProjectileExpired(expiredProjectile)
@@ -639,15 +647,8 @@ function OnArmorHit(trigger, other)
 				rotation = nil,
 				tags = {id = "Projectile"}
 			}
-			-- This is kind of ugly. :( -CJC
-			if driver:IsA("AIPlayer") then
-				driver:ApplyDamage(attackData)
-			else
-				COMBAT.ApplyDamage(attackData)
-			end
-			if enemyPlayer:IsA("AIPlayer") then
-				enemyPlayer:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
-			end
+			
+			ApplyDamage(enemyPlayer, driver, attackData, damageDealt.amount)
 			
 			print(enemyPlayer.name .. " dealing " .. tostring(totalDamage) .. "to" .. driver.name)
 		end
@@ -826,11 +827,9 @@ function OnArmorHit(trigger, other)
 				rotation = nil,
 				tags = {id = "Ram"}
 			}
-	   		COMBAT.ApplyDamage(attackData)
+			ApplyDamage(driver, enemyPlayer, attackData, damageDealt.amount)
 			   
-			   if enemyPlayer:IsA("AIPlayer") then
-				enemyPlayer:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
-			end
+		
 	   	end
 	   	
 	if enemyPlayer:IsA("Player") then
@@ -969,10 +968,9 @@ function OnBurning()
 			tags = {id = "Burning"}
 		}
 		
-		COMBAT.ApplyDamage(attackData)
-		if driver:IsA("AIPlayer") then
-			driver:AddResource("TankDamage", CoreMath.Round(damageDealt.amount))
-		end
+		ApplyDamage(driver, playerWhoBurned, attackData, damageDealt.amount)
+		   
+	
 		Task.Wait(1)
 	end
 	

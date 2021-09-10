@@ -116,7 +116,7 @@ function API.FindInSphere(position, radius, parameters)
 end
 
 function GetWrapperFor(object)
-	if object and (object:IsA("Player") or object and object.IsA("AIPlayer")) then
+	if (object and object:IsA("Player")) or (object and object:IsA("AIPlayer")) then
 		return PLAYER_WRAPPER
 	end
 	return NPC_WRAPPER

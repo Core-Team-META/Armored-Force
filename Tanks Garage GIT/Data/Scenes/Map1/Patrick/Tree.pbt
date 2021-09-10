@@ -392,6 +392,12 @@ Objects {
         SelfId: 16554756392297303216
       }
     }
+    Overrides {
+      Name: "cs:Constants_API"
+      AssetReference {
+        Id: 9930510073357529478
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
