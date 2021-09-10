@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13491723829736336971
+  Name: "Military Ability Explosion 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Military_Ability_Red_015"
+  }
+}
+Assets {
   Id: 8577223158266405289
   Name: "Icon Explosion"
   PlatformAssetType: 9

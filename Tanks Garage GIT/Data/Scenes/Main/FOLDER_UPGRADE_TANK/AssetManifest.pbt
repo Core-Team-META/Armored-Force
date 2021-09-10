@@ -98,6 +98,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7053705669844552709
+  Name: "Survival Gear 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Gear_001"
+  }
+}
+Assets {
   Id: 6262982467505051120
   Name: "Fantasy Craft Bar 002"
   PlatformAssetType: 9

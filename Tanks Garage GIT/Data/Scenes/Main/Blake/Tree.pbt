@@ -230,6 +230,28 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 3103256762824892649
+      value {
+        Overrides {
+          Name: "cs:Icon"
+          AssetReference {
+            Id: 5338244946539998590
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9176102567015290702
+      value {
+        Overrides {
+          Name: "cs:Icon"
+          AssetReference {
+            Id: 7053705669844552709
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 17749541630557761566
       value {
         Overrides {
