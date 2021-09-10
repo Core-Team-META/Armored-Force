@@ -16,6 +16,7 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 --]]
 -- Internal custom properties
 local AS = require(script:GetCustomProperty("API"))
+local Constants_API = require(script:GetCustomProperty("Constants_API"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local NAMEPLATE_TEMPLATE = script:GetCustomProperty("NameplateTemplate")
 local SEGMENT_SEPARATOR_TEMPLATE = script:GetCustomProperty("SegmentSeparatorTemplate")
@@ -48,6 +49,8 @@ local HEAL_CHANGE_COLOR = COMPONENT_ROOT:GetCustomProperty("HealChangeColor")
 local HEALTH_NUMBER_COLOR = COMPONENT_ROOT:GetCustomProperty("HealthNumberColor")
 
 local spottingServer = script:GetCustomProperty("GAMEHELPER_SpottingServer"):WaitForObject()
+
+local TANKS = Constants_API:WaitForConstant("Tanks").GetTanks()
 
 local GameState = nil
 local currentGameState = nil
@@ -172,8 +175,10 @@ function OnPlayerJoined(player)
 	 then
 		nameplates[player.id].tankText.text =
 			player.clientUserData.currentTankData.name .. " [" .. tostring(player.clientUserData.currentTankData.teir) .. "]"
+	 elseif player.identifier then
+		nameplates[player.id].tankText.text = TANKS[tonumber(player.identifier)].name
 	else
-		nameplates[player.id].tankText.isEnabled = false
+		--nameplates[player.id].tankText.isEnabled = false
 	end
 
 	nameplates[player.id].borderPiece.visibility = Visibility.FORCE_OFF
@@ -352,8 +357,8 @@ function Tick(deltaTime)
 				 then
 					nameplate.tankText.text =
 						player.clientUserData.currentTankData.name .. " [T" .. tostring(player.clientUserData.currentTankData.teir) .. "]"
-				else
-					nameplates[player.id].tankText.isEnabled = false
+				 elseif player.identifier then
+					nameplates[player.id].tankText.text = TANKS[tonumber(player.identifier)].name .. " [T" .. tostring(TANKS[tonumber(player.identifier)].tier) .. "]"
 				end
 
 				if SHOW_HEALTHBARS then
