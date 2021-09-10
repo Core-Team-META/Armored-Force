@@ -1,6 +1,8 @@
 local LuaEvents = require(script:GetCustomProperty("_LuaEvents"))
 local PathMap = require(script:GetCustomProperty("_PathMap"))
+local NameMgr = require(script:GetCustomProperty("_AINames"))
 local AIPlayer = {}
+
 
 
 local nextId = 1
@@ -32,7 +34,8 @@ function AIPlayer.New(team)
     currentMovementTarget = nil,
     currentAttackTarget = nil,
     lastShotTime = -1,
-    name = "ROBO" .. tostring(nextId - 1),
+    --name = "ROBO" .. tostring(nextId - 1),
+    name = NameMgr.GetName(),
     identifier = "01",
     lastPathUpdateTime = -1,
     kills = 0,
