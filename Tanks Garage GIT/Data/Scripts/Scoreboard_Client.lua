@@ -14,12 +14,18 @@ local ConfirmCloseButton = script:GetCustomProperty("CONFIRM_WINDOW_CLOSE_BUTTON
 local ENTRY_TEMPLATE = script:GetCustomProperty("Scoreboard_Entry_Template")
 local ENEMY_ENTRY_TEMPLATE = script:GetCustomProperty("Scoreboard_Entry_Enemy_Template")
 local Constants_API = require(script:GetCustomProperty("Constants_API"))
+
+
+local UPDATE_DELAY = 0.1
+
 local scoreCards = {}
 local lastAiCount = 0
-local lastUpdateTime = 0
+local lastUpdateTime = UPDATE_DELAY
 
 local isActive = false
 local forceMouseActive = false
+
+
 
 while not _G.PLAYER_RANKS do
     Task.Wait()
@@ -149,7 +155,7 @@ function Tick(dt) --
         return
     end
 
-    if lastUpdateTime < 1 then
+    if lastUpdateTime < UPDATE_DELAY then
         lastUpdateTime = lastUpdateTime + dt
         return
     else
