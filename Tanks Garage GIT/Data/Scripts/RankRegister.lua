@@ -8,7 +8,6 @@ Rank.Data = Data
 Rank.MaxXPSpread = 50000
 Rank.MinXPSpread = 800
 
-
 Rank.GetMaxLevel = function()
     local max = 0
     for key, value in pairs(Rank.Data) do

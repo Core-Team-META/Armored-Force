@@ -36,6 +36,7 @@ local TIER_BONUS_DIVIDER = 5
 
 
 local winner = -1
+local playerStartingXP = {}
 
 function TrackDailyChallenge(player, type, amount)
 	for i = 1, 3 do
@@ -74,7 +75,7 @@ function CalculateTotalXP(player)
 
 	return (baseXP + survivalBonus + damageBounus + spotBonus + (player.kills * killXPValue)) * modifier
 end
-
+--[[
 function CalculateTotalCurrency(player)
 	local baseCurrency = 0
 
@@ -97,6 +98,7 @@ function CalculateTotalCurrency(player)
 
 	return (baseCurrency + survivalBonus + damageBounus + spotBonus + (player.kills * killXPValue)) * modifier
 end
+]]
 
 function SetWinner(winningTeam)
 	winner = winningTeam
@@ -155,31 +157,31 @@ function SaveStatistics()
 		local tempTbl = {}
 
 		local tankRPString = UTIL_API.GetTankRPString(p:GetResource(CONSTANTS_API.GetEquippedTankResource()))
-		local totalXp = CalculateTotalXP(p)
-		local baseXP = drawXPValue
+		local totalXp =  p:GetResource(CONSTANTS_API.XP) - playerStartingXP[p.id]
+		local baseXP = 0
 		local baseCurrency = drawCurrencyValue
 		local totalCurrency = CalculateTotalCurrency(p)
 
 		SubmitScores(p)
 
 		p:AddResource(tankRPString, totalXp)
-		p:AddResource(CONSTANTS_API.XP, totalXp)
+		--p:AddResource(CONSTANTS_API.XP, totalXp)
 		p:AddResource("Silver", totalCurrency)
 
 		if p.team == winner then
 			--print(p.name .. " won, adding to Total Wins")
 			p:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_WINS, 1)
 			TrackDailyChallenge(p, "Wins", 1)
-			baseXP = victoryXPValue
+			baseXP = VICTORY_XP_PER_PLAYER_AMOUNT
 			baseCurrency = victoryCurrencyValue
 			tempTbl["Winner"] = true
 		elseif winner > 0 then
 			--print(p.name .. " lost, adding to Total Losses")
 			p:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_LOSSES, 1)
-			baseXP = lossXPValue
 			baseCurrency = lossCurrencyValue
 		else
 			--print(p.name .. " had a draw")
+			baseXP = VICTORY_XP_PER_PLAYER_AMOUNT/2
 		end
 
 		p:AddResource(CONSTANTS_API.COMBAT_STATS.GAMES_PLAYED_RES, 1)
@@ -344,6 +346,8 @@ function OnJoined(player)
 	player:SetResource("MatchKills", 0)
 	player:SetResource("DamageTracker", 0)
 	player:SetResource("SpottingTracker", 0)
+	
+	playerStartingXP[player.id] = player:GetResource(CONSTANTS_API.XP)
 	
 	Task.Wait(1)
 	
