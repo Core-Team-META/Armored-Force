@@ -11,7 +11,6 @@ function GetNewId()
 end
 
 local AIList = {}
-local WRIGGLE_DURATION = 3
 
 
 function AIPlayer.New(team)
@@ -59,21 +58,10 @@ function AIPlayer:IsA(t)
 end
 
 
---[[
-    local attackData = {
-      object = driver,
-      damage = damageDealt,
-      source = enemyPlayer,
-      position = nil,
-      rotation = nil,
-      tags = {id = "Example"}
-    }
-]]
 function AIPlayer:ApplyDamage(damageTable)
   local wasAlive = self.hitPoints > 0
   self.hitPoints = self.hitPoints - damageTable.damage.amount
 
-  --#TODO Chris are we wanting to put this somewhere else? - Morticai
   Events.Broadcast("CombatWrapAPI.OnDamageTaken", damageTable)
   damageTable.source:SetResource("TankDamage", CoreMath.Round(damageTable.source:GetResource("TankDamage") + damageTable.damage.amount))
 
@@ -85,7 +73,6 @@ function AIPlayer:ApplyDamage(damageTable)
           self.isDead = true
           self.diedEvent:Trigger(self)
 
-          --#TODO Chris are we wanting to put this somewhere else? - Morticai
           if damageTable.source then
             damageTable.source.kills = damageTable.source.kills + 1
           end
@@ -99,42 +86,30 @@ end
 
 
 function TankTick(self)
-  --print(">>>FIRE!<<<", self, self.tankId)
-  --Task.Wait(math.random(0, 2))
   if self.isDead then
     return
   end
-
-  local SHOT_FREQUENCY = 1
-  local PATH_UPDATE_FREQUENCY = 2
 
   self:SetAim()
   self:UpdateAttackTarget()
 
   local currentTime = time()
 
-  if currentTime > self.lastShotTime + SHOT_FREQUENCY and self:ShouldShoot() then
+  if currentTime > self.lastShotTime + _G.const.AI.SHOT_FREQUENCY and self:ShouldShoot() then
     self.lastShotTime = currentTime
     Events.Broadcast("AI_Tankshot", self)
   end
 
-  if currentTime > self.lastPathUpdateTime + PATH_UPDATE_FREQUENCY then
+  if currentTime > self.lastPathUpdateTime + _G.const.AI.PATH_UPDATE_FREQUENCY then
     self.lastPathUpdateTime = currentTime
     self:CheckIfStuck()
     self:UpdatePath()
   end
-
---[[
-  if time() > self.lastShotTime + 3
-    and math.random(1, 100) < 5 then
-    Events.Broadcast("AI_Tankshot", self)
-  end]]
-
 end
 
 
 function AIPlayer:CheckIfStuck()
-  if time() < self.wriggleStartTime + WRIGGLE_DURATION then return end
+  if time() < self.wriggleStartTime + _G.const.AI.WRIGGLE_DURATION then return end
 
   local pos = self:GetWorldPosition()
   if self.currentMovementTarget == nil then return end
@@ -159,7 +134,6 @@ function AIPlayer:ShouldShoot()
   local myPos = chassis:GetWorldPosition()
   local targetPos = self.currentAttackTarget:GetWorldPosition()
 
-
   local aimTolerance = math.sin(5 * math.pi/180)
 
   --local tankVector = vehicle:GetWorldRotation() * Vector3.FORWARD
@@ -168,34 +142,16 @@ function AIPlayer:ShouldShoot()
   local targetVector = fullTargetVector:GetNormalized()
   local aimVector = muzzle:GetWorldRotation() * Vector3.FORWARD
 
-
+  -- Are we aiming in the correct direction?
   if (targetVector .. aimVector) < 0 then return false end
   if math.abs((targetVector ^ aimVector).z) > aimTolerance then return false end
+
+  --if not self:CanShootTargetFrom(myPos) then return false end
+  -- can we actually hit it?
+  local hr = World.Raycast(muzzle:GetWorldPosition(), targetPos + Vector3.UP * 100, {ignorePlayers = true})
+  if hr == nil or not hr.other:IsA("Vehicle") then return false end
+
   return true
-
-
-end
-
-
-function AttackEnemies()
-
-end
-
-
-
-function GoToBattle()
-
-end
-
-
-function CapturePoint()
-
-end
-
-
-function DefendPoint()
-
-
 end
 
 
@@ -275,7 +231,7 @@ function AIPlayer:HandleDriving(vehicle, params)
   params.isHandbrakeEngaged = false
   params.throttleInput = 1.0
   
-  if time() < self.wriggleStartTime + WRIGGLE_DURATION then
+  if time() < self.wriggleStartTime + _G.const.AI.WRIGGLE_DURATION then
     params.steeringInput = self.wriggleAngle
     params.throttleInput = -1.0
     params.isHandbrakeEngaged = false
@@ -287,18 +243,14 @@ function AIPlayer:HandleDriving(vehicle, params)
     params.steeringInput = -steering
     params.throttleInput = 1.0
   else
-    --print("reversing!")
-    --if steering < 0 then steering = 1 else steering = -1 end
-    params.steeringInput = 1 ---steering
+    params.steeringInput = 1
     params.throttleInput = -1.0
   end
 end
 
 
 function AIPlayer:SetAim()
-  -- This is a hack.  Need to change to nearest tank.
   if Object.IsValid(self.currentAttackTarget) then
-    --print("sending aim data!", self.currentAttackTarget)
     Events.Broadcast("AI_TankAim", self, self.currentAttackTarget:GetWorldPosition())
   end
 end
@@ -307,7 +259,7 @@ end
 function AIPlayer:PlotCourse(targetPos)
   if targetPos == nil then return end
   --CoreDebug.DrawLine(self:GetWorldPosition(), targetPos, {duration = 5, thickness = 15})
-  -- Todo - make this better!
+
   local SCAN_RANGE = 10000
   local SCAN_STEP = 350
 
@@ -325,6 +277,7 @@ function AIPlayer:PlotCourse(targetPos)
   for _, angle in ipairs(angleList) do
     local newPoint = pos + Rotation.New(0, 0, angle) * vec
     local newDist = self:PathRay(newPoint, SCAN_RANGE, SCAN_STEP)
+
     if newDist >= SCAN_RANGE then
       bestTarget = newPoint
       break
@@ -332,6 +285,7 @@ function AIPlayer:PlotCourse(targetPos)
       bestTarget = newPoint
       bestDist = newDist
     end
+
     if bestTarget ~= nil then targetPos = bestTarget end
   end
 
@@ -339,16 +293,15 @@ function AIPlayer:PlotCourse(targetPos)
 end
 
 
-
 function AIPlayer:UpdatePath()
-  local CLOSING_DIST = 5000
   local target = self:FindNearestEnemyTank()
   if Object.IsValid(target) then
     local enemyPos = target:GetWorldPosition()
     local myPos = self:GetWorldPosition()
+
     -- We want to stop a little ways away.
     local pathVec = myPos - enemyPos
-    local targetPos = pathVec:GetNormalized() * CLOSING_DIST + enemyPos
+    local targetPos = pathVec:GetNormalized() * _G.const.AI.CLOSING_DIST + enemyPos
     targetPos = targetPos + Vector3.New(math.random() * 2 - 1, math.random() * 2 - 1, 0) * pathVec.size * 0.2
     
     self:PlotCourse(targetPos)
@@ -523,7 +476,6 @@ function _G.utils.GetTankDrivers(options)
   local results = {}
   for driver,tankData in pairs(_G.lookup.tanks) do
     if _G.utils.IsDriverValid(driver) then
-      --{ignoreDead = true, ignorePlayers = p, ignoreTeams = p.team}
 
       if (options.ignoreDead and driver.isDead)
           or (options.ignorePlayers == driver)
@@ -543,7 +495,5 @@ end
 local replicateTask = Task.Spawn(AIPlayer.ReplicateTankAIData)
 replicateTask.repeatCount = -1
 replicateTask.repeatInterval = 2
-
-
 
 return AIPlayer
