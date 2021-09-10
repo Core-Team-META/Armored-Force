@@ -7,9 +7,9 @@ function GetSkinData(object)
     for _, skin in ipairs(object:GetChildren()) do
         local properties = skin:GetCustomProperties()
         
-        newtable[properties.SkinID] = {}
+        newtable[properties.skinID] = {}
         for key, value in pairs(properties) do
-            newtable[properties.SkinID][key] = value
+            newtable[properties.skinID][key] = value
         end
 
     end

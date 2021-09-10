@@ -25,7 +25,8 @@ local SFX_HOVER = World.FindObjectByName("SFX_HOVER")
 local SFX_UNHOVERED = World.FindObjectByName("SFX_UNHOVERED")
 
 local Constants_API = require(script:GetCustomProperty("Constants_API"))
-
+local tanksAPI = Constants_API:WaitForConstant("Tanks")
+local tanks = tanksAPI:GetTanks()
 -------------------
 
 while not _G.PORTAL_IMAGES do
@@ -488,7 +489,7 @@ function OnRenewEntries()
 	end
 	
 	local playerCamoData = localPlayer.clientUserData.camoData[selectedTank]
-	local camoList = skinsClient.context.GetTankSkinData(selectedTank)
+	local camoList = tanks[tonumber(selectedTank)].skins
 	
 	for camoID, camo in pairs(camoList) do
 		camoEntries[camoID].equipBuyComponents.equipText.visibility = Visibility.FORCE_ON
@@ -557,7 +558,7 @@ function RepopulateCamoEntries()
 		return
 	end
 	
-	local camoList = skinsClient.context.GetTankSkinData(selectedTank)
+	local camoList = tanks[tonumber(selectedTank)].skins
 	local uniqueCamoImageInfo = IMAGE_API.GetSkinsImageInfo("unique")
 	local flippedPositioning = {}
 	local positioning = {}
@@ -581,13 +582,13 @@ function RepopulateCamoEntries()
 		camoEntry.camoUI.y = (positioning[camoID] - 1) * 190 + 5
 		
 		local camoTitle = camoEntry.camoUI:GetCustomProperty("CamoName"):WaitForObject()
-		camoTitle.text = camo.name
+		camoTitle.text = camo.skinName
 		
 		local previewImage = camoEntry.camoUI:GetCustomProperty("PreviewImage"):WaitForObject()
 		previewImage:SetGameScreenshot(uniqueCamoImageInfo.link, uniqueCamoImageInfo.index)
 		
-		previewImage.x = -(camo.coordinates.x - 1) * (previewImage.width / 5)
-		previewImage.y = -(camo.coordinates.y - 1) * (previewImage.height / 5)
+		previewImage.x = -(camo.previewImageLocation.x - 1) * (previewImage.width / 5)
+		previewImage.y = -(camo.previewImageLocation.y - 1) * (previewImage.height / 5)
 		
 		local previewAssets = camoEntry.camoUI:GetCustomProperty("PreviewButtonAssets"):WaitForObject()
 		local equipBuyAssets = camoEntry.camoUI:GetCustomProperty("EquipBuyButtonAssets"):WaitForObject()

@@ -169,13 +169,13 @@ Assets {
         Name: "HULLREAR"
         Transform {
           Location {
-            X: -326.891205
+            X: -328.346497
             Z: 14.6867781
           }
           Rotation {
           }
           Scale {
-            X: 1.79999936
+            X: 1.81800508
             Y: 4.89956379
             Z: 1.99639964
           }

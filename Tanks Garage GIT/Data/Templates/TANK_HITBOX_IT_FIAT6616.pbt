@@ -63,7 +63,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -125,14 +125,14 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 368.181732
+            X: 375.059479
             Z: -6.81819534
           }
           Rotation {
           }
           Scale {
-            X: 2.9
-            Y: 5.12272692
+            X: 3.11103153
+            Y: 5.19196272
             Z: 1.7
           }
         }
@@ -178,7 +178,7 @@ Assets {
           }
           Scale {
             X: 2
-            Y: 4.89999962
+            Y: 5.1151166
             Z: 2.10000014
           }
         }
@@ -562,7 +562,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
