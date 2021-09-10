@@ -91,11 +91,9 @@ LOCAL_PLAYER.clientUserData.KilledBy = {}
 local killedByTask = nil
 function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCode)
     -- ignore anything not releated to local player
-    if (killedPlayer ~= LOCAL_PLAYER) then
+    if not killerPlayer or (killedPlayer ~= LOCAL_PLAYER) then
         return
     end
-
-    warn(tostring(killerPlayer) ..  " Killed By")
 
     -- Grab player titles
     local playerTitle = PlayerTitles.GetPlayerTitle(killerPlayer)
