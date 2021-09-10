@@ -16,6 +16,12 @@ Assets {
           Id: 3802787313179073777
         }
       }
+      Overrides {
+        Name: "cs:_AINames"
+        AssetReference {
+          Id: 1167133460485309824
+        }
+      }
     }
   }
   SerializationVersion: 98
