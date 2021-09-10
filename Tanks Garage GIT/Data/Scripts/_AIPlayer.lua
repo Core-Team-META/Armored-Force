@@ -483,6 +483,7 @@ end
 function _G.utils.GetTankDrivers(options)
   if options == nil then options = {} end
   local results = {}
+  if not _G.lookup then return {} end
   for driver,tankData in pairs(_G.lookup.tanks) do
     if _G.utils.IsDriverValid(driver) then
 
