@@ -10,9 +10,9 @@ Assets {
         Name: "AI_BlockedPathMarker"
         Transform {
           Scale {
-            X: 39.5832253
-            Y: 39.5832253
-            Z: 39.5832253
+            X: 23.5929317
+            Y: 23.5929317
+            Z: 23.5929317
           }
         }
         ParentId: 11455135778362922800
