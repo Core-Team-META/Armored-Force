@@ -146,39 +146,39 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Stock"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: false
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: false
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               A: 1
             }
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 841534158063459245
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "00"
           }
           Overrides {
-            Name: "cs:Resource"
+            Name: "cs:resource"
             String: "Silver"
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 0
           }
         }
@@ -217,19 +217,19 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Chrome"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               R: 1
               G: 1
@@ -238,24 +238,24 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 3180794530394243418
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "01"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 4
               Y: 5
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 2500
           }
         }
@@ -294,19 +294,19 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Gold"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               R: 0.73300004
               G: 0.525316715
@@ -314,24 +314,24 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 3180794530394243418
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "02"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 5
               Y: 5
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 2500
           }
         }
@@ -370,36 +370,36 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Camo Splinter"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 7675962363203525070
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "03"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 3
               Y: 5
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 3500
           }
         }
@@ -438,40 +438,40 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Camo Woodland"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 6900641435737272158
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "04"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 2
               Y: 5
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 3500
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               R: 0.046875
               G: 0.031402
@@ -515,40 +515,40 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Camo Digital"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 6368363392805105925
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "05"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 1
               Y: 5
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 3500
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               R: 1
               G: 1
@@ -592,19 +592,19 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Advanced Metal"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               R: 0.0410959721
               G: 0.403114349
@@ -613,24 +613,24 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 9187540498960513143
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "06"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 5
               Y: 4
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 3500
           }
         }
@@ -669,40 +669,40 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Moon"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 9960906544699791848
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "07"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 2
               Y: 4
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 3500
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               R: 1
               G: 1
@@ -746,40 +746,40 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Carbon Fiber"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 2249794126015640337
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "08"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 1
               Y: 1
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 4500
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               R: 0.009721
               G: 0.009721
@@ -823,40 +823,40 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Tech Design 01"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 3845926179118691013
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "09"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 4
               Y: 3
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 4500
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               R: 1
               G: 1
@@ -900,40 +900,40 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Cardboard"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 9404968316769731104
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "10"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 5
               Y: 3
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 4500
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               R: 1
               G: 1
@@ -977,40 +977,40 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Rusty"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 12770190894867165207
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "11"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 5
               Y: 2
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 5000
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               R: 1
               G: 1
@@ -1054,19 +1054,19 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Camo Blue"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               R: 1
               G: 1
@@ -1075,24 +1075,24 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 682700398407096474
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "12"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 2
               Y: 3
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 6000
           }
         }
@@ -1131,40 +1131,40 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Diamond Green"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 3503457931000356404
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "13"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 3
               Y: 3
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 6000
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               R: 0.140625
               G: 0.140625
@@ -1208,40 +1208,40 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Candy Apple"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 2329230905657722655
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "14"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 1
               Y: 3
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 6000
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               R: 2
               A: 1
@@ -1283,19 +1283,19 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Stripes Pink"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               R: 0.593000054
               G: 0.154179975
@@ -1304,24 +1304,24 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 942118974176962227
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "15"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 4
               Y: 2
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 7000
           }
         }
@@ -1360,19 +1360,19 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Stripes Blue"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               R: 0.0284429919
               G: 0.0911837667
@@ -1381,24 +1381,24 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 4085560558169437084
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "16"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 3
               Y: 2
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 7000
           }
         }
@@ -1437,19 +1437,19 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Stripes Purple"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               R: 0.0171000138
               G: 0.0548199
@@ -1458,24 +1458,24 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 13501404373750306564
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "17"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 2
               Y: 2
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 7000
           }
         }
@@ -1514,19 +1514,19 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Metal Greebles"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               R: 0.494792
               G: 0.494792
@@ -1535,24 +1535,24 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 4465877919970375297
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "18"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 1
               Y: 2
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 8000
           }
         }
@@ -1591,19 +1591,19 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Container 01"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               R: 1
               G: 0.149802029
@@ -1612,24 +1612,24 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 9521961532316426949
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "19"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 4
               Y: 1
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 8500
           }
         }
@@ -1668,19 +1668,19 @@ Assets {
         ParentId: 10854091918774774487
         UnregisteredParameters {
           Overrides {
-            Name: "cs:SkinName"
+            Name: "cs:skinName"
             String: "Camo Orange"
           }
           Overrides {
-            Name: "cs:UseNewMaterial"
+            Name: "cs:useNewMaterial"
             Bool: true
           }
           Overrides {
-            Name: "cs:UseNewColor"
+            Name: "cs:useNewColor"
             Bool: true
           }
           Overrides {
-            Name: "cs:NewColor"
+            Name: "cs:newColor"
             Color {
               R: 1
               G: 1
@@ -1689,24 +1689,24 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:NewMaterial"
+            Name: "cs:newMaterial"
             AssetReference {
               Id: 7962709208819931505
             }
           }
           Overrides {
-            Name: "cs:SkinID"
+            Name: "cs:skinID"
             String: "20"
           }
           Overrides {
-            Name: "cs:PreviewImageLocation"
+            Name: "cs:previewImageLocation"
             Vector2 {
               X: 5
               Y: 1
             }
           }
           Overrides {
-            Name: "cs:Cost"
+            Name: "cs:cost"
             Int: 10000
           }
         }

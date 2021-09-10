@@ -6,8 +6,9 @@ local individualSkinInfo = script:GetCustomProperty("Skins_Individual"):WaitForO
 local universalSkinInfo = script:GetCustomProperty("Skins_Universal"):WaitForObject()
 
 local localPlayer = Game.GetLocalPlayer()
-
-local allIndividualSkins = {}
+local Constants_API = require(script:GetCustomProperty("Constants_API"))
+local TankAPI =  Constants_API:WaitForConstant("Tanks")
+local allIndividualSkins =TankAPI:GetTanks()
 --local allUniversalSkins = {}
 local selectedSkin = 1
 
@@ -107,12 +108,16 @@ end
 
 function SetSkinOnSpecificVehicle(player, vehicle, tankID, skinID)
 		
-	local changeThisGeo = GetChangeableGeo(vehicle)
-	local enableMaterialChange = allIndividualSkins[tankID][skinID].useMaterial
-	local materialToChangeTo = allIndividualSkins[tankID][skinID].newMaterial
-	local enableColorChange = allIndividualSkins[tankID][skinID].useColor
-	local colorToChangeTo = allIndividualSkins[tankID][skinID].newColor
+	local changeThisGeo = GetChangeableGeo(vehicle) 
+	local tank = allIndividualSkins[tonumber(tankID)] 
+	local materialtable = tank.skins[skinID]
 	
+	local enableMaterialChange = materialtable.useNewMaterial
+	local materialToChangeTo = materialtable.newMaterial
+	local enableColorChange = materialtable.useNewColor
+	local colorToChangeTo = materialtable.newColor
+	 
+
 	if not changeThisGeo then
 		return
 	end
@@ -121,9 +126,8 @@ function SetSkinOnSpecificVehicle(player, vehicle, tankID, skinID)
 	
     for _, child in pairs(changeThisGeo) do
         for _, slot in pairs(child:GetMaterialSlots()) do
-        	
-        	if not slot.materialAssetId  or not string.find(slot.materialAssetId, "82E3234A15D1EFCC") then
-	        	if enableMaterialChange then
+        	if not slot.materialAssetId  or not string.find(slot.materialAssetId, "82E3234A15D1EFCC") then 
+	        	if enableMaterialChange then 
 	            	child:SetMaterialForSlot(materialToChangeTo, slot.slotName)
 	            else 
 	            	slot:ResetMaterialAssetId()
@@ -252,30 +256,32 @@ end
 function Initialize()
 
 	local individualSkinGroups = individualSkinInfo:GetChildren()
-	
-	for _, group in ipairs(individualSkinGroups) do
-		local skins = group:GetChildren()
-		local tankID = group:GetCustomProperty("VehicleID")
-		allIndividualSkins[tankID] = {}
-		
-		for _, skin in ipairs(skins) do			
-			local skinEntry = {}
-			local skinID = skin:GetCustomProperty("SkinID")
-			
-			skinEntry.cost = skin:GetCustomProperty("Cost")
-			skinEntry.resource = skin:GetCustomProperty("Resource")
-			skinEntry.name = skin:GetCustomProperty("SkinName")
-			skinEntry.coordinates = skin:GetCustomProperty("PreviewImageLocation")
-			skinEntry.newMaterial = skin:GetCustomProperty("NewMaterial")
-			skinEntry.useMaterial = skin:GetCustomProperty("UseNewMaterial")
-			skinEntry.newColor = skin:GetCustomProperty("NewColor")
-			skinEntry.useColor = skin:GetCustomProperty("UseNewColor")
-			skinEntry.enabled = skin:GetCustomProperty("Enabled")
-			
-			allIndividualSkins[tankID][skinID] = skinEntry
-		end
-	end
+	--[[
 
+		for _, group in ipairs(individualSkinGroups) do
+			local skins = group:GetChildren()
+			local tankID = group:GetCustomProperty("VehicleID")
+			allIndividualSkins[tankID] = {}
+			
+			for _, skin in ipairs(skins) do			
+				local skinEntry = {}
+				local skinID = skin:GetCustomProperty("SkinID")
+				
+				skinEntry.cost = skin:GetCustomProperty("Cost")
+				skinEntry.resource = skin:GetCustomProperty("Resource")
+				skinEntry.name = skin:GetCustomProperty("SkinName")
+				skinEntry.coordinates = skin:GetCustomProperty("PreviewImageLocation")
+				skinEntry.newMaterial = skin:GetCustomProperty("NewMaterial")
+				skinEntry.useMaterial = skin:GetCustomProperty("UseNewMaterial")
+				skinEntry.newColor = skin:GetCustomProperty("NewColor")
+				skinEntry.useColor = skin:GetCustomProperty("UseNewColor")
+				skinEntry.enabled = skin:GetCustomProperty("Enabled")
+				
+				allIndividualSkins[tankID][skinID] = skinEntry
+			end
+		end
+		
+		]]
 	--UTIL_API.TablePrint(allIndividualSkins)
 
 end

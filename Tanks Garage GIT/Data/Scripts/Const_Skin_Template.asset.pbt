@@ -5,136 +5,136 @@ Assets {
   TextAsset {
     CustomParameters {
       Overrides {
-        Name: "cs:SkinID"
+        Name: "cs:skinID"
         String: "00"
       }
       Overrides {
-        Name: "cs:SkinName"
+        Name: "cs:skinName"
         String: "Stock"
       }
       Overrides {
-        Name: "cs:NewMaterial"
+        Name: "cs:newMaterial"
         AssetReference {
           Id: 841534158063459245
         }
       }
       Overrides {
-        Name: "cs:NewColor"
+        Name: "cs:newColor"
         Color {
           A: 1
         }
       }
       Overrides {
-        Name: "cs:UseNewMaterial"
+        Name: "cs:useNewMaterial"
         Bool: false
       }
       Overrides {
-        Name: "cs:PreviewImageLocation"
+        Name: "cs:previewImageLocation"
         Vector2 {
         }
       }
       Overrides {
-        Name: "cs:UseNewColor"
+        Name: "cs:useNewColor"
         Bool: false
       }
       Overrides {
-        Name: "cs:Universal"
+        Name: "cs:universal"
         Bool: false
       }
       Overrides {
-        Name: "cs:Cost"
+        Name: "cs:cost"
         Int: 0
       }
       Overrides {
-        Name: "cs:Resource"
+        Name: "cs:resource"
         String: "Silver"
       }
       Overrides {
-        Name: "cs:Enabled"
+        Name: "cs:enabled"
         Bool: false
       }
       Overrides {
-        Name: "cs:SkinID:isrep"
+        Name: "cs:skinID:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:SkinID:ml"
+        Name: "cs:skinID:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:SkinName:isrep"
+        Name: "cs:skinName:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:SkinName:ml"
+        Name: "cs:skinName:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:PreviewImageLocation:isrep"
+        Name: "cs:previewImageLocation:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:PreviewImageLocation:ml"
+        Name: "cs:previewImageLocation:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:NewMaterial:isrep"
+        Name: "cs:newMaterial:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:NewMaterial:ml"
+        Name: "cs:newMaterial:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:UseNewMaterial:isrep"
+        Name: "cs:useNewMaterial:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:UseNewMaterial:ml"
+        Name: "cs:useNewMaterial:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:NewColor:isrep"
+        Name: "cs:newColor:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:NewColor:ml"
+        Name: "cs:newColor:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:UseNewColor:isrep"
+        Name: "cs:useNewColor:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:UseNewColor:ml"
+        Name: "cs:useNewColor:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:Cost:isrep"
+        Name: "cs:cost:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:Cost:ml"
+        Name: "cs:cost:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:Resource:isrep"
+        Name: "cs:resource:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:Resource:ml"
+        Name: "cs:resource:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:Enabled:isrep"
+        Name: "cs:enabled:isrep"
         Bool: false
       }
       Overrides {
-        Name: "cs:Enabled:ml"
+        Name: "cs:enabled:ml"
         Bool: false
       }
       Overrides {
-        Name: "cs:Universal:category"
+        Name: "cs:universal:category"
         String: "Custom"
       }
     }
