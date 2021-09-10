@@ -61,7 +61,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -85,7 +85,7 @@ Assets {
           }
           Scale {
             X: 6.70000124
-            Y: 5.85000086
+            Y: 5.97378969
             Z: 1.7
           }
         }
@@ -129,7 +129,7 @@ Assets {
           }
           Scale {
             X: 1.80000007
-            Y: 5.7
+            Y: 5.99450159
             Z: 1.7
           }
         }
@@ -167,14 +167,14 @@ Assets {
         Name: "HULLREAR"
         Transform {
           Location {
-            X: -445
+            X: -446.567047
             Z: 10
           }
           Rotation {
           }
           Scale {
-            X: 1.5
-            Y: 5.69999933
+            X: 1.58992863
+            Y: 5.99450111
             Z: 1.5
           }
         }
@@ -467,7 +467,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
