@@ -46,7 +46,11 @@ function wrapper.ApplyDamage(attackData)
 	if attackData.tags.id and attackData.tags.id == "StatusEffect" then
 		attackData.object.serverUserData.killedByStatusEffect = true
 	end
-	attackData.object:ApplyDamage(attackData.damage)
+	if attackData.object:IsA("Player") then 
+		attackData.object:ApplyDamage(attackData.damage)
+	elseif attackData.object:IsA("AIPlayer") then
+		attackData.object:ApplyDamage(attackData)
+	end
 end
 
 -- AddImpulse()
@@ -77,7 +81,7 @@ end
 
 -- IsValidObject()
 function wrapper.IsValidObject(player)
-	return Object.IsValid(player) and player:IsA("Player")
+	return Object.IsValid(player) and player:IsA("Player") or player:IsA("AIPlayer")
 end
 
 -- FindInSphere()
