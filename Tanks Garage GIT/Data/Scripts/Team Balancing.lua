@@ -14,8 +14,6 @@ local WIN_RATE_EXPONENT = 1
 local WIN_RATE_COEFFICIENT = 500
 local LOBBY_REBALANCE_TIME = 8
 
-local MINIMUM_TEAMSIZE = 2 -- put back to 2 - Morticai
-
 local teamBalance = {}
 
 local function IsLobby()
@@ -252,7 +250,7 @@ function OnLobbyTimerChanged(object, string)
 		Events.BroadcastToAllPlayers("FadeScreen")
 		Task.Wait(1)
 		DoRebalance()
-		Events.Broadcast("FILL_TEAMS_WITH_AI", MINIMUM_TEAMSIZE, teamBalance)
+		Events.Broadcast("FILL_TEAMS_WITH_AI", _G.const.AI.MINIMUM_TEAMSIZE, teamBalance)
 	end
 end
 
