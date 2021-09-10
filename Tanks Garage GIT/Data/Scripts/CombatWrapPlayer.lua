@@ -17,10 +17,8 @@
 	- AddImpulse()
 	- FindInSphere()
 --]]
-
 local wrapper = {}
 
-	
 -- GetName()
 function wrapper.GetName(player)
 	return player.name
@@ -43,13 +41,18 @@ end
 
 -- ApplyDamage()
 function wrapper.ApplyDamage(attackData)
+	local object = attackData.object
+	local source = attackData.source
 	if attackData.tags.id and attackData.tags.id == "StatusEffect" then
-		attackData.object.serverUserData.killedByStatusEffect = true
+		object.serverUserData.killedByStatusEffect = true
 	end
-	if attackData.object:IsA("Player") then 
-		attackData.object:ApplyDamage(attackData.damage)
-	elseif attackData.object:IsA("AIPlayer") then
-		attackData.object:ApplyDamage(attackData)
+	if object:IsA("Player") then
+		object:ApplyDamage(attackData.damage)
+		if source:IsA("AIPlayer") then
+			source:AddResource("TankDamage", CoreMath.Round(attackData.damage.amount))
+		end
+	elseif object:IsA("AIPlayer") then
+		object:ApplyDamage(attackData)
 	end
 end
 
@@ -70,7 +73,7 @@ function wrapper.IsHeadshot(player, hitResult, position)
 	end
 	local playerPos = player:GetWorldPosition()
 	local playerScale = player:GetWorldScale()
-	
+
 	local headMinZ = 65
 	if player.isCrouching then
 		headMinZ = 30
