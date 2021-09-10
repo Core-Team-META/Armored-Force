@@ -4,7 +4,7 @@ local lobbyCountdown = settings:GetCustomProperty("LobbyCountdown")
 
 local timerTask = nil
 local lockSet = false
---lobbyCountdown = 5
+--lobbyCountdown = 5000
 local timer = lobbyCountdown
 
 function StateSTART(manager, propertyName)

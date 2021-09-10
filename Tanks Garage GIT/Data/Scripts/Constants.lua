@@ -167,6 +167,27 @@ Const.TUTORIAL_PROGRESS = 'TutorialProgress'
 Const.EQUIPPED_TANK_RES = 'EquippedTank'
 
 Const.HIGHEST_DAMAGE = 100
+
+
+Const.AI = {
+
+    MINIMUM_TEAMSIZE = 3,
+
+    -- How close AI tanks will try to get to their targets.
+    CLOSING_DIST = 2000,
+
+    -- Time, in seconds, for how long it will try to escape when blocked
+    WRIGGLE_DURATION = 3,
+
+    -- How often the tanks check if they can shoot.  (They're still limited
+    -- by the reload time of their actual tank though!)  (in seconds)
+    SHOT_FREQUENCY = 1,
+
+    -- How often tanks update their path targets (in seconds)
+    PATH_UPDATE_FREQUENCY = 2,
+}
+
+
 ------------------------------------------------------------------------------------------------------------------------
 _G.const = Const
 return Const
