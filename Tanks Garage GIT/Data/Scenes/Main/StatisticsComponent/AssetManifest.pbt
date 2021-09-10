@@ -8,15 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16622528590838133631
-  Name: "Fantasy Medal 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Equip_Medal_002"
-  }
-}
-Assets {
   Id: 16191173343733875993
   Name: "Tank"
   PlatformAssetType: 9
@@ -77,6 +68,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
+  Id: 7053705669844552709
+  Name: "Survival Gear 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Gear_001"
   }
 }
 Assets {
