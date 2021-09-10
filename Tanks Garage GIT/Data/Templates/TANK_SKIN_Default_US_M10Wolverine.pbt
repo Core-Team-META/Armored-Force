@@ -44679,7 +44679,6 @@ Assets {
         ChildIds: 1246905074714795882
         ChildIds: 1869585174890370036
         ChildIds: 15515242759147335903
-        ChildIds: 1130134912372394031
         ChildIds: 1855879235330012460
         ChildIds: 6337965137168049319
         ChildIds: 10678573697152035098
@@ -46002,78 +46001,6 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 1758388402481224558
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 1130134912372394031
-        Name: "Cube - Bottom-Aligned"
-        Transform {
-          Location {
-            X: -124.352364
-            Y: 25.8158894
-            Z: 191.708664
-          }
-          Rotation {
-            Yaw: -179.999954
-          }
-          Scale {
-            X: 0.116127938
-            Y: 0.320381582
-            Z: 0.0163721461
-          }
-        }
-        ParentId: 1564510649815956211
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.124771841
-              G: 0.147027284
-              B: 0.0865004659
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16374150260036817633
           }
           Teams {
             IsTeamCollisionEnabled: true
