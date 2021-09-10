@@ -50,7 +50,11 @@ function wrapper.ApplyDamage(attackData)
 		object:ApplyDamage(attackData.damage)
 		if source:IsA("AIPlayer") then
 			source:AddResource("TankDamage", CoreMath.Round(attackData.damage.amount))
+			if object.isDead then
+				source.kills = source.kills + 1
+			end
 		end
+		
 	elseif object:IsA("AIPlayer") then
 		object:ApplyDamage(attackData)
 	end
