@@ -154,6 +154,7 @@ Objects {
   ChildIds: 10017128558942460586
   ChildIds: 14858721448404706838
   ChildIds: 15257011197194155932
+  ChildIds: 4344758088941267442
   ChildIds: 8745769454035540633
   ChildIds: 4587497590800616186
   ChildIds: 5047821580087548600
@@ -785,6 +786,74 @@ Objects {
   }
 }
 Objects {
+  Id: 4344758088941267442
+  Name: "Icon2_Crit"
+  Transform {
+    Location {
+      X: -4.35779476
+      Y: 49.8097382
+      Z: 115
+    }
+    Rotation {
+      Yaw: -1.2806604e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4105341505052041312
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 70
+    Height: 70
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 13491723829736336971
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 0.9
+      }
+      TeamSettings {
+      }
+      ShadowOffset {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 15257011197194155932
   Name: "Icon"
   Transform {
@@ -883,9 +952,9 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 132
-    Height: 122
-    UIX: -30.5292053
+    Width: 143
+    Height: 139
+    UIX: -35.3509216
     UIY: 1
     RenderTransformPivot {
       Anchor {
@@ -897,8 +966,9 @@ Objects {
         Id: 8577223158266405289
       }
       Color {
-        R: 0.210000038
-        G: 0.00834436808
+        R: 0.669999957
+        G: 0.0909113586
+        B: 0.0241347831
         A: 0.9
       }
       TeamSettings {
@@ -1467,6 +1537,12 @@ Objects {
       Name: "cs:MetalVehicleHeavyCrunchyCrashImpact01SFX"
       ObjectReference {
         SelfId: 10428535769661285001
+      }
+    }
+    Overrides {
+      Name: "cs:Icon2_Crit"
+      ObjectReference {
+        SelfId: 4344758088941267442
       }
     }
   }
