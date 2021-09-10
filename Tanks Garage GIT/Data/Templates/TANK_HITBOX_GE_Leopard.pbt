@@ -62,7 +62,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -86,7 +86,7 @@ Assets {
           }
           Scale {
             X: 5.79999924
-            Y: 4.98139429
+            Y: 5.14392376
             Z: 1.89999986
           }
         }
@@ -131,7 +131,7 @@ Assets {
           }
           Scale {
             X: 1.4000001
-            Y: 5.00425529
+            Y: 5.16753054
             Z: 1.80000007
           }
         }
@@ -176,7 +176,7 @@ Assets {
           }
           Scale {
             X: 1.39999986
-            Y: 4.8
+            Y: 4.95661068
             Z: 1.99999976
           }
         }
@@ -469,7 +469,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
