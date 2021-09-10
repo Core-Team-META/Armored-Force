@@ -6909,9 +6909,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 2063.448
-            Y: 3003.78687
-            Z: -3078.9043
+            X: 2493.24512
+            Y: 3504.82764
+            Z: -3043.28564
           }
         }
         Overrides {
@@ -6932,7 +6932,7 @@ Objects {
   Name: "flag"
   Transform {
     Location {
-      Z: -2342.13184
+      Z: -2264.35913
     }
     Rotation {
       Yaw: -41.0780334
@@ -7497,9 +7497,9 @@ Objects {
   Name: "destructible sandbags"
   Transform {
     Location {
-      X: -1850.05103
-      Y: -3062.99268
-      Z: -2513.86792
+      X: -1850.09387
+      Y: -3063.01099
+      Z: -2515.75513
     }
     Rotation {
       Pitch: -1.39251709
@@ -8108,9 +8108,9 @@ Objects {
   Name: "destructible sandbags"
   Transform {
     Location {
-      X: -3942.23608
-      Y: 1041.99377
-      Z: -2168.83
+      X: -3970.60913
+      Y: 1002.4989
+      Z: -2204.18652
     }
     Rotation {
       Pitch: 1.57114148
@@ -8391,9 +8391,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1092.67297
-            Y: 2917.31396
-            Z: -1665.40125
+            X: -1479.98596
+            Y: 3670.75537
+            Z: -1615.73438
           }
         }
         Overrides {
@@ -8539,12 +8539,12 @@ Objects {
   Name: "collision"
   Transform {
     Location {
-      X: -606.510193
-      Y: 890.107117
+      X: -1140.76123
+      Y: 2048.21753
       Z: 432.451294
     }
     Rotation {
-      Yaw: -157.994644
+      Yaw: -170.576126
     }
     Scale {
       X: 10.1145544
@@ -8591,8 +8591,8 @@ Objects {
   Name: "collision"
   Transform {
     Location {
-      X: 2463.97
-      Y: 1214.00818
+      X: 2840.99146
+      Y: 1749.21582
       Z: 686.119
     }
     Rotation {
@@ -10542,12 +10542,12 @@ Objects {
   Name: "collision"
   Transform {
     Location {
-      X: 1325.16797
-      Y: 571.213867
+      X: 2700.66797
+      Y: -561.704102
       Z: -0.928955078
     }
     Rotation {
-      Yaw: -108.769196
+      Yaw: -123.141525
     }
     Scale {
       X: 10.1145544
