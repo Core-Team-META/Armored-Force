@@ -52,7 +52,7 @@ function TrackDailyChallenge(player, type, amount)
 		end
 	end
 end
-
+--[[
 function CalculateTotalXP(player)
 	local baseXP = 0
 
@@ -75,7 +75,7 @@ function CalculateTotalXP(player)
 
 	return (baseXP + survivalBonus + damageBounus + spotBonus + (player.kills * killXPValue)) * modifier
 end
---[[
+]]
 function CalculateTotalCurrency(player)
 	local baseCurrency = 0
 
@@ -98,7 +98,7 @@ function CalculateTotalCurrency(player)
 
 	return (baseCurrency + survivalBonus + damageBounus + spotBonus + (player.kills * killXPValue)) * modifier
 end
-]]
+
 
 function SetWinner(winningTeam)
 	winner = winningTeam
