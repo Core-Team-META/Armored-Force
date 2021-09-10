@@ -63,12 +63,30 @@ function CheckTankReady()
 	end
 
 	Task.Wait(1)
+	local driverId = tankControllerServer:GetCustomProperty("DriverID")
 
 	for _, p in ipairs(Game.GetPlayers()) do
-		if p.id == tankControllerServer:GetCustomProperty("DriverID") then
+		if p.id == driverId then
 			driver = p
-			print("found driver on client: " .. driver.name)
+			print("found (player) driver on client: " .. driver.name)
 		end
+	end
+
+	-- If we didn't find a driver, then it's probably an AI.
+	-- Wait for AI data to replicate to us!
+	if not driver then
+		
+		while _G.lookup == nil or _G.lookup.tanks == nil do 
+			Task.Wait()
+		end
+		
+		while not driver do
+			Task.Wait()
+			print("---- Waiting to find driver", driverId, Environment.IsClient())
+			driver = _G.lookup.tanks[driverId]
+		end
+		print("found (AI) driver on client: " .. driver.name)
+		--SetClientData()
 	end
 
 	
@@ -117,20 +135,6 @@ function CheckTankReady()
 	Events.Broadcast("INITIALIZE_SKIN", driver)
 
 	tankSet = true
-
-	if not driver then
-		
-		while not _G.utils do 
-			Task.Wait()
-		end
-		local driverId = tankControllerServer:GetCustomProperty("DriverID")
-		while not driver do
-			Task.Wait()
-			driver = _G.utils.GetTankDrivers()[driverId]
-		end
-		SetClientData()
-	end
-
 end
 
 function GetSkin(player)
