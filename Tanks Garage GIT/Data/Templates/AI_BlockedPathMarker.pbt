@@ -10,9 +10,9 @@ Assets {
         Name: "AI_BlockedPathMarker"
         Transform {
           Scale {
-            X: 32.5
-            Y: 32.5
-            Z: 32.5
+            X: 39.5832253
+            Y: 39.5832253
+            Z: 39.5832253
           }
         }
         ParentId: 11455135778362922800
@@ -69,7 +69,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"

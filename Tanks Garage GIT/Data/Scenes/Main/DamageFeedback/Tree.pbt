@@ -154,6 +154,7 @@ Objects {
   ChildIds: 9832879919064499129
   ChildIds: 13831638130840324615
   ChildIds: 14090683825791934567
+  ChildIds: 14566287625602584666
   ChildIds: 14195542859512179696
   ChildIds: 17176316093707894754
   ChildIds: 6902734882004292307
@@ -779,6 +780,74 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 14566287625602584666
+  Name: "Icon2_Crit"
+  Transform {
+    Location {
+      X: -4.35779476
+      Y: 49.8097382
+      Z: 115
+    }
+    Rotation {
+      Yaw: -1.2806604e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 977426478299918036
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 70
+    Height: 70
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 13491723829736336971
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 0.9
+      }
+      TeamSettings {
+      }
+      ShadowOffset {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
         }
       }
     }
@@ -1467,6 +1536,12 @@ Objects {
       Name: "cs:MetalVehicleHeavyCrunchyCrashImpact01SFX"
       ObjectReference {
         SelfId: 8002436947310336408
+      }
+    }
+    Overrides {
+      Name: "cs:Icon2_Crit"
+      ObjectReference {
+        SelfId: 14566287625602584666
       }
     }
   }
