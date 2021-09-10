@@ -98,7 +98,7 @@ local function SetPanelTeam(player, count)
     end
 end
 
-local function SetPanel(player, count)
+local function SetPanel(player, count, currentState)
     SpawnPanel(player)
     SetPanelTeam(player, count)
     scoreCards[player.id].kills.text = tostring(player.kills or 0)
@@ -116,7 +116,9 @@ local function SetPanel(player, count)
     if player.isDead then
         scoreCards[player.id].health:SetColor(Color.RED)
     else
-        scoreCards[player.id].health:SetColor(Color.GREEN)
+        if (currentState == "MATCH_STATE" and currentState == "LOBBY_STATE") then
+            scoreCards[player.id].health:SetColor(Color.GREEN)
+        end
     end
 end
 
@@ -142,9 +144,11 @@ function OnStateChanged(manager, propertyName)
 end
 
 function Tick(dt) --
+    local currentState = GameStateManager:GetCustomProperty("GameState")
     if not isActive then
         return
     end
+
     if lastUpdateTime < 1 then
         lastUpdateTime = lastUpdateTime + dt
         return
@@ -158,7 +162,7 @@ function Tick(dt) --
     }
 
     for _, player in ipairs(Game.GetPlayers()) do
-        SetPanel(player, count)
+        SetPanel(player, count, currentState)
     end
 
     if _G.utils then
