@@ -12,11 +12,10 @@ local DAMAGER_ROWS = script:GetCustomProperty("DamagerRows"):WaitForObject()
 
 local DAMAGER_ROW_TEMPLATE = script:GetCustomProperty("METADamagerRowTemplate")
 
---[[
+while not _G.utils do
+    Task.Wait()
+end
 
-_G.META_GAME_MODES.
-
-]]
 function GetDistance(playerFrom, playerTo)
     return (playerTo:GetWorldPosition() - playerFrom:GetWorldPosition()).size
 end
@@ -73,7 +72,7 @@ local gotJacked = {
 }
 
 function GetDeathText(code)
-    if (code > 0) then
+    if code and (code > 0) then
         local deathCode = {
             headShotDeath[math.random(1, #headShotDeath)],
             fallingDeath[math.random(1, #fallingDeath)],
@@ -96,6 +95,8 @@ function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCod
         return
     end
 
+    warn(tostring(killerPlayer) ..  " Killed By")
+
     -- Grab player titles
     local playerTitle = PlayerTitles.GetPlayerTitle(killerPlayer)
 
@@ -113,7 +114,7 @@ function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCod
     DEATH_REASON.text = GetDeathText(extraCode)
 
     -- Set Killer name and player title prefix
-    KILLER_NAME.text = killerPlayer.name
+    KILLER_NAME.text = killerPlayer and killerPlayer.name or "ROBO"
 
     if (playerTitle) then
         KILLER_TITLE.text = playerTitle.prefix
@@ -123,7 +124,7 @@ function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCod
             KILLER_TITLE:SetColor(playerTitle.prefixColor)
         end
     else
-        KILLER_TITLE.text = ""
+        KILLER_TITLE.text = killedPlayer and killedPlayer.identifier and "BOT" or ""
     end
      --
 
@@ -255,7 +256,7 @@ function OnDamaged(sourcePlayer, player, _, _, damageAmount)
         player.clientUserData.KilledBy = {}
     end
 
-    if Object.IsValid(sourcePlayer) and damageAmount ~= 0 then
+    if sourcePlayer and Object.IsValid(sourcePlayer) and damageAmount ~= 0 or sourcePlayer and sourcePlayer.identifier and damageAmount ~= 0 then
         -- Set initial damage to self,
         if (player.clientUserData.KilledBy or player.clientUserData.KilledBy[sourcePlayer.name] == nil) then
             player.clientUserData.KilledBy[sourcePlayer.name] = {}
@@ -288,9 +289,35 @@ function OnDamaged(sourcePlayer, player, _, _, damageAmount)
     end
 end
 
+function OnAiKill(killId, deadId)
+
+    local killer = nil
+    local killed = nil
+	
+	for _, driver in pairs(_G.utils.GetTankDrivers()) do
+		if driver.id == killId then
+			killer = driver
+		end
+		if driver.id == deadId then
+			killed = driver
+		end
+	end
+
+    if not killed and Object.IsValid(deadId) and deadId:IsA("Player") then
+		killed = deadId
+	end
+
+	if not killed or not killer then return end
+    
+	ShowKilledByScreen(killer, killed)
+end
+
 function Tick(deltaTime)
 end
+
+
 
 -- Initialize
 Events.Connect("PlayerDamaged", OnDamaged)
 Events.Connect("PlayerKilled", ShowKilledByScreen)
+Events.Connect("AIKilled", OnAiKill)
