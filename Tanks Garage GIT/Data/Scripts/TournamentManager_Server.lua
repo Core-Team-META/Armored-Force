@@ -190,7 +190,7 @@ function OnDamageTaken(attackData)
         return
     end
 
-    if IsValidPlayer(source) and IsValidPlayer(target) then
+    if IsValidPlayer(source) and (IsValidPlayer(target) or target:IsA("AIPlayer")) then
         if damage and damage.amount then
             playerData[source].damage = playerData[source].damage + damage.amount
         end
