@@ -8,6 +8,7 @@ local DestroyPanel = script:GetCustomProperty("DestroyPanel"):WaitForObject()
 local KillInfo = script:GetCustomProperty("KillInfo"):WaitForObject()
 local propIcon2 = script:GetCustomProperty("Icon2"):WaitForObject()
 local propIcon2Frame = script:GetCustomProperty("Icon2Frame"):WaitForObject()
+local propIcon2_Crit = script:GetCustomProperty("Icon2_Crit"):WaitForObject()
 local FeedbackWhenHitContext = script:GetCustomProperty("FeedbackWhenHitContext")
 local propMetalVehicleHeavyCrunchyCrashImpact01SFX = script:GetCustomProperty("MetalVehicleHeavyCrunchyCrashImpact01SFX"):WaitForObject()
 
@@ -61,6 +62,7 @@ function ShowDamageFeedback(amount, armorName, pos, target)
 			Header.text = "CRITICAL HIT!"
 			propIcon2.visibility = Visibility.FORCE_ON
 			propIcon2Frame.visibility = Visibility.FORCE_ON
+			propIcon2_Crit.visibility = Visibility.FORCE_ON
 			propMetalVehicleHeavyCrunchyCrashImpact01SFX:Play()
 		elseif (armorName == "TURRETFRONT") then
 			Header.text = "HIT TURRENT FROM FRONT"
@@ -70,6 +72,7 @@ function ShowDamageFeedback(amount, armorName, pos, target)
 			Header.text = "CRITICAL HIT!"
 			propIcon2.visibility = Visibility.FORCE_ON
 			propIcon2Frame.visibility = Visibility.FORCE_ON
+			propIcon2_Crit.visibility = Visibility.FORCE_ON			
 			propMetalVehicleHeavyCrunchyCrashImpact01SFX:Play()
 		elseif (armorName == "TRACK") then
 			Header.text = "HIT TANK TRACKS!"
@@ -99,6 +102,7 @@ function ShowDamageFeedback(amount, armorName, pos, target)
 		DestroyPanel.visibility = Visibility.FORCE_OFF
 		propIcon2.visibility = Visibility.FORCE_OFF
 		propIcon2Frame.visibility = Visibility.FORCE_OFF
+		propIcon2_Crit.visibility = Visibility.FORCE_OFF			
 	end
 	if (Object.IsValid(DamageAmount)) then
 		DamageAmount.text = ""

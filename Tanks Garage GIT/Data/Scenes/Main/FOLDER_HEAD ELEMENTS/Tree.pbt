@@ -14805,9 +14805,10 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 30
-    Height: 30
-    UIY: -3.22558594
+    Width: 33
+    Height: 33
+    UIX: 0.363987058
+    UIY: -3.72953343
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -14815,7 +14816,7 @@ Objects {
     }
     Image {
       Brush {
-        Id: 15087097116682079611
+        Id: 5338244946539998590
       }
       Color {
         R: 1

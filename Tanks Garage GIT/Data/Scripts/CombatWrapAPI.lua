@@ -69,6 +69,15 @@ function API.ApplyDamage(attackData)
 			local currentHealth = API.GetHitPoints(object)
 			if currentHealth and currentHealth <= 0 then
 				Events.Broadcast("CombatWrapAPI.ObjectHasDied", attackData)
+
+				--#TODO Need to put this in a helper - Morticai
+				if attackData.source and attackData.source:IsA("AIPlayer") and attackData.object then
+					if attackData.object:IsA("AIPlayer") then
+						Events.BroadcastToAllPlayers("AIKilled", attackData.source.id, attackData.object.id)
+					else
+						Events.BroadcastToAllPlayers("AIKilled", attackData.source.id, attackData.object)
+					end
+				end
 			end
 		end
 	)
@@ -107,7 +116,7 @@ function API.FindInSphere(position, radius, parameters)
 end
 
 function GetWrapperFor(object)
-	if object and (object:IsA("Player") or object.IsA("AIPlayer")) then
+	if object and (object:IsA("Player") or object and object.IsA("AIPlayer")) then
 		return PLAYER_WRAPPER
 	end
 	return NPC_WRAPPER
