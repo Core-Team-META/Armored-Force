@@ -205,15 +205,17 @@ function FindClearSpawnPoint(team)
 
         local blocked = false
         for k,v in pairs(_G.lookup.tanks) do
-            print("comparing to", v.tank.name)
-            local otherPos = v.tank:GetWorldPosition()
-            local flatPos = position + offset
-            otherPos.z = 0
-            flatPos.z = 0
-            if (flatPos - otherPos).size < MIN_DIST then
-                --print("Blocked!  Retrying...")
-                blocked = true
-                break
+            if Object.IsValid(v) then
+                print("comparing to", v.tank.name)
+                local otherPos = v.tank:GetWorldPosition()
+                local flatPos = position + offset
+                otherPos.z = 0
+                flatPos.z = 0
+                if (flatPos - otherPos).size < MIN_DIST then
+                    --print("Blocked!  Retrying...")
+                    blocked = true
+                    break
+                end
             end
         end
         if not blocked then return position end
