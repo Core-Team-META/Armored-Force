@@ -3,8 +3,6 @@ local PathMap = require(script:GetCustomProperty("_PathMap"))
 local NameMgr = require(script:GetCustomProperty("_AINames"))
 local AIPlayer = {}
 
-
-
 local nextId = 1
 
 function GetNewId()
