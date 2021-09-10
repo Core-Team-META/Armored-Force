@@ -1,7 +1,7 @@
 Name: "Blake"
 RootId: 12568937537718954231
 Objects {
-  Id: 578043441780524938
+  Id: 10774220563845213765
   Name: "Constants"
   Transform {
     Location {
@@ -15,12 +15,13 @@ Objects {
     }
   }
   ParentId: 12568937537718954231
-  ChildIds: 16160333864910961945
-  ChildIds: 9850134132966390717
-  ChildIds: 8463237207293560792
-  ChildIds: 6844245833795571875
-  ChildIds: 17501569972187954327
-  ChildIds: 11174100860922413102
+  ChildIds: 984802728874519256
+  ChildIds: 3928201605480058260
+  ChildIds: 3577739216433168142
+  ChildIds: 4035401938739236844
+  ChildIds: 2709012102985239765
+  ChildIds: 16990474303294044398
+  ChildIds: 2554255535144579730
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -38,16 +39,20 @@ Objects {
   }
 }
 Objects {
-  Id: 11174100860922413102
+  Id: 2554255535144579730
   Name: "Registry_LeaderBoards"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
       Z: 1
     }
   }
-  ParentId: 578043441780524938
+  ParentId: 10774220563845213765
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -72,6 +77,14 @@ Objects {
           Rotator {
           }
         }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
       }
     }
     TemplateAsset {
@@ -80,16 +93,20 @@ Objects {
   }
 }
 Objects {
-  Id: 17501569972187954327
+  Id: 16990474303294044398
   Name: "Registry_Keys"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
       Z: 1
     }
   }
-  ParentId: 578043441780524938
+  ParentId: 10774220563845213765
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -97,6 +114,11 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 1605275179467651420
+      value {
+      }
+    }
     ParameterOverrideMap {
       key: 16224702300220691365
       value {
@@ -114,6 +136,14 @@ Objects {
           Rotator {
           }
         }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
       }
     }
     TemplateAsset {
@@ -122,16 +152,20 @@ Objects {
   }
 }
 Objects {
-  Id: 6844245833795571875
+  Id: 2709012102985239765
   Name: "Registry_Skins"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
       Z: 1
     }
   }
-  ParentId: 578043441780524938
+  ParentId: 10774220563845213765
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -156,6 +190,14 @@ Objects {
           Rotator {
           }
         }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
       }
     }
     TemplateAsset {
@@ -164,16 +206,20 @@ Objects {
   }
 }
 Objects {
-  Id: 8463237207293560792
+  Id: 4035401938739236844
   Name: "Registry_Ranks"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
       Z: 1
     }
   }
-  ParentId: 578043441780524938
+  ParentId: 10774220563845213765
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -198,6 +244,14 @@ Objects {
           Rotator {
           }
         }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
       }
     }
     TemplateAsset {
@@ -206,16 +260,20 @@ Objects {
   }
 }
 Objects {
-  Id: 9850134132966390717
+  Id: 3577739216433168142
   Name: "Registry_Currency"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
       Z: 1
     }
   }
-  ParentId: 578043441780524938
+  ParentId: 10774220563845213765
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -223,6 +281,28 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 3103256762824892649
+      value {
+        Overrides {
+          Name: "cs:Icon"
+          AssetReference {
+            Id: 5338244946539998590
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9176102567015290702
+      value {
+        Overrides {
+          Name: "cs:Icon"
+          AssetReference {
+            Id: 7053705669844552709
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 17749541630557761566
       value {
@@ -240,6 +320,14 @@ Objects {
           Rotator {
           }
         }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
       }
     }
     TemplateAsset {
@@ -248,16 +336,74 @@ Objects {
   }
 }
 Objects {
-  Id: 16160333864910961945
-  Name: "Registry_Tanks"
+  Id: 3928201605480058260
+  Name: "Registry_Perks"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
       Z: 1
     }
   }
-  ParentId: 578043441780524938
+  ParentId: 10774220563845213765
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1319858093794456057
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Registry_Perks"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14265157932256014828
+    }
+  }
+}
+Objects {
+  Id: 984802728874519256
+  Name: "Registry_Tanks"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10774220563845213765
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -280,6 +426,14 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
