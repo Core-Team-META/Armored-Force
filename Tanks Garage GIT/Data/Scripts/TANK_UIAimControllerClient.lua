@@ -334,13 +334,23 @@ function CheckEnemyTank(raycastResult)
 		
 		if Object.IsValid(possibleTank) and ((possibleTank.type == "TreadedVehicle") or (possibleTank.type == "Vehicle")) then
 			local otherDriver = possibleTank.driver
+			local enemyOutline, allyOutline
 			
-			if not Object.IsValid(otherDriver) or not otherDriver.clientUserData.currentTankData then
+		-- Used to find AI drivers - Morticai	
+		if not otherDriver then
+			for driver,tankData in pairs(_G.lookup.tanks) do
+				if tankData.tank == possibleTank then
+					otherDriver = tankData
+				end
+			end
+		end
+
+			if not otherDriver or (otherDriver and not Object.IsValid(otherDriver) and not otherDriver.identifier) or otherDriver and not otherDriver.clientUserData.currentTankData then
 				return
 			end
 			
-			local enemyOutline = otherDriver.clientUserData.currentTankData.enemyOutline
-			local allyOutline = otherDriver.clientUserData.currentTankData.allyOutline
+			enemyOutline = otherDriver.clientUserData.currentTankData.enemyOutline
+			allyOutline = otherDriver.clientUserData.currentTankData.allyOutline
 						
 			if  (otherDriver.team ~= localPlayer.team) then
 				if Object.IsValid(enemyOutline) then
