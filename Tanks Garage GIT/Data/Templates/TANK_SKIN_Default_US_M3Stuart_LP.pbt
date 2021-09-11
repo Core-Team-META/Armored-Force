@@ -441,6 +441,7 @@ Assets {
         ChildIds: 4022377101562387615
         ChildIds: 9813143008799423391
         ChildIds: 988532818820528006
+        ChildIds: 3282714684888888947
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -4044,6 +4045,91 @@ Assets {
           }
           StaticMesh {
             Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 3282714684888888947
+        Name: "Fantasy Shield Strap 01"
+        Transform {
+          Location {
+            X: -342.498199
+            Y: 38.6949577
+            Z: 132.202423
+          }
+          Rotation {
+            Yaw: 74.1910858
+            Roll: 1.46891093
+          }
+          Scale {
+            X: 1.56985223
+            Y: 1.17479312
+            Z: 1.55691028
+          }
+        }
+        ParentId: 8029408511316419808
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 9431420845744582604
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              R: 0.124771826
+              G: 0.147027284
+              B: 0.0865004584
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:vtile"
+            Float: 3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17814718521639562316
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
             }
             BoundsScale: 1
           }
@@ -23324,6 +23410,8 @@ Assets {
         ChildIds: 1853464157756708512
         ChildIds: 16959601969703165049
         ChildIds: 16363325243657413722
+        ChildIds: 15916221176868003396
+        ChildIds: 15898260443524266301
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -23758,8 +23846,8 @@ Assets {
         Name: "Street Light Pole Clamp 01"
         Transform {
           Location {
-            X: 85.7670441
-            Y: 44.0598335
+            X: 92.4502792
+            Y: 44.0589485
             Z: 129.026535
           }
           Rotation {
@@ -23768,9 +23856,9 @@ Assets {
             Roll: 19.471302
           }
           Scale {
-            X: 0.177454352
-            Y: 0.177454486
-            Z: 0.132624432
+            X: 0.551414907
+            Y: 0.551414847
+            Z: 1.0063231
           }
         }
         ParentId: 4160078679449986437
@@ -23792,11 +23880,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
+            Float: 3
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
+            Float: 3
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -23814,7 +23902,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 14211527857426905558
+            Id: 12632251234297570874
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -24286,8 +24374,8 @@ Assets {
         Transform {
           Location {
             X: -43.5795441
-            Y: -56.1194954
-            Z: 89.02388
+            Y: -56.1186066
+            Z: 97.3248825
           }
           Rotation {
             Yaw: -29.8231506
@@ -24295,7 +24383,7 @@ Assets {
           Scale {
             X: 0.0848365575
             Y: 0.0848365575
-            Z: 1.11873341
+            Z: 0.936077178
           }
         }
         ParentId: 4160078679449986437
@@ -24604,6 +24692,156 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 4445858737580571024
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 15916221176868003396
+        Name: "Cube - Arched"
+        Transform {
+          Location {
+            X: -34.5259209
+            Y: -40.3249283
+            Z: 102.443764
+          }
+          Rotation {
+            Yaw: -29.8231544
+            Roll: -89.9999237
+          }
+          Scale {
+            X: 0.18555057
+            Y: 0.0422216542
+            Z: 0.185550526
+          }
+        }
+        ParentId: 4160078679449986437
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.124771826
+              G: 0.147027284
+              B: 0.0865004584
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7757866143058981948
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 15898260443524266301
+        Name: "Cube - Arched"
+        Transform {
+          Location {
+            X: -34.5259209
+            Y: -40.3249283
+            Z: 55.2079887
+          }
+          Rotation {
+            Yaw: -29.8231544
+            Roll: -89.9999237
+          }
+          Scale {
+            X: 0.18555057
+            Y: 0.0192071274
+            Z: 0.185550526
+          }
+        }
+        ParentId: 4160078679449986437
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.124771826
+              G: 0.147027284
+              B: 0.0865004584
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7757866143058981948
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -27957,6 +28195,15 @@ Assets {
       }
     }
     Assets {
+      Id: 17814718521639562316
+      Name: "Fantasy Shield Strap 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_fan_shield_strap_001"
+      }
+    }
+    Assets {
       Id: 13464432270549260919
       Name: "Military Tank Historic Hull 01 - Front"
       PlatformAssetType: 1
@@ -28335,12 +28582,30 @@ Assets {
       }
     }
     Assets {
+      Id: 12632251234297570874
+      Name: "Urban Pipe Cap 03"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_urb_pipes_acc_cap_003_ref"
+      }
+    }
+    Assets {
       Id: 5306228048617959977
       Name: "Sci-fi Console Leg 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_prop_scf_leg_001_ref"
+      }
+    }
+    Assets {
+      Id: 7757866143058981948
+      Name: "Cube - Arched"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cube_arched_001"
       }
     }
     Assets {
@@ -28413,15 +28678,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_plane_circle_001"
-      }
-    }
-    Assets {
-      Id: 7757866143058981948
-      Name: "Cube - Arched"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_arched_001"
       }
     }
     Assets {
