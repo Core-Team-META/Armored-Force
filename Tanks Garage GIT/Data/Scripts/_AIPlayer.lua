@@ -78,15 +78,6 @@ function AIPlayer:ApplyDamage(damageTable)
             damageTable.source.kills = damageTable.source.kills + 1
           end
           Events.Broadcast("CombatWrapAPI.ObjectHasDied", damageTable)
- --#TODO Need to put this in a helper - Morticai
-          if damageTable.source and damageTable.source:IsA("AIPlayer") and damageTable.object then
-            if damageTable.object:IsA("AIPlayer") then
-              Events.BroadcastToAllPlayers("AIKilled", damageTable.source.id, damageTable.object.id)
-            else
-              Events.BroadcastToAllPlayers("AIKilled", damageTable.source.id, damageTable.object)
-            end
-          end
-        
         end)
     end
   end

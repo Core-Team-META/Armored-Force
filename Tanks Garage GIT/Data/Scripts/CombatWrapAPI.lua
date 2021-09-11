@@ -69,17 +69,19 @@ function API.ApplyDamage(attackData)
 			if attackData.source and attackData.source:IsA("Player") and attackData.object and attackData.object:IsA("AIPlayer") then
 				Events.Broadcast("AIDamaged", attackData.object, attackData.damage)
 			end
-			
+
 			local currentHealth = API.GetHitPoints(object)
 			if currentHealth and currentHealth <= 0 then
 				Events.Broadcast("CombatWrapAPI.ObjectHasDied", attackData)
 
 				--#TODO Need to put this in a helper - Morticai
-				if attackData.source and attackData.source:IsA("AIPlayer") and attackData.object then
-					if attackData.object:IsA("AIPlayer") then
+				if attackData.source and attackData.object then
+					if attackData.source:IsA("AIPlayer") and attackData.object:IsA("AIPlayer") then
 						Events.BroadcastToAllPlayers("AIKilled", attackData.source.id, attackData.object.id)
-					else
+					elseif attackData.source:IsA("AIPlayer") and attackData.object:IsA("Player") then
 						Events.BroadcastToAllPlayers("AIKilled", attackData.source.id, attackData.object)
+					elseif attackData.source:IsA("Player") and attackData.object:IsA("AIPlayer") then
+						Events.BroadcastToAllPlayers("AIKilled", attackData.source, attackData.object.id)
 					end
 				end
 				if attackData.source and attackData.source:IsA("Player") and attackData.object and attackData.object:IsA("AIPlayer") then
