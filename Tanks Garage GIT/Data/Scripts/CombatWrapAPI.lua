@@ -66,6 +66,10 @@ function API.ApplyDamage(attackData)
 
 			Events.Broadcast("CombatWrapAPI.OnDamageTaken", attackData)
 
+			if attackData.source and attackData.source:IsA("Player") and attackData.object and attackData.object:IsA("AIPlayer") then
+				Events.Broadcast("AIDamaged", attackData.object, attackData.damage)
+			end
+			
 			local currentHealth = API.GetHitPoints(object)
 			if currentHealth and currentHealth <= 0 then
 				Events.Broadcast("CombatWrapAPI.ObjectHasDied", attackData)
@@ -77,6 +81,9 @@ function API.ApplyDamage(attackData)
 					else
 						Events.BroadcastToAllPlayers("AIKilled", attackData.source.id, attackData.object)
 					end
+				end
+				if attackData.source and attackData.source:IsA("Player") and attackData.object and attackData.object:IsA("AIPlayer") then
+					Events.Broadcast("AIKilled", attackData.object, attackData.damage)
 				end
 			end
 		end

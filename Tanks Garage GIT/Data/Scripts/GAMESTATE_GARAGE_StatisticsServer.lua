@@ -279,7 +279,10 @@ end
 
 function OnDiedRecord(player, damage)
 	if damage then
+
+		
 		player:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_DEATHS, 1)
+	
 
 		if damage.sourcePlayer then
 			damage.sourcePlayer:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_KILLS, 1)
@@ -362,4 +365,8 @@ end
 Game.playerJoinedEvent:Connect(OnJoined)
 Events.Connect("WINNER", SetWinner)
 Events.Connect("PlayerSpotted", OnSpotRecord)
+
+Events.Connect("AIDamaged", OnDamagedRecord)
+Events.Connect("AIKilled", OnDiedRecord)
+
 mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
