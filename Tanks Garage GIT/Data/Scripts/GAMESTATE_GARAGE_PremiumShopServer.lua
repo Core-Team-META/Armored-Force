@@ -43,7 +43,7 @@ function PurchasePremiumTank(player, tankId)
 
 	for x, t in ipairs(TANK_INFO) do
 		if t.purchaseCurrencyName == "Gold" and t.id == tankId then
-			cost = t:GetCustomProperty("PurchaseCost")
+			cost = t.purchaseCost
 			break
 		end
 	end

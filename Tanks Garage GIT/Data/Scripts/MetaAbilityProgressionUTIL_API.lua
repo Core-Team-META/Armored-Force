@@ -204,7 +204,7 @@ function API.GetCosmeticIdString(class, team, skin, bind)
     return "COSMETIC_" .. tostring(class) .. tostring(team) .. NumConverter(skin) .. tostring(bind)
 end
 
-function API.GetTankRPString(id)
+function API.GetTankRPString(id)  
     local stringId = tostring(id)
     if(id < 10) then stringId = "0" .. tostring(id) end
     return "T_" .. stringId .. "RP"
@@ -249,8 +249,7 @@ function API.TechTreeConvertToTable(str)
         local t1 = API.StringSplit("~", s)
         local index = API.IsNumeric(t1[1]) and tonumber(t1[1]) or t1[1]
         finalTbl[index] = finalTbl[index] or {}
-
-        for k, s1 in ipairs(t1) do
+        for k, s1 in ipairs(t1) do 
             if k > 1 then
                 local t3 = API.StringSplit("|", s1)
                 local i = API.IsNumeric(t3[1]) and tonumber(t3[1]) or t3[1]

@@ -191,6 +191,10 @@ Assets {
         String: ""
       }
       Overrides {
+        Name: "cs:startWithTank"
+        Bool: false
+      }
+      Overrides {
         Name: "cs:Chassis"
         AssetReference {
           Id: 841534158063459245

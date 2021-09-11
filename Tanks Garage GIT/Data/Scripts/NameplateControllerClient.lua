@@ -224,8 +224,9 @@ function OnPlayerLeft(player)
 			segmentSeparator:Destroy()
 		end
 	end
-
-	nameplates[player.id].templateRoot:Destroy()
+	if nameplates[player.id] and Object.IsValid(nameplates[player.id].templateRoot) then 
+		nameplates[player.id].templateRoot:Destroy()
+	end
 	nameplates[player.id] = nil
 end
 
