@@ -173,7 +173,7 @@ end
 function OnTankStateChanged(controllerServer, property)
 	local value = controllerServer:GetCustomProperty(property)
 
-	if property == "Tracked" then
+	if property == "Tracked" and Object.IsValid(trackedLeftState) then
 		if value == 1 then
 			trackedLeftState.visibility = Visibility.INHERIT
 			treadsLeft.visibility = Visibility.FORCE_OFF
@@ -186,7 +186,7 @@ function OnTankStateChanged(controllerServer, property)
 			treadsLeft.visibility = Visibility.INHERIT
 			treadsRight.visibility = Visibility.INHERIT
 		end
-	elseif property == "Burning" then
+	elseif property == "Burning" and Object.IsValid(fireState) then
 		if value then
 			fireState.visibility = Visibility.INHERIT
 
@@ -206,7 +206,7 @@ function OnTankStateChanged(controllerServer, property)
 				i:Stop()
 			end
 		end
-	elseif property == "BarrelDown" then
+	elseif property == "BarrelDown" and Object.IsValid(barrelDamageState) then
 		if value then
 			barrelDamageState.visibility = Visibility.INHERIT
 			barrelClient.visibility = Visibility.FORCE_OFF
