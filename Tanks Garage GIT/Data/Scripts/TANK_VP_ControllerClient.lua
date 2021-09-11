@@ -82,10 +82,10 @@ function CheckTankReady()
 		
 		while not driver do
 			Task.Wait()
-			print("---- Waiting to find driver", driverId, Environment.IsClient())
+			--print("---- Waiting to find driver", driverId, Environment.IsClient())
 			driver = _G.lookup.tanks[driverId]
 		end
-		print("found (AI) driver on client: " .. driver.name)
+		--print("found (AI) driver on client: " .. driver.name)
 		--SetClientData()
 	end
 
