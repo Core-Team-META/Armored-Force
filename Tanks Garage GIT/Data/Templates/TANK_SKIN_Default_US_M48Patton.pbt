@@ -1889,7 +1889,6 @@ Assets {
         ChildIds: 2066306201668220519
         ChildIds: 12703156183301094226
         ChildIds: 8285150599399483306
-        ChildIds: 13482015895517179622
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2160,73 +2159,6 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 18424421057815180724
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 13482015895517179622
-        Name: "Star - Outline"
-        Transform {
-          Location {
-            Y: 38.6205254
-          }
-          Rotation {
-            Pitch: 15.2792692
-            Roll: -90
-          }
-          Scale {
-            X: 1.12845588
-            Y: 1.128456
-            Z: 0.691942215
-          }
-        }
-        ParentId: 14971141796498052594
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.124771841
-              G: 0.147027284
-              B: 0.0865004659
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16679846405848520970
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -5470,7 +5402,6 @@ Assets {
         ChildIds: 4101110873308033841
         ChildIds: 1681270086119078547
         ChildIds: 11574606119407845839
-        ChildIds: 15064559217563733334
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -5691,14 +5622,15 @@ Assets {
         Name: "Gear - generic small hollow"
         Transform {
           Location {
-            Y: 25.1772461
-            Z: 3.05175781e-05
+            X: 0.001953125
+            Y: 21.8886719
+            Z: -0.000244140625
           }
           Rotation {
           }
           Scale {
             X: 1.98693776
-            Y: 0.124097429
+            Y: 0.124097422
             Z: 1.98693776
           }
         }
@@ -5744,75 +5676,6 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 18424421057815180724
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 15064559217563733334
-        Name: "Star - Outline"
-        Transform {
-          Location {
-            Y: 27.9990234
-            Z: 1.52587891e-05
-          }
-          Rotation {
-            Pitch: 15.2792692
-            Yaw: 1.15057528e-05
-            Roll: -89.999939
-          }
-          Scale {
-            X: 1.12845588
-            Y: 1.128456
-            Z: 0.691942215
-          }
-        }
-        ParentId: 8598176551818154936
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.124771841
-              G: 0.147027284
-              B: 0.0865004659
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16679846405848520970
           }
           Teams {
             IsTeamCollisionEnabled: true
