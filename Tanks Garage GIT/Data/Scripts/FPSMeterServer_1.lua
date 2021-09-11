@@ -14,7 +14,7 @@ API.GetFrameRateForPlayer = function(player)
 end
 
 function OnLogData(player, fiveAvg, fiveSecondMin, fiveSecondMax, averageFps, maxOverall, minOverall, currentTime)
-	print(
+print(
 		string.format(
 			"[FPS METER] (" .. currentTime .. ") " ..
 				player.name ..

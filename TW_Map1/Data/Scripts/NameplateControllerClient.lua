@@ -284,7 +284,7 @@ function Tick(deltaTime)
 	for _, player in pairs(tankList) do
 		local nameplate = nameplates[player.id]
 		if nameplate == nil and not player:IsA("Player") then
-			print("Creating a nameplate for an AI player!")
+--print("Creating a nameplate for an AI player!")
 			OnPlayerJoined(player)
 			nameplate = nameplates[player.id]
 		end

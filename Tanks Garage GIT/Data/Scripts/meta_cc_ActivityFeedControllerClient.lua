@@ -42,15 +42,15 @@ end
 function TablePrint(tbl, indent)
 	local formatting, lua_type
 	if tbl == nil then
-		print("Table was nil")
+--print("Table was nil")
 		return
 	end
 	if type(tbl) ~= "table" then
-		print("Table is not a table, it is a " .. type(tbl))
+--print("Table is not a table, it is a " .. type(tbl))
 		return
 	end
 	if next(tbl) == nil then
-		print("Table is empty")
+--print("Table is empty")
 		return
 	end
 	if not indent then
@@ -63,16 +63,16 @@ function TablePrint(tbl, indent)
 		formatting = string.rep("  ", indent) .. k .. ": "
 		lua_type = type(v)
 		if lua_type == "table" then
-			print(formatting)
+--print(formatting)
 			TablePrint(v, indent + 1)
 		elseif lua_type == "boolean" then
-			print(formatting .. tostring(v))
+--print(formatting .. tostring(v))
 		elseif lua_type == "function" then
-			print(formatting .. "function")
+--print(formatting .. "function")
 		elseif lua_type == "userdata" then
-			print(formatting .. "userdata")
+--print(formatting .. "userdata")
 		else
-			print(formatting .. v)
+--print(formatting .. v)
 		end
 	end
 end
@@ -369,7 +369,7 @@ function Tick(deltaTime)
 				local feedElements = {}
 
 				for _, element in ipairs(feedLines) do
-					print(element.name)
+--print(element.name)
 					if (element.name == "KilledText") then
 						if (lines[i].killed ~= "") then
 							local textBox = element:FindDescendantByName("Text Box")
@@ -474,7 +474,7 @@ function Tick(deltaTime)
 							local textBox = element:FindDescendantByName("Text Box")
 
 							local killerHP = math.tointeger(lines[i].killerHP)
-							print("Killer HP %: " .. tostring(killerHP))
+--print("Killer HP %: " .. tostring(killerHP))
 							hpBar.height = math.floor((killerHP / 100) * ICON_SIZE) - 2
 
 							if (killerHP > 75) then
@@ -615,22 +615,18 @@ for i = 1, NUM_LINES do
 	lineTemplates[i].y = (i - 1) * (VERTICAL_SPACING + lineTemplates[i].height)
 end
 
-function OnAiKill(killId, deadId)
-
-    local killer = nil
-    local killed = nil
+function OnAiKill(killerId, killedId)
+	if not _G.lookup then return end
+    local killer = killerId
+    local killed = killedId
 	
-	for _, driver in pairs(_G.utils.GetTankDrivers()) do
-		if driver.id == killId then
+	for _, driver in pairs(_G.lookup.tanks) do
+		if driver.id == killer and not Object.IsValid(killer) then
 			killer = driver
 		end
-		if driver.id == deadId then
+		if driver.id == killed and not Object.IsValid(killed) then
 			killed = driver
 		end
-	end
-
-    if not killed and Object.IsValid(deadId) and deadId:IsA("Player") then
-		killed = deadId
 	end
 
 	if not killed or not killer then return end

@@ -328,7 +328,7 @@ function GetIndicatorForPlayer(player)
 	end
 	
 	-- Spawn new indicator for this player
-	print("Spawning an indicator for", player.name)
+--print("Spawning an indicator for", player.name)
 	local minimapPlayer = World.SpawnAsset(GetIndicatorType(player), {parent = MAP_PANEL})
 	player.clientUserData.minimap = minimapPlayer
 	return minimapPlayer

@@ -110,7 +110,7 @@ function GivePlayerEquipment(player, playerStart)
 end
 
 function SpawnAITank(position, team, id)
-    print('Spawning an AI tank...')
+--print('Spawning an AI tank...')
     --player.isVisible = false
 
     local currentState = mainManagerServer:GetCustomProperty('GameState')
@@ -170,7 +170,7 @@ function OnPlayerLeft(player)
 		-- Currently disabled while I work on it.  -CJC
 
 		if equippedTank[player] and equippedTank[player]:IsValid() then
-			print(string.format("Converting player %s to AI.", player.name))
+--print(string.format("Converting player %s to AI.", player.name))
 			if Object.IsValid(_G.lookup.tanks[player].chassis) then
 				_G.lookup.tanks[player].chassis:RemoveDriver()
 			else
@@ -192,6 +192,41 @@ function OnPlayerLeft(player)
 	end
 end
 
+function FindClearSpawnPoint(team)
+    local position = Vector3.ZERO
+    for i = 1, 50 do
+        local MIN_DIST = 3000
+        local rs = RandomStream.New()
+        position = spawnPoints[team][math.random(#spawnPoints[team])]:GetWorldPosition()
+        local offset = rs:GetVector3() * 1500
+        offset.z = 0
+
+        position = position + offset
+
+        local blocked = false
+        for k,v in pairs(_G.lookup.tanks) do
+            if Object.IsValid(v) then
+--print("comparing to", v.tank.name)
+                local otherPos = v.tank:GetWorldPosition()
+                local flatPos = position + offset
+                otherPos.z = 0
+                flatPos.z = 0
+                if (flatPos - otherPos).size < MIN_DIST then
+                    --print("Blocked!  Retrying...")
+                    blocked = true
+                    break
+                end
+            end
+        end
+        if not blocked then return position end
+        -- = {team = newAI.team, tank = equippedTank[newAI]}
+    end
+--print("Giving up, couldn't find a spot.")
+    return position
+end
+
+
+
 function FillTeamsWithAI(teamSize, teamBalance)
     if teamSize == nil then
         teamSize = 2
@@ -201,10 +236,11 @@ function FillTeamsWithAI(teamSize, teamBalance)
         local currentCount = #_G.utils.GetTankDrivers({includeTeams = team, ignoreDead = true})
 
         for i = currentCount, teamSize - 1 do
-            local position = spawnPoints[team][math.random(#spawnPoints[team])]:GetWorldPosition()
-            local offset = rs:GetVector3() * math.random(1000)
-            offset.z = 0
-            SpawnAITank(position + offset, team)
+            --local position = spawnPoints[team][math.random(#spawnPoints[team])]:GetWorldPosition()
+            --local offset = rs:GetVector3() * math.random(1000)
+            --offset.z = 0
+            --SpawnAITank(position + offset, team)
+            SpawnAITank(FindClearSpawnPoint(team), team)
         end
     end
 end

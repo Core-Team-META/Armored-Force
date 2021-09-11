@@ -141,18 +141,18 @@ end
 --@params Table tbl
 --@params Int indent
 function API.TablePrint(tbl, indent)
-    print("--------------------------------------")
+--print("--------------------------------------")
     local formatting, lua_type
     if tbl == nil then
-        print("Table was nil")
+--print("Table was nil")
         return
     end
     if type(tbl) ~= "table" then
-        print("Table is not a table, it is a " .. type(tbl))
+--print("Table is not a table, it is a " .. type(tbl))
         return
     end
     if next(tbl) == nil then
-        print("Table is empty")
+--print("Table is empty")
         return
     end
     if not indent then
@@ -164,18 +164,18 @@ function API.TablePrint(tbl, indent)
         formatting = string.rep("  ", indent) .. k .. ": "
         lua_type = type(v)
         if lua_type == "table" then
-            print(formatting)
+--print(formatting)
             API.TablePrint(v, indent + 1)
         elseif lua_type == "boolean" then
-            print(formatting .. tostring(v))
+--print(formatting .. tostring(v))
         elseif lua_type == "function" then
-            print(formatting .. "function")
+--print(formatting .. "function")
         elseif lua_type == "userdata" then
-            print(formatting .. "userdata")
+--print(formatting .. "userdata")
         else
-            print(formatting .. v)
+--print(formatting .. v)
         end
     end
-    print("--------------------------------------")
+--print("--------------------------------------")
 end
 

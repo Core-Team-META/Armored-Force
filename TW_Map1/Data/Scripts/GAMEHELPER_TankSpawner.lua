@@ -112,7 +112,7 @@ end
 
 
 function SpawnAITank(position, team)
-	print("Spawning an AI tank...")
+--print("Spawning an AI tank...")
 	--player.isVisible = false
 	
 	local currentState = mainManagerServer:GetCustomProperty("GameState")

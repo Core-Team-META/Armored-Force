@@ -16,6 +16,7 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 --]]
 -- Internal custom properties
 local AS = require(script:GetCustomProperty("API"))
+local Constants_API = require(script:GetCustomProperty("Constants_API"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local NAMEPLATE_TEMPLATE = script:GetCustomProperty("NameplateTemplate")
 local SEGMENT_SEPARATOR_TEMPLATE = script:GetCustomProperty("SegmentSeparatorTemplate")
@@ -48,6 +49,8 @@ local HEAL_CHANGE_COLOR = COMPONENT_ROOT:GetCustomProperty("HealChangeColor")
 local HEALTH_NUMBER_COLOR = COMPONENT_ROOT:GetCustomProperty("HealthNumberColor")
 
 local spottingServer = script:GetCustomProperty("GAMEHELPER_SpottingServer"):WaitForObject()
+
+local TANKS = Constants_API:WaitForConstant("Tanks").GetTanks()
 
 local GameState = nil
 local currentGameState = nil
@@ -172,8 +175,10 @@ function OnPlayerJoined(player)
 	 then
 		nameplates[player.id].tankText.text =
 			player.clientUserData.currentTankData.name .. " [" .. tostring(player.clientUserData.currentTankData.teir) .. "]"
+	elseif player.identifier then
+		nameplates[player.id].tankText.text = TANKS[tonumber(player.identifier)].name
 	else
-		nameplates[player.id].tankText.isEnabled = false
+		--nameplates[player.id].tankText.isEnabled = false
 	end
 
 	nameplates[player.id].borderPiece.visibility = Visibility.FORCE_OFF
@@ -246,12 +251,14 @@ function IsNameplateVisible(player)
 		playerPos = player.tank:GetWorldPosition()
 	end
 
-	local viewedPlayer = GetViewedPlayer() 
-	if not playerPos then return end 
+	local viewedPlayer = GetViewedPlayer()
+	if not playerPos then
+		return
+	end
 	if player == viewedPlayer or Teams.AreTeamsFriendly(player.team, viewedPlayer.team) then
 		if SHOW_ON_TEAMMATES then
 			local viewedPos = viewedPlayer:GetWorldPosition()
-			if not viewedPlayer or viewedPlayer and not Object.IsValid(viewedPlayer)  then
+			if not viewedPlayer or viewedPlayer and not Object.IsValid(viewedPlayer) then
 				return false
 			end
 			local distance = (playerPos - viewedPos).size
@@ -262,9 +269,9 @@ function IsNameplateVisible(player)
 	else
 		if CheckSpotting(viewedPlayer) then
 			local viewedPos = viewedPlayer:GetWorldPosition()
-			if not viewedPlayer or viewedPlayer and not Object.IsValid(viewedPlayer)   then
+			if not viewedPlayer or viewedPlayer and not Object.IsValid(viewedPlayer) then
 				return false
-			end 
+			end
 			local distance = (playerPos - viewedPos).size
 			if MAX_DISTANCE_ON_ENEMIES == 0.0 or distance <= MAX_DISTANCE_ON_ENEMIES then
 				return true
@@ -295,13 +302,15 @@ end
 function Tick(deltaTime)
 	local tankList = Game.GetPlayers()
 	--print("lookups", _G.lookup, _G.lookup.tanks or "tanks not found")
-	if _G.lookup and _G.lookup.tanks then
-		for k, v in pairs(_G.lookup.tanks) do
-			--print(".....", v.name)
-			table.insert(tankList, v)
+	if Game.GetCurrentSceneName() ~= "Main" then
+		if _G.lookup and _G.lookup.tanks then
+			for k, v in pairs(_G.lookup.tanks) do
+				--print(".....", v.name)
+				table.insert(tankList, v)
+			end
+		else
+			--print("No AI drivers...", _G.lookup)
 		end
-	else
-		--print("No AI drivers...", _G.lookup)
 	end
 
 	--for _, player in ipairs(Game.GetPlayers()) do
@@ -315,7 +324,7 @@ function Tick(deltaTime)
 		end
 
 		if nameplate == nil and not player:IsA("Player") then
-			print("Creating a nameplate for an AI player!")
+--print("Creating a nameplate for an AI player!")
 			OnPlayerJoined(player)
 			nameplate = nameplates[player.id]
 		end
@@ -352,8 +361,9 @@ function Tick(deltaTime)
 				 then
 					nameplate.tankText.text =
 						player.clientUserData.currentTankData.name .. " [T" .. tostring(player.clientUserData.currentTankData.teir) .. "]"
-				else
-					nameplates[player.id].tankText.isEnabled = false
+				elseif player.identifier then
+					nameplates[player.id].tankText.text =
+						TANKS[tonumber(player.identifier)].name .. " [T" .. tostring(TANKS[tonumber(player.identifier)].tier) .. "]"
 				end
 
 				if SHOW_HEALTHBARS then

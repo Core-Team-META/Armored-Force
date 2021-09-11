@@ -110,15 +110,15 @@ end
 function API.TablePrint(tbl, indent)
     local formatting, lua_type
     if tbl == nil then
-        print("Table was nil")
+--print("Table was nil")
         return
     end
     if type(tbl) ~= "table" then
-        print("Table is not a table, it is a " .. type(tbl))
+--print("Table is not a table, it is a " .. type(tbl))
         return
     end
     if next(tbl) == nil then
-        print("Table is empty")
+--print("Table is empty")
         return
     end
     if not indent then
@@ -130,16 +130,16 @@ function API.TablePrint(tbl, indent)
         formatting = string.rep("  ", indent) .. k .. ": "
         lua_type = type(v)
         if lua_type == "table" then
-            print(formatting)
+--print(formatting)
             API.TablePrint(v, indent + 1)
         elseif lua_type == "boolean" then
-            print(formatting .. tostring(v))
+--print(formatting .. tostring(v))
         elseif lua_type == "function" then
-            print(formatting .. "function")
+--print(formatting .. "function")
         elseif lua_type == "userdata" then
-            print(formatting .. "userdata")
+--print(formatting .. "userdata")
         else
-            print(formatting .. v)
+--print(formatting .. v)
         end
     end
 end
@@ -608,7 +608,7 @@ function API.RetrieveTankDataById(id, playerTanks)
 	local tankData = {}
 	for k, tank in ipairs(playerTanks) do
 		if(tank.id == id) then
-			print("Tank found with Id: " .. tostring(id))
+--print("Tank found with Id: " .. tostring(id))
 			tankData.id = tank.id
 			tankData.hasWeapon = tank.hasWeapon
 			tankData.hasArmor = tank.hasArmor

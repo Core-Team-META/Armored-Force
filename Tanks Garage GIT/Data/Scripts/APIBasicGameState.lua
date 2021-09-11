@@ -94,7 +94,7 @@ end
 -- nil SetGameState(int) [Server]
 -- Sets the game state immediately. The game state manager handles the time.
 function API.SetGameState(newState)
-	print("changing gamestate to", newState)
+--print("changing gamestate to", newState)
 	if not _G.APIBasicGameState then
 		warn("Cannot set game state with no manager registered")
 		return

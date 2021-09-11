@@ -1,7 +1,7 @@
 local LuaEvents = require(script:GetCustomProperty("_LuaEvents"))
 local PathMap = require(script:GetCustomProperty("_PathMap"))
+local NameMgr = require(script:GetCustomProperty("_AINames"))
 local AIPlayer = {}
-
 
 local nextId = 1
 
@@ -32,7 +32,8 @@ function AIPlayer.New(team)
     currentMovementTarget = nil,
     currentAttackTarget = nil,
     lastShotTime = -1,
-    name = "ROBO" .. tostring(nextId - 1),
+    --name = "ROBO" .. tostring(nextId - 1),
+    name = NameMgr.GetName(),
     identifier = "01",
     lastPathUpdateTime = -1,
     kills = 0,
@@ -77,15 +78,6 @@ function AIPlayer:ApplyDamage(damageTable)
             damageTable.source.kills = damageTable.source.kills + 1
           end
           Events.Broadcast("CombatWrapAPI.ObjectHasDied", damageTable)
- --#TODO Need to put this in a helper - Morticai
-          if damageTable.source and damageTable.source:IsA("AIPlayer") and damageTable.object then
-            if damageTable.object:IsA("AIPlayer") then
-              Events.BroadcastToAllPlayers("AIKilled", damageTable.source.id, damageTable.object.id)
-            else
-              Events.BroadcastToAllPlayers("AIKilled", damageTable.source.id, damageTable.object)
-            end
-          end
-        
         end)
     end
   end
@@ -466,7 +458,7 @@ function AIPlayer:GetWorldPosition()
   if Object.IsValid(myTank) then return myTank:GetWorldPosition() end
 
   warn("Tried to get the position of a destroyed player!")
-  print(CoreDebug.GetStackTrace())
+--print(CoreDebug.GetStackTrace())
   return Vector3.ZERO
 end
 
@@ -482,6 +474,7 @@ end
 function _G.utils.GetTankDrivers(options)
   if options == nil then options = {} end
   local results = {}
+  if not _G.lookup then return {} end
   for driver,tankData in pairs(_G.lookup.tanks) do
     if _G.utils.IsDriverValid(driver) then
 

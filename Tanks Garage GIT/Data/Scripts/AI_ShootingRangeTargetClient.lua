@@ -73,7 +73,7 @@ function OnImpact(trigger, other)
 			if(other.owner.clientUserData.tutorial2 < 50) then
 				other.owner.clientUserData.tutorial2 = other.owner.clientUserData.tutorial2 + actualDamage
 				if(other.owner.clientUserData.tutorial2 >= 50) then
-					print(TutorialCompletePopup.name)
+--print(TutorialCompletePopup.name)
 					local panel = World.SpawnAsset(TutorialCompletePopup, {parent = World.FindObjectByName("Tutorial UI")})
 					panel.lifeSpan = 3
 					Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.PrecisionShots, true)

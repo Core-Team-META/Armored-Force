@@ -171,13 +171,13 @@ function CalculateNemesis()
 							
 	end
 	
-	print("Finished Calculating Nemesis")
+--print("Finished Calculating Nemesis")
 			
 end
 
 function SetNemesis()
 
-	print("Setting Nemesis:")
+--print("Setting Nemesis:")
 
 	local nemesisString = ""
 
@@ -195,7 +195,7 @@ function SetNemesis()
 			
 		end
 		
-		print(nemesisString)
+--print(nemesisString)
 		
 		script:SetNetworkedCustomProperty("P" .. tostring(i), nemesisString)
 		
@@ -203,7 +203,7 @@ function SetNemesis()
 	
 	script:SetNetworkedCustomProperty("ListSet", true)
 	
-	print("Finished Setting Nemesis.")
+--print("Finished Setting Nemesis.")
 	
 		
 end
@@ -213,7 +213,7 @@ function OnGameStateChanged(newState)
 
 	if newState == "VICTORY_STATE"  then
 	
-		print("Calculating and setting nemesis")
+--print("Calculating and setting nemesis")
 		
 		CalculateNemesis()		
 		
@@ -221,7 +221,7 @@ function OnGameStateChanged(newState)
 	        
     elseif newState == "LOBBY_STATE" then
     
-    	print("Cleaning Nemesis entries")
+--print("Cleaning Nemesis entries")
     
     	script:SetNetworkedCustomProperty("ListSet", false)
         
