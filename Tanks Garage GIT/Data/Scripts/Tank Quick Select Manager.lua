@@ -61,7 +61,7 @@ function Init()
     end
     local tankCount = 0
 
-    for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+    for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do 
         if tank.id ~= "08" then
             local entry = World.SpawnAsset(TANK_TABLE_TEMPLATE, {parent = UIScrollPanel})
 

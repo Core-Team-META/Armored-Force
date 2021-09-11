@@ -279,7 +279,7 @@ function SetGarageModelFromEquippedTank(player, tankId)
 	end
 		
 	local id = tostring(selectedId)
-	
+		
 	if tonumber(selectedId) < 10 and not string.find(id, "0") then
 		id = "0" .. id
 	end
