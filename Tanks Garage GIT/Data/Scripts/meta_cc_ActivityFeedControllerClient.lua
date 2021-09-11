@@ -615,22 +615,18 @@ for i = 1, NUM_LINES do
 	lineTemplates[i].y = (i - 1) * (VERTICAL_SPACING + lineTemplates[i].height)
 end
 
-function OnAiKill(killId, deadId)
-
-    local killer = nil
-    local killed = nil
+function OnAiKill(killerId, killedId)
+	if not _G.lookup then return end
+    local killer = killerId
+    local killed = killedId
 	
-	for _, driver in pairs(_G.utils.GetTankDrivers()) do
-		if driver.id == killId then
+	for _, driver in pairs(_G.lookup.tanks) do
+		if driver.id == killer and not Object.IsValid(killer) then
 			killer = driver
 		end
-		if driver.id == deadId then
+		if driver.id == killed and not Object.IsValid(killed) then
 			killed = driver
 		end
-	end
-
-    if not killed and Object.IsValid(deadId) and deadId:IsA("Player") then
-		killed = deadId
 	end
 
 	if not killed or not killer then return end
