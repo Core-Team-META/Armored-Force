@@ -48,6 +48,7 @@ local defaultCamera = nil
 local sniperCamera = nil
 
 local previousPosition = nil
+local previousAssistantRotation = nil
 local movementModifier = 1
 local tankTarget = nil
 local verticalLimits = {}
@@ -143,11 +144,16 @@ function FindTank()
 	local chassis = localPlayer.clientUserData.currentTankData.chassis
 	local tankID = localPlayer.clientUserData.currentTankData.id
 	
+	print("ID found: " .. tostring(tankID))
+	
 	local tankData = Constants_API:WaitForConstant("Tanks").GetTankFromId(tonumber(tankID)) 
 	
 	turret = nil
 	mantlet = nil
 	cannon = nil
+	
+	rotationSpeed = 0 
+	verticalSpeed = 0
 
 	while not turret or not mantlet or not cannon do
 		turret = clientSkin:FindDescendantByName("Turret")
@@ -171,21 +177,21 @@ function FindTank()
 	
 	for _, e in pairs(localPlayer.clientUserData.techTreeProgress) do
 		if tonumber(e.id) == tonumber(tankID) then
---print(e.engineProgress)
+			print("tank data found. engine progress: " .. tostring(e.engineProgress))
 			if tonumber(e.engineProgress) == 2 then
 				rotationSpeed = tankData.turretUpgraded
 				verticalSpeed = tankData.elevationUpgraded
---print("aiming system using upgraded data")
+				--print("aiming system using upgraded data")
 			else 
 				rotationSpeed = tankData.turret
 				verticalSpeed = tankData.elevation
---print("aiming system using default data")
+				--print("aiming system using default data")
 			end		
 			break
 		end
 	end
 	
-	if (rotationSpeed <= 0) or (verticalSpeed <= 0) then
+	if ((horizontalLimits <= 0) and (rotationSpeed <= 0)) or (verticalSpeed <= 0) then
 		warn("COULD NOT FIND TANK DATA, USING UPGRADED VALUES")
 		rotationSpeed = tankData.turretUpgraded
 		verticalSpeed = tankData.elevationUpgraded
@@ -220,7 +226,7 @@ function UpdatePointer()
 	
 	local position = RaycastResultFromPointRotationDistance(cannon:GetWorldPosition(), cannon:GetWorldRotation(), 100000)
 	local distance = math.ceil((position - cannon:GetWorldPosition()).size * 5 / 1000)
-	
+	aimAssistant:MoveTo(Vector3.FORWARD * ((position - cannon:GetWorldPosition()).size + 2000), 0.001, true) --(tankTarget:GetWorldPosition() - activeCamera:GetWorldPosition()).size
 	--[[
 	if position then
 		aimAssistant:MoveTo(position, 0.001, false)
@@ -242,36 +248,45 @@ function JordanApproach()
 	local activeCamera = localPlayer:GetActiveCamera()	
 	local targetRotation = localPlayer:GetViewWorldRotation()
 	local currentRotation = aimAssistantElevation:GetRotation()
+	local mantletRotation = mantlet:GetRotation()
+	local offsetRotation = targetRotation - turret:GetWorldRotation()
 	
-	activeVerticalSpeed = (math.abs(targetRotation.z - aimAssistantOffset:GetWorldRotation().z) / rotationSpeed)
-		
-	--activeVerticalSpeed = math.abs(targetRotation.y - currentRotation.y) / verticalSpeed
-	
-	aimAssistant:MoveTo(Vector3.FORWARD * (tankTarget:GetWorldPosition() - activeCamera:GetWorldPosition()).size , 0.001, true)
+	--[[
+	print("-")
+	print("max: " .. tostring(verticalLimits.max - 0.01) .. " min: " .. tostring(verticalLimits.min + 0.01))
+	print("mantlet: " .. tostring(mantletRotation.y))
+	print(verticalLimits.max - 0.01 <=  mantletRotation.y)
+	print(verticalLimits.min + 0.01 >=  mantletRotation.y)
+	]]
+	if (offsetRotation.y >= verticalLimits.max - 0.1) then
+		targetRotation.y = verticalLimits.max
+	elseif (offsetRotation.y <= verticalLimits.min + 0.1) then
+		targetRotation.y = verticalLimits.min
+	end
+
 	aimAssistantBase:RotateTo(Rotation.New(0, 0, activeCamera:GetWorldRotation().z), 0.001, false)
 
 	if horizontalLimits <= 0 then
-		if (verticalLimits.max - 0.01 >=  mantlet:GetRotation().y) and (verticalLimits.min + 0.01 <=  mantlet:GetRotation().y) then
-			aimAssistantElevation:RotateTo(Rotation.New(0, targetRotation.y, 0), activeVerticalSpeed, true) -- difference / verticalSpeed
-		end
+		activeVerticalSpeed = (math.abs(targetRotation.z - aimAssistantOffset:GetWorldRotation().z) / rotationSpeed)
+		--activeVerticalSpeed = math.abs(targetRotation.y - currentRotation.y) / verticalSpeed
+		aimAssistantElevation:RotateTo(Rotation.New(0, targetRotation.y, 0), activeVerticalSpeed, true) -- difference / verticalSpeed
 	else
-		local offsetRotation = targetRotation - turret:GetWorldRotation()
-		
-		if offsetRotation.z > horizontalLimits then
+		if (offsetRotation.z >= horizontalLimits - 0.1) then 
 			offsetRotation.z = horizontalLimits
-		elseif offsetRotation.z < -horizontalLimits then
+		elseif (offsetRotation.z <= -horizontalLimits + 0.1) then
 			offsetRotation.z = -horizontalLimits
 		end
 		
-		distance = math.abs(math.sqrt((offsetRotation.y - currentRotation.y) ^ 2 + (offsetRotation.z - currentRotation.z) ^ 2)) + 0.1
+		distance = math.abs(math.sqrt((offsetRotation.y - currentRotation.y) ^ 2 + (offsetRotation.z - currentRotation.z) ^ 2)) + 0.01
 		
 		if not turretDown then
 			aimAssistantElevation:RotateTo(Rotation.New(0, targetRotation.y, offsetRotation.z), distance / verticalSpeed, true)
 		else
-			aimAssistantElevation:RotateTo(Rotation.New(0, targetRotation.y, offsetRotation.z), distance / verticalSpeed * 0.2, true)
+			aimAssistantElevation:RotateTo(Rotation.New(0, targetRotation.y, offsetRotation.z), distance / verticalSpeed * 1.2, true)
 		end
 	end
 	
+	previousAssistantRotation = currentRotation	
 end
 
 function MoveToUIPosition()
