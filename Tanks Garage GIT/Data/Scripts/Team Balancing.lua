@@ -54,7 +54,7 @@ function ComputePlayerValue(player)
 
 	player.serverUserData.balanceValue = value
 
---print(
+print(
 		"[Balance] Player " ..
 			player.name ..
 				", tankId = " ..
