@@ -1,6 +1,40 @@
 Name: "GAMEHELPER_Components"
 RootId: 16867063847943140816
 Objects {
+  Id: 13672175199535168993
+  Name: "XPFeedback"
+  Transform {
+    Location {
+      X: 120
+      Y: -135
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16867063847943140816
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "XPFeedbackClient"
+  }
+}
+Objects {
   Id: 11403140711220776032
   Name: "CamoSelection"
   Transform {

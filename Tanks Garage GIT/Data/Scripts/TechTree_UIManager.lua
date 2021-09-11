@@ -1137,6 +1137,8 @@ function UpgradeWeapon()
     local tankRPString = UTIL_API.GetTankRPString(tonumber(tankDetails.id))
     local tankRP = LOCAL_PLAYER:GetResource(tankRPString)
     local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
+    
+    print(tankRPString)
 
     if (tankRP + freeRP < tankDetails.weaponResearchCost) then
         ShowNotEnoughRPMessage('Weapon')
@@ -1313,6 +1315,7 @@ end
 
 -- This function populates the modal popup with the tank data and its player's progress
 function PopulateDetailsModal(tank)
+
     if tankDetails.purchasedtank then
         return
     end
@@ -1342,7 +1345,7 @@ function PopulateDetailsModal(tank)
     local maxDepth = tank.maxDepression
 
     -- Get the player's tank data
-    LoadProgressIntoTankDetails()
+    LoadProgressIntoTankDetails(tank)
 
     -- Populate the UI with tank data based on player's progression
     tankDetails.tankResearchCost = tank.purchaseCost -- <-- NOTE: should not be used anymore
@@ -1490,7 +1493,7 @@ function CanTankBeResearched(id)
     return canBeResearched
 end
 
-function LoadProgressIntoTankDetails()
+function LoadProgressIntoTankDetails(tank)
     -- Get the player's tank data
     for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
         if (t.id == tank.id) then
@@ -1722,9 +1725,30 @@ function OpenTankUpgradeWindow(button, id)
 
     if not id or id == nil then
         selectedTankId = LOCAL_PLAYER:GetPrivateNetworkedData('SelectedTank')
+        
+		tankDetails = TankApi.GetTankFromId(tonumber(selectedTankId))
+		
+		for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+		    if (t.id == tostring(selectedTankId)) then
+		        tankDetails.researchedTank = t.researched
+		        tankDetails.purchasedTank = t.purchased
+		        tankDetails.weaponProgress = t.weaponProgress
+		        tankDetails.armorProgress = t.armorProgress
+		        tankDetails.engineProgress = t.engineProgress
+		    end
+		end       
     else
         selectedTankId = tonumber(id)
     end
+    
+	--OnResourceChanged(LOCAL_PLAYER, Constants_API.GetEquippedTankResource(), tonumber(selectedTankId))
+    --[[
+    for i, tank in ipairs(TANK_LIST) do
+        if (tonumber(tank.id) == tonumber(selectedTankId)) then
+            PopulateDetailsModal(tank)
+        end
+    end
+    ]]
 
     IMAGE_API.SetTankImage(tankPreviewImage, selectedTankId)
 
@@ -1937,6 +1961,7 @@ function PopulateEquippedTankStats(entry)
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_9_LVLUP').progress = acceleration / TankApi.GetHighestAcceleration()
     local turningSpeed = entry.turningSpeedUpgraded -- TODO
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').progress = turningSpeed / TankApi.GetHighestTurningSpeed()
+
 end
 
 function EquipTank()
@@ -2203,5 +2228,8 @@ LOCAL_PLAYER.privateNetworkedDataChangedEvent:Connect(OnServerDataUpdated)
 LOCAL_PLAYER.resourceChangedEvent:Connect(OnResourceChanged)
 Events.Connect('TankPurchaseSuccessful', TankPurchaseSuccessful)
 
-Task.Wait(3)
+while LOCAL_PLAYER:GetResource('EquippedTank') <= 0 do
+	Task.Wait()
+end
+
 OnResourceChanged(LOCAL_PLAYER, Constants_API.GetEquippedTankResource(), LOCAL_PLAYER:GetResource('EquippedTank'))
