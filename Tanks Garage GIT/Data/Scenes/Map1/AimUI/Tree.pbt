@@ -107,6 +107,7 @@ Objects {
     }
   }
   ParentId: 13419417229784553925
+  ChildIds: 2796236429563087040
   ChildIds: 12421583094399823290
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -233,6 +234,65 @@ Objects {
     }
   }
   ParentId: 12421583094399823290
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.979000032
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    DisableAngularMotionBlur: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 2796236429563087040
+  Name: "guide"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.69157553
+      Y: 1.32715595
+      Z: 0.547934473
+    }
+  }
+  ParentId: 7086514194132394284
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"

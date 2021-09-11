@@ -194,7 +194,7 @@ end
 
 function OnJoined(player)
 
-	player.bindingPressedEvent:Connect(Test)
+	--player.bindingPressedEvent:Connect(Test)
 	player.isVisible = false
 	
 end
