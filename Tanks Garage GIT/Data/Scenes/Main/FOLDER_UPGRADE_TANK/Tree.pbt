@@ -19301,7 +19301,7 @@ Objects {
 }
 Objects {
   Id: 16129765977008356006
-  Name: "COSTS_UNIVERSAL_TP"
+  Name: "COSTS_UNIVERSAL_ENGINE"
   Transform {
     Location {
     }
@@ -23886,7 +23886,7 @@ Objects {
 }
 Objects {
   Id: 13635754268716794179
-  Name: "COSTS_UNIVERSAL_TP"
+  Name: "COSTS_UNIVERSAL_ARMOR"
   Transform {
     Location {
     }
@@ -23963,7 +23963,7 @@ Objects {
 }
 Objects {
   Id: 9940921311572336727
-  Name: "ICON_UNIVERSAL_TP"
+  Name: "ICON_UNIVERSAL_ARMOR"
   Transform {
     Location {
     }
@@ -28776,7 +28776,7 @@ Objects {
 }
 Objects {
   Id: 4303021425589519141
-  Name: "COSTS_UNIVERSAL_TP"
+  Name: "COSTS_UNIVERSAL_WEAPON"
   Transform {
     Location {
     }
