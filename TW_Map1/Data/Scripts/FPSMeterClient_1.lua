@@ -184,7 +184,7 @@ function Tick(deltaTime)
 		LastFiveSec.text = string.format("%.2f", fiveAvg)
 		if shouldLog then
 			local currentTime = ConvertTime(CoreMath.Round(time() - startTime))
---print(
+			print(
 				string.format(
 					"[FPS METER] (" ..
 						currentTime ..
