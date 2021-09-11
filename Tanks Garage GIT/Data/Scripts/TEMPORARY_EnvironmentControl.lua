@@ -1,10 +1,10 @@
 function OnBindingPressed(player, binding)
 
 	if binding == "ability_extra_23" then
-		print("Resetting environment")
+--print("Resetting environment")
 		Events.BroadcastToAllPlayers("OBJECT_RESET")
 	elseif binding == "ability_extra_33" then
-		print("Forcing game win")
+--print("Forcing game win")
 		_G["GameOverwrite"] = true
 		
 		Events.Broadcast("CHANGE_STATE", "MATCH_STATE")

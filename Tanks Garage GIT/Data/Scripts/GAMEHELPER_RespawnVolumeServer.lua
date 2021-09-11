@@ -20,7 +20,7 @@ function Tick()
 			local distance = (p:GetWorldPosition() - turret:GetWorldPosition()).size
 			
 			if distance > 500 then
-				print(p.name .. " is out of bounds, moving player back to turret")
+--print(p.name .. " is out of bounds, moving player back to turret")
 				p:Detach()
 				p:SetWorldPosition(turret:GetWorldPosition())
 				p:AttachToCoreObject(turret)

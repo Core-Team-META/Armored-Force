@@ -34,7 +34,7 @@ end
 
 
 function OnBindingPressed(whichPlayer, binding)
-	print("FlightControllerServer: Player " .. whichPlayer.name .. " pressed binding: " .. binding)
+--print("FlightControllerServer: Player " .. whichPlayer.name .. " pressed binding: " .. binding)
 	if (binding == "ability_extra_32") then 
 	 	turnRight = true
 	end
@@ -48,7 +48,7 @@ end
 
 
 function OnBindingReleased(whichPlayer, binding)
-	print("FlightControllerServer: Player " .. whichPlayer.name .. " released binding: " .. binding)	
+--print("FlightControllerServer: Player " .. whichPlayer.name .. " released binding: " .. binding)	
 	if (binding == "ability_extra_32") then 
 	 	turnRight = false
 	end

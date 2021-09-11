@@ -21,7 +21,7 @@ local localPlayer = Game.GetLocalPlayer()
 local initialized = false
 
 function SetPlayer(player)
-	print("Setting minimap player:", player)
+--print("Setting minimap player:", player)
 	myPlayer = player
 	initialized = true
 	
@@ -124,7 +124,7 @@ function Tick()
 	if not initialized then return end
 	if myPlayer:IsA("Player") and not Object.IsValid(myPlayer) then
 		initialized = false
-		print("Destroying myself due to invalid player!", myPlayer)
+--print("Destroying myself due to invalid player!", myPlayer)
 		myPlayer = nil
 		ROOT:Destroy()
 		return

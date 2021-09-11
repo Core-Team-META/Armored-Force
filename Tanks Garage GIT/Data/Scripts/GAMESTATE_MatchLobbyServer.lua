@@ -53,7 +53,7 @@ function CountdownTask()
 end
 
 function StateEND()
-	print("Exiting the lobby!")
+--print("Exiting the lobby!")
 	
 	timerTask:Cancel()
 	timerTask = nil

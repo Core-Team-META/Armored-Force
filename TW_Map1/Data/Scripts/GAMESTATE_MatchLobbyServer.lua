@@ -19,7 +19,7 @@ function StateSTART(manager, propertyName)
 		return
 		
 	end
-	print("in the lobby!")
+--print("in the lobby!")
 	
 	timer = lobbyCountdown
 	
@@ -39,21 +39,21 @@ function CountdownTask()
 		
 	end
 	
-	print("Tank drivers:", #_G.utils.GetTankDrivers())
+--print("Tank drivers:", #_G.utils.GetTankDrivers())
 	--if #Game.GetPlayers() < 2 then
 	if #(_G.utils.GetTankDrivers()) < 2 then
 		timer = lobbyCountdown
-		print("holding", _G.utils.GetTankDrivers())
+--print("holding", _G.utils.GetTankDrivers())
 	else 
 		timer = timer - 1
-		print("counting down...", timer)
+--print("counting down...", timer)
 		
 	end
 		
 end
 
 function StateEND()
-	print("Exiting the lobby!")
+--print("Exiting the lobby!")
 	
 	timerTask:Cancel()
 	timerTask = nil

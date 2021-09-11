@@ -163,7 +163,7 @@ function RetrieveData(player)
 	        	dataTransferSet[player] = child.networkedPropertyChangedEvent:Connect(OnSkinDataChange)
 	        	
 	        	-- DEBUG
-	        	-- print("Got data string: " .. dataString)
+--print("Got data string: " .. dataString)
 	        	
 	        	SetTankSkinDataForClient(player, dataString)
 	        

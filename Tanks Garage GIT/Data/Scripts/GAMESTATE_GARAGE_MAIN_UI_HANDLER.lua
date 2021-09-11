@@ -889,8 +889,8 @@ end
 
 -- TOGGLE TURRET_UPGRADE_DENY CLOSE
 function TOGGLE_TURRET_UPGRADE_DENY_CLOSE()
-	print("CLOSE")
-	print(TURRET_UPGRADE_DENY.y)
+--print("CLOSE")
+--print(TURRET_UPGRADE_DENY.y)
 	if TURRET_UPGRADE_DENY.y == TANKUPGRADE_DENY_OPEN_DROPDOWN_Y then
 		SFX_SLIDE_UP:Play()
 		if TURRET_DENY_isMoving and TANKUPGRADE_DENY_timeRemaining > 0 then
@@ -3441,7 +3441,7 @@ end
 
 function UpgradeFailedSlide(part)
 	if (part == "Weapon") then
-		print(TANKUPGRADE_DENY_timeRemaining)
+--print(TANKUPGRADE_DENY_timeRemaining)
 		TOGGLE_TURRET_UPGRADE_DENY_OPEN()
 	elseif (part == "Armor") then
 		TOGGLE_SHELL_UPGRADE_DENY_OPEN()

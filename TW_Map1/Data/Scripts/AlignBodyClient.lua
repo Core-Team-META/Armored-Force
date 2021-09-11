@@ -22,7 +22,7 @@ function Tick(dt)
 	--	CoreDebug.DrawLine(pos,pos+playerfacing*100, {duration = 0, color = Color.YELLOW, thickness = 2})
 	--	CoreDebug.DrawLine(pos,pos+(pv*100), {duration = 0, color = Color.BLUE, thickness = 2})
 	--	local dot = 1-math.abs((pv .. playerfacing))
-	--	print(tostring(dot))
+--print(tostring(dot))
 	--	sand:SetSmartProperty("Particle Scale Multiplier", 1+(dot*3))
 	
 	local playerright = -player:GetWorldTransform():GetRightVector()

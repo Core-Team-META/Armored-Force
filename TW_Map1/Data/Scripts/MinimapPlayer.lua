@@ -125,7 +125,7 @@ function Tick()
 		initialized = false
 		myPlayer = nil
 		ROOT:Destroy()
-		print("Destroying myself due to invalid player!", myPlayer)
+--print("Destroying myself due to invalid player!", myPlayer)
 		return
 	end
 	

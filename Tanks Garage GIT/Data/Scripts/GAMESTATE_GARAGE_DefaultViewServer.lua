@@ -10,7 +10,7 @@ consumableCost["Extinguisher"] = 100
 consumableCost["TurretRepair"] = 100
 
 function SendToMap(player, selectedMap)
-	print("Transferring " .. player.name .. " to " .. mapInRotation)
+--print("Transferring " .. player.name .. " to " .. mapInRotation)
 	player:TransferToScene(tostring(mapInRotation))
 	Events.Broadcast("PLAYER_DEPLOYED", player)
 end
@@ -24,7 +24,7 @@ function ForceSelectedMap(newSelectedMap)
 
 	forcedSelection = true	
 	mapInRotation = map[newSelectedMap]
-	print("Forced Map: " .. mapInRotation)
+--print("Forced Map: " .. mapInRotation)
 
 end
 
@@ -124,7 +124,7 @@ function Tick()
 	if not forcedSelection then
 		mapInRotation = tostring(map[math.random(3)])
 		
-		print("Map in rotation: " .. mapInRotation)
+--print("Map in rotation: " .. mapInRotation)
 		
 		Task.Wait(60)
 	end

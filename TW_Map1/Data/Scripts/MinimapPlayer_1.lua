@@ -51,12 +51,12 @@ function UpdateContent()
 end
 
 function Tick()
-	print("meepo moop")
+--print("meepo moop")
 	if not initialized then return end
 	if not Object.IsValid(myPlayer) then
 		initialized = false
 		myPlayer = nil
-		print("Destroying myself due to invalid player!", myPlayer)
+--print("Destroying myself due to invalid player!", myPlayer)
 		ROOT:Destroy()
 		return
 	end

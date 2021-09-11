@@ -125,10 +125,10 @@ end
 function AssignDriver(newDriver, playerStart, _isAI)
 
 	isAI = _isAI or false
-	print("assigning a driver.  AI?", isAI)
+--print("assigning a driver.  AI?", isAI)
 
 	if (not isAI) and (Object.IsValid(driver) or not Object.IsValid(newDriver) or not newDriver:IsA("Player")) then
-		print("returning")
+--print("returning")
 		return
 	end
 	
@@ -144,7 +144,7 @@ function AssignDriver(newDriver, playerStart, _isAI)
 	--print(CoreDebug.GetStackTrace())
 	local newScriptPosition = baseForPosition:GetWorldPosition()
 	local newScriptRotation = baseForPosition:GetWorldRotation()
-	print("newscript stuff", newScriptPosition, newScriptRotation)
+--print("newscript stuff", newScriptPosition, newScriptRotation)
 	local moreIdealPositionRaycast = World.Raycast(newScriptPosition + Vector3.UP * 1000, newScriptPosition - Vector3.UP * 1000, {ignorePlayers = true})
 	
 	if moreIdealPositionRaycast then
@@ -484,7 +484,7 @@ function ProjectileImpacted(expiredProjectile, other)
 		--print("Returning")
 		return
 	end
-	print("damage stuff")
+--print("damage stuff")
 	
 	expiredProjectile.serverUserData.hitOnce = true
 	
@@ -532,7 +532,7 @@ function OnArmorHit(trigger, other)
 			return
 		end
 		
-		print("Armor hit")
+--print("Armor hit")
 		other.serverUserData.hitOnce = true
 		other.speed = 0
 		other.capsuleRadius = 0
@@ -540,12 +540,12 @@ function OnArmorHit(trigger, other)
 		other.lifeSpan = 0.1
 				
 		if not enemyPlayer or not enemyPlayer.serverUserData.currentTankData or enemyPlayer.team == driver.team then
-			print("Returning from armor hit")
+--print("Returning from armor hit")
 			--[[
-			print(enemyPlayer)
-			print(enemyPlayer.serverUserData)
-			print(enemyPlayer.serverUserData.currentTankData)
-			print(enemyPlayer.team, driver.team)]]
+--print(enemyPlayer)
+--print(enemyPlayer.serverUserData)
+--print(enemyPlayer.serverUserData.currentTankData)
+--print(enemyPlayer.team, driver.team)]]
 			return
 		end
 		

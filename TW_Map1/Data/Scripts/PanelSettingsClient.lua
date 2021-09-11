@@ -11,9 +11,9 @@ local FRAME_IMAGE = script:GetCustomProperty("FrameImage")
 function ConfigureTiles(tiles, image, color)
 
      if (not tiles) then
-        print(script.name .. " - Error: Tiles missing")
+--print(script.name .. " - Error: Tiles missing")
     elseif (not image or not color) then
-        print(script.name .. " - Warning: Image or Color not set")
+--print(script.name .. " - Warning: Image or Color not set")
     end
 
     for _, tile in ipairs(tiles) do
