@@ -68,7 +68,7 @@ function CheckTankReady()
 	for _, p in ipairs(Game.GetPlayers()) do
 		if p.id == driverId then
 			driver = p
-			print("found (player) driver on client: " .. driver.name)
+--print("found (player) driver on client: " .. driver.name)
 		end
 	end
 
@@ -289,7 +289,7 @@ function PerformSalute()
 	if not Object.IsValid(gameStateManager) then
 		return
 	elseif not Object.IsValid(tankControllerServer) then
-		print("Invalid controller server")
+--print("Invalid controller server")
 		return
 	end
 

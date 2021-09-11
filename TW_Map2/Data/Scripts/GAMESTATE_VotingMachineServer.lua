@@ -46,7 +46,7 @@ function SetVote(player, vote)
 		
 		matchSelection[vote]["Votes"] = matchSelection[vote]["Votes"] + 1
 		
-		print("Vote Recieved from " .. player.name)
+--print("Vote Recieved from " .. player.name)
 	end
 
 end
@@ -139,15 +139,15 @@ function TallyVotes()
 	
 	script:SetNetworkedCustomProperty("SelectedMatchID", selectedMatch["ID"])
 	
-	print(selectedMatch["ID"] .. " selected.")
+--print(selectedMatch["ID"] .. " selected.")
 	
 	for i, p in pairs(Game.GetPlayers()) do
 	
-		print(voteTracker[p])
+--print(voteTracker[p])
 		
 		if voteTracker[p] and matchSelection[voteTracker[p]] and matchSelection[voteTracker[p]]["Link"] and matchSelection[voteTracker[p]]["Link"] ~= "" then
 			
-			print("Sending " .. p.name .. "to " .. matchSelection[voteTracker[p]]["Link"])
+--print("Sending " .. p.name .. "to " .. matchSelection[voteTracker[p]]["Link"])
 			
 			p:TransferToGame(matchSelection[voteTracker[p]]["Link"])
 			

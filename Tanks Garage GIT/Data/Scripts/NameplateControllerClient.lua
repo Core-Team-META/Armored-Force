@@ -324,7 +324,7 @@ function Tick(deltaTime)
 		end
 
 		if nameplate == nil and not player:IsA("Player") then
-			print("Creating a nameplate for an AI player!")
+--print("Creating a nameplate for an AI player!")
 			OnPlayerJoined(player)
 			nameplate = nameplates[player.id]
 		end

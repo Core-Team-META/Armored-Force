@@ -458,7 +458,7 @@ function AIPlayer:GetWorldPosition()
   if Object.IsValid(myTank) then return myTank:GetWorldPosition() end
 
   warn("Tried to get the position of a destroyed player!")
-  print(CoreDebug.GetStackTrace())
+--print(CoreDebug.GetStackTrace())
   return Vector3.ZERO
 end
 

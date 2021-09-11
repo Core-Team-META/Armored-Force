@@ -110,7 +110,7 @@ function GivePlayerEquipment(player, playerStart)
 end
 
 function SpawnAITank(position, team, id)
-    print('Spawning an AI tank...')
+--print('Spawning an AI tank...')
     --player.isVisible = false
 
     local currentState = mainManagerServer:GetCustomProperty('GameState')
@@ -170,7 +170,7 @@ function OnPlayerLeft(player)
 		-- Currently disabled while I work on it.  -CJC
 
 		if equippedTank[player] and equippedTank[player]:IsValid() then
-			print(string.format("Converting player %s to AI.", player.name))
+--print(string.format("Converting player %s to AI.", player.name))
 			if Object.IsValid(_G.lookup.tanks[player].chassis) then
 				_G.lookup.tanks[player].chassis:RemoveDriver()
 			else
@@ -206,7 +206,7 @@ function FindClearSpawnPoint(team)
         local blocked = false
         for k,v in pairs(_G.lookup.tanks) do
             if Object.IsValid(v) then
-                print("comparing to", v.tank.name)
+--print("comparing to", v.tank.name)
                 local otherPos = v.tank:GetWorldPosition()
                 local flatPos = position + offset
                 otherPos.z = 0
@@ -221,7 +221,7 @@ function FindClearSpawnPoint(team)
         if not blocked then return position end
         -- = {team = newAI.team, tank = equippedTank[newAI]}
     end
-    print("Giving up, couldn't find a spot.")
+--print("Giving up, couldn't find a spot.")
     return position
 end
 

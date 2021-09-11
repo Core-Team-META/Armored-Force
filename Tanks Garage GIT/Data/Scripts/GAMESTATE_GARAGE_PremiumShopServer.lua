@@ -37,7 +37,7 @@ end
 
 function PurchasePremiumTank(player, tankId)
 
-	print("recieved purchase attempt")
+--print("recieved purchase attempt")
 
 	local cost = nil
 
@@ -50,7 +50,7 @@ function PurchasePremiumTank(player, tankId)
 	
 	if not cost or cost > player:GetResource(CURRENCY.GOLD.ResourceName) then
 		Events.BroadcastToPlayer(player, "PremTankPurchased", tankId, false)
-		print("purchase failed")
+--print("purchase failed")
 		return
 	end
 	
@@ -65,7 +65,7 @@ function PurchasePremiumTank(player, tankId)
 			t.engineProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
 			
 			Events.BroadcastToPlayer(player, "PremTankPurchased", tankId, true)
-			print("purchase passed")
+--print("purchase passed")
 			
 			return
 		end

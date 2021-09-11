@@ -278,7 +278,7 @@ function Tick()
 			if Object.IsValid(indicator) then
 				indicator.visibility = Visibility.FORCE_OFF
 			else
-				print("Somehow indicator is invalid for", player.name)
+--print("Somehow indicator is invalid for", player.name)
 			end
 		end
 	end
@@ -350,9 +350,9 @@ function GetIndicatorForPlayer(player)
 		return player.clientUserData.minimap
 	end
 	
-	print("Should destroy old?", Object.IsValid(player.clientUserData.minimap), player.clientUserData.minimap)
+--print("Should destroy old?", Object.IsValid(player.clientUserData.minimap), player.clientUserData.minimap)
 	if Object.IsValid(player.clientUserData.minimap) then
-		print("Destroying indicator for", player.name)
+--print("Destroying indicator for", player.name)
 		player.clientUserData.minimap:Destroy()
 		player.clientUserData.minimapScript = nil
 	end
@@ -360,7 +360,7 @@ function GetIndicatorForPlayer(player)
 	-- Spawn new indicator for this player
 	local minimapPlayer = World.SpawnAsset(GetIndicatorType(player), {parent = MAP_PANEL})
 	player.clientUserData.minimap = minimapPlayer
-	print("Spawning new indicator for player ", player.id, minimapPlayer, player.clientUserData.minimap)
+--print("Spawning new indicator for player ", player.id, minimapPlayer, player.clientUserData.minimap)
 	return minimapPlayer
 	
 end

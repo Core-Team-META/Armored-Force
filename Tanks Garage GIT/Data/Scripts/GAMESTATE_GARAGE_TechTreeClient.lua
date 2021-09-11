@@ -45,7 +45,7 @@ end
 
 function OnOtherComponentButtonPressed(button)
 
-	print(button.name .. " pressed. Now broadcasting: " .. button:GetCustomProperty("SendToComponent"))
+--print(button.name .. " pressed. Now broadcasting: " .. button:GetCustomProperty("SendToComponent"))
 	
 	Events.Broadcast("ENABLE_GARAGE_COMPONENT", button:GetCustomProperty("SendToComponent"))
 	

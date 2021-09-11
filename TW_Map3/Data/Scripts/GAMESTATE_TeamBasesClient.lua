@@ -99,8 +99,8 @@ function UpdateUITask()
 	local team1Progress = teamBasesServer:GetCustomProperty("Team1BaseProgress")
 	local team2Progress = teamBasesServer:GetCustomProperty("Team2BaseProgress")
 	
-	print(#count2)
-	print(team2Progress)
+--print(#count2)
+--print(team2Progress)
 		
 	if localPlayer.team == 1 then
 		

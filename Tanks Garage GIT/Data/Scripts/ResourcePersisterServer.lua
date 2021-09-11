@@ -95,7 +95,7 @@ function OnResourceChanged(player, resource, value)
 end
 
 function OnPlayerJoined(player)
-    print('Player Joined ' .. player.name)
+--print('Player Joined ' .. player.name)
 
     local playerData = Storage.GetPlayerData(player)
     --UTIL_API.TablePrint(playerData)
@@ -162,7 +162,7 @@ function CheckAndSetSharedStorageDefault(player)
         Events.Broadcast('SET_EQUIPPED_TANK', player, '01')
     end
 
-    print('SELECTED TANK ID: ' .. tostring(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]))
+--print('SELECTED TANK ID: ' .. tostring(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]))
 
     if (player:GetResource(CONSTANTS_API.GetEquippedTankResource()) <= 0) then
         playerSharedStorage[CONSTANTS_API.GetEquippedTankResource()] = CONSTANTS_API.GetDefaultTankData()
@@ -293,7 +293,7 @@ end
 function SetTankProgressionDataForServer(dataString, player)
     --print("Saving tank data on server. Data string: " .. dataString)
     local tankProgressionTable = UTIL_API.TechTreeConvertToTable(dataString)
-    -- print("Finished converting string into table.")
+--print("Finished converting string into table.")
 
     local progressionTable = {}
 

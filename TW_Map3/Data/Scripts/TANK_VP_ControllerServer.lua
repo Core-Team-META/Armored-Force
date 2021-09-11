@@ -213,32 +213,32 @@ function SetTankModifications()
 	if modifications[1] == 2 then
 		reloadTime = upgradedReload
 		projectileDamage = upgradedDamage
-		print("Upgraded firepower")
+--print("Upgraded firepower")
 	else 
 		reloadTime = reloadSpeed
 		projectileDamage = damagePerShot
-		print("Default firepower")
+--print("Default firepower")
 	end
 	
 	if modifications[2] == 2 then
 		tankHitPoints = upgradedHitPoints
-		print("Upgraded surivability")
+--print("Upgraded surivability")
 	else 
 		tankHitPoints = hitPoints
-		print("Default surivability")
+--print("Default surivability")
 	end
 
 	if modifications[3] == 2 then
 		traverseSpeed = upgradedTraverse	
 		elevationSpeed = upgradedElevation
 		chassisTemplate = templateReferences:GetCustomProperty("UpgradedChassis")
-		print("Upgraded mobility")
+--print("Upgraded mobility")
 		
 	else 
 		traverseSpeed = turretTraverseSpeed
 		elevationSpeed = turretElevationSpeed
 		chassisTemplate = templateReferences:GetCustomProperty("DefaultChassis")
-		print("Default mobility")
+--print("Default mobility")
 	end
 	
 end
@@ -475,7 +475,7 @@ function Tick()
 		
 		if math.abs(chassis:GetWorldRotation().x) > 120 or math.abs(chassis:GetWorldRotation().y) > 120 then
 			if not flipping then
-				print("attempting flip")
+--print("attempting flip")
 				flipping = true
 				Task.Spawn(FlipTank, 0)
 			end

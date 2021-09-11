@@ -25,7 +25,7 @@ function RaiseOpacity(propUIPanel, duration)
     propUIPanel.opacity = 0
     while time() < endTime do
         propUIPanel.opacity = (1-(endTime - time()) / duration)
---      print(propUIPanel.opacity)
+--print(propUIPanel.opacity)
         Task.Wait()
     end
  

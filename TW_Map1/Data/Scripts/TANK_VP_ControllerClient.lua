@@ -274,7 +274,7 @@ function PerformSalute()
 	if not Object.IsValid(gameStateManager) then
 		return
 	elseif not Object.IsValid(tankControllerServer) then
-		print("Invalid controller server")
+--print("Invalid controller server")
 		return
 	end
 	

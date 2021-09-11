@@ -42,15 +42,15 @@ end
 function TablePrint(tbl, indent)
 	local formatting, lua_type
 	if tbl == nil then
-		print("Table was nil")
+--print("Table was nil")
 		return
 	end
 	if type(tbl) ~= "table" then
-		print("Table is not a table, it is a " .. type(tbl))
+--print("Table is not a table, it is a " .. type(tbl))
 		return
 	end
 	if next(tbl) == nil then
-		print("Table is empty")
+--print("Table is empty")
 		return
 	end
 	if not indent then
@@ -63,16 +63,16 @@ function TablePrint(tbl, indent)
 		formatting = string.rep("  ", indent) .. k .. ": "
 		lua_type = type(v)
 		if lua_type == "table" then
-			print(formatting)
+--print(formatting)
 			TablePrint(v, indent + 1)
 		elseif lua_type == "boolean" then
-			print(formatting .. tostring(v))
+--print(formatting .. tostring(v))
 		elseif lua_type == "function" then
-			print(formatting .. "function")
+--print(formatting .. "function")
 		elseif lua_type == "userdata" then
-			print(formatting .. "userdata")
+--print(formatting .. "userdata")
 		else
-			print(formatting .. v)
+--print(formatting .. v)
 		end
 	end
 end
@@ -369,7 +369,7 @@ function Tick(deltaTime)
 				local feedElements = {}
 
 				for _, element in ipairs(feedLines) do
-					print(element.name)
+--print(element.name)
 					if (element.name == "KilledText") then
 						if (lines[i].killed ~= "") then
 							local textBox = element:FindDescendantByName("Text Box")
@@ -474,7 +474,7 @@ function Tick(deltaTime)
 							local textBox = element:FindDescendantByName("Text Box")
 
 							local killerHP = math.tointeger(lines[i].killerHP)
-							print("Killer HP %: " .. tostring(killerHP))
+--print("Killer HP %: " .. tostring(killerHP))
 							hpBar.height = math.floor((killerHP / 100) * ICON_SIZE) - 2
 
 							if (killerHP > 75) then

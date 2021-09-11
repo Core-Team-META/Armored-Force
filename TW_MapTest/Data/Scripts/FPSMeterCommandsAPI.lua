@@ -14,7 +14,7 @@ commands = {
             Chat.BroadcastMessage(string.format("[ADMIN] %s:%s", player.name, trimMessage), {players = players})
         end,
         OnCommandReceivedClient = function (player, message, data, panel)
-            print(data)
+--print(data)
             local split = {CoreString.Split(message)}
             if split[2] == "on" then
                 panel.visibility = Visibility.FORCE_ON

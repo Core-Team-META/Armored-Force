@@ -69,19 +69,19 @@ function ChangeEquippedTank(player, id)
 		for _, x in pairs(player.serverUserData.techTreeProgress) do
 			if tonumber(x.id) == tonumber(id) then
 				selectedEntry = x
-				print("entry found")
+--print("entry found")
 				break
 			end
 		end
 		
 		if (not selectedEntry) or (not selectedEntry.purchased) then
-			print("equip failed")
+--print("equip failed")
 			return
 		end
 	end
 	
 
-	print("equip passed")
+--print("equip passed")
 	
 	player:SetResource(TankAPI.EquipResource, tonumber(id))
 	RemovePlayerEquipment(player)

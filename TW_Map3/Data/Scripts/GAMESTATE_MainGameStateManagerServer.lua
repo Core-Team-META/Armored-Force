@@ -109,7 +109,7 @@ function OnChangeState(previousState)
 		Game.TransferAllPlayersToGame(garageLink)		
 	end
 	
-	print("Transitioning to state: " .. currentState)
+--print("Transitioning to state: " .. currentState)
 	
 	Events.Broadcast("NEW_STATE", currentState)
 

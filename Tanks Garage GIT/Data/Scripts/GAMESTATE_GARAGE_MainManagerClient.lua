@@ -46,7 +46,7 @@ end
 function Tick()
 
 	if isInGarage and not UI.IsCursorVisible() then
-		print("Show cursor")
+--print("Show cursor")
 		UI.SetCursorVisible(true)
 		UI.SetCanCursorInteractWithUI(true)
 	elseif not isInGarage and UI.IsCursorVisible() then

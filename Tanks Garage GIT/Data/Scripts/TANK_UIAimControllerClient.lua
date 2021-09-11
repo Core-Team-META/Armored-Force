@@ -171,15 +171,15 @@ function FindTank()
 	
 	for _, e in pairs(localPlayer.clientUserData.techTreeProgress) do
 		if tonumber(e.id) == tonumber(tankID) then
-			print(e.engineProgress)
+--print(e.engineProgress)
 			if tonumber(e.engineProgress) == 2 then
 				rotationSpeed = tankData.turretUpgraded
 				verticalSpeed = tankData.elevationUpgraded
-				print("aiming system using upgraded data")
+--print("aiming system using upgraded data")
 			else 
 				rotationSpeed = tankData.turret
 				verticalSpeed = tankData.elevation
-				print("aiming system using default data")
+--print("aiming system using default data")
 			end		
 			break
 		end

@@ -6,7 +6,7 @@ function OnDiedInBattle(player, damage)
 	
 		damage.sourcePlayer.kills = damage.sourcePlayer.kills + 1
 		
-		print(damage.sourcePlayer.name .. " got " .. tostring(damage.sourcePlayer.kills) .. " kills.")
+--print(damage.sourcePlayer.name .. " got " .. tostring(damage.sourcePlayer.kills) .. " kills.")
 		
 	end
 	

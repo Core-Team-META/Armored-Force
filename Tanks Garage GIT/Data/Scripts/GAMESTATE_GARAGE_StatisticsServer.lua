@@ -109,16 +109,16 @@ function StateSTART(manager, propertyName)
 		return
 	end
 
-	print("Statistics recieved state: " .. mainGameStateManager:GetCustomProperty("GameState"))
+--print("Statistics recieved state: " .. mainGameStateManager:GetCustomProperty("GameState"))
 
 	if mainGameStateManager:GetCustomProperty("GameState") == "VICTORY_STATE" then
-		print("Waiting for winner...")
+--print("Waiting for winner...")
 
 		while winner < 0 do
 			Task.Wait()
 		end
 
-		print("got winner...")
+--print("got winner...")
 
 		SaveStatistics()
 	end
@@ -238,7 +238,7 @@ function OnDamagedRecord(player, damage)
 			local targetPlayerTier = UTIL_API.GetTierFromId(tankId)
 
 			local bonus = 1 + ((targetPlayerTier - sourcePlayerTier) / TIER_BONUS_DIVIDER)
-			print("BONUS: " .. tostring(bonus))
+--print("BONUS: " .. tostring(bonus))
 			xpRewarded = xpRewarded * bonus
 
 			if (UTIL_API.UsingPremiumTank(tonumber(sourceTankId))) then
@@ -313,20 +313,20 @@ function OnSpotRecord(player, spottingAmount)
 end
 
 function ResourceCheck(player)
-	print(player.name .. " resource check:")
-	print("Kills: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_KILLS)))
-	print("Most Kills in a Match: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED)))
-	print("Deaths: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_DEATHS)))
-	print("Assists: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_ASSISTS)))
-	print("Total Damage: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES)))
-	print("Average Damage: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.AVERAGE_DAMAGE)))
-	print("Wins: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_WINS)))
-	print("Losses: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_LOSSES)))
-	print("Total Games: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.GAMES_PLAYED_RES)))
-	print("TankDamage Resource: " .. tostring(player:GetResource("TankDamage")))
-	print("Rank: " .. tostring(player:GetResource(CONSTANTS_API.RANK_NAME)))
-	print("XP: " .. tostring(player:GetResource(CONSTANTS_API.XP)) .. " / " .. tostring(UTIL_API.GetXPToNextRank(player)))
-	print("===============================================")
+--print(player.name .. " resource check:")
+--print("Kills: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_KILLS)))
+--print("Most Kills in a Match: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED)))
+--print("Deaths: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_DEATHS)))
+--print("Assists: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_ASSISTS)))
+--print("Total Damage: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES)))
+--print("Average Damage: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.AVERAGE_DAMAGE)))
+--print("Wins: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_WINS)))
+--print("Losses: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_LOSSES)))
+--print("Total Games: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.GAMES_PLAYED_RES)))
+--print("TankDamage Resource: " .. tostring(player:GetResource("TankDamage")))
+--print("Rank: " .. tostring(player:GetResource(CONSTANTS_API.RANK_NAME)))
+--print("XP: " .. tostring(player:GetResource(CONSTANTS_API.XP)) .. " / " .. tostring(UTIL_API.GetXPToNextRank(player)))
+--print("===============================================")
 end
 
 function OnResourceChanged(player, resource, value)

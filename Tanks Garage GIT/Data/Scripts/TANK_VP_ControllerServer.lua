@@ -155,11 +155,11 @@ end
 function AssignDriver(newDriver)
 
 	isAI = newDriver:IsA("AIPlayer")
-	print("assigning a driver.  AI?", isAI)
-	print("new driver: " .. tostring(newDriver))
+--print("assigning a driver.  AI?", isAI)
+--print("new driver: " .. tostring(newDriver))
 
 	if (not isAI) and (Object.IsValid(driver) or not Object.IsValid(newDriver) or not newDriver:IsA("Player")) then
-		print("returning")
+--print("returning")
 		return
 	end
 	
@@ -561,7 +561,7 @@ function ProjectileImpacted(expiredProjectile, other)
 	if not other:IsA("Vehicle") or expiredProjectile.serverUserData.hitOnce or (other.driver == driver) or (other.serverUserData.owner == driver) then
 		return
 	end
-	print("damage stuff")
+--print("damage stuff")
 	
 	expiredProjectile.serverUserData.hitOnce = true
 	
@@ -606,7 +606,7 @@ function OnArmorHit(trigger, other)
 		end
 		
 		if not enemyPlayer or other.serverUserData.hitOnce then -- if projectile is marked or does not have owner yet
-			print("enemy player could not be identified")
+--print("enemy player could not be identified")
 			return
 		end
 		
@@ -618,11 +618,11 @@ function OnArmorHit(trigger, other)
 		other.lifeSpan = 0.1
 				
 		if not enemyPlayer or not enemyPlayer.serverUserData.currentTankData or enemyPlayer.team == driver.team then
-			print("enemy not valid")
-			print(enemyPlayer)
-			print(enemyPlayer.serverUserData)
-			print(enemyPlayer.serverUserData.currentTankData)
-			print(enemyPlayer.team, driver.team)
+--print("enemy not valid")
+--print(enemyPlayer)
+--print(enemyPlayer.serverUserData)
+--print(enemyPlayer.serverUserData.currentTankData)
+--print(enemyPlayer.team, driver.team)
 			return
 		end
 		
@@ -650,7 +650,7 @@ function OnArmorHit(trigger, other)
 			
 			ApplyDamage(enemyPlayer, driver, attackData, damageDealt.amount)
 			
-			print(enemyPlayer.name .. " dealing " .. tostring(totalDamage) .. "to" .. driver.name)
+--print(enemyPlayer.name .. " dealing " .. tostring(totalDamage) .. "to" .. driver.name)
 		end
 		
         local dmgPercent = totalDamage / potentialDamage
@@ -1152,7 +1152,7 @@ function CheckStuckTank()
 	local currentVector = chassis:GetWorldRotation() * Vector3.FORWARD
 	local idealVector = Rotation.New(0, 0, chassis:GetWorldRotation().z) * Vector3.FORWARD
 	
-	print("rotation difference: " .. tostring(GetAngleDifference(currentVector, idealVector)))
+--print("rotation difference: " .. tostring(GetAngleDifference(currentVector, idealVector)))
 		
 	if GetAngleDifference(currentVector, idealVector) < MAX_NOT_FLIPPED_ANGLE then -- rollback mode
 		local rollbackPosition = GetRollbackPosition()

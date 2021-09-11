@@ -31,7 +31,7 @@ commands = {
         end,
         OnCommandCalledServer = function (player, message)
         	local playerName = CoreString.Trim(message, message)
-        	print(playerName)
+--print(playerName)
         	for _, p in ipairs(Game.GetPlayers()) do
         		if string.find(p.name, playerName) then
         			local vehicle = player.occupiedVehicle
