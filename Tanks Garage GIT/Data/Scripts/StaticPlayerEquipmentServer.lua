@@ -121,7 +121,7 @@ function GetEquippedTankTemplate(player, id)
 	elseif(equippedTankId == 18) then
 		return EQUIPMENT_TEMPLATE20
 	else
-		print("Returning default")
+--print("Returning default")
 		return EQUIPMENT_TEMPLATE6
 	end
 end

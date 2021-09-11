@@ -62,7 +62,7 @@ function UnpackChallengeInfo(player)
 			
 			--[[
 			local showTime = os.date("*t", challengeDueDate)
-			print("Setting new Date: " .. tostring(showTime.month) 
+--print("Setting new Date: " .. tostring(showTime.month) 
 			.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour))
 			]]--
 		end

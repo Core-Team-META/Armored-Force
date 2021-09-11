@@ -81,7 +81,7 @@ function AIPlayer:ApplyDamage(damageTable)
         end)
     end
   end
-  print("Took damage!  New hitPoints:", self.hitPoints)
+--print("Took damage!  New hitPoints:", self.hitPoints)
 end
 
 
@@ -126,7 +126,7 @@ function AIPlayer:CheckIfStuck()
   --print(self.currentMovementTarget, pos)
   if (self.currentMovementTarget - pos).size > 100
       and (self.lastPos - pos).size < 100 then
-    print("WRIGGLE TIME")
+--print("WRIGGLE TIME")
     self.wriggleStartTime = time()
     self.wriggleAngle = math.random() * 2.0 - 1.0
   end
@@ -356,7 +356,7 @@ function AIPlayer:PathRay(targetPos, targetDist, step)
       if not pcall(function()
         other_name = hr.other.name
       end) then
-        print("blocked an error!")
+--print("blocked an error!")
       end
 
       if other_name == "Terrain_Main" then
@@ -473,7 +473,7 @@ function AIPlayer:GetWorldPosition()
   if Object.IsValid(myTank) then return myTank:GetWorldPosition() end
 
   warn("Tried to get the position of a destroyed player!")
-  print(CoreDebug.GetStackTrace())
+--print(CoreDebug.GetStackTrace())
   return Vector3.ZERO
 end
 

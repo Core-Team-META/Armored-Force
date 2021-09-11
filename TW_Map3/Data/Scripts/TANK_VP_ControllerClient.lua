@@ -78,7 +78,7 @@ function CheckTankReady()
 	shotSFX = tankBodyClient:FindDescendantByName("ShotSFX")
 	flashVFX = tankBodyClient:FindDescendantByName("FlashVFX")
 		
-	print(tankBodyServer.driver)
+--print(tankBodyServer.driver)
 
 	if driver == Game.GetLocalPlayer() then
 		driver:SetOverrideCamera(defaultCamera)

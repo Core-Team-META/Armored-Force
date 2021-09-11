@@ -9,7 +9,7 @@ local TutorialCompletePopup = script:GetCustomProperty("TutorialCompletePopup")
 
 function OnOverlap(trigger, other)
 	if(other.driver) then
-		print(other.driver:GetResource(API_Tutorial.GetTutorialResource()))
+--print(other.driver:GetResource(API_Tutorial.GetTutorialResource()))
 		if(other.driver:GetResource(API_Tutorial.GetTutorialResource()) == TutorialPhase and other.driver.clientUserData.tutorial1 == Step) then
 			EnteredWaypointSFX:Play()
 			other.driver.clientUserData.tutorial1 = Step + 1

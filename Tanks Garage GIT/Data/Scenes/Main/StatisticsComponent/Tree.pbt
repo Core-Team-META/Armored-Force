@@ -3753,10 +3753,10 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 25
-    Height: 25
-    UIX: 428.696503
-    UIY: 16.0428162
+    Width: 33
+    Height: 33
+    UIX: 431.380798
+    UIY: 16.0507202
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3764,7 +3764,7 @@ Objects {
     }
     Image {
       Brush {
-        Id: 16622528590838133631
+        Id: 7053705669844552709
       }
       Color {
         R: 0.953125
@@ -4445,7 +4445,7 @@ Objects {
     }
     Image {
       Brush {
-        Id: 16622528590838133631
+        Id: 7053705669844552709
       }
       Color {
         R: 1
@@ -4825,7 +4825,7 @@ Objects {
     }
     Image {
       Brush {
-        Id: 16622528590838133631
+        Id: 7053705669844552709
       }
       Color {
         R: 1
@@ -5205,7 +5205,7 @@ Objects {
     }
     Image {
       Brush {
-        Id: 16622528590838133631
+        Id: 7053705669844552709
       }
       Color {
         R: 1
@@ -5585,7 +5585,7 @@ Objects {
     }
     Image {
       Brush {
-        Id: 16622528590838133631
+        Id: 7053705669844552709
       }
       Color {
         R: 1
@@ -5964,7 +5964,7 @@ Objects {
     }
     Image {
       Brush {
-        Id: 16622528590838133631
+        Id: 7053705669844552709
       }
       Color {
         R: 1
@@ -6461,7 +6461,7 @@ Objects {
   Control {
     Width: 150
     Height: 40
-    UIX: 68.0879517
+    UIX: 77.7313843
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -6539,10 +6539,10 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 25
-    Height: 25
-    UIX: 352.726837
-    UIY: 16.5089474
+    Width: 33
+    Height: 33
+    UIX: 354.413849
+    UIY: 15.1815224
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -6550,7 +6550,7 @@ Objects {
     }
     Image {
       Brush {
-        Id: 16622528590838133631
+        Id: 7053705669844552709
       }
       Color {
         R: 0.953125

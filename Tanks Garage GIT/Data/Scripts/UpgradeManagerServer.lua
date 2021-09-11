@@ -12,7 +12,7 @@ function PurchaseTank(player, id, prereqs)
 	for k, tankData in ipairs(TANK_LIST) do
 		local tankId = tankData.id
 		if (tonumber(tankId) == tonumber(id)) then
-			print("DEBUG: Found match")
+--print("DEBUG: Found match")
 			local purchaseCost = tankData.purchaseCost
 			--local researchCost = v:GetCustomProperty("ResearchCost")
 			--local tankRPString = UTIL_API.GetTankRPString(tonumber(id))
@@ -55,7 +55,7 @@ function PurchaseTank(player, id, prereqs)
 			
 			for i, tank in ipairs(player.serverUserData.techTreeProgress) do			
 				if(tonumber(tank.id) == tonumber(id)) then
-					print("DEBUG: Owned tank found")
+--print("DEBUG: Owned tank found")
 					tank.purchased = true
 					tank.researched = true
 			
@@ -84,7 +84,7 @@ function PurchaseTank(player, id, prereqs)
 
 					-- If the tank is a premium tank, set all upgrades to owned
 					if(purchaseCurrencyName == "Gold") then
-						print("Premium tank. All upgrades purchased.")
+--print("Premium tank. All upgrades purchased.")
 						tank.weaponProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
 						tank.armorProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
 						tank.engineProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
@@ -107,7 +107,7 @@ function ResearchTank(player, id, prereqId, useFreeRP)
 	local tank = {}
 	for k,v in ipairs(TANK_LIST) do
 		if(v:GetCustomProperty("ID") == id) then
-			print("DEBUG: Found match")
+--print("DEBUG: Found match")
 			local cost = v:GetCustomProperty("ResearchCost")
 			local rp = 0
 			if(useFreeRP) then
@@ -117,13 +117,13 @@ function ResearchTank(player, id, prereqId, useFreeRP)
 			end
 			
 			if(rp < cost) then
-				print("DEBUG: Not enough RP")
+--print("DEBUG: Not enough RP")
 				return BroadcastEventResultCode.FAILURE			
 			end
 			
 			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
 				if(tank.id == id) then
-					print("DEBUG: Owned tank found")
+--print("DEBUG: Owned tank found")
 					tank.researched = true
 					if(useFreeRP) then
 						player:RemoveResource("Free RP", cost)
@@ -145,7 +145,7 @@ function PurchaseWeapon(player, id)
 	local tank = {}
 	for k, tankData in ipairs(TANK_LIST) do
 		if(tankData.id == id) then
-			print("DEBUG: Found match")
+--print("DEBUG: Found match")
 			local cost = tankData.weaponPurchaseCost
 			local researchCost = tankData.weaponResearchCost
 			local silver = player:GetResource(CURRENCY.SILVER.ResourceName)
@@ -161,7 +161,7 @@ function PurchaseWeapon(player, id)
 			
 			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
 				if(tank.id == id) then
-					print("DEBUG: Owned tank found")					
+--print("DEBUG: Owned tank found")					
 					player:RemoveResource(CURRENCY.SILVER.ResourceName, cost)
 					
 					if(tankRP < researchCost) then
@@ -194,7 +194,7 @@ function PurchaseArmor(player, id)
 	local tank = {}
 	for k, tankData in ipairs(TANK_LIST) do
 		if(tankData.id == id) then
-			print("DEBUG: Found match")
+--print("DEBUG: Found match")
 			local cost = tankData.armorPurchaseCost
 			local researchCost = tankData.armorResearchCost
 			local silver = player:GetResource(CURRENCY.SILVER.ResourceName)
@@ -210,7 +210,7 @@ function PurchaseArmor(player, id)
 			
 			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
 				if(tank.id == id) then
-					print("DEBUG: Owned tank found")					
+--print("DEBUG: Owned tank found")					
 					player:RemoveResource(CURRENCY.SILVER.ResourceName, cost)
 					
 					if(tankRP < researchCost) then
@@ -243,7 +243,7 @@ function PurchaseEngine(player, id)
 	local tank = {}
 	for k, tankData in ipairs(TANK_LIST) do
 		if(tankData.id == id) then
-			print("DEBUG: Found match")
+--print("DEBUG: Found match")
 			local cost = tankData.mobilityPurchaseCost
 			local researchCost = tankData.mobilityResearchCost
 			local silver = player:GetResource(CURRENCY.SILVER.ResourceName)
@@ -259,7 +259,7 @@ function PurchaseEngine(player, id)
 			
 			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
 				if(tank.id == id) then
-					print("DEBUG: Owned tank found")					
+--print("DEBUG: Owned tank found")					
 					player:RemoveResource(CURRENCY.SILVER.ResourceName, cost)
 					
 					if(tankRP < researchCost) then

@@ -44,10 +44,10 @@ end
 
 function ToggleAbility(player, abilityToToggle, toggle)
 	if player:IsA("AIPlayer") then
-		print("-------------------")
-		print("Somehow an AI tried to toggle?")
-		print(CoreDebug.GetStackTrace())
-		print("-------------------")
+--print("-------------------")
+--print("Somehow an AI tried to toggle?")
+--print(CoreDebug.GetStackTrace())
+--print("-------------------")
 		return
 	end
 	if abilityToToggle == "TRACK" then
@@ -91,14 +91,14 @@ function OnJoin(player)
 	local turretCount = player:GetResource(CONSTANTS_API.CONSUMABLES.REPAIR)
 	
 	--[[
-	print("CONSUMABLE CHECKS")
-	print(autoTreads)
-	print(treadCount)
-	print(autoExtinguisher)
-	print(extinguisherCount)
-	print(autoTurret)
-	print(turretCount)
-	print("=================")
+--print("CONSUMABLE CHECKS")
+--print(autoTreads)
+--print(treadCount)
+--print(autoExtinguisher)
+--print(extinguisherCount)
+--print(autoTurret)
+--print(turretCount)
+--print("=================")
 	]]
 	
 	if autoTreads == 1 and treadCount < 2 and currentSilver >= consumableCost then

@@ -12,10 +12,6 @@ local DAMAGER_ROWS = script:GetCustomProperty("DamagerRows"):WaitForObject()
 
 local DAMAGER_ROW_TEMPLATE = script:GetCustomProperty("METADamagerRowTemplate")
 
-while not _G.utils do
-    Task.Wait()
-end
-
 function GetDistance(playerFrom, playerTo)
     return (playerTo:GetWorldPosition() - playerFrom:GetWorldPosition()).size
 end
@@ -91,11 +87,10 @@ LOCAL_PLAYER.clientUserData.KilledBy = {}
 local killedByTask = nil
 function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCode)
     -- ignore anything not releated to local player
-    if (killedPlayer ~= LOCAL_PLAYER) then
+
+    if not killerPlayer or (killedPlayer ~= LOCAL_PLAYER) then
         return
     end
-
-    warn(tostring(killerPlayer) ..  " Killed By")
 
     -- Grab player titles
     local playerTitle = PlayerTitles.GetPlayerTitle(killerPlayer)
@@ -289,22 +284,18 @@ function OnDamaged(sourcePlayer, player, _, _, damageAmount)
     end
 end
 
-function OnAiKill(killId, deadId)
-
-    local killer = nil
-    local killed = nil
+function OnAiKill(killerId, killedId)
+    if not _G.lookup then return end
+    local killer = killerId
+    local killed = killedId
 	
-	for _, driver in pairs(_G.utils.GetTankDrivers()) do
-		if driver.id == killId then
+	for _, driver in pairs(_G.lookup.tanks) do
+		if driver.id == killer and not Object.IsValid(killer) then
 			killer = driver
 		end
-		if driver.id == deadId then
+		if driver.id == killed and not Object.IsValid(killed) then
 			killed = driver
 		end
-	end
-
-    if not killed and Object.IsValid(deadId) and deadId:IsA("Player") then
-		killed = deadId
 	end
 
 	if not killed or not killer then return end

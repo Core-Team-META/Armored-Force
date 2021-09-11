@@ -14,12 +14,18 @@ local ConfirmCloseButton = script:GetCustomProperty("CONFIRM_WINDOW_CLOSE_BUTTON
 local ENTRY_TEMPLATE = script:GetCustomProperty("Scoreboard_Entry_Template")
 local ENEMY_ENTRY_TEMPLATE = script:GetCustomProperty("Scoreboard_Entry_Enemy_Template")
 local Constants_API = require(script:GetCustomProperty("Constants_API"))
+
+
+local UPDATE_DELAY = 0.1
+
 local scoreCards = {}
 local lastAiCount = 0
-local lastUpdateTime = 0
+local lastUpdateTime = UPDATE_DELAY
 
 local isActive = false
 local forceMouseActive = false
+
+
 
 while not _G.PLAYER_RANKS do
     Task.Wait()
@@ -98,7 +104,7 @@ local function SetPanelTeam(player, count)
     end
 end
 
-local function SetPanel(player, count)
+local function SetPanel(player, count, currentState)
     SpawnPanel(player)
     SetPanelTeam(player, count)
     scoreCards[player.id].kills.text = tostring(player.kills or 0)
@@ -116,7 +122,9 @@ local function SetPanel(player, count)
     if player.isDead then
         scoreCards[player.id].health:SetColor(Color.RED)
     else
-        scoreCards[player.id].health:SetColor(Color.GREEN)
+        if (currentState == "MATCH_STATE" and currentState == "LOBBY_STATE") then
+            scoreCards[player.id].health:SetColor(Color.GREEN)
+        end
     end
 end
 
@@ -142,10 +150,12 @@ function OnStateChanged(manager, propertyName)
 end
 
 function Tick(dt) --
+    local currentState = GameStateManager:GetCustomProperty("GameState")
     if not isActive then
         return
     end
-    if lastUpdateTime < 1 then
+
+    if lastUpdateTime < UPDATE_DELAY then
         lastUpdateTime = lastUpdateTime + dt
         return
     else
@@ -158,7 +168,7 @@ function Tick(dt) --
     }
 
     for _, player in ipairs(Game.GetPlayers()) do
-        SetPanel(player, count)
+        SetPanel(player, count, currentState)
     end
 
     if _G.utils then

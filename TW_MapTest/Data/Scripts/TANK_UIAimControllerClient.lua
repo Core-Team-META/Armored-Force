@@ -243,7 +243,7 @@ function JordanApproach()
 	
 	if smoothAimMode then
 		activeVerticalSpeed = (math.abs(targetRotation.z - aimAssistantOffset:GetWorldRotation().z) / rotationSpeed)
-		print(activeVerticalSpeed)
+--print(activeVerticalSpeed)
 	else
 		activeVerticalSpeed = math.abs(targetRotation.y - currentRotation.y) / verticalSpeed
 	end

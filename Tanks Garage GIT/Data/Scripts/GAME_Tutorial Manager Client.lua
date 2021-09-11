@@ -35,8 +35,8 @@ function GotoShootingRange(button)
 end
 
 function AdvanceTutorial(phase, giveRewards)
-	print("Advancing tutorial to phase: " .. tostring(phase))
-	print("Tutorial currently: " .. tostring(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource())))
+--print("Advancing tutorial to phase: " .. tostring(phase))
+--print("Tutorial currently: " .. tostring(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource())))
 	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) < phase) then
 		local panel = World.SpawnAsset(TutorialCompletePopup, {parent = script.parent:FindChildByName("Tutorial UI")})
 		panel.lifeSpan = 3

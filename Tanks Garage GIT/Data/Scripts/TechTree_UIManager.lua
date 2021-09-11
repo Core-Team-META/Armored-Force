@@ -559,7 +559,7 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
     end
 
     local silverCost = tonumber(tankData.purchaseCost)
-    print('Silver Cost to purchase: ' .. tostring(silverCost))
+--print('Silver Cost to purchase: ' .. tostring(silverCost))
     CONFIRM_TANK_UPGRADE:FindDescendantByName('PRICE_3').text = tostring(silverCost)
     CONFIRM_TANK_UPGRADE:FindDescendantByName('ITEMNAME_3').text = tankData.purchaseCurrencyName
     local playerCurrency = 0
@@ -1577,7 +1577,7 @@ function HoverTank(button)
 end
 
 function PopulateHoverTankStats(tankData)
-    print(TankApi.GetHighestDamage())
+--print(TankApi.GetHighestDamage())
     local entry = {}
     local progress = {}
     for i, tank in ipairs(TANK_LIST) do
@@ -1607,9 +1607,9 @@ function PopulateHoverTankStats(tankData)
         local damage = entry.damageUpgraded
         local reload = entry.reloadUpgraded
         local turret = entry.turretUpgraded
-        print(damage)
-        print(reload)
-        print(turret)
+--print(damage)
+--print(reload)
+--print(turret)
         VIEWED_TANK_STATS:FindDescendantByName('BAR_4').progress = tonumber(damage) / TankApi.GetHighestDamage()
         VIEWED_TANK_STATS:FindDescendantByName('BAR_5').progress = 1 - (tonumber(reload) / TankApi.GetHighestReload())
         VIEWED_TANK_STATS:FindDescendantByName('BAR_6').progress = tonumber(turret) / TankApi.GetHighestTurretSpeed()
@@ -1644,10 +1644,10 @@ function PopulateHoverTankStats(tankData)
     end
 
     if tankData.purchasedTank then
-        print('OWN TANK')
+--print('OWN TANK')
         VIEWED_TANK_STATS:FindDescendantByName('BUY_PRICE').visibility = Visibility.FORCE_OFF
     else
-        print('DO NOT OWN TANK')
+--print('DO NOT OWN TANK')
         VIEWED_TANK_STATS:FindDescendantByName('TITLE_SILVER').text = tostring(tankData.purchaseCost)
         local purchaseCurrency = entry.purchaseCurrencyName
         VIEWED_TANK_STATS:FindDescendantByName('ICON_SILVER'):SetImage(UTIL_API.GetCurrencyIcon(purchaseCurrency))
@@ -1882,7 +1882,7 @@ function PopulateEquippedTankStats(entry)
         end
     end
     local id = entry.id
-    print('ENTRY ID ' .. tostring(id))
+--print('ENTRY ID ' .. tostring(id))
     -- Set base versions
     STATS_TANK_CONTAINER:FindDescendantByName('EQUIPPED_TANK').text = entry.name
     STATS_TANK_CONTAINER:FindDescendantByName('EQUIPPED_EXPERIENCE_EQUIPPED_TANK_PARTS').text =
@@ -2158,7 +2158,7 @@ function OnServerDataUpdated(player, string)
 
         -- Populate equipped tank panel
         local equippedTankId = LOCAL_PLAYER:GetResource(Constants_API.GetEquippedTankResource())
-        print('Currently equipped with tank: ' .. tostring(equippedTankId))
+--print('Currently equipped with tank: ' .. tostring(equippedTankId))
 
         for i, entry in ipairs(TANK_LIST) do
             local id = entry.id
@@ -2172,7 +2172,7 @@ end
 function OnResourceChanged(player, resource, value)
     if resource == Constants_API.GetEquippedTankResource() then
         local equippedTankId = value
-        print('Currently equipped with tank: ' .. tostring(equippedTankId))
+--print('Currently equipped with tank: ' .. tostring(equippedTankId))
 
         for i, entry in ipairs(TANK_LIST) do
             local id = entry.id
@@ -2190,7 +2190,7 @@ function TankPurchaseSuccessful()
     BUY_TANK_CONTAINER.visibility = Visibility.FORCE_OFF
     for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
         if tonumber(tank.id) == tonumber(tankDetails.id) then
-            print('Updated local tank data.')
+--print('Updated local tank data.')
             tank.purchased = true
             tank.researched = true
         end
