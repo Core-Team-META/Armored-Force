@@ -11891,7 +11891,7 @@ Objects {
   Control {
     Width: 335
     Height: 540
-    UIX: 335
+    UIX: 60
     UIY: 83
     RenderTransformPivot {
       Anchor {
