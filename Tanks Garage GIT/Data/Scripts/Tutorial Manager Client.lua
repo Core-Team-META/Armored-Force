@@ -28,6 +28,7 @@ local Tutorial_TutorialResetPanel = script:GetCustomProperty("Tutorial_TutorialR
 local EnemyTargetPracticeAI = script:GetCustomProperty("EnemyTargetPracticeAI"):WaitForObject()
 
 local inShootingRange = false
+local inGarage = true
 
 -- Local properties
 local LOCAL_PLAYER = Game.GetLocalPlayer()
@@ -96,10 +97,12 @@ function UnhoverSound()
 end
 
 function EnableComponent(obj)
+	inShootingRange = false
+	inGarage = false
 	if(obj == "SHOOTING_RANGE") then
 		inShootingRange = true
-	else
-		inShootingRange = false
+	elseif obj == "DEFAULT_MENU" then
+		inGarage = true
 	end
 end
 
@@ -119,6 +122,9 @@ function ToggleTutorialState()
 	Tutorial_OptOutPanel.visibility = Visibility.FORCE_OFF
 	Tutorial_UpgradeTankSidePanel.visibility = Visibility.FORCE_OFF
 	Tutorial_TutorialResetPanel.visibility = Visibility.FORCE_OFF
+	Tutorial_UpgradeTankPanel.visibility = Visibility.FORCE_OFF
+
+	if not inGarage and not inShootingRange then return end
 
 	--warn("tutorial1")
 	--warn(tostring(LOCAL_PLAYER.clientUserData.tutorial1))	
@@ -134,7 +140,8 @@ function ToggleTutorialState()
 		Tutorial_UpgradeTankPanel.visibility = Visibility.FORCE_OFF
 	end
 	
-	if(tutorialProgress == API_Tutorial.TutorialPhase.Completed) then
+
+	if(tutorialProgress == API_Tutorial.TutorialPhase.Completed and inGarage) then
 		Tutorial_TutorialResetPanel.visibility = Visibility.FORCE_ON
 	end
 
