@@ -1096,14 +1096,30 @@ function PopulateTankUpgradeModal(type)
     UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('PRICE_SILVER').text = tostring(purchaseCost)
 
     local tankParts = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(id)))
-    if (tankParts < researchCost) then
+    local Uparts = LOCAL_PLAYER:GetResource("Free XP")
+    if (tankParts + Uparts< researchCost) then
         UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('PRICE_TANKPARTS_INVALID').visibility = Visibility.FORCE_ON
         UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('PRICE_TANKPARTS_VALID').visibility = Visibility.FORCE_OFF
+       
+        UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('PRICE_UNIVERSALPARTS_INVALID').visibility = Visibility.FORCE_ON
+        UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('PRICE_UNIVERSALPARTS_VALID').visibility = Visibility.FORCE_OFF
+    
     else
         UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('PRICE_TANKPARTS_INVALID').visibility = Visibility.FORCE_OFF
         UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('PRICE_TANKPARTS_VALID').visibility = Visibility.FORCE_ON
+        
+        UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('PRICE_UNIVERSALPARTS_INVALID').visibility = Visibility.FORCE_OFF
+        UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('PRICE_UNIVERSALPARTS_VALID').visibility = Visibility.FORCE_ON
+    
+        
     end
-    UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('PRICE_TANKPARTS').text = tostring(researchCost)
+    if (tankParts < researchCost) then 
+        UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('UNIVERSAL_PARTS').visibility = Visibility.FORCE_ON
+    else 
+        UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('UNIVERSAL_PARTS').visibility = Visibility.FORCE_OFF
+    end
+    UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('PRICE_TANKPARTS').text = tostring(math.min( researchCost,tankParts))
+    UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('PRICE_UNIVERSALPARTS').text = tostring(math.max( researchCost - tankParts,0))
 end
 
 function CloseUpgradeConfirmWindow()

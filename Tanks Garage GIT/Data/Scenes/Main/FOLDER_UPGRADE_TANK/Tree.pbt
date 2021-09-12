@@ -4259,7 +4259,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4353,7 +4353,7 @@ Objects {
 }
 Objects {
   Id: 15960975498515330951
-  Name: "PRICE_TANKPARTS_INVALID"
+  Name: "PRICE_UNIVERSALPARTS_INVALID"
   Transform {
     Location {
     }
