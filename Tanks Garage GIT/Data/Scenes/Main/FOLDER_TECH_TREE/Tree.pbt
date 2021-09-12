@@ -6392,7 +6392,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "You do not meet the Prerequisite to unlock this tank. Play the previous tanks to gather 10000 Tank Parts for the previous Tank to unlock this tank."
+      Label: "Unlock the previous tank(s) to be able to buy this tank."
       Color {
         R: 1
         G: 1
