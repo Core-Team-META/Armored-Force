@@ -54,7 +54,7 @@ function PurchaseTank(player, id, prereqs)
 			--if(totalRPToUse < researchCost) then warn("Not enough RP") return end					
 			
 			for i, tank in ipairs(player.serverUserData.techTreeProgress) do			
-				if(tonumber(tank.id) == tonumber(id)) then
+				if(tonumber(tank.id) == tonumber(id)) and not tank.purchased then
 --print("DEBUG: Owned tank found")
 					tank.purchased = true
 					tank.researched = true
