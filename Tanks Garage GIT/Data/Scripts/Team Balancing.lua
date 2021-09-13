@@ -5,7 +5,7 @@ local DEBUG_SAME_TEAM = script:GetCustomProperty("DebugSameTeam")
 local Constants_API = require(script:GetCustomProperty("Constants_API"))
 
 local TankAPI = Constants_API:WaitForConstant("Tanks")
-local tankData = TankAPI.GetTanks() 
+local tankData = TankAPI.GetTanks()
 
 local BASE_VALUE_PER_PLAYER = 1
 local WIN_RATE_MIN = 0.2
@@ -54,7 +54,7 @@ function ComputePlayerValue(player)
 
 	player.serverUserData.balanceValue = value
 
-print(
+	print(
 		"[Balance] Player " ..
 			player.name ..
 				", tankId = " ..
@@ -123,6 +123,10 @@ function DoRebalance(playerToIgnore)
 	local team2 = Game.GetPlayers({includeTeams = 2, ignorePlayers = playerToIgnore})
 
 	if #team1 + #team2 <= 1 then
+		local player = Game.GetPlayers()[1]
+		ComputePlayerValue(player)
+		teamBalance[player.team] = player.serverUserData.balanceValue
+		teamBalance[3 - player.team] = 0
 		return
 	end
 
@@ -195,7 +199,6 @@ function DoRebalance(playerToIgnore)
 	end
 
 	--
-	
 
 	-- Apply any team switching
 	ApplyTeamChanges(team1, team2)
@@ -245,7 +248,9 @@ function OnPlayerLeft(playerToIgnore)
 end
 
 function OnLobbyTimerChanged(object, string)
-	if string ~= "GameState" then return end
+	if string ~= "GameState" then
+		return
+	end
 	if GAME_STATE:GetCustomProperty(string) == "BALANCE_STATE" then
 		Events.BroadcastToAllPlayers("FadeScreen")
 		Task.Wait(1)
