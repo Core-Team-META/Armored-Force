@@ -86,7 +86,7 @@ Assets {
           Overrides {
             Name: "cs:Tanks"
             NetReference {
-              Key: "fa9ee29be1d64b50a639f83e782c272b"
+              Key: "9ed244980ee6453988436a9b9f546487"
               Type {
                 Value: "mc:enetreferencetype:sharedpersistence"
               }
@@ -95,7 +95,7 @@ Assets {
           Overrides {
             Name: "cs:Skins"
             NetReference {
-              Key: "f4abf4b9e13944fd955af3eaaeb43905"
+              Key: "4e77f911b25d4eb69c0e5004fe6bae88"
               Type {
                 Value: "mc:enetreferencetype:sharedpersistence"
               }
@@ -104,7 +104,7 @@ Assets {
           Overrides {
             Name: "cs:Achievements"
             NetReference {
-              Key: "0709e15d490a4304b5b0ec87b4c27170"
+              Key: "042efdb7f82f4e99bbe36f56ac3eeac8"
               Type {
                 Value: "mc:enetreferencetype:sharedpersistence"
               }
@@ -113,7 +113,7 @@ Assets {
           Overrides {
             Name: "cs:Leaderboards"
             NetReference {
-              Key: "0769d3926b484298a272db2e3fb6b331"
+              Key: "54bbf70f896141c8a394d19fffb4d392"
               Type {
                 Value: "mc:enetreferencetype:sharedpersistence"
               }

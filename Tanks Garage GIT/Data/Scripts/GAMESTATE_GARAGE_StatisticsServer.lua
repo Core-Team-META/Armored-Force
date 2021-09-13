@@ -2,11 +2,7 @@ local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionCo
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 local _Constants_API = require(script:GetCustomProperty("Constants_API"))
 
-while not _G.PLAYER_RANKS do
-	Task.Wait()
-end
-
-local RANK_API = _G.PLAYER_RANKS
+local RANK_API = _Constants_API:WaitForConstant("Ranks")
   
 local LEADERBOARDS = script:GetCustomProperty("Leaderboards"):WaitForObject()
 local MTD_LEADERBOARD = LEADERBOARDS:GetCustomProperty("MatchDestroyed")
@@ -81,6 +77,25 @@ function CalculateTotalXP(player)
 	return (baseXP + survivalBonus + damageBounus + spotBonus + (player.kills * killXPValue)) * modifier
 end
 ]]
+
+function AdvancePlayerLevel(player)
+
+	local levelXPRequirement = RANK_API.GetXPInLevel(player:GetResource(_Constants_API.XP_SYSTEM.LVL))
+	local currentXP = player:GetResource(_Constants_API.XP)
+	
+	if currentXP >= levelXPRequirement then
+		player:AddResource(_Constants_API.XP_SYSTEM.LVL, 1)
+		player:SetResource(_Constants_API.XP, currentXP - levelXPRequirement)
+		AdvancePlayerLevel(player)	
+	end
+
+end
+
+function CalculateNewLevelAndRank(player)
+	AdvancePlayerLevel(player)
+	
+end
+
 function CalculateTotalCurrency(player)
 	local baseCurrency = 0
 

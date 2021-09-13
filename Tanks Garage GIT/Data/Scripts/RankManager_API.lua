@@ -64,7 +64,7 @@ function API.GetRanks()
 end
 
 function API.GetPlayerRankData(player)
-    return 5--player.GetResource and GetRankDataByLevel(player:GetResource("Rank")) or 1
+    return player.GetResource and GetRankDataByLevel(player:GetResource("Rank")) or 1
 end
 
 -- Checks if there has been a change to player rank
