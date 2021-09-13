@@ -2,6 +2,11 @@ local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionCo
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 local _Constants_API = require(script:GetCustomProperty("Constants_API"))
 
+while not _G.PLAYER_RANKS do
+	Task.Wait()
+end
+
+local RANK_API = _G.PLAYER_RANKS
   
 local LEADERBOARDS = script:GetCustomProperty("Leaderboards"):WaitForObject()
 local MTD_LEADERBOARD = LEADERBOARDS:GetCustomProperty("MatchDestroyed")
@@ -354,10 +359,13 @@ function OnJoined(player)
 	
 	Task.Wait(1)
 	
-	for _, p in ipairs(Game.GetPlayers()) do
-		p:AddResource(CONSTANTS_API.XP, PLAYER_JOINED_XP_AMOUNT)
-	end
-	
+	player.serverUserData.MID_MATCH_DATA = {}
+	player.serverUserData.MID_MATCH_DATA.PARTICIPATION = 0
+	player.serverUserData.MID_MATCH_DATA.DAMAGE = 0
+	player.serverUserData.MID_MATCH_DATA.RESULT = 0
+
+	player.serverUserData.MID_MATCH_DATA.PARTICIPATION = #Game.GetPlayers() * PLAYER_JOINED_XP_AMOUNT
+	p:AddResource(CONSTANTS_API.XP, player.serverUserData.MID_MATCH_DATA.PARTICIPATION)	
 	--Task.Wait(20)
 	--ResourceCheck(player)
 end
