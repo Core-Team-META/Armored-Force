@@ -5,9 +5,9 @@ local consumableCost = {}
 local mapInRotation = "Map1"
 local forcedSelection = true
 
-consumableCost["TreadsRepair"] = 100
-consumableCost["Extinguisher"] = 100
-consumableCost["TurretRepair"] = 100
+consumableCost["TreadsRepair"] = 400
+consumableCost["Extinguisher"] = 400
+consumableCost["TurretRepair"] = 400
 
 function SendToMap(player, selectedMap)
 --print("Transferring " .. player.name .. " to " .. mapInRotation)
