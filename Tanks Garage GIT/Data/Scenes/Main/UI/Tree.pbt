@@ -57,13 +57,30 @@ Objects {
     Overrides {
       Name: "cs:TechTree_Contents"
       ObjectReference {
-        SelfId: 841534158063459245
       }
     }
     Overrides {
       Name: "cs:MetaAbilityProgressionConstants_API"
       AssetReference {
         Id: 15718075383189814537
+      }
+    }
+    Overrides {
+      Name: "cs:RANK_PRIMARY"
+      ObjectReference {
+        SelfId: 2523039621331456336
+      }
+    }
+    Overrides {
+      Name: "cs:RANK_SECONDARY"
+      ObjectReference {
+        SelfId: 3716595645937158360
+      }
+    }
+    Overrides {
+      Name: "cs:RANK_ICON"
+      ObjectReference {
+        SelfId: 17070274267426031654
       }
     }
   }
