@@ -187,26 +187,31 @@ function ClaimReward(player, challengeNumber)
 	if pass then
 		if player.serverUserData.CHALLENGE[challengeNumber].progress >= 0 then
 
+			local silver = 0
+			local freeRp = 0
+
 			if challengeNumber == 1 then
-				player:AddResource(CONSTANTS_API.SILVER, 2000)
-				player:AddResource(CONSTANTS_API.FREERP, 500)
+				silver = 2000
+				freeRp = 500
 			elseif challengeNumber == 2 then
-				player:AddResource(CONSTANTS_API.SILVER, 3000)
-				player:AddResource(CONSTANTS_API.FREERP, 750)
+				silver = 3000
+				freeRp = 750
 			elseif challengeNumber == 3 then
-				player:AddResource(CONSTANTS_API.SILVER, 3500)
-				player:AddResource(CONSTANTS_API.FREERP, 1500)
+				silver = 3000
+				freeRp = 750
 			elseif challengeNumber == 4 then
-				player:AddResource(CONSTANTS_API.SILVER, 4000)
-				player:AddResource(CONSTANTS_API.FREERP, 2000)
+				silver = 4000
+				freeRp = 2000
 			end
 
+			player:AddResource(CONSTANTS_API.SILVER, silver)
+			player:AddResource(CONSTANTS_API.FREERP, freeRp)
 			
 			player.serverUserData.CHALLENGE[challengeNumber].progress = -1
 			
 			RepackChallengeInfo(player)
 			AddInfoToSlot(player.id, player.serverUserData.CHALLENGES, player.serverUserData.LOGIN)
-			Events.BroadcastToPlayer(player, "SEND_POPUP", player, "CHALLENGE " .. tostring(challengeNumber) .. " COMPLETE", "You earned 2k Silver and 1k Universal Parts!")
+			Events.BroadcastToPlayer(player, "SEND_POPUP", player, "CHALLENGE " .. tostring(challengeNumber) .. " COMPLETE", "You earned " .. tostring(silver).. " Silver and ".. tostring(freeRp) .. " Parts!")
 		end
 	end	
 

@@ -55,7 +55,7 @@ Objects {
     }
     Overrides {
       Name: "cs:SurvivalCurrencyValue"
-      Int: 500
+      Int: 250
     }
   }
   Collidable_v2 {
