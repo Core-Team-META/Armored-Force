@@ -181,11 +181,11 @@ Assets {
           }
           Overrides {
             Name: "cs:reload"
-            Float: 3
+            Float: 4
           }
           Overrides {
             Name: "cs:reloadUpgraded"
-            Float: 2
+            Float: 3
           }
           Overrides {
             Name: "cs:turret"
@@ -245,7 +245,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damageUpgraded"
-            Int: 90
+            Int: 140
           }
           Overrides {
             Name: "cs:hitPointsUpgraded"
@@ -253,7 +253,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damage"
-            Int: 70
+            Int: 130
           }
           Overrides {
             Name: "cs:hitPoints"
@@ -5009,11 +5009,11 @@ Assets {
           }
           Overrides {
             Name: "cs:reload"
-            Float: 3
+            Float: 4
           }
           Overrides {
             Name: "cs:reloadUpgraded"
-            Float: 2
+            Float: 3
           }
           Overrides {
             Name: "cs:turret"
@@ -5073,7 +5073,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damageUpgraded"
-            Int: 80
+            Int: 135
           }
           Overrides {
             Name: "cs:hitPointsUpgraded"
@@ -5081,7 +5081,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damage"
-            Int: 65
+            Int: 125
           }
           Overrides {
             Name: "cs:hitPoints"
