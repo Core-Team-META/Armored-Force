@@ -40,7 +40,7 @@ function AdvanceTutorial(phase, giveRewards)
 	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) < phase) then
 		local panel = World.SpawnAsset(TutorialCompletePopup, {parent = script.parent:FindChildByName("Tutorial UI")})
 		panel.lifeSpan = 3
-		Events.BroadcastToServer("AdvanceTutorial",  API_Tutorial.TutorialPhase.MovedToShootingRange, giveRewards or true)
+		Events.BroadcastToServer("AdvanceTutorial",  phase, giveRewards or true)
 	end
 end
 
