@@ -50,6 +50,7 @@ local defualtValues = {
     [CONSTANTS_API.XP] = 0,
     [CONSTANTS_API.XP_SYSTEM.OLD_XP] = 0,
     [CONSTANTS_API.XP_SYSTEM.OLD_RANK] = 0,
+    [CONSTANTS_API.XP_SYSTEM.OLD_LVL] = 0,
     [CONSTANTS_API.XP_SYSTEM.LVL] = 0,
     [CONSTANTS_API.XP_SYSTEM.MATCH_DATA] = '',
     [CONSTANTS_API.TUTORIAL_PROGRESS] = 0
@@ -86,6 +87,7 @@ local Resources = {
     [CONSTANTS_API.XP] = 0,
     [CONSTANTS_API.XP_SYSTEM.OLD_XP] = 0,
     [CONSTANTS_API.XP_SYSTEM.OLD_RANK] = 0,
+    [CONSTANTS_API.XP_SYSTEM.OLD_LVL] = 0,
     [CONSTANTS_API.XP_SYSTEM.LVL] = 0,
     [CONSTANTS_API.TUTORIAL_PROGRESS] = 0
 }
@@ -218,10 +220,10 @@ function LoadAndSetDataFromSharedStorage(player)
     player.serverUserData.GOLD_FROM_BUNDLE[2] = tonumber(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE2])
     player.serverUserData.GOLD_FROM_BUNDLE[3] = tonumber(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE3])
     
-    player.serverUserData.OLD_XP = tonumber(playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_XP])
-    player.serverUserData.OLD_RANK = tonumber(playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_RANK])
-    player.serverUserData.OLD_LVL = tonumber(playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_LVL])
-    player.serverUserData.CURRENT_LVL = tonumber(playerSharedStorage[CONSTANTS_API.XP_SYSTEM.LVL])
+    --player.serverUserData.OLD_XP = tonumber(playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_XP])
+    --player.serverUserData.OLD_RANK = tonumber(playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_RANK])
+    --player.serverUserData.OLD_LVL = tonumber(playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_LVL])
+    --player.serverUserData.CURRENT_LVL = tonumber(playerSharedStorage[CONSTANTS_API.XP_SYSTEM.LVL])
    	player.serverUserData.MATCH_XP_DATA = playerSharedStorage[CONSTANTS_API.XP_SYSTEM.MATCH_DATA]
 
     Events.Broadcast('SET_DAILY_CHALLENGES', player)
@@ -253,10 +255,10 @@ function SavePlayerDataIntoSharedStorage(player)
     playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE2] = player.serverUserData.GOLD_FROM_BUNDLE[2]
     playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE3] = player.serverUserData.GOLD_FROM_BUNDLE[3]
     
-    playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_XP] = player.serverUserData.OLD_XP
-    playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_RANK] = player.serverUserData.OLD_RANK
-    playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_LVL] = player.serverUserData.OLD_LVL
-    playerSharedStorage[CONSTANTS_API.XP_SYSTEM.LVL] = player.serverUserData.CURRENT_LVL
+    --playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_XP] = player.serverUserData.OLD_XP
+    --playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_RANK] = player.serverUserData.OLD_RANK
+    --playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_LVL] = player.serverUserData.OLD_LVL
+    --playerSharedStorage[CONSTANTS_API.XP_SYSTEM.LVL] = player.serverUserData.CURRENT_LVL
    	playerSharedStorage[CONSTANTS_API.XP_SYSTEM.MATCH_DATA] = player.serverUserData.MATCH_XP_DATA
 
     Storage.SetSharedPlayerData(PLAYER_SHARED_STORAGE, player, playerSharedStorage)
