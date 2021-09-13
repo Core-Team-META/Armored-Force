@@ -363,6 +363,10 @@ Assets {
               Id: 17752883692918200346
             }
           }
+          Overrides {
+            Name: "cs:startWithTank"
+            Bool: true
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -433,7 +437,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -717,7 +721,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -1001,7 +1005,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -1285,7 +1289,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 50000
+            Int: 75000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -1573,7 +1577,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 50000
+            Int: 75000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -1861,7 +1865,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -2705,7 +2709,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 75000
+            Int: 150000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -2989,7 +2993,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 75000
+            Int: 150000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -3273,7 +3277,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 75000
+            Int: 150000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -3557,7 +3561,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 75000
+            Int: 150000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -3841,7 +3845,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 75000
+            Int: 150000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -4125,7 +4129,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 75000
+            Int: 150000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -4409,7 +4413,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 75000
+            Int: 150000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -4693,7 +4697,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 75000
+            Int: 150000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -5187,6 +5191,10 @@ Assets {
               Id: 12863436853868821545
             }
           }
+          Overrides {
+            Name: "cs:startWithTank"
+            Bool: true
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5257,7 +5265,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -5541,7 +5549,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -5825,7 +5833,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -6109,7 +6117,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -6393,7 +6401,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 50000
+            Int: 75000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -6681,7 +6689,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 50000
+            Int: 75000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -7249,7 +7257,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 75000
+            Int: 150000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -7533,7 +7541,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 75000
+            Int: 150000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -7817,7 +7825,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 75000
+            Int: 150000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -8101,7 +8109,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 75000
+            Int: 150000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -8385,7 +8393,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 75000
+            Int: 150000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -8669,7 +8677,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 75000
+            Int: 150000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -8953,7 +8961,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 75000
+            Int: 150000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
@@ -9237,7 +9245,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 75000
+            Int: 150000
           }
           Overrides {
             Name: "cs:weaponResearchCost"
