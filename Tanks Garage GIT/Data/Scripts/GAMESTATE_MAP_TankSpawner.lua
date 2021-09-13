@@ -226,7 +226,7 @@ function FindClearSpawnPoint(team)
     return position
 end
 
-local workingTanks = {t1 = {1, 18}, t2 = {2, 3, 4, 19}, t3 = {8, 7}}
+local workingTanks = {t1 = {1, 18}, t2 = {2, 3, 4, 19, 7}, t3 = {8}}
 
 function FillTeamsWithAI(teamSize, teamBalance)
     if teamSize == nil then
