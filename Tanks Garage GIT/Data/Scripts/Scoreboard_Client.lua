@@ -81,8 +81,8 @@ local function SpawnPanel(player)
         scoreCards[player.id].kills.text = tostring(player.kills or 0)
         if player.isDead then
             scoreCards[player.id].health:SetColor(Color.RED)
-        else
-            scoreCards[player.id].health:SetColor(Color.GREEN)
+        --else
+           -- scoreCards[player.id].health:SetColor(Color.GREEN)
         end
     end
 end
