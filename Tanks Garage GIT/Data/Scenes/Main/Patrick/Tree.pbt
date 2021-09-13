@@ -58,7 +58,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:MaxHP"
-      Int: 100
+      Int: 500
     }
     Overrides {
       Name: "cs:PacingDistance"
@@ -1294,7 +1294,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:MaxHP"
-      Int: 100
+      Int: 500
     }
     Overrides {
       Name: "cs:PacingDistance"
