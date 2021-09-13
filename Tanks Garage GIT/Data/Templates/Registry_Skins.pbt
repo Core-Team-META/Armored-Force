@@ -202,7 +202,7 @@ Assets {
       }
       Objects {
         Id: 2063773026372520282
-        Name: "Chrome"
+        Name: "White Paint"
         Transform {
           Location {
           }
@@ -218,7 +218,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:skinName"
-            String: "Chrome"
+            String: "White Paint"
           }
           Overrides {
             Name: "cs:useNewMaterial"
@@ -231,16 +231,16 @@ Assets {
           Overrides {
             Name: "cs:newColor"
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.750596046
+              G: 0.770000041
+              B: 0.60368
               A: 1
             }
           }
           Overrides {
             Name: "cs:newMaterial"
             AssetReference {
-              Id: 3180794530394243418
+              Id: 8748212014664122890
             }
           }
           Overrides {
@@ -250,8 +250,8 @@ Assets {
           Overrides {
             Name: "cs:previewImageLocation"
             Vector2 {
-              X: 4
-              Y: 5
+              X: 1
+              Y: 1
             }
           }
           Overrides {
@@ -279,7 +279,7 @@ Assets {
       }
       Objects {
         Id: 5708924011715844
-        Name: "Gold"
+        Name: "Red Paint"
         Transform {
           Location {
           }
@@ -295,7 +295,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:skinName"
-            String: "Gold"
+            String: "Red Paint"
           }
           Overrides {
             Name: "cs:useNewMaterial"
@@ -308,15 +308,14 @@ Assets {
           Overrides {
             Name: "cs:newColor"
             Color {
-              R: 0.73300004
-              G: 0.525316715
+              R: 0.477000028
               A: 1
             }
           }
           Overrides {
             Name: "cs:newMaterial"
             AssetReference {
-              Id: 3180794530394243418
+              Id: 8748212014664122890
             }
           }
           Overrides {
@@ -326,8 +325,8 @@ Assets {
           Overrides {
             Name: "cs:previewImageLocation"
             Vector2 {
-              X: 5
-              Y: 5
+              X: 2
+              Y: 1
             }
           }
           Overrides {
@@ -355,7 +354,7 @@ Assets {
       }
       Objects {
         Id: 3845649433287147090
-        Name: "Camo Splinter"
+        Name: "Blue Paint"
         Transform {
           Location {
           }
@@ -371,7 +370,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:skinName"
-            String: "Camo Splinter"
+            String: "Blue Paint"
           }
           Overrides {
             Name: "cs:useNewMaterial"
@@ -384,7 +383,7 @@ Assets {
           Overrides {
             Name: "cs:newMaterial"
             AssetReference {
-              Id: 7675962363203525070
+              Id: 8748212014664122890
             }
           }
           Overrides {
@@ -395,12 +394,21 @@ Assets {
             Name: "cs:previewImageLocation"
             Vector2 {
               X: 3
-              Y: 5
+              Y: 1
             }
           }
           Overrides {
             Name: "cs:cost"
-            Int: 3500
+            Int: 2500
+          }
+          Overrides {
+            Name: "cs:newColor"
+            Color {
+              R: 0.0410959721
+              G: 0.403114349
+              B: 0.467
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -423,7 +431,7 @@ Assets {
       }
       Objects {
         Id: 5630676527248823643
-        Name: "Camo Woodland"
+        Name: "Plum Paint"
         Transform {
           Location {
           }
@@ -439,7 +447,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:skinName"
-            String: "Camo Woodland"
+            String: "Plum Paint"
           }
           Overrides {
             Name: "cs:useNewMaterial"
@@ -452,7 +460,7 @@ Assets {
           Overrides {
             Name: "cs:newMaterial"
             AssetReference {
-              Id: 6900641435737272158
+              Id: 8748212014664122890
             }
           }
           Overrides {
@@ -462,20 +470,20 @@ Assets {
           Overrides {
             Name: "cs:previewImageLocation"
             Vector2 {
-              X: 2
-              Y: 5
+              X: 4
+              Y: 1
             }
           }
           Overrides {
             Name: "cs:cost"
-            Int: 3500
+            Int: 2500
           }
           Overrides {
             Name: "cs:newColor"
             Color {
-              R: 0.046875
-              G: 0.031402
-              B: 0.00609400123
+              R: 0.123
+              G: 0.03198
+              B: 0.0896259844
               A: 1
             }
           }
@@ -500,6 +508,160 @@ Assets {
       }
       Objects {
         Id: 1417057323363963520
+        Name: "Navy Paint"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10854091918774774487
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:skinName"
+            String: "Navy Paint"
+          }
+          Overrides {
+            Name: "cs:useNewMaterial"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:useNewColor"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:newMaterial"
+            AssetReference {
+              Id: 8748212014664122890
+            }
+          }
+          Overrides {
+            Name: "cs:skinID"
+            String: "05"
+          }
+          Overrides {
+            Name: "cs:previewImageLocation"
+            Vector2 {
+              X: 5
+              Y: 1
+            }
+          }
+          Overrides {
+            Name: "cs:cost"
+            Int: 2500
+          }
+          Overrides {
+            Name: "cs:newColor"
+            Color {
+              R: 0.03198
+              G: 0.0501839407
+              B: 0.123
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6308415745269538681
+          }
+        }
+      }
+      Objects {
+        Id: 8222369196356924210
+        Name: "Black Paint"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10854091918774774487
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:skinName"
+            String: "Black Paint"
+          }
+          Overrides {
+            Name: "cs:useNewMaterial"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:useNewColor"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:newColor"
+            Color {
+              R: 0.03
+              G: 0.03
+              B: 0.03
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "cs:newMaterial"
+            AssetReference {
+              Id: 8748212014664122890
+            }
+          }
+          Overrides {
+            Name: "cs:skinID"
+            String: "06"
+          }
+          Overrides {
+            Name: "cs:previewImageLocation"
+            Vector2 {
+              X: 1
+              Y: 2
+            }
+          }
+          Overrides {
+            Name: "cs:cost"
+            Int: 2500
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6308415745269538681
+          }
+        }
+      }
+      Objects {
+        Id: 2460320882781772585
         Name: "Camo Digital"
         Transform {
           Location {
@@ -534,13 +696,13 @@ Assets {
           }
           Overrides {
             Name: "cs:skinID"
-            String: "05"
+            String: "07"
           }
           Overrides {
             Name: "cs:previewImageLocation"
             Vector2 {
-              X: 1
-              Y: 5
+              X: 2
+              Y: 2
             }
           }
           Overrides {
@@ -550,9 +712,9 @@ Assets {
           Overrides {
             Name: "cs:newColor"
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.078125
+              G: 0.069067
+              B: 0.042734
               A: 1
             }
           }
@@ -576,7 +738,237 @@ Assets {
         }
       }
       Objects {
-        Id: 8222369196356924210
+        Id: 17575598541633250612
+        Name: "Camo Digital Snow"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10854091918774774487
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:skinName"
+            String: "Camo Digital Snow"
+          }
+          Overrides {
+            Name: "cs:useNewMaterial"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:useNewColor"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:newMaterial"
+            AssetReference {
+              Id: 6368363392805105925
+            }
+          }
+          Overrides {
+            Name: "cs:skinID"
+            String: "08"
+          }
+          Overrides {
+            Name: "cs:previewImageLocation"
+            Vector2 {
+              X: 3
+              Y: 2
+            }
+          }
+          Overrides {
+            Name: "cs:cost"
+            Int: 3500
+          }
+          Overrides {
+            Name: "cs:newColor"
+            Color {
+              R: 0.750596046
+              G: 0.770000041
+              B: 0.60368
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6308415745269538681
+          }
+        }
+      }
+      Objects {
+        Id: 10805221475931736113
+        Name: "Tiger Stripes"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10854091918774774487
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:skinName"
+            String: "Tiger Stripes"
+          }
+          Overrides {
+            Name: "cs:useNewMaterial"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:useNewColor"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:newMaterial"
+            AssetReference {
+              Id: 9710999966974135012
+            }
+          }
+          Overrides {
+            Name: "cs:skinID"
+            String: "09"
+          }
+          Overrides {
+            Name: "cs:previewImageLocation"
+            Vector2 {
+              X: 4
+              Y: 2
+            }
+          }
+          Overrides {
+            Name: "cs:cost"
+            Int: 4500
+          }
+          Overrides {
+            Name: "cs:newColor"
+            Color {
+              R: 0.73300004
+              G: 0.20768337
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6308415745269538681
+          }
+        }
+      }
+      Objects {
+        Id: 17398887949197032393
+        Name: "Grey Glitter"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10854091918774774487
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:skinName"
+            String: "Grey Glitter"
+          }
+          Overrides {
+            Name: "cs:useNewMaterial"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:useNewColor"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:newMaterial"
+            AssetReference {
+              Id: 12502377027814630026
+            }
+          }
+          Overrides {
+            Name: "cs:skinID"
+            String: "10"
+          }
+          Overrides {
+            Name: "cs:previewImageLocation"
+            Vector2 {
+              X: 5
+              Y: 2
+            }
+          }
+          Overrides {
+            Name: "cs:cost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:newColor"
+            Color {
+              R: 0.168000013
+              G: 0.168000013
+              B: 0.168000013
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6308415745269538681
+          }
+        }
+      }
+      Objects {
+        Id: 18392803859343818010
         Name: "Advanced Metal"
         Transform {
           Location {
@@ -604,394 +996,9 @@ Assets {
             Bool: true
           }
           Overrides {
-            Name: "cs:newColor"
-            Color {
-              R: 0.0410959721
-              G: 0.403114349
-              B: 0.467
-              A: 1
-            }
-          }
-          Overrides {
             Name: "cs:newMaterial"
             AssetReference {
               Id: 9187540498960513143
-            }
-          }
-          Overrides {
-            Name: "cs:skinID"
-            String: "06"
-          }
-          Overrides {
-            Name: "cs:previewImageLocation"
-            Vector2 {
-              X: 5
-              Y: 4
-            }
-          }
-          Overrides {
-            Name: "cs:cost"
-            Int: 3500
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 6308415745269538681
-          }
-        }
-      }
-      Objects {
-        Id: 2460320882781772585
-        Name: "Moon"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 10854091918774774487
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:skinName"
-            String: "Moon"
-          }
-          Overrides {
-            Name: "cs:useNewMaterial"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:useNewColor"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:newMaterial"
-            AssetReference {
-              Id: 9960906544699791848
-            }
-          }
-          Overrides {
-            Name: "cs:skinID"
-            String: "07"
-          }
-          Overrides {
-            Name: "cs:previewImageLocation"
-            Vector2 {
-              X: 2
-              Y: 4
-            }
-          }
-          Overrides {
-            Name: "cs:cost"
-            Int: 3500
-          }
-          Overrides {
-            Name: "cs:newColor"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 6308415745269538681
-          }
-        }
-      }
-      Objects {
-        Id: 17575598541633250612
-        Name: "Carbon Fiber"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 10854091918774774487
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:skinName"
-            String: "Carbon Fiber"
-          }
-          Overrides {
-            Name: "cs:useNewMaterial"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:useNewColor"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:newMaterial"
-            AssetReference {
-              Id: 2249794126015640337
-            }
-          }
-          Overrides {
-            Name: "cs:skinID"
-            String: "08"
-          }
-          Overrides {
-            Name: "cs:previewImageLocation"
-            Vector2 {
-              X: 1
-              Y: 1
-            }
-          }
-          Overrides {
-            Name: "cs:cost"
-            Int: 4500
-          }
-          Overrides {
-            Name: "cs:newColor"
-            Color {
-              R: 0.009721
-              G: 0.009721
-              B: 0.009721
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 6308415745269538681
-          }
-        }
-      }
-      Objects {
-        Id: 10805221475931736113
-        Name: "Tech Design 01"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 10854091918774774487
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:skinName"
-            String: "Tech Design 01"
-          }
-          Overrides {
-            Name: "cs:useNewMaterial"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:useNewColor"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:newMaterial"
-            AssetReference {
-              Id: 3845926179118691013
-            }
-          }
-          Overrides {
-            Name: "cs:skinID"
-            String: "09"
-          }
-          Overrides {
-            Name: "cs:previewImageLocation"
-            Vector2 {
-              X: 4
-              Y: 3
-            }
-          }
-          Overrides {
-            Name: "cs:cost"
-            Int: 4500
-          }
-          Overrides {
-            Name: "cs:newColor"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 6308415745269538681
-          }
-        }
-      }
-      Objects {
-        Id: 17398887949197032393
-        Name: "Cardboard"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 10854091918774774487
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:skinName"
-            String: "Cardboard"
-          }
-          Overrides {
-            Name: "cs:useNewMaterial"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:useNewColor"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:newMaterial"
-            AssetReference {
-              Id: 9404968316769731104
-            }
-          }
-          Overrides {
-            Name: "cs:skinID"
-            String: "10"
-          }
-          Overrides {
-            Name: "cs:previewImageLocation"
-            Vector2 {
-              X: 5
-              Y: 3
-            }
-          }
-          Overrides {
-            Name: "cs:cost"
-            Int: 4500
-          }
-          Overrides {
-            Name: "cs:newColor"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 6308415745269538681
-          }
-        }
-      }
-      Objects {
-        Id: 18392803859343818010
-        Name: "Rusty"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 10854091918774774487
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:skinName"
-            String: "Rusty"
-          }
-          Overrides {
-            Name: "cs:useNewMaterial"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:useNewColor"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:newMaterial"
-            AssetReference {
-              Id: 12770190894867165207
             }
           }
           Overrides {
@@ -1001,8 +1008,8 @@ Assets {
           Overrides {
             Name: "cs:previewImageLocation"
             Vector2 {
-              X: 5
-              Y: 2
+              X: 1
+              Y: 3
             }
           }
           Overrides {
@@ -1012,9 +1019,9 @@ Assets {
           Overrides {
             Name: "cs:newColor"
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.0410959721
+              G: 0.403114349
+              B: 0.467
               A: 1
             }
           }
@@ -1039,7 +1046,7 @@ Assets {
       }
       Objects {
         Id: 14713091757063080403
-        Name: "Camo Blue"
+        Name: "Tech"
         Transform {
           Location {
           }
@@ -1055,7 +1062,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:skinName"
-            String: "Camo Blue"
+            String: "Tech"
           }
           Overrides {
             Name: "cs:useNewMaterial"
@@ -1068,16 +1075,16 @@ Assets {
           Overrides {
             Name: "cs:newColor"
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.494792
+              G: 0.494792
+              B: 0.494792
               A: 1
             }
           }
           Overrides {
             Name: "cs:newMaterial"
             AssetReference {
-              Id: 682700398407096474
+              Id: 4465877919970375297
             }
           }
           Overrides {
@@ -1116,7 +1123,7 @@ Assets {
       }
       Objects {
         Id: 12095904911813991279
-        Name: "Camo Dark"
+        Name: "Wood"
         Transform {
           Location {
           }
@@ -1132,7 +1139,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:skinName"
-            String: "Diamond Green"
+            String: "Wood"
           }
           Overrides {
             Name: "cs:useNewMaterial"
@@ -1145,7 +1152,7 @@ Assets {
           Overrides {
             Name: "cs:newMaterial"
             AssetReference {
-              Id: 3503457931000356404
+              Id: 373034708355704799
             }
           }
           Overrides {
@@ -1166,9 +1173,9 @@ Assets {
           Overrides {
             Name: "cs:newColor"
             Color {
-              R: 0.140625
-              G: 0.140625
-              B: 0.140625
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
@@ -1193,7 +1200,7 @@ Assets {
       }
       Objects {
         Id: 18435369295226728194
-        Name: "Candy Apple"
+        Name: "Scales"
         Transform {
           Location {
           }
@@ -1209,7 +1216,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:skinName"
-            String: "Candy Apple"
+            String: "Scales"
           }
           Overrides {
             Name: "cs:useNewMaterial"
@@ -1222,7 +1229,7 @@ Assets {
           Overrides {
             Name: "cs:newMaterial"
             AssetReference {
-              Id: 2329230905657722655
+              Id: 15910750051962798568
             }
           }
           Overrides {
@@ -1232,7 +1239,7 @@ Assets {
           Overrides {
             Name: "cs:previewImageLocation"
             Vector2 {
-              X: 1
+              X: 4
               Y: 3
             }
           }
@@ -1243,7 +1250,9 @@ Assets {
           Overrides {
             Name: "cs:newColor"
             Color {
-              R: 2
+              R: 0.0552923456
+              G: 0.467
+              B: 0.0410959721
               A: 1
             }
           }
@@ -1316,13 +1325,13 @@ Assets {
           Overrides {
             Name: "cs:previewImageLocation"
             Vector2 {
-              X: 4
-              Y: 2
+              X: 5
+              Y: 3
             }
           }
           Overrides {
             Name: "cs:cost"
-            Int: 7000
+            Int: 6500
           }
         }
         Collidable_v2 {
@@ -1345,83 +1354,6 @@ Assets {
       }
       Objects {
         Id: 2715100616543896673
-        Name: "Stripes Blue"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 10854091918774774487
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:skinName"
-            String: "Stripes Blue"
-          }
-          Overrides {
-            Name: "cs:useNewMaterial"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:useNewColor"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:newColor"
-            Color {
-              R: 0.0284429919
-              G: 0.0911837667
-              B: 0.499
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "cs:newMaterial"
-            AssetReference {
-              Id: 4085560558169437084
-            }
-          }
-          Overrides {
-            Name: "cs:skinID"
-            String: "16"
-          }
-          Overrides {
-            Name: "cs:previewImageLocation"
-            Vector2 {
-              X: 3
-              Y: 2
-            }
-          }
-          Overrides {
-            Name: "cs:cost"
-            Int: 7000
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 6308415745269538681
-          }
-        }
-      }
-      Objects {
-        Id: 14314964225096576344
         Name: "Stripes Purple"
         Transform {
           Location {
@@ -1465,13 +1397,88 @@ Assets {
           }
           Overrides {
             Name: "cs:skinID"
+            String: "16"
+          }
+          Overrides {
+            Name: "cs:previewImageLocation"
+            Vector2 {
+              X: 1
+              Y: 4
+            }
+          }
+          Overrides {
+            Name: "cs:cost"
+            Int: 6500
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6308415745269538681
+          }
+        }
+      }
+      Objects {
+        Id: 14314964225096576344
+        Name: "Candy Apple"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10854091918774774487
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:skinName"
+            String: "Candy Apple"
+          }
+          Overrides {
+            Name: "cs:useNewMaterial"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:useNewColor"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:newColor"
+            Color {
+              R: 0.477000028
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "cs:newMaterial"
+            AssetReference {
+              Id: 18087485408544217211
+            }
+          }
+          Overrides {
+            Name: "cs:skinID"
             String: "17"
           }
           Overrides {
             Name: "cs:previewImageLocation"
             Vector2 {
               X: 2
-              Y: 2
+              Y: 4
             }
           }
           Overrides {
@@ -1499,7 +1506,7 @@ Assets {
       }
       Objects {
         Id: 9474853746266832971
-        Name: "Metal Greebles"
+        Name: "Gold"
         Transform {
           Location {
           }
@@ -1515,7 +1522,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:skinName"
-            String: "Metal Greebles"
+            String: "Gold"
           }
           Overrides {
             Name: "cs:useNewMaterial"
@@ -1528,16 +1535,15 @@ Assets {
           Overrides {
             Name: "cs:newColor"
             Color {
-              R: 0.494792
-              G: 0.494792
-              B: 0.494792
+              R: 0.73300004
+              G: 0.525316715
               A: 1
             }
           }
           Overrides {
             Name: "cs:newMaterial"
             AssetReference {
-              Id: 4465877919970375297
+              Id: 3180794530394243418
             }
           }
           Overrides {
@@ -1547,8 +1553,8 @@ Assets {
           Overrides {
             Name: "cs:previewImageLocation"
             Vector2 {
-              X: 1
-              Y: 2
+              X: 3
+              Y: 4
             }
           }
           Overrides {
@@ -1576,7 +1582,7 @@ Assets {
       }
       Objects {
         Id: 17973933478931394461
-        Name: "Container 01"
+        Name: "Chrome"
         Transform {
           Location {
           }
@@ -1592,7 +1598,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:skinName"
-            String: "Container 01"
+            String: "Chrome"
           }
           Overrides {
             Name: "cs:useNewMaterial"
@@ -1606,15 +1612,15 @@ Assets {
             Name: "cs:newColor"
             Color {
               R: 1
-              G: 0.149802029
-              B: 0.0100330114
+              G: 1
+              B: 1
               A: 1
             }
           }
           Overrides {
             Name: "cs:newMaterial"
             AssetReference {
-              Id: 9521961532316426949
+              Id: 3180794530394243418
             }
           }
           Overrides {
@@ -1625,7 +1631,7 @@ Assets {
             Name: "cs:previewImageLocation"
             Vector2 {
               X: 4
-              Y: 1
+              Y: 4
             }
           }
           Overrides {
@@ -1653,7 +1659,7 @@ Assets {
       }
       Objects {
         Id: 2222767876703196527
-        Name: "Camo Orange"
+        Name: "Energy Glow"
         Transform {
           Location {
           }
@@ -1669,7 +1675,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:skinName"
-            String: "Camo Orange"
+            String: "Energy Glow"
           }
           Overrides {
             Name: "cs:useNewMaterial"
@@ -1682,16 +1688,15 @@ Assets {
           Overrides {
             Name: "cs:newColor"
             Color {
-              R: 1
-              G: 1
-              B: 1
+              G: 0.0245998595
+              B: 0.123
               A: 1
             }
           }
           Overrides {
             Name: "cs:newMaterial"
             AssetReference {
-              Id: 7962709208819931505
+              Id: 9743499594980233710
             }
           }
           Overrides {
@@ -1702,7 +1707,7 @@ Assets {
             Name: "cs:previewImageLocation"
             Vector2 {
               X: 5
-              Y: 1
+              Y: 4
             }
           }
           Overrides {
@@ -1875,30 +1880,12 @@ Assets {
       }
     }
     Assets {
-      Id: 3180794530394243418
-      Name: "Metal Chrome"
+      Id: 8748212014664122890
+      Name: "Metal Painted Old 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "chrome_001"
-      }
-    }
-    Assets {
-      Id: 7675962363203525070
-      Name: "Camouflage - Splinter"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "camo_splinter_001"
-      }
-    }
-    Assets {
-      Id: 6900641435737272158
-      Name: "Camouflage - Woodland"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "camo_woodland_001"
+        AssetId: "mi_metal_painted_old_001_uv"
       }
     }
     Assets {
@@ -1911,75 +1898,12 @@ Assets {
       }
     }
     Assets {
-      Id: 9960906544699791848
-      Name: "Moon Surface 01"
+      Id: 12502377027814630026
+      Name: "Car Paint Advanced 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_planet_moon_001_uv"
-      }
-    }
-    Assets {
-      Id: 2249794126015640337
-      Name: "Carbon Fiber 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_carbon-fiber_001"
-      }
-    }
-    Assets {
-      Id: 3845926179118691013
-      Name: "Metal Complex Tech Panel Wall 03"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_scf_complex_tech_panel_003_uv"
-      }
-    }
-    Assets {
-      Id: 9404968316769731104
-      Name: "Cardboard Basic 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_cardboard_001_uv_ref"
-      }
-    }
-    Assets {
-      Id: 12770190894867165207
-      Name: "Rusty Riveted Metal"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_metal_rust_rivets_001_uv"
-      }
-    }
-    Assets {
-      Id: 682700398407096474
-      Name: "Office Carpet Rectangle 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_office_carpet_003_uv_ref"
-      }
-    }
-    Assets {
-      Id: 3503457931000356404
-      Name: "Office Carpet Geometric 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_office_carpet_002_uv_ref"
-      }
-    }
-    Assets {
-      Id: 2329230905657722655
-      Name: "Car Paint 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_car-paint_001"
+        AssetId: "mi_car-paint_advanced_001_uv_ref"
       }
     }
     Assets {
@@ -1992,21 +1916,30 @@ Assets {
       }
     }
     Assets {
-      Id: 9521961532316426949
-      Name: "Metal 9 Slice Shipping Container 01"
+      Id: 373034708355704799
+      Name: "Cliff Desert Wind Eroded 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mat_advanced_9slice_shipping_container001_ref"
+        AssetId: "mi_cliff_desert_eroded_001_uv_ref"
       }
     }
     Assets {
-      Id: 7962709208819931505
-      Name: "Office Carpet Hex 01"
+      Id: 18087485408544217211
+      Name: "Clear Coat Reflector Triangle 02"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_office_carpet_001_uv_ref"
+        AssetId: "mi_reflector_tri_002"
+      }
+    }
+    Assets {
+      Id: 3180794530394243418
+      Name: "Metal Chrome"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "chrome_001"
       }
     }
     PrimaryAssetId {
