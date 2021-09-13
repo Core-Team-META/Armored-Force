@@ -16,6 +16,12 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:AI_Icons"
+        AssetReference {
+          Id: 2971801280691802543
+        }
+      }
+      Overrides {
         Name: "cs:Folder:category"
         String: "Custom"
       }

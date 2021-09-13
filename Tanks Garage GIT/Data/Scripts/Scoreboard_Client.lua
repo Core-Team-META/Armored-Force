@@ -26,11 +26,8 @@ local isActive = false
 local forceMouseActive = false
 
 
-
-while not _G.PLAYER_RANKS do
-    Task.Wait()
-end
-local RANK = _G.PLAYER_RANKS
+ 
+local RANK = Constants_API:WaitForConstant("Ranks")
 local TANKS = Constants_API:WaitForConstant("Tanks").GetTanks()
 
 local function ClearRankPanel(rankPanel)
