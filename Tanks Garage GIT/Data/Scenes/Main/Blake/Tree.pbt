@@ -336,15 +336,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 6734576287303413843
-      value {
-        Overrides {
-          Name: "cs:startWithTank"
-          Bool: true
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 9937031949216304537
       value {
         Overrides {
@@ -360,15 +351,6 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 18391196450923426153
-      value {
-        Overrides {
-          Name: "cs:startWithTank"
-          Bool: true
         }
       }
     }

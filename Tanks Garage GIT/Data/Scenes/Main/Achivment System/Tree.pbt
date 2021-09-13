@@ -796,7 +796,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 100
+      Int: 200
     }
   }
   Collidable_v2 {
@@ -846,7 +846,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 400
+      Int: 25000
     }
   }
   Collidable_v2 {
@@ -1075,7 +1075,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 100
+      Int: 5000
     }
   }
   Collidable_v2 {
@@ -1304,7 +1304,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 50
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -1483,7 +1483,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 100
+      Int: 200
     }
   }
   Collidable_v2 {
@@ -1533,7 +1533,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 400
+      Int: 25000
     }
   }
   Collidable_v2 {
@@ -1762,7 +1762,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 100
+      Int: 5000
     }
   }
   Collidable_v2 {
@@ -1991,7 +1991,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 50
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -2170,7 +2170,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 100
+      Int: 200
     }
   }
   Collidable_v2 {
@@ -2220,7 +2220,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 400
+      Int: 25000
     }
   }
   Collidable_v2 {
@@ -2449,7 +2449,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 100
+      Int: 5000
     }
   }
   Collidable_v2 {
@@ -2678,7 +2678,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 50
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -2857,7 +2857,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 100
+      Int: 200
     }
   }
   Collidable_v2 {
@@ -2907,7 +2907,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 400
+      Int: 25000
     }
   }
   Collidable_v2 {
@@ -3036,7 +3036,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 100
+      Int: 5000
     }
   }
   Collidable_v2 {
@@ -3365,7 +3365,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 50
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -3544,7 +3544,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 100
+      Int: 200
     }
   }
   Collidable_v2 {
@@ -3594,7 +3594,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 400
+      Int: 25000
     }
   }
   Collidable_v2 {
@@ -3773,7 +3773,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 50
+      Int: 100
     }
   }
   Collidable_v2 {
@@ -3823,7 +3823,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 200
+      Int: 10000
     }
   }
   Collidable_v2 {
@@ -4052,7 +4052,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 100
+      Int: 5000
     }
   }
   Collidable_v2 {
@@ -4281,7 +4281,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 50
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -4460,7 +4460,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 200
+      Int: 400
     }
   }
   Collidable_v2 {
@@ -4510,7 +4510,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 800
+      Int: 50000
     }
   }
   Collidable_v2 {
@@ -4689,7 +4689,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 100
+      Int: 200
     }
   }
   Collidable_v2 {
@@ -4739,7 +4739,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 400
+      Int: 25000
     }
   }
   Collidable_v2 {
@@ -4918,7 +4918,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 100
+      Int: 200
     }
   }
   Collidable_v2 {
@@ -4968,7 +4968,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 400
+      Int: 25000
     }
   }
   Collidable_v2 {
@@ -5097,7 +5097,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 200
+      Int: 10000
     }
   }
   Collidable_v2 {
@@ -5147,7 +5147,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 50
+      Int: 100
     }
   }
   Collidable_v2 {
@@ -5326,7 +5326,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 1000
+      Int: 2000
     }
   }
   Collidable_v2 {
@@ -5426,7 +5426,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 50
+      Int: 5000
     }
   }
   Collidable_v2 {
@@ -5655,7 +5655,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 50
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -5884,7 +5884,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 50
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -6113,7 +6113,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 100
+      Int: 5000
     }
   }
   Collidable_v2 {
@@ -6338,7 +6338,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 50
+      Int: 2500
     }
   }
   Collidable_v2 {
