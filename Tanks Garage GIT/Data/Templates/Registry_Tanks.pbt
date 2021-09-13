@@ -2521,7 +2521,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damageUpgraded"
-            Int: 635
+            Int: 615
           }
           Overrides {
             Name: "cs:hitPointsUpgraded"
@@ -2529,7 +2529,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damage"
-            Int: 605
+            Int: 575
           }
           Overrides {
             Name: "cs:hitPoints"
@@ -4225,7 +4225,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damageUpgraded"
-            Int: 560
+            Int: 540
           }
           Overrides {
             Name: "cs:hitPoints"
@@ -4789,11 +4789,11 @@ Assets {
           }
           Overrides {
             Name: "cs:damage"
-            Int: 850
+            Int: 620
           }
           Overrides {
             Name: "cs:damageUpgraded"
-            Int: 880
+            Int: 710
           }
           Overrides {
             Name: "cs:hitPoints"
@@ -8485,11 +8485,11 @@ Assets {
           }
           Overrides {
             Name: "cs:damage"
-            Int: 710
+            Int: 580
           }
           Overrides {
             Name: "cs:damageUpgraded"
-            Int: 780
+            Int: 620
           }
           Overrides {
             Name: "cs:hitPoints"
@@ -8769,11 +8769,11 @@ Assets {
           }
           Overrides {
             Name: "cs:damage"
-            Int: 640
+            Int: 540
           }
           Overrides {
             Name: "cs:damageUpgraded"
-            Int: 710
+            Int: 610
           }
           Overrides {
             Name: "cs:hitPoints"
@@ -9053,11 +9053,11 @@ Assets {
           }
           Overrides {
             Name: "cs:damage"
-            Int: 600
+            Int: 500
           }
           Overrides {
             Name: "cs:damageUpgraded"
-            Int: 650
+            Int: 580
           }
           Overrides {
             Name: "cs:hitPoints"
@@ -9337,11 +9337,11 @@ Assets {
           }
           Overrides {
             Name: "cs:damage"
-            Int: 950
+            Int: 650
           }
           Overrides {
             Name: "cs:damageUpgraded"
-            Int: 1000
+            Int: 740
           }
           Overrides {
             Name: "cs:hitPoints"
