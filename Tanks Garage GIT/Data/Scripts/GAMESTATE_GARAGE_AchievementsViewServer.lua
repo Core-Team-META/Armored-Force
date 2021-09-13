@@ -186,8 +186,21 @@ function ClaimReward(player, challengeNumber)
 
 	if pass then
 		if player.serverUserData.CHALLENGE[challengeNumber].progress >= 0 then
-			player:AddResource(CONSTANTS_API.SILVER, 2000)
-			player:AddResource(CONSTANTS_API.FREERP, 1000)
+
+			if challengeNumber == 1 then
+				player:AddResource(CONSTANTS_API.SILVER, 2000)
+				player:AddResource(CONSTANTS_API.FREERP, 500)
+			elseif challengeNumber == 2 then
+				player:AddResource(CONSTANTS_API.SILVER, 3000)
+				player:AddResource(CONSTANTS_API.FREERP, 750)
+			elseif challengeNumber == 3 then
+				player:AddResource(CONSTANTS_API.SILVER, 3500)
+				player:AddResource(CONSTANTS_API.FREERP, 1500)
+			elseif challengeNumber == 4 then
+				player:AddResource(CONSTANTS_API.SILVER, 4000)
+				player:AddResource(CONSTANTS_API.FREERP, 2000)
+			end
+
 			
 			player.serverUserData.CHALLENGE[challengeNumber].progress = -1
 			
