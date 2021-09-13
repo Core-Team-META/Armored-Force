@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15818976189543274029
+        ParentId: 2974750608502516638
         ChildIds: 16014271883477670384
         ChildIds: 5175606097138077372
         ChildIds: 14051796929335295685
@@ -164,6 +164,10 @@ Assets {
               Id: 2908295658805356699
             }
           }
+          Overrides {
+            Name: "cs:RankNumber"
+            Int: 2
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -215,6 +219,10 @@ Assets {
             AssetReference {
               Id: 7150784161820162714
             }
+          }
+          Overrides {
+            Name: "cs:RankNumber"
+            Int: 3
           }
         }
         Collidable_v2 {
@@ -268,6 +276,10 @@ Assets {
               Id: 3262358769941651946
             }
           }
+          Overrides {
+            Name: "cs:RankNumber"
+            Int: 4
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -320,6 +332,10 @@ Assets {
               Id: 1964403007004973004
             }
           }
+          Overrides {
+            Name: "cs:RankNumber"
+            Int: 5
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -371,6 +387,10 @@ Assets {
             AssetReference {
               Id: 163097902409053826
             }
+          }
+          Overrides {
+            Name: "cs:RankNumber"
+            Int: 6
           }
         }
         Collidable_v2 {
