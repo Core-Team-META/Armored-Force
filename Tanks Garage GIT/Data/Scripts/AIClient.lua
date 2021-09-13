@@ -55,11 +55,10 @@ function _G.utils.GetTankDrivers(options)
 --print(k, v)
     end
     ]]
-
-    if (options.ignoreDead and driver.isDead)
-        or (options.ignorePlayers and options.ignorePlayers == driver)
-        or (options.ignoreTeams and options.ignoreTeams == driver.team) 
-        or (options.includeTeams and options.includeTeams ~= driver.team) then
+    if (options.ignoreDead and tankData.isDead)
+        or (options.ignorePlayers and options.ignorePlayers == tankData)
+        or (options.ignoreTeams and options.ignoreTeams == tankData.team) 
+        or (options.includeTeams and options.includeTeams ~= tankData.team) then
       -- do nothing
     else
       table.insert(results, tankData)

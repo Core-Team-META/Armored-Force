@@ -412,7 +412,8 @@ function CheckEnemyTank(raycastResult)
 end
 
 function TransitionCameras(oldCamera, newCamera)
-
+	if not Object.IsValid(oldCamera) or  not Object.IsValid(newCamera) then return end
+	
 	local newPitch = oldCamera.currentPitch
 	local newYaw = oldCamera.currentYaw
 	
