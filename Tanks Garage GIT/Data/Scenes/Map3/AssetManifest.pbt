@@ -21,19 +21,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15819879333164973552
-  Name: "leaderboards"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "0769d3926b484298a272db2e3fb6b331"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 15377096960086681777
   Name: "Marble Basic 01"
   PlatformAssetType: 2
@@ -43,12 +30,25 @@ Assets {
   }
 }
 Assets {
-  Id: 14856115594490923278
-  Name: "tanks"
+  Id: 15183379882844913680
+  Name: "Achievements"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "fa9ee29be1d64b50a639f83e782c272b"
+      Key: "042efdb7f82f4e99bbe36f56ac3eeac8"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
+  Id: 14766070920820308542
+  Name: "Leaderboards"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "54bbf70f896141c8a394d19fffb4d392"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
@@ -82,12 +82,12 @@ Assets {
   }
 }
 Assets {
-  Id: 13259373968546689460
-  Name: "achievements"
+  Id: 13755022942812575441
+  Name: "Tanks"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "0709e15d490a4304b5b0ec87b4c27170"
+      Key: "9ed244980ee6453988436a9b9f546487"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
@@ -156,25 +156,25 @@ Assets {
   }
 }
 Assets {
+  Id: 5713264857276766347
+  Name: "Skins"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "4e77f911b25d4eb69c0e5004fe6bae88"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 5351428073291024820
   Name: "Emissive Glow Opaque"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxma_opaque_emissive"
-  }
-}
-Assets {
-  Id: 5252968813920801092
-  Name: "skins"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "f4abf4b9e13944fd955af3eaaeb43905"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
   }
 }
 Assets {

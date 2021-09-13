@@ -210,27 +210,24 @@ Objects {
     Overrides {
       Name: "cs:Achievements"
       NetReference {
-        Key: "0709e15d490a4304b5b0ec87b4c27170"
         Type {
-          Value: "mc:enetreferencetype:sharedpersistence"
+          Value: "mc:enetreferencetype:unknown"
         }
       }
     }
     Overrides {
       Name: "cs:Leaderboards"
       NetReference {
-        Key: "0769d3926b484298a272db2e3fb6b331"
         Type {
-          Value: "mc:enetreferencetype:sharedpersistence"
+          Value: "mc:enetreferencetype:unknown"
         }
       }
     }
     Overrides {
       Name: "cs:Skins"
       NetReference {
-        Key: "f4abf4b9e13944fd955af3eaaeb43905"
         Type {
-          Value: "mc:enetreferencetype:sharedpersistence"
+          Value: "mc:enetreferencetype:unknown"
         }
       }
     }
