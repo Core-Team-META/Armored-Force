@@ -142,15 +142,17 @@ function DoRebalance(playerToIgnore)
 		table.insert(team1, player)
 	end
 
+	-- Swap players until value delta is minimized
+	local value1 = ComputeTeamValue(team1)
+	local value2 = ComputeTeamValue(team2)
+	teamBalance[1] = value1
+	teamBalance[2] = value2
+
 	-- If each team has one player it's done
 	if #team1 == 1 and #team2 == 1 then
 		ApplyTeamChanges(team1, team2)
 		return
 	end
-
-	-- Swap players until value delta is minimized
-	local value1 = ComputeTeamValue(team1)
-	local value2 = ComputeTeamValue(team2)
 
 	if #team1 > #team2 then
 		value1 = value1 + (100 / #team1)
@@ -255,6 +257,7 @@ function OnLobbyTimerChanged(object, string)
 		Events.BroadcastToAllPlayers("FadeScreen")
 		Task.Wait(1)
 		DoRebalance()
+		Task.Wait()
 		Events.Broadcast("FILL_TEAMS_WITH_AI", _G.const.AI.MINIMUM_TEAMSIZE, teamBalance)
 	end
 end
