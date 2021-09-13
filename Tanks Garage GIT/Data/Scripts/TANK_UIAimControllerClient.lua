@@ -58,6 +58,7 @@ local verticalSpeed = 0
 local activeVerticalSpeed = 0
 local aimBaseSpeed = 50000
 
+
 local function PushQueue(value)
 
 	local last = fifoQueue.last + 1
@@ -463,7 +464,13 @@ function Tick(dt)
 		FindTank()
 		
 		Task.Wait(0.1)
+		redDot.visibility = Visibility.INHERIT
+		reloadProgress.progress = 1
+		reloadProgress:SetFillColor(activeColor)
 		
+		fireState.text = "Ready"
+		fireState:SetColor(activeColor)
+		reloadTimer.text = ""
 		return
 	end
 		
@@ -521,3 +528,4 @@ end
 
 bindingPressedListener = localPlayer.bindingPressedEvent:Connect(OnBindingPressed)
 Events.Connect("ANIMATE_FIRING", ReloadAnimation)
+
