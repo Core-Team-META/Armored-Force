@@ -2,11 +2,11 @@ if true then
     return
 end
 local ABGS = require(script:GetCustomProperty("APIBasicGameState"))
+local Constants_API = require(script:GetCustomProperty("Constants_API"))
+
 local SCOREBOARD = script:GetCustomProperty("PlayerTitles_Scoreboard"):WaitForObject()
-while not _G.PLAYER_RANKS do
-    Task.Wait()
-end
-local RANKS = _G.PLAYER_RANKS
+
+local RANKS = Constants_API:WaitForConstant("Ranks")
 
 local INSIGNIA = script:GetCustomProperty("Insignia"):WaitForObject()
 local RANK_PANEL = script:GetCustomProperty("RANK_PANEL"):WaitForObject()

@@ -12,6 +12,13 @@ local DAMAGER_ROWS = script:GetCustomProperty("DamagerRows"):WaitForObject()
 
 local DAMAGER_ROW_TEMPLATE = script:GetCustomProperty("METADamagerRowTemplate")
 
+local Constants_API = require(script:GetCustomProperty("Constants_API"))
+local AI_Icons = require(script:GetCustomProperty("AI_Icons"))
+
+local RankAPI = Constants_API:WaitForConstant("Ranks")
+
+local KillerRank
+local KillerProfile 
 function GetDistance(playerFrom, playerTo)
     return (playerTo:GetWorldPosition() - playerFrom:GetWorldPosition()).size
 end
@@ -97,14 +104,24 @@ function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCod
 
     --Set Killer player image, and social image if applicable
     --KILLER_PLAYER_IMAGE:SetImage(killerPlayer)
-
-    if (playerTitle) then
-        KILLER_PLAYER_SOCIAL:SetImage(playerTitle.icon)
-        KILLER_PLAYER_SOCIAL:SetColor(playerTitle.iconColor)
-    else
-        --        KILLER_PLAYER_SOCIAL:SetImage("")
+    if Object.IsValid(KillerRank) then 
+        KillerRank:Destroy()
+    end
+    if Object.IsValid(KillerProfile) then 
+        KillerProfile:Destroy()
     end
 
+    if killerPlayer:IsA("Player") then 
+        KILLER_PLAYER_IMAGE.visibility = Visibility.INHERIT
+        KILLER_PLAYER_IMAGE:SetPlayerProfile(killerPlayer)
+    else 
+        KILLER_PLAYER_IMAGE.visibility = Visibility.FORCE_OFF
+        KillerProfile = World.SpawnAsset(AI_Icons.profMed,{parent = KILLER_PLAYER_IMAGE.parent}) 
+    end
+    --KILLER_PLAYER_SOCIAL:SetImage(playerTitle.icon)
+    KILLER_PLAYER_SOCIAL.visibility = Visibility.FORCE_OFF
+    KillerRank = World.SpawnAsset(RankAPI.GetMediumRankIcon(killerPlayer),{parent = KILLER_PLAYER_SOCIAL.parent})
+   
     -- TEMP, if extraCode = 0 (normal weapon)
     DEATH_REASON.text = GetDeathText(extraCode)
 
@@ -167,19 +184,23 @@ function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCod
         local damagerHealth = newRow:GetCustomProperty("HealthText"):WaitForObject()
         local damageAmount = newRow:GetCustomProperty("DamageText"):WaitForObject()
         local healingAmount = newRow:GetCustomProperty("HealingText"):WaitForObject()
-
+        local dmger = damageTable.damager
         -- Set player image
-        playerImage:SetPlayerProfile(damageTable.damager)
-    
-        -- Set player title icon and icon color
-        local playerTitle = PlayerTitles.GetPlayerTitle(damageTable.damager)
-
-        if (playerTitle) then
-            socialIcon:SetImage(playerTitle.icon)
-            socialIcon:SetColor(playerTitle.iconColor)
-        else
-            --socialIcon:SetImage("")
+        if dmger:IsA("Player") then
+            playerImage.visibility = Visibility.INHERIT 
+            playerImage:SetPlayerProfile(dmger)
+        else 
+            playerImage.visibility = Visibility.FORCE_OFF 
+            World.SpawnAsset(AI_Icons.profSmall,{parent = playerImage.parent}) 
         end
+        -- Set player title icon and icon color
+        --local playerTitle = PlayerTitles.GetPlayerTitle(dmger)
+        
+        socialIcon.visibility = Visibility.FORCE_OFF
+        World.SpawnAsset(RankAPI.GetSmallRankIcon(dmger), {parent =socialIcon.parent })
+
+       
+         
 
         -- _G.META_GAME_MODES.TablePrint(playerTitle)
 
@@ -188,7 +209,7 @@ function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCod
 
         -- Set player title color
         if (playerTitle and playerTitle.prefixColor) then
-            damagerName:SetColor(playerTitle.prefixColor)
+            --damagerName:SetColor(playerTitle.prefixColor)
         end
 
         -- Set weapon name
