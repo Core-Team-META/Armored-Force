@@ -26,6 +26,101 @@ local POINTS_PER_KILL = 20
 local POINTS_PER_CAPTURE = 50
 local MULTIPLIER_PER_PLAYER = 0.10 -- + 10% per player in game
 
+local VIP = {
+    Bot1 = true,
+    Vitriol08 = true,
+    Vitriol = true,
+    Buckmonster = true,
+    --ManticoreGames  = true,
+    Basilisk = true,
+    Mehaji = true,
+    Griffin = true,
+    Morticai = true,
+    Bigglebuns = true,
+    Rolok = true,
+    Jarsa = true,
+    standardcombo = true,
+    blaking707 = true,
+    Coderz = true,
+    Datonare = true,
+    Divided = true,
+    estlogic = true,
+    nicholasforeman = true,
+    Ooccoo = true,
+    Aggripina = true,
+    AwkwardGameDev = true,
+    Daddio = true,
+    mjcortes782 = true,
+    Keppu = true,
+    KonzZwodrei = true,
+    Melamoryxq = true,
+    Mucusinator = true,
+    WitcherSilver = true,
+    AJ = true,
+    riffraff = true,
+    Sobchak = true,
+    Scav = true,
+    Tobs = true,
+    Beekzor = true,
+    aBomb = true,
+    blackdheart = true,
+    BreadMan = true,
+    Bumblebear = true,
+    bunnychen = true,
+    Carbide = true,
+    codeHeavy = true,
+    CoreVideo = true,
+    deadlyfishesMC = true,
+    Dracowolfie = true,
+    featurecreeper = true,
+    Gabunir = true,
+    JayDee = true,
+    kytsu = true,
+    lokii = true,
+    Lucidish = true,
+    manticoreian = true,
+    max = true,
+    mcamp = true,
+    mrbigfists = true,
+    Neurosin = true,
+    pchiu = true,
+    qualispec = true,
+    Robotron = true,
+    Sasha = true,
+    SpaceBandit = true,
+    Squirtle = true,
+    Stanzilla = true,
+    structbar = true,
+    sumoflab = true,
+    tjarvis = true,
+    RyanZ = true,
+    RebherCore = true,
+    Memori = true,
+    Nezberet = true,
+    plasmabacon = true,
+    Phyronnaz = true
+}
+
+local startDate = {
+    year = 2021,
+    month = 9,
+    day = 14,
+    hour = 17, -- 10am PDT
+    min = 0,
+    wday = 3,
+    yday = 257
+}
+
+local endDate = {
+    year = 2021,
+    month = 9,
+    day = 20,
+    hour = 17, -- 10am PDT
+    min = 0,
+    wday = 2,
+    yday = 263
+}
+
 local listeners = {}
 local playerScore = {}
 local playerData = {}
@@ -72,7 +167,17 @@ local function SetPlayerFlags(player)
     player.serverUserData.TMS_diedInRound = false
 end
 
-local function CalculateScore(player, winningTeam, playerBonus)
+local function CalculateScore(player, playerBonus)
+    local currentDate = os.time(os.date("!*t"))
+    if
+        ((currentDate < os.time(startDate)) and not VIP[player.name]) or
+            ((currentDate > os.time(endDate)) and not VIP[player.name])
+     then
+        warn("Event is not live.")
+        return
+    end
+
+
     local newScore = 0
     local captureScore = 0
     local damageScore = 0
@@ -83,40 +188,35 @@ local function CalculateScore(player, winningTeam, playerBonus)
 
     -- Give points to player based on team outcome
     local matchScore = 0
-    if player.team == winningTeam then
+    if player.team == _G["GameWinner"] then
         matchScore = POINTS_WINNING_TEAM
         playerData[player].wonMatch = true
     else
         matchScore = POINTS_LOSTING_TEAM
     end
+    --print(player.name .. " Match Score", matchScore, playerData[player].wonMatch)
 
     -- Give points to player based on kills
     local killScore = playerData[player].kills * POINTS_PER_KILL
-
+    --print(player.name .. " Kill Score:", killScore, " Kills:", playerData[player].kills)
     -- Give Points to player based on damage
     damageScore = playerData[player].damage * POINTS_PER_DAMAGE
 
+    --print(player.name .. " Damage Score:", damageScore, " Damage:", playerData[player].damage)
     -- Calculate total score
     newScore = matchScore + killScore + captureScore + damageScore
+
+    --print(player.name .. " Pre-Bonus Score:", newScore)
     newScore = newScore + (newScore * playerBonus)
 
+    --print(player.name .. " Post-Bonus Score:", newScore, "Bonus:", playerBonus)
     player:SetPrivateNetworkedData("NEWSCORE", CoreMath.Round(newScore))
- 
-    newScore = CoreMath.Round((playerScore[player] or 0 ) + newScore)
+
+    newScore = CoreMath.Round((playerScore[player] or 0) + newScore)
     player:SetPrivateNetworkedData("TSCORE", newScore)
-    
+
     playerScore[player] = newScore
     SetCurrentTrophy(player, newScore)
-end
-
-local function GetWinningTeam()
-    local teamOne = Game.GetTeamScore(1)
-    local teamTwo = Game.GetTeamScore(2)
-    if teamOne > teamTwo then
-        return 1
-    elseif teamTwo > teamOne then
-        return 2
-    end
 end
 
 local function OnRoundStart()
@@ -129,12 +229,11 @@ local function OnRoundStart()
 end
 
 local function OnRoundEnd()
-    local winningTeam = GetWinningTeam()
     local playerBonus = MULTIPLIER_PER_PLAYER * totalPlayers
 
     for _, player in ipairs(Game.GetPlayers()) do --
         if IsValidPlayer(player) then
-            CalculateScore(player, winningTeam, playerBonus)
+            CalculateScore(player, playerBonus)
         end
     end
 end
@@ -175,7 +274,7 @@ end
 function OnPlayerDied(attackData)
     local target = attackData.object
     local source = attackData.source
-    if IsValidPlayer(source) and IsValidPlayer(target) then
+    if IsValidPlayer(source) and (IsValidPlayer(target) or target:IsA("AIPlayer")) then
         if (target.isDead) and not target.serverUserData.TMS_killCredited then
             PlayerKilled(source, target)
         end
