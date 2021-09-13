@@ -83,11 +83,20 @@ local currentlySpectating
 --	table GetPlayersList(ignorePlayer)
 --	Returns a list of players that ignores LocalPlayer, an optional player, and dead players if enabled
 local function GetPlayersList(ignorePlayer)
-	return Game.GetPlayers({
+	local alltanks = {}
+	local aitanks = _G.utils.GetTankDrivers({ignoreDead = true, includeTeams=LocalPlayer.team}) 
+	local players = Game.GetPlayers({
 		ignorePlayers = {LocalPlayer, ignorePlayer},
 		ignoreDead = IGNORE_DEAD_PLAYERS,
 		includeTeams = LocalPlayer.team,
 	})
+	for index, value in ipairs(players) do
+		table.insert(alltanks, value)
+	end
+	for index, value in ipairs(aitanks) do 
+		table.insert(alltanks, value)
+	end
+	return alltanks
 end
 
 --	nil BroadcastToServer(event, ...)
@@ -104,6 +113,7 @@ local function GetCurrentPlayerIndex()
 	if(not currentlySpectating) then return end
 
 	for index, player in ipairs(GetPlayersList()) do
+		if player:IsA("AIPlayer") then player = World.FindObjectById(player.tankId) end 
 		if(player == currentlySpectating) then
 			return index
 		end
@@ -161,6 +171,7 @@ local function SpectateFirstPlayer(player)
 
 	local players = GetPlayersList(player)
 	local newPlayer = players[1]
+	
 	if(not newPlayer) then return Unspectate() end
 
 	Spectate(newPlayer)
@@ -199,7 +210,7 @@ local function OnDied()
 	lpIsDead = true
 
 	if(not SPECTATE_AFTER_DEATH) then return end
-	if #Game.GetPlayers({includeTeams = LocalPlayer.team, ignoreDead = true}) == 0 then return end
+	if #GetPlayersList(LocalPlayer) == 0 then return end
 	Task.Spawn(function()
 		Task.Wait(WAIT_TIME_AFTER_DEATH)
 		if(not lpIsDead) then return end
@@ -346,22 +357,25 @@ end
 
 --	nil Spectate(Player)
 --	Forces spectate a player
-function Spectate(player)
+function Spectate(player)  
 	if((TEAM_SPECTATOR > 0) and (player.team ~= TEAM_SPECTATOR)) then return end
 	if(player.team ~= LocalPlayer.team) then return end
-	
-	if(PlayerCamera.followPlayer == player) then return end
+	if player:IsA("AIPlayer") then player  = World.FindObjectById(player.tankId) end 
+
+	if not Object.IsValid(player) then Task.Wait() SpectateFirstPlayer() return end 
+	if(PlayerCamera.clientUserData.followPlayer == player) then return end
 
 	if(debounce) then return end
 	debounce = true
 
 	ChangeUiMode()
 
-	currentlySpectating = player
-
-	LocalPlayer:SetOverrideCamera(PlayerCamera)
-	PlayerCamera.followPlayer = player
-
+	currentlySpectating = player 
+	LocalPlayer:SetOverrideCamera(PlayerCamera) 
+	PlayerCamera.clientUserData.followPlayer = player
+	 
+	 
+	PlayerCamera:SetWorldPosition(player:GetWorldPosition())
 	--SpectatingName.text = player.name
 	--SpectatorUI.visibility = Visibility.FORCE_ON
 	spectatorWindow.visibility = Visibility.INHERIT
@@ -372,15 +386,14 @@ end
 --	nil Unspectate()
 --	Forces unspectate
 function Unspectate()
-	currentlySpectating = nil
-
+	currentlySpectating = nil 
 	ChangeUiMode()
 
 	--SpectatorUI.visibility = Visibility.FORCE_OFF
 	--SpectatingName.text = ""
 	spectatorWindow.visibility = Visibility.FORCE_OFF
 
-	PlayerCamera.followPlayer = nil
+	PlayerCamera.clientUserData.followPlayer = nil
 
 	if(LocalPlayer:GetActiveCamera() ~= PlayerCamera and LocalPlayer:GetActiveCamera() ~= FreecamCamera) then return end
 	LocalPlayer:ClearOverrideCamera()
@@ -390,7 +403,7 @@ end
 --	Updates spectate mode if camera changes, death/respawn state, and team
 function Tick()
 	if(currentlySpectating) then
-		if currentlySpectating.isDead then
+		if not Object.IsValid(currentlySpectating) or currentlySpectating.isDead then
 			SpectateFirstPlayer()
 		end
 		if(LocalPlayer:GetActiveCamera() ~= PlayerCamera and LocalPlayer:GetActiveCamera() ~= FreecamCamera) then
@@ -403,6 +416,10 @@ function Tick()
 		OnDied()
 	elseif((not isDead) and lpIsDead) then
 		OnRespawned()
+	end 
+	
+	if PlayerCamera and PlayerCamera.clientUserData.followPlayer then  
+		PlayerCamera:SetWorldPosition( PlayerCamera.clientUserData.followPlayer:GetWorldPosition())
 	end
 
 	local team = LocalPlayer.team
@@ -411,7 +428,6 @@ function Tick()
 
 	if(TEAM_SPECTATOR <= 0) then return end
 
-	
 
 	if(lpTeam == TEAM_SPECTATOR) then
 		if(currentlySpectating) then return end
