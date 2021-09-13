@@ -48,6 +48,10 @@ local defualtValues = {
     [CONSTANTS_API.COMBAT_STATS.TOTAL_SHOTS_HIT] = 0,
     [CONSTANTS_API.RANK_NAME] = 1,
     [CONSTANTS_API.XP] = 0,
+    [CONSTANTS_API.XP_SYSTEM.OLD_XP] = 0,
+    [CONSTANTS_API.XP_SYSTEM.OLD_RANK] = 0,
+    [CONSTANTS_API.XP_SYSTEM.LVL] = 0,
+    [CONSTANTS_API.XP_SYSTEM.MATCH_DATA] = '',
     [CONSTANTS_API.TUTORIAL_PROGRESS] = 0
 }
 
@@ -80,6 +84,9 @@ local Resources = {
     [CONSTANTS_API.COMBAT_STATS.TOTAL_SHOTS_HIT] = 0,
     [CONSTANTS_API.RANK_NAME] = 1,
     [CONSTANTS_API.XP] = 0,
+    [CONSTANTS_API.XP_SYSTEM.OLD_XP] = 0,
+    [CONSTANTS_API.XP_SYSTEM.OLD_RANK] = 0,
+    [CONSTANTS_API.XP_SYSTEM.LVL] = 0,
     [CONSTANTS_API.TUTORIAL_PROGRESS] = 0
 }
 ----------------------------------------------------------------------------------------------
@@ -187,6 +194,7 @@ function CheckAndSetSharedStorageDefault(player)
     player:SetPrivateNetworkedData("TechTree",  playerSharedStorage[CONSTANTS_API.PROGRESS.DATA])
     Storage.SetSharedPlayerData(PLAYER_SHARED_STORAGE, player, playerSharedStorage)
 end
+
 function LoadAndSetDataFromSharedStorage(player)
     local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 
@@ -209,6 +217,12 @@ function LoadAndSetDataFromSharedStorage(player)
     player.serverUserData.GOLD_FROM_BUNDLE[1] = tonumber(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE1])
     player.serverUserData.GOLD_FROM_BUNDLE[2] = tonumber(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE2])
     player.serverUserData.GOLD_FROM_BUNDLE[3] = tonumber(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE3])
+    
+    player.serverUserData.OLD_XP = tonumber(playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_XP])
+    player.serverUserData.OLD_RANK = tonumber(playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_RANK])
+    player.serverUserData.OLD_LVL = tonumber(playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_LVL])
+    player.serverUserData.CURRENT_LVL = tonumber(playerSharedStorage[CONSTANTS_API.XP_SYSTEM.LVL])
+   	player.serverUserData.MATCH_XP_DATA = playerSharedStorage[CONSTANTS_API.XP_SYSTEM.MATCH_DATA]
 
     Events.Broadcast('SET_DAILY_CHALLENGES', player)
     --print("Daily challenges broadcasted: " .. player.serverUserData.CHALLENGES)
@@ -238,6 +252,12 @@ function SavePlayerDataIntoSharedStorage(player)
     playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE1] = player.serverUserData.GOLD_FROM_BUNDLE[1]
     playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE2] = player.serverUserData.GOLD_FROM_BUNDLE[2]
     playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE3] = player.serverUserData.GOLD_FROM_BUNDLE[3]
+    
+    playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_XP] = player.serverUserData.OLD_XP
+    playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_RANK] = player.serverUserData.OLD_RANK
+    playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_LVL] = player.serverUserData.OLD_LVL
+    playerSharedStorage[CONSTANTS_API.XP_SYSTEM.LVL] = player.serverUserData.CURRENT_LVL
+   	playerSharedStorage[CONSTANTS_API.XP_SYSTEM.MATCH_DATA] = player.serverUserData.MATCH_XP_DATA
 
     Storage.SetSharedPlayerData(PLAYER_SHARED_STORAGE, player, playerSharedStorage)
 end
