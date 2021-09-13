@@ -710,7 +710,7 @@ function PopulateCurrencyUI()
         for _, child in ipairs(panel:GetChildren()) do
             if (child.name == 'Icon') then
                 local icon = v.Icon
-                child:SetImage(icon)
+                child:SetPlayerProfile(icon)
                 child:SetColor(Color.WHITE)
             elseif (child.name == 'Amount') then
                 child.text = tostring(LOCAL_PLAYER:GetResource(v.ResourceName))
@@ -1802,7 +1802,7 @@ function OpenTankUpgradeWindow(button, id)
         UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_TP_WEAPON').text =
             'Tank Parts: ' .. tostring(math.min(entry.weaponResearchCost,LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP") ) )
         UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_UNIVERSAL_WEAPON').text =
-            'Universal Part: ' .. tostring( math.max(entry.weaponResearchCost- LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP") ,0)  )
+            'Universal Parts: ' .. tostring( math.max(entry.weaponResearchCost- LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP") ,0)  )
         UPGRADE_TANK_CONTAINER:FindDescendantByName('TURRET_LEVEL').text = 'Lv1' -- TODO
     else
         UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_CONTAINER_WEAPON').visibility = Visibility.FORCE_OFF
@@ -1836,7 +1836,7 @@ function OpenTankUpgradeWindow(button, id)
         UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_TP_ARMOR').text =
             'Tank Parts: ' .. tostring(math.min(entry.armorResearchCost,LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP") ))
         UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_UNIVERSAL_ARMOR').text =
-            'Universal Part: ' .. tostring(math.max( entry.armorResearchCost- LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP"),0)   )
+            'Universal Parts: ' .. tostring(math.max( entry.armorResearchCost- LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP"),0)   )
  
         UPGRADE_TANK_CONTAINER:FindDescendantByName('SHELL_LEVEL').text = 'Lv1' -- TODO
     else
@@ -1871,7 +1871,7 @@ function OpenTankUpgradeWindow(button, id)
         UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_TP_ENGINE').text =
             'Tank Parts: ' .. tostring(math.min(entry.mobilityResearchCost,LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP") ))
         UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_UNIVERSAL_ENGINE').text =
-            'Universal Part: ' .. tostring(math.max( entry.mobilityResearchCost- LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP"),0)   )
+            'Universal Parts: ' .. tostring(math.max( entry.mobilityResearchCost- LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP"),0)   )
         
         UPGRADE_TANK_CONTAINER:FindDescendantByName('ENGINE_LEVEL').text = 'Lv1' -- TODO
     else
