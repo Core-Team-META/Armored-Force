@@ -922,11 +922,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.3
+            Float: 0.2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 3
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -2620,7 +2620,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
+            Float: 0.3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.3
           }
         }
         Collidable_v2 {
@@ -4037,11 +4041,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_Detail2:vtile"
-            Float: 5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail2:utile"
-            Float: 5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail1:color"
@@ -4060,11 +4064,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -4074,11 +4078,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_Detail1:utile"
-            Float: 5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail1:vtile"
-            Float: 5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail3:id"
@@ -4088,11 +4092,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_Detail3:utile"
-            Float: 5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail3:vtile"
-            Float: 5
+            Float: 2
           }
         }
         Collidable_v2 {
@@ -4159,11 +4163,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1
+            Float: 0.5
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
+            Float: 1
           }
         }
         Collidable_v2 {
@@ -4741,11 +4745,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 5
+            Float: 3
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 15
+            Float: 3
           }
         }
         Collidable_v2 {
@@ -5305,11 +5309,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -5328,11 +5332,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_Detail1:utile"
-            Float: 3
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail1:vtile"
-            Float: 3
+            Float: 2
           }
         }
         Collidable_v2 {
@@ -5396,11 +5400,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -5419,11 +5423,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_Detail1:utile"
-            Float: 3
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail1:vtile"
-            Float: 3
+            Float: 2
           }
         }
         Collidable_v2 {
@@ -5486,11 +5490,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -5509,11 +5513,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_Detail1:utile"
-            Float: 3
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail1:vtile"
-            Float: 3
+            Float: 2
           }
         }
         Collidable_v2 {
@@ -5576,11 +5580,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -5599,11 +5603,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_Detail1:utile"
-            Float: 3
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail1:vtile"
-            Float: 3
+            Float: 2
           }
         }
         Collidable_v2 {
@@ -5667,11 +5671,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -5690,11 +5694,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_Detail1:utile"
-            Float: 3
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail1:vtile"
-            Float: 3
+            Float: 2
           }
         }
         Collidable_v2 {
@@ -5757,11 +5761,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -5780,11 +5784,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_Detail1:utile"
-            Float: 3
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail1:vtile"
-            Float: 3
+            Float: 2
           }
         }
         Collidable_v2 {
@@ -10392,11 +10396,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_Detail2:utile"
-            Float: 3
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail2:vtile"
-            Float: 3
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail1:color"
@@ -10406,6 +10410,22 @@ Assets {
               B: 0.102241725
               A: 1
             }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
           }
         }
         Collidable_v2 {
@@ -10585,11 +10605,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_Detail2:utile"
-            Float: 3
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail2:vtile"
-            Float: 3
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail1:color"
@@ -10599,6 +10619,22 @@ Assets {
               B: 0.102241725
               A: 1
             }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
           }
         }
         Collidable_v2 {
@@ -11380,11 +11416,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
+            Float: 0.2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
+            Float: 0.2
           }
         }
         Collidable_v2 {
@@ -11453,11 +11489,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
+            Float: 0.2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
+            Float: 0.2
           }
         }
         Collidable_v2 {
@@ -11529,11 +11565,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
+            Float: 0.2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
+            Float: 0.2
           }
         }
         Collidable_v2 {
@@ -11602,11 +11638,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
+            Float: 0.2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
+            Float: 0.2
           }
         }
         Collidable_v2 {
@@ -12450,11 +12486,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.2
+            Float: 0.6
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.2
+            Float: 0.6
           }
         }
         Collidable_v2 {
@@ -12523,11 +12559,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.2
+            Float: 0.6
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.2
+            Float: 0.6
           }
         }
         Collidable_v2 {
@@ -12596,11 +12632,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.2
+            Float: 0.6
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.2
+            Float: 0.6
           }
         }
         Collidable_v2 {
@@ -12669,11 +12705,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.2
+            Float: 0.6
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.2
+            Float: 0.6
           }
         }
         Collidable_v2 {
