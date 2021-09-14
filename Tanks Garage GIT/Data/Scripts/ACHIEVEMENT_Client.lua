@@ -60,6 +60,8 @@ local scriptListeners = {}
 local activeAchievements = {}
 --NOTIFICATION.visibility = Visibility.FORCE_OFF
 
+local notificationCheck = {achievements = false, challenges = false}
+
 local tournamentTable = {"TMAB", "TMAS", "TMAG", "TMAP"}
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -75,18 +77,23 @@ local function IsTournamentId(id)
 end
 
 local function CheckChallenges()    
-    Task.Wait(0.5)
-    NEW_CLAIMS.visibility = Visibility.FORCE_OFF
+    Task.Wait(1)
+    notificationCheck.challenges = false
     for i = 1, 4 do
         local target = LOCAL_PLAYER.clientUserData.CHALLENGES[i].target
         local progress = LOCAL_PLAYER.clientUserData.CHALLENGES[i].progress
         local challengeType = LOCAL_PLAYER.clientUserData.CHALLENGES[i].challengeType
         if challengeType == "Login" and progress >= 0 then
-            NEW_CLAIMS.visibility = Visibility.INHERIT
+            notificationCheck.challenges = true
         end
         if progress >= target then
-            NEW_CLAIMS.visibility = Visibility.INHERIT
+            notificationCheck.challenges = true
         end
+    end
+    if notificationCheck.challenges or notificationCheck.achievements then
+        NEW_CLAIMS.visibility = Visibility.FORCE_ON
+    else
+        NEW_CLAIMS.visibility = Visibility.FORCE_OFF
     end
 end
 
@@ -147,7 +154,7 @@ local function SetActiveAchievements()
     local xCount = {active = 0, complete = 0}
     local yCount = {active = 0, complete = 0}
 
-    NEW_CLAIMS.visibility = Visibility.FORCE_OFF
+    notificationCheck.achievements = false
     for _, achievement in ipairs(activeAchievements) do
         local achievementPanel = nil
 
@@ -202,7 +209,7 @@ local function SetActiveAchievements()
             RewardClaimButton.text = ""
             listeners[#listeners + 1] = RewardClaimButton.clickedEvent:Connect(OnClaimButtonPressed)
             status.text = "Completed"
-            NEW_CLAIMS.visibility = Visibility.INHERIT
+            notificationCheck.achievements = true
         elseif isComplete then
             progressBar.visibility = Visibility.FORCE_OFF
             checkmark.visibility = Visibility.INHERIT
@@ -283,6 +290,11 @@ local function SetActiveAchievements()
         achievementsActiveButton.text = "Active (" .. tostring(totalCount.active) .. ")"
         achievementsCompleteButton.text = "Completed (" .. tostring(totalCount.complete) .. ")"
     end
+    if notificationCheck.challenges or notificationCheck.achievements then
+        NEW_CLAIMS.visibility = Visibility.FORCE_ON
+    else
+        NEW_CLAIMS.visibility = Visibility.FORCE_OFF
+    end
 end
 
 local function BuildAchievementInfoPanel()
@@ -301,6 +313,11 @@ local function BuildAchievementInfoPanel()
 
     SetActiveAchievements()
     CheckChallenges()
+    if notificationCheck.challenges or notificationCheck.achievements then
+        NEW_CLAIMS.visibility = Visibility.FORCE_ON
+    else
+        NEW_CLAIMS.visibility = Visibility.FORCE_OFF
+    end
 end
 
 
@@ -347,17 +364,36 @@ end
 
 function Int()
     ACH_API.RegisterAchievements(ACHIEVEMENT_LIST)
+
     Task.Wait()
+
     BuildIdTable()
     ClearAchievements()
     NEW_CLAIMS.visibility = Visibility.FORCE_OFF
+
     Task.Wait(5)
-    for _, achievement in ipairs(ACH_API.GetAchievements()) do
+
+    activeAchievements = {}
+
+    for _, achievement in pairs(ACH_API.GetAchievements()) do
+        table.insert(activeAchievements, achievement)
+    end
+
+    table.sort(activeAchievements, CompareAchievement)
+
+    CheckChallenges()
+
+    for _, achievement in ipairs(activeAchievements) do
         if ACH_API.IsUnlocked(LOCAL_PLAYER, achievement.id) then
-            NEW_CLAIMS.visibility = Visibility.INHERIT
+            notificationCheck.achievements = true
         end
     end
-    CheckChallenges()
+    
+    if notificationCheck.challenges or notificationCheck.achievements then
+        NEW_CLAIMS.visibility = Visibility.FORCE_ON
+    else
+        NEW_CLAIMS.visibility = Visibility.FORCE_OFF
+    end
 end
 
 function OnGameStateChanged(oldState, newState, stateHasDuration, stateEndTime) --
@@ -409,7 +445,7 @@ function DisableThisComponent()
     ClearAchievements()
 end
 
-Int()
+
 scriptListeners[#scriptListeners + 1] = LOCAL_PLAYER.resourceChangedEvent:Connect(OnResourceChanged)
 --scriptListeners[#scriptListeners + 1] = Events.Connect("GameStateChanged", OnGameStateChanged)
 scriptListeners[#scriptListeners + 1] = Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
@@ -426,3 +462,4 @@ scriptListeners[#scriptListeners + 1] =
 -- handler params: UIButton_button
 achievementsActiveButton.clickedEvent:Connect(OnToggleButtonClicked)
 achievementsCompleteButton.clickedEvent:Connect(OnToggleButtonClicked)
+Int()
