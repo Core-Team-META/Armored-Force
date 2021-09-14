@@ -364,7 +364,7 @@ function Tick(deltaTime)
 
 				-- Full opacity until LINE_DURATION, then lerp to invisible over FADE_DURATION
 				-- color.a = CoreMath.Clamp(1.0 - (age - LINE_DURATION) / FADE_DURATION, 0.0, 1.0)
-
+				lineTemplates[i].visibility = Visibility.FORCE_ON
 				local feedLines = lineTemplates[i]:GetChildren()
 				local feedElements = {}
 
@@ -566,7 +566,7 @@ for i = 1, NUM_LINES do
 	local elements = {}
 
 	lineTemplates[i].height = ICON_SIZE
-
+	lineTemplates[i].visibility = Visibility.FORCE_OFF
 	elements["KillerHealth"] = World.SpawnAsset(AF_HEALTH_BAR_TEMPLATE, {parent = lineTemplates[i]})
 	elements["KillerHealth"].width = 25
 	elements["KillerHealth"].height = ICON_SIZE
