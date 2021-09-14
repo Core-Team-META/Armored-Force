@@ -42,7 +42,7 @@ local function ClearRankPanel(rankPanel)
 end
 
 local function SpawnPanel(player)
-    if not scoreCards[player.id] then
+    if not scoreCards[player.id] or not Object.IsValid(scoreCards[player.id].panel) then
         scoreCards[player.id] = {}
         local panel
         if player.team == LOCAL_PLAYER.team then
@@ -92,7 +92,7 @@ local function SetPanelTeam(player, count)
         if player.team ~= scoreCards[player.id].team then
             scoreCards[player.id].panel:Destroy()
         end
-        if not Object.IsValid(scoreCards[player.id]) then
+        if not Object.IsValid(scoreCards[player.id].panel) then
             SpawnPanel(player)
         end
         if player.team == LOCAL_PLAYER.team then
