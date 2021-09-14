@@ -31,37 +31,37 @@ local bundles = {}
 bundles[#bundles + 1] = {
     perk = PERKS.GOLD_PACK1.perk,
     storageId = PERKS.GOLD_PACK1.id,
-    resourceName = CURRENCY.GOLD,
+    resourceName = CURRENCY.GOLD.ResourceName,
     reward = 100
 }
 bundles[#bundles + 1] = {
     perk =  PERKS.GOLD_PACK2.perk,
     storageId = PERKS.GOLD_PACK2.id,
-    resourceName = CURRENCY.GOLD,
+    resourceName = CURRENCY.GOLD.ResourceName,
     reward = 250
 }
 bundles[#bundles + 1] = {
     perk = PERKS.GOLD_PACK3.perk,
     storageId = PERKS.GOLD_PACK3.id,
-    resourceName = CURRENCY.GOLD,
+    resourceName = CURRENCY.GOLD.ResourceName,
     reward = 500
 }
 bundles[#bundles + 1] = {
     perk = PERKS.SILVER_PACK1.perk,
     storageId = PERKS.SILVER_PACK1.id,
-    resourceName = CURRENCY.SILVER,
+    resourceName = CURRENCY.SILVER.ResourceName,
     reward = 10000
 }
 bundles[#bundles + 1] = {
     perk = PERKS.SILVER_PACK2.perk,
     storageId = PERKS.SILVER_PACK2.id,
-    resourceName = CURRENCY.SILVER,
+    resourceName = CURRENCY.SILVER.ResourceName,
     reward = 25000
 }
 bundles[#bundles + 1] = {
     perk = PERKS.SILVER_PACK3.perk,
     storageId = PERKS.SILVER_PACK3.id,
-    resourceName = CURRENCY.SILVER,
+    resourceName = CURRENCY.SILVER.ResourceName,
     reward = 50000
 }
 bundles[#bundles + 1] = {
@@ -120,7 +120,7 @@ end
 function CheckPerkCountWithStorage(player, data)
     local data = data or Storage.GetSharedPlayerData(STORAGE_KEY, player)
     local perks = OnLoadPerkData(data)
-
+    
     for _, bundle in ipairs(bundles) do
         local perkCount = player:GetPerkCount(bundle.perk)
         local storageCount = perks[bundle.storageId]
