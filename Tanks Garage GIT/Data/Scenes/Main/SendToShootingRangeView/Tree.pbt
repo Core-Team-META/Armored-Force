@@ -2157,6 +2157,12 @@ Objects {
         SelfId: 16746914393606924482
       }
     }
+    Overrides {
+      Name: "cs:Tutorial_JoinBattlePanel"
+      ObjectReference {
+        SelfId: 8208501464243926319
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

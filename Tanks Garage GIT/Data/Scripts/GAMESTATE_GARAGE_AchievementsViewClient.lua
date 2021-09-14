@@ -195,6 +195,7 @@ function OnClaimButtonPressed(button)
 	--print("Broadcascting claim reward for index " .. tostring(challengeButtonIndex[button]))
 
 	Events.BroadcastToServer("CLAIM_REWARD", challengeButtonIndex[button])
+	Events.Broadcast("CLAIM_REWARD", challengeButtonIndex[button])
 	
 	if GetActiveButtonState(button.parent.parent) == "Hover" then
 		SwitchButtonState(button.parent.parent, "Pressed")

@@ -429,6 +429,27 @@ function API.GetTankXPValueFromId(tankId)
 	return CONST.XP_TIER_VALUE.TIER1
 end
 
+function API.GetTankSilverValueFromId(tankId)
+	for i, tank in ipairs(TANK_LIST) do
+		if(tank.id == tankId) then
+			local tier = tank.tier
+			if(tier == 1) then
+				return CONST.SILVER_TIER_VALUE.TIER1
+			elseif(tier == 2) then
+				return CONST.SILVER_TIER_VALUE.TIER2
+			elseif(tier == 3) then
+				return CONST.SILVER_TIER_VALUE.TIER3
+			elseif(tier == 4) then
+				return CONST.SILVER_TIER_VALUE.TIER4
+			else
+				return CONST.SILVER_TIER_VALUE.TIER1
+			end
+		end
+	end
+	warn("Silver value not found with tank Id: " .. tankId)
+	return CONST.SILVER_TIER_VALUE.TIER1
+end
+
 ------------------------------------------------------------------------------------------------------------------------
 -- COSMETIC DATA FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------

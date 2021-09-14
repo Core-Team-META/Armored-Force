@@ -3,6 +3,7 @@ local API_Tutorial = require(script:GetCustomProperty("API_Tutorial"))
 local UIPanel = script:GetCustomProperty("UIPanel"):WaitForObject()
 local Trigger = script:GetCustomProperty("Trigger"):WaitForObject()
 local TutorialCompletePopup = script:GetCustomProperty("TutorialCompletePopup")
+local TutorialUI = script:GetCustomProperty("TutorialUI"):WaitForObject()
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 LOCAL_PLAYER.clientUserData.captureProgress = 0
@@ -15,6 +16,10 @@ function Tick()
 		if(LOCAL_PLAYER.clientUserData.captureProgress >= 10) then
 			local panel = World.SpawnAsset(TutorialCompletePopup, {parent = World.FindObjectByName("Tutorial UI")})
 			panel.lifeSpan = 3
+			TutorialUI:FindDescendantByName("Tutorial_Base Capture Panel"):FindDescendantByName("COMPLETION_PANEL").visibility = Visibility.FORCE_ON
+			TutorialUI:FindDescendantByName("Tutorial_Base Capture Panel"):FindDescendantByName("Objective_1").text = "Capture the enemy base (1/1)"
+			Task.Wait(3)
+			TutorialUI:FindDescendantByName("Tutorial_Base Capture Panel"):FindDescendantByName("COMPLETION_PANEL").visibility = Visibility.FORCE_OFF
 			Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.JoinBattle, true)
 			UIPanel.visibility = Visibility.FORCE_OFF
 			UIPanel:FindChildByName("Progress Bar").visibility = Visibility.FORCE_OFF

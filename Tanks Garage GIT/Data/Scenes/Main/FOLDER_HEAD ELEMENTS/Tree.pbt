@@ -1418,7 +1418,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11189,7 +11189,7 @@ Objects {
   }
   Control {
     Width: 10
-    Height: 30
+    Height: 12
     UIY: -4
     RotationAngle: 180
     RenderTransformPivot {
@@ -14412,7 +14412,7 @@ Objects {
   }
   Control {
     Width: 462
-    Height: 129
+    Height: 119
     UIY: -5
     RenderTransformPivot {
       Anchor {
@@ -14476,7 +14476,7 @@ Objects {
   Control {
     Width: -30
     Height: 29
-    UIY: -15
+    UIY: -7.76165771
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -14533,8 +14533,8 @@ Objects {
   Control {
     Width: 100
     Height: 30
-    UIX: 340
-    UIY: 1.22558594
+    UIX: 336.112549
+    UIY: 0.2
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -14546,7 +14546,7 @@ Objects {
       Color {
         A: 0.777
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:center"
       }
@@ -14617,7 +14617,7 @@ Objects {
         B: 1
         A: 0.326
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:center"
       }
@@ -14674,7 +14674,7 @@ Objects {
   Control {
     Width: 100
     Height: 30
-    UIY: -3.22558594
+    UIY: -2.5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -14688,7 +14688,7 @@ Objects {
         G: 0.775822461
         A: 1
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:center"
       }
@@ -14744,10 +14744,10 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 30
-    Height: 30
-    UIX: 300
-    UIY: 3.22558594
+    Width: 28
+    Height: 28
+    UIX: 311.985962
+    UIY: 0.643885195
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -14755,7 +14755,7 @@ Objects {
     }
     Image {
       Brush {
-        Id: 15087097116682079611
+        Id: 5338244946539998590
       }
       Color {
         A: 0.777
@@ -14805,10 +14805,10 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 33
-    Height: 33
-    UIX: 0.363987058
-    UIY: -3.72953343
+    Width: 28
+    Height: 28
+    UIX: -0.3
+    UIY: -0.6
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -14869,10 +14869,10 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 46
-    Height: 46
-    UIX: 7.51629591
-    UIY: -8.08146572
+    Width: 38
+    Height: 38
+    UIX: 3.51452088
+    UIY: -3.18865752
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -14883,10 +14883,10 @@ Objects {
         Id: 13257658630242510450
       }
       Color {
-        R: 0.590000033
-        G: 1
-        B: 0.9185431
-        A: 0.216
+        R: 1
+        G: 0.62682116
+        B: 0.51
+        A: 0.274000019
       }
       TeamSettings {
       }
@@ -14937,8 +14937,8 @@ Objects {
   Control {
     Width: 100
     Height: 30
-    UIX: 190
-    UIY: 1.22558594
+    UIX: 189.750809
+    UIY: -0.2
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -14950,7 +14950,7 @@ Objects {
       Color {
         A: 0.777
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:center"
       }
@@ -15006,7 +15006,7 @@ Objects {
   Control {
     Width: 100
     Height: 19
-    UIY: -3.22558594
+    UIY: -1.5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -15021,7 +15021,7 @@ Objects {
         B: 1
         A: 0.326
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:center"
       }
@@ -15078,7 +15078,7 @@ Objects {
   Control {
     Width: 100
     Height: 30
-    UIY: -3.22558594
+    UIY: -2.5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -15092,7 +15092,7 @@ Objects {
         G: 0.621456921
         A: 1
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:center"
       }
@@ -15149,10 +15149,10 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 30
-    Height: 30
-    UIX: 150
-    UIY: 3.226
+    Width: 25
+    Height: 25
+    UIX: 161.21077
+    UIY: 4.34707737
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -15210,8 +15210,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 30
-    Height: 30
+    Width: 25
+    Height: 25
     UIY: -3.22558594
     RenderTransformPivot {
       Anchor {
@@ -15273,8 +15273,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 30
-    Height: 30
+    Width: 25
+    Height: 25
     UIY: -3.22558594
     RenderTransformPivot {
       Anchor {
@@ -15336,10 +15336,10 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 46
-    Height: 46
-    UIX: -8.52627945
-    UIY: -10.7927666
+    Width: 33
+    Height: 33
+    UIX: -3.44246483
+    UIY: -5.66259766
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -15404,8 +15404,8 @@ Objects {
   Control {
     Width: 100
     Height: 30
-    UIX: 40
-    UIY: 1.22558594
+    UIX: 38
+    UIY: 0.2
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -15417,7 +15417,7 @@ Objects {
       Color {
         A: 0.777
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:center"
       }
@@ -15473,7 +15473,7 @@ Objects {
   Control {
     Width: 100
     Height: 19
-    UIY: -3.22558594
+    UIY: -2.5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -15488,7 +15488,7 @@ Objects {
         B: 1
         A: 0.326
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:center"
       }
@@ -15545,7 +15545,7 @@ Objects {
   Control {
     Width: 100
     Height: 30
-    UIY: -3.22558594
+    UIY: -2.5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -15560,7 +15560,7 @@ Objects {
         B: 0.644479871
         A: 1
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:center"
       }
@@ -15617,9 +15617,10 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 30
-    Height: 30
-    UIY: 3.22558594
+    Width: 27
+    Height: 27
+    UIX: 11.2554245
+    UIY: 1.40593278
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -15677,9 +15678,9 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 36
-    Height: 36
-    UIY: -7.09184837
+    Width: 27
+    Height: 27
+    UIY: -1
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -15744,9 +15745,9 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 36
-    Height: 36
-    UIY: -7.09184837
+    Width: 27
+    Height: 27
+    UIY: -1
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -15807,10 +15808,10 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 53
-    Height: 51
-    UIX: -9.90545
-    UIY: -12.0847969
+    Width: 37
+    Height: 37
+    UIX: -3.78752112
+    UIY: -4.16438055
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -15972,9 +15973,9 @@ Objects {
   }
   Control {
     Width: 199
-    Height: 44
-    UIX: -39.5762329
-    UIY: -2
+    Height: 49
+    UIX: -37
+    UIY: -8.15080833
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -16044,7 +16045,7 @@ Objects {
   Control {
     Width: 152
     Height: 29
-    UIY: 6.12936115
+    UIY: 7.99081135
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -16125,7 +16126,7 @@ Objects {
   Control {
     Width: 152
     Height: 29
-    UIY: -2
+    UIY: -1
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -16305,8 +16306,8 @@ Objects {
   Control {
     Width: 33
     Height: 30
-    UIX: -20
-    UIY: -1
+    UIX: 4.12075806
+    UIY: -10
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -16556,8 +16557,8 @@ Objects {
   Control {
     Width: -10
     Height: 30
-    UIX: -10
-    UIY: -1
+    UIX: 10.5026703
+    UIY: -10
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"

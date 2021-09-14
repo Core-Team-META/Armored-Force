@@ -35,7 +35,7 @@ local function SetTankInfo(value)
 end
 
 local function SetAccountInfo()
-    local currentRank = LOCAL_PLAYER:GetResource("Rank")
+    local currentRank = LOCAL_PLAYER:GetResource("LEVEL")
     RANK_PRIMARY.text = "RANK " .. tostring(currentRank)
     RANK_SECONDARY.text = "RANK " .. tostring(currentRank)
     ClearRankIcons()

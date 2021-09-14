@@ -145,7 +145,8 @@ Assets {
         Control {
           Width: 423
           Height: 200
-          UIX: 10
+          UIX: 870
+          UIY: 210
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1536,12 +1537,12 @@ Assets {
           }
           Image {
             Brush {
-              Id: 8581935008439073870
+              Id: 5338244946539998590
             }
             Color {
-              R: 0.0998987257
-              G: 0.323143244
-              B: 0.533276618
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
             TeamSettings {
@@ -1606,9 +1607,8 @@ Assets {
           Text {
             Label: "100,000"
             Color {
-              R: 0.0998987257
-              G: 0.323143244
-              B: 0.533276618
+              R: 0.395318866
+              G: 0.562000036
               A: 1
             }
             Size: 20
@@ -3073,12 +3073,12 @@ Assets {
       }
     }
     Assets {
-      Id: 8581935008439073870
-      Name: "Icon DNA"
+      Id: 5338244946539998590
+      Name: "Survival Crate 005"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "Icon_DNA"
+        AssetId: "UI_Survival_Equip_Crate_005"
       }
     }
     Assets {
