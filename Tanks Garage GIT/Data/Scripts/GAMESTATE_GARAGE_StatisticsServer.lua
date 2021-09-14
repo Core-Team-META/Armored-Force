@@ -3,7 +3,7 @@ local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_AP
 local _Constants_API = require(script:GetCustomProperty("Constants_API"))
 
 local RANK_API = _Constants_API:WaitForConstant("Ranks")
-  
+local TankAPI = _Constants_API:WaitForConstant("Tanks")
 local LEADERBOARDS = script:GetCustomProperty("Leaderboards"):WaitForObject()
 local MTD_LEADERBOARD = LEADERBOARDS:GetCustomProperty("MatchDestroyed")
 local MDD_LEADERBOARD = LEADERBOARDS:GetCustomProperty("MatchDamage")
@@ -196,13 +196,11 @@ end
 
 function SaveStatistics()
 	for x, p in pairs(Game.GetPlayers()) do
-		--print(p.name .. " earned " .. tostring(CalculateTotalXP(p)) .. " XP for " .. UTIL_API.GetTankRPString(p:GetResource(CONSTANTS_API.GetEquippedTankResource())))
-		--print(p.name .. " earned " .. tostring(CalculateTotalCurrency(p)) .. " currency")
-
+ 
 
 		local tempTbl = {}
 
-		local tankRPString = UTIL_API.GetTankRPString(p:GetResource(CONSTANTS_API.GetEquippedTankResource()))
+		local tankRPString = UTIL_API.GetTankRPString(p:GetResource(TankAPI.EquipResource))
 		local totalXp =  p:GetResource(CONSTANTS_API.XP) - playerStartingXP[p.id]
 		local baseXP = 0
 		local baseCurrency = 0
@@ -240,7 +238,7 @@ function SaveStatistics()
 			)
 		)
 
-		p:AddResource(UTIL_API.GetTankRPString(p:GetResource(CONSTANTS_API.GetEquippedTankResource())), baseXP)		
+		p:AddResource(UTIL_API.GetTankRPString(p:GetResource(TankAPI.EquipResource)), baseXP)		
 		p:AddResource(CONSTANTS_API.XP, baseXP)
 		p:AddResource(CONSTANTS_API.SILVER, baseCurrency)
 		
@@ -333,7 +331,7 @@ function OnDamagedRecord(player, damage)
 			damage.sourcePlayer:AddResource("DamageTracker", xpRewarded)
 
 			damage.sourcePlayer:AddResource(
-				UTIL_API.GetTankRPString(damage.sourcePlayer:GetResource(CONSTANTS_API.GetEquippedTankResource())),
+				UTIL_API.GetTankRPString(damage.sourcePlayer:GetResource(TankAPI.EquipResource)),
 				xpRewarded
 			)
 			

@@ -43,7 +43,7 @@ function GetPlayer(playerId)
 end
 
 function ChangeEquippedTank(player, id)
-    player:SetResource(CONSTANTS_API.GetEquippedTankResource(), tonumber(id))
+    player:SetResource(tankApi.EquipResource, tonumber(id))
     RemovePlayerEquipment(player)
     GivePlayerEquipment(player)
 end
@@ -90,7 +90,7 @@ end
 -- nil GivePlayerEquipment(Player)
 -- Gives the referenced equipment to the player
 function GivePlayerEquipment(player, playerStart)
-    local resourceID = player:GetResource(CONSTANTS_API.GetEquippedTankResource())
+    local resourceID = player:GetResource(tankApi.EquipResource)
     local id = tostring(resourceID)
 
     if resourceID < 10 then

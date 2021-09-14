@@ -1,6 +1,8 @@
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local Ease3D = require(script:GetCustomProperty("Ease3D"))
 local API_Tutorial = require(script:GetCustomProperty("API_Tutorial"))
+local _Constants_API = require(script:GetCustomProperty("Constants_API"))
+local TanksAPI = _Constants_API:WaitForConstant("Tanks")
 
 local mainManagerServer = script:GetCustomProperty("GAMESTATE_MainManagerServer"):WaitForObject()
 local overrideCamera = script:GetCustomProperty("OverrideCamera"):WaitForObject()
@@ -225,8 +227,8 @@ function ToggleThisComponent(requestedPlayerState)
 	
 end
 
-function ChangeGarageModel(id)
-
+function ChangeGarageModel(id) 
+	if not id or id == "" then return end
 	for i, child in ipairs(equippedTankInGarage:GetChildren()) do
 		if(string.match(child.name, "SKIN") and Object.IsValid(child)) then
 			child:Destroy()
@@ -267,16 +269,16 @@ function ChangeGarageModel(id)
 end
 
 function SetGarageModelFromEquippedTank(player, tankId)
-
+	 
 	local selectedId = tankId
 
-	if not tankId then
+	if not tankId  then
 	
-		while not player:GetResource(CONSTANTS_API.GetEquippedTankResource()) do
+		while not player:GetResource(TanksAPI.EquipResource) do
 			Task.Wait(0.1)
 		end
 		
-		selectedId = player:GetResource(CONSTANTS_API.GetEquippedTankResource())
+		selectedId = player:GetResource(TanksAPI.EquipResource)
 	end
 		
 	local id = tostring(selectedId)
@@ -343,7 +345,7 @@ function InitializeComponent()
 		wheels.visibility = Visibility.INHERIT
 	end
 		
-	local vehicleID = localPlayer:GetResource(CONSTANTS_API.GetEquippedTankResource())
+	local vehicleID = localPlayer:GetResource(TanksAPI.EquipResource)
 	local vehicleIDString = tostring(vehicleID)
 	
 	if tonumber(vehicleID) < 10 and not string.find(vehicleIDString, "0") then
