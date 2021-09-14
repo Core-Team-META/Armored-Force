@@ -2,16 +2,15 @@ local UTIL = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 local _Constants_API = require(script:GetCustomProperty("Constants_API"))
  
 local STORAGE_LEADERBOARD = _Constants_API:WaitForConstant("Storage_Keys").Leaderboards 
-local LEADERBOARDS = _Constants_API:WaitForConstant("Leaderboards")
+local LEADERBOARDS = _Constants_API:WaitForConstant("LeaderBoards")
 
 
 local MTD_LEADERBOARD = LEADERBOARDS.MatchDestroyed
 local MDD_LEADERBOARD = LEADERBOARDS.MatchDamage
 local LTTD_LEADERBOARD = LEADERBOARDS.TotalDestroyed
 local LTDD_LEADERBOARD = LEADERBOARDS.TotalDamage
-local LTWR_LEADERBOARD = LEADERBOARDS.TotalWinRate
-
-local MAX_ENTRIES = 10
+local LTWR_LEADERBOARD = LEADERBOARDS.TotalWinRate 
+local MAX_ENTRIES = 10 
 
 if not STORAGE_LEADERBOARD then
     print("Leaderboard Net Refrence Missing!")
