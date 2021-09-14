@@ -252,6 +252,16 @@ Objects {
       Name: "cs:AdvancePhase"
       Bool: false
     }
+    Overrides {
+      Name: "cs:TutorialUI"
+      ObjectReference {
+        SelfId: 14672083327800524015
+      }
+    }
+    Overrides {
+      Name: "cs:AssociatedPanel"
+      String: ""
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -829,6 +839,12 @@ Objects {
       Name: "cs:TutorialCompletePopup"
       AssetReference {
         Id: 5513507585235710589
+      }
+    }
+    Overrides {
+      Name: "cs:TutorialUI"
+      ObjectReference {
+        SelfId: 14672083327800524015
       }
     }
   }
@@ -25037,6 +25053,16 @@ Objects {
       Name: "cs:AdvancePhase"
       Bool: false
     }
+    Overrides {
+      Name: "cs:TutorialUI"
+      ObjectReference {
+        SelfId: 14672083327800524015
+      }
+    }
+    Overrides {
+      Name: "cs:AssociatedPanel"
+      String: ""
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25563,6 +25589,12 @@ Objects {
       Name: "cs:TutorialCompletePopup"
       AssetReference {
         Id: 5513507585235710589
+      }
+    }
+    Overrides {
+      Name: "cs:TutorialUI"
+      ObjectReference {
+        SelfId: 14672083327800524015
       }
     }
   }

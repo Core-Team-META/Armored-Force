@@ -21,6 +21,7 @@ local defaultSkins = script:GetCustomProperty("DefaultSkins"):WaitForObject()
 local returnToGarage = script:GetCustomProperty("ReturnToGarage"):WaitForObject()
 local TutorialFinishedPopup = script:GetCustomProperty("TutorialFinishedPopup")
 local JoinBattle = script:GetCustomProperty("JoinBattle"):WaitForObject()
+local Tutorial_JoinBattlePanel = script:GetCustomProperty("Tutorial_JoinBattlePanel"):WaitForObject()
 
 local thisComponent = "SHOOTING_RANGE"
 
@@ -300,9 +301,14 @@ function ToggleGarage(player, binding)
 	
 	if binding == "ability_extra_34" and localPlayer:GetResource(API_Tutorial.GetTutorialResource()) >= API_Tutorial.TutorialPhase.JoinBattle then
 		if localPlayer:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.JoinBattle then
-			Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.Upgrade, true)
+			Tutorial_JoinBattlePanel:FindDescendantByName("COMPLETION_PANEL").visibility = Visibility.FORCE_ON	
+			Tutorial_JoinBattlePanel:FindDescendantByName("Objective_1").text = "Press [G] to join a battle (1/1)"		
 			local panel = World.SpawnAsset(TutorialFinishedPopup, {parent = World.FindObjectByName("Tutorial UI")})
-			panel.lifeSpan = 3			
+			panel.lifeSpan = 3	
+			Task.Wait(2)	
+			Tutorial_JoinBattlePanel:FindDescendantByName("COMPLETION_PANEL").visibility = Visibility.FORCE_OFF		
+			Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.Upgrade, true)	
+			Tutorial_JoinBattlePanel:FindDescendantByName("Objective_1").text = "Press [G] to join a battle (0/1)"
 		end
 		Events.BroadcastToServer("SEND_TO_MAP", "Frontline")
 	end
