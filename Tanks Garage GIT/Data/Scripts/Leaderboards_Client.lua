@@ -25,7 +25,7 @@ local _Constants_API = require(script:GetCustomProperty("Constants_API"))
 local KEYS =  _Constants_API:WaitForConstant("Storage_Keys") 
 local LEADBOARDS = KEYS.Leaderboards
 
-local LEADERBOARD_NET = _Constants_API:WaitForConstant("Leaderboards")
+local LEADERBOARD_NET = _Constants_API:WaitForConstant("LeaderBoards")
 local MTD_LEADERBOARD = LEADERBOARD_NET.MatchDestroyed
 local MDD_LEADERBOARD = LEADERBOARD_NET.MatchDamage
 local LTTD_LEADERBOARD = LEADERBOARD_NET.TotalDestroyed
