@@ -14,7 +14,7 @@ local RootGroup = script:GetCustomProperty("Root"):WaitForObject()
 local PlayerCamera = RootGroup:GetCustomProperty("PlayerCamera"):WaitForObject()
 local FreecamCamera = RootGroup:GetCustomProperty("FreecamCamera"):WaitForObject()
 local ChangeSpectatorModePanel = script:GetCustomProperty("ChangeSpectatorModePanel"):WaitForObject()
-local SpectatePreviousPlayerPanel = script:GetCustomProperty("SpectatePreviousPlayerPanel"):WaitForObject()
+--local SpectatePreviousPlayerPanel = script:GetCustomProperty("SpectatePreviousPlayerPanel"):WaitForObject()
 local SpectateNextPlayerPanel = script:GetCustomProperty("SpectateNextPlayerPanel"):WaitForObject()
 local FreecamMovePanel = script:GetCustomProperty("FreecamMovePanel"):WaitForObject()
 local FreecamDecreaseSpeedPanel = script:GetCustomProperty("FreecamDecreaseSpeedPanel"):WaitForObject()
@@ -317,17 +317,17 @@ local function ChangeUiMode()
 		FreecamDecreaseSpeedPanel.visibility = Visibility.FORCE_OFF
 		FreecamIncreaseSpeedPanel.visibility = Visibility.FORCE_OFF
 
-		SpectatePreviousPlayerPanel.visibility = Visibility.INHERIT
-		SpectateNextPlayerPanel.visibility = Visibility.INHERIT
+--		SpectatePreviousPlayerPanel.visibility = Visibility.INHERIT
+		SpectateNextPlayerPanel.visibility = Visibility.FORCE_ON
 	elseif(spectateMode == SpectateMode.FREECAM) then
-		SpectatePreviousPlayerPanel.visibility = Visibility.FORCE_OFF
+--		SpectatePreviousPlayerPanel.visibility = Visibility.FORCE_OFF
 		SpectateNextPlayerPanel.visibility = Visibility.FORCE_OFF
 
 		FreecamMovePanel.visibility = Visibility.INHERIT
 		FreecamDecreaseSpeedPanel.visibility = Visibility.INHERIT
 		FreecamIncreaseSpeedPanel.visibility = Visibility.INHERIT
 	else
-		SpectatePreviousPlayerPanel.visibility = Visibility.FORCE_OFF
+--		SpectatePreviousPlayerPanel.visibility = Visibility.FORCE_OFF
 		SpectateNextPlayerPanel.visibility = Visibility.FORCE_OFF
 		FreecamMovePanel.visibility = Visibility.FORCE_OFF
 		FreecamDecreaseSpeedPanel.visibility = Visibility.FORCE_OFF
