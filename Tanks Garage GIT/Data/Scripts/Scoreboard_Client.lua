@@ -15,7 +15,6 @@ local ENTRY_TEMPLATE = script:GetCustomProperty("Scoreboard_Entry_Template")
 local ENEMY_ENTRY_TEMPLATE = script:GetCustomProperty("Scoreboard_Entry_Enemy_Template")
 local Constants_API = require(script:GetCustomProperty("Constants_API"))
 
-
 local UPDATE_DELAY = 0.1
 
 local scoreCards = {}
@@ -26,13 +25,17 @@ local isActive = false
 local forceMouseActive = false
 
 
- 
-local RANK = Constants_API:WaitForConstant("Ranks")
+-- Changed back to global, constants are broken and no time to fix.
+while not _G.PLAYER_RANKS do
+    Task.Wait()
+end
+
+local RANK = _G.PLAYER_RANKS --Constants_API:WaitForConstant("Ranks")
 local TANKS = Constants_API:WaitForConstant("Tanks").GetTanks()
 
 local function ClearRankPanel(rankPanel)
     for _, child in ipairs(rankPanel:GetChildren()) do
-        if child and Object.IsValid(child) then
+        if Object.IsValid(child) then
             child:Destroy()
         end
     end
@@ -60,11 +63,11 @@ local function SpawnPanel(player)
         scoreCards[player.id].name.text = player.name or ""
 
         if Object.IsValid(player) then
-            local rankPanel = panel:GetCustomProperty("Rank"):WaitForObject()
+            local rankPanel = scoreCards[player.id].rank
             ClearRankPanel(rankPanel)
             local iconSmall = World.SpawnAsset(RANK.GetSmallRankIcon(player))
             iconSmall.parent = rankPanel
-            scoreCards[player.id].rank = rankPanel
+            scoreCards[player.id].level = player:GetResource("LEVEL")
         end
 
         if player.identifier then
@@ -79,7 +82,7 @@ local function SpawnPanel(player)
         if player.isDead then
             scoreCards[player.id].health:SetColor(Color.RED)
         --else
-           -- scoreCards[player.id].health:SetColor(Color.GREEN)
+        -- scoreCards[player.id].health:SetColor(Color.GREEN)
         end
     end
 end
@@ -104,23 +107,31 @@ end
 local function SetPanel(player, count, currentState)
     SpawnPanel(player)
     SetPanelTeam(player, count)
-    scoreCards[player.id].kills.text = tostring(player.kills or 0)
-    local damage = _G.utils and _G.utils.GetResource(player, "TankDamage")
-    scoreCards[player.id].damage.text = tostring(damage or 0)
-    scoreCards[player.id].playerTankName =
-        player.clientUserData and player.clientUserData.currentTankData and player.clientUserData.currentTankData.name or
-        scoreCards[player.id].playerTankName
-    scoreCards[player.id].tankName.text =
-        player.clientUserData and player.clientUserData.currentTankData and player.clientUserData.currentTankData.name or
-        scoreCards[player.id].aiTankName or
-        scoreCards[player.id].playerTankName or
-        ""
 
+    local scoreCard = scoreCards[player.id]
+
+    scoreCard.kills.text = tostring(player.kills or 0)
+    local damage = _G.utils and _G.utils.GetResource(player, "TankDamage")
+    scoreCard.damage.text = tostring(damage or 0)
+    scoreCard.playerTankName =
+        player.clientUserData and player.clientUserData.currentTankData and player.clientUserData.currentTankData.name or
+        scoreCard.playerTankName
+        scoreCard.tankName.text =
+        player.clientUserData and player.clientUserData.currentTankData and player.clientUserData.currentTankData.name or
+        scoreCard.aiTankName or
+        scoreCard.playerTankName or
+        ""
+    if Object.IsValid(player) and scoreCard.rank and scoreCard.level ~= player:GetResource("LEVEL") then
+        ClearRankPanel(scoreCard.rank)
+        local iconSmall = World.SpawnAsset(RANK.GetSmallRankIcon(player))
+        iconSmall.parent = scoreCard.rank
+        scoreCards[player.id].level = player:GetResource("LEVEL")
+    end
     if player.isDead then
-        scoreCards[player.id].health:SetColor(Color.RED)
+        scoreCard.health:SetColor(Color.RED)
     else
         if (currentState == "MATCH_STATE" and currentState == "LOBBY_STATE") then
-            scoreCards[player.id].health:SetColor(Color.GREEN)
+            scoreCard.health:SetColor(Color.GREEN)
         end
     end
 end
