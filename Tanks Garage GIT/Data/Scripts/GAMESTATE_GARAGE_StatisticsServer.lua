@@ -125,6 +125,11 @@ end
 
 function CalculateNewLevelAndRank(player)
 	AdvancePlayerLevel(player)
+
+	-- We need this for AI as they are still considered a "player" - Morticai
+	if not Object.IsValid(player) and player:IsA("Player") then return end
+
+
 	local levelValue = player:GetResource(CONSTANTS_API.XP_SYSTEM.LVL)
 	local newRank = RANK_API.GetRankFromLevel(levelValue)["RankNumber"]
 	print(tostring(player.id) .. " level:" .. tostring(levelValue) .. " rank:" .. tostring(newRank))
