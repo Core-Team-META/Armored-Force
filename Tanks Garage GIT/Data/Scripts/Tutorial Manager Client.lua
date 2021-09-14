@@ -55,10 +55,10 @@ end
 
 function GotoShootingRange(button)
 	SFX_CLICK:Play()
-	button.parent:FindDescendantByName("BUTTON_NORMAL_PRESSED").visibility = Visibility.FORCE_OFF
-	AdvanceTutorial(API_Tutorial.TutorialPhase.MovedToShootingRange, true)	
+	button.parent:FindDescendantByName("BUTTON_NORMAL_PRESSED").visibility = Visibility.FORCE_OFF	
 	Events.Broadcast("ENABLE_GARAGE_COMPONENT", "SHOOTING_RANGE")
 	Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_OFF
+	AdvanceTutorial(API_Tutorial.TutorialPhase.MovedToShootingRange, true)	
 end
 
 function AdvanceTutorial(phase, giveRewards)
@@ -68,8 +68,9 @@ function AdvanceTutorial(phase, giveRewards)
 		if LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialRewardResource()) < phase then
 			local panel = World.SpawnAsset(TutorialCompletePopup, {parent = script.parent:FindChildByName("Tutorial UI")})
 			panel.lifeSpan = 3
-		end		
-		Events.BroadcastToServer("AdvanceTutorial",  API_Tutorial.TutorialPhase.MovedToShootingRange, giveRewards or true)
+		end	
+		Task.Wait(3)
+		Events.BroadcastToServer("AdvanceTutorial",  API_Tutorial.TutorialPhase.MovedToShootingRange, giveRewards or true)		
 	end
 end
 
