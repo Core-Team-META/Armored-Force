@@ -73,6 +73,9 @@ Tanks.GetPurchaseCost = function(id)
         return {resource = tostring(tank.purchaseCurrencyName), amount = tonumber(tank.purchaseCost)}	
     end
 end
+Tanks.IsValidID = function(id)
+    return Tanks.GetTanks()[id] ~= nil
+end
 
 Tanks.TANK_TYPE = {
     Light = {Name = 'Light'},

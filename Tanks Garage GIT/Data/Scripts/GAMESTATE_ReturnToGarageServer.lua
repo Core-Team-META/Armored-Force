@@ -1,6 +1,8 @@
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
- 
+local _Constants_API = require(script:GetCustomProperty("Constants_API"))
+local TanksAPI = _Constants_API:WaitForConstant("Tanks")
+
 local settings = script:GetCustomProperty("Settings"):WaitForObject()
 local statisticsComponent = script:GetCustomProperty("GAMESTATE_StatisticsComponent"):WaitForObject()
 local mainGameStateManagerServer = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
@@ -20,7 +22,7 @@ function LeaveEarly(player, id)
 	local timeElapsed = maxMatchDuration - currentTime
 	
 	local leaveEarlyAward = UTIL_API.CalculateLeaveEarlyEarnings(timeElapsed, maxMatchDuration, maxAwardXP)
-	player:AddResource(UTIL_API.GetTankRPString(player:GetResource(CONSTANTS_API.GetEquippedTankResource())), CoreMath.Round(leaveEarlyAward))
+	player:AddResource(UTIL_API.GetTankRPString(player:GetResource(TanksAPI.EquipResource)), CoreMath.Round(leaveEarlyAward))
 	player:AddResource(CONSTANTS_API.XP, CoreMath.Round(leaveEarlyAward))
 	player:AddResource("Silver", CoreMath.Round(leaveEarlyAward * 2))
 	if id == 1 then

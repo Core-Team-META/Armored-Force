@@ -84,6 +84,7 @@ function ToggleThisComponent(requestedPlayerState)
 	savedState = requestedPlayerState
 
 	if requestedPlayerState == thisComponent then
+		originalTank =  localPlayer:GetResource(tanksAPI.EquipResource)
 		if not enteringFromDefaultMenu then
 			Task.Wait(2)
 		end
@@ -164,10 +165,10 @@ function AssignPreviewText()
 		
 	end
 	
-	local selectedTankResource = localPlayer:GetResource(CONSTANTS_API.GetEquippedTankResource())
+	local selectedTankResource = localPlayer:GetResource(tanksAPI.EquipResource)
 	
-	while not localPlayer:GetResource(CONSTANTS_API.GetEquippedTankResource()) do
-		selectedTankResource = localPlayer:GetResource(CONSTANTS_API.GetEquippedTankResource())
+	while not localPlayer:GetResource(tanksAPI.EquipResource) do
+		selectedTankResource = localPlayer:GetResource(tanksAPI.EquipResource)
 		Task.Wait()
 	end
 	
