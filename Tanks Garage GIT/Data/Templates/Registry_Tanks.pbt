@@ -7085,11 +7085,11 @@ Assets {
           }
           Overrides {
             Name: "cs:topSpeed"
-            Int: 900
+            Int: 990
           }
           Overrides {
             Name: "cs:topSpeedUpgraded"
-            Int: 1000
+            Int: 1040
           }
           Overrides {
             Name: "cs:reverseSpeed"
@@ -7097,7 +7097,7 @@ Assets {
           }
           Overrides {
             Name: "cs:acceleration"
-            Int: 1200
+            Int: 1400
           }
           Overrides {
             Name: "cs:wheelSpeedModifier"
@@ -7113,7 +7113,7 @@ Assets {
           }
           Overrides {
             Name: "cs:accelerationUpgraded"
-            Int: 1700
+            Int: 1600
           }
           Overrides {
             Name: "cs:BurntTank"
