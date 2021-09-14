@@ -63,15 +63,15 @@ bundles[#bundles + 1] = {
     reward = 50000
 }
 bundles[#bundles + 1] = {
-    perk =  PERKS.SOLDIERPACK,
+    perk =  PERKS.SOLDIERPACK.perk,
     storageId = PERKS.SOLDIERPACK.id
 }
 bundles[#bundles + 1] = {
-    perk = PERKS.CAPTAINPACK,
+    perk = PERKS.CAPTAINPACK.perk,
     storageId = PERKS.CAPTAINPACK.id
 }
 bundles[#bundles + 1] = {
-    perk = PERKS.GENERALPACK,
+    perk = PERKS.GENERALPACK.perk,
     storageId = PERKS.GENERALPACK.id
 }
 
