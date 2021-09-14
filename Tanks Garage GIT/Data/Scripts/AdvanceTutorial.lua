@@ -6,6 +6,8 @@ local Step = script:GetCustomProperty("Step")
 local EnteredWaypointSFX = script:GetCustomProperty("EnteredWaypointSFX"):WaitForObject()
 local AdvancePhase = script:GetCustomProperty("AdvancePhase")
 local TutorialCompletePopup = script:GetCustomProperty("TutorialCompletePopup")
+local TutorialUI = script:GetCustomProperty("TutorialUI"):WaitForObject()
+local AssociatedPanel = script:GetCustomProperty("AssociatedPanel")
 
 function OnOverlap(trigger, other)
 	if(other.driver) then
@@ -16,6 +18,9 @@ function OnOverlap(trigger, other)
 			if(AdvancePhase) then
 				local panel = World.SpawnAsset(TutorialCompletePopup, {parent = World.FindObjectByName("Tutorial UI")})
 				panel.lifeSpan = 3
+				TutorialUI:FindDescendantByName(AssociatedPanel):FindDescendantByName("COMPLETION_PANEL").visibility = Visibility.FORCE_ON
+				Task.Wait(3)
+				TutorialUI:FindDescendantByName(AssociatedPanel):FindDescendantByName("COMPLETION_PANEL").visibility = Visibility.FORCE_OFF
 				Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.TargetPractice, true)
 			end
 		end
