@@ -74305,7 +74305,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "500 Gold"
+      Label: "1000 Gold"
       Color {
         R: 1
         G: 0.0395462364
@@ -74381,7 +74381,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "500 Gold"
+      Label: "1000 Gold"
       Color {
         R: 1
         G: 0.0587552786
@@ -75856,7 +75856,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "250 Gold"
+      Label: "500 Gold"
       Color {
         R: 1
         G: 0.0395462364
@@ -75932,7 +75932,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "250 Gold"
+      Label: "500 Gold"
       Color {
         R: 1
         G: 0.0587552786
@@ -77406,7 +77406,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "100 Gold"
+      Label: "250 Gold"
       Color {
         R: 1
         G: 0.0395462364
@@ -77482,7 +77482,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "100 Gold"
+      Label: "250 Gold"
       Color {
         R: 1
         G: 0.0587552786
@@ -78957,7 +78957,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "50,000 Silver"
+      Label: "250,000 Silver"
       Color {
         R: 1
         G: 0.0395462364
@@ -79033,7 +79033,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "50,000 Silver"
+      Label: "250,000 Silver"
       Color {
         R: 1
         G: 0.0587552786
@@ -80506,7 +80506,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "25,000 Silver"
+      Label: "100,000 Silver"
       Color {
         R: 1
         G: 0.0395462364
@@ -80582,7 +80582,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "25,000 Silver"
+      Label: "100,000 Silver"
       Color {
         R: 1
         G: 0.0587552786
@@ -82055,7 +82055,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "10,000 Silver"
+      Label: "50,000 Silver"
       Color {
         R: 1
         G: 0.0395462364
@@ -82131,7 +82131,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "10,000 Silver"
+      Label: "50,000 Silver"
       Color {
         R: 1
         G: 0.0587552786
@@ -84697,7 +84697,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "Buy all items above for only 300 Credits."
+      Label: "Buy all items above for only 2250 Credits."
       Color {
         R: 1
         G: 0.0587552786
@@ -84774,7 +84774,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "Buy all items above for only 300 Credits."
+      Label: "Buy all items above for only 2250 Credits."
       Color {
         R: 1
         G: 0.0395462364
@@ -84920,7 +84920,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "This Big Deal has a value of 1100 Credits."
+      Label: "This Big Deal has a value of 2800 Credits."
       Color {
         R: 1
         G: 0.571125031
@@ -85068,7 +85068,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "500 Credits"
+      Label: "1000 Credits"
       Color {
         R: 1
         G: 0.571788073
@@ -85145,7 +85145,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "50,000 Univarsal Parts"
+      Label: "100,000 Universal Parts"
       Color {
         R: 0.420000017
         G: 0.420000017
@@ -85222,7 +85222,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "300 Credits"
+      Label: "1000 Credits"
       Color {
         R: 1
         G: 0.571125031
@@ -85299,7 +85299,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "500 Gold"
+      Label: "2500 Gold"
       Color {
         R: 0.420000017
         G: 0.420000017
@@ -85376,7 +85376,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "300 Credits"
+      Label: "800 Credits"
       Color {
         R: 1
         G: 0.571788073
@@ -85453,7 +85453,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "50,000 Silver"
+      Label: "500,000 Silver"
       Color {
         R: 0.420000017
         G: 0.420000017
@@ -87913,7 +87913,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "Buy all items above for only 200 Credits."
+      Label: "Buy all items above for only 600 Credits."
       Color {
         R: 1
         G: 0.0587552786
@@ -87990,7 +87990,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "Buy all items above for only 200 Credits."
+      Label: "Buy all items above for only 600 Credits."
       Color {
         R: 1
         G: 0.0395462364
@@ -88136,7 +88136,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "This deal has a value of 650 Credits."
+      Label: "This deal has a value of 800 Credits."
       Color {
         R: 1
         G: 0.571125031
@@ -88284,7 +88284,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "250 Credits"
+      Label: "500 Credits"
       Color {
         R: 1
         G: 0.571788073
@@ -88361,7 +88361,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "25,000 Universal Parts"
+      Label: "50,000 Universal Parts"
       Color {
         R: 0.420000017
         G: 0.420000017
@@ -88438,7 +88438,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "200 Credits"
+      Label: "100 Credits"
       Color {
         R: 1
         G: 0.571125031
@@ -88669,7 +88669,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "25,000 Silver"
+      Label: "100,000 Silver"
       Color {
         R: 0.420000017
         G: 0.420000017
@@ -90861,7 +90861,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "Buy all items above for only 100 Credits."
+      Label: "Buy all items above for only 200 Credits."
       Color {
         R: 1
         G: 0.0578054339
@@ -90938,7 +90938,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "Buy all items above for only 100 Credits."
+      Label: "Buy all items above for only 200 Credits."
       Color {
         R: 1
         G: 0.0395462364
@@ -91084,7 +91084,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "This pack has a value of 300 Credits."
+      Label: "This pack has a value of 390 Credits."
       Color {
         R: 1
         G: 0.571125031
@@ -91232,7 +91232,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "100 Credits"
+      Label: "250 Credits"
       Color {
         R: 1
         G: 0.571788073
@@ -91309,7 +91309,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "10,000 Universal Parts"
+      Label: "25,000 Universal Parts"
       Color {
         R: 0.420000017
         G: 0.420000017
@@ -91386,7 +91386,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "100 Credits"
+      Label: "40 Credits"
       Color {
         R: 1
         G: 0.571125031
@@ -91617,7 +91617,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "10,000 Silver"
+      Label: "50,000 Silver"
       Color {
         R: 0.420000017
         G: 0.420000017

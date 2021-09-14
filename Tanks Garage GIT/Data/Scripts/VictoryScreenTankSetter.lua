@@ -1,4 +1,6 @@
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
+local _Constants_API = require(script:GetCustomProperty("Constants_API"))
+local tankAPI = _Constants_API:WaitForConstant("Tanks")
 
 local RootGroup = script:GetCustomProperty("Root"):WaitForObject()
 local GameStateManager = RootGroup:GetCustomProperty("GameStateManager"):WaitForObject()
@@ -15,7 +17,7 @@ function GetPlayerTank(player)
 	local tankId = nil
 	local stringId = ""
 	
-	tankId = player:GetResource(CONSTANTS_API.GetEquippedTankResource())
+	tankId = player:GetResource(tankAPI.EquipResource)
 	
 	if tankId < 10 then
 		stringId = "0" .. tostring(tankId)

@@ -222,10 +222,7 @@ function OnTankSelectedChanged(player, resource, newValue)
         PopulateQuickSelectPanel()
     end
 
-    --[[if resource == Constants_API.GetEquippedTankResource() then
-        PopulateQuickSelectPanel()
-    end]]
-    --
+ 
 end
 
 function ButtonHover(button)
