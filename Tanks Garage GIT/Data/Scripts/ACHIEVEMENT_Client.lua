@@ -33,6 +33,8 @@ local ACHIEVEMENT_NAME_TEXT = NOTIFICATION:GetCustomProperty("ACHIEVEMENT_NAME_T
 
 local ACHIEVEMENT_PANEL = script:GetCustomProperty("AchievementsPanel"):WaitForObject()
 
+local NEW_CLAIMS = script:GetCustomProperty("NEW_CLAIMS"):WaitForObject()
+
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 local SFX = script:GetCustomProperty("SFX")
@@ -70,6 +72,22 @@ local function IsTournamentId(id)
         end
     end
     return false
+end
+
+local function CheckChallenges()    
+    Task.Wait(0.5)
+    NEW_CLAIMS.visibility = Visibility.FORCE_OFF
+    for i = 1, 4 do
+        local target = LOCAL_PLAYER.clientUserData.CHALLENGES[i].target
+        local progress = LOCAL_PLAYER.clientUserData.CHALLENGES[i].progress
+        local challengeType = LOCAL_PLAYER.clientUserData.CHALLENGES[i].challengeType
+        if challengeType == "Login" and progress >= 0 then
+            NEW_CLAIMS.visibility = Visibility.INHERIT
+        end
+        if progress >= target then
+            NEW_CLAIMS.visibility = Visibility.INHERIT
+        end
+    end
 end
 
 local function BuildIdTable()
@@ -128,6 +146,8 @@ local function SetActiveAchievements()
     local totalCount = {active = 0, complete = 0}
     local xCount = {active = 0, complete = 0}
     local yCount = {active = 0, complete = 0}
+
+    NEW_CLAIMS.visibility = Visibility.FORCE_OFF
     for _, achievement in ipairs(activeAchievements) do
         local achievementPanel = nil
 
@@ -152,13 +172,11 @@ local function SetActiveAchievements()
 
         local checkmark = achievementPanel:GetCustomProperty("Completed_CheckMark"):WaitForObject()
 
-
         local Description = achievementPanel:GetCustomProperty("Description"):WaitForObject()
         local Silver = achievementPanel:GetCustomProperty("Silver"):WaitForObject()
         local Free_RP = achievementPanel:GetCustomProperty("FREERP"):WaitForObject()
         local Gold = achievementPanel:GetCustomProperty("Gold"):WaitForObject()
         local rewardPanels = {Silver = Silver, Xp = Free_RP, Gold = Gold}
-
 
         if achievement.isTournament then
             trophyBackground.visibility = Visibility.INHERIT
@@ -184,6 +202,7 @@ local function SetActiveAchievements()
             RewardClaimButton.text = ""
             listeners[#listeners + 1] = RewardClaimButton.clickedEvent:Connect(OnClaimButtonPressed)
             status.text = "Completed"
+            NEW_CLAIMS.visibility = Visibility.INHERIT
         elseif isComplete then
             progressBar.visibility = Visibility.FORCE_OFF
             checkmark.visibility = Visibility.INHERIT
@@ -281,7 +300,10 @@ local function BuildAchievementInfoPanel()
     table.sort(activeAchievements, CompareAchievement)
 
     SetActiveAchievements()
+    CheckChallenges()
 end
+
+
 
 ------------------------------------------------------------------------------------------------------------------------
 -- GLOBAL FUNCTIONS
@@ -328,10 +350,14 @@ function Int()
     Task.Wait()
     BuildIdTable()
     ClearAchievements()
-    if ABGS and ABGS.GetGameState() == ABGS.GAME_STATE_ROUND then
-        shouldShow = true
-    --NOTIFICATION.visibility = Visibility.FORCE_ON
+    NEW_CLAIMS.visibility = Visibility.FORCE_OFF
+    Task.Wait(5)
+    for _, achievement in ipairs(ACH_API.GetAchievements()) do
+        if ACH_API.IsUnlocked(LOCAL_PLAYER, achievement.id) then
+            NEW_CLAIMS.visibility = Visibility.INHERIT
+        end
     end
+    CheckChallenges()
 end
 
 function OnGameStateChanged(oldState, newState, stateHasDuration, stateEndTime) --
@@ -373,6 +399,7 @@ function ToggleThisComponent(requestedPlayerState)
     else
         Task.Wait(0.1)
         DisableThisComponent()
+        Task.Spawn(function() CheckChallenges() end, 2)
     end
 end
 
@@ -387,6 +414,7 @@ scriptListeners[#scriptListeners + 1] = LOCAL_PLAYER.resourceChangedEvent:Connec
 --scriptListeners[#scriptListeners + 1] = Events.Connect("GameStateChanged", OnGameStateChanged)
 scriptListeners[#scriptListeners + 1] = Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
 scriptListeners[#scriptListeners + 1] = Events.Connect("DISABLE_ALL_GARAGE_COMPONENTS", DisableThisComponent)
+scriptListeners[#scriptListeners + 1] = Events.Connect("CLAIM_REWARD", CheckChallenges)
 
 scriptListeners[#scriptListeners + 1] =
     script.destroyEvent:Connect(
