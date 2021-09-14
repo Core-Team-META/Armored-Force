@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16712525731170450862
+  Name: "Icon Arrow"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Arrow"
+  }
+}
+Assets {
   Id: 14242369349519953845
   Name: "Center Arrow 003 Wedge"
   PlatformAssetType: 9
@@ -89,12 +98,30 @@ Assets {
   }
 }
 Assets {
+  Id: 7053705669844552709
+  Name: "Survival Gear 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Gear_001"
+  }
+}
+Assets {
   Id: 5827969973478293574
   Name: "Center Arrow 005 Wedge"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "CenterArrow_005Wedge"
+  }
+}
+Assets {
+  Id: 5338244946539998590
+  Name: "Survival Crate 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Crate_005"
   }
 }
 Assets {
