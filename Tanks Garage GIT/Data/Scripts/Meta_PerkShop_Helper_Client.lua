@@ -1,8 +1,9 @@
 ------------------------------------------------------------------------------------------------------------------------
 -- OBJECTS
 ------------------------------------------------------------------------------------------------------------------------
-
-local PERKS_DATA = script:GetCustomProperty("PerksData"):WaitForObject()
+local Constants_API = require(script:GetCustomProperty("Constants_API"))
+local PERKS = Constants_API:WaitForConstant("Perks")
+ 
 local GoldPack1Button = script:GetCustomProperty("GoldPack1"):WaitForObject()
 local GoldPack2Button = script:GetCustomProperty("GoldPack2"):WaitForObject()
 local GoldPack3Button = script:GetCustomProperty("GoldPack3"):WaitForObject()
@@ -16,15 +17,15 @@ local SoldierPackButton = script:GetCustomProperty("SoldierPack"):WaitForObject(
 ------------------------------------------------------------------------------------------------------------------------
 -- NET REFRENCE
 ------------------------------------------------------------------------------------------------------------------------
-local GoldPack1 = PERKS_DATA:GetCustomProperty("GoldPack1")
-local GoldPack2 = PERKS_DATA:GetCustomProperty("GoldPack2")
-local GoldPack3 = PERKS_DATA:GetCustomProperty("GoldPack3")
-local SilverPack1 = PERKS_DATA:GetCustomProperty("SilverPack1")
-local SilverPack2 = PERKS_DATA:GetCustomProperty("SilverPack2")
-local SilverPack3 = PERKS_DATA:GetCustomProperty("SilverPack3")
-local CaptainPack = PERKS_DATA:GetCustomProperty("CaptainPack")
-local GeneralPack = PERKS_DATA:GetCustomProperty("GeneralPack")
-local SoldierPack = PERKS_DATA:GetCustomProperty("SoldierPack")
+local GoldPack1 = PERKS.GOLD_PACK1.perk
+local GoldPack2 = PERKS.GOLD_PACK2.perk
+local GoldPack3 = PERKS.GOLD_PACK3.perk
+local SilverPack1 = PERKS.SILVER_PACK1.perk
+local SilverPack2 = PERKS.SILVER_PACK2.perk
+local SilverPack3 = PERKS.SILVER_PACK3.perk
+local CaptainPack = PERKS.SOLDIERPACK.perk
+local GeneralPack = PERKS.CAPTAINPACK.perk
+local SoldierPack = PERKS.GENERALPACK.perk
 
 ------------------------------------------------------------------------------------------------------------------------
 -- BUTTON CONNECTIONS
