@@ -1354,6 +1354,7 @@ Objects {
   ChildIds: 15170137781950209232
   ChildIds: 12865502510595045689
   ChildIds: 5478971470751531814
+  ChildIds: 14965169954918578183
   ChildIds: 16169876859189736744
   ChildIds: 4117485006440570371
   Collidable_v2 {
@@ -1513,6 +1514,89 @@ Objects {
   }
 }
 Objects {
+  Id: 14965169954918578183
+  Name: "UI Text Box"
+  Transform {
+    Location {
+      X: 1930.67236
+      Y: 8972.57227
+      Z: 1314.75305
+    }
+    Rotation {
+      Yaw: -43.0095787
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3250835730918002603
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 300
+    Height: 80
+    UIX: 3
+    UIY: 4.60069084
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Individual Tank Camo"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 18
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 9686253618519087109
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:top"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      OutlineColor {
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 5478971470751531814
   Name: "INDIVIDUAL_SUBMENU"
   Transform {
@@ -1535,7 +1619,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1636,7 +1720,6 @@ Objects {
       Brush {
         Id: 841534158063459245
       }
-      IsButtonEnabled: true
       ClickMode {
         Value: "mc:ebuttonclickmode:default"
       }
@@ -2684,7 +2767,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2785,7 +2868,6 @@ Objects {
       Brush {
         Id: 841534158063459245
       }
-      IsButtonEnabled: true
       ClickMode {
         Value: "mc:ebuttonclickmode:default"
       }
@@ -3849,9 +3931,6 @@ Objects {
         Id: 7523603796159964991
       }
       Color {
-        R: 0.00182116206
-        G: 0.00182116206
-        B: 0.00367650762
         A: 1
       }
       TeamSettings {
