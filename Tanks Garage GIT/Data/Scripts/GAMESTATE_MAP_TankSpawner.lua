@@ -115,7 +115,7 @@ function SpawnAITank(position, team, id)
 
     local currentState = mainManagerServer:GetCustomProperty("GameState")
 
-    local resourceID = id or 30
+    local resourceID = id or 3
     local id = tostring(resourceID)
 
     if resourceID < 10 then
@@ -226,7 +226,7 @@ function FindClearSpawnPoint(team)
     return position
 end
 
-local workingTanks = {t1 = {1, 18}, t2 = {2, 3, 4, 19, 7}, t3 = {8}}
+local workingTanks = {t1 = {1, 18}, t2 = {2, 3, 4, 19, 7}, t3 = {8}, t4 = {11, 24}}
 
 function FillTeamsWithAI(teamSize, teamBalance)
     if teamSize == nil then
@@ -247,26 +247,36 @@ function FillTeamsWithAI(teamSize, teamBalance)
     end
 
     local team = teamOneCount > teamTwoCount and 2 or teamOneCount < teamTwoCount and 1 or 1
-
+        local count = 1
     while not teamOneBalance and not teamTwoBalance do
+        count = count + 1
         local currentCount = #_G.utils.GetTankDrivers({includeTeams = team, ignoreDead = true})
 
         local diff = teamBalance[3 - team] - teamBalance[team]
-
+       
         if currentCount <= teamSize - 1 then
             local id
 
-            if diff <= 2 then
+            if diff <= 1 then
                 id = workingTanks.t1[math.random(1, #workingTanks.t1)]
-                teamBalance[team] = teamBalance[team] + 2
-            elseif diff <= 3 then
+                teamBalance[team] = teamBalance[team] + 1
+            elseif diff == 2 then
                 id = workingTanks.t2[math.random(1, #workingTanks.t2)]
-                teamBalance[team] = teamBalance[team] + 3
-            else
+                teamBalance[team] = teamBalance[team] + 2
+            elseif diff == 3 then
                 id = workingTanks.t3[math.random(1, #workingTanks.t3)]
+                teamBalance[team] = teamBalance[team] + 3
+            elseif diff == 4 then
+                id = workingTanks.t4[math.random(1, #workingTanks.t4)]
                 teamBalance[team] = teamBalance[team] + 4
             end
-            SpawnAITank(FindClearSpawnPoint(team), team, id)
+            if id then
+                SpawnAITank(FindClearSpawnPoint(team), team, id)
+            else
+                id = 3
+                teamBalance[team] = teamBalance[team] + 2
+                SpawnAITank(FindClearSpawnPoint(team), team, id)
+            end
         else
             if team == 1 then
                 teamOneBalance = true
@@ -275,6 +285,7 @@ function FillTeamsWithAI(teamSize, teamBalance)
             end
         end
         team = 3 - team
+        print("Count " .. tostring(count) .. " Team: " .. tostring(team) .. " Diff: " ..tostring(diff))
     end
     print("Team Balance:", teamBalance[1], teamBalance[2])
 end
