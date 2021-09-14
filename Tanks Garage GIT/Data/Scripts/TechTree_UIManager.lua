@@ -7,9 +7,9 @@ local UTIL_API = require(script:GetCustomProperty('MetaAbilityProgressionUTIL_AP
 local API_Tutorial = require(script:GetCustomProperty('API_Tutorial'))
 local _Constants_API = require(script:GetCustomProperty('_Constants_API'))
 
-local TankApi = _Constants_API:WaitForConstant('Tanks')
+local tankAPI = _Constants_API:WaitForConstant('Tanks')
 
-local TANK_INFO = TankApi.GetTanks()
+local TANK_INFO = tankAPI.GetTanks()
 
 -- Definitions 
 local CURRENCY_DEFINITIONS = _Constants_API:WaitForConstant("Currency")
@@ -257,7 +257,7 @@ function Init()
 
     -- Initialize the teams
     local teamCount = 0
-    for k, v in pairs(TankApi.TEAMS) do
+    for k, v in pairs(tankAPI.TEAMS) do
         table.insert(TEAMS, {name = k, id = tostring(v)})
         -- Add a button to toggle between each team
         CreateAndPopulateTeamButton({name = k, id = tostring(v)}, teamCount)
@@ -338,7 +338,7 @@ function PopulateOwnedTanks()
 
             World.FindObjectByName(tank.id).parent:FindChildByName('UNLOCKED_' .. tank.id).visibility =
                 Visibility.FORCE_ON
-            if LOCAL_PLAYER:GetResource(Constants_API.GetEquippedTankResource()) == tonumber(tank.id) then
+            if LOCAL_PLAYER:GetResource(tankAPI.EquipResource) == tonumber(tank.id) then
                 World.FindObjectByName(tank.id).parent:FindChildByName('UNLOCKED_' .. tank.id):FindChildByName(
                         'EQUIPPEDFRAME'
                     ).visibility = Visibility.FORCE_ON
@@ -455,16 +455,16 @@ function PopulateSelectedTankPanel(id)
     local tankData = {}
     local isSelection = tonumber(selectedTankId) > 0
     if (selectedTankId == -1) then -- Assume selection is currently equipped tank
-        local equippedTankId = LOCAL_PLAYER:GetResource(Constants_API.GetEquippedTankResource()) 
+        local equippedTankId = LOCAL_PLAYER:GetResource(tankAPI.EquipResource) 
         -- Because resources are saved as integers and we need our Id as a string, we need to convert it and append a "0" if the Id is < than 10
         local stringTankId = tostring(equippedTankId)
         if (equippedTankId < 10) then
             stringTankId = '0' .. tostring(equippedTankId)
         end
-        tankData = TankApi.GetTankFromId(tonumber(stringTankId))
+        tankData = tankAPI.GetTankFromId(tonumber(stringTankId))
         selectedTankId = stringTankId
     else 
-        tankData = TankApi.GetTankFromId(tonumber(id))
+        tankData = tankAPI.GetTankFromId(tonumber(id))
     end
     tankDetails = tankData
 
@@ -523,7 +523,7 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
     local rpPayment = 0
     if (prereqs[1]) then
         if prereqs[1].usable then
-            local prereqTank = TankApi.GetTankFromId(tonumber(prereqs[1].id))
+            local prereqTank = tankAPI.GetTankFromId(tonumber(prereqs[1].id))
             local currentRP = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(prereqs[1].id)))
             CONFIRM_TANK_UPGRADE:FindDescendantByName('OWNED_1').text = tostring(currentRP)
             if (currentRP > tankData.researchCost) then
@@ -1300,7 +1300,7 @@ function GetPrerequisiteRPValues(id)
             --print("Match found for tank: " .. tostring(tank:GetCustomProperty("Name")))
             if (tank.prerequisite1) then
                 local preReq1Id = tank.prerequisite1
-                local preReq1Tank = TankApi.GetTankFromId(tonumber(preReq1Id))
+                local preReq1Tank = tankAPI.GetTankFromId(tonumber(preReq1Id))
                 prerequisite1.usable = false
                 -- Check to make sure the pre-req has at least one completed upgrade
                 for i, preReq1Progress in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
@@ -1314,7 +1314,7 @@ function GetPrerequisiteRPValues(id)
             end
             if (tank.prerequisite2) then
                 local preReq2Id = tank.prerequisite2
-                local preReq2Tank = TankApi.GetTankFromId(tonumber(preReq2Id))
+                local preReq2Tank = tankAPI.GetTankFromId(tonumber(preReq2Id))
                 prerequisite2.usable = false
                 -- Check to make sure the pre-req has at least one completed upgrade
                 -- Check to make sure the pre-req has at least one completed upgrade
@@ -1497,7 +1497,7 @@ function CanTankBeResearched(id)
             if (tank.prerequisite2 or 0 ~= 0) then
                 -- Tank has two pre-reqs, load up data for this one
                 local preReq2Id = tank.prerequisite2
-                local preReq2Tank = TankApi.GetTankFromId(tonumber(preReq2Id))
+                local preReq2Tank = tankAPI.GetTankFromId(tonumber(preReq2Id))
                 -- If the pre-req tank doesn't have at least 1 upgrade at purchased, then we cannot research
                 if
                     (tostring(preReq2Tank.weaponProgress) < tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) and
@@ -1571,7 +1571,7 @@ end
 function HoverTank(button)
     ButtonHover()
     local tankData = {}
-    tankData = TankApi.GetTankFromId(tonumber(button.name))
+    tankData = tankAPI.GetTankFromId(tonumber(button.name))
 
     -- Get pre req
     local rp = 0
@@ -1599,7 +1599,7 @@ function HoverTank(button)
 end
 
 function PopulateHoverTankStats(tankData)
---print(TankApi.GetHighestDamage())
+--print(tankAPI.GetHighestDamage())
     local entry = {}
     local progress = {}
     for i, tank in ipairs(TANK_LIST) do
@@ -1622,9 +1622,9 @@ function PopulateHoverTankStats(tankData)
         local damage = entry.damage
         local reload = entry.reload
         local turret = entry.turret
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_4').progress = tonumber(damage) / TankApi.GetHighestDamage()
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_5').progress = 1 - (tonumber(reload) / TankApi.GetHighestReload())
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_6').progress = tonumber(turret) / TankApi.GetHighestTurretSpeed()
+        VIEWED_TANK_STATS:FindDescendantByName('BAR_4').progress = tonumber(damage) / tankAPI.GetHighestDamage()
+        VIEWED_TANK_STATS:FindDescendantByName('BAR_5').progress = 1 - (tonumber(reload) / tankAPI.GetHighestReload())
+        VIEWED_TANK_STATS:FindDescendantByName('BAR_6').progress = tonumber(turret) / tankAPI.GetHighestTurretSpeed()
     else
         local damage = entry.damageUpgraded
         local reload = entry.reloadUpgraded
@@ -1632,37 +1632,37 @@ function PopulateHoverTankStats(tankData)
 --print(damage)
 --print(reload)
 --print(turret)
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_4').progress = tonumber(damage) / TankApi.GetHighestDamage()
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_5').progress = 1 - (tonumber(reload) / TankApi.GetHighestReload())
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_6').progress = tonumber(turret) / TankApi.GetHighestTurretSpeed()
+        VIEWED_TANK_STATS:FindDescendantByName('BAR_4').progress = tonumber(damage) / tankAPI.GetHighestDamage()
+        VIEWED_TANK_STATS:FindDescendantByName('BAR_5').progress = 1 - (tonumber(reload) / tankAPI.GetHighestReload())
+        VIEWED_TANK_STATS:FindDescendantByName('BAR_6').progress = tonumber(turret) / tankAPI.GetHighestTurretSpeed()
     end
 
     if tostring(progress.armorProgress) ~= tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
         local hitPoints = entry.hitPoints
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_1').progress = tonumber(hitPoints) / TankApi.GetHighestHitPoints()
+        VIEWED_TANK_STATS:FindDescendantByName('BAR_1').progress = tonumber(hitPoints) / tankAPI.GetHighestHitPoints()
     else
         local hitPoints = entry.hitPointsUpgraded
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_1').progress = tonumber(hitPoints) / TankApi.GetHighestHitPoints()
+        VIEWED_TANK_STATS:FindDescendantByName('BAR_1').progress = tonumber(hitPoints) / tankAPI.GetHighestHitPoints()
     end
 
     if tostring(progress.engineProgress) ~= tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
         local topSpeed = entry.topSpeed
         local acceleration = entry.acceleration
         local turningSpeed = entry.turningSpeed
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_8').progress = tonumber(topSpeed) / TankApi.GetHighestTopSpeed()
+        VIEWED_TANK_STATS:FindDescendantByName('BAR_8').progress = tonumber(topSpeed) / tankAPI.GetHighestTopSpeed()
         VIEWED_TANK_STATS:FindDescendantByName('BAR_9').progress =
-            tonumber(acceleration) / TankApi.GetHighestAcceleration()
+            tonumber(acceleration) / tankAPI.GetHighestAcceleration()
         VIEWED_TANK_STATS:FindDescendantByName('BAR_10').progress =
-            tonumber(turningSpeed) / TankApi.GetHighestTurningSpeed()
+            tonumber(turningSpeed) / tankAPI.GetHighestTurningSpeed()
     else
         local topSpeed = entry.topSpeedUpgraded
         local acceleration = entry.accelerationUpgraded
         local turningSpeed = entry.turningSpeedUpgraded -- TODO
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_8').progress = tonumber(topSpeed) / TankApi.GetHighestTopSpeed()
+        VIEWED_TANK_STATS:FindDescendantByName('BAR_8').progress = tonumber(topSpeed) / tankAPI.GetHighestTopSpeed()
         VIEWED_TANK_STATS:FindDescendantByName('BAR_9').progress =
-            tonumber(acceleration) / TankApi.GetHighestAcceleration()
+            tonumber(acceleration) / tankAPI.GetHighestAcceleration()
         VIEWED_TANK_STATS:FindDescendantByName('BAR_10').progress =
-            tonumber(turningSpeed) / TankApi.GetHighestTurningSpeed()
+            tonumber(turningSpeed) / tankAPI.GetHighestTurningSpeed()
     end
 
     if tankData.purchasedTank then
@@ -1745,7 +1745,7 @@ function OpenTankUpgradeWindow(button, id)
     if not id or id == nil then
         selectedTankId = LOCAL_PLAYER:GetPrivateNetworkedData('SelectedTank')
         
-		tankDetails = TankApi.GetTankFromId(tonumber(selectedTankId))
+		tankDetails = tankAPI.GetTankFromId(tonumber(selectedTankId))
 		
 		for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 		    if (t.id == tostring(selectedTankId)) then
@@ -1759,20 +1759,14 @@ function OpenTankUpgradeWindow(button, id)
     else
         selectedTankId = tonumber(id)
     end
-    
-	--OnResourceChanged(LOCAL_PLAYER, Constants_API.GetEquippedTankResource(), tonumber(selectedTankId))
-    --[[
-    for i, tank in ipairs(TANK_LIST) do
-        if (tonumber(tank.id) == tonumber(selectedTankId)) then
-            PopulateDetailsModal(tank)
-        end
-    end
-    ]]
-
+ 
     IMAGE_API.SetTankImage(tankPreviewImage, selectedTankId)
-
-    SFX_CLICK:Play()
-    UPGRADE_TANK_CONTAINER.visibility = Visibility.FORCE_ON
+    if UPGRADE_TANK_CONTAINER.visibility == Visibility.FORCE_ON and LOCAL_PLAYER.clientUserData.tutorial6 ~= 1  then 
+        CloseTankUpgradeWindow()
+    else 
+        SFX_CLICK:Play()
+        UPGRADE_TANK_CONTAINER.visibility = Visibility.FORCE_ON 
+    end
     local entry = {}
     local progress = {}
     for i, tank in ipairs(TANK_LIST) do
@@ -1942,52 +1936,52 @@ function PopulateEquippedTankStats(entry)
     if tostring(tankProgress.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
         damage = entry.damageUpgraded
     end
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_4').progress = damage / TankApi.GetHighestDamage()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_4').progress = damage / tankAPI.GetHighestDamage()
     local reload = entry.reload
     if tostring(tankProgress.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
         reload = entry.reloadUpgraded
     end
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_5').progress = 1 - (reload / TankApi.GetHighestReload())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_5').progress = 1 - (reload / tankAPI.GetHighestReload())
     local turret = entry.turret
     if tostring(tankProgress.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
         turret = entry.turretUpgraded
     end
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_6').progress = turret / TankApi.GetHighestTurretSpeed()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_6').progress = turret / tankAPI.GetHighestTurretSpeed()
     local hitPoints = entry.hitPoints
     if tostring(tankProgress.armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
         hitPoints = entry.hitPointsUpgraded
     end
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_1').progress = hitPoints / TankApi.GetHighestHitPoints()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_1').progress = hitPoints / tankAPI.GetHighestHitPoints()
     local topSpeed = entry.topSpeed
     if tostring(tankProgress.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
         topSpeed = entry.topSpeedUpgraded
     end
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_8').progress = topSpeed / TankApi.GetHighestTopSpeed()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_8').progress = topSpeed / tankAPI.GetHighestTopSpeed()
     local acceleration = entry.acceleration
     if tostring(tankProgress.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
         acceleration = entry.accelerationUpgraded
     end
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_9').progress = acceleration / TankApi.GetHighestAcceleration()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_9').progress = acceleration / tankAPI.GetHighestAcceleration()
     local turningSpeed = entry.turningSpeed
     if tostring(tankProgress.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
         turningSpeed = entry.turningSpeedUpgraded
     end -- TODO
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_10').progress = turningSpeed / TankApi.GetHighestTurningSpeed()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_10').progress = turningSpeed / tankAPI.GetHighestTurningSpeed()
     -- Set upgraded versions
     local damage = entry.damageUpgraded
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').progress = damage / TankApi.GetHighestDamage()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').progress = damage / tankAPI.GetHighestDamage()
     local reload = entry.reloadUpgraded
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').progress = 1 - (reload / TankApi.GetHighestReload())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').progress = 1 - (reload / tankAPI.GetHighestReload())
     local turret = entry.turretUpgraded
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_6_LVLUP').progress = turret / TankApi.GetHighestTurretSpeed()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_6_LVLUP').progress = turret / tankAPI.GetHighestTurretSpeed()
     local hitPoints = entry.hitPointsUpgraded
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').progress = hitPoints / TankApi.GetHighestHitPoints()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').progress = hitPoints / tankAPI.GetHighestHitPoints()
     local topSpeed = entry.topSpeedUpgraded
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_8_LVLUP').progress = topSpeed / TankApi.GetHighestTopSpeed()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_8_LVLUP').progress = topSpeed / tankAPI.GetHighestTopSpeed()
     local acceleration = entry.accelerationUpgraded
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_9_LVLUP').progress = acceleration / TankApi.GetHighestAcceleration()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_9_LVLUP').progress = acceleration / tankAPI.GetHighestAcceleration()
     local turningSpeed = entry.turningSpeedUpgraded -- TODO
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').progress = turningSpeed / TankApi.GetHighestTurningSpeed()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').progress = turningSpeed / tankAPI.GetHighestTurningSpeed()
 
 end
 
@@ -2192,7 +2186,7 @@ World.FindObjectByName('32').unhoveredEvent:Connect(UnhoverTank)
 World.FindObjectByName('33').unhoveredEvent:Connect(UnhoverTank)
 
 function OnServerDataUpdated(player, string)
-    if string == 'PlayerTankApi' then
+    if string == 'PlayertankAPI' then
         local newData = player:GetPrivateNetworkedData(string)
 
         for i, playerTank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
@@ -2209,7 +2203,7 @@ function OnServerDataUpdated(player, string)
         CloseTechTreeModal()
 
         -- Populate equipped tank panel
-        local equippedTankId = LOCAL_PLAYER:GetResource(Constants_API.GetEquippedTankResource())
+        local equippedTankId = LOCAL_PLAYER:GetResource(tankAPI.EquipResource)
 --print('Currently equipped with tank: ' .. tostring(equippedTankId))
 
         for i, entry in ipairs(TANK_LIST) do
@@ -2222,8 +2216,8 @@ function OnServerDataUpdated(player, string)
 end
 
 function OnResourceChanged(player, resource, value)
-	local currentTank = LOCAL_PLAYER:GetResource(Constants_API.GetEquippedTankResource())
-    if resource == Constants_API.GetEquippedTankResource() then
+	local currentTank = LOCAL_PLAYER:GetResource(tankAPI.EquipResource)
+    if resource == tankAPI.EquipResource then
         local equippedTankId = value
 --print('Currently equipped with tank: ' .. tostring(equippedTankId))
 
@@ -2263,4 +2257,4 @@ while LOCAL_PLAYER:GetResource('EquippedTank') <= 0 do
 	Task.Wait()
 end
 
-OnResourceChanged(LOCAL_PLAYER, Constants_API.GetEquippedTankResource(), LOCAL_PLAYER:GetResource('EquippedTank'))
+OnResourceChanged(LOCAL_PLAYER, tankAPI.EquipResource, LOCAL_PLAYER:GetResource('EquippedTank'))

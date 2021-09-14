@@ -174,11 +174,11 @@ function CheckAndSetSharedStorageDefault(player)
 
 --print('SELECTED TANK ID: ' .. tostring(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]))
 
-    if (player:GetResource(CONSTANTS_API.GetEquippedTankResource()) <= 0) then
-        playerSharedStorage[CONSTANTS_API.GetEquippedTankResource()] = CONSTANTS_API.GetDefaultTankData()
+    if (player:GetResource(tankAPI.EquipResource) <= 0) then
+        playerSharedStorage[tankAPI.EquipResource] = CONSTANTS_API.GetDefaultTankData()
     else
         UTIL_API.RetrieveTankDataById(
-            player:GetResource(CONSTANTS_API.GetEquippedTankResource()),
+            player:GetResource(tankAPI.EquipResource),
             player.serverUserData.techTreeProgress
         )
     end
@@ -204,7 +204,7 @@ function LoadAndSetDataFromSharedStorage(player)
         player:SetResource(UTIL_API.GetTankRPString(tonumber(tank.id)), playerSharedStorage[UTIL_API.GetTankRPString(tonumber(tank.id))])
     end
     player:SetResource(
-        CONSTANTS_API.GetEquippedTankResource(),
+        tankAPI.EquipResource,
         tonumber(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT])
     )
 
@@ -233,9 +233,9 @@ end
 function SavePlayerDataIntoSharedStorage(player)
     local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 
-    playerSharedStorage[CONSTANTS_API.GetEquippedTankResource()] =
+    playerSharedStorage[tankAPI.EquipResource] =
         UTIL_API.RetrieveTankDataById(
-        player:GetResource(CONSTANTS_API.GetEquippedTankResource()),
+        player:GetResource(tankAPI.EquipResource),
         player.serverUserData.techTreeProgress
     )
 
@@ -243,7 +243,7 @@ function SavePlayerDataIntoSharedStorage(player)
         playerSharedStorage[key] = player:GetResource(key)
     end
     playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = ConvertTechTreeProgressToDataString(player)
-    playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT] = player:GetResource(CONSTANTS_API.GetEquippedTankResource())
+    playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT] = player:GetResource(tankAPI.EquipResource)
     for _, tank in pairs(tanks) do
         playerSharedStorage[UTIL_API.GetTankRPString(tonumber(tank.id))] = player:GetResource(UTIL_API.GetTankRPString(tonumber(tank.id)))
     end 
@@ -388,7 +388,7 @@ function ConvertTechTreeProgressToDataString(player)
 end
 
 function GetEquippedTank(player)
-    local equippedTankId = player:GetResource(CONSTANTS_API.GetEquippedTankResource())
+    local equippedTankId = player:GetResource(tankAPI.EquipResource)
     -- Because resources are saved as integers and we need our Id as a string, we need to convert it and append a "0" if the Id is < than 10
     local stringTankId = tostring(equippedTankId)
     if (equippedTankId < 10) then
@@ -401,7 +401,7 @@ end
 -- Listener functions --
 ------------------------
 function ChangeEquippedTank(player, tankId)
-    player:SetResource(CONSTANTS_API.GetEquippedTankResource(), tonumber(tankId))
+    player:SetResource(tankAPI.EquipResource, tonumber(tankId))
     -- DEBUG
     --print("Set player's equipped tank to: " .. tankId)
 end
