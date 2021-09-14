@@ -23,9 +23,9 @@ local GoldPack3 = PERKS.GOLD_PACK3.perk
 local SilverPack1 = PERKS.SILVER_PACK1.perk
 local SilverPack2 = PERKS.SILVER_PACK2.perk
 local SilverPack3 = PERKS.SILVER_PACK3.perk
-local CaptainPack = PERKS.SOLDIERPACK.perk
-local GeneralPack = PERKS.CAPTAINPACK.perk
-local SoldierPack = PERKS.GENERALPACK.perk
+local CaptainPack = PERKS.CAPTAINPACK.perk
+local GeneralPack = PERKS.GENERALPACK.perk
+local SoldierPack = PERKS.SOLDIERPACK.perk
 
 ------------------------------------------------------------------------------------------------------------------------
 -- BUTTON CONNECTIONS

@@ -11,18 +11,17 @@ end
 ------------------------------------------------------------------------------------------------------------------------
 -- REQUIRE
 ------------------------------------------------------------------------------------------------------------------------
-local UTIL = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
-local _Constants_API = require(script:GetCustomProperty("Constants_API")) 
+local UTIL = require(script:GetCustomProperty('MetaAbilityProgressionUTIL_API'))
+local _Constants_API = require(script:GetCustomProperty('Constants_API'))
 ------------------------------------------------------------------------------------------------------------------------
 -- OBJECTS
------------------------------------------------------------------------------------------------------------------------- 
-local PROJECT_KEYS =  _Constants_API:WaitForConstant("Storage_Keys") 
-local STORAGE =  _Constants_API:WaitForConstant("STORAGE") 
-local PERKS = _Constants_API:WaitForConstant("Perks")
-local CURRENCY = _Constants_API:WaitForConstant("Currency")
+------------------------------------------------------------------------------------------------------------------------
+local PROJECT_KEYS = _Constants_API:WaitForConstant('Storage_Keys')
+local STORAGE = _Constants_API:WaitForConstant('STORAGE')
+local PERKS = _Constants_API:WaitForConstant('Perks')
+local CURRENCY = _Constants_API:WaitForConstant('Currency')
 
 local STORAGE_KEY = PROJECT_KEYS.Tanks
- 
 
 ------------------------------------------------------------------------------------------------------------------------
 -- TABLE BUILDER
@@ -35,7 +34,7 @@ bundles[#bundles + 1] = {
     reward = 100
 }
 bundles[#bundles + 1] = {
-    perk =  PERKS.GOLD_PACK2.perk,
+    perk = PERKS.GOLD_PACK2.perk,
     storageId = PERKS.GOLD_PACK2.id,
     resourceName = CURRENCY.GOLD.ResourceName,
     reward = 250
@@ -65,7 +64,7 @@ bundles[#bundles + 1] = {
     reward = 50000
 }
 bundles[#bundles + 1] = {
-    perk =  PERKS.SOLDIERPACK.perk,
+    perk = PERKS.SOLDIERPACK.perk,
     storageId = PERKS.SOLDIERPACK.id
 }
 bundles[#bundles + 1] = {
@@ -97,7 +96,7 @@ end
 local function OnLoadPerkData(data)
     local tempTbl = {}
     if data[STORAGE.PERKS] then
-        tempTbl = UTIL.ConvertStringToTable(data[STORAGE.PERKS], ",", "=")
+        tempTbl = UTIL.ConvertStringToTable(data[STORAGE.PERKS], ',', '=')
     end
     return tempTbl
 end
@@ -107,7 +106,7 @@ end
 --@param table data
 --@param table perks
 local function OnSavePerkData(player, data, perks)
-    data[STORAGE.PERKS] = next(perks) ~= nil and UTIL.ConvertTableToString(perks, ",", "=") or ""
+    data[STORAGE.PERKS] = next(perks) ~= nil and UTIL.ConvertTableToString(perks, ',', '=') or ''
     Storage.SetSharedPlayerData(STORAGE_KEY, player, data)
 end
 
@@ -120,10 +119,11 @@ end
 function CheckPerkCountWithStorage(player, data)
     local data = data or Storage.GetSharedPlayerData(STORAGE_KEY, player)
     local perks = OnLoadPerkData(data)
-    
-    for _, bundle in ipairs(bundles) do
+
+    for jet, bundle in ipairs(bundles) do
         local perkCount = player:GetPerkCount(bundle.perk)
-        local storageCount = perks[bundle.storageId]
+        local storageCount = perks[tonumber(bundle.storageId)]
+
         if perkCount ~= storageCount then
             if bundle.resourceName and perkCount > storageCount then
                 local countDifference = perkCount - storageCount
@@ -134,7 +134,6 @@ function CheckPerkCountWithStorage(player, data)
                 player:AddResource(bundle.resourceName, reward)
                 perks[bundle.storageId] = perkCount
             end
-
             --Bundles
             if bundle.perk == PERKS.SOLDIERPACK.perk and player:HasPerk(bundle.perk) then
                 if perkCount > storageCount then
@@ -191,6 +190,7 @@ function OnPlayerJoined(player)
     OnSavePerkData(player, data, perks)
     CheckPerkCountWithStorage(player, data)
     -- Connect events that updates currency balance for player
+
     player.resourceChangedEvent:Connect(OnResourceChanged)
     player.perkChangedEvent:Connect(OnPerksChanged)
 end
@@ -198,4 +198,8 @@ end
 ------------------------------------------------------------------------------------------------------------------------
 -- LISTENERS
 ------------------------------------------------------------------------------------------------------------------------
+
+for _, player in ipairs(Game.GetPlayers()) do
+    OnPlayerJoined(player)
+end
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
