@@ -52,19 +52,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15776756620937563400
-  Name: "SilverPack2"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "5bd5e47132fb4ef8b116116ef77e2189"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
   Id: 14975415967846703570
   Name: "GoldPack2"
   PlatformAssetType: 24
@@ -150,19 +137,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_flower_daisy_001"
-  }
-}
-Assets {
-  Id: 10324820665438131489
-  Name: "SilverPack3"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "c03f4d4d44b9429e94d33439f201933c"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
   }
 }
 Assets {
@@ -252,19 +226,6 @@ Assets {
       Key: "f63454eea03149b583c941a85ac8d694"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
-  Id: 5154219513001555929
-  Name: "SilverPack1"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "7f6e4ce30d514dae9fdaa55bac832377"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
       }
     }
   }
