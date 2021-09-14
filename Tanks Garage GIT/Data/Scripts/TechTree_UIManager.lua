@@ -831,13 +831,15 @@ end
 
 function ShowNotEnoughCurrencyMessage(part)
     -- TODO: Show a better message to the user
-    UI.PrintToScreen('You do not have enough Silver.')
+    --UI.PrintToScreen('You do not have enough Silver.')
+    Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "INSUFFICIENT SILVER", "You do not have enough Silver. Participate in matches to earn more Silver.", "OK")
     Events.Broadcast('UpgradeFailedSlide', part)
 end
 
 function ShowNotEnoughRPMessage(part)
     -- TODO: Show a better message to the user
-    UI.PrintToScreen('You do not have enough XP.')
+    --UI.PrintToScreen('You do not have enough XP.')
+    Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "INSUFFICIENT TANK PARTS", "You do not have enough Tank Parts. Participate in matches with this tank to earn more Tank Parts.", "OK")
     Events.Broadcast('UpgradeFailedSlide', part)
 end
 
