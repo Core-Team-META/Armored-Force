@@ -92,7 +92,9 @@ local function SetPanelTeam(player, count)
         if player.team ~= scoreCards[player.id].team then
             scoreCards[player.id].panel:Destroy()
         end
-        if not Object.IsValid(scoreCards[player.id]) then return end
+        if not Object.IsValid(scoreCards[player.id]) then
+            SpawnPanel(player)
+        end
         if player.team == LOCAL_PLAYER.team then
             scoreCards[player.id].panel.parent = TeamTanksPanel
             scoreCards[player.id].panel.y = count.team * 45
