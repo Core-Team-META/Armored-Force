@@ -153,6 +153,7 @@ local researchingName = ''
 local researchingProgress = nil
 local selectedTankUpgrade = ''
 local selectedTankId = 0
+local currentTankId = 0
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 local BASE_Y = 50
@@ -831,13 +832,15 @@ end
 
 function ShowNotEnoughCurrencyMessage(part)
     -- TODO: Show a better message to the user
-    UI.PrintToScreen('You do not have enough Silver.')
+    --UI.PrintToScreen('You do not have enough Silver.')
+    Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "INSUFFICIENT SILVER", "You do not have enough Silver. Participate in matches to earn more Silver.", "OK")
     Events.Broadcast('UpgradeFailedSlide', part)
 end
 
 function ShowNotEnoughRPMessage(part)
     -- TODO: Show a better message to the user
-    UI.PrintToScreen('You do not have enough XP.')
+    --UI.PrintToScreen('You do not have enough XP.')
+    Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "INSUFFICIENT TANK PARTS", "You do not have enough Tank Parts. Participate in matches with this tank to earn more Tank Parts.", "OK")
     Events.Broadcast('UpgradeFailedSlide', part)
 end
 
@@ -2219,6 +2222,7 @@ function OnServerDataUpdated(player, string)
 end
 
 function OnResourceChanged(player, resource, value)
+	local currentTank = LOCAL_PLAYER:GetResource(Constants_API.GetEquippedTankResource())
     if resource == Constants_API.GetEquippedTankResource() then
         local equippedTankId = value
 --print('Currently equipped with tank: ' .. tostring(equippedTankId))
@@ -2231,6 +2235,9 @@ function OnResourceChanged(player, resource, value)
             end
         end
         PopulateOwnedTanks()
+   	elseif resource == UTIL_API.GetTankRPString(currentTank) then
+   		STATS_TANK_CONTAINER:FindDescendantByName('EQUIPPED_EXPERIENCE_EQUIPPED_TANK_PARTS').text =
+        tostring(LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(currentTank)))
     end
 end
 

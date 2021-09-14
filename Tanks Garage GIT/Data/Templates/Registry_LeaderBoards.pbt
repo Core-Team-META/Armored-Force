@@ -86,7 +86,7 @@ Assets {
           Overrides {
             Name: "cs:TotalWinRate"
             NetReference {
-              Key: "CA9B654706CA5EAC"
+              Key: "DCDE795C250E72DF"
               Type {
                 Value: "mc:enetreferencetype:leaderboard"
               }
@@ -95,7 +95,7 @@ Assets {
           Overrides {
             Name: "cs:TotalDamage"
             NetReference {
-              Key: "EA7E1A7CDA1A3331"
+              Key: "C75FD87B1C50EEA0"
               Type {
                 Value: "mc:enetreferencetype:leaderboard"
               }
@@ -104,7 +104,7 @@ Assets {
           Overrides {
             Name: "cs:TotalDestroyed"
             NetReference {
-              Key: "638676454DE3479E"
+              Key: "E89D215FA147D48E"
               Type {
                 Value: "mc:enetreferencetype:leaderboard"
               }
@@ -113,7 +113,7 @@ Assets {
           Overrides {
             Name: "cs:MatchDamage"
             NetReference {
-              Key: "1BDB8A1A59C882DE"
+              Key: "69F38F9E0AC35D5C"
               Type {
                 Value: "mc:enetreferencetype:leaderboard"
               }
@@ -122,7 +122,7 @@ Assets {
           Overrides {
             Name: "cs:MatchDestroyed"
             NetReference {
-              Key: "169E53010D611C59"
+              Key: "1E428694127B3A42"
               Type {
                 Value: "mc:enetreferencetype:leaderboard"
               }

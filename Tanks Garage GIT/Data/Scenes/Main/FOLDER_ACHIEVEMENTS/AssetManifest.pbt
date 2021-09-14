@@ -71,15 +71,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8581935008439073870
-  Name: "Icon DNA"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_DNA"
-  }
-}
-Assets {
   Id: 7523603796159964991
   Name: "BG Flat 001"
   PlatformAssetType: 9
@@ -95,6 +86,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Crafting_Bar_002"
+  }
+}
+Assets {
+  Id: 5338244946539998590
+  Name: "Survival Crate 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Crate_005"
   }
 }
 Assets {

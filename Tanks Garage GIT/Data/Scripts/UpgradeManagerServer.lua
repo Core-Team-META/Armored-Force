@@ -163,13 +163,9 @@ function PurchaseWeapon(player, id)
 				if(tank.id == id) then
 --print("DEBUG: Owned tank found")					
 					player:RemoveResource(CURRENCY.SILVER.ResourceName, cost)
-					
-					if(tankRP < researchCost) then
-						researchCost = researchCost - tankRP
-						player:RemoveResource(tankRPString, tankRP)
-					else
-						player:RemoveResource(tankRPString, researchCost)
-					end
+				
+					player:RemoveResource(tankRPString, researchCost)
+					researchCost = researchCost - tankRP
 					
 					if(researchCost > 0) then
 						player:RemoveResource(CURRENCY.FREERP.ResourceName, researchCost)
@@ -213,12 +209,8 @@ function PurchaseArmor(player, id)
 --print("DEBUG: Owned tank found")					
 					player:RemoveResource(CURRENCY.SILVER.ResourceName, cost)
 					
-					if(tankRP < researchCost) then
-						researchCost = researchCost - tankRP
-						player:RemoveResource(tankRPString, tankRP)
-					else
-						player:RemoveResource(tankRPString, researchCost)
-					end
+					player:RemoveResource(tankRPString, researchCost)
+					researchCost = researchCost - tankRP 
 					
 					if(researchCost > 0) then
 						player:RemoveResource(CURRENCY.FREERP.ResourceName, researchCost)
@@ -262,12 +254,8 @@ function PurchaseEngine(player, id)
 --print("DEBUG: Owned tank found")					
 					player:RemoveResource(CURRENCY.SILVER.ResourceName, cost)
 					
-					if(tankRP < researchCost) then
-						researchCost = researchCost - tankRP
-						player:RemoveResource(tankRPString, tankRP)
-					else
-						player:RemoveResource(tankRPString, researchCost)
-					end
+					player:RemoveResource(tankRPString, researchCost)
+					researchCost = researchCost - tankRP 
 					
 					if(researchCost > 0) then
 						player:RemoveResource(CURRENCY.FREERP.ResourceName, researchCost)

@@ -24,7 +24,6 @@ local function GetRankDataByLevel(level)
             return rank
         end
     end
-    -- #TODO Need to add default rank ID
     return ranks[1]
 end
 
@@ -64,7 +63,7 @@ function API.GetRanks()
 end
 
 function API.GetPlayerRankData(player)
-    return player.GetResource and GetRankDataByLevel(player:GetResource("Rank")) or 1
+    return GetRankDataByLevel(player:GetResource("LEVEL"))
 end
 
 -- Checks if there has been a change to player rank
@@ -94,7 +93,7 @@ end
 
 function API.GetSmallRankIcon(player)
     local rankData = API.GetPlayerRankData(player)
-    return ranks[1].icon
+    return rankData.icon
 end
 
 function API.GetRankName(player)

@@ -34,6 +34,10 @@ Assets {
         Name: "cs:RankAcronym"
         String: ""
       }
+      Overrides {
+        Name: "cs:RankNumber"
+        Int: 1
+      }
     }
   }
   SerializationVersion: 98
