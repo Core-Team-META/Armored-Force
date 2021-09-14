@@ -21,6 +21,19 @@ Assets {
   }
 }
 Assets {
+  Id: 16960243289677782473
+  Name: "GoldPack1"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "0d9f90dc57da4bf5a33c34ace35da2a0"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 16766789904610071689
   Name: "Bush 02"
   PlatformAssetType: 1
@@ -30,27 +43,27 @@ Assets {
   }
 }
 Assets {
-  Id: 15183379882844913680
-  Name: "Achievements"
-  PlatformAssetType: 23
+  Id: 15776756620937563400
+  Name: "SilverPack2"
+  PlatformAssetType: 24
   NetReferenceAsset {
     NetReference {
-      Key: "042efdb7f82f4e99bbe36f56ac3eeac8"
+      Key: "5bd5e47132fb4ef8b116116ef77e2189"
       Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
+        Value: "mc:enetreferencetype:creatorperk"
       }
     }
   }
 }
 Assets {
-  Id: 14766070920820308542
-  Name: "Leaderboards"
-  PlatformAssetType: 23
+  Id: 14975415967846703570
+  Name: "GoldPack2"
+  PlatformAssetType: 24
   NetReferenceAsset {
     NetReference {
-      Key: "54bbf70f896141c8a394d19fffb4d392"
+      Key: "88d77eb9593b486baa670ec5f376ffd1"
       Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
+        Value: "mc:enetreferencetype:creatorperk"
       }
     }
   }
@@ -82,6 +95,19 @@ Assets {
   }
 }
 Assets {
+  Id: 13936078365922036532
+  Name: "af_live_skins"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "679759574ece4183867f9150f1160363"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 13849856485583202930
   Name: "Grass Tall"
   PlatformAssetType: 1
@@ -91,14 +117,14 @@ Assets {
   }
 }
 Assets {
-  Id: 13755022942812575441
-  Name: "Tanks"
-  PlatformAssetType: 23
+  Id: 10324820665438131489
+  Name: "SilverPack3"
+  PlatformAssetType: 24
   NetReferenceAsset {
     NetReference {
-      Key: "9ed244980ee6453988436a9b9f546487"
+      Key: "c03f4d4d44b9429e94d33439f201933c"
       Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
+        Value: "mc:enetreferencetype:creatorperk"
       }
     }
   }
@@ -143,6 +169,19 @@ Assets {
   }
 }
 Assets {
+  Id: 9221469704432417672
+  Name: "GeneralPack"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "98fd877f41d44d43b9853d198d25950e"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 8779881459085015496
   Name: "GoldBundle2"
   PlatformAssetType: 24
@@ -165,6 +204,32 @@ Assets {
   }
 }
 Assets {
+  Id: 7958319007530120058
+  Name: "CaptainPack"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "cf1e3a49723d4e0696e6c16ee2b71a5b"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
+  Id: 7292207239894316953
+  Name: "af_live_tanks"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "f63454eea03149b583c941a85ac8d694"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 6551093352602210295
   Name: "Rock Pile 001"
   PlatformAssetType: 1
@@ -174,14 +239,14 @@ Assets {
   }
 }
 Assets {
-  Id: 5713264857276766347
-  Name: "Skins"
-  PlatformAssetType: 23
+  Id: 5154219513001555929
+  Name: "SilverPack1"
+  PlatformAssetType: 24
   NetReferenceAsset {
     NetReference {
-      Key: "4e77f911b25d4eb69c0e5004fe6bae88"
+      Key: "7f6e4ce30d514dae9fdaa55bac832377"
       Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
+        Value: "mc:enetreferencetype:creatorperk"
       }
     }
   }
@@ -206,6 +271,45 @@ Assets {
   NetReferenceAsset {
     NetReference {
       Key: "8cadd4667c1044fcaa914b011d86e503"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
+  Id: 3574852048611023137
+  Name: "af_live_leaderboards"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "2a1eadf932d540a992d37a280466c988"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
+  Id: 3523332240406878130
+  Name: "af_live_achievements"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "f79e7ab5406e4f40b4a258dcc5b88a7a"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
+  Id: 3225416143325553474
+  Name: "SoldierPack"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "e49b7def31814879803638045f8d26c1"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
       }
@@ -245,6 +349,19 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "weapon_guide_pistol_BP_ref"
+  }
+}
+Assets {
+  Id: 2326320507902811727
+  Name: "GoldPack3"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "5f4f64ec1e564b9eb7e1bb407c2dd9e3"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
   }
 }
 Assets {
