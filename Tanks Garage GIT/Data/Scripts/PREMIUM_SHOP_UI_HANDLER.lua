@@ -128,8 +128,8 @@ function RemoveFromTotal(amount)
 end
 
 function UpdateTotal()
-	OUTCOME_RPs:FindChildByName("OUTCOME_RP_AMOUNT").text = tostring(RPTradeTotal) .. " FREE RP"
-	OUTCOME_RPs:FindChildByName("OUTCOME_RP_AMOUNT_HIGHLIGHT").text = tostring(RPTradeTotal) .. " FREE RP"
+	OUTCOME_RPs:FindChildByName("OUTCOME_RP_AMOUNT").text = tostring(RPTradeTotal) .. " Universal Parts"
+	OUTCOME_RPs:FindChildByName("OUTCOME_RP_AMOUNT_HIGHLIGHT").text = tostring(RPTradeTotal) .. " Universal Parts"
 	BUTTON_CONVERT_RPs:FindChildByName("CONVERTING_COSTS").text = "COST: " .. tostring(UTIL_API.GetRPConversionCost(RPTradeTotal)) .. " Gold"
 end
 

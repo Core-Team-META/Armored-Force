@@ -3880,7 +3880,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Button {
-      Label: "Convert XP"
+      Label: "Convert Tank Parts"
       FontColor {
         R: 0.644479871
         G: 0.603827536
