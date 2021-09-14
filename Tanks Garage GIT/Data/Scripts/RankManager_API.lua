@@ -24,6 +24,7 @@ local function GetRankDataByLevel(level)
             return rank
         end
     end
+    return ranks[1]
 end
 
 ------------------------------------------------------------------------------------------------------------------------
