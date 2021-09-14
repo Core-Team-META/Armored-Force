@@ -22,6 +22,8 @@ local PERKS = _Constants_API:WaitForConstant("Perks")
 local CURRENCY = _Constants_API:WaitForConstant("Currency")
 
 local STORAGE_KEY = PROJECT_KEYS.Tanks
+ 
+
 ------------------------------------------------------------------------------------------------------------------------
 -- TABLE BUILDER
 ------------------------------------------------------------------------------------------------------------------------
@@ -134,25 +136,25 @@ function CheckPerkCountWithStorage(player, data)
             end
 
             --Bundles
-            if bundle.perk == PERKS.SOLDIERPACK and player:HasPerk(bundle.perk) then
+            if bundle.perk == PERKS.SOLDIERPACK.perk and player:HasPerk(bundle.perk) then
                 if perkCount > storageCount then
-                    player:AddResource(CURRENCY.SILVER, 10000)
-                    player:AddResource(CURRENCY.GOLD, 100)
-                    player:AddResource(CURRENCY.FREERP, 10000)
+                    player:AddResource(CURRENCY.SILVER.ResourceName, 10000)
+                    player:AddResource(CURRENCY.GOLD.ResourceName, 100)
+                    player:AddResource(CURRENCY.FREERP.ResourceName, 10000)
                     perks[bundle.storageId] = perkCount
                 end
-            elseif bundle.perk == PERKS.CAPTAINPACK and player:HasPerk(bundle.perk) then
+            elseif bundle.perk == PERKS.CAPTAINPACK.perk and player:HasPerk(bundle.perk) then
                 if perkCount > storageCount then
-                    player:AddResource(CURRENCY.SILVER, 25000)
-                    player:AddResource(CURRENCY.GOLD, 250)
-                    player:AddResource(CURRENCY.FREERP, 25000)
+                    player:AddResource(CURRENCY.SILVER.ResourceName, 25000)
+                    player:AddResource(CURRENCY.GOLD.ResourceName, 250)
+                    player:AddResource(CURRENCY.FREERP.ResourceName, 25000)
                     perks[bundle.storageId] = perkCount
                 end
-            elseif bundle.perk == PERKS.GENERALPACK and player:HasPerk(bundle.perk) then
+            elseif bundle.perk == PERKS.GENERALPACK.perk and player:HasPerk(bundle.perk) then
                 if perkCount > storageCount then
-                    player:AddResource(CURRENCY.SILVER, 50000)
-                    player:AddResource(CURRENCY.GOLD, 500)
-                    player:AddResource(CURRENCY.FREERP, 50000)
+                    player:AddResource(CURRENCY.SILVER.ResourceName, 50000)
+                    player:AddResource(CURRENCY.GOLD.ResourceName, 500)
+                    player:AddResource(CURRENCY.FREERP.ResourceName, 50000)
                     perks[bundle.storageId] = perkCount
                 end
             end
