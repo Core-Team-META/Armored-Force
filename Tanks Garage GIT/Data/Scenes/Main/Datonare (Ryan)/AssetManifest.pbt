@@ -134,6 +134,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4519748528802078203
+  Name: "Icon Checkmark"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Checkmark"
+  }
+}
+Assets {
   Id: 2903415737883036314
   Name: "Icon Close"
   PlatformAssetType: 9

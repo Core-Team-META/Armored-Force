@@ -928,6 +928,12 @@ Objects {
         Id: 5513507585235710589
       }
     }
+    Overrides {
+      Name: "cs:TutorialUI"
+      ObjectReference {
+        SelfId: 14672083327800524015
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1142,6 +1148,16 @@ Objects {
     Overrides {
       Name: "cs:AdvancePhase"
       Bool: false
+    }
+    Overrides {
+      Name: "cs:AssociatedPanel"
+      String: "Tutorial_Base Capture Panel"
+    }
+    Overrides {
+      Name: "cs:TutorialUI"
+      ObjectReference {
+        SelfId: 14672083327800524015
+      }
     }
   }
   Collidable_v2 {
