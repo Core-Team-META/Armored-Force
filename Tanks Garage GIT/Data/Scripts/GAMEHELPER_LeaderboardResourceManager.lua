@@ -2,26 +2,29 @@ local UTIL = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 local _Constants_API = require(script:GetCustomProperty("Constants_API"))
  
 local STORAGE_LEADERBOARD = _Constants_API:WaitForConstant("Storage_Keys").Leaderboards 
-local MTD_LEADERBOARD = STORAGE_LEADERBOARD.MatchDestroyed
-local MDD_LEADERBOARD = STORAGE_LEADERBOARD.MatchDamage
-local LTTD_LEADERBOARD = STORAGE_LEADERBOARD.TotalDestroyed
-local LTDD_LEADERBOARD = STORAGE_LEADERBOARD.TotalDamage
-local LTWR_LEADERBOARD = STORAGE_LEADERBOARD.TotalWinRate
+local LEADERBOARDS = _Constants_API:WaitForConstant("Leaderboards")
+
+
+local MTD_LEADERBOARD = LEADERBOARDS.MatchDestroyed
+local MDD_LEADERBOARD = LEADERBOARDS.MatchDamage
+local LTTD_LEADERBOARD = LEADERBOARDS.TotalDestroyed
+local LTDD_LEADERBOARD = LEADERBOARDS.TotalDamage
+local LTWR_LEADERBOARD = LEADERBOARDS.TotalWinRate
 
 local MAX_ENTRIES = 10
 
 if not STORAGE_LEADERBOARD then
-    warn("Leaderboard Net Refrence Missing!")
+    print("Leaderboard Net Refrence Missing!")
     return
 end
 
 if not MTD_LEADERBOARD or not MDD_LEADERBOARD then
-    warn("Match Leaderboard Net Refrence(s) Missing!")
+    print("Match Leaderboard Net Refrence(s) Missing!")
     return
 end
 
 if not LTTD_LEADERBOARD or not LTDD_LEADERBOARD or not LTWR_LEADERBOARD then
-    warn("Lifetime Leaderboard Net Refrence(s) Missing!")
+    print("Lifetime Leaderboard Net Refrence(s) Missing!")
     return
 end
 
@@ -35,7 +38,7 @@ local function BuildLeaderboardTable(netref, bool)
             Task.Wait()
         until Leaderboards.HasLeaderboards() or time() - startTime > 30
     end
-    for i, entry in ipairs(Leaderboards.GetLeaderboard(netref, LeaderboardType.WEEKLY)) do
+    for i, entry in ipairs(Leaderboards.GetLeaderboard(netref, LeaderboardType.GLOBAL)) do
         if i <= MAX_ENTRIES then
             tbl[entry.name] = entry.score
         else
@@ -117,7 +120,7 @@ function OnPlayerLeft(player)
         storageData.playerResources.LTWR = lifeTimeWinRate
         Leaderboards.SubmitPlayerScore(LTWR_LEADERBOARD, player, lifeTimeWinRate)
     end
-   
+    print("Submitting Leaderboard")
     Storage.SetSharedPlayerData(STORAGE_LEADERBOARD, player, storageData)
 end
 
