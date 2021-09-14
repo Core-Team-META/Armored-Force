@@ -1761,9 +1761,12 @@ function OpenTankUpgradeWindow(button, id)
     end
  
     IMAGE_API.SetTankImage(tankPreviewImage, selectedTankId)
-
-    SFX_CLICK:Play()
-    UPGRADE_TANK_CONTAINER.visibility = Visibility.FORCE_ON
+    if UPGRADE_TANK_CONTAINER.visibility == Visibility.FORCE_ON and LOCAL_PLAYER.clientUserData.tutorial6 ~= 1  then 
+        CloseTankUpgradeWindow()
+    else 
+        SFX_CLICK:Play()
+        UPGRADE_TANK_CONTAINER.visibility = Visibility.FORCE_ON 
+    end
     local entry = {}
     local progress = {}
     for i, tank in ipairs(TANK_LIST) do
