@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15818976189543274029
+        ParentId: 2974750608502516638
         ChildIds: 10370414055976755312
         ChildIds: 6681008204534045072
         ChildIds: 11678385162583810908
@@ -181,7 +181,7 @@ Assets {
       }
       Objects {
         Id: 17020525069336917388
-        Name: "Storage_Keys"
+        Name: "Leaderboard_Net_Ref"
         Transform {
           Location {
           }
@@ -216,7 +216,7 @@ Assets {
           Overrides {
             Name: "cs:Object"
             ObjectReference {
-              SubObjectId: 4670376251654575653
+              SubObjectId: 10370414055976755312
             }
           }
         }
@@ -271,7 +271,7 @@ Assets {
       }
       Objects {
         Id: 8921911793213038351
-        Name: "Storage_Keys"
+        Name: "Leaderboard_Net_Ref"
         Transform {
           Location {
           }
@@ -306,7 +306,7 @@ Assets {
           Overrides {
             Name: "cs:Object"
             ObjectReference {
-              SubObjectId: 4670376251654575653
+              SubObjectId: 10370414055976755312
             }
           }
         }

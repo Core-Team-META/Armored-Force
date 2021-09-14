@@ -25,11 +25,12 @@ local _Constants_API = require(script:GetCustomProperty("Constants_API"))
 local KEYS =  _Constants_API:WaitForConstant("Storage_Keys") 
 local LEADBOARDS = KEYS.Leaderboards
 
-local MTD_LEADERBOARD = LEADBOARDS.MatchDestroyed
-local MDD_LEADERBOARD = LEADBOARDS.MatchDamage
-local LTTD_LEADERBOARD = LEADBOARDS.TotalDestroyed
-local LTDD_LEADERBOARD = LEADBOARDS.TotalDamage
-local LTWR_LEADERBOARD = LEADBOARDS.TotalWinRate
+local LEADERBOARD_NET = _Constants_API:WaitForConstant("Leaderboards")
+local MTD_LEADERBOARD = LEADERBOARD_NET.MatchDestroyed
+local MDD_LEADERBOARD = LEADERBOARD_NET.MatchDamage
+local LTTD_LEADERBOARD = LEADERBOARD_NET.TotalDestroyed
+local LTDD_LEADERBOARD = LEADERBOARD_NET.TotalDamage
+local LTWR_LEADERBOARD = LEADERBOARD_NET.TotalWinRate
 
 --#TODO not able to scale, should have this all on custom properties.
 local leaderBoards = {
