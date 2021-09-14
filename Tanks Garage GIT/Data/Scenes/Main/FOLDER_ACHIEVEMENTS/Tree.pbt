@@ -7946,7 +7946,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8015,14 +8015,6 @@ Objects {
           String: "Achievement_Panel_TemplateNew"
         }
         Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
           Name: "Position"
           Vector {
           }
@@ -8031,14 +8023,6 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
-        }
-        Overrides {
-          Name: "UIX"
-          Float: 870
-        }
-        Overrides {
-          Name: "UIY"
-          Float: 210
         }
       }
     }
@@ -8069,6 +8053,39 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 4957820783297060253
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 5338244946539998590
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12391928262576577787
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.395318866
+            G: 0.562000036
+            A: 1
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16569564263885498074
       value {
@@ -8132,6 +8149,39 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 4957820783297060253
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 5338244946539998590
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12391928262576577787
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.395318866
+            G: 0.562000036
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16569564263885498074
       value {
         Overrides {
@@ -8189,6 +8239,39 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 4957820783297060253
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 5338244946539998590
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12391928262576577787
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.395318866
+            G: 0.562000036
+            A: 1
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16569564263885498074
       value {
@@ -8252,6 +8335,39 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 4957820783297060253
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 5338244946539998590
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12391928262576577787
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.395318866
+            G: 0.562000036
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16569564263885498074
       value {
         Overrides {
@@ -8309,6 +8425,48 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 4957820783297060253
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 5338244946539998590
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9788543588391563269
+      value {
+        Overrides {
+          Name: "UIY"
+          Float: 0.779
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12391928262576577787
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.395318866
+            G: 0.562000036
+            A: 1
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16569564263885498074
       value {
@@ -8420,6 +8578,39 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 4957820783297060253
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 5338244946539998590
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12391928262576577787
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.395318866
+            G: 0.562000036
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16569564263885498074
       value {
         Overrides {
@@ -8481,6 +8672,39 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 4957820783297060253
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 5338244946539998590
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12391928262576577787
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.395318866
+            G: 0.562000036
+            A: 1
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16569564263885498074
       value {
@@ -8544,6 +8768,39 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 4957820783297060253
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 5338244946539998590
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12391928262576577787
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.395318866
+            G: 0.562000036
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16569564263885498074
       value {
         Overrides {
@@ -8601,6 +8858,39 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 4957820783297060253
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 5338244946539998590
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12391928262576577787
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.395318866
+            G: 0.562000036
+            A: 1
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16569564263885498074
       value {
@@ -8664,6 +8954,39 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 4957820783297060253
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 5338244946539998590
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12391928262576577787
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.395318866
+            G: 0.562000036
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16569564263885498074
       value {
         Overrides {
@@ -8721,6 +9044,39 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 4957820783297060253
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 5338244946539998590
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12391928262576577787
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.395318866
+            G: 0.562000036
+            A: 1
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16569564263885498074
       value {
@@ -9908,9 +10264,8 @@ Objects {
     Text {
       Label: "1,000"
       Color {
-        R: 0.0998987257
-        G: 0.323143244
-        B: 0.533276618
+        R: 0.395318866
+        G: 0.562000036
         A: 1
       }
       Size: 20
@@ -9985,12 +10340,12 @@ Objects {
     }
     Image {
       Brush {
-        Id: 8581935008439073870
+        Id: 5338244946539998590
       }
       Color {
-        R: 0.0998987257
-        G: 0.323143244
-        B: 0.533276618
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       TeamSettings {
