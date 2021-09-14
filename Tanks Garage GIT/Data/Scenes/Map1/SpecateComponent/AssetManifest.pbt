@@ -17,6 +17,24 @@ Assets {
   }
 }
 Assets {
+  Id: 16622975013881172947
+  Name: "Frame Beveled 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid8px_020"
+  }
+}
+Assets {
+  Id: 14589376957536017584
+  Name: "Icon mouse Left"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_MouseLMB"
+  }
+}
+Assets {
   Id: 12478180938234886174
   Name: "BG Highlighted 002"
   PlatformAssetType: 9
@@ -26,21 +44,21 @@ Assets {
   }
 }
 Assets {
+  Id: 11086091654267386224
+  Name: "Icon Camera"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Camera"
+  }
+}
+Assets {
   Id: 10820194954338241369
   Name: "BG Highlighted 001"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundHighlighted_020"
-  }
-}
-Assets {
-  Id: 7946634531565250888
-  Name: "BG Flat 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundNoOutline_019"
   }
 }
 Assets {
@@ -77,5 +95,14 @@ Assets {
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "PlayRegular_ref"
+  }
+}
+Assets {
+  Id: 443712039677770848
+  Name: "Icon mouse Right"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_MouseRMB"
   }
 }
