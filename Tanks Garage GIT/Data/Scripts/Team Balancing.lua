@@ -39,29 +39,17 @@ local function GetTankTypeMultiplier(tankId)
 end
 
 function ComputePlayerValue(player)
-	-- Return the cached value
-	if player.serverUserData.balanceValue then
-		return player.serverUserData.balanceValue
-	end
-
 	-- Each player brings a base value to the team
 	local value = BASE_VALUE_PER_PLAYER
 
 	local tankId = player:GetResource(TankAPI.EquipResource)
-	local tankMultiplier = GetTankTypeMultiplier(tankId)
-	local tankStrength = (tankData[tankId].tier * tankMultiplier)
-	value = value + tankStrength
+	value = value + tankData[tankId].tier
 
 	player.serverUserData.balanceValue = value
 
 	print(
 		"[Balance] Player " ..
-			player.name ..
-				", tankId = " ..
-					tostring(tankId) ..
-						"->" ..
-							tostring(tankStrength) .. --", winRateValue = " .. tostring(weightedWinRate) .. "->" .. tostring(winRateValue) ..
-								", totalValue = " .. tostring(value)
+			player.name .. ", tankId = " .. tostring(tankId) .. "->" .. tostring(value)
 	)
 
 	return value
@@ -121,7 +109,8 @@ function DoRebalance(playerToIgnore)
 
 	local team1 = Game.GetPlayers({includeTeams = 1, ignorePlayers = playerToIgnore})
 	local team2 = Game.GetPlayers({includeTeams = 2, ignorePlayers = playerToIgnore})
-
+	teamBalance[1] = 0
+	teamBalance[2] = 0
 	if #team1 + #team2 <= 1 then
 		local player = Game.GetPlayers()[1]
 		ComputePlayerValue(player)
@@ -154,13 +143,7 @@ function DoRebalance(playerToIgnore)
 		return
 	end
 
-	if #team1 > #team2 then
-		value1 = value1 + (100 / #team1)
-	elseif #team2 > #team1 then
-		value2 = value2 + (100 / #team2)
-	end
-
-	local bestDelta = math.abs(value1 / #team1 - value2 / #team2)
+	local bestDelta = math.abs(value1 - value2)
 
 	local i = 0
 	while i < 64 do
@@ -183,7 +166,7 @@ function DoRebalance(playerToIgnore)
 		local v1 = value1 - player1.serverUserData.balanceValue + player2.serverUserData.balanceValue
 		local v2 = value2 - player2.serverUserData.balanceValue + player1.serverUserData.balanceValue
 
-		local newDelta = math.abs(v1 / #team1 - v2 / #team2)
+		local newDelta = math.abs(v1 - v2)
 
 		if bestDelta > newDelta then
 			bestDelta = newDelta
