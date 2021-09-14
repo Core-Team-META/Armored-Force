@@ -15,13 +15,13 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15186286892296639228
+        ParentId: 4781671109827199097
         ChildIds: 18197007625080607849
         ChildIds: 13705031129175395400
         ChildIds: 2780322315766057072
         ChildIds: 8381836577386706256
-        ChildIds: 15866593286241306026
         ChildIds: 6809656578611363989
+        ChildIds: 11807257854950587145
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -830,46 +830,6 @@ Assets {
         }
       }
       Objects {
-        Id: 15866593286241306026
-        Name: "Sci-fi Button Charge 01 SFX"
-        Transform {
-          Location {
-            X: -0.00258988235
-            Y: -0.00405205041
-          }
-          Rotation {
-            Yaw: -2.04905627e-05
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13900603611236620789
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        AudioInstance {
-          AudioAsset {
-            Id: 16481514129079315330
-          }
-          AutoPlay: true
-          Volume: 1.25
-          Falloff: -1
-          Radius: -1
-        }
-      }
-      Objects {
         Id: 6809656578611363989
         Name: "TITLE"
         Transform {
@@ -1465,6 +1425,55 @@ Assets {
           }
         }
       }
+      Objects {
+        Id: 11807257854950587145
+        Name: "Orchestral Victory Achievement Music Stinger Set 01"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13900603611236620789
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Type"
+            Enum {
+              Value: "mc:emx_orchestralvictoryachievement_01:41"
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 10613197358825148101
+          }
+          TeamSettings {
+          }
+          AudioBP {
+            AutoPlay: true
+            Volume: 1.5
+            Falloff: 3600
+            Radius: 400
+          }
+        }
+      }
     }
     Assets {
       Id: 2604353830693238371
@@ -1512,15 +1521,6 @@ Assets {
       }
     }
     Assets {
-      Id: 16481514129079315330
-      Name: "Sci-fi Button Charge 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_scifi_button_Charge_01_Cue_ref"
-      }
-    }
-    Assets {
       Id: 10820194954338241369
       Name: "BG Highlighted 001"
       PlatformAssetType: 9
@@ -1545,6 +1545,15 @@ Assets {
       PrimaryAsset {
         AssetType: "FontAssetRef"
         AssetId: "TekoLight_ref"
+      }
+    }
+    Assets {
+      Id: 10613197358825148101
+      Name: "Orchestral Victory Achievement Music Stinger Set 01"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "abp_stinger_orchestral_victory_achievement_01_ref"
       }
     }
     PrimaryAssetId {

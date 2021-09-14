@@ -137,6 +137,9 @@ function OnPlayerJoined(player)
     --print("-----PRINTING LOCAL STORAGE-----")
     --UTIL_API.TablePrint(Storage.GetPlayerData(player))
     --print("-----FINISHED PRINTING LOCAL STORAGE-----")
+    Task.Wait(1)
+    player:SetResource("TutorialProgress", 0)
+    player:SetResource("TutorialReward", 0)
 end
 
 function OnPlayerLeft(player)
