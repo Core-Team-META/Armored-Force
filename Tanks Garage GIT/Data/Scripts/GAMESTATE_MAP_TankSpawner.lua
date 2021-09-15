@@ -162,34 +162,57 @@ end
 -- nil OnPlayerLeft(Player)
 -- Removes equipment
 function OnPlayerLeft(player)
-    if true then
-        RemovePlayerEquipment(player)
-    else
+   -- if true then
+    --    RemovePlayerEquipment(player)
+    --else
         -- Code to replace player tanks with AI controllers when players leave.
         -- Currently disabled while I work on it.  -CJC
 
-        if equippedTank[player] and equippedTank[player]:IsValid() then
-            --print(string.format("Converting player %s to AI.", player.name))
-            if Object.IsValid(_G.lookup.tanks[player].chassis) then
-                _G.lookup.tanks[player].chassis:RemoveDriver()
-            else
-                warn("Could not find chassis!!!")
-            end
-            local newAI = AIPlayer.New()
-            --newAI:SetWorldPosition(player:GetWorldPosition())
-            newAI.team = player.team
-            newAI.tankId = 34
-            newAI.name = "Robo-" .. player.name
-            _G.lookup.tanks[newAI] = _G.lookup.tanks[player]
-            _G.lookup.tanks[player] = nil --{team = newAI.team, tank = equippedTank[newAI]}
+    local currentState = mainManagerServer:GetCustomProperty("GameState")
 
-            equippedTank[newAI] = equippedTank[player]
-            equippedTank[player] = nil
 
-            equippedTank[newAI].context.AssignDriver(newAI)
-        end
+    if currentState == "MATCH_STATE" and equippedTank[player] and equippedTank[player]:IsValid() and not player.isDead then
+        RemovePlayerEquipment(player)
+        
+        local playerPosition = player:GetWorldPosition()
+        local playerRotation = player:GetWorldRotation()
+
+        local id = player:GetResource(tankApi.EquipResource)
+        local playerTeam = player.team
+        local newName = player.name.."(AI)"
+        local hp = player.hitPoints
+        local maxHp = player.maxHitPoints
+        local kills = player.kills
+        local playerDamage = player:GetResource("TankDamage")
+
+        Task.Wait()
+
+        local newAI = AIPlayer.New()
+
+        newAI:SetWorldPosition(playerPosition)
+        newAI:SetResource("TankDamage", playerDamage)
+
+        equippedTank[newAI] =
+            World.SpawnAsset(
+            GetEquippedTankTemplate(nil, id),
+            {parent = tankGarage, position = playerPosition, rotation = playerRotation}
+        )
+        --print("spawned", equippedTank[newAI])
+        Task.Wait()
+
+        newAI.team = playerTeam
+        newAI.tankId = id
+        newAI.name = newName
+        newAI.kills = kills
+
+        _G.lookup.tanks[newAI] = {team = newAI.team, tank = equippedTank[newAI]}
+        
+        equippedTank[newAI].context.AssignDriver(newAI, hp)
+    else
+        RemovePlayerEquipment(player)
     end
 end
+
 
 function FindClearSpawnPoint(team)
     local position = Vector3.ZERO
