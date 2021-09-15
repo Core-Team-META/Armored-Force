@@ -246,7 +246,6 @@ Objects {
     Overrides {
       Name: "cs:TechTree_Contents"
       ObjectReference {
-        SelfId: 841534158063459245
       }
     }
     Overrides {
@@ -284,7 +283,6 @@ Objects {
     Overrides {
       Name: "cs:TechTree_TeamDefinitions"
       ObjectReference {
-        SelfId: 841534158063459245
       }
     }
     Overrides {
@@ -909,6 +907,12 @@ Objects {
       Name: "cs:BUTTON_PREMIUM_SHOP"
       ObjectReference {
         SelfId: 5337038309014770169
+      }
+    }
+    Overrides {
+      Name: "cs:TutorialCompletePopupNoReward"
+      AssetReference {
+        Id: 11277052281076056181
       }
     }
   }

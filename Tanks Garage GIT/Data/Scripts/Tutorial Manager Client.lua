@@ -226,6 +226,7 @@ end
 function ResetTutorialProgress()
 	SFX_CLICK:Play()
 	Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.None, false)
+	LOCAL_PLAYER.clientUserData.tutorial6 = 0
 end
 
 function CloseTutorialPopup()
