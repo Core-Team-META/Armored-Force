@@ -24,7 +24,7 @@ local names = {
   "-=Zygoatee=-",
   "NotAnAxlotl",
   "DontTreadOnMe",
-  "TurretsSyndrome",
+  "9MillyMeeter",
   "Fancicle",
   "Chestopher",
   "Squadwick",
@@ -40,7 +40,7 @@ local names = {
   "Aphralla",
   "Sunflower",
   "Mechazilla",
-  "CyberMort",
+  "TurboTonker",
   "Dreamtastic",
   "WholesomeGunmonger",
 }
