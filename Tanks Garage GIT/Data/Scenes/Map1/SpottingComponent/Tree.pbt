@@ -142,27 +142,25 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 100
-    Height: 100
+    Width: 65
+    Height: 65
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
-    UseParentWidth: true
-    UseParentHeight: true
     Panel {
-      Opacity: 1
+      Opacity: 0.875981
     }
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:middlecenter"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
@@ -183,7 +181,7 @@ Objects {
     }
   }
   ParentId: 5525481074055264591
-  ChildIds: 4185474370348826147
+  ChildIds: 17628941789363151049
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -194,21 +192,21 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 80
-    Height: 80
-    UIY: -100
+    UIY: -105
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
     Image {
       Brush {
         Id: 15538142921929734385
       }
       Color {
-        R: 0.279999971
-        G: 1.33514391e-07
+        R: 0.61
         A: 1
       }
       TeamSettings {
@@ -229,8 +227,8 @@ Objects {
   }
 }
 Objects {
-  Id: 4185474370348826147
-  Name: "UI Text Box"
+  Id: 17628941789363151049
+  Name: "UI Image"
   Transform {
     Location {
     }
@@ -252,30 +250,37 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
   Control {
-    Width: 200
-    Height: 60
+    Width: -30
+    Height: -30
+    UIY: 2.30530047
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
-    Text {
-      Label: "!"
+    Image {
+      Brush {
+        Id: 3270496698279492551
+      }
       Color {
-        R: 0.37
-        G: 1.76429751e-07
+        R: 0.61
         A: 1
       }
-      Size: 40
-      Justification {
-        Value: "mc:etextjustify:center"
+      TeamSettings {
       }
-      AutoWrapText: true
-      Font {
+      ShadowColor {
+        A: 1
       }
+      ShadowOffset {
+      }
+      ScreenshotIndex: 1
     }
     AnchorLayout {
       SelfAnchor {

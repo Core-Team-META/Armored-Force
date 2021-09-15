@@ -16,3 +16,12 @@ Assets {
     AssetId: "UI_Scifi_Icon_029"
   }
 }
+Assets {
+  Id: 3270496698279492551
+  Name: "Icon Binoculars"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Binoculars"
+  }
+}
