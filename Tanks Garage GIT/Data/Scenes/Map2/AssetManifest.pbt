@@ -1,4 +1,17 @@
 Assets {
+  Id: 18255719503352330263
+  Name: "SilverPack1"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "7f6e4ce30d514dae9fdaa55bac832377"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 18000572852129032995
   Name: "PremiumSubscription"
   PlatformAssetType: 24
@@ -27,6 +40,19 @@ Assets {
   NetReferenceAsset {
     NetReference {
       Key: "0d9f90dc57da4bf5a33c34ace35da2a0"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
+  Id: 16296880149105285716
+  Name: "SilverPack2"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "5bd5e47132fb4ef8b116116ef77e2189"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
       }
@@ -81,6 +107,19 @@ Assets {
       Key: "679759574ece4183867f9150f1160363"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
+  Id: 10653751852735479706
+  Name: "SilverPack3"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "c03f4d4d44b9429e94d33439f201933c"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
       }
     }
   }
