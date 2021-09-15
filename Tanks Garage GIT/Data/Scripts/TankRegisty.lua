@@ -96,7 +96,7 @@ function Tanks.GetHighestDamage()
 end
 
 function Tanks.GetHighestReload()
-	return 10
+	return 12 -- true highest is 10, set slightly higher than actual max to compensate for high reload vehicles (jagdtiger)
 end
 
 function Tanks.GetHighestTurretSpeed()
@@ -124,7 +124,7 @@ function Tanks.GetHighestElevation()
 end
 
 function Tanks.GetHighestTurningSpeed() 
-	return 1500
+	return 100 -- true highest turning speed is 1500, lowering value for average of 
 end
 
 Constants_API:Register('Tanks', Tanks)
