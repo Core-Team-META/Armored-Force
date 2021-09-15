@@ -103,20 +103,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 1605275179467651420
-      value {
-        Overrides {
-          Name: "cs:Tanks"
-          NetReference {
-            Key: "711473f6b9ff43eda8c514f5c23c1746"
-            Type {
-              Value: "mc:enetreferencetype:sharedpersistence"
-            }
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 16224702300220691365
       value {
         Overrides {
@@ -131,14 +117,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
