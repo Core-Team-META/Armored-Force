@@ -29,6 +29,7 @@ local TutorialCompletePopupNoReward = script:GetCustomProperty("TutorialComplete
 local thisComponent = "SHOOTING_RANGE"
 
 local localPlayer = Game.GetLocalPlayer()
+local spamPrevent = false
 
 local garageModel = {}
 local garageModelWheels = nil
@@ -303,7 +304,9 @@ function ToggleGarage(player, binding)
 	end
 	
 	if binding == "ability_extra_34" and localPlayer:GetResource(API_Tutorial.GetTutorialResource()) >= API_Tutorial.TutorialPhase.JoinBattle then
+		if spamPrevent then return end		
 		if localPlayer:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.JoinBattle then
+			spamPrevent = true
 			Tutorial_JoinBattlePanel:FindDescendantByName("COMPLETION_PANEL").visibility = Visibility.FORCE_ON	
 			Tutorial_JoinBattlePanel:FindDescendantByName("Objective_1").text = "Press [G] to join a battle (1/1)"	
 			if localPlayer:GetResource(API_Tutorial.GetTutorialRewardResource()) < API_Tutorial.TutorialPhase.JoinBattle then
@@ -312,16 +315,16 @@ function ToggleGarage(player, binding)
 			else
 				local panel = World.SpawnAsset(TutorialCompletePopupNoReward, {parent = World.FindObjectByName("Tutorial UI")})
 				panel.lifeSpan = 3
-			end
-			
+			end			
 			Task.Wait(2)	
 			Tutorial_JoinBattlePanel:FindDescendantByName("COMPLETION_PANEL").visibility = Visibility.FORCE_OFF		
 			Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.Upgrade, true)	
 			Tutorial_JoinBattlePanel:FindDescendantByName("Objective_1").text = "Press [G] to join a battle (0/1)"
 		end
 		Events.BroadcastToServer("SEND_TO_MAP", "Frontline")
+		Task.Wait(2)
+		spamPrevent = false
 	end
-
 end
 
 function InitializeComponent()

@@ -1265,11 +1265,7 @@ function UpgradeEngine()
 
             if LOCAL_PLAYER.clientUserData.tutorial6 == 1 then
                 LOCAL_PLAYER.clientUserData.tutorial6 = 2
-                local panel =
-                    World.SpawnAsset(
-                    TutorialStepComplete,
-                    {parent = UPGRADE_TANK_CONTAINER:FindAncestorByName('MAIN_UI')}
-                )
+                CheckForTutorialCompletion()
             end
         end
     end
@@ -2012,8 +2008,8 @@ function CheckForTutorialCompletion()
             local panel = World.SpawnAsset(TutorialStepComplete, {parent = UPGRADE_TANK_CONTAINER:FindAncestorByName('MAIN_UI')})
             panel.lifeSpan = 3
         else
-            local panel = World.SpawnAsset(TutorialCompletePopupNoReward, {parent = World.FindObjectByName("Tutorial UI")})
-				panel.lifeSpan = 3
+            local panel = World.SpawnAsset(TutorialCompletePopupNoReward, {parent = UPGRADE_TANK_CONTAINER:FindAncestorByName('MAIN_UI')})
+			panel.lifeSpan = 3
         end
         Events.BroadcastToServer('AdvanceTutorial', API_Tutorial.TutorialPhase.RepairTank, true)
     end
