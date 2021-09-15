@@ -15129,7 +15129,7 @@ Objects {
 }
 Objects {
   Id: 14121090828183206512
-  Name: "20"
+  Name: "SLICE_20"
   Transform {
     Location {
     }
@@ -15193,7 +15193,7 @@ Objects {
 }
 Objects {
   Id: 3437627253086239338
-  Name: "19"
+  Name: "SLICE_19"
   Transform {
     Location {
     }
@@ -15257,7 +15257,7 @@ Objects {
 }
 Objects {
   Id: 4547232948457822920
-  Name: "17"
+  Name: "SLICE_17"
   Transform {
     Location {
     }
@@ -15321,7 +15321,7 @@ Objects {
 }
 Objects {
   Id: 17229936639197530236
-  Name: "16"
+  Name: "SLICE_16"
   Transform {
     Location {
     }
@@ -15385,7 +15385,7 @@ Objects {
 }
 Objects {
   Id: 14492882869470719626
-  Name: "15"
+  Name: "SLICE_15"
   Transform {
     Location {
     }
@@ -15449,7 +15449,7 @@ Objects {
 }
 Objects {
   Id: 8636130383484883902
-  Name: "14"
+  Name: "SLICE_14"
   Transform {
     Location {
     }
@@ -15513,7 +15513,7 @@ Objects {
 }
 Objects {
   Id: 12416304439938309262
-  Name: "13"
+  Name: "SLICE_13"
   Transform {
     Location {
     }
@@ -15577,7 +15577,7 @@ Objects {
 }
 Objects {
   Id: 6213588332152669066
-  Name: "12"
+  Name: "SLICE_12"
   Transform {
     Location {
     }
@@ -15641,7 +15641,7 @@ Objects {
 }
 Objects {
   Id: 3155453994734783579
-  Name: "11"
+  Name: "SLICE_11"
   Transform {
     Location {
     }
@@ -15705,7 +15705,7 @@ Objects {
 }
 Objects {
   Id: 13173997617098681830
-  Name: "10"
+  Name: "SLICE_10"
   Transform {
     Location {
     }
@@ -15769,7 +15769,7 @@ Objects {
 }
 Objects {
   Id: 17561658756799908273
-  Name: "9"
+  Name: "SLICE_9"
   Transform {
     Location {
     }
@@ -15833,7 +15833,7 @@ Objects {
 }
 Objects {
   Id: 17479816699855748288
-  Name: "8"
+  Name: "SLICE_8"
   Transform {
     Location {
     }
@@ -15897,7 +15897,7 @@ Objects {
 }
 Objects {
   Id: 17493114123623831775
-  Name: "7"
+  Name: "SLICE_7"
   Transform {
     Location {
     }
@@ -15961,7 +15961,7 @@ Objects {
 }
 Objects {
   Id: 13404365565517543860
-  Name: "6"
+  Name: "SLICE_6"
   Transform {
     Location {
     }
@@ -16025,7 +16025,7 @@ Objects {
 }
 Objects {
   Id: 14634892929512851980
-  Name: "5"
+  Name: "SLICE_5"
   Transform {
     Location {
     }
@@ -16089,7 +16089,7 @@ Objects {
 }
 Objects {
   Id: 11720173892893271318
-  Name: "4"
+  Name: "SLICE_4"
   Transform {
     Location {
     }
@@ -16153,7 +16153,7 @@ Objects {
 }
 Objects {
   Id: 3977298619596778474
-  Name: "3"
+  Name: "SLICE_3"
   Transform {
     Location {
     }
@@ -16217,7 +16217,7 @@ Objects {
 }
 Objects {
   Id: 5572209860650713447
-  Name: "2"
+  Name: "SLICE_2"
   Transform {
     Location {
     }
@@ -16281,7 +16281,7 @@ Objects {
 }
 Objects {
   Id: 11575897327884281016
-  Name: "1"
+  Name: "SLICE_1"
   Transform {
     Location {
     }
@@ -16739,7 +16739,7 @@ Objects {
 }
 Objects {
   Id: 5122587744618012451
-  Name: "20"
+  Name: "SLICE_20"
   Transform {
     Location {
     }
@@ -16803,7 +16803,7 @@ Objects {
 }
 Objects {
   Id: 14777016902880067285
-  Name: "19"
+  Name: "SLICE_19"
   Transform {
     Location {
     }
@@ -16867,7 +16867,7 @@ Objects {
 }
 Objects {
   Id: 5132769363603946600
-  Name: "17"
+  Name: "SLICE_17"
   Transform {
     Location {
     }
@@ -16931,7 +16931,7 @@ Objects {
 }
 Objects {
   Id: 16759431085251142530
-  Name: "16"
+  Name: "SLICE_16"
   Transform {
     Location {
     }
@@ -16995,7 +16995,7 @@ Objects {
 }
 Objects {
   Id: 3863672331581346331
-  Name: "15"
+  Name: "SLICE_15"
   Transform {
     Location {
     }
@@ -17059,7 +17059,7 @@ Objects {
 }
 Objects {
   Id: 340703590154503120
-  Name: "14"
+  Name: "SLICE_14"
   Transform {
     Location {
     }
@@ -17123,7 +17123,7 @@ Objects {
 }
 Objects {
   Id: 12432987050018974843
-  Name: "13"
+  Name: "SLICE_13"
   Transform {
     Location {
     }
@@ -17187,7 +17187,7 @@ Objects {
 }
 Objects {
   Id: 2475715019779994180
-  Name: "12"
+  Name: "SLICE_12"
   Transform {
     Location {
     }
@@ -17251,7 +17251,7 @@ Objects {
 }
 Objects {
   Id: 14504548122300460058
-  Name: "11"
+  Name: "SLICE_11"
   Transform {
     Location {
     }
@@ -17315,7 +17315,7 @@ Objects {
 }
 Objects {
   Id: 14399374689343254586
-  Name: "10"
+  Name: "SLICE_10"
   Transform {
     Location {
     }
@@ -17379,7 +17379,7 @@ Objects {
 }
 Objects {
   Id: 1219314827740011317
-  Name: "9"
+  Name: "SLICE_9"
   Transform {
     Location {
     }
@@ -17443,7 +17443,7 @@ Objects {
 }
 Objects {
   Id: 1786893637307727815
-  Name: "8"
+  Name: "SLICE_8"
   Transform {
     Location {
     }
@@ -17507,7 +17507,7 @@ Objects {
 }
 Objects {
   Id: 4620020568364803350
-  Name: "7"
+  Name: "SLICE_7"
   Transform {
     Location {
     }
@@ -17571,7 +17571,7 @@ Objects {
 }
 Objects {
   Id: 6334841070601148433
-  Name: "6"
+  Name: "SLICE_6"
   Transform {
     Location {
     }
@@ -17635,7 +17635,7 @@ Objects {
 }
 Objects {
   Id: 5236358835162967660
-  Name: "5"
+  Name: "SLICE_5"
   Transform {
     Location {
     }
@@ -17699,7 +17699,7 @@ Objects {
 }
 Objects {
   Id: 17547421074815264549
-  Name: "4"
+  Name: "SLICE_4"
   Transform {
     Location {
     }
@@ -17763,7 +17763,7 @@ Objects {
 }
 Objects {
   Id: 5132101327136185903
-  Name: "3"
+  Name: "SLICE_3"
   Transform {
     Location {
     }
@@ -17827,7 +17827,7 @@ Objects {
 }
 Objects {
   Id: 9021814468482779367
-  Name: "2"
+  Name: "SLICE_2"
   Transform {
     Location {
     }
@@ -17891,7 +17891,7 @@ Objects {
 }
 Objects {
   Id: 5005893447327467429
-  Name: "1"
+  Name: "SLICE_1"
   Transform {
     Location {
     }
@@ -18418,7 +18418,7 @@ Objects {
 }
 Objects {
   Id: 7170605535153846379
-  Name: "20"
+  Name: "SLICE_20"
   Transform {
     Location {
     }
@@ -18482,7 +18482,7 @@ Objects {
 }
 Objects {
   Id: 2671134801394468510
-  Name: "19"
+  Name: "SLICE_19"
   Transform {
     Location {
     }
@@ -18546,7 +18546,7 @@ Objects {
 }
 Objects {
   Id: 18410436721702083562
-  Name: "17"
+  Name: "SLICE_17"
   Transform {
     Location {
     }
@@ -18610,7 +18610,7 @@ Objects {
 }
 Objects {
   Id: 16415394971486612406
-  Name: "16"
+  Name: "SLICE_16"
   Transform {
     Location {
     }
@@ -18674,7 +18674,7 @@ Objects {
 }
 Objects {
   Id: 7632198341250347448
-  Name: "15"
+  Name: "SLICE_15"
   Transform {
     Location {
     }
@@ -18738,7 +18738,7 @@ Objects {
 }
 Objects {
   Id: 4609999744971711994
-  Name: "14"
+  Name: "SLICE_14"
   Transform {
     Location {
     }
@@ -18802,7 +18802,7 @@ Objects {
 }
 Objects {
   Id: 13122551755717366190
-  Name: "13"
+  Name: "SLICE_13"
   Transform {
     Location {
     }
@@ -18866,7 +18866,7 @@ Objects {
 }
 Objects {
   Id: 12024538669092358909
-  Name: "12"
+  Name: "SLICE_12"
   Transform {
     Location {
     }
@@ -18930,7 +18930,7 @@ Objects {
 }
 Objects {
   Id: 16418425459085706261
-  Name: "11"
+  Name: "SLICE_11"
   Transform {
     Location {
     }
@@ -18994,7 +18994,7 @@ Objects {
 }
 Objects {
   Id: 8398621635179835668
-  Name: "10"
+  Name: "SLICE_10"
   Transform {
     Location {
     }
@@ -19058,7 +19058,7 @@ Objects {
 }
 Objects {
   Id: 12668120322179760719
-  Name: "9"
+  Name: "SLICE_9"
   Transform {
     Location {
     }
@@ -19122,7 +19122,7 @@ Objects {
 }
 Objects {
   Id: 8431262530613377170
-  Name: "8"
+  Name: "SLICE_8"
   Transform {
     Location {
     }
@@ -19186,7 +19186,7 @@ Objects {
 }
 Objects {
   Id: 13641708237914316718
-  Name: "7"
+  Name: "SLICE_7"
   Transform {
     Location {
     }
@@ -19250,7 +19250,7 @@ Objects {
 }
 Objects {
   Id: 17756505843367832968
-  Name: "6"
+  Name: "SLICE_6"
   Transform {
     Location {
     }
@@ -19314,7 +19314,7 @@ Objects {
 }
 Objects {
   Id: 4935734325778238849
-  Name: "5"
+  Name: "SLICE_5"
   Transform {
     Location {
     }
@@ -19378,7 +19378,7 @@ Objects {
 }
 Objects {
   Id: 5850577770323504658
-  Name: "4"
+  Name: "SLICE_4"
   Transform {
     Location {
     }
@@ -19442,7 +19442,7 @@ Objects {
 }
 Objects {
   Id: 14645267023052451685
-  Name: "3"
+  Name: "SLICE_3"
   Transform {
     Location {
     }
@@ -19506,7 +19506,7 @@ Objects {
 }
 Objects {
   Id: 17543162045752292087
-  Name: "2"
+  Name: "SLICE_2"
   Transform {
     Location {
     }
@@ -19570,7 +19570,7 @@ Objects {
 }
 Objects {
   Id: 12177905149287416536
-  Name: "1"
+  Name: "SLICE_1"
   Transform {
     Location {
     }
@@ -20878,7 +20878,7 @@ Objects {
 }
 Objects {
   Id: 12290233435269076330
-  Name: "20"
+  Name: "SLICE_20"
   Transform {
     Location {
     }
@@ -20942,7 +20942,7 @@ Objects {
 }
 Objects {
   Id: 18154218452241948408
-  Name: "19"
+  Name: "SLICE_19"
   Transform {
     Location {
     }
@@ -21006,7 +21006,7 @@ Objects {
 }
 Objects {
   Id: 12828612390525974928
-  Name: "17"
+  Name: "SLICE_17"
   Transform {
     Location {
     }
@@ -21070,7 +21070,7 @@ Objects {
 }
 Objects {
   Id: 17739071795197035417
-  Name: "16"
+  Name: "SLICE_16"
   Transform {
     Location {
     }
@@ -21134,7 +21134,7 @@ Objects {
 }
 Objects {
   Id: 16384031739273848648
-  Name: "15"
+  Name: "SLICE_15"
   Transform {
     Location {
     }
@@ -21198,7 +21198,7 @@ Objects {
 }
 Objects {
   Id: 1260693256808106918
-  Name: "14"
+  Name: "SLICE_14"
   Transform {
     Location {
     }
@@ -21262,7 +21262,7 @@ Objects {
 }
 Objects {
   Id: 1931539608847923967
-  Name: "13"
+  Name: "SLICE_13"
   Transform {
     Location {
     }
@@ -21326,7 +21326,7 @@ Objects {
 }
 Objects {
   Id: 15188335984024002137
-  Name: "12"
+  Name: "SLICE_12"
   Transform {
     Location {
     }
@@ -21390,7 +21390,7 @@ Objects {
 }
 Objects {
   Id: 2609562033034571385
-  Name: "11"
+  Name: "SLICE_11"
   Transform {
     Location {
     }
@@ -21454,7 +21454,7 @@ Objects {
 }
 Objects {
   Id: 9724580875830856090
-  Name: "10"
+  Name: "SLICE_10"
   Transform {
     Location {
     }
@@ -21518,7 +21518,7 @@ Objects {
 }
 Objects {
   Id: 17246419835849367309
-  Name: "9"
+  Name: "SLICE_9"
   Transform {
     Location {
     }
@@ -21582,7 +21582,7 @@ Objects {
 }
 Objects {
   Id: 15019006947918055108
-  Name: "8"
+  Name: "SLICE_8"
   Transform {
     Location {
     }
@@ -21646,7 +21646,7 @@ Objects {
 }
 Objects {
   Id: 5852166964596913526
-  Name: "7"
+  Name: "SLICE_7"
   Transform {
     Location {
     }
@@ -21710,7 +21710,7 @@ Objects {
 }
 Objects {
   Id: 9097597999659776793
-  Name: "6"
+  Name: "SLICE_6"
   Transform {
     Location {
     }
@@ -21774,7 +21774,7 @@ Objects {
 }
 Objects {
   Id: 7498901520337386459
-  Name: "5"
+  Name: "SLICE_5"
   Transform {
     Location {
     }
@@ -21838,7 +21838,7 @@ Objects {
 }
 Objects {
   Id: 2523952127747476151
-  Name: "4"
+  Name: "SLICE_4"
   Transform {
     Location {
     }
@@ -21902,7 +21902,7 @@ Objects {
 }
 Objects {
   Id: 17444494059416705734
-  Name: "3"
+  Name: "SLICE_3"
   Transform {
     Location {
     }
@@ -21966,7 +21966,7 @@ Objects {
 }
 Objects {
   Id: 660560866642026582
-  Name: "2"
+  Name: "SLICE_2"
   Transform {
     Location {
     }
@@ -22030,7 +22030,7 @@ Objects {
 }
 Objects {
   Id: 16616590333816397758
-  Name: "1"
+  Name: "SLICE_1"
   Transform {
     Location {
     }
@@ -23273,7 +23273,7 @@ Objects {
 }
 Objects {
   Id: 15126518492667613997
-  Name: "20"
+  Name: "SLICE_20"
   Transform {
     Location {
     }
@@ -23337,7 +23337,7 @@ Objects {
 }
 Objects {
   Id: 10577751792074696421
-  Name: "19"
+  Name: "SLICE_19"
   Transform {
     Location {
     }
@@ -23401,7 +23401,7 @@ Objects {
 }
 Objects {
   Id: 5537769018672058646
-  Name: "17"
+  Name: "SLICE_17"
   Transform {
     Location {
     }
@@ -23465,7 +23465,7 @@ Objects {
 }
 Objects {
   Id: 7067766401202719944
-  Name: "16"
+  Name: "SLICE_16"
   Transform {
     Location {
     }
@@ -23529,7 +23529,7 @@ Objects {
 }
 Objects {
   Id: 17267837891359596566
-  Name: "15"
+  Name: "SLICE_15"
   Transform {
     Location {
     }
@@ -23593,7 +23593,7 @@ Objects {
 }
 Objects {
   Id: 5196920320692112760
-  Name: "14"
+  Name: "SLICE_14"
   Transform {
     Location {
     }
@@ -23657,7 +23657,7 @@ Objects {
 }
 Objects {
   Id: 12774572105955968065
-  Name: "13"
+  Name: "SLICE_13"
   Transform {
     Location {
     }
@@ -23721,7 +23721,7 @@ Objects {
 }
 Objects {
   Id: 12811554469328092191
-  Name: "12"
+  Name: "SLICE_12"
   Transform {
     Location {
     }
@@ -23785,7 +23785,7 @@ Objects {
 }
 Objects {
   Id: 7097059437535519282
-  Name: "11"
+  Name: "SLICE_11"
   Transform {
     Location {
     }
@@ -23849,7 +23849,7 @@ Objects {
 }
 Objects {
   Id: 7254224128255481623
-  Name: "10"
+  Name: "SLICE_10"
   Transform {
     Location {
     }
@@ -23913,7 +23913,7 @@ Objects {
 }
 Objects {
   Id: 11567174549032435515
-  Name: "9"
+  Name: "SLICE_9"
   Transform {
     Location {
     }
@@ -23977,7 +23977,7 @@ Objects {
 }
 Objects {
   Id: 17453855681897744087
-  Name: "8"
+  Name: "SLICE_8"
   Transform {
     Location {
     }
@@ -24041,7 +24041,7 @@ Objects {
 }
 Objects {
   Id: 18194235630420141999
-  Name: "7"
+  Name: "SLICE_7"
   Transform {
     Location {
     }
@@ -24105,7 +24105,7 @@ Objects {
 }
 Objects {
   Id: 8795537441709686659
-  Name: "6"
+  Name: "SLICE_6"
   Transform {
     Location {
     }
@@ -24169,7 +24169,7 @@ Objects {
 }
 Objects {
   Id: 6580354463067508121
-  Name: "5"
+  Name: "SLICE_5"
   Transform {
     Location {
     }
@@ -24233,7 +24233,7 @@ Objects {
 }
 Objects {
   Id: 14036834762203114697
-  Name: "4"
+  Name: "SLICE_4"
   Transform {
     Location {
     }
@@ -24297,7 +24297,7 @@ Objects {
 }
 Objects {
   Id: 17510931556571626732
-  Name: "3"
+  Name: "SLICE_3"
   Transform {
     Location {
     }
@@ -24361,7 +24361,7 @@ Objects {
 }
 Objects {
   Id: 16796501245835975449
-  Name: "2"
+  Name: "SLICE_2"
   Transform {
     Location {
     }
@@ -24425,7 +24425,7 @@ Objects {
 }
 Objects {
   Id: 13086974837419541234
-  Name: "1"
+  Name: "SLICE_1"
   Transform {
     Location {
     }
@@ -24953,7 +24953,7 @@ Objects {
 }
 Objects {
   Id: 3647098723477195534
-  Name: "20"
+  Name: "SLICE_20"
   Transform {
     Location {
     }
@@ -25017,7 +25017,7 @@ Objects {
 }
 Objects {
   Id: 9720260879170052193
-  Name: "19"
+  Name: "SLICE_19"
   Transform {
     Location {
     }
@@ -25081,7 +25081,7 @@ Objects {
 }
 Objects {
   Id: 2450516922983146807
-  Name: "17"
+  Name: "SLICE_17"
   Transform {
     Location {
     }
@@ -25145,7 +25145,7 @@ Objects {
 }
 Objects {
   Id: 4203026679476521102
-  Name: "16"
+  Name: "SLICE_16"
   Transform {
     Location {
     }
@@ -25209,7 +25209,7 @@ Objects {
 }
 Objects {
   Id: 15996096113006666546
-  Name: "15"
+  Name: "SLICE_15"
   Transform {
     Location {
     }
@@ -25273,7 +25273,7 @@ Objects {
 }
 Objects {
   Id: 11214187742873955479
-  Name: "14"
+  Name: "SLICE_14"
   Transform {
     Location {
     }
@@ -25337,7 +25337,7 @@ Objects {
 }
 Objects {
   Id: 18104351999228711093
-  Name: "13"
+  Name: "SLICE_13"
   Transform {
     Location {
     }
@@ -25401,7 +25401,7 @@ Objects {
 }
 Objects {
   Id: 14883655693952881451
-  Name: "12"
+  Name: "SLICE_12"
   Transform {
     Location {
     }
@@ -25465,7 +25465,7 @@ Objects {
 }
 Objects {
   Id: 6769664460639984902
-  Name: "11"
+  Name: "SLICE_11"
   Transform {
     Location {
     }
@@ -25529,7 +25529,7 @@ Objects {
 }
 Objects {
   Id: 3667843220574801400
-  Name: "10"
+  Name: "SLICE_10"
   Transform {
     Location {
     }
@@ -25593,7 +25593,7 @@ Objects {
 }
 Objects {
   Id: 715220260911477782
-  Name: "9"
+  Name: "SLICE_9"
   Transform {
     Location {
     }
@@ -25657,7 +25657,7 @@ Objects {
 }
 Objects {
   Id: 12424997237755849850
-  Name: "8"
+  Name: "SLICE_8"
   Transform {
     Location {
     }
@@ -25721,7 +25721,7 @@ Objects {
 }
 Objects {
   Id: 830708890117322228
-  Name: "7"
+  Name: "SLICE_7"
   Transform {
     Location {
     }
@@ -25785,7 +25785,7 @@ Objects {
 }
 Objects {
   Id: 15156815105457340043
-  Name: "6"
+  Name: "SLICE_6"
   Transform {
     Location {
     }
@@ -25849,7 +25849,7 @@ Objects {
 }
 Objects {
   Id: 10057543183897828558
-  Name: "5"
+  Name: "SLICE_5"
   Transform {
     Location {
     }
@@ -25913,7 +25913,7 @@ Objects {
 }
 Objects {
   Id: 15525193211876748910
-  Name: "4"
+  Name: "SLICE_4"
   Transform {
     Location {
     }
@@ -25977,7 +25977,7 @@ Objects {
 }
 Objects {
   Id: 9668452680336729703
-  Name: "3"
+  Name: "SLICE_3"
   Transform {
     Location {
     }
@@ -26041,7 +26041,7 @@ Objects {
 }
 Objects {
   Id: 3993616442641481234
-  Name: "2"
+  Name: "SLICE_2"
   Transform {
     Location {
     }
@@ -26105,7 +26105,7 @@ Objects {
 }
 Objects {
   Id: 8117714840565108205
-  Name: "1"
+  Name: "SLICE_1"
   Transform {
     Location {
     }
@@ -26632,7 +26632,7 @@ Objects {
 }
 Objects {
   Id: 17484505793562374563
-  Name: "20"
+  Name: "SLICE_20"
   Transform {
     Location {
     }
@@ -26696,7 +26696,7 @@ Objects {
 }
 Objects {
   Id: 5925867818322269393
-  Name: "19"
+  Name: "SLICE_19"
   Transform {
     Location {
     }
@@ -26760,7 +26760,7 @@ Objects {
 }
 Objects {
   Id: 13553791931905412799
-  Name: "17"
+  Name: "SLICE_17"
   Transform {
     Location {
     }
@@ -26824,7 +26824,7 @@ Objects {
 }
 Objects {
   Id: 1284338446007391628
-  Name: "16"
+  Name: "SLICE_16"
   Transform {
     Location {
     }
@@ -26888,7 +26888,7 @@ Objects {
 }
 Objects {
   Id: 15048284948360791536
-  Name: "15"
+  Name: "SLICE_15"
   Transform {
     Location {
     }
@@ -26952,7 +26952,7 @@ Objects {
 }
 Objects {
   Id: 1747840077177586671
-  Name: "14"
+  Name: "SLICE_14"
   Transform {
     Location {
     }
@@ -27016,7 +27016,7 @@ Objects {
 }
 Objects {
   Id: 2052750456732319045
-  Name: "13"
+  Name: "SLICE_13"
   Transform {
     Location {
     }
@@ -27080,7 +27080,7 @@ Objects {
 }
 Objects {
   Id: 5411215673502764620
-  Name: "12"
+  Name: "SLICE_12"
   Transform {
     Location {
     }
@@ -27144,7 +27144,7 @@ Objects {
 }
 Objects {
   Id: 10252346399966439405
-  Name: "11"
+  Name: "SLICE_11"
   Transform {
     Location {
     }
@@ -27208,7 +27208,7 @@ Objects {
 }
 Objects {
   Id: 3060183099319179905
-  Name: "10"
+  Name: "SLICE_10"
   Transform {
     Location {
     }
@@ -27272,7 +27272,7 @@ Objects {
 }
 Objects {
   Id: 9552835457585596018
-  Name: "9"
+  Name: "SLICE_9"
   Transform {
     Location {
     }
@@ -27336,7 +27336,7 @@ Objects {
 }
 Objects {
   Id: 16174897025522445664
-  Name: "8"
+  Name: "SLICE_8"
   Transform {
     Location {
     }
@@ -27400,7 +27400,7 @@ Objects {
 }
 Objects {
   Id: 2888868167730884499
-  Name: "7"
+  Name: "SLICE_7"
   Transform {
     Location {
     }
@@ -27464,7 +27464,7 @@ Objects {
 }
 Objects {
   Id: 18309107870368762715
-  Name: "6"
+  Name: "SLICE_6"
   Transform {
     Location {
     }
@@ -27528,7 +27528,7 @@ Objects {
 }
 Objects {
   Id: 2051241911452823720
-  Name: "5"
+  Name: "SLICE_5"
   Transform {
     Location {
     }
@@ -27592,7 +27592,7 @@ Objects {
 }
 Objects {
   Id: 7216159991506528324
-  Name: "4"
+  Name: "SLICE_4"
   Transform {
     Location {
     }
@@ -27656,7 +27656,7 @@ Objects {
 }
 Objects {
   Id: 10125797941837255206
-  Name: "3"
+  Name: "SLICE_3"
   Transform {
     Location {
     }
@@ -27720,7 +27720,7 @@ Objects {
 }
 Objects {
   Id: 7574891236990864589
-  Name: "2"
+  Name: "SLICE_2"
   Transform {
     Location {
     }
@@ -27784,7 +27784,7 @@ Objects {
 }
 Objects {
   Id: 5543543652933661144
-  Name: "1"
+  Name: "SLICE_1"
   Transform {
     Location {
     }

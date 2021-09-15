@@ -336,15 +336,20 @@ function PopulateOwnedTanks()
             if (tank.id == '24') then
                 ownedTank24 = true
             end
+            
+            --print("tank id: " .. tostring(tank.id))
+            local tankIDObject = TECH_TREE_CONTENT:FindDescendantByName(tank.id)
+            --print("Tank id object: " .. tostring(tankIDObject))
+            local objectParent = tankIDObject.parent
+            --print("Tank id object parent: " .. tostring(objectParent.name))
 
-            World.FindObjectByName(tank.id).parent:FindChildByName('UNLOCKED_' .. tank.id).visibility =
-                Visibility.FORCE_ON
+            objectParent:FindChildByName('UNLOCKED_' .. tank.id).visibility = Visibility.FORCE_ON
             if LOCAL_PLAYER:GetResource(tankAPI.EquipResource) == tonumber(tank.id) then
-                World.FindObjectByName(tank.id).parent:FindChildByName('UNLOCKED_' .. tank.id):FindChildByName(
+                objectParent:FindChildByName('UNLOCKED_' .. tank.id):FindChildByName(
                         'EQUIPPEDFRAME'
                     ).visibility = Visibility.FORCE_ON
             else
-                World.FindObjectByName(tank.id).parent:FindChildByName('UNLOCKED_' .. tank.id):FindChildByName(
+                objectParent:FindChildByName('UNLOCKED_' .. tank.id):FindChildByName(
                         'EQUIPPEDFRAME'
                     ).visibility = Visibility.FORCE_OFF
             end
