@@ -630,8 +630,8 @@ function ConfirmButtonClicked()
 					tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
 				end
 			end
-		end]] CONFIRM_TANK_UPGRADE.visibility =
-            Visibility.FORCE_OFF
+		end]]
+        CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
     else
         -- Most likely in can't afford state
     end
@@ -993,6 +993,7 @@ function PurchaseTank()
     end
 end
 
+-- TODO_DELETE (I believe this function isn't being used anymore)
 -- Upgrade the tank's progress
 function UpgradeTank()
     if (tankDetails.purchasedtank) then
@@ -1037,6 +1038,7 @@ function UpgradeTank()
     PopulateCurrencyUI()
 end
 
+-- TODO_DELETE (I believe this function isn't used anymore)
 -- Set the selected tank's progress to researched
 function ResearchTank(rp, researchedTankId, prereqId, usingFreeRP)
     if (rp < tankDetails.tankResearchCost) then
@@ -1167,8 +1169,8 @@ function UpgradeWeapon()
     end
 
     Events.BroadcastToServer('PurchaseWeapon', tankDetails.id)
+    Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "WEAPON UPGRADED", "Your tank's turret has been successfully upgraded.", "OK")
 
-    UI.PrintToScreen(tankDetails.name .. ' weapon purchased.')
     for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
         if (tank.id == tankDetails.id) then
             tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
@@ -1215,7 +1217,8 @@ function UpgradeArmor()
 
     Events.BroadcastToServer('PurchaseArmor', tankDetails.id)
 
-    UI.PrintToScreen(tankDetails.name .. ' armor purchased.')
+    Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "ARMOR UPGRADED", "Your tank's armor has been successfully upgraded.", "OK")
+   -- UI.PrintToScreen(tankDetails.name .. ' armor purchased.')
     for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
         if (tank.id == tankDetails.id) then
             tank.armorProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
