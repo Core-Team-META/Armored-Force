@@ -21,6 +21,7 @@ Rank = {
     Datonare        = AdminRanks.HigherAdmin,
     Jarsa           = AdminRanks.HigherAdmin, 
     Chris           = AdminRanks.HigherAdmin,
+    Aj              = AdminRanks.HigherAdmin,
 
     standardcombo   = AdminRanks.Admin ,
     blaking707      = AdminRanks.Admin ,
@@ -37,7 +38,6 @@ Rank = {
     Melamoryxq      = AdminRanks.Admin ,
     Mucusinator     = AdminRanks.Admin ,
     WitcherSilver   = AdminRanks.Admin ,
-    AJ              = AdminRanks.Admin ,
     riffraff        = AdminRanks.Admin ,
     Sobchak         = AdminRanks.Admin ,
     Scav            = AdminRanks.Admin ,
