@@ -26,6 +26,7 @@ function Tick()
 			TutorialUI:FindDescendantByName("Tutorial_Base Capture Panel"):FindDescendantByName("Objective_1").text = "Capture the enemy base (1/1)"
 			Task.Wait(3)
 			TutorialUI:FindDescendantByName("Tutorial_Base Capture Panel"):FindDescendantByName("COMPLETION_PANEL").visibility = Visibility.FORCE_OFF
+			TutorialUI:FindDescendantByName("Tutorial_Base Capture Panel"):FindDescendantByName("Objective_1").text = "Capture the enemy base (0/1)"
 			Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.JoinBattle, true)
 			UIPanel.visibility = Visibility.FORCE_OFF
 			UIPanel:FindChildByName("Progress Bar").visibility = Visibility.FORCE_OFF

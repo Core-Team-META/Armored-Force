@@ -105,6 +105,15 @@ Objects {
     ParameterOverrideMap {
       key: 1605275179467651420
       value {
+        Overrides {
+          Name: "cs:Tanks"
+          NetReference {
+            Key: "711473f6b9ff43eda8c514f5c23c1746"
+            Type {
+              Value: "mc:enetreferencetype:sharedpersistence"
+            }
+          }
+        }
       }
     }
     ParameterOverrideMap {
