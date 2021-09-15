@@ -175,6 +175,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:TutorialCompletePopupNoReward"
+      AssetReference {
+        Id: 11277052281076056181
+      }
+    }
+    Overrides {
       Name: "cs:API_Tutorial:isrep"
       Bool: false
     }

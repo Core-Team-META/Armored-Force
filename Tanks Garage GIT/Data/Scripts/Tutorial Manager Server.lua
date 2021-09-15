@@ -21,7 +21,7 @@ function AdvanceTutorial(player, phase, giveRewards)
 --print("Advancing tutorial to: " .. tostring(phase))	
 	player:SetResource(API_Tutorial.GetTutorialResource(), phase)
 	if player:GetResource(API_Tutorial.GetTutorialRewardResource()) < phase then
-		player:SetResource(API_Tutorial.GetTutorialRewardResource(), phase)
+		player:SetResource(API_Tutorial.GetTutorialRewardResource(), phase-1)
 	end
 end
 

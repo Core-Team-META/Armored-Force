@@ -107,6 +107,7 @@ local tankPurchaseImage = script:GetCustomProperty('TankPurchaseImage'):WaitForO
 local BUTTON_GOTO_TECHTREE = script:GetCustomProperty('BUTTON_GOTO_TECHTREE'):WaitForObject()
 local BUTTON_TECHTREE_SHOP = script:GetCustomProperty('BUTTON_TECHTREE_SHOP'):WaitForObject()
 local BUTTON_PREMIUM_SHOP = script:GetCustomProperty('BUTTON_PREMIUM_SHOP'):WaitForObject()
+local TutorialCompletePopupNoReward = script:GetCustomProperty("TutorialCompletePopupNoReward")
 
 local STATS_TANK_CONTAINER = script:GetCustomProperty('STATS_TANK_CONTAINER'):WaitForObject()
 local UPGRADE_TANK_CONTAINER = script:GetCustomProperty('UPGRADE_TANK_CONTAINER'):WaitForObject()
@@ -1264,11 +1265,7 @@ function UpgradeEngine()
 
             if LOCAL_PLAYER.clientUserData.tutorial6 == 1 then
                 LOCAL_PLAYER.clientUserData.tutorial6 = 2
-                local panel =
-                    World.SpawnAsset(
-                    TutorialStepComplete,
-                    {parent = UPGRADE_TANK_CONTAINER:FindAncestorByName('MAIN_UI')}
-                )
+                CheckForTutorialCompletion()
             end
         end
     end
@@ -2007,9 +2004,13 @@ end
 function CheckForTutorialCompletion()
     if LOCAL_PLAYER.clientUserData.tutorial6 <= 1 then
         LOCAL_PLAYER.clientUserData.tutorial6 = 2
-        local panel =
-            World.SpawnAsset(TutorialStepComplete, {parent = UPGRADE_TANK_CONTAINER:FindAncestorByName('MAIN_UI')})
-        panel.lifeSpan = 4
+        if LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialRewardResource()) < API_Tutorial.TutorialPhase.Upgrade then
+            local panel = World.SpawnAsset(TutorialStepComplete, {parent = UPGRADE_TANK_CONTAINER:FindAncestorByName('MAIN_UI')})
+            panel.lifeSpan = 3
+        else
+            local panel = World.SpawnAsset(TutorialCompletePopupNoReward, {parent = UPGRADE_TANK_CONTAINER:FindAncestorByName('MAIN_UI')})
+			panel.lifeSpan = 3
+        end
         Events.BroadcastToServer('AdvanceTutorial', API_Tutorial.TutorialPhase.RepairTank, true)
     end
 end
