@@ -1623,6 +1623,9 @@ function PopulateHoverTankStats(tankData)
         local damage = entry.damage
         local reload = entry.reload
         local turret = entry.turret
+		--print(damage)
+		--print(reload)
+		--print(turret)
         VIEWED_TANK_STATS:FindDescendantByName('BAR_4').progress = tonumber(damage) / tankAPI.GetHighestDamage()
         VIEWED_TANK_STATS:FindDescendantByName('BAR_5').progress = 1 - (tonumber(reload) / tankAPI.GetHighestReload())
         VIEWED_TANK_STATS:FindDescendantByName('BAR_6').progress = tonumber(turret) / tankAPI.GetHighestTurretSpeed()
@@ -1630,9 +1633,9 @@ function PopulateHoverTankStats(tankData)
         local damage = entry.damageUpgraded
         local reload = entry.reloadUpgraded
         local turret = entry.turretUpgraded
---print(damage)
---print(reload)
---print(turret)
+		--print(damage)
+		--print(reload)
+		--print(turret)
         VIEWED_TANK_STATS:FindDescendantByName('BAR_4').progress = tonumber(damage) / tankAPI.GetHighestDamage()
         VIEWED_TANK_STATS:FindDescendantByName('BAR_5').progress = 1 - (tonumber(reload) / tankAPI.GetHighestReload())
         VIEWED_TANK_STATS:FindDescendantByName('BAR_6').progress = tonumber(turret) / tankAPI.GetHighestTurretSpeed()
@@ -1650,6 +1653,11 @@ function PopulateHoverTankStats(tankData)
         local topSpeed = entry.topSpeed
         local acceleration = entry.acceleration
         local turningSpeed = entry.turningSpeed
+        
+        if turningSpeed > 1000 then
+        	turningSpeed = math.floor(turningSpeed / 20)
+        end
+        
         VIEWED_TANK_STATS:FindDescendantByName('BAR_8').progress = tonumber(topSpeed) / tankAPI.GetHighestTopSpeed()
         VIEWED_TANK_STATS:FindDescendantByName('BAR_9').progress =
             tonumber(acceleration) / tankAPI.GetHighestAcceleration()
@@ -1659,6 +1667,11 @@ function PopulateHoverTankStats(tankData)
         local topSpeed = entry.topSpeedUpgraded
         local acceleration = entry.accelerationUpgraded
         local turningSpeed = entry.turningSpeedUpgraded -- TODO
+        
+        if turningSpeed > 1000 then
+        	turningSpeed = math.floor(turningSpeed / 20)
+        end
+        
         VIEWED_TANK_STATS:FindDescendantByName('BAR_8').progress = tonumber(topSpeed) / tankAPI.GetHighestTopSpeed()
         VIEWED_TANK_STATS:FindDescendantByName('BAR_9').progress =
             tonumber(acceleration) / tankAPI.GetHighestAcceleration()
