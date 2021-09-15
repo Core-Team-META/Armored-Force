@@ -215,7 +215,9 @@ Objects {
     Text {
       Label: "x"
       Color {
-        R: 0.419999957
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       Size: 20
@@ -287,17 +289,22 @@ Objects {
       }
       FontSize: 20
       ButtonColor {
+        R: 0.51
+        A: 1
       }
       HoveredColor {
-        A: 0.482352972
+        R: 0.950000048
+        A: 1
       }
       PressedColor {
-        A: 0.67
+        R: 0.340000033
+        A: 1
       }
       DisabledColor {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.229166672
+        G: 0.229166672
+        B: 0.229166672
+        A: 1
       }
       Brush {
         Id: 1814707273787853473
@@ -54504,7 +54511,9 @@ Objects {
     Text {
       Label: "x"
       Color {
-        R: 0.419999957
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       Size: 20
@@ -54577,17 +54586,22 @@ Objects {
       }
       FontSize: 20
       ButtonColor {
+        R: 0.51
+        A: 1
       }
       HoveredColor {
-        A: 0.207843155
+        R: 0.950000048
+        A: 1
       }
       PressedColor {
-        A: 0.521568656
+        R: 0.340000033
+        A: 1
       }
       DisabledColor {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.229166672
+        G: 0.229166672
+        B: 0.229166672
+        A: 1
       }
       Brush {
         Id: 841534158063459245
@@ -56623,7 +56637,9 @@ Objects {
     Text {
       Label: "x"
       Color {
-        R: 0.419999957
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       Size: 20
@@ -56696,17 +56712,22 @@ Objects {
       }
       FontSize: 20
       ButtonColor {
+        R: 0.51
+        A: 1
       }
       HoveredColor {
-        A: 0.207843155
+        R: 0.950000048
+        A: 1
       }
       PressedColor {
-        A: 0.521568656
+        R: 0.340000033
+        A: 1
       }
       DisabledColor {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.229166672
+        G: 0.229166672
+        B: 0.229166672
+        A: 1
       }
       Brush {
         Id: 841534158063459245
