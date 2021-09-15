@@ -608,6 +608,7 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
     local button = CONFIRM_TANK_UPGRADE:FindDescendantByName('CONFIRM_WINDOW_CONFIRM_BUTTON')
 end
 
+-- TODO_DELETE I believe this function isn't used anymore
 function ConfirmButtonClicked()
     if (confirmButtonFunction == 'EQUIP') then
         Events.BroadcastToServer('CHANGE_EQUIPPED_TANK', tankDetails.id)
@@ -618,7 +619,8 @@ function ConfirmButtonClicked()
     elseif (confirmButtonFunction == 'PURCHASE') then
         local prereqs = GetPrerequisiteRPValues(tankDetails.id)
         Events.BroadcastToServer('PurchaseTank', tankDetails.id, prereqs)
-        UI.PrintToScreen(tankDetails.name .. ' purchased.')
+        Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "TANK PURCHASED", "You have successfully purchased the tank.", "OK")
+        --UI.PrintToScreen(tankDetails.name .. ' purchased.')
         --
         --[[for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 			if(tank.id == tankDetails.id) then
@@ -1200,7 +1202,6 @@ function UpgradeArmor()
     --print("Purchase Cost: " .. tankDetails.armorPurchaseCost)
     local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
     if (silver < tankDetails.armorPurchaseCost) then
-        -- DEBUG
         ShowNotEnoughCurrencyMessage('Armor')
         SFX_DENIED:Play()
         return
@@ -1217,15 +1218,13 @@ function UpgradeArmor()
 
     Events.BroadcastToServer('PurchaseArmor', tankDetails.id)
 
-    Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "ARMOR UPGRADED", "Your tank's armor has been successfully upgraded.", "OK")
-   -- UI.PrintToScreen(tankDetails.name .. ' armor purchased.')
+    Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "ARMOR UPGRADED", "Your tank's armor has been successfully upgraded.", "OK")   
     for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
         if (tank.id == tankDetails.id) then
             tank.armorProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
             CheckForTutorialCompletion()
         end
     end
-    --PopulateSelectedTankPanel(tankDetails.id)
     CloseUpgradeConfirmWindow()
     PopulateCurrencyUI()
 end
@@ -1261,7 +1260,7 @@ function UpgradeEngine()
 
     Events.BroadcastToServer('PurchaseEngine', tankDetails.id)
 
-    UI.PrintToScreen(tankDetails.name .. ' engine purchased.')
+    Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "ENGINE UPGRADED", "Your tank's engine has been successfully upgraded.", "OK")   
     for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
         if (tank.id == tankDetails.id) then
             tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
@@ -1695,10 +1694,12 @@ function UnhoverTank()
 end
 
 -- Function when user denies use of Free RP to research
+-- TODO_DELETE I don't think this function is used anymore
 function DenyFreeRP()
     useFreeRPPanel.visibility = Visibility.FORCE_OFF
 end
 
+-- TODO_DELETE, I don't think this function is used anymore
 -- Function when user confirms using Free RP to research
 function AcceptFreeRP()
     local event = Events.BroadcastToServer('Research' .. researchingName, tankDetails.id, true)
@@ -2005,14 +2006,14 @@ function EquipTank()
 end
 
 function CheckForTutorialCompletion()
-    if LOCAL_PLAYER.clientUserData.tutorial6 <= 1 then
+    if LOCAL_PLAYER.clientUserData.tutorial6 <= 1 and LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.Upgrade then
         LOCAL_PLAYER.clientUserData.tutorial6 = 2
         if LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialRewardResource()) < API_Tutorial.TutorialPhase.Upgrade then
             local panel = World.SpawnAsset(TutorialStepComplete, {parent = UPGRADE_TANK_CONTAINER:FindAncestorByName('MAIN_UI')})
             panel.lifeSpan = 3
         else
             local panel = World.SpawnAsset(TutorialCompletePopupNoReward, {parent = UPGRADE_TANK_CONTAINER:FindAncestorByName('MAIN_UI')})
-			panel.lifeSpan = 3
+            panel.lifeSpan = 3
         end
         Events.BroadcastToServer('AdvanceTutorial', API_Tutorial.TutorialPhase.RepairTank, true)
     end
