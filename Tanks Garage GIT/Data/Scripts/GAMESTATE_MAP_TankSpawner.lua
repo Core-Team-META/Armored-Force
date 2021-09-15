@@ -179,12 +179,15 @@ function OnPlayerLeft(player)
 
         local id = player:GetResource(tankApi.EquipResource)
         local playerTeam = player.team
-        local newName = player.name.."(AI)"
-        local hp = player.hitPoints
-        local maxHp = player.maxHitPoints
+        local newName = player.name.." (AI)"
+        local hp = player.hitPoints / player.maxHitPoints
         local kills = player.kills
         local playerDamage = player:GetResource("TankDamage")
+        local tank = tankApi.GetTankFromId(tonumber(id))
 
+        local workingTanks = {[1] = {1, 18}, [2] = {2, 3, 4, 19, 7}, [3] = {8}, [4] = {11, 24}}
+
+         id = workingTanks[tank.tier][math.random(1, #workingTanks[tank.tier])]
         Task.Wait()
 
         local newAI = AIPlayer.New()
