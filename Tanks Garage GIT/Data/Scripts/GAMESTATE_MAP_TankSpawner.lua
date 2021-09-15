@@ -248,71 +248,7 @@ function FindClearSpawnPoint(team)
     --print("Giving up, couldn't find a spot.")
     return position
 end
-
-local workingTanks = {t1 = {1, 18}, t2 = {2, 3, 4, 19, 7}, t3 = {8}, t4 = {11, 24}}
-
-function FillTeamsWithAI(teamSize, teamBalance)
-    if teamSize == nil then
-        teamSize = 2
-    end
-    local rs = RandomStream.New()
-    local teamOneBalance = false
-    local teamTwoBalance = false
-    local teamOneCount = 0
-    local teamTwoCount = 0
-
-    for _, player in ipairs(Game.GetPlayers()) do
-        if player.team == 1 then
-            teamOneCount = teamOneCount + 1
-        elseif player.team == 2 then
-            teamTwoCount = teamTwoCount + 1
-        end
-    end
-
-    local team = teamOneCount > teamTwoCount and 2 or teamOneCount < teamTwoCount and 1 or 1
-        local count = 1
-    while not teamOneBalance and not teamTwoBalance do
-        count = count + 1
-        local currentCount = #_G.utils.GetTankDrivers({includeTeams = team, ignoreDead = true})
-
-        local diff = teamBalance[3 - team] - teamBalance[team]
-       
-        if currentCount <= teamSize - 1 then
-            local id
-
-            if diff <= 1 then
-                id = workingTanks.t1[math.random(1, #workingTanks.t1)]
-                teamBalance[team] = teamBalance[team] + 1
-            elseif diff == 2 then
-                id = workingTanks.t2[math.random(1, #workingTanks.t2)]
-                teamBalance[team] = teamBalance[team] + 2
-            elseif diff == 3 then
-                id = workingTanks.t3[math.random(1, #workingTanks.t3)]
-                teamBalance[team] = teamBalance[team] + 3
-            elseif diff == 4 then
-                id = workingTanks.t4[math.random(1, #workingTanks.t4)]
-                teamBalance[team] = teamBalance[team] + 4
-            end
-            if id then
-                SpawnAITank(FindClearSpawnPoint(team), team, id)
-            else
-                id = 3
-                teamBalance[team] = teamBalance[team] + 2
-                SpawnAITank(FindClearSpawnPoint(team), team, id)
-            end
-        else
-            if team == 1 then
-                teamOneBalance = true
-            elseif team == 2 then
-                teamTwoBalance = true
-            end
-        end
-        team = 3 - team
-        print("Count " .. tostring(count) .. " Team: " .. tostring(team) .. " Diff: " ..tostring(diff))
-    end
-    print("Team Balance:", teamBalance[1], teamBalance[2])
-end
-
+ 
 function RemoveAllAI()
 end
 
@@ -320,8 +256,7 @@ function SpawnTestAI(player)
     local offset = Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 3000 + Vector3.UP * 1000
     SpawnAITank(player:GetWorldPosition() + offset, player.team % 2 + 1)
 end
-
-Events.Connect("FILL_TEAMS_WITH_AI", FillTeamsWithAI)
+ 
 Events.Connect("REMOVE_ALL_AI", RemoveAllAI)
 
 for key, player in pairs(Game.GetPlayers()) do
@@ -333,3 +268,7 @@ Game.playerLeftEvent:Connect(OnPlayerLeft)
 Events.Connect("RESET_TANKS", ResetAllVehicles)
 Events.ConnectForPlayer("CHANGE_EQUIPPED_TANK", ChangeEquippedTank)
 Events.Connect("SET_EQUIPPED_TANK", ChangeEquippedTank)
+Events.Connect("SPAWN_AI_TANK",function (position, team, id)
+    if not position then position = FindClearSpawnPoint(team) end 
+    SpawnAITank(position, team, id)
+end)

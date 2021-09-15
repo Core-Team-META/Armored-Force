@@ -109,6 +109,7 @@ function DoRebalance(playerToIgnore)
 
 	local team1 = Game.GetPlayers({includeTeams = 1, ignorePlayers = playerToIgnore})
 	local team2 = Game.GetPlayers({includeTeams = 2, ignorePlayers = playerToIgnore})
+
 	teamBalance[1] = 0
 	teamBalance[2] = 0
 	if #team1 + #team2 <= 1 then
@@ -189,6 +190,53 @@ function DoRebalance(playerToIgnore)
 	ApplyTeamChanges(team1, team2)
 end
 
+local workingTanks = {t1 = {1, 18}, t2 = {2, 3, 4, 19, 7}, t3 = {8}, t4 = {11, 24}}
+
+function FillTeamsWithAI(minSize)
+    if minSize == nil then
+        minSize = 3
+    end 
+	
+	local teamSizes = { Game.GetPlayers({includeTeams = 1}),Game.GetPlayers({includeTeams = 2})}
+	local teamValues = { ComputeTeamValue(teamSizes[1]) - #teamSizes[1] ,ComputeTeamValue(teamSizes[2]) - #teamSizes[2]} 
+	local highestcount = math.max(#teamSizes[1],#teamSizes[2])
+	local highestValue = math.max(teamValues[1],teamValues[2])
+	local lowestValue = math.min(teamValues[1],teamValues[2])
+	local valueDiff = highestValue - lowestValue 
+	for team = 1, 2 do 
+		local tanksNeeded =  math.max( minSize,highestcount) - #teamSizes[team]
+		local valueNeeded =  highestValue - teamValues[team] 
+		
+		if tanksNeeded > 1 then
+			for i = 1, tanksNeeded do
+				local id  
+				if valueNeeded >= 3 then
+					id = workingTanks.t4[math.random(1, #workingTanks.t4)]
+					valueNeeded = valueNeeded - 3
+				elseif valueNeeded >= 2 then
+					id = workingTanks.t3[math.random(1, #workingTanks.t3)]
+					valueNeeded = valueNeeded - 2
+				elseif valueNeeded >= 1 then
+					id = workingTanks.t2[math.random(1, #workingTanks.t2)]
+					valueNeeded = valueNeeded - 1
+				else  
+					id = workingTanks.t1[math.random(1, #workingTanks.t1)]
+					valueNeeded = valueNeeded - 0
+				end 
+				
+				if id then
+					Events.Broadcast("SPAWN_AI_TANK", nil,team,id) 
+				else
+					id = 3
+					teamBalance[team] = teamBalance[team] + 2
+					Events.Broadcast("SPAWN_AI_TANK", nil,team,id)
+				end
+			end 
+		end
+	end
+    
+end
+
 function OnPlayerJoin(player)
 	if DEBUG_SAME_TEAM then
 		player.team = 1
@@ -241,7 +289,7 @@ function OnLobbyTimerChanged(object, string)
 		Task.Wait(1)
 		DoRebalance()
 		Task.Wait()
-		Events.Broadcast("FILL_TEAMS_WITH_AI", _G.const.AI.MINIMUM_TEAMSIZE, teamBalance)
+		FillTeamsWithAI( _G.const.AI.MINIMUM_TEAMSIZE ) 
 	end
 end
 
@@ -250,3 +298,4 @@ GAME_STATE.networkedPropertyChangedEvent:Connect(OnLobbyTimerChanged)
 
 Game.playerJoinedEvent:Connect(OnPlayerJoin)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
+ 
