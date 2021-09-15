@@ -13,7 +13,7 @@ local TankImpact_4 = script:GetCustomProperty("TankImpact_4")
 
  
 local tankData =  Constants_API:WaitForConstant("Tanks").GetTankFromId(tonumber(identifier)) 
-local type = tankData.type
+local Type = tankData.type
 local tierValue = tankData.tier
 
 -- TURRET
@@ -152,7 +152,7 @@ function GetDriver()
 
 end
 
-function AssignDriver(newDriver)
+function AssignDriver(newDriver, hp)
 
 	isAI = newDriver:IsA("AIPlayer")
 --print("assigning a driver.  AI?", isAI)
@@ -185,7 +185,7 @@ function AssignDriver(newDriver)
 	SetTankModifications()
 	
 	driver.maxHitPoints = tankHitPoints
-	driver.hitPoints = tankHitPoints
+	driver.hitPoints = type(hp) == "number" and hp or tankHitPoints
 	
 	local newHitbox = templateReferences:GetCustomProperty("DefaultHitbox")
 	local tankGarage = World.FindObjectByName("TANK_VP_TankGarage")
@@ -308,7 +308,7 @@ function SetServerData()
 	driver.serverUserData.currentTankData.hitbox = hitbox
 	driver.serverUserData.currentTankData.viewRange = viewRange
 	driver.serverUserData.currentTankData.fullDamage = projectileDamage
-	driver.serverUserData.currentTankData.type = type
+	driver.serverUserData.currentTankData.type = Type
 	driver.serverUserData.currentTankData.id = identifier
 	driver.serverUserData.currentTankData.controlScript = script
 
@@ -1183,6 +1183,7 @@ function CheckStuckTank()
 	
 end
 
+
 function Tick()
 	
 	if Object.IsValid(hitbox) and Object.IsValid(driver) then
@@ -1242,8 +1243,6 @@ function Tick()
 	end
 	
 end
-
-
 
 
 destroyedListener = script.destroyEvent:Connect(OnDestroy)
