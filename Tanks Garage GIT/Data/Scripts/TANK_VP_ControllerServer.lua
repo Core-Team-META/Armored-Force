@@ -185,7 +185,7 @@ function AssignDriver(newDriver, hp)
 	SetTankModifications()
 	
 	driver.maxHitPoints = tankHitPoints
-	driver.hitPoints = type(hp) == "number" and hp or tankHitPoints
+	driver.hitPoints = type(hp) == "number" and CoreMath.Round(tankHitPoints * hp) or tankHitPoints
 	
 	local newHitbox = templateReferences:GetCustomProperty("DefaultHitbox")
 	local tankGarage = World.FindObjectByName("TANK_VP_TankGarage")
