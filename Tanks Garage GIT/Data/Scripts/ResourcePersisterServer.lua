@@ -53,7 +53,8 @@ local defualtValues = {
     [CONSTANTS_API.XP_SYSTEM.OLD_LVL] = 1,
     [CONSTANTS_API.XP_SYSTEM.LVL] = 1,
     [CONSTANTS_API.XP_SYSTEM.MATCH_DATA] = '',
-    [CONSTANTS_API.TUTORIAL_PROGRESS] = 0
+    [CONSTANTS_API.TUTORIAL_PROGRESS] = 0,
+    [CONSTANTS_API.TUTORIAL_REWARD_PROGRESS] = 0
 }
 
 local Resources = {
@@ -89,7 +90,8 @@ local Resources = {
     [CONSTANTS_API.XP_SYSTEM.OLD_RANK] = 1,
     [CONSTANTS_API.XP_SYSTEM.OLD_LVL] = 1,
     [CONSTANTS_API.XP_SYSTEM.LVL] = 1,
-    [CONSTANTS_API.TUTORIAL_PROGRESS] = 0
+    [CONSTANTS_API.TUTORIAL_PROGRESS] = 0,
+    [CONSTANTS_API.TUTORIAL_REWARD_PROGRESS] = 0
 }
 ----------------------------------------------------------------------------------------------
 

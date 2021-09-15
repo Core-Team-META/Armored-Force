@@ -847,6 +847,12 @@ Objects {
         SelfId: 14672083327800524015
       }
     }
+    Overrides {
+      Name: "cs:TutorialCompletePopupNoReward"
+      AssetReference {
+        Id: 11277052281076056181
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25595,6 +25601,12 @@ Objects {
       Name: "cs:TutorialUI"
       ObjectReference {
         SelfId: 14672083327800524015
+      }
+    }
+    Overrides {
+      Name: "cs:TutorialCompletePopupNoReward"
+      AssetReference {
+        Id: 11277052281076056181
       }
     }
   }

@@ -2163,6 +2163,12 @@ Objects {
         SelfId: 8208501464243926319
       }
     }
+    Overrides {
+      Name: "cs:TutorialCompletePopupNoReward"
+      AssetReference {
+        Id: 11277052281076056181
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
