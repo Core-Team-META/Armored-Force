@@ -207,7 +207,7 @@ function FillTeamsWithAI(minSize)
 		local tanksNeeded =  math.max( minSize,highestcount) - #teamSizes[team]
 		local valueNeeded =  highestValue - teamValues[team] 
 		
-		if tanksNeeded > 1 then
+		if tanksNeeded >= 1 then
 			for i = 1, tanksNeeded do
 				local id  
 				if valueNeeded >= 3 then
