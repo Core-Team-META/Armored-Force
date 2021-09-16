@@ -386,6 +386,11 @@ end
 --	nil Unspectate()
 --	Forces unspectate
 function Unspectate()
+	if true then
+		Task.Wait(0.5)
+		SpectateFirstPlayer()
+		return
+	end
 	currentlySpectating = nil 
 	ChangeUiMode()
 

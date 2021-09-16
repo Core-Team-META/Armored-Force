@@ -241,6 +241,8 @@ local function SetActiveAchievements()
             PreReqText.text = "Unlocked after completing " .. preReqName
             status.text = "Inactive"
             preReqPanel.visibility = Visibility.FORCE_ON
+        else
+            preReqPanel.visibility = Visibility.FORCE_OFF
         end
 
         if achievement.givesReward then

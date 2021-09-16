@@ -205,7 +205,7 @@ function API.HasPreRequsistCompleted(player, id)
     else
         local tempTbl = {CoreString.Split(achievements[id].preReq, ",")}
         for _, preReqId in ipairs(tempTbl) do
-            if not API.IsUnlocked(player, preReqId) then
+            if not API.IsComplete(player, preReqId) then
                 return false
             end
         end
@@ -265,6 +265,15 @@ end
 function API.GetCurrentProgress(player, id)
     if IsValidPlayer(player) then
         return player:GetResource(id)
+    end
+end
+
+--@param object player
+--@param string id
+--@return int currentProgress for an achievement
+function API.IsComplete(player, id)
+    if IsValidPlayer(player) then
+        return player:GetResource(id) == 1
     end
 end
 
