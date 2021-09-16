@@ -190,7 +190,7 @@ function DoRebalance(playerToIgnore)
 	ApplyTeamChanges(team1, team2)
 end
 
-local workingTanks = {t1 = {1, 18}, t2 = {2, 3, 4, 19, 7}, t3 = {8}, t4 = {11, 24}}
+local workingTanks = {t1 = {1, 18}, t2 = {2, 3, 4, 19, 7}, t3 = {8, 7, 24}, t4 = {11, 28, 29, 27}}
 local workingTanksid = {"t1", "t2", "t3" , "t4" }
 function FillTeamsWithAI(minSize)
     if minSize == nil then
