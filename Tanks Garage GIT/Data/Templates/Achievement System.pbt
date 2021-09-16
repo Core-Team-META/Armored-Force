@@ -2774,7 +2774,7 @@ Assets {
           }
           Overrides {
             Name: "cs:PreRequisite"
-            String: "ASKI,ACLA"
+            String: "ACLA"
           }
           Overrides {
             Name: "cs:GivesReward"
@@ -2979,7 +2979,7 @@ Assets {
           }
           Overrides {
             Name: "cs:PreRequisite"
-            String: "ASKI,ACLA,AASS"
+            String: "AASS"
           }
           Overrides {
             Name: "cs:GivesReward"
@@ -3594,7 +3594,7 @@ Assets {
           }
           Overrides {
             Name: "cs:PreRequisite"
-            String: "ALP,ASP"
+            String: "ASP"
           }
           Overrides {
             Name: "cs:GivesReward"
@@ -4209,7 +4209,7 @@ Assets {
           }
           Overrides {
             Name: "cs:PreRequisite"
-            String: "AMP,AMS"
+            String: "AMS"
           }
           Overrides {
             Name: "cs:GivesReward"
@@ -4824,7 +4824,7 @@ Assets {
           }
           Overrides {
             Name: "cs:PreRequisite"
-            String: "AHP,AHS"
+            String: "AHS"
           }
           Overrides {
             Name: "cs:GivesReward"
@@ -5439,7 +5439,7 @@ Assets {
           }
           Overrides {
             Name: "cs:PreRequisite"
-            String: "ADP,ADS"
+            String: "ADS"
           }
           Overrides {
             Name: "cs:GivesReward"
