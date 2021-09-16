@@ -102,6 +102,124 @@ function PurchaseTank(player, id, prereqs)
 	return BroadcastEventResultCode.FAILURE
 end
 
+function NEWPurchaseTank(player, tankID)
+
+	local selectedTankData = TANK_LIST.GetTankFromId(tonumber(tankID))
+	
+	if not selectedTankData then
+		warn("COULD NOT FIND REQUESTED TANK ID: " .. tostring(tankID))
+		return BroadcastEventResultCode.FAILURE
+	end
+	
+	local researchCost = selectedTankData["researchCost"]
+	local silverCost = selectedTankData["silverCost"]
+	local prerequisite1ID = selectedTankData["prerequisite1"]
+	local prerequisite1TP = nil
+	local prerequisite2ID = selectedTankData["prerequisite2"]
+	local prerequisite2TP = nil
+	local currentSilver = player:GetResource(CURRENCY.SILVER.ResourceName)
+	local currentUniversalParts = player:GetResource(CURRENCY.FREERP.ResourceName)
+	
+	if(currentSilver < silverCost) then 
+		warn("NOT ENOUGH SILVER FOR: " .. tostring(tankID))
+		return BroadcastEventResultCode.FAILURE 
+	end
+	
+	if not researchCost then
+		warn("COULD NOT FIND RESEARCH COST FOR: " .. tostring(tankID))
+		return BroadcastEventResultCode.FAILURE	
+	elseif not prerequisite1ID and not prerequisite2ID then
+		warn("COULD NOT FIND EITHER PREREQUISITES: " .. tostring(tankID))
+		return BroadcastEventResultCode.FAILURE	
+	end
+		
+	for i, tank in ipairs(player.serverUserData.techTreeProgress) do
+		if(tonumber(tank.id) == tonumber(prerequisite1ID)) and not tank.purchased then
+			prerequisite1TP = player:GetResource(UTIL_API.GetTankRPString(tonumber(prerequisite1ID)))
+		elseif(tonumber(tank.id) == tonumber(prerequisite1ID)) and not tank.purchased then
+			prerequisite2TP = player:GetResource(UTIL_API.GetTankRPString(tonumber(prerequisite2ID)))
+		end
+	end
+	
+	local consumedTP = researchCost
+	local overflowTP = 0
+	local owedTP = {
+		p1 = 0,
+		p2 = 0,
+		up = 0
+	}
+	
+	for i, tank in ipairs(player.serverUserData.techTreeProgress) do			
+		if(tonumber(tank.id) == tonumber(id)) and not tank.purchased then
+			if prerequisite1TP and prerequisite2TP then
+				owedTP.p1 = researchCost/2 -- evenly divide tank parts cost between both prerequisites.
+				owedTP.p2 = researchCost/2
+				
+				if owedTP.p1 > prerequisite1TP then -- if prereq1 does not have enough tank parts, give the overflow to prereq2.
+					overflowTP = owedTP.p1 - prerequisite1TP
+					owedTP.p1 = prerequisite1TP
+					owedTP.p2 = owedTP.p2 + overflowTP
+				end
+				
+				if owedTP.p2 > prerequisite2TP then -- if prereq2 does not have enough tank parts, give the overflow to prereq1.
+					overflowTP = owedTP.p2 - prerequisite2TP
+					owedTP.p2 = prerequisite2TP
+					owedTP.p1 = owedTP.p1 + overflowTP
+				end
+			elseif prerequisite1TP then
+				owedTP.p1 = researchCost -- first consume the tank parts from prereq1.
+			end
+			
+			if owedTP.p1 > prerequisite1TP then  -- if prereq1 does not have enough tank parts, give overflow to universal parts.
+				overflowTP = owedTP.p1 - prerequisite1TP
+				owedTP.p1 = prerequisite1TP
+				owedTP.up = owedTP.up + overflowTP
+			end
+			
+			if owedTP.up > currentUniversalParts then -- if any overflow goes to universal parts and there is not enough universal parts, purchase fails.
+				warn("NOT ENOUGH TANK PARTS FOR: " .. tostring(tankID))
+				return BroadcastEventResultCode.FAILURE
+			elseif owedTP.p1 + owedTP.p2 + owedTP.up ~= researchCost then
+				warn("ERROR IN DISTRIBUTING TANK PARTS FOR: " .. tostring(tankID))
+				return BroadcastEventResultCode.FAILURE				
+			end
+				
+			player:RemoveResource(CURRENCY.SILVER.ResourceName, researchCost)
+			
+			if owedTP.p1 > 0 then
+				player:RemoveResource(UTIL_API.GetTankRPString(tonumber(prerequisite1ID)), owedTP.p1)
+			end
+			
+			if prerequisite2ID and owedTP.p2 > 0 then
+				player:RemoveResource(UTIL_API.GetTankRPString(tonumber(prerequisite2ID)), owedTP.p2)
+			end
+			
+			if owedTP.up > 0 then
+				player:RemoveResource(CURRENCY.FREERP.ResourceName, owedTP.up)
+			end
+			
+			tank.purchased = true
+			tank.researched = true
+		
+			if(purchaseCurrencyName == "Gold") then
+				tank.weaponProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
+				tank.armorProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
+				tank.engineProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
+			end
+			
+			Events.BroadcastToPlayer(player, "TankPurchaseSuccessful")
+			Events.Broadcast("TankAcquired", player, id,  selectedTankData.tier)
+			player:SetPrivateNetworkedData("PlayerTankData", player.serverUserData.techTreeProgress)
+			
+			return BroadcastEventResultCode.SUCCESS				
+		end
+	end
+	
+	
+	return BroadcastEventResultCode.FAILURE
+
+end
+
 --[[
 function ResearchTank(player, id, prereqId, useFreeRP)
 	local tank = {}
