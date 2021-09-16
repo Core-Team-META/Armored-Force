@@ -189,6 +189,22 @@ Const.AI = {
 }
 
 
+-- TANK TYPE KEYS
+Const.TANK_TYPE = {
+    LIGHT = 1,
+    MEDIUM = 2,
+    HEAVY = 3,
+    TANKDESTROYER = 4
+}
+
+Const.TANK_TYPE_NAME = {
+    [Const.TANK_TYPE.LIGHT] = "Light",
+    [Const.TANK_TYPE.MEDIUM] = "Medium",
+    [Const.TANK_TYPE.HEAVY] = "Heavy",
+    [Const.TANK_TYPE.TANKDESTROYER] = "TankDestroyer"
+}
+
+
 ------------------------------------------------------------------------------------------------------------------------
 _G.const = Const
 return Const
