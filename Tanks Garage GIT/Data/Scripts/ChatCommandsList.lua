@@ -394,7 +394,9 @@ commands = {
         OnCommandCalledClient = function (player, message)
             for i, v in pairs(commands) do
                 if (i ~= "/adminall") then
-                    Chat.LocalMessage(i .. ": " .. v.description)
+                    if v.adminRank <= (AdminData.Rank[player.name] or AdminData.AdminRanks.None) then 
+                        Chat.LocalMessage(i .. ": " .. v.description)
+                    end
                 end
             end
         end,
