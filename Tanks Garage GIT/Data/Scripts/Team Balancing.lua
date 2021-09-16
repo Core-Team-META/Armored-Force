@@ -195,8 +195,7 @@ local workingTanksid = {"t1", "t2", "t3" , "t4" }
 function FillTeamsWithAI(minSize)
     if minSize == nil then
         minSize = 3
-    end 
-	minSize = 4
+    end  
 	local teamSizes = { Game.GetPlayers({includeTeams = 1}),Game.GetPlayers({includeTeams = 2})}
 	local teamValues = { ComputeTeamValue(teamSizes[1]) - #teamSizes[1] ,ComputeTeamValue(teamSizes[2]) - #teamSizes[2]} 
 	local highestcount = math.max( minSize,math.max(#teamSizes[1],#teamSizes[2]))
@@ -224,7 +223,7 @@ function FillTeamsWithAI(minSize)
 					end
 				end 
 			end
-			
+
 			--setup tank spawn
 			for i = 1, tanksNeeded  do 
 				if valueNeeded >= 3 then 
