@@ -257,14 +257,22 @@ function InitializeMainButton(buttonTable, rootReference, buttonName)
 end
 
 function OnTankButtonClicked(button)
-	
 	if tankEntries[selectedTank] then
 		tankEntries[selectedTank].previewText:SetColor(tankEntries[selectedTank].defaultColor)
 		tankEntries[selectedTank].previewText.text = tankEntries[selectedTank].defaultText
 	end
 	
 	selectedTank = button.clientUserData.referencedTank
-	
+	local storage = localPlayer.clientUserData.techTreeProgress
+	local owned = false
+	for key, value in pairs(storage) do
+		if value.id == selectedTank then 
+			owned = value.purchased
+		end
+	end
+	if owned then  
+		originalTank = selectedTank
+	end
 	if string.find(tankEntries[selectedTank].previewText.text, "Locked") then
 		lockedTank = true
 	else 
