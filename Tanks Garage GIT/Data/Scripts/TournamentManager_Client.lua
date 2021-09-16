@@ -107,9 +107,19 @@ local function SetupGarage()
 	Task.Spawn(
 		function()
 			GARAGE_PANEL.visibility = Visibility.INHERIT
+			Events.Connect("ENABLE_GARAGE_COMPONENT", EnableComponent)
 		end,
 		10.5
 	)
+end
+
+function EnableComponent(obj)
+	if(obj == "SHOOTING_RANGE") then
+		GARAGE_PANEL.visibility = Visibility.FORCE_OFF
+	elseif obj == "DEFAULT_MENU" then
+		Task.Wait(0.5)
+		GARAGE_PANEL.visibility = Visibility.INHERIT
+	end
 end
 
 function Init()
