@@ -191,47 +191,79 @@ function DoRebalance(playerToIgnore)
 end
 
 local workingTanks = {t1 = {1, 18}, t2 = {2, 3, 4, 19, 7}, t3 = {8}, t4 = {11, 24}}
-
+local workingTanksid = {"t1", "t2", "t3" , "t4" }
 function FillTeamsWithAI(minSize)
     if minSize == nil then
         minSize = 3
     end 
-	
+	minSize = 4
 	local teamSizes = { Game.GetPlayers({includeTeams = 1}),Game.GetPlayers({includeTeams = 2})}
 	local teamValues = { ComputeTeamValue(teamSizes[1]) - #teamSizes[1] ,ComputeTeamValue(teamSizes[2]) - #teamSizes[2]} 
-	local highestcount = math.max(#teamSizes[1],#teamSizes[2])
+	local highestcount = math.max( minSize,math.max(#teamSizes[1],#teamSizes[2]))
 	local highestValue = math.max(teamValues[1],teamValues[2])
 	local lowestValue = math.min(teamValues[1],teamValues[2])
+	local highestBotPotentialValue = highestValue + math.max(minSize - highestcount,0)*3
 	local valueDiff = highestValue - lowestValue 
+	local randomValue = math.random(highestBotPotentialValue)
+
 	for team = 1, 2 do 
-		local tanksNeeded =  math.max( minSize,highestcount) - #teamSizes[team]
-		local valueNeeded =  highestValue - teamValues[team] 
-		
-		if tanksNeeded >= 1 then
-			for i = 1, tanksNeeded do
-				local id  
-				if valueNeeded >= 3 then
-					id = workingTanks.t4[math.random(1, #workingTanks.t4)]
-					valueNeeded = valueNeeded - 3
-				elseif valueNeeded >= 2 then
-					id = workingTanks.t3[math.random(1, #workingTanks.t3)]
-					valueNeeded = valueNeeded - 2
-				elseif valueNeeded >= 1 then
-					id = workingTanks.t2[math.random(1, #workingTanks.t2)]
-					valueNeeded = valueNeeded - 1
-				else  
-					id = workingTanks.t1[math.random(1, #workingTanks.t1)]
-					valueNeeded = valueNeeded - 0
+		local tanksNeeded =  highestcount - #teamSizes[team]
+		local valueNeeded =  highestValue - teamValues[team] + randomValue
+		local Spawning = {}
+		if tanksNeeded > 0 then
+			local function flip(percent)
+				local flipamount = math.random(1000)/1000
+				return flipamount>= percent
+			end
+			local function Even(index)
+				for i = #Spawning, 1 ,-1  do
+					if Spawning[index] - Spawning[i] >= 2 then 
+						Spawning[i] =  Spawning[i] +1
+						Spawning[index] = Spawning[index] -1
+						return
+					end
 				end 
-				
-				if id then
-					Events.Broadcast("SPAWN_AI_TANK", nil,team,id) 
+			end
+			
+			--setup tank spawn
+			for i = 1, tanksNeeded  do 
+				if valueNeeded >= 3 then 
+					table.insert(Spawning, 4) 
+					valueNeeded = valueNeeded - 3
+					teamValues[team] = teamValues[team]+4 
+				elseif valueNeeded >= 2 then
+					table.insert(Spawning, 3) 
+					valueNeeded = valueNeeded - 2
+					teamValues[team] = teamValues[team]+3 
+				elseif valueNeeded >= 1 then
+					table.insert(Spawning, 2) 
+					valueNeeded = valueNeeded - 1
+					teamValues[team] = teamValues[team]+2 
+				else  
+					table.insert(Spawning, 1) 
+					valueNeeded = valueNeeded - 0
+					teamValues[team] = teamValues[team]+1 
+				end 
+			end 
+
+			--based on change flip tank
+			for index, value in ipairs(Spawning) do
+				if flip(0.5) then 
+					Even(index)
+				end
+			end
+			--spawn tanks
+			for _, value in ipairs(Spawning) do
+				local tankTable = workingTanks[workingTanksid[value]]
+				local id
+				if tankTable then 
+					id  =  tankTable[math.random(1, #workingTanks.t1)]
 				else
 					id = 3
-					teamBalance[team] = teamBalance[team] + 2
-					Events.Broadcast("SPAWN_AI_TANK", nil,team,id)
 				end
-			end 
+				Events.Broadcast("SPAWN_AI_TANK", nil,team,id) 
+			end
+
 		end
 	end
     
