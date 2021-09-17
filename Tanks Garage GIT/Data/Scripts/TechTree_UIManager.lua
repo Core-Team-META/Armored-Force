@@ -198,6 +198,10 @@ local confirmButtonFunction = ''
 local prereqLineInactiveColor = Color.New(0.021, 0.021, 0.021, 1)
 local prereqLineActiveColor = Color.New(0.153, 0.313, 0.004, 1)
 
+local baseSilverColorText = Color.New(1,1,1,1)
+local baseTankPartsColorText = Color.New(0.24,0.788,1,1)
+local baseUniversalTankPartsColorText = Color.New(0.545,0.775,0,1)
+local insufficientColorText = Color.New(0.43,0,0,1)
 
 ------------------------------------------------------------------------------------
 -- Completed UI references. Remove above ones as they are made obsolete
@@ -1811,7 +1815,7 @@ function OpenTankUpgradeWindow(button, id)
 
     if tostring(progress.weaponProgress) ~= tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
         UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_CONTAINER_WEAPON').visibility = Visibility.FORCE_ON
-        UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_TURRET').isInteractable = true
+        
         UPGRADE_TANK_CONTAINER:FindDescendantByName('UPGRADE_BUTTON_CONTAINER_WEAPON'):FindDescendantByName(
                 'BUTTONTEXT_LIGHT'
             ).text = 'UPGRADE'
@@ -1828,6 +1832,26 @@ function OpenTankUpgradeWindow(button, id)
         UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_UNIVERSAL_WEAPON').text =
             'Universal Parts: ' .. tostring( math.max(entry.weaponResearchCost- LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP") ,0)  )
         UPGRADE_TANK_CONTAINER:FindDescendantByName('TURRET_LEVEL').text = 'Lv1' -- TODO
+
+        SetTextColorForResource(baseSilverColorText,
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_SILVER_WEAPON'),
+        LOCAL_PLAYER:GetResource(Constants_API.SILVER), 
+        entry.weaponPurchaseCost)
+        SetTextColorForResource(baseTankPartsColorText,
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_TP_WEAPON'),
+        math.min(entry.weaponResearchCost,LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP")),
+        entry.weaponResearchCost)
+        SetTextColorForResource(baseUniversalTankPartsColorText,
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_UNIVERSAL_WEAPON'),
+        LOCAL_PLAYER:GetResource(Constants_API.FREERP), 
+        entry.weaponResearchCost)
+        
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_TURRET').isInteractable =
+            SetUpgradeButtonInteractability(LOCAL_PLAYER:GetResource(Constants_API.SILVER),
+            math.min(entry.weaponResearchCost,LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP")),
+            LOCAL_PLAYER:GetResource(Constants_API.FREERP),
+            entry.weaponPurchaseCost,
+            entry.weaponResearchCost)
     else
         UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_CONTAINER_WEAPON').visibility = Visibility.FORCE_OFF
         UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_TURRET').isInteractable = false
@@ -1844,8 +1868,7 @@ function OpenTankUpgradeWindow(button, id)
     end
 
     if tostring(progress.armorProgress) ~= tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_CONTAINER_ARMOR').visibility = Visibility.FORCE_ON
-        UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_SHELL').isInteractable = true
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_CONTAINER_ARMOR').visibility = Visibility.FORCE_ON        
         UPGRADE_TANK_CONTAINER:FindDescendantByName('UPGRADE_BUTTON_CONTAINER_ARMOR'):FindDescendantByName(
                 'BUTTONTEXT_LIGHT'
             ).text = 'UPGRADE'
@@ -1863,6 +1886,26 @@ function OpenTankUpgradeWindow(button, id)
             'Universal Parts: ' .. tostring(math.max( entry.armorResearchCost- LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP"),0)   )
  
         UPGRADE_TANK_CONTAINER:FindDescendantByName('SHELL_LEVEL').text = 'Lv1' -- TODO
+
+        SetTextColorForResource(baseSilverColorText,
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_SILVER_ARMOR'), 
+        LOCAL_PLAYER:GetResource(Constants_API.SILVER),
+        entry.armorPurchaseCost)
+        SetTextColorForResource(baseTankPartsColorText,
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_TP_ARMOR'),
+        math.min(entry.armorResearchCost,LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP")),
+        entry.armorResearchCost)
+        SetTextColorForResource(baseUniversalTankPartsColorText,
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_UNIVERSAL_ARMOR'),
+        LOCAL_PLAYER:GetResource(Constants_API.FREERP),         
+        entry.armorResearchCost)
+
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_SHELL').isInteractable =
+            SetUpgradeButtonInteractability(LOCAL_PLAYER:GetResource(Constants_API.SILVER),
+            math.min(entry.weaponResearchCost,LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP")),
+            LOCAL_PLAYER:GetResource(Constants_API.FREERP),
+            entry.weaponPurchaseCost,
+            entry.weaponResearchCost)
     else
         UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_CONTAINER_ARMOR').visibility = Visibility.FORCE_OFF
         UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_SHELL').isInteractable = false
@@ -1879,8 +1922,7 @@ function OpenTankUpgradeWindow(button, id)
     end
 
     if tostring(progress.engineProgress) ~= tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_CONTAINER_ENGINE').visibility = Visibility.FORCE_ON
-        UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_ENGINE').isInteractable = true
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_CONTAINER_ENGINE').visibility = Visibility.FORCE_ON        
         UPGRADE_TANK_CONTAINER:FindDescendantByName('UPGRADE_BUTTON_CONTAINER_ENGINE'):FindDescendantByName(
                 'BUTTONTEXT_LIGHT'
             ).text = 'UPGRADE'
@@ -1898,6 +1940,26 @@ function OpenTankUpgradeWindow(button, id)
             'Universal Parts: ' .. tostring(math.max( entry.mobilityResearchCost- LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP"),0)   )
         
         UPGRADE_TANK_CONTAINER:FindDescendantByName('ENGINE_LEVEL').text = 'Lv1' -- TODO
+
+        SetTextColorForResource(baseSilverColorText,
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_SILVER_ENGINE'), 
+        LOCAL_PLAYER:GetResource(Constants_API.SILVER),
+        entry.mobilityPurchaseCost)
+        SetTextColorForResource(baseTankPartsColorText,
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_TP_ENGINE'),
+        math.min(entry.mobilityResearchCost,LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP")),
+        entry.mobilityResearchCost)
+        SetTextColorForResource(baseUniversalTankPartsColorText,
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_UNIVERSAL_ENGINE'),
+        LOCAL_PLAYER:GetResource(Constants_API.FREERP), 
+        entry.mobilityResearchCost)
+
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_SHELL').isInteractable =
+            SetUpgradeButtonInteractability(LOCAL_PLAYER:GetResource(Constants_API.SILVER),
+            math.min(entry.weaponResearchCost,LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP")),
+            LOCAL_PLAYER:GetResource(Constants_API.FREERP),
+            entry.weaponPurchaseCost,
+            entry.weaponResearchCost)
     else
         UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_CONTAINER_ENGINE').visibility = Visibility.FORCE_OFF
         UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_ENGINE').isInteractable = false
@@ -2042,6 +2104,23 @@ function GoToTechTree()
     SFX_CLICK:Play()
     Events.Broadcast('OutsideActivation', BUTTON_TECHTREE_SHOP)
     Task.Wait(2)
+end
+
+function SetTextColorForResource(baseColorText, object, currency, cost)
+    print(baseColorText)
+    print(currency)
+    print(cost)
+    if currency < cost then
+        object:SetColor(insufficientColorText)
+    else
+        object:SetColor(baseColorText)
+    end
+end
+
+function SetUpgradeButtonInteractability(silver, tankParts, universalTankParts, purchaseCost, researchCost)
+    if silver < purchaseCost then return false end
+    if (tankParts + universalTankParts) < researchCost then return false end
+    return true
 end
 
 Task.Wait(2)
