@@ -254,7 +254,7 @@ function FillTeamsWithAI(minSize, teamSizes, teamValues)
                         valueNeeded = valueNeeded + 1
                     end
                 end
-                local insetVal = math.min(math.max(0, valueNeeded), 4)
+                local insetVal = math.min(math.max(1, valueNeeded), 4)
 
                 table.insert(Spawning, insetVal)
                 valueNeeded = valueNeeded - insetVal
