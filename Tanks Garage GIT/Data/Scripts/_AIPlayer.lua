@@ -186,6 +186,7 @@ end
 function RoboDriver(vehicle, params)
   local driver = AIPlayer.FindAIDriver(vehicle)
   if driver then
+   if _G.lookup.tanks[driver].script:GetCustomProperty("Tracked") >= 1 then return end
     driver:HandleDriving(vehicle, params)
   end
 end

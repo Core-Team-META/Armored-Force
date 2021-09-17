@@ -1656,6 +1656,10 @@ function PopulateHoverTankStats(tankData)
         local topSpeed = entry.topSpeed
         local acceleration = entry.acceleration
         local turningSpeed = entry.turningSpeed
+
+        if topSpeed > tankAPI.GetHighestTopSpeed() then
+        	topSpeed = tankAPI.GetHighestTopSpeed()
+        end
         
         if turningSpeed > 1000 then
         	turningSpeed = math.floor(turningSpeed / 20)
@@ -1670,6 +1674,10 @@ function PopulateHoverTankStats(tankData)
         local topSpeed = entry.topSpeedUpgraded
         local acceleration = entry.accelerationUpgraded
         local turningSpeed = entry.turningSpeedUpgraded -- TODO
+        
+        if topSpeed > tankAPI.GetHighestTopSpeed() then
+        	topSpeed = tankAPI.GetHighestTopSpeed()
+        end
         
         if turningSpeed > 1000 then
         	turningSpeed = math.floor(turningSpeed / 20)
@@ -1975,6 +1983,9 @@ function PopulateEquippedTankStats(entry)
     if tostring(tankProgress.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
         topSpeed = entry.topSpeedUpgraded
     end
+    if topSpeed > tankAPI.GetHighestTopSpeed() then
+    	topSpeed = tankAPI.GetHighestTopSpeed()
+    end
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_8').progress = topSpeed / tankAPI.GetHighestTopSpeed()
     local acceleration = entry.acceleration
     if tostring(tankProgress.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
@@ -1985,6 +1996,9 @@ function PopulateEquippedTankStats(entry)
     if tostring(tankProgress.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
         turningSpeed = entry.turningSpeedUpgraded
     end -- TODO
+    if turningSpeed > 1000 then
+    	turningSpeed = math.floor(turningSpeed / 20)
+    end
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_10').progress = turningSpeed / tankAPI.GetHighestTurningSpeed()
     -- Set upgraded versions
     local damage = entry.damageUpgraded
