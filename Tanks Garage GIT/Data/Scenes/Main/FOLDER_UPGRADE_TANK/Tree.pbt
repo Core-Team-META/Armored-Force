@@ -20952,7 +20952,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "SHELL"
+      Label: "HULL"
       Color {
         R: 1
         G: 1

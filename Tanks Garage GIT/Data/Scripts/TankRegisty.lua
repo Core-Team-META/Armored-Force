@@ -108,7 +108,7 @@ function Tanks.GetHighestHitPoints()
 end
 
 function Tanks.GetHighestTopSpeed()
-	return 4100
+	return 2700 -- was 4100, set lower to make it easier to compare stats of other tanks.
 end
 
 function Tanks.GetHighestAcceleration()

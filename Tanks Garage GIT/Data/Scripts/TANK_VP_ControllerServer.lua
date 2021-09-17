@@ -241,6 +241,7 @@ function AssignDriver(newDriver, hp)
 		_G.lookup.tanks[driver].target = target
 		_G.lookup.tanks[driver].muzzle = muzzle
 		_G.lookup.tanks[driver].turret = turret
+		_G.lookup.tanks[driver].script = script
 	end
 	
 	Task.Wait()
