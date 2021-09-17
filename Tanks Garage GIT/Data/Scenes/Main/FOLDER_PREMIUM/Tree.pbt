@@ -68801,7 +68801,7 @@ Objects {
       }
     }
     Text {
-      Label: "SHELL"
+      Label: "HULL"
       Color {
         R: 0.470000029
         G: 0.470000029
