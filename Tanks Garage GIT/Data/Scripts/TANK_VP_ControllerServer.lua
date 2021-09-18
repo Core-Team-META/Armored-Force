@@ -114,7 +114,7 @@ local MAX_NOT_FLIPPED_ANGLE = 10
 local MAX_ROLLBACK_COUNT = 10
 
 local REAR_END_FIRE_CHANCE = 25
-local FIAT_DAMAGE_STATE_CHANCE = 10
+local FIAT_DAMAGE_STATE_CHANCE = 20
 local STANDARD_DAMAGE_STATE_CHANCE = 25
 
 local function RaycastResultFromPointRotationDistance(point, rotation, distance)

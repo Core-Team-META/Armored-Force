@@ -41,6 +41,7 @@ local TIER_BONUS_DIVIDER = 5
 local winner = -1
 local startingPlayerCount = 0
 local playerStartingXP = {}
+local playerStartingSilver = {}
 
 function TrackDailyChallenge(player, type, amount)
 	for i = 1, 3 do
@@ -153,8 +154,10 @@ function StateSTART(manager, propertyName)
 		startingPlayerCount = #Game.GetPlayers()
 		
 		for _, p in ipairs(Game.GetPlayers()) do	
-			p.serverUserData.MID_MATCH_DATA.PARTICIPATION = startingPlayerCount * PLAYER_JOINED_XP_AMOUNT
-			p:AddResource(CONSTANTS_API.XP, p.serverUserData.MID_MATCH_DATA.PARTICIPATION)
+			if p:IsA("Player") and p.serverUserData.MID_MATCH_DATA then
+				p.serverUserData.MID_MATCH_DATA.PARTICIPATION = startingPlayerCount * PLAYER_JOINED_XP_AMOUNT
+				p:AddResource(CONSTANTS_API.XP, p.serverUserData.MID_MATCH_DATA.PARTICIPATION)
+			end
 		end
 
 	elseif mainGameStateManager:GetCustomProperty("GameState") == "VICTORY_STATE" then
@@ -196,36 +199,29 @@ end
 
 function SaveStatistics()
 	for x, p in pairs(Game.GetPlayers()) do
- 
-
+	
 		local tempTbl = {}
-
+		local survivalBonus = math.floor(survivalCurrencyValue * (p:GetResource("MatchEndHP") / p.maxHitPoints))
 		local tankRPString = UTIL_API.GetTankRPString(p:GetResource(TankAPI.EquipResource))
-		local totalXp =  p:GetResource(CONSTANTS_API.XP) - playerStartingXP[p.id]
-		local baseXP = 0
-		local baseCurrency = 0
-		local totalCurrency = math.floor(survivalCurrencyValue * (p:GetResource("MatchEndHP") / p.maxHitPoints))
+		local baseXP = survivalBonus
+		local baseCurrency = survivalBonus
 
 		SubmitScores(p)
-
-		--p:AddResource(tankRPString, totalXp)
-		--p:AddResource(CONSTANTS_API.XP, totalXp)
-		--p:AddResource("Silver", totalCurrency)
 
 		if p.team == winner then
 			--print(p.name .. " won, adding to Total Wins")
 			p:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_WINS, 1)
 			TrackDailyChallenge(p, "Wins", 1)
-			baseXP = startingPlayerCount * VICTORY_XP_PER_PLAYER_AMOUNT
-			baseCurrency = startingPlayerCount * VICTORY_SILVER_PER_PLAYER_AMOUNT
+			baseXP = baseXP + startingPlayerCount * VICTORY_XP_PER_PLAYER_AMOUNT
+			baseCurrency = baseCurrency + startingPlayerCount * VICTORY_SILVER_PER_PLAYER_AMOUNT
 			tempTbl["Winner"] = true
 		elseif winner > 0 then
 			--print(p.name .. " lost, adding to Total Losses")
 			p:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_LOSSES, 1)
 		else
 			--print(p.name .. " had a draw")
-			baseXP = startingPlayerCount * VICTORY_XP_PER_PLAYER_AMOUNT/2
-			baseCurrency = startingPlayerCount * VICTORY_SILVER_PER_PLAYER_AMOUNT/2
+			baseXP = baseXP + startingPlayerCount * VICTORY_XP_PER_PLAYER_AMOUNT/2
+			baseCurrency = baseCurrency + startingPlayerCount * VICTORY_SILVER_PER_PLAYER_AMOUNT/2
 		end
 
 		p:AddResource(CONSTANTS_API.COMBAT_STATS.GAMES_PLAYED_RES, 1)
@@ -237,10 +233,14 @@ function SaveStatistics()
 					p:GetResource(CONSTANTS_API.COMBAT_STATS.GAMES_PLAYED_RES)
 			)
 		)
-
-		p:AddResource(UTIL_API.GetTankRPString(p:GetResource(TankAPI.EquipResource)), baseXP)		
+		
+		-- add bonuses from win/loss and surivial bonus
+		p:AddResource(tankRPString, baseXP)
 		p:AddResource(CONSTANTS_API.XP, baseXP)
 		p:AddResource(CONSTANTS_API.SILVER, baseCurrency)
+		
+		local totalXp =  p:GetResource(CONSTANTS_API.XP) - playerStartingXP[p.id]
+		local totalCurrency = p:GetResource(CONSTANTS_API.SILVER) - playerStartingSilver[p.id]
 		
 		if p:IsA("Player") and not p:IsA("AIPlayer") then
 			CalculateNewLevelAndRank(p)
@@ -249,22 +249,26 @@ function SaveStatistics()
 		local modifier = 1
 		if (UTIL_API.UsingPremiumTank(tonumber(p.serverUserData.currentTankData.id))) then
 			modifier = 2
+			p:AddResource(tankRPString, totalXp)
+			p:AddResource(CONSTANTS_API.XP, totalXp)
+			p:AddResource(CONSTANTS_API.SILVER, totalCurrency)
 		end
-		
-		totalXp = totalXp + baseXP
-		totalCurrency = totalCurrency + baseCurrency
-
-		
-		tempTbl["XP"] = totalXp
-		tempTbl["BaseXP"] = baseXP
+				
+		tempTbl["XP"] = totalXp * modifier
+		tempTbl["BaseXP"] = baseXP * modifier
 		tempTbl["TankString"] = tankRPString
-		tempTbl["Silver"] = totalCurrency
+		tempTbl["Silver"] = totalCurrency * modifier
+		tempTbl["BaseSilver"] = baseCurrency * modifier
 		tempTbl["Kills"] = p.kills
 		tempTbl["MatchEndHP"] = p:GetResource("MatchEndHP")
 		tempTbl["MaxHP"] = p.maxHitPoints
-		tempTbl["DamageTracker"] = p:GetResource("DamageTracker")
-		tempTbl["SpottingTracker"] = p:GetResource("SpottingTracker")
+		tempTbl["SurvivalBonus"] = survivalBonus * modifier
+		tempTbl["DamageTracker"] = p:GetResource("DamageTracker") * modifier
+		tempTbl["SilverDamageTracker"] = p:GetResource("SilverDamageTracker") * modifier
+		tempTbl["SpottingTracker"] = p:GetResource("SpottingTracker") * modifier
 		
+		-- DEBUG
+		print("EARNINGS FOR: " .. p.name)
 		for k, v in pairs(tempTbl) do
 			print( k ..";" .. tostring(v))
 		end
@@ -329,6 +333,7 @@ function OnDamagedRecord(player, damage)
 			--print("XP rewarded for dealing damage: " .. tostring(xpRewarded))
 
 			damage.sourcePlayer:AddResource("DamageTracker", xpRewarded)
+			damage.sourcePlayer:AddResource("SilverDamageTracker", silverRewarded)
 
 			damage.sourcePlayer:AddResource(
 				UTIL_API.GetTankRPString(damage.sourcePlayer:GetResource(TankAPI.EquipResource)),
@@ -417,10 +422,11 @@ function OnJoined(player)
 	player:SetResource("TankDamage", 0)
 	player:SetResource("MatchKills", 0)
 	player:SetResource("DamageTracker", 0)
+	player:SetResource("SilverDamageTracker", 0)
 	player:SetResource("SpottingTracker", 0)
 	
 	playerStartingXP[player.id] = player:GetResource(CONSTANTS_API.XP)
-	
+	playerStartingSilver[player.id] = player:GetResource(CONSTANTS_API.SILVER)
 	Task.Wait(1)
 	
 	player.serverUserData.MID_MATCH_DATA = {}
