@@ -62,7 +62,7 @@ function AddToList(player)
 				player:AddResource(CURRENCY.XP.ResourceName, spottingXP)
 				Events.Broadcast("PlayerSpotted", player, spottingXP)
 				-- Add RP to tank
-				
+				player:AddResource(CURRENCY.SILVER.ResourceName, spottingXP)
 				player:AddResource(UTIL_API.GetTankRPString(player:GetResource(TANKS.EquipResource)), spottingXP)
 				Events.BroadcastToPlayer(player, "GainXP", {
 					reason = "SPOTTED_ENEMY", 

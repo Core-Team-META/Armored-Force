@@ -119,8 +119,8 @@ function CountThisTextUp(givenText, targetNumber, extra, allowTickSFX)
 
 	return task
 end
-
-function CalculateTotalXP(player)
+--[[
+function CalculateTotalXP(player) -- NO LONGER NEEDED. StatisticsServer already does calculations and stores it in table.
 	local survivalBonus =
 		math.floor(
 		survivalXPValue *
@@ -151,7 +151,7 @@ function CalculateTotalCurrency(player)
 		localPlayer.clientUserData.roundStats["DamageTracker"] +
 		localPlayer.clientUserData.roundStats["SpottingTracker"]
 end
-
+]]
 function SetWinner(winningTeam)
 	winner = winningTeam
 end
@@ -212,6 +212,7 @@ end
 
 function ShowStatisticsAnimation()
 	--if winner == localTeam then
+	--[[
 	local baseCurrency
 	if localPlayer.clientUserData.roundStats["Winner"] == "^true^" then
 		baseCurrency = victoryCurrencyValue
@@ -222,7 +223,10 @@ function ShowStatisticsAnimation()
 		winLossText.text = "YOUR TEAM LOST"
 		baseText.text = "Loss Earnings: "
 	end
+	]]
+	
 	local modifier = 1
+	
 	if localPlayer.clientUserData.roundStats["DailyWin"] == "^true^" then
 		DOUBLE_REWARD.visibility = Visibility.FORCE_ON
 		modifier = modifier + 1
@@ -237,34 +241,31 @@ function ShowStatisticsAnimation()
 	--[[if (UTIL_API.UsingPremiumTank(tonumber(localPlayer.clientUserData.currentTankData.id))) then
 		modifier = 2
 		premiumBonusPanel.visibility = Visibility.FORCE_ON
-	end]] RollUpNumberText(
+	end]] 
+	
+	RollUpNumberText(
 		baseXPAmountText,
 		localPlayer.clientUserData.roundStats["BaseXP"],
 		baseCurrencyAmountText,
-		baseCurrency,
+		localPlayer.clientUserData.roundStats["BaseSilver"],
 		modifier
 	)
 
-	local playerKills = localPlayer.clientUserData.roundStats["Kills"]
+	--local playerKills = localPlayer.clientUserData.roundStats["Kills"]
+	
 	RollUpNumberText(
 		killXPAmountText,
-		playerKills * killXPValue,
+		localPlayer.clientUserData.roundStats["DamageTracker"],
 		killCurrencyAmountText,
-		playerKills * killCurrencyValue,
+		localPlayer.clientUserData.roundStats["DamageTracker"],
 		modifier
 	)
 
 	RollUpNumberText(
 		survivalXPAmountText,
-		math.floor(
-			survivalXPValue *
-				(localPlayer.clientUserData.roundStats["MatchEndHP"] / localPlayer.clientUserData.roundStats["MaxHP"])
-		),
+		localPlayer.clientUserData.roundStats["SurvivalBonus"],
 		survivalCurrencyAmountText,
-		math.floor(
-			survivalCurrencyValue *
-				(localPlayer.clientUserData.roundStats["MatchEndHP"] / localPlayer.clientUserData.roundStats["MaxHP"])
-		),
+		localPlayer.clientUserData.roundStats["SurvivalBonus"],
 		modifier
 	)
 
@@ -274,9 +275,9 @@ function ShowStatisticsAnimation()
 
 	RollUpNumberText(
 		totalXPAmountText,
-		CalculateTotalXP(localPlayer),
+		localPlayer.clientUserData.roundStats["XP"],
 		totalCurrencyAmountText,
-		CalculateTotalCurrency(localPlayer),
+		localPlayer.clientUserData.roundStats["Silver"],
 		modifier
 	)
 
