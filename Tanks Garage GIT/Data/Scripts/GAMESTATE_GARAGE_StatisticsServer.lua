@@ -239,19 +239,19 @@ function SaveStatistics()
 		p:AddResource(CONSTANTS_API.XP, baseXP)
 		p:AddResource(CONSTANTS_API.SILVER, baseCurrency)
 		
-		local totalXp =  p:GetResource(CONSTANTS_API.XP) - playerStartingXP[p.id]
+		local totalXp =  p:GetResource(tankRPString) - playerStartingXP[p.id]
 		local totalCurrency = p:GetResource(CONSTANTS_API.SILVER) - playerStartingSilver[p.id]
 		
-		if p:IsA("Player") and not p:IsA("AIPlayer") then
-			CalculateNewLevelAndRank(p)
-		end
-
 		local modifier = 1
 		if (UTIL_API.UsingPremiumTank(tonumber(p.serverUserData.currentTankData.id))) then
 			modifier = 2
 			p:AddResource(tankRPString, totalXp)
 			p:AddResource(CONSTANTS_API.XP, totalXp)
 			p:AddResource(CONSTANTS_API.SILVER, totalCurrency)
+		end
+		
+		if p:IsA("Player") and not p:IsA("AIPlayer") then
+			CalculateNewLevelAndRank(p)
 		end
 				
 		tempTbl["XP"] = totalXp * modifier
@@ -425,7 +425,7 @@ function OnJoined(player)
 	player:SetResource("SilverDamageTracker", 0)
 	player:SetResource("SpottingTracker", 0)
 	
-	playerStartingXP[player.id] = player:GetResource(CONSTANTS_API.XP)
+	playerStartingXP[player.id] = player:GetResource(UTIL_API.GetTankRPString(player:GetResource(TankAPI.EquipResource)))
 	playerStartingSilver[player.id] = player:GetResource(CONSTANTS_API.SILVER)
 	Task.Wait(1)
 	
