@@ -1,3 +1,7 @@
+if true then
+	return
+end
+
 local LocalPlayer = Game.GetLocalPlayer()
 
 local POPUP_ROOT = script:GetCustomProperty("PopupRoot"):WaitForObject()

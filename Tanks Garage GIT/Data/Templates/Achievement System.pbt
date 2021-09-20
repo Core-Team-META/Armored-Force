@@ -5624,7 +5624,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Enabled"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:Icon"
@@ -5650,7 +5650,7 @@ Assets {
           }
           Overrides {
             Name: "cs:IsTournament"
-            Bool: true
+            Bool: false
           }
         }
         Collidable_v2 {
@@ -5747,7 +5747,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Enabled"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:Icon"
@@ -5773,7 +5773,7 @@ Assets {
           }
           Overrides {
             Name: "cs:IsTournament"
-            Bool: true
+            Bool: false
           }
         }
         Collidable_v2 {
@@ -5870,7 +5870,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Enabled"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:Icon"
@@ -5896,7 +5896,7 @@ Assets {
           }
           Overrides {
             Name: "cs:IsTournament"
-            Bool: true
+            Bool: false
           }
         }
         Collidable_v2 {
@@ -5993,7 +5993,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Enabled"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:Icon"
@@ -6019,7 +6019,7 @@ Assets {
           }
           Overrides {
             Name: "cs:IsTournament"
-            Bool: true
+            Bool: false
           }
         }
         Collidable_v2 {
