@@ -117,6 +117,8 @@ local REAR_END_FIRE_CHANCE = 25
 local FIAT_DAMAGE_STATE_CHANCE = 20
 local STANDARD_DAMAGE_STATE_CHANCE = 25
 
+local PROJECTILE_WAIT_LIMIT = 100
+
 local function RaycastResultFromPointRotationDistance(point, rotation, distance)
 	
 	local azimuth = rotation.z
@@ -522,7 +524,7 @@ function FireProjectile(player)
 		aimVector.z = targetAimVector.z 
 	end
 
-	local firedProjectile = Projectile.Spawn(projectile, muzzle:GetWorldPosition(), aimVector)
+	local firedProjectile = Projectile.Spawn(projectile, cannon:GetWorldPosition(), aimVector)
 	firedProjectile.speed = 0
 	
 	if player:IsA("Player") then
@@ -533,15 +535,16 @@ function FireProjectile(player)
 	firedProjectile.gravityScale = 0
 	firedProjectile.lifeSpan = 5
 	firedProjectile.capsuleRadius = projectileRadius 
-	firedProjectile.capsuleLength = projectileLength * 5
+	firedProjectile.capsuleLength = projectileLength * 7
 	
 	firedProjectile.lifeSpanEndedEvent:Connect(ProjectileExpired)
 	firedProjectile.impactEvent:Connect(ProjectileImpacted)
 	
 	Task.Wait()
 	
-	firedProjectile.shouldDieOnImpact = true
+	--firedProjectile.shouldDieOnImpact = true
 	firedProjectile.speed = projectileSpeed
+	firedProjectile.serverUserData.dataSet = true
 	
 	Events.BroadcastToAllPlayers("ANIMATE_FIRING", player.id, reloadTime)
 
@@ -555,10 +558,13 @@ end
 
 function ProjectileImpacted(expiredProjectile, other)
     
-    if not other:IsA("Vehicle") then
-        ProjectileExpired(expiredProjectile)
-    end
+    expiredProjectile.speed = 0
+    ProjectileExpired(expiredProjectile)
+    expiredProjectile.lifeSpan = 0.5
+    
+    return
 
+	--[[
 	if not other:IsA("Vehicle") or expiredProjectile.serverUserData.hitOnce or (other.driver == driver) or (other.serverUserData.owner == driver) then
 		return
 	end
@@ -588,7 +594,7 @@ function ProjectileImpacted(expiredProjectile, other)
 		ApplyDamage(driver, other.driver, attackData, damageDealt.amount)
 	end
 
-	
+	]]
 	
 end
 
@@ -599,14 +605,25 @@ function ProjectileExpired(expiredProjectile)
 end
 
 function OnArmorHit(trigger, other)	
-	if other.type == "Projectile" and (other.owner ~= driver) and (other.serverUserData.owner ~= driver) then
+	if other.type == "Projectile" then
+		local count = 0
+		
+		while Object.IsValid(other) and not other.serverUserData.dataSet and (count <= PROJECTILE_WAIT_LIMIT) do
+			Task.Wait()
+			count = count + 1
+		end
+		
+		if not Object.IsValid(other) then
+			return
+		end
+				
         local enemyPlayer = other.owner -- for player
 		if not other.owner and other.serverUserData.owner then -- for bot
 			--enemyPlayer = AIPlayer.FindAIDriver(other)
 			enemyPlayer = other.serverUserData.owner
 		end
 		
-		if not enemyPlayer or other.serverUserData.hitOnce then -- if projectile is marked or does not have owner yet
+		if not enemyPlayer or other.serverUserData.hitOnce or enemyPlayer == driver then -- if projectile is marked or does not have owner yet
 --print("enemy player could not be identified")
 			return
 		end
@@ -833,12 +850,12 @@ function OnArmorHit(trigger, other)
 		
 	   	end
 	   	
-	if enemyPlayer:IsA("Player") then
-		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", ramDamage, armorName, trigger:GetWorldPosition(), driver.id)
-  	end
-  	if driver:IsA("Player") then
-		Events.BroadcastToPlayer(driver, "ShowHitFeedback", ramDamage, armorName, trigger:GetWorldPosition())
-	end
+		if enemyPlayer:IsA("Player") then
+			Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", ramDamage, armorName, trigger:GetWorldPosition(), driver.id)
+	  	end
+	  	if driver:IsA("Player") then
+			Events.BroadcastToPlayer(driver, "ShowHitFeedback", ramDamage, armorName, trigger:GetWorldPosition())
+		end
 		
 		if otherVehicleSpeed > thisVehicleSpeed then
 			return
