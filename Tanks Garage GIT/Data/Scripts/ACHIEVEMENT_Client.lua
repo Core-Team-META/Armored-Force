@@ -76,7 +76,7 @@ local function IsTournamentId(id)
     return false
 end
 
-local function CheckChallenges()    
+local function CheckChallenges()
     Task.Wait(1)
     notificationCheck.challenges = false
     for i = 1, 4 do
@@ -230,15 +230,14 @@ local function SetActiveAchievements()
             local PreReqText = achievementPanel:GetCustomProperty("PreReqText"):WaitForObject()
             local tempTbl = {CoreString.Split(achievement.preReq, ",")}
             local str = ""
-            for _, preReqId in ipairs(tempTbl) do
+            for _, preReqId in pairs(tempTbl) do
                 if not ACH_API.IsUnlocked(LOCAL_PLAYER, preReqId) then
                     str = preReqId
+                    local preReqName = ACH_API.GetAchievementName(str)
+                    PreReqText.text = "Unlocked after completing " .. preReqName
                 end
             end
-            --#TODO How do we want to show pre req achievements?
 
-            local preReqName = ACH_API.GetAchievementName(str)
-            PreReqText.text = "Unlocked after completing " .. preReqName
             status.text = "Inactive"
             preReqPanel.visibility = Visibility.FORCE_ON
         else
@@ -300,14 +299,12 @@ local function SetActiveAchievements()
 end
 
 local function BuildAchievementInfoPanel()
-    activeAchievements = {}
-
     achievementCompleteScrollPanel.visibility = Visibility.FORCE_OFF
     achievementScrollPanel.visibility = Visibility.INHERIT
 
     DisableThisComponent()
     --ClearAchievements()
-
+    activeAchievements = {}
     for _, achievement in pairs(ACH_API.GetAchievements()) do
         table.insert(activeAchievements, achievement)
     end
@@ -321,8 +318,6 @@ local function BuildAchievementInfoPanel()
         NEW_CLAIMS.visibility = Visibility.FORCE_OFF
     end
 end
-
-
 
 ------------------------------------------------------------------------------------------------------------------------
 -- GLOBAL FUNCTIONS
@@ -373,8 +368,6 @@ function Int()
     ClearAchievements()
     NEW_CLAIMS.visibility = Visibility.FORCE_OFF
 
-    Task.Wait(5)
-
     activeAchievements = {}
 
     for _, achievement in pairs(ACH_API.GetAchievements()) do
@@ -382,7 +375,7 @@ function Int()
     end
 
     table.sort(activeAchievements, CompareAchievement)
-
+    Task.Wait(5)
     CheckChallenges()
 
     for _, achievement in ipairs(activeAchievements) do
@@ -390,7 +383,7 @@ function Int()
             notificationCheck.achievements = true
         end
     end
-    
+
     if notificationCheck.challenges or notificationCheck.achievements then
         NEW_CLAIMS.visibility = Visibility.FORCE_ON
     else
@@ -437,16 +430,19 @@ function ToggleThisComponent(requestedPlayerState)
     else
         Task.Wait(0.1)
         DisableThisComponent()
-        Task.Spawn(function() CheckChallenges() end, 2)
+        Task.Spawn(
+            function()
+                CheckChallenges()
+            end,
+            2
+        )
     end
 end
 
 function DisableThisComponent()
     ClearListeners(listeners)
-    Task.Wait()
     ClearAchievements()
 end
-
 
 scriptListeners[#scriptListeners + 1] = LOCAL_PLAYER.resourceChangedEvent:Connect(OnResourceChanged)
 --scriptListeners[#scriptListeners + 1] = Events.Connect("GameStateChanged", OnGameStateChanged)
