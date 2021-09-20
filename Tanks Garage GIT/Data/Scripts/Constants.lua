@@ -29,9 +29,13 @@ Const.PERK_STORAGE_KEYS = {
     GOLD_PACK1 = 4,
     GOLD_PACK2 = 5,
     GOLD_PACK3 = 6,
-    SOLDIERPACK = 7,
-    CAPTAINPACK = 8,
-    GENERALPACK = 9
+    SOLDIERPACK = 7, -- Launch bundle pack
+    CAPTAINPACK = 8, -- Launch bundle pack
+    GENERALPACK = 9, -- Launch bundle pack
+    CORPORALPACK = 10,
+    BRIGADIERPACK = 11,
+    COMMANDERPACK = 12
+
 }
 
 ------------------------------------------------------------------------------------------------------------------------
