@@ -524,7 +524,7 @@ function FireProjectile(player)
 		aimVector.z = targetAimVector.z 
 	end
 
-	local firedProjectile = Projectile.Spawn(projectile, muzzle:GetWorldPosition(), aimVector)
+	local firedProjectile = Projectile.Spawn(projectile, cannon:GetWorldPosition(), aimVector)
 	firedProjectile.speed = 0
 	
 	if player:IsA("Player") then
@@ -606,7 +606,6 @@ end
 
 function OnArmorHit(trigger, other)	
 	if other.type == "Projectile" then
-		
 		local count = 0
 		
 		while Object.IsValid(other) and not other.serverUserData.dataSet and (count <= PROJECTILE_WAIT_LIMIT) do
