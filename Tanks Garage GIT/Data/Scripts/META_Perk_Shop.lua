@@ -76,6 +76,19 @@ bundles[#bundles + 1] = {
     storageId = PERKS.GENERALPACK.id
 }
 
+bundles[#bundles + 1] = {
+    perk = PERKS.CORPORALPACK.perk,
+    storageId = PERKS.CORPORALPACK.id
+}
+bundles[#bundles + 1] = {
+    perk = PERKS.BRIGADIERPACK.perk,
+    storageId = PERKS.BRIGADIERPACK.id
+}
+bundles[#bundles + 1] = {
+    perk = PERKS.COMMANDERPACK.perk,
+    storageId = PERKS.COMMANDERPACK.id
+}
+
 --------------------------------------------------------------------------------------------------------------------------
 -- LOCAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
@@ -134,7 +147,7 @@ function CheckPerkCountWithStorage(player, data)
                 player:AddResource(bundle.resourceName, reward)
                 perks[bundle.storageId] = perkCount
             end
-            --Bundles
+            -- Launch Week Bundles (No longer for sale)
             if bundle.perk == PERKS.SOLDIERPACK.perk and player:HasPerk(bundle.perk) then
                 if perkCount > storageCount then
                     player:AddResource(CURRENCY.SILVER.ResourceName, 50000)
@@ -154,6 +167,28 @@ function CheckPerkCountWithStorage(player, data)
                     player:AddResource(CURRENCY.SILVER.ResourceName, 500000)
                     player:AddResource(CURRENCY.GOLD.ResourceName, 2500)
                     player:AddResource(CURRENCY.FREERP.ResourceName, 100000)
+                    perks[bundle.storageId] = perkCount
+                end
+            -- New Bundles 
+            elseif bundle.perk == PERKS.CORPORALPACK.perk and player:HasPerk(bundle.perk) then
+                if perkCount > storageCount then
+                    player:AddResource(CURRENCY.SILVER.ResourceName, 10000)
+                    player:AddResource(CURRENCY.GOLD.ResourceName, 150)
+                    player:AddResource(CURRENCY.FREERP.ResourceName, 8000)
+                    perks[bundle.storageId] = perkCount
+                end
+            elseif bundle.perk == PERKS.BRIGADIERPACK.perk and player:HasPerk(bundle.perk) then
+                if perkCount > storageCount then
+                    player:AddResource(CURRENCY.SILVER.ResourceName, 35000)
+                    player:AddResource(CURRENCY.GOLD.ResourceName, 500)
+                    player:AddResource(CURRENCY.FREERP.ResourceName, 25000)
+                    perks[bundle.storageId] = perkCount
+                end
+            elseif bundle.perk == PERKS.COMMANDERPACK.perk and player:HasPerk(bundle.perk) then
+                if perkCount > storageCount then
+                    player:AddResource(CURRENCY.SILVER.ResourceName, 150000)
+                    player:AddResource(CURRENCY.GOLD.ResourceName, 2000)
+                    player:AddResource(CURRENCY.FREERP.ResourceName, 85000)
                     perks[bundle.storageId] = perkCount
                 end
             end
