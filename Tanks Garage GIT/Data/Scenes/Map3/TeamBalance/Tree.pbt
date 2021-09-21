@@ -1,7 +1,7 @@
 Name: "TeamBalance"
-RootId: 17532750537072481218
+RootId: 14053384669283907384
 Objects {
-  Id: 8594569368546461568
+  Id: 9392354605103750120
   Name: "ClientContext"
   Transform {
     Location {
@@ -14,9 +14,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17532750537072481218
-  ChildIds: 15296678128358494345
-  ChildIds: 4620201551394406148
+  ParentId: 14053384669283907384
+  ChildIds: 7403366714934474120
+  ChildIds: 5451788667425927312
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -33,7 +33,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4620201551394406148
+  Id: 5451788667425927312
   Name: "UI Container"
   Transform {
     Location {
@@ -46,8 +46,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8594569368546461568
-  ChildIds: 1706363743426204393
+  ParentId: 9392354605103750120
+  ChildIds: 18225369170587090488
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -93,7 +93,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1706363743426204393
+  Id: 18225369170587090488
   Name: "FADE_PANEL"
   Transform {
     Location {
@@ -106,8 +106,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4620201551394406148
-  ChildIds: 554832257110202481
+  ParentId: 5451788667425927312
+  ChildIds: 2162413141962875173
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -148,7 +148,7 @@ Objects {
   }
 }
 Objects {
-  Id: 554832257110202481
+  Id: 2162413141962875173
   Name: "BACKGROUND"
   Transform {
     Location {
@@ -161,7 +161,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1706363743426204393
+  ParentId: 18225369170587090488
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -214,7 +214,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15296678128358494345
+  Id: 7403366714934474120
   Name: "FadeScreen_Client"
   Transform {
     Location {
@@ -227,12 +227,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8594569368546461568
+  ParentId: 9392354605103750120
   UnregisteredParameters {
     Overrides {
       Name: "cs:FADE_PANEL"
       ObjectReference {
-        SelfId: 1706363743426204393
+        SelfId: 18225369170587090488
       }
     }
   }
@@ -255,7 +255,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10348572947863302973
+  Id: 1228672231705775766
   Name: "Team Balancing"
   Transform {
     Location {
@@ -268,7 +268,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17532750537072481218
+  ParentId: 14053384669283907384
   UnregisteredParameters {
     Overrides {
       Name: "cs:DebugSameTeam"
@@ -289,13 +289,13 @@ Objects {
     Overrides {
       Name: "cs:GAMESTATE_MainGameStateManagerServer"
       ObjectReference {
-        SelfId: 408224351884467425
+        SelfId: 16619138605393147299
       }
     }
     Overrides {
       Name: "cs:GAMESTATE_MatchLobbyServer"
       ObjectReference {
-        SelfId: 5575396110192024797
+        SelfId: 17956774842903030437
       }
     }
   }

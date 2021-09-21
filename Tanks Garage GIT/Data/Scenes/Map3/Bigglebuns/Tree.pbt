@@ -1,7 +1,39 @@
 Name: "Bigglebuns"
-RootId: 6689442338387304053
+RootId: 11762790507144394246
 Objects {
-  Id: 3831760863661883312
+  Id: 8411096507313289201
+  Name: "BigglesRockCollection"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11762790507144394246
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "BigglesRockCollection"
+  }
+}
+Objects {
+  Id: 15467821084486528278
   Name: "Vehicle Speedometer Display"
   Transform {
     Scale {
@@ -10,7 +42,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6689442338387304053
+  ParentId: 11762790507144394246
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

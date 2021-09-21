@@ -1,7 +1,7 @@
 Name: "SpottingComponent"
-RootId: 13355825119604233509
+RootId: 10424324946516904513
 Objects {
-  Id: 12083237209831916644
+  Id: 10492699575603912486
   Name: "GAMEHELPER_SpottingComponent"
   Transform {
     Location {
@@ -14,9 +14,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13355825119604233509
-  ChildIds: 11521912232503756546
-  ChildIds: 5799305881395839826
+  ParentId: 10424324946516904513
+  ChildIds: 7500126607332189283
+  ChildIds: 5150406667531726779
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -31,7 +31,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5799305881395839826
+  Id: 5150406667531726779
   Name: "ClientContext"
   Transform {
     Location {
@@ -44,10 +44,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12083237209831916644
-  ChildIds: 16848630376180922235
-  ChildIds: 15333471902233479077
-  ChildIds: 7524175617216033674
+  ParentId: 10492699575603912486
+  ChildIds: 11515508741484472022
+  ChildIds: 11670496254980919446
+  ChildIds: 7973414632964660925
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -61,7 +61,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7524175617216033674
+  Id: 7973414632964660925
   Name: "UI Container"
   Transform {
     Location {
@@ -74,8 +74,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5799305881395839826
-  ChildIds: 6603255854833973152
+  ParentId: 5150406667531726779
+  ChildIds: 12092671530989557411
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -117,7 +117,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6603255854833973152
+  Id: 12092671530989557411
   Name: "WarningUI"
   Transform {
     Location {
@@ -130,8 +130,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7524175617216033674
-  ChildIds: 4080716264368771517
+  ParentId: 7973414632964660925
+  ChildIds: 7408163174403349987
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -142,34 +142,32 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 100
-    Height: 100
+    Width: 65
+    Height: 65
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
-    UseParentWidth: true
-    UseParentHeight: true
     Panel {
-      Opacity: 1
+      Opacity: 0.875981
     }
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:middlecenter"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
   }
 }
 Objects {
-  Id: 4080716264368771517
+  Id: 7408163174403349987
   Name: "UI Image"
   Transform {
     Location {
@@ -182,8 +180,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6603255854833973152
-  ChildIds: 15492401126945832570
+  ParentId: 12092671530989557411
+  ChildIds: 2152648836638420784
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -194,21 +192,21 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 80
-    Height: 80
-    UIY: -100
+    UIY: -105
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
     Image {
       Brush {
         Id: 15538142921929734385
       }
       Color {
-        R: 0.279999971
-        G: 1.33514391e-07
+        R: 0.61
         A: 1
       }
       TeamSettings {
@@ -229,8 +227,8 @@ Objects {
   }
 }
 Objects {
-  Id: 15492401126945832570
-  Name: "UI Text Box"
+  Id: 2152648836638420784
+  Name: "UI Image"
   Transform {
     Location {
     }
@@ -242,7 +240,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4080716264368771517
+  ParentId: 7408163174403349987
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -252,30 +250,37 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
   Control {
-    Width: 200
-    Height: 60
+    Width: -30
+    Height: -30
+    UIY: 2.30530047
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
-    Text {
-      Label: "!"
+    Image {
+      Brush {
+        Id: 3270496698279492551
+      }
       Color {
-        R: 0.37
-        G: 1.76429751e-07
+        R: 0.61
         A: 1
       }
-      Size: 40
-      Justification {
-        Value: "mc:etextjustify:center"
+      TeamSettings {
       }
-      AutoWrapText: true
-      Font {
+      ShadowColor {
+        A: 1
       }
+      ShadowOffset {
+      }
+      ScreenshotIndex: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -292,7 +297,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15333471902233479077
+  Id: 11670496254980919446
   Name: "WarningSFX"
   Transform {
     Location {
@@ -305,7 +310,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5799305881395839826
+  ParentId: 5150406667531726779
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -326,7 +331,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16848630376180922235
+  Id: 11515508741484472022
   Name: "GAMEHELPER_SpottingClient"
   Transform {
     Location {
@@ -339,24 +344,24 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5799305881395839826
+  ParentId: 5150406667531726779
   UnregisteredParameters {
     Overrides {
       Name: "cs:GAMEHELPER_SpottingServer"
       ObjectReference {
-        SelfId: 11521912232503756546
+        SelfId: 7500126607332189283
       }
     }
     Overrides {
       Name: "cs:WarningUI"
       ObjectReference {
-        SelfId: 6603255854833973152
+        SelfId: 12092671530989557411
       }
     }
     Overrides {
       Name: "cs:WarningSFX"
       ObjectReference {
-        SelfId: 15333471902233479077
+        SelfId: 11670496254980919446
       }
     }
   }
@@ -376,7 +381,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11521912232503756546
+  Id: 7500126607332189283
   Name: "GAMEHELPER_SpottingServer"
   Transform {
     Location {
@@ -389,7 +394,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12083237209831916644
+  ParentId: 10492699575603912486
   UnregisteredParameters {
     Overrides {
       Name: "cs:ViewRange"
@@ -398,7 +403,7 @@ Objects {
     Overrides {
       Name: "cs:GameStateManager"
       ObjectReference {
-        SelfId: 7667844030668164507
+        SelfId: 9140564283763297214
       }
     }
     Overrides {
