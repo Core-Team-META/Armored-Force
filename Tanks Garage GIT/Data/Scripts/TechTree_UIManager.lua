@@ -1902,10 +1902,10 @@ function OpenTankUpgradeWindow(button, id)
 
         UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_SHELL').isInteractable =
             SetUpgradeButtonInteractability(LOCAL_PLAYER:GetResource(Constants_API.SILVER),
-            math.min(entry.weaponResearchCost,LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP")),
+            math.min(entry.armorResearchCost,LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP")),
             LOCAL_PLAYER:GetResource(Constants_API.FREERP),
-            entry.weaponPurchaseCost,
-            entry.weaponResearchCost)
+            entry.armorPurchaseCost,
+            entry.armorResearchCost)
     else
         UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_CONTAINER_ARMOR').visibility = Visibility.FORCE_OFF
         UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_SHELL').isInteractable = false
@@ -1954,12 +1954,12 @@ function OpenTankUpgradeWindow(button, id)
         LOCAL_PLAYER:GetResource(Constants_API.FREERP), 
         entry.mobilityResearchCost)
 
-        UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_SHELL').isInteractable =
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_ENGINE').isInteractable =
             SetUpgradeButtonInteractability(LOCAL_PLAYER:GetResource(Constants_API.SILVER),
-            math.min(entry.weaponResearchCost,LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP")),
+            math.min(entry.mobilityResearchCost,LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP")),
             LOCAL_PLAYER:GetResource(Constants_API.FREERP),
-            entry.weaponPurchaseCost,
-            entry.weaponResearchCost)
+            entry.mobilityPurchaseCost,
+            entry.mobilityResearchCost)
     else
         UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_CONTAINER_ENGINE').visibility = Visibility.FORCE_OFF
         UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_ENGINE').isInteractable = false
