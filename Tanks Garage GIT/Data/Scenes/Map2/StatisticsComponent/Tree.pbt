@@ -102,7 +102,7 @@ Objects {
     Overrides {
       Name: "cs:Leaderboards"
       ObjectReference {
-        SelfId: 17736868490696546371
+        SelfId: 9661840194077567086
       }
     }
     Overrides {
@@ -120,7 +120,7 @@ Objects {
     Overrides {
       Name: "cs:Keys"
       ObjectReference {
-        SelfId: 8053548290070406507
+        SelfId: 9958685168337266294
       }
     }
   }
