@@ -1,7 +1,7 @@
 Name: "MainGameStateManager"
-RootId: 2314369749799739073
+RootId: 8537737971856675524
 Objects {
-  Id: 8530507120839861181
+  Id: 2420083041498476550
   Name: "GAMESTATE_MainGameStateManagerComponent"
   Transform {
     Location {
@@ -14,8 +14,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2314369749799739073
-  ChildIds: 7667844030668164507
+  ParentId: 8537737971856675524
+  ChildIds: 9140564283763297214
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -30,7 +30,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7667844030668164507
+  Id: 9140564283763297214
   Name: "GAMESTATE_MainGameStateManagerServer"
   Transform {
     Location {
@@ -45,7 +45,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8530507120839861181
+  ParentId: 2420083041498476550
   UnregisteredParameters {
     Overrides {
       Name: "cs:GameState"
@@ -70,7 +70,10 @@ Objects {
     Overrides {
       Name: "cs:TankSettings"
       ObjectReference {
-        SelfId: 16612645618231467048
+        SelfId: 122758932058148029
+        SubObjectId: 11592647923584693331
+        InstanceId: 11041270402756475716
+        TemplateId: 13342367558272271329
       }
     }
     Overrides {

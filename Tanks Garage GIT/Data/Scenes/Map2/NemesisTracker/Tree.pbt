@@ -1,7 +1,7 @@
 Name: "NemesisTracker"
-RootId: 7016372997895744585
+RootId: 16268592187369971613
 Objects {
-  Id: 13581646681909402617
+  Id: 7761514293750170455
   Name: "GAMEHELPER_NemesisTracker"
   Transform {
     Location {
@@ -14,9 +14,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7016372997895744585
-  ChildIds: 441975853685781570
-  ChildIds: 17302607230631917112
+  ParentId: 16268592187369971613
+  ChildIds: 6817478049349173956
+  ChildIds: 7420638768714300787
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -31,7 +31,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17302607230631917112
+  Id: 7420638768714300787
   Name: "ClientContext"
   Transform {
     Location {
@@ -44,9 +44,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13581646681909402617
-  ChildIds: 12008005995397612990
-  ChildIds: 12266558802409753881
+  ParentId: 7761514293750170455
+  ChildIds: 1965437361108693682
+  ChildIds: 17918774306153020494
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -60,7 +60,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12266558802409753881
+  Id: 17918774306153020494
   Name: "TickGroup"
   Transform {
     Location {
@@ -73,17 +73,17 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17302607230631917112
-  ChildIds: 1248463157895685878
-  ChildIds: 2886219084915595122
-  ChildIds: 5683531481776821236
-  ChildIds: 17558332345259428507
-  ChildIds: 4161920294140865995
-  ChildIds: 16377509707489454676
-  ChildIds: 7937984292515717444
-  ChildIds: 4772403010101705404
-  ChildIds: 9844514340982628079
-  ChildIds: 1521292735363526829
+  ParentId: 7420638768714300787
+  ChildIds: 4415428525328573835
+  ChildIds: 14336253320335992429
+  ChildIds: 10123355565873550905
+  ChildIds: 1447061065916644346
+  ChildIds: 17759201574346186866
+  ChildIds: 12577732618515267901
+  ChildIds: 4846542037272771820
+  ChildIds: 7051808607252984251
+  ChildIds: 16445178231578643137
+  ChildIds: 3069183320442023221
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -98,7 +98,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1521292735363526829
+  Id: 3069183320442023221
   Name: "SFX"
   Transform {
     Location {
@@ -114,7 +114,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12266558802409753881
+  ParentId: 17918774306153020494
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -135,7 +135,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9844514340982628079
+  Id: 16445178231578643137
   Name: "SFX"
   Transform {
     Location {
@@ -151,7 +151,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12266558802409753881
+  ParentId: 17918774306153020494
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -172,7 +172,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4772403010101705404
+  Id: 7051808607252984251
   Name: "SFX"
   Transform {
     Location {
@@ -188,7 +188,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12266558802409753881
+  ParentId: 17918774306153020494
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -209,7 +209,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7937984292515717444
+  Id: 4846542037272771820
   Name: "SFX"
   Transform {
     Location {
@@ -225,7 +225,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12266558802409753881
+  ParentId: 17918774306153020494
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -246,7 +246,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16377509707489454676
+  Id: 12577732618515267901
   Name: "SFX"
   Transform {
     Location {
@@ -262,7 +262,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12266558802409753881
+  ParentId: 17918774306153020494
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -283,7 +283,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4161920294140865995
+  Id: 17759201574346186866
   Name: "SFX"
   Transform {
     Location {
@@ -299,7 +299,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12266558802409753881
+  ParentId: 17918774306153020494
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -320,7 +320,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17558332345259428507
+  Id: 1447061065916644346
   Name: "SFX"
   Transform {
     Location {
@@ -336,7 +336,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12266558802409753881
+  ParentId: 17918774306153020494
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -357,7 +357,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5683531481776821236
+  Id: 10123355565873550905
   Name: "SFX"
   Transform {
     Location {
@@ -373,7 +373,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12266558802409753881
+  ParentId: 17918774306153020494
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -394,7 +394,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2886219084915595122
+  Id: 14336253320335992429
   Name: "SFX"
   Transform {
     Location {
@@ -410,7 +410,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12266558802409753881
+  ParentId: 17918774306153020494
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -431,7 +431,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1248463157895685878
+  Id: 4415428525328573835
   Name: "SFX"
   Transform {
     Location {
@@ -447,7 +447,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12266558802409753881
+  ParentId: 17918774306153020494
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -468,7 +468,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12008005995397612990
+  Id: 1965437361108693682
   Name: "NemesisTrackerClient"
   Transform {
     Location {
@@ -481,7 +481,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17302607230631917112
+  ParentId: 7420638768714300787
   UnregisteredParameters {
     Overrides {
       Name: "cs:EaseUI"
@@ -492,13 +492,13 @@ Objects {
     Overrides {
       Name: "cs:GAMESTATE_MainGameStateManagerServer"
       ObjectReference {
-        SelfId: 7667844030668164507
+        SelfId: 9140564283763297214
       }
     }
     Overrides {
       Name: "cs:NemesisTrackerServer"
       ObjectReference {
-        SelfId: 441975853685781570
+        SelfId: 6817478049349173956
       }
     }
     Overrides {
@@ -528,7 +528,7 @@ Objects {
     Overrides {
       Name: "cs:VictoryScreenContainer"
       ObjectReference {
-        SelfId: 5095503977412889897
+        SelfId: 4905075006825196786
       }
     }
     Overrides {
@@ -540,7 +540,7 @@ Objects {
     Overrides {
       Name: "cs:TickGroup"
       ObjectReference {
-        SelfId: 12266558802409753881
+        SelfId: 17918774306153020494
       }
     }
     Overrides {
@@ -566,7 +566,7 @@ Objects {
   }
 }
 Objects {
-  Id: 441975853685781570
+  Id: 6817478049349173956
   Name: "NemesisTrackerServer"
   Transform {
     Location {
@@ -579,7 +579,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13581646681909402617
+  ParentId: 7761514293750170455
   UnregisteredParameters {
     Overrides {
       Name: "cs:ListSet"

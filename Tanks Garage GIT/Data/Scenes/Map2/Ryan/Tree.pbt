@@ -1,7 +1,39 @@
 Name: "Ryan"
-RootId: 4611825395311827570
+RootId: 16771954491425659759
 Objects {
-  Id: 4575941049771042044
+  Id: 7584022908520992956
+  Name: "Tutorial"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16771954491425659759
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Tutorial"
+  }
+}
+Objects {
+  Id: 5780229923019927566
   Name: "Feedback When Hit"
   Transform {
     Location {
@@ -14,7 +46,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4611825395311827570
+  ParentId: 16771954491425659759
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -33,7 +65,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14059071617041219018
+  Id: 8384477044904237185
   Name: "META Activity Feed Enhanced"
   Transform {
     Scale {
@@ -42,9 +74,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4611825395311827570
-  ChildIds: 5371637111187624056
-  ChildIds: 8701944583734750950
+  ParentId: 16771954491425659759
+  ChildIds: 12208937286988093956
+  ChildIds: 16495639427530238733
   UnregisteredParameters {
     Overrides {
       Name: "cs:ReliableEvents"
@@ -67,7 +99,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8701944583734750950
+  Id: 16495639427530238733
   Name: "ClientContext"
   Transform {
     Location {
@@ -80,8 +112,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14059071617041219018
-  ChildIds: 5253974371015968707
+  ParentId: 8384477044904237185
+  ChildIds: 5544100458205990509
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -97,7 +129,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5253974371015968707
+  Id: 5544100458205990509
   Name: "meta_cc_ActivityFeedControllerClient"
   Transform {
     Location {
@@ -110,14 +142,14 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8701944583734750950
-  ChildIds: 13224934533869373120
-  ChildIds: 16969565166760095888
+  ParentId: 16495639427530238733
+  ChildIds: 7801514693818953677
+  ChildIds: 10822680719193064601
   UnregisteredParameters {
     Overrides {
       Name: "cs:ActivityFeedPanel"
       ObjectReference {
-        SelfId: 10074674926444425486
+        SelfId: 4901368868549955373
       }
     }
     Overrides {
@@ -153,13 +185,13 @@ Objects {
     Overrides {
       Name: "cs:KillFeedSettings"
       ObjectReference {
-        SelfId: 16969565166760095888
+        SelfId: 10822680719193064601
       }
     }
     Overrides {
       Name: "cs:FeedIcons"
       ObjectReference {
-        SelfId: 13224934533869373120
+        SelfId: 7801514693818953677
       }
     }
   }
@@ -179,7 +211,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16969565166760095888
+  Id: 10822680719193064601
   Name: "Kill Feed Settings"
   Transform {
     Location {
@@ -192,8 +224,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5253974371015968707
-  ChildIds: 14176298260267393221
+  ParentId: 5544100458205990509
+  ChildIds: 9645309740164263490
   UnregisteredParameters {
     Overrides {
       Name: "cs:NumLines"
@@ -346,7 +378,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14176298260267393221
+  Id: 9645309740164263490
   Name: "Activity Feed Container"
   Transform {
     Location {
@@ -359,8 +391,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16969565166760095888
-  ChildIds: 10074674926444425486
+  ParentId: 10822680719193064601
+  ChildIds: 4901368868549955373
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -404,7 +436,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10074674926444425486
+  Id: 4901368868549955373
   Name: "META Activity Feed Panel"
   Transform {
     Location {
@@ -417,7 +449,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14176298260267393221
+  ParentId: 9645309740164263490
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -457,7 +489,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13224934533869373120
+  Id: 7801514693818953677
   Name: "Feed Icons"
   Transform {
     Location {
@@ -470,7 +502,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5253974371015968707
+  ParentId: 5544100458205990509
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -486,7 +518,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5371637111187624056
+  Id: 12208937286988093956
   Name: "meta_cc_KillFeedControllerServer"
   Transform {
     Location {
@@ -499,12 +531,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14059071617041219018
+  ParentId: 8384477044904237185
   UnregisteredParameters {
     Overrides {
       Name: "cs:ComponentRoot"
       ObjectReference {
-        SelfId: 14059071617041219018
+        SelfId: 8384477044904237185
       }
     }
     Overrides {
@@ -528,7 +560,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16980735075922487032
+  Id: 8653683202339330450
   Name: "Storage Manager"
   Transform {
     Location {
@@ -541,7 +573,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4611825395311827570
+  ParentId: 16771954491425659759
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -554,42 +586,5 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "DataCompression"
-  }
-}
-Objects {
-  Id: 3080105892880991379
-  Name: "TechTree_Contents"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4611825395311827570
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:TechTree_Contents"
-      ObjectReference {
-        SelfId: 3080105892880991379
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "TechTree_Contents"
   }
 }
