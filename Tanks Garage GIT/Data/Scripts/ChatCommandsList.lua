@@ -445,7 +445,24 @@ commands = {
         adminRank = AdminData.AdminRanks.Admin
     },
 
-
+    ["/setrank"] = {
+        OnCommandCalledClient = function(player,message)
+        end,
+        OnCommandCalledServer = function(player,message)
+            --set rank here lol
+            local messageParts = {CoreString.Split(message," ")}
+            if tonumber(messageParts[2]) then
+                player:SetResource("LEVEL",tonumber(messageParts[2]))
+                player:SetResource("XP",0)
+            end
+        end,
+        OnCommandReceivedClient = function(player,message)
+        end,
+        description = "sets player's profile rank",
+        requireMessage = false,
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
+    },
 --[[     ["/ragdoll"] = {
         OnCommandCalledClient = function (player, message)
             Chat.LocalMessage(messagePrefix.." toggle player ragdoll")
