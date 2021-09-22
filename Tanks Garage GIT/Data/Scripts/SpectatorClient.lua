@@ -288,7 +288,7 @@ function LeaveEarly(button)
 		CloseLeaveEarly()
 		Events.BroadcastToServer("LEAVE_EARLY", 1)
 	elseif button == Leave then
-		Events.BroadcastToServer("LEAVE_EARLY", 1)
+		Events.BroadcastToServer("LEAVE_EARLY", 2)
 	end
 end
 

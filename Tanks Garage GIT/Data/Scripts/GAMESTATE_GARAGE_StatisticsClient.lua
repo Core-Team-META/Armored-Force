@@ -226,9 +226,9 @@ function ShowStatisticsAnimation()
 	
 	local modifier = 1
 	
-	if localPlayer.clientUserData.roundStats["DailyWin"] == "^true^" then
+	if localPlayer.clientUserData.roundStats["BONUS"] == "^true^" then
 		DOUBLE_REWARD.visibility = Visibility.FORCE_ON
-		modifier = modifier * 2
+		modifier = modifier + 1
 	else
 		DOUBLE_REWARD.visibility = Visibility.FORCE_OFF
 	end

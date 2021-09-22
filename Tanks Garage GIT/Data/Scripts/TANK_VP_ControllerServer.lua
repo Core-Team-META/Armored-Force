@@ -557,6 +557,12 @@ function FireProjectile(player)
 end
 
 function ProjectileImpacted(expiredProjectile, other)
+
+	if other.type == "TreadedVehicle" or other.type == "Vehicle" then
+		if other.owner == driver then
+			return
+		end
+	end
     
     expiredProjectile.speed = 0
     ProjectileExpired(expiredProjectile)
