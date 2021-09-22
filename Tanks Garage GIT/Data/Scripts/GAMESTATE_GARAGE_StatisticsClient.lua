@@ -1,5 +1,7 @@
 local statisticsComponent = script:GetCustomProperty("GAMESTATE_StatisticsComponent"):WaitForObject()
 
+local UTIL_API = script:GetCustomProperty("MetaAbilityProgressionUTIL_API")
+
 local victoryAndEarningsUI = script:GetCustomProperty("VictoryAndEarningsUI"):WaitForObject()
 local premiumBonusPanel = script:GetCustomProperty("PREMIUM_BONUS_PANEL"):WaitForObject()
 
@@ -212,36 +214,31 @@ end
 
 function ShowStatisticsAnimation()
 	--if winner == localTeam then
-	--[[
-	local baseCurrency
+
 	if localPlayer.clientUserData.roundStats["Winner"] == "^true^" then
-		baseCurrency = victoryCurrencyValue
 		winLossText.text = "YOUR TEAM WON"
 		baseText.text = "Victory Earnings: "
 	else
-		baseCurrency = lossCurrencyValue
 		winLossText.text = "YOUR TEAM LOST"
 		baseText.text = "Loss Earnings: "
 	end
-	]]
+
 	
 	local modifier = 1
 	
 	if localPlayer.clientUserData.roundStats["DailyWin"] == "^true^" then
 		DOUBLE_REWARD.visibility = Visibility.FORCE_ON
-		modifier = modifier + 1
+		modifier = modifier * 2
 	else
 		DOUBLE_REWARD.visibility = Visibility.FORCE_OFF
 	end
-
-	local damageBonus = localPlayer.clientUserData.roundStats["DamageTracker"]
-	local spottingBonus = localPlayer.clientUserData.roundStats["SpottingTracker"]
-
 	--
-	--[[if (UTIL_API.UsingPremiumTank(tonumber(localPlayer.clientUserData.currentTankData.id))) then
-		modifier = 2
+	if localPlayer.clientUserData.roundStats["UsedPremium"] > 0 then
+		--modifier = modifier * 2
 		premiumBonusPanel.visibility = Visibility.FORCE_ON
-	end]] 
+	else
+		premiumBonusPanel.visibility = Visibility.FORCE_OFF
+	end
 	
 	RollUpNumberText(
 		baseXPAmountText,
@@ -255,9 +252,9 @@ function ShowStatisticsAnimation()
 	
 	RollUpNumberText(
 		killXPAmountText,
-		localPlayer.clientUserData.roundStats["DamageTracker"],
+		localPlayer.clientUserData.roundStats["KillTracker"],
 		killCurrencyAmountText,
-		localPlayer.clientUserData.roundStats["DamageTracker"],
+		localPlayer.clientUserData.roundStats["SilverKillTracker"],
 		modifier
 	)
 
@@ -269,9 +266,21 @@ function ShowStatisticsAnimation()
 		modifier
 	)
 
-	RollUpNumberText(damageXPAmountText, damageBonus, damageCurrencyAmountText, damageBonus, modifier)
+	RollUpNumberText(
+		damageXPAmountText, 
+		localPlayer.clientUserData.roundStats["DamageTracker"], 
+		damageCurrencyAmountText, 
+		localPlayer.clientUserData.roundStats["SilverDamageTracker"], 
+		modifier
+	)
 
-	RollUpNumberText(spottingXPAmountText, spottingBonus, spottingCurrencyAmountText, spottingBonus, modifier)
+	RollUpNumberText(
+		spottingXPAmountText, 
+		localPlayer.clientUserData.roundStats["SpottingTracker"], 
+		spottingCurrencyAmountText, 
+		localPlayer.clientUserData.roundStats["SpottingTracker"], 
+		modifier
+	)
 
 	RollUpNumberText(
 		totalXPAmountText,
