@@ -30,6 +30,7 @@ function SetWinning(player)
     local tankId = player:GetResource(TankAPI.EquipResource)
     if playerDailyTbl[player.id] and player:GetResource('DAILY_BONUS') == 1 then
         playerDailyTbl[player.id][tankId] = 1
+        _G["BONUS"] = true
     end
 end
 
