@@ -186,9 +186,14 @@ end
 
 function RollUpNumberText(textXP, targetXP, textCurrency, targetCurrency, modifier)
 	local start = 0
+	local adder = 10
 
 	targetXP = targetXP * modifier
 	targetCurrency = targetCurrency * modifier
+	
+	if (targetXP > 1000) or (targetCurrency > 1000) then
+		adder = 100
+	end
 
 	while start <= targetXP or start <= targetCurrency do
 		if start <= targetXP then
@@ -199,7 +204,7 @@ function RollUpNumberText(textXP, targetXP, textCurrency, targetCurrency, modifi
 			textCurrency.text = tostring(start)
 		end
 
-		start = start + 10
+		start = start + adder
 
 		Task.Wait()
 	end
@@ -242,7 +247,7 @@ function ShowStatisticsAnimation()
 	
 	RollUpNumberText(
 		baseXPAmountText,
-		localPlayer.clientUserData.roundStats["BaseXP"],
+		localPlayer.clientUserData.roundStats["BaseTP"],
 		baseCurrencyAmountText,
 		localPlayer.clientUserData.roundStats["BaseSilver"],
 		modifier
@@ -284,7 +289,7 @@ function ShowStatisticsAnimation()
 
 	RollUpNumberText(
 		totalXPAmountText,
-		localPlayer.clientUserData.roundStats["XP"],
+		localPlayer.clientUserData.roundStats["TP"],
 		totalCurrencyAmountText,
 		localPlayer.clientUserData.roundStats["Silver"],
 		modifier
