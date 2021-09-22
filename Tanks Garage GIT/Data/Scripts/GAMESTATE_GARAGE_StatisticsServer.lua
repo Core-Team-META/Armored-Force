@@ -35,8 +35,8 @@ local survivalXPValue = victoryComponent:GetCustomProperty("SurvivalXPValue")
 local survivalCurrencyValue = victoryComponent:GetCustomProperty("SurvivalCurrencyValue")
 
 local PLAYER_JOINED_XP_AMOUNT = 50
-local VICTORY_XP_PER_PLAYER_AMOUNT = 150
-local VICTORY_TP_PER_PLAYER_AMOUNT = 300
+local VICTORY_XP_PER_PLAYER_AMOUNT = 75 --150
+local VICTORY_TP_PER_PLAYER_AMOUNT = 150 --300
 local KILL_XP_AMOUNT = 100
 
 local SURVIVAL_SILVER_BONUS = 150
@@ -211,6 +211,7 @@ function SubmitScores(player)
 end
 
 function SaveStatistics()
+	_G["BONUS"] = {}
 	for x, p in pairs(Game.GetPlayers()) do
 		local tempTbl = {}
 		local survivalBonus = 0		
@@ -267,17 +268,21 @@ function SaveStatistics()
 		
 		local modifier = 1
 		local usedPremium = 0
+		local dailyBonus = 0
 		
 		Task.Wait()
 		
-		if _G["BONUS"] then
+		if _G["BONUS"][p.id] then
+			print("Daily bonus applied")
 			modifier = modifier + 1
+			dailyBonus = 1
 			p:AddResource(tankRPString, totalTP)
 			p:AddResource(CONSTANTS_API.XP, totalTP)
 			p:AddResource(CONSTANTS_API.SILVER, totalCurrency)
 		end
 		
 		if (UTIL_API.UsingPremiumTank(p:GetResource(TankAPI.EquipResource))) then
+			print("Premium bonus applied")
 			modifier = modifier + 1
 			usedPremium = 1
 			p:AddResource(tankRPString, totalTP)
@@ -289,8 +294,6 @@ function SaveStatistics()
 			CalculateNewLevelAndRank(p)
 		end
 		
-		
-		tempTbl["DailyBonus"] = _G["BONUS"] 
 		tempTbl["TP"] = totalTP * modifier
 		tempTbl["BaseTP"] = baseTP * modifier
 		tempTbl["Silver"] = totalCurrency * modifier
@@ -302,6 +305,7 @@ function SaveStatistics()
 		tempTbl["KillTracker"] = p:GetResource("KillTracker") * modifier
 		tempTbl["SilverKillTracker"] = p:GetResource("SilverKillTracker") * modifier
 		tempTbl["UsedPremium"] = usedPremium
+		tempTbl["DailyBonus"] = dailyBonus 
 
 		-- DEBUG
 		print("EARNINGS FOR: " .. p.name)
@@ -453,7 +457,7 @@ function OnSpotRecord(player, spottingAmount)
 	local rewardedAmount = spottingAmount
 	if currentEarnings < SPOTTING_REWARDS_CAP then
 		if currentEarnings + spottingAmount > SPOTTING_REWARDS_CAP then
-			rewardedAmount = currentEarnings + spottingAmount - SPOTTING_REWARDS_CAP
+			rewardedAmount = SPOTTING_REWARDS_CAP - currentEarnings
 		end
 		
 		player:AddResource("SpottingTracker", rewardedAmount)
