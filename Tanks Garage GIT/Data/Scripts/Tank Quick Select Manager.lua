@@ -142,8 +142,10 @@ function PopulateQuickSelectPanel()
         entry:FindDescendantByName("TANKTIER").text = tostring(tankData.tier) .. " " .. tankData.type
 
         local tankId = tank.data.id
+        
+        --print(tostring(tankId) .. " ; " .. tostring(dailyTbl[tonumber(tankId)]))
 
-        if dailyTbl[tonumber(tankId)] == 1 or not tank.data.purchased then
+        if dailyTbl[tonumber(tankId)]  == 1 or not tank.data.purchased then
             entry:FindDescendantByName("2X_XP").visibility = Visibility.FORCE_OFF
         end
 

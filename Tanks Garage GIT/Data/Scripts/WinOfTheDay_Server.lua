@@ -16,7 +16,21 @@ local function BuildTankTable()
 end
 
 local function SetDailyBonusStatus(player)
+	while player:GetResource(TankAPI.EquipResource) == 0 do
+		Task.Wait()
+	end
+	
     local currentId = player:GetResource(TankAPI.EquipResource)
+    
+    if playerDailyTbl[player.id][currentId] == 0 then
+    	player:SetResource('DAILY_BONUS', 1)
+    	print("Daily Bonus is enabled")
+    else 
+    	player:SetResource('DAILY_BONUS', 0)
+    	print("Daily Bonus is not enabled")
+    end
+    
+    --[[
     for tankId, value in pairs(playerDailyTbl[player.id]) do
         if tankId == currentId and tonumber(value) == 0 then
             player:SetResource('DAILY_BONUS', 1)
@@ -24,12 +38,15 @@ local function SetDailyBonusStatus(player)
             player:SetResource('DAILY_BONUS', 0)
         end
     end
+    ]]
 end
 
 function SetWinning(player)
     local tankId = player:GetResource(TankAPI.EquipResource)
     if playerDailyTbl[player.id] and player:GetResource('DAILY_BONUS') == 1 then
         playerDailyTbl[player.id][tankId] = 1
+        _G["BONUS"][player.id] = 1
+        print("Daily bonus is given")
     end
 end
 
@@ -55,12 +72,16 @@ function OnPlayerJoined(player)
     end
 
     playerDailyTbl[player.id] = dailyTbl
+    
+    for x, y in pairs(playerDailyTbl[player.id]) do
+    	print(tostring(x) .. " : " .. tostring(y))
+    end
 
     if Game.GetCurrentSceneName() == 'Main' then
         player:SetPrivateNetworkedData('WinOfTheDay', dailyTbl)
+    else 
+    	SetDailyBonusStatus(player)	
     end
-
-    SetDailyBonusStatus(player)
 end
 
 function OnPlayerLeft(player)

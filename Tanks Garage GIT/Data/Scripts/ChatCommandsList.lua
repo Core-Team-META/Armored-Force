@@ -122,7 +122,7 @@ commands = {
         	
         		if number then
         		
-        			if number > 0 and number < 33 then
+        			if number > 0 and number <= 33 then
         		
         				resourceFound = section
         				
@@ -152,7 +152,7 @@ commands = {
         	
         		if number then
         		
-        			if number > 0 and number < 33 then
+        			if number > 0 and number <= 33 then
         		
         				resourceFound = section
         				
