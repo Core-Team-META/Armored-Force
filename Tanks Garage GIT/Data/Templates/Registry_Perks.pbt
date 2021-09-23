@@ -565,7 +565,7 @@ Assets {
           Overrides {
             Name: "cs:perk"
             NetReference {
-              Key: "e49b7def31814879803638045f8d26c1"
+              Key: "9c5462ee0df14ad8ba25b106eb387ee1"
               Type {
                 Value: "mc:enetreferencetype:creatorperk"
               }
@@ -617,7 +617,7 @@ Assets {
           Overrides {
             Name: "cs:perk"
             NetReference {
-              Key: "cf1e3a49723d4e0696e6c16ee2b71a5b"
+              Key: "6a6375b3954c4729bac6ba0478a282b3"
               Type {
                 Value: "mc:enetreferencetype:creatorperk"
               }
@@ -669,7 +669,7 @@ Assets {
           Overrides {
             Name: "cs:perk"
             NetReference {
-              Key: "98fd877f41d44d43b9853d198d25950e"
+              Key: "d32b7b4a670a4b8a9bc533639a0b3485"
               Type {
                 Value: "mc:enetreferencetype:creatorperk"
               }

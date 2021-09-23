@@ -25,12 +25,38 @@ Assets {
   }
 }
 Assets {
+  Id: 17438422695141418520
+  Name: "BrigadierPack_1"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "6a6375b3954c4729bac6ba0478a282b3"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 16960243289677782473
   Name: "GoldPack1"
   PlatformAssetType: 24
   NetReferenceAsset {
     NetReference {
       Key: "0d9f90dc57da4bf5a33c34ace35da2a0"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
+  Id: 16405819613734804126
+  Name: "CommandePack_1"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "d32b7b4a670a4b8a9bc533639a0b3485"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
       }
@@ -205,6 +231,19 @@ Assets {
   NetReferenceAsset {
     NetReference {
       Key: "cf1e3a49723d4e0696e6c16ee2b71a5b"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
+  Id: 7738953612239977105
+  Name: "CorporalPack_1"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "9c5462ee0df14ad8ba25b106eb387ee1"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
       }
