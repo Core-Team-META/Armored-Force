@@ -88916,7 +88916,7 @@ Objects {
   Control {
     Width: 200
     Height: 40
-    UIX: 76.0755615
+    UIX: 73.039772
     UIY: 297.545044
     RenderTransformPivot {
       Anchor {
@@ -91943,7 +91943,7 @@ Objects {
   Control {
     Width: 200
     Height: 40
-    UIX: 76.3757172
+    UIX: 73.8066177
     UIY: 297.545074
     RenderTransformPivot {
       Anchor {
@@ -92024,7 +92024,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 200
+    Width: 250
     Height: 20
     UIY: 300
     RenderTransformPivot {
@@ -92101,7 +92101,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 200
+    Width: 250
     Height: 40
     UIY: 300
     RenderTransformPivot {
