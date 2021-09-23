@@ -2748,7 +2748,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Required"
-            Float: 50
+            Float: 100
           }
           Overrides {
             Name: "cs:ID"
