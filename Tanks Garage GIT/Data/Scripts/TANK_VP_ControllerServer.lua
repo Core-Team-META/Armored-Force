@@ -557,12 +557,16 @@ function FireProjectile(player)
 end
 
 function ProjectileImpacted(expiredProjectile, other)
+
+	if other.type == "TreadedVehicle" or other.type == "Vehicle" then
+		if other == driver.serverUserData.currentTankData.chassis then
+			return
+		end
+	end
     
     expiredProjectile.speed = 0
     ProjectileExpired(expiredProjectile)
     expiredProjectile.lifeSpan = 0.5
-    
-    return
 
 	--[[
 	if not other:IsA("Vehicle") or expiredProjectile.serverUserData.hitOnce or (other.driver == driver) or (other.serverUserData.owner == driver) then
