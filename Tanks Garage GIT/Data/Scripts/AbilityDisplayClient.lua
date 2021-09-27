@@ -106,11 +106,17 @@ function Tick(deltaTime)
 
         if HIDE_WHEN_DISABLED then
             if currentAbility.isEnabled then
-                CANVAS.visibility = Visibility.INHERIT
-                NAME_TEXT.visibility = Visibility.INHERIT
+                --CANVAS.visibility = Visibility.INHERIT
+                --NAME_TEXT.visibility = Visibility.INHERIT
+
+                CANVAS.opacity = 1
+                --NAME_TEXT.opacity = 1
             else
-                CANVAS.visibility = Visibility.FORCE_OFF
-                NAME_TEXT.visibility = Visibility.FORCE_OFF
+                --CANVAS.visibility = Visibility.FORCE_OFF
+                --NAME_TEXT.visibility = Visibility.FORCE_OFF
+
+                CANVAS.opacity = 0.3
+                --NAME_TEXT.opacity = 0.3
             end
             
         --[[

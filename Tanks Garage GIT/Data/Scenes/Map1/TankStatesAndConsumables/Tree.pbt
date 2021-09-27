@@ -534,7 +534,7 @@ Objects {
     }
     Overrides {
       Name: "cs:HideWhenDisabled"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:Binding:tooltip"
@@ -627,7 +627,7 @@ Objects {
     Overrides {
       Name: "cs:Canvas"
       ObjectReference {
-        SelfId: 10000809741009542016
+        SelfId: 10217641560080406207
       }
     }
     Overrides {
@@ -731,7 +731,7 @@ Objects {
     }
     Overrides {
       Name: "cs:HideWhenDisabled"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:Binding:tooltip"
@@ -824,7 +824,7 @@ Objects {
     Overrides {
       Name: "cs:Canvas"
       ObjectReference {
-        SelfId: 14250084785335954801
+        SelfId: 12672928085248538742
       }
     }
     Overrides {
@@ -923,7 +923,7 @@ Objects {
     }
     Overrides {
       Name: "cs:HideWhenDisabled"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:Binding:tooltip"
@@ -1016,7 +1016,7 @@ Objects {
     Overrides {
       Name: "cs:Canvas"
       ObjectReference {
-        SelfId: 11142260077127411760
+        SelfId: 7397670708642131394
       }
     }
     Overrides {
