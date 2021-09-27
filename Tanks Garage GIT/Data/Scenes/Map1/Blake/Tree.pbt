@@ -356,10 +356,6 @@ Objects {
   Id: 381718502894216097
   Name: "Registry_Tanks"
   Transform {
-    Location {
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
