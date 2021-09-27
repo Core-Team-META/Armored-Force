@@ -7602,7 +7602,7 @@ Objects {
     }
     Overrides {
       Name: "cs:tier"
-      Int: 4
+      Int: 3
     }
     Overrides {
       Name: "cs:type"
@@ -10215,10 +10215,6 @@ Objects {
       String: "SPEED"
     }
     Overrides {
-      Name: "cs:stat1AddedValue"
-      Int: 40
-    }
-    Overrides {
       Name: "cs:upgradeName"
       String: "Rebuilt Engine"
     }
@@ -10239,12 +10235,16 @@ Objects {
       String: "TURNING"
     }
     Overrides {
-      Name: "cs:stat2AddedValue"
-      Int: 50
+      Name: "cs:stat1Value"
+      Float: 40
     }
     Overrides {
-      Name: "cs:stat3AddedValue"
-      Int: 10
+      Name: "cs:stat2Value"
+      Float: 50
+    }
+    Overrides {
+      Name: "cs:stat3Value"
+      Float: 10
     }
   }
   Collidable_v2 {
@@ -10298,10 +10298,6 @@ Objects {
       String: "HITPOINTS"
     }
     Overrides {
-      Name: "cs:stat1AddedValue"
-      Int: 50
-    }
-    Overrides {
       Name: "cs:upgradeName"
       String: "Addon Armor Plates"
     }
@@ -10312,6 +10308,10 @@ Objects {
     Overrides {
       Name: "cs:prerequisite"
       String: ""
+    }
+    Overrides {
+      Name: "cs:stat1Value"
+      Float: 50
     }
   }
   Collidable_v2 {
@@ -10362,11 +10362,7 @@ Objects {
     }
     Overrides {
       Name: "cs:stat1Name"
-      String: "TURRET"
-    }
-    Overrides {
-      Name: "cs:stat1AddedValue"
-      Int: 10
+      String: "AIM"
     }
     Overrides {
       Name: "cs:upgradeName"
@@ -10379,6 +10375,10 @@ Objects {
     Overrides {
       Name: "cs:prerequisite"
       String: "TURRET1"
+    }
+    Overrides {
+      Name: "cs:stat1Value"
+      Float: 10
     }
   }
   Collidable_v2 {
@@ -10432,16 +10432,16 @@ Objects {
       String: "DAMAGE"
     }
     Overrides {
-      Name: "cs:stat1AddedValue"
-      Int: 10
-    }
-    Overrides {
       Name: "cs:upgradeName"
       String: "Explosive Filler Shells"
     }
     Overrides {
       Name: "cs:upgradeID"
       String: "TURRET1"
+    }
+    Overrides {
+      Name: "cs:stat1Value"
+      Float: 10
     }
   }
   Collidable_v2 {

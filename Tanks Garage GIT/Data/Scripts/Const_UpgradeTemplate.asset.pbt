@@ -41,32 +41,32 @@ Assets {
         String: ""
       }
       Overrides {
-        Name: "cs:stat1AddedValue"
-        Int: 0
+        Name: "cs:stat1Value"
+        Float: 0
       }
       Overrides {
         Name: "cs:stat2Name"
         String: ""
       }
       Overrides {
-        Name: "cs:stat2AddedValue"
-        Int: 0
+        Name: "cs:stat2Value"
+        Float: 0
       }
       Overrides {
         Name: "cs:stat3Name"
         String: ""
       }
       Overrides {
-        Name: "cs:stat3AddedValue"
-        Int: 0
+        Name: "cs:stat3Value"
+        Float: 0
       }
       Overrides {
         Name: "cs:stat4Name"
         String: ""
       }
       Overrides {
-        Name: "cs:stat4AddedValue"
-        Int: 0
+        Name: "cs:stat4Value"
+        Float: 0
       }
       Overrides {
         Name: "cs:researchCurrencyName:category"
@@ -97,15 +97,7 @@ Assets {
         String: "UpgradedStats"
       }
       Overrides {
-        Name: "cs:stat1AddedValue:category"
-        String: "UpgradedStats"
-      }
-      Overrides {
         Name: "cs:stat2Name:category"
-        String: "UpgradedStats"
-      }
-      Overrides {
-        Name: "cs:stat2AddedValue:category"
         String: "UpgradedStats"
       }
       Overrides {
@@ -113,15 +105,7 @@ Assets {
         String: "UpgradedStats"
       }
       Overrides {
-        Name: "cs:stat3AddedValue:category"
-        String: "UpgradedStats"
-      }
-      Overrides {
         Name: "cs:stat4Name:category"
-        String: "UpgradedStats"
-      }
-      Overrides {
-        Name: "cs:stat4AddedValue:category"
         String: "UpgradedStats"
       }
       Overrides {
@@ -131,6 +115,22 @@ Assets {
       Overrides {
         Name: "cs:prerequisite:category"
         String: "PurchaseInfo"
+      }
+      Overrides {
+        Name: "cs:stat1Value:category"
+        String: "UpgradedStats"
+      }
+      Overrides {
+        Name: "cs:stat2Value:category"
+        String: "UpgradedStats"
+      }
+      Overrides {
+        Name: "cs:stat3Value:category"
+        String: "UpgradedStats"
+      }
+      Overrides {
+        Name: "cs:stat4Value:category"
+        String: "UpgradedStats"
       }
     }
   }

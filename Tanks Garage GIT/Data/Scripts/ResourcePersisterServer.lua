@@ -313,6 +313,18 @@ function SetNewPlayerProgression(playerSharedStorage)
     playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = tankString
 end
 
+function CheckAndConvertToNewupgradeSystem(dataString)
+	
+	
+
+end
+
+function NewSetTankProgressionDataForServer(dataString, player)
+
+	
+
+end
+
 function SetTankProgressionDataForServer(dataString, player)
     --print("Saving tank data on server. Data string: " .. dataString)
     local tankProgressionTable = UTIL_API.TechTreeConvertToTable(dataString)

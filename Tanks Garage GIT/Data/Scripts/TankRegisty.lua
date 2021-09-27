@@ -8,6 +8,9 @@ for _, tank in pairs(Folder:GetChildren()) do
     local id = tonumber(idString)
     local upgradeId = nil
 
+    --print("==============================================")
+    --print("TANK: " .. idString)
+    
     Data[id] = {}
 
     for key, value in pairs(tank:GetCustomProperties()) do
@@ -20,8 +23,12 @@ for _, tank in pairs(Folder:GetChildren()) do
     	upgradeId = upgrade:GetCustomProperty("upgradeID")
     	Data[id]["upgrades"][upgradeId] = {}
     	
+    	--print("-------------------------------------")
+    	--print(upgradeId)
+    	
     	for key, value in pairs(upgrade:GetCustomProperties()) do
     		Data[id]["upgrades"][upgradeId][key] = value
+    		--print(key .. " : " .. tostring(value))
     	end
     end
     
