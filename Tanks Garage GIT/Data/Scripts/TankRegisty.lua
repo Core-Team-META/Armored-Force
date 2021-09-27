@@ -6,12 +6,25 @@ local Data = {}
 for _, tank in pairs(Folder:GetChildren()) do
     local idString = (tank:GetCustomProperty('id'))
     local id = tonumber(idString)
+    local upgradeId = nil
 
     Data[id] = {}
 
     for key, value in pairs(tank:GetCustomProperties()) do
         Data[id][key] = value
     end
+    
+    Data[id]["upgrades"] = {}
+    
+    for _, upgrade in pairs(tank:GetChildren()) do
+    	upgradeId = upgrade:GetCustomProperty("upgradeID")
+    	Data[id]["upgrades"][upgradeId] = {}
+    	
+    	for key, value in pairs(upgrade:GetCustomProperties()) do
+    		Data[id]["upgrades"][upgradeId][key] = value
+    	end
+    end
+    
     Data[id]["skins"] = {}
 end
 
