@@ -219,9 +219,9 @@ function OnResourceChanged(player, resource, amount)
 	elseif resource == CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER then
 		if amount > 0 then
 			consumableSlots.extinguisher.check.visibility = Visibility.INHERIT
-		else 
+		else
 			consumableSlots.extinguisher.check.visibility = Visibility.FORCE_OFF
-		end	
+		end
 	elseif resource == CONSTANTS_API.CONSUMABLES.AUTO_REPAIR then
 		if amount > 0 then
 			consumableSlots.repairKit.check.visibility = Visibility.INHERIT
