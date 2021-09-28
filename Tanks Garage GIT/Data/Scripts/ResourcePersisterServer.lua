@@ -16,6 +16,10 @@ local DATA_TRANSFER_OBJECT = script:GetCustomProperty('DataTransferObject')
 
 -- LOCAL PROPERTIES
 local DELIMITER = '|'
+local DELIMITER_2 = '/'
+local DELIMITER_3 = '-'
+
+local UPGRADE_TYPES = {"TURRET", "HULL", "ENGINE"}
 
 local defualtValues = {
     [CONSTANTS_API.SILVER] = 0,
@@ -107,7 +111,6 @@ function OnResourceChanged(player, resource, value)
 end
 
 function OnPlayerJoined(player)
---print('Player Joined ' .. player.name)
 
     local playerData = Storage.GetPlayerData(player)
     --UTIL_API.TablePrint(playerData)
@@ -136,9 +139,6 @@ function OnPlayerJoined(player)
     --print("-----PRINTING SHARED STORAGE-----")
     --UTIL_API.TablePrint(Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player))
     --print("-----FINISHED PRINTING SHARED STORAGE-----")
-    --print("-----PRINTING LOCAL STORAGE-----")
-    --UTIL_API.TablePrint(Storage.GetPlayerData(player))
-    --print("-----FINISHED PRINTING LOCAL STORAGE-----")
 end
 
 function OnPlayerLeft(player)
@@ -156,16 +156,20 @@ function CheckAndSetSharedStorageDefault(player)
     local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 
     -- DEBUG: Clear shared storage
-    --playerSharedStorage = {}
+    playerSharedStorage = {}
     
     -- DEBUG: Reset progression to force the use of SetNewPlayerProgression(playerSharedStorage) function
     --playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = nil
+    
+    -- DEBUG: check storage for tech tree progression.
+    -- print(playerSharedStorage[CONSTANTS_API.PROGRESS.DATA])
+    -- SAMPLE STORAGE: 01|0|1|0|0|0~02|0|0|0|0|0~03|0|0|0|0|0~04|1|1|0|0|0~05|0|0|0|0|0~06|0|0|0|0|0~07|0|0|0|0|0~08|0|0|0|0|0~09|1|1|2|2|2~10|0|0|0|0|0~11|0|0|0|0|0~12|0|0|0|0|0~13|0|0|0|0|0~14|0|0|0|0|0~15|0|0|0|0|0~16|0|0|0|0|0~17|0|0|0|0|0~18|0|1|0|0|0~19|0|0|0|0|0~20|1|1|0|0|0~21|1|1|0|0|0~22|0|0|0|0|0~23|1|1|0|0|0~24|0|0|0|0|0~25|0|0|0|0|0~26|0|0|0|0|0~27|0|0|0|0|0~28|0|0|0|0|0~29|0|0|0|0|0~30|0|0|0|0|0~31|0|0|0|0|0~32|0|0|0|0|0~33|0|0|0|0|0
     
     if (playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] == nil) then
         SetNewPlayerProgression(playerSharedStorage)
     end
     
-    SetTankProgressionDataForServer(playerSharedStorage[CONSTANTS_API.PROGRESS.DATA], player) 
+    SetTankProgressionDataForServer(CheckAndConvertToNewupgradeSystem(playerSharedStorage[CONSTANTS_API.PROGRESS.DATA]), player) 
 
     if playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT] then
         Events.Broadcast('SET_EQUIPPED_TANK', player, playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT])
@@ -222,10 +226,6 @@ function LoadAndSetDataFromSharedStorage(player)
     player.serverUserData.GOLD_FROM_BUNDLE[2] = tonumber(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE2])
     player.serverUserData.GOLD_FROM_BUNDLE[3] = tonumber(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE3])
     
-    --player.serverUserData.OLD_XP = tonumber(playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_XP])
-    --player.serverUserData.OLD_RANK = tonumber(playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_RANK])
-    --player.serverUserData.OLD_LVL = tonumber(playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_LVL])
-    --player.serverUserData.CURRENT_LVL = tonumber(playerSharedStorage[CONSTANTS_API.XP_SYSTEM.LVL])
    	player.serverUserData.MATCH_XP_DATA = playerSharedStorage[CONSTANTS_API.XP_SYSTEM.MATCH_DATA]
 
     Events.Broadcast('SET_DAILY_CHALLENGES', player)
@@ -257,10 +257,6 @@ function SavePlayerDataIntoSharedStorage(player)
     playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE2] = player.serverUserData.GOLD_FROM_BUNDLE[2]
     playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE3] = player.serverUserData.GOLD_FROM_BUNDLE[3]
     
-    --playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_XP] = player.serverUserData.OLD_XP
-    --playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_RANK] = player.serverUserData.OLD_RANK
-    --playerSharedStorage[CONSTANTS_API.XP_SYSTEM.OLD_LVL] = player.serverUserData.OLD_LVL
-    --playerSharedStorage[CONSTANTS_API.XP_SYSTEM.LVL] = player.serverUserData.CURRENT_LVL
    	playerSharedStorage[CONSTANTS_API.XP_SYSTEM.MATCH_DATA] = player.serverUserData.MATCH_XP_DATA
 
     Storage.SetSharedPlayerData(PLAYER_SHARED_STORAGE, player, playerSharedStorage)
@@ -282,29 +278,8 @@ function SetNewPlayerProgression(playerSharedStorage)
             tankEntry = tostring(tonumber(tank.id))
         end
 
-        --[[
 		-- players get tanks 1 and 18 (M3 and Panzer 3) as starter tanks.
-		-- Currently set 
-		if i ~= 1 and i ~= 18 and i ~= CONSTANTS_API.GetNumberOfTanks() then
-		
-			tankEntry = tankEntry .. "|0|0|0|0|0~"
-			
-		elseif i == 1 or i == 18 then
-		
-			tankEntry = tankEntry .. "|1|1|2|2|2~"
-			
-		-- DEBUG: Add elseif statements to seed more tanks: i = tank id.
-		-- (requires forced use of SetNewPlayerProgression(playerSharedStorage) function)
-		--elseif i == 2 then
-		
-			--tankEntry = tankEntry .. "|1|1|0|0|0~"
-			
-		else 
-		
-			tankEntry = tankEntry .. "|0|0|0|0|0"
-			
-		end
-		]]
+
         tankEntry = tankEntry .. '|0|'..startWith..'|0|0|0~'
 
         tankString = tankString .. tankEntry
@@ -315,25 +290,21 @@ end
 
 function CheckAndConvertToNewupgradeSystem(dataString)
 	
+	-- old: tankID|researchedBool|purchasedBool|upgradeInt|upgradeInt|upgradeInt~
+	-- old ex: 01|1|1|0|2|2~
+	-- new: tankID|researchedBool|purchasedBool|type/upgradeId-progress/...|type/upgradeId-progress/...|type/upgradeId-progress/...~
+	-- new ex: 01|1|1|TURRET/1-0/2-0/3-0|HULL/1-2/2-0/3-0|ENGINE/1-2/2-0/3-0~
 	
-
-end
-
-function NewSetTankProgressionDataForServer(dataString, player)
-
+	if string.find(dataString, "/") and string.find(dataString, "-") then
+		return dataString
+	end
 	
-
-end
-
-function SetTankProgressionDataForServer(dataString, player)
-    --print("Saving tank data on server. Data string: " .. dataString)
-    local tankProgressionTable = UTIL_API.TechTreeConvertToTable(dataString)
---print("Finished converting string into table.")
-
-    local progressionTable = {}
+	local newString = ""
+    local oldTankProgressionTable = UTIL_API.TechTreeConvertToTable(dataString)
+    local oldProgressionTable = {}
 
     -- Split the individual tank data strings into separate tables we can iterate through and build local tank objects
-    for k, v in pairs(tankProgressionTable) do  
+    for k, v in pairs(oldTankProgressionTable) do  
         --print(v)
         local tankEntryTable = UTIL_API.SplitStringIntoObjects(k, DELIMITER)
         local position = 1
@@ -356,11 +327,141 @@ function SetTankProgressionDataForServer(dataString, player)
             end
             position = position + 1
         end 
-        table.insert(progressionTable, tankEntry)
+        table.insert(oldProgressionTable, tankEntry)
+    end	
+    
+    table.sort(
+        oldProgressionTable,
+        function(a, b) 
+            return tonumber(a.id) < tonumber(b.id)
+        end
+    ) 
+    
+    local tankUpgradeInfo = nil
+    local upgradeId = 1
+    
+    for k, v in ipairs(oldProgressionTable) do 
+        newString = newString .. v.id .. "|" .. ConvertBoolToString(v.researched) .. "|" .. ConvertBoolToString(v.purchased)
+        
+        tankUpgradeInfo = tanks[tonumber(v.id)]["upgrades"]
+       	
+       	for _, upgradeType in ipairs(UPGRADE_TYPES) do
+	        newString = newString .. "|" .. upgradeType 
+	        upgradeId = 1
+	        
+	        while tankUpgradeInfo[upgradeType .. tostring(upgradeId)] do
+	        	if upgradeId == 1 then
+	        		newString = newString .. "/1-" .. v.weaponProgress
+	        	else 
+	        		newString = newString .. "/" .. tostring(upgradeId) .. "-0"
+	        	end
+	        	
+	        	upgradeId = upgradeId + 1
+	        end
+	    end
+
+        if k < numberOfTanks then
+            newString = newString .. '~'
+        end
     end
+    
+    print("TANK AND UPGRADE PROGRESSION: " .. newString)
+
+	return newString
+
+end
+
+function SetTankProgressionDataForServer(dataString, player)
+	
+    local tankProgressionTable = UTIL_API.TechTreeConvertToTable(dataString)
+
+    local progressionTable = {}
+
+    for k, v in pairs(tankProgressionTable) do  
+        --print(v)
+        local tankEntryTable = UTIL_API.SplitStringIntoObjects(k, DELIMITER)
+        local position = 1
+        local tankEntry = {}
+        local tankUpgradeInfo = nil
+        
+        -- fill server table with progress according to player's data string (exclude data on upgrades that no longer exists)
+        for k, v in pairs(tankEntryTable) do 
+            if (position == CONSTANTS_API.TECH_TREE_POSITION.TANKID) then
+                tankEntry.id = v
+                tankUpgradeInfo = tanks[tonumber(v)]["upgrades"]
+            elseif (position == CONSTANTS_API.TECH_TREE_POSITION.RESEARCHED) then
+                tankEntry.researched = (v == '1')
+            elseif (position == CONSTANTS_API.TECH_TREE_POSITION.PURCHASED) then
+                tankEntry.purchased = (v == '1')
+            elseif string.find(v, "TURRET") then
+            	tankEntry.turret = {}
+            	local upgradeEntryTable = {CoreString.Split(v, DELIMITER_2)}
+            	for k, v in pairs(upgradeEntryTable) do
+            		local upgradeEntry = {CoreString.Split(CoreString.Trim(v, "TURRET"), DELIMITER_3)}
+            		if tankUpgradeInfo["TURRET" .. upgradeEntry[1]] then
+            			tankEntry.turret[upgradeEntry[1]] = upgradeEntry[2]
+            		elseif upgradeEntry[1] ~= "" then 
+            			print(upgradeEntry[1] .. " is no longer available for " .. tankEntry.id)
+            		end
+            	end
+            elseif string.find(v, "HULL") then
+            	tankEntry.hull = {}
+            	local upgradeEntryTable = {CoreString.Split(CoreString.Trim(v, "HULL"), DELIMITER_2)}
+            	for k, v in pairs(upgradeEntryTable) do
+            		local upgradeEntry = {CoreString.Split(v, DELIMITER_3)}
+            		if tankUpgradeInfo["HULL" .. upgradeEntry[1]] then
+            			tankEntry.hull[upgradeEntry[1]] = upgradeEntry[2]
+            		elseif upgradeEntry[1] ~= "" then
+            			print(upgradeEntry[1] .. " is no longer available for " .. tankEntry.id)
+            		end            
+            	end
+            elseif string.find(v, "ENGINE") then
+            	tankEntry.engine = {}
+            	local upgradeEntryTable = {CoreString.Split(CoreString.Trim(v, "ENGINE"), DELIMITER_2)}
+            	for k, v in pairs(upgradeEntryTable) do
+            		local upgradeEntry = {CoreString.Split(v, DELIMITER_3)}
+            		if tankUpgradeInfo["ENGINE" .. upgradeEntry[1]] then
+            			tankEntry.engine[upgradeEntry[1]] = upgradeEntry[2]
+            		elseif upgradeEntry[1] ~= "" then
+            			print(upgradeEntry[1] .. " is no longer available for " .. tankEntry.id)
+            		end            	
+            	end
+            else
+                warn('Unable to parse data at position: ' .. position)
+            end
+            position = position + 1
+        end 
+        
+        -- update the server table if player's storage is outdated (a new upgrade added to a tank, etc.)
+        -- add in any missing upgrades
+        for k, v in pairs(tankUpgradeInfo) do
+        	if string.find(k, "TURRET") then
+        		local upgradeNumber = CoreString.Trim(k, "TURRET")
+        		if not tankEntry.turret[upgradeNumber] then
+        			print(k .. " added to " .. tankEntry.id)
+        			tankEntry.turret[upgradeNumber] = "0"
+        		end
+        	elseif string.find(k, "HULL") then
+	    		local upgradeNumber = CoreString.Trim(k, "HULL")
+	    		if not tankEntry.hull[upgradeNumber] then
+	    			print(k .. " added to " .. tankEntry.id)
+	    			tankEntry.hull[upgradeNumber] = "0"
+	    		end
+        	elseif string.find(k, "ENGINE") then
+	    		local upgradeNumber = CoreString.Trim(k, "ENGINE")
+	    		if not tankEntry.engine[upgradeNumber] then
+	    			print(k .. " added to " .. tankEntry.id)
+	    			tankEntry.engine[upgradeNumber] = "0"
+	    		end
+	    	end
+        end
+        
+        table.insert(progressionTable, tankEntry)
+        --UTIL_API.TablePrint(tankEntry)
+    end
+    
 
     player.serverUserData.techTreeProgress = progressionTable
-    --UTIL_API.TablePrint(player.serverUserData.techTreeProgress)
 end
 
 function ConvertBoolToString(boolean)
@@ -372,7 +473,7 @@ function ConvertBoolToString(boolean)
 end
 
 function ConvertTechTreeProgressToDataString(player)
-    local dataString = '' 
+    local dataString = ""
     table.sort(
         player.serverUserData.techTreeProgress,
         function(a, b) 
@@ -381,22 +482,31 @@ function ConvertTechTreeProgressToDataString(player)
     )
 
     for k, v in ipairs(player.serverUserData.techTreeProgress) do 
-        dataString =
-            dataString ..
-            v.id ..
-                '|' ..
-                    ConvertBoolToString(v.researched) ..
-                        '|' ..
-                            ConvertBoolToString(v.purchased) ..
-                                '|' .. v.weaponProgress .. '|' .. v.armorProgress .. '|' .. v.engineProgress
-
+        dataString = dataString .. v.id .. "|" .. ConvertBoolToString(v.researched) .. "|" .. ConvertBoolToString(v.purchased)
+        
+        dataString = dataString .. "|TURRET"
+	    for k, v in pairs(v.turret) do
+	    	dataString = dataString .. "/" .. tostring(k) .. "-" .. tostring(v)
+	    end
+	    
+        dataString = dataString .. "|HULL"
+	    for k, v in pairs(v.hull) do
+	    	dataString = dataString .. "/" .. tostring(k) .. "-" .. tostring(v)
+	    end
+	    
+        dataString = dataString .. "|ENGINE"
+	    for k, v in pairs(v.engine) do
+	    	dataString = dataString .. "/" .. tostring(k) .. "-" .. tostring(v)
+	    end
+     
+        
         if k < numberOfTanks then
             dataString = dataString .. '~'
         end
     end
 
     -- DEBUG
-    --print("PROGRESS CONVERTED TO STRING: " .. dataString)
+    print("PROGRESS CONVERTED TO STRING: " .. dataString)
 
     return dataString
 end

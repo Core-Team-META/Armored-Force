@@ -136,16 +136,16 @@ function API.TablePrint(tbl, indent)
         formatting = string.rep("  ", indent) .. k .. ": "
         lua_type = type(v)
         if lua_type == "table" then
---print(formatting)
+			print(formatting)
             API.TablePrint(v, indent + 1)
         elseif lua_type == "boolean" then
---print(formatting .. tostring(v))
+			print(formatting .. tostring(v))
         elseif lua_type == "function" then
---print(formatting .. "function")
+			print(formatting .. "function")
         elseif lua_type == "userdata" then
---print(formatting .. "userdata")
+			print(formatting .. "userdata")
         else
---print(formatting .. v)
+			print(formatting .. v)
         end
     end
 end
