@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2974750608502516638
+        ParentId: 15818976189543274029
         ChildIds: 11422602052222339325
         ChildIds: 4572574912823670652
         ChildIds: 13357942947765431494
@@ -114,6 +114,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 7785805807220999104
+        ChildIds: 1868815962782733890
+        ChildIds: 11034160388667751718
+        ChildIds: 6817406969937683596
+        ChildIds: 1753336987066103638
+        ChildIds: 5039000965827493463
+        ChildIds: 3374469497055376841
+        ChildIds: 5735463277817223977
+        ChildIds: 2733184167084141445
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -384,6 +393,701 @@ Assets {
         }
       }
       Objects {
+        Id: 7785805807220999104
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6734576287303413843
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 1868815962782733890
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6734576287303413843
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 11034160388667751718
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6734576287303413843
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 6817406969937683596
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6734576287303413843
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 1753336987066103638
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6734576287303413843
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5039000965827493463
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6734576287303413843
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 3374469497055376841
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6734576287303413843
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5735463277817223977
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6734576287303413843
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 2733184167084141445
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6734576287303413843
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 14150352478156555266
         Name: "M24Chaffee"
         Transform {
@@ -398,6 +1102,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 10186325646077231117
+        ChildIds: 17923442422769477084
+        ChildIds: 5509759474712413864
+        ChildIds: 11317189788376344851
+        ChildIds: 5267003342136175049
+        ChildIds: 7287283605901321345
+        ChildIds: 393651642252775594
+        ChildIds: 10713906396546179218
+        ChildIds: 13496248824300519026
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -668,6 +1381,701 @@ Assets {
         }
       }
       Objects {
+        Id: 10186325646077231117
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14150352478156555266
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 17923442422769477084
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14150352478156555266
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5509759474712413864
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14150352478156555266
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 11317189788376344851
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14150352478156555266
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5267003342136175049
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14150352478156555266
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7287283605901321345
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14150352478156555266
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 393651642252775594
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14150352478156555266
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 10713906396546179218
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14150352478156555266
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 13496248824300519026
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14150352478156555266
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 9521911245889456212
         Name: "M4A1Sherman"
         Transform {
@@ -682,6 +2090,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 2018531880856934851
+        ChildIds: 12359650931717505799
+        ChildIds: 4650175152325496732
+        ChildIds: 17335081910222634220
+        ChildIds: 6586420238458190800
+        ChildIds: 9059176751945878785
+        ChildIds: 658773147395822450
+        ChildIds: 478482259572992521
+        ChildIds: 11637208158194808719
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -952,6 +2369,701 @@ Assets {
         }
       }
       Objects {
+        Id: 2018531880856934851
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9521911245889456212
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 12359650931717505799
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9521911245889456212
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 4650175152325496732
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9521911245889456212
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 17335081910222634220
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9521911245889456212
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 6586420238458190800
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9521911245889456212
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 9059176751945878785
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9521911245889456212
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 658773147395822450
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9521911245889456212
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 478482259572992521
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9521911245889456212
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 11637208158194808719
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9521911245889456212
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 8085060017134522817
         Name: "T-34"
         Transform {
@@ -966,6 +3078,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 8034762688436586698
+        ChildIds: 7645009681972783846
+        ChildIds: 7139828383010716240
+        ChildIds: 235203562336594149
+        ChildIds: 16102826510578561753
+        ChildIds: 3185229386476686772
+        ChildIds: 4438832863495783674
+        ChildIds: 9502127113350623173
+        ChildIds: 2619408191168627556
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -1236,6 +3357,701 @@ Assets {
         }
       }
       Objects {
+        Id: 8034762688436586698
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8085060017134522817
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7645009681972783846
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8085060017134522817
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7139828383010716240
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8085060017134522817
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 235203562336594149
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8085060017134522817
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 16102826510578561753
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8085060017134522817
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 3185229386476686772
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8085060017134522817
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 4438832863495783674
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8085060017134522817
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 9502127113350623173
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8085060017134522817
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 2619408191168627556
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8085060017134522817
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 896086029703826759
         Name: "Comet"
         Transform {
@@ -1250,6 +4066,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 14030409595525682718
+        ChildIds: 8809398633800757795
+        ChildIds: 18077634207130764731
+        ChildIds: 2623342527077633736
+        ChildIds: 7556922799945210341
+        ChildIds: 5866897426096048361
+        ChildIds: 4366727202723279165
+        ChildIds: 1949160409053629902
+        ChildIds: 17769364768817500117
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -1524,6 +4349,701 @@ Assets {
         }
       }
       Objects {
+        Id: 14030409595525682718
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 896086029703826759
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 8809398633800757795
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 896086029703826759
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 18077634207130764731
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 896086029703826759
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 2623342527077633736
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 896086029703826759
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7556922799945210341
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 896086029703826759
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5866897426096048361
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 896086029703826759
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 4366727202723279165
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 896086029703826759
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 1949160409053629902
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 896086029703826759
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 17769364768817500117
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 896086029703826759
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 6369153524027316293
         Name: "IS-3"
         Transform {
@@ -1538,6 +5058,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 17631505007442230823
+        ChildIds: 11773817477978345307
+        ChildIds: 14792562279804627632
+        ChildIds: 3148182873314614012
+        ChildIds: 16533549854433835395
+        ChildIds: 2825648533131940044
+        ChildIds: 12504480084454630310
+        ChildIds: 1626781868059278943
+        ChildIds: 8867020562715278129
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -1812,6 +5341,701 @@ Assets {
         }
       }
       Objects {
+        Id: 17631505007442230823
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6369153524027316293
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 11773817477978345307
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6369153524027316293
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 14792562279804627632
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6369153524027316293
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 3148182873314614012
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6369153524027316293
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 16533549854433835395
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6369153524027316293
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 2825648533131940044
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6369153524027316293
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 12504480084454630310
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6369153524027316293
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 1626781868059278943
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6369153524027316293
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 8867020562715278129
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6369153524027316293
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 13894894712147745669
         Name: "M10 Wolverine"
         Transform {
@@ -1826,6 +6050,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 13867265891983680055
+        ChildIds: 12854781539190790300
+        ChildIds: 15270963281508287031
+        ChildIds: 3535705376543491842
+        ChildIds: 1486309807152813475
+        ChildIds: 11163133411060469166
+        ChildIds: 7722030167969237816
+        ChildIds: 2902874441123045055
+        ChildIds: 2282350922258245903
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -2096,6 +6329,701 @@ Assets {
         }
       }
       Objects {
+        Id: 13867265891983680055
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13894894712147745669
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 12854781539190790300
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13894894712147745669
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 15270963281508287031
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13894894712147745669
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 3535705376543491842
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13894894712147745669
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 1486309807152813475
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13894894712147745669
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 11163133411060469166
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13894894712147745669
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7722030167969237816
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13894894712147745669
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 2902874441123045055
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13894894712147745669
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 2282350922258245903
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13894894712147745669
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 14896147654846701649
         Name: "M6A1 Heavy"
         Transform {
@@ -2110,6 +7038,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 7487735639459436416
+        ChildIds: 6340814122094639928
+        ChildIds: 8064337496149262213
+        ChildIds: 17144464010500470713
+        ChildIds: 5892711993454364253
+        ChildIds: 11702964881861890930
+        ChildIds: 467767227721933856
+        ChildIds: 9351176757107517486
+        ChildIds: 120651003369550892
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -2376,6 +7313,701 @@ Assets {
         }
       }
       Objects {
+        Id: 7487735639459436416
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14896147654846701649
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 6340814122094639928
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14896147654846701649
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 8064337496149262213
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14896147654846701649
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 17144464010500470713
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14896147654846701649
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5892711993454364253
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14896147654846701649
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 11702964881861890930
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14896147654846701649
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 467767227721933856
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14896147654846701649
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 9351176757107517486
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14896147654846701649
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 120651003369550892
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14896147654846701649
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 17150012185460449200
         Name: "T34 Heavy"
         Transform {
@@ -2390,6 +8022,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 14503102511325559157
+        ChildIds: 8717755812513957749
+        ChildIds: 6420543119903368620
+        ChildIds: 8031670093630368861
+        ChildIds: 15654732574791021212
+        ChildIds: 7879542006371172714
+        ChildIds: 17300578088020190905
+        ChildIds: 3544624239726612967
+        ChildIds: 4767204886886882789
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -2656,6 +8297,701 @@ Assets {
         }
       }
       Objects {
+        Id: 14503102511325559157
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17150012185460449200
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 8717755812513957749
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17150012185460449200
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 6420543119903368620
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17150012185460449200
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 8031670093630368861
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17150012185460449200
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 15654732574791021212
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17150012185460449200
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7879542006371172714
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17150012185460449200
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 17300578088020190905
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17150012185460449200
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 3544624239726612967
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17150012185460449200
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 4767204886886882789
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17150012185460449200
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 11060389439650475345
         Name: "1955 Chimera"
         Transform {
@@ -2670,6 +9006,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 15744397118722442721
+        ChildIds: 4428224008990603970
+        ChildIds: 11078157652272889826
+        ChildIds: 1234819407444621831
+        ChildIds: 9177871848782218439
+        ChildIds: 6835728340245202085
+        ChildIds: 8009491298319391953
+        ChildIds: 18033560703755699937
+        ChildIds: 10628576192487093303
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -2940,6 +9285,701 @@ Assets {
         }
       }
       Objects {
+        Id: 15744397118722442721
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11060389439650475345
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 4428224008990603970
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11060389439650475345
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 11078157652272889826
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11060389439650475345
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 1234819407444621831
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11060389439650475345
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 9177871848782218439
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11060389439650475345
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 6835728340245202085
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11060389439650475345
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 8009491298319391953
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11060389439650475345
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 18033560703755699937
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11060389439650475345
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 10628576192487093303
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11060389439650475345
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 8190643796269870594
         Name: "Bat-Chat 25T"
         Transform {
@@ -2954,6 +9994,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 3871130967976558551
+        ChildIds: 4614048275713349926
+        ChildIds: 13407912882785806975
+        ChildIds: 12976338535452723880
+        ChildIds: 10403991349711019421
+        ChildIds: 1168211131667422169
+        ChildIds: 6423387007125618878
+        ChildIds: 5576566353489521671
+        ChildIds: 12959487796549818694
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -3224,6 +10273,701 @@ Assets {
         }
       }
       Objects {
+        Id: 3871130967976558551
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8190643796269870594
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 4614048275713349926
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8190643796269870594
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 13407912882785806975
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8190643796269870594
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 12976338535452723880
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8190643796269870594
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 10403991349711019421
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8190643796269870594
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 1168211131667422169
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8190643796269870594
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 6423387007125618878
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8190643796269870594
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5576566353489521671
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8190643796269870594
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 12959487796549818694
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8190643796269870594
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 3609905340800639486
         Name: "M48 Patton"
         Transform {
@@ -3238,6 +10982,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 9217858305975172907
+        ChildIds: 14331215014945899247
+        ChildIds: 3687682961979068960
+        ChildIds: 2806441106294869308
+        ChildIds: 7625428822680880311
+        ChildIds: 16022977319154581699
+        ChildIds: 8912014032423589400
+        ChildIds: 8949130421065082027
+        ChildIds: 18013947087949251034
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -3508,6 +11261,701 @@ Assets {
         }
       }
       Objects {
+        Id: 9217858305975172907
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3609905340800639486
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 14331215014945899247
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3609905340800639486
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 3687682961979068960
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3609905340800639486
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 2806441106294869308
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3609905340800639486
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7625428822680880311
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3609905340800639486
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 16022977319154581699
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3609905340800639486
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 8912014032423589400
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3609905340800639486
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 8949130421065082027
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3609905340800639486
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 18013947087949251034
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3609905340800639486
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 11884006769952032900
         Name: "T-62A1"
         Transform {
@@ -3522,6 +11970,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 6510845688772689766
+        ChildIds: 14584918669044577057
+        ChildIds: 4092545105460848094
+        ChildIds: 1827827087505520008
+        ChildIds: 11723817686145468628
+        ChildIds: 6691883633251547483
+        ChildIds: 16362447407620791692
+        ChildIds: 16527733223802048144
+        ChildIds: 18018959925538141406
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -3792,6 +12249,701 @@ Assets {
         }
       }
       Objects {
+        Id: 6510845688772689766
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11884006769952032900
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 14584918669044577057
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11884006769952032900
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 4092545105460848094
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11884006769952032900
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 1827827087505520008
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11884006769952032900
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 11723817686145468628
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11884006769952032900
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 6691883633251547483
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11884006769952032900
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 16362447407620791692
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11884006769952032900
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 16527733223802048144
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11884006769952032900
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 18018959925538141406
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11884006769952032900
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 2089618846197285947
         Name: "T57"
         Transform {
@@ -3806,6 +12958,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 5886239309469605118
+        ChildIds: 1266613798488871758
+        ChildIds: 5132476545813949209
+        ChildIds: 5037287529626673472
+        ChildIds: 17299304838188279997
+        ChildIds: 3902415962377287640
+        ChildIds: 1335897617760706128
+        ChildIds: 7854352416007951346
+        ChildIds: 4793146146729681235
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -4076,6 +13237,701 @@ Assets {
         }
       }
       Objects {
+        Id: 5886239309469605118
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2089618846197285947
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 1266613798488871758
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2089618846197285947
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5132476545813949209
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2089618846197285947
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5037287529626673472
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2089618846197285947
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 17299304838188279997
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2089618846197285947
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 3902415962377287640
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2089618846197285947
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 1335897617760706128
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2089618846197285947
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7854352416007951346
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2089618846197285947
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 4793146146729681235
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2089618846197285947
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 8547391865731154127
         Name: "IS-7"
         Transform {
@@ -4090,6 +13946,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 4908075254378650504
+        ChildIds: 9469130006413405449
+        ChildIds: 8946622893153224480
+        ChildIds: 6605022690207639218
+        ChildIds: 8431265182450219632
+        ChildIds: 11562009534576444870
+        ChildIds: 15193159225395062930
+        ChildIds: 9379480920192899695
+        ChildIds: 6156569705504285450
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -4360,6 +14225,701 @@ Assets {
         }
       }
       Objects {
+        Id: 4908075254378650504
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8547391865731154127
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 9469130006413405449
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8547391865731154127
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 8946622893153224480
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8547391865731154127
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 6605022690207639218
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8547391865731154127
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 8431265182450219632
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8547391865731154127
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 11562009534576444870
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8547391865731154127
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 15193159225395062930
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8547391865731154127
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 9379480920192899695
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8547391865731154127
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 6156569705504285450
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8547391865731154127
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 15383328957386960599
         Name: "AMX-50"
         Transform {
@@ -4374,6 +14934,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 7499558435315478567
+        ChildIds: 5687834203811988586
+        ChildIds: 558284884305496010
+        ChildIds: 4302695770516320033
+        ChildIds: 11353800408149673889
+        ChildIds: 14182598093762317967
+        ChildIds: 8857738955103466945
+        ChildIds: 11834412581369706888
+        ChildIds: 18187335381731913613
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -4644,6 +15213,701 @@ Assets {
         }
       }
       Objects {
+        Id: 7499558435315478567
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15383328957386960599
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5687834203811988586
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15383328957386960599
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 558284884305496010
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15383328957386960599
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 4302695770516320033
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15383328957386960599
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 11353800408149673889
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15383328957386960599
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 14182598093762317967
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15383328957386960599
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 8857738955103466945
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15383328957386960599
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 11834412581369706888
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15383328957386960599
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 18187335381731913613
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15383328957386960599
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 3096923706963594705
         Name: "T110 E3"
         Transform {
@@ -4658,6 +15922,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 2254160985315731523
+        ChildIds: 16126784902330905912
+        ChildIds: 15620890127664821590
+        ChildIds: 15677521289688524075
+        ChildIds: 11696959758350236631
+        ChildIds: 6567795071631371220
+        ChildIds: 10103236294778114158
+        ChildIds: 5665675999686406348
+        ChildIds: 5628628449841908309
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -4928,6 +16201,701 @@ Assets {
         }
       }
       Objects {
+        Id: 2254160985315731523
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3096923706963594705
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 16126784902330905912
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3096923706963594705
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 15620890127664821590
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3096923706963594705
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 15677521289688524075
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3096923706963594705
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 11696959758350236631
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3096923706963594705
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 6567795071631371220
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3096923706963594705
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 10103236294778114158
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3096923706963594705
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5665675999686406348
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3096923706963594705
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5628628449841908309
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3096923706963594705
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 18391196450923426153
         Name: "Panzer 3"
         Transform {
@@ -4942,6 +16910,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 14487699476279341973
+        ChildIds: 343832936869210774
+        ChildIds: 9944126059008589688
+        ChildIds: 101446563409875948
+        ChildIds: 18073028547074943921
+        ChildIds: 2885435611393608680
+        ChildIds: 15815756452986934701
+        ChildIds: 2036139319020085905
+        ChildIds: 10671928917322862601
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -5212,6 +17189,701 @@ Assets {
         }
       }
       Objects {
+        Id: 14487699476279341973
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18391196450923426153
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 343832936869210774
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18391196450923426153
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 9944126059008589688
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18391196450923426153
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 101446563409875948
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18391196450923426153
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 18073028547074943921
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18391196450923426153
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 2885435611393608680
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18391196450923426153
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 15815756452986934701
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18391196450923426153
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 2036139319020085905
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18391196450923426153
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 10671928917322862601
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18391196450923426153
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 8373696185203207231
         Name: "Leopard VK1602"
         Transform {
@@ -5226,6 +17898,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 11449329526426798316
+        ChildIds: 15853981964988636571
+        ChildIds: 12454465387266023668
+        ChildIds: 9064842097273848335
+        ChildIds: 139039218569473492
+        ChildIds: 9854106439302179248
+        ChildIds: 212714432639752075
+        ChildIds: 7771081705880837632
+        ChildIds: 10536538400123954561
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -5496,6 +18177,701 @@ Assets {
         }
       }
       Objects {
+        Id: 11449329526426798316
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8373696185203207231
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 15853981964988636571
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8373696185203207231
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 12454465387266023668
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8373696185203207231
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 9064842097273848335
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8373696185203207231
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 139039218569473492
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8373696185203207231
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 9854106439302179248
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8373696185203207231
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 212714432639752075
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8373696185203207231
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7771081705880837632
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8373696185203207231
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 10536538400123954561
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8373696185203207231
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 11762363763137845235
         Name: "Chi-Nu"
         Transform {
@@ -5510,6 +18886,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 14566170087650099582
+        ChildIds: 4692252028516769512
+        ChildIds: 5939395345401009721
+        ChildIds: 42473188407064059
+        ChildIds: 17826044248637411285
+        ChildIds: 5029244785125528685
+        ChildIds: 14121007075005439170
+        ChildIds: 5148355792975729631
+        ChildIds: 9682502005845453754
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -5780,6 +19165,701 @@ Assets {
         }
       }
       Objects {
+        Id: 14566170087650099582
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11762363763137845235
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 4692252028516769512
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11762363763137845235
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5939395345401009721
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11762363763137845235
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 42473188407064059
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11762363763137845235
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 17826044248637411285
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11762363763137845235
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5029244785125528685
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11762363763137845235
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 14121007075005439170
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11762363763137845235
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5148355792975729631
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11762363763137845235
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 9682502005845453754
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11762363763137845235
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 3745854397074004474
         Name: "Panzer 4"
         Transform {
@@ -5794,6 +19874,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 2334384504487073072
+        ChildIds: 2795735797714411215
+        ChildIds: 5398333596719979471
+        ChildIds: 6338378781832983763
+        ChildIds: 6216918105542655908
+        ChildIds: 2642334639597391726
+        ChildIds: 7381360797488154653
+        ChildIds: 10478072394343784487
+        ChildIds: 331704191042368286
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -6064,6 +20153,701 @@ Assets {
         }
       }
       Objects {
+        Id: 2334384504487073072
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3745854397074004474
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 2795735797714411215
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3745854397074004474
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5398333596719979471
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3745854397074004474
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 6338378781832983763
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3745854397074004474
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 6216918105542655908
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3745854397074004474
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 2642334639597391726
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3745854397074004474
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7381360797488154653
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3745854397074004474
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 10478072394343784487
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3745854397074004474
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 331704191042368286
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3745854397074004474
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 12271474977929622025
         Name: "StuG 3 G"
         Transform {
@@ -6078,6 +20862,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 17292688881925414442
+        ChildIds: 12390716679679245346
+        ChildIds: 5034017832397491396
+        ChildIds: 7111310230428975871
+        ChildIds: 17064724035723912445
+        ChildIds: 3556349349527769177
+        ChildIds: 9337480156733783720
+        ChildIds: 927873564395756188
+        ChildIds: 7667961095569359109
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -6348,6 +21141,701 @@ Assets {
         }
       }
       Objects {
+        Id: 17292688881925414442
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12271474977929622025
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 12390716679679245346
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12271474977929622025
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5034017832397491396
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12271474977929622025
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7111310230428975871
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12271474977929622025
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 17064724035723912445
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12271474977929622025
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 3556349349527769177
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12271474977929622025
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 9337480156733783720
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12271474977929622025
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 927873564395756188
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12271474977929622025
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7667961095569359109
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12271474977929622025
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 11166243689531593056
         Name: "Panther"
         Transform {
@@ -6362,6 +21850,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 4499317671603439550
+        ChildIds: 16084088803021941641
+        ChildIds: 6218796102937247357
+        ChildIds: 4885584148925114802
+        ChildIds: 381379082309959115
+        ChildIds: 388220654298185455
+        ChildIds: 259012139130501585
+        ChildIds: 10902197753268217320
+        ChildIds: 8577927384402659134
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -6636,6 +22133,701 @@ Assets {
         }
       }
       Objects {
+        Id: 4499317671603439550
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11166243689531593056
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 16084088803021941641
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11166243689531593056
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 6218796102937247357
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11166243689531593056
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 4885584148925114802
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11166243689531593056
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 381379082309959115
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11166243689531593056
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 388220654298185455
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11166243689531593056
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 259012139130501585
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11166243689531593056
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 10902197753268217320
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11166243689531593056
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 8577927384402659134
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11166243689531593056
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 2467457305238499958
         Name: "Tiger 2"
         Transform {
@@ -6650,6 +22842,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 17615767855669982666
+        ChildIds: 18264443800939377801
+        ChildIds: 6153480796924639523
+        ChildIds: 5469261265085559576
+        ChildIds: 5839551782621279724
+        ChildIds: 13385247114998536803
+        ChildIds: 18011775356496566636
+        ChildIds: 6547177868515266849
+        ChildIds: 14882613782860585611
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -6924,6 +23125,701 @@ Assets {
         }
       }
       Objects {
+        Id: 17615767855669982666
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2467457305238499958
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 18264443800939377801
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2467457305238499958
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 6153480796924639523
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2467457305238499958
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5469261265085559576
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2467457305238499958
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5839551782621279724
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2467457305238499958
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 13385247114998536803
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2467457305238499958
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 18011775356496566636
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2467457305238499958
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 6547177868515266849
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2467457305238499958
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 14882613782860585611
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2467457305238499958
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 14628799506600662350
         Name: "Lowe"
         Transform {
@@ -6938,6 +23834,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 2102959908153809687
+        ChildIds: 5297746460587407122
+        ChildIds: 17101890432418457098
+        ChildIds: 8315127317042461564
+        ChildIds: 15394377552958429363
+        ChildIds: 16309935389264107698
+        ChildIds: 273561778579390059
+        ChildIds: 12499461276107463700
+        ChildIds: 8219805560064758875
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -7204,6 +24109,701 @@ Assets {
         }
       }
       Objects {
+        Id: 2102959908153809687
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14628799506600662350
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5297746460587407122
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14628799506600662350
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 17101890432418457098
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14628799506600662350
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 8315127317042461564
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14628799506600662350
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 15394377552958429363
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14628799506600662350
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 16309935389264107698
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14628799506600662350
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 273561778579390059
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14628799506600662350
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 12499461276107463700
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14628799506600662350
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 8219805560064758875
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14628799506600662350
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 13308719205497253577
         Name: "FIAT 6616"
         Transform {
@@ -7218,6 +24818,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 11027424256806327038
+        ChildIds: 8559332806209767335
+        ChildIds: 8120089170386940297
+        ChildIds: 6253499174547302342
+        ChildIds: 7146804237334533144
+        ChildIds: 11921766318888728111
+        ChildIds: 10444958149620474748
+        ChildIds: 3317312465425233023
+        ChildIds: 5962861337712320310
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -7488,6 +25097,701 @@ Assets {
         }
       }
       Objects {
+        Id: 11027424256806327038
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13308719205497253577
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 8559332806209767335
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13308719205497253577
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 8120089170386940297
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13308719205497253577
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 6253499174547302342
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13308719205497253577
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7146804237334533144
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13308719205497253577
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 11921766318888728111
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13308719205497253577
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 10444958149620474748
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13308719205497253577
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 3317312465425233023
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13308719205497253577
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5962861337712320310
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13308719205497253577
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 1302178350566758952
         Name: "OF-40"
         Transform {
@@ -7502,6 +25806,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 13589175761779647175
+        ChildIds: 13596543486186491328
+        ChildIds: 10684295300259351591
+        ChildIds: 10315794437737041523
+        ChildIds: 10536375557542982935
+        ChildIds: 11209989825840345880
+        ChildIds: 17173204637485566835
+        ChildIds: 14200407486230069653
+        ChildIds: 7008009491930350309
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -7772,6 +26085,701 @@ Assets {
         }
       }
       Objects {
+        Id: 13589175761779647175
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1302178350566758952
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 13596543486186491328
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1302178350566758952
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 10684295300259351591
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1302178350566758952
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 10315794437737041523
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1302178350566758952
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 10536375557542982935
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1302178350566758952
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 11209989825840345880
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1302178350566758952
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 17173204637485566835
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1302178350566758952
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 14200407486230069653
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1302178350566758952
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7008009491930350309
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1302178350566758952
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 5540780561494930867
         Name: "E-50"
         Transform {
@@ -7786,6 +26794,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 7606978692159709204
+        ChildIds: 5953164408099403483
+        ChildIds: 5165030310753816437
+        ChildIds: 2176143653743422969
+        ChildIds: 13936930425746691370
+        ChildIds: 13717530244552745407
+        ChildIds: 16779587744191302339
+        ChildIds: 15624231810314428311
+        ChildIds: 1780085928613781654
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -8056,6 +27073,701 @@ Assets {
         }
       }
       Objects {
+        Id: 7606978692159709204
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5540780561494930867
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5953164408099403483
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5540780561494930867
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5165030310753816437
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5540780561494930867
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 2176143653743422969
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5540780561494930867
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 13936930425746691370
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5540780561494930867
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 13717530244552745407
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5540780561494930867
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 16779587744191302339
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5540780561494930867
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 15624231810314428311
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5540780561494930867
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 1780085928613781654
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5540780561494930867
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 8372995196599894215
         Name: "Type 74"
         Transform {
@@ -8070,6 +27782,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 123752322476902544
+        ChildIds: 14181106934499203166
+        ChildIds: 4655555841029087831
+        ChildIds: 9042109540183576197
+        ChildIds: 12373111586741033763
+        ChildIds: 14991620592902113122
+        ChildIds: 11367044769779417538
+        ChildIds: 3797298439590704305
+        ChildIds: 10328235436594216925
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -8340,6 +28061,701 @@ Assets {
         }
       }
       Objects {
+        Id: 123752322476902544
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8372995196599894215
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 14181106934499203166
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8372995196599894215
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 4655555841029087831
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8372995196599894215
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 9042109540183576197
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8372995196599894215
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 12373111586741033763
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8372995196599894215
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 14991620592902113122
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8372995196599894215
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 11367044769779417538
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8372995196599894215
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 3797298439590704305
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8372995196599894215
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 10328235436594216925
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8372995196599894215
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 8192431103384550710
         Name: "Maus"
         Transform {
@@ -8354,6 +28770,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 3316517035569647010
+        ChildIds: 2057544000930960228
+        ChildIds: 16133889762940993057
+        ChildIds: 15844416142142543042
+        ChildIds: 15209634077521908017
+        ChildIds: 12703558329121578485
+        ChildIds: 13240395535719695502
+        ChildIds: 13891435206922797868
+        ChildIds: 17185365194895798498
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -8624,6 +29049,701 @@ Assets {
         }
       }
       Objects {
+        Id: 3316517035569647010
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8192431103384550710
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 2057544000930960228
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8192431103384550710
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 16133889762940993057
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8192431103384550710
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 15844416142142543042
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8192431103384550710
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 15209634077521908017
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8192431103384550710
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 12703558329121578485
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8192431103384550710
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 13240395535719695502
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8192431103384550710
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 13891435206922797868
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8192431103384550710
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 17185365194895798498
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8192431103384550710
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 3158080304824873217
         Name: "E-100"
         Transform {
@@ -8638,6 +29758,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 4179455182077145583
+        ChildIds: 13689049505043907323
+        ChildIds: 9610033650766038713
+        ChildIds: 2605533641999103008
+        ChildIds: 3290620988569592393
+        ChildIds: 14187174817771510795
+        ChildIds: 10905632673667995899
+        ChildIds: 9932810224358300181
+        ChildIds: 7785301899360523412
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -8908,6 +30037,701 @@ Assets {
         }
       }
       Objects {
+        Id: 4179455182077145583
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3158080304824873217
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 13689049505043907323
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3158080304824873217
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 9610033650766038713
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3158080304824873217
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 2605533641999103008
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3158080304824873217
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 3290620988569592393
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3158080304824873217
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 14187174817771510795
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3158080304824873217
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 10905632673667995899
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3158080304824873217
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 9932810224358300181
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3158080304824873217
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7785301899360523412
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3158080304824873217
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 9730244800535060077
         Name: "VK72.01"
         Transform {
@@ -8922,6 +30746,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 7896828347697282444
+        ChildIds: 16502928866302982323
+        ChildIds: 2899496293091703829
+        ChildIds: 13070123112320531214
+        ChildIds: 6339273097592853924
+        ChildIds: 16175618176410600904
+        ChildIds: 9873916697587128453
+        ChildIds: 2754551301071510860
+        ChildIds: 8851317140305070548
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -9192,6 +31025,701 @@ Assets {
         }
       }
       Objects {
+        Id: 7896828347697282444
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9730244800535060077
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 16502928866302982323
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9730244800535060077
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 2899496293091703829
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9730244800535060077
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 13070123112320531214
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9730244800535060077
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 6339273097592853924
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9730244800535060077
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 16175618176410600904
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9730244800535060077
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 9873916697587128453
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9730244800535060077
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 2754551301071510860
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9730244800535060077
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 8851317140305070548
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9730244800535060077
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
         Id: 10339792434115275849
         Name: "Jagdtiger"
         Transform {
@@ -9206,6 +31734,15 @@ Assets {
           }
         }
         ParentId: 11422602052222339325
+        ChildIds: 2960644559253515567
+        ChildIds: 1976767522003945647
+        ChildIds: 14939469696333746913
+        ChildIds: 11414561796419486976
+        ChildIds: 3865169343626346458
+        ChildIds: 1956320056111221628
+        ChildIds: 17979312335431577683
+        ChildIds: 474219055016610821
+        ChildIds: 18254199293066701633
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -9472,6 +32009,701 @@ Assets {
         Script {
           ScriptAsset {
             Id: 11538952017563604218
+          }
+        }
+      }
+      Objects {
+        Id: 2960644559253515567
+        Name: "ENGINE3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10339792434115275849
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Proper Maintenance"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 50
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 1976767522003945647
+        Name: "TURRET2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10339792434115275849
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "New Turret Servos"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.1
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 14939469696333746913
+        Name: "TURRET3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10339792434115275849
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reliable Ammunition"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "TURRET2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.2
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 20
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 11414561796419486976
+        Name: "HULL1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10339792434115275849
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tougher Frame"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 3865169343626346458
+        Name: "HULL2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10339792434115275849
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reinforced Chassis"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 1956320056111221628
+        Name: "HULL3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10339792434115275849
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "HULL"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 6000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 4000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "HITPOINTS"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Addon Armor Plates"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "HULL3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "HULL2"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 90
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 17979312335431577683
+        Name: "ENGINE1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10339792434115275849
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Rebuilt Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 10
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 474219055016610821
+        Name: "ENGINE2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10339792434115275849
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "ENGINE"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 3000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Suspended tracks"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "ENGINE2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "ENGINE1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "ACCELERATION"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: "TURNING"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 80
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 10
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 18254199293066701633
+        Name: "TURRET1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10339792434115275849
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "TURRET"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Sighted Optics"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "TURRET1"
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1.05
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: "DAMAGE"
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
           }
         }
       }
