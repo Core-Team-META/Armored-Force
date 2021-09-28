@@ -105,8 +105,12 @@ function GivePlayerEquipment(player, playerStart)
         {parent = tankGarage, position = playerPosition, rotation = playerRotation}
     )
     Task.Wait(0.1)
+    
     _G.lookup.tanks[player] = {team = player.team, tank = equippedTank[player]}
-    equippedTank[player].context.AssignDriver(player, playerStart)
+
+    if equippedTank[player] then
+     equippedTank[player].context.AssignDriver(player, playerStart)
+    end
 end
 
 function SpawnAITank(position, team, id)
