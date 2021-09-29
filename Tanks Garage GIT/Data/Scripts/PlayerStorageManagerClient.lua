@@ -24,10 +24,14 @@ function RetrieveData()
     -- DEBUG
     --print("Got data string: " .. child:GetCustomProperty(DATA_CUSTOM_PROPERTY))
 
-        --print("RETRIEVING DATA FROM OBJECT TRANSFER")
-        -- Build tank list based off string data
-        local tankProgressionTable = UTIL_API.TechTreeConvertToTable(LOCAL_PLAYER:GetPrivateNetworkedData("TechTree"))	
-	    local progressionTable = {}
+    --print("RETRIEVING DATA FROM OBJECT TRANSFER")
+    -- Build tank list based off string data
+    
+    
+    local tankProgressionTable = UTIL_API.TechTreeConvertToTable(LOCAL_PLAYER:GetPrivateNetworkedData("TechTree"))	
+    
+    print(LOCAL_PLAYER:GetPrivateNetworkedData("TechTree"))
+    local progressionTable = {}
 	
     for k, v in pairs(tankProgressionTable) do  
         local tankEntryTable = UTIL_API.SplitStringIntoObjects(k, DELIMITER)
