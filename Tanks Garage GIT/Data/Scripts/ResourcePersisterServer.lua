@@ -169,7 +169,9 @@ function CheckAndSetSharedStorageDefault(player)
         SetNewPlayerProgression(playerSharedStorage)
     end
     
-    SetTankProgressionDataForServer(CheckAndConvertToNewupgradeSystem(playerSharedStorage[CONSTANTS_API.PROGRESS.DATA]), player) 
+    playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = CheckAndConvertToNewupgradeSystem(playerSharedStorage[CONSTANTS_API.PROGRESS.DATA])
+    
+    SetTankProgressionDataForServer(playerSharedStorage[CONSTANTS_API.PROGRESS.DATA], player) 
 
     if playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT] then
         Events.Broadcast('SET_EQUIPPED_TANK', player, playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT])
@@ -347,17 +349,22 @@ function CheckAndConvertToNewupgradeSystem(dataString)
 	        newString = newString .. "|" .. upgradeType 
 	        upgradeId = 1
 	        
-	        tankUpgradeInfo = tanks[tonumber(v.id)][upgradeType]
+	        print(v.id)
+	        print(upgradeType)
+	        print(tanks[tonumber(v.id)][upgradeType])
 	        
-	        while tankUpgradeInfo[upgradeType .. tostring(upgradeId)] do
-	        	if upgradeId == 1 then
-	        		newString = newString .. "/1-" .. v.weaponProgress
-	        	else 
-	        		newString = newString .. "/" .. tostring(upgradeId) .. "-0"
-	        	end
-	        	
-	        	upgradeId = upgradeId + 1
-	        end
+	        tankUpgradeInfo = tanks[tonumber(v.id)][upgradeType]
+	        if tankUpgradeInfo then
+		        while tankUpgradeInfo[upgradeType .. tostring(upgradeId)] do
+		        	if upgradeId == 1 then
+		        		newString = newString .. "/1-" .. v.weaponProgress
+		        	else 
+		        		newString = newString .. "/" .. tostring(upgradeId) .. "-0"
+		        	end
+		        	
+		        	upgradeId = upgradeId + 1
+		        end
+		    end
 	    end
 
         if k < numberOfTanks then
@@ -396,36 +403,42 @@ function SetTankProgressionDataForServer(dataString, player)
             elseif string.find(v, "TURRET") then
             	tankEntry.turret = {}
             	local upgradeEntryTable = {CoreString.Split(v, DELIMITER_2)}
-            	for k, v in pairs(upgradeEntryTable) do
-            		local upgradeEntry = {CoreString.Split(CoreString.Trim(v, "TURRET"), DELIMITER_3)}
-            		if tankUpgradeInfo["TURRET"]["TURRET" .. upgradeEntry[1]] then
-            			tankEntry.turret["TURRET" .. upgradeEntry[1]] = upgradeEntry[2]
-            		elseif upgradeEntry[1] ~= "" then 
-            			print(upgradeEntry[1] .. " is no longer available for " .. tankEntry.id)
-            		end
-            	end
+            	if upgradeEntryTable then
+	            	for k, v in pairs(upgradeEntryTable) do
+	            		local upgradeEntry = {CoreString.Split(CoreString.Trim(v, "TURRET"), DELIMITER_3)}
+	            		if tankUpgradeInfo["TURRET"] and tankUpgradeInfo["TURRET"]["TURRET" .. upgradeEntry[1]] then
+	            			tankEntry.turret["TURRET" .. upgradeEntry[1]] = upgradeEntry[2]
+	            		elseif upgradeEntry[1] ~= "" then 
+	            			print(upgradeEntry[1] .. " is no longer available for " .. tankEntry.id)
+	            		end
+	            	end
+	            end
             elseif string.find(v, "HULL") then
             	tankEntry.hull = {}
             	local upgradeEntryTable = {CoreString.Split(CoreString.Trim(v, "HULL"), DELIMITER_2)}
-            	for k, v in pairs(upgradeEntryTable) do
-            		local upgradeEntry = {CoreString.Split(v, DELIMITER_3)}
-            		if tankUpgradeInfo["HULL"]["HULL" .. upgradeEntry[1]] then
-            			tankEntry.hull["HULL" .. upgradeEntry[1]] = upgradeEntry[2]
-            		elseif upgradeEntry[1] ~= "" then
-            			print(upgradeEntry[1] .. " is no longer available for " .. tankEntry.id)
-            		end            
-            	end
+            	if upgradeEntryTable then
+	            	for k, v in pairs(upgradeEntryTable) do
+	            		local upgradeEntry = {CoreString.Split(v, DELIMITER_3)}
+	            		if tankUpgradeInfo["HULL"] and tankUpgradeInfo["HULL"]["HULL" .. upgradeEntry[1]] then
+	            			tankEntry.hull["HULL" .. upgradeEntry[1]] = upgradeEntry[2]
+	            		elseif upgradeEntry[1] ~= "" then
+	            			print(upgradeEntry[1] .. " is no longer available for " .. tankEntry.id)
+	            		end            
+	            	end
+	            end
             elseif string.find(v, "ENGINE") then
             	tankEntry.engine = {}
             	local upgradeEntryTable = {CoreString.Split(CoreString.Trim(v, "ENGINE"), DELIMITER_2)}
-            	for k, v in pairs(upgradeEntryTable) do
-            		local upgradeEntry = {CoreString.Split(v, DELIMITER_3)}
-            		if tankUpgradeInfo["ENGINE"]["ENGINE" .. upgradeEntry[1]] then
-            			tankEntry.engine["ENGINE" .. upgradeEntry[1]] = upgradeEntry[2]
-            		elseif upgradeEntry[1] ~= "" then
-            			print(upgradeEntry[1] .. " is no longer available for " .. tankEntry.id)
-            		end            	
-            	end
+            	if upgradeEntryTable then
+	            	for k, v in pairs(upgradeEntryTable) do
+	            		local upgradeEntry = {CoreString.Split(v, DELIMITER_3)}
+	            		if tankUpgradeInfo["ENGINE"] and tankUpgradeInfo["ENGINE"]["ENGINE" .. upgradeEntry[1]] then
+	            			tankEntry.engine["ENGINE" .. upgradeEntry[1]] = upgradeEntry[2]
+	            		elseif upgradeEntry[1] ~= "" then
+	            			print(upgradeEntry[1] .. " is no longer available for " .. tankEntry.id)
+	            		end            	
+	            	end
+	            end
             else
                 warn('Unable to parse data at position: ' .. position)
             end
@@ -435,31 +448,32 @@ function SetTankProgressionDataForServer(dataString, player)
         -- update the server table if player's storage is outdated (a new upgrade added to a tank, etc.)
         -- add in any missing upgrades
         for _, t in pairs(UPGRADE_TYPES) do
-        	for k, v in pairs(tankUpgradeInfo[t]) do
-	        	if string.find(k, "TURRET") then
-	        		if not tankEntry.turret[k] then
-	        			print(k .. " added to " .. tankEntry.id)
-	        			tankEntry.turret[k] = "0"
-	        		end
-	        	elseif string.find(k, "HULL") then
-		    		if not tankEntry.hull[k] then
-		    			print(k .. " added to " .. tankEntry.id)
-		    			tankEntry.hull[k] = "0"
-		    		end
-	        	elseif string.find(k, "ENGINE") then
-		    		if not tankEntry.engine[k] then
-		    			print(k .. " added to " .. tankEntry.id)
-		    			tankEntry.engine[k] = "0"
-		    		end
-		    	end
-		    end
+        	if tankUpgradeInfo[t] then
+	        	for k, v in pairs(tankUpgradeInfo[t]) do
+		        	if string.find(k, "TURRET") then
+		        		if tankEntry.turret and not tankEntry.turret[k] then
+		        			print(k .. " added to " .. tankEntry.id)
+		        			tankEntry.turret[k] = "0"
+		        		end
+		        	elseif string.find(k, "HULL") then
+			    		if tankEntry.hull and not tankEntry.hull[k] then
+			    			print(k .. " added to " .. tankEntry.id)
+			    			tankEntry.hull[k] = "0"
+			    		end
+		        	elseif string.find(k, "ENGINE") then
+			    		if tankEntry.engine and not tankEntry.engine[k] then
+			    			print(k .. " added to " .. tankEntry.id)
+			    			tankEntry.engine[k] = "0"
+			    		end
+			    	end
+			    end
+			end
         end
         
         table.insert(progressionTable, tankEntry)
         --UTIL_API.TablePrint(tankEntry)
     end
     
-
     player.serverUserData.techTreeProgress = progressionTable
 end
 

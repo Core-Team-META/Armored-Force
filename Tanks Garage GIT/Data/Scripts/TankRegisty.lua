@@ -18,8 +18,6 @@ for _, tank in pairs(Folder:GetChildren()) do
         Data[id][key] = value
     end
     
-    Data[id]["upgrades"] = {}
-    
     for _, upgrade in pairs(tank:GetChildren()) do
     	upgradeId = upgrade:GetCustomProperty("upgradeID")
     	upgradeType = upgrade:GetCustomProperty("upgradeType")

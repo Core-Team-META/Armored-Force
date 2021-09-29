@@ -1775,7 +1775,7 @@ function TutorialOpenTankUpgradeWindow()
     OpenTankUpgradeWindow()
 end
 
-function NewOpenTankUpgradeWindow(button, id)
+function OpenTankUpgradeWindow(button, id)
     if LOCAL_PLAYER.clientUserData.tutorial6 == 1 then
         UPGRADE_TUTORIAL.visibility = Visibility.FORCE_ON
     else
@@ -1893,13 +1893,8 @@ function NewOpenTankUpgradeWindow(button, id)
 	    end
 	end
 end
-
+--[[
 function OpenTankUpgradeWindow(button, id)
-
-	NewOpenTankUpgradeWindow(button, id)
-	if true then
-		return
-	end
     if LOCAL_PLAYER.clientUserData.tutorial6 == 1 then
         UPGRADE_TUTORIAL.visibility = Visibility.FORCE_ON
     else
@@ -2108,7 +2103,7 @@ function OpenTankUpgradeWindow(button, id)
         UPGRADE_TANK_CONTAINER:FindDescendantByName('ENGINE_LEVEL').text = 'Lv2' -- TODO
     end
 end
-
+]]
 function HoverTankUpgradeWindow(button)
     ButtonHover()
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').visibility = Visibility.FORCE_ON
