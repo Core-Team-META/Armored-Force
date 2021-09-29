@@ -46,7 +46,6 @@ local Traverse_LVLUP = script:GetCustomProperty('Traverse_LVLUP'):WaitForObject(
 local TraverseBar = script:GetCustomProperty('TraverseBar'):WaitForObject()
 
 -- UI properties
-local background = script:GetCustomProperty('Background'):WaitForObject()
 local keyBindingToOpen = script:GetCustomProperty('KeyBindingToOpen')
 local openSFX = script:GetCustomProperty('OpenSFX'):WaitForObject()
 local techTreeUIContainer = script:GetCustomProperty('TechTreeUIContainer'):WaitForObject()
@@ -124,6 +123,13 @@ local VIEWED_TANK_STATS = script:GetCustomProperty('VIEWED_TANK_STATS'):WaitForO
 local BUTTON_ALLIES_T1L = script:GetCustomProperty('BUTTON_ALLIES_T1L'):WaitForObject()
 local BUTTON_ALLIES_T2L = script:GetCustomProperty('BUTTON_ALLIES_T2L'):WaitForObject()
 local BUTTON_ALLIES_T4L = script:GetCustomProperty('BUTTON_ALLIES_T4L'):WaitForObject()
+
+
+local TURRET_UPGRADE_SLOT = script:GetCustomProperty("TURRET_UPGRADE_SLOT"):WaitForObject()
+local HULL_UPGRADE_SLOT = script:GetCustomProperty("HULL_UPGRADE_SLOT"):WaitForObject()
+local ENGINE_UPGRADE_SLOT = script:GetCustomProperty("ENGINE_UPGRADE_SLOT"):WaitForObject()
+local UPGRADE_MODULE_TEMPLATE = script:GetCustomProperty("UPGRADE_MODULE_TEMPLATE")
+
 ------------------------------------------------------------------------------------------------------
 
 while not _G.PORTAL_IMAGES do
@@ -202,6 +208,9 @@ local baseSilverColorText = Color.New(1,1,1,1)
 local baseTankPartsColorText = Color.New(0.24,0.788,1,1)
 local baseUniversalTankPartsColorText = Color.New(0.545,0.775,0,1)
 local insufficientColorText = Color.New(0.43,0,0,1)
+
+local upgradeButtonListeners = {}
+local upgradeButtonEntries = {}
 
 ------------------------------------------------------------------------------------
 -- Completed UI references. Remove above ones as they are made obsolete
@@ -471,7 +480,7 @@ function PopulateSelectedTankPanel(id)
         if (equippedTankId < 10) then
             stringTankId = '0' .. tostring(equippedTankId)
         end
-        tankData = tankAPI.GetTankFromId(tonumber(stringTankId))
+        tankData = TANK_INFO[tonumber(stringTankId)]
         selectedTankId = stringTankId
     else 
         tankData = tankAPI.GetTankFromId(tonumber(id))
@@ -1766,7 +1775,131 @@ function TutorialOpenTankUpgradeWindow()
     OpenTankUpgradeWindow()
 end
 
+function NewOpenTankUpgradeWindow(button, id)
+    if LOCAL_PLAYER.clientUserData.tutorial6 == 1 then
+        UPGRADE_TUTORIAL.visibility = Visibility.FORCE_ON
+    else
+        UPGRADE_TUTORIAL.visibility = Visibility.FORCE_OFF
+    end
+    
+    if not id or id == nil then
+        selectedTankId = LOCAL_PLAYER:GetPrivateNetworkedData('SelectedTank')
+        
+		tankDetails = tankAPI.GetTankFromId(tonumber(selectedTankId))
+		
+		if tonumber(selectedTankId) < 10 then
+			selectedTankId = "0" .. tostring(selectedTankId)
+		else
+			selectedTankId = tostring(selectedTankId)
+		end
+		
+		for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+		    if (t.id == tostring(selectedTankId)) then
+		        tankDetails.researchedTank = t.researched
+		        tankDetails.purchasedTank = t.purchased
+		        tankDetails.turretProgress = t.turret
+		        tankDetails.hullProgress = t.hull
+		        tankDetails.engineProgress = t.engine
+		    end
+		end       
+    else
+        selectedTankId = tonumber(id)
+    end  
+    
+    IMAGE_API.SetTankImage(tankPreviewImage, selectedTankId)
+    if UPGRADE_TANK_CONTAINER.visibility == Visibility.FORCE_ON and LOCAL_PLAYER.clientUserData.tutorial6 ~= 1  then 
+        CloseTankUpgradeWindow()
+    else 
+        SFX_CLICK:Play()
+        UPGRADE_TANK_CONTAINER.visibility = Visibility.FORCE_ON 
+    end
+    local entry = {}
+    local progress = {}
+    for i, tank in ipairs(TANK_LIST) do
+        local id = tank.id
+        if tonumber(id) == selectedTankId then
+            entry = tank
+        end
+    end
+
+    for i, tankProgress in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+        if tonumber(tankProgress.id) == selectedTankId then
+            progress = tankProgress
+        end
+    end
+    
+    local allSlots = {TURRET_UPGRADE_SLOT, HULL_UPGRADE_SLOT, ENGINE_UPGRADE_SLOT}
+    local slotTypes = {"TURRET", "HULL", "ENGINE"}
+    local selectedType = nil
+    local progressOnType = nil
+    local upgradeNumber = nil
+ 	local entryCustomProperties = {}
+    upgradeButtonEntries = {}
+    
+    for x, s in ipairs(allSlots) do
+    	entryCustomProperties = {}
+    	selectedType = tankDetails[slotTypes[x]]
+    	if x == 1 then
+    		progressOnType = tankDetails.turretProgress
+    	elseif x == 2 then
+    		progressOnType = tankDetails.hullProgress
+    	elseif x == 3 then
+    		progressOnType = tankDetails.engineProgress
+    	end
+    	
+	    for _, c in pairs(s:GetChildren()) do
+	    	if upgradeButtonListeners[c.id] then
+	    		upgradeButtonListeners[c.id].clicked:Disconnect()
+	    		upgradeButtonListeners[c.id].clicked = nil
+	    		
+	    		upgradeButtonListeners[c.id].hovered:Disconnect()
+	    		upgradeButtonListeners[c.id].hovered = nil
+	    		
+	    		upgradeButtonListeners[c.id].unhovered:Disconnect()
+	    		upgradeButtonListeners[c.id].unhovered = nil
+	    	end
+	    	
+	    	c:Destroy()
+	    end
+	    
+	    for i, u in pairs(selectedType) do
+	    	upgradeNumber = tonumber(CoreString.Trim(i, slotTypes[x]))
+	    	
+	    	upgradeButtonEntries[i] = World.SpawnAsset(UPGRADE_MODULE_TEMPLATE, {parent = s})
+	    	upgradeButtonEntries[i].x = (upgradeNumber - 1) * upgradeButtonEntries[i].width
+	    	upgradeButtonEntries[i].y = 0
+	    	
+	    	for n, o in pairs(upgradeButtonEntries[i]:GetCustomProperties()) do
+	    		entryCustomProperties[n] = o:WaitForObject()
+	    	end
+	    	
+	    	entryCustomProperties["UPGRADE_TITLE_TEXT"].text = u["upgradeName"]
+	    	
+	    	if progressOnType[i] and tonumber(progressOnType[i]) < 1 then
+	    		entryCustomProperties["UPGRADE_COST_TEXT"].text = tostring(u["researchCost"])
+	    		entryCustomProperties["PARTS_ICON"].visibility = Visibility.INHERIT 
+	    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.FORCE_OFF
+	    	elseif progressOnType[i] and tonumber(progressOnType[i]) < 2 then
+	    		entryCustomProperties["UPGRADE_COST_TEXT"].text = tostring(u["purchaseCost"])
+	    		entryCustomProperties["PARTS_ICON"].visibility = Visibility.INHERIT 
+	    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.FORCE_OFF
+	    	end
+	    	
+	    	if not progressOnType[u["prerequisite"]] and (u["prerequisite"] ~= "") then
+	    		entryCustomProperties["UPGRADE_LOCKED"].visibility = Visibility.INHERIT 
+	    	else
+	    		entryCustomProperties["UPGRADE_LOCKED"].visibility = Visibility.FORCE_OFF 
+	    	end
+	    end
+	end
+end
+
 function OpenTankUpgradeWindow(button, id)
+
+	NewOpenTankUpgradeWindow(button, id)
+	if true then
+		return
+	end
     if LOCAL_PLAYER.clientUserData.tutorial6 == 1 then
         UPGRADE_TUTORIAL.visibility = Visibility.FORCE_ON
     else

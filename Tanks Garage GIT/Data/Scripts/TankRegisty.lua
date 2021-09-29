@@ -7,6 +7,7 @@ for _, tank in pairs(Folder:GetChildren()) do
     local idString = (tank:GetCustomProperty('id'))
     local id = tonumber(idString)
     local upgradeId = nil
+    local upgradeType = nil
 
     --print("==============================================")
     --print("TANK: " .. idString)
@@ -21,13 +22,19 @@ for _, tank in pairs(Folder:GetChildren()) do
     
     for _, upgrade in pairs(tank:GetChildren()) do
     	upgradeId = upgrade:GetCustomProperty("upgradeID")
-    	Data[id]["upgrades"][upgradeId] = {}
+    	upgradeType = upgrade:GetCustomProperty("upgradeType")
+    	
+    	if not Data[id][upgradeType] then
+    		Data[id][upgradeType] = {}
+    	end
+    	
+    	Data[id][upgradeType][upgradeId] = {}
     	
     	--print("-------------------------------------")
     	--print(upgradeId)
     	
     	for key, value in pairs(upgrade:GetCustomProperties()) do
-    		Data[id]["upgrades"][upgradeId][key] = value
+    		Data[id][upgradeType][upgradeId][key] = value
     		--print(key .. " : " .. tostring(value))
     	end
     end

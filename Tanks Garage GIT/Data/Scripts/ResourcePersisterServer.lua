@@ -156,7 +156,7 @@ function CheckAndSetSharedStorageDefault(player)
     local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 
     -- DEBUG: Clear shared storage
-    -- playerSharedStorage = {}
+    --playerSharedStorage = {}
     
     -- DEBUG: Reset progression to force the use of SetNewPlayerProgression(playerSharedStorage) function
     --playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = nil
@@ -342,12 +342,12 @@ function CheckAndConvertToNewupgradeSystem(dataString)
     
     for k, v in ipairs(oldProgressionTable) do 
         newString = newString .. v.id .. "|" .. ConvertBoolToString(v.researched) .. "|" .. ConvertBoolToString(v.purchased)
-        
-        tankUpgradeInfo = tanks[tonumber(v.id)]["upgrades"]
        	
        	for _, upgradeType in ipairs(UPGRADE_TYPES) do
 	        newString = newString .. "|" .. upgradeType 
 	        upgradeId = 1
+	        
+	        tankUpgradeInfo = tanks[tonumber(v.id)][upgradeType]
 	        
 	        while tankUpgradeInfo[upgradeType .. tostring(upgradeId)] do
 	        	if upgradeId == 1 then
@@ -388,7 +388,7 @@ function SetTankProgressionDataForServer(dataString, player)
         for k, v in pairs(tankEntryTable) do 
             if (position == CONSTANTS_API.TECH_TREE_POSITION.TANKID) then
                 tankEntry.id = v
-                tankUpgradeInfo = tanks[tonumber(v)]["upgrades"]
+                tankUpgradeInfo = tanks[tonumber(v)]
             elseif (position == CONSTANTS_API.TECH_TREE_POSITION.RESEARCHED) then
                 tankEntry.researched = (v == '1')
             elseif (position == CONSTANTS_API.TECH_TREE_POSITION.PURCHASED) then
@@ -398,8 +398,8 @@ function SetTankProgressionDataForServer(dataString, player)
             	local upgradeEntryTable = {CoreString.Split(v, DELIMITER_2)}
             	for k, v in pairs(upgradeEntryTable) do
             		local upgradeEntry = {CoreString.Split(CoreString.Trim(v, "TURRET"), DELIMITER_3)}
-            		if tankUpgradeInfo["TURRET" .. upgradeEntry[1]] then
-            			tankEntry.turret[upgradeEntry[1]] = upgradeEntry[2]
+            		if tankUpgradeInfo["TURRET"]["TURRET" .. upgradeEntry[1]] then
+            			tankEntry.turret["TURRET" .. upgradeEntry[1]] = upgradeEntry[2]
             		elseif upgradeEntry[1] ~= "" then 
             			print(upgradeEntry[1] .. " is no longer available for " .. tankEntry.id)
             		end
@@ -409,8 +409,8 @@ function SetTankProgressionDataForServer(dataString, player)
             	local upgradeEntryTable = {CoreString.Split(CoreString.Trim(v, "HULL"), DELIMITER_2)}
             	for k, v in pairs(upgradeEntryTable) do
             		local upgradeEntry = {CoreString.Split(v, DELIMITER_3)}
-            		if tankUpgradeInfo["HULL" .. upgradeEntry[1]] then
-            			tankEntry.hull[upgradeEntry[1]] = upgradeEntry[2]
+            		if tankUpgradeInfo["HULL"]["HULL" .. upgradeEntry[1]] then
+            			tankEntry.hull["HULL" .. upgradeEntry[1]] = upgradeEntry[2]
             		elseif upgradeEntry[1] ~= "" then
             			print(upgradeEntry[1] .. " is no longer available for " .. tankEntry.id)
             		end            
@@ -420,8 +420,8 @@ function SetTankProgressionDataForServer(dataString, player)
             	local upgradeEntryTable = {CoreString.Split(CoreString.Trim(v, "ENGINE"), DELIMITER_2)}
             	for k, v in pairs(upgradeEntryTable) do
             		local upgradeEntry = {CoreString.Split(v, DELIMITER_3)}
-            		if tankUpgradeInfo["ENGINE" .. upgradeEntry[1]] then
-            			tankEntry.engine[upgradeEntry[1]] = upgradeEntry[2]
+            		if tankUpgradeInfo["ENGINE"]["ENGINE" .. upgradeEntry[1]] then
+            			tankEntry.engine["ENGINE" .. upgradeEntry[1]] = upgradeEntry[2]
             		elseif upgradeEntry[1] ~= "" then
             			print(upgradeEntry[1] .. " is no longer available for " .. tankEntry.id)
             		end            	
@@ -434,26 +434,25 @@ function SetTankProgressionDataForServer(dataString, player)
         
         -- update the server table if player's storage is outdated (a new upgrade added to a tank, etc.)
         -- add in any missing upgrades
-        for k, v in pairs(tankUpgradeInfo) do
-        	if string.find(k, "TURRET") then
-        		local upgradeNumber = CoreString.Trim(k, "TURRET")
-        		if not tankEntry.turret[upgradeNumber] then
-        			print(k .. " added to " .. tankEntry.id)
-        			tankEntry.turret[upgradeNumber] = "0"
-        		end
-        	elseif string.find(k, "HULL") then
-	    		local upgradeNumber = CoreString.Trim(k, "HULL")
-	    		if not tankEntry.hull[upgradeNumber] then
-	    			print(k .. " added to " .. tankEntry.id)
-	    			tankEntry.hull[upgradeNumber] = "0"
-	    		end
-        	elseif string.find(k, "ENGINE") then
-	    		local upgradeNumber = CoreString.Trim(k, "ENGINE")
-	    		if not tankEntry.engine[upgradeNumber] then
-	    			print(k .. " added to " .. tankEntry.id)
-	    			tankEntry.engine[upgradeNumber] = "0"
-	    		end
-	    	end
+        for _, t in pairs(UPGRADE_TYPES) do
+        	for k, v in pairs(tankUpgradeInfo[t]) do
+	        	if string.find(k, "TURRET") then
+	        		if not tankEntry.turret[k] then
+	        			print(k .. " added to " .. tankEntry.id)
+	        			tankEntry.turret[k] = "0"
+	        		end
+	        	elseif string.find(k, "HULL") then
+		    		if not tankEntry.hull[k] then
+		    			print(k .. " added to " .. tankEntry.id)
+		    			tankEntry.hull[k] = "0"
+		    		end
+	        	elseif string.find(k, "ENGINE") then
+		    		if not tankEntry.engine[k] then
+		    			print(k .. " added to " .. tankEntry.id)
+		    			tankEntry.engine[k] = "0"
+		    		end
+		    	end
+		    end
         end
         
         table.insert(progressionTable, tankEntry)
@@ -474,6 +473,8 @@ end
 
 function ConvertTechTreeProgressToDataString(player)
     local dataString = ""
+    local upgradeNumber = ""
+    
     table.sort(
         player.serverUserData.techTreeProgress,
         function(a, b) 
@@ -486,17 +487,20 @@ function ConvertTechTreeProgressToDataString(player)
         
         dataString = dataString .. "|TURRET"
 	    for k, v in pairs(v.turret) do
-	    	dataString = dataString .. "/" .. tostring(k) .. "-" .. tostring(v)
+	    	upgradeNumber = CoreString.Trim(k, "TURRET")
+	    	dataString = dataString .. "/" .. tostring(upgradeNumber) .. "-" .. tostring(v)
 	    end
 	    
         dataString = dataString .. "|HULL"
 	    for k, v in pairs(v.hull) do
-	    	dataString = dataString .. "/" .. tostring(k) .. "-" .. tostring(v)
+	    	upgradeNumber = CoreString.Trim(k, "HULL")
+	    	dataString = dataString .. "/" .. tostring(upgradeNumber) .. "-" .. tostring(v)
 	    end
 	    
         dataString = dataString .. "|ENGINE"
 	    for k, v in pairs(v.engine) do
-	    	dataString = dataString .. "/" .. tostring(k) .. "-" .. tostring(v)
+	   		upgradeNumber = CoreString.Trim(k, "ENGINE")
+	    	dataString = dataString .. "/" .. tostring(upgradeNumber) .. "-" .. tostring(v)
 	    end
      
         

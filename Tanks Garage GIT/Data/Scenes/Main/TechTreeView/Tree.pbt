@@ -223,11 +223,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:Background"
-      ObjectReference {
-      }
-    }
-    Overrides {
       Name: "cs:KeyBindingToOpen"
       String: "ability_extra_51"
     }
@@ -241,11 +236,6 @@ Objects {
       Name: "cs:TechTreeUIContainer"
       ObjectReference {
         SelfId: 219431580378672440
-      }
-    }
-    Overrides {
-      Name: "cs:TechTree_Contents"
-      ObjectReference {
       }
     }
     Overrides {
@@ -278,17 +268,6 @@ Objects {
       Name: "cs:CurrencyPanel"
       ObjectReference {
         SelfId: 11741062274946987772
-      }
-    }
-    Overrides {
-      Name: "cs:TechTree_TeamDefinitions"
-      ObjectReference {
-      }
-    }
-    Overrides {
-      Name: "cs:TechTree_CurrencyDefinitions"
-      ObjectReference {
-        SelfId: 2727903136666322489
       }
     }
     Overrides {
@@ -913,6 +892,30 @@ Objects {
       Name: "cs:TutorialCompletePopupNoReward"
       AssetReference {
         Id: 11277052281076056181
+      }
+    }
+    Overrides {
+      Name: "cs:TURRET_UPGRADE_SLOT"
+      ObjectReference {
+        SelfId: 15012951307244190552
+      }
+    }
+    Overrides {
+      Name: "cs:HULL_UPGRADE_SLOT"
+      ObjectReference {
+        SelfId: 5898893744102822540
+      }
+    }
+    Overrides {
+      Name: "cs:ENGINE_UPGRADE_SLOT"
+      ObjectReference {
+        SelfId: 14577770028589451620
+      }
+    }
+    Overrides {
+      Name: "cs:UPGRADE_MODULE_TEMPLATE"
+      AssetReference {
+        Id: 7609630067937528418
       }
     }
   }
