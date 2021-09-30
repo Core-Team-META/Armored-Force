@@ -80,7 +80,7 @@ function ConvertToFreeXP(player, xpTankString, RPTradeTotal)
 	
 	local cost = UTIL_API.GetRPConversionCost(RPTradeTotal)
 	
-	if cost > player:GetResource(CURRENCY.GOLD.ResourceName) then
+	if cost > player:GetResource(CURRENCY.GOLD.ResourceName) then		
 		warn("ERROR (Server): cannot afford conversion for Free RP")
 		return
 	end
@@ -93,7 +93,7 @@ function ConvertToFreeXP(player, xpTankString, RPTradeTotal)
 		
 	player:AddResource(CURRENCY.FREERP.ResourceName, totalXP)
 	player:RemoveResource(CURRENCY.GOLD.ResourceName, tonumber(cost))
-	
+	Events.BroadcastToPlayer(player, "FinishedConversion")
 end
 
 function OnJoined(player)
