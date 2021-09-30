@@ -1833,7 +1833,9 @@ function OpenTankUpgradeWindow(button, id)
     local selectedType = nil
     local progressOnType = nil
     local upgradeNumber = nil
- 	local entryCustomProperties = {}
+    local canAffordUpgrade = false
+    local entryCustomProperties = {}
+ 	
     upgradeButtonEntries = {}
     
     for x, s in ipairs(allSlots) do
@@ -1879,19 +1881,68 @@ function OpenTankUpgradeWindow(button, id)
 	    		entryCustomProperties["UPGRADE_COST_TEXT"].text = tostring(u["researchCost"])
 	    		entryCustomProperties["PARTS_ICON"].visibility = Visibility.INHERIT 
 	    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.FORCE_OFF
+	    		
+	    		local totalParts = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankDetails.id))) + LOCAL_PLAYER:GetResource(Constants_API.XP)
+	    		canAffordUpgrade = totalParts >= u["researchCost"]
 	    	elseif progressOnType[i] and tonumber(progressOnType[i]) < 2 then
 	    		entryCustomProperties["UPGRADE_COST_TEXT"].text = tostring(u["purchaseCost"])
-	    		entryCustomProperties["PARTS_ICON"].visibility = Visibility.INHERIT 
-	    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.FORCE_OFF
+	    		entryCustomProperties["PARTS_ICON"].visibility = Visibility.FORCE_OFF
+	    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.INHERIT
+	    		
+	    		canAffordUpgrade = LOCAL_PLAYER:GetResource(Constants_API.SILVER) >= u["purchaseCost"]
 	    	end
 	    	
-	    	if not progressOnType[u["prerequisite"]] and (u["prerequisite"] ~= "") then
+	    	if (u["prerequisite"] ~= "") and (tonumber(progressOnType[u["prerequisite"]]) < 1) then
 	    		entryCustomProperties["UPGRADE_LOCKED"].visibility = Visibility.INHERIT 
+	    		entryCustomProperties["PURCHASE_BUTTON"].isInteractable = false
+	    		entryCustomProperties["UPGRADE_COST_TEXT"]:SetColor(Color.RED)
 	    	else
-	    		entryCustomProperties["UPGRADE_LOCKED"].visibility = Visibility.FORCE_OFF 
+	    		entryCustomProperties["UPGRADE_LOCKED"].visibility = Visibility.FORCE_OFF
+	    		
+	    		if progressOnType[i] and tonumber(progressOnType[i]) >= 2 then
+		    		entryCustomProperties["UPGRADE_COST_TEXT"].text = "EQUIPPED"
+		    		entryCustomProperties["PARTS_ICON"].visibility = Visibility.FORCE_OFF
+		    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.FORCE_OFF	   
+		    		entryCustomProperties["PURCHASE_BUTTON"].isInteractable = false
+	    		elseif canAffordUpgrade then
+	    			entryCustomProperties["PURCHASE_BUTTON"].name = u["upgradeID"]
+	    			
+	    			local buttonID = entryCustomProperties["PURCHASE_BUTTON"].id
+	    			upgradeButtonListeners[buttonID] = {}
+	    			upgradeButtonListeners[buttonID].clickedEvent:Connect(UpgradeButtonClicked)
+	    			upgradeButtonListeners[buttonID].hoveredEvent:Connect(UpgradeButtonHovered)
+	    			upgradeButtonListeners[buttonID].unhoveredEvent:Connect(UpgradeButtonUnhovered)
+	    		else
+		    		entryCustomProperties["PURCHASE_BUTTON"].isInteractable = false
+		    		entryCustomProperties["UPGRADE_COST_TEXT"]:SetColor(Color.RED)
+	    		end
 	    	end
 	    end
 	end
+end
+
+function UpgradeButtonClicked(button)
+	
+end
+
+function UpgradeButtonHovered(button)
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').visibility = Visibility.FORCE_ON
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').visibility = Visibility.FORCE_ON
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').visibility = Visibility.FORCE_ON
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_6_LVLUP').visibility = Visibility.FORCE_ON
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_8_LVLUP').visibility = Visibility.FORCE_ON
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_9_LVLUP').visibility = Visibility.FORCE_ON
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').visibility = Visibility.FORCE_ON
+end
+
+function UpgradeButtonUnhovered(button)
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').visibility = Visibility.FORCE_OFF
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').visibility = Visibility.FORCE_OFF
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').visibility = Visibility.FORCE_OFF
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_6_LVLUP').visibility = Visibility.FORCE_OFF
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_8_LVLUP').visibility = Visibility.FORCE_OFF
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_9_LVLUP').visibility = Visibility.FORCE_OFF
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').visibility = Visibility.FORCE_OFF
 end
 --[[
 function OpenTankUpgradeWindow(button, id)
