@@ -119,6 +119,8 @@ local STANDARD_DAMAGE_STATE_CHANCE = 25
 
 local PROJECTILE_WAIT_LIMIT = 100
 
+local UPGRADE_TYPES = {"TURRET", "HULL", "ENGINE"}
+
 local function RaycastResultFromPointRotationDistance(point, rotation, distance)
 	
 	local azimuth = rotation.z
@@ -320,67 +322,104 @@ end
 function SetTankModifications()
 	
 	local modifications = nil
+	
+	reloadTime = reloadSpeed
+	projectileDamage = damagePerShot
+	traverseSpeed = turretTraverseSpeed
+	
+	tankHitPoints = hitPoints
+	
+	elevationSpeed = turretElevationSpeed
+	chassisTemplate = templateReferences:GetCustomProperty("DefaultChassis")
+	originalSpeed = topSpeed
+	originalAcceleration = acceleration
+	originalTurnSpeed = turningSpeed
 
 	if isAI then
-		modifications = {0, 0, 0} -- 2, 2, 2 \ 0, 0, 0
+		--modifications = {0, 0, 0} -- 2, 2, 2 \ 0, 0, 0
+		return
 	else
 		if driver.serverUserData.techTreeProgress then
 			for x, entry in ipairs(driver.serverUserData.techTreeProgress) do
 				if entry.id == identifier then
-					modifications = {tonumber(entry.weaponProgress), tonumber(entry.armorProgress), tonumber(entry.engineProgress)}
+					modifications = entry
 				end
 			end
 		end
 
 		if not modifications then
 			warn("COULD NOT FIND TANK ID " .. identifier)
-			modifications = {0, 0, 0} -- 2, 2, 2 \ 0, 0, 0
+			return
 		end
-	
+		
+		--[[
 		if driver.serverUserData.TankUpgradeOverride and #driver.serverUserData.TankUpgradeOverride > 0 then
 			--print("Overriding tank upgrades")
 			modifications = driver.serverUserData.TankUpgradeOverride 
 		end
+		]]
 	end
 	
-	if modifications[1] == 2 then
-		reloadTime = upgradedReload
-		projectileDamage = upgradedDamage
-		--print("Upgraded firepower")
-	else 
-		reloadTime = reloadSpeed
-		projectileDamage = damagePerShot
-		--print("Default firepower")
-	end
+	local currentModType = nil
+	local upgradeStatName = ""
+	local upgradeStatValue = 0
 	
-	if modifications[2] == 2 then
-		tankHitPoints = upgradedHitPoints
-		--print("Upgraded surivability")
-	else 
-		tankHitPoints = hitPoints
-		--print("Default surivability")
-	end
-
-	
-	if modifications[3] == 2 then
-		traverseSpeed = upgradedTraverse
-		elevationSpeed = upgradedElevation
-		chassisTemplate = templateReferences:GetCustomProperty("DefaultChassis")
-		originalSpeed = upgradedTopSpeed
-		originalAcceleration = upgradedAcceleration
-		originalTurnSpeed = upgradedTurningSpeed
-		--print("Upgraded mobility")
+	for _, type in ipairs(UPGRADE_TYPES) do
+		if type == "TURRET" then
+			currentModType = modifications.turret
+		elseif type == "HULL" then
+			currentModType = modifications.hull
+		elseif type == "ENGINE" then
+			currentModType = modifications.engine
+		end
 		
-	else 
-		traverseSpeed = turretTraverseSpeed
-		elevationSpeed = turretElevationSpeed
-		chassisTemplate = templateReferences:GetCustomProperty("DefaultChassis")
-		originalSpeed = topSpeed
-		originalAcceleration = acceleration
-		originalTurnSpeed = turningSpeed
-		--print("Default mobility")
-	end
+		if not tankData[type] then
+			break
+		end
+		
+		for id, progress in pairs(currentModType) do
+			if tonumber(progress) > 1 then
+				if not tankData[type][id] then
+					warn(id .. " does not exist in database")
+					break
+				end
+				
+				for i = 1, 4 do 
+					upgradeStatName = tankData[type][id]["stat" .. tostring(i) .. "Name"]
+					upgradeStatValue = tankData[type][id]["stat" .. tostring(i) .. "Value"]
+					
+					if not upgradeStatName or not upgradeStatValue then
+						warn(id .. " for " .. tostring(identifier) .. " is missing data in database")
+						break
+					end
+					
+					if upgradeStatName == "AIM" then
+						traverseSpeed = traverseSpeed + upgradeStatValue
+						elevationSpeed = elevationSpeed + upgradeStatValue
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					elseif upgradeStatName == "DAMAGE" then
+						projectileDamage = projectileDamage + upgradeStatValue
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					elseif upgradeStatName == "HITPOINTS" then
+						tankHitPoints = tankHitPoints + upgradeStatValue
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					elseif upgradeStatName == "SPEED" then
+						originalSpeed = originalSpeed + upgradeStatValue
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					elseif upgradeStatName == "ACCELERATION" then
+						originalAcceleration = originalAcceleration + upgradeStatValue
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					elseif upgradeStatName == "TURNING" then
+						originalTurnSpeed = originalTurnSpeed + upgradeStatValue
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					end
+				end 
+			end
+		end 
+	end	
 	
+	print("ALL MODS APPLIED TO " .. driver.name)
+				
 end
 
 function ApplyDamage(object, enemy, attackData, amount)

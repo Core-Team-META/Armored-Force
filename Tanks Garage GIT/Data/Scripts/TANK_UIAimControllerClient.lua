@@ -153,8 +153,8 @@ function FindTank()
 	mantlet = nil
 	cannon = nil
 	
-	rotationSpeed = 0 
-	verticalSpeed = 0
+	rotationSpeed = tankData.turret
+	verticalSpeed = tankData.elevation
 
 	while not turret or not mantlet or not cannon do
 		turret = clientSkin:FindDescendantByName("Turret")
@@ -174,28 +174,42 @@ function FindTank()
 	
 	--print("Tank ID:" .. tostring(tankID))
 	--print(localPlayer.clientUserData.techTreeProgress)
-	--print(#localPlayer.clientUserData.techTreeProgress)
+	--print(#localPlayer.clientUserData.techTreeProgress)\
+	
+	local upgradeStatName = ""
+	local upgradeStatValue = 0
 	
 	for _, e in pairs(localPlayer.clientUserData.techTreeProgress) do
 		if tonumber(e.id) == tonumber(tankID) then
-			print("tank data found. engine progress: " .. tostring(e.engineProgress))
-			if tonumber(e.engineProgress) == 2 then
-				rotationSpeed = tankData.turretUpgraded
-				verticalSpeed = tankData.elevationUpgraded
-				--print("aiming system using upgraded data")
-			else 
-				rotationSpeed = tankData.turret
-				verticalSpeed = tankData.elevation
-				--print("aiming system using default data")
-			end		
+			
+			for id, progress in pairs(e.turret) do
+				if tonumber(progress) > 1 then	
+				
+					for i = 1, 4 do 
+						upgradeStatName = tankData["TURRET"][id]["stat" .. tostring(i) .. "Name"]
+						upgradeStatValue = tankData["TURRET"][id]["stat" .. tostring(i) .. "Value"]
+						
+						if not upgradeStatName or not upgradeStatValue then
+							warn(id .. " for " .. tostring(identifier) .. " is missing data in database")
+							break
+						end
+						
+						if upgradeStatName == "AIM" then
+							rotationSpeed = rotationSpeed + upgradeStatValue
+							verticalSpeed = verticalSpeed + upgradeStatValue
+							print(id .. " applied for aim control script")
+						end
+					end
+				end
+			end
 			break
 		end
 	end
 	
-	if ((horizontalLimits <= 0) and (rotationSpeed <= 0)) or (verticalSpeed <= 0) then
-		warn("COULD NOT FIND TANK DATA, USING UPGRADED VALUES")
-		rotationSpeed = tankData.turretUpgraded
-		verticalSpeed = tankData.elevationUpgraded
+	if not rotationSpeed or not verticalSpeed then
+		warn("COULD NOT FIND TANK DATA, USING TEMP VALUES")
+		rotationSpeed = 60
+		verticalSpeed = 10
 	end
 		
 	if not moveUITask then
