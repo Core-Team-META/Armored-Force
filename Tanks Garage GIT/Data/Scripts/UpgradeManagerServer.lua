@@ -6,6 +6,8 @@ local TANK_LIST =  _Constants_API:WaitForConstant("Tanks").GetTanks()
 local TECHTREE =  _Constants_API:WaitForConstant("TechTree")
 local CURRENCY = _Constants_API:WaitForConstant("Currency")
 
+local UPGRADE_TYPES = {"TURRET", "HULL", "ENGINE"}
+
 function PurchaseTank(player, id, prereqs)
 
 	local tank = {}
@@ -393,6 +395,82 @@ function PurchaseEngine(player, id)
 	
 	return BroadcastEventResultCode.FAILURE
 end
+
+function PurchaseUpgrade(player, tankID, upgradeID)
+
+	print("got request from " .. player.name .. " for " .. tankID .. " " .. upgradeID)
+	
+	local tankInfo = TANK_LIST[tonumber(tankID)]
+	local selectedType = nil
+	
+	for _, t in ipairs(UPGRADE_TYPES) do
+		if string.find(upgradeID, t) then
+			selectedType = t
+			break
+		end
+	end
+	
+	local upgradeInfo = tankInfo[selectedType][upgradeID]
+	
+	for i, tank in ipairs(player.serverUserData.techTreeProgress) do
+		if(tank.id == tankID) then	
+		
+			local tankUpgradeType = tank.turret
+
+			
+			if selectedType == "HULL" then
+				tankUpgradeType = tank.hull
+			elseif selectedType == "ENGINE" then
+				tankUpgradeType = tank.engine
+			end
+			
+			local upgradePhase = tonumber(tankUpgradeType[upgradeID]) 
+			local resource = nil
+			local currentAmount = nil
+			local secondaryCost = 0
+			local cost = nil
+			
+			if upgradePhase < 1 then
+				resource = UTIL_API.GetTankRPString(tonumber(tankID))
+				currentAmount = player:GetResource(resource)
+				cost = upgradeInfo["researchCost"]
+				
+				if currentAmount < cost then
+					secondaryCost = cost - currentAmount
+					currentAmount = currentAmount + player:GetResource(CURRENCY.FREERP.ResourceName)
+					if currentAmount < cost then
+						warn("CANNOT AFFORD RESEARCHING UPGRADE FOR " .. player.name)
+						return BroadcastEventResultCode.FAILURE
+					end
+				end
+					
+			elseif upgradePhase < 2 then
+				resource = CURRENCY.SILVER.ResourceName
+				currentAmount = player:GetResource(resource)
+				cost = upgradeInfo["purchaseCost"]
+				if currentAmount < cost then
+					warn("CANNOT AFFORD PURCHASING UPGRADE FOR " .. player.name)
+					return BroadcastEventResultCode.FAILURE
+				end
+			else
+				warn(upgradeID .. " ALREADY EQUIPPED FOR " .. player.name)
+				return BroadcastEventResultCode.FAILURE
+			end
+			
+			player:RemoveResource(resource, cost)
+			player:RemoveResource(CURRENCY.FREERP.ResourceName, secondaryCost)
+						
+			tankUpgradeType[upgradeID] = tostring(tonumber(tankUpgradeType[upgradeID]) + 1)
+									
+			Events.BroadcastToPlayer(player, "UpgradeSuccessful")
+			--Events.Broadcast("UpgradeAcquired", player, id, TECHTREE.UPGRADE_SLOT.ENGINE)
+			player:SetPrivateNetworkedData("PlayerTankData", player.serverUserData.techTreeProgress)
+			return BroadcastEventResultCode.SUCCESS
+		end
+	end	
+end
+
+Events.ConnectForPlayer("PurchaseUpgrade", PurchaseUpgrade)
 
 Events.ConnectForPlayer("PurchaseTank", PurchaseTank)
 Events.ConnectForPlayer("PurchaseWeapon", PurchaseWeapon)

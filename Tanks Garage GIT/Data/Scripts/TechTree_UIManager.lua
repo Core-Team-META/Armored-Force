@@ -1907,11 +1907,11 @@ function OpenTankUpgradeWindow(button, id)
 	    		elseif canAffordUpgrade then
 	    			entryCustomProperties["PURCHASE_BUTTON"].name = u["upgradeID"]
 	    			
-	    			local buttonID = entryCustomProperties["PURCHASE_BUTTON"].id
-	    			upgradeButtonListeners[buttonID] = {}
-	    			upgradeButtonListeners[buttonID].clickedEvent:Connect(UpgradeButtonClicked)
-	    			upgradeButtonListeners[buttonID].hoveredEvent:Connect(UpgradeButtonHovered)
-	    			upgradeButtonListeners[buttonID].unhoveredEvent:Connect(UpgradeButtonUnhovered)
+	    			local button = entryCustomProperties["PURCHASE_BUTTON"]
+	    			upgradeButtonListeners[button.id] = {}
+	    			upgradeButtonListeners[button.id] = button.clickedEvent:Connect(UpgradeButtonClicked)
+	    			upgradeButtonListeners[button.id] = button.hoveredEvent:Connect(UpgradeButtonHovered)
+	    			upgradeButtonListeners[button.id] = button.unhoveredEvent:Connect(UpgradeButtonUnhovered)
 	    		else
 		    		entryCustomProperties["PURCHASE_BUTTON"].isInteractable = false
 		    		entryCustomProperties["UPGRADE_COST_TEXT"]:SetColor(Color.RED)
@@ -1922,7 +1922,7 @@ function OpenTankUpgradeWindow(button, id)
 end
 
 function UpgradeButtonClicked(button)
-	
+	Events.BroadcastToServer("PurchaseUpgrade", tankDetails.id, button.name)
 end
 
 function UpgradeButtonHovered(button)
