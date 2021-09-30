@@ -505,7 +505,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -588,7 +588,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -738,7 +738,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -805,7 +805,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -872,7 +872,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -1038,7 +1038,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -1499,7 +1499,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -1582,7 +1582,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -1665,7 +1665,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -1748,7 +1748,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -1898,7 +1898,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -1965,7 +1965,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -2032,7 +2032,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -2099,7 +2099,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -2166,7 +2166,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -2332,7 +2332,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -2415,7 +2415,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -2498,7 +2498,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -2959,7 +2959,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -3042,7 +3042,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -3125,7 +3125,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -3208,7 +3208,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -3358,7 +3358,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -3425,7 +3425,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -3492,7 +3492,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -3559,7 +3559,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -3626,7 +3626,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -3792,7 +3792,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -3875,7 +3875,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -3958,7 +3958,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -4419,7 +4419,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -4502,7 +4502,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -4585,7 +4585,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -4668,7 +4668,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -4818,7 +4818,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -4885,7 +4885,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -4952,7 +4952,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -5019,7 +5019,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -5086,7 +5086,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -5252,7 +5252,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -5335,7 +5335,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -5418,7 +5418,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -5889,7 +5889,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -5972,7 +5972,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -6055,7 +6055,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -6138,7 +6138,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -6221,7 +6221,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -6304,7 +6304,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -6454,7 +6454,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -6521,7 +6521,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -6588,7 +6588,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -6655,7 +6655,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -6722,7 +6722,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -6789,7 +6789,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -6856,7 +6856,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -7022,7 +7022,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -7105,7 +7105,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -7188,7 +7188,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -7271,7 +7271,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -7354,7 +7354,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -7825,7 +7825,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -7908,7 +7908,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -7991,7 +7991,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -8074,7 +8074,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -8157,7 +8157,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -8240,7 +8240,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -8390,7 +8390,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -8457,7 +8457,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -8524,7 +8524,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -8591,7 +8591,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -8658,7 +8658,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -8725,7 +8725,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -8792,7 +8792,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -8958,7 +8958,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -9041,7 +9041,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -9124,7 +9124,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -9207,7 +9207,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -9290,7 +9290,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -9751,7 +9751,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -9834,7 +9834,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -9917,7 +9917,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -10000,7 +10000,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -10150,7 +10150,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -10217,7 +10217,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -10284,7 +10284,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -10351,7 +10351,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -10418,7 +10418,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -10584,7 +10584,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -10667,7 +10667,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -10750,7 +10750,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -11493,7 +11493,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -11576,7 +11576,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -11659,7 +11659,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -11742,7 +11742,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -11825,7 +11825,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -11908,7 +11908,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -12058,7 +12058,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -12125,7 +12125,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -12192,7 +12192,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -12259,7 +12259,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -12326,7 +12326,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -12393,7 +12393,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -12460,7 +12460,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -12626,7 +12626,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -12709,7 +12709,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -12792,7 +12792,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -12875,7 +12875,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -12958,7 +12958,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -13428,7 +13428,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -13511,7 +13511,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -13594,7 +13594,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -13677,7 +13677,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -13760,7 +13760,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -13843,7 +13843,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -13926,7 +13926,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Glasses for the Gunner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -14076,7 +14076,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -14143,7 +14143,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -14210,7 +14210,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -14277,7 +14277,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -14344,7 +14344,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -14411,7 +14411,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -14478,7 +14478,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Less Explosive Critical Systems"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -14545,7 +14545,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -14711,7 +14711,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -14794,7 +14794,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -14877,7 +14877,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -14960,7 +14960,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -15043,7 +15043,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -15126,7 +15126,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Working Brakes"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -15596,7 +15596,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -15679,7 +15679,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -15762,7 +15762,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -15845,7 +15845,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -15928,7 +15928,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16011,7 +16011,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16094,7 +16094,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Glasses for the Gunner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16244,7 +16244,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16311,7 +16311,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16378,7 +16378,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16445,7 +16445,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16512,7 +16512,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16579,7 +16579,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16646,7 +16646,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Less Explosive Critical Systems"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16713,7 +16713,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16879,7 +16879,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16962,7 +16962,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -17045,7 +17045,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -17128,7 +17128,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -17211,7 +17211,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -17294,7 +17294,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Working Brakes"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -17764,7 +17764,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -17847,7 +17847,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -17930,7 +17930,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18013,7 +18013,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18096,7 +18096,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18179,7 +18179,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18262,7 +18262,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Glasses for the Gunner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18412,7 +18412,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18479,7 +18479,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18546,7 +18546,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18613,7 +18613,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18680,7 +18680,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18747,7 +18747,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18814,7 +18814,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Less Explosive Critical Systems"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18881,7 +18881,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -19047,7 +19047,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -19130,7 +19130,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -19213,7 +19213,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -19296,7 +19296,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -19379,7 +19379,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -19462,7 +19462,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Working Brakes"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -19932,7 +19932,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20015,7 +20015,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20098,7 +20098,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20181,7 +20181,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20264,7 +20264,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20347,7 +20347,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20430,7 +20430,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Glasses for the Gunner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20580,7 +20580,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20647,7 +20647,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20714,7 +20714,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20781,7 +20781,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20848,7 +20848,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20915,7 +20915,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20982,7 +20982,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Less Explosive Critical Systems"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -21049,7 +21049,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -21215,7 +21215,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -21298,7 +21298,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -21381,7 +21381,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -21464,7 +21464,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -21547,7 +21547,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -21630,7 +21630,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Working Brakes"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -22100,7 +22100,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -22183,7 +22183,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -22266,7 +22266,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -22349,7 +22349,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -22432,7 +22432,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -22515,7 +22515,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -22598,7 +22598,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Glasses for the Gunner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -22748,7 +22748,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -22815,7 +22815,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -22882,7 +22882,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -22949,7 +22949,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -23016,7 +23016,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -23083,7 +23083,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -23150,7 +23150,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Less Explosive Critical Systems"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -23217,7 +23217,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -23383,7 +23383,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -23466,7 +23466,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -23549,7 +23549,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -23632,7 +23632,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -23715,7 +23715,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -23798,7 +23798,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Working Brakes"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -24268,7 +24268,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -24351,7 +24351,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -24434,7 +24434,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -24517,7 +24517,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -24600,7 +24600,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -24683,7 +24683,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -24766,7 +24766,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Glasses for the Gunner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -24916,7 +24916,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -24983,7 +24983,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25050,7 +25050,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25117,7 +25117,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25184,7 +25184,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25251,7 +25251,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25318,7 +25318,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Less Explosive Critical Systems"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25385,7 +25385,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25551,7 +25551,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25634,7 +25634,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25717,7 +25717,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25800,7 +25800,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25883,7 +25883,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25966,7 +25966,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Working Brakes"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -26436,7 +26436,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -26519,7 +26519,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -26602,7 +26602,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -26685,7 +26685,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -26768,7 +26768,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -26851,7 +26851,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -26934,7 +26934,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Glasses for the Gunner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27084,7 +27084,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27151,7 +27151,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27218,7 +27218,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27285,7 +27285,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27352,7 +27352,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27419,7 +27419,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27486,7 +27486,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Less Explosive Critical Systems"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27553,7 +27553,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27719,7 +27719,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27802,7 +27802,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27885,7 +27885,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27968,7 +27968,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -28051,7 +28051,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -28134,7 +28134,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Working Brakes"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -28604,7 +28604,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -28687,7 +28687,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -28770,7 +28770,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -28853,7 +28853,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -28936,7 +28936,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -29019,7 +29019,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -29102,7 +29102,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Glasses for the Gunner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -29252,7 +29252,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -29319,7 +29319,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -29386,7 +29386,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -29453,7 +29453,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -29520,7 +29520,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -29587,7 +29587,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -29654,7 +29654,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Less Explosive Critical Systems"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -29721,7 +29721,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -29887,7 +29887,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -29970,7 +29970,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -30053,7 +30053,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -30136,7 +30136,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -30219,7 +30219,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -30302,7 +30302,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Working Brakes"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -30757,7 +30757,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -30840,7 +30840,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -30990,7 +30990,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -31057,7 +31057,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -31124,7 +31124,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -31290,7 +31290,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -31751,7 +31751,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -31834,7 +31834,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -31917,7 +31917,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -32000,7 +32000,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -32150,7 +32150,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -32217,7 +32217,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -32284,7 +32284,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -32351,7 +32351,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -32418,7 +32418,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -32584,7 +32584,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -32667,7 +32667,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -32750,7 +32750,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -33211,7 +33211,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -33294,7 +33294,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -33377,7 +33377,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -33460,7 +33460,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -33610,7 +33610,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -33677,7 +33677,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -33744,7 +33744,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -33811,7 +33811,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -33878,7 +33878,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -34044,7 +34044,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -34127,7 +34127,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -34210,7 +34210,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -34671,7 +34671,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -34754,7 +34754,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -34837,7 +34837,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -34920,7 +34920,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -35070,7 +35070,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -35137,7 +35137,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -35204,7 +35204,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -35271,7 +35271,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -35338,7 +35338,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -35504,7 +35504,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -35587,7 +35587,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -35670,7 +35670,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -36131,7 +36131,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -36214,7 +36214,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -36297,7 +36297,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -36380,7 +36380,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -36530,7 +36530,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -36597,7 +36597,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -36664,7 +36664,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -36731,7 +36731,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -36798,7 +36798,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -36964,7 +36964,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -37047,7 +37047,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -37130,7 +37130,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -37601,7 +37601,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -37684,7 +37684,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -37767,7 +37767,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -37850,7 +37850,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -37933,7 +37933,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -38016,7 +38016,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -38166,7 +38166,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -38233,7 +38233,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -38300,7 +38300,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -38367,7 +38367,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -38434,7 +38434,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -38501,7 +38501,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -38568,7 +38568,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -38734,7 +38734,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -38817,7 +38817,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -38900,7 +38900,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -38983,7 +38983,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -39066,7 +39066,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -39537,7 +39537,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -39620,7 +39620,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -39703,7 +39703,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -39786,7 +39786,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -39869,7 +39869,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -39952,7 +39952,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -40102,7 +40102,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -40169,7 +40169,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -40236,7 +40236,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -40303,7 +40303,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -40370,7 +40370,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -40437,7 +40437,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -40504,7 +40504,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -40670,7 +40670,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -40753,7 +40753,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -40836,7 +40836,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -40919,7 +40919,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -41002,7 +41002,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -41465,7 +41465,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -41548,7 +41548,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -41631,7 +41631,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -41714,7 +41714,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -41797,7 +41797,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -41880,7 +41880,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -42030,7 +42030,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -42097,7 +42097,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -42164,7 +42164,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -42231,7 +42231,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -42298,7 +42298,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -42365,7 +42365,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -42432,7 +42432,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -42598,7 +42598,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -42681,7 +42681,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -42764,7 +42764,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -42847,7 +42847,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -42930,7 +42930,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -43400,7 +43400,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -43483,7 +43483,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -43566,7 +43566,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -43649,7 +43649,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -43732,7 +43732,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -43815,7 +43815,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -43898,7 +43898,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Glasses for the Gunner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -44048,7 +44048,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -44115,7 +44115,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -44182,7 +44182,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -44249,7 +44249,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -44316,7 +44316,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -44383,7 +44383,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -44450,7 +44450,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Less Explosive Critical Systems"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -44517,7 +44517,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -44683,7 +44683,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -44766,7 +44766,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -44849,7 +44849,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -44932,7 +44932,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -45015,7 +45015,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -45098,7 +45098,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Working Brakes"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -45568,7 +45568,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -45651,7 +45651,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -45734,7 +45734,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -45817,7 +45817,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -45900,7 +45900,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -45983,7 +45983,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -46066,7 +46066,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Glasses for the Gunner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -46216,7 +46216,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -46283,7 +46283,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -46350,7 +46350,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -46417,7 +46417,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -46484,7 +46484,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -46551,7 +46551,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -46618,7 +46618,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Less Explosive Critical Systems"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -46685,7 +46685,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -46851,7 +46851,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -46934,7 +46934,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -47017,7 +47017,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -47100,7 +47100,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -47183,7 +47183,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -47266,7 +47266,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Working Brakes"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -47736,7 +47736,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -47819,7 +47819,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -47902,7 +47902,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -47985,7 +47985,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -48068,7 +48068,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -48151,7 +48151,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -48234,7 +48234,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Glasses for the Gunner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -48384,7 +48384,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -48451,7 +48451,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -48518,7 +48518,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -48585,7 +48585,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -48652,7 +48652,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -48719,7 +48719,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -48786,7 +48786,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Less Explosive Critical Systems"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -48853,7 +48853,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -49019,7 +49019,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -49102,7 +49102,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -49185,7 +49185,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -49268,7 +49268,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -49351,7 +49351,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -49434,7 +49434,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Working Brakes"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -49904,7 +49904,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -49987,7 +49987,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -50070,7 +50070,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -50153,7 +50153,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -50236,7 +50236,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -50319,7 +50319,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -50402,7 +50402,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Glasses for the Gunner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -50552,7 +50552,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -50619,7 +50619,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -50686,7 +50686,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -50753,7 +50753,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -50820,7 +50820,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -50887,7 +50887,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -50954,7 +50954,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Less Explosive Critical Systems"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -51021,7 +51021,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -51187,7 +51187,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -51270,7 +51270,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -51353,7 +51353,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -51436,7 +51436,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -51519,7 +51519,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -51602,7 +51602,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Working Brakes"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52072,7 +52072,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52155,7 +52155,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52238,7 +52238,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52321,7 +52321,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52404,7 +52404,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52487,7 +52487,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52570,7 +52570,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Glasses for the Gunner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52720,7 +52720,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52787,7 +52787,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52854,7 +52854,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52921,7 +52921,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52988,7 +52988,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -53055,7 +53055,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -53122,7 +53122,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Less Explosive Critical Systems"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -53189,7 +53189,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -53355,7 +53355,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -53438,7 +53438,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -53521,7 +53521,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -53604,7 +53604,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -53687,7 +53687,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -53770,7 +53770,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Working Brakes"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -54240,7 +54240,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -54323,7 +54323,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -54406,7 +54406,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -54489,7 +54489,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -54572,7 +54572,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -54655,7 +54655,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -54738,7 +54738,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Glasses for the Gunner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -54888,7 +54888,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -54955,7 +54955,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -55022,7 +55022,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -55089,7 +55089,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -55156,7 +55156,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -55223,7 +55223,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -55290,7 +55290,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Less Explosive Critical Systems"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -55357,7 +55357,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -55523,7 +55523,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -55606,7 +55606,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -55689,7 +55689,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -55772,7 +55772,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -55855,7 +55855,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -55938,7 +55938,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Working Brakes"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -56408,7 +56408,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -56491,7 +56491,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -56574,7 +56574,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -56657,7 +56657,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -56740,7 +56740,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -56823,7 +56823,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -56906,7 +56906,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Glasses for the Gunner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -57056,7 +57056,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -57123,7 +57123,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -57190,7 +57190,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -57257,7 +57257,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -57324,7 +57324,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -57391,7 +57391,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -57458,7 +57458,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Less Explosive Critical Systems"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -57525,7 +57525,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -57691,7 +57691,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -57774,7 +57774,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -57857,7 +57857,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -57940,7 +57940,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -58023,7 +58023,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -58106,7 +58106,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Working Brakes"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -58576,7 +58576,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Turret Servos"
+            String: "New Elevation Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -58659,7 +58659,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Tuned Range Finder"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -58742,7 +58742,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Barrel Replacement"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -58825,7 +58825,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reliable Ammunition"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -58908,7 +58908,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Tightly Packed Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -58991,7 +58991,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Muzzle Brake Change"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59074,7 +59074,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Glasses for the Gunner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59224,7 +59224,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reinforced Chassis"
+            String: "Rolled Armour"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59291,7 +59291,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Addon Armor Plates"
+            String: "Armored Viewports"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59358,7 +59358,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "New Coat of Paint"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59425,7 +59425,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Reinforced Chassis"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59492,7 +59492,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Additional Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59559,7 +59559,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Spaced Armor Plates"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59626,7 +59626,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Less Explosive Critical Systems"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59693,7 +59693,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Rebuilt Engine"
+            String: "Greased Treads"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59859,7 +59859,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Improved Drive Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59942,7 +59942,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Semi-Automatic Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -60025,7 +60025,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Proper Maintenance"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -60108,7 +60108,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Replaced Gearbox"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -60191,7 +60191,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Rebuilt Engine"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -60274,7 +60274,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "PLACEHOLD OOGA BOOGA"
+            String: "Working Brakes"
           }
           Overrides {
             Name: "cs:upgradeID"
