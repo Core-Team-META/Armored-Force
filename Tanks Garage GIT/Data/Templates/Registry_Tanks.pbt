@@ -414,11 +414,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5000
+            Int: 1000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 2000
+            Int: 2500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -493,11 +493,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 3000
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -576,11 +576,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6000
+            Int: 3000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 7500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -659,11 +659,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5000
+            Int: 1000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 2000
+            Int: 2500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -726,11 +726,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 3000
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -793,11 +793,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6000
+            Int: 3000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 7500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -860,11 +860,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5000
+            Int: 1000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 2000
+            Int: 2500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -943,11 +943,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 3000
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -1026,11 +1026,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6000
+            Int: 3000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 7500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -1408,7 +1408,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -1487,11 +1487,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -1570,11 +1570,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -1653,11 +1653,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -1736,11 +1736,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -1819,7 +1819,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -1886,11 +1886,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -1953,11 +1953,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -2020,11 +2020,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -2087,11 +2087,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -2154,7 +2154,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -2237,11 +2237,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -2320,11 +2320,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -2403,11 +2403,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -2486,11 +2486,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -2868,7 +2868,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -2947,11 +2947,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -3030,11 +3030,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -3113,11 +3113,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -3196,11 +3196,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -3279,7 +3279,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -3346,11 +3346,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -3413,11 +3413,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -3480,11 +3480,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -3547,11 +3547,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -3614,7 +3614,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -3697,11 +3697,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -3780,11 +3780,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -3863,11 +3863,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -3946,11 +3946,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -4328,7 +4328,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -4407,11 +4407,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -4490,11 +4490,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -4573,11 +4573,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -4656,11 +4656,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -4739,7 +4739,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -4806,11 +4806,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -4873,11 +4873,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -4940,11 +4940,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -5007,11 +5007,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -5074,7 +5074,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -5157,11 +5157,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -5240,11 +5240,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -5323,11 +5323,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -5406,11 +5406,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -5802,7 +5802,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 3500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -5881,7 +5881,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -5964,7 +5964,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 8000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -6047,7 +6047,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 13000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -6126,11 +6126,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 11500
+            Int: 13500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 20000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -6209,11 +6209,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 13000
+            Int: 15000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 11500
+            Int: 28000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -6292,11 +6292,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 14500
+            Int: 18500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 13000
+            Int: 38000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -6379,7 +6379,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 3500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -6446,7 +6446,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -6513,7 +6513,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 8000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -6580,7 +6580,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 13000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -6643,11 +6643,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 11500
+            Int: 13500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 20000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -6710,11 +6710,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 13000
+            Int: 15000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 11500
+            Int: 28000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -6777,11 +6777,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 14500
+            Int: 18500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 13000
+            Int: 38000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -6848,7 +6848,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 3500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -6931,7 +6931,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -7014,7 +7014,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 8000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -7097,7 +7097,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 13000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -7176,11 +7176,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 11500
+            Int: 13500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 20000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -7259,11 +7259,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 13000
+            Int: 15000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 11500
+            Int: 28000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -7342,11 +7342,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 14500
+            Int: 18500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 13000
+            Int: 38000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -7738,7 +7738,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 3500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -7817,7 +7817,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -7900,7 +7900,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 8000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -7983,7 +7983,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 13000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -8062,11 +8062,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 11500
+            Int: 13500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 20000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -8145,11 +8145,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 13000
+            Int: 15000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 11500
+            Int: 28000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -8228,11 +8228,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 14500
+            Int: 18500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 13000
+            Int: 38000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -8315,7 +8315,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 3500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -8382,7 +8382,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -8449,7 +8449,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 8000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -8516,7 +8516,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 13000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -8579,11 +8579,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 11500
+            Int: 13500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 20000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -8646,11 +8646,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 13000
+            Int: 15000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 11500
+            Int: 28000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -8713,11 +8713,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 14500
+            Int: 18500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 13000
+            Int: 38000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -8784,7 +8784,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 3500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -8867,7 +8867,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -8950,7 +8950,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 8000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -9033,7 +9033,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 13000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -9112,11 +9112,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 11500
+            Int: 13500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 20000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -9195,11 +9195,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 13000
+            Int: 15000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 11500
+            Int: 28000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -9278,11 +9278,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 14500
+            Int: 18500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 13000
+            Int: 38000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -9660,7 +9660,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -9739,11 +9739,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -9822,11 +9822,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -9905,11 +9905,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -9988,11 +9988,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -10071,7 +10071,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -10138,11 +10138,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -10205,11 +10205,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -10272,11 +10272,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -10339,11 +10339,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -10406,7 +10406,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -10489,11 +10489,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -10572,11 +10572,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -10655,11 +10655,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -10738,11 +10738,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -11406,7 +11406,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 3500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -11485,7 +11485,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -11568,7 +11568,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -11651,7 +11651,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 13000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -11730,11 +11730,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 11500
+            Int: 13500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -11813,11 +11813,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 13000
+            Int: 15000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 11500
+            Int: 28000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -11896,11 +11896,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 14500
+            Int: 18500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 13000
+            Int: 38000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -11983,7 +11983,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 3500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -12050,7 +12050,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -12117,7 +12117,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -12184,7 +12184,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 13000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -12247,11 +12247,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 11500
+            Int: 13500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -12314,11 +12314,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 13000
+            Int: 15000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 11500
+            Int: 28000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -12381,11 +12381,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 14500
+            Int: 18500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 13000
+            Int: 38000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -12452,7 +12452,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 3500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -12535,7 +12535,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -12618,7 +12618,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -12701,7 +12701,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 13000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -12780,11 +12780,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 11500
+            Int: 13500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -12863,11 +12863,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 13000
+            Int: 15000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 11500
+            Int: 28000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -12946,11 +12946,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 14500
+            Int: 18500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 13000
+            Int: 38000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -13341,7 +13341,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -13420,7 +13420,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -13503,7 +13503,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -13586,7 +13586,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -13669,7 +13669,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -13752,7 +13752,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -13835,7 +13835,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -13918,7 +13918,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -14001,7 +14001,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -14068,7 +14068,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -14135,7 +14135,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -14202,7 +14202,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -14269,7 +14269,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -14336,7 +14336,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -14403,7 +14403,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -14470,7 +14470,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -14537,7 +14537,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -14620,7 +14620,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -14703,7 +14703,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -14786,7 +14786,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -14869,7 +14869,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -14952,7 +14952,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -15035,7 +15035,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -15118,7 +15118,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -15509,7 +15509,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -15588,7 +15588,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -15671,7 +15671,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -15754,7 +15754,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -15837,7 +15837,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -15920,7 +15920,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -16003,7 +16003,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -16086,7 +16086,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -16169,7 +16169,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -16236,7 +16236,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -16303,7 +16303,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -16370,7 +16370,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -16437,7 +16437,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -16504,7 +16504,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -16571,7 +16571,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -16638,7 +16638,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -16705,7 +16705,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -16788,7 +16788,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -16871,7 +16871,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -16954,7 +16954,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -17037,7 +17037,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -17120,7 +17120,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -17203,7 +17203,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -17286,7 +17286,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -17677,7 +17677,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -17756,7 +17756,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -17839,7 +17839,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -17922,7 +17922,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -18005,7 +18005,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -18088,7 +18088,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -18171,7 +18171,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -18254,7 +18254,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -18337,7 +18337,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -18404,7 +18404,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -18471,7 +18471,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -18538,7 +18538,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -18605,7 +18605,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -18672,7 +18672,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -18739,7 +18739,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -18806,7 +18806,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -18873,7 +18873,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -18956,7 +18956,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -19039,7 +19039,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -19122,7 +19122,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -19205,7 +19205,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -19288,7 +19288,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -19371,7 +19371,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -19454,7 +19454,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -19845,7 +19845,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -19924,7 +19924,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -20007,7 +20007,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -20090,7 +20090,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -20173,7 +20173,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -20256,7 +20256,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -20339,7 +20339,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -20422,7 +20422,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -20505,7 +20505,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -20572,7 +20572,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -20639,7 +20639,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -20706,7 +20706,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -20773,7 +20773,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -20840,7 +20840,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -20907,7 +20907,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -20974,7 +20974,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -21041,7 +21041,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -21124,7 +21124,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -21207,7 +21207,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -21290,7 +21290,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -21373,7 +21373,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -21456,7 +21456,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -21539,7 +21539,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -21622,7 +21622,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -22013,7 +22013,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -22092,7 +22092,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -22175,7 +22175,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -22258,7 +22258,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -22341,7 +22341,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -22424,7 +22424,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -22507,7 +22507,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -22590,7 +22590,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -22673,7 +22673,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -22740,7 +22740,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -22807,7 +22807,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -22874,7 +22874,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -22941,7 +22941,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -23008,7 +23008,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -23075,7 +23075,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -23142,7 +23142,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -23209,7 +23209,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -23292,7 +23292,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -23375,7 +23375,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -23458,7 +23458,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -23541,7 +23541,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -23624,7 +23624,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -23707,7 +23707,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -23790,7 +23790,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -24181,7 +24181,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -24260,7 +24260,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -24343,7 +24343,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -24426,7 +24426,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -24509,7 +24509,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -24592,7 +24592,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -24675,7 +24675,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -24758,7 +24758,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -24841,7 +24841,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -24908,7 +24908,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -24975,7 +24975,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -25042,7 +25042,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -25109,7 +25109,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -25176,7 +25176,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -25243,7 +25243,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -25310,7 +25310,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -25377,7 +25377,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -25460,7 +25460,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -25543,7 +25543,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -25626,7 +25626,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -25709,7 +25709,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -25792,7 +25792,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -25875,7 +25875,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -25958,7 +25958,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -26349,7 +26349,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -26428,7 +26428,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -26511,7 +26511,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -26594,7 +26594,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -26677,7 +26677,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -26760,7 +26760,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -26843,7 +26843,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -26926,7 +26926,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -27009,7 +27009,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -27076,7 +27076,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -27143,7 +27143,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -27210,7 +27210,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -27277,7 +27277,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -27344,7 +27344,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -27411,7 +27411,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -27478,7 +27478,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -27545,7 +27545,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -27628,7 +27628,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -27711,7 +27711,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -27794,7 +27794,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -27877,7 +27877,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -27960,7 +27960,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -28043,7 +28043,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -28126,7 +28126,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -28517,7 +28517,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -28596,7 +28596,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -28679,7 +28679,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -28762,7 +28762,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -28845,7 +28845,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -28928,7 +28928,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -29011,7 +29011,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -29094,7 +29094,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -29177,7 +29177,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -29244,7 +29244,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -29311,7 +29311,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -29378,7 +29378,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -29445,7 +29445,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -29512,7 +29512,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -29579,7 +29579,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -29646,7 +29646,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -29713,7 +29713,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -29796,7 +29796,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -29879,7 +29879,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -29962,7 +29962,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -30045,7 +30045,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -30128,7 +30128,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -30211,7 +30211,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -30294,7 +30294,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -30666,11 +30666,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5000
+            Int: 1000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 2000
+            Int: 2500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -30745,11 +30745,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 3000
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -30828,11 +30828,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6000
+            Int: 3000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 7500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -30911,11 +30911,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5000
+            Int: 1000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 2000
+            Int: 2500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -30978,11 +30978,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 3000
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -31045,11 +31045,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6000
+            Int: 3000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 7500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -31112,11 +31112,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5000
+            Int: 1000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 2000
+            Int: 2500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -31195,11 +31195,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 3000
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -31278,11 +31278,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6000
+            Int: 3000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 7500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -31660,7 +31660,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -31739,11 +31739,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -31822,11 +31822,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -31905,11 +31905,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -31988,11 +31988,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -32071,7 +32071,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -32138,11 +32138,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -32205,11 +32205,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -32272,11 +32272,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -32339,11 +32339,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -32406,7 +32406,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -32489,11 +32489,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -32572,11 +32572,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -32655,11 +32655,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -32738,11 +32738,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -33120,7 +33120,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -33199,11 +33199,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -33282,11 +33282,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -33365,11 +33365,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -33448,11 +33448,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -33531,7 +33531,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -33598,11 +33598,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -33665,11 +33665,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -33732,11 +33732,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -33799,11 +33799,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -33866,7 +33866,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -33949,11 +33949,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -34032,11 +34032,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -34115,11 +34115,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -34198,11 +34198,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -34580,7 +34580,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -34659,11 +34659,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -34742,11 +34742,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -34825,11 +34825,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -34908,11 +34908,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -34991,7 +34991,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -35058,11 +35058,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -35125,11 +35125,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -35192,11 +35192,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -35259,11 +35259,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -35326,7 +35326,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -35409,11 +35409,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -35492,11 +35492,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -35575,11 +35575,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -35658,11 +35658,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -36040,7 +36040,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -36119,11 +36119,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -36202,11 +36202,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -36285,11 +36285,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -36368,11 +36368,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -36451,7 +36451,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -36518,11 +36518,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -36585,11 +36585,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -36652,11 +36652,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -36719,11 +36719,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -36786,7 +36786,7 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 5500
+            Int: 2500
           }
           Overrides {
             Name: "cs:purchaseCost"
@@ -36869,11 +36869,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 6500
+            Int: 3500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 4500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -36952,11 +36952,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 7500
+            Int: 5000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 6500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -37035,11 +37035,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 8500
+            Int: 6000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -37118,11 +37118,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 9500
+            Int: 7500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 15000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -37514,7 +37514,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 3500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -37593,7 +37593,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -37676,7 +37676,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 8000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -37759,7 +37759,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 13000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -37838,11 +37838,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 11500
+            Int: 13500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 20000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -37921,11 +37921,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 13000
+            Int: 15000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 11500
+            Int: 28000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -38004,11 +38004,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 14500
+            Int: 18500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 13000
+            Int: 38000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -38091,7 +38091,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 3500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -38158,7 +38158,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -38225,7 +38225,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 8000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -38292,7 +38292,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 13000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -38355,11 +38355,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 11500
+            Int: 13500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 20000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -38422,11 +38422,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 13000
+            Int: 15000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 11500
+            Int: 28000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -38489,11 +38489,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 14500
+            Int: 18500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 13000
+            Int: 38000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -38560,7 +38560,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 3500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -38643,7 +38643,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -38726,7 +38726,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 8000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -38809,7 +38809,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 13000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -38888,11 +38888,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 11500
+            Int: 13500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 20000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -38971,11 +38971,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 13000
+            Int: 15000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 11500
+            Int: 28000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -39054,11 +39054,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 14500
+            Int: 18500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 13000
+            Int: 38000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -39450,7 +39450,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 3500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -39529,7 +39529,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -39612,7 +39612,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 8000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -39695,7 +39695,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 13000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -39774,11 +39774,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 11500
+            Int: 13500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 20000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -39857,11 +39857,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 13000
+            Int: 15000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 11500
+            Int: 28000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -39940,11 +39940,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 14500
+            Int: 18500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 13000
+            Int: 38000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -40027,7 +40027,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 3500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -40094,7 +40094,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -40161,7 +40161,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 8000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -40228,7 +40228,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 13000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -40291,11 +40291,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 11500
+            Int: 13500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 20000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -40358,11 +40358,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 13000
+            Int: 15000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 11500
+            Int: 28000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -40425,11 +40425,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 14500
+            Int: 18500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 13000
+            Int: 38000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -40496,7 +40496,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 3500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -40579,7 +40579,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -40662,7 +40662,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 8000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -40745,7 +40745,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 13000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -40824,11 +40824,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 11500
+            Int: 13500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 20000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -40907,11 +40907,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 13000
+            Int: 15000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 11500
+            Int: 28000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -40990,11 +40990,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 14500
+            Int: 18500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 13000
+            Int: 38000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -41378,7 +41378,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 3500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -41457,7 +41457,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -41540,7 +41540,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 8000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -41623,7 +41623,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 13000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -41702,11 +41702,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 11500
+            Int: 13500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 20000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -41785,11 +41785,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 13000
+            Int: 15000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 11500
+            Int: 28000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -41868,11 +41868,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 14500
+            Int: 18500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 13000
+            Int: 38000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -41955,7 +41955,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 3500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -42022,7 +42022,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -42089,7 +42089,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 8000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -42156,7 +42156,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 13000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -42219,11 +42219,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 11500
+            Int: 13500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 20000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -42286,11 +42286,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 13000
+            Int: 15000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 11500
+            Int: 28000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -42353,11 +42353,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 14500
+            Int: 18500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 13000
+            Int: 38000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -42424,7 +42424,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 4000
+            Int: 3500
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -42507,7 +42507,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 5000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -42590,7 +42590,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 8000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -42673,7 +42673,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 13000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -42752,11 +42752,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 11500
+            Int: 13500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 20000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -42835,11 +42835,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 13000
+            Int: 15000
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 11500
+            Int: 28000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -42918,11 +42918,11 @@ Assets {
           }
           Overrides {
             Name: "cs:researchCost"
-            Int: 14500
+            Int: 18500
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 13000
+            Int: 38000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -43313,7 +43313,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -43392,7 +43392,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -43475,7 +43475,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -43558,7 +43558,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -43641,7 +43641,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -43724,7 +43724,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -43807,7 +43807,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -43890,7 +43890,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -43973,7 +43973,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -44040,7 +44040,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -44107,7 +44107,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -44174,7 +44174,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -44241,7 +44241,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -44308,7 +44308,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -44375,7 +44375,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -44442,7 +44442,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -44509,7 +44509,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -44592,7 +44592,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -44675,7 +44675,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -44758,7 +44758,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -44841,7 +44841,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -44924,7 +44924,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -45007,7 +45007,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -45090,7 +45090,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -45481,7 +45481,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -45560,7 +45560,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -45643,7 +45643,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -45726,7 +45726,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -45809,7 +45809,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -45892,7 +45892,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -45975,7 +45975,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -46058,7 +46058,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -46141,7 +46141,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -46208,7 +46208,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -46275,7 +46275,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -46342,7 +46342,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -46409,7 +46409,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -46476,7 +46476,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -46543,7 +46543,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -46610,7 +46610,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -46677,7 +46677,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -46760,7 +46760,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -46843,7 +46843,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -46926,7 +46926,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -47009,7 +47009,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -47092,7 +47092,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -47175,7 +47175,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -47258,7 +47258,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -47649,7 +47649,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -47728,7 +47728,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -47811,7 +47811,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -47894,7 +47894,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -47977,7 +47977,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -48060,7 +48060,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -48143,7 +48143,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -48226,7 +48226,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -48309,7 +48309,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -48376,7 +48376,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -48443,7 +48443,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -48510,7 +48510,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -48577,7 +48577,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -48644,7 +48644,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -48711,7 +48711,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -48778,7 +48778,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -48845,7 +48845,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -48928,7 +48928,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -49011,7 +49011,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -49094,7 +49094,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -49177,7 +49177,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -49260,7 +49260,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -49343,7 +49343,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -49426,7 +49426,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -49817,7 +49817,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -49896,7 +49896,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -49979,7 +49979,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -50062,7 +50062,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -50145,7 +50145,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -50228,7 +50228,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -50311,7 +50311,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -50394,7 +50394,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -50477,7 +50477,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -50544,7 +50544,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -50611,7 +50611,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -50678,7 +50678,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -50745,7 +50745,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -50812,7 +50812,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -50879,7 +50879,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -50946,7 +50946,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -51013,7 +51013,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -51096,7 +51096,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -51179,7 +51179,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -51262,7 +51262,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -51345,7 +51345,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -51428,7 +51428,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -51511,7 +51511,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -51594,7 +51594,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -51985,7 +51985,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -52064,7 +52064,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -52147,7 +52147,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -52230,7 +52230,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -52313,7 +52313,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -52396,7 +52396,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -52479,7 +52479,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -52562,7 +52562,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -52645,7 +52645,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -52712,7 +52712,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -52779,7 +52779,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -52846,7 +52846,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -52913,7 +52913,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -52980,7 +52980,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -53047,7 +53047,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -53114,7 +53114,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -53181,7 +53181,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -53264,7 +53264,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -53347,7 +53347,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -53430,7 +53430,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -53513,7 +53513,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -53596,7 +53596,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -53679,7 +53679,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -53762,7 +53762,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -54153,7 +54153,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -54232,7 +54232,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -54315,7 +54315,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -54398,7 +54398,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -54481,7 +54481,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -54564,7 +54564,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -54647,7 +54647,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -54730,7 +54730,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -54813,7 +54813,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -54880,7 +54880,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -54947,7 +54947,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -55014,7 +55014,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -55081,7 +55081,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -55148,7 +55148,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -55215,7 +55215,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -55282,7 +55282,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -55349,7 +55349,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -55432,7 +55432,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -55515,7 +55515,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -55598,7 +55598,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -55681,7 +55681,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -55764,7 +55764,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -55847,7 +55847,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -55930,7 +55930,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -56321,7 +56321,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -56400,7 +56400,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -56483,7 +56483,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -56566,7 +56566,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -56649,7 +56649,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -56732,7 +56732,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -56815,7 +56815,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -56898,7 +56898,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -56981,7 +56981,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -57048,7 +57048,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -57115,7 +57115,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -57182,7 +57182,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -57249,7 +57249,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -57316,7 +57316,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -57383,7 +57383,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -57450,7 +57450,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -57517,7 +57517,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -57600,7 +57600,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -57683,7 +57683,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -57766,7 +57766,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -57849,7 +57849,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -57932,7 +57932,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -58015,7 +58015,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -58098,7 +58098,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -58489,7 +58489,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -58568,7 +58568,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -58651,7 +58651,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -58734,7 +58734,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -58817,7 +58817,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -58900,7 +58900,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -58983,7 +58983,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -59066,7 +59066,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -59149,7 +59149,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -59216,7 +59216,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -59283,7 +59283,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -59350,7 +59350,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -59417,7 +59417,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -59484,7 +59484,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -59551,7 +59551,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -59618,7 +59618,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -59685,7 +59685,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 5500
+            Int: 4000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -59768,7 +59768,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 7000
+            Int: 6000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -59851,7 +59851,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 8500
+            Int: 10000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -59934,7 +59934,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -60017,7 +60017,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 12500
+            Int: 24000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -60100,7 +60100,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 15000
+            Int: 32000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -60183,7 +60183,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 17500
+            Int: 41000
           }
           Overrides {
             Name: "cs:stat1Name"
@@ -60266,7 +60266,7 @@ Assets {
           }
           Overrides {
             Name: "cs:purchaseCost"
-            Int: 20000
+            Int: 50000
           }
           Overrides {
             Name: "cs:stat1Name"
