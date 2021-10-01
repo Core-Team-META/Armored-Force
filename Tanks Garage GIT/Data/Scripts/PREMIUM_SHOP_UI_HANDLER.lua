@@ -411,6 +411,7 @@ function PurchaseAlliesPremiumTank()
 		local purchaseCosts = TankAPI.GetPurchaseCost(tankId)
 		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < purchaseCosts.amount then
 			SFX_DENIED:Play()
+			Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "CANNOT AFFORD", "You do not have enough gold to purchase this tank.")
 			return
 		end
 		ALLIES_BUY_BUTTON.isInteractable = false
@@ -434,10 +435,11 @@ function PurchaseAxisPremiumTank()
 		local purchaseCosts = TankAPI.GetPurchaseCost(tankId)
 		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < purchaseCosts.amount then
 			SFX_DENIED:Play()
+			Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "CANNOT AFFORD", "You do not have enough gold to purchase this tank.")
 			return
 		end
 		AXIS_BUY_BUTTON.isInteractable = false
-		local event = Events.BroadcastToServer("PurchaseTank", tankId, purchaseCosts.resource)
+		local event = Events.BroadcastToServer("PurchaseTank", tankId, purchaseCosts.resource)		
 		--[[
 		if (event == BroadcastEventResultCode.SUCCESS) then
 			for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
