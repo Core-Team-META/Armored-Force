@@ -1008,7 +1008,7 @@ Assets {
           }
           Image {
             Brush {
-              Id: 5338244946539998590
+              Id: 6262982467505051120
             }
             Color {
               R: 1
@@ -1347,12 +1347,12 @@ Assets {
       }
     }
     Assets {
-      Id: 5338244946539998590
-      Name: "Survival Crate 005"
+      Id: 6262982467505051120
+      Name: "Fantasy Craft Bar 002"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Survival_Equip_Crate_005"
+        AssetId: "UI_Fantasy_Crafting_Bar_002"
       }
     }
     Assets {

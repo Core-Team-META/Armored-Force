@@ -44,15 +44,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11619439792683854596
-  Name: "Frame Outline Thin 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameOutline_020"
-  }
-}
-Assets {
   Id: 10820194954338241369
   Name: "BG Highlighted 001"
   PlatformAssetType: 9
@@ -134,30 +125,12 @@ Assets {
   }
 }
 Assets {
-  Id: 4519748528802078203
-  Name: "Icon Checkmark"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Checkmark"
-  }
-}
-Assets {
   Id: 3576362623870181230
   Name: "Icon Arrow Turn Left"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_ArrowTurnLeft"
-  }
-}
-Assets {
-  Id: 2903415737883036314
-  Name: "Icon Close"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Close"
   }
 }
 Assets {

@@ -261,141 +261,6 @@ function ResearchTank(player, id, prereqId, useFreeRP)
 end
 --]]
 
-function PurchaseWeapon(player, id)
-	local tank = {}
-	for k, tankData in ipairs(TANK_LIST) do
-		if(tankData.id == id) then
---print("DEBUG: Found match")
-			local cost = tankData.weaponPurchaseCost
-			local researchCost = tankData.weaponResearchCost
-			local silver = player:GetResource(CURRENCY.SILVER.ResourceName)
-			if(silver < cost) then return BroadcastEventResultCode.FAILURE end
-			
-			local tankRPString = UTIL_API.GetTankRPString(tonumber(id))
-			local tankRP = player:GetResource(tankRPString)
-			local freeRP = player:GetResource(CURRENCY.FREERP.ResourceName)
-			
-			if(tankRP + freeRP < researchCost) then
-				return BroadcastEventResultCode.FAILURE				
-			end
-			
-			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
-				if(tank.id == id) then
---print("DEBUG: Owned tank found")					
-					player:RemoveResource(CURRENCY.SILVER.ResourceName, cost)
-				
-					player:RemoveResource(tankRPString, researchCost)
-					researchCost = researchCost - tankRP
-					
-					if(researchCost > 0) then
-						player:RemoveResource(CURRENCY.FREERP.ResourceName, researchCost)
-					end
-					
-					tank.weaponProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
-					
-					Events.BroadcastToPlayer(player, "WeaponUpgradeSuccessful")
-					Events.Broadcast("UpgradeAcquired", player, id, TECHTREE.UPGRADE_SLOT.WEAPON)
-					player:SetPrivateNetworkedData("PlayerTankData", player.serverUserData.techTreeProgress)
-					return BroadcastEventResultCode.SUCCESS
-				end
-			end
-			return BroadcastEventResultCode.FAILURE
-		end
-	end	
-	
-	return BroadcastEventResultCode.FAILURE
-end
-
-function PurchaseArmor(player, id)
-	local tank = {}
-	for k, tankData in ipairs(TANK_LIST) do
-		if(tankData.id == id) then
---print("DEBUG: Found match")
-			local cost = tankData.armorPurchaseCost
-			local researchCost = tankData.armorResearchCost
-			local silver = player:GetResource(CURRENCY.SILVER.ResourceName)
-			if(silver < cost) then return BroadcastEventResultCode.FAILURE end
-			
-			local tankRPString = UTIL_API.GetTankRPString(tonumber(id))
-			local tankRP = player:GetResource(tankRPString)
-			local freeRP = player:GetResource(CURRENCY.FREERP.ResourceName)
-			
-			if(tankRP + freeRP < researchCost) then
-				return BroadcastEventResultCode.FAILURE				
-			end
-			
-			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
-				if(tank.id == id) then
---print("DEBUG: Owned tank found")					
-					player:RemoveResource(CURRENCY.SILVER.ResourceName, cost)
-					
-					player:RemoveResource(tankRPString, researchCost)
-					researchCost = researchCost - tankRP 
-					
-					if(researchCost > 0) then
-						player:RemoveResource(CURRENCY.FREERP.ResourceName, researchCost)
-					end
-					
-					tank.armorProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
-					
-					Events.BroadcastToPlayer(player, "ArmorUpgradeSuccessful")
-					Events.Broadcast("UpgradeAcquired", player, id, TECHTREE.UPGRADE_SLOT.ARMOR)
-					player:SetPrivateNetworkedData("PlayerTankData", player.serverUserData.techTreeProgress)
-					return BroadcastEventResultCode.SUCCESS
-				end
-			end
-			return BroadcastEventResultCode.FAILURE
-		end
-	end	
-	
-	return BroadcastEventResultCode.FAILURE
-end
-
-function PurchaseEngine(player, id)
-	local tank = {}
-	for k, tankData in ipairs(TANK_LIST) do
-		if(tankData.id == id) then
---print("DEBUG: Found match")
-			local cost = tankData.mobilityPurchaseCost
-			local researchCost = tankData.mobilityResearchCost
-			local silver = player:GetResource(CURRENCY.SILVER.ResourceName)
-			if(silver < cost) then return BroadcastEventResultCode.FAILURE end
-			
-			local tankRPString = UTIL_API.GetTankRPString(tonumber(id))
-			local tankRP = player:GetResource(tankRPString)
-			local freeRP = player:GetResource(CURRENCY.FREERP.ResourceName)
-			
-			if(tankRP + freeRP < researchCost) then
-				return BroadcastEventResultCode.FAILURE				
-			end
-			
-			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
-				if(tank.id == id) then
---print("DEBUG: Owned tank found")					
-					player:RemoveResource(CURRENCY.SILVER.ResourceName, cost)
-					
-					player:RemoveResource(tankRPString, researchCost)
-					researchCost = researchCost - tankRP 
-					
-					if(researchCost > 0) then
-						player:RemoveResource(CURRENCY.FREERP.ResourceName, researchCost)
-					end
-					
-					tank.engineProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
-					
-					Events.BroadcastToPlayer(player, "EngineUpgradeSuccessful")
-					Events.Broadcast("UpgradeAcquired", player, id, TECHTREE.UPGRADE_SLOT.ENGINE)
-					player:SetPrivateNetworkedData("PlayerTankData", player.serverUserData.techTreeProgress)
-					return BroadcastEventResultCode.SUCCESS
-				end
-			end
-			return BroadcastEventResultCode.FAILURE
-		end
-	end	
-	
-	return BroadcastEventResultCode.FAILURE
-end
-
 function PurchaseUpgrade(player, tankID, upgradeID)
 
 	print("got request from " .. player.name .. " for " .. tankID .. " " .. upgradeID)
@@ -462,17 +327,13 @@ function PurchaseUpgrade(player, tankID, upgradeID)
 						
 			tankUpgradeType[upgradeID] = tostring(tonumber(tankUpgradeType[upgradeID]) + 1)
 									
-			Events.BroadcastToPlayer(player, "UpgradeSuccessful")
+			Events.BroadcastToPlayer(player, "UpgradeSuccessful", tankID, upgradeID, tankUpgradeType[upgradeID])
 			--Events.Broadcast("UpgradeAcquired", player, id, TECHTREE.UPGRADE_SLOT.ENGINE)
-			player:SetPrivateNetworkedData("PlayerTankData", player.serverUserData.techTreeProgress)
+			-- player:SetPrivateNetworkedData("PlayerTankData", player.serverUserData.techTreeProgress)
 			return BroadcastEventResultCode.SUCCESS
 		end
 	end	
 end
 
 Events.ConnectForPlayer("PurchaseUpgrade", PurchaseUpgrade)
-
 Events.ConnectForPlayer("PurchaseTank", PurchaseTank)
-Events.ConnectForPlayer("PurchaseWeapon", PurchaseWeapon)
-Events.ConnectForPlayer("PurchaseArmor", PurchaseArmor)
-Events.ConnectForPlayer("PurchaseEngine", PurchaseEngine)
