@@ -1803,6 +1803,58 @@ function UpgradeObtained(tankID, upgradeID, newUpgradeValue)
 end
 
 function UpgradeButtonHovered(button)
+    local damage = tankDetails.damage 
+    local reload = tankDetails.reload
+    local turret = tankDetails.turret    
+    local hitPoints = tankDetails.hitPoints   
+    local topSpeed = tankDetails.topSpeed
+    local acceleration = tankDetails.acceleration
+    local turningSpeed = tankDetails.turningSpeed
+        
+    for x, type in ipairs(slotTypes) do
+    	local typeDetails = tankDetails[type]
+    	local progressOnType = nil
+    	local statName = ""
+    	local statValue = 0
+    	
+    	if type == "TURRET" then
+    		progressOnType = tankDetails.turretProgress
+    	elseif type == "HULL" then
+    		progressOnType = tankDetails.hullProgress
+    	elseif type == "ENGINE" then
+    		progressOnType = tankDetails.engineProgress
+    	end
+    	
+    	for upgradeID, progress in pairs(progressOnType) do
+    		if (tonumber(progress) >= 2) or (upgradeID == button.name) then
+    			for i = 1, 4 do
+    				statName = typeDetails[upgradeID]["stat" .. tostring(i) .. "Name"]
+    				statValue = typeDetails[upgradeID]["stat" .. tostring(i) .. "Value"]
+    				if statName == "DAMAGE" then
+    					damage = damage + statValue
+    				elseif statName == "AIM" then
+    					turret = turret + statValue
+    				elseif statName == "HITPOINTS" then
+    					hitPoints = hitPoints + statValue
+    				elseif statName == "SPEED" then
+    					topSpeed = topSpeed + statValue
+    				elseif statName == "ACCELERATION" then
+    					acceleration = acceleration + statValue
+    				elseif statName == "TURNING" then
+    					turningSpeed = turningSpeed + statValue
+    				end
+    			end
+    		end
+    	end
+    end
+    
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').progress = damage / tankAPI.GetHighestDamage()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').progress = 1 - (reload / tankAPI.GetHighestReload())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_6_LVLUP').progress = turret / tankAPI.GetHighestTurretSpeed()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').progress = hitPoints / tankAPI.GetHighestHitPoints()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_8_LVLUP').progress = topSpeed / tankAPI.GetHighestTopSpeed()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_9_LVLUP').progress = acceleration / tankAPI.GetHighestAcceleration()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').progress = turningSpeed / tankAPI.GetHighestTurningSpeed()
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').visibility = Visibility.FORCE_ON
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').visibility = Visibility.FORCE_ON
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').visibility = Visibility.FORCE_ON
@@ -1822,8 +1874,8 @@ function UpgradeButtonUnhovered(button)
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').visibility = Visibility.FORCE_OFF
 end
 
-function HoverTankUpgradeWindow(button)
-    ButtonHover()
+function HoverTankUpgradeWindow(button) 
+	--[[      
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').visibility = Visibility.FORCE_ON
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').visibility = Visibility.FORCE_ON
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').visibility = Visibility.FORCE_ON
@@ -1831,9 +1883,11 @@ function HoverTankUpgradeWindow(button)
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_8_LVLUP').visibility = Visibility.FORCE_ON
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_9_LVLUP').visibility = Visibility.FORCE_ON
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').visibility = Visibility.FORCE_ON
+    ]]
 end
 
 function UnhoverTankUpgradeWindow(button)
+	--[[
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').visibility = Visibility.FORCE_OFF
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').visibility = Visibility.FORCE_OFF
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').visibility = Visibility.FORCE_OFF
@@ -1841,6 +1895,7 @@ function UnhoverTankUpgradeWindow(button)
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_8_LVLUP').visibility = Visibility.FORCE_OFF
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_9_LVLUP').visibility = Visibility.FORCE_OFF
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').visibility = Visibility.FORCE_OFF
+    ]]
 end
 
 function CloseTankUpgradeWindow(button)
@@ -1866,62 +1921,76 @@ function PopulateEquippedTankStats(entry)
     -- Set base versions
     STATS_TANK_CONTAINER:FindDescendantByName('EQUIPPED_TANK').text = entry.name
     STATS_TANK_CONTAINER:FindDescendantByName('EQUIPPED_EXPERIENCE_EQUIPPED_TANK_PARTS').text =
-        tostring(LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(id))))
-    local damage = entry.damage
-    if tostring(tankProgress.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-        damage = entry.damageUpgraded
-    end
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_4').progress = damage / tankAPI.GetHighestDamage()
+    tostring(LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(id))))
+        
+    local damage = entry.damage 
     local reload = entry.reload
-    if tostring(tankProgress.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-        reload = entry.reloadUpgraded
-    end
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_5').progress = 1 - (reload / tankAPI.GetHighestReload())
-    local turret = entry.turret
-    if tostring(tankProgress.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-        turret = entry.turretUpgraded
-    end
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_6').progress = turret / tankAPI.GetHighestTurretSpeed()
-    local hitPoints = entry.hitPoints
-    if tostring(tankProgress.armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-        hitPoints = entry.hitPointsUpgraded
-    end
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_1').progress = hitPoints / tankAPI.GetHighestHitPoints()
+    local turret = entry.turret    
+    local hitPoints = entry.hitPoints   
     local topSpeed = entry.topSpeed
-    if tostring(tankProgress.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-        topSpeed = entry.topSpeedUpgraded
-    end
-    if topSpeed > tankAPI.GetHighestTopSpeed() then
-    	topSpeed = tankAPI.GetHighestTopSpeed()
-    end
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_8').progress = topSpeed / tankAPI.GetHighestTopSpeed()
     local acceleration = entry.acceleration
-    if tostring(tankProgress.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-        acceleration = entry.accelerationUpgraded
-    end
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_9').progress = acceleration / tankAPI.GetHighestAcceleration()
     local turningSpeed = entry.turningSpeed
-    if tostring(tankProgress.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-        turningSpeed = entry.turningSpeedUpgraded
-    end -- TODO
+        
+    for x, type in ipairs(slotTypes) do
+    	local typeDetails = entry[type]
+    	local progressOnType = nil
+    	local statName = ""
+    	local statValue = 0
+    	
+    	if type == "TURRET" then
+    		progressOnType = tankProgress.turret
+    	elseif type == "HULL" then
+    		progressOnType = tankProgress.hull
+    	elseif type == "ENGINE" then
+    		progressOnType = tankProgress.engine
+    	end
+    	
+    	for upgradeID, progress in pairs(progressOnType) do
+    		if tonumber(progress) >= 2 then
+    			for i = 1, 4 do
+    				statName = typeDetails[upgradeID]["stat" .. tostring(i) .. "Name"]
+    				statValue = typeDetails[upgradeID]["stat" .. tostring(i) .. "Value"]
+    				if statName == "DAMAGE" then
+    					damage = damage + statValue
+    				elseif statName == "AIM" then
+    					turret = turret + statValue
+    				elseif statName == "HITPOINTS" then
+    					hitPoints = hitPoints + statValue
+    				elseif statName == "SPEED" then
+    					topSpeed = topSpeed + statValue
+    				elseif statName == "ACCELERATION" then
+    					acceleration = acceleration + statValue
+    				elseif statName == "TURNING" then
+    					turningSpeed = turningSpeed + statValue
+    				end
+    			end
+    		end
+    	end
+    end
+ 
+     if topSpeed > tankAPI.GetHighestTopSpeed() then
+    	topSpeed = tankAPI.GetHighestTopSpeed()
+    end    
+    
     if turningSpeed > 1000 then
     	turningSpeed = math.floor(turningSpeed / 20)
     end
+    
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_4').progress = damage / tankAPI.GetHighestDamage()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_5').progress = 1 - (reload / tankAPI.GetHighestReload())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_6').progress = turret / tankAPI.GetHighestTurretSpeed()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_1').progress = hitPoints / tankAPI.GetHighestHitPoints()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_8').progress = topSpeed / tankAPI.GetHighestTopSpeed()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_9').progress = acceleration / tankAPI.GetHighestAcceleration()
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_10').progress = turningSpeed / tankAPI.GetHighestTurningSpeed()
+    
     -- Set upgraded versions
-    local damage = entry.damageUpgraded
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').progress = damage / tankAPI.GetHighestDamage()
-    local reload = entry.reloadUpgraded
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').progress = 1 - (reload / tankAPI.GetHighestReload())
-    local turret = entry.turretUpgraded
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_6_LVLUP').progress = turret / tankAPI.GetHighestTurretSpeed()
-    local hitPoints = entry.hitPointsUpgraded
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').progress = hitPoints / tankAPI.GetHighestHitPoints()
-    local topSpeed = entry.topSpeedUpgraded
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_8_LVLUP').progress = topSpeed / tankAPI.GetHighestTopSpeed()
-    local acceleration = entry.accelerationUpgraded
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_9_LVLUP').progress = acceleration / tankAPI.GetHighestAcceleration()
-    local turningSpeed = entry.turningSpeedUpgraded -- TODO
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').progress = turningSpeed / tankAPI.GetHighestTurningSpeed()
 
 end
