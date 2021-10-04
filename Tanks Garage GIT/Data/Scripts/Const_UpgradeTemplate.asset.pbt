@@ -17,6 +17,10 @@ Assets {
         String: ""
       }
       Overrides {
+        Name: "cs:upgradeDescription"
+        String: "Placeholder Description"
+      }
+      Overrides {
         Name: "cs:researchCurrencyName"
         String: "RP"
       }
@@ -31,6 +35,10 @@ Assets {
       Overrides {
         Name: "cs:purchaseCost"
         Int: 0
+      }
+      Overrides {
+        Name: "cs:mustUnlockPrereq"
+        Bool: false
       }
       Overrides {
         Name: "cs:prerequisite"
@@ -131,6 +139,14 @@ Assets {
       Overrides {
         Name: "cs:stat4Value:category"
         String: "UpgradedStats"
+      }
+      Overrides {
+        Name: "cs:upgradeDescription:category"
+        String: "Description"
+      }
+      Overrides {
+        Name: "cs:mustUnlockPrereq:category"
+        String: "PurchaseInfo"
       }
     }
   }
