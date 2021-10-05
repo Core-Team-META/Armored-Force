@@ -123,6 +123,8 @@ Assets {
         ChildIds: 3374469497055376841
         ChildIds: 5735463277817223977
         ChildIds: 2733184167084141445
+        ChildIds: 9275193825140592723
+        ChildIds: 18297986400136179020
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -1067,6 +1069,188 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 9275193825140592723
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6734576287303413843
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "RELOAD"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Experienced Gunner"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.05
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Improve reload speed by 5%"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 18297986400136179020
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6734576287303413843
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "REPAIR"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Swift Repair"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Reduces time to automatically repair treads by 3 seconds."
           }
         }
         Collidable_v2 {

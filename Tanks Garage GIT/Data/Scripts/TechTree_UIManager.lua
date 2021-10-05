@@ -778,18 +778,6 @@ function ForceHideResearchSidePanel()
     researchTankSidePanel.visibility = Visibility.FORCE_OFF
 end
 
-function UseFreeRP()
-    ResearchTank(LOCAL_PLAYER:GetResource(Constants_API.FREERP), tankDetails.id, 0, true)
-end
-
-function UsePrerequisite1()
-    ResearchTank(researchPointCollection[1].rp, tankDetails.id, researchPointCollection[1].id, false)
-end
-
-function UsePrerequisite2()
-    ResearchTank(researchPointCollection[2].rp, tankDetails.id, researchPointCollection[2].id, false)
-end
-
 function TogglePrerequisite1Visibility(visibility)
     usePrerequisite1.visibility = visibility
     prerequisite1RP.visibility = visibility
@@ -949,15 +937,6 @@ function GetPlayerTankData(id)
     return {}
 end
 
-function GetUpgradeText(hasUpgrade, Cost, upgradeType)
-    if (hasUpgrade and upgradeType == Constants_API.UPGRADE_TYPE.RESEARCH) then
-        return HAS_RESEARCH_TEXT
-    elseif (hasUpgrade and upgradeType == Constants_API.UPGRADE_TYPE.PURCHASE) then
-        return HAS_PURCHASE_TEXT
-    end
-    return tostring(Cost)
-end
-
 function GetScrollPanelByTier(tier)
     if (tier == 1) then
         return TIER1_SCROLL_PANEL
@@ -1011,76 +990,6 @@ function PurchaseTank()
         local prereqs = GetPrerequisiteRPValues(purchasedId)
         Events.BroadcastToServer('PurchaseTank', tonumber(purchasedId), prereqs)
     end
-end
-
--- TODO_DELETE (I believe this function isn't being used anymore)
--- Upgrade the tank's progress
-function UpgradeTank()
-    if (tankDetails.purchasedtank) then
-        Events.BroadcastToServer('CHANGE_EQUIPPED_TANK', tankDetails.id)
-        SFX_EQUIP_TANK:Play()
-        UI.PrintToScreen(tankDetails.name .. ' equipped.')
-    elseif (tankDetails.researchedtank) then
-        local currency = LOCAL_PLAYER:GetResource(tankDetails.currency)
-        if (currency < tankDetails.tankPurchaseCost) then
-            -- DEBUG
-            ShowNotEnoughCurrencyMessage()
-        else
-            --
-            --[[for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-				if(tank.id == tankDetails.id) then
-					tank.purchased = true
-					if(tankDetails.currency == Constants_API.GOLD) then
-						tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
-						tank.armorProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
-						tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
-					end
-				end
-			end]]
-            Events.BroadcastToServer('PurchaseTank', tankDetails.id, tankDetails.currency)
-            -- TODO: Play SFX/Message
-            UI.PrintToScreen(tankDetails.name .. ' purchased.')
-        end
-    else
-        -- When researching tank, we'll be using the RP values of prerequisite tanks, not the tank's RP itself
-        researchPointCollection = GetPrerequisiteRPValues(tankDetails.id)
-        ToggleResearchSidePanel()
-        freeRPValue.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.FREERP))
-        if (researchPointCollection[1] ~= nil) then
-            --print(researchPointCollection[1].rp)
-            TogglePrerequisite1Visibility(Visibility.FORCE_ON)
-        end
-        if (researchPointCollection[2] ~= nil) then
-            --print(researchPointCollection[2].rp)
-            TogglePrerequisite2Visibility(Visibility.FORCE_ON)
-        end
-    end
-    PopulateCurrencyUI()
-end
-
--- TODO_DELETE (I believe this function isn't used anymore)
--- Set the selected tank's progress to researched
-function ResearchTank(rp, researchedTankId, prereqId, usingFreeRP)
-    if (rp < tankDetails.tankResearchCost) then
-        ShowNotEnoughRPMessage()
-    else
-        local event = Events.BroadcastToServer('ResearchTank', tankDetails.id, prereqId, usingFreeRP)
-        if (event == BroadcastEventResultCode.SUCCESS) then
-            -- TODO: Play SFX/Message
-            UI.PrintToScreen(tankDetails.name .. ' successfully researched.')
-            PopulateCurrencyUI()
-            for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-                if (tank.id == tankDetails.id) then
-                    tank.researched = true
-                end
-            end
-            CloseTechTreeModal()
-        else
-            -- TODO: Better prompt for user
-            UI.PrintToScreen('There was an error sending the event. Please try again.')
-        end
-    end
-    PopulateCurrencyUI()
 end
 
 -- Returns a simple table that holds data for a given tank's pre-requisites. Used to determine which tank's RP can be used to research the tank
@@ -1393,99 +1302,78 @@ end
 
 function PopulateHoverTankStats(tankData)
 --print(tankAPI.GetHighestDamage())
-    local entry = {}
-    local progress = {}
-    for i, tank in ipairs(TANK_LIST) do
-        local id = tank.id
-        if tonumber(id) == tonumber(tankData.id) then
-            entry = tank
-        end
-    end
-
-    for i, tankProgress in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-        if tonumber(tankProgress.id) == tonumber(tankData.id) then
-            progress = tankProgress
-        end
-    end
-    -- TODO shorten this and remove duplicate code
     VIEWED_TANK_STATS:FindDescendantByName('VIEWING_TANK').text = tankData.name
     VIEWED_TANK_STATS:FindDescendantByName('EXPERIENCE_EQUIPPED_TANK').text =
         tostring(LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankData.id))))
-    if tostring(progress.weaponProgress) ~= tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-        local damage = entry.damage
-        local reload = entry.reload
-        local turret = entry.turret
-		--print(damage)
-		--print(reload)
-		--print(turret)
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_4').progress = tonumber(damage) / tankAPI.GetHighestDamage()
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_5').progress = 1 - (tonumber(reload) / tankAPI.GetHighestReload())
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_6').progress = tonumber(turret) / tankAPI.GetHighestTurretSpeed()
-    else
-        local damage = entry.damageUpgraded
-        local reload = entry.reloadUpgraded
-        local turret = entry.turretUpgraded
-		--print(damage)
-		--print(reload)
-		--print(turret)
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_4').progress = tonumber(damage) / tankAPI.GetHighestDamage()
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_5').progress = 1 - (tonumber(reload) / tankAPI.GetHighestReload())
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_6').progress = tonumber(turret) / tankAPI.GetHighestTurretSpeed()
+
+    local damage = tankData.damage 
+    local reload = tankData.reload
+    local turret = tankData.turret    
+    local hitPoints = tankData.hitPoints   
+    local topSpeed = tankData.topSpeed
+    local acceleration = tankData.acceleration
+    local turningSpeed = tankData.turningSpeed
+    
+    local progressOnTank = {}
+    
+	for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+	    if (t.id == tankData.id) then
+	        progressOnTank = t
+	    end
+	end 
+            
+    for x, type in ipairs(slotTypes) do
+    	local typeDetails = tankData[type]
+    	local progressOnType = nil
+    	local statName = ""
+    	local statValue = 0
+    	
+    	if type == "TURRET" then
+    		progressOnType = progressOnTank.turret
+    	elseif type == "HULL" then
+    		progressOnType = progressOnTank.hull
+    	elseif type == "ENGINE" then
+    		progressOnType = progressOnTank.engine
+    	end
+    	
+    	for upgradeID, progress in pairs(progressOnType) do    		
+    		if tonumber(progress) >= 2 then
+    			for i = 1, 4 do
+    				statName = typeDetails[upgradeID]["stat" .. tostring(i) .. "Name"]
+    				statValue = typeDetails[upgradeID]["stat" .. tostring(i) .. "Value"]
+    				if statName == "DAMAGE" then
+    					damage = damage + statValue
+    				elseif statName == "AIM" then
+    					turret = turret + statValue
+    				elseif statName == "HITPOINTS" then
+    					hitPoints = hitPoints + statValue
+    				elseif statName == "SPEED" then
+    					topSpeed = topSpeed + statValue
+    				elseif statName == "ACCELERATION" then
+    					acceleration = acceleration + statValue
+    				elseif statName == "TURNING" then
+    					turningSpeed = turningSpeed + statValue
+    				end
+    			end
+    		end
+    	end
     end
-
-    if tostring(progress.armorProgress) ~= tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-        local hitPoints = entry.hitPoints
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_1').progress = tonumber(hitPoints) / tankAPI.GetHighestHitPoints()
-    else
-        local hitPoints = entry.hitPointsUpgraded
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_1').progress = tonumber(hitPoints) / tankAPI.GetHighestHitPoints()
-    end
-
-    if tostring(progress.engineProgress) ~= tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-        local topSpeed = entry.topSpeed
-        local acceleration = entry.acceleration
-        local turningSpeed = entry.turningSpeed
-
-        if topSpeed > tankAPI.GetHighestTopSpeed() then
-        	topSpeed = tankAPI.GetHighestTopSpeed()
-        end
-        
-        if turningSpeed > 1000 then
-        	turningSpeed = math.floor(turningSpeed / 20)
-        end
-        
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_8').progress = tonumber(topSpeed) / tankAPI.GetHighestTopSpeed()
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_9').progress =
-            tonumber(acceleration) / tankAPI.GetHighestAcceleration()
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_10').progress =
-            tonumber(turningSpeed) / tankAPI.GetHighestTurningSpeed()
-    else
-        local topSpeed = entry.topSpeedUpgraded
-        local acceleration = entry.accelerationUpgraded
-        local turningSpeed = entry.turningSpeedUpgraded -- TODO
-        
-        if topSpeed > tankAPI.GetHighestTopSpeed() then
-        	topSpeed = tankAPI.GetHighestTopSpeed()
-        end
-        
-        if turningSpeed > 1000 then
-        	turningSpeed = math.floor(turningSpeed / 20)
-        end
-        
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_8').progress = tonumber(topSpeed) / tankAPI.GetHighestTopSpeed()
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_9').progress =
-            tonumber(acceleration) / tankAPI.GetHighestAcceleration()
-        VIEWED_TANK_STATS:FindDescendantByName('BAR_10').progress =
-            tonumber(turningSpeed) / tankAPI.GetHighestTurningSpeed()
-    end
-
+    
+    VIEWED_TANK_STATS:FindDescendantByName('BAR_4').progress = damage / tankAPI.GetHighestDamage()
+    VIEWED_TANK_STATS:FindDescendantByName('BAR_5').progress = 1 - (reload / tankAPI.GetHighestReload())
+    VIEWED_TANK_STATS:FindDescendantByName('BAR_6').progress = turret / tankAPI.GetHighestTurretSpeed()
+    VIEWED_TANK_STATS:FindDescendantByName('BAR_1').progress = hitPoints / tankAPI.GetHighestHitPoints()
+    VIEWED_TANK_STATS:FindDescendantByName('BAR_8').progress = topSpeed / tankAPI.GetHighestTopSpeed()
+    VIEWED_TANK_STATS:FindDescendantByName('BAR_9').progress = acceleration / tankAPI.GetHighestAcceleration()
+    VIEWED_TANK_STATS:FindDescendantByName('BAR_10').progress = turningSpeed / tankAPI.GetHighestTurningSpeed()
+    
     if tankData.purchasedTank then
 --print('OWN TANK')
         VIEWED_TANK_STATS:FindDescendantByName('BUY_PRICE').visibility = Visibility.FORCE_OFF
     else
 --print('DO NOT OWN TANK')
         VIEWED_TANK_STATS:FindDescendantByName('TITLE_SILVER').text = tostring(tankData.purchaseCost)
-        local purchaseCurrency = entry.purchaseCurrencyName
+        local purchaseCurrency = tankData.purchaseCurrencyName
         VIEWED_TANK_STATS:FindDescendantByName('ICON_SILVER'):SetImage(UTIL_API.GetCurrencyIcon(purchaseCurrency))
         VIEWED_TANK_STATS:FindDescendantByName('BUY_PRICE').visibility = Visibility.FORCE_ON
     end
@@ -1493,39 +1381,6 @@ end
 
 function UnhoverTank()
     VIEWED_TANK_STATS.visibility = Visibility.FORCE_OFF
-end
-
--- Function when user denies use of Free RP to research
--- TODO_DELETE I don't think this function is used anymore
-function DenyFreeRP()
-    useFreeRPPanel.visibility = Visibility.FORCE_OFF
-end
-
--- TODO_DELETE, I don't think this function is used anymore
--- Function when user confirms using Free RP to research
-function AcceptFreeRP()
-    local event = Events.BroadcastToServer('Research' .. researchingName, tankDetails.id, true)
-    if (event == BroadcastEventResultCode.SUCCESS) then
-        -- TODO: Play SFX/Message
-        UI.PrintToScreen(tankDetails.name .. ' ' .. researchingName .. ' successfully researched.')
-        PopulateCurrencyUI()
-        for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-            if (tank.id == tankDetails.id) then
-                if (researchingName == 'Weapon') then
-                    tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.RESEARCHED
-                elseif (researchingName == 'Armor') then
-                    tank.armorProgress = Constants_API.UPGRADE_PROGRESS.RESEARCHED
-                elseif (researchingName == 'Engine') then
-                    tank.engineProgress = Constants_API.UPGRADE_PROGRESS.RESEARCHED
-                end
-            end
-        end
-        CloseTechTreeModal()
-    else
-        -- TODO: Better prompt for user
-        UI.PrintToScreen('There was an error sending the event. Please try again.')
-    end
-    useFreeRPPanel.visibility = Visibility.FORCE_OFF
 end
 
 function ToggleTeamTankView(button, team)
@@ -2088,17 +1943,9 @@ upgradeArmor.hoveredEvent:Connect(ButtonHover)
 upgradeEngine.hoveredEvent:Connect(ButtonHover)
 upgradeTank.hoveredEvent:Connect(ButtonHover)
 --]]
-freeRPNo.clickedEvent:Connect(DenyFreeRP)
-freeRPYes.clickedEvent:Connect(AcceptFreeRP)
 
 closeButton.clickedEvent:Connect(ToggleResearchSidePanel)
 closeButton.hoveredEvent:Connect(ButtonHover)
-useFreeRP.clickedEvent:Connect(UseFreeRP)
-useFreeRP.hoveredEvent:Connect(ButtonHover)
-usePrerequisite1.clickedEvent:Connect(UsePrerequisite1)
-usePrerequisite1.hoveredEvent:Connect(ButtonHover)
-usePrerequisite2.clickedEvent:Connect(UsePrerequisite2)
-usePrerequisite2.hoveredEvent:Connect(ButtonHover)
 
 BUTTON_ALLIES_TECH_TREE.clickedEvent:Connect(ToggleTeamTankView, 'ALLIES')
 BUTTON_AXIS_TECH_TREE.clickedEvent:Connect(ToggleTeamTankView, 'AXIS')

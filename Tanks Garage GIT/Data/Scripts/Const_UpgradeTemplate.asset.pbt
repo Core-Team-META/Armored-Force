@@ -38,7 +38,7 @@ Assets {
       }
       Overrides {
         Name: "cs:mustUnlockPrereq"
-        Bool: false
+        Bool: true
       }
       Overrides {
         Name: "cs:prerequisite"
