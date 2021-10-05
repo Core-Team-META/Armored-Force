@@ -124,11 +124,11 @@ local BUTTON_ALLIES_T1L = script:GetCustomProperty('BUTTON_ALLIES_T1L'):WaitForO
 local BUTTON_ALLIES_T2L = script:GetCustomProperty('BUTTON_ALLIES_T2L'):WaitForObject()
 local BUTTON_ALLIES_T4L = script:GetCustomProperty('BUTTON_ALLIES_T4L'):WaitForObject()
 
-
 local TURRET_UPGRADE_SLOT = script:GetCustomProperty("TURRET_UPGRADE_SLOT"):WaitForObject()
 local HULL_UPGRADE_SLOT = script:GetCustomProperty("HULL_UPGRADE_SLOT"):WaitForObject()
 local ENGINE_UPGRADE_SLOT = script:GetCustomProperty("ENGINE_UPGRADE_SLOT"):WaitForObject()
 local UPGRADE_MODULE_TEMPLATE = script:GetCustomProperty("UPGRADE_MODULE_TEMPLATE")
+local UPGRADE_TOOLTIP = script:GetCustomProperty("UPGRADE_TOOLTIP"):WaitForObject()
 
 ------------------------------------------------------------------------------------------------------
 
@@ -1826,6 +1826,16 @@ function UpgradeButtonHovered(button)
     	end
     	
     	for upgradeID, progress in pairs(progressOnType) do
+    		if upgradeID == button.name then
+    			
+    			UPGRADE_TOOLTIP:GetCustomProperty("upgradeName"):WaitForObject().text = typeDetails[upgradeID]["upgradeName"]
+    			UPGRADE_TOOLTIP:GetCustomProperty("upgradeDescription"):WaitForObject().text = typeDetails[upgradeID]["upgradeDescription"]
+    			UPGRADE_TOOLTIP:GetCustomProperty("upgradePartsCost"):WaitForObject().text = "TANK PARTS: " .. typeDetails[upgradeID]["researchCost"]
+    			UPGRADE_TOOLTIP:GetCustomProperty("UpgradeSilverCost"):WaitForObject().text = "SILVER: " .. typeDetails[upgradeID]["purchaseCost"]
+    			
+    			UPGRADE_TOOLTIP.visibility = Visibility.INHERIT
+    		end
+    		
     		if (tonumber(progress) >= 2) or (upgradeID == button.name) then
     			for i = 1, 4 do
     				statName = typeDetails[upgradeID]["stat" .. tostring(i) .. "Name"]
@@ -1872,6 +1882,7 @@ function UpgradeButtonUnhovered(button)
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_8_LVLUP').visibility = Visibility.FORCE_OFF
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_9_LVLUP').visibility = Visibility.FORCE_OFF
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').visibility = Visibility.FORCE_OFF
+    UPGRADE_TOOLTIP.visibility = Visibility.FORCE_OFF
 end
 
 function HoverTankUpgradeWindow(button) 
@@ -2036,6 +2047,22 @@ function SetUpgradeButtonInteractability(silver, tankParts, universalTankParts, 
     if silver < purchaseCost then return false end
     if (tankParts + universalTankParts) < researchCost then return false end
     return true
+end
+
+function Tick()
+	if UPGRADE_TOOLTIP.visibility == Visibility.INHERIT then
+		local tooltipPosition = UI.GetCursorPosition()
+		
+		if tooltipPosition.x >= UI.GetScreenSize().x - UPGRADE_TOOLTIP.width then
+			tooltipPosition.x = UI.GetScreenSize().x - UPGRADE_TOOLTIP.width
+		end
+		if tooltipPosition.y >= UI.GetScreenSize().y - UPGRADE_TOOLTIP.height then
+			tooltipPosition.y = UI.GetScreenSize().y - UPGRADE_TOOLTIP.height
+		end
+		
+		UPGRADE_TOOLTIP.x = tooltipPosition.x 
+		UPGRADE_TOOLTIP.y = tooltipPosition.y
+	end
 end
 
 Task.Wait(2)

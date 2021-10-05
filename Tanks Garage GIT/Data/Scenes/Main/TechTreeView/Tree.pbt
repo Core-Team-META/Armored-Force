@@ -918,6 +918,12 @@ Objects {
         Id: 7609630067937528418
       }
     }
+    Overrides {
+      Name: "cs:UPGRADE_TOOLTIP"
+      ObjectReference {
+        SelfId: 7271995354771784332
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
