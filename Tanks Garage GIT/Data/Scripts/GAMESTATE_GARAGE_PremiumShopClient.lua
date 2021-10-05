@@ -103,7 +103,6 @@ end
 function AttemptPremiumPurchase(button)
 
 	--print("attempting to purchase")
-
 	if localPlayer:GetResource(CURRENCY.GOLD.ResourceName) >= premiumTanksInfo[button.id].cost then
 		Events.BroadcastToServer("PurchasePremTank", premiumTanksInfo[button.id].id)
 	else 
@@ -121,7 +120,7 @@ function AcknowledgePurchase(tankId, confirmed)
 	local button = premiumTanksInfo[tankId].button
 		
 	if not confirmed then
-		if button then
+		if button then			
 			button.isInteractable = false
 			button.text = "NOT ENOUGH GOLD"
 			Task.Wait(1)

@@ -217,8 +217,14 @@ function ConvertSelectedTankRPClick(button)
 	SFX_CLICK:Play()
 	
 	local cost = UTIL_API.GetRPConversionCost(RPTradeTotal)
+
+	if cost == 0 then 
+		Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "INVALID SELECTION", "You must select tanks with tank parts in order to convert.", "OK")
+		return
+	end
 	if cost > LOCAL_PLAYER:GetResource(CURRENCY.GOLD.ResourceName) then
-		warn("ERROR (Client): cannot afford conversion for Free RP")
+		Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "CANNOT AFFORD", "You do not have enough gold to convert into universal parts.", "OK")
+		--warn("ERROR (Client): cannot afford conversion for Free RP")
 		return
 	end
 
@@ -234,9 +240,15 @@ function ConvertSelectedTankRPClick(button)
 	end
 	
 	if xpTankString ~= "" then
-		Events.BroadcastToServer("ConvertXP", xpTankString, RPTradeTotal)
-		ToggleShop()		
+		Events.BroadcastToServer("ConvertXP", xpTankString, RPTradeTotal)		
+		ToggleShop()	
+	else
+		Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "NO TANKS SELECTED", "Please select the tanks you would like to convert into universal parts.", "OK")
 	end	
+end
+
+function FinishedConversion()
+	Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "CONVERSION SUCCESSFUL", "Successfully converted tank parts into universal parts.", "OK")
 end
 
 function ConvertSelectedTankRPHover(button)
@@ -399,6 +411,7 @@ function PurchaseAlliesPremiumTank()
 		local purchaseCosts = TankAPI.GetPurchaseCost(tankId)
 		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < purchaseCosts.amount then
 			SFX_DENIED:Play()
+			Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "CANNOT AFFORD", "You do not have enough gold to purchase this tank.")
 			return
 		end
 		ALLIES_BUY_BUTTON.isInteractable = false
@@ -422,10 +435,11 @@ function PurchaseAxisPremiumTank()
 		local purchaseCosts = TankAPI.GetPurchaseCost(tankId)
 		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < purchaseCosts.amount then
 			SFX_DENIED:Play()
+			Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "CANNOT AFFORD", "You do not have enough gold to purchase this tank.")
 			return
 		end
 		AXIS_BUY_BUTTON.isInteractable = false
-		local event = Events.BroadcastToServer("PurchaseTank", tankId, purchaseCosts.resource)
+		local event = Events.BroadcastToServer("PurchaseTank", tankId, purchaseCosts.resource)		
 		--[[
 		if (event == BroadcastEventResultCode.SUCCESS) then
 			for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
@@ -526,3 +540,4 @@ AXIS_PURCHASE_PREMIUM_BUTTON.unhoveredEvent:Connect(UnhoverAxisPurchase)
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
 Events.Connect("TankPurchaseSuccessful", PurchaseSuccessful)
+Events.Connect("FinishedConversion", FinishedConversion)

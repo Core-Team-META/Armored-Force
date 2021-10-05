@@ -65,6 +65,8 @@ function OnPlayerRespawned(player, playerStart)
     player:DisableRagdoll()
     RemovePlayerEquipment(player)
 
+    player:SetWorldPosition(FindClearSpawnPoint(player.team))
+
     --player.isVisible = false
     Task.Wait(0.25)
 

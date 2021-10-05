@@ -105,7 +105,7 @@ function Tick(deltaTime)
 		player.team = smallestTeam
 
 		if KILL_ON_TEAM_SWITCH and not player.isDead then
-			player:Respawn()
+			player:Spawn()
 		end
 	end
 end
