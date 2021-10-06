@@ -1337,6 +1337,8 @@ function PopulateHoverTankStats(tankData)
     		progressOnType = progressOnTank.hull
     	elseif type == "ENGINE" then
     		progressOnType = progressOnTank.engine
+    	elseif type == "CREW" then
+    		progressOnType = progressOnTank.crew
     	end
     	
     	for upgradeID, progress in pairs(progressOnType) do    		
@@ -2149,6 +2151,7 @@ function OnResourceChanged(player, resource, value)
    		STATS_TANK_CONTAINER:FindDescendantByName('EQUIPPED_EXPERIENCE_EQUIPPED_TANK_PARTS').text =
         tostring(LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(currentTank)))
     end
+    
 end
 
 function TankPurchaseSuccessful()
