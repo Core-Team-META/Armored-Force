@@ -214,7 +214,6 @@ local insufficientColorText = Color.New(0.43,0,0,1)
 local upgradeButtonListeners = {}
 local upgradeButtonEntries = {}
 local slotTypes = {"TURRET", "HULL", "ENGINE", "CREW"}
-local upgradeRefresh = false
 ------------------------------------------------------------------------------------
 -- Completed UI references. Remove above ones as they are made obsolete
 
@@ -1411,7 +1410,7 @@ function TutorialOpenTankUpgradeWindow()
     OpenTankUpgradeWindow()
 end
 
-function OpenTankUpgradeWindow(button, id)
+function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
     if LOCAL_PLAYER.clientUserData.tutorial6 == 1 then
         UPGRADE_TUTORIAL.visibility = Visibility.FORCE_ON
     else
@@ -1445,16 +1444,15 @@ function OpenTankUpgradeWindow(button, id)
 	end 
     
     IMAGE_API.SetTankImage(tankPreviewImage, selectedTankId)
-    if UPGRADE_TANK_CONTAINER.visibility == Visibility.FORCE_ON and LOCAL_PLAYER.clientUserData.tutorial6 ~= 1  then 
-    	if not upgradeRefresh then
-        	CloseTankUpgradeWindow()
-        end
-        
-        upgradeRefresh = false
-    else 
-        SFX_CLICK:Play()
-        UPGRADE_TANK_CONTAINER.visibility = Visibility.FORCE_ON 
-    end
+    
+    if not updatePanelsOnly then
+	    if UPGRADE_TANK_CONTAINER.visibility == Visibility.FORCE_ON and LOCAL_PLAYER.clientUserData.tutorial6 ~= 1  then 
+	    	CloseTankUpgradeWindow()
+	    else
+	        SFX_CLICK:Play()
+	        UPGRADE_TANK_CONTAINER.visibility = Visibility.FORCE_ON 
+	    end
+	end
     local entry = {}
     local progress = {}
     for i, tank in ipairs(TANK_LIST) do
@@ -1685,8 +1683,7 @@ function UpgradeObtained(tankID, upgradeID, newUpgradeValue)
     end
     
     Task.Wait()
-    upgradeRefresh = true
-    OpenTankUpgradeWindow(BUTTON_UPGRADE_TANK, tankID)
+    OpenTankUpgradeWindow(BUTTON_UPGRADE_TANK, tankID, true)
 end
 
 function UpgradeButtonHovered(button)
@@ -2151,7 +2148,9 @@ function OnResourceChanged(player, resource, value)
    		STATS_TANK_CONTAINER:FindDescendantByName('EQUIPPED_EXPERIENCE_EQUIPPED_TANK_PARTS').text =
         tostring(LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(currentTank)))
     end
-    
+ 	if (resource == UTIL_API.GetTankRPString(tonumber(tankDetails.id))) or (resource == Constants_API.SILVER) or (resource == Constants_API.FREERP) then   
+    	OpenTankUpgradeWindow(BUTTON_UPGRADE_TANK, tankDetails.id, true)
+    end
 end
 
 function TankPurchaseSuccessful()
