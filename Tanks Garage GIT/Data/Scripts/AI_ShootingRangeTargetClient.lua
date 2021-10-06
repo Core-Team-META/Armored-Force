@@ -1,3 +1,5 @@
+local Constants_API = require(script:GetCustomProperty("Constants_API"))
+
 local enemyUnit = script:GetCustomProperty("EnemyUnit"):WaitForObject()
 local enemyHitbox = script:GetCustomProperty("EnemyHitbox"):WaitForObject()
 local hpBarHolder = script:GetCustomProperty("HPBarHolder"):WaitForObject()
@@ -150,8 +152,41 @@ function GetPlayersTankDamage()
 	if localPlayer.clientUserData.currentTankData and Object.IsValid(localPlayer.clientUserData.currentTankData.controlScript) then
 		local clientScript = localPlayer.clientUserData.currentTankData.controlScript
 		local serverScript = clientScript.parent.parent
+		local modifications = nil
+
+		for x, entry in ipairs(localPlayer.clientUserData.techTreeProgress) do
+			if entry.id == localPlayer.clientUserData.currentTankData.id then
+				modifications = entry
+			end
+		end
 		
+		local tankData =  Constants_API:WaitForConstant("Tanks").GetTankFromId(tonumber(localPlayer.clientUserData.currentTankData.id)) 
 		local newDamage = serverScript:GetCustomProperty("DamagePerShot")
+		local upgradeStatName = ""
+		local upgradeStatValue = 0
+		
+		for id, progress in pairs(modifications.turret) do
+			if tonumber(progress) > 1 then
+				if not tankData["TURRET"][id] then
+					warn(id .. " does not exist in database")
+					break
+				end
+				
+				for i = 1, 4 do 
+					upgradeStatName = tankData["TURRET"][id]["stat" .. tostring(i) .. "Name"]
+					upgradeStatValue = tankData["TURRET"][id]["stat" .. tostring(i) .. "Value"]
+					
+					if not upgradeStatName or not upgradeStatValue then
+						warn(id .. " for " .. tostring(identifier) .. " is missing data in database")
+						break
+					end
+					
+					if upgradeStatName == "DAMAGE" then
+						newDamage = newDamage + upgradeStatValue
+					end
+				end 
+			end
+		end 
 		
 		if newDamage and newDamage ~= savedDamage then
 			savedDamage = newDamage
