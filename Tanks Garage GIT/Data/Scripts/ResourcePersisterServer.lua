@@ -19,7 +19,7 @@ local DELIMITER = '|'
 local DELIMITER_2 = '/'
 local DELIMITER_3 = '-'
 
-local UPGRADE_TYPES = {"TURRET", "HULL", "ENGINE"}
+local UPGRADE_TYPES = {"TURRET", "HULL", "ENGINE", "CREW"}
 
 local defualtValues = {
     [CONSTANTS_API.SILVER] = 0,
@@ -156,7 +156,7 @@ function CheckAndSetSharedStorageDefault(player)
     local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 
     -- DEBUG: Clear shared storage
-    --playerSharedStorage = {}
+    -- playerSharedStorage = {}
     
     -- DEBUG: Reset progression to force the use of SetNewPlayerProgression(playerSharedStorage) function
     --playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = nil
@@ -356,8 +356,17 @@ function CheckAndConvertToNewupgradeSystem(dataString)
 	        tankUpgradeInfo = tanks[tonumber(v.id)][upgradeType]
 	        if tankUpgradeInfo then
 		        while tankUpgradeInfo[upgradeType .. tostring(upgradeId)] do
+		        	local selectedProgress = "0"
+		        	if upgradeType == "TURRET" then
+		        		selectedProgress = v.weaponProgress
+		        	elseif upgradeType == "HULL" then
+		        		selectedProgress = v.armorProgress
+		        	elseif upgradeType == "ENGINE" then
+		        		selectedProgress = v.engineProgress
+		        	end
+		        	
 		        	if upgradeId == 1 then
-		        		newString = newString .. "/1-" .. v.weaponProgress
+		        		newString = newString .. "/1-" .. selectedProgress
 		        	else 
 		        		newString = newString .. "/" .. tostring(upgradeId) .. "-0"
 		        	end
@@ -439,6 +448,19 @@ function SetTankProgressionDataForServer(dataString, player)
 	            		end            	
 	            	end
 	            end
+            elseif string.find(v, "CREW") then
+            	tankEntry.crew = {}
+            	local upgradeEntryTable = {CoreString.Split(CoreString.Trim(v, "CREW"), DELIMITER_2)}
+            	if upgradeEntryTable then
+	            	for k, v in pairs(upgradeEntryTable) do
+	            		local upgradeEntry = {CoreString.Split(v, DELIMITER_3)}
+	            		if tankUpgradeInfo["CREW"] and tankUpgradeInfo["CREW"]["CREW" .. upgradeEntry[1]] then
+	            			tankEntry.crew["CREW" .. upgradeEntry[1]] = upgradeEntry[2]
+	            		elseif upgradeEntry[1] ~= "" then
+	            			print(upgradeEntry[1] .. " is no longer available for " .. tankEntry.id)
+	            		end            	
+	            	end
+	            end
             else
                 warn('Unable to parse data at position: ' .. position)
             end
@@ -464,6 +486,11 @@ function SetTankProgressionDataForServer(dataString, player)
 			    		if tankEntry.engine and not tankEntry.engine[k] then
 			    			print(k .. " added to " .. tankEntry.id)
 			    			tankEntry.engine[k] = "0"
+			    		end
+		        	elseif string.find(k, "CREW") then
+			    		if tankEntry.crew and not tankEntry.crew[k] then
+			    			print(k .. " added to " .. tankEntry.id)
+			    			tankEntry.crew[k] = "0"
 			    		end
 			    	end
 			    end
@@ -500,23 +527,35 @@ function ConvertTechTreeProgressToDataString(player)
         dataString = dataString .. v.id .. "|" .. ConvertBoolToString(v.researched) .. "|" .. ConvertBoolToString(v.purchased)
         
         dataString = dataString .. "|TURRET"
-	    for k, v in pairs(v.turret) do
-	    	upgradeNumber = CoreString.Trim(k, "TURRET")
-	    	dataString = dataString .. "/" .. tostring(upgradeNumber) .. "-" .. tostring(v)
-	    end
+        if v.turret then
+		    for k, v in pairs(v.turret) do
+		    	upgradeNumber = CoreString.Trim(k, "TURRET")
+		    	dataString = dataString .. "/" .. tostring(upgradeNumber) .. "-" .. tostring(v)
+		    end
+		end
 	    
         dataString = dataString .. "|HULL"
-	    for k, v in pairs(v.hull) do
-	    	upgradeNumber = CoreString.Trim(k, "HULL")
-	    	dataString = dataString .. "/" .. tostring(upgradeNumber) .. "-" .. tostring(v)
-	    end
+        if v.hull then
+		    for k, v in pairs(v.hull) do
+		    	upgradeNumber = CoreString.Trim(k, "HULL")
+		    	dataString = dataString .. "/" .. tostring(upgradeNumber) .. "-" .. tostring(v)
+		    end
+		end
 	    
         dataString = dataString .. "|ENGINE"
-	    for k, v in pairs(v.engine) do
-	   		upgradeNumber = CoreString.Trim(k, "ENGINE")
-	    	dataString = dataString .. "/" .. tostring(upgradeNumber) .. "-" .. tostring(v)
-	    end
-     
+        if v.engine then
+		    for k, v in pairs(v.engine) do
+		   		upgradeNumber = CoreString.Trim(k, "ENGINE")
+		    	dataString = dataString .. "/" .. tostring(upgradeNumber) .. "-" .. tostring(v)
+		    end
+		end
+        dataString = dataString .. "|CREW"
+        if v.crew then
+		    for k, v in pairs(v.crew) do
+		   		upgradeNumber = CoreString.Trim(k, "CREW")
+		    	dataString = dataString .. "/" .. tostring(upgradeNumber) .. "-" .. tostring(v)
+		    end
+		end
         
         if k < numberOfTanks then
             dataString = dataString .. '~'

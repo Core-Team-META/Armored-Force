@@ -13,7 +13,7 @@ LOCAL_PLAYER.clientUserData.techTreeProgress = {}
 local DELIMITER = '|'
 local DELIMITER_2 = '/'
 local DELIMITER_3 = '-'
-local UPGRADE_TYPES = {"TURRET", "HULL", "ENGINE"}
+local UPGRADE_TYPES = {"TURRET", "HULL", "ENGINE", "CREW"}
 local OWNER_ID_CUSTOM_PROPERTY = 'OwnerId'
 local DATA_CUSTOM_PROPERTY = 'Data'
 
@@ -82,6 +82,19 @@ function RetrieveData()
 	            		local upgradeEntry = {CoreString.Split(v, DELIMITER_3)}
 	            		if tankUpgradeInfo["ENGINE"] and tankUpgradeInfo["ENGINE"]["ENGINE" .. upgradeEntry[1]] then
 	            			tankEntry.engine["ENGINE" .. upgradeEntry[1]] = upgradeEntry[2]
+	            		elseif upgradeEntry[1] ~= "" then
+	            			print(upgradeEntry[1] .. " is no longer available for " .. tankEntry.id)
+	            		end            	
+	            	end
+	            end
+            elseif string.find(v, "CREW") then
+            	tankEntry.crew = {}
+            	local upgradeEntryTable = {CoreString.Split(CoreString.Trim(v, "CREW"), DELIMITER_2)}
+            	if upgradeEntryTable then
+	            	for k, v in pairs(upgradeEntryTable) do
+	            		local upgradeEntry = {CoreString.Split(v, DELIMITER_3)}
+	            		if tankUpgradeInfo["CREW"] and tankUpgradeInfo["CREW"]["CREW" .. upgradeEntry[1]] then
+	            			tankEntry.crew["CREW" .. upgradeEntry[1]] = upgradeEntry[2]
 	            		elseif upgradeEntry[1] ~= "" then
 	            			print(upgradeEntry[1] .. " is no longer available for " .. tankEntry.id)
 	            		end            	

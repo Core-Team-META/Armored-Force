@@ -9805,6 +9805,7 @@ Objects {
   ChildIds: 15012951307244190552
   ChildIds: 5898893744102822540
   ChildIds: 14577770028589451620
+  ChildIds: 3371185486490179096
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9846,6 +9847,93 @@ Objects {
   }
 }
 Objects {
+  Id: 3371185486490179096
+  Name: "CREW_UPGRADE_SLOT"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5809741334352791940
+  ChildIds: 9710739041090533563
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 1013
+    Height: 170
+    UIY: 510
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 9710739041090533563
+  Name: "UPGRADE_MODULE_TEMPLATE"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3371185486490179096
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2713739769019951349
+      value {
+        Overrides {
+          Name: "Name"
+          String: "UPGRADE_MODULE_TEMPLATE"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7609630067937528418
+    }
+  }
+}
+Objects {
   Id: 14577770028589451620
   Name: "ENGINE_UPGRADE_SLOT"
   Transform {
@@ -9865,7 +9953,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9952,7 +10040,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10039,7 +10127,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"

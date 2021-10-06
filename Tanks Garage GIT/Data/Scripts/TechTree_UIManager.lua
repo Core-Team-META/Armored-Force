@@ -127,6 +127,8 @@ local BUTTON_ALLIES_T4L = script:GetCustomProperty('BUTTON_ALLIES_T4L'):WaitForO
 local TURRET_UPGRADE_SLOT = script:GetCustomProperty("TURRET_UPGRADE_SLOT"):WaitForObject()
 local HULL_UPGRADE_SLOT = script:GetCustomProperty("HULL_UPGRADE_SLOT"):WaitForObject()
 local ENGINE_UPGRADE_SLOT = script:GetCustomProperty("ENGINE_UPGRADE_SLOT"):WaitForObject()
+local CREW_UPGRADE_SLOT = script:GetCustomProperty("CREW_UPGRADE_SLOT"):WaitForObject()
+
 local UPGRADE_MODULE_TEMPLATE = script:GetCustomProperty("UPGRADE_MODULE_TEMPLATE")
 local UPGRADE_TOOLTIP = script:GetCustomProperty("UPGRADE_TOOLTIP"):WaitForObject()
 
@@ -211,7 +213,8 @@ local insufficientColorText = Color.New(0.43,0,0,1)
 
 local upgradeButtonListeners = {}
 local upgradeButtonEntries = {}
-local slotTypes = {"TURRET", "HULL", "ENGINE"}
+local slotTypes = {"TURRET", "HULL", "ENGINE", "CREW"}
+local upgradeRefresh = false
 ------------------------------------------------------------------------------------
 -- Completed UI references. Remove above ones as they are made obsolete
 
@@ -1434,12 +1437,18 @@ function OpenTankUpgradeWindow(button, id)
 	        tankDetails.turretProgress = t.turret
 	        tankDetails.hullProgress = t.hull
 	        tankDetails.engineProgress = t.engine
+	        tankDetails.crewProgress = t.crew 
+	        --UTIL_API.TablePrint(t)
 	    end
 	end 
     
     IMAGE_API.SetTankImage(tankPreviewImage, selectedTankId)
     if UPGRADE_TANK_CONTAINER.visibility == Visibility.FORCE_ON and LOCAL_PLAYER.clientUserData.tutorial6 ~= 1  then 
-        --CloseTankUpgradeWindow()
+    	if not upgradeRefresh then
+        	CloseTankUpgradeWindow()
+        end
+        
+        upgradeRefresh = false
     else 
         SFX_CLICK:Play()
         UPGRADE_TANK_CONTAINER.visibility = Visibility.FORCE_ON 
@@ -1459,7 +1468,7 @@ function OpenTankUpgradeWindow(button, id)
         end
     end
     
-    local allSlots = {TURRET_UPGRADE_SLOT, HULL_UPGRADE_SLOT, ENGINE_UPGRADE_SLOT}
+    local allSlots = {TURRET_UPGRADE_SLOT, HULL_UPGRADE_SLOT, ENGINE_UPGRADE_SLOT, CREW_UPGRADE_SLOT}
     local selectedType = nil
     local progressOnType = nil
     local upgradeNumber = nil
@@ -1471,12 +1480,14 @@ function OpenTankUpgradeWindow(button, id)
     for x, s in ipairs(allSlots) do
     	entryCustomProperties = {}
     	selectedType = tankDetails[slotTypes[x]]
-    	if x == 1 then
+    	if slotTypes[x] == "TURRET" then
     		progressOnType = tankDetails.turretProgress
-    	elseif x == 2 then
+    	elseif slotTypes[x] == "HULL" then
     		progressOnType = tankDetails.hullProgress
-    	elseif x == 3 then
+    	elseif slotTypes[x] == "ENGINE" then
     		progressOnType = tankDetails.engineProgress
+    	elseif  slotTypes[x] == "CREW" then
+    		progressOnType = tankDetails.crewProgress
     	end
     	
 	    for _, c in pairs(s:GetChildren()) do
@@ -1493,61 +1504,75 @@ function OpenTankUpgradeWindow(button, id)
 	    	
 	    	c:Destroy()
 	    end
-	    
-	    for i, u in pairs(selectedType) do
-	    	upgradeNumber = tonumber(CoreString.Trim(i, slotTypes[x]))
-	    	
-	    	upgradeButtonEntries[i] = World.SpawnAsset(UPGRADE_MODULE_TEMPLATE, {parent = s})
-	    	upgradeButtonEntries[i].x = (upgradeNumber - 1) * upgradeButtonEntries[i].width
-	    	upgradeButtonEntries[i].y = 0
-	    	
-	    	for n, o in pairs(upgradeButtonEntries[i]:GetCustomProperties()) do
-	    		entryCustomProperties[n] = o:WaitForObject()
-	    	end
-	    	
-	    	entryCustomProperties["UPGRADE_TITLE_TEXT"].text = u["upgradeName"]
-	    	
-	    	if progressOnType[i] and tonumber(progressOnType[i]) < 1 then
-	    		entryCustomProperties["UPGRADE_COST_TEXT"].text = tostring(u["researchCost"])
-	    		entryCustomProperties["PARTS_ICON"].visibility = Visibility.INHERIT 
-	    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.FORCE_OFF
-	    		
-	    		local totalParts = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankDetails.id))) + LOCAL_PLAYER:GetResource(Constants_API.FREERP)
-	    		canAffordUpgrade = totalParts >= u["researchCost"]
-	    	elseif progressOnType[i] and tonumber(progressOnType[i]) < 2 then
-	    		entryCustomProperties["UPGRADE_COST_TEXT"].text = tostring(u["purchaseCost"])
-	    		entryCustomProperties["PARTS_ICON"].visibility = Visibility.FORCE_OFF
-	    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.INHERIT
-	    		
-	    		canAffordUpgrade = LOCAL_PLAYER:GetResource(Constants_API.SILVER) >= u["purchaseCost"]
-	    	end
-	    	
-	    	if (u["prerequisite"] ~= "") and (tonumber(progressOnType[u["prerequisite"]]) < 1) then
-	    		entryCustomProperties["UPGRADE_LOCKED"].visibility = Visibility.INHERIT 
-	    		entryCustomProperties["PURCHASE_BUTTON"].isInteractable = false
-	    		entryCustomProperties["UPGRADE_COST_TEXT"]:SetColor(Color.RED)
-	    	else
-	    		entryCustomProperties["UPGRADE_LOCKED"].visibility = Visibility.FORCE_OFF
-	    		
-	    		if progressOnType[i] and tonumber(progressOnType[i]) >= 2 then
-		    		entryCustomProperties["UPGRADE_COST_TEXT"].text = "EQUIPPED"
+		    
+		if progressOnType then
+		    for i, u in pairs(selectedType) do
+		    	upgradeNumber = tonumber(CoreString.Trim(i, slotTypes[x]))
+		    	
+		    	upgradeButtonEntries[i] = World.SpawnAsset(UPGRADE_MODULE_TEMPLATE, {parent = s})
+		    			    	
+		    	for n, o in pairs(upgradeButtonEntries[i]:GetCustomProperties()) do
+		    		entryCustomProperties[n] = o:WaitForObject()
+		    	end
+		    	
+		    	entryCustomProperties["UPGRADE_TITLE_TEXT"].text = u["upgradeName"]
+		    	
+		    	if progressOnType[i] and tonumber(progressOnType[i]) < 1 then
+		    		entryCustomProperties["UPGRADE_COST_TEXT"].text = tostring(u["researchCost"])
+		    		entryCustomProperties["PARTS_ICON"].visibility = Visibility.INHERIT 
+		    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.FORCE_OFF
+		    		
+		    		local totalParts = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankDetails.id))) + LOCAL_PLAYER:GetResource(Constants_API.FREERP)
+		    		canAffordUpgrade = totalParts >= u["researchCost"]
+		    	elseif progressOnType[i] and tonumber(progressOnType[i]) < 2 then
+		    		entryCustomProperties["UPGRADE_COST_TEXT"].text = tostring(u["purchaseCost"])
 		    		entryCustomProperties["PARTS_ICON"].visibility = Visibility.FORCE_OFF
-		    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.FORCE_OFF	   
-		    		entryCustomProperties["PURCHASE_BUTTON"].isInteractable = false
-	    		elseif canAffordUpgrade then
-	    			entryCustomProperties["PURCHASE_BUTTON"].name = u["upgradeID"]
-	    			
-	    			local button = entryCustomProperties["PURCHASE_BUTTON"]
-	    			upgradeButtonListeners[button.id] = {}
-	    			upgradeButtonListeners[button.id] = button.clickedEvent:Connect(UpgradeButtonClicked)
-	    			upgradeButtonListeners[button.id] = button.hoveredEvent:Connect(UpgradeButtonHovered)
-	    			upgradeButtonListeners[button.id] = button.unhoveredEvent:Connect(UpgradeButtonUnhovered)
-	    		else
+		    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.INHERIT
+		    		
+		    		canAffordUpgrade = LOCAL_PLAYER:GetResource(Constants_API.SILVER) >= u["purchaseCost"]
+		    	end
+		    	
+		    	if (u["prerequisite"] ~= "") and progressOnType[u["prerequisite"]] and (tonumber(progressOnType[u["prerequisite"]]) < 1) and u["mustUnlockPrereq"] then
+		    		entryCustomProperties["UPGRADE_LOCKED"].visibility = Visibility.INHERIT 
 		    		entryCustomProperties["PURCHASE_BUTTON"].isInteractable = false
 		    		entryCustomProperties["UPGRADE_COST_TEXT"]:SetColor(Color.RED)
-	    		end
-	    	end
-	    end
+		    		entryCustomProperties["PREREQ_LINE_LOCKED"].visibility = Visibility.FORCE_ON
+		    		entryCustomProperties["PREREQ_LINE_UNLOCKED"].visibility = Visibility.FORCE_OFF
+		    	else
+		    		entryCustomProperties["UPGRADE_LOCKED"].visibility = Visibility.FORCE_OFF
+		    		entryCustomProperties["PREREQ_LINE_LOCKED"].visibility = Visibility.FORCE_OFF
+		    		entryCustomProperties["PREREQ_LINE_UNLOCKED"].visibility = Visibility.FORCE_ON
+		    		
+		    		if progressOnType[i] and tonumber(progressOnType[i]) >= 2 then
+			    		entryCustomProperties["UPGRADE_COST_TEXT"].text = "EQUIPPED"
+			    		entryCustomProperties["PARTS_ICON"].visibility = Visibility.FORCE_OFF
+			    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.FORCE_OFF	   
+			    		entryCustomProperties["PURCHASE_BUTTON"].isInteractable = false
+		    		elseif canAffordUpgrade then
+		    			entryCustomProperties["PURCHASE_BUTTON"].name = u["upgradeID"]
+		    			
+		    			local button = entryCustomProperties["PURCHASE_BUTTON"]
+		    			upgradeButtonListeners[button.id] = {}
+		    			upgradeButtonListeners[button.id] = button.clickedEvent:Connect(UpgradeButtonClicked)
+		    			upgradeButtonListeners[button.id] = button.hoveredEvent:Connect(UpgradeButtonHovered)
+		    			upgradeButtonListeners[button.id] = button.unhoveredEvent:Connect(UpgradeButtonUnhovered)
+		    		else
+			    		entryCustomProperties["PURCHASE_BUTTON"].isInteractable = false
+			    		entryCustomProperties["UPGRADE_COST_TEXT"]:SetColor(Color.RED)
+		    		end
+		    	end
+		    	
+		    	if slotTypes[x] == "CREW" then
+		    		upgradeButtonEntries[i].x = (tonumber(u["prerequisite"]) - 1) * upgradeButtonEntries[i].width
+		    		entryCustomProperties["PREREQ_LINE_LOCKED"].visibility = Visibility.FORCE_OFF
+		    		entryCustomProperties["PREREQ_LINE_UNLOCKED"].visibility = Visibility.FORCE_OFF
+		    	else
+		    		upgradeButtonEntries[i].x = (upgradeNumber - 1) * upgradeButtonEntries[i].width
+		    	end
+		    	
+		    	upgradeButtonEntries[i].y = 0
+		    end
+		end
 	end
 end
 
@@ -1567,6 +1592,8 @@ function UpgradeButtonClicked(button)
 	    		progressOnUpgrade = tankDetails.hullProgress
 	    	elseif t == "ENGINE" then
 	    		progressOnUpgrade = tankDetails.engineProgress
+	    	elseif t == "CREW" then
+	    		progressOnUpgrade = tankDetails.crewProgress
 	    	end
     		upgradeType = t
     		break
@@ -1644,6 +1671,9 @@ function UpgradeObtained(tankID, upgradeID, newUpgradeValue)
 			    	elseif t == "ENGINE" then
 			    		LOCAL_PLAYER.clientUserData.techTreeProgress[i].engine[upgradeID] = newUpgradeValue
 			    		print( "ENGINE upgrade applied")
+			    	elseif t == "CREW" then
+			    		LOCAL_PLAYER.clientUserData.techTreeProgress[i].crew[upgradeID] = newUpgradeValue
+			    		print( "CREW upgrade applied")
 			    	end
 			    	
 			    	break
@@ -1653,7 +1683,7 @@ function UpgradeObtained(tankID, upgradeID, newUpgradeValue)
     end
     
     Task.Wait()
-    
+    upgradeRefresh = true
     OpenTankUpgradeWindow(BUTTON_UPGRADE_TANK, tankID)
 end
 
@@ -1678,37 +1708,41 @@ function UpgradeButtonHovered(button)
     		progressOnType = tankDetails.hullProgress
     	elseif type == "ENGINE" then
     		progressOnType = tankDetails.engineProgress
+     	elseif type == "CREW" then
+    		progressOnType = tankDetails.crewProgress
     	end
     	
-    	for upgradeID, progress in pairs(progressOnType) do
-    		if upgradeID == button.name then
-    			
-    			UPGRADE_TOOLTIP:GetCustomProperty("upgradeName"):WaitForObject().text = typeDetails[upgradeID]["upgradeName"]
-    			UPGRADE_TOOLTIP:GetCustomProperty("upgradeDescription"):WaitForObject().text = typeDetails[upgradeID]["upgradeDescription"]
-    			UPGRADE_TOOLTIP:GetCustomProperty("upgradePartsCost"):WaitForObject().text = "TANK PARTS: " .. typeDetails[upgradeID]["researchCost"]
-    			UPGRADE_TOOLTIP:GetCustomProperty("UpgradeSilverCost"):WaitForObject().text = "SILVER: " .. typeDetails[upgradeID]["purchaseCost"]
-    			
-    			UPGRADE_TOOLTIP.visibility = Visibility.INHERIT
-    		end
-    		
-    		if (tonumber(progress) >= 2) or (upgradeID == button.name) then
-    			for i = 1, 4 do
-    				statName = typeDetails[upgradeID]["stat" .. tostring(i) .. "Name"]
-    				statValue = typeDetails[upgradeID]["stat" .. tostring(i) .. "Value"]
-    				if statName == "DAMAGE" then
-    					damage = damage + statValue
-    				elseif statName == "AIM" then
-    					turret = turret + statValue
-    				elseif statName == "HITPOINTS" then
-    					hitPoints = hitPoints + statValue
-    				elseif statName == "SPEED" then
-    					topSpeed = topSpeed + statValue
-    				elseif statName == "ACCELERATION" then
-    					acceleration = acceleration + statValue
-    				elseif statName == "TURNING" then
-    					turningSpeed = turningSpeed + statValue
-    				end
-    			end
+    	if progressOnType then
+	    	for upgradeID, progress in pairs(progressOnType) do
+	    		if upgradeID == button.name then
+	    			
+	    			UPGRADE_TOOLTIP:GetCustomProperty("upgradeName"):WaitForObject().text = typeDetails[upgradeID]["upgradeName"]
+	    			UPGRADE_TOOLTIP:GetCustomProperty("upgradeDescription"):WaitForObject().text = typeDetails[upgradeID]["upgradeDescription"]
+	    			UPGRADE_TOOLTIP:GetCustomProperty("upgradePartsCost"):WaitForObject().text = "TANK PARTS: " .. typeDetails[upgradeID]["researchCost"]
+	    			UPGRADE_TOOLTIP:GetCustomProperty("UpgradeSilverCost"):WaitForObject().text = "SILVER: " .. typeDetails[upgradeID]["purchaseCost"]
+	    			
+	    			UPGRADE_TOOLTIP.visibility = Visibility.INHERIT
+	    		end
+	    		
+	    		if (tonumber(progress) >= 2) or (upgradeID == button.name) then
+	    			for i = 1, 4 do
+	    				statName = typeDetails[upgradeID]["stat" .. tostring(i) .. "Name"]
+	    				statValue = typeDetails[upgradeID]["stat" .. tostring(i) .. "Value"]
+	    				if statName == "DAMAGE" then
+	    					damage = damage + statValue
+	    				elseif statName == "AIM" then
+	    					turret = turret + statValue
+	    				elseif statName == "HITPOINTS" then
+	    					hitPoints = hitPoints + statValue
+	    				elseif statName == "SPEED" then
+	    					topSpeed = topSpeed + statValue
+	    				elseif statName == "ACCELERATION" then
+	    					acceleration = acceleration + statValue
+	    				elseif statName == "TURNING" then
+	    					turningSpeed = turningSpeed + statValue
+	    				end
+	    			end
+	    		end
     		end
     	end
     end
@@ -1809,29 +1843,33 @@ function PopulateEquippedTankStats(entry)
     		progressOnType = tankProgress.hull
     	elseif type == "ENGINE" then
     		progressOnType = tankProgress.engine
+    	elseif type == "CREW" then
+    		progressOnType = tankProgress.crew   
     	end
     	
-    	for upgradeID, progress in pairs(progressOnType) do
-    		if tonumber(progress) >= 2 then
-    			for i = 1, 4 do
-    				statName = typeDetails[upgradeID]["stat" .. tostring(i) .. "Name"]
-    				statValue = typeDetails[upgradeID]["stat" .. tostring(i) .. "Value"]
-    				if statName == "DAMAGE" then
-    					damage = damage + statValue
-    				elseif statName == "AIM" then
-    					turret = turret + statValue
-    				elseif statName == "HITPOINTS" then
-    					hitPoints = hitPoints + statValue
-    				elseif statName == "SPEED" then
-    					topSpeed = topSpeed + statValue
-    				elseif statName == "ACCELERATION" then
-    					acceleration = acceleration + statValue
-    				elseif statName == "TURNING" then
-    					turningSpeed = turningSpeed + statValue
-    				end
-    			end
-    		end
-    	end
+    	if progressOnType then
+	    	for upgradeID, progress in pairs(progressOnType) do
+	    		if tonumber(progress) >= 2 then
+	    			for i = 1, 4 do
+	    				statName = typeDetails[upgradeID]["stat" .. tostring(i) .. "Name"]
+	    				statValue = typeDetails[upgradeID]["stat" .. tostring(i) .. "Value"]
+	    				if statName == "DAMAGE" then
+	    					damage = damage + statValue
+	    				elseif statName == "AIM" then
+	    					turret = turret + statValue
+	    				elseif statName == "HITPOINTS" then
+	    					hitPoints = hitPoints + statValue
+	    				elseif statName == "SPEED" then
+	    					topSpeed = topSpeed + statValue
+	    				elseif statName == "ACCELERATION" then
+	    					acceleration = acceleration + statValue
+	    				elseif statName == "TURNING" then
+	    					turningSpeed = turningSpeed + statValue
+	    				end
+	    			end
+	    		end
+	    	end
+	    end
     end
  
      if topSpeed > tankAPI.GetHighestTopSpeed() then
@@ -1933,17 +1971,6 @@ Events.Connect('UpgradeSuccessful', UpgradeObtained)
 closeTechTreeModalButton.hoveredEvent:Connect(ButtonHover)
 closeTechTreeModalButton.clickedEvent:Connect(CloseTechTreeModal)
 
---[[
-upgradeWeapon.clickedEvent:Connect(UpgradeWeapon)
-upgradeArmor.clickedEvent:Connect(UpgradeArmor)
-upgradeEngine.clickedEvent:Connect(UpgradeEngine)
-upgradeTank.clickedEvent:Connect(UpgradeTank)
-upgradeWeapon.hoveredEvent:Connect(ButtonHover)
-upgradeArmor.hoveredEvent:Connect(ButtonHover)
-upgradeEngine.hoveredEvent:Connect(ButtonHover)
-upgradeTank.hoveredEvent:Connect(ButtonHover)
---]]
-
 closeButton.clickedEvent:Connect(ToggleResearchSidePanel)
 closeButton.hoveredEvent:Connect(ButtonHover)
 
@@ -1965,31 +1992,11 @@ UPGRADE_TANK_CONTAINER:FindDescendantByName('CONFIRM_WINDOW_CLOSE_BUTTON').click
 UPGRADE_TANK_CONTAINER:FindDescendantByName('CONFIRM_WINDOW_CLOSE_BUTTON').hoveredEvent:Connect(ButtonHover)
 UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_EQUIP_TANK').clickedEvent:Connect(EquipTank)
 UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_EQUIP_TANK').hoveredEvent:Connect(ButtonHover)
---[[
-UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_TURRET').clickedEvent:Connect(
-    ShowTankUpgradeModal,
-    'WEAPON'
-)
-]]
---UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_TURRET').hoveredEvent:Connect(HoverWeapon)
---UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_TURRET').unhoveredEvent:Connect(UnhoverWeapon)
---UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_SHELL').clickedEvent:Connect(ShowTankUpgradeModal, 'ARMOR')
---UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_SHELL').hoveredEvent:Connect(HoverArmor)
---UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_SHELL').unhoveredEvent:Connect(UnhoverArmor)
---[[
-UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_ENGINE').clickedEvent:Connect(
-    ShowTankUpgradeModal,
-    'ENGINE'
-)]]
---UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_ENGINE').hoveredEvent:Connect(HoverEngine)
---UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_ENGINE').unhoveredEvent:Connect(UnhoverEngine)
 
 UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('CLOSE_UPGRADE_CONFIRM_WINDOW').clickedEvent:Connect(
     CloseUpgradeConfirmWindow
 )
---UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('CLOSE_UPGRADE_CONFIRM_WINDOW').hoveredEvent:Connect(ButtonHover)
 UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('UPGRADE_TANK_BUTTON').clickedEvent:Connect(ConfirmUpgradeButtonClicked)
---UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('UPGRADE_TANK_BUTTON').hoveredEvent:Connect(ButtonHover)
 
 BUY_TANK_CONTAINER:FindDescendantByName('PURCHASE_TANK_BUTTON').clickedEvent:Connect(PurchaseTank)
 BUY_TANK_CONTAINER:FindDescendantByName('ClosePurchaseTank').clickedEvent:Connect(ClosePurchaseTank)

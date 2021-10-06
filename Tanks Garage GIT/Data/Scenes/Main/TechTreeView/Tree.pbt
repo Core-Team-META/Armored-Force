@@ -913,6 +913,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:CREW_UPGRADE_SLOT"
+      ObjectReference {
+        SelfId: 3371185486490179096
+      }
+    }
+    Overrides {
       Name: "cs:UPGRADE_MODULE_TEMPLATE"
       AssetReference {
         Id: 7609630067937528418

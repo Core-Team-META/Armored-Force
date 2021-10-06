@@ -6,7 +6,7 @@ local TANK_LIST =  _Constants_API:WaitForConstant("Tanks").GetTanks()
 local TECHTREE =  _Constants_API:WaitForConstant("TechTree")
 local CURRENCY = _Constants_API:WaitForConstant("Currency")
 
-local UPGRADE_TYPES = {"TURRET", "HULL", "ENGINE"}
+local UPGRADE_TYPES = {"TURRET", "HULL", "ENGINE", "CREW"}
 
 function PurchaseTank(player, id, prereqs)
 
@@ -281,12 +281,13 @@ function PurchaseUpgrade(player, tankID, upgradeID)
 		if(tank.id == tankID) then	
 		
 			local tankUpgradeType = tank.turret
-
 			
 			if selectedType == "HULL" then
 				tankUpgradeType = tank.hull
 			elseif selectedType == "ENGINE" then
 				tankUpgradeType = tank.engine
+			elseif selectedType == "CREW" then
+				tankUpgradeType = tank.crew
 			end
 			
 			local upgradePhase = tonumber(tankUpgradeType[upgradeID]) 
