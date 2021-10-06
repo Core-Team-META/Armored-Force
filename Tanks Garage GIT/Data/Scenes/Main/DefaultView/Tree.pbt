@@ -1056,6 +1056,18 @@ Objects {
   ParentId: 7478596360271859373
   UnregisteredParameters {
     Overrides {
+      Name: "cs:ConsumableCost_ExtraTreads"
+      Int: 400
+    }
+    Overrides {
+      Name: "cs:ConsumableCost_FireExtinguisher"
+      Int: 400
+    }
+    Overrides {
+      Name: "cs:ConsumableCost_TurretRepairKit"
+      Int: 400
+    }
+    Overrides {
       Name: "cs:QueueIndicatorPanel"
       ObjectReference {
         SelfId: 17413968878563161576
@@ -1072,6 +1084,30 @@ Objects {
       AssetReference {
         Id: 15718075383189814537
       }
+    }
+    Overrides {
+      Name: "cs:ConsumableCost_ExtraTreads:tooltip"
+      String: "The cost, in silver, to purchase the Extra Treads consumable item."
+    }
+    Overrides {
+      Name: "cs:ConsumableCost_FireExtinguisher:tooltip"
+      String: "The cost, in silver, to purchase the Fire Extinguisher consumable item."
+    }
+    Overrides {
+      Name: "cs:ConsumableCost_TurretRepairKit:tooltip"
+      String: "The cost, in silver, for the Turret Repair Kit consumable item."
+    }
+    Overrides {
+      Name: "cs:ConsumableCost_ExtraTreads:category"
+      String: "ConsumableCosts"
+    }
+    Overrides {
+      Name: "cs:ConsumableCost_FireExtinguisher:category"
+      String: "ConsumableCosts"
+    }
+    Overrides {
+      Name: "cs:ConsumableCost_TurretRepairKit:category"
+      String: "ConsumableCosts"
     }
   }
   Collidable_v2 {

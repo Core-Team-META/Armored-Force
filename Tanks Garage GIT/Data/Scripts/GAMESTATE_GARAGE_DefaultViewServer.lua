@@ -5,9 +5,13 @@ local consumableCost = {}
 local mapInRotation = "Map1"
 local forcedSelection = true
 
-consumableCost["TreadsRepair"] = 400
-consumableCost["Extinguisher"] = 400
-consumableCost["TurretRepair"] = 400
+local ConsumableCost_ExtraTreads = script:GetCustomProperty("ConsumableCost_ExtraTreads")
+local ConsumableCost_FireExtinguisher = script:GetCustomProperty("ConsumableCost_FireExtinguisher")
+local ConsumableCost_TurretRepairKit = script:GetCustomProperty("ConsumableCost_TurretRepairKit")
+
+consumableCost["TreadsRepair"] = ConsumableCost_ExtraTreads
+consumableCost["Extinguisher"] = ConsumableCost_FireExtinguisher
+consumableCost["TurretRepair"] = ConsumableCost_TurretRepairKit
 
 function SendToMap(player, selectedMap)
 --print("Transferring " .. player.name .. " to " .. mapInRotation)
