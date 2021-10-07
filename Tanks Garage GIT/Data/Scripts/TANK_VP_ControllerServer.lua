@@ -397,6 +397,13 @@ function SetTankModifications()
 						traverseSpeed = traverseSpeed + upgradeStatValue
 						elevationSpeed = elevationSpeed + upgradeStatValue
 						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					elseif upgradeStatName == "AIMBOOST" then
+						traverseSpeed = traverseSpeed + turretTraverseSpeed * upgradeStatValue
+						elevationSpeed = elevationSpeed + turretElevationSpeed * upgradeStatValue
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					elseif upgradeStatName == "RELOADBOOST" then
+						reloadTime = reloadTime + reloadSpeed * upgradeStatValue
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
 					elseif upgradeStatName == "DAMAGE" then
 						projectileDamage = projectileDamage + upgradeStatValue
 						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
@@ -406,11 +413,17 @@ function SetTankModifications()
 					elseif upgradeStatName == "SPEED" then
 						originalSpeed = originalSpeed + upgradeStatValue
 						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					elseif upgradeStatName == "SPEEDBOOST" then
+						originalSpeed = originalSpeed + topSpeed * upgradeStatValue
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
 					elseif upgradeStatName == "ACCELERATION" then
 						originalAcceleration = originalAcceleration + upgradeStatValue
 						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
 					elseif upgradeStatName == "TURNING" then
 						originalTurnSpeed = originalTurnSpeed + upgradeStatValue
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					elseif upgradeStatName == "TURNINGBOOST" then
+						originalTurnSpeed = originalTurnSpeed + turningSpeed * upgradeStatValue
 						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
 					end
 				end 

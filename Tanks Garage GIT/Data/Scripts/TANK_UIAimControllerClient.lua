@@ -202,6 +202,27 @@ function FindTank()
 					end
 				end
 			end
+			
+			for id, progress in pairs(e.crew) do
+				if tonumber(progress) > 1 then	
+				
+					for i = 1, 4 do 
+						upgradeStatName = tankData["CREW"][id]["stat" .. tostring(i) .. "Name"]
+						upgradeStatValue = tankData["CREW"][id]["stat" .. tostring(i) .. "Value"]
+						
+						if not upgradeStatName or not upgradeStatValue then
+							warn(id .. " for " .. tostring(identifier) .. " is missing data in database")
+							break
+						end
+						
+						if upgradeStatName == "AIMBOOST" then
+							rotationSpeed = rotationSpeed + tankData.turret * upgradeStatValue
+							verticalSpeed = verticalSpeed + tankData.elevation * upgradeStatValue
+							print(id .. " applied for aim control script")
+						end
+					end
+				end
+			end
 			break
 		end
 	end
