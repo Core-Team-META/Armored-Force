@@ -107,6 +107,10 @@ local consumableListener = nil
 local armorImpactListeners = {}
 local armorReleaseListeners = {}
 local vehicleCollideCount = 0
+local treadRepairTime = 10
+local fireRepairTime = 10
+local turretRepairTime = 10
+local fireDamage = 10
 
 --local MAX_ANGULAR_VELOCITY = 150
 local MIN_NOT_STUCK_VELOCITY = 20
@@ -119,7 +123,7 @@ local STANDARD_DAMAGE_STATE_CHANCE = 25
 
 local PROJECTILE_WAIT_LIMIT = 100
 
-local UPGRADE_TYPES = {"TURRET", "HULL", "ENGINE"}
+local UPGRADE_TYPES = {"TURRET", "HULL", "ENGINE", "CREW"}
 
 local function RaycastResultFromPointRotationDistance(point, rotation, distance)
 	
@@ -304,10 +308,6 @@ function AssignOwner(newOwner)
 end
 
 function SetServerData()
-
-	if not driver.serverUserData.currentTankData then
-		driver.serverUserData.currentTankData = {}
-	end
 	
 	driver.serverUserData.currentTankData.chassis = chassis
 	driver.serverUserData.currentTankData.hitbox = hitbox
@@ -320,6 +320,10 @@ function SetServerData()
 end
 
 function SetTankModifications()
+
+	if not driver.serverUserData.currentTankData then
+		driver.serverUserData.currentTankData = {}
+	end
 	
 	local modifications = nil
 	
@@ -364,6 +368,9 @@ function SetTankModifications()
 	local upgradeStatName = ""
 	local upgradeStatValue = 0
 	
+	local additionalTreadsCount = 0	
+	local additionalExtinguisherCount = 0
+	
 	for _, type in ipairs(UPGRADE_TYPES) do
 		if type == "TURRET" then
 			currentModType = modifications.turret
@@ -371,6 +378,8 @@ function SetTankModifications()
 			currentModType = modifications.hull
 		elseif type == "ENGINE" then
 			currentModType = modifications.engine
+		elseif type == "CREW" then
+			currentModType = modifications.crew
 		end
 		
 		if not tankData[type] then
@@ -392,7 +401,7 @@ function SetTankModifications()
 						warn(id .. " for " .. tostring(identifier) .. " is missing data in database")
 						break
 					end
-					
+					-- BASE UPGRADES:
 					if upgradeStatName == "AIM" then
 						traverseSpeed = traverseSpeed + upgradeStatValue
 						elevationSpeed = elevationSpeed + upgradeStatValue
@@ -425,11 +434,46 @@ function SetTankModifications()
 					elseif upgradeStatName == "TURNINGBOOST" then
 						originalTurnSpeed = originalTurnSpeed + turningSpeed * upgradeStatValue
 						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					-- ADDITIONAL CREW UPGRADES:
+					elseif upgradeStatName == "AUTOTREAD" then
+						treadRepairTime = treadRepairTime - upgradeStatValue
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					elseif upgradeStatName == "AUTOEXTINGUISHER" then
+						fireRepairTime = fireRepairTime - upgradeStatValue
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					elseif upgradeStatName == "AUTOREPAIR" then
+						turretRepairTime = turretRepairTime - upgradeStatValue
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					elseif upgradeStatName == "FIRERESISTANCE" then
+						fireDamage = fireDamage - upgradeStatValue
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					elseif upgradeStatName == "PROJECTILESPEED" then
+						projectileSpeed = projectileSpeed * (1 + upgradeStatValue)
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					elseif upgradeStatName == "SPOTTING" then
+						viewRange = viewRange * (1 + upgradeStatValue)
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					elseif upgradeStatName == "FREETREAD" then
+						additionalTreadsCount = additionalTreadsCount + upgradeStatValue
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					elseif upgradeStatName == "FREEEXTINGUISHER" then
+						additionalExtinguisherCount = additionalExtinguisherCount + upgradeStatValue
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					elseif upgradeStatName == "PARTSGAIN" then
+						driver.serverUserData.currentTankData.additionalPartsGain = upgradeStatValue
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+					elseif upgradeStatName == "SILVERGAIN" then
+						driver.serverUserData.currentTankData.additionalSilverGain = upgradeStatValue
+						print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
 					end
 				end 
 			end
 		end 
 	end	
+	
+	if driver:IsA("Player") then
+		Events.Broadcast("SET_CONSUMABLES", driver, additionalTreadsCount, additionalExtinguisherCount)
+	end
 	
 	print("ALL MODS APPLIED TO " .. driver.name)
 				
@@ -1002,7 +1046,7 @@ function OnTracked()
 	script:SetNetworkedCustomProperty("Tracked", trackStatus)
 	driver.movementControlMode = MovementControlMode.NONE
 	
-	Task.Wait(10)
+	Task.Wait(treadRepairTime)
 	
 	driver.movementControlMode = MovementControlMode.FACING_RELATIVE
 	script:SetNetworkedCustomProperty("Tracked", 0)
@@ -1022,10 +1066,10 @@ function OnBurning()
 	chassis.maxSpeed = math.floor(originalSpeed/2)
 
 
-	for i = 10, 1, -1 do
+	for i = fireRepairTime, 1, -1 do
 		if driver.isDead then break end
 
-		local damageDealt = Damage.New(10)
+		local damageDealt = Damage.New(fireDamage)
 	
 		if playerWhoBurned:IsA("Player") then
 			damageDealt.sourcePlayer = playerWhoBurned
@@ -1071,7 +1115,7 @@ function OnDamagedTurret()
 		turret:LookAtContinuous(target, true, traverseSpeed/(57 * 5))
 	end
 	
-	Task.Wait(10)
+	Task.Wait(turretRepairTime)
 	
 	if horizontalCannonAngles <= 0 then
 		turret:LookAtContinuous(target, true, traverseSpeed/57)
@@ -1093,7 +1137,7 @@ function OnDamagedBarrel()
 	Events.Broadcast("ToggleConsumable", driver, "TURRET", true)
 	barrelDown = true
 	
-	Task.Wait(10)
+	Task.Wait(turretRepairTime)
 		
 	script:SetNetworkedCustomProperty("BarrelDown", false)
 	Events.Broadcast("ToggleConsumable", driver, "TURRET", false)

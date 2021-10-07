@@ -68,14 +68,14 @@ function ToggleAbility(player, abilityToToggle, toggle)
 	end
 end
 
-function OnJoin(player)
+function OnJoin(player, additionalTreads, additionalExtinguishers)
 	
 	local currentSilver = player:GetResource(CONSTANTS_API.SILVER)
 	local consumableCost = 400
 	local initialTreadCount = player:GetResource(CONSTANTS_API.CONSUMABLES.TREADS)
 	
 	if initialTreadCount < 1 then
-		player:SetResource(CONSTANTS_API.CONSUMABLES.TREADS, 1)
+		player:AddResource(CONSTANTS_API.CONSUMABLES.TREADS, 1)
 	end
 	
 	local autoTreads = player:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_TREADS)
@@ -99,19 +99,22 @@ function OnJoin(player)
 	]]
 	
 	if autoTreads == 1 and treadCount < 2 and currentSilver >= consumableCost then
-		player:SetResource(CONSTANTS_API.CONSUMABLES.TREADS, 2)
+		player:AddResource(CONSTANTS_API.CONSUMABLES.TREADS, 1)
 		player:RemoveResource(CONSTANTS_API.SILVER, 400)
 	end
 
 	if autoExtinguisher == 1 and extinguisherCount < 1 and currentSilver >= consumableCost then
-		player:SetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER, 1)
+		player:AddResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER, 1)
 		player:RemoveResource(CONSTANTS_API.SILVER, 400)
 	end
 	
 	if autoTurret == 1 and turretCount < 1 and currentSilver >= consumableCost then
-		player:SetResource(CONSTANTS_API.CONSUMABLES.REPAIR, 1)
+		player:AddResource(CONSTANTS_API.CONSUMABLES.REPAIR, 1)
 		player:RemoveResource(CONSTANTS_API.SILVER, 400)
 	end
+	
+	player:AddResource(CONSTANTS_API.CONSUMABLES.TREADS, additionalTreads)
+	player:AddResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER, additionalExtinguishers)
 	
 	treadCount = player:GetResource(CONSTANTS_API.CONSUMABLES.TREADS)
 	extinguisherCount = player:GetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER)
@@ -172,5 +175,5 @@ function OnLeft(player)
 end
 
 Events.Connect("ToggleConsumable", ToggleAbility)
-Events.Connect("SET_DAILY_CHALLENGES", OnJoin)
+Events.Connect("SET_CONSUMABLES", OnJoin)
 Game.playerLeftEvent:Connect(OnLeft)

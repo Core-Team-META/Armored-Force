@@ -155,6 +155,34 @@ function SetClientData()
 	if not driver.clientUserData.currentTankData then
 		driver.clientUserData.currentTankData = {}
 	end
+	
+	local upgradeStatName = ""
+	local upgradeStatValue = 0
+	
+	for _, e in pairs(localPlayer.clientUserData.techTreeProgress) do
+		if tonumber(e.id) == tonumber(tankData.id) then			
+			for id, progress in pairs(e.crew) do
+				if tonumber(progress) > 1 then	
+				
+					for i = 1, 4 do 
+						upgradeStatName = tankData["CREW"][id]["stat" .. tostring(i) .. "Name"]
+						upgradeStatValue = tankData["CREW"][id]["stat" .. tostring(i) .. "Value"]
+						
+						if not upgradeStatName or not upgradeStatValue then
+							warn(id .. " for " .. tostring(identifier) .. " is missing data in database")
+							break
+						end
+						
+						if upgradeStatName == "SPOTTING" then
+							viewRange = viewRange * (1 + upgradeStatValue)
+							print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
+						end
+					end
+				end
+			end
+			break
+		end
+	end
 
 	driver.clientUserData.currentTankData.chassis = tankBodyServer
 	driver.clientUserData.currentTankData.skin = tankBodyClient

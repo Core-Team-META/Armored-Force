@@ -57,6 +57,7 @@ local rotationSpeed = 0
 local verticalSpeed = 0
 local activeVerticalSpeed = 0
 local aimBaseSpeed = 50000
+local zoomMultiplier = 1
 
 
 local function PushQueue(value)
@@ -180,7 +181,7 @@ function FindTank()
 	local upgradeStatValue = 0
 	
 	for _, e in pairs(localPlayer.clientUserData.techTreeProgress) do
-		if tonumber(e.id) == tonumber(tankID) then
+		if tonumber(e.id) == tonumber(tankData.id) then
 			
 			for id, progress in pairs(e.turret) do
 				if tonumber(progress) > 1 then	
@@ -219,6 +220,8 @@ function FindTank()
 							rotationSpeed = rotationSpeed + tankData.turret * upgradeStatValue
 							verticalSpeed = verticalSpeed + tankData.elevation * upgradeStatValue
 							print(id .. " applied for aim control script")
+						elseif upgradeStatName == "ZOOM" then
+							zoomMultiplier = 1 + upgradeStatValue
 						end
 					end
 				end
@@ -243,8 +246,10 @@ function FindTank()
 	end
 	
 	defaultCamera = clientSkin:FindDescendantByName("Tank Camera")
+	defaultCamera.minDistance = defaultCamera.minDistance * zoomMultiplier	
 	defaultCamera.currentDistance = defaultCamera.minDistance + 400
 	sniperCamera = clientSkin:FindDescendantByName("Sniper Camera")
+	sniperCamera.minDistance = sniperCamera.minDistance * zoomMultiplier
 	sniperCamera.currentDistance = sniperCamera.minDistance
 				
 	Task.Wait(0.1)
