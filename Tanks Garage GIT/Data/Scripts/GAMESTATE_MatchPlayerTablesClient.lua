@@ -126,8 +126,8 @@ function UpdateUITask()
 		end
 	end
 
-	alliesCountText.text = "YOUR TEAM:" .. tostring(liveAllies) .. " / " .. tostring(#allAllies)
-	enemyCountText.text = "ENEMY TEAM:" .. tostring(liveEnemies) .. " / " .. tostring(#allEnemies)
+	alliesCountText.text = "YOUR TEAM : " .. tostring(liveAllies) .. " / " .. tostring(#allAllies)
+	enemyCountText.text = "ENEMY TEAM : " .. tostring(liveEnemies) .. " / " .. tostring(#allEnemies)
 
 	if #allAllies < #allyEntries then
 		for i = #allAllies + 1, #allyEntries do
