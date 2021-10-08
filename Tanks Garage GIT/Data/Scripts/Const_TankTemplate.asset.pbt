@@ -33,166 +33,114 @@ Assets {
         String: "RP"
       }
       Overrides {
-        Name: "cs:purchaseCurrencyName"
-        String: "Silver"
-      }
-      Overrides {
         Name: "cs:researchCost"
         Int: 0
+      }
+      Overrides {
+        Name: "cs:purchaseCurrencyName"
+        String: "Silver"
       }
       Overrides {
         Name: "cs:purchaseCost"
         Int: 0
       }
       Overrides {
-        Name: "cs:weaponResearchCost"
-        Int: 2500
+        Name: "cs:prerequisite"
+        String: ""
       }
       Overrides {
-        Name: "cs:weaponPurchaseCost"
-        Int: 5000
+        Name: "cs:requiredUpgrades"
+        String: ""
       }
       Overrides {
-        Name: "cs:armorResearchCost"
-        Int: 2500
-      }
-      Overrides {
-        Name: "cs:armorPurchaseCost"
-        Int: 5000
-      }
-      Overrides {
-        Name: "cs:mobilityResearchCost"
-        Int: 2500
-      }
-      Overrides {
-        Name: "cs:mobilityPurchaseCost"
-        Int: 5000
-      }
-      Overrides {
-        Name: "cs:reload"
-        Float: 3
-      }
-      Overrides {
-        Name: "cs:reloadUpgraded"
-        Float: 2
-      }
-      Overrides {
-        Name: "cs:turret"
-        Int: 30
-      }
-      Overrides {
-        Name: "cs:turretUpgraded"
-        Int: 40
-      }
-      Overrides {
-        Name: "cs:elevation"
-        Int: 16
-      }
-      Overrides {
-        Name: "cs:elevationUpgraded"
-        Int: 22
-      }
-      Overrides {
-        Name: "cs:maxElevation"
-        Int: 20
-      }
-      Overrides {
-        Name: "cs:horizontalAngles"
-        Int: 0
-      }
-      Overrides {
-        Name: "cs:projectileSpeed"
-        Int: 21000
-      }
-      Overrides {
-        Name: "cs:maxDepression"
-        Int: -14
-      }
-      Overrides {
-        Name: "cs:projectileLength"
-        Float: 20
-      }
-      Overrides {
-        Name: "cs:projectileRadius"
-        Float: 5
-      }
-      Overrides {
-        Name: "cs:allowHoldDownFiring"
+        Name: "cs:startWithTank"
         Bool: false
-      }
-      Overrides {
-        Name: "cs:recoilAmount"
-        Float: 10
-      }
-      Overrides {
-        Name: "cs:viewRange"
-        Int: 50000
-      }
-      Overrides {
-        Name: "cs:recoilRockingMultiplier"
-        Float: 2
-      }
-      Overrides {
-        Name: "cs:damageUpgraded"
-        Int: 90
-      }
-      Overrides {
-        Name: "cs:hitPointsUpgraded"
-        Int: 800
-      }
-      Overrides {
-        Name: "cs:damage"
-        Int: 70
-      }
-      Overrides {
-        Name: "cs:hitPoints"
-        Int: 750
-      }
-      Overrides {
-        Name: "cs:topSpeed"
-        Int: 1160
-      }
-      Overrides {
-        Name: "cs:topSpeedUpgraded"
-        Int: 1200
-      }
-      Overrides {
-        Name: "cs:reverseSpeed"
-        Int: 300
-      }
-      Overrides {
-        Name: "cs:acceleration"
-        Int: 500
-      }
-      Overrides {
-        Name: "cs:Main"
-        AssetReference {
-          Id: 841534158063459245
-        }
-      }
-      Overrides {
-        Name: "cs:wheelSpeedModifier"
-        Float: 1
       }
       Overrides {
         Name: "cs:turningSpeed"
         Int: 60
       }
       Overrides {
-        Name: "cs:turningSpeedUpgraded"
-        Int: 70
+        Name: "cs:wheelSpeedModifier"
+        Float: 1
       }
       Overrides {
-        Name: "cs:accelerationUpgraded"
+        Name: "cs:acceleration"
         Int: 500
       }
       Overrides {
-        Name: "cs:prerequisite1"
-        String: ""
+        Name: "cs:reverseSpeed"
+        Int: 300
       }
       Overrides {
-        Name: "cs:startWithTank"
+        Name: "cs:topSpeed"
+        Int: 1160
+      }
+      Overrides {
+        Name: "cs:hitPoints"
+        Int: 750
+      }
+      Overrides {
+        Name: "cs:damage"
+        Int: 70
+      }
+      Overrides {
+        Name: "cs:recoilRockingMultiplier"
+        Float: 2
+      }
+      Overrides {
+        Name: "cs:viewRange"
+        Int: 50000
+      }
+      Overrides {
+        Name: "cs:recoilAmount"
+        Float: 10
+      }
+      Overrides {
+        Name: "cs:reload"
+        Float: 3
+      }
+      Overrides {
+        Name: "cs:allowHoldDownFiring"
         Bool: false
+      }
+      Overrides {
+        Name: "cs:projectileRadius"
+        Float: 5
+      }
+      Overrides {
+        Name: "cs:projectileLength"
+        Float: 20
+      }
+      Overrides {
+        Name: "cs:projectileSpeed"
+        Int: 21000
+      }
+      Overrides {
+        Name: "cs:horizontalAngles"
+        Int: 0
+      }
+      Overrides {
+        Name: "cs:maxDepression"
+        Int: -14
+      }
+      Overrides {
+        Name: "cs:maxElevation"
+        Int: 20
+      }
+      Overrides {
+        Name: "cs:elevation"
+        Int: 16
+      }
+      Overrides {
+        Name: "cs:turret"
+        Int: 30
+      }
+      Overrides {
+        Name: "cs:Main"
+        AssetReference {
+          Id: 841534158063459245
+        }
       }
       Overrides {
         Name: "cs:Chassis"
@@ -305,67 +253,11 @@ Assets {
         Bool: false
       }
       Overrides {
-        Name: "cs:weaponResearchCost:isrep"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:weaponResearchCost:ml"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:weaponPurchaseCost:isrep"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:weaponPurchaseCost:ml"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:armorResearchCost:isrep"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:armorResearchCost:ml"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:armorPurchaseCost:isrep"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:armorPurchaseCost:ml"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:mobilityResearchCost:isrep"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:mobilityResearchCost:ml"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:mobilityPurchaseCost:isrep"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:mobilityPurchaseCost:ml"
-        Bool: false
-      }
-      Overrides {
         Name: "cs:reload:isrep"
         Bool: false
       }
       Overrides {
         Name: "cs:reload:ml"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:reloadUpgraded:isrep"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:reloadUpgraded:ml"
         Bool: false
       }
       Overrides {
@@ -377,27 +269,11 @@ Assets {
         Bool: false
       }
       Overrides {
-        Name: "cs:turretUpgraded:isrep"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:turretUpgraded:ml"
-        Bool: false
-      }
-      Overrides {
         Name: "cs:elevation:isrep"
         Bool: false
       }
       Overrides {
         Name: "cs:elevation:ml"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:elevationUpgraded:isrep"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:elevationUpgraded:ml"
         Bool: false
       }
       Overrides {
@@ -418,7 +294,7 @@ Assets {
       }
       Overrides {
         Name: "cs:horizontalAngles:category"
-        String: "Custom"
+        String: "BaseStats"
       }
       Overrides {
         Name: "cs:maxDepression:isrep"
@@ -446,7 +322,7 @@ Assets {
       }
       Overrides {
         Name: "cs:projectileLength:category"
-        String: "Custom"
+        String: "BaseStats"
       }
       Overrides {
         Name: "cs:projectileRadius:isrep"
@@ -458,7 +334,7 @@ Assets {
       }
       Overrides {
         Name: "cs:projectileRadius:category"
-        String: "Custom"
+        String: "BaseStats"
       }
       Overrides {
         Name: "cs:allowHoldDownFiring:isrep"
@@ -470,7 +346,7 @@ Assets {
       }
       Overrides {
         Name: "cs:allowHoldDownFiring:category"
-        String: "Custom"
+        String: "BaseStats"
       }
       Overrides {
         Name: "cs:recoilAmount:isrep"
@@ -482,7 +358,7 @@ Assets {
       }
       Overrides {
         Name: "cs:recoilAmount:category"
-        String: "Custom"
+        String: "BaseStats"
       }
       Overrides {
         Name: "cs:recoilRockingMultiplier:isrep"
@@ -494,7 +370,7 @@ Assets {
       }
       Overrides {
         Name: "cs:recoilRockingMultiplier:category"
-        String: "Custom"
+        String: "BaseStats"
       }
       Overrides {
         Name: "cs:viewRange:isrep"
@@ -506,23 +382,7 @@ Assets {
       }
       Overrides {
         Name: "cs:viewRange:category"
-        String: "Custom"
-      }
-      Overrides {
-        Name: "cs:damageUpgraded:isrep"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:damageUpgraded:ml"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:hitPointsUpgraded:isrep"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:hitPointsUpgraded:ml"
-        Bool: false
+        String: "BaseStats"
       }
       Overrides {
         Name: "cs:damage:isrep"
@@ -546,14 +406,6 @@ Assets {
       }
       Overrides {
         Name: "cs:topSpeed:ml"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:topSpeedUpgraded:isrep"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:topSpeedUpgraded:ml"
         Bool: false
       }
       Overrides {
@@ -582,7 +434,7 @@ Assets {
       }
       Overrides {
         Name: "cs:wheelSpeedModifier:category"
-        String: "Custom"
+        String: "BaseStats"
       }
       Overrides {
         Name: "cs:turningSpeed:isrep"
@@ -593,28 +445,8 @@ Assets {
         Bool: false
       }
       Overrides {
-        Name: "cs:turningSpeedUpgraded:isrep"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:turningSpeedUpgraded:ml"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:turningSpeedUpgraded:category"
-        String: "Custom"
-      }
-      Overrides {
-        Name: "cs:accelerationUpgraded:isrep"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:accelerationUpgraded:ml"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:prerequisite1:category"
-        String: "Custom"
+        Name: "cs:prerequisite:category"
+        String: "TechTreeInfo"
       }
       Overrides {
         Name: "cs:Main:category"
@@ -639,6 +471,102 @@ Assets {
       Overrides {
         Name: "cs:SkinLoFi:category"
         String: "SpawnData"
+      }
+      Overrides {
+        Name: "cs:name:category"
+        String: "GeneralInfo"
+      }
+      Overrides {
+        Name: "cs:id:category"
+        String: "GeneralInfo"
+      }
+      Overrides {
+        Name: "cs:team:category"
+        String: "GeneralInfo"
+      }
+      Overrides {
+        Name: "cs:country:category"
+        String: "GeneralInfo"
+      }
+      Overrides {
+        Name: "cs:tier:category"
+        String: "GeneralInfo"
+      }
+      Overrides {
+        Name: "cs:type:category"
+        String: "GeneralInfo"
+      }
+      Overrides {
+        Name: "cs:researchCurrencyName:category"
+        String: "TechTreeInfo"
+      }
+      Overrides {
+        Name: "cs:researchCost:category"
+        String: "TechTreeInfo"
+      }
+      Overrides {
+        Name: "cs:purchaseCurrencyName:category"
+        String: "TechTreeInfo"
+      }
+      Overrides {
+        Name: "cs:purchaseCost:category"
+        String: "TechTreeInfo"
+      }
+      Overrides {
+        Name: "cs:startWithTank:category"
+        String: "TechTreeInfo"
+      }
+      Overrides {
+        Name: "cs:reload:category"
+        String: "BaseStats"
+      }
+      Overrides {
+        Name: "cs:turret:category"
+        String: "BaseStats"
+      }
+      Overrides {
+        Name: "cs:elevation:category"
+        String: "BaseStats"
+      }
+      Overrides {
+        Name: "cs:maxElevation:category"
+        String: "BaseStats"
+      }
+      Overrides {
+        Name: "cs:maxDepression:category"
+        String: "BaseStats"
+      }
+      Overrides {
+        Name: "cs:projectileSpeed:category"
+        String: "BaseStats"
+      }
+      Overrides {
+        Name: "cs:damage:category"
+        String: "BaseStats"
+      }
+      Overrides {
+        Name: "cs:hitPoints:category"
+        String: "BaseStats"
+      }
+      Overrides {
+        Name: "cs:topSpeed:category"
+        String: "BaseStats"
+      }
+      Overrides {
+        Name: "cs:reverseSpeed:category"
+        String: "BaseStats"
+      }
+      Overrides {
+        Name: "cs:acceleration:category"
+        String: "BaseStats"
+      }
+      Overrides {
+        Name: "cs:turningSpeed:category"
+        String: "BaseStats"
+      }
+      Overrides {
+        Name: "cs:requiredUpgrades:category"
+        String: "TechTreeInfo"
       }
     }
   }
