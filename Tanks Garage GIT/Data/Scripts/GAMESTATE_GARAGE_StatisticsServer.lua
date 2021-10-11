@@ -259,9 +259,9 @@ function SaveStatistics()
 		)
 		
 		-- add bonuses from win/loss and surivial bonus
-		p:AddResource(tankRPString, baseTP + survivalBonus)
-		p:AddResource(CONSTANTS_API.XP, baseXP + survivalBonus)
-		p:AddResource(CONSTANTS_API.SILVER, baseCurrency + survivalBonus)
+		p:AddResource(tankRPString, math.floor(baseTP + survivalBonus))
+		p:AddResource(CONSTANTS_API.XP, math.floor(baseXP + survivalBonus))
+		p:AddResource(CONSTANTS_API.SILVER, math.floor(baseCurrency + survivalBonus))
 		
 		local totalTP =  p:GetResource(tankRPString) - playerStartingXP[p.id]
 		local totalCurrency = p:GetResource(CONSTANTS_API.SILVER) - playerStartingSilver[p.id]
