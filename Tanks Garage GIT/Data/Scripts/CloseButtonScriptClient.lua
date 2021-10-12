@@ -7,7 +7,7 @@
 local buttons = {}
 local thisPlayer = Game.GetLocalPlayer()
 local curMenu = "DEFAULT_MENU"
-
+local popupModal = script:GetCustomProperty("PopupModal"):WaitForObject()
 
 
 for k,v in pairs(script:GetCustomProperties()) do
@@ -15,7 +15,11 @@ for k,v in pairs(script:GetCustomProperties()) do
 end
 
 local function onEscape(player,params)
-    if curMenu == "DEFAULT_MENU" then
+    if popupModal:IsVisibleInHierarchy() then
+        params.openPauseMenu = false
+        popupModal.visibility = Visibility.FORCE_OFF        
+        return
+    elseif curMenu == "DEFAULT_MENU" then
         return 
     elseif thisPlayer.clientUserData.isInGarage then
         params.openPauseMenu = false
