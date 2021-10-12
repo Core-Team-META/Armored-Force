@@ -142,7 +142,7 @@ function OnBattleButtonPressed(button)
 end
 
 function OnPurchaseButtonPressed(button)
-	if localPlayer:GetResource(CONSTANTS_API.SILVER) < 100 then
+	if localPlayer:GetResource(CONSTANTS_API.SILVER) < 400 then
 		World.SpawnAsset(SFX_ERROR_UI)
 		Events.Broadcast("SEND_POPUP", localPlayer, "Insufficient Silver", "Not enough Silver to purchase this item.")
 	else
@@ -153,7 +153,13 @@ function OnPurchaseButtonPressed(button)
 end
 
 function OnResupplyButtonPressed(button)
-	--print("resupply")
+	if 400 > localPlayer:GetResource(CONSTANTS_API.SILVER) then
+		local sfx = World.SpawnAsset(SFX_ERROR_UI)
+		sfx.lifeSpan = 3
+		return
+	end
+	local sfx = World.SpawnAsset(SFX_PURCHASE_UI)
+	sfx.lifeSpan = 3
 	ReliableEvents.BroadcastToServer("SET_AUTO_CONSUME", button.clientUserData.type)
 end
 
