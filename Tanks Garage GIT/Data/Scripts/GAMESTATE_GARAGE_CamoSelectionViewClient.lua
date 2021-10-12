@@ -209,7 +209,7 @@ function OnMainButtonClicked(button)
 		universalButtonComponents.active.visibility = Visibility.INHERIT	
 	end
 	
-	SFX_CLICK:Play()
+	--SFX_CLICK:Play()
 	
 end
 

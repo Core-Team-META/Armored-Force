@@ -71,6 +71,12 @@ Objects {
         SelfId: 17148815474573516737
       }
     }
+    Overrides {
+      Name: "cs:PopupModal"
+      ObjectReference {
+        SelfId: 3107273142777202591
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
