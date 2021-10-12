@@ -1434,6 +1434,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "01"
           }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "ENGINE3"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2834,6 +2838,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "01"
           }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "CREW1/CREW2/CREW3/CREW4"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4233,6 +4241,10 @@ Assets {
           Overrides {
             Name: "cs:prerequisite"
             String: "01"
+          }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "HULL3"
           }
         }
         Collidable_v2 {
@@ -5639,6 +5651,10 @@ Assets {
           Overrides {
             Name: "cs:prerequisite"
             String: "03"
+          }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "HULL4"
           }
         }
         Collidable_v2 {
@@ -7512,6 +7528,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "04"
           }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "TURRET4"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9377,6 +9397,10 @@ Assets {
           Overrides {
             Name: "cs:prerequisite"
             String: "01"
+          }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "TURRET3"
           }
         }
         Collidable_v2 {
@@ -12875,6 +12899,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "02"
           }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "ENGINE5"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14982,6 +15010,10 @@ Assets {
           Overrides {
             Name: "cs:prerequisite"
             String: "05"
+          }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "TURRET5"
           }
         }
         Collidable_v2 {
@@ -17091,6 +17123,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "05"
           }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "HULL5"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19198,6 +19234,10 @@ Assets {
           Overrides {
             Name: "cs:prerequisite"
             String: "05"
+          }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "ENGINE5"
           }
         }
         Collidable_v2 {
@@ -21307,6 +21347,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "06"
           }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "ENGINE5"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23414,6 +23458,10 @@ Assets {
           Overrides {
             Name: "cs:prerequisite"
             String: "06"
+          }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "HULL5"
           }
         }
         Collidable_v2 {
@@ -25523,6 +25571,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "06"
           }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "TURRET5"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27630,6 +27682,10 @@ Assets {
           Overrides {
             Name: "cs:prerequisite"
             String: "07"
+          }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "TURRET5"
           }
         }
         Collidable_v2 {
@@ -30658,6 +30714,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "18"
           }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "ENGINE3"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32057,6 +32117,10 @@ Assets {
           Overrides {
             Name: "cs:prerequisite"
             String: "18"
+          }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "CREW1/CREW2/CREW3/CREW4"
           }
         }
         Collidable_v2 {
@@ -33458,6 +33522,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "18"
           }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "HULL3"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34857,6 +34925,10 @@ Assets {
           Overrides {
             Name: "cs:prerequisite"
             String: "18"
+          }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "TURRET3"
           }
         }
         Collidable_v2 {
@@ -36263,6 +36335,10 @@ Assets {
           Overrides {
             Name: "cs:prerequisite"
             String: "21"
+          }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "HULL4"
           }
         }
         Collidable_v2 {
@@ -38135,6 +38211,10 @@ Assets {
           Overrides {
             Name: "cs:prerequisite"
             String: "20"
+          }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "TURRET4"
           }
         }
         Collidable_v2 {
@@ -41879,6 +41959,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "19"
           }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "ENGINE5"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43986,6 +44070,10 @@ Assets {
           Overrides {
             Name: "cs:prerequisite"
             String: "23"
+          }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "HULL5"
           }
         }
         Collidable_v2 {
@@ -46095,6 +46183,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "23"
           }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "TURRET5"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48202,6 +48294,10 @@ Assets {
           Overrides {
             Name: "cs:prerequisite"
             String: "23"
+          }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "ENGINE5"
           }
         }
         Collidable_v2 {
@@ -50311,6 +50407,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "24"
           }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "HULL5"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52418,6 +52518,10 @@ Assets {
           Overrides {
             Name: "cs:prerequisite"
             String: "24"
+          }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "ENGINE5"
           }
         }
         Collidable_v2 {
@@ -54527,6 +54631,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "24"
           }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "TURRET5"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -56634,6 +56742,10 @@ Assets {
           Overrides {
             Name: "cs:prerequisite"
             String: "22"
+          }
+          Overrides {
+            Name: "cs:requiredUpgrades"
+            String: "TURRET5"
           }
         }
         Collidable_v2 {
