@@ -9802,6 +9802,7 @@ Objects {
   ParentId: 8597407229468821886
   ChildIds: 6086834316501040121
   ChildIds: 8616846843933935882
+  ChildIds: 17564159135778408840
   ChildIds: 15012951307244190552
   ChildIds: 5898893744102822540
   ChildIds: 14577770028589451620
@@ -9819,7 +9820,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: -670
+    Width: -634
     UIX: -64
     RenderTransformPivot {
       Anchor {
@@ -9875,7 +9876,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 1013
+    Width: 1060
     Height: 170
     UIY: 510
     RenderTransformPivot {
@@ -9962,7 +9963,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 1013
+    Width: 1060
     Height: 170
     UIY: 340
     RenderTransformPivot {
@@ -10049,7 +10050,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 1013
+    Width: 1060
     Height: 170
     UIY: 170
     RenderTransformPivot {
@@ -10100,6 +10101,16 @@ Objects {
           Name: "Name"
           String: "UPGRADE_MODULE_TEMPLATE"
         }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
       }
     }
     TemplateAsset {
@@ -10123,6 +10134,13 @@ Objects {
   }
   ParentId: 5809741334352791940
   ChildIds: 5399813510851408902
+  ChildIds: 6501076431005513824
+  ChildIds: 1303630752471795963
+  ChildIds: 4776460760311208153
+  ChildIds: 3710015231170869093
+  ChildIds: 12106068884627934541
+  ChildIds: 6293751391298287394
+  ChildIds: 11176093994590595699
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10136,7 +10154,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 1013
+    Width: 1060
     Height: 170
     RenderTransformPivot {
       Anchor {
@@ -10158,6 +10176,432 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 11176093994590595699
+  Name: "UPGRADE_MODULE_TEMPLATE"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15012951307244190552
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2713739769019951349
+      value {
+        Overrides {
+          Name: "Name"
+          String: "UPGRADE_MODULE_TEMPLATE"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 910
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7609630067937528418
+    }
+  }
+}
+Objects {
+  Id: 6293751391298287394
+  Name: "UPGRADE_MODULE_TEMPLATE"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15012951307244190552
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2713739769019951349
+      value {
+        Overrides {
+          Name: "Name"
+          String: "UPGRADE_MODULE_TEMPLATE"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 780
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7609630067937528418
+    }
+  }
+}
+Objects {
+  Id: 12106068884627934541
+  Name: "UPGRADE_MODULE_TEMPLATE"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15012951307244190552
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2713739769019951349
+      value {
+        Overrides {
+          Name: "Name"
+          String: "UPGRADE_MODULE_TEMPLATE"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 650
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7609630067937528418
+    }
+  }
+}
+Objects {
+  Id: 3710015231170869093
+  Name: "UPGRADE_MODULE_TEMPLATE"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15012951307244190552
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2713739769019951349
+      value {
+        Overrides {
+          Name: "Name"
+          String: "UPGRADE_MODULE_TEMPLATE"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 520
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7609630067937528418
+    }
+  }
+}
+Objects {
+  Id: 4776460760311208153
+  Name: "UPGRADE_MODULE_TEMPLATE"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15012951307244190552
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2713739769019951349
+      value {
+        Overrides {
+          Name: "Name"
+          String: "UPGRADE_MODULE_TEMPLATE"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 390
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7609630067937528418
+    }
+  }
+}
+Objects {
+  Id: 1303630752471795963
+  Name: "UPGRADE_MODULE_TEMPLATE"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15012951307244190552
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2713739769019951349
+      value {
+        Overrides {
+          Name: "Name"
+          String: "UPGRADE_MODULE_TEMPLATE"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 260
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7609630067937528418
+    }
+  }
+}
+Objects {
+  Id: 6501076431005513824
+  Name: "UPGRADE_MODULE_TEMPLATE"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15012951307244190552
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2713739769019951349
+      value {
+        Overrides {
+          Name: "Name"
+          String: "UPGRADE_MODULE_TEMPLATE"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 130
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7609630067937528418
     }
   }
 }
@@ -10204,6 +10648,86 @@ Objects {
   }
 }
 Objects {
+  Id: 17564159135778408840
+  Name: "TANK_UNLOCK_SLOT"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5809741334352791940
+  ChildIds: 11209485613289454258
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 200
+    Height: 700
+    UIX: 1100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 11209485613289454258
+  Name: "TANK_MODULE_TEMPLATE"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17564159135778408840
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12084793004443427913
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TANK_MODULE_TEMPLATE"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8081088688388481560
+    }
+  }
+}
+Objects {
   Id: 8616846843933935882
   Name: "PREREQ_LINE_UNLOCKED"
   Transform {
@@ -10233,8 +10757,8 @@ Objects {
   Control {
     Width: 350
     Height: 10
-    UIX: -4.7494936
-    UIY: -392.191193
+    UIX: -5
+    UIY: -373
     RotationAngle: 90
     RenderTransformPivot {
       Anchor {
@@ -10300,7 +10824,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 49
+    Width: 30
     Height: 10
     UIX: -37.1619263
     UIY: -217.97641
@@ -31060,10 +31584,10 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 235
-    Height: 195
+    Width: 199
+    Height: 170
     UIX: 343.544128
-    UIY: 140.955612
+    UIY: 152.017654
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -31117,8 +31641,8 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 216
-    Height: 51
+    Width: 176
+    Height: 54
     UIY: -2.17272949
     RenderTransformPivot {
       Anchor {
@@ -31171,7 +31695,6 @@ Objects {
   Control {
     Width: 200
     Height: 59
-    UIX: -10
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"

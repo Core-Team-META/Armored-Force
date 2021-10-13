@@ -895,6 +895,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:UPGRADE_TOOLTIP"
+      ObjectReference {
+        SelfId: 7271995354771784332
+      }
+    }
+    Overrides {
       Name: "cs:TURRET_UPGRADE_SLOT"
       ObjectReference {
         SelfId: 15012951307244190552
@@ -919,15 +925,27 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:TANK_UNLOCK_SLOT"
+      ObjectReference {
+        SelfId: 17564159135778408840
+      }
+    }
+    Overrides {
       Name: "cs:UPGRADE_MODULE_TEMPLATE"
       AssetReference {
         Id: 7609630067937528418
       }
     }
     Overrides {
-      Name: "cs:UPGRADE_TOOLTIP"
-      ObjectReference {
-        SelfId: 7271995354771784332
+      Name: "cs:TANK_MODULE_TEMPLATE"
+      AssetReference {
+        Id: 8081088688388481560
+      }
+    }
+    Overrides {
+      Name: "cs:UPGRADE_LINE_TEMPLATE"
+      AssetReference {
+        Id: 3647538549911708133
       }
     }
   }

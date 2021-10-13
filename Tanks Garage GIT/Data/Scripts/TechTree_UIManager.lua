@@ -128,7 +128,10 @@ local TURRET_UPGRADE_SLOT = script:GetCustomProperty("TURRET_UPGRADE_SLOT"):Wait
 local HULL_UPGRADE_SLOT = script:GetCustomProperty("HULL_UPGRADE_SLOT"):WaitForObject()
 local ENGINE_UPGRADE_SLOT = script:GetCustomProperty("ENGINE_UPGRADE_SLOT"):WaitForObject()
 local CREW_UPGRADE_SLOT = script:GetCustomProperty("CREW_UPGRADE_SLOT"):WaitForObject()
+local TANK_UNLOCK_SLOT = script:GetCustomProperty("TANK_UNLOCK_SLOT"):WaitForObject()
 
+local TANK_MODULE_TEMPLATE = script:GetCustomProperty("TANK_MODULE_TEMPLATE")
+local UPGRADE_LINE_TEMPLATE = script:GetCustomProperty("UPGRADE_LINE_TEMPLATE")
 local UPGRADE_MODULE_TEMPLATE = script:GetCustomProperty("UPGRADE_MODULE_TEMPLATE")
 local UPGRADE_TOOLTIP = script:GetCustomProperty("UPGRADE_TOOLTIP"):WaitForObject()
 
@@ -214,6 +217,9 @@ local insufficientColorText = Color.New(0.43,0,0,1)
 local upgradeButtonListeners = {}
 local upgradeButtonEntries = {}
 local slotTypes = {"TURRET", "HULL", "ENGINE", "CREW"}
+local allSlots = {TURRET_UPGRADE_SLOT, HULL_UPGRADE_SLOT, ENGINE_UPGRADE_SLOT, CREW_UPGRADE_SLOT}
+local nextTankSlots = {["TURRET"] = 1, ["HULL"] = 2, ["ENGINE"] = 3, ["CREW"] = 4}
+
 ------------------------------------------------------------------------------------
 -- Completed UI references. Remove above ones as they are made obsolete
 
@@ -1431,7 +1437,23 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 		selectedTankId = tostring(selectedTankId)
 	end
 	
+	tankDetails.unlockableTanks = {}
+
+    for i, tank in ipairs(TANK_LIST) do
+        local id = tank["prerequisite"]
+        if id == selectedTankId then
+            table.insert(tankDetails.unlockableTanks, {["details"] = tank})
+        end
+    end
+	
 	for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+		for _, d in pairs(tankDetails.unlockableTanks) do 
+			if t.id == d["details"]["id"] then
+				d["researched"] = t.researched
+				d["purchased"] = t.purchased
+			end
+		end
+		
 	    if (t.id == selectedTankId) then
 	        tankDetails.researchedTank = t.researched
 	        tankDetails.purchasedTank = t.purchased
@@ -1440,9 +1462,10 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 	        tankDetails.engineProgress = t.engine
 	        tankDetails.crewProgress = t.crew 
 	        --UTIL_API.TablePrint(t)
+	        break
 	    end
 	end 
-    
+	
     IMAGE_API.SetTankImage(tankPreviewImage, selectedTankId)
     
     if not updatePanelsOnly then
@@ -1453,27 +1476,13 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 	        UPGRADE_TANK_CONTAINER.visibility = Visibility.FORCE_ON 
 	    end
 	end
-    local entry = {}
-    local progress = {}
-    for i, tank in ipairs(TANK_LIST) do
-        local id = tank.id
-        if id == selectedTankId then
-            entry = tank
-        end
-    end
-
-    for i, tankProgress in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-        if tankProgress.id == selectedTankId then
-            progress = tankProgress
-        end
-    end
-    
-    local allSlots = {TURRET_UPGRADE_SLOT, HULL_UPGRADE_SLOT, ENGINE_UPGRADE_SLOT, CREW_UPGRADE_SLOT}
-    local selectedType = nil
+	
+	local selectedType = nil
     local progressOnType = nil
     local upgradeNumber = nil
     local canAffordUpgrade = false
     local entryCustomProperties = {}
+    local sampleEntry = nil
  	
     upgradeButtonEntries = {}
     
@@ -1510,6 +1519,7 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 		    	upgradeNumber = tonumber(CoreString.Trim(i, slotTypes[x]))
 		    	
 		    	upgradeButtonEntries[i] = World.SpawnAsset(UPGRADE_MODULE_TEMPLATE, {parent = s})
+		    	sampleEntry = upgradeButtonEntries[i]
 		    			    	
 		    	for n, o in pairs(upgradeButtonEntries[i]:GetCustomProperties()) do
 		    		entryCustomProperties[n] = o:WaitForObject()
@@ -1573,6 +1583,119 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 		    	upgradeButtonEntries[i].y = 0
 		    end
 		end
+	end
+	
+	-- NEXT TANKS DETAILS
+	for _, c in pairs(TANK_UNLOCK_SLOT:GetChildren()) do
+	    if upgradeButtonListeners[c.id] then
+    		upgradeButtonListeners[c.id].clicked:Disconnect()
+    		upgradeButtonListeners[c.id].clicked = nil
+    		
+    		upgradeButtonListeners[c.id].hovered:Disconnect()
+    		upgradeButtonListeners[c.id].hovered = nil
+    		
+    		upgradeButtonListeners[c.id].unhovered:Disconnect()
+    		upgradeButtonListeners[c.id].unhovered = nil
+    	end
+	    	
+	    c:Destroy()
+	end
+	
+	local upgradeSlot = 0
+	local upgradeLevel = 0
+	local placementSlot = 0
+	local takenSlots = {[1] = false, [2] = false, [3] = false, [4] = false}
+	local currentTankProgress = {tankDetails.turretProgress, tankDetails.hullProgress, tankDetails.engineProgress, tankDetails.crewProgress}
+	local unlockableTankID = nil
+	local requiredUpgrades = {}
+	local upgradeLine = nil
+	local upgradeLineProperties = {}
+	
+	for _, t in pairs(tankDetails.unlockableTanks) do
+		currentSlot = 0
+		placementSlot = 0
+		unlockableTankID = t["details"]["id"]
+		requiredUpgrades = {CoreString.Split(t["details"]["requiredUpgrades"], "/")}
+		
+    	upgradeButtonEntries[unlockableTankID] = World.SpawnAsset(TANK_MODULE_TEMPLATE, {parent = TANK_UNLOCK_SLOT})
+    	upgradeButtonEntries[unlockableTankID].x = 0
+    	upgradeButtonEntries[unlockableTankID].y = 0
+    			    	
+    	for n, o in pairs(upgradeButtonEntries[unlockableTankID]:GetCustomProperties()) do
+    		entryCustomProperties[n] = o:WaitForObject()
+    	end	
+    	
+    	entryCustomProperties["PREREQ_LINE_UNLOCKED"].visibility = Visibility.FORCE_OFF
+    	entryCustomProperties["TANK_TITLE_TEXT"].text = t["details"]["name"]
+    	
+    	for _, u in pairs(requiredUpgrades) do 
+			for x, s in pairs(nextTankSlots) do  
+				if string.find(u, x) and placementSlot <= 0 and not takenSlots[s] then
+					placementSlot = s
+					takenSlots[s] = true
+					break
+				end
+			end
+		end
+		
+		if placementSlot == 0 then		
+			for x, r in pairs(takenSlots) do
+				if not takenSlots[x] then
+					takenSlots[x] = true
+					placementSlot = x 
+					break
+				end
+			end	
+		end
+			
+	    for _, u in pairs(requiredUpgrades) do 
+			for x, s in pairs(nextTankSlots) do  
+				if string.find(u, x) then
+					upgradeSlot = s
+					upgradeLevel = tonumber(CoreString.Trim(u, x))
+					break
+				end
+			end
+			
+			local locked = false
+						
+			if tonumber(currentTankProgress[upgradeSlot][u]) > 0 then
+				upgradeLine = World.SpawnAsset(UPGRADE_LINE_TEMPLATE, {parent = entryCustomProperties["PREREQ_UNLOCKED_GROUP"]})
+				entryCustomProperties["PREREQ_LINE_UNLOCKED"].visibility = Visibility.INHERIT
+		    else 
+				upgradeLine = World.SpawnAsset(UPGRADE_LINE_TEMPLATE, {parent = entryCustomProperties["PREREQ_LOCKED_GROUP"]})
+				entryCustomProperties["TANK_LOCKED"].visibility = Visibility.INHERIT
+				locked = true
+			end
+			
+			for n, o in pairs(upgradeLine:GetCustomProperties()) do
+				if not o:IsA("Color") then
+	    			upgradeLineProperties[n] = o:WaitForObject()
+	    		else 
+	    			upgradeLineProperties[n] = o
+	    		end
+	    	end	
+		    
+		    if locked then
+		    	upgradeLineProperties["UPGRADE_LINE"]:SetColor(upgradeLineProperties["LOCKED_COLOR"])
+		    	upgradeLineProperties["UPGRADE_LINE_END"]:SetColor(upgradeLineProperties["LOCKED_COLOR"])
+		    	upgradeLineProperties["UPGRADE_LINE"]:GetChildren()[1]:SetColor(upgradeLineProperties["LOCKED_COLOR"])
+		    end
+		    
+		    if upgradeSlot > placementSlot then
+		    	upgradeLineProperties["UPGRADE_LINE_END"].rotationAngle = 90
+		    end
+			
+			upgradeLine.x = math.ceil((upgradeLevel - 0.5) * sampleEntry.width)
+			upgradeLine.y = math.ceil(upgradeSlot * sampleEntry.height)
+			
+			upgradeLineProperties["UPGRADE_LINE"].width = 1075 - upgradeLine.x 
+			upgradeLineProperties["UPGRADE_LINE_END"].x = 1070 - upgradeLine.x 
+			upgradeLineProperties["UPGRADE_LINE_END"].width = math.ceil((math.abs(upgradeSlot - placementSlot) + 0.5) * sampleEntry.height)    	
+    	end
+    	
+    	entryCustomProperties["MAIN_TANK_ENTRY"].y = (placementSlot - 1) * entryCustomProperties["MAIN_TANK_ENTRY"].height
+    	entryCustomProperties["MAIN_TANK_ENTRY"].x = 0
 	end
 end
 
