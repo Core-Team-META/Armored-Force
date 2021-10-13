@@ -8927,13 +8927,19 @@ Objects {
           Vector {
             X: 58.3359375
             Y: -4522.03516
-            Z: -3344.80957
+            Z: -3783.55566
           }
         }
         Overrides {
           Name: "CoreProxy.CameraCollidable"
           Enum {
             Value: "mc:ecollisionsetting:forceoff"
+          }
+        }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
           }
         }
       }
@@ -9002,13 +9008,19 @@ Objects {
           Vector {
             X: 3447.98828
             Y: -1886.94434
-            Z: -2072.41
+            Z: -2421.32544
           }
         }
         Overrides {
           Name: "CoreProxy.CameraCollidable"
           Enum {
             Value: "mc:ecollisionsetting:forceoff"
+          }
+        }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
           }
         }
       }
