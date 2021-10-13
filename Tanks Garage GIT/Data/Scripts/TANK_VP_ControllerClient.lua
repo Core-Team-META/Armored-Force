@@ -159,7 +159,7 @@ function SetClientData()
 	local upgradeStatName = ""
 	local upgradeStatValue = 0
 	
-	for _, e in pairs(localPlayer.clientUserData.techTreeProgress) do
+	for _, e in pairs(driver.clientUserData.techTreeProgress) do
 		if tonumber(e.id) == tonumber(tankData.id) then			
 			for id, progress in pairs(e.crew) do
 				if tonumber(progress) > 1 then	
