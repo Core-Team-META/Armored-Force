@@ -6905,6 +6905,19 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 3711658413616032522
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -46.9851761
+            Y: -5.97960663
+            Z: 1760.97607
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 13566592186840689830
       value {
         Overrides {
@@ -6916,7 +6929,7 @@ Objects {
           Vector {
             X: 2493.24512
             Y: 3504.82764
-            Z: -3043.28564
+            Z: -3655.32056
           }
         }
         Overrides {
@@ -6937,7 +6950,7 @@ Objects {
   Name: "flag"
   Transform {
     Location {
-      Z: -2264.35913
+      Z: -2349.33545
     }
     Rotation {
       Yaw: -41.0780334
@@ -7504,7 +7517,7 @@ Objects {
     Location {
       X: -1850.09387
       Y: -3063.01099
-      Z: -2515.75513
+      Z: -2455.09473
     }
     Rotation {
       Pitch: -1.39251709
@@ -8113,14 +8126,14 @@ Objects {
   Name: "destructible sandbags"
   Transform {
     Location {
-      X: -3970.60913
-      Y: 1002.4989
-      Z: -2204.18652
+      X: -3816.22437
+      Y: 967.647339
+      Z: -2355.198
     }
     Rotation {
-      Pitch: 1.57114148
-      Yaw: -36.8327637
-      Roll: -11.5603638
+      Pitch: 2.28372145
+      Yaw: -36.3232117
+      Roll: 3.48590112
     }
     Scale {
       X: 1
@@ -8398,7 +8411,7 @@ Objects {
           Vector {
             X: -1479.98596
             Y: 3670.75537
-            Z: -1615.73438
+            Z: -2291.04565
           }
         }
         Overrides {
@@ -8546,7 +8559,7 @@ Objects {
     Location {
       X: -1140.76123
       Y: 2048.21753
-      Z: 432.451294
+      Z: -154.253845
     }
     Rotation {
       Yaw: -170.576126
@@ -8598,7 +8611,7 @@ Objects {
     Location {
       X: 2840.99146
       Y: 1749.21582
-      Z: 686.119
+      Z: 4.44177246
     }
     Rotation {
       Yaw: -20.6381226
@@ -8648,12 +8661,12 @@ Objects {
   Name: "collision"
   Transform {
     Location {
-      X: 351.5625
+      X: 351.561584
       Y: -1808.87891
-      Z: 522.76709
+      Z: 520.519653
     }
     Rotation {
-      Yaw: -86.7444382
+      Yaw: -86.7444458
     }
     Scale {
       X: 0.674473464
@@ -9037,7 +9050,7 @@ Objects {
     Location {
       X: 774.080078
       Y: 2380.63672
-      Z: -2159.67139
+      Z: -2747.72876
     }
     Rotation {
       Yaw: -125.95697
@@ -9133,6 +9146,18 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 1459690625576424399
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 405.15451
+            Y: 0.000122070312
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 4455667514777151041
       value {
         Overrides {
@@ -9147,7 +9172,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -63.0433197
+            Yaw: -63.043335
           }
         }
       }
@@ -9210,7 +9235,7 @@ Objects {
     Location {
       X: -3083.76562
       Y: -277.003906
-      Z: -2570.50488
+      Z: -2667.74292
     }
     Rotation {
       Yaw: -69.9522095
@@ -9818,7 +9843,7 @@ Objects {
   Name: "flag"
   Transform {
     Location {
-      Z: -2294.5542
+      Z: -2571.24219
     }
     Rotation {
       Yaw: 120
@@ -10508,7 +10533,7 @@ Objects {
     Location {
       X: -900.394531
       Y: -3111.06836
-      Z: 424.230347
+      Z: 172.002075
     }
     Rotation {
       Yaw: -179.699051
@@ -10560,7 +10585,7 @@ Objects {
     Location {
       X: 2700.66797
       Y: -561.704102
-      Z: -0.928955078
+      Z: -253.157227
     }
     Rotation {
       Yaw: -123.141525
@@ -10612,10 +10637,10 @@ Objects {
     Location {
       X: -918.652344
       Y: 1451.62891
-      Z: 568.377319
+      Z: 316.149048
     }
     Rotation {
-      Yaw: -86.7444382
+      Yaw: -86.7444458
     }
     Scale {
       X: 0.674473464

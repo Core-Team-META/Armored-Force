@@ -164,7 +164,6 @@ Objects {
   ChildIds: 13522450063221573167
   ChildIds: 3036367476430829098
   ChildIds: 10074345253529791982
-  ChildIds: 14599149997362643717
   ChildIds: 6285938404201889960
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -217,68 +216,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -22236.6191
-            Y: -4624.63232
-            Z: 180
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 34.763855
-            Y: 34.763855
-            Z: 34.763855
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 8995041738806890104
-    }
-  }
-}
-Objects {
-  Id: 14599149997362643717
-  Name: "AI_BlockedPathMarker"
-  Transform {
-    Location {
-      X: -13336.416
-      Y: -3931.40479
-      Z: 179.999023
-    }
-    Rotation {
-    }
-    Scale {
-      X: 44.1961288
-      Y: 44.1961288
-      Z: 44.1961288
-    }
-  }
-  ParentId: 15332619434643927751
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16171526267083004880
-      value {
-        Overrides {
-          Name: "Name"
-          String: "AI_BlockedPathMarker"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -19080.332
-            Y: -3400.00952
+            X: -20732.4473
+            Y: -4161.35352
             Z: 180
           }
         }
@@ -1237,8 +1176,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -13207.1973
-            Y: -6793.31299
+            X: -13575.3574
+            Y: -6956.51855
             Z: 179.999023
           }
         }
@@ -1297,8 +1236,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -13336.416
-            Y: -3931.40479
+            X: -13254.4033
+            Y: -3828.21582
             Z: 179.999023
           }
         }
@@ -1370,9 +1309,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 42.3765869
-            Y: 42.3765869
-            Z: 42.3765869
+            X: 37.9076385
+            Y: 37.9076385
+            Z: 37.9076385
           }
         }
       }
@@ -4927,9 +4866,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 75.5025864
-            Y: 75.5025864
-            Z: 75.5025864
+            X: 66.2291489
+            Y: 66.2291489
+            Z: 66.2291489
           }
         }
       }
