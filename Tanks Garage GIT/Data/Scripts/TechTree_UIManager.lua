@@ -1536,6 +1536,12 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 		    	
 		    	entryCustomProperties["UPGRADE_TITLE_TEXT"].text = u["upgradeName"]
 		    	
+		    	local button = entryCustomProperties["PURCHASE_BUTTON"]
+		    	upgradeButtonListeners[button.id] = {}
+		    	upgradeButtonListeners[button.id] = button.hoveredEvent:Connect(UpgradeButtonHovered)
+		    	upgradeButtonListeners[button.id] = button.unhoveredEvent:Connect(UpgradeButtonUnhovered)
+		    	button.name = u["upgradeID"]
+		    	
 		    	if progressOnType[i] and tonumber(progressOnType[i]) < 1 then
 		    		entryCustomProperties["UPGRADE_COST_TEXT"].text = tostring(u["researchCost"])
 		    		entryCustomProperties["PARTS_ICON"].visibility = Visibility.INHERIT 
@@ -1550,33 +1556,28 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 		    		
 		    		canAffordUpgrade = LOCAL_PLAYER:GetResource(Constants_API.SILVER) >= u["purchaseCost"]
 		    	end
-		    	
+		    			    	
 		    	if (u["prerequisite"] ~= "") and progressOnType[u["prerequisite"]] and (tonumber(progressOnType[u["prerequisite"]]) < 1) and u["mustUnlockPrereq"] then
 		    		entryCustomProperties["UPGRADE_LOCKED"].visibility = Visibility.INHERIT 
-		    		entryCustomProperties["PURCHASE_BUTTON"].isInteractable = false
-		    		entryCustomProperties["UPGRADE_COST_TEXT"]:SetColor(Color.RED)
-		    		entryCustomProperties["PREREQ_LINE_LOCKED"].visibility = Visibility.FORCE_ON
+		    		entryCustomProperties["PREREQ_LINE_LOCKED"].visibility = Visibility.INHERIT
 		    		entryCustomProperties["PREREQ_LINE_UNLOCKED"].visibility = Visibility.FORCE_OFF
+		    		button:SetButtonColor(button:GetDisabledColor())
+		    		button:SetHoveredColor(button:GetDisabledColor())
+		    		entryCustomProperties["UPGRADE_COST_TEXT"]:SetColor(Color.RED)
 		    	else
 		    		entryCustomProperties["UPGRADE_LOCKED"].visibility = Visibility.FORCE_OFF
 		    		entryCustomProperties["PREREQ_LINE_LOCKED"].visibility = Visibility.FORCE_OFF
-		    		entryCustomProperties["PREREQ_LINE_UNLOCKED"].visibility = Visibility.FORCE_ON
+		    		entryCustomProperties["PREREQ_LINE_UNLOCKED"].visibility = Visibility.INHERIT
 		    		
 		    		if progressOnType[i] and tonumber(progressOnType[i]) >= 2 then
 			    		entryCustomProperties["UPGRADE_COST_TEXT"].text = "EQUIPPED"
 			    		entryCustomProperties["PARTS_ICON"].visibility = Visibility.FORCE_OFF
-			    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.FORCE_OFF	   
-			    		entryCustomProperties["PURCHASE_BUTTON"].isInteractable = false
+			    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.FORCE_OFF
 		    		elseif canAffordUpgrade then
-		    			entryCustomProperties["PURCHASE_BUTTON"].name = u["upgradeID"]
-		    			
-		    			local button = entryCustomProperties["PURCHASE_BUTTON"]
-		    			upgradeButtonListeners[button.id] = {}
 		    			upgradeButtonListeners[button.id] = button.clickedEvent:Connect(UpgradeButtonClicked)
-		    			upgradeButtonListeners[button.id] = button.hoveredEvent:Connect(UpgradeButtonHovered)
-		    			upgradeButtonListeners[button.id] = button.unhoveredEvent:Connect(UpgradeButtonUnhovered)
 		    		else
-			    		entryCustomProperties["PURCHASE_BUTTON"].isInteractable = false
+		    			button:SetButtonColor(button:GetDisabledColor())
+		    			button:SetHoveredColor(button:GetDisabledColor())
 			    		entryCustomProperties["UPGRADE_COST_TEXT"]:SetColor(Color.RED)
 		    		end
 		    	end
@@ -1650,10 +1651,7 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 		upgradeButtonListeners[button.id] = button.unhoveredEvent:Connect(TankButtonUnhovered)
 		
 		IMAGE_API.SetTankImage(entryCustomProperties["TANK_IMAGE"], unlockableTankID)
-		
-		print(t["purchased"])
-		print(t["researched"])
-    	
+		    	
     	if t["purchased"] then
     		entryCustomProperties["TANK_COST_TEXT"].text = "EQUIP"
     		entryCustomProperties["PARTS_ICON"].visibility = Visibility.FORCE_OFF
@@ -1673,16 +1671,7 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
     		local totalParts = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankDetails.id))) + LOCAL_PLAYER:GetResource(Constants_API.FREERP)
     		canAffordUpgrade = totalParts >= t["details"]["researchCost"]
     	end
-    	
-    	if not canAffordUpgrade then
-    		entryCustomProperties["TANK_COST_TEXT"]:SetColor(Color.RED)
-    		entryCustomProperties["PURCHASE_BUTTON"]:SetButtonColor(entryCustomProperties["PURCHASE_BUTTON"]:GetDisabledColor())
-    	elseif not t["purchased"] then
-    		entryCustomProperties["PURCHASE_BUTTON"].clickedEvent:Connect(TankButtonClicked)
-    	else 
-    		entryCustomProperties["PURCHASE_BUTTON"].clickedEvent:Connect(TankButtonEquipTank)
-    	end
-    	
+    	    	
     	for _, u in pairs(requiredUpgrades) do 
 			for x, s in pairs(nextTankSlots) do  
 				if string.find(u, x) and placementSlot <= 0 and not takenSlots[s] then
@@ -1721,6 +1710,7 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 				upgradeLine = World.SpawnAsset(UPGRADE_LINE_TEMPLATE, {parent = entryCustomProperties["PREREQ_LOCKED_GROUP"]})
 				entryCustomProperties["TANK_LOCKED"].visibility = Visibility.INHERIT
 				locked = true
+				canAffordUpgrade = false
 			end
 			
 			for n, o in pairs(upgradeLine:GetCustomProperties()) do
@@ -1748,6 +1738,15 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 			upgradeLineProperties["UPGRADE_LINE_END"].x = 1070 - upgradeLine.x 
 			upgradeLineProperties["UPGRADE_LINE_END"].width = math.ceil((math.abs(upgradeSlot - placementSlot) + 0.5) * sampleEntry.height)    	
     	end
+    	
+    	if not canAffordUpgrade then
+    		entryCustomProperties["TANK_COST_TEXT"]:SetColor(Color.RED)
+    		entryCustomProperties["PURCHASE_BUTTON"]:SetButtonColor(entryCustomProperties["PURCHASE_BUTTON"]:GetDisabledColor())
+    	elseif not t["purchased"] then
+    		entryCustomProperties["PURCHASE_BUTTON"].clickedEvent:Connect(TankButtonClicked)
+    	else 
+    		entryCustomProperties["PURCHASE_BUTTON"].clickedEvent:Connect(TankButtonEquipTank)
+    	end    	
     	
     	entryCustomProperties["MAIN_TANK_ENTRY"].y = (placementSlot - 1) * entryCustomProperties["MAIN_TANK_ENTRY"].height
     	entryCustomProperties["MAIN_TANK_ENTRY"].x = 0
@@ -2176,7 +2175,7 @@ end
 
 function EquipTank(newSelectedTank)
     SFX_EQUIP_TANK:Play()
-    if newSelectedTank then
+    if newSelectedTank and not Object.IsValid(newSelectedTank) then
 	    Events.BroadcastToServer('CHANGE_EQUIPPED_TANK', newSelectedTank)
 	    Events.Broadcast('CHANGE_EQUIPPED_TANK', newSelectedTank)
     else
@@ -2425,7 +2424,7 @@ function OnResourceChanged(player, resource, value)
             end
         end
         PopulateOwnedTanks()
-        OpenTankUpgradeWindow(BUTTON_UPGRADE_TANK, tankDetails.id, true)
+        OpenTankUpgradeWindow(BUTTON_UPGRADE_TANK, nil, true)
    	elseif resource == UTIL_API.GetTankRPString(currentTank) then
    		STATS_TANK_CONTAINER:FindDescendantByName('EQUIPPED_EXPERIENCE_EQUIPPED_TANK_PARTS').text =
         tostring(LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(currentTank)))
