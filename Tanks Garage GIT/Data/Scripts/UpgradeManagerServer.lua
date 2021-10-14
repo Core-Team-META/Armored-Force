@@ -8,6 +8,7 @@ local CURRENCY = _Constants_API:WaitForConstant("Currency")
 
 local UPGRADE_TYPES = {"TURRET", "HULL", "ENGINE", "CREW"}
 
+--[[
 function PurchaseTank(player, id, prereqs)
 
 	local tank = {}
@@ -80,10 +81,11 @@ function PurchaseTank(player, id, prereqs)
 	
 	return BroadcastEventResultCode.FAILURE
 end
+--]]
 
 function ResearchTank(player, tankID)
 
-	local selectedTankData = TANK_LIST.GetTankFromId(tonumber(tankID))
+	local selectedTankData = TANK_LIST[tonumber(tankID)]
 	
 	if not selectedTankData then
 		warn("COULD NOT FIND REQUESTED TANK ID: " .. tostring(tankID))
@@ -108,18 +110,20 @@ function ResearchTank(player, tankID)
 		return BroadcastEventResultCode.FAILURE	
 	end
 		
-	for i, tank in ipairs(player.serverUserData.techTreeProgress) do
-		if(tonumber(tank.id) == tonumber(prerequisite1ID)) and tank.researched and tank.purchased then
+	for i, tank in pairs(player.serverUserData.techTreeProgress) do
+		if(tonumber(tank.id) == tonumber(prerequisiteID)) and tank.purchased then
 			prerequisiteTP = player:GetResource(UTIL_API.GetTankRPString(tonumber(prerequisiteID)))
 			prerequisiteUpgrades["TURRET"] = tank.turret
 			prerequisiteUpgrades["HULL"] = tank.hull
 			prerequisiteUpgrades["ENGINE"] = tank.engine
-			prerequisiteUpgrades["CREW"] = tank.crew	
+			prerequisiteUpgrades["CREW"] = tank.crew
 		end
 	end
 	
+	print("required upgrades:")
 	for _, upgradeID in pairs({CoreString.Split(selectedTankData["requiredUpgrades"], "/")}) do
 		upgradeChecklist[upgradeID] = false
+		print(upgradeID)
 	end
 	
 	local overflowTP = 0
@@ -130,16 +134,24 @@ function ResearchTank(player, tankID)
 	
 	for i, tank in ipairs(player.serverUserData.techTreeProgress) do			
 		if(tonumber(tank.id) == tonumber(tankID)) and not tank.researched and not tank.purchased then
+		
+			if tank.researched then
+					warn("THIS TANK HAS ALREADY BEEN RESEARCHED: " .. tostring(tankID))
+					return BroadcastEventResultCode.FAILURE	
+			end
+			
 			if owedTP.tp > prerequisiteTP then  -- if prereq1 does not have enough tank parts, give overflow to universal parts.
 				overflowTP = owedTP.tp - prerequisiteTP
-				owedTP.tp = prerequisite1TP
+				owedTP.tp = prerequisiteTP
 				owedTP.up = owedTP.up + overflowTP
 			end
 			
+			print("obtained upgrades")
 			for _, upgradeType in pairs(prerequisiteUpgrades) do
-				for upgradeID, upgradeProgress in pairs(prerequisiteUpgrades[upgradeType]) do
-					if upgradeChecklist[upgradeID] and tonumber(upgradeProgress) > 0 then
+				for upgradeID, upgradeProgress in pairs(upgradeType) do
+					if upgradeChecklist[upgradeID] ~= nil and tonumber(upgradeProgress) > 0 then
 						upgradeChecklist[upgradeID] = true
+						print(upgradeID)
 					end
 				end
 			end
@@ -160,7 +172,7 @@ function ResearchTank(player, tankID)
 			end
 			
 			if owedTP.tp > 0 then
-				player:RemoveResource(UTIL_API.GetTankRPString(tonumber(prerequisite1ID)), owedTP.tp)
+				player:RemoveResource(UTIL_API.GetTankRPString(tonumber(prerequisiteID)), owedTP.tp)
 			end
 						
 			if owedTP.up > 0 then
@@ -180,8 +192,9 @@ function ResearchTank(player, tankID)
 
 end
 
+
 function PurchaseTank(player, tankID)
-	local selectedTankData = TANK_LIST.GetTankFromId(tonumber(tankID))
+	local selectedTankData = TANK_LIST[tonumber(tankID)]
 	
 	if not selectedTankData then
 		warn("COULD NOT FIND REQUESTED TANK ID: " .. tostring(tankID))
@@ -202,8 +215,13 @@ function PurchaseTank(player, tankID)
 		return BroadcastEventResultCode.FAILURE 
 	end		
 		
-	for i, tank in ipairs(player.serverUserData.techTreeProgress) do
+	for i, tank in pairs(player.serverUserData.techTreeProgress) do
 		if(tonumber(tank.id) == tonumber(tankID)) and tank.researched then
+			if tank.purchased then
+				warn("ALREADY PURCHASED: " .. tostring(tankID))
+				return BroadcastEventResultCode.FAILURE 	
+			end
+			
 			if(purchaseCurrencyName == "Gold") then
 				player:RemoveResource(CURRENCY.GOLD.ResourceName, purchaseCost)
 			else
@@ -300,4 +318,5 @@ function PurchaseUpgrade(player, tankID, upgradeID)
 end
 
 Events.ConnectForPlayer("PurchaseUpgrade", PurchaseUpgrade)
+Events.ConnectForPlayer("ResearchTank", ResearchTank)
 Events.ConnectForPlayer("PurchaseTank", PurchaseTank)

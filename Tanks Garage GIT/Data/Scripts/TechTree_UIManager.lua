@@ -219,6 +219,7 @@ local upgradeButtonEntries = {}
 local slotTypes = {"TURRET", "HULL", "ENGINE", "CREW"}
 local allSlots = {TURRET_UPGRADE_SLOT, HULL_UPGRADE_SLOT, ENGINE_UPGRADE_SLOT, CREW_UPGRADE_SLOT}
 local nextTankSlots = {["TURRET"] = 1, ["HULL"] = 2, ["ENGINE"] = 3, ["CREW"] = 4}
+local upgradeIsNextTank = false
 
 ------------------------------------------------------------------------------------
 -- Completed UI references. Remove above ones as they are made obsolete
@@ -1430,6 +1431,7 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
     end  
     
 	tankDetails = tankAPI.GetTankFromId(selectedTankId)
+	--UTIL_API.TablePrint(tankDetails)
 	
 	if tonumber(selectedTankId) < 10 then
 		selectedTankId = "0" .. tostring(selectedTankId)
@@ -1447,7 +1449,9 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
     end
 	
 	for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-		for _, d in pairs(tankDetails.unlockableTanks) do 
+		for _, d in pairs(tankDetails.unlockableTanks) do
+			print(t.id)
+			print(d["details"]["id"])
 			if t.id == d["details"]["id"] then
 				d["researched"] = t.researched
 				d["purchased"] = t.purchased
@@ -1462,7 +1466,6 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 	        tankDetails.engineProgress = t.engine
 	        tankDetails.crewProgress = t.crew 
 	        --UTIL_API.TablePrint(t)
-	        break
 	    end
 	end 
 	
@@ -1501,20 +1504,26 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
     	
 	    for _, c in pairs(s:GetChildren()) do
 	    	if upgradeButtonListeners[c.id] then
-	    		upgradeButtonListeners[c.id].clicked:Disconnect()
-	    		upgradeButtonListeners[c.id].clicked = nil
-	    		
-	    		upgradeButtonListeners[c.id].hovered:Disconnect()
-	    		upgradeButtonListeners[c.id].hovered = nil
-	    		
-	    		upgradeButtonListeners[c.id].unhovered:Disconnect()
-	    		upgradeButtonListeners[c.id].unhovered = nil
+		    	if upgradeButtonListeners[c.id].clicked then
+		    		upgradeButtonListeners[c.id].clicked:Disconnect()
+		    		upgradeButtonListeners[c.id].clicked = nil
+		    	end
+		
+		    	if upgradeButtonListeners[c.id].hovered then    		
+		    		upgradeButtonListeners[c.id].hovered:Disconnect()
+		    		upgradeButtonListeners[c.id].hovered = nil
+		    	end
+		
+		    	if upgradeButtonListeners[c.id].unhovered then  		
+		    		upgradeButtonListeners[c.id].unhovered:Disconnect()
+		    		upgradeButtonListeners[c.id].unhovered = nil
+		    	end
 	    	end
 	    	
 	    	c:Destroy()
 	    end
 		    
-		if progressOnType then
+		if progressOnType and selectedType then
 		    for i, u in pairs(selectedType) do
 		    	upgradeNumber = tonumber(CoreString.Trim(i, slotTypes[x]))
 		    	
@@ -1588,14 +1597,20 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 	-- NEXT TANKS DETAILS
 	for _, c in pairs(TANK_UNLOCK_SLOT:GetChildren()) do
 	    if upgradeButtonListeners[c.id] then
-    		upgradeButtonListeners[c.id].clicked:Disconnect()
-    		upgradeButtonListeners[c.id].clicked = nil
-    		
-    		upgradeButtonListeners[c.id].hovered:Disconnect()
-    		upgradeButtonListeners[c.id].hovered = nil
-    		
-    		upgradeButtonListeners[c.id].unhovered:Disconnect()
-    		upgradeButtonListeners[c.id].unhovered = nil
+	    	if upgradeButtonListeners[c.id].clicked then
+	    		upgradeButtonListeners[c.id].clicked:Disconnect()
+	    		upgradeButtonListeners[c.id].clicked = nil
+	    	end
+
+	    	if upgradeButtonListeners[c.id].hovered then    		
+	    		upgradeButtonListeners[c.id].hovered:Disconnect()
+	    		upgradeButtonListeners[c.id].hovered = nil
+	    	end
+
+	    	if upgradeButtonListeners[c.id].unhovered then  		
+	    		upgradeButtonListeners[c.id].unhovered:Disconnect()
+	    		upgradeButtonListeners[c.id].unhovered = nil
+	    	end
     	end
 	    	
 	    c:Destroy()
@@ -1627,6 +1642,46 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
     	
     	entryCustomProperties["PREREQ_LINE_UNLOCKED"].visibility = Visibility.FORCE_OFF
     	entryCustomProperties["TANK_TITLE_TEXT"].text = t["details"]["name"]
+    	entryCustomProperties["PURCHASE_BUTTON"].name = unlockableTankID
+    	
+		local button = entryCustomProperties["PURCHASE_BUTTON"]
+		upgradeButtonListeners[button.id] = {}
+    	upgradeButtonListeners[button.id] = button.hoveredEvent:Connect(TankButtonHovered)
+		upgradeButtonListeners[button.id] = button.unhoveredEvent:Connect(TankButtonUnhovered)
+		
+		IMAGE_API.SetTankImage(entryCustomProperties["TANK_IMAGE"], unlockableTankID)
+		
+		print(t["purchased"])
+		print(t["researched"])
+    	
+    	if t["purchased"] then
+    		entryCustomProperties["TANK_COST_TEXT"].text = "EQUIP"
+    		entryCustomProperties["PARTS_ICON"].visibility = Visibility.FORCE_OFF
+    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.FORCE_OFF
+    		canAffordUpgrade = true
+      	elseif t["researched"] then
+    		entryCustomProperties["TANK_COST_TEXT"].text = tostring(t["details"]["purchaseCost"])
+    		entryCustomProperties["PARTS_ICON"].visibility = Visibility.FORCE_OFF
+    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.INHERIT
+    		
+    		canAffordUpgrade = LOCAL_PLAYER:GetResource(Constants_API.SILVER) >= t["details"]["purchaseCost"]
+ 		else 
+    		entryCustomProperties["TANK_COST_TEXT"].text = tostring(t["details"]["researchCost"])
+    		entryCustomProperties["PARTS_ICON"].visibility = Visibility.INHERIT
+    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.FORCE_OFF
+    		
+    		local totalParts = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankDetails.id))) + LOCAL_PLAYER:GetResource(Constants_API.FREERP)
+    		canAffordUpgrade = totalParts >= t["details"]["researchCost"]
+    	end
+    	
+    	if not canAffordUpgrade then
+    		entryCustomProperties["TANK_COST_TEXT"]:SetColor(Color.RED)
+    		entryCustomProperties["PURCHASE_BUTTON"]:SetButtonColor(entryCustomProperties["PURCHASE_BUTTON"]:GetDisabledColor())
+    	elseif not t["purchased"] then
+    		entryCustomProperties["PURCHASE_BUTTON"].clickedEvent:Connect(TankButtonClicked)
+    	else 
+    		entryCustomProperties["PURCHASE_BUTTON"].clickedEvent:Connect(TankButtonEquipTank)
+    	end
     	
     	for _, u in pairs(requiredUpgrades) do 
 			for x, s in pairs(nextTankSlots) do  
@@ -1699,6 +1754,87 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 	end
 end
 
+function TankButtonEquipTank(button)
+	EquipTank(button.name)
+end
+
+function TankButtonClicked(button)
+	SFX_CLICK:Play()
+    UPGRADE_TANK_CONFIRM_CONTAINER.visibility = Visibility.FORCE_ON
+
+	local thisTankId = button.name  
+	local tankInfo = tankAPI.GetTankFromId(tonumber(button.name))
+    local progressOnUpgrade = ""
+    
+    local tankName = tankInfo["name"]
+    local purchaseCost = tankInfo["purchaseCost"]
+    local researchCost = tankInfo["researchCost"]
+    local tankResearched = false
+    local tankPurchased = false
+    local tankParts = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankDetails.id)))
+    local universalParts = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
+
+    IMAGE_API.SetTankImage(tankConfirmImage, thisTankId)
+    
+	for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+		if t.id == thisTankId then
+			tankResearched = t.researched
+			tankPurchased = t.purchased
+			break
+		end
+	end
+
+	if not tankResearched and not tankPurchased then
+	   	UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('TANK_PARTS_COSTS').visibility = Visibility.FORCE_ON
+	    UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('SILVER_COSTS').visibility = Visibility.FORCE_OFF
+	    
+	    UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('TITLE_TEXT').text = "UNLOCK " .. tankName .. " for " .. tankName
+	    UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('PRICE_TANKPARTS').text = tostring(math.min( researchCost,tankParts))
+	    UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('PRICE_UNIVERSALPARTS').text = tostring(math.max( researchCost - tankParts,0))	
+	elseif not tankPurchased then
+	   	UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('TANK_PARTS_COSTS').visibility = Visibility.FORCE_OFF
+	    UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('SILVER_COSTS').visibility = Visibility.FORCE_ON
+	    
+	    UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('TITLE_TEXT').text = "PURCHASE " .. tankName .. " for " .. tankName
+	    UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('PRICE_SILVER').text = tostring(purchaseCost)	
+	else 
+		UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('TITLE_TEXT').text = "ERROR"
+		UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('TANK_PARTS_COSTS').visibility = Visibility.FORCE_OFF
+	    UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('SILVER_COSTS').visibility = Visibility.FORCE_OFF
+	end
+	
+	UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('UPGRADE_TANK_BUTTON').clientUserData.selectedUpgrade = button.name
+	upgradeIsNextTank = true
+end
+
+function TankButtonHovered(button)
+
+	local tankInfo = tankAPI.GetTankFromId(tonumber(button.name))
+	local requiredUpgrades = ""
+	local upgradeName = ""
+	
+	for _, u in pairs({CoreString.Split(tankInfo["requiredUpgrades"], "/")}) do
+		for _, s in pairs(slotTypes) do
+			if string.find(u, s) then
+				upgradeName = tankDetails[s][u]["upgradeName"]
+			end
+		end
+		requiredUpgrades = requiredUpgrades .. ", " .. upgradeName
+	end
+	
+	UPGRADE_TOOLTIP:GetCustomProperty("upgradeName"):WaitForObject().text = tankInfo["name"]
+	UPGRADE_TOOLTIP:GetCustomProperty("upgradeDescription"):WaitForObject().text = "To unlock this tank, the following upgrades must be unlocked: " .. requiredUpgrades .. "."
+	UPGRADE_TOOLTIP:GetCustomProperty("upgradePartsCost"):WaitForObject().text = "TANK PARTS: " .. tostring(tankInfo["researchCost"])
+	UPGRADE_TOOLTIP:GetCustomProperty("UpgradeSilverCost"):WaitForObject().text = "SILVER: " .. tostring(tankInfo["purchaseCost"])
+	
+	UPGRADE_TOOLTIP.visibility = Visibility.INHERIT
+
+end
+
+function TankButtonUnhovered(button)
+    UPGRADE_TOOLTIP.visibility = Visibility.FORCE_OFF
+end
+
 function UpgradeButtonClicked(button)
 	SFX_CLICK:Play()
     UPGRADE_TANK_CONFIRM_CONTAINER.visibility = Visibility.FORCE_ON
@@ -1759,7 +1895,8 @@ function UpgradeButtonClicked(button)
 	    UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('SILVER_COSTS').visibility = Visibility.FORCE_OFF
 	end
 	
-	UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('UPGRADE_TANK_BUTTON').clientUserData.selectedUpgrade = upgradeID	
+	UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('UPGRADE_TANK_BUTTON').clientUserData.selectedUpgrade = upgradeID
+	upgradeIsNextTank = false
 end
 
 function CloseUpgradeConfirmWindow()
@@ -1774,8 +1911,24 @@ function ConfirmUpgradeButtonClicked(button)
     UPGRADE_TANK_CONFIRM_CONTAINER.visibility = Visibility.FORCE_OFF
     
     local selectedUpgrade = UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('UPGRADE_TANK_BUTTON').clientUserData.selectedUpgrade
-
-	Events.BroadcastToServer("PurchaseUpgrade", tankDetails.id, selectedUpgrade)
+	
+	if upgradeIsNextTank then
+		for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do	
+		    if (t.id == selectedUpgrade) then
+		    	local broadcastName = "ResearchTank"
+		        if t.researched then
+		        	broadcastName = "PurchaseTank"
+		        elseif t.researched and t.purchased then
+		        	broadcastName = "CHANGE_EQUIPPED_TANK"
+		        end
+		        
+		        Events.BroadcastToServer(broadcastName, selectedUpgrade)
+		        break
+		    end
+		end
+	else
+		Events.BroadcastToServer("PurchaseUpgrade", tankDetails.id, selectedUpgrade)
+	end
 	--OpenTankUpgradeWindow(BUTTON_UPGRADE_TANK, tankDetails.id)
 end
 
@@ -1840,8 +1993,8 @@ function UpgradeButtonHovered(button)
 	    			
 	    			UPGRADE_TOOLTIP:GetCustomProperty("upgradeName"):WaitForObject().text = typeDetails[upgradeID]["upgradeName"]
 	    			UPGRADE_TOOLTIP:GetCustomProperty("upgradeDescription"):WaitForObject().text = typeDetails[upgradeID]["upgradeDescription"]
-	    			UPGRADE_TOOLTIP:GetCustomProperty("upgradePartsCost"):WaitForObject().text = "TANK PARTS: " .. typeDetails[upgradeID]["researchCost"]
-	    			UPGRADE_TOOLTIP:GetCustomProperty("UpgradeSilverCost"):WaitForObject().text = "SILVER: " .. typeDetails[upgradeID]["purchaseCost"]
+	    			UPGRADE_TOOLTIP:GetCustomProperty("upgradePartsCost"):WaitForObject().text = "TANK PARTS: " .. tostring(typeDetails[upgradeID]["researchCost"])
+	    			UPGRADE_TOOLTIP:GetCustomProperty("UpgradeSilverCost"):WaitForObject().text = "SILVER: " .. tostring(typeDetails[upgradeID]["purchaseCost"])
 	    			
 	    			UPGRADE_TOOLTIP.visibility = Visibility.INHERIT
 	    		end
@@ -2021,10 +2174,15 @@ function PopulateEquippedTankStats(entry)
 
 end
 
-function EquipTank()
+function EquipTank(newSelectedTank)
     SFX_EQUIP_TANK:Play()
-    Events.BroadcastToServer('CHANGE_EQUIPPED_TANK', selectedTankId)
-    Events.Broadcast('CHANGE_EQUIPPED_TANK', selectedTankId)
+    if newSelectedTank then
+	    Events.BroadcastToServer('CHANGE_EQUIPPED_TANK', newSelectedTank)
+	    Events.Broadcast('CHANGE_EQUIPPED_TANK', newSelectedTank)
+    else
+	    Events.BroadcastToServer('CHANGE_EQUIPPED_TANK', selectedTankId)
+	    Events.Broadcast('CHANGE_EQUIPPED_TANK', selectedTankId)
+	end
 end
 
 function CheckForTutorialCompletion()
@@ -2267,6 +2425,7 @@ function OnResourceChanged(player, resource, value)
             end
         end
         PopulateOwnedTanks()
+        OpenTankUpgradeWindow(BUTTON_UPGRADE_TANK, tankDetails.id, true)
    	elseif resource == UTIL_API.GetTankRPString(currentTank) then
    		STATS_TANK_CONTAINER:FindDescendantByName('EQUIPPED_EXPERIENCE_EQUIPPED_TANK_PARTS').text =
         tostring(LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(currentTank)))
@@ -2276,22 +2435,34 @@ function OnResourceChanged(player, resource, value)
     end
 end
 
-function TankPurchaseSuccessful()
+function TankResearchSuccessful(tankID)
+    for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+        if tonumber(tank.id) == tonumber(tankID) then
+            tank.researched = true
+        end
+    end
+    PopulateOwnedTanks()
+    OpenTankUpgradeWindow(BUTTON_UPGRADE_TANK, tankDetails.id, true)
+end
+
+function TankPurchaseSuccessful(tankID)
     SFX_EQUIP_TANK:Play()
     BUY_TANK_CONTAINER.visibility = Visibility.FORCE_OFF
     for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-        if tonumber(tank.id) == tonumber(tankDetails.id) then
+        if tonumber(tank.id) == tonumber(tankID) then
 --print('Updated local tank data.')
             tank.purchased = true
             tank.researched = true
         end
     end
     PopulateOwnedTanks()
+    OpenTankUpgradeWindow(BUTTON_UPGRADE_TANK, tankDetails.id, true)
 end
 
 -- handler params: Player_player, string_key
 LOCAL_PLAYER.privateNetworkedDataChangedEvent:Connect(OnServerDataUpdated)
 LOCAL_PLAYER.resourceChangedEvent:Connect(OnResourceChanged)
+Events.Connect('TankResearchSuccessful', TankResearchSuccessful)
 Events.Connect('TankPurchaseSuccessful', TankPurchaseSuccessful)
 
 while LOCAL_PLAYER:GetResource('EquippedTank') <= 0 do

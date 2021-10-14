@@ -282,7 +282,7 @@ function SetNewPlayerProgression(playerSharedStorage)
 
 		-- players get tanks 1 and 18 (M3 and Panzer 3) as starter tanks.
 
-        tankEntry = tankEntry .. '|0|'..startWith..'|0|0|0~'
+        tankEntry = tankEntry .. '|' .. startWith .. '|'.. startWith ..'|0|0|0~'
 
         tankString = tankString .. tankEntry
     end
@@ -473,22 +473,34 @@ function SetTankProgressionDataForServer(dataString, player)
         	if tankUpgradeInfo[t] then
 	        	for k, v in pairs(tankUpgradeInfo[t]) do
 		        	if string.find(k, "TURRET") then
-		        		if tankEntry.turret and not tankEntry.turret[k] then
+		        		if not tankEntry.turret then
+		        			tankEntry.turret = {}
+		        		end
+		        		if not tankEntry.turret[k] then
 		        			print(k .. " added to " .. tankEntry.id)
 		        			tankEntry.turret[k] = "0"
 		        		end
 		        	elseif string.find(k, "HULL") then
-			    		if tankEntry.hull and not tankEntry.hull[k] then
+		        		if not tankEntry.hull then
+		        			tankEntry.hull = {}
+		        		end
+			    		if not tankEntry.hull[k] then
 			    			print(k .. " added to " .. tankEntry.id)
 			    			tankEntry.hull[k] = "0"
 			    		end
 		        	elseif string.find(k, "ENGINE") then
-			    		if tankEntry.engine and not tankEntry.engine[k] then
+		        		if not tankEntry.engine then
+		        			tankEntry.engine = {}
+		        		end
+			    		if not tankEntry.engine[k] then
 			    			print(k .. " added to " .. tankEntry.id)
 			    			tankEntry.engine[k] = "0"
 			    		end
 		        	elseif string.find(k, "CREW") then
-			    		if tankEntry.crew and not tankEntry.crew[k] then
+		        		if not tankEntry.crew then
+		        			tankEntry.crew = {}
+		        		end
+			    		if not tankEntry.crew[k] then
 			    			print(k .. " added to " .. tankEntry.id)
 			    			tankEntry.crew[k] = "0"
 			    		end
