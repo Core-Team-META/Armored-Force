@@ -29771,6 +29771,10 @@ Assets {
         ChildIds: 15119881465572307116
         ChildIds: 13003661948018203954
         ChildIds: 2578052923979691419
+        ChildIds: 345673820018639551
+        ChildIds: 14187882258587707039
+        ChildIds: 11543154368241041678
+        ChildIds: 5146308804326138452
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -30655,6 +30659,370 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 345673820018639551
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18391196450923426153
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SILVERGAIN"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Silver Reserves"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Earn 25% more silver per match."
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 14187882258587707039
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18391196450923426153
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "PARTSGAIN"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Scaveneged Supplies"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Earn 25% more tank parts per match."
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 11543154368241041678
+        Name: "CREW3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18391196450923426153
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEEDBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tuned Up Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW3"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "3"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increase top speed by 10%"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5146308804326138452
+        Name: "CREW4"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18391196450923426153
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 5000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "TURNINGBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Elite Driver"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW4"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "4"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Improve turn speed by 25%"
           }
         }
         Collidable_v2 {
