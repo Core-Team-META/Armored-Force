@@ -4138,7 +4138,6 @@ Objects {
   Control {
     Width: 200
     Height: 60
-    UIX: 1
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4164,6 +4163,13 @@ Objects {
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 0.6
+      }
+      ShadowOffset {
+        X: 1
+        Y: 1
       }
     }
     AnchorLayout {
