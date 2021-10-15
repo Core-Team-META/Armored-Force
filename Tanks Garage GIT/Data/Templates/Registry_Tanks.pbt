@@ -396,6 +396,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 5
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -478,6 +482,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -562,6 +570,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -628,6 +640,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 20
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -696,6 +712,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 25
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -762,6 +782,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 45
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -846,6 +870,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 5
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -929,6 +957,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 5
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1011,6 +1043,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 5
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -1425,6 +1461,8 @@ Assets {
         ChildIds: 10186325646077231117
         ChildIds: 11806449320583260581
         ChildIds: 11756187060114979979
+        ChildIds: 14326438373753038673
+        ChildIds: 12240841235606282409
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -1698,6 +1736,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1780,6 +1822,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -1864,6 +1910,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1946,6 +1996,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -2030,6 +2084,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2096,6 +2154,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 20
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -2164,6 +2226,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 30
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2230,6 +2296,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -2298,6 +2368,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 40
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2364,6 +2438,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 35
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -2448,6 +2526,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2530,6 +2612,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -2614,6 +2700,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2696,6 +2786,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -2780,6 +2874,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 14326438373753038673
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14150352478156555266
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 15000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPOTTING"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Eagle Eyes"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.15
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increased Spotting Range by 15%"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 12240841235606282409
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14150352478156555266
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 15000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEEDBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Driver\'s \"Special\" Fuel"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.15
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Tank top speed is increased by ~15% of base Tank top speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2829,6 +3109,8 @@ Assets {
         ChildIds: 5049554964297929017
         ChildIds: 11751639325318647029
         ChildIds: 12812978785791507299
+        ChildIds: 16333461187226306979
+        ChildIds: 4695216675148471898
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -3102,6 +3384,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3184,6 +3470,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -3268,6 +3558,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3350,6 +3644,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -3434,6 +3732,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3500,6 +3802,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 20
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -3568,6 +3874,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 30
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3634,6 +3944,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -3702,6 +4016,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 40
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3768,6 +4086,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 35
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -3852,6 +4174,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3934,6 +4260,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -4018,6 +4348,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4100,6 +4434,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -4184,6 +4522,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 16333461187226306979
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9521911245889456212
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 15000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "RELOADBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Elite Gunner"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Primary gun reloads, ~10% faster. Also reduces chance for rotation or barrel turret to break by 25%."
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 4695216675148471898
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9521911245889456212
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 15000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIMBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Superior Traverse Gear"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Turret Rotation Speed + 2 degrees"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4233,6 +4757,8 @@ Assets {
         ChildIds: 5030412864029087912
         ChildIds: 7114466832623787478
         ChildIds: 5028470819980722131
+        ChildIds: 44524333015896103
+        ChildIds: 17134580717122620368
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -4506,6 +5032,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4588,6 +5118,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -4672,6 +5206,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4754,6 +5292,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -4838,6 +5380,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4904,6 +5450,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 20
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -4972,6 +5522,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 30
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5038,6 +5592,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -5106,6 +5664,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 40
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5172,6 +5734,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 35
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -5256,6 +5822,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5338,6 +5908,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -5422,6 +5996,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5504,6 +6082,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -5588,6 +6170,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 44524333015896103
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8085060017134522817
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 15000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "RELOADBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Elite Gunner"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Primary gun reloads, ~10% faster. Also reduces chance for rotation or barrel turret to break by 25%."
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 17134580717122620368
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8085060017134522817
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 15000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "FREETREAD"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Industrial Surplus"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Start each round with 1 free spare treads"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5643,6 +6411,8 @@ Assets {
         ChildIds: 1280487801460320496
         ChildIds: 15080321355493890598
         ChildIds: 17060726142311827216
+        ChildIds: 18147402344701442
+        ChildIds: 9642022970906487710
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -5916,6 +6686,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5998,6 +6772,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -6082,6 +6860,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6164,6 +6946,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -6248,6 +7034,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6330,6 +7120,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -6414,6 +7208,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6480,6 +7278,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -6548,6 +7350,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6614,6 +7420,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -6682,6 +7492,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6748,6 +7562,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -6816,6 +7634,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6882,6 +7704,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -6966,6 +7792,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7048,6 +7878,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -7132,6 +7966,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7214,6 +8052,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -7298,6 +8140,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7380,6 +8226,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -7464,6 +8314,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 18147402344701442
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 896086029703826759
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 25000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "PROJECTILESPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "High Velocity Muzzle"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Projectile Speed Increased by 30%"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 9642022970906487710
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 896086029703826759
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 25000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "FIRERESISTANCE"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Crew Sunscreen"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Take 25% less damage from fire while on fire"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7519,6 +8555,8 @@ Assets {
         ChildIds: 267282848713320545
         ChildIds: 7689240051938933494
         ChildIds: 2451756064742367613
+        ChildIds: 7689509159312335863
+        ChildIds: 7255029687661884760
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -7792,6 +8830,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7874,6 +8916,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -7958,6 +9004,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8040,6 +9090,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -8124,6 +9178,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8206,6 +9264,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -8290,6 +9352,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8356,6 +9422,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -8424,6 +9494,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8490,6 +9564,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -8558,6 +9636,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8624,6 +9706,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -8692,6 +9778,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8758,6 +9848,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -8842,6 +9936,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8924,6 +10022,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -9008,6 +10110,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9090,6 +10196,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -9174,6 +10284,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9256,6 +10370,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -9340,6 +10458,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7689509159312335863
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6369153524027316293
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 25000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEEDBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tuned Up Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Tank top speed is increased by ~10% of base Tank top speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7255029687661884760
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6369153524027316293
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 25000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "TURNINGBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Experienced Driver"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Improved ChassisTurn Speed by ~10% of base turn"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9389,6 +10693,8 @@ Assets {
         ChildIds: 14406959027626629330
         ChildIds: 13546064762545499466
         ChildIds: 5229691881414849512
+        ChildIds: 5349769724396581698
+        ChildIds: 11915561647371060858
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -9662,6 +10968,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9744,6 +11054,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -9828,6 +11142,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9910,6 +11228,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -9994,6 +11316,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10060,6 +11386,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 20
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -10128,6 +11458,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 20
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10194,6 +11528,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 30
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -10262,6 +11600,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 30
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10328,6 +11670,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 30
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -10412,6 +11758,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10494,6 +11844,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -10578,6 +11932,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10661,6 +12019,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10743,6 +12105,192 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5349769724396581698
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13894894712147745669
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 15000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "ZOOM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Turret Periscopes"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Zooms \"Shift\" scope by an additional +~25%"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 11915561647371060858
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13894894712147745669
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 15000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AUTOREPAIR"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Mechanical Marvel"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Reduces time to Automatic Turret Repair by 3 seconds"
           }
         }
         Collidable_v2 {
@@ -11019,6 +12567,8 @@ Assets {
         ChildIds: 16473480582334873246
         ChildIds: 12584157367792823289
         ChildIds: 4459586549270604378
+        ChildIds: 2682462274488866130
+        ChildIds: 1111976824590445448
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -11284,6 +12834,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11366,6 +12920,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -11450,6 +13008,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11532,6 +13094,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -11616,6 +13182,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11698,6 +13268,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -11782,6 +13356,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11848,6 +13426,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -11916,6 +13498,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11982,6 +13568,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -12050,6 +13640,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12116,6 +13710,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -12184,6 +13782,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12250,6 +13852,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -12334,6 +13940,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12416,6 +14026,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -12500,6 +14114,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12582,6 +14200,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -12666,6 +14288,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12748,6 +14374,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -12832,6 +14462,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 2682462274488866130
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17150012185460449200
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 25000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "FIRERESISTANCE"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Less Explosive Ammo Storage"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.4
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Take 40% less damage from fire while on fire"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 1111976824590445448
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17150012185460449200
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 25000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "FREETREAD"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Industrial Surplus"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Start each round with 1 free spare treads"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12890,6 +14706,8 @@ Assets {
         ChildIds: 859742176538299860
         ChildIds: 6119930863171525720
         ChildIds: 4504994055480971033
+        ChildIds: 5524312035789597357
+        ChildIds: 12565083739635006041
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -13163,6 +14981,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13245,6 +15067,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -13329,6 +15155,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13411,6 +15241,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -13495,6 +15329,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13577,6 +15415,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -13661,6 +15503,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13744,6 +15590,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "TURRET7"
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13810,6 +15660,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -13878,6 +15732,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13944,6 +15802,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -14012,6 +15874,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14078,6 +15944,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -14146,6 +16016,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14213,6 +16087,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14279,6 +16157,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -14363,6 +16245,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14445,6 +16331,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -14529,6 +16419,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14611,6 +16505,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -14695,6 +16593,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14777,6 +16679,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -14861,6 +16767,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14944,6 +16854,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 5524312035789597357
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11060389439650475345
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "TURNINGBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Elite Driver"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Improved ChassisTurn Speed by ~25% of base turn"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 12565083739635006041
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11060389439650475345
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "RELOADBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Elite Gunner"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Primary gun reloads, ~10% faster. Also reduces chance for rotation or barrel turret to break by 25%."
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15002,6 +17098,8 @@ Assets {
         ChildIds: 114758036264612417
         ChildIds: 9999537615029213927
         ChildIds: 13615335534374030389
+        ChildIds: 14232350233431685293
+        ChildIds: 7535271735969926213
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -15275,6 +17373,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15357,6 +17459,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -15441,6 +17547,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15523,6 +17633,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -15607,6 +17721,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15689,6 +17807,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -15773,6 +17895,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15856,6 +17982,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "TURRET7"
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15922,6 +18052,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -15990,6 +18124,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16056,6 +18194,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -16124,6 +18266,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16190,6 +18336,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -16258,6 +18408,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16325,6 +18479,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16391,6 +18549,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -16475,6 +18637,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16557,6 +18723,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -16641,6 +18811,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16723,6 +18897,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -16807,6 +18985,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16889,6 +19071,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -16973,6 +19159,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17056,6 +19246,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 14232350233431685293
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8190643796269870594
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "RELOADBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Elite Gunner"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Primary gun reloads, ~10% faster. Also reduces chance for rotation or barrel turret to break by 25%."
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7535271735969926213
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8190643796269870594
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "FREETREAD"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Industrial Surplus"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Start each round with 1 free spare treads"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17114,6 +19490,8 @@ Assets {
         ChildIds: 9255768343891133751
         ChildIds: 8101983467619717631
         ChildIds: 11707481647215171792
+        ChildIds: 410388916492160267
+        ChildIds: 13483789106325154399
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -17387,6 +19765,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17469,6 +19851,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -17553,6 +19939,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17635,6 +20025,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -17719,6 +20113,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17801,6 +20199,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -17885,6 +20287,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17968,6 +20374,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "TURRET7"
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18034,6 +20444,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -18102,6 +20516,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18168,6 +20586,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -18236,6 +20658,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18302,6 +20728,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -18370,6 +20800,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18437,6 +20871,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18503,6 +20941,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -18587,6 +21029,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18669,6 +21115,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -18753,6 +21203,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18835,6 +21289,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -18919,6 +21377,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19001,6 +21463,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -19085,6 +21551,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19168,6 +21638,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 410388916492160267
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3609905340800639486
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "TURNINGBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Elite Driver"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Improved ChassisTurn Speed by ~25% of base turn"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 13483789106325154399
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3609905340800639486
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "FREETREAD"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Industrial Surplus"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Start each round with 1 free spare treads"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19226,6 +21882,8 @@ Assets {
         ChildIds: 3976562106748774340
         ChildIds: 17699373964024725392
         ChildIds: 3748110726436633850
+        ChildIds: 16623429932124347215
+        ChildIds: 15183521699959535667
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -19499,6 +22157,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19581,6 +22243,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -19665,6 +22331,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19747,6 +22417,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -19831,6 +22505,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19913,6 +22591,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -19997,6 +22679,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20080,6 +22766,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "TURRET7"
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20146,6 +22836,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -20214,6 +22908,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20280,6 +22978,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -20348,6 +23050,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20414,6 +23120,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -20482,6 +23192,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20549,6 +23263,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20615,6 +23333,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -20699,6 +23421,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20781,6 +23507,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -20865,6 +23595,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20947,6 +23681,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -21031,6 +23769,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21113,6 +23855,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -21197,6 +23943,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21280,6 +24030,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 16623429932124347215
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11884006769952032900
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "RELOADBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Veteran Gunner"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Primary gun reloads, ~10% faster"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 15183521699959535667
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11884006769952032900
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "PROJECTILESPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Medium Velocity Barrel"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.15
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Projectile Speed Increased by 15%"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21338,6 +24274,8 @@ Assets {
         ChildIds: 10838384499055895366
         ChildIds: 13613011626446440532
         ChildIds: 9336504678529937068
+        ChildIds: 18294779502633058692
+        ChildIds: 18152683696701620802
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -21611,6 +24549,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21693,6 +24635,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -21777,6 +24723,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21859,6 +24809,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -21943,6 +24897,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22025,6 +24983,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -22109,6 +25071,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22192,6 +25158,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "TURRET7"
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22258,6 +25228,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -22326,6 +25300,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22392,6 +25370,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -22460,6 +25442,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22526,6 +25512,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -22594,6 +25584,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22661,6 +25655,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22727,6 +25725,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -22811,6 +25813,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22893,6 +25899,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -22977,6 +25987,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23059,6 +26073,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -23143,6 +26161,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23225,6 +26247,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -23309,6 +26335,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23392,6 +26422,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 18294779502633058692
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2089618846197285947
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "RELOADBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Experienced Gunner"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.05
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Primary gun reloads, ~5% faster"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 18152683696701620802
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2089618846197285947
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "PROJECTILESPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Medium Velocity Barrel"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.15
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Projectile Speed Increased by 15%"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23450,6 +26666,8 @@ Assets {
         ChildIds: 289614878897365082
         ChildIds: 13116164445278618227
         ChildIds: 3932937216774362394
+        ChildIds: 10207046272657247215
+        ChildIds: 3953799066133933290
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -23723,6 +26941,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23805,6 +27027,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -23889,6 +27115,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23971,6 +27201,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -24055,6 +27289,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24137,6 +27375,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -24221,6 +27463,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24304,6 +27550,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "TURRET7"
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24370,6 +27620,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -24438,6 +27692,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24504,6 +27762,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -24572,6 +27834,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24638,6 +27904,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -24706,6 +27976,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24773,6 +28047,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24839,6 +28117,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -24923,6 +28205,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25005,6 +28291,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -25089,6 +28379,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25171,6 +28465,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -25255,6 +28553,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25337,6 +28639,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -25421,6 +28727,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25504,6 +28814,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 10207046272657247215
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8547391865731154127
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AUTOEXTINGUISHER"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Fireproof Plan"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Start each round with 1 free fire extinguisher"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 3953799066133933290
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8547391865731154127
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "FREETREAD"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Industrial Surplus"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Start each round with 1 free spare treads"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25562,6 +29058,8 @@ Assets {
         ChildIds: 1909309590582434038
         ChildIds: 10533634180879490210
         ChildIds: 15408940511924413347
+        ChildIds: 12084126758641044257
+        ChildIds: 14346930982310803817
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -25835,6 +29333,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25917,6 +29419,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -26001,6 +29507,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26083,6 +29593,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -26167,6 +29681,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26249,6 +29767,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -26333,6 +29855,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26416,6 +29942,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "TURRET7"
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26482,6 +30012,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -26550,6 +30084,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26616,6 +30154,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -26684,6 +30226,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26750,6 +30296,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -26818,6 +30368,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26885,6 +30439,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26951,6 +30509,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -27035,6 +30597,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27117,6 +30683,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -27201,6 +30771,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27283,6 +30857,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -27367,6 +30945,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27449,6 +31031,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -27533,6 +31119,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27616,6 +31206,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 12084126758641044257
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15383328957386960599
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPOTTING"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Recon Binoculars"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.05
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increased Spotting Range by 5%"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 14346930982310803817
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15383328957386960599
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEEDBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reduced Weight"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.05
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Tank top speed is increased by ~5% of base Tank top speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27674,6 +31450,8 @@ Assets {
         ChildIds: 9501813908555821724
         ChildIds: 3174176616066112301
         ChildIds: 13172618692453236691
+        ChildIds: 6694076482759733410
+        ChildIds: 10521030029958526219
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -27947,6 +31725,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28029,6 +31811,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -28113,6 +31899,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28195,6 +31985,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -28279,6 +32073,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28361,6 +32159,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -28445,6 +32247,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28528,6 +32334,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "TURRET7"
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28594,6 +32404,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -28662,6 +32476,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28728,6 +32546,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -28796,6 +32618,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28862,6 +32688,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -28930,6 +32760,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28997,6 +32831,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29063,6 +32901,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -29147,6 +32989,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29229,6 +33075,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -29313,6 +33163,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29395,6 +33249,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -29479,6 +33337,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29561,6 +33423,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -29645,6 +33511,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29727,6 +33597,192 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 6694076482759733410
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3096923706963594705
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "ZOOM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Turret Periscopes"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Zooms \"Shift\" scope by an additional +~25%"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 10521030029958526219
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3096923706963594705
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPOTTING"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Eagle Eyes"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.15
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increased Spotting Range by 15%"
           }
         }
         Collidable_v2 {
@@ -30044,6 +34100,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 5
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30126,6 +34186,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -30210,6 +34274,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30276,6 +34344,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 20
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -30344,6 +34416,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 25
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30410,6 +34486,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 45
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -30494,6 +34574,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 5
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30577,6 +34661,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 5
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30659,6 +34747,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 5
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -31073,6 +35165,8 @@ Assets {
         ChildIds: 2701784522955987983
         ChildIds: 9255675675045207780
         ChildIds: 2326203069632414532
+        ChildIds: 805574785922024993
+        ChildIds: 4443062999419222248
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -31346,6 +35440,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31428,6 +35526,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -31512,6 +35614,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31594,6 +35700,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -31678,6 +35788,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31744,6 +35858,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 20
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -31812,6 +35930,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 30
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31878,6 +36000,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -31946,6 +36072,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 40
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32012,6 +36142,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 35
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -32096,6 +36230,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32178,6 +36316,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -32262,6 +36404,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32344,6 +36490,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -32428,6 +36578,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 805574785922024993
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8373696185203207231
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 15000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPOTTING"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Eagle Eyes"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.15
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increased Spotting Range by 15%"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 4443062999419222248
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8373696185203207231
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 15000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "TURNINGBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Veteran Driver"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.15
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Improved ChassisTurn Speed by ~15% of base turn"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32477,6 +36813,8 @@ Assets {
         ChildIds: 9815188006008590467
         ChildIds: 9719490290952477677
         ChildIds: 8713857854132472444
+        ChildIds: 15931046699671898541
+        ChildIds: 15132164729418933331
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -32750,6 +37088,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32832,6 +37174,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -32916,6 +37262,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32998,6 +37348,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -33082,6 +37436,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33148,6 +37506,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 20
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -33216,6 +37578,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 30
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33282,6 +37648,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -33350,6 +37720,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 40
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33416,6 +37790,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 35
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -33500,6 +37878,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33582,6 +37964,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -33666,6 +38052,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33748,6 +38138,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -33832,6 +38226,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 15931046699671898541
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11762363763137845235
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 15000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "RELOADBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Elite Gunner"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Primary gun reloads, ~10% faster. Also reduces chance for rotation or barrel turret to break by 25%."
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 15132164729418933331
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11762363763137845235
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 15000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "FREEEXTINGUISHER"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Fireproof Plan"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Start each round with 1 free fire extinguisher"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33881,6 +38461,8 @@ Assets {
         ChildIds: 2932945937226363488
         ChildIds: 18300517983688089845
         ChildIds: 16663927248108836696
+        ChildIds: 7686933840072972843
+        ChildIds: 6824896142530011963
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -34154,6 +38736,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34236,6 +38822,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -34320,6 +38910,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34402,6 +38996,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -34486,6 +39084,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34552,6 +39154,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 20
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -34620,6 +39226,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 30
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34686,6 +39296,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -34754,6 +39368,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 40
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34820,6 +39438,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 35
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -34904,6 +39526,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34986,6 +39612,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -35070,6 +39700,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35152,6 +39786,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -35236,6 +39874,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7686933840072972843
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3745854397074004474
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 15000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "RELOADBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Elite Gunner"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Primary gun reloads, ~10% faster. Also reduces chance for rotation or barrel turret to break by 25%."
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 6824896142530011963
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3745854397074004474
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 15000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "PROJECTILESPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "High Velocity Muzzle"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Projectile Speed Increased by 30%"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35285,6 +40109,8 @@ Assets {
         ChildIds: 16241111985492232907
         ChildIds: 105957069865629129
         ChildIds: 10478633383068093240
+        ChildIds: 16919609385459355607
+        ChildIds: 13743737471002990120
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -35558,6 +40384,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35640,6 +40470,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -35724,6 +40558,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35806,6 +40644,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -35890,6 +40732,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35956,6 +40802,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 20
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -36024,6 +40874,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 20
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36090,6 +40944,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 30
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -36158,6 +41016,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 30
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36224,6 +41086,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 30
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -36308,6 +41174,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36390,6 +41260,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -36474,6 +41348,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36556,6 +41434,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -36640,6 +41522,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 16919609385459355607
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12271474977929622025
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 15000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEEDBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Tuned Up Engine"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Tank top speed is increased by ~10% of base Tank top speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 13743737471002990120
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12271474977929622025
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 15000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AUTOTREAD"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Swift Repair"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Reduces time to Automatic Tread Repair by 3 seconds"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36695,6 +41763,8 @@ Assets {
         ChildIds: 5356951128769155287
         ChildIds: 4398865765068236133
         ChildIds: 9550687417655036534
+        ChildIds: 13694797539012619475
+        ChildIds: 16934256734835966986
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -36968,6 +42038,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37050,6 +42124,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -37134,6 +42212,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37216,6 +42298,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -37300,6 +42386,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37382,6 +42472,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -37466,6 +42560,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37532,6 +42630,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -37600,6 +42702,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37666,6 +42772,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -37734,6 +42844,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37800,6 +42914,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -37868,6 +42986,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37934,6 +43056,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -38018,6 +43144,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38100,6 +43230,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -38184,6 +43318,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38266,6 +43404,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -38350,6 +43492,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38432,6 +43578,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -38516,6 +43666,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 13694797539012619475
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11166243689531593056
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 25000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "PROJECTILESPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "High Velocity Muzzle"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Projectile Speed Increased by 30%"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 16934256734835966986
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11166243689531593056
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 25000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "FIRERESISTANCE"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Less Explosive Ammo Storage"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.4
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Take 40% less damage from fire while on fire"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38571,6 +43907,8 @@ Assets {
         ChildIds: 4007022842792416324
         ChildIds: 4337756888557991447
         ChildIds: 1983332815644711458
+        ChildIds: 11871671169824392423
+        ChildIds: 18134432665019338021
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -38844,6 +44182,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38926,6 +44268,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -39010,6 +44356,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39092,6 +44442,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -39176,6 +44530,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39258,6 +44616,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -39342,6 +44704,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39408,6 +44774,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -39476,6 +44846,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39542,6 +44916,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -39610,6 +44988,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39676,6 +45058,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -39744,6 +45130,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39810,6 +45200,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -39894,6 +45288,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 3
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39976,6 +45374,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 3
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -40060,6 +45462,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 3
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40142,6 +45548,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 4
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -40226,6 +45636,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 4
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40308,6 +45722,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 5
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -40392,6 +45810,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 5
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 11871671169824392423
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2467457305238499958
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 25000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "PROJECTILESPEED"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Medium Velocity Barrel"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.15
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Projectile Speed Increased by 15%"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 18134432665019338021
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2467457305238499958
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 25000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEEDBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reduced Weight"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.05
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Tank top speed is increased by ~5% of base Tank top speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40447,6 +46051,8 @@ Assets {
         ChildIds: 3979992009869668009
         ChildIds: 3154806975009569306
         ChildIds: 1098005091135040449
+        ChildIds: 18340796106239713992
+        ChildIds: 9209780439183437200
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -40712,6 +46318,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40794,6 +46404,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -40878,6 +46492,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40960,6 +46578,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -41044,6 +46666,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41126,6 +46752,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -41210,6 +46840,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41276,6 +46910,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -41344,6 +46982,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41410,6 +47052,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -41478,6 +47124,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41544,6 +47194,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -41612,6 +47266,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41678,6 +47336,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -41762,6 +47424,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41844,6 +47510,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -41928,6 +47598,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42010,6 +47684,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -42094,6 +47772,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42176,6 +47858,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -42260,6 +47946,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 18340796106239713992
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14628799506600662350
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 25000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "FIRERESISTANCE"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Less Explosive Ammo Storage"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.4
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Take 40% less damage from fire while on fire"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 9209780439183437200
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14628799506600662350
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 1500
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 25000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "FREEEXTINGUISHER"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Fireproof Plan"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Start each round with 1 free fire extinguisher"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42318,6 +48190,8 @@ Assets {
         ChildIds: 4719246579644925688
         ChildIds: 6021661115176837033
         ChildIds: 1634610116068461838
+        ChildIds: 18353041437716799437
+        ChildIds: 12629029873929757393
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -42591,6 +48465,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42673,6 +48551,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -42757,6 +48639,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42839,6 +48725,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -42923,6 +48813,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43005,6 +48899,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -43089,6 +48987,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43172,6 +49074,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "TURRET7"
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43238,6 +49144,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -43306,6 +49216,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43372,6 +49286,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -43440,6 +49358,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43506,6 +49428,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -43574,6 +49500,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43641,6 +49571,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43707,6 +49641,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -43791,6 +49729,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43873,6 +49815,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -43957,6 +49903,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44039,6 +49989,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -44123,6 +50077,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44205,6 +50163,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -44289,6 +50251,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44372,6 +50338,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 18353041437716799437
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13308719205497253577
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPOTTING"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Recon Binoculars"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.05
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increased Spotting Range by 5%"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 12629029873929757393
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13308719205497253577
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEEDBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Driver\'s \"Special\" Fuel"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.15
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Tank top speed is increased by ~15% of base Tank top speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44430,6 +50582,8 @@ Assets {
         ChildIds: 8962600895640642284
         ChildIds: 17204723988202245879
         ChildIds: 4051697654056009644
+        ChildIds: 8717905926353921367
+        ChildIds: 9243763133760949602
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -44703,6 +50857,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44785,6 +50943,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -44869,6 +51031,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44951,6 +51117,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -45035,6 +51205,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45117,6 +51291,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -45201,6 +51379,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45284,6 +51466,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "TURRET7"
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45350,6 +51536,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -45418,6 +51608,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45484,6 +51678,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -45552,6 +51750,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45618,6 +51820,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -45686,6 +51892,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45753,6 +51963,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45819,6 +52033,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -45903,6 +52121,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45985,6 +52207,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -46069,6 +52295,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46151,6 +52381,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -46235,6 +52469,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46317,6 +52555,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -46401,6 +52643,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46484,6 +52730,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 8717905926353921367
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1302178350566758952
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AUTOTREAD"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Swift Repair"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Reduces time to Automatic Tread Repair by 3 seconds"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 9243763133760949602
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1302178350566758952
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AUTOREPAIR"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Mechanical Marvel"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Reduces time to Automatic Turret Repair by 3 seconds"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46542,6 +52974,8 @@ Assets {
         ChildIds: 1795109373072327949
         ChildIds: 13459826905102927741
         ChildIds: 6229760958683766728
+        ChildIds: 14567597988324657842
+        ChildIds: 1018123463280919749
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -46815,6 +53249,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46897,6 +53335,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -46981,6 +53423,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47063,6 +53509,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -47147,6 +53597,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47229,6 +53683,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -47313,6 +53771,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47396,6 +53858,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "TURRET7"
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47462,6 +53928,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -47530,6 +54000,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47596,6 +54070,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -47664,6 +54142,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47730,6 +54212,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -47798,6 +54284,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47865,6 +54355,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47931,6 +54425,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -48015,6 +54513,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48097,6 +54599,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -48181,6 +54687,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48263,6 +54773,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -48347,6 +54861,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48429,6 +54947,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -48513,6 +55035,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48596,6 +55122,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 14567597988324657842
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5540780561494930867
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIMBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Superior Traverse Gear"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Turret Rotation Speed + 2 degrees"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 1018123463280919749
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5540780561494930867
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "TURNINGBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Veteran Driver"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.15
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Improved ChassisTurn Speed by ~15% of base turn"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48654,6 +55366,8 @@ Assets {
         ChildIds: 17868376990790238444
         ChildIds: 16581295342265812467
         ChildIds: 7855075548909783917
+        ChildIds: 15933126718293955951
+        ChildIds: 12349724409042893906
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -48927,6 +55641,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49009,6 +55727,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -49093,6 +55815,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49175,6 +55901,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -49259,6 +55989,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49341,6 +56075,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -49425,6 +56163,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49508,6 +56250,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "TURRET7"
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49574,6 +56320,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -49642,6 +56392,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49708,6 +56462,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -49776,6 +56534,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49842,6 +56604,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -49910,6 +56676,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49977,6 +56747,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -50043,6 +56817,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -50127,6 +56905,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -50209,6 +56991,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -50293,6 +57079,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -50375,6 +57165,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -50459,6 +57253,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -50541,6 +57339,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -50625,6 +57427,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -50708,6 +57514,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 15933126718293955951
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8372995196599894215
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "RELOADBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Elite Gunner"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Primary gun reloads, ~10% faster. Also reduces chance for rotation or barrel turret to break by 25%."
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 12349724409042893906
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8372995196599894215
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AUTOEXTINGUISHER"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Lucky Extinguisher"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Reduces time to Automatic Fire Extinguisher by 3 seconds"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -50766,6 +57758,8 @@ Assets {
         ChildIds: 5552068296551733280
         ChildIds: 4107829316806004087
         ChildIds: 10738254769188836782
+        ChildIds: 1468917025230141642
+        ChildIds: 573336008342855238
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -51039,6 +58033,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51121,6 +58119,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -51205,6 +58207,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51287,6 +58293,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -51371,6 +58381,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51453,6 +58467,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -51537,6 +58555,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51620,6 +58642,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "TURRET7"
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51686,6 +58712,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -51754,6 +58784,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51820,6 +58854,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -51888,6 +58926,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51954,6 +58996,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -52022,6 +59068,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52089,6 +59139,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52155,6 +59209,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -52239,6 +59297,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52321,6 +59383,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -52405,6 +59471,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52487,6 +59557,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -52571,6 +59645,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52653,6 +59731,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -52737,6 +59819,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52820,6 +59906,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 1468917025230141642
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8192431103384550710
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AUTOTREAD"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Industrial Surplus"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Start each round with 1 free spare treads"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 573336008342855238
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8192431103384550710
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "FIRERESISTANCE"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Crew Sunscreen"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Take 25% less damage from fire while on fire"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52878,6 +60150,8 @@ Assets {
         ChildIds: 2329247839160004146
         ChildIds: 4880219266694644161
         ChildIds: 4828735515093087389
+        ChildIds: 4803335189592789157
+        ChildIds: 10505787316835277709
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -53151,6 +60425,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -53233,6 +60511,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -53317,6 +60599,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -53399,6 +60685,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -53483,6 +60773,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -53565,6 +60859,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -53649,6 +60947,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -53732,6 +61034,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "TURRET7"
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -53798,6 +61104,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -53866,6 +61176,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -53932,6 +61246,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -54000,6 +61318,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -54066,6 +61388,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -54134,6 +61460,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -54201,6 +61531,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -54267,6 +61601,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -54351,6 +61689,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -54433,6 +61775,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -54517,6 +61863,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -54599,6 +61949,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -54683,6 +62037,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -54765,6 +62123,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -54849,6 +62211,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -54932,6 +62298,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 4803335189592789157
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3158080304824873217
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "AIMBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Improved Traverse Gear"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Turret Rotation Speed + 1 degrees"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 10505787316835277709
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3158080304824873217
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEEDBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Reduced Weight"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.05
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Tank top speed is increased by ~5% of base Tank top speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -54990,6 +62542,8 @@ Assets {
         ChildIds: 3715702966997340929
         ChildIds: 15073134953432261934
         ChildIds: 16325965183265428304
+        ChildIds: 16479866784942949344
+        ChildIds: 7052051167267723736
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -55263,6 +62817,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -55345,6 +62903,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -55429,6 +62991,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -55511,6 +63077,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -55595,6 +63165,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -55677,6 +63251,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -55761,6 +63339,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -55844,6 +63426,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "TURRET7"
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -55910,6 +63496,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -55978,6 +63568,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -56044,6 +63638,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -56112,6 +63710,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -56178,6 +63780,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -56246,6 +63852,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -56313,6 +63923,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -56379,6 +63993,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -56463,6 +64081,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -56545,6 +64167,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -56629,6 +64255,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -56711,6 +64341,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -56795,6 +64429,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -56877,6 +64515,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -56961,6 +64603,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -57044,6 +64690,192 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 16479866784942949344
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9730244800535060077
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "ZOOM"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Turret Periscopes"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Zooms \"Shift\" scope by an additional +~25%"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 7052051167267723736
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9730244800535060077
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "TURNINGBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Veteran Driver"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.15
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Improved ChassisTurn Speed by ~15% of base turn"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -57102,6 +64934,8 @@ Assets {
         ChildIds: 16193319529814019255
         ChildIds: 15909657753026959786
         ChildIds: 5407986719064040831
+        ChildIds: 13468454383150465495
+        ChildIds: 203436310270269056
         UnregisteredParameters {
           Overrides {
             Name: "cs:name"
@@ -57375,6 +65209,10 @@ Assets {
             Name: "cs:stat2Value"
             Float: 10
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -57457,6 +65295,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -57541,6 +65383,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -57623,6 +65469,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -57707,6 +65557,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -57789,6 +65643,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 0
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
           }
         }
         Collidable_v2 {
@@ -57873,6 +65731,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 0
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -57956,6 +65818,10 @@ Assets {
             Name: "cs:prerequisite"
             String: "TURRET7"
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases damage dealt and turret aiming speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -58022,6 +65888,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -58090,6 +65960,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -58156,6 +66030,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 75
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -58224,6 +66102,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 75
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -58290,6 +66172,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -58358,6 +66244,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -58425,6 +66315,10 @@ Assets {
             Name: "cs:stat1Value"
             Float: 50
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -58491,6 +66385,10 @@ Assets {
           Overrides {
             Name: "cs:stat1Value"
             Float: 50
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases tank total hitpoints"
           }
         }
         Collidable_v2 {
@@ -58575,6 +66473,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -58657,6 +66559,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -58741,6 +66647,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 1
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -58823,6 +66733,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -58907,6 +66821,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -58989,6 +66907,10 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
           }
         }
         Collidable_v2 {
@@ -59073,6 +66995,10 @@ Assets {
             Name: "cs:stat3Value"
             Float: 2
           }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -59155,6 +67081,192 @@ Assets {
           Overrides {
             Name: "cs:stat3Value"
             Float: 2
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Increases chassis turning speed, acceleration and max speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 13468454383150465495
+        Name: "CREW1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10339792434115275849
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "SPEEDBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Driver\'s \"Special\" Fuel"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW1"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "1"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.15
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Tank top speed is increased by ~15% of base Tank top speed"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6342195152540340065
+          }
+        }
+      }
+      Objects {
+        Id: 203436310270269056
+        Name: "CREW2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10339792434115275849
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:upgradeType"
+            String: "CREW"
+          }
+          Overrides {
+            Name: "cs:researchCost"
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:purchaseCost"
+            Int: 30000
+          }
+          Overrides {
+            Name: "cs:stat1Name"
+            String: "TURNINGBOOST"
+          }
+          Overrides {
+            Name: "cs:upgradeName"
+            String: "Experienced Driver"
+          }
+          Overrides {
+            Name: "cs:upgradeID"
+            String: "CREW2"
+          }
+          Overrides {
+            Name: "cs:prerequisite"
+            String: "2"
+          }
+          Overrides {
+            Name: "cs:stat2Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat3Name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:stat1Value"
+            Float: 0.1
+          }
+          Overrides {
+            Name: "cs:stat2Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:stat3Value"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:mustUnlockPrereq"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:upgradeDescription"
+            String: "Improved ChassisTurn Speed by ~10% of base turn"
           }
         }
         Collidable_v2 {
