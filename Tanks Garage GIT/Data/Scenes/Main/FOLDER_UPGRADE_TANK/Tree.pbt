@@ -11297,6 +11297,16 @@ Objects {
           Name: "Name"
           String: "TANK_MODULE_TEMPLATE"
         }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
       }
     }
     TemplateAsset {
@@ -33790,8 +33800,8 @@ Objects {
   Control {
     Width: 100
     Height: 100
-    UIX: -44
-    UIY: -36
+    UIX: -32.8528748
+    UIY: -20.0806274
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -33844,8 +33854,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 1280
-    Height: 720
+    Width: 845
+    Height: 475
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"

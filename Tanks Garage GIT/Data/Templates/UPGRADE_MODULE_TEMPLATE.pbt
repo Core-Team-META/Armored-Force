@@ -1259,15 +1259,13 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 200
-          Height: 200
+          Width: 70
+          Height: 70
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
-          UseParentWidth: true
-          UseParentHeight: true
           Image {
             Brush {
               Id: 16822738577982032362
