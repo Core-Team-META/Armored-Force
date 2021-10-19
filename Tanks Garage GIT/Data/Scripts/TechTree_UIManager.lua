@@ -1460,6 +1460,7 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 		    	end
 		    	
 		    	entryCustomProperties["UPGRADE_TITLE_TEXT"].text = u["upgradeName"]
+		    	World.SpawnAsset(u["upgradeIcon"], {parent = entryCustomProperties["UPGRADE_ICON"]})
 		    	
 		    	local button = entryCustomProperties["PURCHASE_BUTTON"]
 		    	upgradeButtonListeners[button.id] = {}
@@ -1667,6 +1668,7 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
     	if not canAffordUpgrade then
     		entryCustomProperties["TANK_COST_TEXT"]:SetColor(Color.RED)
     		entryCustomProperties["PURCHASE_BUTTON"]:SetButtonColor(entryCustomProperties["PURCHASE_BUTTON"]:GetDisabledColor())
+    		entryCustomProperties["PURCHASE_BUTTON"]:SetHoveredColor(entryCustomProperties["PURCHASE_BUTTON"]:GetDisabledColor())
     	elseif not t["purchased"] then
     		entryCustomProperties["PURCHASE_BUTTON"].clickedEvent:Connect(TankButtonClicked)
     	else 
@@ -1756,7 +1758,11 @@ function TankButtonHovered(button)
 	UPGRADE_TOOLTIP:GetCustomProperty("upgradeName"):WaitForObject().text = tankInfo["name"]
 	UPGRADE_TOOLTIP:GetCustomProperty("upgradeDescription"):WaitForObject().text = "To unlock this tank, the following upgrades must be unlocked: " .. requiredUpgrades .. "."
 	UPGRADE_TOOLTIP:GetCustomProperty("upgradePartsCost"):WaitForObject().text = "TANK PARTS: " .. tostring(tankInfo["researchCost"])
-	UPGRADE_TOOLTIP:GetCustomProperty("UpgradeSilverCost"):WaitForObject().text = "SILVER: " .. tostring(tankInfo["purchaseCost"])
+	UPGRADE_TOOLTIP:GetCustomProperty("upgradeSilverCost"):WaitForObject().text = "SILVER: " .. tostring(tankInfo["purchaseCost"])
+	
+	for _, c in pairs(UPGRADE_TOOLTIP:GetCustomProperty("upgradeIcon"):WaitForObject():GetChildren()) do
+		c:Destroy()
+	end
 	
 	UPGRADE_TOOLTIP.visibility = Visibility.INHERIT
 
@@ -1901,6 +1907,10 @@ function UpgradeButtonHovered(button)
     local topSpeed = tankDetails.topSpeed
     local acceleration = tankDetails.acceleration
     local turningSpeed = tankDetails.turningSpeed
+    
+	for _, c in pairs(UPGRADE_TOOLTIP:GetCustomProperty("upgradeIcon"):WaitForObject():GetChildren()) do
+		c:Destroy()
+	end
         
     for x, type in ipairs(slotTypes) do
     	local typeDetails = tankDetails[type]
@@ -1925,8 +1935,8 @@ function UpgradeButtonHovered(button)
 	    			UPGRADE_TOOLTIP:GetCustomProperty("upgradeName"):WaitForObject().text = typeDetails[upgradeID]["upgradeName"]
 	    			UPGRADE_TOOLTIP:GetCustomProperty("upgradeDescription"):WaitForObject().text = typeDetails[upgradeID]["upgradeDescription"]
 	    			UPGRADE_TOOLTIP:GetCustomProperty("upgradePartsCost"):WaitForObject().text = "TANK PARTS: " .. tostring(typeDetails[upgradeID]["researchCost"])
-	    			UPGRADE_TOOLTIP:GetCustomProperty("UpgradeSilverCost"):WaitForObject().text = "SILVER: " .. tostring(typeDetails[upgradeID]["purchaseCost"])
-	    			
+	    			UPGRADE_TOOLTIP:GetCustomProperty("upgradeSilverCost"):WaitForObject().text = "SILVER: " .. tostring(typeDetails[upgradeID]["purchaseCost"])
+	    			World.SpawnAsset(typeDetails[upgradeID]["upgradeIcon"], {parent = UPGRADE_TOOLTIP:GetCustomProperty("upgradeIcon"):WaitForObject()})
 	    			UPGRADE_TOOLTIP.visibility = Visibility.INHERIT
 	    		end
 	    		

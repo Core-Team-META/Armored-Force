@@ -21,6 +21,12 @@ Assets {
         String: "Placeholder Description"
       }
       Overrides {
+        Name: "cs:upgradeIcon"
+        AssetReference {
+          Id: 17142150281207284667
+        }
+      }
+      Overrides {
         Name: "cs:researchCurrencyName"
         String: "RP"
       }
@@ -147,6 +153,10 @@ Assets {
       Overrides {
         Name: "cs:mustUnlockPrereq:category"
         String: "PurchaseInfo"
+      }
+      Overrides {
+        Name: "cs:upgradeIcon:category"
+        String: "Description"
       }
     }
   }

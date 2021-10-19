@@ -68,6 +68,12 @@ Assets {
               SubObjectId: 2129883384899950357
             }
           }
+          Overrides {
+            Name: "cs:UPGRADE_ICON"
+            ObjectReference {
+              SubObjectId: 15139271816632510914
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -260,6 +266,7 @@ Assets {
         ChildIds: 12974091342540976921
         ChildIds: 17111287898726923368
         ChildIds: 3692882020911131323
+        ChildIds: 15139271816632510914
         ChildIds: 9239574010189997271
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -275,7 +282,7 @@ Assets {
         }
         Control {
           Width: 115
-          Height: 105
+          Height: 110
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -399,14 +406,13 @@ Assets {
         }
         Control {
           Width: 100
-          Height: 100
+          Height: 30
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
           UseParentWidth: true
-          UseParentHeight: true
           Panel {
             IsClipping: true
             Opacity: 1
@@ -742,7 +748,7 @@ Assets {
         }
         Control {
           Width: 200
-          Height: 60
+          Height: 30
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -757,7 +763,7 @@ Assets {
               B: 1
               A: 1
             }
-            Size: 15
+            Size: 12
             Justification {
               Value: "mc:etextjustify:center"
             }
@@ -820,7 +826,7 @@ Assets {
         }
         Control {
           Width: 120
-          Height: 45
+          Height: 35
           UIY: 1.92514038
           RenderTransformPivot {
             Anchor {
@@ -935,7 +941,7 @@ Assets {
               B: 1
               A: 1
             }
-            Size: 12
+            Size: 10
             Justification {
               Value: "mc:etextjustify:right"
             }
@@ -999,8 +1005,8 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 25
-          Height: 25
+          Width: 20
+          Height: 20
           UIX: 16.4384766
           RenderTransformPivot {
             Anchor {
@@ -1068,8 +1074,8 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 25
-          Height: 25
+          Width: 20
+          Height: 20
           UIX: 16.4384766
           RenderTransformPivot {
             Anchor {
@@ -1104,6 +1110,58 @@ Assets {
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:middleleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 15139271816632510914
+        Name: "UPGRADE_ICON"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9794770026299270838
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 50
+          Height: 50
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Panel {
+            Opacity: 1
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }

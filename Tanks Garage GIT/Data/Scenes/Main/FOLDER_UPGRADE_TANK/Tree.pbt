@@ -7409,6 +7409,7 @@ Objects {
   ChildIds: 7537804518210518795
   ChildIds: 5260523627142021272
   ChildIds: 14781580814214595885
+  ChildIds: 12321083702839557818
   UnregisteredParameters {
     Overrides {
       Name: "cs:upgradeName"
@@ -7429,9 +7430,15 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:UpgradeSilverCost"
+      Name: "cs:upgradeSilverCost"
       ObjectReference {
         SelfId: 11936503838757303750
+      }
+    }
+    Overrides {
+      Name: "cs:upgradeIcon"
+      ObjectReference {
+        SelfId: 12321083702839557818
       }
     }
   }
@@ -7450,7 +7457,7 @@ Objects {
   Control {
     Width: 332
     Height: 210
-    UIX: 348.293701
+    UIX: 1023.2514
     UIY: 551.152
     RenderTransformPivot {
       Anchor {
@@ -7470,6 +7477,59 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 12321083702839557818
+  Name: "UPGRADE_ICON"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7271995354771784332
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 50
+    Height: 50
+    UIX: -10
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
         }
       }
     }
@@ -7505,7 +7565,7 @@ Objects {
   }
   Control {
     Width: -8
-    Height: 43
+    Height: 50
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -8777,7 +8837,7 @@ Objects {
   Control {
     Width: -10
     Height: 86
-    UIY: -76.1021423
+    UIY: -74
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
