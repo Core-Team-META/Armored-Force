@@ -29,6 +29,9 @@ local SFX_ERROR_UI = script:GetCustomProperty("SFX_ERROR_UI")
 
 local tankStatsContainer = script:GetCustomProperty("STATS_CONTAINER"):WaitForObject()
 
+local validColor = script:GetCustomProperty("ValidColor")
+local invalidColor = script:GetCustomProperty("InvalidColor")
+
 local treadsCost = 400
 local extinguisherCost = 400
 local repairKitCost = 400
@@ -156,6 +159,7 @@ function OnResupplyButtonPressed(button)
 	if 400 > localPlayer:GetResource(CONSTANTS_API.SILVER) then
 		local sfx = World.SpawnAsset(SFX_ERROR_UI)
 		sfx.lifeSpan = 3
+		Events.Broadcast("SEND_POPUP", localPlayer, "Insufficient Silver", "Not enough Silver to purchase this item.")
 		return
 	end
 	local sfx = World.SpawnAsset(SFX_PURCHASE_UI)
@@ -165,27 +169,33 @@ end
 
 function OnResourceChanged(player, resource, amount)
 	
-	
+	print("Resource: " .. tostring(resource) .. " | " .. tostring(amount))
 	--print("resource recieved " .. resource)
 	if resource == CONSTANTS_API.SILVER and amount < treadsCost then
 		treadsSlot:FindDescendantByName("BUTTONTEXT"):SetColor(Color.RED)
+		treadsSlot:FindDescendantByName("BUTTONTEXT_LIGHT"):SetColor(Color.RED)
 	end
 	if resource == CONSTANTS_API.SILVER and amount < extinguisherCost then
 		extinguisherSlot:FindDescendantByName("BUTTONTEXT"):SetColor(Color.RED)
+		extinguisherSlot:FindDescendantByName("BUTTONTEXT_LIGHT"):SetColor(Color.RED)
 	end
 	if resource == CONSTANTS_API.SILVER and amount < repairKitCost then
 		repairKitSlot:FindDescendantByName("BUTTONTEXT"):SetColor(Color.RED)
+		repairKitSlot:FindDescendantByName("BUTTONTEXT_LIGHT"):SetColor(Color.RED)
 	end
 	if resource == CONSTANTS_API.SILVER and amount >= treadsCost then
 		treadsSlot:FindDescendantByName("BUTTONTEXT"):SetColor(Color.WHITE)
+		treadsSlot:FindDescendantByName("BUTTONTEXT_LIGHT"):SetColor(Color.WHITE)
 		consumableSlots.treads.purchaseButton.isInteractable = true
 	end
 	if resource == CONSTANTS_API.SILVER and amount >= extinguisherCost then
 		extinguisherSlot:FindDescendantByName("BUTTONTEXT"):SetColor(Color.WHITE)
+		extinguisherSlot:FindDescendantByName("BUTTONTEXT_LIGHT"):SetColor(Color.WHITE)
 		consumableSlots.extinguisher.purchaseButton.isInteractable = true
 	end
 	if resource == CONSTANTS_API.SILVER and amount >= repairKitCost then
 		repairKitSlot:FindDescendantByName("BUTTONTEXT"):SetColor(Color.WHITE)		
+		repairKitSlot:FindDescendantByName("BUTTONTEXT_LIGHT"):SetColor(Color.WHITE)	
 		consumableSlots.repairKit.purchaseButton.isInteractable = true
 	end
 
@@ -213,7 +223,7 @@ function OnResourceChanged(player, resource, amount)
 			local buttonText = button:GetCustomProperty("BUTTONTEXT_LIGHT"):WaitForObject()
 			silverIcon.visibility = Visibility.FORCE_OFF
 			buttonText.visibility = Visibility.FORCE_OFF
-			buttonText.text = tostring(extinguisherCost)			
+			buttonText.text = tostring(extinguisherCost)	
 		end
 	elseif resource == CONSTANTS_API.CONSUMABLES.REPAIR or resource == CONSTANTS_API.CONSUMABLES.AUTO_REPAIR then
 		if amount > 0 then
@@ -266,6 +276,7 @@ function InitializeSlot(slotTableEntry, panelReference, cost)
 	local buttonText = slotTableEntry.purchaseButton:GetCustomProperty("BUTTONTEXT_LIGHT"):WaitForObject()
 	if buttonText then
 		buttonText.text = tostring(slotCost)
+		SetButtonTextColor(buttonText, localPlayer:GetResource(CONSTANTS_API.SILVER), repairKitCost)
 	end
 	slotTableEntry.purchaseButton.clientUserData.type = slotTableEntry.type
 	slotTableEntry.purchaseButton.clickedEvent:Connect(OnPurchaseButtonPressed)
@@ -286,6 +297,10 @@ function InitializeComponent()
 	consumableSlots.treads.type = "TreadsRepair"
 	consumableSlots.extinguisher.type = "Extinguisher"
 	consumableSlots.repairKit.type = "TurretRepair"
+
+	while not localPlayer.id do
+		Task.Wait()
+	end
 	
 	InitializeSlot(consumableSlots.treads, treadsSlot, treadsCost)
 	InitializeSlot(consumableSlots.extinguisher, extinguisherSlot, extinguisherCost)
@@ -310,11 +325,7 @@ function InitializeComponent()
 			child.clickedEvent:Connect(OnBattleButtonPressed)
 		end
 	end
-	
-	while not localPlayer.id do
-		Task.Wait()
-	end
-	
+		
 	Task.Spawn(AnimateLoadingTank)
 	Task.Spawn(AnimateLoadingScreen)
 	
@@ -345,6 +356,14 @@ function InitializeComponent()
 	OnResourceChanged(localPlayer, CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER, localPlayer:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER))
 	OnResourceChanged(localPlayer, CONSTANTS_API.CONSUMABLES.AUTO_REPAIR, localPlayer:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_REPAIR))
 	
+end
+
+function SetButtonTextColor(buttonText, amount, cost)
+	if amount < cost then
+		buttonText:SetColor(invalidColor)
+	else
+		buttonText:SetColor(validColor)
+	end
 end
 
 function AnimateLoadingTank()
