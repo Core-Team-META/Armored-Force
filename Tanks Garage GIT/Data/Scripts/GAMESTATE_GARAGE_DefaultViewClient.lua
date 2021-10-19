@@ -360,9 +360,9 @@ end
 
 function SetButtonTextColor(buttonText, amount, cost)
 	if amount < cost then
-		buttonText:SetColor(invalidColor)
+		--buttonText:SetColor(invalidColor)
 	else
-		buttonText:SetColor(validColor)
+		--buttonText:SetColor(validColor)
 	end
 end
 
