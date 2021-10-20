@@ -135,6 +135,11 @@ local UPGRADE_LINE_TEMPLATE = script:GetCustomProperty("UPGRADE_LINE_TEMPLATE")
 local UPGRADE_MODULE_TEMPLATE = script:GetCustomProperty("UPGRADE_MODULE_TEMPLATE")
 local UPGRADE_TOOLTIP = script:GetCustomProperty("UPGRADE_TOOLTIP"):WaitForObject()
 
+local RESEARCHABLE_COLOR = script:GetCustomProperty("RESEARCHABLE_COLOR")
+local PURCHASABLE_COLOR = script:GetCustomProperty("PURCHASABLE_COLOR")
+local OWNED_COLOR = script:GetCustomProperty("OWNED_COLOR")
+local DISABLED_COLOR = script:GetCustomProperty("DISABLED_COLOR")
+
 ------------------------------------------------------------------------------------------------------
 
 while not _G.PORTAL_IMAGES do
@@ -1472,6 +1477,7 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 		    		entryCustomProperties["UPGRADE_COST_TEXT"].text = tostring(u["researchCost"])
 		    		entryCustomProperties["PARTS_ICON"].visibility = Visibility.INHERIT 
 		    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.FORCE_OFF
+		    		entryCustomProperties["PRICE_BACKGROUND"]:SetColor(RESEARCHABLE_COLOR)
 		    		
 		    		local totalParts = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankDetails.id))) + LOCAL_PLAYER:GetResource(Constants_API.FREERP)
 		    		canAffordUpgrade = totalParts >= u["researchCost"]
@@ -1479,6 +1485,7 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 		    		entryCustomProperties["UPGRADE_COST_TEXT"].text = tostring(u["purchaseCost"])
 		    		entryCustomProperties["PARTS_ICON"].visibility = Visibility.FORCE_OFF
 		    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.INHERIT
+		    		entryCustomProperties["PRICE_BACKGROUND"]:SetColor(PURCHASABLE_COLOR)
 		    		
 		    		canAffordUpgrade = LOCAL_PLAYER:GetResource(Constants_API.SILVER) >= u["purchaseCost"]
 		    	end
@@ -1487,8 +1494,7 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 		    		entryCustomProperties["UPGRADE_LOCKED"].visibility = Visibility.INHERIT 
 		    		entryCustomProperties["PREREQ_LINE_LOCKED"].visibility = Visibility.INHERIT
 		    		entryCustomProperties["PREREQ_LINE_UNLOCKED"].visibility = Visibility.FORCE_OFF
-		    		button:SetButtonColor(button:GetDisabledColor())
-		    		button:SetHoveredColor(button:GetDisabledColor())
+		    		entryCustomProperties["PRICE_BACKGROUND"]:SetColor(DISABLED_COLOR)
 		    		entryCustomProperties["UPGRADE_COST_TEXT"]:SetColor(Color.RED)
 		    	else
 		    		entryCustomProperties["UPGRADE_LOCKED"].visibility = Visibility.FORCE_OFF
@@ -1497,14 +1503,15 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 		    		
 		    		if progressOnType[i] and tonumber(progressOnType[i]) >= 2 then
 			    		entryCustomProperties["UPGRADE_COST_TEXT"].text = "EQUIPPED"
+			    		entryCustomProperties["UPGRADE_COST_TEXT"].justification = TextJustify.CENTER
 			    		entryCustomProperties["PARTS_ICON"].visibility = Visibility.FORCE_OFF
 			    		entryCustomProperties["SILVER_ICON"].visibility = Visibility.FORCE_OFF
+			    		entryCustomProperties["PRICE_BACKGROUND"]:SetColor(OWNED_COLOR)
 		    		elseif canAffordUpgrade then
 		    			upgradeButtonListeners[button.id] = button.clickedEvent:Connect(UpgradeButtonClicked)
 		    		else
-		    			button:SetButtonColor(button:GetDisabledColor())
-		    			button:SetHoveredColor(button:GetDisabledColor())
-			    		entryCustomProperties["UPGRADE_COST_TEXT"]:SetColor(Color.RED)
+		    			entryCustomProperties["PRICE_BACKGROUND"]:SetColor(DISABLED_COLOR)
+		    			entryCustomProperties["UPGRADE_COST_TEXT"]:SetColor(Color.RED)
 		    		end
 		    	end
 		    	

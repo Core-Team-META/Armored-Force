@@ -948,6 +948,39 @@ Objects {
         Id: 3647538549911708133
       }
     }
+    Overrides {
+      Name: "cs:RESEARCHABLE_COLOR"
+      Color {
+        G: 0.0331125259
+        B: 0.5
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:PURCHASABLE_COLOR"
+      Color {
+        R: 0.203906104
+        G: 0.421875
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:OWNED_COLOR"
+      Color {
+        R: 0.025616657
+        G: 0.0530000031
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:DISABLED_COLOR"
+      Color {
+        R: 0.0730000064
+        G: 0.0730000064
+        B: 0.0730000064
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
