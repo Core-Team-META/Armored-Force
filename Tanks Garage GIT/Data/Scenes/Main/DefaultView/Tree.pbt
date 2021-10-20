@@ -1023,6 +1023,22 @@ Objects {
         Id: 8525269059319462214
       }
     }
+    Overrides {
+      Name: "cs:ValidColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:InvalidColor"
+      Color {
+        R: 0.65
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
