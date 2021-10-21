@@ -1674,12 +1674,17 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
     	
     	if not canAffordUpgrade then
     		entryCustomProperties["TANK_COST_TEXT"]:SetColor(Color.RED)
-    		entryCustomProperties["PURCHASE_BUTTON"]:SetButtonColor(entryCustomProperties["PURCHASE_BUTTON"]:GetDisabledColor())
-    		entryCustomProperties["PURCHASE_BUTTON"]:SetHoveredColor(entryCustomProperties["PURCHASE_BUTTON"]:GetDisabledColor())
+    		entryCustomProperties["PRICE_BACKGROUND"]:SetColor(DISABLED_COLOR)    	
     	elseif not t["purchased"] then
     		entryCustomProperties["PURCHASE_BUTTON"].clickedEvent:Connect(TankButtonClicked)
+    		if not t["researched"] then
+    			entryCustomProperties["PRICE_BACKGROUND"]:SetColor(RESEARCHABLE_COLOR)
+    		else 
+    			entryCustomProperties["PRICE_BACKGROUND"]:SetColor(PURCHASABLE_COLOR)
+    		end
     	else 
     		entryCustomProperties["PURCHASE_BUTTON"].clickedEvent:Connect(TankButtonEquipTank)
+    		entryCustomProperties["PRICE_BACKGROUND"]:SetColor(OWNED_COLOR)
     	end    	
     	
     	entryCustomProperties["MAIN_TANK_ENTRY"].y = (placementSlot - 1) * entryCustomProperties["MAIN_TANK_ENTRY"].height

@@ -91,6 +91,12 @@ Assets {
               SubObjectId: 3549929492585702759
             }
           }
+          Overrides {
+            Name: "cs:PRICE_BACKGROUND"
+            ObjectReference {
+              SubObjectId: 7093177981899649395
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -555,8 +561,9 @@ Assets {
         ChildIds: 4077318262213080704
         ChildIds: 7515523514539980838
         ChildIds: 511908165303870284
-        ChildIds: 15700501054659078812
+        ChildIds: 7093177981899649395
         ChildIds: 16684936004976045699
+        ChildIds: 15700501054659078812
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -578,6 +585,7 @@ Assets {
             }
           }
           Panel {
+            IsClipping: true
             Opacity: 1
           }
           AnchorLayout {
@@ -695,6 +703,7 @@ Assets {
         Control {
           Width: 100
           Height: 35
+          UIY: -5
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1112,9 +1121,9 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: -15
-          Height: -50
-          UIY: 40
+          Width: -10
+          Height: 62
+          UIY: 34
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1122,7 +1131,6 @@ Assets {
           }
           AddSizeToParentIfUsingParentSize: true
           UseParentWidth: true
-          UseParentHeight: true
           Panel {
             IsClipping: true
             Opacity: 1
@@ -1266,8 +1274,8 @@ Assets {
         }
       }
       Objects {
-        Id: 15700501054659078812
-        Name: "PURCHASE_BUTTON"
+        Id: 7093177981899649395
+        Name: "PRICE_BACKGROUND"
         Transform {
           Location {
           }
@@ -1296,63 +1304,33 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 120
+          Width: 10
           Height: 45
-          UIY: -7.90148926
+          UIY: 5
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
-          Button {
-            FontColor {
-              R: 1
-              G: 1
-              B: 1
-              A: 0.9
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          Image {
+            Brush {
+              Id: 7515015531196152948
             }
-            FontSize: 20
-            ButtonColor {
+            Color {
               R: 0.203906104
               G: 0.421875
               A: 1
             }
-            HoveredColor {
-              R: 0.456225
-              G: 0.830000043
-              A: 1
-            }
-            PressedColor {
-              R: 0.0813301876
-              G: 0.168269426
-              A: 1
-            }
-            DisabledColor {
-              R: 0.119791664
-              G: 0.119791664
-              B: 0.119791664
-              A: 1
-            }
-            Brush {
-              Id: 7515015531196152948
-            }
-            IsButtonEnabled: true
-            ClickMode {
-              Value: "mc:ebuttonclickmode:default"
-            }
-            Font {
-            }
-            Justification {
-              Value: "mc:etextjustify:center"
-            }
-            VerticalJustification {
-              Value: "mc:everticaljustification:center"
+            TeamSettings {
             }
             ShadowColor {
               A: 1
             }
             ShadowOffset {
             }
+            ScreenshotIndex: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -1383,7 +1361,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15700501054659078812
+        ParentId: 7093177981899649395
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1395,7 +1373,7 @@ Assets {
         }
         Control {
           Width: -29
-          UIX: -14.6119995
+          UIX: -14.6120605
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1462,7 +1440,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15700501054659078812
+        ParentId: 7093177981899649395
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1531,7 +1509,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15700501054659078812
+        ParentId: 7093177981899649395
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1776,6 +1754,105 @@ Assets {
           }
         }
       }
+      Objects {
+        Id: 15700501054659078812
+        Name: "PURCHASE_BUTTON"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18058539187562994813
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 10
+          Height: 10
+          UIY: 1
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Button {
+            FontColor {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.9
+            }
+            FontSize: 20
+            ButtonColor {
+              R: 1
+              G: 1
+              B: 1
+            }
+            HoveredColor {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.07
+            }
+            PressedColor {
+              A: 0.07
+            }
+            DisabledColor {
+              A: 0.07
+            }
+            Brush {
+              Id: 1814707273787853473
+            }
+            IsButtonEnabled: true
+            ClickMode {
+              Value: "mc:ebuttonclickmode:default"
+            }
+            Font {
+            }
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+            VerticalJustification {
+              Value: "mc:everticaljustification:center"
+            }
+            ShadowColor {
+              A: 1
+            }
+            ShadowOffset {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
     }
     Assets {
       Id: 14060330023043759337
@@ -1847,6 +1924,15 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Urban_Icon_060"
+      }
+    }
+    Assets {
+      Id: 1814707273787853473
+      Name: "BG Flat 001"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "BackgroundNoOutline_020"
       }
     }
     PrimaryAssetId {
