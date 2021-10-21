@@ -1749,6 +1749,8 @@ end
 
 function TankButtonHovered(button)
 
+	Task.Wait()
+
 	local tankInfo = tankAPI.GetTankFromId(tonumber(button.name))
 	local requiredUpgrades = ""
 	local upgradeName = ""
@@ -1907,6 +1909,9 @@ function UpgradeObtained(tankID, upgradeID, newUpgradeValue)
 end
 
 function UpgradeButtonHovered(button)
+
+	Task.Wait()
+	
     local damage = tankDetails.damage 
     local reload = tankDetails.reload
     local turret = tankDetails.turret    

@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16822738577982032362
+  Name: "Lock"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Urban_Icon_060"
+  }
+}
+Assets {
   Id: 16191173343733875993
   Name: "Tank"
   PlatformAssetType: 9
