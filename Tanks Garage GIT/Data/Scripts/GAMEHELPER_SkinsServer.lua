@@ -1,6 +1,7 @@
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 local _Constants_API = require(script:GetCustomProperty("Constants_API"))
+local TankAPI =  _Constants_API:WaitForConstant("Tanks")
 
 local PLAYER_SHARED_STORAGE =  _Constants_API:WaitForConstant("Storage_Keys").Skins
 
@@ -31,10 +32,11 @@ function OnPlayerJoined(player)
 	--print("Player current String: " .. playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL])
 	
 	SetTankSkinDataForServer(playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL], player)
+	local newDataString = ConvertSkinDataToString(player)
 	
 	local dataTransferObject = World.SpawnAsset(DATA_TRANSFER_OBJECT, {parent = DATA_TRANSFER})
     dataTransferObject:SetNetworkedCustomProperty("OwnerId", player.id)
-    dataTransferObject:SetNetworkedCustomProperty("Data", playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL])
+    dataTransferObject:SetNetworkedCustomProperty("Data", newDataString)
     dataTransferSet[player] = dataTransferObject
 	
 	Storage.SetSharedPlayerData(PLAYER_SHARED_STORAGE, player, playerSharedStorage)
@@ -188,7 +190,26 @@ function SetTankSkinDataForServer(dataString, player)
             	camoTable[tankID] = {}
             end
         end
-    end     
+    end  
+    
+    local tankID = ""
+    
+    for i, t in pairs(TankAPI.GetTanks()) do
+    	tankID = tostring(i)
+    	if i < 10 then
+    		tankID = "0" .. tankID
+    	end
+    	
+    	for _, s in pairs(t.skins) do
+    		if not camoTable[tankID][s["skinID"]] then
+    			print(s["skinID"] .. " is added to " .. player.name .. " storage")
+    			camoTable[tankID][s["skinID"]] = {}
+    			camoTable[tankID][s["skinID"]].purchased = false
+    			camoTable[tankID][s["skinID"]].equipped = false
+    		end
+    	end
+    	
+    end
     
     player.serverUserData.camoData = camoTable
 	--UTIL_API.TablePrint(player.serverUserData.camoData)
