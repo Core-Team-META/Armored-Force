@@ -811,6 +811,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:STATS_CONTAINER"
+      ObjectReference {
+        SelfId: 16475119061964287367
+      }
+    }
+    Overrides {
       Name: "cs:STATS_TANK_CONTAINER"
       ObjectReference {
         SelfId: 17297087670383591423

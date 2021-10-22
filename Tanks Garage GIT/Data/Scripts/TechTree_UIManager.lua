@@ -108,6 +108,7 @@ local BUTTON_TECHTREE_SHOP = script:GetCustomProperty('BUTTON_TECHTREE_SHOP'):Wa
 local BUTTON_PREMIUM_SHOP = script:GetCustomProperty('BUTTON_PREMIUM_SHOP'):WaitForObject()
 local TutorialCompletePopupNoReward = script:GetCustomProperty("TutorialCompletePopupNoReward")
 
+local STATS_CONTAINER = script:GetCustomProperty("STATS_CONTAINER"):WaitForObject()
 local STATS_TANK_CONTAINER = script:GetCustomProperty('STATS_TANK_CONTAINER'):WaitForObject()
 local UPGRADE_TANK_CONTAINER = script:GetCustomProperty('UPGRADE_TANK_CONTAINER'):WaitForObject()
 local UPGRADE_TANK_CONFIRM_CONTAINER = script:GetCustomProperty('UPGRADE_TANK_CONFIRM_CONTAINER'):WaitForObject()
@@ -247,7 +248,8 @@ function ToggleThisComponent(requestedPlayerState)
 
         --print("Override")
         LOCAL_PLAYER:SetOverrideCamera(overrideCamera)
-
+        STATS_CONTAINER.height = 510
+		BUTTON_UPGRADE_TANK.visibility = Visibility.INHERIT
         displayTanks.visibility = Visibility.FORCE_ON
         selectedTankId = 0
         PopulateOwnedTanks()
@@ -261,7 +263,10 @@ end
 function DisableThisComponent()
     displayTanks.visibility = Visibility.FORCE_OFF
     axisDisplayTanks.visibility = Visibility.FORCE_OFF
-
+	STATS_CONTAINER.visibility = Visibility.FORCE_OFF
+	STATS_CONTAINER.height = 585
+	BUTTON_UPGRADE_TANK.visibility = Visibility.INHERIT
+	
     CloseTechTreeModal()
     CloseUI()
 end
@@ -1406,6 +1411,12 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 	    else
 	        SFX_CLICK:Play()
 	        UPGRADE_TANK_CONTAINER.visibility = Visibility.FORCE_ON 
+	        if savedState == thisComponent then
+	        	STATS_CONTAINER.visibility = Visibility.INHERIT
+	        	STATS_CONTAINER.isEnabled = true
+	    		BUTTON_UPGRADE_TANK.visibility = Visibility.FORCE_OFF
+	        end
+	        
 	        PopulateEquippedTankStats(tankDetails)
 	    end
 	end
@@ -2034,6 +2045,9 @@ end
 function CloseTankUpgradeWindow(button)
     SFX_CLICK:Play()
     UPGRADE_TANK_CONTAINER.visibility = Visibility.FORCE_OFF
+    if savedState == thisComponent then
+    	STATS_CONTAINER.visibility = Visibility.FORCE_OFF
+    end
 end
 
 function ClosePurchaseTank(button)

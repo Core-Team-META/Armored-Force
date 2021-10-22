@@ -78,7 +78,6 @@ Objects {
   ChildIds: 361422811267031289
   ChildIds: 4046523019665803412
   ChildIds: 5032489891251473219
-  ChildIds: 1018290232874581072
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -117,85 +116,6 @@ Objects {
   }
 }
 Objects {
-  Id: 1018290232874581072
-  Name: "BUTTONTEXT_LIGHT"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: 4.07110977e-13
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 422055672280098509
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 59
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    UseParentHeight: true
-    Text {
-      Label: "UPGRADE TANK"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 16
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      Font {
-        Id: 841534158063459245
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
-      ShadowColor {
-        R: 1
-        G: 1
-        B: 1
-      }
-      ShadowOffset {
-      }
-      OutlineColor {
-        A: 1
-      }
-      OutlineSize: 1
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
-  }
-}
-Objects {
   Id: 5032489891251473219
   Name: "BUTTON_UPGRADE_TANK"
   Transform {
@@ -210,6 +130,7 @@ Objects {
     }
   }
   ParentId: 422055672280098509
+  ChildIds: 1018290232874581072
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -292,6 +213,85 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:bottomcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 1018290232874581072
+  Name: "BUTTONTEXT_LIGHT"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 4.07110977e-13
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5032489891251473219
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 59
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Text {
+      Label: "UPGRADE TANK"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 16
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      Font {
+        Id: 841534158063459245
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        R: 1
+        G: 1
+        B: 1
+      }
+      ShadowOffset {
+      }
+      OutlineColor {
+        A: 1
+      }
+      OutlineSize: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
