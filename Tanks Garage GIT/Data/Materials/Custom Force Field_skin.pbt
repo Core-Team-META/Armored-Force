@@ -2,7 +2,7 @@ Assets {
   Id: 5950052926211564984
   Name: "Custom Force Field_skin"
   PlatformAssetType: 13
-  SerializationVersion: 100
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 6521320258770143127
     ParameterOverrides {
