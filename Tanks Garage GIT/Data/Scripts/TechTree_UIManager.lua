@@ -1305,14 +1305,14 @@ function PopulateHoverTankStats(tankData)
     		end
     	end
     end
-    
-    VIEWED_TANK_STATS:FindDescendantByName('BAR_4').progress = damage / tankAPI.GetHighestDamage()
-    VIEWED_TANK_STATS:FindDescendantByName('BAR_5').progress = 1 - (reload / tankAPI.GetHighestReload())
-    VIEWED_TANK_STATS:FindDescendantByName('BAR_6').progress = turret / tankAPI.GetHighestTurretSpeed()
-    VIEWED_TANK_STATS:FindDescendantByName('BAR_1').progress = hitPoints / tankAPI.GetHighestHitPoints()
-    VIEWED_TANK_STATS:FindDescendantByName('BAR_8').progress = topSpeed / tankAPI.GetHighestTopSpeed()
-    VIEWED_TANK_STATS:FindDescendantByName('BAR_9').progress = acceleration / tankAPI.GetHighestAcceleration()
-    VIEWED_TANK_STATS:FindDescendantByName('BAR_10').progress = turningSpeed / tankAPI.GetHighestTurningSpeed()
+  
+    VIEWED_TANK_STATS:FindDescendantByName('BAR_4').progress = (damage - tankAPI.GetLowestDamage()) / (tankAPI.GetHighestDamage() - tankAPI.GetLowestDamage())
+    VIEWED_TANK_STATS:FindDescendantByName('BAR_5').progress = 1 - ((reload - tankAPI.GetLowestReload()) / (tankAPI.GetHighestReload() - tankAPI.GetLowestReload()))
+    VIEWED_TANK_STATS:FindDescendantByName('BAR_6').progress = (turret - tankAPI.GetLowestTurretSpeed()) / (tankAPI.GetHighestTurretSpeed() - tankAPI.GetLowestTurretSpeed())
+    VIEWED_TANK_STATS:FindDescendantByName('BAR_1').progress = (hitPoints - tankAPI.GetLowestHitPoints()) / (tankAPI.GetHighestHitPoints() - tankAPI.GetLowestHitPoints())
+    VIEWED_TANK_STATS:FindDescendantByName('BAR_8').progress = (topSpeed - tankAPI.GetLowestTopSpeed()) / (tankAPI.GetHighestTopSpeed() - tankAPI.GetLowestTopSpeed())
+    VIEWED_TANK_STATS:FindDescendantByName('BAR_9').progress = (acceleration - tankAPI.GetLowestAcceleration()) / (tankAPI.GetHighestAcceleration() - tankAPI.GetLowestAcceleration())
+    VIEWED_TANK_STATS:FindDescendantByName('BAR_10').progress = (turningSpeed - tankAPI.GetLowestTurningSpeed()) / (tankAPI.GetHighestTurningSpeed() - tankAPI.GetLowestTurningSpeed()) 
     
     if tankData.purchasedTank then
 --print('OWN TANK')
@@ -1991,13 +1991,13 @@ function UpgradeButtonHovered(button)
     	end
     end
     
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').progress = damage / tankAPI.GetHighestDamage()
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').progress = 1 - (reload / tankAPI.GetHighestReload())
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_6_LVLUP').progress = turret / tankAPI.GetHighestTurretSpeed()
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').progress = hitPoints / tankAPI.GetHighestHitPoints()
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_8_LVLUP').progress = topSpeed / tankAPI.GetHighestTopSpeed()
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_9_LVLUP').progress = acceleration / tankAPI.GetHighestAcceleration()
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').progress = turningSpeed / tankAPI.GetHighestTurningSpeed()
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').progress = (damage - tankAPI.GetLowestDamage()) / (tankAPI.GetHighestDamage() - tankAPI.GetLowestDamage())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').progress = 1 - ((reload - tankAPI.GetLowestReload()) / (tankAPI.GetHighestReload() - tankAPI.GetLowestReload()))
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_6_LVLUP').progress = (turret - tankAPI.GetLowestTurretSpeed()) / (tankAPI.GetHighestTurretSpeed() - tankAPI.GetLowestTurretSpeed())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').progress = (hitPoints - tankAPI.GetLowestHitPoints()) / (tankAPI.GetHighestHitPoints() - tankAPI.GetLowestHitPoints())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_8_LVLUP').progress = (topSpeed - tankAPI.GetLowestTopSpeed()) / (tankAPI.GetHighestTopSpeed() - tankAPI.GetLowestTopSpeed())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_9_LVLUP').progress = (acceleration - tankAPI.GetLowestAcceleration()) / (tankAPI.GetHighestAcceleration() - tankAPI.GetLowestAcceleration())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').progress = (turningSpeed - tankAPI.GetLowestTurningSpeed()) / (tankAPI.GetHighestTurningSpeed() - tankAPI.GetLowestTurningSpeed())
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').visibility = Visibility.FORCE_ON
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').visibility = Visibility.FORCE_ON
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').visibility = Visibility.FORCE_ON
@@ -2127,23 +2127,22 @@ function PopulateEquippedTankStats(entry)
     	turningSpeed = math.floor(turningSpeed / 20)
     end
     
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_4').progress = damage / tankAPI.GetHighestDamage()
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_5').progress = 1 - (reload / tankAPI.GetHighestReload())
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_6').progress = turret / tankAPI.GetHighestTurretSpeed()
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_1').progress = hitPoints / tankAPI.GetHighestHitPoints()
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_8').progress = topSpeed / tankAPI.GetHighestTopSpeed()
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_9').progress = acceleration / tankAPI.GetHighestAcceleration()
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_10').progress = turningSpeed / tankAPI.GetHighestTurningSpeed()
+     STATS_TANK_CONTAINER:FindDescendantByName('BAR_4').progress = (damage - tankAPI.GetLowestDamage()) / (tankAPI.GetHighestDamage() - tankAPI.GetLowestDamage())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_5').progress = 1 - ((reload - tankAPI.GetLowestReload()) / (tankAPI.GetHighestReload() - tankAPI.GetLowestReload()))
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_6').progress = (turret - tankAPI.GetLowestTurretSpeed()) / (tankAPI.GetHighestTurretSpeed() - tankAPI.GetLowestTurretSpeed())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_1').progress = (hitPoints - tankAPI.GetLowestHitPoints()) / (tankAPI.GetHighestHitPoints() - tankAPI.GetLowestHitPoints())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_8').progress = (topSpeed - tankAPI.GetLowestTopSpeed()) / (tankAPI.GetHighestTopSpeed() - tankAPI.GetLowestTopSpeed())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_9').progress = (acceleration - tankAPI.GetLowestAcceleration()) / (tankAPI.GetHighestAcceleration() - tankAPI.GetLowestAcceleration())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_10').progress = (turningSpeed - tankAPI.GetLowestTurningSpeed()) / (tankAPI.GetHighestTurningSpeed() - tankAPI.GetLowestTurningSpeed()) 
     
-    -- Set upgraded versions
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').progress = damage / tankAPI.GetHighestDamage()
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').progress = 1 - (reload / tankAPI.GetHighestReload())
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_6_LVLUP').progress = turret / tankAPI.GetHighestTurretSpeed()
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').progress = hitPoints / tankAPI.GetHighestHitPoints()
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_8_LVLUP').progress = topSpeed / tankAPI.GetHighestTopSpeed()
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_9_LVLUP').progress = acceleration / tankAPI.GetHighestAcceleration()
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').progress = turningSpeed / tankAPI.GetHighestTurningSpeed()
-
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').progress = (damage - tankAPI.GetLowestDamage()) / (tankAPI.GetHighestDamage() - tankAPI.GetLowestDamage())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').progress = 1 - ((reload - tankAPI.GetLowestReload()) / (tankAPI.GetHighestReload() - tankAPI.GetLowestReload()))
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_6_LVLUP').progress = (turret - tankAPI.GetLowestTurretSpeed()) / (tankAPI.GetHighestTurretSpeed() - tankAPI.GetLowestTurretSpeed())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').progress = (hitPoints - tankAPI.GetLowestHitPoints()) / (tankAPI.GetHighestHitPoints() - tankAPI.GetLowestHitPoints())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_8_LVLUP').progress = (topSpeed - tankAPI.GetLowestTopSpeed()) / (tankAPI.GetHighestTopSpeed() - tankAPI.GetLowestTopSpeed())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_9_LVLUP').progress = (acceleration - tankAPI.GetLowestAcceleration()) / (tankAPI.GetHighestAcceleration() - tankAPI.GetLowestAcceleration())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').progress = (turningSpeed - tankAPI.GetLowestTurningSpeed()) / (tankAPI.GetHighestTurningSpeed() - tankAPI.GetLowestTurningSpeed()) 
+    
 end
 
 function EquipTank(newSelectedTank)

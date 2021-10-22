@@ -120,36 +120,72 @@ function Tanks.GetHighestDamage()
 	return 1000
 end
 
+function Tanks.GetLowestDamage()
+	return 80
+end
+
 function Tanks.GetHighestReload()
 	return 12 -- true highest is 10, set slightly higher than actual max to compensate for high reload vehicles (jagdtiger)
 end
 
+function Tanks.GetLowestReload()
+	return 1
+end
+
 function Tanks.GetHighestTurretSpeed()
-	return 80
+	return 60
+end
+
+function Tanks.GetLowestTurretSpeed()
+	return 5
 end
 
 function Tanks.GetHighestHitPoints()
-	return 2000
+	return 2200
+end
+
+function Tanks.GetLowestHitPoints()
+	return 400
 end
 
 function Tanks.GetHighestTopSpeed()
 	return 2700 -- was 4100, set lower to make it easier to compare stats of other tanks.
 end
 
+function Tanks.GetLowestTopSpeed()
+	return 300
+end
+
 function Tanks.GetHighestAcceleration()
 	return 4500
+end
+
+function Tanks.GetLowestAcceleration()
+	return 200
 end
 
 function Tanks.GetHighestTraverse()
 	return 70
 end
 
+function Tanks.GetLowestTraverse()
+	return 20
+end
+
 function Tanks.GetHighestElevation()
 	return 35
 end
 
+function Tanks.GetLowestElevation()
+	return 5
+end
+
 function Tanks.GetHighestTurningSpeed() 
 	return 100 -- true highest turning speed is 1500, lowering value for average of 
+end
+
+function Tanks.GetLowestTurningSpeed() 
+	return 20
 end
 
 Constants_API:Register('Tanks', Tanks)
