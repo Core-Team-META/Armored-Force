@@ -58,6 +58,15 @@ Assets {
         ChildIds: 3118396175290515684
         ChildIds: 17242462510632050702
         ChildIds: 11953997989496501199
+        ChildIds: 3494961465885448216
+        ChildIds: 16778651496570072150
+        ChildIds: 8122701992571499599
+        ChildIds: 6647286865294678816
+        ChildIds: 17206885869771678699
+        ChildIds: 523391126624966055
+        ChildIds: 5990010611675442897
+        ChildIds: 17787211579074455539
+        ChildIds: 5249531448652400695
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -1594,6 +1603,591 @@ Assets {
           Value: "mc:eproxyrelevance:medium"
         }
       }
+      Objects {
+        Id: 3494961465885448216
+        Name: "Spiderweb VFX"
+        Transform {
+          Location {
+            X: 1608.74817
+            Y: 1297.99805
+            Z: 1435.57251
+          }
+          Rotation {
+            Pitch: -18.994812
+            Yaw: 105.431969
+            Roll: 20.9355984
+          }
+          Scale {
+            X: 1.37149918
+            Y: 1.37149918
+            Z: 1.37149918
+          }
+        }
+        ParentId: 6480145192962646985
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Appearance"
+            Int: 1
+          }
+          Overrides {
+            Name: "bp:Edge Fade"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.8
+              G: 0.8
+              B: 0.8
+              A: 0.604000032
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 8285289427490478623
+          }
+          TeamSettings {
+          }
+          Vfx {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 16778651496570072150
+        Name: "Spiderweb VFX"
+        Transform {
+          Location {
+            X: 1824.58484
+            Y: -199.957031
+            Z: 1875.29321
+          }
+          Rotation {
+            Pitch: -13.9749756
+            Yaw: 92.97715
+            Roll: 4.13422775
+          }
+          Scale {
+            X: 1.37149918
+            Y: 1.37149918
+            Z: 1.37149918
+          }
+        }
+        ParentId: 6480145192962646985
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Appearance"
+            Int: 4
+          }
+          Overrides {
+            Name: "bp:Edge Fade"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.8
+              G: 0.8
+              B: 0.8
+              A: 0.625
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 8285289427490478623
+          }
+          TeamSettings {
+          }
+          Vfx {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 8122701992571499599
+        Name: "Spiderweb VFX"
+        Transform {
+          Location {
+            X: 941.056
+            Y: -828.762695
+            Z: 641.064392
+          }
+          Rotation {
+            Pitch: -2.96292114
+            Yaw: 31.1329632
+            Roll: -0.929657
+          }
+          Scale {
+            X: 0.544387281
+            Y: 0.544387281
+            Z: 0.544387281
+          }
+        }
+        ParentId: 6480145192962646985
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Appearance"
+            Int: 4
+          }
+          Overrides {
+            Name: "bp:Edge Fade"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.8
+              G: 0.8
+              B: 0.8
+              A: 0.78700006
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 8285289427490478623
+          }
+          TeamSettings {
+          }
+          Vfx {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 6647286865294678816
+        Name: "Spiderweb VFX"
+        Transform {
+          Location {
+            X: 1621.15662
+            Y: 1342.75684
+            Z: 386.973938
+          }
+          Rotation {
+            Pitch: -8.11901855
+            Yaw: 119.655411
+            Roll: -14.9867859
+          }
+          Scale {
+            X: 1.37149918
+            Y: 1.37149918
+            Z: 1.37149918
+          }
+        }
+        ParentId: 6480145192962646985
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Appearance"
+            Int: 4
+          }
+          Overrides {
+            Name: "bp:Edge Fade"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.8
+              G: 0.8
+              B: 0.8
+              A: 0.625
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 8285289427490478623
+          }
+          TeamSettings {
+          }
+          Vfx {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 17206885869771678699
+        Name: "Spiderweb VFX"
+        Transform {
+          Location {
+            X: -1333.01904
+            Y: -2424.51758
+            Z: 512.61731
+          }
+          Rotation {
+            Pitch: -3.09484863
+            Yaw: 9.02301311
+            Roll: -2.88552856
+          }
+          Scale {
+            X: 0.853702903
+            Y: 1.42786562
+            Z: 0.60743022
+          }
+        }
+        ParentId: 6480145192962646985
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Appearance"
+            Int: 4
+          }
+          Overrides {
+            Name: "bp:Edge Fade"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.8
+              G: 0.8
+              B: 0.8
+              A: 0.829000056
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 8285289427490478623
+          }
+          TeamSettings {
+          }
+          Vfx {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 523391126624966055
+        Name: "Spiderweb VFX"
+        Transform {
+          Location {
+            X: -3438.77441
+            Y: 317.611328
+            Z: 1825.55298
+          }
+          Rotation {
+            Pitch: 0.993751466
+            Yaw: -67.0627747
+            Roll: 16.4863834
+          }
+          Scale {
+            X: 1.97488606
+            Y: 1.42786252
+            Z: 0.607430756
+          }
+        }
+        ParentId: 6480145192962646985
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Appearance"
+            Int: 4
+          }
+          Overrides {
+            Name: "bp:Edge Fade"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.8
+              G: 0.8
+              B: 0.8
+              A: 0.625
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 8285289427490478623
+          }
+          TeamSettings {
+          }
+          Vfx {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 5990010611675442897
+        Name: "Spiderweb VFX"
+        Transform {
+          Location {
+            X: -1793.07483
+            Y: 1725.18945
+            Z: 791.832275
+          }
+          Rotation {
+            Pitch: -13.1954041
+            Yaw: 64.0354919
+            Roll: -36.0907593
+          }
+          Scale {
+            X: 0.680164695
+            Y: 0.697514772
+            Z: 0.176198
+          }
+        }
+        ParentId: 6480145192962646985
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Appearance"
+            Int: 4
+          }
+          Overrides {
+            Name: "bp:Edge Fade"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.8
+              G: 0.8
+              B: 0.8
+              A: 0.876000047
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 8285289427490478623
+          }
+          TeamSettings {
+          }
+          Vfx {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 17787211579074455539
+        Name: "Spiderweb VFX"
+        Transform {
+          Location {
+            X: -2251.89111
+            Y: 1505.07617
+            Z: 891.614807
+          }
+          Rotation {
+            Pitch: -19.1654358
+            Yaw: 7.07675028
+            Roll: -2.05291748
+          }
+          Scale {
+            X: 0.680164695
+            Y: 0.697514772
+            Z: 0.176198
+          }
+        }
+        ParentId: 6480145192962646985
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Appearance"
+            Int: 4
+          }
+          Overrides {
+            Name: "bp:Edge Fade"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.8
+              G: 0.8
+              B: 0.8
+              A: 0.749
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 8285289427490478623
+          }
+          TeamSettings {
+          }
+          Vfx {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 5249531448652400695
+        Name: "Spiderweb VFX"
+        Transform {
+          Location {
+            X: -2160.16113
+            Y: 5931.04297
+            Z: 1977.66089
+          }
+          Rotation {
+            Pitch: -19.1654358
+            Yaw: 7.07676411
+            Roll: -2.05291748
+          }
+          Scale {
+            X: 0.680164695
+            Y: 0.697514772
+            Z: 0.176198
+          }
+        }
+        ParentId: 6480145192962646985
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Appearance"
+            Int: 4
+          }
+          Overrides {
+            Name: "bp:Edge Fade"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.8
+              G: 0.8
+              B: 0.8
+              A: 0.712
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 8285289427490478623
+          }
+          TeamSettings {
+          }
+          Vfx {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
     }
     Assets {
       Id: 2874361563934245261
@@ -1701,6 +2295,15 @@ Assets {
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_instaFog_volume_vfx1"
+      }
+    }
+    Assets {
+      Id: 8285289427490478623
+      Name: "Spiderweb VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_web"
       }
     }
     PrimaryAssetId {
