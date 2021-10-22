@@ -2,7 +2,7 @@ Assets {
   Id: 14479132060396925380
   Name: "Custom Invisible_awk collider"
   PlatformAssetType: 13
-  SerializationVersion: 100
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 9431420845744582604
     ParameterOverrides {
