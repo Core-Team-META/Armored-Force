@@ -158,6 +158,7 @@ function SetClientData()
 	
 	local upgradeStatName = ""
 	local upgradeStatValue = 0
+	local currentViewRange = tankData.viewRange
 	
 	if driver.clientUserData.techTreeProgress then
 		for _, e in pairs(driver.clientUserData.techTreeProgress) do
@@ -175,7 +176,7 @@ function SetClientData()
 							end
 							
 							if upgradeStatName == "SPOTTING" then
-								viewRange = viewRange * (1 + upgradeStatValue)
+								currentViewRange = currentViewRange * (1 + upgradeStatValue)
 								print(id .. " " .. upgradeStatName .. " applied for " .. driver.name)
 							end
 						end
@@ -195,7 +196,7 @@ function SetClientData()
 	driver.clientUserData.currentTankData.id = identifier
 	driver.clientUserData.currentTankData.name = tankData.name
 	driver.clientUserData.currentTankData.teir = tankData.tier
-	driver.clientUserData.currentTankData.viewRange = tankData.viewRange
+	driver.clientUserData.currentTankData.viewRange = currentViewRange
 	driver.clientUserData.currentTankData.controlScript = script
 	driver.clientUserData.currentTankData.serverControlScript = tankControllerServer
 end

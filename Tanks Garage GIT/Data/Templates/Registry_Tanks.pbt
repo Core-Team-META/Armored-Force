@@ -28867,7 +28867,7 @@ Assets {
           }
           Overrides {
             Name: "cs:stat1Name"
-            String: "AUTOEXTINGUISHER"
+            String: "FREEEXTINGUISHER"
           }
           Overrides {
             Name: "cs:upgradeName"

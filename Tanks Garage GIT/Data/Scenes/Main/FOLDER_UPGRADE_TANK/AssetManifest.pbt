@@ -8,24 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16191173343733875993
-  Name: "Tank"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Military_Icon_001"
-  }
-}
-Assets {
-  Id: 15087097116682079611
-  Name: "Sci-fi Container 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_SciFi_Equip_Container_002"
-  }
-}
-Assets {
   Id: 14060330023043759337
   Name: "BG Flat 001"
   PlatformAssetType: 9
@@ -59,15 +41,6 @@ Assets {
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "TekoLight_ref"
-  }
-}
-Assets {
-  Id: 8939603238510824695
-  Name: "Icon Player"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Player"
   }
 }
 Assets {
@@ -122,15 +95,6 @@ Assets {
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "Baloo2Regular_ref"
-  }
-}
-Assets {
-  Id: 3576362623870181230
-  Name: "Icon Arrow Turn Left"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_ArrowTurnLeft"
   }
 }
 Assets {
