@@ -58,6 +58,7 @@ Assets {
         ChildIds: 3118396175290515684
         ChildIds: 17242462510632050702
         ChildIds: 11953997989496501199
+        ChildIds: 15046580696586268081
         ChildIds: 3494961465885448216
         ChildIds: 16778651496570072150
         ChildIds: 8122701992571499599
@@ -1604,6 +1605,77 @@ Assets {
         }
       }
       Objects {
+        Id: 15046580696586268081
+        Name: "Wispy Fog Volume VFX"
+        Transform {
+          Location {
+            X: -1016.6264
+            Y: 81.6005859
+            Z: 78.5378723
+          }
+          Rotation {
+            Yaw: 38.0367584
+          }
+          Scale {
+            X: 37.0902481
+            Y: 39.0544853
+            Z: 1
+          }
+        }
+        ParentId: 6480145192962646985
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.32368198
+              G: 0.711312056
+              B: 0.739
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "bp:Wind Speed"
+            Vector {
+              X: 10
+              Y: 10
+            }
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 9576447221174344611
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
         Id: 3494961465885448216
         Name: "Spiderweb VFX"
         Transform {
@@ -2295,6 +2367,15 @@ Assets {
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_instaFog_volume_vfx1"
+      }
+    }
+    Assets {
+      Id: 9576447221174344611
+      Name: "Wispy Fog Volume VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_fog_volume_vfx"
       }
     }
     Assets {
