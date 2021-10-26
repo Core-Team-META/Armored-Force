@@ -167,17 +167,17 @@ API.TEAM = {
 }
 
 API.XP_TIER_VALUE = {
-    TIER1 = 300,
-    TIER2 = 500,
-    TIER3 = 700,
-    TIER4 = 900
+    TIER1 = 150, --300,
+    TIER2 = 250, --500,
+    TIER3 = 350, --700,
+    TIER4 = 450 --900
 }
 
 API.SILVER_TIER_VALUE = {
-    TIER1 = 500,
-    TIER2 = 800,
-    TIER3 = 1000,
-    TIER4 = 1500
+    TIER1 = 250, --500,
+    TIER2 = 400, --800,
+    TIER3 = 500, --1000,
+    TIER4 = 750 --1500
 }
 
 API.XP_GAIN_REASON = {
@@ -192,6 +192,7 @@ API.XP_GAIN_TEXT = {
 
 API.RANK_NAME = "Rank"
 API.TUTORIAL_PROGRESS = "TutorialProgress"
+API.TUTORIAL_REWARD_PROGRESS = "TutorialReward"
 
 API.SILVER_ICON = "56EA955F1A2355F0:Fantasy Craft Bar 002"
 API.GOLD_ICON = "11CFC7556A4E84B5:Fantasy Gold 001"

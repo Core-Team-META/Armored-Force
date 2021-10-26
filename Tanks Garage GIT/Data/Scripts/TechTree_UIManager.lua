@@ -107,6 +107,7 @@ local tankPurchaseImage = script:GetCustomProperty('TankPurchaseImage'):WaitForO
 local BUTTON_GOTO_TECHTREE = script:GetCustomProperty('BUTTON_GOTO_TECHTREE'):WaitForObject()
 local BUTTON_TECHTREE_SHOP = script:GetCustomProperty('BUTTON_TECHTREE_SHOP'):WaitForObject()
 local BUTTON_PREMIUM_SHOP = script:GetCustomProperty('BUTTON_PREMIUM_SHOP'):WaitForObject()
+local TutorialCompletePopupNoReward = script:GetCustomProperty("TutorialCompletePopupNoReward")
 
 local STATS_TANK_CONTAINER = script:GetCustomProperty('STATS_TANK_CONTAINER'):WaitForObject()
 local UPGRADE_TANK_CONTAINER = script:GetCustomProperty('UPGRADE_TANK_CONTAINER'):WaitForObject()
@@ -197,6 +198,10 @@ local confirmButtonFunction = ''
 local prereqLineInactiveColor = Color.New(0.021, 0.021, 0.021, 1)
 local prereqLineActiveColor = Color.New(0.153, 0.313, 0.004, 1)
 
+local baseSilverColorText = Color.New(1,1,1,1)
+local baseTankPartsColorText = Color.New(0.24,0.788,1,1)
+local baseUniversalTankPartsColorText = Color.New(0.545,0.775,0,1)
+local insufficientColorText = Color.New(0.43,0,0,1)
 
 ------------------------------------------------------------------------------------
 -- Completed UI references. Remove above ones as they are made obsolete
@@ -335,15 +340,20 @@ function PopulateOwnedTanks()
             if (tank.id == '24') then
                 ownedTank24 = true
             end
+            
+            --print("tank id: " .. tostring(tank.id))
+            local tankIDObject = TECH_TREE_CONTENT:FindDescendantByName(tank.id)
+            --print("Tank id object: " .. tostring(tankIDObject))
+            local objectParent = tankIDObject.parent
+            --print("Tank id object parent: " .. tostring(objectParent.name))
 
-            World.FindObjectByName(tank.id).parent:FindChildByName('UNLOCKED_' .. tank.id).visibility =
-                Visibility.FORCE_ON
+            objectParent:FindChildByName('UNLOCKED_' .. tank.id).visibility = Visibility.FORCE_ON
             if LOCAL_PLAYER:GetResource(tankAPI.EquipResource) == tonumber(tank.id) then
-                World.FindObjectByName(tank.id).parent:FindChildByName('UNLOCKED_' .. tank.id):FindChildByName(
+                objectParent:FindChildByName('UNLOCKED_' .. tank.id):FindChildByName(
                         'EQUIPPEDFRAME'
                     ).visibility = Visibility.FORCE_ON
             else
-                World.FindObjectByName(tank.id).parent:FindChildByName('UNLOCKED_' .. tank.id):FindChildByName(
+                objectParent:FindChildByName('UNLOCKED_' .. tank.id):FindChildByName(
                         'EQUIPPEDFRAME'
                     ).visibility = Visibility.FORCE_OFF
             end
@@ -607,6 +617,7 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
     local button = CONFIRM_TANK_UPGRADE:FindDescendantByName('CONFIRM_WINDOW_CONFIRM_BUTTON')
 end
 
+-- TODO_DELETE I believe this function isn't used anymore
 function ConfirmButtonClicked()
     if (confirmButtonFunction == 'EQUIP') then
         Events.BroadcastToServer('CHANGE_EQUIPPED_TANK', tankDetails.id)
@@ -617,7 +628,8 @@ function ConfirmButtonClicked()
     elseif (confirmButtonFunction == 'PURCHASE') then
         local prereqs = GetPrerequisiteRPValues(tankDetails.id)
         Events.BroadcastToServer('PurchaseTank', tankDetails.id, prereqs)
-        UI.PrintToScreen(tankDetails.name .. ' purchased.')
+        Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "TANK PURCHASED", "You have successfully purchased the tank.", "OK")
+        --UI.PrintToScreen(tankDetails.name .. ' purchased.')
         --
         --[[for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 			if(tank.id == tankDetails.id) then
@@ -629,8 +641,8 @@ function ConfirmButtonClicked()
 					tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
 				end
 			end
-		end]] CONFIRM_TANK_UPGRADE.visibility =
-            Visibility.FORCE_OFF
+		end]]
+        CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
     else
         -- Most likely in can't afford state
     end
@@ -992,6 +1004,7 @@ function PurchaseTank()
     end
 end
 
+-- TODO_DELETE (I believe this function isn't being used anymore)
 -- Upgrade the tank's progress
 function UpgradeTank()
     if (tankDetails.purchasedtank) then
@@ -1036,6 +1049,7 @@ function UpgradeTank()
     PopulateCurrencyUI()
 end
 
+-- TODO_DELETE (I believe this function isn't used anymore)
 -- Set the selected tank's progress to researched
 function ResearchTank(rp, researchedTankId, prereqId, usingFreeRP)
     if (rp < tankDetails.tankResearchCost) then
@@ -1166,8 +1180,8 @@ function UpgradeWeapon()
     end
 
     Events.BroadcastToServer('PurchaseWeapon', tankDetails.id)
+    Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "WEAPON UPGRADED", "Your tank's turret has been successfully upgraded.", "OK")
 
-    UI.PrintToScreen(tankDetails.name .. ' weapon purchased.')
     for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
         if (tank.id == tankDetails.id) then
             tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
@@ -1197,7 +1211,6 @@ function UpgradeArmor()
     --print("Purchase Cost: " .. tankDetails.armorPurchaseCost)
     local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
     if (silver < tankDetails.armorPurchaseCost) then
-        -- DEBUG
         ShowNotEnoughCurrencyMessage('Armor')
         SFX_DENIED:Play()
         return
@@ -1214,14 +1227,13 @@ function UpgradeArmor()
 
     Events.BroadcastToServer('PurchaseArmor', tankDetails.id)
 
-    UI.PrintToScreen(tankDetails.name .. ' armor purchased.')
+    Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "ARMOR UPGRADED", "Your tank's armor has been successfully upgraded.", "OK")   
     for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
         if (tank.id == tankDetails.id) then
             tank.armorProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
             CheckForTutorialCompletion()
         end
     end
-    --PopulateSelectedTankPanel(tankDetails.id)
     CloseUpgradeConfirmWindow()
     PopulateCurrencyUI()
 end
@@ -1257,18 +1269,14 @@ function UpgradeEngine()
 
     Events.BroadcastToServer('PurchaseEngine', tankDetails.id)
 
-    UI.PrintToScreen(tankDetails.name .. ' engine purchased.')
+    Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "ENGINE UPGRADED", "Your tank's engine has been successfully upgraded.", "OK")   
     for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
         if (tank.id == tankDetails.id) then
             tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
 
             if LOCAL_PLAYER.clientUserData.tutorial6 == 1 then
                 LOCAL_PLAYER.clientUserData.tutorial6 = 2
-                local panel =
-                    World.SpawnAsset(
-                    TutorialStepComplete,
-                    {parent = UPGRADE_TANK_CONTAINER:FindAncestorByName('MAIN_UI')}
-                )
+                CheckForTutorialCompletion()
             end
         end
     end
@@ -1652,6 +1660,10 @@ function PopulateHoverTankStats(tankData)
         local topSpeed = entry.topSpeed
         local acceleration = entry.acceleration
         local turningSpeed = entry.turningSpeed
+
+        if topSpeed > tankAPI.GetHighestTopSpeed() then
+        	topSpeed = tankAPI.GetHighestTopSpeed()
+        end
         
         if turningSpeed > 1000 then
         	turningSpeed = math.floor(turningSpeed / 20)
@@ -1666,6 +1678,10 @@ function PopulateHoverTankStats(tankData)
         local topSpeed = entry.topSpeedUpgraded
         local acceleration = entry.accelerationUpgraded
         local turningSpeed = entry.turningSpeedUpgraded -- TODO
+        
+        if topSpeed > tankAPI.GetHighestTopSpeed() then
+        	topSpeed = tankAPI.GetHighestTopSpeed()
+        end
         
         if turningSpeed > 1000 then
         	turningSpeed = math.floor(turningSpeed / 20)
@@ -1695,10 +1711,12 @@ function UnhoverTank()
 end
 
 -- Function when user denies use of Free RP to research
+-- TODO_DELETE I don't think this function is used anymore
 function DenyFreeRP()
     useFreeRPPanel.visibility = Visibility.FORCE_OFF
 end
 
+-- TODO_DELETE, I don't think this function is used anymore
 -- Function when user confirms using Free RP to research
 function AcceptFreeRP()
     local event = Events.BroadcastToServer('Research' .. researchingName, tankDetails.id, true)
@@ -1797,7 +1815,7 @@ function OpenTankUpgradeWindow(button, id)
 
     if tostring(progress.weaponProgress) ~= tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
         UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_CONTAINER_WEAPON').visibility = Visibility.FORCE_ON
-        UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_TURRET').isInteractable = true
+        
         UPGRADE_TANK_CONTAINER:FindDescendantByName('UPGRADE_BUTTON_CONTAINER_WEAPON'):FindDescendantByName(
                 'BUTTONTEXT_LIGHT'
             ).text = 'UPGRADE'
@@ -1814,6 +1832,26 @@ function OpenTankUpgradeWindow(button, id)
         UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_UNIVERSAL_WEAPON').text =
             'Universal Parts: ' .. tostring( math.max(entry.weaponResearchCost- LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP") ,0)  )
         UPGRADE_TANK_CONTAINER:FindDescendantByName('TURRET_LEVEL').text = 'Lv1' -- TODO
+
+        SetTextColorForResource(baseSilverColorText,
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_SILVER_WEAPON'),
+        LOCAL_PLAYER:GetResource(Constants_API.SILVER), 
+        entry.weaponPurchaseCost)
+        SetTextColorForResource(baseTankPartsColorText,
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_TP_WEAPON'),
+        math.min(entry.weaponResearchCost,LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP")),
+        entry.weaponResearchCost)
+        SetTextColorForResource(baseUniversalTankPartsColorText,
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_UNIVERSAL_WEAPON'),
+        LOCAL_PLAYER:GetResource(Constants_API.FREERP), 
+        entry.weaponResearchCost)
+        
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_TURRET').isInteractable =
+            SetUpgradeButtonInteractability(LOCAL_PLAYER:GetResource(Constants_API.SILVER),
+            math.min(entry.weaponResearchCost,LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP")),
+            LOCAL_PLAYER:GetResource(Constants_API.FREERP),
+            entry.weaponPurchaseCost,
+            entry.weaponResearchCost)
     else
         UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_CONTAINER_WEAPON').visibility = Visibility.FORCE_OFF
         UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_TURRET').isInteractable = false
@@ -1830,8 +1868,7 @@ function OpenTankUpgradeWindow(button, id)
     end
 
     if tostring(progress.armorProgress) ~= tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_CONTAINER_ARMOR').visibility = Visibility.FORCE_ON
-        UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_SHELL').isInteractable = true
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_CONTAINER_ARMOR').visibility = Visibility.FORCE_ON        
         UPGRADE_TANK_CONTAINER:FindDescendantByName('UPGRADE_BUTTON_CONTAINER_ARMOR'):FindDescendantByName(
                 'BUTTONTEXT_LIGHT'
             ).text = 'UPGRADE'
@@ -1849,6 +1886,26 @@ function OpenTankUpgradeWindow(button, id)
             'Universal Parts: ' .. tostring(math.max( entry.armorResearchCost- LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP"),0)   )
  
         UPGRADE_TANK_CONTAINER:FindDescendantByName('SHELL_LEVEL').text = 'Lv1' -- TODO
+
+        SetTextColorForResource(baseSilverColorText,
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_SILVER_ARMOR'), 
+        LOCAL_PLAYER:GetResource(Constants_API.SILVER),
+        entry.armorPurchaseCost)
+        SetTextColorForResource(baseTankPartsColorText,
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_TP_ARMOR'),
+        math.min(entry.armorResearchCost,LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP")),
+        entry.armorResearchCost)
+        SetTextColorForResource(baseUniversalTankPartsColorText,
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_UNIVERSAL_ARMOR'),
+        LOCAL_PLAYER:GetResource(Constants_API.FREERP),         
+        entry.armorResearchCost)
+
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_SHELL').isInteractable =
+            SetUpgradeButtonInteractability(LOCAL_PLAYER:GetResource(Constants_API.SILVER),
+            math.min(entry.armorResearchCost,LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP")),
+            LOCAL_PLAYER:GetResource(Constants_API.FREERP),
+            entry.armorPurchaseCost,
+            entry.armorResearchCost)
     else
         UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_CONTAINER_ARMOR').visibility = Visibility.FORCE_OFF
         UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_SHELL').isInteractable = false
@@ -1865,8 +1922,7 @@ function OpenTankUpgradeWindow(button, id)
     end
 
     if tostring(progress.engineProgress) ~= tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_CONTAINER_ENGINE').visibility = Visibility.FORCE_ON
-        UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_ENGINE').isInteractable = true
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_CONTAINER_ENGINE').visibility = Visibility.FORCE_ON        
         UPGRADE_TANK_CONTAINER:FindDescendantByName('UPGRADE_BUTTON_CONTAINER_ENGINE'):FindDescendantByName(
                 'BUTTONTEXT_LIGHT'
             ).text = 'UPGRADE'
@@ -1884,6 +1940,26 @@ function OpenTankUpgradeWindow(button, id)
             'Universal Parts: ' .. tostring(math.max( entry.mobilityResearchCost- LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP"),0)   )
         
         UPGRADE_TANK_CONTAINER:FindDescendantByName('ENGINE_LEVEL').text = 'Lv1' -- TODO
+
+        SetTextColorForResource(baseSilverColorText,
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_SILVER_ENGINE'), 
+        LOCAL_PLAYER:GetResource(Constants_API.SILVER),
+        entry.mobilityPurchaseCost)
+        SetTextColorForResource(baseTankPartsColorText,
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_TP_ENGINE'),
+        math.min(entry.mobilityResearchCost,LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP")),
+        entry.mobilityResearchCost)
+        SetTextColorForResource(baseUniversalTankPartsColorText,
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_UNIVERSAL_ENGINE'),
+        LOCAL_PLAYER:GetResource(Constants_API.FREERP), 
+        entry.mobilityResearchCost)
+
+        UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_ENGINE').isInteractable =
+            SetUpgradeButtonInteractability(LOCAL_PLAYER:GetResource(Constants_API.SILVER),
+            math.min(entry.mobilityResearchCost,LOCAL_PLAYER:GetResource("T_" .. entry.id .. "RP")),
+            LOCAL_PLAYER:GetResource(Constants_API.FREERP),
+            entry.mobilityPurchaseCost,
+            entry.mobilityResearchCost)
     else
         UPGRADE_TANK_CONTAINER:FindDescendantByName('COSTS_CONTAINER_ENGINE').visibility = Visibility.FORCE_OFF
         UPGRADE_TANK_CONTAINER:FindDescendantByName('BUTTON_UPGRADE_ENGINE').isInteractable = false
@@ -1969,6 +2045,9 @@ function PopulateEquippedTankStats(entry)
     if tostring(tankProgress.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
         topSpeed = entry.topSpeedUpgraded
     end
+    if topSpeed > tankAPI.GetHighestTopSpeed() then
+    	topSpeed = tankAPI.GetHighestTopSpeed()
+    end
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_8').progress = topSpeed / tankAPI.GetHighestTopSpeed()
     local acceleration = entry.acceleration
     if tostring(tankProgress.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
@@ -1979,6 +2058,9 @@ function PopulateEquippedTankStats(entry)
     if tostring(tankProgress.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED) then
         turningSpeed = entry.turningSpeedUpgraded
     end -- TODO
+    if turningSpeed > 1000 then
+    	turningSpeed = math.floor(turningSpeed / 20)
+    end
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_10').progress = turningSpeed / tankAPI.GetHighestTurningSpeed()
     -- Set upgraded versions
     local damage = entry.damageUpgraded
@@ -2005,11 +2087,15 @@ function EquipTank()
 end
 
 function CheckForTutorialCompletion()
-    if LOCAL_PLAYER.clientUserData.tutorial6 <= 1 then
+    if LOCAL_PLAYER.clientUserData.tutorial6 <= 1 and LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.Upgrade then
         LOCAL_PLAYER.clientUserData.tutorial6 = 2
-        local panel =
-            World.SpawnAsset(TutorialStepComplete, {parent = UPGRADE_TANK_CONTAINER:FindAncestorByName('MAIN_UI')})
-        panel.lifeSpan = 4
+        if LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialRewardResource()) < API_Tutorial.TutorialPhase.Upgrade then
+            local panel = World.SpawnAsset(TutorialStepComplete, {parent = UPGRADE_TANK_CONTAINER:FindAncestorByName('MAIN_UI')})
+            panel.lifeSpan = 3
+        else
+            local panel = World.SpawnAsset(TutorialCompletePopupNoReward, {parent = UPGRADE_TANK_CONTAINER:FindAncestorByName('MAIN_UI')})
+            panel.lifeSpan = 3
+        end
         Events.BroadcastToServer('AdvanceTutorial', API_Tutorial.TutorialPhase.RepairTank, true)
     end
 end
@@ -2018,6 +2104,23 @@ function GoToTechTree()
     SFX_CLICK:Play()
     Events.Broadcast('OutsideActivation', BUTTON_TECHTREE_SHOP)
     Task.Wait(2)
+end
+
+function SetTextColorForResource(baseColorText, object, currency, cost)
+    print(baseColorText)
+    print(currency)
+    print(cost)
+    if currency < cost then
+        object:SetColor(insufficientColorText)
+    else
+        object:SetColor(baseColorText)
+    end
+end
+
+function SetUpgradeButtonInteractability(silver, tankParts, universalTankParts, purchaseCost, researchCost)
+    if silver < purchaseCost then return false end
+    if (tankParts + universalTankParts) < researchCost then return false end
+    return true
 end
 
 Task.Wait(2)

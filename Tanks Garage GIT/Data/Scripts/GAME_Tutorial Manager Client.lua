@@ -4,6 +4,7 @@ local API_Tutorial = require(script:GetCustomProperty("API_Tutorial"))
 -- References
 local Tutorial_RepairTankPanel = script:GetCustomProperty("Tutorial_RepairTankPanel"):WaitForObject()
 local TutorialCompletePopup = script:GetCustomProperty("TutorialCompletePopup")
+local TutorialCompletePopupNoReward = script:GetCustomProperty("TutorialCompletePopupNoReward")
 
 -- Local properties
 local LOCAL_PLAYER = Game.GetLocalPlayer()
@@ -34,13 +35,18 @@ function GotoShootingRange(button)
 	Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_OFF
 end
 
-function AdvanceTutorial(phase, giveRewards)
+function AdvanceTutorial(phase, toPhase, giveRewards)
 --print("Advancing tutorial to phase: " .. tostring(phase))
 --print("Tutorial currently: " .. tostring(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource())))
-	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) < phase) then
-		local panel = World.SpawnAsset(TutorialCompletePopup, {parent = script.parent:FindChildByName("Tutorial UI")})
-		panel.lifeSpan = 3
-		Events.BroadcastToServer("AdvanceTutorial",  phase, giveRewards or true)
+	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) == phase) then
+		if LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialRewardResource()) < phase then					
+			local panel = World.SpawnAsset(TutorialCompletePopup, {parent = World.FindObjectByName("Tutorial UI")})
+			panel.lifeSpan = 3
+		else
+			local panel = World.SpawnAsset(TutorialCompletePopupNoReward, {parent = World.FindObjectByName("Tutorial UI")})
+			panel.lifeSpan = 3
+		end
+		Events.BroadcastToServer("AdvanceTutorial",  toPhase, giveRewards or true)
 	end
 end
 

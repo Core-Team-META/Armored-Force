@@ -31,6 +31,7 @@ local function SetRoundValues(dataTbl)
     LOCAL_PLAYER.clientUserData.roundStats = {}
     for key, value in pairs(dataTbl) do
         LOCAL_PLAYER.clientUserData.roundStats[key] = value
+        print(tostring(key) .. " : " .. tostring(value))
     end
     Events.Broadcast("LAST_ROUND_STATS")
 end

@@ -65,6 +65,8 @@ function OnPlayerRespawned(player, playerStart)
     player:DisableRagdoll()
     RemovePlayerEquipment(player)
 
+    player:SetWorldPosition(FindClearSpawnPoint(player.team))
+
     --player.isVisible = false
     Task.Wait(0.25)
 
@@ -105,8 +107,12 @@ function GivePlayerEquipment(player, playerStart)
         {parent = tankGarage, position = playerPosition, rotation = playerRotation}
     )
     Task.Wait(0.1)
+    
     _G.lookup.tanks[player] = {team = player.team, tank = equippedTank[player]}
-    equippedTank[player].context.AssignDriver(player, playerStart)
+
+    if equippedTank[player] then
+     equippedTank[player].context.AssignDriver(player, playerStart)
+    end
 end
 
 function SpawnAITank(position, team, id)
@@ -162,34 +168,60 @@ end
 -- nil OnPlayerLeft(Player)
 -- Removes equipment
 function OnPlayerLeft(player)
-    if true then
-        RemovePlayerEquipment(player)
-    else
+   -- if true then
+    --    RemovePlayerEquipment(player)
+    --else
         -- Code to replace player tanks with AI controllers when players leave.
         -- Currently disabled while I work on it.  -CJC
 
-        if equippedTank[player] and equippedTank[player]:IsValid() then
-            --print(string.format("Converting player %s to AI.", player.name))
-            if Object.IsValid(_G.lookup.tanks[player].chassis) then
-                _G.lookup.tanks[player].chassis:RemoveDriver()
-            else
-                warn("Could not find chassis!!!")
-            end
-            local newAI = AIPlayer.New()
-            --newAI:SetWorldPosition(player:GetWorldPosition())
-            newAI.team = player.team
-            newAI.tankId = 34
-            newAI.name = "Robo-" .. player.name
-            _G.lookup.tanks[newAI] = _G.lookup.tanks[player]
-            _G.lookup.tanks[player] = nil --{team = newAI.team, tank = equippedTank[newAI]}
+    local currentState = mainManagerServer:GetCustomProperty("GameState")
 
-            equippedTank[newAI] = equippedTank[player]
-            equippedTank[player] = nil
 
-            equippedTank[newAI].context.AssignDriver(newAI)
-        end
+    if currentState == "MATCH_STATE" and equippedTank[player] and equippedTank[player]:IsValid() and not player.isDead then
+        RemovePlayerEquipment(player)
+        
+        local playerPosition = player:GetWorldPosition()
+        local playerRotation = player:GetWorldRotation()
+
+        local id = player:GetResource(tankApi.EquipResource)
+        local playerTeam = player.team
+        local newName = player.name.." (AI)"
+        local hp = player.hitPoints / player.maxHitPoints
+        local kills = player.kills
+        local playerDamage = player:GetResource("TankDamage")
+        local tank = tankApi.GetTankFromId(tonumber(id))
+
+        local workingTanks = {[1] = {1, 18}, [2] = {2, 3, 4, 19, 7}, [3] = {8, 7, 24}, [4] = {11, 28, 29, 27}}
+
+         id = workingTanks[tank.tier][math.random(1, #workingTanks[tank.tier])]
+        Task.Wait()
+
+        local newAI = AIPlayer.New()
+
+        newAI:SetWorldPosition(playerPosition)
+        newAI:SetResource("TankDamage", playerDamage)
+
+        equippedTank[newAI] =
+            World.SpawnAsset(
+            GetEquippedTankTemplate(nil, id),
+            {parent = tankGarage, position = playerPosition, rotation = playerRotation}
+        )
+        --print("spawned", equippedTank[newAI])
+        Task.Wait()
+
+        newAI.team = playerTeam
+        newAI.tankId = id
+        newAI.name = newName
+        newAI.kills = kills
+
+        _G.lookup.tanks[newAI] = {team = newAI.team, tank = equippedTank[newAI]}
+        
+        equippedTank[newAI].context.AssignDriver(newAI, hp)
+    else
+        RemovePlayerEquipment(player)
     end
 end
+
 
 function FindClearSpawnPoint(team)
     local position = Vector3.ZERO
@@ -225,71 +257,7 @@ function FindClearSpawnPoint(team)
     --print("Giving up, couldn't find a spot.")
     return position
 end
-
-local workingTanks = {t1 = {1, 18}, t2 = {2, 3, 4, 19, 7}, t3 = {8}, t4 = {11, 24}}
-
-function FillTeamsWithAI(teamSize, teamBalance)
-    if teamSize == nil then
-        teamSize = 2
-    end
-    local rs = RandomStream.New()
-    local teamOneBalance = false
-    local teamTwoBalance = false
-    local teamOneCount = 0
-    local teamTwoCount = 0
-
-    for _, player in ipairs(Game.GetPlayers()) do
-        if player.team == 1 then
-            teamOneCount = teamOneCount + 1
-        elseif player.team == 2 then
-            teamTwoCount = teamTwoCount + 1
-        end
-    end
-
-    local team = teamOneCount > teamTwoCount and 2 or teamOneCount < teamTwoCount and 1 or 1
-        local count = 1
-    while not teamOneBalance and not teamTwoBalance do
-        count = count + 1
-        local currentCount = #_G.utils.GetTankDrivers({includeTeams = team, ignoreDead = true})
-
-        local diff = teamBalance[3 - team] - teamBalance[team]
-       
-        if currentCount <= teamSize - 1 then
-            local id
-
-            if diff <= 1 then
-                id = workingTanks.t1[math.random(1, #workingTanks.t1)]
-                teamBalance[team] = teamBalance[team] + 1
-            elseif diff == 2 then
-                id = workingTanks.t2[math.random(1, #workingTanks.t2)]
-                teamBalance[team] = teamBalance[team] + 2
-            elseif diff == 3 then
-                id = workingTanks.t3[math.random(1, #workingTanks.t3)]
-                teamBalance[team] = teamBalance[team] + 3
-            elseif diff == 4 then
-                id = workingTanks.t4[math.random(1, #workingTanks.t4)]
-                teamBalance[team] = teamBalance[team] + 4
-            end
-            if id then
-                SpawnAITank(FindClearSpawnPoint(team), team, id)
-            else
-                id = 3
-                teamBalance[team] = teamBalance[team] + 2
-                SpawnAITank(FindClearSpawnPoint(team), team, id)
-            end
-        else
-            if team == 1 then
-                teamOneBalance = true
-            elseif team == 2 then
-                teamTwoBalance = true
-            end
-        end
-        team = 3 - team
-        print("Count " .. tostring(count) .. " Team: " .. tostring(team) .. " Diff: " ..tostring(diff))
-    end
-    print("Team Balance:", teamBalance[1], teamBalance[2])
-end
-
+ 
 function RemoveAllAI()
 end
 
@@ -297,8 +265,7 @@ function SpawnTestAI(player)
     local offset = Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 3000 + Vector3.UP * 1000
     SpawnAITank(player:GetWorldPosition() + offset, player.team % 2 + 1)
 end
-
-Events.Connect("FILL_TEAMS_WITH_AI", FillTeamsWithAI)
+ 
 Events.Connect("REMOVE_ALL_AI", RemoveAllAI)
 
 for key, player in pairs(Game.GetPlayers()) do
@@ -310,3 +277,7 @@ Game.playerLeftEvent:Connect(OnPlayerLeft)
 Events.Connect("RESET_TANKS", ResetAllVehicles)
 Events.ConnectForPlayer("CHANGE_EQUIPPED_TANK", ChangeEquippedTank)
 Events.Connect("SET_EQUIPPED_TANK", ChangeEquippedTank)
+Events.Connect("SPAWN_AI_TANK",function (position, team, id)
+    if not position then position = FindClearSpawnPoint(team) end 
+    SpawnAITank(position, team, id)
+end)

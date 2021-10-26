@@ -59,7 +59,9 @@ function OnMenuButtonClicked(button,ignoreSpamPrevent)
 	
 	spamPrevent = true
 
-	clickSFX:Play()
+	if button == homeButton then
+		clickSFX:Play() ;print("Click")
+	end
 	
 	for b, e in pairs(menuEntries) do
 		if e.activeMode then
@@ -101,7 +103,7 @@ end
 
 function OnChooseModeClicked(button)
 
-	clickSFX:Play()
+	clickSFX:Play() ;print("Click")
 	
 	if not chooseModeState then
 		chooseModeDropDown.y = LOWERED_MODE_SELECT
@@ -123,7 +125,7 @@ end
 
 function OnGameModeClicked(button)
 	
-	clickSFX:Play()
+	clickSFX:Play() ;print("Click")
 	
 	selectedGameMode = menuEntries[button].command
 	
@@ -151,7 +153,7 @@ end
 
 function OnDeployClicked(button)
 
-	clickSFX:Play()
+	clickSFX:Play() ;print("Click")
 	
 	if selectedGameMode == "SHOOTING_RANGE" then
 		Events.Broadcast("ENABLE_GARAGE_COMPONENT", selectedGameMode)	

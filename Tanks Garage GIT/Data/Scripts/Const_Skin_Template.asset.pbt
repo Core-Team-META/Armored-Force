@@ -54,6 +54,10 @@ Assets {
         Bool: false
       }
       Overrides {
+        Name: "cs:onlyForEvent"
+        String: ""
+      }
+      Overrides {
         Name: "cs:skinID:isrep"
         Bool: false
       }
@@ -139,5 +143,5 @@ Assets {
       }
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 101
 }

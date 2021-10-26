@@ -1,7 +1,7 @@
 Name: "DailyChallenges"
-RootId: 3976470939927333707
+RootId: 18383511375377970544
 Objects {
-  Id: 10406731039874004067
+  Id: 9137761750920116121
   Name: "GAMEHELPER_DailyChallenges"
   Transform {
     Location {
@@ -14,8 +14,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3976470939927333707
-  ChildIds: 16384022816068470598
+  ParentId: 18383511375377970544
+  ChildIds: 15547475623944889147
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -33,7 +33,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16384022816068470598
+  Id: 15547475623944889147
   Name: "GAMEHELPER_DailyChallengesServer"
   Transform {
     Location {
@@ -46,7 +46,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10406731039874004067
+  ParentId: 9137761750920116121
   UnregisteredParameters {
     Overrides {
       Name: "cs:MetaAbilityProgressionConstants_API"

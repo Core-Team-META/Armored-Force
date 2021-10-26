@@ -2748,7 +2748,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Required"
-            Float: 50
+            Float: 100
           }
           Overrides {
             Name: "cs:ID"
@@ -2774,7 +2774,7 @@ Assets {
           }
           Overrides {
             Name: "cs:PreRequisite"
-            String: "ASKI,ACLA"
+            String: "ACLA"
           }
           Overrides {
             Name: "cs:GivesReward"
@@ -2953,7 +2953,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Required"
-            Float: 50
+            Float: 500
           }
           Overrides {
             Name: "cs:ID"
@@ -2979,7 +2979,7 @@ Assets {
           }
           Overrides {
             Name: "cs:PreRequisite"
-            String: "ASKI,ACLA,AASS"
+            String: "AASS"
           }
           Overrides {
             Name: "cs:GivesReward"
@@ -3594,7 +3594,7 @@ Assets {
           }
           Overrides {
             Name: "cs:PreRequisite"
-            String: "ALP,ASP"
+            String: "ASP"
           }
           Overrides {
             Name: "cs:GivesReward"
@@ -4209,7 +4209,7 @@ Assets {
           }
           Overrides {
             Name: "cs:PreRequisite"
-            String: "AMP,AMS"
+            String: "AMS"
           }
           Overrides {
             Name: "cs:GivesReward"
@@ -4824,7 +4824,7 @@ Assets {
           }
           Overrides {
             Name: "cs:PreRequisite"
-            String: "AHP,AHS"
+            String: "AHS"
           }
           Overrides {
             Name: "cs:GivesReward"
@@ -5439,7 +5439,7 @@ Assets {
           }
           Overrides {
             Name: "cs:PreRequisite"
-            String: "ADP,ADS"
+            String: "ADS"
           }
           Overrides {
             Name: "cs:GivesReward"
@@ -5624,7 +5624,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Enabled"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:Icon"
@@ -5650,7 +5650,7 @@ Assets {
           }
           Overrides {
             Name: "cs:IsTournament"
-            Bool: true
+            Bool: false
           }
         }
         Collidable_v2 {
@@ -5747,7 +5747,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Enabled"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:Icon"
@@ -5773,7 +5773,7 @@ Assets {
           }
           Overrides {
             Name: "cs:IsTournament"
-            Bool: true
+            Bool: false
           }
         }
         Collidable_v2 {
@@ -5870,7 +5870,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Enabled"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:Icon"
@@ -5896,7 +5896,7 @@ Assets {
           }
           Overrides {
             Name: "cs:IsTournament"
-            Bool: true
+            Bool: false
           }
         }
         Collidable_v2 {
@@ -5993,7 +5993,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Enabled"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:Icon"
@@ -6019,7 +6019,7 @@ Assets {
           }
           Overrides {
             Name: "cs:IsTournament"
-            Bool: true
+            Bool: false
           }
         }
         Collidable_v2 {
@@ -6312,5 +6312,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 101
 }

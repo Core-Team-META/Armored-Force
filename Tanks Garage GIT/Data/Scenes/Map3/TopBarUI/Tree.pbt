@@ -1,7 +1,7 @@
 Name: "TopBarUI"
-RootId: 6684576052781670808
+RootId: 3256721253458294509
 Objects {
-  Id: 17760906444553053848
+  Id: 10483405953910419422
   Name: "ClientContext"
   Transform {
     Location {
@@ -14,8 +14,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6684576052781670808
-  ChildIds: 11272969449858691162
+  ParentId: 3256721253458294509
+  ChildIds: 17894696310946881461
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -32,7 +32,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11272969449858691162
+  Id: 17894696310946881461
   Name: "TopBarTanksRemaining_Client"
   Transform {
     Location {
@@ -45,42 +45,42 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17760906444553053848
+  ParentId: 10483405953910419422
   UnregisteredParameters {
     Overrides {
       Name: "cs:FriendlyTeamPanel"
       ObjectReference {
-        SelfId: 11885538614727251143
+        SelfId: 8172211734208951557
       }
     }
     Overrides {
       Name: "cs:EnemyTeamPanel"
       ObjectReference {
-        SelfId: 16382621269302038466
+        SelfId: 1937722308730517704
       }
     }
     Overrides {
       Name: "cs:TEAMCOUNT_1"
       ObjectReference {
-        SelfId: 15120525689167382547
+        SelfId: 6437797183564356868
       }
     }
     Overrides {
       Name: "cs:TEAMCOUNT_1_SHINE"
       ObjectReference {
-        SelfId: 7083669280722297231
+        SelfId: 10732752908610576092
       }
     }
     Overrides {
       Name: "cs:TEAMCOUNT_2"
       ObjectReference {
-        SelfId: 2206347752009941891
+        SelfId: 7785625200458911324
       }
     }
     Overrides {
       Name: "cs:TEAMCOUNT_2_SHINE"
       ObjectReference {
-        SelfId: 3533070852980804846
+        SelfId: 6025685399820416605
       }
     }
   }

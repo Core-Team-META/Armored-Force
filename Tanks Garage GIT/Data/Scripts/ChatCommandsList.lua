@@ -122,7 +122,7 @@ commands = {
         	
         		if number then
         		
-        			if number > 0 and number < 33 then
+        			if number > 0 and number <= 33 then
         		
         				resourceFound = section
         				
@@ -152,7 +152,7 @@ commands = {
         	
         		if number then
         		
-        			if number > 0 and number < 33 then
+        			if number > 0 and number <= 33 then
         		
         				resourceFound = section
         				
@@ -394,7 +394,9 @@ commands = {
         OnCommandCalledClient = function (player, message)
             for i, v in pairs(commands) do
                 if (i ~= "/adminall") then
-                    Chat.LocalMessage(i .. ": " .. v.description)
+                    if v.adminRank <= (AdminData.Rank[player.name] or AdminData.AdminRanks.None) then 
+                        Chat.LocalMessage(i .. ": " .. v.description)
+                    end
                 end
             end
         end,
@@ -443,7 +445,24 @@ commands = {
         adminRank = AdminData.AdminRanks.Admin
     },
 
-
+    ["/setrank"] = {
+        OnCommandCalledClient = function(player,message)
+        end,
+        OnCommandCalledServer = function(player,message)
+            --set rank here lol
+            local messageParts = {CoreString.Split(message," ")}
+            if tonumber(messageParts[2]) then
+                player:SetResource("LEVEL",tonumber(messageParts[2]))
+                player:SetResource("XP",0)
+            end
+        end,
+        OnCommandReceivedClient = function(player,message)
+        end,
+        description = "sets player's profile rank",
+        requireMessage = false,
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
+    },
 --[[     ["/ragdoll"] = {
         OnCommandCalledClient = function (player, message)
             Chat.LocalMessage(messagePrefix.." toggle player ragdoll")

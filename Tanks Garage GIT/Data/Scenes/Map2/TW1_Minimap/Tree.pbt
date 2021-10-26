@@ -4067,13 +4067,13 @@ Objects {
     Overrides {
       Name: "cs:GAMEHELPER_SpottingServer"
       ObjectReference {
-        SelfId: 11521912232503756546
+        SelfId: 7500126607332189283
       }
     }
     Overrides {
       Name: "cs:GAMESTATE_MainGameStateManagerServer"
       ObjectReference {
-        SelfId: 7667844030668164507
+        SelfId: 9140564283763297214
       }
     }
     Overrides {

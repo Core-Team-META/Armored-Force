@@ -157,27 +157,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 2500
+            Int: 5000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 5000
+            Int: 2000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 2500
+            Int: 5000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 5000
+            Int: 2000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 2500
+            Int: 5000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 5000
+            Int: 2000
           }
           Overrides {
             Name: "cs:reload"
@@ -441,7 +441,7 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
@@ -449,7 +449,7 @@ Assets {
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
@@ -457,7 +457,7 @@ Assets {
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
@@ -725,7 +725,7 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
@@ -733,7 +733,7 @@ Assets {
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
@@ -741,7 +741,7 @@ Assets {
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
@@ -1009,7 +1009,7 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
@@ -1017,7 +1017,7 @@ Assets {
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
@@ -1025,7 +1025,7 @@ Assets {
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
@@ -1293,27 +1293,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 7500
+            Int: 16000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 10000
+            Int: 12500
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 7500
+            Int: 16000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 10000
+            Int: 12500
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 7500
+            Int: 16000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 10000
+            Int: 12500
           }
           Overrides {
             Name: "cs:reload"
@@ -1581,27 +1581,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 7500
+            Int: 16000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 10000
+            Int: 12500
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 7500
+            Int: 16000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 10000
+            Int: 12500
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 7500
+            Int: 16000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 10000
+            Int: 12500
           }
           Overrides {
             Name: "cs:reload"
@@ -2409,7 +2409,7 @@ Assets {
           }
           Overrides {
             Name: "cs:tier"
-            Int: 4
+            Int: 3
           }
           Overrides {
             Name: "cs:type"
@@ -2521,27 +2521,27 @@ Assets {
           }
           Overrides {
             Name: "cs:damageUpgraded"
-            Int: 615
+            Int: 545
           }
           Overrides {
             Name: "cs:hitPointsUpgraded"
-            Int: 1800
+            Int: 1600
           }
           Overrides {
             Name: "cs:damage"
-            Int: 575
+            Int: 515
           }
           Overrides {
             Name: "cs:hitPoints"
-            Int: 1700
+            Int: 1500
           }
           Overrides {
             Name: "cs:topSpeed"
-            Int: 860
+            Int: 910
           }
           Overrides {
             Name: "cs:topSpeedUpgraded"
-            Int: 975
+            Int: 1025
           }
           Overrides {
             Name: "cs:reverseSpeed"
@@ -2713,27 +2713,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:reload"
@@ -2997,27 +2997,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:reload"
@@ -3281,27 +3281,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:reload"
@@ -3565,27 +3565,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:reload"
@@ -3849,27 +3849,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:reload"
@@ -4133,27 +4133,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:reload"
@@ -4221,11 +4221,11 @@ Assets {
           }
           Overrides {
             Name: "cs:damage"
-            Int: 490
+            Int: 500
           }
           Overrides {
             Name: "cs:damageUpgraded"
-            Int: 540
+            Int: 550
           }
           Overrides {
             Name: "cs:hitPoints"
@@ -4237,11 +4237,11 @@ Assets {
           }
           Overrides {
             Name: "cs:topSpeed"
-            Int: 1025
+            Int: 1075
           }
           Overrides {
             Name: "cs:topSpeedUpgraded"
-            Int: 1175
+            Int: 1195
           }
           Overrides {
             Name: "cs:reverseSpeed"
@@ -4417,27 +4417,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:reload"
@@ -4701,27 +4701,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:reload"
@@ -4985,27 +4985,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 2500
+            Int: 5000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 5000
+            Int: 2000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 2500
+            Int: 5000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 5000
+            Int: 2000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 2500
+            Int: 5000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 5000
+            Int: 2000
           }
           Overrides {
             Name: "cs:reload"
@@ -5269,7 +5269,7 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
@@ -5277,7 +5277,7 @@ Assets {
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
@@ -5285,7 +5285,7 @@ Assets {
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
@@ -5553,7 +5553,7 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
@@ -5561,7 +5561,7 @@ Assets {
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
@@ -5569,7 +5569,7 @@ Assets {
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
@@ -5837,7 +5837,7 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
@@ -5845,7 +5845,7 @@ Assets {
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
@@ -5853,7 +5853,7 @@ Assets {
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
@@ -6121,7 +6121,7 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
@@ -6129,7 +6129,7 @@ Assets {
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
@@ -6137,7 +6137,7 @@ Assets {
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 5000
+            Int: 10000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
@@ -6405,27 +6405,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 7500
+            Int: 12500
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 7500
+            Int: 12500
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 7500
+            Int: 12500
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:reload"
@@ -6693,27 +6693,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 7500
+            Int: 12500
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 7500
+            Int: 12500
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 7500
+            Int: 12500
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 10000
+            Int: 16000
           }
           Overrides {
             Name: "cs:reload"
@@ -7069,27 +7069,27 @@ Assets {
           }
           Overrides {
             Name: "cs:damageUpgraded"
-            Int: 475
+            Int: 495
           }
           Overrides {
             Name: "cs:hitPointsUpgraded"
-            Int: 1600
-          }
-          Overrides {
-            Name: "cs:damage"
-            Int: 425
-          }
-          Overrides {
-            Name: "cs:hitPoints"
             Int: 1500
           }
           Overrides {
+            Name: "cs:damage"
+            Int: 465
+          }
+          Overrides {
+            Name: "cs:hitPoints"
+            Int: 1400
+          }
+          Overrides {
             Name: "cs:topSpeed"
-            Int: 990
+            Int: 1040
           }
           Overrides {
             Name: "cs:topSpeedUpgraded"
-            Int: 1040
+            Int: 1090
           }
           Overrides {
             Name: "cs:reverseSpeed"
@@ -7105,11 +7105,11 @@ Assets {
           }
           Overrides {
             Name: "cs:turningSpeed"
-            Int: 50
+            Int: 55
           }
           Overrides {
             Name: "cs:turningSpeedUpgraded"
-            Int: 60
+            Int: 65
           }
           Overrides {
             Name: "cs:accelerationUpgraded"
@@ -7261,27 +7261,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:reload"
@@ -7545,27 +7545,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:reload"
@@ -7829,27 +7829,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:reload"
@@ -8113,27 +8113,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:reload"
@@ -8397,27 +8397,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:reload"
@@ -8485,27 +8485,27 @@ Assets {
           }
           Overrides {
             Name: "cs:damage"
-            Int: 580
+            Int: 550
           }
           Overrides {
             Name: "cs:damageUpgraded"
-            Int: 620
+            Int: 580
           }
           Overrides {
             Name: "cs:hitPoints"
-            Int: 1900
+            Int: 1800
           }
           Overrides {
             Name: "cs:hitPointsUpgraded"
-            Int: 2000
+            Int: 1900
           }
           Overrides {
             Name: "cs:topSpeed"
-            Int: 1150
+            Int: 1120
           }
           Overrides {
             Name: "cs:topSpeedUpgraded"
-            Int: 1250
+            Int: 1230
           }
           Overrides {
             Name: "cs:reverseSpeed"
@@ -8681,27 +8681,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:reload"
@@ -8965,27 +8965,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:reload"
@@ -9249,27 +9249,27 @@ Assets {
           }
           Overrides {
             Name: "cs:weaponResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:weaponPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:armorResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:armorPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:mobilityResearchCost"
-            Int: 10000
+            Int: 25000
           }
           Overrides {
             Name: "cs:mobilityPurchaseCost"
-            Int: 15000
+            Int: 20000
           }
           Overrides {
             Name: "cs:reload"
@@ -9638,5 +9638,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 101
 }

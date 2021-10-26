@@ -25,6 +25,19 @@ Assets {
   }
 }
 Assets {
+  Id: 17438422695141418520
+  Name: "BrigadierPack_1"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "6a6375b3954c4729bac6ba0478a282b3"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 17287164381252296468
   Name: "Grass Short"
   PlatformAssetType: 1
@@ -56,6 +69,32 @@ Assets {
   }
 }
 Assets {
+  Id: 16525804645926480529
+  Name: "TransferTestSkins"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "8edec1aace50475e803d2f28022888f8"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
+  Id: 16405819613734804126
+  Name: "CommandePack_1"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "d32b7b4a670a4b8a9bc533639a0b3485"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 16296880149105285716
   Name: "SilverPack2"
   PlatformAssetType: 24
@@ -77,6 +116,19 @@ Assets {
       Key: "88d77eb9593b486baa670ec5f376ffd1"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
+  Id: 14542407528421208735
+  Name: "TransferTestTanks"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "c77554cf9987470bbd1eae65b773cb0a"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
   }
@@ -108,25 +160,25 @@ Assets {
   }
 }
 Assets {
-  Id: 13936078365922036532
-  Name: "af_live_skins"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "679759574ece4183867f9150f1160363"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 13849856485583202930
   Name: "Grass Tall"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_001"
+  }
+}
+Assets {
+  Id: 12820696332142815647
+  Name: "TransferTestAchievements"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "40b94ad3b7a64019a9fe4961dd03bf9b"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }
 Assets {
@@ -230,14 +282,14 @@ Assets {
   }
 }
 Assets {
-  Id: 7292207239894316953
-  Name: "af_live_tanks"
-  PlatformAssetType: 23
+  Id: 7738953612239977105
+  Name: "CorporalPack_1"
+  PlatformAssetType: 24
   NetReferenceAsset {
     NetReference {
-      Key: "f63454eea03149b583c941a85ac8d694"
+      Key: "9c5462ee0df14ad8ba25b106eb387ee1"
       Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
+        Value: "mc:enetreferencetype:creatorperk"
       }
     }
   }
@@ -249,6 +301,19 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_001"
+  }
+}
+Assets {
+  Id: 4077582356090692285
+  Name: "TransferTestLeaderboards"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "3c8cceda3c94438facb27363c77cad9e"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }
 Assets {
@@ -273,32 +338,6 @@ Assets {
       Key: "8cadd4667c1044fcaa914b011d86e503"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
-  Id: 3574852048611023137
-  Name: "af_live_leaderboards"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "2a1eadf932d540a992d37a280466c988"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
-  Id: 3523332240406878130
-  Name: "af_live_achievements"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "f79e7ab5406e4f40b4a258dcc5b88a7a"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
   }

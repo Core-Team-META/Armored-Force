@@ -680,7 +680,7 @@ function OnPlayerLeft(player)
 	NEEDS_UPDATE = true
 end
 
-Game.roundEndEvent:Connect(ResetFeed)
+--Game.roundEndEvent:Connect(ResetFeed)
 
 if SHOW_JOIN_AND_LEAVE then
 	Game.playerJoinedEvent:Connect(OnPlayerJoined)

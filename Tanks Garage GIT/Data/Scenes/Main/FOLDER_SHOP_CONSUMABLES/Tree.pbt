@@ -205,7 +205,7 @@ Objects {
     }
     UseParentHeight: true
     Text {
-      Label: "400"
+      Label: "0"
       Color {
         R: 1
         G: 1
@@ -5132,7 +5132,7 @@ Objects {
     }
     UseParentHeight: true
     Text {
-      Label: "400"
+      Label: "0"
       Color {
         R: 1
         G: 1
@@ -10048,7 +10048,7 @@ Objects {
     }
     UseParentHeight: true
     Text {
-      Label: "400"
+      Label: "0"
       Color {
         R: 1
         G: 1

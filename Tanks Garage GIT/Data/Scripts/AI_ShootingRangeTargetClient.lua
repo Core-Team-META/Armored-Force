@@ -6,6 +6,7 @@ local fill = script:GetCustomProperty("Fill"):WaitForObject()
 local label = script:GetCustomProperty("Label"):WaitForObject()
 local API_Tutorial = require(script:GetCustomProperty("API_Tutorial"))
 local TutorialCompletePopup = script:GetCustomProperty("TutorialCompletePopup")
+local TutorialCompletePopupNoReward = script:GetCustomProperty("TutorialCompletePopupNoReward")
 local TutorialUI = script:GetCustomProperty("TutorialUI"):WaitForObject()
 
 local maxHP = enemyUnit:GetCustomProperty("MaxHP")
@@ -72,8 +73,13 @@ function OnImpact(trigger, other)
 					other.owner.clientUserData.tutorial3_1 = 1
 				end
 				if(other.owner.clientUserData.tutorial3_1 == 1 and other.owner.clientUserData.tutorial3_2 == 1 and other.owner.clientUserData.tutorial3_3 == 1) then
-					local panel = World.SpawnAsset(TutorialCompletePopup, {parent = World.FindObjectByName("Tutorial UI")})
-					panel.lifeSpan = 3
+					if localPlayer:GetResource(API_Tutorial.GetTutorialRewardResource()) < API_Tutorial.TutorialPhase.PrecisionShots then
+						local panel = World.SpawnAsset(TutorialCompletePopup, {parent = World.FindObjectByName("Tutorial UI")})
+						panel.lifeSpan = 3
+					else							
+						local panel = World.SpawnAsset(TutorialCompletePopupNoReward, {parent = World.FindObjectByName("Tutorial UI")})
+						panel.lifeSpan = 3
+					end
 					Task.Spawn(function() 
 						TutorialUI:FindDescendantByName("Tutorial_Precision Tanks Panel"):FindDescendantByName("COMPLETION_PANEL").visibility = Visibility.FORCE_ON
 						Task.Wait(3)
@@ -89,8 +95,13 @@ function OnImpact(trigger, other)
 				if(other.owner.clientUserData.tutorial2 < 50) then
 					other.owner.clientUserData.tutorial2 = other.owner.clientUserData.tutorial2 + actualDamage
 					if(other.owner.clientUserData.tutorial2 >= 50) then
-						local panel = World.SpawnAsset(TutorialCompletePopup, {parent = World.FindObjectByName("Tutorial UI")})
-						panel.lifeSpan = 3
+						if localPlayer:GetResource(API_Tutorial.GetTutorialRewardResource()) < API_Tutorial.TutorialPhase.TargetPractice then
+							local panel = World.SpawnAsset(TutorialCompletePopup, {parent = World.FindObjectByName("Tutorial UI")})
+							panel.lifeSpan = 3
+						else							
+							local panel = World.SpawnAsset(TutorialCompletePopupNoReward, {parent = World.FindObjectByName("Tutorial UI")})
+							panel.lifeSpan = 3
+						end
 						Task.Spawn(function()
 							TutorialUI:FindDescendantByName("Tutorial_Destroy Tanks Panel"):FindDescendantByName("COMPLETION_PANEL").visibility = Visibility.FORCE_ON
 							Task.Wait(3)

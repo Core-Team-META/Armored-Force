@@ -256,7 +256,7 @@ Objects {
   Control {
     Width: 200
     Height: 60
-    UIX: 1
+    UIY: -1
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -9112,8 +9112,8 @@ Objects {
   Control {
     Width: 30
     Height: 30
-    UIX: -663
-    UIY: -37.1308365
+    UIX: 802
+    UIY: -35
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -9125,12 +9125,12 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topright"
+          Value: "mc:euianchor:topleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topright"
+          Value: "mc:euianchor:topleft"
         }
       }
     }
@@ -20952,7 +20952,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "SHELL"
+      Label: "HULL"
       Color {
         R: 1
         G: 1

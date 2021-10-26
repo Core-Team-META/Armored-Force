@@ -101,18 +101,19 @@ function API.RegisterAchievements(list)
                 preReq = preReq,
                 isTournament = isTournament
             }
-            if givesReward then
-                local rewardsTbl = {}
-                for i, reward in ipairs(child:GetChildren()) do
-                    local rewardEnabled = reward:GetCustomProperty("Enabled")
-                    if rewardEnabled then
-                        rewardsTbl[i] = reward
-                    end
-                end
-                achievement.rewards = rewardsTbl
-            end
 
             if enabled then
+                if givesReward then
+                    local rewardsTbl = {}
+                    for i, reward in ipairs(child:GetChildren()) do
+                        local rewardEnabled = reward:GetCustomProperty("Enabled")
+                        if rewardEnabled then
+                            rewardsTbl[i] = reward
+                        end
+                    end
+                    achievement.rewards = rewardsTbl
+                end
+
                 sort = sort + 1
                 achievements[id] = achievement
             end
@@ -142,6 +143,10 @@ function API.GetAchievementName(id)
         return nil
     end
     if not id or id == 0 then
+        return ""
+    end
+    if not achievements[id] then
+        warn("Achievement for " .. tostring(id) .. " Doesn't Exsist")
         return ""
     end
     return achievements[id].name
@@ -205,7 +210,7 @@ function API.HasPreRequsistCompleted(player, id)
     else
         local tempTbl = {CoreString.Split(achievements[id].preReq, ",")}
         for _, preReqId in ipairs(tempTbl) do
-            if not API.IsUnlocked(player, preReqId) then
+            if not API.IsComplete(player, preReqId) then
                 return false
             end
         end
@@ -234,8 +239,8 @@ function API.GiveRewards(player, id)
                 API.SetClaimed(player, id)
             elseif achievement.isTournament then
                 for _, reward in ipairs(achievements[id].rewards) do
-                local gamelink = reward:GetCustomProperty("GameLink")
-                player:TransferToGame(gamelink)
+                    local gamelink = reward:GetCustomProperty("GameLink")
+                    player:TransferToGame(gamelink)
                 end
             end
         end
@@ -265,6 +270,15 @@ end
 function API.GetCurrentProgress(player, id)
     if IsValidPlayer(player) then
         return player:GetResource(id)
+    end
+end
+
+--@param object player
+--@param string id
+--@return int currentProgress for an achievement
+function API.IsComplete(player, id)
+    if IsValidPlayer(player) then
+        return player:GetResource(id) == 1
     end
 end
 

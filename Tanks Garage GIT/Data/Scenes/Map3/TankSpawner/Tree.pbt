@@ -1,7 +1,7 @@
 Name: "TankSpawner"
-RootId: 11914439698608069376
+RootId: 4365363544030190553
 Objects {
-  Id: 13883027537779162643
+  Id: 15070358482250057304
   Name: "GAMEHELPER_TankSpawner"
   Transform {
     Location {
@@ -14,9 +14,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11914439698608069376
-  ChildIds: 3397490199526542611
-  ChildIds: 10378609213048145529
+  ParentId: 4365363544030190553
+  ChildIds: 8030917159665696318
+  ChildIds: 8878329528957792324
   UnregisteredParameters {
     Overrides {
       Name: "cs:Default"
@@ -246,7 +246,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10378609213048145529
+  Id: 8878329528957792324
   Name: "TANK_VP_TankGarage"
   Transform {
     Location {
@@ -259,7 +259,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13883027537779162643
+  ParentId: 15070358482250057304
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -277,7 +277,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3397490199526542611
+  Id: 8030917159665696318
   Name: "GAMEHELPER_TankSpawner"
   Transform {
     Location {
@@ -290,7 +290,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13883027537779162643
+  ParentId: 15070358482250057304
   UnregisteredParameters {
     Overrides {
       Name: "cs:MetaAbilityProgressionConstants_API"
@@ -301,13 +301,13 @@ Objects {
     Overrides {
       Name: "cs:MainManagerServer"
       ObjectReference {
-        SelfId: 408224351884467425
+        SelfId: 16619138605393147299
       }
     }
     Overrides {
       Name: "cs:TANK_VP_TankGarage"
       ObjectReference {
-        SelfId: 10378609213048145529
+        SelfId: 8878329528957792324
       }
     }
     Overrides {

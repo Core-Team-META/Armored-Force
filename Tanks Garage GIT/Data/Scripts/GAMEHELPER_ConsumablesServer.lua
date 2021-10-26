@@ -39,7 +39,7 @@ function OnRecovery(abilityUsed)
 		abilityUsed:SetNetworkedCustomProperty("Charges", count)
 	end
 	if abilityUsed.owner:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.RepairTank then
-		Events.BroadcastToPlayer(abilityUsed.owner, "AdvanceTutorialRequest", API_Tutorial.TutorialPhase.Completed, true)
+		Events.BroadcastToPlayer(abilityUsed.owner, "AdvanceTutorialRequest", API_Tutorial.TutorialPhase.RepairTank, API_Tutorial.TutorialPhase.Completed, true)
 	end
 	abilityUsed.isEnabled = false
 	--abilityUsed:SetNetworkedCustomProperty("Enabled", false)

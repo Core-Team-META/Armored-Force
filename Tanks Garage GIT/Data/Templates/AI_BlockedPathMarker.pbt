@@ -72,7 +72,7 @@ Assets {
           Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -166,5 +166,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 101
 }

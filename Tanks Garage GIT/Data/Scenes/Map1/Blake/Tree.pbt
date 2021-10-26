@@ -103,11 +103,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 1605275179467651420
-      value {
-      }
-    }
-    ParameterOverrideMap {
       key: 16224702300220691365
       value {
         Overrides {
@@ -122,14 +117,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -369,10 +356,6 @@ Objects {
   Id: 381718502894216097
   Name: "Registry_Tanks"
   Transform {
-    Location {
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -506,6 +489,40 @@ Objects {
   Script {
     ScriptAsset {
       Id: 9930510073357529478
+    }
+  }
+}
+Objects {
+  Id: 270482115910360806
+  Name: "Armored Force Events System"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 149176979336870667
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13560699571398479895
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Armored Force Events System"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11861711500826256056
     }
   }
 }

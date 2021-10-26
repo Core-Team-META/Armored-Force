@@ -1,7 +1,41 @@
 Name: "GAMEHELPER_Components"
-RootId: 13827764166685984513
+RootId: 15173117665155467092
 Objects {
-  Id: 15096284212942066676
+  Id: 7157567768811592812
+  Name: "XPFeedback"
+  Transform {
+    Location {
+      X: 120
+      Y: -135
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15173117665155467092
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "XPFeedbackClient"
+  }
+}
+Objects {
+  Id: 14537278277996326632
   Name: "CamoSelection"
   Transform {
     Location {
@@ -16,7 +50,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13827764166685984513
+  ParentId: 15173117665155467092
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -35,7 +69,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12266405606634098654
+  Id: 3855009077227759843
   Name: "TankStatesAndConsumables"
   Transform {
     Location {
@@ -48,7 +82,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13827764166685984513
+  ParentId: 15173117665155467092
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -67,7 +101,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6817897231715354530
+  Id: 13725481517239860361
   Name: "LeaderboardResourceManager"
   Transform {
     Location {
@@ -80,7 +114,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13827764166685984513
+  ParentId: 15173117665155467092
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -99,7 +133,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9561063808296421245
+  Id: 1576210150919822961
   Name: "RespawnVolume"
   Transform {
     Location {
@@ -114,7 +148,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13827764166685984513
+  ParentId: 15173117665155467092
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -133,7 +167,7 @@ Objects {
   }
 }
 Objects {
-  Id: 184479728482636850
+  Id: 3688475391202319018
   Name: "SpottingComponent"
   Transform {
     Location {
@@ -148,7 +182,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13827764166685984513
+  ParentId: 15173117665155467092
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -167,7 +201,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9044028303108924865
+  Id: 17361198224467973439
   Name: "PingSystem"
   Transform {
     Location {
@@ -182,7 +216,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13827764166685984513
+  ParentId: 15173117665155467092
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -201,7 +235,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11914439698608069376
+  Id: 4365363544030190553
   Name: "TankSpawner"
   Transform {
     Location {
@@ -216,7 +250,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13827764166685984513
+  ParentId: 15173117665155467092
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -235,7 +269,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8107458427318901167
+  Id: 1292263002283607451
   Name: "DamageFeedback"
   Transform {
     Location {
@@ -251,7 +285,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13827764166685984513
+  ParentId: 15173117665155467092
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -270,7 +304,41 @@ Objects {
   }
 }
 Objects {
-  Id: 18435422355716103200
+  Id: 6128104744931237880
+  Name: "AimUI"
+  Transform {
+    Location {
+      X: 120
+      Y: -135
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15173117665155467092
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "AimUI"
+  }
+}
+Objects {
+  Id: 9501981355132674859
   Name: "DailyChallenges"
   Transform {
     Location {
@@ -285,7 +353,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13827764166685984513
+  ParentId: 15173117665155467092
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -304,7 +372,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12114097092926372943
+  Id: 6097867446928767004
   Name: "NemesisTracker"
   Transform {
     Location {
@@ -319,7 +387,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13827764166685984513
+  ParentId: 15173117665155467092
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -335,39 +403,5 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "NemesisTracker"
-  }
-}
-Objects {
-  Id: 11765036221477963266
-  Name: "AimUI"
-  Transform {
-    Location {
-      X: 120
-      Y: -135
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13827764166685984513
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "AimUI"
   }
 }

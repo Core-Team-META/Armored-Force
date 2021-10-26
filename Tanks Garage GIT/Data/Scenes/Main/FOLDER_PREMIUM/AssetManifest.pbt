@@ -17,21 +17,21 @@ Assets {
   }
 }
 Assets {
+  Id: 16792083613392582526
+  Name: "Center Arrow 011 Wedge"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "CenterArrow_011Wedge"
+  }
+}
+Assets {
   Id: 16712525731170450862
   Name: "Icon Arrow"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Arrow"
-  }
-}
-Assets {
-  Id: 14242369349519953845
-  Name: "Center Arrow 003 Wedge"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "CenterArrow_003Wedge"
   }
 }
 Assets {
@@ -104,6 +104,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Survival_Equip_Gear_001"
+  }
+}
+Assets {
+  Id: 6262982467505051120
+  Name: "Fantasy Craft Bar 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Crafting_Bar_002"
   }
 }
 Assets {

@@ -59,11 +59,7 @@ function AddToList(player)
 		if script:GetCustomProperty("P" .. tostring(i)) == "" then
 			if player:IsA("Player") then
 				-- Add XP
-				player:AddResource(CURRENCY.XP.ResourceName, spottingXP)
 				Events.Broadcast("PlayerSpotted", player, spottingXP)
-				-- Add RP to tank
-				
-				player:AddResource(UTIL_API.GetTankRPString(player:GetResource(TANKS.EquipResource)), spottingXP)
 				Events.BroadcastToPlayer(player, "GainXP", {
 					reason = "SPOTTED_ENEMY", 
 					amount = spottingXP})

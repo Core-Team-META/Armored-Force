@@ -29,9 +29,13 @@ Const.PERK_STORAGE_KEYS = {
     GOLD_PACK1 = 4,
     GOLD_PACK2 = 5,
     GOLD_PACK3 = 6,
-    SOLDIERPACK = 7,
-    CAPTAINPACK = 8,
-    GENERALPACK = 9
+    SOLDIERPACK = 7, -- Launch bundle pack
+    CAPTAINPACK = 8, -- Launch bundle pack
+    GENERALPACK = 9, -- Launch bundle pack
+    CORPORALPACK = 10,
+    BRIGADIERPACK = 11,
+    COMMANDERPACK = 12
+
 }
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -164,6 +168,7 @@ Const.XP_GAIN_TEXT = {
 
 Const.RANK_NAME = 'Rank'
 Const.TUTORIAL_PROGRESS = 'TutorialProgress'
+Const.TUTORIAL_REWARD_PROGRESS = 'TutorialReward'
 Const.EQUIPPED_TANK_RES = 'EquippedTank'
 
 Const.HIGHEST_DAMAGE = 100
@@ -185,6 +190,22 @@ Const.AI = {
 
     -- How often tanks update their path targets (in seconds)
     PATH_UPDATE_FREQUENCY = 2,
+}
+
+
+-- TANK TYPE KEYS
+Const.TANK_TYPE = {
+    LIGHT = 1,
+    MEDIUM = 2,
+    HEAVY = 3,
+    TANKDESTROYER = 4
+}
+
+Const.TANK_TYPE_NAME = {
+    [Const.TANK_TYPE.LIGHT] = "Light",
+    [Const.TANK_TYPE.MEDIUM] = "Medium",
+    [Const.TANK_TYPE.HEAVY] = "Heavy",
+    [Const.TANK_TYPE.TANKDESTROYER] = "TankDestroyer"
 }
 
 

@@ -59,6 +59,9 @@ Assets {
         ChildIds: 12648561155297033475
         ChildIds: 14865719219927355360
         ChildIds: 17341006233999402890
+        ChildIds: 7138984216723515021
+        ChildIds: 1767445213772219175
+        ChildIds: 97759583773606875
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -389,7 +392,7 @@ Assets {
       }
       Objects {
         Id: 12648561155297033475
-        Name: "SOLDIERPACK"
+        Name: "SOLDIERPACK(LaunchPack)"
         Transform {
           Location {
           }
@@ -441,7 +444,7 @@ Assets {
       }
       Objects {
         Id: 14865719219927355360
-        Name: "CAPTAINPACK"
+        Name: "CAPTAINPACK(LaunchPack)"
         Transform {
           Location {
           }
@@ -493,7 +496,7 @@ Assets {
       }
       Objects {
         Id: 17341006233999402890
-        Name: "GENERALPACK"
+        Name: "GENERALPACK(LaunchPack)"
         Transform {
           Location {
           }
@@ -523,6 +526,162 @@ Assets {
           Overrides {
             Name: "cs:name"
             String: "GENERALPACK"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 12862310799012227579
+          }
+        }
+      }
+      Objects {
+        Id: 7138984216723515021
+        Name: "CORPORALPACK"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3907244042138425379
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:perk"
+            NetReference {
+              Key: "9c5462ee0df14ad8ba25b106eb387ee1"
+              Type {
+                Value: "mc:enetreferencetype:creatorperk"
+              }
+            }
+          }
+          Overrides {
+            Name: "cs:id"
+            Int: 10
+          }
+          Overrides {
+            Name: "cs:name"
+            String: "CORPORALPACK"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 12862310799012227579
+          }
+        }
+      }
+      Objects {
+        Id: 1767445213772219175
+        Name: "BRIGADIERPACK"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3907244042138425379
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:perk"
+            NetReference {
+              Key: "6a6375b3954c4729bac6ba0478a282b3"
+              Type {
+                Value: "mc:enetreferencetype:creatorperk"
+              }
+            }
+          }
+          Overrides {
+            Name: "cs:id"
+            Int: 11
+          }
+          Overrides {
+            Name: "cs:name"
+            String: "BRIGADIERPACK"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 12862310799012227579
+          }
+        }
+      }
+      Objects {
+        Id: 97759583773606875
+        Name: "COMMANDERPACK"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3907244042138425379
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:perk"
+            NetReference {
+              Key: "d32b7b4a670a4b8a9bc533639a0b3485"
+              Type {
+                Value: "mc:enetreferencetype:creatorperk"
+              }
+            }
+          }
+          Overrides {
+            Name: "cs:id"
+            Int: 12
+          }
+          Overrides {
+            Name: "cs:name"
+            String: "COMMANDERPACK"
           }
         }
         Collidable_v2 {
@@ -718,5 +877,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 101
 }

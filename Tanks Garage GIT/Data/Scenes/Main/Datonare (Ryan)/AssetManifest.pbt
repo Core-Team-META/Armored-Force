@@ -17,15 +17,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14229011836246835513
-  Name: "Game Portal"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_webportal"
-  }
-}
-Assets {
   Id: 14060330023043759337
   Name: "BG Flat 001"
   PlatformAssetType: 9

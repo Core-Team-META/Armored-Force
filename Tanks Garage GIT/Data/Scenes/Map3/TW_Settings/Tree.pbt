@@ -101,6 +101,9 @@ Objects {
       }
       PlayerInteractDistance: 500
       PlayerInteractAngleDeg: 50
+      PlayerStorageMode {
+        Value: "mc:eplayerstoragemode:none"
+      }
     }
   }
 }

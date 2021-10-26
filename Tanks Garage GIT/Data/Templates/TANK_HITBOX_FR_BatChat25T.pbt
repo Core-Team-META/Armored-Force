@@ -123,13 +123,13 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 397.186768
+            X: 410.798889
             Z: -38.5017776
           }
           Rotation {
           }
           Scale {
-            X: 1.80317
+            X: 2.07826567
             Y: 7.10000038
             Z: 1.79869866
           }
@@ -734,5 +734,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 101
 }

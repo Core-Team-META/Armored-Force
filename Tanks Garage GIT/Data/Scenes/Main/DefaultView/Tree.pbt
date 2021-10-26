@@ -1023,6 +1023,22 @@ Objects {
         Id: 8525269059319462214
       }
     }
+    Overrides {
+      Name: "cs:ValidColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:InvalidColor"
+      Color {
+        R: 0.65
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1056,6 +1072,18 @@ Objects {
   ParentId: 7478596360271859373
   UnregisteredParameters {
     Overrides {
+      Name: "cs:ConsumableCost_ExtraTreads"
+      Int: 400
+    }
+    Overrides {
+      Name: "cs:ConsumableCost_FireExtinguisher"
+      Int: 400
+    }
+    Overrides {
+      Name: "cs:ConsumableCost_TurretRepairKit"
+      Int: 400
+    }
+    Overrides {
       Name: "cs:QueueIndicatorPanel"
       ObjectReference {
         SelfId: 17413968878563161576
@@ -1072,6 +1100,30 @@ Objects {
       AssetReference {
         Id: 15718075383189814537
       }
+    }
+    Overrides {
+      Name: "cs:ConsumableCost_ExtraTreads:tooltip"
+      String: "The cost, in silver, to purchase the Extra Treads consumable item."
+    }
+    Overrides {
+      Name: "cs:ConsumableCost_FireExtinguisher:tooltip"
+      String: "The cost, in silver, to purchase the Fire Extinguisher consumable item."
+    }
+    Overrides {
+      Name: "cs:ConsumableCost_TurretRepairKit:tooltip"
+      String: "The cost, in silver, for the Turret Repair Kit consumable item."
+    }
+    Overrides {
+      Name: "cs:ConsumableCost_ExtraTreads:category"
+      String: "ConsumableCosts"
+    }
+    Overrides {
+      Name: "cs:ConsumableCost_FireExtinguisher:category"
+      String: "ConsumableCosts"
+    }
+    Overrides {
+      Name: "cs:ConsumableCost_TurretRepairKit:category"
+      String: "ConsumableCosts"
     }
   }
   Collidable_v2 {

@@ -6,6 +6,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 local ROOT = script:GetCustomProperty("AchievementSystem"):WaitForObject()
 local isEnabled = ROOT:GetCustomProperty("Enabled")
+
 if not isEnabled then
     return
 end
@@ -14,7 +15,8 @@ local Constants_API = require(script:GetCustomProperty("Constants_API"))
 local shouldSaveProgress = ROOT:GetCustomProperty("SaveProgress")
 local useSharedKey = ROOT:GetCustomProperty("UseSharedKey")
 local sharedKeyNetRef = Constants_API:WaitForConstant("Storage_Keys").Achievements 
-
+local tankTypeNames = Constants_API:WaitForConstant("TANK_TYPE_NAME")
+local tankTypes = Constants_API:WaitForConstant("TANK_TYPE")
 ------------------------------------------------------------------------------------------------------------------------
 -- REQUIRES
 ------------------------------------------------------------------------------------------------------------------------
@@ -84,19 +86,19 @@ local function OnRoundEnd()
             local tankType = player.serverUserData.currentTankData and player.serverUserData.currentTankData.type
             if tankType then
                 -- Tank Type based achievements
-                if tankType == CONST.TANK_TYPE_NAME[CONST.TANK_TYPE.LIGHT] then
+                if tankType == tankTypeNames[tankTypes.LIGHT] then
                     ACH_API.AddProgress(player, "ALP", 1)
                     ACH_API.AddProgress(player, "ASP", 1)
                     ACH_API.AddProgress(player, "ALCOM", 1)
-                elseif tankType == CONST.TANK_TYPE_NAME[CONST.TANK_TYPE.MEDIUM] then
+                elseif tankType == tankTypeNames[tankTypes.MEDIUM] then
                     ACH_API.AddProgress(player, "AMP", 1)
                     ACH_API.AddProgress(player, "AMS", 1)
                     ACH_API.AddProgress(player, "AMC", 1)
-                elseif tankType == CONST.TANK_TYPE_NAME[CONST.TANK_TYPE.HEAVY] then
+                elseif tankType == tankTypeNames[tankTypes.HEAVY] then
                     ACH_API.AddProgress(player, "AHP", 1)
                     ACH_API.AddProgress(player, "AHS", 1)
                     ACH_API.AddProgress(player, "AHC", 1)
-                elseif tankType == CONST.TANK_TYPE_NAME[CONST.TANK_TYPE.TANKDESTROYER] then
+                elseif tankType == tankTypeNames[tankTypes.TANKDESTROYER] then
                     ACH_API.AddProgress(player, "ADP", 1)
                     ACH_API.AddProgress(player, "ADS", 1)
                     ACH_API.AddProgress(player, "ADC", 1)
