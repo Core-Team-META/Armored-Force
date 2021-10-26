@@ -54,6 +54,7 @@ Assets {
         ChildIds: 5577000291606824456
         ChildIds: 3469259227161959195
         ChildIds: 15185606044713703865
+        ChildIds: 10546924264461716277
         ChildIds: 17531794074557106782
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -176,6 +177,49 @@ Assets {
           Overrides {
             Name: "cs:Key"
             String: "SpookySkin"
+          }
+          Overrides {
+            Name: "cs:ForceActive"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6412881030095810137
+          }
+        }
+      }
+      Objects {
+        Id: 10546924264461716277
+        Name: "Spooky Garage"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1140636493419563028
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Key"
+            String: "SpookyGarage"
           }
           Overrides {
             Name: "cs:ForceActive"

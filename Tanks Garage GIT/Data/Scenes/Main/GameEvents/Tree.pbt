@@ -77,6 +77,12 @@ Objects {
         SelfId: 14862224009751969621
       }
     }
+    Overrides {
+      Name: "cs:SpookyGarage"
+      AssetReference {
+        Id: 5267216285320685620
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

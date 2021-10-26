@@ -5,6 +5,8 @@ local DISCOUNT_AXIS = script:GetCustomProperty("DISCOUNT_AXIS"):WaitForObject()
 local INCREASED_REWARDS_PANEL = script:GetCustomProperty("INCREASED_REWARDS_PANEL"):WaitForObject()
 local EVENT_BONUS = script:GetCustomProperty("EVENT_BONUS"):WaitForObject()
 
+local SpookyGarage = script:GetCustomProperty("SpookyGarage")
+
 local xpBonus = false 
 local silverBonus = false
 
@@ -28,6 +30,10 @@ end
 function Initialize()
 	EVENT_BONUS.text = "EVENT "
 	
+	if EventsAPI.IsEventKeyActive("SpookyGarage") then
+		World.SpawnAsset(SpookyGarage, {position = Vector3.ZERO, rotation = Rotation.New(0, 0, 0)})
+	end	
+	
 	if EventsAPI.IsEventKeyActive("2TP") then
 		xpBonus = true
 		EVENT_BONUS.text = EVENT_BONUS.text .. "2x PARTS "
@@ -49,6 +55,6 @@ function Initialize()
 	end
 end
 
-Task.Wait(2)
+Task.Wait(1)
 Initialize()
 Events.Connect("SetDiscount", ToggleDiscount)
