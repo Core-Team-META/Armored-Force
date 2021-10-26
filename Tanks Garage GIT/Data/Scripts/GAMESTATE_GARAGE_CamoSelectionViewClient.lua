@@ -587,7 +587,7 @@ function RepopulateCamoEntries()
 	
 		local playerCamoData = localPlayer.clientUserData.camoData[selectedTank]
 		
-		if camo["onlyForEvent"] == "" or EventsAPI.IsEventKeyActive(camo["onlyForEvent"]) then
+		if camo["onlyForEvent"] == "" or EventsAPI.IsEventKeyActive(camo["onlyForEvent"]) or playerCamoData[camoID].purchased then
 			local camoEntry = {}
 			camoEntry.camoUI = World.SpawnAsset(camoEntryTemplate, {parent = camoContainer})
 			camoEntry.camoUI.x = 0
