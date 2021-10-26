@@ -369,14 +369,16 @@ end
 function TogglePremiumTankOwnedState()
 	local alliesTankId = ALLIES_PREMIUM_TANK_ID	
 	local alliesPurchaseCosts = TankAPI.GetPurchaseCost(alliesTankId)
-	print ("Owns Allies Tank: " .. tostring(UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, alliesTankId)))
+	--print ("Owns Allies Tank: " .. tostring(UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, alliesTankId)))
 	if UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, alliesTankId) then
 		ALLIES_BUY_BUTTON.visibility = Visibility.FORCE_OFF
 		ALLIES_PURCHASED_BUTTON.visibility = Visibility.FORCE_ON
+		Events.Broadcast("SetDiscount", "ALLIES", false)
 	else
 		ALLIES_BUY_BUTTON.visibility = Visibility.FORCE_ON
 		ALLIES_PURCHASED_BUTTON.visibility = Visibility.FORCE_OFF
 		ALLIES_BUY_BUTTON.isInteractable = true
+		Events.Broadcast("SetDiscount", "ALLIES", true)
 		--[[
 		if LOCAL_PLAYER:GetResource(alliesPurchaseCosts.resource) < alliesPurchaseCosts.amount then
 			ALLIES_BUY_BUTTON.isInteractable = false
@@ -391,10 +393,12 @@ function TogglePremiumTankOwnedState()
 	if UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, axisTankId) then
 		AXIS_BUY_BUTTON.visibility = Visibility.FORCE_OFF
 		AXIS_PURCHASED_BUTTON.visibility = Visibility.FORCE_ON
+		Events.Broadcast("SetDiscount", "AXIS", false)
 	else
 		AXIS_BUY_BUTTON.visibility = Visibility.FORCE_ON
 		AXIS_PURCHASED_BUTTON.visibility = Visibility.FORCE_OFF
 		AXIS_BUY_BUTTON.isInteractable = true
+		Events.Broadcast("SetDiscount", "AXIS", true)
 		--[[
 		if LOCAL_PLAYER:GetResource(axisPurchaseCosts.resource) < axisPurchaseCosts.amount then
 			AXIS_BUY_BUTTON.isInteractable = false
@@ -454,10 +458,19 @@ function PurchaseAxisPremiumTank()
 	end
 end
 
-function PurchaseSuccessful()
+function PurchaseSuccessful(id)
 	SFX_EQUIP_TANK:Play()
 	UTIL_API.ShowPopup("PURCHASE SUCCESSFUL", "Successfully purchased tank.", "OK")
-	Task.Wait(3)
+	Task.Wait()
+	
+	for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+		if (tonumber(tank.id) == tonumber(id)) then
+			tank.researched = true
+			tank.purchased = true
+		end
+	end	
+	
+	Task.Wait()
 	TogglePremiumTankOwnedState()
 end
 

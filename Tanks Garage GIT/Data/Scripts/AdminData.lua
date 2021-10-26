@@ -22,6 +22,7 @@ Rank = {
     Jarsa           = AdminRanks.HigherAdmin, 
     Chris           = AdminRanks.HigherAdmin,
     Aj              = AdminRanks.HigherAdmin,
+    junster09		= AdminRanks.HigherAdmin,
 
     standardcombo   = AdminRanks.Admin ,
     blaking707      = AdminRanks.Admin ,

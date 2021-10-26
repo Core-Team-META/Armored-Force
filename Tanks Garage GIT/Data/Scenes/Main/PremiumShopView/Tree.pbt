@@ -2635,6 +2635,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:META_EventsAPI"
+      AssetReference {
+        Id: 10951157757427207286
+      }
+    }
+    Overrides {
       Name: "cs:GoldBundle1"
       NetReference {
         Key: "e7d099070e034a5093f8345ef347d704"

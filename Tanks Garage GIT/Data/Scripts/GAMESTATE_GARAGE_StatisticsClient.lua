@@ -267,7 +267,7 @@ function ShowStatisticsAnimation()
 		survivalXPAmountText,
 		localPlayer.clientUserData.roundStats["SurvivalBonus"],
 		survivalCurrencyAmountText,
-		localPlayer.clientUserData.roundStats["SurvivalBonus"],
+		localPlayer.clientUserData.roundStats["SilverSurvivalBonus"],
 		modifier
 	)
 
@@ -283,7 +283,7 @@ function ShowStatisticsAnimation()
 		spottingXPAmountText, 
 		localPlayer.clientUserData.roundStats["SpottingTracker"], 
 		spottingCurrencyAmountText, 
-		localPlayer.clientUserData.roundStats["SpottingTracker"], 
+		localPlayer.clientUserData.roundStats["SilverSpottingTracker"], 
 		modifier
 	)
 

@@ -452,3 +452,45 @@ Objects {
     }
   }
 }
+Objects {
+  Id: 8599075211049864969
+  Name: "Armored Force Events System"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1729280101287281465
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13560699571398479895
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Armored Force Events System"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11861711500826256056
+    }
+  }
+}

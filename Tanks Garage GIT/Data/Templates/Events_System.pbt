@@ -1,13 +1,13 @@
 Assets {
-  Id: 1265635751906781934
-  Name: "Registry_Keys"
+  Id: 253876834654820165
+  Name: "Events System"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 16224702300220691365
+      RootId: 1036729812454709600
       Objects {
-        Id: 16224702300220691365
-        Name: "Registry_Keys"
+        Id: 1036729812454709600
+        Name: "Events System"
         Transform {
           Scale {
             X: 1
@@ -15,10 +15,45 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15818976189543274029
-        ChildIds: 7587989437888390705
-        ChildIds: 9161649941593239785
-        ChildIds: 4886424418771906186
+        ParentId: 4781671109827199097
+        ChildIds: 871221891671535110
+        ChildIds: 6718393957077100600
+        ChildIds: 13404513131706840346
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsFilePartition: true
+          FilePartitionName: "Events System"
+        }
+      }
+      Objects {
+        Id: 871221891671535110
+        Name: "Event Keys - keys cannot have underscores - must be unique"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1036729812454709600
+        ChildIds: 11665233698814918296
+        ChildIds: 18300554247907142742
+        ChildIds: 8740521633728044836
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -36,8 +71,8 @@ Assets {
         }
       }
       Objects {
-        Id: 7587989437888390705
-        Name: "Data"
+        Id: 11665233698814918296
+        Name: "Double XP"
         Transform {
           Location {
           }
@@ -49,75 +84,15 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16224702300220691365
-        ChildIds: 1605275179467651420
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 1605275179467651420
-        Name: "Keys"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 7587989437888390705
+        ParentId: 871221891671535110
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Tanks"
-            NetReference {
-              Key: "c77554cf9987470bbd1eae65b773cb0a"
-              Type {
-                Value: "mc:enetreferencetype:sharedpersistence"
-              }
-            }
+            Name: "cs:Key"
+            String: "2XP"
           }
           Overrides {
-            Name: "cs:Skins"
-            NetReference {
-              Key: "8edec1aace50475e803d2f28022888f8"
-              Type {
-                Value: "mc:enetreferencetype:sharedpersistence"
-              }
-            }
-          }
-          Overrides {
-            Name: "cs:Achievements"
-            NetReference {
-              Key: "40b94ad3b7a64019a9fe4961dd03bf9b"
-              Type {
-                Value: "mc:enetreferencetype:sharedpersistence"
-              }
-            }
-          }
-          Overrides {
-            Name: "cs:Leaderboards"
-            NetReference {
-              Key: "3c8cceda3c94438facb27363c77cad9e"
-              Type {
-                Value: "mc:enetreferencetype:sharedpersistence"
-              }
-            }
+            Name: "cs:ForceActive"
+            Bool: false
           }
         }
         Collidable_v2 {
@@ -134,12 +109,90 @@ Assets {
         }
         Script {
           ScriptAsset {
-            Id: 7627234086622722874
+            Id: 6412881030095810137
           }
         }
       }
       Objects {
-        Id: 9161649941593239785
+        Id: 18300554247907142742
+        Name: "Triple XP"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 871221891671535110
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Key"
+            String: "3XP"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6412881030095810137
+          }
+        }
+      }
+      Objects {
+        Id: 8740521633728044836
+        Name: "Event login Gold gift"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 871221891671535110
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Key"
+            String: "GiftGold"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6412881030095810137
+          }
+        }
+      }
+      Objects {
+        Id: 6718393957077100600
         Name: "ServerContext"
         Transform {
           Location {
@@ -152,8 +205,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16224702300220691365
-        ChildIds: 17274296105112212603
+        ParentId: 1036729812454709600
+        ChildIds: 16749211830998743321
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -171,8 +224,8 @@ Assets {
         }
       }
       Objects {
-        Id: 17274296105112212603
-        Name: "Storage_Keys"
+        Id: 16749211830998743321
+        Name: "CreatorEventsServer"
         Transform {
           Location {
           }
@@ -184,30 +237,18 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9161649941593239785
+        ParentId: 6718393957077100600
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Constants_API"
+            Name: "cs:META_EventsAPI"
             AssetReference {
-              Id: 9930510073357529478
+              Id: 10951157757427207286
             }
           }
           Overrides {
-            Name: "cs:Constants_API:isrep"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Constants_API:ml"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Name"
-            String: "Storage_Keys"
-          }
-          Overrides {
-            Name: "cs:Object"
+            Name: "cs:EventKeysKeysCannotHaveUnderscoresMustBe"
             ObjectReference {
-              SubObjectId: 7587989437888390705
+              SubObjectId: 871221891671535110
             }
           }
         }
@@ -225,12 +266,12 @@ Assets {
         }
         Script {
           ScriptAsset {
-            Id: 11022730790066612020
+            Id: 4243414991817554786
           }
         }
       }
       Objects {
-        Id: 4886424418771906186
+        Id: 13404513131706840346
         Name: "ClientContext"
         Transform {
           Location {
@@ -243,8 +284,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16224702300220691365
-        ChildIds: 17999607649652084150
+        ParentId: 1036729812454709600
+        ChildIds: 6257929190278429984
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -252,7 +293,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -261,8 +302,8 @@ Assets {
         }
       }
       Objects {
-        Id: 17999607649652084150
-        Name: "Storage_Keys"
+        Id: 6257929190278429984
+        Name: "CreatorEventsServer"
         Transform {
           Location {
           }
@@ -274,30 +315,18 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4886424418771906186
+        ParentId: 13404513131706840346
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Constants_API"
+            Name: "cs:META_EventsAPI"
             AssetReference {
-              Id: 9930510073357529478
+              Id: 10951157757427207286
             }
           }
           Overrides {
-            Name: "cs:Constants_API:isrep"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Constants_API:ml"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Name"
-            String: "Storage_Keys"
-          }
-          Overrides {
-            Name: "cs:Object"
+            Name: "cs:EventKeysKeysCannotHaveUnderscoresMustBe"
             ObjectReference {
-              SubObjectId: 7587989437888390705
+              SubObjectId: 871221891671535110
             }
           }
         }
@@ -315,7 +344,7 @@ Assets {
         }
         Script {
           ScriptAsset {
-            Id: 11022730790066612020
+            Id: 4243414991817554786
           }
         }
       }

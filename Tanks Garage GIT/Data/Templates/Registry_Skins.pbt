@@ -1792,6 +1792,10 @@ Assets {
             Name: "cs:cost"
             Int: 0
           }
+          Overrides {
+            Name: "cs:onlyForEvent"
+            String: "SpookySkin"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

@@ -2,6 +2,7 @@ local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionCo
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 local _Constants_API = require(script:GetCustomProperty("Constants_API"))
 local TankAPI =  _Constants_API:WaitForConstant("Tanks")
+local allTanks = TankAPI:GetTanks()
 
 local PLAYER_SHARED_STORAGE =  _Constants_API:WaitForConstant("Storage_Keys").Skins
 
@@ -249,7 +250,7 @@ function ConvertSkinDataToString(player)
 end
 
 function Initialize()
-
+	--[[
 	local individualSkinGroups = individualSkinInfo:GetChildren()
 	
 	for _, group in ipairs(individualSkinGroups) do
@@ -267,6 +268,23 @@ function Initialize()
 			skinEntry.enabled = skin:GetCustomProperty("Enabled")
 			
 			allIndividualSkins[tankID][skinID] = skinEntry
+		end
+	
+	end
+	]]
+	local skinID = nil
+	local tankID = nil
+	for numberID, tankData in pairs(allTanks) do
+		tankID = tankData["id"]
+		allIndividualSkins[tankID] = {}
+		
+		for _, skin in pairs(tankData.skins) do
+			skinID = skin["skinID"]
+			print("skinID: " .. tostring(skinID))
+			allIndividualSkins[tankID][skinID] = skin
+			allIndividualSkins[tankID][skinID].cost = skin["cost"]
+			allIndividualSkins[tankID][skinID].resource = skin["resource"]
+			allIndividualSkins[tankID][skinID].enabled = true
 		end
 	
 	end

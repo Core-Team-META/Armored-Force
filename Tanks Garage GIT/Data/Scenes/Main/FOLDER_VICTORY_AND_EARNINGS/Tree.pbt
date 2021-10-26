@@ -946,7 +946,7 @@ Objects {
   Control {
     Width: 32
     Height: 32
-    UIX: -70
+    UIX: -84
     UIY: -2
     RenderTransformPivot {
       Anchor {
@@ -1020,6 +1020,7 @@ Objects {
     Width: -32
     Height: 40
     UIX: 36
+    UIY: -2
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1028,7 +1029,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     Text {
-      Label: "2x XP & SILVER"
+      Label: "2x PARTS & SILVER"
       Color {
         R: 0.97
         G: 0.501059651

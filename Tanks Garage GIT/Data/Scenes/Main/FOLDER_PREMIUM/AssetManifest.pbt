@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16792083613392582526
+  Name: "Center Arrow 011 Wedge"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "CenterArrow_011Wedge"
+  }
+}
+Assets {
   Id: 16712525731170450862
   Name: "Icon Arrow"
   PlatformAssetType: 9
