@@ -305,6 +305,15 @@ function SaveStatistics()
 			p:AddResource(CONSTANTS_API.SILVER, totalCurrency)
 		end
 		
+		if activeEventPartsMod > 0 then	
+			p:AddResource(tankRPString, totalTP * activeEventPartsMod)
+			p:AddResource(CONSTANTS_API.XP, totalTP * activeEventPartsMod)
+		end
+		
+		if activeEventSilverMod > 0 then
+			p:AddResource(CONSTANTS_API.SILVER, totalCurrency * activeEventSilverMod)		
+		end	
+		
 		if p:IsA("Player") and not p:IsA("AIPlayer") then
 			CalculateNewLevelAndRank(p)
 		end

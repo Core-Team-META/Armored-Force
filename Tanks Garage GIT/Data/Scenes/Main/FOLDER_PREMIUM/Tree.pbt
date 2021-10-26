@@ -92059,15 +92059,21 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:CHOSEN_TANK_LIST_SCROLL_PANEL"
-      ObjectReference {
-        SelfId: 2252170284803643746
+      Name: "cs:META_EventsAPI"
+      AssetReference {
+        Id: 10951157757427207286
       }
     }
     Overrides {
       Name: "cs:MetaAbilityProgressionUTIL_API"
       AssetReference {
         Id: 2269572116006940077
+      }
+    }
+    Overrides {
+      Name: "cs:CHOSEN_TANK_LIST_SCROLL_PANEL"
+      ObjectReference {
+        SelfId: 2252170284803643746
       }
     }
     Overrides {

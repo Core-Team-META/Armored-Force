@@ -1,5 +1,6 @@
 -- API
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
+local EventsAPI = require(script:GetCustomProperty("META_EventsAPI"))
 
 -- Menu
 local BUTTON_PREMIUM_SHOP = script:GetCustomProperty("BUTTON_PREMIUM_SHOP"):WaitForObject(1)
@@ -413,7 +414,13 @@ function PurchaseAlliesPremiumTank()
 	local tankId = ALLIES_PREMIUM_TANK_ID
 	if not UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, tankId) then
 		local purchaseCosts = TankAPI.GetPurchaseCost(tankId)
-		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < purchaseCosts.amount then
+		local costOfTank = purchaseCosts.amount
+		
+		if EventsAPI.IsEventKeyActive("HalfPremiumTanks") then
+			costOfTank = costOfTank/2
+		end
+		
+		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < costOfTank then
 			SFX_DENIED:Play()
 			Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "CANNOT AFFORD", "You do not have enough gold to purchase this tank.")
 			return
@@ -437,7 +444,13 @@ function PurchaseAxisPremiumTank()
 	local tankId = AXIS_PREMIUM_TANK_ID
 	if not UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, tankId) then
 		local purchaseCosts = TankAPI.GetPurchaseCost(tankId)
-		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < purchaseCosts.amount then
+		local costOfTank = purchaseCosts.amount
+		
+		if EventsAPI.IsEventKeyActive("HalfPremiumTanks") then
+			costOfTank = costOfTank/2
+		end
+		
+		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < costOfTank then
 			SFX_DENIED:Play()
 			Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "CANNOT AFFORD", "You do not have enough gold to purchase this tank.")
 			return
@@ -488,7 +501,13 @@ function HoverAlliesPurchase(button)
 	local tankId = ALLIES_PREMIUM_TANK_ID
 	if not UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, tankId) then
 		local purchaseCosts = TankAPI.GetPurchaseCost(tankId)
-		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < purchaseCosts.amount then
+		local costOfTank = purchaseCosts.amount
+		
+		if EventsAPI.IsEventKeyActive("HalfPremiumTanks") then
+			costOfTank = costOfTank/2
+		end
+		
+		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < costOfTank then
 			button.parent:FindDescendantByName("Insufficient Funds Panel").visibility = Visibility.FORCE_ON			
 		end
 	end
@@ -500,7 +519,13 @@ function HoverAxisPurchase(button)
 	local tankId = AXIS_PREMIUM_TANK_ID
 	if not UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, tankId) then
 		local purchaseCosts = TankAPI.GetPurchaseCost(tankId)
-		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < purchaseCosts.amount then
+		local costOfTank = purchaseCosts.amount
+		
+		if EventsAPI.IsEventKeyActive("HalfPremiumTanks") then
+			costOfTank = costOfTank/2
+		end
+		
+		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < costOfTank then
 			button.parent:FindDescendantByName("Insufficient Funds Panel").visibility = Visibility.FORCE_ON			
 		end
 	end
