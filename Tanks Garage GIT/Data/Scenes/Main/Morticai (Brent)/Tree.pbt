@@ -1,38 +1,6 @@
 Name: "Morticai (Brent)"
 RootId: 8043684082903823001
 Objects {
-  Id: 15176847378855907714
-  Name: "Events System"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8043684082903823001
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Events System"
-  }
-}
-Objects {
   Id: 1608206350007372145
   Name: "Tournament"
   Transform {
