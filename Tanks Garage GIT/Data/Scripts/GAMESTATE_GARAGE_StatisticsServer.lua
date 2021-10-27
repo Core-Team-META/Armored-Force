@@ -167,6 +167,7 @@ end
 
 function SaveStatistics()
 	_G["BONUS"] = {}
+	
 	for x, p in pairs(Game.GetPlayers()) do
 		local tempTbl = {}
 		local survivalBonus = 0		

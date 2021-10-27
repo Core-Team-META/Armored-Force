@@ -87,6 +87,9 @@ function OnJoin(player, additionalTreads, additionalExtinguishers)
 	local autoTurret = player:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_REPAIR)
 	local turretCount = player:GetResource(CONSTANTS_API.CONSUMABLES.REPAIR)
 	
+	local usedAutoTreads = false
+	local usedAutoExtinguisher = false
+	
 	--[[
 --print("CONSUMABLE CHECKS")
 --print(autoTreads)
@@ -97,15 +100,19 @@ function OnJoin(player, additionalTreads, additionalExtinguishers)
 --print(turretCount)
 --print("=================")
 	]]
+	print("extra crew treads: " .. tostring(additionalTreads))
+	print("extra crew extinguishers: " .. tostring(additionalExtinguishers))
 	
 	if autoTreads == 1 and treadCount < 2 and currentSilver >= consumableCost then
 		player:AddResource(CONSTANTS_API.CONSUMABLES.TREADS, 1)
 		player:RemoveResource(CONSTANTS_API.SILVER, 400)
+		usedAutoTreads = true
 	end
 
 	if autoExtinguisher == 1 and extinguisherCount < 1 and currentSilver >= consumableCost then
 		player:AddResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER, 1)
 		player:RemoveResource(CONSTANTS_API.SILVER, 400)
+		usedAutoExtinguisher = true
 	end
 	
 	if autoTurret == 1 and turretCount < 1 and currentSilver >= consumableCost then
@@ -113,9 +120,17 @@ function OnJoin(player, additionalTreads, additionalExtinguishers)
 		player:RemoveResource(CONSTANTS_API.SILVER, 400)
 	end
 	
-	player:AddResource(CONSTANTS_API.CONSUMABLES.TREADS, additionalTreads)
-	player:AddResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER, additionalExtinguishers)
+	local newTreadCount = player:GetResource(CONSTANTS_API.CONSUMABLES.TREADS)
+	local newExtinguisherCount = player:GetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER)
 	
+	if (usedAutoTreads and (newTreadCount < 3)) or (newTreadCount < 2) then
+		player:AddResource(CONSTANTS_API.CONSUMABLES.TREADS, additionalTreads)
+	end
+	
+	if (usedAutoExtinguisher and (newExtinguisherCount < 2)) or (newExtinguisherCount < 1) then
+		player:AddResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER, additionalExtinguishers)
+	end
+		
 	treadCount = player:GetResource(CONSTANTS_API.CONSUMABLES.TREADS)
 	extinguisherCount = player:GetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER)
 	turretCount = player:GetResource(CONSTANTS_API.CONSUMABLES.REPAIR)
@@ -149,6 +164,10 @@ function OnJoin(player, additionalTreads, additionalExtinguishers)
 
 end
 
+function OnRoundEnd()
+
+end
+
 function OnLeft(player)
 	if consumables[player.id] then 
 		if consumables[player.id].trackRepair and consumables[player.id].trackRepair.ability then
@@ -176,4 +195,5 @@ end
 
 Events.Connect("ToggleConsumable", ToggleAbility)
 Events.Connect("SET_CONSUMABLES", OnJoin)
+Game.roundEndEvent:Connect(OnRoundEnd)
 Game.playerLeftEvent:Connect(OnLeft)
