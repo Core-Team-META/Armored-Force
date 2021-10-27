@@ -62,6 +62,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7676319650794467609
+  Name: "Emblem Star"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_059"
+  }
+}
+Assets {
   Id: 7523603796159964991
   Name: "BG Flat 001"
   PlatformAssetType: 9

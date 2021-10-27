@@ -232,6 +232,7 @@ Objects {
   ChildIds: 4568977468181801686
   ChildIds: 2365535638944908184
   ChildIds: 5227934660451015279
+  ChildIds: 432855532612562227
   ChildIds: 5408647362351878028
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -358,7 +359,7 @@ Objects {
   Control {
     Width: 32
     Height: 32
-    UIX: -70
+    UIX: -82
     UIY: -2
     RenderTransformPivot {
       Anchor {
@@ -440,7 +441,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     Text {
-      Label: "2x XP & SILVER"
+      Label: "2x PARTS & SILVER"
       Color {
         R: 0.97
         G: 0.501059651
@@ -449,6 +450,215 @@ Objects {
       Size: 25
       Justification {
         Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 9686253618519087109
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 2
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 432855532612562227
+  Name: "INCREASED_REWARDS_PANEL"
+  Transform {
+    Location {
+      X: 35312.1289
+      Y: -53112.3359
+      Z: 2608.8418
+    }
+    Rotation {
+      Yaw: 97.3837585
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1991062927179522272
+  ChildIds: 14862224009751969621
+  ChildIds: 2878142601164443108
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 343
+    Height: 40
+    UIY: 62
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    Panel {
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 2878142601164443108
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -6.83018879e-06
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 432855532612562227
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 32
+    Height: 32
+    UIX: 162
+    UIY: -5
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 7676319650794467609
+      }
+      Color {
+        R: 0.97
+        G: 0.501059651
+        A: 0.9
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 2
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 14862224009751969621
+  Name: "EVENT_BONUS"
+  Transform {
+    Location {
+      X: 57210.0352
+      Y: 28193.5977
+      Z: -2608.8418
+    }
+    Rotation {
+      Yaw: -97.3837585
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 432855532612562227
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 500
+    Height: 40
+    UIX: 629
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "EVENT 2x XP & 3x SILVER"
+      Color {
+        R: 0.97
+        G: 0.501059651
+        A: 0.9
+      }
+      Size: 25
+      Justification {
+        Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
       Font {

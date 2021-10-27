@@ -21011,9 +21011,14 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:META_EventsAPI"
+      AssetReference {
+        Id: 10951157757427207286
+      }
+    }
+    Overrides {
       Name: "cs:TechTree_Contents"
       ObjectReference {
-        SelfId: 841534158063459245
       }
     }
   }

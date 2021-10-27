@@ -1,6 +1,7 @@
 -- API
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API")) 
 local _Constants_API = require(script:GetCustomProperty("Constants_API"))
+local EventsAPI = require(script:GetCustomProperty("META_EventsAPI"))
 
 local TANK_LIST =  _Constants_API:WaitForConstant("Tanks").GetTanks()
 local TECHTREE =  _Constants_API:WaitForConstant("TechTree")
@@ -21,6 +22,11 @@ function PurchaseTank(player, id, prereqs)
 			--local tankRPString = UTIL_API.GetTankRPString(tonumber(id))
 			
 			local purchaseCurrencyName =  tankData.purchaseCurrencyName
+			
+			if EventsAPI.IsEventKeyActive("HalfPremiumTanks") and purchaseCurrencyName == "Gold" then
+				purchaseCost = purchaseCost / 2
+				print("discount on " .. tostring(id) .. " new cost: " .. tostring(purchaseCost))
+			end
 			
 			local currencyAmount = player:GetResource(purchaseCurrencyName)
 			--local rpAmount1 = 0
@@ -69,7 +75,7 @@ function PurchaseTank(player, id, prereqs)
 						--tank.armorProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
 						--tank.engineProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
 					end
-					Events.BroadcastToPlayer(player, "TankPurchaseSuccessful")
+					Events.BroadcastToPlayer(player, "TankPurchaseSuccessful", id)
 					Events.Broadcast("TankAcquired", player, id,  tankData.tier)
 					player:SetPrivateNetworkedData("PlayerTankData", player.serverUserData.techTreeProgress)
 					return BroadcastEventResultCode.SUCCESS															

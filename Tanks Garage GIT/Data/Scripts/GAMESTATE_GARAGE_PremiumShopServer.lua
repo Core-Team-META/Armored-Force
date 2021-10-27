@@ -1,9 +1,12 @@
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 local _Constants_API = require(script:GetCustomProperty("Constants_API"))
+local EventsAPI = require(script:GetCustomProperty("META_EventsAPI"))
 
 local TANK_INFO = _Constants_API:WaitForConstant("Tanks").GetTanks()
 local CURRENCY = _Constants_API:WaitForConstant("Currency")
 local TECHTREE = _Constants_API:WaitForConstant("TechTree")
+
+local DISCOUNT_MODIFIER = 0.5
 
 local goldBundles = {
 	[1] = script:GetCustomProperty("GoldBundle1"),
@@ -48,6 +51,11 @@ function PurchasePremiumTank(player, tankId)
 		end
 	end
 	
+	if cost and EventsAPI.IsEventKeyActive("HalfPremiumTanks") then
+		cost = math.floor(tonumber(cost) * DISCOUNT_MODIFIER)
+		print("New cost : " .. tostring(cost))
+	end
+	
 	if not cost or cost > player:GetResource(CURRENCY.GOLD.ResourceName) then
 		Events.BroadcastToPlayer(player, "PremTankPurchased", tankId, false)
 --print("purchase failed")
@@ -60,9 +68,9 @@ function PurchasePremiumTank(player, tankId)
 			
 			t.purchased = true
 			t.researched = true
-			t.weaponProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
-			t.armorProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
-			t.engineProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
+			--t.weaponProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
+			--t.armorProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
+			--t.engineProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
 			
 			Events.BroadcastToPlayer(player, "PremTankPurchased", tankId, true)
 --print("purchase passed")

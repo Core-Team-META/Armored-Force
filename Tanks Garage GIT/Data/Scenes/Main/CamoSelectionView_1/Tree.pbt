@@ -92,6 +92,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:META_EventsAPI"
+      AssetReference {
+        Id: 10951157757427207286
+      }
+    }
+    Overrides {
       Name: "cs:CAMO_TEMPLATE"
       AssetReference {
         Id: 8607889401878092637

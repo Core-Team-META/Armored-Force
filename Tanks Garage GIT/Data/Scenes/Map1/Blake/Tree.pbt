@@ -492,3 +492,37 @@ Objects {
     }
   }
 }
+Objects {
+  Id: 270482115910360806
+  Name: "Armored Force Events System"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 149176979336870667
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13560699571398479895
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Armored Force Events System"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11861711500826256056
+    }
+  }
+}

@@ -118,6 +118,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:META_EventsAPI"
+      AssetReference {
+        Id: 10951157757427207286
+      }
+    }
+    Overrides {
       Name: "cs:Keys"
       ObjectReference {
         SelfId: 8053548290070406507

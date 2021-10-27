@@ -22,9 +22,8 @@ Rank = {
     Jarsa           = AdminRanks.HigherAdmin, 
     Chris           = AdminRanks.HigherAdmin,
     Aj              = AdminRanks.HigherAdmin,
- 	junster09		= AdminRanks.HigherAdmin,
-    Mucusinator     = AdminRanks.HigherAdmin,
- 	
+    junster09		= AdminRanks.HigherAdmin,
+
     standardcombo   = AdminRanks.Admin ,
     blaking707      = AdminRanks.Admin ,
     Coderz          = AdminRanks.Admin ,
@@ -38,6 +37,7 @@ Rank = {
     Keppu           = AdminRanks.Admin ,
     KonzZwodrei     = AdminRanks.Admin ,
     Melamoryxq      = AdminRanks.Admin ,
+    Mucusinator     = AdminRanks.Admin ,
     WitcherSilver   = AdminRanks.Admin ,
     riffraff        = AdminRanks.Admin ,
     Sobchak         = AdminRanks.Admin ,

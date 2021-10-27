@@ -1,6 +1,7 @@
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 local _Constants_API = require(script:GetCustomProperty("Constants_API"))
+local EventsAPI = require(script:GetCustomProperty("META_EventsAPI"))
 local CURRENCY = _Constants_API:WaitForConstant("Currency")
 local TANKS = _Constants_API:WaitForConstant("Tanks")
 local XP = _Constants_API:WaitForConstant("XP")
@@ -34,6 +35,9 @@ local killCurrencyValue = victoryComponent:GetCustomProperty("KillCurrencyValue"
 local survivalXPValue = victoryComponent:GetCustomProperty("SurvivalXPValue")
 local survivalCurrencyValue = victoryComponent:GetCustomProperty("SurvivalCurrencyValue")
 
+local EVENT_SILVER_MODIFIER = 3
+local EVENT_PARTS_MODIFIER = 2
+
 local PLAYER_JOINED_XP_AMOUNT = 50
 local VICTORY_XP_PER_PLAYER_AMOUNT = 75 --150
 local VICTORY_TP_PER_PLAYER_AMOUNT = 150 --300
@@ -54,10 +58,6 @@ local playerParticipation = {}
 local playerStartingXP = {}
 local playerStartingSilver = {}
 
-local function RoundValue(value)
-	return math.floor(value + 0.5)
-end
-
 function TrackDailyChallenge(player, type, amount)
 	for i = 1, 3 do
 		if player.serverUserData.CHALLENGE[i].challengeType == type then
@@ -72,6 +72,55 @@ function TrackDailyChallenge(player, type, amount)
 		end
 	end
 end
+--[[
+function CalculateTotalXP(player)
+	local baseXP = 0
+
+	if winner == player.team then
+		baseXP = victoryXPValue
+	elseif winner > 0 then
+		baseXP = lossXPValue
+	else
+		baseXP = drawXPValue
+	end
+
+	local survivalBonus = math.floor(survivalXPValue * (player:GetResource("MatchEndHP") / player.maxHitPoints))
+	local damageBounus = player:GetResource("DamageTracker")
+	local spotBonus = player:GetResource("SpottingTracker")
+
+	local modifier = 1
+	if (UTIL_API.UsingPremiumTank(tonumber(player.serverUserData.currentTankData.id))) then
+		modifier = 2
+	end
+
+	return (baseXP + survivalBonus + damageBounus + spotBonus + (player.kills * killXPValue)) * modifier
+end
+]]
+
+--[[
+function CalculateTotalCurrency(player)
+	local baseCurrency = 0
+
+	if winner == player.team then
+		baseCurrency = victoryCurrencyValue
+	elseif winner > 0 then
+		baseCurrency = lossCurrencyValue
+	else
+		baseCurrency = drawCurrencyValue
+	end
+
+	local survivalBonus = math.floor(survivalCurrencyValue * (player:GetResource("MatchEndHP") / player.maxHitPoints))
+	local damageBounus = player:GetResource("DamageTracker")
+	local spotBonus = player:GetResource("SpottingTracker")
+
+	local modifier = 1
+	if (UTIL_API.UsingPremiumTank(player.serverUserData.currentTankData.id)) then
+		modifier = 2
+	end
+
+	return (baseCurrency + survivalBonus + damageBounus + spotBonus + (player.kills * killXPValue)) * modifier
+end
+]]
 
 function AdvancePlayerLevel(player)
 	local levelXPRequirement = RANK_API.GetXPInLevel(player:GetResource(CONSTANTS_API.XP_SYSTEM.LVL))
@@ -167,6 +216,16 @@ end
 
 function SaveStatistics()
 	_G["BONUS"] = {}
+	local activeEventPartsMod = 0
+	local activeEventSilverMod = 0
+	
+	if EventsAPI.IsEventKeyActive("2TP") then
+		activeEventPartsMod = EVENT_PARTS_MODIFIER
+	end
+	
+	if EventsAPI.IsEventKeyActive("3SL") then
+		activeEventSilverMod = EVENT_SILVER_MODIFIER
+	end
 	
 	for x, p in pairs(Game.GetPlayers()) do
 		local tempTbl = {}
@@ -223,21 +282,10 @@ function SaveStatistics()
 		local totalCurrency = p:GetResource(CONSTANTS_API.SILVER) - playerStartingSilver[p.id]
 		
 		local modifier = 1
-		local partsGain = driver.serverUserData.currentTankData.additionalPartsGain
-		local silverGain = driver.serverUserData.currentTankData.additionalSilverGain
 		local usedPremium = 0
 		local dailyBonus = 0
 		
 		Task.Wait()
-		
-		if partsGain then
-			p:AddResource(tankRPString, RoundValue(totalTP * partsGain))
-			p:AddResource(CONSTANTS_API.XP, RoundValue(totalTP * partsGain))		
-		end
-		
-		if silverGain then
-			p:AddResource(CONSTANTS_API.SILVER, totalCurrency * silverGain)
-		end			
 		
 		if _G["BONUS"][p.id] then
 			print("Daily bonus applied")
@@ -257,22 +305,31 @@ function SaveStatistics()
 			p:AddResource(CONSTANTS_API.SILVER, totalCurrency)
 		end
 		
+		if activeEventPartsMod > 0 then	
+			p:AddResource(tankRPString, totalTP * activeEventPartsMod)
+			p:AddResource(CONSTANTS_API.XP, totalTP * activeEventPartsMod)
+		end
+		
+		if activeEventSilverMod > 0 then
+			p:AddResource(CONSTANTS_API.SILVER, totalCurrency * activeEventSilverMod)		
+		end	
+		
 		if p:IsA("Player") and not p:IsA("AIPlayer") then
 			CalculateNewLevelAndRank(p)
 		end
 		
-		tempTbl["TP"] = RoundValue(totalTP * (modifier + partsGain))
-		tempTbl["BaseTP"] = RoundValue(baseTP * (modifier + partsGain))
-		tempTbl["Silver"] = RoundValue(totalCurrency * (modifier + silverGain))
-		tempTbl["BaseSilver"] = RoundValue(baseCurrency * (modifier + silverGain))
-		tempTbl["SurvivalBonus"] = RoundValue(survivalBonus * (modifier + partsGain))
-		tempTbl["SilverSurvivalBonus"] = RoundValue(survivalBonus * (modifier + silverGain))
-		tempTbl["DamageTracker"] = RoundValue(p:GetResource("DamageTracker") * (modifier + partsGain))
-		tempTbl["SilverDamageTracker"] = RoundValue(p:GetResource("SilverDamageTracker") * (modifier + silverGain))
-		tempTbl["SpottingTracker"] = RoundValue(p:GetResource("SpottingTracker") * (modifier + partsGain))
-		tempTbl["SilverSpottingTracker"] = RoundValue(p:GetResource("SpottingTracker") * (modifier + silverGain))
-		tempTbl["KillTracker"] = RoundValue(p:GetResource("KillTracker") * (modifier + partsGain))
-		tempTbl["SilverKillTracker"] = RoundValue(p:GetResource("SilverKillTracker") * (modifier + silverGain))
+		tempTbl["TP"] = totalTP * (modifier + activeEventPartsMod)
+		tempTbl["BaseTP"] = baseTP * (modifier + activeEventPartsMod)
+		tempTbl["Silver"] = totalCurrency * (modifier + activeEventSilverMod)
+		tempTbl["BaseSilver"] = baseCurrency * (modifier + activeEventSilverMod)
+		tempTbl["SurvivalBonus"] = survivalBonus * (modifier + activeEventPartsMod)
+		tempTbl["SilverSurvivalBonus"] = survivalBonus * (modifier + activeEventSilverMod)
+		tempTbl["DamageTracker"] = p:GetResource("DamageTracker") * (modifier + activeEventPartsMod)
+		tempTbl["SilverDamageTracker"] = p:GetResource("SilverDamageTracker") * (modifier + activeEventSilverMod)
+		tempTbl["SpottingTracker"] = p:GetResource("SpottingTracker") * (modifier + activeEventPartsMod)
+		tempTbl["SilverSpottingTracker"] = p:GetResource("SpottingTracker") * (modifier + activeEventSilverMod)
+		tempTbl["KillTracker"] = p:GetResource("KillTracker") * (modifier + activeEventPartsMod)
+		tempTbl["SilverKillTracker"] = p:GetResource("SilverKillTracker") * (modifier + activeEventSilverMod)
 		tempTbl["UsedPremium"] = usedPremium
 		tempTbl["DailyBonus"] = dailyBonus 
 

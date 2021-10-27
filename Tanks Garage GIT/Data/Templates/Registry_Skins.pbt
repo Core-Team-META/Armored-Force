@@ -103,6 +103,7 @@ Assets {
         ChildIds: 9474853746266832971
         ChildIds: 17973933478931394461
         ChildIds: 2222767876703196527
+        ChildIds: 6475918943030687478
         UnregisteredParameters {
           Overrides {
             Name: "cs:ID"
@@ -1713,6 +1714,87 @@ Assets {
           Overrides {
             Name: "cs:cost"
             Int: 10000
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6308415745269538681
+          }
+        }
+      }
+      Objects {
+        Id: 6475918943030687478
+        Name: "Spooky Time"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10854091918774774487
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:skinName"
+            String: "Spooky Time"
+          }
+          Overrides {
+            Name: "cs:useNewMaterial"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:useNewColor"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:newColor"
+            Color {
+              R: 0.05
+              G: 0.05
+              B: 0.05
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "cs:newMaterial"
+            AssetReference {
+              Id: 43314553308649790
+            }
+          }
+          Overrides {
+            Name: "cs:skinID"
+            String: "21"
+          }
+          Overrides {
+            Name: "cs:previewImageLocation"
+            Vector2 {
+              X: 1
+              Y: 5
+            }
+          }
+          Overrides {
+            Name: "cs:cost"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:onlyForEvent"
+            String: "SpookySkin"
           }
         }
         Collidable_v2 {
