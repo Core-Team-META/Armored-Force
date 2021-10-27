@@ -144,7 +144,9 @@ API.CONSUMABLES = {
 	REPAIR = "TurretRepair",
 	AUTO_TREADS = "AutoSupplyTreads",
 	AUTO_EXTINGUISHER = "AutoSupplyExtinguisher",
-	AUTO_REPAIR = "AutoSupplyRepair"
+	AUTO_REPAIR = "AutoSupplyRepair",
+	CREW_TREADS = "CrewTreads",
+	CREW_EXTINGUISHER = "CrewExtinguisher"
 	
 }
 

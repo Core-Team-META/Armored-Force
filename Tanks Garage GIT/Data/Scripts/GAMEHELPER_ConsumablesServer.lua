@@ -5,6 +5,7 @@ local extinguisherConsumable = script:GetCustomProperty("ExtinguisherConsumable"
 local turretRepairConsumable = script:GetCustomProperty("TurretRepairConsumable")
 
 local abilityGroup = script:GetCustomProperty("AbilityGroup"):WaitForObject()
+local crewUpgradesApplied = {}
 
 local consumables = {}
 
@@ -14,17 +15,27 @@ function OnRecovery(abilityUsed)
 	local abilityName = abilityUsed.name
 	
 	if abilityName == "TRACK" then
-		abilityUsed.owner:RemoveResource(CONSTANTS_API.CONSUMABLES.TREADS, 1)
+		local crewItem = abilityUsed.owner:GetResource(CONSTANTS_API.CONSUMABLES.CREW_TREADS)
+		if crewItem > 0 then
+			abilityUsed.owner:RemoveResource(CONSTANTS_API.CONSUMABLES.CREW_TREADS, 1)
+		else
+			abilityUsed.owner:RemoveResource(CONSTANTS_API.CONSUMABLES.TREADS, 1)
+		end
 		Events.Broadcast(abilityOwner .. "RepairTank", "TRACK")
-		local count = abilityUsed.owner:GetResource(CONSTANTS_API.CONSUMABLES.TREADS)
+		local count = abilityUsed.owner:GetResource(CONSTANTS_API.CONSUMABLES.TREADS) + abilityUsed.owner:GetResource(CONSTANTS_API.CONSUMABLES.CREW_TREADS)
 		if count <= 0 then
 			abilityUsed:Interrupt()
 		end
 		abilityUsed:SetNetworkedCustomProperty("Charges", count)
 	elseif abilityName == "EXTINGUISH" then
-		abilityUsed.owner:RemoveResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER, 1)
+		local crewItem = abilityUsed.owner:GetResource(CONSTANTS_API.CONSUMABLES.CREW_EXTINGUISHER)
+		if crewItem > 0 then
+			abilityUsed.owner:RemoveResource(CONSTANTS_API.CONSUMABLES.CREW_EXTINGUISHER, 1)
+		else
+			abilityUsed.owner:RemoveResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER, 1)
+		end
 		Events.Broadcast(abilityOwner .. "RepairTank", "EXTINGUISH")
-		local count = abilityUsed.owner:GetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER)
+		local count = abilityUsed.owner:GetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER) + abilityUsed.owner:GetResource(CONSTANTS_API.CONSUMABLES.CREW_EXTINGUISHER)
 		if count <= 0 then
 			abilityUsed:Interrupt()
 		end
@@ -90,49 +101,51 @@ function OnJoin(player, additionalTreads, additionalExtinguishers)
 	local usedAutoTreads = false
 	local usedAutoExtinguisher = false
 	
-	--[[
---print("CONSUMABLE CHECKS")
---print(autoTreads)
---print(treadCount)
---print(autoExtinguisher)
---print(extinguisherCount)
---print(autoTurret)
---print(turretCount)
---print("=================")
-	]]
+
+	print("CONSUMABLE CHECKS")
+	print("auto and count treads")
+	print(autoTreads)
+	print(treadCount)
+	print("auto and count extinguishers")
+	print(autoExtinguisher)
+	print(extinguisherCount)
+	print("auto and count turret kits")
+	print(autoTurret)
+	print(turretCount)
 	print("extra crew treads: " .. tostring(additionalTreads))
 	print("extra crew extinguishers: " .. tostring(additionalExtinguishers))
+	print("=================")
 	
-	if autoTreads == 1 and treadCount < 2 and currentSilver >= consumableCost then
+	if (autoTreads == 1) and (treadCount < 2) and (currentSilver >= consumableCost) then
 		player:AddResource(CONSTANTS_API.CONSUMABLES.TREADS, 1)
 		player:RemoveResource(CONSTANTS_API.SILVER, 400)
-		usedAutoTreads = true
+		print("autosuppilied treads")
 	end
+	
+	currentSilver = player:GetResource(CONSTANTS_API.SILVER)
 
-	if autoExtinguisher == 1 and extinguisherCount < 1 and currentSilver >= consumableCost then
+	if (autoExtinguisher == 1) and (extinguisherCount < 1) and (currentSilver >= consumableCost) then
 		player:AddResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER, 1)
 		player:RemoveResource(CONSTANTS_API.SILVER, 400)
-		usedAutoExtinguisher = true
+		print("autosuppilied extinguishers")
 	end
 	
-	if autoTurret == 1 and turretCount < 1 and currentSilver >= consumableCost then
+	currentSilver = player:GetResource(CONSTANTS_API.SILVER)
+	
+	if (autoTurret == 1) and (turretCount < 1) and (currentSilver >= consumableCost) then
 		player:AddResource(CONSTANTS_API.CONSUMABLES.REPAIR, 1)
 		player:RemoveResource(CONSTANTS_API.SILVER, 400)
+		print("autosuppilied turret kits")
 	end
 	
-	local newTreadCount = player:GetResource(CONSTANTS_API.CONSUMABLES.TREADS)
-	local newExtinguisherCount = player:GetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER)
-	
-	if (usedAutoTreads and (newTreadCount < 3)) or (newTreadCount < 2) then
-		player:AddResource(CONSTANTS_API.CONSUMABLES.TREADS, additionalTreads)
+	if not crewUpgradesApplied[player.id] then
+		player:SetResource(CONSTANTS_API.CONSUMABLES.CREW_TREADS, additionalTreads)
+		player:SetResource(CONSTANTS_API.CONSUMABLES.CREW_EXTINGUISHER, additionalExtinguishers)
+		crewUpgradesApplied[player.id] = true
 	end
-	
-	if (usedAutoExtinguisher and (newExtinguisherCount < 2)) or (newExtinguisherCount < 1) then
-		player:AddResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER, additionalExtinguishers)
-	end
-		
-	treadCount = player:GetResource(CONSTANTS_API.CONSUMABLES.TREADS)
-	extinguisherCount = player:GetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER)
+			
+	treadCount = player:GetResource(CONSTANTS_API.CONSUMABLES.TREADS) + player:GetResource(CONSTANTS_API.CONSUMABLES.CREW_TREADS)
+	extinguisherCount = player:GetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER) + player:GetResource(CONSTANTS_API.CONSUMABLES.CREW_EXTINGUISHER)
 	turretCount = player:GetResource(CONSTANTS_API.CONSUMABLES.REPAIR)
 
 	consumables[player.id] = {}

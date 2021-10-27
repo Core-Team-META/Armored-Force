@@ -264,6 +264,7 @@ function DisableThisComponent()
     displayTanks.visibility = Visibility.FORCE_OFF
     axisDisplayTanks.visibility = Visibility.FORCE_OFF
 	STATS_CONTAINER.visibility = Visibility.FORCE_OFF
+	STATS_CONTAINER.isEnabled = false
 	STATS_CONTAINER.height = 585
 	BUTTON_UPGRADE_TANK.visibility = Visibility.INHERIT
 	

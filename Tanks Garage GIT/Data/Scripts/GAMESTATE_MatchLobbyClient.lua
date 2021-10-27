@@ -228,6 +228,8 @@ function LoadEquippableTanks()
 	
 	local count = 0
 	
+	--[[
+	
 	for i, tank in ipairs(localPlayer.clientUserData.techTreeProgress) do
 	
 		if tank.purchased then
@@ -242,6 +244,7 @@ function LoadEquippableTanks()
 		end
 		
 	end
+	]]
 end
 
 function EquipTank(button)
