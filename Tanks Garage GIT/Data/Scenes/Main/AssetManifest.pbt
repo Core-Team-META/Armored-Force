@@ -69,19 +69,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16525804645926480529
-  Name: "TransferTestSkins"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "8edec1aace50475e803d2f28022888f8"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 16405819613734804126
   Name: "CommandePack_1"
   PlatformAssetType: 24
@@ -108,6 +95,19 @@ Assets {
   }
 }
 Assets {
+  Id: 15397439685017535000
+  Name: "skins"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "fe8159849da84c738d735103900d4344"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 14975415967846703570
   Name: "GoldPack2"
   PlatformAssetType: 24
@@ -116,19 +116,6 @@ Assets {
       Key: "88d77eb9593b486baa670ec5f376ffd1"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
-  Id: 14542407528421208735
-  Name: "TransferTestTanks"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "c77554cf9987470bbd1eae65b773cb0a"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
   }
@@ -166,19 +153,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_001"
-  }
-}
-Assets {
-  Id: 12820696332142815647
-  Name: "TransferTestAchievements"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "40b94ad3b7a64019a9fe4961dd03bf9b"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
   }
 }
 Assets {
@@ -247,6 +221,19 @@ Assets {
   }
 }
 Assets {
+  Id: 9174736073532438654
+  Name: "leaderboards"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "aef519bc464d43ccb05b6e98eec1cac8"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 8779881459085015496
   Name: "GoldBundle2"
   PlatformAssetType: 24
@@ -266,6 +253,19 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bush_generic_001"
+  }
+}
+Assets {
+  Id: 8710974997821399226
+  Name: "tanks"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "eb1b790b8b8c4c898073b2bb403b38ed"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }
 Assets {
@@ -301,19 +301,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_001"
-  }
-}
-Assets {
-  Id: 4077582356090692285
-  Name: "TransferTestLeaderboards"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "3c8cceda3c94438facb27363c77cad9e"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
   }
 }
 Assets {
@@ -399,6 +386,19 @@ Assets {
       Key: "5f4f64ec1e564b9eb7e1bb407c2dd9e3"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
+  Id: 2113803591336373581
+  Name: "achievements"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "aecc909ed0ac4aa0b8eaa033f502a00e"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
   }

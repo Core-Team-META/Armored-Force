@@ -23,7 +23,8 @@ Rank = {
     Chris           = AdminRanks.HigherAdmin,
     Aj              = AdminRanks.HigherAdmin,
     junster09		= AdminRanks.HigherAdmin,
-
+	Mucusinator     = AdminRanks.HigherAdmin,
+	
     standardcombo   = AdminRanks.Admin ,
     blaking707      = AdminRanks.Admin ,
     Coderz          = AdminRanks.Admin ,
