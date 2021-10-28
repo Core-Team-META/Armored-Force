@@ -128,7 +128,7 @@ function Tick()
 	if not forcedSelection then
 		mapInRotation = tostring(map[math.random(3)])
 		
---print("Map in rotation: " .. mapInRotation)
+	print("Map in rotation: " .. mapInRotation)
 		
 		Task.Wait(60)
 	end

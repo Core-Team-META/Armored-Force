@@ -367,6 +367,8 @@ function CheckAndConvertToNewupgradeSystem(dataString)
 		        	
 		        	if upgradeId == 1 then
 		        		newString = newString .. "/1-" .. selectedProgress
+		        	elseif tanks[tonumber(v.id)]["purchaseCurrencyName"] == "Gold" then
+						newString = newString .. "/" .. tostring(upgradeId) .. "-2"
 		        	else 
 		        		newString = newString .. "/" .. tostring(upgradeId) .. "-0"
 		        	end

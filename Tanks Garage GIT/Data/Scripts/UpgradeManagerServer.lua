@@ -206,7 +206,6 @@ function PurchaseTank(player, tankID)
 		warn("COULD NOT FIND REQUESTED TANK ID: " .. tostring(tankID))
 		return BroadcastEventResultCode.FAILURE
 	end
-	
 
 	local purchaseCost = selectedTankData["purchaseCost"]
 	local currentSilver = player:GetResource(CURRENCY.SILVER.ResourceName)
@@ -230,6 +229,18 @@ function PurchaseTank(player, tankID)
 			
 			if(purchaseCurrencyName == "Gold") then
 				player:RemoveResource(CURRENCY.GOLD.ResourceName, purchaseCost)
+				for x, y in pairs(tank.turret) do
+					tank.turret[x] = 2
+				end
+				for x, y in pairs(tank.hull) do
+					tank.hull[x] = 2
+				end
+				for x, y in pairs(tank.engine) do
+					tank.engine[x] = 2
+				end
+				for x, y in pairs(tank.crew) do
+					tank.crew[x] = 2
+				end
 			else
 				player:RemoveResource(CURRENCY.SILVER.ResourceName, purchaseCost)
 			end

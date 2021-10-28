@@ -412,6 +412,15 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 9001618463616267886
+      value {
+        Overrides {
+          Name: "cs:mustUnlockPrereq"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 9937031949216304537
       value {
         Overrides {
