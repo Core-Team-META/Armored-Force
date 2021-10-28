@@ -139,12 +139,6 @@ Objects {
   }
   ParentId: 2803066169118477909
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:UIReference"
-      ObjectReference {
-        SelfId: 17154883699162294971
-      }
-    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

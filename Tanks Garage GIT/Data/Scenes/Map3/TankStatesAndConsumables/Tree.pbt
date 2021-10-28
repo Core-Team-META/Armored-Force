@@ -534,7 +534,7 @@ Objects {
     }
     Overrides {
       Name: "cs:HideWhenDisabled"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:Binding:tooltip"
@@ -627,7 +627,10 @@ Objects {
     Overrides {
       Name: "cs:Canvas"
       ObjectReference {
-        SelfId: 293217387819200419
+        SelfId: 12831833753359003834
+        SubObjectId: 8187478463060959455
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
@@ -639,13 +642,19 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       ObjectReference {
-        SelfId: 2594969218193776216
+        SelfId: 13012109576691416711
+        SubObjectId: 8581710384343953122
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
       Name: "cs:CountdownText"
       ObjectReference {
-        SelfId: 12826870770831480972
+        SelfId: 17006987197592250036
+        SubObjectId: 3425238375675098833
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
@@ -657,31 +666,46 @@ Objects {
     Overrides {
       Name: "cs:NameText"
       ObjectReference {
-        SelfId: 8688069871437422844
+        SelfId: 10031641695828144314
+        SubObjectId: 5240954529803477215
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
       Name: "cs:ProgressIndicator"
       ObjectReference {
-        SelfId: 2000489074443269926
+        SelfId: 16589449650562254719
+        SubObjectId: 2717218724078786330
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
       Name: "cs:RightShadow"
       ObjectReference {
-        SelfId: 10852332840408762983
+        SelfId: 10306941864302160338
+        SubObjectId: 5513969020600678839
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
       Name: "cs:LeftShadow"
       ObjectReference {
-        SelfId: 7815417189756223308
+        SelfId: 1280303232125036667
+        SubObjectId: 15152534230546036766
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
       Name: "cs:Charges"
       ObjectReference {
-        SelfId: 16756855938145161847
+        SelfId: 13693993466275764639
+        SubObjectId: 9045134710298069498
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
   }
@@ -731,7 +755,7 @@ Objects {
     }
     Overrides {
       Name: "cs:HideWhenDisabled"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:Binding:tooltip"
@@ -824,7 +848,10 @@ Objects {
     Overrides {
       Name: "cs:Canvas"
       ObjectReference {
-        SelfId: 10223300814102871608
+        SelfId: 4186075378287539689
+        SubObjectId: 17986248781865821580
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
@@ -836,12 +863,19 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       ObjectReference {
+        SelfId: 11692185115595951206
+        SubObjectId: 7047830992451050499
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
       Name: "cs:CountdownText"
       ObjectReference {
-        SelfId: 1551545638345281326
+        SelfId: 8539335153710221691
+        SubObjectId: 13046295404429908254
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
@@ -853,31 +887,46 @@ Objects {
     Overrides {
       Name: "cs:NameText"
       ObjectReference {
-        SelfId: 8870835144169813235
+        SelfId: 17723687442866182346
+        SubObjectId: 3925801092732635311
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
       Name: "cs:ProgressIndicator"
       ObjectReference {
-        SelfId: 16747218186289358322
+        SelfId: 7589184137876216280
+        SubObjectId: 12312316209140353469
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
       Name: "cs:RightShadow"
       ObjectReference {
-        SelfId: 6542915248923521399
+        SelfId: 7684846339306607619
+        SubObjectId: 12189590113334363238
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
       Name: "cs:LeftShadow"
       ObjectReference {
-        SelfId: 13607714758238386554
+        SelfId: 1001172892409326024
+        SubObjectId: 14873403750473709997
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
       Name: "cs:Charges"
       ObjectReference {
-        SelfId: 8413845903520458346
+        SelfId: 1117208046216158833
+        SubObjectId: 14703424112505671188
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
   }
@@ -923,7 +972,7 @@ Objects {
     }
     Overrides {
       Name: "cs:HideWhenDisabled"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:Binding:tooltip"
@@ -1016,7 +1065,10 @@ Objects {
     Overrides {
       Name: "cs:Canvas"
       ObjectReference {
-        SelfId: 12884161704746722426
+        SelfId: 2078843910679422836
+        SubObjectId: 16092937196511409937
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
@@ -1028,13 +1080,19 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       ObjectReference {
-        SelfId: 9495355184380728921
+        SelfId: 17604106080068507989
+        SubObjectId: 4017854828905187632
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
       Name: "cs:CountdownText"
       ObjectReference {
-        SelfId: 4938515836201830084
+        SelfId: 5913001458039790683
+        SubObjectId: 10485263833028381758
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
@@ -1046,31 +1104,46 @@ Objects {
     Overrides {
       Name: "cs:NameText"
       ObjectReference {
-        SelfId: 1387030200624030598
+        SelfId: 11524033152793232293
+        SubObjectId: 6656750708276892608
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
       Name: "cs:ProgressIndicator"
       ObjectReference {
-        SelfId: 10633506013002417304
+        SelfId: 11900640853539896306
+        SubObjectId: 7398149017835891607
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
       Name: "cs:RightShadow"
       ObjectReference {
-        SelfId: 5314495985152171109
+        SelfId: 10282829601103956516
+        SubObjectId: 5566417884459047489
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
       Name: "cs:LeftShadow"
       ObjectReference {
-        SelfId: 10631221514441628140
+        SelfId: 4530050126206554813
+        SubObjectId: 18253625915067925208
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
     Overrides {
       Name: "cs:Charges"
       ObjectReference {
-        SelfId: 6566703752694716258
+        SelfId: 9631925116809998873
+        SubObjectId: 5055123751967072892
+        InstanceId: 8735945775194575000
+        TemplateId: 6119390330821971846
       }
     }
   }
