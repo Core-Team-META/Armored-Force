@@ -426,7 +426,7 @@ function PurchaseAlliesPremiumTank()
 			return
 		end
 		ALLIES_BUY_BUTTON.isInteractable = false
-		local event = Events.BroadcastToServer("PurchaseTank", tankId, purchaseCosts.resource)
+		local event = Events.BroadcastToServer("PurchaseTank", tankId)
 		--[[
 		if (event == BroadcastEventResultCode.SUCCESS) then
 			for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
@@ -456,7 +456,7 @@ function PurchaseAxisPremiumTank()
 			return
 		end
 		AXIS_BUY_BUTTON.isInteractable = false
-		local event = Events.BroadcastToServer("PurchaseTank", tankId, purchaseCosts.resource)		
+		local event = Events.BroadcastToServer("PurchaseTank", tankId)		
 		--[[
 		if (event == BroadcastEventResultCode.SUCCESS) then
 			for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
@@ -471,19 +471,18 @@ function PurchaseAxisPremiumTank()
 	end
 end
 
-function PurchaseSuccessful(id)
+function PurchaseSuccessful()
 	SFX_EQUIP_TANK:Play()
 	UTIL_API.ShowPopup("PURCHASE SUCCESSFUL", "Successfully purchased tank.", "OK")
 	Task.Wait()
-	
+	--[[
 	for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 		if (tonumber(tank.id) == tonumber(id)) then
 			tank.researched = true
 			tank.purchased = true
 		end
 	end	
-	
-	Task.Wait()
+	]]
 	TogglePremiumTankOwnedState()
 end
 
@@ -577,5 +576,5 @@ ALLIES_PURCHASE_PREMIUM_BUTTON.unhoveredEvent:Connect(UnhoverAlliesPurchase)
 AXIS_PURCHASE_PREMIUM_BUTTON.unhoveredEvent:Connect(UnhoverAxisPurchase)
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
-Events.Connect("TankPurchaseSuccessful", PurchaseSuccessful)
+Events.Connect("PremiumTankPurchaseSuccessful", PurchaseSuccessful)
 Events.Connect("FinishedConversion", FinishedConversion)

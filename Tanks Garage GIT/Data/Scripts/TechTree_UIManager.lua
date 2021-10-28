@@ -1374,7 +1374,7 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 		selectedTankId = "0" .. tostring(selectedTankId)
 	else
 		selectedTankId = tostring(selectedTankId)
-	end
+	end	
 	
 	tankDetails.unlockableTanks = {}
 
@@ -2417,7 +2417,7 @@ function TankPurchaseSuccessful(tankID)
     BUY_TANK_CONTAINER.visibility = Visibility.FORCE_OFF
     for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
         if tonumber(tank.id) == tonumber(tankID) then
---print('Updated local tank data.')
+			print('Updated local tank data. Purchased: ' .. tostring(tank.id))
             tank.purchased = true
             tank.researched = true
             if UTIL_API.UsingPremiumTank(tonumber(tankID)) then
@@ -2433,6 +2433,8 @@ function TankPurchaseSuccessful(tankID)
 				for x, y in pairs(tank.crew) do
 					tank.crew[x] = 2
 				end
+				
+				Events.Broadcast("PremiumTankPurchaseSuccessful")
             end
         end
     end

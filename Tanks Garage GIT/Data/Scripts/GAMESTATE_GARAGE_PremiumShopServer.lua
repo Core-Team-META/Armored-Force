@@ -68,9 +68,19 @@ function PurchasePremiumTank(player, tankId)
 			
 			t.purchased = true
 			t.researched = true
-			--t.weaponProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
-			--t.armorProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
-			--t.engineProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
+			
+			for x, y in pairs(t.turret) do
+				tank.turret[x] = 2
+			end
+			for x, y in pairs(t.hull) do
+				tank.hull[x] = 2
+			end
+			for x, y in pairs(t.engine) do
+				tank.engine[x] = 2
+			end
+			for x, y in pairs(t.crew) do
+				tank.crew[x] = 2
+			end
 			
 			Events.BroadcastToPlayer(player, "PremTankPurchased", tankId, true)
 --print("purchase passed")
@@ -111,5 +121,5 @@ function OnJoined(player)
 end
 
 Events.Connect("SET_DAILY_CHALLENGES", OnJoined)
-Events.ConnectForPlayer("PurchasePremTank", PurchasePremiumTank)
+--Events.ConnectForPlayer("PurchasePremTank", PurchasePremiumTank)
 Events.ConnectForPlayer("ConvertXP", ConvertToFreeXP)

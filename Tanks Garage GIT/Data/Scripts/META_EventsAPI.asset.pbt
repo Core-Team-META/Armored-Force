@@ -6,7 +6,7 @@ Assets {
     CustomParameters {
       Overrides {
         Name: "cs:GameId"
-        String: "0f0dd9/aftransfertest"
+        String: "429fdb/3p4o6t8ihasedroiughaeorgha9iou"
       }
       Overrides {
         Name: "cs:UseGlobal"

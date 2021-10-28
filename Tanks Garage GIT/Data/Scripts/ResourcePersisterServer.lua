@@ -344,15 +344,14 @@ function CheckAndConvertToNewupgradeSystem(dataString)
     
     for k, v in ipairs(oldProgressionTable) do 
         newString = newString .. v.id .. "|" .. ConvertBoolToString(v.researched) .. "|" .. ConvertBoolToString(v.purchased)
+        
+       	print(v.id)
+       	print(tanks[tonumber(v.id)]["purchaseCurrencyName"])
        	
        	for _, upgradeType in ipairs(UPGRADE_TYPES) do
 	        newString = newString .. "|" .. upgradeType 
 	        upgradeId = 1
-	        
-	        print(v.id)
-	        print(upgradeType)
-	        print(tanks[tonumber(v.id)][upgradeType])
-	        
+	       	        
 	        tankUpgradeInfo = tanks[tonumber(v.id)][upgradeType]
 	        if tankUpgradeInfo then
 		        while tankUpgradeInfo[upgradeType .. tostring(upgradeId)] do
@@ -365,10 +364,10 @@ function CheckAndConvertToNewupgradeSystem(dataString)
 		        		selectedProgress = v.engineProgress
 		        	end
 		        	
-		        	if upgradeId == 1 then
+		        	if tanks[tonumber(v.id)]["purchaseCurrencyName"] == "Gold" then
+		        		newString = newString .. "/" .. tostring(upgradeId) .. "-2"
+		        	elseif upgradeId == 1 then
 		        		newString = newString .. "/1-" .. selectedProgress
-		        	elseif tanks[tonumber(v.id)]["purchaseCurrencyName"] == "Gold" then
-						newString = newString .. "/" .. tostring(upgradeId) .. "-2"
 		        	else 
 		        		newString = newString .. "/" .. tostring(upgradeId) .. "-0"
 		        	end

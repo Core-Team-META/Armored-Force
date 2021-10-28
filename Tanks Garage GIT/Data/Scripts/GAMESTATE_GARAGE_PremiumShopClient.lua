@@ -134,10 +134,18 @@ function AcknowledgePurchase(tankId, confirmed)
 		if t.id == tankId then
 			t.purchased = true
 			t.researched = true
-			t.weaponProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
-			t.armorProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
-			t.engineProgress = TECHTREE.UPGRADE_PROGRESS.PURCHASED
-
+			for x, y in pairs(t.turret) do
+				tank.turret[x] = 2
+			end
+			for x, y in pairs(t.hull) do
+				tank.hull[x] = 2
+			end
+			for x, y in pairs(t.engine) do
+				tank.engine[x] = 2
+			end
+			for x, y in pairs(t.crew) do
+				tank.crew[x] = 2
+			end
 			--print("Purchase successful")
 		end
 	end

@@ -131,23 +131,27 @@ function PurchaseTank(player, tankID)
 	local currentSilver = player:GetResource(CURRENCY.SILVER.ResourceName)
 	local currentGold = player:GetResource(CURRENCY.GOLD.ResourceName)
 	local purchaseCurrencyName =  selectedTankData["purchaseCurrencyName"]
+	print(purchaseCurrencyName)
+	print(purchaseCost)
+	print(currentGold)
 	
 	if(purchaseCurrencyName == "Gold") and (currentGold < purchaseCost) then 
 		warn("NOT ENOUGH GOLD FOR: " .. tostring(tankID))
 		return BroadcastEventResultCode.FAILURE 
-	elseif(currentSilver < purchaseCost) then 
+	elseif(purchaseCurrencyName == "Silver") and (currentSilver < purchaseCost) then 
 		warn("NOT ENOUGH SILVER FOR: " .. tostring(tankID))
 		return BroadcastEventResultCode.FAILURE 
 	end		
 		
 	for i, tank in pairs(player.serverUserData.techTreeProgress) do
-		if(tonumber(tank.id) == tonumber(tankID)) and tank.researched then
+		if(tonumber(tank.id) == tonumber(tankID)) and (tank.researched or (purchaseCurrencyName == "Gold")) then
 			if tank.purchased then
 				warn("ALREADY PURCHASED: " .. tostring(tankID))
 				return BroadcastEventResultCode.FAILURE 	
 			end
 			
 			if(purchaseCurrencyName == "Gold") then
+				print("tank purchased is premium")
 				player:RemoveResource(CURRENCY.GOLD.ResourceName, purchaseCost)
 				for x, y in pairs(tank.turret) do
 					tank.turret[x] = 2
@@ -167,6 +171,7 @@ function PurchaseTank(player, tankID)
 			
 			tank.purchased = true
 			
+			print("purchased " .. tostring(tankID))
 			Events.BroadcastToPlayer(player, "TankPurchaseSuccessful", tankID)
 			Events.Broadcast("TankAcquired", player, tankID,  selectedTankData.tier)
 			--player:SetPrivateNetworkedData("PlayerTankData", player.serverUserData.techTreeProgress)
