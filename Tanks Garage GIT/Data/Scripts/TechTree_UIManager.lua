@@ -2420,6 +2420,20 @@ function TankPurchaseSuccessful(tankID)
 --print('Updated local tank data.')
             tank.purchased = true
             tank.researched = true
+            if UTIL_API.UsingPremiumTank(tonumber(tankID)) then
+				for x, y in pairs(tank.turret) do
+					tank.turret[x] = 2
+				end
+				for x, y in pairs(tank.hull) do
+					tank.hull[x] = 2
+				end
+				for x, y in pairs(tank.engine) do
+					tank.engine[x] = 2
+				end
+				for x, y in pairs(tank.crew) do
+					tank.crew[x] = 2
+				end
+            end
         end
     end
     PopulateOwnedTanks()
