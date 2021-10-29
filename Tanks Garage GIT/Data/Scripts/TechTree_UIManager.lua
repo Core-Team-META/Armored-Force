@@ -576,7 +576,7 @@ function PopulateSelectedTankPanel(id)
         	print(unobtainedUpgrades)
         	
         	if unobtainedUpgrades ~= "" then
-        		Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "PREREQUISITES NOT MET", "The following upgrades must be unlocked before the " .. tankData["name"] .. "can be unlocked: " .. unobtainedUpgrades, "CLOSE")
+        		Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "PREREQUISITES NOT MET", "The following upgrades must be unlocked before the " .. tankData["name"] .. " can be unlocked: " .. unobtainedUpgrades, "CLOSE")
         	elseif not tankData.researched then
 	        	if (tankParts + universalParts) >= tankData["researchCost"] then
 	        		TankButtonClicked(nil, selectedTankId)
@@ -592,101 +592,6 @@ function PopulateSelectedTankPanel(id)
 	        end
         end
     end
-end
-
-function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
-    -- Change title
-    -- CONFIRM_TANK_UPGRADE:FindDescendantByName("TITLE_SHADOW").text = "CONFIRM " .. tankData.name .. " PURCHASE"
-    --CONFIRM_TANK_UPGRADE:FindDescendantByName("TITLE_SECONDARY").text = "CONFIRM " .. tankData.name .. " PURCHASE"
-    --CONFIRM_TANK_UPGRADE:FindDescendantByName("TITLE_LIGHT").text = "CONFIRM " .. tankData.name .. " PURCHASE"
-
-    local Cost = tankData.researchCost
-    CONFIRM_TANK_UPGRADE:FindDescendantByName('PRICE_1').text = tostring(Cost)
-    local rpPayment = 0
-    if (prereqs[1]) then
-        if prereqs[1].usable then
-            local prereqTank = tankAPI.GetTankFromId(tonumber(prereqs[1].id))
-            local currentRP = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(prereqs[1].id)))
-            CONFIRM_TANK_UPGRADE:FindDescendantByName('OWNED_1').text = tostring(currentRP)
-            if (currentRP > tankData.researchCost) then
-                rpPayment = tankData.researchCost
-                Cost = 0
-            else
-                rpPayment = tonumber(currentRP)
-                Cost = Cost - rpPayment
-            end
-            PURCHASE_NOTIFICATION.visibility = Visibility.FORCE_OFF
-        else
-            PURCHASE_NOTIFICATION.visibility = Visibility.FORCE_ON
-            CONFIRM_TANK_UPGRADE:FindDescendantByName('OWNED_1').text = '-'
-        end
-    else
-        CONFIRM_TANK_UPGRADE:FindDescendantByName('OWNED_1').text = '0'
-    end
-
-    local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
-
-    CONFIRM_TANK_UPGRADE:FindDescendantByName('PAYMENT_1').text = tostring(rpPayment)
-    CONFIRM_TANK_UPGRADE:FindDescendantByName('OWNED_2').text = tostring(freeRP)
-
-    if (Cost > 0) then
-        if (freeRP > Cost) then
-            CONFIRM_TANK_UPGRADE:FindDescendantByName('PAYMENT_2').text = tostring(freeRP - Cost)
-            Cost = 0
-        else
-            CONFIRM_TANK_UPGRADE:FindDescendantByName('PAYMENT_2').text = tostring(freeRP)
-            Cost = Cost - freeRP
-        end
-    else
-        CONFIRM_TANK_UPGRADE:FindDescendantByName('PAYMENT_2').text = '0'
-    end
-
-    local silverCost = tonumber(tankData.purchaseCost)
---print('Silver Cost to purchase: ' .. tostring(silverCost))
-    CONFIRM_TANK_UPGRADE:FindDescendantByName('PRICE_3').text = tostring(silverCost)
-    CONFIRM_TANK_UPGRADE:FindDescendantByName('ITEMNAME_3').text = tankData.purchaseCurrencyName
-    local playerCurrency = 0
-    if (tankData.purchaseCurrencyName == Constants_API.GOLD) then
-        playerCurrency = LOCAL_PLAYER:GetResource(Constants_API.GOLD)
-    else
-        playerCurrency = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
-    end
-    CONFIRM_TANK_UPGRADE:FindDescendantByName('OWNED_3').text = tostring(playerCurrency)
-    if (LOCAL_PLAYER:GetResource(Constants_API.SILVER) > silverCost) then
-        CONFIRM_TANK_UPGRADE:FindDescendantByName('PAYMENT_3').text = tostring(silverCost)
-        silverCost = 0
-    else
-        silverCost = silverCost - LOCAL_PLAYER:GetResource(Constants_API.SILVER)
-        CONFIRM_TANK_UPGRADE:FindDescendantByName('PAYMENT_3').text = tostring(silverCost)
-    end
-
-    if (tankData.purchasedTank) then
-        CONFIRM_TANK_UPGRADE:FindDescendantByName('CONTENT').visibility = Visibility.FORCE_OFF
-        CONFIRM_WINDOW_CONFIRM_BUTTON.text = 'EQUIP'
-        confirmButtonFunction = 'EQUIP'
-    else
-        CONFIRM_TANK_UPGRADE:FindDescendantByName('CONTENT').visibility = Visibility.FORCE_ON
-        if (prereqs[1] and not prereqs[1].usable) or (prereqs[2] and not prereqs[1].usable) then
-            CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
-            confirmButtonFunction = ''
-        else
-            CONFIRM_WINDOW_CONFIRM_BUTTON.text = 'PURCHASE'
-            confirmButtonFunction = 'PURCHASE'
-
-            if (Cost > 0 or silverCost > 0) then
-                CONFIRM_WINDOW_CONFIRM_BUTTON.text = "CAN'T AFFORD"
-                confirmButtonFunction = "CAN'T AFFORD"
-            end
-        end
-    end
-
-    if not tankData.purchasedTank and tankData.purchaseCurrencyName == 'Gold' then
-        Events.Broadcast('OutsideActivation', BUTTON_PREMIUM_SHOP)
-        Task.Wait(2)
-        return
-    end
-
-    local button = CONFIRM_TANK_UPGRADE:FindDescendantByName('CONFIRM_WINDOW_CONFIRM_BUTTON')
 end
 
 -- TODO_DELETE I believe this function isn't used anymore
@@ -841,26 +746,6 @@ function ForceHideResearchSidePanel()
     researchTankSidePanel.visibility = Visibility.FORCE_OFF
 end
 
-function TogglePrerequisite1Visibility(visibility)
-    usePrerequisite1.visibility = visibility
-    prerequisite1RP.visibility = visibility
-    prerequisite1Name.visibility = visibility
-    if (researchPointCollection[1] ~= nil) then
-        prerequisite1Name.text = researchPointCollection[1].name .. ':'
-        prerequisite1RP.text = tostring(researchPointCollection[1].rp)
-    end
-end
-
-function TogglePrerequisite2Visibility(visibility)
-    usePrerequisite2.visibility = visibility
-    prerequisite2RP.visibility = visibility
-    prerequisite2Name.visibility = visibility
-    if (researchPointCollection[2] ~= nil) then
-        prerequisite2Name.text = researchPointCollection[2].name .. ':'
-        prerequisite2RP.text = tostring(researchPointCollection[2].rp)
-    end
-end
-
 ---------------------------------------------------------------------------------
 -- A set of functions handling listeners or other non descript event functions
 -- Listener functions -----------------------------------------------------------
@@ -902,20 +787,6 @@ function ToggleResearchSidePanel()
     end
 end
 
-function ShowNotEnoughCurrencyMessage(part)
-    -- TODO: Show a better message to the user
-    --UI.PrintToScreen('You do not have enough Silver.')
-    Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "INSUFFICIENT SILVER", "You do not have enough Silver. Participate in matches to earn more Silver.", "OK")
-    Events.Broadcast('UpgradeFailedSlide', part)
-end
-
-function ShowNotEnoughRPMessage(part)
-    -- TODO: Show a better message to the user
-    --UI.PrintToScreen('You do not have enough XP.')
-    Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "INSUFFICIENT TANK PARTS", "You do not have enough Tank Parts. Participate in matches with this tank to earn more Tank Parts.", "OK")
-    Events.Broadcast('UpgradeFailedSlide', part)
-end
-
 ----------------------------------------------------------------------------------------------
 -- A set of functions relating to populating data objects and other generalizaed functionality
 -- Helper functions --------------------------------------------------------------------------
@@ -931,32 +802,17 @@ function PopulateTank(tank)
         purchaseCurrencyName = tank.purchaseCurrencyName,
         researchCost = tank.researchCost,
         purchaseCost = tank.purchaseCost,
-        weaponResearchCost = tank.weaponResearchCost,
-        weaponPurchaseCost = tank.weaponPurchaseCost,
-        armorResearchCost = tank.armorResearchCost,
-        armorPurchaseCost = tank.armorPurchaseCost,
-        mobilityResearchCost = tank.mobilityResearchCost,
-        mobilityPurchaseCost = tank.mobilityPurchaseCost,
         prerequisite1 = tank.prerequisite1 or nil,
         prerequisite2 = tank.prerequisite2 or nil,
         damage = tank.damage,
-        damageUpgraded = tank.damageUpgraded,
         reload = tank.reload,
-        reloadUpgraded = tank.reloadUpgraded,
         turret = tank.turret,
-        turretUpgraded = tank.turretUpgraded,
         hitPoints = tank.hitPoints,
-        hitPointsUpgraded = tank.hitPointsUpgraded,
         topSpeed = tank.topSpeed,
-        topSpeedUpgraded = tank.topSpeedUpgraded,
         acceleration = tank.acceleration,
-        accelerationUpgraded = tank.accelerationUpgraded,
         traverse = tank.traverse,
-        traverseUpgraded = tank.traverseUpgraded,
         elevation = tank.elevation,
-        elevationUpgraded = tank.elevationUpgraded,
-        turningSpeed = tank.turningSpeed,
-        turningSpeedUpgraded = tank.turningSpeedUpgraded
+        turningSpeed = tank.turningSpeed
     }
 end
 
@@ -1175,43 +1031,6 @@ function LoadProgressIntoTankDetails(tank)
     end
 end
 
--- Resets the properties used to handle the information about the selected tank
-function ResetTankDetails()
-    tankDetails = {
-        id = '00',
-        name = '',
-        researchedTank = false,
-        purchasedTank = false,
-        weaponProgress = 0,
-        armorProgress = 0,
-        engineProgress = 0,
-        tankResearchCost = 0,
-        tankPurchaseCost = 0,
-        weaponResearchCost = 0,
-        weaponPurchaseCost = 0,
-        armorResearchCost = 0,
-        armorPurchaseCost = 0,
-        engineResearchCost = 0,
-        enginePurchaseCost = 0,
-        damage = 0,
-        damageUpgraded = 0,
-        reload = 0,
-        reloadUpgraded = 0,
-        turret = 0,
-        turretUpgraded = 0,
-        currency = ''
-    }
-    upgradeWeapon.visibility = Visibility.FORCE_OFF
-    upgradeArmor:FindDescendantByName('BUTTON_UPGRADE_SHELL_CONTAINER').visibility = Visibility.FORCE_OFF
-    upgradeEngine.visibility = Visibility.FORCE_OFF
-    ForceHideResearchSidePanel()
-    TogglePrerequisite1Visibility(Visibility.FORCE_OFF)
-    TogglePrerequisite2Visibility(Visibility.FORCE_OFF)
-    researchPointCollection = {}
-    researchingName = ''
-    researchingProgress = nil
-end
-
 function SelectTank(button)
     PopulateSelectedTankPanel(button.name)
 end
@@ -1228,22 +1047,15 @@ function HoverTank(button)
         if (tonumber(t.id) == tostring(tonumber(button.name))) then
             tankData.researchedTank = t.researched
             tankData.purchasedTank = t.purchased
-            tankData.weaponProgress = t.weaponProgress
-            tankData.armorProgress = t.armorProgress
-            tankData.engineProgress = t.engineProgress
         end
     end
 
     VIEWED_TANK_STATS.visibility = Visibility.FORCE_ON
     PopulateHoverTankStats(tankData)
+end
 
-    --[[
-	if not tankData.researchedTank then
-		
-	else
-		VIEWED_TANK_STATS.visibility = Visibility.FORCE_OFF
-	end
-	--]]
+function UnhoverTank()
+    VIEWED_TANK_STATS.visibility = Visibility.FORCE_OFF
 end
 
 function PopulateHoverTankStats(tankData)
@@ -1325,10 +1137,6 @@ function PopulateHoverTankStats(tankData)
         VIEWED_TANK_STATS:FindDescendantByName('ICON_SILVER'):SetImage(UTIL_API.GetCurrencyIcon(purchaseCurrency))
         VIEWED_TANK_STATS:FindDescendantByName('BUY_PRICE').visibility = Visibility.FORCE_ON
     end
-end
-
-function UnhoverTank()
-    VIEWED_TANK_STATS.visibility = Visibility.FORCE_OFF
 end
 
 function ToggleTeamTankView(button, team)
@@ -2019,30 +1827,6 @@ function UpgradeButtonUnhovered(button)
     UPGRADE_TOOLTIP.visibility = Visibility.FORCE_OFF
 end
 
-function HoverTankUpgradeWindow(button) 
-	--[[      
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').visibility = Visibility.FORCE_ON
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').visibility = Visibility.FORCE_ON
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').visibility = Visibility.FORCE_ON
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_6_LVLUP').visibility = Visibility.FORCE_ON
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_8_LVLUP').visibility = Visibility.FORCE_ON
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_9_LVLUP').visibility = Visibility.FORCE_ON
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').visibility = Visibility.FORCE_ON
-    ]]
-end
-
-function UnhoverTankUpgradeWindow(button)
-	--[[
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').visibility = Visibility.FORCE_OFF
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').visibility = Visibility.FORCE_OFF
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').visibility = Visibility.FORCE_OFF
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_6_LVLUP').visibility = Visibility.FORCE_OFF
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_8_LVLUP').visibility = Visibility.FORCE_OFF
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_9_LVLUP').visibility = Visibility.FORCE_OFF
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').visibility = Visibility.FORCE_OFF
-    ]]
-end
-
 function CloseTankUpgradeWindow(button)
     SFX_CLICK:Play()
     UPGRADE_TANK_CONTAINER.visibility = Visibility.FORCE_OFF
@@ -2177,23 +1961,6 @@ function GoToTechTree()
     Task.Wait(2)
 end
 
-function SetTextColorForResource(baseColorText, object, currency, cost)
-    print(baseColorText)
-    print(currency)
-    print(cost)
-    if currency < cost then
-        object:SetColor(insufficientColorText)
-    else
-        object:SetColor(baseColorText)
-    end
-end
-
-function SetUpgradeButtonInteractability(silver, tankParts, universalTankParts, purchaseCost, researchCost)
-    if silver < purchaseCost then return false end
-    if (tankParts + universalTankParts) < researchCost then return false end
-    return true
-end
-
 function Tick()
 	if UPGRADE_TOOLTIP.visibility == Visibility.INHERIT then
 		local tooltipPosition = UI.GetCursorPosition()
@@ -2233,8 +2000,7 @@ BUTTON_ALLIES_TECH_TREE.hoveredEvent:Connect(ButtonHover)
 BUTTON_AXIS_TECH_TREE.hoveredEvent:Connect(ButtonHover)
 
 BUTTON_UPGRADE_TANK.clickedEvent:Connect(OpenTankUpgradeWindow)
-BUTTON_UPGRADE_TANK.hoveredEvent:Connect(HoverTankUpgradeWindow)
-BUTTON_UPGRADE_TANK.unhoveredEvent:Connect(UnhoverTankUpgradeWindow)
+
 Tutorial_UpgradeTank.clickedEvent:Connect(TutorialOpenTankUpgradeWindow)
 BUTTON_UPGRADE_TANK.hoveredEvent:Connect(ButtonHover)
 BUTTON_GOTO_TECHTREE.clickedEvent:Connect(GoToTechTree)
@@ -2249,104 +2015,20 @@ UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('CLOSE_UPGRADE_CONFIRM_WINDO
 )
 UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('UPGRADE_TANK_BUTTON').clickedEvent:Connect(ConfirmUpgradeButtonClicked)
 
-World.FindObjectByName('01').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('02').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('03').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('04').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('05').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('06').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('07').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('09').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('10').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('11').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('12').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('13').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('14').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('15').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('16').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('17').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('18').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('19').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('20').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('21').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('22').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('23').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('24').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('25').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('26').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('27').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('28').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('29').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('30').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('31').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('32').clickedEvent:Connect(SelectTank)
-World.FindObjectByName('33').clickedEvent:Connect(SelectTank)
+local tankIDString = ""
 
-World.FindObjectByName('01').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('02').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('03').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('04').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('05').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('06').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('07').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('09').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('10').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('11').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('12').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('13').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('14').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('15').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('16').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('17').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('18').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('19').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('20').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('21').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('22').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('23').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('24').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('25').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('26').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('27').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('28').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('29').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('30').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('31').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('32').hoveredEvent:Connect(HoverTank)
-World.FindObjectByName('33').hoveredEvent:Connect(HoverTank)
-
-World.FindObjectByName('01').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('02').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('03').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('04').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('05').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('06').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('07').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('09').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('10').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('11').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('12').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('13').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('14').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('15').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('16').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('17').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('18').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('19').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('20').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('21').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('22').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('23').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('24').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('25').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('26').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('27').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('28').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('29').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('30').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('31').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('32').unhoveredEvent:Connect(UnhoverTank)
-World.FindObjectByName('33').unhoveredEvent:Connect(UnhoverTank)
+for i = 1, 33 do
+	if i < 10 then
+		tankIDString = "0"
+	else 
+		tankIDString = ""
+	end
+	tankIDString = tankIDString .. tostring(i)
+	
+	World.FindObjectByName(tankIDString).clickedEvent:Connect(SelectTank)
+	World.FindObjectByName(tankIDString).hoveredEvent:Connect(HoverTank)
+	World.FindObjectByName(tankIDString).unhoveredEvent:Connect(UnhoverTank)
+end
 
 function OnServerDataUpdated(player, string)
     if string == 'PlayertankAPI' then
