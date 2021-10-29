@@ -147,7 +147,6 @@ while not _G.PORTAL_IMAGES do
     Task.Wait()
 end
 
-
 local IMAGE_API = _G.PORTAL_IMAGES
 
 local ALLIES_TEAM = script:GetCustomProperty('AlliesTeam')
@@ -165,6 +164,7 @@ local SFX_ERROR_UI = script:GetCustomProperty('SFX_ERROR_UI')
 -- Local properties
 local thisComponent = 'TECH_TREE_MENU'
 local savedState = ''
+local previousState = "DEFAULT_MENU"
 -- Used to store which tank part is currently being researched
 local researchingName = ''
 -- Used to store the tank's part upgrade progress (weapon, armor, engine)
@@ -235,7 +235,7 @@ local upgradeIsNextTank = false
 -- Initialization functions --------------------------------------------------------
 function ToggleThisComponent(requestedPlayerState)
     savedState = requestedPlayerState
-
+    
     if requestedPlayerState == thisComponent then
         UPGRADE_TANK_CONTAINER.visibility = Visibility.FORCE_OFF
         Task.Wait(2.5)
@@ -258,13 +258,20 @@ function ToggleThisComponent(requestedPlayerState)
         Task.Wait(0.1)
         DisableThisComponent()
     end
+    
+    previousState = requestedPlayerState
 end
 
 function DisableThisComponent()
     displayTanks.visibility = Visibility.FORCE_OFF
     axisDisplayTanks.visibility = Visibility.FORCE_OFF
-	STATS_CONTAINER.visibility = Visibility.FORCE_OFF
-	STATS_CONTAINER.isEnabled = false
+    
+    print(previousState)
+    if previousState ~= "DEFAULT_MENU" then
+		STATS_CONTAINER.visibility = Visibility.FORCE_OFF
+		STATS_CONTAINER.isEnabled = false
+	end
+	
 	STATS_CONTAINER.height = 585
 	BUTTON_UPGRADE_TANK.visibility = Visibility.INHERIT
 	
@@ -2017,7 +2024,7 @@ UPGRADE_TANK_CONFIRM_CONTAINER:FindDescendantByName('UPGRADE_TANK_BUTTON').click
 
 local tankIDString = ""
 
-for i = 1, 33 do
+for i = 1, Constants_API.GetNumberOfTanks() do
 	if i < 10 then
 		tankIDString = "0"
 	else 
@@ -2025,9 +2032,13 @@ for i = 1, 33 do
 	end
 	tankIDString = tankIDString .. tostring(i)
 	
-	World.FindObjectByName(tankIDString).clickedEvent:Connect(SelectTank)
-	World.FindObjectByName(tankIDString).hoveredEvent:Connect(HoverTank)
-	World.FindObjectByName(tankIDString).unhoveredEvent:Connect(UnhoverTank)
+	print("connecting button for: ".. tankIDString)
+	
+	if tankIDString ~= "08" then
+		World.FindObjectByName(tankIDString).clickedEvent:Connect(SelectTank)
+		World.FindObjectByName(tankIDString).hoveredEvent:Connect(HoverTank)
+		World.FindObjectByName(tankIDString).unhoveredEvent:Connect(UnhoverTank)
+	end
 end
 
 function OnServerDataUpdated(player, string)
