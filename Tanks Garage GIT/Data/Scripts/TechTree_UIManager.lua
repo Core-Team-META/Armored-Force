@@ -1232,10 +1232,10 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 	        	STATS_CONTAINER.isEnabled = true
 	    		BUTTON_UPGRADE_TANK.visibility = Visibility.FORCE_OFF
 	        end
-	        
-	        PopulateEquippedTankStats(tankDetails)
 	    end
 	end
+	
+	PopulateEquippedTankStats(tankDetails)
 	
 	local selectedType = nil
     local progressOnType = nil
@@ -1775,7 +1775,6 @@ function UpgradeButtonHovered(button)
     	if progressOnType then
 	    	for upgradeID, progress in pairs(progressOnType) do
 	    		if upgradeID == button.name then
-	    			
 	    			UPGRADE_TOOLTIP:GetCustomProperty("upgradeName"):WaitForObject().text = typeDetails[upgradeID]["upgradeName"]
 	    			UPGRADE_TOOLTIP:GetCustomProperty("upgradeDescription"):WaitForObject().text = typeDetails[upgradeID]["upgradeDescription"]
 	    			UPGRADE_TOOLTIP:GetCustomProperty("upgradePartsCost"):WaitForObject().text = "TANK PARTS: " .. tostring(typeDetails[upgradeID]["researchCost"])
