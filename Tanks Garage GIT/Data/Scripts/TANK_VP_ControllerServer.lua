@@ -933,7 +933,11 @@ function OnConsumableUsed(consumableType)
 		
 		script:SetNetworkedCustomProperty("TurretDown", false)
 		script:SetNetworkedCustomProperty("BarrelDown", false)
-		turret:LookAtContinuous(target, true, traverseSpeed/57)
+		
+		if horizontalCannonAngles <= 0 then
+			turret:LookAtContinuous(target, true, traverseSpeed/57)
+		end
+		
 		turretDown = false
 		barrelDown = false
 		Events.Broadcast("ToggleConsumable", driver, "TURRET", false)
