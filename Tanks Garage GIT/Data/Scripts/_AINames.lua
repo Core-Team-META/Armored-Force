@@ -52,7 +52,7 @@ local names = {
   "BooccooDinky",
   "Burnizzle",
   "RoseTwinz",
-  "GrimmyBel,
+  "GrimmyBel",
   "Hennecylix",
   "Blakizeen",
   "Marcusinate",
