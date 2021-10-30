@@ -1,4 +1,4 @@
-﻿-- Script by Antti Koponen. Feel free to modify/optimize
+-- Script by Antti Koponen. Feel free to modify/optimize
 -- Updated Dec 18. 2020
 -- 1. Plays SFX & VFX
 -- 2. Removes objects inside RemoveGroup folder

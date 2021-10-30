@@ -1,4 +1,4 @@
-﻿local EQUIPMENT = script:GetCustomProperty("TankEquipment"):WaitForObject()
+local EQUIPMENT = script:GetCustomProperty("TankEquipment"):WaitForObject()
 
 local treadSounds = script:GetCustomProperty("TreadSounds"):WaitForObject()
 local leftGears = script:GetCustomProperty("LeftGears"):WaitForObject()

@@ -1,4 +1,4 @@
-﻿local vehicleSet = script:GetCustomProperty("VehicleSet"):WaitForObject()
+local vehicleSet = script:GetCustomProperty("VehicleSet"):WaitForObject()
 local theVehicle = script:GetCustomProperty("TheVehicle"):WaitForObject()
 
 local ignitionSFX = script:GetCustomProperty("IgnitionSFX"):WaitForObject()

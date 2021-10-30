@@ -1,4 +1,4 @@
-﻿local EQUIPMENT = script:FindAncestorByType('Equipment')
+local EQUIPMENT = script:FindAncestorByType('Equipment')
 if not EQUIPMENT:IsA('Equipment') then
     error(script.name .. " should be part of Equipment object hierarchy.")
 end

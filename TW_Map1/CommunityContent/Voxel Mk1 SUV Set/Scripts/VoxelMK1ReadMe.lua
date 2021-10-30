@@ -1,4 +1,4 @@
-﻿--[[
+--[[
 
 	CREATOR: estlogic
 	VERSION: 1.0

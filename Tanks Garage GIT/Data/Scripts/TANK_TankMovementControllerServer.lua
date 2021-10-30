@@ -1,4 +1,4 @@
-﻿local reliableEvents = require(script:GetCustomProperty("ReliableEvents"))
+local reliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 
 local tankEquipment = script:GetCustomProperty("TankEquipment"):WaitForObject()
 local tankSettings = script:GetCustomProperty("TankSettings"):WaitForObject()

@@ -1,4 +1,4 @@
-﻿local tankEquipment = script:GetCustomProperty("TankEquipment"):WaitForObject()
+local tankEquipment = script:GetCustomProperty("TankEquipment"):WaitForObject()
 local tankMovementControllerServer = script:GetCustomProperty("TankMovementControllerServer"):WaitForObject()
 
 local serverAdjustmentPoint = script:GetCustomProperty("ServerAdjustmentPoint"):WaitForObject()

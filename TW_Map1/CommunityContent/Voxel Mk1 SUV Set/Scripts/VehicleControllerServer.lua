@@ -1,4 +1,4 @@
-﻿local vehicleSet = script:GetCustomProperty("VehicleSet"):WaitForObject()
+local vehicleSet = script:GetCustomProperty("VehicleSet"):WaitForObject()
 
 local driverSettings = script:GetCustomProperty("DriverSettings"):WaitForObject()
 
