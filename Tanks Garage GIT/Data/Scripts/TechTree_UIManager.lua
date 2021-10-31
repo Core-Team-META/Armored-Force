@@ -1236,6 +1236,7 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 	end
 	
 	PopulateEquippedTankStats(tankDetails)
+	ResetUpgradeBonusText()
 	
 	local selectedType = nil
     local progressOnType = nil
@@ -1752,6 +1753,14 @@ function UpgradeButtonHovered(button)
     local acceleration = tankDetails.acceleration
     local turningSpeed = tankDetails.turningSpeed
     
+    local addedDamage = 0
+    local addedReload = 0
+    local addedTurret = 0
+    local addedHitPoints = 0
+    local addedTopSpeed = 0
+    local addedAcceleration = 0
+    local addedTurningSpeed = 0
+    
 	for _, c in pairs(UPGRADE_TOOLTIP:GetCustomProperty("upgradeIcon"):WaitForObject():GetChildren()) do
 		c:Destroy()
 	end
@@ -1783,7 +1792,7 @@ function UpgradeButtonHovered(button)
 	    			UPGRADE_TOOLTIP.visibility = Visibility.INHERIT
 	    		end
 	    		
-	    		if (tonumber(progress) >= 2) or (upgradeID == button.name) then
+	    		if (tonumber(progress) >= 2) then
 	    			for i = 1, 4 do
 	    				statName = typeDetails[upgradeID]["stat" .. tostring(i) .. "Name"]
 	    				statValue = typeDetails[upgradeID]["stat" .. tostring(i) .. "Value"]
@@ -1801,18 +1810,43 @@ function UpgradeButtonHovered(button)
 	    					turningSpeed = turningSpeed + statValue
 	    				end
 	    			end
+	    		elseif (upgradeID == button.name) then
+	    			for i = 1, 4 do
+	    				statName = typeDetails[upgradeID]["stat" .. tostring(i) .. "Name"]
+	    				statValue = typeDetails[upgradeID]["stat" .. tostring(i) .. "Value"]
+	    				if statName == "DAMAGE" then
+	    					addedDamage = addedDamage + statValue
+	    				elseif statName == "AIM" then
+	    					addedTurret = addedTurret + statValue
+	    				elseif statName == "HITPOINTS" then
+	    					addedHitPoints = addedHitPoints + statValue
+	    				elseif statName == "SPEED" then
+	    					addedTopSpeed = addedTopSpeed + statValue
+	    				elseif statName == "ACCELERATION" then
+	    					addedAcceleration = addedAcceleration + statValue
+	    				elseif statName == "TURNING" then
+	    					addedTurningSpeed = addedTurningSpeed + statValue
+	    				end
+	    			end
 	    		end
     		end
     	end
     end
     
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').progress = (damage - tankAPI.GetLowestDamage()) / (tankAPI.GetHighestDamage() - tankAPI.GetLowestDamage())
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').progress = 1 - ((reload - tankAPI.GetLowestReload()) / (tankAPI.GetHighestReload() - tankAPI.GetLowestReload()))
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_6_LVLUP').progress = (turret - tankAPI.GetLowestTurretSpeed()) / (tankAPI.GetHighestTurretSpeed() - tankAPI.GetLowestTurretSpeed())
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').progress = (hitPoints - tankAPI.GetLowestHitPoints()) / (tankAPI.GetHighestHitPoints() - tankAPI.GetLowestHitPoints())
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_8_LVLUP').progress = (topSpeed - tankAPI.GetLowestTopSpeed()) / (tankAPI.GetHighestTopSpeed() - tankAPI.GetLowestTopSpeed())
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_9_LVLUP').progress = (acceleration - tankAPI.GetLowestAcceleration()) / (tankAPI.GetHighestAcceleration() - tankAPI.GetLowestAcceleration())
-    STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').progress = (turningSpeed - tankAPI.GetLowestTurningSpeed()) / (tankAPI.GetHighestTurningSpeed() - tankAPI.GetLowestTurningSpeed())
+    AddUpgradeBonusText(damage - tankAPI.GetLowestDamage(), addedDamage, 'STAT_4')
+    AddUpgradeBonusText(turret - tankAPI.GetLowestTurretSpeed(), addedTurret, 'STAT_6')
+    AddUpgradeBonusText(hitPoints - tankAPI.GetLowestHitPoints(), addedHitPoints, 'STAT_1')
+    AddUpgradeBonusText(topSpeed - tankAPI.GetLowestTopSpeed(), addedTopSpeed, 'STAT_8')
+    AddUpgradeBonusText(acceleration - tankAPI.GetLowestAcceleration(), addedAcceleration, 'STAT_9')
+    AddUpgradeBonusText(turningSpeed - tankAPI.GetLowestTurningSpeed(), addedTurningSpeed, 'STAT_10')
+    
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').progress = (damage + addedDamage - tankAPI.GetLowestDamage()) / (tankAPI.GetHighestDamage() - tankAPI.GetLowestDamage())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').progress = 1 - ((reload + addedReload - tankAPI.GetLowestReload()) / (tankAPI.GetHighestReload() - tankAPI.GetLowestReload()))
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_6_LVLUP').progress = (turret + addedTurret - tankAPI.GetLowestTurretSpeed()) / (tankAPI.GetHighestTurretSpeed() - tankAPI.GetLowestTurretSpeed())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').progress = (hitPoints + addedHitPoints - tankAPI.GetLowestHitPoints()) / (tankAPI.GetHighestHitPoints() - tankAPI.GetLowestHitPoints())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_8_LVLUP').progress = (topSpeed + addedTopSpeed - tankAPI.GetLowestTopSpeed()) / (tankAPI.GetHighestTopSpeed() - tankAPI.GetLowestTopSpeed())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_9_LVLUP').progress = (acceleration + addedAcceleration - tankAPI.GetLowestAcceleration()) / (tankAPI.GetHighestAcceleration() - tankAPI.GetLowestAcceleration())
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').progress = (turningSpeed + addedTurningSpeed - tankAPI.GetLowestTurningSpeed()) / (tankAPI.GetHighestTurningSpeed() - tankAPI.GetLowestTurningSpeed())
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').visibility = Visibility.FORCE_ON
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').visibility = Visibility.FORCE_ON
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').visibility = Visibility.FORCE_ON
@@ -1823,6 +1857,7 @@ function UpgradeButtonHovered(button)
 end
 
 function UpgradeButtonUnhovered(button)
+	ResetUpgradeBonusText()
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').visibility = Visibility.FORCE_OFF
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').visibility = Visibility.FORCE_OFF
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').visibility = Visibility.FORCE_OFF
@@ -1844,6 +1879,23 @@ end
 function ClosePurchaseTank(button)
     SFX_CLICK:Play()
     BUY_TANK_CONTAINER.visibility = Visibility.FORCE_OFF
+end
+
+function ResetUpgradeBonusText()
+	for _, x in pairs(STATS_TANK_CONTAINER:FindDescendantsByName('UPGRADE_BONUS_TEXT')) do 
+		x.text = ''
+	end
+end
+
+function AddUpgradeBonusText(baseValue, addedValue, statBarName)
+	if addedValue <= 0 then
+		return
+	end
+	
+	local percentValue = math.ceil(addedValue/baseValue * 100) 
+	local upgradedBar = STATS_TANK_CONTAINER:FindDescendantByName(statBarName)
+	local upgradeBonusText = upgradedBar:FindDescendantByName('UPGRADE_BONUS_TEXT')
+	upgradeBonusText.text = "+" .. tostring(percentValue) .. "%"
 end
 
 function PopulateEquippedTankStats(entry)
