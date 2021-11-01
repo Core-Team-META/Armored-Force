@@ -601,39 +601,6 @@ function PopulateSelectedTankPanel(id)
     end
 end
 
--- TODO_DELETE I believe this function isn't used anymore
-function ConfirmButtonClicked()
-    if (confirmButtonFunction == 'EQUIP') then
-        Events.BroadcastToServer('CHANGE_EQUIPPED_TANK', tankDetails.id)
-        Events.Broadcast('CHANGE_EQUIPPED_TANK', tankDetails.id)
-        --print(tankDetails.id)
-        SFX_EQUIP_TANK:Play()
-        CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
-    elseif (confirmButtonFunction == 'PURCHASE') then
-        local prereqs = GetPrerequisiteRPValues(tankDetails.id)
-        Events.BroadcastToServer('PurchaseTank', tankDetails.id, prereqs)
-        Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "TANK PURCHASED", "You have successfully purchased the tank.", "OK")
-        --UI.PrintToScreen(tankDetails.name .. ' purchased.')
-        --
-        --[[for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-			if(tank.id == tankDetails.id) then
-				tank.purchased = true
-				tank.researched = true
-				if(tankDetails.currency == Constants_API.GOLD) then
-					tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
-					tank.armorProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
-					tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
-				end
-			end
-		end]]
-        CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
-    else
-        -- Most likely in can't afford state
-    end
-    Task.Wait(1)
-    PopulateOwnedTanks()
-end
-
 function CloseConfirmationWindow()
     CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
 end
@@ -751,19 +718,6 @@ end
 
 function ForceHideResearchSidePanel()
     researchTankSidePanel.visibility = Visibility.FORCE_OFF
-end
-
----------------------------------------------------------------------------------
--- A set of functions handling listeners or other non descript event functions
--- Listener functions -----------------------------------------------------------
-function KeybindingPressed(player, key)
-    if (key == keyBindingToOpen and IsUIVisible()) then
-        -- Close/Hide UI
-        CloseUI()
-    elseif (key == keyBindingToOpen and not IsUIVisible()) then
-        -- Show/Open UI
-        OpenUI()
-    end
 end
 
 function ButtonClickTeamSwitch(button)
@@ -1477,10 +1431,10 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 			for n, o in pairs(upgradeLine:GetCustomProperties()) do
 				if not o:IsA("Color") then
 	    			upgradeLineProperties[n] = o:WaitForObject()
-	    		else 
+	    		else
 	    			upgradeLineProperties[n] = o
 	    		end
-	    	end	
+	    	end
 		    
 		    if locked then
 		    	upgradeLineProperties["UPGRADE_LINE"]:SetColor(upgradeLineProperties["LOCKED_COLOR"])
@@ -1495,9 +1449,9 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 			upgradeLine.x = math.ceil((upgradeLevel - 0.5) * sampleEntry.width)
 			upgradeLine.y = math.ceil(upgradeSlot * sampleEntry.height)
 			
-			upgradeLineProperties["UPGRADE_LINE"].width = 1075 - upgradeLine.x 
-			upgradeLineProperties["UPGRADE_LINE_END"].x = 1070 - upgradeLine.x 
-			upgradeLineProperties["UPGRADE_LINE_END"].width = math.ceil((math.abs(upgradeSlot - placementSlot) + 0.5) * sampleEntry.height)    	
+			upgradeLineProperties["UPGRADE_LINE"].width = 1075 - upgradeLine.x
+			upgradeLineProperties["UPGRADE_LINE_END"].x = 1070 - upgradeLine.x
+			upgradeLineProperties["UPGRADE_LINE_END"].width = math.ceil((math.abs(upgradeSlot - placementSlot) + 0.5) * sampleEntry.height)
     	end
     	
     	if not canAffordUpgrade then
@@ -1847,6 +1801,7 @@ function UpgradeButtonHovered(button)
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_8_LVLUP').progress = (topSpeed + addedTopSpeed - tankAPI.GetLowestTopSpeed()) / (tankAPI.GetHighestTopSpeed() - tankAPI.GetLowestTopSpeed())
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_9_LVLUP').progress = (acceleration + addedAcceleration - tankAPI.GetLowestAcceleration()) / (tankAPI.GetHighestAcceleration() - tankAPI.GetLowestAcceleration())
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_10_LVLUP').progress = (turningSpeed + addedTurningSpeed - tankAPI.GetLowestTurningSpeed()) / (tankAPI.GetHighestTurningSpeed() - tankAPI.GetLowestTurningSpeed())
+    
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_1_LVLUP').visibility = Visibility.FORCE_ON
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').visibility = Visibility.FORCE_ON
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').visibility = Visibility.FORCE_ON

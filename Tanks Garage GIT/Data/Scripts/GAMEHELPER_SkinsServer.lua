@@ -280,7 +280,7 @@ function Initialize()
 		
 		for _, skin in pairs(tankData.skins) do
 			skinID = skin["skinID"]
-			print("skinID: " .. tostring(skinID))
+			--print("skinID: " .. tostring(skinID))
 			allIndividualSkins[tankID][skinID] = skin
 			allIndividualSkins[tankID][skinID].cost = skin["cost"]
 			allIndividualSkins[tankID][skinID].resource = skin["resource"]

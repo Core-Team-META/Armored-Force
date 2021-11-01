@@ -163,7 +163,8 @@ function CheckAndSetSharedStorageDefault(player)
     
     -- DEBUG: check storage for tech tree progression.
     -- print(playerSharedStorage[CONSTANTS_API.PROGRESS.DATA])
-    -- SAMPLE STORAGE: 01|0|1|0|0|0~02|0|0|0|0|0~03|0|0|0|0|0~04|1|1|0|0|0~05|0|0|0|0|0~06|0|0|0|0|0~07|0|0|0|0|0~08|0|0|0|0|0~09|1|1|2|2|2~10|0|0|0|0|0~11|0|0|0|0|0~12|0|0|0|0|0~13|0|0|0|0|0~14|0|0|0|0|0~15|0|0|0|0|0~16|0|0|0|0|0~17|0|0|0|0|0~18|0|1|0|0|0~19|0|0|0|0|0~20|1|1|0|0|0~21|1|1|0|0|0~22|0|0|0|0|0~23|1|1|0|0|0~24|0|0|0|0|0~25|0|0|0|0|0~26|0|0|0|0|0~27|0|0|0|0|0~28|0|0|0|0|0~29|0|0|0|0|0~30|0|0|0|0|0~31|0|0|0|0|0~32|0|0|0|0|0~33|0|0|0|0|0
+    -- SAMPLE STORAGE: 
+    -- playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = 01|0|1|0|0|0~02|0|0|0|0|0~03|0|0|0|0|0~04|1|1|0|0|0~05|0|0|0|0|0~06|0|0|0|0|0~07|0|0|0|0|0~08|0|0|0|0|0~09|1|1|2|2|2~10|0|0|0|0|0~11|0|0|0|0|0~12|0|0|0|0|0~13|0|0|0|0|0~14|0|0|0|0|0~15|0|0|0|0|0~16|0|0|0|0|0~17|0|0|0|0|0~18|0|1|0|0|0~19|0|0|0|0|0~20|1|1|0|0|0~21|1|1|0|0|0~22|0|0|0|0|0~23|1|1|0|0|0~24|0|0|0|0|0~25|1|1|0|0|0~26|0|0|0|0|0~27|0|0|0|0|0~28|0|0|0|0|0~29|0|0|0|0|0~30|0|0|0|0|0~31|0|0|0|0|0~32|0|0|0|0|0~33|0|0|0|0|0
     
     if (playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] == nil) then
         SetNewPlayerProgression(playerSharedStorage)
@@ -341,12 +342,15 @@ function CheckAndConvertToNewupgradeSystem(dataString)
     
     local tankUpgradeInfo = nil
     local upgradeId = 1
+    local tankIsPremium = false
     
     for k, v in ipairs(oldProgressionTable) do 
         newString = newString .. v.id .. "|" .. ConvertBoolToString(v.researched) .. "|" .. ConvertBoolToString(v.purchased)
         
        	print(v.id)
        	print(tanks[tonumber(v.id)]["purchaseCurrencyName"])
+       	
+       	tankIsPremium = tanks[tonumber(v.id)]["purchaseCurrencyName"] == "Gold"
        	
        	for _, upgradeType in ipairs(UPGRADE_TYPES) do
 	        newString = newString .. "|" .. upgradeType 
@@ -364,10 +368,10 @@ function CheckAndConvertToNewupgradeSystem(dataString)
 		        		selectedProgress = v.engineProgress
 		        	end
 		        	
-		        	if tanks[tonumber(v.id)]["purchaseCurrencyName"] == "Gold" then
+		        	if tankIsPremium then
 		        		newString = newString .. "/" .. tostring(upgradeId) .. "-2"
 		        	elseif upgradeId == 1 then
-		        		newString = newString .. "/1-" .. selectedProgress
+		        		newString = newString .. "/" .. tostring(upgradeId) .. tostring(selectedProgress)
 		        	else 
 		        		newString = newString .. "/" .. tostring(upgradeId) .. "-0"
 		        	end
@@ -468,6 +472,13 @@ function SetTankProgressionDataForServer(dataString, player)
             position = position + 1
         end 
         
+        local tankIsPremium = tanks[tonumber(tankEntry.id)]["purchaseCurrencyName"] == "Gold"
+        local missingUpgradeStatus = "0"
+        
+        if tankIsPremium then
+        	missingUpgradeStatus = "2"
+        end
+        
         -- update the server table if player's storage is outdated (a new upgrade added to a tank, etc.)
         -- add in any missing upgrades
         for _, t in pairs(UPGRADE_TYPES) do
@@ -479,7 +490,7 @@ function SetTankProgressionDataForServer(dataString, player)
 		        		end
 		        		if not tankEntry.turret[k] then
 		        			print(k .. " added to " .. tankEntry.id)
-		        			tankEntry.turret[k] = "0"
+		        			tankEntry.turret[k] = missingUpgradeStatus
 		        		end
 		        	elseif string.find(k, "HULL") then
 		        		if not tankEntry.hull then
@@ -487,7 +498,7 @@ function SetTankProgressionDataForServer(dataString, player)
 		        		end
 			    		if not tankEntry.hull[k] then
 			    			print(k .. " added to " .. tankEntry.id)
-			    			tankEntry.hull[k] = "0"
+			    			tankEntry.hull[k] = missingUpgradeStatus
 			    		end
 		        	elseif string.find(k, "ENGINE") then
 		        		if not tankEntry.engine then
@@ -495,7 +506,7 @@ function SetTankProgressionDataForServer(dataString, player)
 		        		end
 			    		if not tankEntry.engine[k] then
 			    			print(k .. " added to " .. tankEntry.id)
-			    			tankEntry.engine[k] = "0"
+			    			tankEntry.engine[k] = missingUpgradeStatus
 			    		end
 		        	elseif string.find(k, "CREW") then
 		        		if not tankEntry.crew then
@@ -503,7 +514,7 @@ function SetTankProgressionDataForServer(dataString, player)
 		        		end
 			    		if not tankEntry.crew[k] then
 			    			print(k .. " added to " .. tankEntry.id)
-			    			tankEntry.crew[k] = "0"
+			    			tankEntry.crew[k] = missingUpgradeStatus
 			    		end
 			    	end
 			    end
