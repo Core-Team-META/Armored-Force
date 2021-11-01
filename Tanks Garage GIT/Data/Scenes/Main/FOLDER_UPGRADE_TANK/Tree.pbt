@@ -11413,9 +11413,10 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 500
+    Width: 543
     Height: 191
-    UIX: 266
+    UIX: -193.029297
+    UIY: -34.3665161
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -11428,12 +11429,12 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:bottomcenter"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:bottomcenter"
         }
       }
     }
@@ -12448,7 +12449,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "You can spend silver and tank parts you earn during matches to upgrade the power of your tanks. Hover over each upgrade button to see how it will affect the tank\'s attributes.\r\nChoose an upgrade to complete this tutorial."
+      Label: "You can spend silver and tank parts you earn during matches to upgrade the power of your tanks. Hover over each upgrade button to see how it will affect the tank\'s attributes.\r\nUpgrades need to be unlocked with tank parts before the upgrade can be purchased and equipped. \r\nUnlock and purchase an upgrade to complete this tutorial."
       Color {
         R: 1
         G: 1
