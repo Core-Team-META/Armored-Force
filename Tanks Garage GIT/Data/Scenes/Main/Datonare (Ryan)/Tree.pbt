@@ -21017,12 +21017,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:API_Tutorial"
-      AssetReference {
-        Id: 3002171482500064982
-      }
-    }
-    Overrides {
       Name: "cs:TechTree_Contents"
       ObjectReference {
       }

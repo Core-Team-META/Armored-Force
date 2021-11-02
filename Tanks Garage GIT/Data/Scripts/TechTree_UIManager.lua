@@ -1692,6 +1692,7 @@ function UpgradeObtained(tankID, upgradeID, newUpgradeValue)
     end
     
     Task.Wait()
+    CheckForTutorialCompletion()
     OpenTankUpgradeWindow(BUTTON_UPGRADE_TANK, tankID, true)
 end
 
