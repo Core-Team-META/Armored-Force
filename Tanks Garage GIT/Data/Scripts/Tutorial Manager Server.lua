@@ -1,7 +1,7 @@
 local API_Tutorial = require(script:GetCustomProperty("API_Tutorial"))
 
 function AdvanceTutorial(player, phase, giveRewards)
---print("Request to advance tutorial to: " .. tostring(phase))
+	print("Request to advance tutorial to: " .. tostring(phase))
 	if player:GetResource(API_Tutorial.GetTutorialResource()) >= phase and phase ~= API_Tutorial.TutorialPhase.None then return end
 
 	if(phase == API_Tutorial.TutorialPhase.Upgrade and giveRewards) then

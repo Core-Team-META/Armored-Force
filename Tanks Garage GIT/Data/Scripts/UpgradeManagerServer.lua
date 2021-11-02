@@ -243,6 +243,7 @@ function PurchaseUpgrade(player, tankID, upgradeID)
 					return BroadcastEventResultCode.FAILURE
 				end
 				
+				print("Current tutorial status: " .. tostring(player:GetResource(API_Tutorial.GetTutorialResource())))
 				if player:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.Upgrade then
 					Events.Broadcast("AdvanceTutorial", player, API_Tutorial.TutorialPhase.Upgrade, true)
 				end
