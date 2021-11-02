@@ -2,6 +2,7 @@
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API")) 
 local _Constants_API = require(script:GetCustomProperty("Constants_API"))
 local EventsAPI = require(script:GetCustomProperty("META_EventsAPI"))
+local API_Tutorial = require(script:GetCustomProperty("API_Tutorial"))
 
 local TANK_LIST =  _Constants_API:WaitForConstant("Tanks").GetTanks()
 local TECHTREE =  _Constants_API:WaitForConstant("TechTree")
@@ -241,6 +242,10 @@ function PurchaseUpgrade(player, tankID, upgradeID)
 					warn("CANNOT AFFORD PURCHASING UPGRADE FOR " .. player.name)
 					return BroadcastEventResultCode.FAILURE
 				end
+				
+				if player:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.Upgrade then
+					Events.Broadcast("AdvanceTutorial", player, API_Tutorial.TutorialPhase.Upgrade, true)
+				end
 			else
 				warn(upgradeID .. " ALREADY EQUIPPED FOR " .. player.name)
 				return BroadcastEventResultCode.FAILURE
@@ -252,6 +257,7 @@ function PurchaseUpgrade(player, tankID, upgradeID)
 			tankUpgradeType[upgradeID] = tostring(tonumber(tankUpgradeType[upgradeID]) + 1)
 									
 			Events.BroadcastToPlayer(player, "UpgradeSuccessful", tankID, upgradeID, tankUpgradeType[upgradeID])
+			
 			--Events.Broadcast("UpgradeAcquired", player, id, TECHTREE.UPGRADE_SLOT.ENGINE)
 			-- player:SetPrivateNetworkedData("PlayerTankData", player.serverUserData.techTreeProgress)
 			return BroadcastEventResultCode.SUCCESS
