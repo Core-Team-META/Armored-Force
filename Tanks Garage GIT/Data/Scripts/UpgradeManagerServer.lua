@@ -245,7 +245,7 @@ function PurchaseUpgrade(player, tankID, upgradeID)
 				
 				print("Current tutorial status: " .. tostring(player:GetResource(API_Tutorial.GetTutorialResource())))
 				if player:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.Upgrade then
-					Events.Broadcast("AdvanceTutorial", player, API_Tutorial.TutorialPhase.Upgrade, true)
+					Events.Broadcast("AdvanceTutorial", player, API_Tutorial.TutorialPhase.RepairTank, true)
 				end
 			else
 				warn(upgradeID .. " ALREADY EQUIPPED FOR " .. player.name)
