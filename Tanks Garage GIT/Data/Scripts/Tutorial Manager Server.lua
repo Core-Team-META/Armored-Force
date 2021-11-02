@@ -26,3 +26,4 @@ function AdvanceTutorial(player, phase, giveRewards)
 end
 
 Events.ConnectForPlayer("AdvanceTutorial", AdvanceTutorial)
+Events.Connect("AdvanceTutorial", AdvanceTutorial)
