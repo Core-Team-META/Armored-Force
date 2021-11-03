@@ -137,7 +137,7 @@ function OnPlayerJoined(player)
     --UTIL_API.TablePrint(Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player))
     --print("-----FINISHED PRINTING SHARED STORAGE-----")
     
-    Task.Wait(10)
+    Task.Wait(20)
     local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 	local playerData = Storage.GetPlayerData(player)
 	
