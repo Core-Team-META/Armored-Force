@@ -111,6 +111,17 @@ function OnCommandRecieved(player, commandType, commandValue)
 	if not commandOverride[player] then
 		commandOverride[player] = {}
 	end
+
+	if commandType == "RESET_STORAGE" then
+	    local playerData = Storage.GetPlayerData(player)
+	    	
+	    playerData.backups[BACKUP_VERSION] = nil
+	    
+	    Storage.SetPlayerData(player, playerData)
+	    
+	    print("BACKUP DATA HAS BEEN RESET")
+		return
+	end
 	
 	commandOverride[player][commandType] = commandValue or true
 end
@@ -372,31 +383,27 @@ function CheckAndConvertToNewupgradeSystem(dataString)
     
     for k, v in ipairs(oldProgressionTable) do 
         newString = newString .. v.id .. "|" .. ConvertBoolToString(v.researched) .. "|" .. ConvertBoolToString(v.purchased)
-        
-       	print(v.id)
-       	print(tanks[tonumber(v.id)]["purchaseCurrencyName"])
        	
        	for _, upgradeType in ipairs(UPGRADE_TYPES) do
 	        newString = newString .. "|" .. upgradeType 
-	        upgradeId = 1
-	       	        
+	        upgradeId = 1 
 	        tankUpgradeInfo = tanks[tonumber(v.id)][upgradeType]
+	        
 	        if tankUpgradeInfo then
 		        while tankUpgradeInfo[upgradeType .. tostring(upgradeId)] do
 		        	local selectedProgress = "0"
-		        	if upgradeType == "TURRET" then
-		        		selectedProgress = v.weaponProgress
-		        	elseif upgradeType == "HULL" then
-		        		selectedProgress = v.armorProgress
-		        	elseif upgradeType == "ENGINE" then
-		        		selectedProgress = v.engineProgress
-		        	end
 		        	
-		        	if upgradeId == 1 then
-		        		newString = newString .. "/" .. tostring(upgradeId) .. tostring(selectedProgress)
-		        	else 
-		        		newString = newString .. "/" .. tostring(upgradeId) .. "-0"
-		        	end
+		        	if upgradeId <= 1 then
+			        	if upgradeType == "TURRET" then
+			        		selectedProgress = v.weaponProgress
+			        	elseif upgradeType == "HULL" then
+			        		selectedProgress = v.armorProgress
+			        	elseif upgradeType == "ENGINE" then
+			        		selectedProgress = v.engineProgress
+			        	end
+			        end
+		        	
+		        	newString = newString .. "/" .. tostring(upgradeId) .. "-" .. tostring(selectedProgress)
 		        	
 		        	upgradeId = upgradeId + 1
 		        end
@@ -408,7 +415,7 @@ function CheckAndConvertToNewupgradeSystem(dataString)
         end
     end
     
-    print("TANK AND UPGRADE PROGRESSION: " .. newString)
+    print("UPDATED TANK AND UPGRADE PROGRESSION: " .. newString)
 
 	return newString
 

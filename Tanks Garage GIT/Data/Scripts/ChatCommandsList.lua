@@ -86,6 +86,24 @@ commands = {
         adminRank = AdminData.AdminRanks.Admin
     },
     
+    ["/resettankstorage"] = {
+        OnCommandCalledClient = function (player, message)       
+        end,
+        OnCommandCalledServer = function (player, message)
+        	for section in (message.." "):gmatch("(.-) ") do
+        		if not string.find(section, "reverttankstorage") then
+        			Events.Broadcast("COMMAND_OVERRRIDE", player, "RESET_STORAGE", section)
+				end
+        	end  
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "revert tank storage using a backup (requires backup version and game restart)",
+        requireMessage = false,
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
+    },
+    
      ["/forcemap"] = {
         OnCommandCalledClient = function (player, message)       
         end,
