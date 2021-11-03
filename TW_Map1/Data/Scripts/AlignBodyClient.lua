@@ -1,4 +1,4 @@
-﻿local BODY = script:GetCustomProperty("Body"):WaitForObject()
+local BODY = script:GetCustomProperty("Body"):WaitForObject()
 local TURRET = script:GetCustomProperty("Turret"):WaitForObject()
 local CANNON = script:GetCustomProperty("Cannon"):WaitForObject()
 local propTreadSounds = script:GetCustomProperty("TreadSounds"):WaitForObject()

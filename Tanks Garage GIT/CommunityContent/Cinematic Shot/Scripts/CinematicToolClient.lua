@@ -1,4 +1,4 @@
-﻿--[[
+--[[
 	Cinematic Tool - Client
 	v1.0
 	by: standardcombo

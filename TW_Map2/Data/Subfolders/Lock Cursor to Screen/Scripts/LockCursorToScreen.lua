@@ -1,1 +1,1 @@
-﻿UI.SetCursorLockedToViewport(true)
+UI.SetCursorLockedToViewport(true)

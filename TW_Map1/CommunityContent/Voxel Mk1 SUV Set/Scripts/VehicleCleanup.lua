@@ -1,4 +1,4 @@
-﻿local vehicleClientAnchor = script:GetCustomProperty("VehicleClientAnchor"):WaitForObject()
+local vehicleClientAnchor = script:GetCustomProperty("VehicleClientAnchor"):WaitForObject()
 local vehicleSet = script:GetCustomProperty("VehicleSet"):WaitForObject()
 
 function DestroyVehicle(player)

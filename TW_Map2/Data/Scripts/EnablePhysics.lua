@@ -1,4 +1,4 @@
-﻿local DISTANCE_TO_EXPLODE = 300
+local DISTANCE_TO_EXPLODE = 300
 local EXPLOSION_FORCE = 450
 local hasExploded = false
 

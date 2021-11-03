@@ -1,4 +1,4 @@
-﻿local tilt = script:GetCustomProperty("Tilt"):WaitForObject()
+local tilt = script:GetCustomProperty("Tilt"):WaitForObject()
 local height = script:GetCustomProperty("Height"):WaitForObject()
 
 local axleTargetFA = script:GetCustomProperty("AxleTargetFA"):WaitForObject()

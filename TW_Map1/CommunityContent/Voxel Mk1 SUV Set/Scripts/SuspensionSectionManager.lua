@@ -1,4 +1,4 @@
-﻿local movingSuspension = script:GetCustomProperty("MovingSuspension"):WaitForObject()
+local movingSuspension = script:GetCustomProperty("MovingSuspension"):WaitForObject()
 
 local controlArm = script:GetCustomProperty("ControlArm"):WaitForObject()
 local controlArmUpper = script:GetCustomProperty("ControlArmUpper"):WaitForObject()

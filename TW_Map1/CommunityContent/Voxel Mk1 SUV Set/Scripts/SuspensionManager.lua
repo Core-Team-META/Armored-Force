@@ -1,4 +1,4 @@
-﻿local axle = script:GetCustomProperty("Axle"):WaitForObject()
+local axle = script:GetCustomProperty("Axle"):WaitForObject()
 
 local axleTargetA = script:GetCustomProperty("AxleTargetA"):WaitForObject()
 local movingSuspensionA = script:GetCustomProperty("MovingSuspensionA"):WaitForObject()

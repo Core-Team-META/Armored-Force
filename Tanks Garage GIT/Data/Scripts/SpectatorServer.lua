@@ -1,4 +1,4 @@
-﻿--[[
+--[[
 
 	Spectator - Server
 	1.0.0 - December 04, 2020
