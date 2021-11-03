@@ -38,6 +38,7 @@ Rank = {
     Melamoryxq      = AdminRanks.HigherAdmin ,
     Mucusinator     = AdminRanks.HigherAdmin ,
     WitcherSilver   = AdminRanks.HigherAdmin ,
+    WindfallDrifter = AdminRanks.HigherAdmin ,
     riffraff        = AdminRanks.HigherAdmin ,
     Sobchak         = AdminRanks.HigherAdmin ,
     Scav            = AdminRanks.HigherAdmin ,
@@ -80,6 +81,17 @@ Rank = {
     Nezberet        = AdminRanks.HigherAdmin ,
     plasmabacon     = AdminRanks.HigherAdmin ,
     Phyronnaz       = AdminRanks.HigherAdmin ,
+    Grimland        = AdminRanks.HigherAdmin ,
+    Outrun          = AdminRanks.HigherAdmin ,
+    Chipnertkj      = AdminRanks.HigherAdmin ,
+    KidEgg          = AdminRanks.HigherAdmin ,
+    LotusCracker    = AdminRanks.HigherAdmin ,
+    NANIMOON        = AdminRanks.HigherAdmin ,
+    Ocylix          = AdminRanks.HigherAdmin ,
+    shallow         = AdminRanks.HigherAdmin ,
+    StormHawk       = AdminRanks.HigherAdmin ,
+
+
 }
 
 AdminData.AdminRanks = AdminRanks
