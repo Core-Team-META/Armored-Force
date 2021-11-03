@@ -106,6 +106,24 @@ function RetrieveData()
             position = position + 1
         end 
         
+        local tankIsPremium = tanks[tonumber(tankEntry.id)]["purchaseCurrencyName"] == "Gold"
+        local missingUpgradeStatus = "0"
+        
+        if tankIsPremium then
+        	print(tankEntry.id .. " is premium")
+        	missingUpgradeStatus = "2"
+        	local allUpgrades = {tankEntry.turret, tankEntry.hull, tankEntry.engine, tankEntry.crew}
+        	
+        	for _, t in pairs(allUpgrades) do
+	        	if t then
+		        	for u, x in pairs(t) do
+		        		print("Forcing " .. u .. " to be value 2")
+		        		t[u] = "2"
+		        	end
+		        end
+		   end
+        end
+        
         -- update the server table if player's storage is outdated (a new upgrade added to a tank, etc.)
         -- add in any missing upgrades
         for _, t in pairs(UPGRADE_TYPES) do
@@ -117,7 +135,7 @@ function RetrieveData()
 		        		end
 		        		if not tankEntry.turret[k] then
 		        			print(k .. " added to " .. tankEntry.id)
-		        			tankEntry.turret[k] = "0"
+		        			tankEntry.turret[k] = missingUpgradeStatus
 		        		end
 		        	elseif string.find(k, "HULL") then
 		        		if not tankEntry.hull then
@@ -125,7 +143,7 @@ function RetrieveData()
 		        		end
 			    		if not tankEntry.hull[k] then
 			    			print(k .. " added to " .. tankEntry.id)
-			    			tankEntry.hull[k] = "0"
+			    			tankEntry.hull[k] = missingUpgradeStatus
 			    		end
 		        	elseif string.find(k, "ENGINE") then
 		        		if not tankEntry.engine then
@@ -133,7 +151,7 @@ function RetrieveData()
 		        		end
 			    		if not tankEntry.engine[k] then
 			    			print(k .. " added to " .. tankEntry.id)
-			    			tankEntry.engine[k] = "0"
+			    			tankEntry.engine[k] = missingUpgradeStatus
 			    		end
 		        	elseif string.find(k, "CREW") then
 		        		if not tankEntry.crew then
@@ -141,12 +159,13 @@ function RetrieveData()
 		        		end
 			    		if not tankEntry.crew[k] then
 			    			print(k .. " added to " .. tankEntry.id)
-			    			tankEntry.crew[k] = "0"
+			    			tankEntry.crew[k] = missingUpgradeStatus
 			    		end
 			    	end
 			    end
 			end
-        end        
+        end
+        
         table.insert(progressionTable, tankEntry)
         --UTIL_API.TablePrint(tankEntry)
     end

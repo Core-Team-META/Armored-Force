@@ -136,6 +136,13 @@ function OnPlayerJoined(player)
     --print("-----PRINTING SHARED STORAGE-----")
     --UTIL_API.TablePrint(Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player))
     --print("-----FINISHED PRINTING SHARED STORAGE-----")
+    
+    Task.Wait(10)
+    local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
+	local playerData = Storage.GetPlayerData(player)
+	
+    print(player.name .. " " .. BACKUP_VERSION .. " backup: " .. tostring(playerData.backups[BACKUP_VERSION]))
+    print(player.name .. " current storage: " .. playerSharedStorage[CONSTANTS_API.PROGRESS.DATA])
 end
 
 function OnPlayerLeft(player)
@@ -176,7 +183,6 @@ function CheckAndSetSharedStorageDefault(player)
     if not playerData.backups[BACKUP_VERSION] then
     	playerData.backups[BACKUP_VERSION] = playerSharedStorage[CONSTANTS_API.PROGRESS.DATA]
     end
-    print("player backup: " .. tostring(playerData.backups[BACKUP_VERSION]))
     
     Storage.SetPlayerData(player, playerData)
     
@@ -267,7 +273,6 @@ function SavePlayerDataIntoSharedStorage(player)
 	    if playerData.backups and playerData.backups[commandOverride[player]["REVERT_STORAGE"]] then
 	    	playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = playerData.backups[commandOverride[player]["REVERT_STORAGE"]]
 	    end	
-    	
     end
     
     playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT] = player:GetResource(tankAPI.EquipResource)
@@ -364,15 +369,12 @@ function CheckAndConvertToNewupgradeSystem(dataString)
     
     local tankUpgradeInfo = nil
     local upgradeId = 1
-    local tankIsPremium = false
     
     for k, v in ipairs(oldProgressionTable) do 
         newString = newString .. v.id .. "|" .. ConvertBoolToString(v.researched) .. "|" .. ConvertBoolToString(v.purchased)
         
        	print(v.id)
        	print(tanks[tonumber(v.id)]["purchaseCurrencyName"])
-       	
-       	tankIsPremium = tanks[tonumber(v.id)]["purchaseCurrencyName"] == "Gold"
        	
        	for _, upgradeType in ipairs(UPGRADE_TYPES) do
 	        newString = newString .. "|" .. upgradeType 
@@ -390,9 +392,7 @@ function CheckAndConvertToNewupgradeSystem(dataString)
 		        		selectedProgress = v.engineProgress
 		        	end
 		        	
-		        	if tankIsPremium then
-		        		newString = newString .. "/" .. tostring(upgradeId) .. "-2"
-		        	elseif upgradeId == 1 then
+		        	if upgradeId == 1 then
 		        		newString = newString .. "/" .. tostring(upgradeId) .. tostring(selectedProgress)
 		        	else 
 		        		newString = newString .. "/" .. tostring(upgradeId) .. "-0"
