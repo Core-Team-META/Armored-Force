@@ -52,19 +52,60 @@ commands = {
         OnCommandCalledClient = function (player, message)       
         end,
         OnCommandCalledServer = function (player, message)
+        	Events.Broadcast("COMMAND_OVERRRIDE", player, "REVERT_TANKS", nil)
         	for _, v in ipairs(player.serverUserData.techTreeProgress) do
         		if (v.id ~= "01") and (v.id ~= "18") then
 	        		v.researched = false
 	        		v.purchased = false
 	        	end
-	        	v.weaponProgress = 0
-	        	v.armorProgress = 0
-	        	v.engineProgress = 0
         	end
         end,
         OnCommandReceivedClient = function (player, message)
         end,
-        description = "revert all tank progress (may require restart)",
+        description = "revert all tank progress (requires restart)",
+        requireMessage = false,
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
+    },
+    
+    ["/reverttankstorage"] = {
+        OnCommandCalledClient = function (player, message)       
+        end,
+        OnCommandCalledServer = function (player, message)
+        	for section in (message.." "):gmatch("(.-) ") do
+        		if not string.find(section, "reverttankstorage") then
+        			Events.Broadcast("COMMAND_OVERRRIDE", player, "REVERT_STORAGE", section)
+				end
+        	end  
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "revert tank storage using a backup (requires backup version and game restart)",
+        requireMessage = false,
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
+    },
+    
+     ["/forcemap"] = {
+        OnCommandCalledClient = function (player, message)       
+        end,
+        OnCommandCalledServer = function (player, message)
+        	for section in (message.." "):gmatch("(.-) ") do
+        		local number = tonumber(section)
+        		if number then
+        			Events.Broadcast("FORCE_SELECTED_MAP", number)
+        		end
+        	end         	
+        end,
+        OnCommandReceivedClient = function (player, message)
+        	for section in (message.." "):gmatch("(.-) ") do
+        		local number = tonumber(section)
+        		if number then
+        			Chat.LocalMessage("Forced Map" .. tostring(number))
+        		end
+        	end 
+        end,
+        description = "Force map to be selected. Format: /forcemap <mapNumber>",
         requireMessage = false,
         adminOnly = true,
         adminRank = AdminData.AdminRanks.Admin

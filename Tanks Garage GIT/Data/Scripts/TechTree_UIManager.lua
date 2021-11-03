@@ -2041,7 +2041,7 @@ for i = 1, Constants_API.GetNumberOfTanks() do
 	end
 	tankIDString = tankIDString .. tostring(i)
 	
-	print("connecting button for: ".. tankIDString)
+	--print("connecting button for: ".. tankIDString)
 	
 	if tankIDString ~= "08" then
 		World.FindObjectByName(tankIDString).clickedEvent:Connect(SelectTank)

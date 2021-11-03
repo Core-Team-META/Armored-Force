@@ -15,11 +15,19 @@ local DATA_TRANSFER = script:GetCustomProperty('DataTransfer'):WaitForObject()
 local DATA_TRANSFER_OBJECT = script:GetCustomProperty('DataTransferObject')
 
 -- LOCAL PROPERTIES
+
+--[[
+	Available backup versions:
+	preupgradev2
+]]
+local BACKUP_VERSION = "preupgradev2"
 local DELIMITER = '|'
 local DELIMITER_2 = '/'
 local DELIMITER_3 = '-'
 
 local UPGRADE_TYPES = {"TURRET", "HULL", "ENGINE", "CREW"}
+
+local commandOverride = {}
 
 local defualtValues = {
     [CONSTANTS_API.SILVER] = 0,
@@ -99,26 +107,15 @@ local Resources = {
 }
 ----------------------------------------------------------------------------------------------
 
--- Handles saving of player resources to their storage
-function OnResourceChanged(player, resource, value)
-    local playerData = Storage.GetPlayerData(player)
-
-    if type(playerData.resources) ~= 'table' then
-        playerData.resources = {}
-    end
-    playerData.resources[resource] = value
-    Storage.SetPlayerData(player, playerData)
+function OnCommandRecieved(player, commandType, commandValue)
+	if not commandOverride[player] then
+		commandOverride[player] = {}
+	end
+	
+	commandOverride[player][commandType] = commandValue or true
 end
 
 function OnPlayerJoined(player)
-
-    local playerData = Storage.GetPlayerData(player)
-    --UTIL_API.TablePrint(playerData)
-    --print("Storage Retrieved")
-
-    if type(playerData.resources) ~= 'table' then
-        playerData.resources = {}
-    end
 
     if (player:GetResource(CONSTANTS_API.RANK_NAME) <= 0) then
         player:SetResource(CONSTANTS_API.RANK_NAME, 1)
@@ -169,6 +166,19 @@ function CheckAndSetSharedStorageDefault(player)
     if (playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] == nil) then
         SetNewPlayerProgression(playerSharedStorage)
     end
+    
+    local playerData = Storage.GetPlayerData(player)
+    
+    if not playerData.backups then
+    	playerData.backups = {}
+    end
+
+    if not playerData.backups[BACKUP_VERSION] then
+    	playerData.backups[BACKUP_VERSION] = playerSharedStorage[CONSTANTS_API.PROGRESS.DATA]
+    end
+    print("player backup: " .. tostring(playerData.backups[BACKUP_VERSION]))
+    
+    Storage.SetPlayerData(player, playerData)
     
     playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = CheckAndConvertToNewupgradeSystem(playerSharedStorage[CONSTANTS_API.PROGRESS.DATA])
     
@@ -243,11 +253,23 @@ function SavePlayerDataIntoSharedStorage(player)
         player:GetResource(tankAPI.EquipResource),
         player.serverUserData.techTreeProgress
     )
-
+    
     for key, value in pairs(Resources) do
         playerSharedStorage[key] = player:GetResource(key)
     end
     playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = ConvertTechTreeProgressToDataString(player)
+    
+    if commandOverride[player] and commandOverride[player]["REVERT_TANKS"] then
+    	playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = nil
+    elseif commandOverride[player] and commandOverride[player]["REVERT_STORAGE"] then
+        local playerData = Storage.GetPlayerData(player)
+    	
+	    if playerData.backups and playerData.backups[commandOverride[player]["REVERT_STORAGE"]] then
+	    	playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = playerData.backups[commandOverride[player]["REVERT_STORAGE"]]
+	    end	
+    	
+    end
+    
     playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT] = player:GetResource(tankAPI.EquipResource)
     for _, tank in pairs(tanks) do
         playerSharedStorage[UTIL_API.GetTankRPString(tonumber(tank.id))] = player:GetResource(UTIL_API.GetTankRPString(tonumber(tank.id)))
@@ -476,7 +498,18 @@ function SetTankProgressionDataForServer(dataString, player)
         local missingUpgradeStatus = "0"
         
         if tankIsPremium then
+        	print(tankEntry.id .. " is premium")
         	missingUpgradeStatus = "2"
+        	local allUpgrades = {tankEntry.turret, tankEntry.hull, tankEntry.engine, tankEntry.crew}
+        	
+        	for _, t in pairs(allUpgrades) do
+	        	if t then
+		        	for u, x in pairs(t) do
+		        		print("Forcing " .. u .. " to be value 2")
+		        		t[u] = "2"
+		        	end
+		        end
+		   end
         end
         
         -- update the server table if player's storage is outdated (a new upgrade added to a tank, etc.)
@@ -616,4 +649,5 @@ end
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 
+Events.Connect("COMMAND_OVERRRIDE", OnCommandRecieved)
 Events.ConnectForPlayer('CHANGE_EQUIPPED_TANK', ChangeEquippedTank, tankId)
