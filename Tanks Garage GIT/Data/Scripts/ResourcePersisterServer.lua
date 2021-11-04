@@ -124,6 +124,7 @@ function OnCommandRecieved(player, commandType, commandValue)
 	end
 	
 	commandOverride[player][commandType] = commandValue or true
+	print("Got command " .. tostring(commandType) .. " with value " .. tostring(commandOverride[player][commandType]))
 end
 
 function OnPlayerJoined(player)
@@ -278,11 +279,13 @@ function SavePlayerDataIntoSharedStorage(player)
     
     if commandOverride[player] and commandOverride[player]["REVERT_TANKS"] then
     	playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = nil
+    	print(player.name .. " storage reset: " .. tostring(playerSharedStorage[CONSTANTS_API.PROGRESS.DATA]))
     elseif commandOverride[player] and commandOverride[player]["REVERT_STORAGE"] then
         local playerData = Storage.GetPlayerData(player)
     	
 	    if playerData.backups and playerData.backups[commandOverride[player]["REVERT_STORAGE"]] then
 	    	playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = playerData.backups[commandOverride[player]["REVERT_STORAGE"]]
+	    	print(player.name .. " progress revertted to backup " .. tostring(commandOverride[player]["REVERT_STORAGE"]))
 	    end	
     end
     

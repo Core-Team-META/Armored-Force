@@ -47,6 +47,115 @@ commands = {
         adminOnly = true,
         adminRank = AdminData.AdminRanks.Admin
     },
+        
+    ["/unlockallupgrades"] = {
+        OnCommandCalledClient = function (player, message)       
+        end,
+        OnCommandCalledServer = function (player, message)
+        	for _, v in ipairs(player.serverUserData.techTreeProgress) do
+        		if (v.id ~= "08") then
+	        		for x, y in pairs(v.turret) do
+	        			v.turret[x] = "2"
+	        		end
+	        		for x, y in pairs(v.hull) do
+	        			v.hull[x] = "2"
+	        		end
+	        		for x, y in pairs(v.engine) do
+	        			v.engine[x] = "2"
+	        		end
+	        		for x, y in pairs(v.crew) do
+	        			v.crew[x] = "2"
+	        		end	        		
+	        	end
+        	end
+        end,
+        OnCommandReceivedClient = function (player, message)
+        	for _, v in ipairs(player.clientUserData.techTreeProgress) do
+        		if (v.id ~= "08") then
+	        		for x, y in pairs(v.turret) do
+	        			v.turret[x] = "2"
+	        		end
+	        		for x, y in pairs(v.hull) do
+	        			v.hull[x] = "2"
+	        		end
+	        		for x, y in pairs(v.engine) do
+	        			v.engine[x] = "2"
+	        		end
+	        		for x, y in pairs(v.crew) do
+	        			v.crew[x] = "2"
+	        		end	        		
+	        	end
+        	end
+        end,
+        description = "unlock all tank upgrades",
+        requireMessage = false,
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
+    },
+    
+    ["/resetallupgrades"] = {
+        OnCommandCalledClient = function (player, message)       
+        end,
+        OnCommandCalledServer = function (player, message)
+        	for _, v in ipairs(player.serverUserData.techTreeProgress) do
+        		if (v.id ~= "08") then
+	        		for x, y in pairs(v.turret) do
+	        			v.turret[x] = "0"
+	        		end
+	        		for x, y in pairs(v.hull) do
+	        			v.hull[x] = "0"
+	        		end
+	        		for x, y in pairs(v.engine) do
+	        			v.engine[x] = "0"
+	        		end
+	        		for x, y in pairs(v.crew) do
+	        			v.crew[x] = "0"
+	        		end	        		
+	        	end
+        	end
+        end,
+        OnCommandReceivedClient = function (player, message)
+        	for _, v in ipairs(player.clientUserData.techTreeProgress) do
+        		if (v.id ~= "08") then
+	        		for x, y in pairs(v.turret) do
+	        			v.turret[x] = "0"
+	        		end
+	        		for x, y in pairs(v.hull) do
+	        			v.hull[x] = "0"
+	        		end
+	        		for x, y in pairs(v.engine) do
+	        			v.engine[x] = "0"
+	        		end
+	        		for x, y in pairs(v.crew) do
+	        			v.crew[x] = "0"
+	        		end	        		
+	        	end
+        	end
+        end,
+        description = "unlock all tank upgrades",
+        requireMessage = false,
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
+    },
+    
+    ["/unlockalltanks"] = {
+        OnCommandCalledClient = function (player, message)       
+        end,
+        OnCommandCalledServer = function (player, message)
+        	for _, v in ipairs(player.serverUserData.techTreeProgress) do
+        		if (v.id ~= "01") and (v.id ~= "18") and (v.id ~= "08") then
+	        		v.researched = true
+	        		v.purchased = true
+	        	end
+        	end
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "unlock all tanks (requires restart)",
+        requireMessage = false,
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
+    },
     
     ["/reverttanks"] = {
         OnCommandCalledClient = function (player, message)       
