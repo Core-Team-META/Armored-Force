@@ -15560,7 +15560,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Glasses for the Gunner"
+            String: "Ballistic Capped Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16144,7 +16144,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spall Liner"
+            String: "Protective Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16824,7 +16824,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Working Brakes"
+            String: "New Radiator"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -17952,7 +17952,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Glasses for the Gunner"
+            String: "Ballistic Capped Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18536,7 +18536,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spall Liner"
+            String: "Protective Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -19216,7 +19216,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Working Brakes"
+            String: "New Radiator"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20344,7 +20344,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Glasses for the Gunner"
+            String: "Ballistic Capped Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20928,7 +20928,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spall Liner"
+            String: "Protective Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -21608,7 +21608,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Working Brakes"
+            String: "New Radiator"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -22736,7 +22736,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Glasses for the Gunner"
+            String: "Ballistic Capped Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -23320,7 +23320,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spall Liner"
+            String: "Protective Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -24000,7 +24000,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Working Brakes"
+            String: "New Radiator"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25128,7 +25128,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Glasses for the Gunner"
+            String: "Ballistic Capped Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25712,7 +25712,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spall Liner"
+            String: "Protective Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -26392,7 +26392,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Working Brakes"
+            String: "New Radiator"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27520,7 +27520,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Glasses for the Gunner"
+            String: "Ballistic Capped Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -28104,7 +28104,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spall Liner"
+            String: "Protective Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -28784,7 +28784,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Working Brakes"
+            String: "New Radiator"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -29912,7 +29912,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Glasses for the Gunner"
+            String: "Ballistic Capped Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -30496,7 +30496,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spall Liner"
+            String: "Protective Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -31176,7 +31176,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Working Brakes"
+            String: "New Radiator"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -32304,7 +32304,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Glasses for the Gunner"
+            String: "Ballistic Capped Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -32888,7 +32888,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spall Liner"
+            String: "Protective Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -33568,7 +33568,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Working Brakes"
+            String: "New Radiator"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -49044,7 +49044,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Glasses for the Gunner"
+            String: "Ballistic Capped Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -49628,7 +49628,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spall Liner"
+            String: "Protective Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -50308,7 +50308,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Working Brakes"
+            String: "New Radiator"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -51436,7 +51436,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Glasses for the Gunner"
+            String: "Ballistic Capped Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52020,7 +52020,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spall Liner"
+            String: "Protective Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52700,7 +52700,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Working Brakes"
+            String: "New Radiator"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -53828,7 +53828,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Glasses for the Gunner"
+            String: "Ballistic Capped Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -54412,7 +54412,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spall Liner"
+            String: "Protective Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -55092,7 +55092,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Working Brakes"
+            String: "New Radiator"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -56220,7 +56220,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Glasses for the Gunner"
+            String: "Ballistic Capped Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -56804,7 +56804,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spall Liner"
+            String: "Protective Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -57484,7 +57484,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Working Brakes"
+            String: "New Radiator"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -58612,7 +58612,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Glasses for the Gunner"
+            String: "Ballistic Capped Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59196,7 +59196,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spall Liner"
+            String: "Protective Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59876,7 +59876,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Working Brakes"
+            String: "New Radiator"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -61004,7 +61004,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Glasses for the Gunner"
+            String: "Ballistic Capped Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -61588,7 +61588,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spall Liner"
+            String: "Protective Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -62268,7 +62268,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Working Brakes"
+            String: "New Radiator"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -63396,7 +63396,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Glasses for the Gunner"
+            String: "Ballistic Capped Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -63980,7 +63980,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spall Liner"
+            String: "Protective Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -64660,7 +64660,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Working Brakes"
+            String: "New Radiator"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -65788,7 +65788,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Glasses for the Gunner"
+            String: "Ballistic Capped Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -66372,7 +66372,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spall Liner"
+            String: "Protective Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -67052,7 +67052,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Working Brakes"
+            String: "New Radiator"
           }
           Overrides {
             Name: "cs:upgradeID"

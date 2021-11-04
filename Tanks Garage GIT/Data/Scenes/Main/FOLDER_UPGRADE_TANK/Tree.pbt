@@ -7346,7 +7346,7 @@ Objects {
     }
   }
   ParentId: 16582034850017915871
-  ChildIds: 11805377949148879817
+  ChildIds: 8671922996606689190
   ChildIds: 8597407229468821886
   ChildIds: 7271995354771784332
   Collidable_v2 {
@@ -16621,7 +16621,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11805377949148879817
+  Id: 8671922996606689190
   Name: "Background"
   Transform {
     Location {
@@ -16658,24 +16658,55 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
-    Image {
-      Brush {
-        Id: 1814707273787853473
+    Button {
+      FontColor {
+        A: 1
       }
-      Color {
+      FontSize: 20
+      ButtonColor {
         R: 0.000990702189
         G: 0.0015
         B: 0.000743026729
         A: 0.896
       }
-      TeamSettings {
+      HoveredColor {
+        R: 0.000990702189
+        G: 0.0015
+        B: 0.000743026729
+        A: 0.896
+      }
+      PressedColor {
+        R: 0.000990702189
+        G: 0.0015
+        B: 0.000743026729
+        A: 0.896
+      }
+      DisabledColor {
+        R: 0.000990702189
+        G: 0.0015
+        B: 0.000743026729
+        A: 0.896
+      }
+      Brush {
+        Id: 1814707273787853473
+      }
+      IsButtonEnabled: true
+      ClickMode {
+        Value: "mc:ebuttonclickmode:default"
+      }
+      Font {
+      }
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
       }
       ShadowColor {
         A: 1
       }
       ShadowOffset {
       }
-      ScreenshotIndex: 1
     }
     AnchorLayout {
       SelfAnchor {
