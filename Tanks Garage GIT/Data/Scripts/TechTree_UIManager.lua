@@ -1755,7 +1755,7 @@ function UpgradeButtonHovered(button)
 	    				statValue = typeDetails[upgradeID]["stat" .. tostring(i) .. "Value"]
 	    				if statName == "DAMAGE" then
 	    					damage = damage + statValue
-	    				elseif statName == "AIM" then
+	    				elseif (statName == "AIM") and (turret > 0) then
 	    					turret = turret + statValue
 	    				elseif statName == "HITPOINTS" then
 	    					hitPoints = hitPoints + statValue
@@ -1773,7 +1773,7 @@ function UpgradeButtonHovered(button)
 	    				statValue = typeDetails[upgradeID]["stat" .. tostring(i) .. "Value"]
 	    				if statName == "DAMAGE" then
 	    					addedDamage = addedDamage + statValue
-	    				elseif statName == "AIM" then
+	    				elseif (statName == "AIM") and (turret > 0) then
 	    					addedTurret = addedTurret + statValue
 	    				elseif statName == "HITPOINTS" then
 	    					addedHitPoints = addedHitPoints + statValue
@@ -1911,7 +1911,7 @@ function PopulateEquippedTankStats(entry)
 	    				statValue = typeDetails[upgradeID]["stat" .. tostring(i) .. "Value"]
 	    				if statName == "DAMAGE" then
 	    					damage = damage + statValue
-	    				elseif statName == "AIM" then
+	    				elseif (statName == "AIM") and (turret > 0) then
 	    					turret = turret + statValue
 	    				elseif statName == "HITPOINTS" then
 	    					hitPoints = hitPoints + statValue
@@ -1935,8 +1935,8 @@ function PopulateEquippedTankStats(entry)
     if turningSpeed > 1000 then
     	turningSpeed = math.floor(turningSpeed / 20)
     end
-    
-     STATS_TANK_CONTAINER:FindDescendantByName('BAR_4').progress = (damage - tankAPI.GetLowestDamage()) / (tankAPI.GetHighestDamage() - tankAPI.GetLowestDamage())
+        
+    STATS_TANK_CONTAINER:FindDescendantByName('BAR_4').progress = (damage - tankAPI.GetLowestDamage()) / (tankAPI.GetHighestDamage() - tankAPI.GetLowestDamage())
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_5').progress = 1 - ((reload - tankAPI.GetLowestReload()) / (tankAPI.GetHighestReload() - tankAPI.GetLowestReload()))
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_6').progress = (turret - tankAPI.GetLowestTurretSpeed()) / (tankAPI.GetHighestTurretSpeed() - tankAPI.GetLowestTurretSpeed())
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_1').progress = (hitPoints - tankAPI.GetLowestHitPoints()) / (tankAPI.GetHighestHitPoints() - tankAPI.GetLowestHitPoints())

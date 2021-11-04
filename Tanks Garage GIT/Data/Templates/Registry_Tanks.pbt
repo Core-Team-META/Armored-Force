@@ -3022,7 +3022,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Driver\'s \"Special\" Fuel"
+            String: "Special Fuel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -50486,7 +50486,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Driver\'s \"Special\" Fuel"
+            String: "Special Fuel"
           }
           Overrides {
             Name: "cs:upgradeID"
