@@ -1247,7 +1247,10 @@ function OpenTankUpgradeWindow(button, id, updatePanelsOnly)
 		    	end
 		    	
 		    	entryCustomProperties["UPGRADE_TITLE_TEXT"].text = u["upgradeName"]
-		    	World.SpawnAsset(u["upgradeIcon"], {parent = entryCustomProperties["UPGRADE_ICON"]})
+		    	
+		    	local upgradeIcon = World.SpawnAsset(u["upgradeIcon"], {parent = entryCustomProperties["UPGRADE_ICON"]})
+		    	upgradeIcon.x = 0
+		    	upgradeIcon.y = 0
 		    	
 		    	local button = entryCustomProperties["PURCHASE_BUTTON"]
 		    	upgradeButtonListeners[button.id] = {}
