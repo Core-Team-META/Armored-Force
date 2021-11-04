@@ -2757,7 +2757,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -4405,7 +4405,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -6053,7 +6053,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -7091,7 +7091,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -8023,7 +8023,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -9235,7 +9235,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -10167,7 +10167,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -11989,7 +11989,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -13239,7 +13239,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -14171,7 +14171,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -14519,7 +14519,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Less Explosive Ammo Storage"
+            String: "Wet Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -15386,7 +15386,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16144,7 +16144,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Less Explosive Critical Systems"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16476,7 +16476,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -17778,7 +17778,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18536,7 +18536,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Less Explosive Critical Systems"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18868,7 +18868,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20170,7 +20170,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20928,7 +20928,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Less Explosive Critical Systems"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -21260,7 +21260,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -22562,7 +22562,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -23320,7 +23320,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Less Explosive Critical Systems"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -23652,7 +23652,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -24954,7 +24954,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25712,7 +25712,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Less Explosive Critical Systems"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -26044,7 +26044,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27346,7 +27346,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -28104,7 +28104,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Less Explosive Critical Systems"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -28436,7 +28436,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -29738,7 +29738,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -30496,7 +30496,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Less Explosive Critical Systems"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -30828,7 +30828,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -32130,7 +32130,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -32888,7 +32888,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Less Explosive Critical Systems"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -33220,7 +33220,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -36461,7 +36461,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -38109,7 +38109,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -39757,7 +39757,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -41405,7 +41405,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -42443,7 +42443,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -43375,7 +43375,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -43814,7 +43814,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Less Explosive Ammo Storage"
+            String: "Wet Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -44587,7 +44587,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -45519,7 +45519,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -46723,7 +46723,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -47655,7 +47655,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -48003,7 +48003,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Less Explosive Ammo Storage"
+            String: "Wet Ammo Storage"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -48870,7 +48870,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -49628,7 +49628,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Less Explosive Critical Systems"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -49960,7 +49960,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -51262,7 +51262,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52020,7 +52020,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Less Explosive Critical Systems"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52352,7 +52352,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -53654,7 +53654,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -54412,7 +54412,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Less Explosive Critical Systems"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -54744,7 +54744,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -56046,7 +56046,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -56804,7 +56804,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Less Explosive Critical Systems"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -57136,7 +57136,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -58438,7 +58438,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59196,7 +59196,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Less Explosive Critical Systems"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59528,7 +59528,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -60830,7 +60830,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -61588,7 +61588,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Less Explosive Critical Systems"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -61920,7 +61920,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -63222,7 +63222,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -63980,7 +63980,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Less Explosive Critical Systems"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -64312,7 +64312,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -65614,7 +65614,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Tightly Packed Ammo Storage"
+            String: "Explosive Filler"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -66372,7 +66372,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Less Explosive Critical Systems"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -66704,7 +66704,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Semi-Automatic Transmission"
+            String: "Enhanced Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"

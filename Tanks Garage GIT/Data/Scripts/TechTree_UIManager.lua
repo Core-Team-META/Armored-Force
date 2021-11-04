@@ -1790,6 +1790,14 @@ function UpgradeButtonHovered(button)
     	end
     end
     
+     if topSpeed > tankAPI.GetHighestTopSpeed() then
+    	topSpeed = tankAPI.GetHighestTopSpeed() - 100
+    end    
+    
+    if turningSpeed > 1000 then
+    	turningSpeed = math.floor(turningSpeed / 20)
+    end
+    
     AddUpgradeBonusText(damage - tankAPI.GetLowestDamage(), addedDamage, 'STAT_4')
     AddUpgradeBonusText(turret - tankAPI.GetLowestTurretSpeed(), addedTurret, 'STAT_6')
     AddUpgradeBonusText(hitPoints - tankAPI.GetLowestHitPoints(), addedHitPoints, 'STAT_1')
@@ -1921,7 +1929,7 @@ function PopulateEquippedTankStats(entry)
     end
  
      if topSpeed > tankAPI.GetHighestTopSpeed() then
-    	topSpeed = tankAPI.GetHighestTopSpeed()
+    	topSpeed = tankAPI.GetHighestTopSpeed() - 100
     end    
     
     if turningSpeed > 1000 then

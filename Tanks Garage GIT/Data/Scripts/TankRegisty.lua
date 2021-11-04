@@ -121,7 +121,7 @@ function Tanks.GetHighestDamage()
 end
 
 function Tanks.GetLowestDamage()
-	return 80
+	return 40
 end
 
 function Tanks.GetHighestReload()
@@ -133,7 +133,7 @@ function Tanks.GetLowestReload()
 end
 
 function Tanks.GetHighestTurretSpeed()
-	return 60
+	return 100
 end
 
 function Tanks.GetLowestTurretSpeed()
@@ -141,7 +141,7 @@ function Tanks.GetLowestTurretSpeed()
 end
 
 function Tanks.GetHighestHitPoints()
-	return 2200
+	return 2350
 end
 
 function Tanks.GetLowestHitPoints()
@@ -157,7 +157,7 @@ function Tanks.GetLowestTopSpeed()
 end
 
 function Tanks.GetHighestAcceleration()
-	return 4500
+	return 4600
 end
 
 function Tanks.GetLowestAcceleration()
