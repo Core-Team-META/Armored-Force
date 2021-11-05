@@ -400,6 +400,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -486,6 +492,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -574,6 +586,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -644,6 +662,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -716,6 +740,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -786,6 +816,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -874,6 +910,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -961,6 +1003,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1047,6 +1095,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -1139,6 +1193,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Earn 25% more silver per match."
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1229,6 +1289,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Earn 25% more tank parts per match."
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -1321,6 +1387,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increase top speed by 10%"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1411,6 +1483,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Improve turn speed by 25%"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -1740,6 +1818,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1826,6 +1910,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -1914,6 +2004,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2000,6 +2096,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -2088,6 +2190,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2158,6 +2266,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -2230,6 +2344,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2300,6 +2420,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -2372,6 +2498,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2442,6 +2574,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -2530,6 +2668,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2616,6 +2760,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -2704,6 +2854,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2791,6 +2947,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2877,6 +3039,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -2969,6 +3137,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increased Spotting Range by 15%"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3059,6 +3233,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Tank top speed is increased by ~15% of base Tank top speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -3388,6 +3568,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3474,6 +3660,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -3562,6 +3754,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3648,6 +3846,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -3736,6 +3940,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3806,6 +4016,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -3878,6 +4094,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3948,6 +4170,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -4020,6 +4248,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4090,6 +4324,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -4178,6 +4418,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4264,6 +4510,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -4352,6 +4604,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4439,6 +4697,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4525,6 +4789,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -4617,6 +4887,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Primary gun reloads, ~10% faster. Also reduces chance for rotation or barrel turret to break by 25%."
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4707,6 +4983,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Turret Rotation Speed + 2 degrees"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -5036,6 +5318,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5122,6 +5410,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -5210,6 +5504,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5296,6 +5596,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -5384,6 +5690,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5454,6 +5766,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -5526,6 +5844,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5596,6 +5920,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -5668,6 +5998,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5738,6 +6074,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -5826,6 +6168,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5912,6 +6260,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -6000,6 +6354,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6087,6 +6447,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6173,6 +6539,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -6265,6 +6637,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Primary gun reloads, ~10% faster. Also reduces chance for rotation or barrel turret to break by 25%."
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6355,6 +6733,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Start each round with 1 free spare treads"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -6690,6 +7074,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6776,6 +7166,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -6864,6 +7260,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6950,6 +7352,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -7038,6 +7446,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7124,6 +7538,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -7212,6 +7632,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7282,6 +7708,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -7354,6 +7786,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7424,6 +7862,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -7496,6 +7940,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7566,6 +8016,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -7638,6 +8094,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7708,6 +8170,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -7796,6 +8264,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7882,6 +8356,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -7970,6 +8450,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8056,6 +8542,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -8144,6 +8636,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8231,6 +8729,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8317,6 +8821,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -8409,6 +8919,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Projectile Speed Increased by 30%"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8499,6 +9015,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Take 25% less damage from fire while on fire"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -8834,6 +9356,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8920,6 +9448,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -9008,6 +9542,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9094,6 +9634,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -9182,6 +9728,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9268,6 +9820,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -9356,6 +9914,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9426,6 +9990,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -9498,6 +10068,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9568,6 +10144,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -9640,6 +10222,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9710,6 +10298,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -9782,6 +10376,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9852,6 +10452,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -9940,6 +10546,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10026,6 +10638,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -10114,6 +10732,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10200,6 +10824,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -10288,6 +10918,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10375,6 +11011,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10461,6 +11103,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -10553,6 +11201,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Tank top speed is increased by ~10% of base Tank top speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10643,6 +11297,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Improved ChassisTurn Speed by ~10% of base turn"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -10972,6 +11632,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11058,6 +11724,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -11146,6 +11818,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11232,6 +11910,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -11320,6 +12004,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11390,6 +12080,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -11462,6 +12158,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11532,6 +12234,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -11604,6 +12312,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11674,6 +12388,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -11762,6 +12482,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11848,6 +12574,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -11936,6 +12668,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12023,6 +12761,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12109,6 +12853,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -12201,6 +12951,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Zooms \"Shift\" scope by an additional +~25%"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12291,6 +13047,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Reduces time to Automatic Turret Repair by 3 seconds"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -12838,6 +13600,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12924,6 +13692,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -13012,6 +13786,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13098,6 +13878,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -13186,6 +13972,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13272,6 +14064,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -13360,6 +14158,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13430,6 +14234,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -13502,6 +14312,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13572,6 +14388,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -13644,6 +14466,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13714,6 +14542,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -13786,6 +14620,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13856,6 +14696,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -13944,6 +14790,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14030,6 +14882,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -14118,6 +14976,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14204,6 +15068,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -14292,6 +15162,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14379,6 +15255,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14465,6 +15347,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -14557,6 +15445,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Take 40% less damage from fire while on fire"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14647,6 +15541,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Start each round with 1 free spare treads"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -14985,6 +15885,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15071,6 +15977,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -15159,6 +16071,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15245,6 +16163,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -15333,6 +16257,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15419,6 +16349,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -15507,6 +16443,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15594,6 +16536,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15664,6 +16612,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -15736,6 +16690,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15806,6 +16766,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -15878,6 +16844,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15948,6 +16920,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -16020,6 +16998,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16091,6 +17075,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16161,6 +17151,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -16249,6 +17245,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16335,6 +17337,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -16423,6 +17431,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16509,6 +17523,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -16597,6 +17617,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16683,6 +17709,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -16771,6 +17803,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16857,6 +17895,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -16949,6 +17993,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Improved ChassisTurn Speed by ~25% of base turn"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17039,6 +18089,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Primary gun reloads, ~10% faster. Also reduces chance for rotation or barrel turret to break by 25%."
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -17377,6 +18433,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17463,6 +18525,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -17551,6 +18619,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17637,6 +18711,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -17725,6 +18805,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17811,6 +18897,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -17899,6 +18991,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17986,6 +19084,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18056,6 +19160,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -18128,6 +19238,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18198,6 +19314,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -18270,6 +19392,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18340,6 +19468,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -18412,6 +19546,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18483,6 +19623,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18553,6 +19699,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -18641,6 +19793,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18727,6 +19885,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -18815,6 +19979,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18901,6 +20071,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -18989,6 +20165,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19075,6 +20257,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -19163,6 +20351,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19249,6 +20443,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -19341,6 +20541,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Primary gun reloads, ~10% faster. Also reduces chance for rotation or barrel turret to break by 25%."
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19431,6 +20637,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Start each round with 1 free spare treads"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -19769,6 +20981,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19855,6 +21073,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -19943,6 +21167,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20029,6 +21259,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -20117,6 +21353,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20203,6 +21445,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -20291,6 +21539,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20378,6 +21632,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20448,6 +21708,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -20520,6 +21786,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20590,6 +21862,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -20662,6 +21940,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20732,6 +22016,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -20804,6 +22094,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20875,6 +22171,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20945,6 +22247,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -21033,6 +22341,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21119,6 +22433,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -21207,6 +22527,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21293,6 +22619,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -21381,6 +22713,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21467,6 +22805,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -21555,6 +22899,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21641,6 +22991,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -21733,6 +23089,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Improved ChassisTurn Speed by ~25% of base turn"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21823,6 +23185,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Start each round with 1 free spare treads"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -22161,6 +23529,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22247,6 +23621,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -22335,6 +23715,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22421,6 +23807,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -22509,6 +23901,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22595,6 +23993,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -22683,6 +24087,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22770,6 +24180,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22840,6 +24256,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -22912,6 +24334,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22982,6 +24410,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -23054,6 +24488,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23124,6 +24564,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -23196,6 +24642,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23267,6 +24719,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23337,6 +24795,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -23425,6 +24889,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23511,6 +24981,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -23599,6 +25075,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23685,6 +25167,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -23773,6 +25261,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23859,6 +25353,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -23947,6 +25447,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24033,6 +25539,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -24125,6 +25637,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Primary gun reloads, ~10% faster"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24215,6 +25733,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Projectile Speed Increased by 15%"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -24553,6 +26077,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24639,6 +26169,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -24727,6 +26263,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24813,6 +26355,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -24901,6 +26449,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24987,6 +26541,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -25075,6 +26635,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25162,6 +26728,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25232,6 +26804,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -25304,6 +26882,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25374,6 +26958,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -25446,6 +27036,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25516,6 +27112,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -25588,6 +27190,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25659,6 +27267,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25729,6 +27343,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -25817,6 +27437,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25903,6 +27529,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -25991,6 +27623,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26077,6 +27715,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -26165,6 +27809,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26251,6 +27901,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -26339,6 +27995,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26425,6 +28087,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -26517,6 +28185,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Primary gun reloads, ~5% faster"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26607,6 +28281,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Projectile Speed Increased by 15%"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -26945,6 +28625,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27031,6 +28717,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -27119,6 +28811,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27205,6 +28903,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -27293,6 +28997,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27379,6 +29089,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -27467,6 +29183,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27554,6 +29276,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27624,6 +29352,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -27696,6 +29430,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27766,6 +29506,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -27838,6 +29584,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27908,6 +29660,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -27980,6 +29738,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28051,6 +29815,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28121,6 +29891,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -28209,6 +29985,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28295,6 +30077,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -28383,6 +30171,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28469,6 +30263,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -28557,6 +30357,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28643,6 +30449,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -28731,6 +30543,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28817,6 +30635,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -28909,6 +30733,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Start each round with 1 free fire extinguisher"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28999,6 +30829,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Start each round with 1 free spare treads"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -29337,6 +31173,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29423,6 +31265,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -29511,6 +31359,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29597,6 +31451,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -29685,6 +31545,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29771,6 +31637,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -29859,6 +31731,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29946,6 +31824,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30016,6 +31900,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -30088,6 +31978,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30158,6 +32054,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -30230,6 +32132,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30300,6 +32208,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -30372,6 +32286,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30443,6 +32363,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30513,6 +32439,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -30601,6 +32533,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30687,6 +32625,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -30775,6 +32719,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30861,6 +32811,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -30949,6 +32905,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31035,6 +32997,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -31123,6 +33091,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31209,6 +33183,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -31301,6 +33281,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increased Spotting Range by 5%"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31391,6 +33377,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Tank top speed is increased by ~5% of base Tank top speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -31729,6 +33721,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31815,6 +33813,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -31903,6 +33907,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31989,6 +33999,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -32077,6 +34093,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32163,6 +34185,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -32251,6 +34279,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32338,6 +34372,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32408,6 +34448,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -32480,6 +34526,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32550,6 +34602,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -32622,6 +34680,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32692,6 +34756,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -32764,6 +34834,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32835,6 +34911,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32905,6 +34987,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -32993,6 +35081,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33079,6 +35173,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -33167,6 +35267,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33253,6 +35359,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -33341,6 +35453,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33427,6 +35545,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -33515,6 +35639,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33601,6 +35731,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -33693,6 +35829,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Zooms \"Shift\" scope by an additional +~25%"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33783,6 +35925,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increased Spotting Range by 15%"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -34104,6 +36252,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34190,6 +36344,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -34278,6 +36438,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34348,6 +36514,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -34420,6 +36592,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34490,6 +36668,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -34578,6 +36762,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34665,6 +36855,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34751,6 +36947,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -34843,6 +37045,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Earn 25% more silver per match."
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34933,6 +37141,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Earn 25% more tank parts per match."
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -35025,6 +37239,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increase top speed by 10%"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35115,6 +37335,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Improve turn speed by 25%"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -35444,6 +37670,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35530,6 +37762,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -35618,6 +37856,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35704,6 +37948,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -35792,6 +38042,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35862,6 +38118,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -35934,6 +38196,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36004,6 +38272,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -36076,6 +38350,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36146,6 +38426,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -36234,6 +38520,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36320,6 +38612,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -36408,6 +38706,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36495,6 +38799,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36581,6 +38891,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -36673,6 +38989,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increased Spotting Range by 15%"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36763,6 +39085,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Improved ChassisTurn Speed by ~15% of base turn"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -37092,6 +39420,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37178,6 +39512,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -37266,6 +39606,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37352,6 +39698,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -37440,6 +39792,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37510,6 +39868,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -37582,6 +39946,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37652,6 +40022,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -37724,6 +40100,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37794,6 +40176,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -37882,6 +40270,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37968,6 +40362,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -38056,6 +40456,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38143,6 +40549,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38229,6 +40641,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -38321,6 +40739,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Primary gun reloads, ~10% faster. Also reduces chance for rotation or barrel turret to break by 25%."
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38411,6 +40835,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Start each round with 1 free fire extinguisher"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -38740,6 +41170,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38826,6 +41262,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -38914,6 +41356,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39000,6 +41448,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -39088,6 +41542,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39158,6 +41618,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -39230,6 +41696,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39300,6 +41772,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -39372,6 +41850,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39442,6 +41926,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -39530,6 +42020,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39616,6 +42112,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -39704,6 +42206,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39791,6 +42299,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39877,6 +42391,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -39969,6 +42489,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Primary gun reloads, ~10% faster. Also reduces chance for rotation or barrel turret to break by 25%."
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40059,6 +42585,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Projectile Speed Increased by 30%"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -40388,6 +42920,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40474,6 +43012,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -40562,6 +43106,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40648,6 +43198,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -40736,6 +43292,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40806,6 +43368,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -40878,6 +43446,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40948,6 +43522,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -41020,6 +43600,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41090,6 +43676,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -41178,6 +43770,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41264,6 +43862,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -41352,6 +43956,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41439,6 +44049,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41525,6 +44141,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -41617,6 +44239,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Tank top speed is increased by ~10% of base Tank top speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41707,6 +44335,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Reduces time to Automatic Tread Repair by 3 seconds"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -42042,6 +44676,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42128,6 +44768,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -42216,6 +44862,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42302,6 +44954,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -42390,6 +45048,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42476,6 +45140,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -42564,6 +45234,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42634,6 +45310,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -42706,6 +45388,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42776,6 +45464,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -42848,6 +45542,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42918,6 +45618,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -42990,6 +45696,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43060,6 +45772,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -43148,6 +45866,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43234,6 +45958,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -43322,6 +46052,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43408,6 +46144,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -43496,6 +46238,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43583,6 +46331,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43669,6 +46423,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -43761,6 +46521,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Projectile Speed Increased by 30%"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43851,6 +46617,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Take 40% less damage from fire while on fire"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -44186,6 +46958,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44272,6 +47050,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -44360,6 +47144,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44446,6 +47236,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -44534,6 +47330,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44620,6 +47422,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -44708,6 +47516,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44778,6 +47592,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -44850,6 +47670,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44920,6 +47746,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -44992,6 +47824,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45062,6 +47900,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -45134,6 +47978,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45204,6 +48054,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -45292,6 +48148,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45378,6 +48240,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -45466,6 +48334,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45552,6 +48426,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -45640,6 +48520,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45727,6 +48613,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45813,6 +48705,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -45905,6 +48803,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Projectile Speed Increased by 15%"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45995,6 +48899,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Tank top speed is increased by ~5% of base Tank top speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -46322,6 +49232,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46408,6 +49324,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -46496,6 +49418,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46582,6 +49510,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -46670,6 +49604,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46756,6 +49696,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -46844,6 +49790,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46914,6 +49866,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -46986,6 +49944,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47056,6 +50020,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -47128,6 +50098,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47198,6 +50174,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -47270,6 +50252,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47340,6 +50328,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -47428,6 +50422,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47514,6 +50514,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -47602,6 +50608,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47688,6 +50700,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -47776,6 +50794,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47863,6 +50887,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47949,6 +50979,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -48041,6 +51077,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Take 40% less damage from fire while on fire"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48131,6 +51173,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Start each round with 1 free fire extinguisher"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -48469,6 +51517,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48555,6 +51609,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -48643,6 +51703,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48729,6 +51795,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -48817,6 +51889,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48903,6 +51981,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -48991,6 +52075,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49078,6 +52168,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49148,6 +52244,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -49220,6 +52322,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49290,6 +52398,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -49362,6 +52476,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49432,6 +52552,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -49504,6 +52630,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49575,6 +52707,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49645,6 +52783,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -49733,6 +52877,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49819,6 +52969,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -49907,6 +53063,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49993,6 +53155,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -50081,6 +53249,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -50167,6 +53341,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -50255,6 +53435,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -50341,6 +53527,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -50433,6 +53625,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increased Spotting Range by 5%"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -50523,6 +53721,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Tank top speed is increased by ~15% of base Tank top speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -50861,6 +54065,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -50947,6 +54157,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -51035,6 +54251,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51121,6 +54343,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -51209,6 +54437,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51295,6 +54529,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -51383,6 +54623,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51470,6 +54716,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51540,6 +54792,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -51612,6 +54870,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51682,6 +54946,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -51754,6 +55024,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51824,6 +55100,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -51896,6 +55178,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51967,6 +55255,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52037,6 +55331,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -52125,6 +55425,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52211,6 +55517,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -52299,6 +55611,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52385,6 +55703,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -52473,6 +55797,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52559,6 +55889,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -52647,6 +55983,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52733,6 +56075,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -52825,6 +56173,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Reduces time to Automatic Tread Repair by 3 seconds"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52915,6 +56269,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Reduces time to Automatic Turret Repair by 3 seconds"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -53253,6 +56613,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -53339,6 +56705,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -53427,6 +56799,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -53513,6 +56891,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -53601,6 +56985,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -53687,6 +57077,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -53775,6 +57171,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -53862,6 +57264,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -53932,6 +57340,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -54004,6 +57418,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -54074,6 +57494,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -54146,6 +57572,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -54216,6 +57648,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -54288,6 +57726,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -54359,6 +57803,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -54429,6 +57879,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -54517,6 +57973,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -54603,6 +58065,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -54691,6 +58159,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -54777,6 +58251,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -54865,6 +58345,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -54951,6 +58437,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -55039,6 +58531,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -55125,6 +58623,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -55217,6 +58721,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Turret Rotation Speed + 2 degrees"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -55307,6 +58817,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Improved ChassisTurn Speed by ~15% of base turn"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -55645,6 +59161,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -55731,6 +59253,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -55819,6 +59347,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -55905,6 +59439,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -55993,6 +59533,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -56079,6 +59625,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -56167,6 +59719,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -56254,6 +59812,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -56324,6 +59888,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -56396,6 +59966,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -56466,6 +60042,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -56538,6 +60120,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -56608,6 +60196,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -56680,6 +60274,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -56751,6 +60351,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -56821,6 +60427,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -56909,6 +60521,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -56995,6 +60613,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -57083,6 +60707,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -57169,6 +60799,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -57257,6 +60893,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -57343,6 +60985,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -57431,6 +61079,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -57517,6 +61171,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -57609,6 +61269,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Primary gun reloads, ~10% faster. Also reduces chance for rotation or barrel turret to break by 25%."
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -57699,6 +61365,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Reduces time to Automatic Fire Extinguisher by 3 seconds"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -58037,6 +61709,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -58123,6 +61801,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -58211,6 +61895,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -58297,6 +61987,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -58385,6 +62081,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -58471,6 +62173,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -58559,6 +62267,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -58646,6 +62360,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -58716,6 +62436,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -58788,6 +62514,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -58858,6 +62590,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -58930,6 +62668,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -59000,6 +62744,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -59072,6 +62822,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -59143,6 +62899,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -59213,6 +62975,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -59301,6 +63069,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -59387,6 +63161,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -59475,6 +63255,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -59561,6 +63347,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -59649,6 +63441,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -59735,6 +63533,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -59823,6 +63627,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -59909,6 +63719,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -60001,6 +63817,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Start each round with 1 free spare treads"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -60091,6 +63913,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Take 25% less damage from fire while on fire"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -60429,6 +64257,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -60515,6 +64349,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -60603,6 +64443,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -60689,6 +64535,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -60777,6 +64629,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -60863,6 +64721,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -60951,6 +64815,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -61038,6 +64908,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -61108,6 +64984,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -61180,6 +65062,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -61250,6 +65138,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -61322,6 +65216,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -61392,6 +65292,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -61464,6 +65370,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -61535,6 +65447,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -61605,6 +65523,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -61693,6 +65617,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -61779,6 +65709,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -61867,6 +65803,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -61953,6 +65895,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -62041,6 +65989,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -62127,6 +66081,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -62215,6 +66175,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -62301,6 +66267,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -62393,6 +66365,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Turret Rotation Speed + 1 degrees"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -62483,6 +66461,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Tank top speed is increased by ~5% of base Tank top speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -62821,6 +66805,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -62907,6 +66897,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -62995,6 +66991,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -63081,6 +67083,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -63169,6 +67177,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -63255,6 +67269,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -63343,6 +67363,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -63430,6 +67456,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -63500,6 +67532,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -63572,6 +67610,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -63642,6 +67686,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -63714,6 +67764,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -63784,6 +67840,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -63856,6 +67918,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -63927,6 +67995,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -63997,6 +68071,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -64085,6 +68165,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -64171,6 +68257,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -64259,6 +68351,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -64345,6 +68443,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -64433,6 +68537,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -64519,6 +68629,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -64607,6 +68723,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -64693,6 +68815,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -64785,6 +68913,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Zooms \"Shift\" scope by an additional +~25%"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -64875,6 +69009,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Improved ChassisTurn Speed by ~15% of base turn"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
@@ -65213,6 +69353,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -65299,6 +69445,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -65387,6 +69539,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -65473,6 +69631,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -65561,6 +69725,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -65647,6 +69817,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
           }
         }
         Collidable_v2 {
@@ -65735,6 +69911,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -65822,6 +70004,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases damage dealt and turret aiming speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 10569756882187127726
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -65892,6 +70080,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -65964,6 +70158,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -66034,6 +70234,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -66106,6 +70312,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -66176,6 +70388,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -66248,6 +70466,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -66319,6 +70543,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -66389,6 +70619,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases tank total hitpoints"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 15635849846428662744
+            }
           }
         }
         Collidable_v2 {
@@ -66477,6 +70713,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -66563,6 +70805,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -66651,6 +70899,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -66737,6 +70991,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -66825,6 +71085,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -66911,6 +71177,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -66999,6 +71271,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -67085,6 +71363,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Increases chassis turning speed, acceleration and max speed"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 8251945832226861735
+            }
           }
         }
         Collidable_v2 {
@@ -67177,6 +71461,12 @@ Assets {
             Name: "cs:upgradeDescription"
             String: "Tank top speed is increased by ~15% of base Tank top speed"
           }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -67267,6 +71557,12 @@ Assets {
           Overrides {
             Name: "cs:upgradeDescription"
             String: "Improved ChassisTurn Speed by ~10% of base turn"
+          }
+          Overrides {
+            Name: "cs:upgradeIcon"
+            AssetReference {
+              Id: 911044275032292692
+            }
           }
         }
         Collidable_v2 {
