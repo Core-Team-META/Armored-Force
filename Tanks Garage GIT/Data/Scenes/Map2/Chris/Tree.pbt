@@ -165,6 +165,7 @@ Objects {
   ChildIds: 3036367476430829098
   ChildIds: 10074345253529791982
   ChildIds: 6285938404201889960
+  ChildIds: 18202260524825080717
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -179,6 +180,77 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 18202260524825080717
+  Name: "AI_BlockedPathMarker"
+  Transform {
+    Location {
+      X: 1225.67676
+      Y: -9976.37793
+      Z: 612.385254
+    }
+    Rotation {
+    }
+    Scale {
+      X: 34.1046715
+      Y: 34.1046715
+      Z: 34.1046715
+    }
+  }
+  ParentId: 15332619434643927751
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16171526267083004880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AI_BlockedPathMarker"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1728.94043
+            Y: -8073.52148
+            Z: 612.385254
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 19.3643818
+            Y: 19.3643818
+            Z: 19.3643818
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8995041738806890104
+    }
   }
 }
 Objects {
@@ -206,6 +278,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -267,6 +350,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -326,6 +420,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -387,6 +492,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -446,6 +562,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -507,6 +634,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -566,6 +704,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -627,6 +776,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -686,6 +846,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -747,6 +918,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -806,6 +988,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -867,6 +1060,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -926,6 +1130,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -987,6 +1202,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -1046,6 +1272,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -1107,6 +1344,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -1129,9 +1377,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 54.3727608
-            Y: 54.3727608
-            Z: 54.3727608
+            X: 57.752449
+            Y: 57.752449
+            Z: 57.752449
           }
         }
       }
@@ -1166,6 +1414,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -1227,6 +1486,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -1286,6 +1556,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -1347,6 +1628,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -1406,6 +1698,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -1467,6 +1770,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -1526,6 +1840,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -1587,6 +1912,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -1646,6 +1982,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -1707,6 +2054,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -1767,6 +2125,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -1776,9 +2145,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1826.51538
-            Y: -8416.55078
-            Z: 179.999512
+            X: 1225.67676
+            Y: -9976.37793
+            Z: 612.385254
           }
         }
         Overrides {
@@ -1789,9 +2158,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 22.5853958
-            Y: 22.5853958
-            Z: 22.5853958
+            X: 34.1046715
+            Y: 34.1046715
+            Z: 34.1046715
           }
         }
       }
@@ -1826,6 +2195,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -1887,6 +2267,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -1947,6 +2338,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -1956,7 +2358,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 6281.73828
+            X: 6461.2168
             Y: 6461.89355
             Z: 179.999023
           }
@@ -1969,9 +2371,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 33.7546844
-            Y: 33.7546844
-            Z: 33.7546844
+            X: 29.153141
+            Y: 29.153141
+            Z: 29.153141
           }
         }
       }
@@ -2007,6 +2409,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -2016,8 +2429,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 6052.52051
-            Y: 2574.81714
+            X: 5917.4624
+            Y: 2618.27759
             Z: 179.999023
           }
         }
@@ -2029,9 +2442,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 42.5517082
-            Y: 42.5517082
-            Z: 42.5517082
+            X: 45.890667
+            Y: 45.890667
+            Z: 45.890667
           }
         }
       }
@@ -2066,6 +2479,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -2127,6 +2551,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -2186,6 +2621,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -2247,6 +2693,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -2306,6 +2763,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -2367,6 +2835,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -2427,6 +2906,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -2436,8 +2926,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 9153.70898
-            Y: -3654.5
+            X: 8898.27344
+            Y: -3378.48242
             Z: 180
           }
         }
@@ -2449,9 +2939,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 65.0975494
-            Y: 65.0975494
-            Z: 65.0975494
+            X: 69.7984924
+            Y: 69.7984924
+            Z: 69.7984924
           }
         }
       }
@@ -2492,6 +2982,12 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
+          }
+        }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
           }
         }
       }
@@ -2557,6 +3053,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -2616,6 +3123,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -2684,6 +3202,12 @@ Objects {
           Vector {
             X: -16.2337208
             Y: 7.19582224
+          }
+        }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
           }
         }
       }
@@ -2758,6 +3282,12 @@ Objects {
             Y: 6.6962862
           }
         }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
       }
     }
     ParameterOverrideMap {
@@ -2820,6 +3350,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -2891,6 +3432,12 @@ Objects {
             Z: -1.93378746e-05
           }
         }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
       }
     }
     ParameterOverrideMap {
@@ -2953,6 +3500,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -3023,6 +3581,12 @@ Objects {
             Y: 71.841774
           }
         }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
       }
     }
     ParameterOverrideMap {
@@ -3086,6 +3650,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -3145,6 +3720,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -3206,6 +3792,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -3265,6 +3862,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -3326,6 +3934,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -3386,6 +4005,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -3440,10 +4070,8 @@ Objects {
   ParentId: 15332619434643927751
   ChildIds: 1363758394466965472
   ChildIds: 8320453349915777958
-  ChildIds: 13089105088266523034
   ChildIds: 11803201228526930431
   ChildIds: 11972874566569001689
-  ChildIds: 16623919352792990654
   ChildIds: 9236543186316436679
   ChildIds: 14671703460569398017
   ChildIds: 7150179970737701058
@@ -3506,6 +4134,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -3564,6 +4203,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -3624,6 +4274,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -3682,6 +4343,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -3743,6 +4415,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -3802,6 +4485,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -3863,6 +4557,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -3921,6 +4626,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -3981,6 +4697,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -4039,6 +4766,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -4099,6 +4837,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -4157,6 +4906,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -4217,6 +4977,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -4276,6 +5047,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -4326,6 +5108,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -4386,6 +5179,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -4445,6 +5249,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -4503,6 +5318,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
@@ -4572,6 +5398,12 @@ Objects {
             X: 1
             Y: 1
             Z: 1
+          }
+        }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
           }
         }
       }
@@ -4645,6 +5477,12 @@ Objects {
           Vector {
           }
         }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
       }
     }
     ParameterOverrideMap {
@@ -4683,65 +5521,6 @@ Objects {
   }
 }
 Objects {
-  Id: 16623919352792990654
-  Name: "AI_BlockedPathMarker"
-  Transform {
-    Location {
-      X: -23938.4395
-      Y: 7774.18701
-      Z: 180
-    }
-    Rotation {
-    }
-    Scale {
-      X: 36.989212
-      Y: 36.989212
-      Z: 36.989212
-    }
-  }
-  ParentId: 5535185812981016800
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16171526267083004880
-      value {
-        Overrides {
-          Name: "Name"
-          String: "AI_BlockedPathMarker"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -1423.3125
-            Y: -872.564453
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 36.989212
-            Y: 36.989212
-            Z: 36.989212
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 8995041738806890104
-    }
-  }
-}
-Objects {
   Id: 11972874566569001689
   Name: "AI_BlockedPathMarker"
   Transform {
@@ -4767,6 +5546,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16171526267083004880
       value {
         Overrides {
@@ -4776,7 +5566,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 481.560547
+            X: -1125.23047
             Y: -1805.81299
           }
         }
@@ -4788,9 +5578,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 36.989212
-            Y: 36.989212
-            Z: 36.989212
+            X: 60.2402687
+            Y: 60.2402687
+            Z: 60.2402687
           }
         }
       }
@@ -4841,6 +5631,12 @@ Objects {
             Z: 1
           }
         }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
       }
     }
     ParameterOverrideMap {
@@ -4879,65 +5675,6 @@ Objects {
   }
 }
 Objects {
-  Id: 13089105088266523034
-  Name: "AI_BlockedPathMarker"
-  Transform {
-    Location {
-      X: -26310
-      Y: 3130
-      Z: 180
-    }
-    Rotation {
-    }
-    Scale {
-      X: 32.5
-      Y: 32.5
-      Z: 32.5
-    }
-  }
-  ParentId: 5535185812981016800
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16171526267083004880
-      value {
-        Overrides {
-          Name: "Name"
-          String: "AI_BlockedPathMarker"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -1068.62891
-            Y: -2528.5332
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 36.989212
-            Y: 36.989212
-            Z: 36.989212
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 8995041738806890104
-    }
-  }
-}
-Objects {
   Id: 8320453349915777958
   Name: "AI_BlockedPathMarker"
   Transform {
@@ -4962,6 +5699,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 423617147649420547
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16171526267083004880
       value {
