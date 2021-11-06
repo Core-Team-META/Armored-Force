@@ -69425,9 +69425,6 @@ Objects {
   ChildIds: 13626614426354284706
   ChildIds: 16604993527426063843
   ChildIds: 14499467392637214823
-  ChildIds: 10313141921548182070
-  ChildIds: 16761817438847283088
-  ChildIds: 139758919178737636
   ChildIds: 11087304109424513535
   ChildIds: 17231381871725519398
   ChildIds: 15730882139718739496
@@ -69530,8 +69527,6 @@ Objects {
   ChildIds: 7364971291141383112
   ChildIds: 1187914105349248019
   ChildIds: 13939693421077573237
-  ChildIds: 18391166169414967089
-  ChildIds: 16485538650674316423
   ChildIds: 2648063405890617261
   ChildIds: 4049311939131479256
   ChildIds: 1972181119583666301
@@ -69858,142 +69853,6 @@ Objects {
   CoreMesh {
     MeshAsset {
       Id: 14954943872139591724
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 16485538650674316423
-  Name: "Sandstone"
-  Transform {
-    Location {
-      X: 9989.63
-      Y: 13309.6279
-      Z: 959.244751
-    }
-    Rotation {
-      Pitch: 1.44775414
-      Yaw: 1.3202312
-      Roll: 9.89666176
-    }
-    Scale {
-      X: 4.01857471
-      Y: 8.34721279
-      Z: 6.92657042
-    }
-  }
-  ParentId: 921302885554344351
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 1910430801874839834
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15134376386077723113
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 18391166169414967089
-  Name: "Sandstone"
-  Transform {
-    Location {
-      X: 9062.01074
-      Y: 9520.24609
-      Z: 993.638672
-    }
-    Rotation {
-      Pitch: 9.60522652
-      Yaw: 123.217178
-      Roll: -4.54251099
-    }
-    Scale {
-      X: 3.51089811
-      Y: 2.74632621
-      Z: 4.40542
-    }
-  }
-  ParentId: 921302885554344351
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 1910430801874839834
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6551093352602210295
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -76694,208 +76553,6 @@ Objects {
   }
 }
 Objects {
-  Id: 139758919178737636
-  Name: "Sandstone"
-  Transform {
-    Location {
-      X: 10398.5957
-      Y: 12969.4814
-      Z: 875.453308
-    }
-    Rotation {
-      Pitch: 1.75295424
-      Yaw: -105.758667
-    }
-    Scale {
-      X: 1.98656285
-      Y: 1.65189302
-      Z: 3.42411613
-    }
-  }
-  ParentId: 921302885554344351
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 1910430801874839834
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3783629665905000063
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 16761817438847283088
-  Name: "Sandstone"
-  Transform {
-    Location {
-      X: 10193.7637
-      Y: 15296.79
-      Z: 963.046753
-    }
-    Rotation {
-      Yaw: 89.1116943
-      Roll: -5.19924927
-    }
-    Scale {
-      X: 3.25007558
-      Y: 2.33057523
-      Z: 3.6789093
-    }
-  }
-  ParentId: 921302885554344351
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 1910430801874839834
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3783629665905000063
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 10313141921548182070
-  Name: "Sandstone"
-  Transform {
-    Location {
-      X: 10498.2852
-      Y: 13924.123
-      Z: 938.424805
-    }
-    Rotation {
-      Pitch: 0.519251466
-      Yaw: 94.8277664
-      Roll: 174.826645
-    }
-    Scale {
-      X: 2.39999795
-      Y: 1.34106255
-      Z: 3.6789093
-    }
-  }
-  ParentId: 921302885554344351
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 1910430801874839834
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3783629665905000063
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 14499467392637214823
   Name: "Sandstone"
   Transform {
@@ -76969,7 +76626,7 @@ Objects {
     Location {
       X: 9060.83398
       Y: 6730.2666
-      Z: 961.673401
+      Z: 815.856812
     }
     Rotation {
       Yaw: -129.962448
@@ -76977,7 +76634,7 @@ Objects {
     Scale {
       X: 5.47285795
       Y: 1.65612304
-      Z: 3.42937183
+      Z: 6.16643858
     }
   }
   ParentId: 921302885554344351
@@ -77033,9 +76690,9 @@ Objects {
   Name: "Sandstone"
   Transform {
     Location {
-      X: 7437.7793
+      X: 7834.46289
       Y: 5142.42383
-      Z: 1024.64355
+      Z: 1138.62585
     }
     Rotation {
       Pitch: 0.513917089
@@ -77373,16 +77030,16 @@ Objects {
     Location {
       X: 8195.78711
       Y: 8595.45215
-      Z: 950.187622
+      Z: 854.204529
     }
     Rotation {
       Yaw: -134.571701
       Roll: 22.6358891
     }
     Scale {
-      X: 2.7590847
-      Y: 1.6
-      Z: 5.30919409
+      X: 2.75907278
+      Y: 2.08381224
+      Z: 8.03171158
     }
   }
   ParentId: 921302885554344351
@@ -77452,7 +77109,6 @@ Objects {
   }
   ParentId: 9160281066032245732
   ChildIds: 8723858110743455202
-  ChildIds: 13065499493220553001
   ChildIds: 7525269537491234074
   ChildIds: 4454379161051079883
   Collidable_v2 {
@@ -77568,74 +77224,6 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
       Float: 2.0485487
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15134376386077723113
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 13065499493220553001
-  Name: "Rock Pile 002"
-  Transform {
-    Location {
-      X: 9329.03418
-      Y: 11667.377
-      Z: 199.52272
-    }
-    Rotation {
-      Pitch: -1.04217529
-      Yaw: -92.9806824
-      Roll: 1.7835232
-    }
-    Scale {
-      X: 3.68934822
-      Y: 2.62081814
-      Z: 5.07835865
-    }
-  }
-  ParentId: 10364868881698756884
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 1910430801874839834
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
     }
   }
   Collidable_v2 {
@@ -86624,6 +86212,11 @@ Objects {
   ChildIds: 1133959421191097436
   ChildIds: 17133501275420481151
   ChildIds: 9774286987357068024
+  ChildIds: 12780735636274796564
+  ChildIds: 2641214741970939383
+  ChildIds: 11591322660763414990
+  ChildIds: 15115549256515689771
+  ChildIds: 8180072754626538026
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -86636,6 +86229,346 @@ Objects {
   Folder {
     Model {
       AggressiveMerge: true
+    }
+  }
+}
+Objects {
+  Id: 8180072754626538026
+  Name: "Sandstone"
+  Transform {
+    Location {
+      X: -7888.56934
+      Y: 12322.459
+      Z: 1105.32886
+    }
+    Rotation {
+      Pitch: 0.98927772
+      Yaw: -169.344147
+      Roll: 177.985092
+    }
+    Scale {
+      X: 0.862968504
+      Y: 3.08234763
+      Z: 1.04935288
+    }
+  }
+  ParentId: 2683808031947549218
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1910430801874839834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3783629665905000063
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 15115549256515689771
+  Name: "Sandstone"
+  Transform {
+    Location {
+      X: -8186.021
+      Y: 13321.2549
+      Z: 1128.2865
+    }
+    Rotation {
+      Pitch: 0.37173304
+      Yaw: -103.301544
+      Roll: -178.739548
+    }
+    Scale {
+      X: 1.41512072
+      Y: 2.51625013
+      Z: 1.049353
+    }
+  }
+  ParentId: 2683808031947549218
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1910430801874839834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3783629665905000063
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 11591322660763414990
+  Name: "Sandstone"
+  Transform {
+    Location {
+      X: -9727.97852
+      Y: 13920.0947
+      Z: 1167.30322
+    }
+    Rotation {
+      Pitch: -0.641296387
+      Yaw: -103.285339
+      Roll: 178.643341
+    }
+    Scale {
+      X: 2.400002
+      Y: 2.51625037
+      Z: 1.049353
+    }
+  }
+  ParentId: 2683808031947549218
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1910430801874839834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3783629665905000063
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 2641214741970939383
+  Name: "Sandstone"
+  Transform {
+    Location {
+      X: -9320.89551
+      Y: 14900.6152
+      Z: 1144.13501
+    }
+    Rotation {
+      Pitch: -2.85998535
+      Yaw: -78.6382446
+      Roll: 2.35888982
+    }
+    Scale {
+      X: 2.400002
+      Y: 2.51625037
+      Z: 1.049353
+    }
+  }
+  ParentId: 2683808031947549218
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1910430801874839834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3783629665905000063
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 12780735636274796564
+  Name: "Sandstone"
+  Transform {
+    Location {
+      X: -8346.15
+      Y: 14756.0312
+      Z: 1120.2019
+    }
+    Rotation {
+      Pitch: 1.41068673
+      Yaw: -90.029541
+      Roll: 2.35668921
+    }
+    Scale {
+      X: 2.400002
+      Y: 2.51625037
+      Z: 1.049353
+    }
+  }
+  ParentId: 2683808031947549218
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1910430801874839834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3783629665905000063
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
     }
   }
 }
@@ -90122,19 +90055,18 @@ Objects {
   Name: "Sandstone"
   Transform {
     Location {
-      X: -5654.45
+      X: -5885.51562
       Y: 10622.7227
-      Z: 955.003479
+      Z: 1070.11316
     }
     Rotation {
       Pitch: 5.69690323
-      Yaw: -116.373566
-      Roll: 2.14502862e-07
+      Yaw: -109.581085
     }
     Scale {
-      X: 2.40000224
-      Y: 1.70489597
-      Z: 2.35467625
+      X: 2.40000367
+      Y: 1.70489359
+      Z: 4.23507214
     }
   }
   ParentId: 2683808031947549218
@@ -90202,12 +90134,10 @@ Objects {
     }
   }
   ParentId: 9160281066032245732
-  ChildIds: 13614648982384099195
   ChildIds: 4824426187842832284
   ChildIds: 3121782387139900558
   ChildIds: 9305544900056903827
   ChildIds: 14712844382633452121
-  ChildIds: 16129573957968422059
   ChildIds: 10142793922454059988
   ChildIds: 3748300133126207541
   ChildIds: 5740023195722688686
@@ -90256,7 +90186,6 @@ Objects {
   ChildIds: 5288269231259044097
   ChildIds: 9257962006137603916
   ChildIds: 13576988069010273692
-  ChildIds: 18351386827597070153
   ChildIds: 795626389769369727
   ChildIds: 7540130797351964886
   ChildIds: 13608049940529522588
@@ -90454,72 +90383,6 @@ Objects {
   CoreMesh {
     MeshAsset {
       Id: 14954943872139591724
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 18351386827597070153
-  Name: "Rock Pile 002"
-  Transform {
-    Location {
-      X: 7829.91113
-      Y: -1864.22461
-      Z: 1345.2804
-    }
-    Rotation {
-      Yaw: -62.3812256
-    }
-    Scale {
-      X: 4.100245
-      Y: 4.7190876
-      Z: 8.60777855
-    }
-  }
-  ParentId: 4065904118916193165
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 1910430801874839834
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15134376386077723113
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -93661,87 +93524,21 @@ Objects {
   }
 }
 Objects {
-  Id: 16129573957968422059
-  Name: "Sandstone"
-  Transform {
-    Location {
-      X: 7616.0835
-      Y: -8361.42871
-      Z: 1421.65979
-    }
-    Rotation {
-      Yaw: -86.6409912
-    }
-    Scale {
-      X: 0.999999285
-      Y: 0.803647101
-      Z: 3.99522543
-    }
-  }
-  ParentId: 4065904118916193165
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 1910430801874839834
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3783629665905000063
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 14712844382633452121
   Name: "Sandstone"
   Transform {
     Location {
       X: 5899.01074
-      Y: -4036.46143
-      Z: 1489.90527
+      Y: -3955.52393
+      Z: 1574.80322
     }
     Rotation {
       Yaw: 104.237007
     }
     Scale {
-      X: 0.999993861
-      Y: 1.25539601
-      Z: 2.87019157
+      X: 0.999990523
+      Y: 0.988739
+      Z: 3.87425184
     }
   }
   ParentId: 4065904118916193165
@@ -93798,9 +93595,9 @@ Objects {
       Roll: 15.9442
     }
     Scale {
-      X: 1.81464756
+      X: 1.81464922
       Y: 1.57104886
-      Z: 3.5694921
+      Z: 5.62692642
     }
   }
   ParentId: 4065904118916193165
@@ -93849,7 +93646,7 @@ Objects {
     Location {
       X: 5602.11426
       Y: -1192.53027
-      Z: 1452.53394
+      Z: 1562.47876
     }
     Rotation {
       Pitch: -1.28433228
@@ -93857,9 +93654,9 @@ Objects {
       Roll: 12.6811
     }
     Scale {
-      X: 1.77065253
-      Y: 1.44401991
-      Z: 3.56948781
+      X: 1.77065957
+      Y: 1.44402015
+      Z: 4.38707352
     }
   }
   ParentId: 4065904118916193165
@@ -93917,74 +93714,6 @@ Objects {
       X: 1.48011744
       Y: 0.999999762
       Z: 3.1072619
-    }
-  }
-  ParentId: 4065904118916193165
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 1910430801874839834
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3783629665905000063
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 13614648982384099195
-  Name: "Sandstone"
-  Transform {
-    Location {
-      X: 7348.0625
-      Y: -7796.95361
-      Z: 1452.07886
-    }
-    Rotation {
-      Pitch: 3.08507323
-      Yaw: 112.501442
-      Roll: -4.32632446
-    }
-    Scale {
-      X: 1.26667869
-      Y: 1.5682137
-      Z: 3.21740365
     }
   }
   ParentId: 4065904118916193165

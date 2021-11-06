@@ -7488,7 +7488,6 @@ Objects {
   ChildIds: 6521157922449493234
   ChildIds: 4153094257578564317
   ChildIds: 18297829177618915517
-  ChildIds: 5967305328294732672
   ChildIds: 3545921516672975666
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -7720,59 +7719,6 @@ Objects {
       Physics {
         Mass: 100
         LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 5967305328294732672
-  Name: "Rock Pile 002"
-  Transform {
-    Location {
-      X: 258.380981
-      Y: -1464.68066
-      Z: 48.9294472
-    }
-    Rotation {
-      Pitch: -2.41177368
-      Yaw: 57.945137
-      Roll: -8.87335205
-    }
-    Scale {
-      X: 6.43212605
-      Y: 6.43206787
-      Z: 5.46869469
-    }
-  }
-  ParentId: 2279496387840542019
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14823769434463567155
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3377721323622766709
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
       }
       BoundsScale: 1
     }
