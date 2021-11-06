@@ -86,7 +86,7 @@ Assets {
           Overrides {
             Name: "cs:Tanks"
             NetReference {
-              Key: "eb1b790b8b8c4c898073b2bb403b38ed"
+              Key: "b61a1bb93ecc43e2b35c345aacdb3056"
               Type {
                 Value: "mc:enetreferencetype:sharedpersistence"
               }

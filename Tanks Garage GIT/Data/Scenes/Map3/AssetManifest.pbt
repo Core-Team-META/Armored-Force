@@ -51,6 +51,19 @@ Assets {
   }
 }
 Assets {
+  Id: 16552386409025883346
+  Name: "transferTest2"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "b61a1bb93ecc43e2b35c345aacdb3056"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 16405819613734804126
   Name: "CommandePack_1"
   PlatformAssetType: 24

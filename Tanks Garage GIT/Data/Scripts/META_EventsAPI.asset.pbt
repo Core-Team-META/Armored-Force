@@ -6,7 +6,7 @@ Assets {
     CustomParameters {
       Overrides {
         Name: "cs:GameId"
-        String: "429fdb/3p4o6t8ihasedroiughaeorgha9iou"
+        String: "661fcd0c2234477bb8e230e4d9a865e3"
       }
       Overrides {
         Name: "cs:UseGlobal"
