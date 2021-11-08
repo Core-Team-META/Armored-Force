@@ -81,7 +81,7 @@ Rank = {
     Nezberet        = AdminRanks.HigherAdmin ,
     plasmabacon     = AdminRanks.HigherAdmin ,
     Phyronnaz       = AdminRanks.HigherAdmin ,
-    Grimland        = AdminRanks.HigherAdmin ,
+    grimland        = AdminRanks.HigherAdmin ,
     Outrun          = AdminRanks.HigherAdmin ,
     Chipnertkj      = AdminRanks.HigherAdmin ,
     KidEgg          = AdminRanks.HigherAdmin ,
@@ -90,6 +90,7 @@ Rank = {
     Ocylix          = AdminRanks.HigherAdmin ,
     shallow         = AdminRanks.HigherAdmin ,
     StormHawk       = AdminRanks.HigherAdmin ,
+    SoultrainStudio = AdminRanks.HigherAdmin , 
 
 
 }
