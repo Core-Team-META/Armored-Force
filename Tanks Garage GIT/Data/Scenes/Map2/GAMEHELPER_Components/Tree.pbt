@@ -1,7 +1,7 @@
 Name: "GAMEHELPER_Components"
-RootId: 6138494459396438580
+RootId: 8055379176564174070
 Objects {
-  Id: 8235706098989035919
+  Id: 2127498664927203537
   Name: "XPFeedback"
   Transform {
     Location {
@@ -16,7 +16,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6138494459396438580
+  ParentId: 8055379176564174070
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -35,7 +35,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17782223305704018497
+  Id: 12626510301785770593
   Name: "CamoSelection"
   Transform {
     Location {
@@ -50,7 +50,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6138494459396438580
+  ParentId: 8055379176564174070
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -69,7 +69,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17360215838981603230
+  Id: 12519372989001738074
   Name: "TankStatesAndConsumables"
   Transform {
     Location {
@@ -82,7 +82,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6138494459396438580
+  ParentId: 8055379176564174070
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -101,7 +101,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9239889443863943804
+  Id: 12919188825785805667
   Name: "LeaderboardResourceManager"
   Transform {
     Location {
@@ -114,7 +114,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6138494459396438580
+  ParentId: 8055379176564174070
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -133,7 +133,7 @@ Objects {
   }
 }
 Objects {
-  Id: 607739412820220869
+  Id: 11336227503143938770
   Name: "RespawnVolume"
   Transform {
     Location {
@@ -148,7 +148,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6138494459396438580
+  ParentId: 8055379176564174070
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -167,7 +167,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10424324946516904513
+  Id: 13107987754850692035
   Name: "SpottingComponent"
   Transform {
     Location {
@@ -182,7 +182,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6138494459396438580
+  ParentId: 8055379176564174070
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -201,7 +201,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8254155890873185401
+  Id: 16082222429867090330
   Name: "PingSystem"
   Transform {
     Location {
@@ -216,7 +216,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6138494459396438580
+  ParentId: 8055379176564174070
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -235,7 +235,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12942610389329549666
+  Id: 13391408993513744331
   Name: "TankSpawner"
   Transform {
     Location {
@@ -250,7 +250,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6138494459396438580
+  ParentId: 8055379176564174070
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -269,7 +269,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2809703622732616250
+  Id: 10613064995455182874
   Name: "DamageFeedback"
   Transform {
     Location {
@@ -285,7 +285,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6138494459396438580
+  ParentId: 8055379176564174070
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -304,7 +304,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18358115663581018287
+  Id: 2130068889748920685
   Name: "AimUI"
   Transform {
     Location {
@@ -319,7 +319,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6138494459396438580
+  ParentId: 8055379176564174070
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -338,7 +338,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18383511375377970544
+  Id: 9881500738304741707
   Name: "DailyChallenges"
   Transform {
     Location {
@@ -353,7 +353,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6138494459396438580
+  ParentId: 8055379176564174070
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -372,7 +372,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16268592187369971613
+  Id: 13483843681720221814
   Name: "NemesisTracker"
   Transform {
     Location {
@@ -387,7 +387,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6138494459396438580
+  ParentId: 8055379176564174070
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

@@ -1,7 +1,7 @@
 Name: "StatisticsComponent"
-RootId: 6123612047759682538
+RootId: 17897107185404046018
 Objects {
-  Id: 4221915188398670862
+  Id: 9881068623790666031
   Name: "GAMESTATE_StatisticsComponent"
   Transform {
     Location {
@@ -14,8 +14,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6123612047759682538
-  ChildIds: 3936698296277076642
+  ParentId: 17897107185404046018
+  ChildIds: 14529198193863904769
   UnregisteredParameters {
     Overrides {
       Name: "cs:VictoryXPValue"
@@ -72,7 +72,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3936698296277076642
+  Id: 14529198193863904769
   Name: "GAMESTATE_StatisticsServer"
   Transform {
     Location {
@@ -85,24 +85,24 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4221915188398670862
+  ParentId: 9881068623790666031
   UnregisteredParameters {
     Overrides {
       Name: "cs:GAMESTATE_MainGameStateManagerServer"
       ObjectReference {
-        SelfId: 9140564283763297214
+        SelfId: 4212491081421296852
       }
     }
     Overrides {
       Name: "cs:GAMESTATE_VictoryComponent"
       ObjectReference {
-        SelfId: 4221915188398670862
+        SelfId: 9881068623790666031
       }
     }
     Overrides {
       Name: "cs:Leaderboards"
       ObjectReference {
-        SelfId: 9661840194077567086
+        SelfId: 2390409590196705171
       }
     }
     Overrides {
@@ -118,9 +118,15 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:META_EventsAPI"
+      AssetReference {
+        Id: 10951157757427207286
+      }
+    }
+    Overrides {
       Name: "cs:Keys"
       ObjectReference {
-        SelfId: 9958685168337266294
+        SelfId: 18443069721621245702
       }
     }
   }

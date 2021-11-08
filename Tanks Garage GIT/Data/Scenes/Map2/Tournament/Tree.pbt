@@ -1,7 +1,7 @@
 Name: "Tournament"
-RootId: 11226935423787151928
+RootId: 12963527085179890390
 Objects {
-  Id: 14491042973838550312
+  Id: 5294696596208421641
   Name: "TournamentSettings"
   Transform {
     Scale {
@@ -10,7 +10,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11226935423787151928
+  ParentId: 12963527085179890390
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

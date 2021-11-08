@@ -1,7 +1,7 @@
 Name: "Achievements"
-RootId: 2035979936968668582
+RootId: 9820651123033347925
 Objects {
-  Id: 15001239512376172440
+  Id: 7361636669153984418
   Name: "Achievement System"
   Transform {
     Scale {
@@ -10,7 +10,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2035979936968668582
+  ParentId: 9820651123033347925
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

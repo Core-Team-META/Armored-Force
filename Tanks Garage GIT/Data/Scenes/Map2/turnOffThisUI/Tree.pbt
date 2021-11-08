@@ -1,7 +1,7 @@
 Name: "turnOffThisUI"
-RootId: 603355645906580559
+RootId: 17176106733389124125
 Objects {
-  Id: 8891546910417563236
+  Id: 17706023316067457275
   Name: "HealthUI"
   Transform {
     Location {
@@ -14,12 +14,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 603355645906580559
+  ParentId: 17176106733389124125
   UnregisteredParameters {
     Overrides {
       Name: "cs:UIReference"
       ObjectReference {
-        SelfId: 18047886152427933460
+        SelfId: 3000475044068722703
       }
     }
   }
@@ -42,48 +42,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1261681577697927320
-  Name: "ActivityFeedUI"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 603355645906580559
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:UIReference"
-      ObjectReference {
-        SelfId: 9645309740164263490
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 7117671555384191049
-    }
-  }
-}
-Objects {
-  Id: 4634876116385571717
+  Id: 17082775647546635410
   Name: "BaseCaptureUI"
   Transform {
     Location {
@@ -96,12 +55,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 603355645906580559
+  ParentId: 17176106733389124125
   UnregisteredParameters {
     Overrides {
       Name: "cs:UIReference"
       ObjectReference {
-        SelfId: 16296909885432179052
+        SelfId: 17110260783056692069
       }
     }
   }
@@ -124,7 +83,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11043650544131849329
+  Id: 18027617118025804654
   Name: "ConsumablesUI"
   Transform {
     Location {
@@ -137,8 +96,14 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 603355645906580559
+  ParentId: 17176106733389124125
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:UIReference"
+      ObjectReference {
+        SelfId: 15298321457913630614
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -159,7 +124,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13352734012399673038
+  Id: 17493096617632604756
   Name: "MidMatchUI"
   Transform {
     Location {
@@ -172,12 +137,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 603355645906580559
+  ParentId: 17176106733389124125
   UnregisteredParameters {
     Overrides {
       Name: "cs:UIReference"
       ObjectReference {
-        SelfId: 7485893034796939564
+        SelfId: 10906206655483486529
       }
     }
   }
@@ -200,7 +165,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16732170120635913954
+  Id: 17133430140365825046
   Name: "Crosshairs"
   Transform {
     Location {
@@ -213,12 +178,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 603355645906580559
+  ParentId: 17176106733389124125
   UnregisteredParameters {
     Overrides {
       Name: "cs:UIReference"
       ObjectReference {
-        SelfId: 17047991561231262292
+        SelfId: 9134565838554419798
       }
     }
   }
@@ -241,7 +206,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3795616896788526764
+  Id: 10842794331714683849
   Name: "LobbyUI"
   Transform {
     Location {
@@ -254,12 +219,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 603355645906580559
+  ParentId: 17176106733389124125
   UnregisteredParameters {
     Overrides {
       Name: "cs:UIReference"
       ObjectReference {
-        SelfId: 5417107235960920906
+        SelfId: 5317623223988941861
       }
     }
   }
@@ -282,7 +247,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5064923641606154251
+  Id: 6910969228059884056
   Name: "DamageStates"
   Transform {
     Location {
@@ -295,12 +260,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 603355645906580559
+  ParentId: 17176106733389124125
   UnregisteredParameters {
     Overrides {
       Name: "cs:UIReference"
       ObjectReference {
-        SelfId: 18154486600298525185
+        SelfId: 10315489520358478149
       }
     }
   }

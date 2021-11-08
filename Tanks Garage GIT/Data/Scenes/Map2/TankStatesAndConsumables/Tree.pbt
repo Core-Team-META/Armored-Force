@@ -1,7 +1,7 @@
 Name: "TankStatesAndConsumables"
-RootId: 17360215838981603230
+RootId: 12519372989001738074
 Objects {
-  Id: 14280154224494103159
+  Id: 15511422366076400450
   Name: "GAMEHELPER_TankStatesAndConsumables"
   Transform {
     Location {
@@ -14,13 +14,13 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17360215838981603230
-  ChildIds: 14019181812906627993
-  ChildIds: 4398459370050487553
-  ChildIds: 17953165165563013763
-  ChildIds: 10971224457144799832
-  ChildIds: 2027581103453873368
-  ChildIds: 14039133603509595606
+  ParentId: 12519372989001738074
+  ChildIds: 6144455683325173963
+  ChildIds: 14464720077158931127
+  ChildIds: 5777472964987398574
+  ChildIds: 9870795200226257672
+  ChildIds: 9509200260233635969
+  ChildIds: 4139526285929859765
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -38,7 +38,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14039133603509595606
+  Id: 4139526285929859765
   Name: "ClientContext"
   Transform {
     Location {
@@ -51,9 +51,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14280154224494103159
-  ChildIds: 11885570668715754549
-  ChildIds: 3891086081741692895
+  ParentId: 15511422366076400450
+  ChildIds: 16576314224384578483
+  ChildIds: 11740861771473499058
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -70,7 +70,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3891086081741692895
+  Id: 11740861771473499058
   Name: "TankStateSFX"
   Transform {
     Location {
@@ -83,13 +83,13 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14039133603509595606
-  ChildIds: 4582509594180752287
-  ChildIds: 17214631052813266422
-  ChildIds: 7536796341401818316
-  ChildIds: 11519141834055445435
-  ChildIds: 18046120247966740488
-  ChildIds: 9704209822958303551
+  ParentId: 4139526285929859765
+  ChildIds: 3358326283386369526
+  ChildIds: 9623136627599786412
+  ChildIds: 2059453357714748765
+  ChildIds: 14627244132352873023
+  ChildIds: 15518885928572587153
+  ChildIds: 10477064109480114559
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -107,7 +107,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9704209822958303551
+  Id: 10477064109480114559
   Name: "TurretScreachSFX"
   Transform {
     Location {
@@ -120,7 +120,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3891086081741692895
+  ParentId: 11740861771473499058
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -145,7 +145,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18046120247966740488
+  Id: 15518885928572587153
   Name: "RepairSFX"
   Transform {
     Location {
@@ -158,7 +158,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3891086081741692895
+  ParentId: 11740861771473499058
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -182,7 +182,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11519141834055445435
+  Id: 14627244132352873023
   Name: "FireBurstSFX"
   Transform {
     Location {
@@ -195,7 +195,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3891086081741692895
+  ParentId: 11740861771473499058
   UnregisteredParameters {
     Overrides {
       Name: "bp:Type"
@@ -229,7 +229,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7536796341401818316
+  Id: 2059453357714748765
   Name: "FireLoopSFX"
   Transform {
     Location {
@@ -242,7 +242,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3891086081741692895
+  ParentId: 11740861771473499058
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -269,7 +269,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17214631052813266422
+  Id: 9623136627599786412
   Name: "TreadBreakSFX"
   Transform {
     Location {
@@ -282,7 +282,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3891086081741692895
+  ParentId: 11740861771473499058
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -306,7 +306,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4582509594180752287
+  Id: 3358326283386369526
   Name: "DamagedStateInflictedSFX"
   Transform {
     Location {
@@ -319,7 +319,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3891086081741692895
+  ParentId: 11740861771473499058
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -342,7 +342,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11885570668715754549
+  Id: 16576314224384578483
   Name: "GAMEHELPER_TankStatesClient"
   Transform {
     Location {
@@ -355,102 +355,102 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14039133603509595606
+  ParentId: 4139526285929859765
   UnregisteredParameters {
     Overrides {
       Name: "cs:TreadsDamage"
       ObjectReference {
-        SelfId: 789338550061033103
+        SelfId: 9937713710968899042
       }
     }
     Overrides {
       Name: "cs:TreadBreakSFX"
       ObjectReference {
-        SelfId: 17214631052813266422
+        SelfId: 9623136627599786412
       }
     }
     Overrides {
       Name: "cs:TurretDamage"
       ObjectReference {
-        SelfId: 12695310886823324784
+        SelfId: 2570420519058711690
       }
     }
     Overrides {
       Name: "cs:TurretScreachSFX"
       ObjectReference {
-        SelfId: 9704209822958303551
+        SelfId: 10477064109480114559
       }
     }
     Overrides {
       Name: "cs:FireDamage"
       ObjectReference {
-        SelfId: 5226464956636768479
+        SelfId: 16026159072949012019
       }
     }
     Overrides {
       Name: "cs:FireBurstSFX"
       ObjectReference {
-        SelfId: 11519141834055445435
+        SelfId: 14627244132352873023
       }
     }
     Overrides {
       Name: "cs:FireLoopSFX"
       ObjectReference {
-        SelfId: 7536796341401818316
+        SelfId: 2059453357714748765
       }
     }
     Overrides {
       Name: "cs:RepairSFX"
       ObjectReference {
-        SelfId: 18046120247966740488
+        SelfId: 15518885928572587153
       }
     }
     Overrides {
       Name: "cs:TreadsPanel"
       ObjectReference {
-        SelfId: 8878119907549115832
+        SelfId: 17613135196180667390
       }
     }
     Overrides {
       Name: "cs:TurretPanel"
       ObjectReference {
-        SelfId: 2964774644507947902
+        SelfId: 813123367563314651
       }
     }
     Overrides {
       Name: "cs:FirePanel"
       ObjectReference {
-        SelfId: 5080893791436793563
+        SelfId: 10650332788896591364
       }
     }
     Overrides {
       Name: "cs:turretDamageText"
       ObjectReference {
-        SelfId: 17846754870788515360
+        SelfId: 1853139034920757528
       }
     }
     Overrides {
       Name: "cs:TreadsFeedback"
       ObjectReference {
-        SelfId: 10857600419164464291
+        SelfId: 17917973573427712433
       }
     }
     Overrides {
       Name: "cs:TurretFeedback"
       ObjectReference {
-        SelfId: 15175109770226122370
+        SelfId: 3597376948772248402
       }
     }
     Overrides {
       Name: "cs:FireFeedback"
       ObjectReference {
-        SelfId: 2609455825996852832
+        SelfId: 6164951131069398385
       }
     }
     Overrides {
       Name: "cs:DamagedStateInflictedSFX"
       ObjectReference {
-        SelfId: 4582509594180752287
+        SelfId: 3358326283386369526
       }
     }
   }
@@ -473,7 +473,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2027581103453873368
+  Id: 9509200260233635969
   Name: "AbilityGroup"
   Transform {
     Location {
@@ -486,7 +486,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14280154224494103159
+  ParentId: 15511422366076400450
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -504,7 +504,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10971224457144799832
+  Id: 9870795200226257672
   Name: "TurretRepairAbilityDisplay"
   Transform {
     Location {
@@ -517,8 +517,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14280154224494103159
-  ChildIds: 16044567588222421507
+  ParentId: 15511422366076400450
+  ChildIds: 11187558335316563799
   UnregisteredParameters {
     Overrides {
       Name: "cs:Binding"
@@ -567,7 +567,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16044567588222421507
+  Id: 11187558335316563799
   Name: "ClientContext"
   Transform {
     Location {
@@ -580,8 +580,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10971224457144799832
-  ChildIds: 7549833200008373278
+  ParentId: 9870795200226257672
+  ChildIds: 2173434432897711898
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -597,7 +597,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7549833200008373278
+  Id: 2173434432897711898
   Name: "AbilityDisplayClient"
   Transform {
     Location {
@@ -610,7 +610,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16044567588222421507
+  ParentId: 11187558335316563799
   UnregisteredParameters {
     Overrides {
       Name: "cs:API"
@@ -621,13 +621,13 @@ Objects {
     Overrides {
       Name: "cs:ComponentRoot"
       ObjectReference {
-        SelfId: 10971224457144799832
+        SelfId: 9870795200226257672
       }
     }
     Overrides {
       Name: "cs:Canvas"
       ObjectReference {
-        SelfId: 6825453214405333447
+        SelfId: 17052956915939208167
       }
     }
     Overrides {
@@ -639,13 +639,13 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       ObjectReference {
-        SelfId: 6358935206805594106
+        SelfId: 10736863012458844258
       }
     }
     Overrides {
       Name: "cs:CountdownText"
       ObjectReference {
-        SelfId: 49471318711797705
+        SelfId: 13768443290458679120
       }
     }
     Overrides {
@@ -657,31 +657,31 @@ Objects {
     Overrides {
       Name: "cs:NameText"
       ObjectReference {
-        SelfId: 7466046387166925255
+        SelfId: 17185280455499384429
       }
     }
     Overrides {
       Name: "cs:ProgressIndicator"
       ObjectReference {
-        SelfId: 761853570466506242
+        SelfId: 8634638803541760935
       }
     }
     Overrides {
       Name: "cs:RightShadow"
       ObjectReference {
-        SelfId: 7179485875249350831
+        SelfId: 4012072932519256841
       }
     }
     Overrides {
       Name: "cs:LeftShadow"
       ObjectReference {
-        SelfId: 18262017705158756614
+        SelfId: 12817448063363514559
       }
     }
     Overrides {
       Name: "cs:Charges"
       ObjectReference {
-        SelfId: 5954290707259341026
+        SelfId: 10034719395223607679
       }
     }
   }
@@ -701,7 +701,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17953165165563013763
+  Id: 5777472964987398574
   Name: "FireExtinguisherAbilityDisplay"
   Transform {
     Location {
@@ -714,8 +714,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14280154224494103159
-  ChildIds: 8857309322522901295
+  ParentId: 15511422366076400450
+  ChildIds: 7842121525388545145
   UnregisteredParameters {
     Overrides {
       Name: "cs:Binding"
@@ -764,7 +764,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8857309322522901295
+  Id: 7842121525388545145
   Name: "ClientContext"
   Transform {
     Location {
@@ -777,8 +777,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17953165165563013763
-  ChildIds: 2731493652276621877
+  ParentId: 5777472964987398574
+  ChildIds: 9581946209607803619
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -794,7 +794,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2731493652276621877
+  Id: 9581946209607803619
   Name: "AbilityDisplayClient"
   Transform {
     Location {
@@ -807,7 +807,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8857309322522901295
+  ParentId: 7842121525388545145
   UnregisteredParameters {
     Overrides {
       Name: "cs:API"
@@ -818,13 +818,13 @@ Objects {
     Overrides {
       Name: "cs:ComponentRoot"
       ObjectReference {
-        SelfId: 17953165165563013763
+        SelfId: 5777472964987398574
       }
     }
     Overrides {
       Name: "cs:Canvas"
       ObjectReference {
-        SelfId: 15473480161674876052
+        SelfId: 18232100230283167224
       }
     }
     Overrides {
@@ -836,13 +836,12 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       ObjectReference {
-        SelfId: 5686297225434361115
       }
     }
     Overrides {
       Name: "cs:CountdownText"
       ObjectReference {
-        SelfId: 11108943550151026694
+        SelfId: 1758858937739515653
       }
     }
     Overrides {
@@ -854,31 +853,31 @@ Objects {
     Overrides {
       Name: "cs:NameText"
       ObjectReference {
-        SelfId: 1827364729089046967
+        SelfId: 13613195655624494462
       }
     }
     Overrides {
       Name: "cs:ProgressIndicator"
       ObjectReference {
-        SelfId: 9653755636656978085
+        SelfId: 10544112924893997269
       }
     }
     Overrides {
       Name: "cs:RightShadow"
       ObjectReference {
-        SelfId: 9659440953893451134
+        SelfId: 9526313302167137351
       }
     }
     Overrides {
       Name: "cs:LeftShadow"
       ObjectReference {
-        SelfId: 16235428457955707061
+        SelfId: 11343605029627053948
       }
     }
     Overrides {
       Name: "cs:Charges"
       ObjectReference {
-        SelfId: 16368943715933568780
+        SelfId: 2946563224079873667
       }
     }
   }
@@ -898,7 +897,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4398459370050487553
+  Id: 14464720077158931127
   Name: "TrackRepairAbilityDisplay"
   Transform {
     Scale {
@@ -907,8 +906,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14280154224494103159
-  ChildIds: 4219786485361410186
+  ParentId: 15511422366076400450
+  ChildIds: 16916903021287165824
   UnregisteredParameters {
     Overrides {
       Name: "cs:Binding"
@@ -957,7 +956,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4219786485361410186
+  Id: 16916903021287165824
   Name: "ClientContext"
   Transform {
     Location {
@@ -970,8 +969,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4398459370050487553
-  ChildIds: 18438276281516016662
+  ParentId: 14464720077158931127
+  ChildIds: 5649173773490480950
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -987,7 +986,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18438276281516016662
+  Id: 5649173773490480950
   Name: "AbilityDisplayClient"
   Transform {
     Location {
@@ -1000,7 +999,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4219786485361410186
+  ParentId: 16916903021287165824
   UnregisteredParameters {
     Overrides {
       Name: "cs:API"
@@ -1011,13 +1010,13 @@ Objects {
     Overrides {
       Name: "cs:ComponentRoot"
       ObjectReference {
-        SelfId: 4398459370050487553
+        SelfId: 14464720077158931127
       }
     }
     Overrides {
       Name: "cs:Canvas"
       ObjectReference {
-        SelfId: 17326118373452334601
+        SelfId: 10700712570977671149
       }
     }
     Overrides {
@@ -1029,13 +1028,13 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       ObjectReference {
-        SelfId: 1793959240855861288
+        SelfId: 1236710724699383628
       }
     }
     Overrides {
       Name: "cs:CountdownText"
       ObjectReference {
-        SelfId: 13737111524884692262
+        SelfId: 9348957620621924579
       }
     }
     Overrides {
@@ -1047,31 +1046,31 @@ Objects {
     Overrides {
       Name: "cs:NameText"
       ObjectReference {
-        SelfId: 8306504964304921304
+        SelfId: 16820829216152946021
       }
     }
     Overrides {
       Name: "cs:ProgressIndicator"
       ObjectReference {
-        SelfId: 5299791821311187599
+        SelfId: 11658259807948707885
       }
     }
     Overrides {
       Name: "cs:RightShadow"
       ObjectReference {
-        SelfId: 7068617677993241433
+        SelfId: 7645999776331908535
       }
     }
     Overrides {
       Name: "cs:LeftShadow"
       ObjectReference {
-        SelfId: 15165535086393717696
+        SelfId: 851115037061036174
       }
     }
     Overrides {
       Name: "cs:Charges"
       ObjectReference {
-        SelfId: 7566132610777633636
+        SelfId: 14392240680243448400
       }
     }
   }
@@ -1091,7 +1090,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14019181812906627993
+  Id: 6144455683325173963
   Name: "GAMEHELPER_ConsumablesServer"
   Transform {
     Location {
@@ -1104,7 +1103,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14280154224494103159
+  ParentId: 15511422366076400450
   UnregisteredParameters {
     Overrides {
       Name: "cs:MetaAbilityProgressionConstants_API"
@@ -1133,7 +1132,7 @@ Objects {
     Overrides {
       Name: "cs:AbilityGroup"
       ObjectReference {
-        SelfId: 2027581103453873368
+        SelfId: 9509200260233635969
       }
     }
     Overrides {

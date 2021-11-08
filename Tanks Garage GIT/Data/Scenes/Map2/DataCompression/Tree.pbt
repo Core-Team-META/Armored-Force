@@ -1,7 +1,7 @@
 Name: "DataCompression"
-RootId: 8653683202339330450
+RootId: 11488174717862141581
 Objects {
-  Id: 806284195924661448
+  Id: 7452166396113363944
   Name: "DataTransfer"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8653683202339330450
+  ParentId: 11488174717862141581
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30,7 +30,7 @@ Objects {
   }
 }
 Objects {
-  Id: 528250041835405742
+  Id: 7935705051397168367
   Name: "Player Storage Manager"
   Transform {
     Location {
@@ -43,8 +43,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8653683202339330450
-  ChildIds: 15498480395860430457
+  ParentId: 11488174717862141581
+  ChildIds: 12328070190125453977
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -58,7 +58,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15498480395860430457
+  Id: 12328070190125453977
   Name: "PlayerStorageManagerClient"
   Transform {
     Location {
@@ -71,7 +71,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 528250041835405742
+  ParentId: 7935705051397168367
   UnregisteredParameters {
     Overrides {
       Name: "cs:MetaAbilityProgressionUTIL_API"
@@ -88,7 +88,7 @@ Objects {
     Overrides {
       Name: "cs:DataTransfer"
       ObjectReference {
-        SelfId: 806284195924661448
+        SelfId: 7452166396113363944
       }
     }
     Overrides {
@@ -114,7 +114,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13425872703879805055
+  Id: 5985758780984967143
   Name: "ResourcePersisterServer"
   Transform {
     Location {
@@ -127,12 +127,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8653683202339330450
+  ParentId: 11488174717862141581
   UnregisteredParameters {
     Overrides {
       Name: "cs:Keys"
       ObjectReference {
-        SelfId: 8053548290070406507
+        SelfId: 18443069721621245702
       }
     }
     Overrides {
@@ -150,7 +150,7 @@ Objects {
     Overrides {
       Name: "cs:DataTransfer"
       ObjectReference {
-        SelfId: 806284195924661448
+        SelfId: 7452166396113363944
       }
     }
     Overrides {

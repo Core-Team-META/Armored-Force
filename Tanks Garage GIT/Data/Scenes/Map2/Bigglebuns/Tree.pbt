@@ -1,7 +1,7 @@
 Name: "Bigglebuns"
-RootId: 15401549659844047344
+RootId: 4207042282025800869
 Objects {
-  Id: 11984493113852513947
+  Id: 3887612367137001765
   Name: "BigglesRockCollection"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15401549659844047344
+  ParentId: 4207042282025800869
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -33,7 +33,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6482168669166930516
+  Id: 10889916711966930687
   Name: "Vehicle Speedometer Display"
   Transform {
     Scale {
@@ -42,7 +42,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15401549659844047344
+  ParentId: 4207042282025800869
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

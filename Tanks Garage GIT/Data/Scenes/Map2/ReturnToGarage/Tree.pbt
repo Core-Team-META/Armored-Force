@@ -1,7 +1,7 @@
 Name: "ReturnToGarage"
-RootId: 3917314352515647156
+RootId: 11596631472547337789
 Objects {
-  Id: 6571717957220295502
+  Id: 6362944549911101072
   Name: "ClientContext"
   Transform {
     Location {
@@ -14,9 +14,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3917314352515647156
-  ChildIds: 16307464204946267429
-  ChildIds: 15979985820134109206
+  ParentId: 11596631472547337789
+  ChildIds: 8536495356373801027
+  ChildIds: 7743293064654378970
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -33,7 +33,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15979985820134109206
+  Id: 7743293064654378970
   Name: "ReturnToGarage_Button"
   Transform {
     Location {
@@ -46,30 +46,30 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6571717957220295502
+  ParentId: 6362944549911101072
   UnregisteredParameters {
     Overrides {
       Name: "cs:DEPLOY_BUTTON"
       ObjectReference {
-        SelfId: 14356302474513325713
+        SelfId: 2233632352312252457
       }
     }
     Overrides {
       Name: "cs:DEPLOY"
       ObjectReference {
-        SelfId: 4384368061680440613
+        SelfId: 2622673419515075887
       }
     }
     Overrides {
       Name: "cs:DEPLOY_HOVER"
       ObjectReference {
-        SelfId: 2896603161121352002
+        SelfId: 3085664681083989490
       }
     }
     Overrides {
       Name: "cs:MODE_AND_DEPLOY"
       ObjectReference {
-        SelfId: 16817863429047347367
+        SelfId: 13758433941606054428
       }
     }
   }
@@ -92,7 +92,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16307464204946267429
+  Id: 8536495356373801027
   Name: "UI Container"
   Transform {
     Location {
@@ -105,8 +105,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6571717957220295502
-  ChildIds: 16817863429047347367
+  ParentId: 6362944549911101072
+  ChildIds: 13758433941606054428
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -152,7 +152,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16817863429047347367
+  Id: 13758433941606054428
   Name: "MODE_AND_DEPLOY"
   Transform {
     Location {
@@ -165,10 +165,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16307464204946267429
-  ChildIds: 14356302474513325713
-  ChildIds: 4384368061680440613
-  ChildIds: 2896603161121352002
+  ParentId: 8536495356373801027
+  ChildIds: 2233632352312252457
+  ChildIds: 2622673419515075887
+  ChildIds: 3085664681083989490
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -204,7 +204,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2896603161121352002
+  Id: 3085664681083989490
   Name: "DEPLOY_HOVER"
   Transform {
     Location {
@@ -217,11 +217,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16817863429047347367
-  ChildIds: 13387075099136968586
-  ChildIds: 3233943269822663978
-  ChildIds: 15390654401417542656
-  ChildIds: 9070154019807410790
+  ParentId: 13758433941606054428
+  ChildIds: 18235295424985038104
+  ChildIds: 18032638133108273164
+  ChildIds: 15615575328638610712
+  ChildIds: 2192711204450329794
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -258,7 +258,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9070154019807410790
+  Id: 2192711204450329794
   Name: "TITLE"
   Transform {
     Location {
@@ -271,7 +271,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2896603161121352002
+  ParentId: 3085664681083989490
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -325,7 +325,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15390654401417542656
+  Id: 15615575328638610712
   Name: "HIGHLIGHTER"
   Transform {
     Location {
@@ -338,7 +338,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2896603161121352002
+  ParentId: 3085664681083989490
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -386,7 +386,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3233943269822663978
+  Id: 18032638133108273164
   Name: "BACKGROUND"
   Transform {
     Location {
@@ -399,7 +399,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2896603161121352002
+  ParentId: 3085664681083989490
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -444,7 +444,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13387075099136968586
+  Id: 18235295424985038104
   Name: "BACKGROUND"
   Transform {
     Location {
@@ -457,7 +457,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2896603161121352002
+  ParentId: 3085664681083989490
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -505,7 +505,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4384368061680440613
+  Id: 2622673419515075887
   Name: "DEPLOY"
   Transform {
     Location {
@@ -518,11 +518,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16817863429047347367
-  ChildIds: 3724329791552082430
-  ChildIds: 18391516997386215782
-  ChildIds: 10585652835549063295
-  ChildIds: 10913700228522788914
+  ParentId: 13758433941606054428
+  ChildIds: 13769140806284970499
+  ChildIds: 7219343647886640679
+  ChildIds: 8853856188327791815
+  ChildIds: 10700334160780666041
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -559,7 +559,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10913700228522788914
+  Id: 10700334160780666041
   Name: "HIGHLIGHTER"
   Transform {
     Location {
@@ -572,7 +572,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4384368061680440613
+  ParentId: 2622673419515075887
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -620,7 +620,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10585652835549063295
+  Id: 8853856188327791815
   Name: "TITLE"
   Transform {
     Location {
@@ -633,7 +633,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4384368061680440613
+  ParentId: 2622673419515075887
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -687,7 +687,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18391516997386215782
+  Id: 7219343647886640679
   Name: "BACKGROUND"
   Transform {
     Location {
@@ -700,7 +700,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4384368061680440613
+  ParentId: 2622673419515075887
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -749,7 +749,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3724329791552082430
+  Id: 13769140806284970499
   Name: "BACKGROUND"
   Transform {
     Location {
@@ -762,7 +762,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4384368061680440613
+  ParentId: 2622673419515075887
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -820,7 +820,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14356302474513325713
+  Id: 2233632352312252457
   Name: "DEPLOY_BUTTON"
   Transform {
     Location {
@@ -833,7 +833,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16817863429047347367
+  ParentId: 13758433941606054428
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

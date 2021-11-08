@@ -1,7 +1,7 @@
 Name: "XPFeedbackClient"
-RootId: 8235706098989035919
+RootId: 2127498664927203537
 Objects {
-  Id: 1806891002747673176
+  Id: 17877816363653586187
   Name: "ClientContext"
   Transform {
     Location {
@@ -14,9 +14,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8235706098989035919
-  ChildIds: 3850488991898840627
-  ChildIds: 15040811328058638687
+  ParentId: 2127498664927203537
+  ChildIds: 13174235522929395279
+  ChildIds: 2353619702668022418
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -33,7 +33,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15040811328058638687
+  Id: 2353619702668022418
   Name: "UI Container"
   Transform {
     Location {
@@ -46,8 +46,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1806891002747673176
-  ChildIds: 17802935522110024324
+  ParentId: 17877816363653586187
+  ChildIds: 9079325566651840419
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -93,7 +93,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17802935522110024324
+  Id: 9079325566651840419
   Name: "UI Panel"
   Transform {
     Location {
@@ -106,9 +106,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15040811328058638687
-  ChildIds: 10081590905702210236
-  ChildIds: 8756320421688530175
+  ParentId: 2353619702668022418
+  ChildIds: 2803340650877988068
+  ChildIds: 9955159098879193751
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -148,7 +148,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8756320421688530175
+  Id: 9955159098879193751
   Name: "MatchResultXPEarnedPanel"
   Transform {
     Location {
@@ -161,9 +161,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17802935522110024324
-  ChildIds: 16077958000324353471
-  ChildIds: 10846983833597034353
+  ParentId: 9079325566651840419
+  ChildIds: 3141097661691585045
+  ChildIds: 2160340489511678736
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -203,7 +203,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10846983833597034353
+  Id: 2160340489511678736
   Name: "XpEarnedText"
   Transform {
     Location {
@@ -220,7 +220,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8756320421688530175
+  ParentId: 9955159098879193751
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -281,7 +281,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16077958000324353471
+  Id: 3141097661691585045
   Name: "BG"
   Transform {
     Location {
@@ -298,7 +298,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8756320421688530175
+  ParentId: 9955159098879193751
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -348,7 +348,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10081590905702210236
+  Id: 2803340650877988068
   Name: "StandardXPEarnedPanel"
   Transform {
     Location {
@@ -361,9 +361,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17802935522110024324
-  ChildIds: 2875411885760955584
-  ChildIds: 4550900655803981158
+  ParentId: 9079325566651840419
+  ChildIds: 16300412316166633681
+  ChildIds: 15189011611542738643
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -403,7 +403,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4550900655803981158
+  Id: 15189011611542738643
   Name: "XpEarnedText"
   Transform {
     Location {
@@ -420,7 +420,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10081590905702210236
+  ParentId: 2803340650877988068
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -482,7 +482,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2875411885760955584
+  Id: 16300412316166633681
   Name: "BG"
   Transform {
     Location {
@@ -499,7 +499,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10081590905702210236
+  ParentId: 2803340650877988068
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -549,7 +549,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3850488991898840627
+  Id: 13174235522929395279
   Name: "GAMEHELPER_MAP_XPFeedbackClient"
   Transform {
     Location {
@@ -562,7 +562,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1806891002747673176
+  ParentId: 17877816363653586187
   UnregisteredParameters {
     Overrides {
       Name: "cs:MetaAbilityProgressionConstants_API"
@@ -579,25 +579,25 @@ Objects {
     Overrides {
       Name: "cs:StandardXPEarnedPanel"
       ObjectReference {
-        SelfId: 10081590905702210236
+        SelfId: 2803340650877988068
       }
     }
     Overrides {
       Name: "cs:StandardXpEarnedText"
       ObjectReference {
-        SelfId: 4550900655803981158
+        SelfId: 15189011611542738643
       }
     }
     Overrides {
       Name: "cs:MatchResultXPEarnedPanel"
       ObjectReference {
-        SelfId: 8756320421688530175
+        SelfId: 9955159098879193751
       }
     }
     Overrides {
       Name: "cs:MatchXPEarnedText"
       ObjectReference {
-        SelfId: 10846983833597034353
+        SelfId: 2160340489511678736
       }
     }
     Overrides {

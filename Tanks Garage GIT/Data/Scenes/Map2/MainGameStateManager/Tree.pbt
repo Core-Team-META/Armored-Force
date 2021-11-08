@@ -1,7 +1,7 @@
 Name: "MainGameStateManager"
-RootId: 8537737971856675524
+RootId: 2165155435031421594
 Objects {
-  Id: 2420083041498476550
+  Id: 6562346252493690091
   Name: "GAMESTATE_MainGameStateManagerComponent"
   Transform {
     Location {
@@ -14,8 +14,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8537737971856675524
-  ChildIds: 9140564283763297214
+  ParentId: 2165155435031421594
+  ChildIds: 4212491081421296852
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -30,7 +30,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9140564283763297214
+  Id: 4212491081421296852
   Name: "GAMESTATE_MainGameStateManagerServer"
   Transform {
     Location {
@@ -45,7 +45,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2420083041498476550
+  ParentId: 6562346252493690091
   UnregisteredParameters {
     Overrides {
       Name: "cs:GameState"
@@ -58,13 +58,13 @@ Objects {
     Overrides {
       Name: "cs:Settings"
       ObjectReference {
-        SelfId: 16612645618231467048
+        SelfId: 18387068369783350424
       }
     }
     Overrides {
       Name: "cs:Links"
       ObjectReference {
-        SelfId: 9109704115432956209
+        SelfId: 11349853863715925080
       }
     }
     Overrides {
