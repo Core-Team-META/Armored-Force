@@ -282,8 +282,8 @@ function SaveStatistics()
 		local totalCurrency = p:GetResource(CONSTANTS_API.SILVER) - playerStartingSilver[p.id]
 		
 		local modifier = 1
-		local partsGain = driver.serverUserData.currentTankData.additionalPartsGain
-		local silverGain = driver.serverUserData.currentTankData.additionalSilverGain
+		local partsGain = p.serverUserData.currentTankData.additionalPartsGain
+		local silverGain = p.serverUserData.currentTankData.additionalSilverGain
 		local usedPremium = 0
 		local dailyBonus = 0
 		
@@ -291,11 +291,15 @@ function SaveStatistics()
 		
 		if partsGain then
 			p:AddResource(tankRPString, RoundValue(totalTP * partsGain))
-			p:AddResource(CONSTANTS_API.XP, RoundValue(totalTP * partsGain))		
+			p:AddResource(CONSTANTS_API.XP, RoundValue(totalTP * partsGain))	
+		else 
+			partsGain = 0
 		end
 		
 		if silverGain then
 			p:AddResource(CONSTANTS_API.SILVER, totalCurrency * silverGain)
+		else 
+			silverGain = 0
 		end	
 		
 		if _G["BONUS"][p.id] then
