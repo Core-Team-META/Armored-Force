@@ -8908,7 +8908,7 @@ Objects {
         B: 0.426000029
         A: 1
       }
-      Size: 15
+      Size: 14
       Justification {
         Value: "mc:etextjustify:left"
       }
