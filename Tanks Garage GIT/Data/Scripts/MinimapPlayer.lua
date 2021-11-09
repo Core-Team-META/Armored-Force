@@ -71,7 +71,7 @@ function SetViewRange(player)
 	end
 	
 	local viewRangeInfo = player.clientUserData.currentTankData.viewRange
-	local viewRangeScale = viewRangeInfo / 100 * 0.5
+	local viewRangeScale = math.ceil(viewRangeInfo / 100 * 0.5)
 	
 	viewRange.width = viewRangeScale
 	viewRange.height = viewRangeScale
