@@ -10,6 +10,11 @@ Assets {
           Id: 15718075383189814537
         }
       }
+      Overrides {
+        Name: "cs:Highlight"
+        ObjectReference {
+        }
+      }
     }
   }
   SerializationVersion: 101
