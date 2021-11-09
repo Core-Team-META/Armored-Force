@@ -684,6 +684,12 @@ Objects {
         SelfId: 10034719395223607679
       }
     }
+    Overrides {
+      Name: "cs:Highlight"
+      ObjectReference {
+        SelfId: 399746219756437725
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -880,6 +886,12 @@ Objects {
         SelfId: 2946563224079873667
       }
     }
+    Overrides {
+      Name: "cs:Highlight"
+      ObjectReference {
+        SelfId: 10998239565931331497
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1071,6 +1083,12 @@ Objects {
       Name: "cs:Charges"
       ObjectReference {
         SelfId: 14392240680243448400
+      }
+    }
+    Overrides {
+      Name: "cs:Highlight"
+      ObjectReference {
+        SelfId: 8891125015168621867
       }
     }
   }

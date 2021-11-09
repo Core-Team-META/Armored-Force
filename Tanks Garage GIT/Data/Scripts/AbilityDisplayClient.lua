@@ -27,6 +27,7 @@ local NAME_TEXT = script:GetCustomProperty("NameText"):WaitForObject()
 local PROGRESS_INDICATOR = script:GetCustomProperty("ProgressIndicator"):WaitForObject()
 local RIGHT_SHADOW = script:GetCustomProperty("RightShadow"):WaitForObject()
 local LEFT_SHADOW = script:GetCustomProperty("LeftShadow"):WaitForObject()
+local HIGHLIGHT = script:GetCustomProperty("Highlight"):WaitForObject()
 
 -- User exposed properties
 local BINDING = COMPONENT_ROOT:GetCustomProperty("Binding")
@@ -129,9 +130,11 @@ function Tick(deltaTime)
         --]]
         if isStatus then
             CANVAS.opacity = 1
+            HIGHLIGHT.opacity = 1
             --UI.PrintToScreen(tostring(currentAbility.name) .. " : Enabled",Color.GREEN)
         else
             CANVAS.opacity = 0.3
+            HIGHLIGHT.opacity = 0
             --UI.PrintToScreen(tostring(currentAbility.name) .. " : Disabled",Color.RED)
         end
 

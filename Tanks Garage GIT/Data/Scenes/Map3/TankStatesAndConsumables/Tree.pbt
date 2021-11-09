@@ -708,6 +708,12 @@ Objects {
         TemplateId: 6119390330821971846
       }
     }
+    Overrides {
+      Name: "cs:Highlight"
+      ObjectReference {
+        SelfId: 15646990278155248990
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -929,6 +935,12 @@ Objects {
         TemplateId: 6119390330821971846
       }
     }
+    Overrides {
+      Name: "cs:Highlight"
+      ObjectReference {
+        SelfId: 15715534140169686858
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1144,6 +1156,12 @@ Objects {
         SubObjectId: 5055123751967072892
         InstanceId: 8735945775194575000
         TemplateId: 6119390330821971846
+      }
+    }
+    Overrides {
+      Name: "cs:Highlight"
+      ObjectReference {
+        SelfId: 10319971679953496778
       }
     }
   }
