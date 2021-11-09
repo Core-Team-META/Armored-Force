@@ -141,6 +141,7 @@ Objects {
   ChildIds: 612148614998828298
   ChildIds: 14640442884106123613
   ChildIds: 10473771208356714193
+  ChildIds: 262477750824719427
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -155,6 +156,72 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 262477750824719427
+  Name: "TW2_BarbedWireFence01"
+  Transform {
+    Location {
+      X: 7499.83936
+      Y: -8592.63281
+      Z: 234.869965
+    }
+    Rotation {
+      Pitch: 0.364438385
+      Yaw: 71.9004
+      Roll: 4.23564672
+    }
+    Scale {
+      X: 1.32000685
+      Y: 1.32000685
+      Z: 1.32000685
+    }
+  }
+  ParentId: 5028450496338905623
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17140474072019537031
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_BarbedWireFence01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 8845.95898
+            Y: -52.7685547
+            Z: 502.240448
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.613006592
+            Yaw: 78.4549942
+            Roll: 4.43531227
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.32000685
+            Y: 1.32000685
+            Z: 1.32000685
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 18425446924023016825
+    }
   }
 }
 Objects {
@@ -1380,8 +1447,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 23640.6074
-            Y: -5279.73291
+            X: 23316.5527
+            Y: -871.848145
             Z: 374.151672
           }
         }
@@ -1389,7 +1456,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: -1.38641357
-            Yaw: -67.7965698
+            Yaw: -35.8354492
             Roll: -1.46862793
           }
         }
@@ -4134,12 +4201,12 @@ Objects {
   Name: "OilPumps"
   Transform {
     Location {
-      X: 18628.7832
-      Y: -4535.37646
+      X: 21104.6504
+      Y: -6204.80518
       Z: 151.690125
     }
     Rotation {
-      Yaw: -179.999969
+      Yaw: -148.753647
     }
     Scale {
       X: 1
@@ -7269,7 +7336,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 9042.23438
-            Y: 328.512207
+            Y: 826.349121
             Z: 500.89212
           }
         }
@@ -7334,8 +7401,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 8742.99512
-            Y: -712.41748
+            X: 8616.18359
+            Y: -924.804199
             Z: 496.953156
           }
         }
@@ -41050,8 +41117,8 @@ Objects {
           Name: "Position"
           Vector {
             X: 13294.3447
-            Y: -3677.27979
-            Z: 686.483
+            Y: -4326.80225
+            Z: 805.844482
           }
         }
         Overrides {
@@ -41352,8 +41419,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 22703.6289
-            Y: -1456.65234
+            X: 24615.5273
+            Y: -709.822266
             Z: 547.820801
           }
         }
@@ -61657,15 +61724,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -4071.10352
-            Y: 7980.74609
+            X: -3678.67578
+            Y: 7289.39355
             Z: 2364.43433
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -5.88518429
+            Pitch: -5.88519287
             Yaw: 68.2031
             Roll: 5.70340776
           }
@@ -63111,14 +63178,14 @@ Objects {
           Name: "Position"
           Vector {
             X: -1241.47266
-            Y: 12282.9375
+            Y: 12614.9854
             Z: 1556.16431
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -22.5000019
+            Pitch: -22.5
           }
         }
         Overrides {
@@ -65060,8 +65127,8 @@ Objects {
           Name: "Position"
           Vector {
             X: -3215.77734
-            Y: 12124.3291
-            Z: 2331.84961
+            Y: 12654.3516
+            Z: 2383.4458
           }
         }
         Overrides {
@@ -73264,18 +73331,18 @@ Objects {
   Transform {
     Location {
       X: 5905.99805
-      Y: 13123.8906
+      Y: 13241.8711
       Z: 1422.25317
     }
     Rotation {
       Pitch: 9.93412685
-      Yaw: -94.729332
-      Roll: -106.407509
+      Yaw: -94.7293396
+      Roll: -106.407501
     }
     Scale {
-      X: 4.62973118
-      Y: 6.65040207
-      Z: 25.1527767
+      X: 3.7851398
+      Y: 6.6504035
+      Z: 25.1527977
     }
   }
   ParentId: 921302885554344351
@@ -77030,7 +77097,7 @@ Objects {
     Location {
       X: 8195.78711
       Y: 8595.45215
-      Z: 854.204529
+      Z: 896.032166
     }
     Rotation {
       Yaw: -134.571701
@@ -85991,8 +86058,6 @@ Objects {
   ChildIds: 9412452551114614300
   ChildIds: 15408081628912478284
   ChildIds: 12842435785654799387
-  ChildIds: 2264362111796257781
-  ChildIds: 4514339420285187017
   ChildIds: 10037332662285543164
   ChildIds: 5090382846178310426
   ChildIds: 6175382191726868884
@@ -87358,140 +87423,6 @@ Objects {
   }
 }
 Objects {
-  Id: 4514339420285187017
-  Name: "Cliff"
-  Transform {
-    Location {
-      X: 164.231445
-      Y: 8342.02539
-      Z: 1487.66797
-    }
-    Rotation {
-      Pitch: 3.13670945
-      Yaw: -79.9776077
-      Roll: -3.33667135
-    }
-    Scale {
-      X: 3.7790432
-      Y: 6.30244
-      Z: 2.74653363
-    }
-  }
-  ParentId: 2683808031947549218
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 803013199804260715
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 2.7619071
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 2.7619071
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 9310199863615559233
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 2264362111796257781
-  Name: "Cliff"
-  Transform {
-    Location {
-      X: 9459.55176
-      Y: 4113.65625
-      Z: 1228.80127
-    }
-    Rotation {
-      Pitch: -4.30551863
-      Yaw: 104.155167
-      Roll: -5.22574711
-    }
-    Scale {
-      X: 2.36764812
-      Y: 2.36764812
-      Z: 2.36764812
-    }
-  }
-  ParentId: 2683808031947549218
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 2162767478451637642
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 4.63634348
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1.46666098
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 9310199863615559233
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 12842435785654799387
   Name: "Cliff"
   Transform {
@@ -88624,7 +88555,7 @@ Objects {
   Transform {
     Location {
       X: 143.654297
-      Y: 2936.66602
+      Y: 2518.17578
       Z: 2144.35
     }
     Rotation {
@@ -88687,7 +88618,7 @@ Objects {
   Transform {
     Location {
       X: -1130.00977
-      Y: 4019.64551
+      Y: 3800.29395
       Z: 1819.29932
     }
     Rotation {
@@ -88750,7 +88681,7 @@ Objects {
   Transform {
     Location {
       X: -2961.5835
-      Y: 4300.12598
+      Y: 4080.77441
       Z: 1610.93213
     }
     Rotation {
@@ -89085,7 +89016,7 @@ Objects {
   Transform {
     Location {
       X: -1258.15723
-      Y: 8201.75
+      Y: 8815.5
       Z: 1848.40161
     }
     Rotation {
@@ -89278,12 +89209,12 @@ Objects {
   Transform {
     Location {
       X: -2653.67773
-      Y: 8885.97852
+      Y: 9371.69336
       Z: 1360.64697
     }
     Rotation {
-      Yaw: -46.4313965
-      Roll: -15.7588692
+      Yaw: -24.5049744
+      Roll: -15.7597656
     }
     Scale {
       X: 10.8631887
@@ -89533,13 +89464,13 @@ Objects {
   Transform {
     Location {
       X: 223.545898
-      Y: 9164.94336
+      Y: 9507.6582
       Z: 1637.20691
     }
     Rotation {
       Pitch: 4.9773159
-      Yaw: -144.739136
-      Roll: -109.171318
+      Yaw: -147.920685
+      Roll: -109.171326
     }
     Scale {
       X: 3.34249163
