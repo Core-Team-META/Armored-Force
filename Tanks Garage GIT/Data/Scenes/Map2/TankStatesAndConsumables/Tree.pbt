@@ -530,7 +530,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ShowAbilityName"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:HideWhenDisabled"
@@ -727,7 +727,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ShowAbilityName"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:HideWhenDisabled"
@@ -919,7 +919,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ShowAbilityName"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:HideWhenDisabled"

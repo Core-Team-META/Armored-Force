@@ -31,7 +31,8 @@ local LEFT_SHADOW = script:GetCustomProperty("LeftShadow"):WaitForObject()
 local BINDING = COMPONENT_ROOT:GetCustomProperty("Binding")
 local BINDING_HINT = COMPONENT_ROOT:GetCustomProperty("BindingHint")
 local SHOW_ABILITY_NAME = COMPONENT_ROOT:GetCustomProperty("ShowAbilityName")
-local HIDE_WHEN_DISABLED = COMPONENT_ROOT:GetCustomProperty("HideWhenDisabled")
+--local HIDE_WHEN_DISABLED = COMPONENT_ROOT:GetCustomProperty("HideWhenDisabled")
+local HIDE_WHEN_DISABLED = true
 local CHARGES = script:GetCustomProperty("Charges"):WaitForObject()
 
 -- Constants
@@ -45,6 +46,8 @@ local executeDuration = 0.0
 local recoveryDuration = 0.0
 local cooldownDuration = 0.0
 local chargeTracking = 0
+
+local abilityStates = {}
 
 -- <Ability> GetLocalPlayerAbilityWithBinding()
 -- Finds the first ability that matches the given binding
@@ -66,6 +69,8 @@ function UpdateCurrentAbility()
 
     if currentAbility == newAbility then
         return
+    else
+        UI.PrintToScreen("Ability: " .. tostring(currentAbility) .. " changed to " .. tostring(newAbility),Color.YELLOW)
     end
 
     currentAbility = newAbility
@@ -97,46 +102,29 @@ end
 function Tick(deltaTime)
     UpdateCurrentAbility()
 	
-    if currentAbility then
+    if currentAbility ~= nil then
     	chargeTracking = currentAbility:GetCustomProperty("Charges")
     	CHARGES.text = tostring(chargeTracking)
-    	
+
         local currentPhase = currentAbility:GetCurrentPhase()
         local phaseTime = currentAbility:GetPhaseTimeRemaining()
 
-        if HIDE_WHEN_DISABLED then
-            if currentAbility.isEnabled then
-                --CANVAS.visibility = Visibility.INHERIT
-                --NAME_TEXT.visibility = Visibility.INHERIT
-
-                CANVAS.opacity = 1
-                --NAME_TEXT.opacity = 1
-            else
-                --CANVAS.visibility = Visibility.FORCE_OFF
-                --NAME_TEXT.visibility = Visibility.FORCE_OFF
-
-                CANVAS.opacity = 0.3
-                --NAME_TEXT.opacity = 0.3
-            end
-            
-        --[[
-        else
-            if currentAbility.isEnabled or currentPhase == AbilityPhase.READY or currentPhase == AbilityPhase.CAST then
-                --ICON:SetColor(ICON_COLOR)
-                PROGRESS_INDICATOR.visibility = Visibility.FORCE_OFF 
-            elseif chargeTracking <= 0 then
-                --local newIconColor = Color.New(ICON_COLOR)
-                --newIconColor.a = newIconColor.a / 5.0
-               -- ICON:SetColor(newIconColor)
-               PROGRESS_INDICATOR.visibility = Visibility.INHERIT
-               COUNTDOWN_TEXT.text = ""
-               return
-            end
-            ]]
+        if abilityStates[currentAbility] == nil then
+            abilityStates[currentAbility] = currentAbility.isEnabled
+        elseif abilityStates[currentAbility] ~= currentAbility.isEnabled then
+            UI.PrintToScreen(tostring(currentAbility.name) .. " state changed to: " .. tostring(currentAbility.isEnabled),Color.RED)
+            abilityStates[currentAbility] = currentAbility.isEnabled
         end
-        
-        --local abilityEnabled = currentAbility:GetCustomProperty("Enabled")
-        
+
+        if currentAbility.isEnabled then
+            CANVAS.opacity = 1
+            --UI.PrintToScreen(tostring(currentAbility.name) .. " : Enabled",Color.GREEN)
+        else
+            CANVAS.opacity = 0.3
+            --UI.PrintToScreen(tostring(currentAbility.name) .. " : Disabled",Color.RED)
+        end
+
+        --local abilityEnabled = currentAbility:GetCustomProperty("Enabled")       
         if (not currentAbility.isEnabled and currentPhase ~= AbilityPhase.COOLDOWN) or chargeTracking <= 0 then
         	PROGRESS_INDICATOR.visibility = Visibility.INHERIT
         	RIGHT_SHADOW.visibility = Visibility.INHERIT
@@ -188,3 +176,4 @@ NAME_TEXT.visibility = Visibility.FORCE_OFF
 CANVAS.visibility = Visibility.FORCE_OFF
 
 --BINDING_TEXT.text = BINDING_HINT
+print("Line 195 happened")
