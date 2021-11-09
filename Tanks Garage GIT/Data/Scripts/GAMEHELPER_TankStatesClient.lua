@@ -45,6 +45,7 @@ function OnTankStateChanged(controllerServer, property)
 			treadsDamage.progress = 0
 			--treadIndicator.visibility= Visibility.FORCE_OFF
 			treadsPanel.visibility= Visibility.FORCE_OFF
+			Events.Broadcast("StatusFixed","TRACK")
 			RepairSFX()
 		end
 	elseif property == "Burning" and value then
@@ -61,6 +62,7 @@ function OnTankStateChanged(controllerServer, property)
 			fireDamage.progress = 0
 			--fireIndicator.visibility= Visibility.FORCE_OFF
 			firePanel.visibility= Visibility.FORCE_OFF
+			Events.Broadcast("StatusFixed","EXTINGUISH")
 			RepairSFX()
 		end
 	elseif (property == "TurretDown" or property == "BarrelDown") and value then
@@ -80,6 +82,7 @@ function OnTankStateChanged(controllerServer, property)
 			turretDamage.progress = 0
 			--turretIndicator.visibility= Visibility.FORCE_OFF
 			turretPanel.visibility= Visibility.FORCE_OFF
+			Events.Broadcast("StatusFixed","TURRET")
 			RepairSFX()
 		end
 	end
@@ -96,7 +99,7 @@ function RepairSFX()
 end
 
 function Tracked()
-	
+	Events.Broadcast("StatusInflicted","TRACK")
 	treadsDamage.progress = 1
 	--treadIndicator.visibility = Visibility.INHERIT
 	treadsPanel.visibility = Visibility.INHERIT
@@ -110,10 +113,12 @@ function Tracked()
 	--treadIndicator.visibility = Visibility.FORCE_OFF
 	treadsPanel.visibility = Visibility.FORCE_OFF
 	trackedTask = nil
+	Events.Broadcast("StatusFixed","TRACK")
 	RepairSFX()
 end
 
 function Burning()
+	Events.Broadcast("StatusInflicted","EXTINGUISH")
 	fireDamage.progress = 1
 	--fireIndicator.visibility = Visibility.INHERIT
 	firePanel.visibility = Visibility.INHERIT
@@ -128,10 +133,12 @@ function Burning()
 	--fireIndicator.visibility = Visibility.FORCE_OFF
 	firePanel.visibility = Visibility.FORCE_OFF
 	fireTask = nil
+	Events.Broadcast("StatusFixed","EXTINGUISH")
 	RepairSFX()
 end
 
 function BrokenTurret()
+	Events.Broadcast("StatusInflicted","TURRET")
 	turretDamage.progress = 1
 	--turretIndicator.visibility = Visibility.INHERIT
 	turretPanel.visibility = Visibility.INHERIT
@@ -145,6 +152,7 @@ function BrokenTurret()
 	--turretIndicator.visibility = Visibility.FORCE_OFF
 	turretPanel.visibility = Visibility.FORCE_OFF
 	turretTask = nil
+	Events.Broadcast("StatusFixed","TURRET")
 	RepairSFX()
 end
 
@@ -157,13 +165,17 @@ function OnStateInflicted(damagedState)
 	if damagedState == "TURRET" then
 		feedbackText = turretFeedback
 		turretFeedback.text = "Enemy Turret speed reduced"
+		
 	elseif damagedState == "BARREL" then
 		feedbackText = turretFeedback
 		turretFeedback.text = "Enemy Barrel broken"
+		--Events.Broadcast("StatusInflicted","TURRET")
 	elseif damagedState == "TRACK" then
 		feedbackText = treadsFeedback
+		
 	elseif damagedState == "FIRE" then
 		feedbackText = fireFeedback
+		
 	end
 	
 	if Object.IsValid(feedbackText) then

@@ -17,6 +17,7 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 
 -- Internal custom properties --
 local AOI = require(script:GetCustomProperty("API"))
+local ACA = require(script:GetCustomProperty("ACA"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local CANVAS = script:GetCustomProperty("Canvas"):WaitForObject()
 local ICON = script:GetCustomProperty("Icon"):WaitForObject()
@@ -48,7 +49,16 @@ local cooldownDuration = 0.0
 local chargeTracking = 0
 
 local abilityStates = {}
+local isStatus = false
+local resourceNames = {
+    ["TRACK"] = ACA.CONSUMABLES.TREADS,
+    ["EXTINGUISH"] = ACA.CONSUMABLES.EXTINGUISHER,
+    ["TURRET"] = ACA.CONSUMABLES.REPAIR
+}
 
+--[[
+
+]]
 -- <Ability> GetLocalPlayerAbilityWithBinding()
 -- Finds the first ability that matches the given binding
 function GetLocalPlayerAbilityWithBinding()
@@ -109,14 +119,15 @@ function Tick(deltaTime)
         local currentPhase = currentAbility:GetCurrentPhase()
         local phaseTime = currentAbility:GetPhaseTimeRemaining()
 
+        --[[
         if abilityStates[currentAbility] == nil then
             abilityStates[currentAbility] = currentAbility.isEnabled
         elseif abilityStates[currentAbility] ~= currentAbility.isEnabled then
             UI.PrintToScreen(tostring(currentAbility.name) .. " state changed to: " .. tostring(currentAbility.isEnabled),Color.RED)
             abilityStates[currentAbility] = currentAbility.isEnabled
         end
-
-        if currentAbility.isEnabled then
+        --]]
+        if isStatus then
             CANVAS.opacity = 1
             --UI.PrintToScreen(tostring(currentAbility.name) .. " : Enabled",Color.GREEN)
         else
@@ -168,12 +179,32 @@ function Tick(deltaTime)
                 end
             end
         end
+    else
+        UI.PrintToScreen("Ability is nil")
     end
 end
 
+function OnStatusInflicted(statusName)
+    print("Recieved status of: " .. statusName)
+    if currentAbility == nil then return end
+    if (statusName == currentAbility.name) and LOCAL_PLAYER:GetResource(resourceNames[statusName]) > 0 then
+        print("Turning on ui for status: " .. currentAbility.name)
+        isStatus = true
+    end
+end
+
+function OnStatusFixed(statusName)
+    print("Recieved fix for stauts: " .. statusName)
+    if currentAbility == nil then return end
+    if statusName == currentAbility.name then
+        print("Turning off ui for status: " .. currentAbility.name)
+        isStatus = false
+    end
+end
 -- Initialize
 NAME_TEXT.visibility = Visibility.FORCE_OFF
 CANVAS.visibility = Visibility.FORCE_OFF
-
+Events.Connect("StatusInflicted",OnStatusInflicted)
+Events.Connect("StatusFixed",OnStatusFixed)
 --BINDING_TEXT.text = BINDING_HINT
 print("Line 195 happened")
