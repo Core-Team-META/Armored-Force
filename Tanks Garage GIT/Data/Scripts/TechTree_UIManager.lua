@@ -1720,6 +1720,7 @@ function UpgradeButtonHovered(button)
     local addedTopSpeed = 0
     local addedAcceleration = 0
     local addedTurningSpeed = 0
+    local upgradeDescription = ""
     
 	for _, c in pairs(UPGRADE_TOOLTIP:GetCustomProperty("upgradeIcon"):WaitForObject():GetChildren()) do
 		c:Destroy()
@@ -1744,8 +1745,53 @@ function UpgradeButtonHovered(button)
     	if progressOnType then
 	    	for upgradeID, progress in pairs(progressOnType) do
 	    		if upgradeID == button.name then
+	    			for i = 1, 4 do
+	    				statName = typeDetails[upgradeID]["stat" .. tostring(i) .. "Name"]
+	    				statValue = typeDetails[upgradeID]["stat" .. tostring(i) .. "Value"]
+	    				if statName == "DAMAGE" then
+	    					addedDamage = addedDamage + statValue
+	    				elseif (statName == "AIM") and (turret > 0) then
+	    					addedTurret = addedTurret + statValue
+	    				elseif statName == "HITPOINTS" then
+	    					addedHitPoints = addedHitPoints + statValue
+	    				elseif statName == "SPEED" then
+	    					addedTopSpeed = addedTopSpeed + statValue
+	    				elseif statName == "ACCELERATION" then
+	    					addedAcceleration = addedAcceleration + statValue
+	    				elseif statName == "TURNING" then
+	    					addedTurningSpeed = addedTurningSpeed + statValue
+	    				end
+	    			end
+	    			
+	    			if type == "CREW" then
+	    				upgradeDescription = typeDetails[upgradeID]["upgradeDescription"]
+	    			else 
+	    				if addedDamage > 0 then
+	    					upgradeDescription = upgradeDescription .. "Increases damage per shot by " .. tostring(math.ceil(addedDamage / tankDetails.damage * 100)) .. "%. \n"
+	    				end
+
+	    				if addedHitPoints > 0 then
+	    					upgradeDescription = upgradeDescription .. "Increases total hitpoints by " .. tostring(math.ceil(addedHitPoints / tankDetails.hitPoints * 100)) .. "%. \n"
+	    				end
+	    				
+	    				if addedTurret > 0 then
+	    					upgradeDescription = upgradeDescription .. "Increases turret aiming speed by " .. tostring(math.ceil(addedTurret / tankDetails.turret * 100)) .. "%. \n"
+	    				end
+	    				
+	    				if addedTopSpeed > 0 then
+	    					upgradeDescription = upgradeDescription .. "Increases top speed by " .. tostring(math.ceil(addedTopSpeed / tankDetails.topSpeed * 100)) .. "%. \n"
+	    				end
+	    				
+	    				if addedAcceleration > 0 then
+	    					upgradeDescription = upgradeDescription .. "Increases acceleration by " .. tostring(math.ceil(addedAcceleration / tankDetails.acceleration * 100)) .. "%. \n"
+	    				end
+	    				
+	    				if addedTurningSpeed > 0 then
+	    					upgradeDescription = upgradeDescription .. "Increases hull turning speed by " .. tostring(math.ceil(addedTurningSpeed / tankDetails.turningSpeed * 100)) .. "%. \n"
+	    				end
+	    			end
 	    			UPGRADE_TOOLTIP:GetCustomProperty("upgradeName"):WaitForObject().text = typeDetails[upgradeID]["upgradeName"]
-	    			UPGRADE_TOOLTIP:GetCustomProperty("upgradeDescription"):WaitForObject().text = typeDetails[upgradeID]["upgradeDescription"]
+	    			UPGRADE_TOOLTIP:GetCustomProperty("upgradeDescription"):WaitForObject().text = upgradeDescription
 	    			UPGRADE_TOOLTIP:GetCustomProperty("upgradePartsCost"):WaitForObject().text = "TANK PARTS: " .. tostring(typeDetails[upgradeID]["researchCost"])
 	    			UPGRADE_TOOLTIP:GetCustomProperty("upgradeSilverCost"):WaitForObject().text = "SILVER: " .. tostring(typeDetails[upgradeID]["purchaseCost"])
 	    			World.SpawnAsset(typeDetails[upgradeID]["upgradeIcon"], {parent = UPGRADE_TOOLTIP:GetCustomProperty("upgradeIcon"):WaitForObject()})
@@ -1770,24 +1816,6 @@ function UpgradeButtonHovered(button)
 	    					turningSpeed = turningSpeed + statValue
 	    				end
 	    			end
-	    		elseif (upgradeID == button.name) then
-	    			for i = 1, 4 do
-	    				statName = typeDetails[upgradeID]["stat" .. tostring(i) .. "Name"]
-	    				statValue = typeDetails[upgradeID]["stat" .. tostring(i) .. "Value"]
-	    				if statName == "DAMAGE" then
-	    					addedDamage = addedDamage + statValue
-	    				elseif (statName == "AIM") and (turret > 0) then
-	    					addedTurret = addedTurret + statValue
-	    				elseif statName == "HITPOINTS" then
-	    					addedHitPoints = addedHitPoints + statValue
-	    				elseif statName == "SPEED" then
-	    					addedTopSpeed = addedTopSpeed + statValue
-	    				elseif statName == "ACCELERATION" then
-	    					addedAcceleration = addedAcceleration + statValue
-	    				elseif statName == "TURNING" then
-	    					addedTurningSpeed = addedTurningSpeed + statValue
-	    				end
-	    			end
 	    		end
     		end
     	end
@@ -1801,12 +1829,12 @@ function UpgradeButtonHovered(button)
     	turningSpeed = math.floor(turningSpeed / 20)
     end
     
-    AddUpgradeBonusText(damage - tankAPI.GetLowestDamage(), addedDamage, 'STAT_4')
-    AddUpgradeBonusText(turret - tankAPI.GetLowestTurretSpeed(), addedTurret, 'STAT_6')
-    AddUpgradeBonusText(hitPoints - tankAPI.GetLowestHitPoints(), addedHitPoints, 'STAT_1')
-    AddUpgradeBonusText(topSpeed - tankAPI.GetLowestTopSpeed(), addedTopSpeed, 'STAT_8')
-    AddUpgradeBonusText(acceleration - tankAPI.GetLowestAcceleration(), addedAcceleration, 'STAT_9')
-    AddUpgradeBonusText(turningSpeed - tankAPI.GetLowestTurningSpeed(), addedTurningSpeed, 'STAT_10')
+    AddUpgradeBonusText(tankDetails.damage, addedDamage, 'STAT_4')
+    AddUpgradeBonusText(tankDetails.turret, addedTurret, 'STAT_6')
+    AddUpgradeBonusText(tankDetails.hitPoints, addedHitPoints, 'STAT_1')
+    AddUpgradeBonusText(tankDetails.topSpeed, addedTopSpeed, 'STAT_8')
+    AddUpgradeBonusText(tankDetails.acceleration, addedAcceleration, 'STAT_9')
+    AddUpgradeBonusText(tankDetails.turningSpeed, addedTurningSpeed, 'STAT_10')
     
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_4_LVLUP').progress = (damage + addedDamage - tankAPI.GetLowestDamage()) / (tankAPI.GetHighestDamage() - tankAPI.GetLowestDamage())
     STATS_TANK_CONTAINER:FindDescendantByName('BAR_5_LVLUP').progress = 1 - ((reload + addedReload - tankAPI.GetLowestReload()) / (tankAPI.GetHighestReload() - tankAPI.GetLowestReload()))
