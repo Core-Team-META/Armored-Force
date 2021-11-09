@@ -67246,9 +67246,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 605
+    Width: 606
     Height: 6
-    UIX: -1
     UIY: 459.791
     RenderTransformPivot {
       Anchor {
@@ -103203,9 +103202,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 605
+    Width: 600
     Height: 6
-    UIX: -1
     UIY: 459.791
     RenderTransformPivot {
       Anchor {
