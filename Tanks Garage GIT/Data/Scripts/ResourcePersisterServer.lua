@@ -148,13 +148,14 @@ function OnPlayerJoined(player)
     --print("-----PRINTING SHARED STORAGE-----")
     --UTIL_API.TablePrint(Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player))
     --print("-----FINISHED PRINTING SHARED STORAGE-----")
-    
+    --[[
     Task.Wait(20)
     local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 	local playerData = Storage.GetPlayerData(player)
 	
     print(player.name .. " " .. BACKUP_VERSION .. " backup: " .. tostring(playerData.backups[BACKUP_VERSION]))
     print(player.name .. " current storage: " .. playerSharedStorage[CONSTANTS_API.PROGRESS.DATA])
+    ]]
 end
 
 function OnPlayerLeft(player)
@@ -508,14 +509,14 @@ function SetTankProgressionDataForServer(dataString, player)
         local missingUpgradeStatus = "0"
         
         if tankIsPremium then
-        	print(tankEntry.id .. " is premium")
+        	--print(tankEntry.id .. " is premium")
         	missingUpgradeStatus = "2"
         	local allUpgrades = {tankEntry.turret, tankEntry.hull, tankEntry.engine, tankEntry.crew}
         	
         	for _, t in pairs(allUpgrades) do
 	        	if t then
 		        	for u, x in pairs(t) do
-		        		print("Forcing " .. u .. " to be value 2")
+		        		--print("Forcing " .. u .. " to be value 2")
 		        		t[u] = "2"
 		        	end
 		        end

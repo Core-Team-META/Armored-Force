@@ -477,6 +477,8 @@ function SetTankModifications()
 		end 
 	end	
 	
+	viewRange = math.ceil(viewRange)
+	
 	if driver:IsA("Player") then
 		Events.Broadcast("SET_CONSUMABLES", driver, additionalTreadsCount, additionalExtinguisherCount)
 	end

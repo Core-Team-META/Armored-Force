@@ -110,14 +110,14 @@ function RetrieveData()
         local missingUpgradeStatus = "0"
         
         if tankIsPremium then
-        	print(tankEntry.id .. " is premium")
+        	--print(tankEntry.id .. " is premium")
         	missingUpgradeStatus = "2"
         	local allUpgrades = {tankEntry.turret, tankEntry.hull, tankEntry.engine, tankEntry.crew}
         	
         	for _, t in pairs(allUpgrades) do
 	        	if t then
 		        	for u, x in pairs(t) do
-		        		print("Forcing " .. u .. " to be value 2")
+		        		--print("Forcing " .. u .. " to be value 2")
 		        		t[u] = "2"
 		        	end
 		        end

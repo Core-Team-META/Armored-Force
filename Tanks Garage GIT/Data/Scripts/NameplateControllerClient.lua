@@ -169,12 +169,8 @@ function OnPlayerJoined(player)
 	nameplates[player.id].healthText:SetColor(HEALTH_NUMBER_COLOR)
 	nameplates[player.id].nameText.text = player.name
 
-	if
-		player.clientUserData.currentTankData and player.clientUserData.currentTankData.name and
-			player.clientUserData.currentTankData.teir
-	 then
-		nameplates[player.id].tankText.text =
-			player.clientUserData.currentTankData.name .. " [" .. tostring(player.clientUserData.currentTankData.teir) .. "]"
+	if player.clientUserData.currentTankData and player.clientUserData.currentTankData.name and player.clientUserData.currentTankData.teir then
+		nameplates[player.id].tankText.text = player.clientUserData.currentTankData.name .. " [" .. tostring(player.clientUserData.currentTankData.teir) .. "]"
 	elseif player.identifier then
 		nameplates[player.id].tankText.text = TANKS[tonumber(player.identifier)].name
 	else
@@ -233,7 +229,7 @@ end
 -- bool IsNameplateVisible(Player)
 -- Can we see this player's nameplate given team and distance properties?
 function IsNameplateVisible(player)
-	if currentGameState == "VICTORY_STATE" or currentGameState == "STATS_STATE" then
+	if (currentGameState == "VICTORY_STATE") or (currentGameState == "STATS_STATE") then
 		return true
 	end
 	if player.isDead and not SHOW_ON_DEAD_PLAYERS then
@@ -259,9 +255,6 @@ function IsNameplateVisible(player)
 	if player == viewedPlayer or Teams.AreTeamsFriendly(player.team, viewedPlayer.team) then
 		if SHOW_ON_TEAMMATES then
 			local viewedPos = viewedPlayer:GetWorldPosition()
-			if not viewedPlayer or viewedPlayer and not Object.IsValid(viewedPlayer) then
-				return false
-			end
 			local distance = (playerPos - viewedPos).size
 			if MAX_DISTANCE_ON_TEAMMATES == 0.0 or distance <= MAX_DISTANCE_ON_TEAMMATES then
 				return true
@@ -270,9 +263,6 @@ function IsNameplateVisible(player)
 	else
 		if CheckSpotting(viewedPlayer) then
 			local viewedPos = viewedPlayer:GetWorldPosition()
-			if not viewedPlayer or viewedPlayer and not Object.IsValid(viewedPlayer) then
-				return false
-			end
 			local distance = (playerPos - viewedPos).size
 			if MAX_DISTANCE_ON_ENEMIES == 0.0 or distance <= MAX_DISTANCE_ON_ENEMIES then
 				return true
@@ -324,15 +314,15 @@ function Tick(deltaTime)
 			nameplate.recheck = time() + 3
 		end
 
-		if nameplate == nil and not player:IsA("Player") then
---print("Creating a nameplate for an AI player!")
+		if nameplate == nil and (player:IsA("AIPlayer") or player:IsA("Player")) then
 			OnPlayerJoined(player)
 			nameplate = nameplates[player.id]
 		end
-
+		
 		if nameplate and (player:IsA("AIPlayer") or Object.IsValid(player)) and Object.IsValid(nameplate.templateRoot) then
 			-- We calculate visibility every frame to handle when teams change
 			local visible = IsNameplateVisible(player)
+			--print(player.name .. " nameplate visible: " .. tostring(visible))
 			if player.team ~= nameplate.lastTeam then
 				nameplate.lastTeam = player.team
 				nameplate.dirty = true
