@@ -70,7 +70,7 @@ local boundsHigh
 local boundsLow
 
 local TeamBasesObjectives = {}
-local BaseObjectiveObjects = World.FindObjectByName("GAMESTATE_TeamBasesServerObjects")
+local BaseObjectiveObjects = script:GetCustomProperty("BaseObjectiveObjects"):WaitForObject() --World.FindObjectByName("GAMESTATE_TeamBasesServerObjects")
 
 for _,shape in ipairs(worldShapes) do
 	shape.isEnabled = false

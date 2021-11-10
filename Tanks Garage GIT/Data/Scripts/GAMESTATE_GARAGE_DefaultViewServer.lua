@@ -2,7 +2,9 @@
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local map = {"Map1", "Map2", "Map3"}
 local consumableCost = {}
-local mapInRotation = "Map1"
+local maxMapCount = 2
+local mapInRotationID = math.random(maxMapCount)
+local mapInRotation = tostring(map[mapInRotationID])
 local forcedSelection = false
 
 local ConsumableCost_ExtraTreads = script:GetCustomProperty("ConsumableCost_ExtraTreads")
@@ -126,11 +128,16 @@ end
 function Tick()
 	
 	if not forcedSelection then
-		mapInRotation = tostring(map[math.random(2)])
+		if mapInRotationID >= maxMapCount then
+			mapInRotationID = 1
+		else 
+			mapInRotationID = mapInRotationID + 1
+		end
 		
-	print("Map in rotation: " .. mapInRotation)
+		mapInRotation = tostring(map[mapInRotationID])
+		print("Map in rotation: " .. mapInRotation)
 		
-		Task.Wait(60)
+		Task.Wait(20)
 	end
 	
 end
