@@ -116,6 +116,7 @@ function Tick(deltaTime)
     UpdateCurrentAbility()
 	
     if currentAbility ~= nil then
+        UI.PrintToScreen("Tracking: " ..  tostring(currentAbility) .. " " .. tostring(currentAbility.name))
     	chargeTracking = currentAbility:GetCustomProperty("Charges")
     	CHARGES.text = tostring(chargeTracking)
 
@@ -193,7 +194,7 @@ function Tick(deltaTime)
             end
         end
     else
-        UI.PrintToScreen("Ability is nil")
+        UI.PrintToScreen("currentAbility is nil")
     end
 end
 
