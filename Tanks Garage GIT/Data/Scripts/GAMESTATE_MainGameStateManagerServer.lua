@@ -76,7 +76,7 @@ function OnChangeState(previousState)
 		script:SetNetworkedCustomProperty("GameState", STATE_MATCH)
 		
 		currentState = STATE_MATCH
-
+		
 		Events.Broadcast("RESET_TANKS")
 		
 		SetTimer(matchMaxDuration)

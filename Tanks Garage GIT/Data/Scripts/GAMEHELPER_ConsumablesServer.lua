@@ -80,6 +80,10 @@ function ToggleAbility(player, abilityToToggle, toggle)
 end
 
 function OnJoin(player, additionalTreads, additionalExtinguishers)
+
+	if consumables[player.id] then
+		return
+	end
 	
 	local currentSilver = player:GetResource(CONSTANTS_API.SILVER)
 	local consumableCost = 400
@@ -172,8 +176,6 @@ function OnJoin(player, additionalTreads, additionalExtinguishers)
 	consumables[player.id].turretKit.listener = consumables[player.id].turretKit.ability.recoveryEvent:Connect(OnRecovery)
 	consumables[player.id].turretKit.ability:SetNetworkedCustomProperty("Charges", turretCount)
 	--consumables[player.id].turretKit.ability:SetNetworkedCustomProperty("Enabled", false)
-	
-	
 
 end
 
