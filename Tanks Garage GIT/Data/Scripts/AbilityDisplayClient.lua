@@ -50,6 +50,8 @@ local cooldownDuration = 0.0
 local chargeTracking = 0
 
 local abilityStates = {}
+local abilityPhases = {}
+
 local isStatus = false
 local resourceNames = {
     ["TRACK"] = ACA.CONSUMABLES.TREADS,
@@ -114,20 +116,29 @@ function Tick(deltaTime)
     UpdateCurrentAbility()
 	
     if currentAbility ~= nil then
+        UI.PrintToScreen("Tracking: " ..  tostring(currentAbility) .. " " .. tostring(currentAbility.name))
     	chargeTracking = currentAbility:GetCustomProperty("Charges")
     	CHARGES.text = tostring(chargeTracking)
 
         local currentPhase = currentAbility:GetCurrentPhase()
         local phaseTime = currentAbility:GetPhaseTimeRemaining()
 
-        --[[
+        --debug for enable check
         if abilityStates[currentAbility] == nil then
             abilityStates[currentAbility] = currentAbility.isEnabled
         elseif abilityStates[currentAbility] ~= currentAbility.isEnabled then
-            UI.PrintToScreen(tostring(currentAbility.name) .. " state changed to: " .. tostring(currentAbility.isEnabled),Color.RED)
+            UI.PrintToScreen(tostring(currentAbility.name) .. " Enabled changed to: " .. tostring(currentAbility.isEnabled),Color.RED)
             abilityStates[currentAbility] = currentAbility.isEnabled
         end
-        --]]
+
+        --debug for phase check
+        if abilityPhases[currentAbility] == nil then
+            abilityPhases[currentAbility] = currentPhase
+        elseif abilityPhases[currentAbility] ~= currentPhase then
+            UI.PrintToScreen(tostring(currentAbility.name) .. " Phase changed to: " .. tostring(currentPhase),Color.RED)
+            abilityPhases[currentAbility] = currentPhase
+        end
+
         if isStatus then
             CANVAS.opacity = 1
             HIGHLIGHT.opacity = 1
@@ -183,7 +194,7 @@ function Tick(deltaTime)
             end
         end
     else
-        UI.PrintToScreen("Ability is nil")
+        UI.PrintToScreen("currentAbility is nil")
     end
 end
 
