@@ -3,7 +3,7 @@ local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionCo
 local map = {"Map1", "Map2", "Map3"}
 local consumableCost = {}
 local mapInRotation = "Map1"
-local forcedSelection = true
+local forcedSelection = false
 
 local ConsumableCost_ExtraTreads = script:GetCustomProperty("ConsumableCost_ExtraTreads")
 local ConsumableCost_FireExtinguisher = script:GetCustomProperty("ConsumableCost_FireExtinguisher")
@@ -126,7 +126,7 @@ end
 function Tick()
 	
 	if not forcedSelection then
-		mapInRotation = tostring(map[math.random(3)])
+		mapInRotation = tostring(map[math.random(2)])
 		
 	print("Map in rotation: " .. mapInRotation)
 		
