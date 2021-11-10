@@ -52,7 +52,7 @@ local chargeTracking = 0
 local abilityStates = {}
 local abilityPhases = {}
 
-local isStatus = false
+--local isStatus = false
 local resourceNames = {
     ["TRACK"] = ACA.CONSUMABLES.TREADS,
     ["EXTINGUISH"] = ACA.CONSUMABLES.EXTINGUISHER,
@@ -83,7 +83,7 @@ function UpdateCurrentAbility()
     if currentAbility == newAbility then
         return
     else
-        UI.PrintToScreen("Ability: " .. tostring(currentAbility) .. " changed to " .. tostring(newAbility),Color.YELLOW)
+        --UI.PrintToScreen("Ability: " .. tostring(currentAbility) .. " changed to " .. tostring(newAbility),Color.YELLOW)
     end
 
     currentAbility = newAbility
@@ -114,14 +114,18 @@ end
 -- Checks for changes to the players abiltiies, or icons on those abilities
 function Tick(deltaTime)
     UpdateCurrentAbility()
-	
+
     if currentAbility ~= nil then
-        UI.PrintToScreen("Tracking: " ..  tostring(currentAbility) .. " " .. tostring(currentAbility.name))
+        
     	chargeTracking = currentAbility:GetCustomProperty("Charges")
     	CHARGES.text = tostring(chargeTracking)
+        --CHARGES.text = tostring(LOCAL_PLAYER:GetResource(resourceNames[currentAbility.name]))
 
         local currentPhase = currentAbility:GetCurrentPhase()
         local phaseTime = currentAbility:GetPhaseTimeRemaining()
+
+        --[[
+        print("Tracking: " ..  tostring(currentAbility) .. " " .. tostring(currentAbility.name) .. "\n phase: " .. tostring(currentPhase) .. "\n charges: " .. tostring(chargeTracking))
 
         --debug for enable check
         if abilityStates[currentAbility] == nil then
@@ -138,8 +142,9 @@ function Tick(deltaTime)
             UI.PrintToScreen(tostring(currentAbility.name) .. " Phase changed to: " .. tostring(currentPhase),Color.RED)
             abilityPhases[currentAbility] = currentPhase
         end
+        --]]
 
-        if isStatus then
+        if currentAbility.isEnabled then
             CANVAS.opacity = 1
             HIGHLIGHT.opacity = 1
             --UI.PrintToScreen(tostring(currentAbility.name) .. " : Enabled",Color.GREEN)
@@ -150,14 +155,14 @@ function Tick(deltaTime)
         end
 
         --local abilityEnabled = currentAbility:GetCustomProperty("Enabled")       
-        if (not currentAbility.isEnabled and currentPhase ~= AbilityPhase.COOLDOWN) or chargeTracking <= 0 then
+        if (currentPhase ~= AbilityPhase.COOLDOWN) or chargeTracking <= 0 then
         	PROGRESS_INDICATOR.visibility = Visibility.INHERIT
         	RIGHT_SHADOW.visibility = Visibility.INHERIT
         	LEFT_SHADOW.visibility = Visibility.INHERIT
         	LEFT_SHADOW.rotationAngle = 0.0
         	RIGHT_SHADOW.rotationAngle = 0.0
             COUNTDOWN_TEXT.text = ""
-		elseif currentAbility.isEnabled  and (currentPhase == AbilityPhase.READY or currentPhase == AbilityPhase.CAST) then
+		elseif(currentPhase == AbilityPhase.READY or currentPhase == AbilityPhase.CAST) then
             COUNTDOWN_TEXT.visibility = Visibility.FORCE_OFF
             PROGRESS_INDICATOR.visibility = Visibility.FORCE_OFF
             COUNTDOWN_TEXT.text = ""
@@ -194,9 +199,26 @@ function Tick(deltaTime)
             end
         end
     else
-        UI.PrintToScreen("currentAbility is nil")
+        --UI.PrintToScreen("currentAbility is nil")
+    end
+
+    
+end
+
+--[[
+local function printAbilityDeets()
+    if currentAbility then
+        chargeTracking = currentAbility:GetCustomProperty("Charges")
+        CHARGES.text = tostring(chargeTracking)
+        CHARGES.text = tostring(LOCAL_PLAYER:GetResource(resourceNames[currentAbility.name]))
+
+        local currentPhase = currentAbility:GetCurrentPhase()
+        local phaseTime = currentAbility:GetPhaseTimeRemaining()
+
+        print("Tracking: " ..  tostring(currentAbility) .. " " .. tostring(currentAbility.name) .. "\n phase: " .. tostring(currentPhase) .. "\n charges: " .. tostring(chargeTracking))
     end
 end
+
 
 function OnStatusInflicted(statusName)
     print("Recieved status of: " .. statusName)
@@ -212,13 +234,22 @@ function OnStatusFixed(statusName)
     if currentAbility == nil then return end
     if statusName == currentAbility.name then
         print("Turning off ui for status: " .. currentAbility.name)
+        CHARGES.text = tostring(LOCAL_PLAYER:GetResource(resourceNames[statusName]))
         isStatus = false
     end
 end
+--]]
+
 -- Initialize
 NAME_TEXT.visibility = Visibility.FORCE_OFF
 CANVAS.visibility = Visibility.FORCE_OFF
-Events.Connect("StatusInflicted",OnStatusInflicted)
-Events.Connect("StatusFixed",OnStatusFixed)
+--Events.Connect("StatusInflicted",OnStatusInflicted)
+--Events.Connect("StatusFixed",OnStatusFixed)
 --BINDING_TEXT.text = BINDING_HINT
+
+--[[
 print("Line 195 happened")
+local task = Task.Spawn(printAbilityDeets)
+task.repeatCount = -1
+task.repeatInterval = 0.5
+--]]
