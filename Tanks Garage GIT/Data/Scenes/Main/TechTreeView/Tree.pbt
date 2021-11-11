@@ -957,16 +957,16 @@ Objects {
     Overrides {
       Name: "cs:RESEARCHABLE_COLOR"
       Color {
-        G: 0.0331125259
-        B: 0.5
+        R: 0.203906059
+        G: 0.421875
         A: 1
       }
     }
     Overrides {
       Name: "cs:PURCHASABLE_COLOR"
       Color {
-        R: 0.203906104
         G: 0.421875
+        B: 0.251644373
         A: 1
       }
     }

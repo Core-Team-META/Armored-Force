@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15012951307244190552
+        ParentId: 12573952360959252146
         ChildIds: 2723438157789416729
         ChildIds: 3715964070800848345
         ChildIds: 9794770026299270838
@@ -772,14 +772,14 @@ Assets {
               B: 1
               A: 1
             }
-            Size: 12
+            Size: 14
             Justification {
               Value: "mc:etextjustify:center"
             }
             AutoWrapText: true
             ClipTextToSize: true
             Font {
-              Id: 9686253618519087109
+              Id: 17251969847265876676
             }
             VerticalJustification {
               Value: "mc:everticaljustification:center"
@@ -821,6 +821,7 @@ Assets {
         ChildIds: 12074199902782304556
         ChildIds: 6003979629513110928
         ChildIds: 2129883384899950357
+        ChildIds: 5403746045393714543
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -844,7 +845,7 @@ Assets {
           }
           Image {
             Brush {
-              Id: 7515015531196152948
+              Id: 841534158063459245
             }
             Color {
               R: 0.203906104
@@ -902,6 +903,7 @@ Assets {
         Control {
           Width: -29
           UIX: -14.6119995
+          UIY: 1.09036338
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -918,12 +920,12 @@ Assets {
               B: 1
               A: 1
             }
-            Size: 10
+            Size: 14
             Justification {
               Value: "mc:etextjustify:right"
             }
             Font {
-              Id: 841534158063459245
+              Id: 17251969847265876676
             }
             VerticalJustification {
               Value: "mc:everticaljustification:center"
@@ -985,6 +987,7 @@ Assets {
           Width: 25
           Height: 25
           UIX: 16.4384766
+          UIY: -1.98969674
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1006,6 +1009,8 @@ Assets {
               A: 1
             }
             ShadowOffset {
+              X: 1
+              Y: 1
             }
             ScreenshotIndex: 1
           }
@@ -1054,6 +1059,7 @@ Assets {
           Width: 25
           Height: 25
           UIX: 16.4384766
+          UIY: -1.98969674
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1068,6 +1074,79 @@ Assets {
               G: 1
               B: 1
               A: 1
+            }
+            TeamSettings {
+            }
+            ShadowColor {
+              A: 1
+            }
+            ShadowOffset {
+              X: 2
+              Y: 2
+            }
+            ScreenshotIndex: 1
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middleleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middleleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5403746045393714543
+        Name: "HIGHLIGHT"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6533484154315200951
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: -2
+          Height: -2
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 10820194954338241369
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.238
             }
             TeamSettings {
             }
@@ -1464,21 +1543,12 @@ Assets {
       }
     }
     Assets {
-      Id: 9686253618519087109
-      Name: "Teko Light"
+      Id: 17251969847265876676
+      Name: "Teko"
       PlatformAssetType: 28
       PrimaryAsset {
         AssetType: "FontAssetRef"
-        AssetId: "TekoLight_ref"
-      }
-    }
-    Assets {
-      Id: 7515015531196152948
-      Name: "BG Gradient 001"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundFlat_020"
+        AssetId: "TekoRegular_ref"
       }
     }
     Assets {
@@ -1497,6 +1567,15 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Survival_Equip_Gear_001"
+      }
+    }
+    Assets {
+      Id: 10820194954338241369
+      Name: "BG Highlighted 001"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "BackgroundHighlighted_020"
       }
     }
     Assets {
