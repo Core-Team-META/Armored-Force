@@ -459,7 +459,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -1062,7 +1062,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -1252,7 +1252,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Scaveneged Supplies"
+            String: "Extra Supplies"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -1877,7 +1877,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -2063,7 +2063,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -2156,7 +2156,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -2820,7 +2820,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -2913,7 +2913,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -3006,7 +3006,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -3627,7 +3627,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -3813,7 +3813,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -3906,7 +3906,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -4570,7 +4570,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -4663,7 +4663,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -4756,7 +4756,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -4849,7 +4849,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Elite Gunner"
+            String: "Auto Loader"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -4946,7 +4946,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Superior Traverse Gear"
+            String: "Gunner Training 2"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -5377,7 +5377,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -5563,7 +5563,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -5656,7 +5656,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -6320,7 +6320,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -6413,7 +6413,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -6506,7 +6506,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -6599,7 +6599,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Elite Gunner"
+            String: "Auto Loader"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -7133,7 +7133,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -7319,7 +7319,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -7412,7 +7412,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -7598,7 +7598,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -8076,7 +8076,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -8153,7 +8153,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -8416,7 +8416,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -8509,7 +8509,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -8602,7 +8602,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -8881,7 +8881,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "High Velocity Muzzle"
+            String: "Barrel Cleaning 2"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -9415,7 +9415,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -9601,7 +9601,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -9694,7 +9694,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -9880,7 +9880,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -10358,7 +10358,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -10435,7 +10435,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -10698,7 +10698,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -10791,7 +10791,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -10884,7 +10884,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -11260,7 +11260,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Experienced Driver"
+            String: "Trained Driver"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -11691,7 +11691,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -11877,7 +11877,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -11970,7 +11970,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -12634,7 +12634,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -12727,7 +12727,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -12820,7 +12820,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -13659,7 +13659,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -13845,7 +13845,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -13938,7 +13938,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -14124,7 +14124,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -14602,7 +14602,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -14679,7 +14679,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -14942,7 +14942,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -15035,7 +15035,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -15128,7 +15128,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -15944,7 +15944,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16130,7 +16130,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16223,7 +16223,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16409,7 +16409,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16502,7 +16502,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Ballistic Capped Shells"
+            String: "Ballistic Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -16980,7 +16980,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -17057,7 +17057,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -17134,7 +17134,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Protective Spall Liner"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -17397,7 +17397,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -17490,7 +17490,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -17583,7 +17583,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18052,7 +18052,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Elite Gunner"
+            String: "Auto Loader"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18492,7 +18492,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18678,7 +18678,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18771,7 +18771,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -18957,7 +18957,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -19050,7 +19050,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Ballistic Capped Shells"
+            String: "Ballistic Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -19528,7 +19528,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -19605,7 +19605,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -19682,7 +19682,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Protective Spall Liner"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -19945,7 +19945,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20038,7 +20038,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20131,7 +20131,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -20503,7 +20503,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Elite Gunner"
+            String: "Auto Loader"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -21040,7 +21040,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -21226,7 +21226,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -21319,7 +21319,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -21505,7 +21505,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -21598,7 +21598,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Ballistic Capped Shells"
+            String: "Ballistic Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -22076,7 +22076,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -22153,7 +22153,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -22230,7 +22230,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Protective Spall Liner"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -22493,7 +22493,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -22586,7 +22586,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -22679,7 +22679,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -23588,7 +23588,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -23774,7 +23774,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -23867,7 +23867,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -24053,7 +24053,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -24146,7 +24146,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Ballistic Capped Shells"
+            String: "Ballistic Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -24624,7 +24624,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -24701,7 +24701,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -24778,7 +24778,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Protective Spall Liner"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25041,7 +25041,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25134,7 +25134,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25227,7 +25227,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25599,7 +25599,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Veteran Gunner"
+            String: "Veteran Loader"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -25696,7 +25696,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Medium Velocity Barrel"
+            String: "Barrel Cleaning 1"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -26136,7 +26136,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -26322,7 +26322,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -26415,7 +26415,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -26601,7 +26601,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -26694,7 +26694,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Ballistic Capped Shells"
+            String: "Ballistic Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27172,7 +27172,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27249,7 +27249,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27326,7 +27326,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Protective Spall Liner"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27589,7 +27589,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27682,7 +27682,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -27775,7 +27775,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -28147,7 +28147,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Experienced Gunner"
+            String: "Trained Loader"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -28244,7 +28244,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Medium Velocity Barrel"
+            String: "Barrel Cleaning 1"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -28684,7 +28684,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -28870,7 +28870,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -28963,7 +28963,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -29149,7 +29149,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -29242,7 +29242,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Ballistic Capped Shells"
+            String: "Ballistic Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -29720,7 +29720,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -29797,7 +29797,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -29874,7 +29874,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Protective Spall Liner"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -30137,7 +30137,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -30230,7 +30230,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -30323,7 +30323,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -31232,7 +31232,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -31418,7 +31418,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -31511,7 +31511,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -31697,7 +31697,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -31790,7 +31790,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Ballistic Capped Shells"
+            String: "Ballistic Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -32268,7 +32268,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -32345,7 +32345,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -32422,7 +32422,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Protective Spall Liner"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -32685,7 +32685,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -32778,7 +32778,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -32871,7 +32871,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -33780,7 +33780,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -33966,7 +33966,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -34059,7 +34059,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -34245,7 +34245,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -34338,7 +34338,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Ballistic Capped Shells"
+            String: "Ballistic Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -34816,7 +34816,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -34893,7 +34893,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -34970,7 +34970,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Protective Spall Liner"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -35233,7 +35233,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -35326,7 +35326,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -35419,7 +35419,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -36311,7 +36311,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -36914,7 +36914,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -37104,7 +37104,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Scaveneged Supplies"
+            String: "Extra Supplies"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -37729,7 +37729,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -37915,7 +37915,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -38008,7 +38008,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -38672,7 +38672,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -38765,7 +38765,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -38858,7 +38858,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -39479,7 +39479,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -39665,7 +39665,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -39758,7 +39758,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -40422,7 +40422,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -40515,7 +40515,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -40608,7 +40608,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -40701,7 +40701,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Elite Gunner"
+            String: "Auto Loader"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -41229,7 +41229,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -41415,7 +41415,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -41508,7 +41508,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -42172,7 +42172,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -42265,7 +42265,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -42358,7 +42358,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -42451,7 +42451,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Elite Gunner"
+            String: "Auto Loader"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -42548,7 +42548,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "High Velocity Muzzle"
+            String: "Barrel Cleaning 2"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -42979,7 +42979,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -43165,7 +43165,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -43258,7 +43258,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -43922,7 +43922,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -44015,7 +44015,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -44108,7 +44108,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -44735,7 +44735,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -44921,7 +44921,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -45014,7 +45014,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -45200,7 +45200,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -45678,7 +45678,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -45755,7 +45755,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -46018,7 +46018,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -46111,7 +46111,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -46204,7 +46204,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -46483,7 +46483,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "High Velocity Muzzle"
+            String: "Barrel Cleaning 2"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -47017,7 +47017,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -47203,7 +47203,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -47296,7 +47296,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -47482,7 +47482,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -47960,7 +47960,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -48037,7 +48037,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -48300,7 +48300,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -48393,7 +48393,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -48486,7 +48486,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -48765,7 +48765,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Medium Velocity Barrel"
+            String: "Barrel Cleaning 1"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -49291,7 +49291,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -49477,7 +49477,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -49570,7 +49570,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -49756,7 +49756,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -50234,7 +50234,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -50311,7 +50311,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -50574,7 +50574,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -50667,7 +50667,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -50760,7 +50760,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -51576,7 +51576,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -51762,7 +51762,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -51855,7 +51855,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52041,7 +52041,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52134,7 +52134,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Ballistic Capped Shells"
+            String: "Ballistic Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52612,7 +52612,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52689,7 +52689,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -52766,7 +52766,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Protective Spall Liner"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -53029,7 +53029,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -53122,7 +53122,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -53215,7 +53215,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -54124,7 +54124,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -54310,7 +54310,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -54403,7 +54403,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -54589,7 +54589,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -54682,7 +54682,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Ballistic Capped Shells"
+            String: "Ballistic Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -55160,7 +55160,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -55237,7 +55237,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -55314,7 +55314,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Protective Spall Liner"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -55577,7 +55577,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -55670,7 +55670,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -55763,7 +55763,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -56672,7 +56672,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -56858,7 +56858,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -56951,7 +56951,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -57137,7 +57137,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -57230,7 +57230,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Ballistic Capped Shells"
+            String: "Ballistic Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -57708,7 +57708,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -57785,7 +57785,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -57862,7 +57862,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Protective Spall Liner"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -58125,7 +58125,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -58218,7 +58218,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -58311,7 +58311,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -58683,7 +58683,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Superior Traverse Gear"
+            String: "Gunner Training 2"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59220,7 +59220,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59406,7 +59406,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59499,7 +59499,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59685,7 +59685,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -59778,7 +59778,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Ballistic Capped Shells"
+            String: "Ballistic Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -60256,7 +60256,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -60333,7 +60333,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -60410,7 +60410,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Protective Spall Liner"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -60673,7 +60673,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -60766,7 +60766,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -60859,7 +60859,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -61768,7 +61768,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -61954,7 +61954,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -62047,7 +62047,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -62233,7 +62233,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -62326,7 +62326,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Ballistic Capped Shells"
+            String: "Ballistic Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -62804,7 +62804,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -62881,7 +62881,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -62958,7 +62958,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Protective Spall Liner"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -63221,7 +63221,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -63314,7 +63314,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -63407,7 +63407,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -63775,7 +63775,7 @@ Assets {
           }
           Overrides {
             Name: "cs:stat1Name"
-            String: "AUTOTREAD"
+            String: "FREETREAD"
           }
           Overrides {
             Name: "cs:upgradeName"
@@ -64316,7 +64316,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -64502,7 +64502,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -64595,7 +64595,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -64781,7 +64781,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -64874,7 +64874,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Ballistic Capped Shells"
+            String: "Ballistic Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -65352,7 +65352,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -65429,7 +65429,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -65506,7 +65506,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Protective Spall Liner"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -65769,7 +65769,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -65862,7 +65862,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -65955,7 +65955,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -66327,7 +66327,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Traverse Gear"
+            String: "Gunner Training 1"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -66864,7 +66864,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -67050,7 +67050,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -67143,7 +67143,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -67329,7 +67329,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -67422,7 +67422,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Ballistic Capped Shells"
+            String: "Ballistic Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -67900,7 +67900,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -67977,7 +67977,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -68054,7 +68054,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Protective Spall Liner"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -68317,7 +68317,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -68410,7 +68410,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -68503,7 +68503,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -69412,7 +69412,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "New Elevation Servos"
+            String: "New Servos"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -69598,7 +69598,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Barrel Replacement"
+            String: "Replaced Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -69691,7 +69691,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Reliable Ammunition"
+            String: "Reliable Ammo"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -69877,7 +69877,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Muzzle Brake Change"
+            String: "Extended Barrel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -69970,7 +69970,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Ballistic Capped Shells"
+            String: "Ballistic Shells"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -70448,7 +70448,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Additional Armor Plates"
+            String: "Add-on Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -70525,7 +70525,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Spaced Armor Plates"
+            String: "Spaced Armor"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -70602,7 +70602,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Protective Spall Liner"
+            String: "Spall Liner"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -70865,7 +70865,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Improved Drive Sprockets"
+            String: "Improved Sprockets"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -70958,7 +70958,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Enhanced Transmission"
+            String: "New Transmission"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -71051,7 +71051,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Proper Maintenance"
+            String: "Replaced Wheels"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -71423,7 +71423,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Driver\'s \"Special\" Fuel"
+            String: "Special Fuel"
           }
           Overrides {
             Name: "cs:upgradeID"
@@ -71520,7 +71520,7 @@ Assets {
           }
           Overrides {
             Name: "cs:upgradeName"
-            String: "Experienced Driver"
+            String: "Trained Driver"
           }
           Overrides {
             Name: "cs:upgradeID"
