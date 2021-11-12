@@ -4147,6 +4147,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:BaseObjectiveObjects"
+      ObjectReference {
+        SelfId: 8267740080157389479
+      }
+    }
+    Overrides {
       Name: "cs:BoundsWidth"
       Float: 120000
     }
