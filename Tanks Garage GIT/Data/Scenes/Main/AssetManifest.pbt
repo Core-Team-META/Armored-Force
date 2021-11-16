@@ -69,19 +69,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16552386409025883346
-  Name: "transferTest2"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "b61a1bb93ecc43e2b35c345aacdb3056"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 16405819613734804126
   Name: "CommandePack_1"
   PlatformAssetType: 24
@@ -103,19 +90,6 @@ Assets {
       Key: "5bd5e47132fb4ef8b116116ef77e2189"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
-  Id: 15397439685017535000
-  Name: "skins"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "fe8159849da84c738d735103900d4344"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
   }
@@ -166,6 +140,19 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_001"
+  }
+}
+Assets {
+  Id: 13637614521372973975
+  Name: "af_live_achievements"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "f79e7ab5406e4f40b4a258dcc5b88a7a"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }
 Assets {
@@ -234,19 +221,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9174736073532438654
-  Name: "leaderboards"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "aef519bc464d43ccb05b6e98eec1cac8"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 8779881459085015496
   Name: "GoldBundle2"
   PlatformAssetType: 24
@@ -266,19 +240,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bush_generic_001"
-  }
-}
-Assets {
-  Id: 8710974997821399226
-  Name: "tanks"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "eb1b790b8b8c4c898073b2bb403b38ed"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
   }
 }
 Assets {
@@ -308,12 +269,38 @@ Assets {
   }
 }
 Assets {
+  Id: 7705020648728218782
+  Name: "af_live_tanks"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "f63454eea03149b583c941a85ac8d694"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 6551093352602210295
   Name: "Rock Pile 001"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_001"
+  }
+}
+Assets {
+  Id: 4250058828154806114
+  Name: "af_live_leaderboards"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "2a1eadf932d540a992d37a280466c988"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }
 Assets {
@@ -391,6 +378,19 @@ Assets {
   }
 }
 Assets {
+  Id: 2742192209802104713
+  Name: "af_live_skins"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "679759574ece4183867f9150f1160363"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 2326320507902811727
   Name: "GoldPack3"
   PlatformAssetType: 24
@@ -399,19 +399,6 @@ Assets {
       Key: "5f4f64ec1e564b9eb7e1bb407c2dd9e3"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
-  Id: 2113803591336373581
-  Name: "achievements"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "aecc909ed0ac4aa0b8eaa033f502a00e"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
   }
