@@ -1,0 +1,40 @@
+{
+	"cSpell.words": [
+		"ABGS",
+		"Aggripina",
+		"Bigglebuns",
+		"Blaking",
+		"Burnzie",
+		"Datonare",
+		"Desaturated",
+		"Elementalist",
+		"INOUT",
+		"Jarsa",
+		"Keppu",
+		"Klang",
+		"Konz",
+		"KonzZwodrei",
+		"lerp",
+		"luacheck",
+		"Melamoryxq",
+		"mjcortes",
+		"MOBA",
+		"Montoli",
+		"Morticai",
+		"Ooccoo",
+		"Rolok",
+		"Shhteve",
+		"Spatialization",
+		"stds",
+		"Strategize",
+		"Tobs",
+		"Unequip",
+		"unhovered",
+		"upvalue"
+	],
+	"Lua.workspace.maxPreload": 4000,
+	"Lua.diagnostics.disable": [
+		"lowercase-global",
+		"unbalanced-assignments"
+	]
+}
