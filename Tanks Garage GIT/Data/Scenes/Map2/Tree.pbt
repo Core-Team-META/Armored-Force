@@ -45,6 +45,9 @@ Objects {
   }
   Folder {
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 7306017621007254655
@@ -76,6 +79,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Keys, Links, and Settings"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -109,6 +115,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Blake"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 18152421277034663057
@@ -140,6 +149,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Konz"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -173,6 +185,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Bigglebuns"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 10442439887245450144
@@ -201,6 +216,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Chat"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -234,6 +252,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Morticai (Brent)"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 2041720314500046674
@@ -262,6 +283,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Ryan"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -292,6 +316,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Marcela"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 647028195142145541
@@ -320,6 +347,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Patrick"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -404,6 +434,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Copy Adjustments"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 9260634050576266324
@@ -436,6 +469,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Chris"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 9479035303955472683
@@ -465,6 +501,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Antti (Keppu)"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 4965067273124672211
@@ -493,6 +532,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "TW2_SpawnPoints"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -577,6 +619,9 @@ Objects {
       }
     }
     MaxLOD: 32
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -663,6 +708,9 @@ Objects {
     }
     MaxLOD: 32
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 4316049936135708946
@@ -691,6 +739,9 @@ Objects {
     TemplateAsset {
       Id: 626964292754089367
     }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -721,6 +772,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "TW1_Minimap"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 9979275421894607866
@@ -749,5 +803,8 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "TW_Settings"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }

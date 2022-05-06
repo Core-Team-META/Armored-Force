@@ -63,6 +63,7 @@ Assets {
           }
           GravityScale: 2.6
           CoastBrakeStrength: 10
+          CanExit: true
           Tank {
             LeftTreadRadius: 40
             LeftTreadWidth: 70
@@ -84,6 +85,9 @@ Assets {
             TurnSpeed: 55
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     PrimaryAssetId {
@@ -91,5 +95,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 101
+  SerializationVersion: 113
 }

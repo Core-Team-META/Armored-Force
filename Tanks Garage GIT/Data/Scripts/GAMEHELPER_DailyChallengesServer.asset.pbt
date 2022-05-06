@@ -3,6 +3,8 @@ Assets {
   Name: "GAMEHELPER_DailyChallengesServer"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+    }
   }
-  SerializationVersion: 101
+  SerializationVersion: 113
 }

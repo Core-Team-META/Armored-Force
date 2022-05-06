@@ -111,6 +111,9 @@ Assets {
             Id: 14063791600223333312
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     PrimaryAssetId {
@@ -118,5 +121,5 @@ Assets {
       AssetId: "Object_Curve_Rotator"
     }
   }
-  SerializationVersion: 101
+  SerializationVersion: 113
 }

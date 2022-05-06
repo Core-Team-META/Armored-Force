@@ -3,6 +3,8 @@ Assets {
   Name: "GAME_Tutorial Manager Client"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+    }
   }
-  SerializationVersion: 101
+  SerializationVersion: 113
 }

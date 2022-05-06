@@ -2,7 +2,7 @@ Assets {
   Id: 13507073154516081494
   Name: "Custom Metal Corrugated 02_vent"
   PlatformAssetType: 13
-  SerializationVersion: 101
+  SerializationVersion: 113
   CustomMaterialAsset {
     BaseMaterialId: 5477611082576558387
     ParameterOverrides {

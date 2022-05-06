@@ -2,7 +2,7 @@ Assets {
   Id: 9743499594980233710
   Name: "Custom Energy Tube Glow_skin"
   PlatformAssetType: 13
-  SerializationVersion: 101
+  SerializationVersion: 113
   CustomMaterialAsset {
     BaseMaterialId: 9007334869276339432
     ParameterOverrides {

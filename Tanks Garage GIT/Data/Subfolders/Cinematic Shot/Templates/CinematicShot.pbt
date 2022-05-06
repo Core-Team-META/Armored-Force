@@ -184,6 +184,9 @@ Assets {
         Folder {
           IsGroup: true
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
         Id: 6881605427783503700
@@ -216,6 +219,9 @@ Assets {
           ScriptAsset {
             Id: 8612242257024979510
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -251,6 +257,9 @@ Assets {
             Id: 3116133004127615129
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
         Id: 2371068679195444692
@@ -283,6 +292,9 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -321,6 +333,9 @@ Assets {
           ScriptAsset {
             Id: 3971044753121829565
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -369,6 +384,9 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           UseAsAudioListener: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -420,6 +438,9 @@ Assets {
           MaxPitch: 89
           UseAsAudioListener: true
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     Assets {
@@ -439,6 +460,6 @@ Assets {
   Marketplace {
     Description: "Say cheese!\r\n\r\nThis component pans a camera from point A to B. Easy to use! Drop into a scene and press \'M\' to play/stop the cinematic. For complex cinematics with multiple shots, simply add copies of the template as needed and set their sequence numbers to create a chain.\r\n\r\nFor impactful story moments, cinematic sequences can be triggered by a gameplay event using Events.BroadcastToPlayer(). If all players should see the sequence use Events.BroadcastToAllPlayers().\r\n\r\nCustomize shots by positioning Target, CameraStart and CameraEnd. Further customize by adjusting properties on the root of the template. The target can also be set to a dynamic object and the camera will track it.\r\n\r\nv1.0\r\n- Fixed a bug where some shots in a complex sequence could be skipped in multiplayer mode."
   }
-  SerializationVersion: 101
+  SerializationVersion: 113
   DirectlyPublished: true
 }

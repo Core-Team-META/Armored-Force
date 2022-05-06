@@ -1,6 +1,6 @@
 Assets {
   Id: 12770190894867165207
-  Name: "Rusty Riveted Metal"
+  Name: "Metal Rusty Riveted"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"

@@ -31,6 +31,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "BigglesRockCollection"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 5708904713330725702
@@ -178,5 +181,8 @@ Objects {
     TemplateAsset {
       Id: 3081804591768481329
     }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }

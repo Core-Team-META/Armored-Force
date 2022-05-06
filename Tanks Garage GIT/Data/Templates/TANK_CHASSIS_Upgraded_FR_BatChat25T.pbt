@@ -70,6 +70,7 @@ Assets {
             DestroyOnDeathNetworkedTemplateId {
             }
           }
+          CanExit: true
           Tank {
             LeftTreadRadius: 70
             LeftTreadWidth: 80
@@ -89,6 +90,9 @@ Assets {
             TurnSpeed: 60
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     PrimaryAssetId {
@@ -96,5 +100,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 101
+  SerializationVersion: 113
 }

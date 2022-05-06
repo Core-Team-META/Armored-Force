@@ -40,6 +40,9 @@ Objects {
       Id: 7117671555384191049
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 17082775647546635410
@@ -80,6 +83,9 @@ Objects {
     ScriptAsset {
       Id: 7117671555384191049
     }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -122,6 +128,9 @@ Objects {
       Id: 7117671555384191049
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 17493096617632604756
@@ -162,6 +171,9 @@ Objects {
     ScriptAsset {
       Id: 7117671555384191049
     }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -204,6 +216,9 @@ Objects {
       Id: 7117671555384191049
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 10842794331714683849
@@ -245,6 +260,9 @@ Objects {
       Id: 7117671555384191049
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 6910969228059884056
@@ -285,5 +303,8 @@ Objects {
     ScriptAsset {
       Id: 7117671555384191049
     }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }

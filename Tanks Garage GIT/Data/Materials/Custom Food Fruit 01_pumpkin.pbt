@@ -2,7 +2,7 @@ Assets {
   Id: 11081772681873927753
   Name: "Custom Food Fruit 01_pumpkin"
   PlatformAssetType: 13
-  SerializationVersion: 101
+  SerializationVersion: 113
   CustomMaterialAsset {
     BaseMaterialId: 8124014513422771643
     ParameterOverrides {

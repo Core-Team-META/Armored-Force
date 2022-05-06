@@ -28,6 +28,9 @@ Objects {
   Folder {
     IsGroup: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 15909495326084412995
@@ -56,6 +59,9 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   NetworkContext {
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -90,6 +96,9 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -137,6 +146,9 @@ Objects {
     MaxPitch: 89
     UseAsAudioListener: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 18250057345404307839
@@ -182,6 +194,9 @@ Objects {
     MinPitch: -89
     MaxPitch: 89
     UseAsAudioListener: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -230,6 +245,9 @@ Objects {
     MaxPitch: 89
     UseAsAudioListener: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 2001611918321763745
@@ -277,6 +295,9 @@ Objects {
     MaxPitch: 89
     UseAsAudioListener: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 13237728475164602616
@@ -322,6 +343,9 @@ Objects {
     MaxPitch: 89
     UseAsAudioListener: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 14587836449933293330
@@ -355,6 +379,9 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -403,6 +430,9 @@ Objects {
     DoesPositionOffsetSpring: true
     UseAsAudioListener: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 15049862755280307485
@@ -446,5 +476,8 @@ Objects {
     ScriptAsset {
       Id: 1351975177845462919
     }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }

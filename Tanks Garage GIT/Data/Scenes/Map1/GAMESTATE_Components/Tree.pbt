@@ -31,6 +31,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "StatisticsComponent"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 9844272814648339172
@@ -62,6 +65,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "VictoryScreenComponent"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -95,6 +101,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "MatchEndCard"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 11031717644493682355
@@ -126,6 +135,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "MatchComponent"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -159,6 +171,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "LobbyComponent"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 6878564840865668499
@@ -191,6 +206,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "MainGameStateManager"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 4190359091119960733
@@ -222,5 +240,8 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "SpecateComponent"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }

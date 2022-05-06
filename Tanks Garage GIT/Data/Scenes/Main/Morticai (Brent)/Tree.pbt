@@ -31,6 +31,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Tournament"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 8501438711240802371
@@ -63,6 +66,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "FirstVictory"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 13593837181296305250
@@ -91,6 +97,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Point Indicator"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -124,6 +133,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "StatisticsComponent"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 5013426499636004672
@@ -155,6 +167,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "LastRoundStats"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -188,6 +203,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "UI"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 9931492642896587817
@@ -219,6 +237,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Perks"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -252,6 +273,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Leaderboards"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 7008699887040527992
@@ -283,6 +307,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "META KilledByUI"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -316,6 +343,9 @@ Objects {
       Id: 6676334424509974663
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 8082583568088031768
@@ -347,5 +377,8 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Achievements"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }

@@ -37,6 +37,9 @@ Objects {
   Folder {
     IsGroup: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 5319455661863797289
@@ -78,6 +81,9 @@ Objects {
     TemplateAsset {
       Id: 9142328135463018439
     }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -124,6 +130,9 @@ Objects {
     TemplateAsset {
       Id: 1265635751906781934
     }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -179,6 +188,9 @@ Objects {
       Id: 5757606994911151584
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 14237201647521368859
@@ -220,6 +232,9 @@ Objects {
     TemplateAsset {
       Id: 2051301866539432801
     }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -297,6 +312,9 @@ Objects {
       Id: 9298200724150212839
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 10058707892506782779
@@ -351,6 +369,9 @@ Objects {
       Id: 14265157932256014828
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 381718502894216097
@@ -393,6 +414,9 @@ Objects {
       Id: 1305280032722446335
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 471024112292201416
@@ -424,6 +448,9 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   NetworkContext {
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -458,6 +485,9 @@ Objects {
       Id: 8007423735802041504
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 2421127921335490420
@@ -490,6 +520,9 @@ Objects {
     ScriptAsset {
       Id: 9930510073357529478
     }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -524,5 +557,8 @@ Objects {
     TemplateAsset {
       Id: 11861711500826256056
     }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }

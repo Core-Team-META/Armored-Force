@@ -33,6 +33,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "XPFeedbackClient"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 11403140711220776032
@@ -67,6 +70,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "CamoSelectionView"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 2636436846409629253
@@ -99,6 +105,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "TankStatesAndConsumables"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 134699993661140557
@@ -130,6 +139,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "LeaderboardResourceManager"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -165,6 +177,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "RespawnVolume"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 12347037560365657396
@@ -198,6 +213,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "SpottingComponent"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -233,6 +251,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "PingSystem"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 4321978211129729501
@@ -266,6 +287,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "TankSpawner"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -302,6 +326,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "DamageFeedback"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 16842327816437332582
@@ -335,6 +362,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "AimUI"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -370,6 +400,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "DailyChallenges"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 10265902047055619550
@@ -403,5 +436,8 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "NemesisTracker"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }

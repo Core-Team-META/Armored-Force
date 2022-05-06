@@ -37,6 +37,9 @@ Objects {
   Folder {
     IsGroup: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 2554255535144579730
@@ -90,6 +93,9 @@ Objects {
     TemplateAsset {
       Id: 9142328135463018439
     }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -150,6 +156,9 @@ Objects {
       Id: 1265635751906781934
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 2709012102985239765
@@ -204,6 +213,9 @@ Objects {
       Id: 5757606994911151584
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 4035401938739236844
@@ -257,6 +269,9 @@ Objects {
     TemplateAsset {
       Id: 2051301866539432801
     }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -334,6 +349,9 @@ Objects {
       Id: 9298200724150212839
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 3928201605480058260
@@ -387,6 +405,9 @@ Objects {
     TemplateAsset {
       Id: 14265157932256014828
     }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -442,6 +463,9 @@ Objects {
       Id: 1305280032722446335
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 3788635847169452960
@@ -473,6 +497,9 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   NetworkContext {
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -507,6 +534,9 @@ Objects {
       Id: 8007423735802041504
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 16090868389890958770
@@ -539,5 +569,8 @@ Objects {
     ScriptAsset {
       Id: 9930510073357529478
     }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }

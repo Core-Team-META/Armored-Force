@@ -3,6 +3,8 @@ Assets {
   Name: "Player_Currency_UI"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+    }
   }
-  SerializationVersion: 101
+  SerializationVersion: 113
 }

@@ -2,7 +2,7 @@ Assets {
   Id: 9329343860123229052
   Name: "TW_Fireplace"
   PlatformAssetType: 13
-  SerializationVersion: 101
+  SerializationVersion: 113
   CustomMaterialAsset {
     BaseMaterialId: 11182969111770509228
     ParameterOverrides {

@@ -2,7 +2,7 @@ Assets {
   Id: 43314553308649790
   Name: "Custom Wallpaper Halloween Bats 01_skin"
   PlatformAssetType: 13
-  SerializationVersion: 101
+  SerializationVersion: 113
   CustomMaterialAsset {
     BaseMaterialId: 1667077369405814049
     ParameterOverrides {

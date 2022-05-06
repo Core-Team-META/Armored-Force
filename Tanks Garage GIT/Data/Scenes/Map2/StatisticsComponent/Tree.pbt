@@ -70,6 +70,9 @@ Objects {
   Folder {
     IsGroup: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 14529198193863904769
@@ -143,5 +146,8 @@ Objects {
     ScriptAsset {
       Id: 16735746884101318736
     }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }

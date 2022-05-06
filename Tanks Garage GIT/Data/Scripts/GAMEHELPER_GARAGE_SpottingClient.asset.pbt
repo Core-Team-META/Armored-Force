@@ -3,6 +3,8 @@ Assets {
   Name: "GAMEHELPER_GARAGE_SpottingClient"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+    }
   }
-  SerializationVersion: 101
+  SerializationVersion: 113
 }

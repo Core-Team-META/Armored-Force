@@ -2,7 +2,7 @@ Assets {
   Id: 2043848260919265527
   Name: "Custom Grass from Grass Short_skinFloral"
   PlatformAssetType: 13
-  SerializationVersion: 101
+  SerializationVersion: 113
   CustomMaterialAsset {
     BaseMaterialId: 6090051424931769036
     ParameterOverrides {

@@ -30,6 +30,9 @@ Objects {
   }
   NetworkContext {
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 12278925611634014946
@@ -191,6 +194,9 @@ Objects {
       Id: 13324874675606933976
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 7053830574120603273
@@ -272,5 +278,8 @@ Objects {
     ScriptAsset {
       Id: 8508848918848851180
     }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }

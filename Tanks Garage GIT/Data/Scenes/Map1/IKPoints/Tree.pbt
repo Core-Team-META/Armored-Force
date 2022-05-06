@@ -41,6 +41,9 @@ Objects {
     }
     BlendWeight: 1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 4771733098849086318
@@ -75,6 +78,9 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -116,6 +122,9 @@ Objects {
     }
     BlendWeight: 1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 15378384805738226703
@@ -155,6 +164,9 @@ Objects {
       Value: "mc:eikanchortype:rightfoot"
     }
     BlendWeight: 1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -198,6 +210,9 @@ Objects {
     }
     BlendWeight: 1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 1547268713403424246
@@ -232,6 +247,9 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -273,6 +291,9 @@ Objects {
     }
     BlendWeight: 1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 14204582880550341188
@@ -312,6 +333,9 @@ Objects {
       Value: "mc:eikanchortype:rightfoot"
     }
     BlendWeight: 1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -355,6 +379,9 @@ Objects {
     }
     BlendWeight: 1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 9749211888490446639
@@ -389,6 +416,9 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -430,6 +460,9 @@ Objects {
     }
     BlendWeight: 1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 10342454291513097017
@@ -469,6 +502,9 @@ Objects {
       Value: "mc:eikanchortype:rightfoot"
     }
     BlendWeight: 1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -512,6 +548,9 @@ Objects {
     }
     BlendWeight: 1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 14924168325778802133
@@ -546,6 +585,9 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -587,6 +629,9 @@ Objects {
     }
     BlendWeight: 1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 7120421293140705660
@@ -626,6 +671,9 @@ Objects {
       Value: "mc:eikanchortype:rightfoot"
     }
     BlendWeight: 1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -669,6 +717,9 @@ Objects {
     }
     BlendWeight: 1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 1329720880254725823
@@ -703,6 +754,9 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -744,6 +798,9 @@ Objects {
     }
     BlendWeight: 1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 635697541952844290
@@ -783,6 +840,9 @@ Objects {
       Value: "mc:eikanchortype:rightfoot"
     }
     BlendWeight: 1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -826,6 +886,9 @@ Objects {
     }
     BlendWeight: 1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 14497715240975489418
@@ -860,6 +923,9 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -901,6 +967,9 @@ Objects {
     }
     BlendWeight: 1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 12563675989867455024
@@ -940,6 +1009,9 @@ Objects {
       Value: "mc:eikanchortype:rightfoot"
     }
     BlendWeight: 1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -983,6 +1055,9 @@ Objects {
     }
     BlendWeight: 1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 11584903792233633498
@@ -1016,6 +1091,9 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -1057,6 +1135,9 @@ Objects {
     }
     BlendWeight: 1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 359709054554126174
@@ -1096,6 +1177,9 @@ Objects {
       Value: "mc:eikanchortype:rightfoot"
     }
     BlendWeight: 1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -1138,6 +1222,9 @@ Objects {
     }
     BlendWeight: 1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 13139543027897461192
@@ -1171,6 +1258,9 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -1212,6 +1302,9 @@ Objects {
     }
     BlendWeight: 1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 8736719858869347060
@@ -1251,5 +1344,8 @@ Objects {
       Value: "mc:eikanchortype:rightfoot"
     }
     BlendWeight: 1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }

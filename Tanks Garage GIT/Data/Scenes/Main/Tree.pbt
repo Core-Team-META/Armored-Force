@@ -21,6 +21,7 @@ Objects {
   ChildIds: 12007147478172450768
   ChildIds: 1515039180194458749
   ChildIds: 12342638008067059637
+  ChildIds: 11340215756803620133
   ChildIds: 6164747938729123173
   ChildIds: 12914858331235740922
   ChildIds: 8043684082903823001
@@ -42,6 +43,9 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -75,6 +79,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Blake"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 13976379803158789849
@@ -106,6 +113,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Aj"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -139,6 +149,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Buckmonster"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 5046090435613223544
@@ -171,6 +184,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Bigglebuns"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 3332374115834155172
@@ -201,6 +217,9 @@ Objects {
   }
   AIActivityHandler {
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 16492573472081015425
@@ -229,6 +248,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Chat"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -261,6 +283,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Morticai (Brent)"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -296,6 +321,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Tutorial"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 6164747938729123173
@@ -328,6 +356,44 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Konz"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 11340215756803620133
+  Name: "Ocylix"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Ocylix"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 12342638008067059637
@@ -356,6 +422,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Patrick"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -544,6 +613,9 @@ Objects {
   Folder {
     IsGroup: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 16887701596234230431
@@ -576,6 +648,9 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -625,6 +700,9 @@ Objects {
     MaxPitch: 89
     UseAsAudioListener: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 6335888720375485977
@@ -671,6 +749,9 @@ Objects {
     MaxPitch: 89
     UseAsAudioListener: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 11841525025739022797
@@ -709,6 +790,9 @@ Objects {
       Id: 3971044753121829565
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 18013318136746478929
@@ -745,6 +829,9 @@ Objects {
       Id: 3116133004127615129
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 10753134572675194911
@@ -778,6 +865,9 @@ Objects {
       Id: 8612242257024979510
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 12007147478172450768
@@ -807,6 +897,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Marcela"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 17398334354223688829
@@ -835,6 +928,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Datonare (Ryan)"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -871,6 +967,9 @@ Objects {
     OctreeDepth: 5
     GeneratorID: "DEPRECATED"
     MaxLOD: 32
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -1414,6 +1513,9 @@ Objects {
     }
     MaxLOD: 32
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 16813558807825262224
@@ -1446,5 +1548,10 @@ Objects {
   PlayerSpawnPoint {
     TeamInt: 1
     PlayerScaleMultiplier: 1
+    SpawnEffectsTemplate {
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }

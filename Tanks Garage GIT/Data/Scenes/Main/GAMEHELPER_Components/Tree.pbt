@@ -31,6 +31,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "GameEvents"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 10332277931616513108
@@ -63,6 +66,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "PlayerAndTankStatsPanel"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 8756570955469204387
@@ -94,6 +100,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "PopupMessage"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -130,6 +139,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "DamageFeedback"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 16175003310112352478
@@ -161,6 +173,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "CamoSelectionView"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -194,6 +209,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "TankSpawner"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 4722935723333604394
@@ -225,6 +243,9 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "SpottingComponent"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -258,6 +279,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "CameraManager"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 5988096048031528599
@@ -289,5 +313,8 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "AimUI"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
