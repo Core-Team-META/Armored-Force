@@ -2,11 +2,15 @@
 local EXPIRY_YEAR = script:GetCustomProperty("ExpiryYear")
 local EXPIRY_MONTH = script:GetCustomProperty("ExpiryMonth")
 local EXPIRY_DAY = script:GetCustomProperty("ExpiryDay")
+local EXPIRY_HOUR = script:GetCustomProperty("ExpiryHour")
+local EXPIRY_MINUTE = script:GetCustomProperty("ExpiryMinute")
 
 -- Grant_Date 
 local GRANT_YEAR = script:GetCustomProperty("GrantYear")
 local GRANT_MONTH = script:GetCustomProperty("GrantMonth")
 local GRANT_DAY = script:GetCustomProperty("GrantDay")
+local GRANT_HOUR = script:GetCustomProperty("GrantHour")
+local GRANT_MINUTE = script:GetCustomProperty("GrantMinute")
 local GRANT_DURATION_IN_DAYS = script:GetCustomProperty("GrantDurationInDays")
 local RESTRICT_TO_PLAYERS = script:GetCustomProperty("RestrictToPlayers")
 
@@ -42,7 +46,7 @@ function OnGrantPerksByDate(player, data)
         --STATS_LIBRARY.IncrementStat(player, "InstaGrow", rewardValue)
         --STATS_LIBRARY.UpdateStat(player, "InstaGrowLastTime", os.time())
         --STATS_LIBRARY.UpdateStat(player, "InstaGrowLastServerTime", os.time())  
-        
+
 
         --Get updated data
 
@@ -56,15 +60,19 @@ function OnGrantPerksByDate(player, data)
         player:AddResource("Gold", 500)
 
         local currentDate = {}
-        currentDate.Year = tonumber(os.date('%Y', os.time()))
-        currentDate.Month = tonumber(os.date('%m', os.time()))
-        currentDate.Day = tonumber(os.date('%d', os.time()))
+        currentDate.Year = tonumber(os.date('!%Y', os.time()))
+        currentDate.Month = tonumber(os.date('!%m', os.time()))
+        currentDate.Day = tonumber(os.date('!%d', os.time()))
+        currentDate.Hour = tonumber(os.date('!%H', os.time()))
+        currentDate.Minute = tonumber(os.date('!%M', os.time()))
 
         local endDate = {}
         local elapsedTime =  os.time() + GRANT_DURATION_IN_DAYS * 24 * 3600
-        endDate.Year = tonumber(os.date('%Y', elapsedTime))
-        endDate.Month = tonumber(os.date('%m', elapsedTime))
-        endDate.Day = tonumber(os.date('%d', elapsedTime))
+        endDate.Year = tonumber(os.date('!%Y', elapsedTime))
+        endDate.Month = tonumber(os.date('!%m', elapsedTime))
+        endDate.Day = tonumber(os.date('!%d', elapsedTime))
+        endDate.Hour = tonumber(os.date('!%H', elapsedTime))
+        endDate.Minute = tonumber(os.date('!%M', elapsedTime))
         
         data.Promo[keyString] = {
             items = {
@@ -74,9 +82,13 @@ function OnGrantPerksByDate(player, data)
             claimYear =  currentDate.Year,
             claimMonth =  currentDate.Month,
             claimDay =  currentDate.Day,
+            claimHour =  currentDate.Hour,
+            claimMinute =  currentDate.Minute,
             endYear =  endDate.Year,
             endMonth =  endDate.Month,
             endDay =  endDate.Day,
+            endHour =  endDate.Hour,
+            endMinute =  endDate.Minute,
         }
               
         print(
@@ -84,10 +96,14 @@ function OnGrantPerksByDate(player, data)
             data.Promo[keyString].claimYear,
             data.Promo[keyString].claimMonth,
             data.Promo[keyString].claimDay,
+            data.Promo[keyString].claimHour,
+            data.Promo[keyString].claimMinute,
             " | Membership ends on",
             data.Promo[keyString].endYear,
             data.Promo[keyString].endMonth,
-            data.Promo[keyString].endDay
+            data.Promo[keyString].endDay,
+            data.Promo[keyString].endHour,
+            data.Promo[keyString].endMinute
         )
         local resultCode,errorMessage = Storage.SetPlayerData(player, data)
         player:SetPrivateNetworkedData(keyString, "Claimed")
@@ -130,6 +146,20 @@ function IsPromoClaimed(LOCAL_PLAYER)
 end
 
 function IsPromoExpired()
+    if currentDate.Year == EXPIRY_YEAR and currentDate.Month == EXPIRY_MONTH and currentDate.Day == EXPIRY_DAY and currentDate.Hour == EXPIRY_HOUR then
+        if currentDate.Minute < EXPIRY_MINUTE then
+            return false
+        else
+            return true
+        end
+    end
+    if currentDate.Year == EXPIRY_YEAR and currentDate.Month == EXPIRY_MONTH and currentDate.Day == EXPIRY_DAY then
+        if currentDate.Hour < EXPIRY_HOUR then
+            return false
+        else
+            return true
+        end
+    end
     if currentDate.Year == EXPIRY_YEAR and currentDate.Month == EXPIRY_MONTH then
         if currentDate.Day < EXPIRY_DAY then
             return false
@@ -156,18 +186,40 @@ function IsPromoActive()
     if currentDate.Year == GRANT_YEAR and currentDate.Month > GRANT_MONTH then
         return true
     end
-    if currentDate.Year == GRANT_YEAR and currentDate.Month == GRANT_MONTH and  currentDate.Day >= GRANT_DAY then
+    if currentDate.Year == GRANT_YEAR and currentDate.Month == GRANT_MONTH and currentDate.Day >  GRANT_DAY then
+        return true
+    end
+    if currentDate.Year == GRANT_YEAR and currentDate.Month == GRANT_MONTH and currentDate.Day == GRANT_DAY and currentDate.Hour >  GRANT_HOUR then
+        return true
+    end
+    if currentDate.Year == GRANT_YEAR and currentDate.Month == GRANT_MONTH and currentDate.Day == GRANT_DAY and currentDate.Hour == GRANT_HOUR and currentDate.Minute >= GRANT_MINUTE then
         return true
     end
     return false
 end
 
-function IsDateExpired(year, month, day)
+function IsDateExpired(year, month, day, hour, minute)
     local currentDate = {}
-    currentDate.Year = tonumber(os.date('%Y', os.time()))
-    currentDate.Month = tonumber(os.date('%m', os.time()))
-    currentDate.Day = tonumber(os.date('%d', os.time()))
+    currentDate.Year = tonumber(os.date('!%Y', os.time()))
+    currentDate.Month = tonumber(os.date('!%m', os.time()))
+    currentDate.Day = tonumber(os.date('!%d', os.time()))
+    currentDate.Hour = tonumber(os.date('!%H', os.time()))
+    currentDate.Minute = tonumber(os.date('!%M', os.time()))
 
+    if currentDate.Year == year and currentDate.Month == month and currentDate.Day == day and currentDate.Hour == hour then
+        if currentDate.Minute < minute then
+            return false
+        else
+            return true
+        end
+    end
+    if currentDate.Year == year and currentDate.Month == month and currentDate.Day == day then
+        if currentDate.Hour < hour then
+            return false
+        else
+            return true
+        end
+    end
     if currentDate.Year == year and currentDate.Month == month then
         if currentDate.Day < day then
             return false
@@ -206,12 +258,17 @@ function HasPromoMembership(player)
                 promo.claimYear,
                 promo.claimMonth,
                 promo.claimDay,
+                promo.claimHour,
+                promo.claimMinute,
                 " | Membership ends on",
                 promo.endYear,
                 promo.endMonth,
-                promo.endDay
+                promo.endDay,
+                promo.endHour,
+                promo.endMinute
             )
-            if IsDateExpired(promo.endYear, promo.endMonth, promo.endDay) then
+            if IsDateExpired(promo.endYear, promo.endMonth, promo.endDay, promo.endHour, promo.endMinute) then
+            --if IsDateExpired(promo.endYear, promo.endMonth, promo.endDay) then
             --if IsDateExpired(2022, 4, 12) then
                 print(keyString, " is expired")
                 --return false

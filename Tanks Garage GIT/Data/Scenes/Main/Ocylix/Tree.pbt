@@ -1693,11 +1693,19 @@ Objects {
     }
     Overrides {
       Name: "cs:ExpiryMonth"
-      Int: 5
+      Int: 6
     }
     Overrides {
       Name: "cs:ExpiryDay"
-      Int: 8
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:ExpiryHour"
+      Int: 23
+    }
+    Overrides {
+      Name: "cs:ExpiryMinute"
+      Int: 59
     }
     Overrides {
       Name: "cs:GrantYear"
@@ -1705,11 +1713,19 @@ Objects {
     }
     Overrides {
       Name: "cs:GrantMonth"
-      Int: 4
+      Int: 5
     }
     Overrides {
       Name: "cs:GrantDay"
-      Int: 7
+      Int: 9
+    }
+    Overrides {
+      Name: "cs:GrantHour"
+      Int: 18
+    }
+    Overrides {
+      Name: "cs:GrantMinute"
+      Int: 50
     }
     Overrides {
       Name: "cs:GrantDurationInDays"
@@ -1818,6 +1834,22 @@ Objects {
     Overrides {
       Name: "cs:RestrictToPlayers:category"
       String: "Grant_Date"
+    }
+    Overrides {
+      Name: "cs:GrantHour:category"
+      String: "Grant_Date"
+    }
+    Overrides {
+      Name: "cs:GrantMinute:category"
+      String: "Grant_Date"
+    }
+    Overrides {
+      Name: "cs:ExpiryHour:category"
+      String: "Expiry_Date"
+    }
+    Overrides {
+      Name: "cs:ExpiryMinute:category"
+      String: "Expiry_Date"
     }
   }
   Collidable_v2 {
