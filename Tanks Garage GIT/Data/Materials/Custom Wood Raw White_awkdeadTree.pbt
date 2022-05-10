@@ -2,7 +2,7 @@ Assets {
   Id: 16257896527158054254
   Name: "Custom Wood Raw White_awkdeadTree"
   PlatformAssetType: 13
-  SerializationVersion: 113
+  SerializationVersion: 115
   CustomMaterialAsset {
     BaseMaterialId: 10451866999938289708
     ParameterOverrides {

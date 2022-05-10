@@ -2215,5 +2215,5 @@ Assets {
       AssetId: "Barbed_Wire_Barrier_Template"
     }
   }
-  SerializationVersion: 113
+  SerializationVersion: 115
 }

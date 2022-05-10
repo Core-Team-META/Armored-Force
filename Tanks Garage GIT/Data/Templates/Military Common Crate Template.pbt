@@ -300,5 +300,5 @@ Assets {
       AssetId: "Military_Common_Crate"
     }
   }
-  SerializationVersion: 113
+  SerializationVersion: 115
 }

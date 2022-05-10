@@ -768,6 +768,12 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   NetworkContext {
+    MinDetailLevel {
+      Value: "mc:edetaillevel:low"
+    }
+    MaxDetailLevel {
+      Value: "mc:edetaillevel:ultra"
+    }
   }
   InstanceHistory {
     SelfId: 14159938067075016876

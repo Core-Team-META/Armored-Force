@@ -2,7 +2,7 @@ Assets {
   Id: 13697749310188591321
   Name: "TW3_RoofShingles"
   PlatformAssetType: 13
-  SerializationVersion: 113
+  SerializationVersion: 115
   CustomMaterialAsset {
     BaseMaterialId: 6003598145742136050
     ParameterOverrides {

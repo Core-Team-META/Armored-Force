@@ -2,7 +2,7 @@ Assets {
   Id: 15598854385505364026
   Name: "Custom Animated Neon Sign_skinPurple"
   PlatformAssetType: 13
-  SerializationVersion: 113
+  SerializationVersion: 115
   CustomMaterialAsset {
     BaseMaterialId: 8500449890314154400
     ParameterOverrides {

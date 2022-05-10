@@ -66,6 +66,12 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   NetworkContext {
+    MinDetailLevel {
+      Value: "mc:edetaillevel:low"
+    }
+    MaxDetailLevel {
+      Value: "mc:edetaillevel:ultra"
+    }
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -1693,19 +1699,19 @@ Objects {
     }
     Overrides {
       Name: "cs:ExpiryMonth"
-      Int: 6
+      Int: 5
     }
     Overrides {
       Name: "cs:ExpiryDay"
-      Int: 3
+      Int: 10
     }
     Overrides {
       Name: "cs:ExpiryHour"
-      Int: 6
+      Int: 15
     }
     Overrides {
       Name: "cs:ExpiryMinute"
-      Int: 59
+      Int: 0
     }
     Overrides {
       Name: "cs:GrantYear"
@@ -1717,11 +1723,11 @@ Objects {
     }
     Overrides {
       Name: "cs:GrantDay"
-      Int: 26
+      Int: 10
     }
     Overrides {
       Name: "cs:GrantHour"
-      Int: 15
+      Int: 22
     }
     Overrides {
       Name: "cs:GrantMinute"

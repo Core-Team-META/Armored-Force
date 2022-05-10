@@ -503,6 +503,12 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
+          MinDetailLevel {
+            Value: "mc:edetaillevel:low"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:ultra"
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2348,6 +2354,12 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
+          MinDetailLevel {
+            Value: "mc:edetaillevel:low"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:ultra"
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -4452,6 +4464,12 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
+          MinDetailLevel {
+            Value: "mc:edetaillevel:low"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:ultra"
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -6250,6 +6268,12 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
+          MinDetailLevel {
+            Value: "mc:edetaillevel:low"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:ultra"
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -7942,6 +7966,12 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
+          MinDetailLevel {
+            Value: "mc:edetaillevel:low"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:ultra"
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -8866,6 +8896,12 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
+          MinDetailLevel {
+            Value: "mc:edetaillevel:low"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:ultra"
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -14864,5 +14900,5 @@ Assets {
       AssetId: "Military_Fence_Enclosure_-_Gate_Door_Combo_Template"
     }
   }
-  SerializationVersion: 113
+  SerializationVersion: 115
 }

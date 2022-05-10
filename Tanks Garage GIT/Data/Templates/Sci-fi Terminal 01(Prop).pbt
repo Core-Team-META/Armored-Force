@@ -390,5 +390,5 @@ Assets {
       AssetId: "Sci-fi_Terminal_01_Prop_"
     }
   }
-  SerializationVersion: 113
+  SerializationVersion: 115
 }

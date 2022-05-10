@@ -220,5 +220,5 @@ Assets {
       AssetId: "Military_Radio_Set_Template"
     }
   }
-  SerializationVersion: 113
+  SerializationVersion: 115
 }
