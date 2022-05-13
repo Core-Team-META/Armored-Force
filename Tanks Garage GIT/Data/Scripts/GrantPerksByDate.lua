@@ -195,9 +195,9 @@ end
 
 function IsPromoAlmostActive()
     local thisDate = {}
-    thisDate.Year = tonumber(os.date('%Y', os.time()))
-    thisDate.Month = tonumber(os.date('%m', os.time()))
-    thisDate.Day = tonumber(os.date('%d', os.time()))
+    thisDate.Year = tonumber(os.date('!%Y', os.time()))
+    thisDate.Month = tonumber(os.date('!%m', os.time()))
+    thisDate.Day = tonumber(os.date('!%d', os.time()))
     thisDate.Hour = tonumber(os.date('!%H', os.time()))
     thisDate.Minute = tonumber(os.date('!%M', os.time()))
     thisDate.Second = tonumber(os.date('!%S', os.time()))
