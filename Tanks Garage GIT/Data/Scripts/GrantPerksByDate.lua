@@ -95,12 +95,7 @@ end
 
 LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
 
-local currentDate = {}
-currentDate.Year = tonumber(os.date('!%Y', os.time()))
-currentDate.Month = tonumber(os.date('!%m', os.time()))
-currentDate.Day = tonumber(os.date('!%d', os.time()))
-currentDate.Hour = tonumber(os.date('!%H', os.time()))
-currentDate.Minute = tonumber(os.date('!%M', os.time()))
+
 
 function IsUserAllowed()
     if CoreString.Trim(RESTRICT_TO_PLAYERS) == "" then
@@ -134,6 +129,12 @@ function IsPromoClaimed()
 end
 
 function IsPromoExpired()
+    local currentDate = {}
+    currentDate.Year = tonumber(os.date('!%Y', os.time()))
+    currentDate.Month = tonumber(os.date('!%m', os.time()))
+    currentDate.Day = tonumber(os.date('!%d', os.time()))
+    currentDate.Hour = tonumber(os.date('!%H', os.time()))
+    currentDate.Minute = tonumber(os.date('!%M', os.time()))
     if currentDate.Year == EXPIRY_YEAR and currentDate.Month == EXPIRY_MONTH and currentDate.Day == EXPIRY_DAY and currentDate.Hour == EXPIRY_HOUR then
         if currentDate.Minute < EXPIRY_MINUTE then
             return false
@@ -168,6 +169,12 @@ function IsPromoExpired()
 end
 
 function IsPromoActive()
+    local currentDate = {}
+    currentDate.Year = tonumber(os.date('!%Y', os.time()))
+    currentDate.Month = tonumber(os.date('!%m', os.time()))
+    currentDate.Day = tonumber(os.date('!%d', os.time()))
+    currentDate.Hour = tonumber(os.date('!%H', os.time()))
+    currentDate.Minute = tonumber(os.date('!%M', os.time()))
     if currentDate.Year > GRANT_YEAR then
         return true
     end
@@ -183,6 +190,46 @@ function IsPromoActive()
     if currentDate.Year == GRANT_YEAR and currentDate.Month == GRANT_MONTH and currentDate.Day == GRANT_DAY and currentDate.Hour == GRANT_HOUR and currentDate.Minute >= GRANT_MINUTE then
         return true
     end
+    return false
+end
+
+function IsPromoAlmostActive()
+    local thisDate = {}
+    thisDate.Year = tonumber(os.date('%Y', os.time()))
+    thisDate.Month = tonumber(os.date('%m', os.time()))
+    thisDate.Day = tonumber(os.date('%d', os.time()))
+    thisDate.Hour = tonumber(os.date('!%H', os.time()))
+    thisDate.Minute = tonumber(os.date('!%M', os.time()))
+    thisDate.Second = tonumber(os.date('!%S', os.time()))
+
+    if thisDate.Year == GRANT_YEAR and thisDate.Month == GRANT_MONTH and thisDate.Day == GRANT_DAY and thisDate.Hour == GRANT_HOUR and thisDate.Minute <= GRANT_MINUTE then
+        local secondsLeft = ((GRANT_MINUTE - thisDate.Minute) * 60) + (60 - thisDate.Second)
+        return true, secondsLeft
+    end
+    return false, 3601
+end
+
+function CheckForPromo()
+    Task.Spawn(function() 
+        if IsPromoActive() then
+            print("Grant date today")
+            UICLAIM_CONTAINER.visibility = Visibility.INHERIT
+            --OnButtonOpenClicked()
+            OnButtonLaterClicked()
+            return true
+        else
+            local isAlmostActive, secondsLeft = IsPromoAlmostActive()
+            if isAlmostActive then
+                print("Grant date is in "..tostring(secondsLeft).." seconds")
+                UICLAIM_CONTAINER.visibility = Visibility.FORCE_OFF
+            else
+                print("Grant date not due yet")
+                UICLAIM_CONTAINER.visibility = Visibility.FORCE_OFF
+            end
+            Task.Wait(5)
+            CheckForPromo()
+        end        
+    end)
     return false
 end
 
@@ -202,8 +249,7 @@ else
                 UICLAIM_CONTAINER.visibility = Visibility.INHERIT
                 OnButtonOpenClicked()
             else
-                print("Grant date not due yet")
-                UICLAIM_CONTAINER.visibility = Visibility.FORCE_OFF
+                CheckForPromo() 
             end
         end
     else

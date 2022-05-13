@@ -1703,15 +1703,15 @@ Objects {
     }
     Overrides {
       Name: "cs:ExpiryDay"
-      Int: 10
+      Int: 13
     }
     Overrides {
       Name: "cs:ExpiryHour"
-      Int: 15
+      Int: 23
     }
     Overrides {
       Name: "cs:ExpiryMinute"
-      Int: 0
+      Int: 59
     }
     Overrides {
       Name: "cs:GrantYear"
@@ -1723,15 +1723,15 @@ Objects {
     }
     Overrides {
       Name: "cs:GrantDay"
-      Int: 10
+      Int: 13
     }
     Overrides {
       Name: "cs:GrantHour"
-      Int: 22
+      Int: 21
     }
     Overrides {
       Name: "cs:GrantMinute"
-      Int: 0
+      Int: 27
     }
     Overrides {
       Name: "cs:GrantDurationInDays"
